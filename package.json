@@ -20,6 +20,10 @@
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@storybook/react": "5.3.19",
     "@testing-library/jest-dom": "5.9.0",
     "@testing-library/react": "10.2.1",
     "@types/jest": "25.2.3",
@@ -27,13 +31,19 @@
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.8",
     "@types/styled-jsx": "2.2.8",
-    "babel-jest": "26.0.1",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "8.1.0",
+    "babel-plugin-root-import": "6.5.0",
+    "babel-plugin-transform-imports": "2.0.0",
     "eslint-config": "bitbucket:actet/eslint-config.git",
+    "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
+    "eslint-import-resolver-typescript": "2.0.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lint-staged": "10.2.9",
     "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
+    "react-test-renderer": "16.13.1",
     "ts-jest": "26.1.0",
     "typescript": "3.9.5"
   },
@@ -66,11 +76,12 @@
     "url": "git+https://bitbucket.org/actet/act-dls.git"
   },
   "scripts": {
+    "storybook": "start-storybook",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
-    "test:types": "tsc --project tsconfig.json",
+    "test:types": "tsc --project src/tsconfig.json",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
   "version": "0.0.1"

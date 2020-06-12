@@ -8,12 +8,12 @@ module.exports = {
   globals: {
     'ts-jest': {
       diagnostics: false,
-      tsConfig: './tsconfig.json',
+      tsConfig: './test/tsconfig.json',
     },
   },
-  preset: 'ts-jest',
-  roots: ['<rootDir>/core'],
-  transform: {
-    '^.+\\.tsx?$': 'babel-jest',
+  moduleNameMapper: {
+    '~/(.*)': '<rootDir>/src/$1',
   },
+  preset: 'ts-jest',
+  roots: ['<rootDir>/src'],
 };

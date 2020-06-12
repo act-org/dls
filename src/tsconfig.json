@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../",
+    "incremental": false,
+    "outDir": "dist",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "./**/*.test.*",
+    "**/test/*"
+  ],
+  "extends": "../node_modules/eslint-config/tsconfig.json",
+  "include": [
+    "../index.d.ts",
+    "./**/*"
+  ]
+}
