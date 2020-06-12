@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": true,
+    "incremental": false,
+    "jsx": "react",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": "./lib",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      },
+      {
+        "afterDeclarations": true,
+        "transform": "typescript-transform-paths"
+      }
+    ],
+    "sourceMap": true,
+    "target": "es5",
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "./.storybook/*",
+    "./lib/*",
+    "./node_modules/*",
+    "./src/**/*.stories.*",
+    "./src/**/*.test.*"
+  ],
+  "extends": "./node_modules/eslint-config/tsconfig.json",
+  "include": [
+    "./src/**/*"
+  ]
+}

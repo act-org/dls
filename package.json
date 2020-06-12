@@ -20,9 +20,10 @@
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "@babel/preset-typescript": "^7.10.1",
+    "@babel/core": "7.10.2",
+    "@babel/preset-env": "7.10.2",
+    "@babel/preset-typescript": "7.10.1",
+    "@storybook/addon-info": "5.3.19",
     "@storybook/react": "5.3.19",
     "@testing-library/jest-dom": "5.9.0",
     "@testing-library/react": "10.2.1",
@@ -31,7 +32,7 @@
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.8",
     "@types/styled-jsx": "2.2.8",
-    "babel-jest": "^26.0.1",
+    "babel-jest": "26.0.1",
     "babel-loader": "8.1.0",
     "babel-plugin-root-import": "6.5.0",
     "babel-plugin-transform-imports": "2.0.0",
@@ -43,9 +44,13 @@
     "lint-staged": "10.2.9",
     "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
+    "react-docgen-typescript-loader": "3.7.2",
     "react-test-renderer": "16.13.1",
     "ts-jest": "26.1.0",
-    "typescript": "3.9.5"
+    "ts-loader": "7.0.5",
+    "ttypescript": "1.5.10",
+    "typescript": "3.9.5",
+    "typescript-transform-paths": "1.1.14"
   },
   "husky": {
     "hooks": {
@@ -76,12 +81,15 @@
     "url": "git+https://bitbucket.org/actet/act-dls.git"
   },
   "scripts": {
-    "storybook": "start-storybook",
+    "build": "npm-run-all build:*",
+    "build:clean": "rimraf ./lib/**",
+    "build:main": "ttsc",
+    "start": "start-storybook",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
-    "test:types": "tsc --project src/tsconfig.json",
+    "test:types": "ttsc",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
   "version": "0.0.1"
