@@ -1,0 +1,77 @@
+{
+  "author": "ACT ET",
+  "bugs": {
+    "email": "jon.cursi@act-et.org",
+    "url": "https://bitbucket.org/actet/act-dls/issues"
+  },
+  "contributors": [
+    "Jon Cursi <jon.cursi@act-et.org>"
+  ],
+  "dependencies": {
+    "@material-ui/core": "4.10.1",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "4.0.0-alpha.55",
+    "@material-ui/styles": "4.10.0",
+    "lodash": "4.17.15",
+    "mdi-material-ui": "6.16.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-jsx": "3.3.0"
+  },
+  "description": "Design Language System (DLS) for ACT front-end projects.",
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.9.0",
+    "@testing-library/react": "10.2.1",
+    "@types/jest": "25.2.3",
+    "@types/lodash": "4.14.155",
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
+    "@types/styled-jsx": "2.2.8",
+    "babel-jest": "26.0.1",
+    "eslint-config": "bitbucket:actet/eslint-config.git",
+    "husky": "4.2.5",
+    "jest": "26.0.1",
+    "lint-staged": "10.2.9",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.0.5",
+    "ts-jest": "26.1.0",
+    "typescript": "3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "homepage": "https://bitbucket.org/actet/act-dls/#README",
+  "keywords": [
+    "design language system",
+    "dls",
+    "material-ui",
+    "react",
+    "storybook",
+    "typescript"
+  ],
+  "lint-staged": {
+    "*.{js}": "npm run test:lint:js",
+    "*.{js,json,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": "npm run test:lint:ts",
+    "*.md": "npm run test:lint:md"
+  },
+  "name": "act-dls",
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/actet/act-dls.git"
+  },
+  "scripts": {
+    "test": "npm-run-all test:**",
+    "test:lint:js": "eslint . --ext .js --fix --quiet",
+    "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
+    "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
+    "test:types": "tsc --project tsconfig.json",
+    "test:unit": "jest --maxWorkers=2 --silent"
+  },
+  "version": "0.0.1"
+}
