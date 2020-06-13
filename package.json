@@ -85,7 +85,7 @@
     "build": "npm-run-all build:*",
     "build:clean": "rimraf lib",
     "build:main": "NODE_ENV=production babel src --extensions \".ts,.tsx\" --ignore \"**/*.stories.tsx,**/*.test.tsx\" --out-dir lib",
-    "build:types": "tsc --project build/tsconfig.json",
+    "build:types": "tsc --project tsconfig.build.json",
     "start": "start-storybook",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
