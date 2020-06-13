@@ -2,6 +2,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "incremental": false,
+    "jsx": "react",
+    "noEmit": false,
+    "outDir": "./.storybook",
     "paths": {
       "~/*": [
         "./src/*"

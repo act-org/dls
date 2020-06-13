@@ -91,7 +91,7 @@
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
-    "test:types": "tsc",
+    "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
   "version": "0.0.3"
