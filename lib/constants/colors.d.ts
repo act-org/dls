@@ -31,3 +31,4 @@ declare const _default: {
     WHITE: string;
 };
 export default _default;
+//# sourceMappingURL=colors.d.ts.map

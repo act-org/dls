@@ -39,15 +39,9 @@ module.exports = api => {
   ];
 
   const presets = [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          node: 'current',
-        },
-      },
-    ],
+    '@babel/preset-env',
     '@babel/preset-typescript',
+    '@babel/preset-react',
   ];
 
   if (isTestEnv) {

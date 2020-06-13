@@ -8,3 +8,4 @@ declare const _default: {
     WEIGHT_REGULAR: number;
 };
 export default _default;
+//# sourceMappingURL=typography.d.ts.map
