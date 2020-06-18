@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import { addDecorator, addParameters } from '@storybook/react';
+import { configureActions } from '@storybook/addon-actions';
 import { muiTheme } from 'storybook-addon-material-ui';
 import { withInfo } from '@storybook/addon-info';
 
@@ -36,4 +37,10 @@ addParameters({
   options: {
     showRoots: true,
   },
+});
+
+configureActions({
+  clearOnStoryChange: true,
+  depth: 100,
+  limit: 20,
 });

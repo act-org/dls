@@ -2,14 +2,29 @@
  * @prettier
  */
 
+/* eslint-disable sort-keys */
+
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { text, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 
 import ButtonPrimary from '.';
 
 export const example = (): React.ReactElement<any> => (
-  <ButtonPrimary onClick={action('onClick()')}>
+  <ButtonPrimary
+    disabled={boolean('disabled', false)}
+    fullWidth={boolean('fullWidth', false)}
+    onClick={action('onClick()')}
+    size={select(
+      'size',
+      {
+        small: 'small',
+        medium: 'medium',
+        large: 'large',
+      },
+      'medium',
+    )}
+  >
     {text('children', 'Click Me')}
   </ButtonPrimary>
 );
