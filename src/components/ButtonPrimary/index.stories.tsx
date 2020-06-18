@@ -6,12 +6,12 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select, text } from '@storybook/addon-knobs';
 import { Plus as PlusIcon } from 'mdi-material-ui';
 
 import ButtonPrimary from '.';
 
-export const example = (): React.ReactElement<any> => (
+export const primary = (): React.ReactElement<any> => (
   <ButtonPrimary
     disabled={boolean('Disabled?', false)}
     onClick={action('onClick()')}
@@ -32,11 +32,10 @@ export const example = (): React.ReactElement<any> => (
 
 export default {
   component: ButtonPrimary,
-  decorators: [withKnobs],
   parameters: {
     info: {
-      text: 'This is the primary variant of the ButtonBase component.',
+      text: 'This is the primary variant of the button component.',
     },
   },
-  title: 'ButtonPrimary',
+  title: 'Components/Button',
 };

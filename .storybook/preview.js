@@ -11,6 +11,7 @@ import { host } from 'storybook-host';
 import { muiTheme } from 'storybook-addon-material-ui';
 import { withA11y } from '@storybook/addon-a11y';
 import { withInfo } from '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import COLORS from '../src/constants/colors';
 import { theme } from '../src/styles/theme';
@@ -35,6 +36,8 @@ addDecorator(
 );
 
 addDecorator(withA11y());
+
+addDecorator(withKnobs());
 
 addDecorator(
   muiTheme([
