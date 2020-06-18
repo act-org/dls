@@ -51,6 +51,7 @@
     "prettier": "^2.0.5",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-test-renderer": "^16.13.1",
+    "storybook-addon-material-ui": "^0.9.0-alpha.21",
     "ts-jest": "^26.1.0",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5"

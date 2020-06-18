@@ -2,8 +2,6 @@
  * @prettier
  */
 
-/* eslint-disable import/prefer-default-export */
-
 export { default as ButtonBase } from './ButtonBase';
 export type { Props as ButtonBaseProps } from './ButtonBase';
 

@@ -4,26 +4,24 @@
 
 import { makeStyles } from '@material-ui/styles';
 
-import COLORS from '~/constants/colors';
-import TYPOGRAPHY from '~/constants/typography';
-
-export default makeStyles({
+export default makeStyles(({ palette, shape, typography }: any) => ({
   buttonLabel: {
     textTransform: 'none',
   },
   buttonOutlined: {
-    border: `2px solid ${COLORS.PRIMARY}`,
-    borderRadius: 20,
-    color: COLORS.PRIMARY,
-    fontSize: 14,
-    fontWeight: TYPOGRAPHY.WEIGHT_MEDIUM,
+    border: `2px solid ${palette.primary.main}`,
+    borderRadius: shape.borderRadius * 5,
+    color: palette.primary.main,
+    fontSize: typography.fontSize,
+    fontWeight: typography.fontWeightMedium,
   },
   buttonText: {
-    '& .MuiButton-endIcon': { marginLeft: 'auto' },
-    '& .MuiButton-startIcon': { color: COLORS.PRIMARY },
-    color: COLORS.TEXT_PRIMARY,
-    fontSize: 12,
-    fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
+    '& .MuiButton-endIcon': {
+      marginLeft: 'auto',
+    },
+    '& .MuiButton-startIcon': {
+      color: palette.primary.main,
+    },
     justifyContent: 'flex-start',
   },
-});
+}));

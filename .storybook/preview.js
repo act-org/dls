@@ -4,7 +4,10 @@
 
 import * as React from 'react';
 import { addDecorator, addParameters } from '@storybook/react';
+import { muiTheme } from 'storybook-addon-material-ui';
 import { withInfo } from '@storybook/addon-info';
+
+import { theme } from '../src/styles/theme';
 
 addDecorator(
   withInfo({
@@ -18,6 +21,15 @@ addDecorator(
       },
     },
   }),
+);
+
+addDecorator(
+  muiTheme([
+    {
+      ...theme,
+      themeName: 'ACT Primary Theme',
+    },
+  ]),
 );
 
 addParameters({
