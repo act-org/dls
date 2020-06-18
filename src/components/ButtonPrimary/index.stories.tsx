@@ -3,12 +3,16 @@
  */
 
 import * as React from 'react';
-// import { action } from '@storybook/addon-actions';
+import { action } from '@storybook/addon-actions';
 
 import ButtonPrimary from '.';
 
-export const component = (): React.ReactElement<any> => (
+export const minimalExample = (): React.ReactElement<any> => (
   <ButtonPrimary>Click Me</ButtonPrimary>
+);
+
+export const withOnclickHandler = (): React.ReactElement<any> => (
+  <ButtonPrimary onClick={action('onClick()')}>Click Me</ButtonPrimary>
 );
 
 export default {

@@ -6,7 +6,7 @@ import * as React from 'react';
 
 import ButtonBase from '.';
 
-export const component = (): React.ReactElement<any> => (
+export const minimalExample = (): React.ReactElement<any> => (
   <ButtonBase>Click Me</ButtonBase>
 );
 

@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { addDecorator } from '@storybook/react';
+import { addDecorator, addParameters } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
 addDecorator(
@@ -19,3 +19,9 @@ addDecorator(
     },
   }),
 );
+
+addParameters({
+  options: {
+    showRoots: true,
+  },
+});
