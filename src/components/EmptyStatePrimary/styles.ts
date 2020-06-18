@@ -12,7 +12,7 @@ export default makeStyles({
     color: COLORS.BLACK_54,
     marginBottom: DIMS.LAYOUT_PADDING * 2,
     marginTop: DIMS.LAYOUT_PADDING / 2,
-    maxWidth: 250,
+    maxWidth: 350,
   },
   descriptionRootFlexibleHeight: {
     display: 'flex',

@@ -7,11 +7,13 @@ import { noop } from 'lodash';
 
 import render from '~/helpers/test/render';
 
-import Button from '.';
+import ButtonPrimary from '.';
 
-describe('Button', () => {
+describe('ButtonPrimary', () => {
   it('matches the snapshot', () => {
-    const tree = render(<Button onClick={noop}>Button Label</Button>);
+    const tree = render(
+      <ButtonPrimary onClick={noop}>Button Label</ButtonPrimary>,
+    );
 
     expect(tree).toMatchSnapshot();
   });

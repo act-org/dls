@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button matches the snapshot 1`] = `
+exports[`ButtonPrimary matches the snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
