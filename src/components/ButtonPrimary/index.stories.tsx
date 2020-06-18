@@ -14,7 +14,6 @@ import ButtonPrimary from '.';
 export const example = (): React.ReactElement<any> => (
   <ButtonPrimary
     disabled={boolean('Disabled?', false)}
-    fullWidth={boolean('Full Width?', false)}
     onClick={action('onClick()')}
     size={select(
       'Size',

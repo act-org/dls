@@ -25,6 +25,7 @@ export default {
   SUCCESS_BORDER: '#c3e6cb',
   SUCCESS_TEXT: '#155724',
   TEXT_PRIMARY: '#2d2d2d',
+  TRANSPARENT: 'rgba(255, 255, 255, 0)',
   TREE_BORDER: '#e0e0e0',
   WARNING: '#f1e508',
   WARNING_BORDER: '#ffeeba',
