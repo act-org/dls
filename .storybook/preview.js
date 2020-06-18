@@ -8,13 +8,14 @@ import { addDecorator, addParameters } from '@storybook/react';
 import { configureActions } from '@storybook/addon-actions';
 import { grey } from '@material-ui/core/colors';
 import { host } from 'storybook-host';
-import { muiTheme } from 'storybook-addon-material-ui';
+// import { muiTheme } from 'storybook-addon-material-ui';
+import { ThemeProvider } from '@material-ui/styles';
 import { withA11y } from '@storybook/addon-a11y';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
 
 import COLORS from '../src/constants/colors';
-import { theme } from '../src/styles/theme';
+import theme from '../src/styles/theme';
 
 addDecorator(
   withInfo({
@@ -35,10 +36,15 @@ addDecorator(
   }),
 );
 
+addDecorator(storyFn => (
+  <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+));
+
 addDecorator(withA11y());
 
 addDecorator(withKnobs());
 
+/*
 addDecorator(
   muiTheme([
     {
@@ -47,6 +53,7 @@ addDecorator(
     },
   ]),
 );
+*/
 
 addParameters({
   backgrounds: [
