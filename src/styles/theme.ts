@@ -5,6 +5,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
 import COLORS from '~/constants/colors';
+import TYPOGRAPHY from '~/constants/typography';
 
 export const theme = {
   palette: {
@@ -23,10 +24,10 @@ export const theme = {
   },
   typography: {
     fontFamily: ['Montserrat', 'Helvetica', 'sans-serif'].join(','),
-    fontWeightBold: 700,
-    fontWeightLight: 300,
-    fontWeightMedium: 600,
-    fontWeightRegular: 400,
+    fontWeightBold: TYPOGRAPHY.WEIGHT_BOLD,
+    fontWeightLight: TYPOGRAPHY.WEIGHT_LIGHT,
+    fontWeightMedium: TYPOGRAPHY.WEIGHT_MEDIUM,
+    fontWeightRegular: TYPOGRAPHY.WEIGHT_REGULAR,
     htmlFontSize: 18,
   },
 };
