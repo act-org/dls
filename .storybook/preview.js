@@ -3,14 +3,18 @@
  */
 
 import * as React from 'react';
+import '@storybook/addon-console';
 import { addDecorator, addParameters } from '@storybook/react';
 import { configureActions } from '@storybook/addon-actions';
 import { grey } from '@material-ui/core/colors';
 import { muiTheme } from 'storybook-addon-material-ui';
+import { withA11y } from '@storybook/addon-a11y';
 import { withInfo } from '@storybook/addon-info';
 
 import COLORS from '../src/constants/colors';
 import { theme } from '../src/styles/theme';
+
+addDecorator(withA11y());
 
 addDecorator(
   withInfo({

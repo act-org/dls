@@ -3,18 +3,20 @@
  */
 
 import * as React from 'react';
+import { action } from '@storybook/addon-actions';
 import { text, withKnobs } from '@storybook/addon-knobs';
-import { withA11y } from '@storybook/addon-a11y';
 
 import ButtonBase from '.';
 
 export const example = (): React.ReactElement<any> => (
-  <ButtonBase>{text('children', 'Click Me')}</ButtonBase>
+  <ButtonBase onClick={action('onClick()')}>
+    {text('children', 'Click Me')}
+  </ButtonBase>
 );
 
 export default {
   component: ButtonBase,
-  decorators: [withA11y, withKnobs],
+  decorators: [withKnobs],
   parameters: {
     info: {
       text:

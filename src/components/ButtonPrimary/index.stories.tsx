@@ -8,7 +8,6 @@ import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
 import { Plus as PlusIcon } from 'mdi-material-ui';
-import { withA11y } from '@storybook/addon-a11y';
 
 import ButtonPrimary from '.';
 
@@ -34,7 +33,7 @@ export const example = (): React.ReactElement<any> => (
 
 export default {
   component: ButtonPrimary,
-  decorators: [withA11y, withKnobs],
+  decorators: [withKnobs],
   parameters: {
     info: {
       text: 'This is the primary variant of the ButtonBase component.',
