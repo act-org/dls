@@ -5,17 +5,17 @@
 import { makeStyles } from '@material-ui/styles';
 
 export default makeStyles(({ palette, shape, typography }: any) => ({
-  buttonLabel: {
+  label: {
     textTransform: 'none',
   },
-  buttonOutlined: {
+  outlined: {
     border: `2px solid ${palette.primary.main}`,
     borderRadius: shape.borderRadius * 5,
     color: palette.primary.main,
     fontSize: typography.fontSize,
     fontWeight: typography.fontWeightMedium,
   },
-  buttonText: {
+  text: {
     '& .MuiButton-endIcon': {
       marginLeft: 'auto',
     },

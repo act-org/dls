@@ -21,11 +21,7 @@ const ButtonPrimary: React.FC<Props> = ({
 
   return (
     <ButtonBase
-      classes={{
-        label: classes.buttonLabel,
-        outlined: classes.buttonOutlined,
-        text: classes.buttonText,
-      }}
+      classes={classes}
       onClick={onClick}
       startIcon={startIcon}
       style={style}
