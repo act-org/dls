@@ -37,6 +37,9 @@ addParameters({
   options: {
     showRoots: true,
   },
+  viewport: {
+    defaultViewport: 'responsive',
+  },
 });
 
 configureActions({
