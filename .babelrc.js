@@ -49,6 +49,7 @@ module.exports = api => {
   }
 
   return {
+    ignore: ['**/test/*'],
     plugins,
     presets,
   };

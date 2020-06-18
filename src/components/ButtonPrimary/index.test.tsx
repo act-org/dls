@@ -3,16 +3,15 @@
  */
 
 import * as React from 'react';
-import * as renderer from 'react-test-renderer';
 import { noop } from 'lodash';
+
+import render from '~/helpers/test/render';
 
 import Button from '.';
 
 describe('Button', () => {
   it('matches the snapshot', () => {
-    const tree = renderer
-      .create(<Button onClick={noop}>Button Label</Button>)
-      .toJSON();
+    const tree = render(<Button onClick={noop}>Button Label</Button>);
 
     expect(tree).toMatchSnapshot();
   });

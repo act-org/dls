@@ -19,7 +19,8 @@
     "./lib/*",
     "./node_modules/*",
     "./src/**/*.stories.*",
-    "./src/**/*.test.*"
+    "./src/**/*.test.*",
+    "**/test/*"
   ],
   "extends": "./node_modules/eslint-config/tsconfig.json",
   "include": [

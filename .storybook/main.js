@@ -5,6 +5,10 @@
 const path = require('path');
 
 module.exports = {
+  addons: [
+    '@storybook/addon-knobs/register',
+    'storybook-addon-material-ui/register',
+  ],
   stories: ['../src/**/*.stories.tsx'],
   webpackFinal: async config => {
     config.module.rules.push({
