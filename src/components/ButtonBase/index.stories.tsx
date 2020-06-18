@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import { text, withKnobs } from '@storybook/addon-knobs';
+import { withA11y } from '@storybook/addon-a11y';
 
 import ButtonBase from '.';
 
@@ -13,7 +14,7 @@ export const example = (): React.ReactElement<any> => (
 
 export default {
   component: ButtonBase,
-  decorators: [withKnobs],
+  decorators: [withA11y, withKnobs],
   parameters: {
     info: {
       text:
