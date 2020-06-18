@@ -18,7 +18,7 @@ export const theme = {
     },
     text: {
       primary: COLORS.TEXT_PRIMARY,
-      secondary: COLORS.MEDIUM_GREY,
+      secondary: COLORS.TEXT_SECONDARY,
     },
   },
   typography: {
