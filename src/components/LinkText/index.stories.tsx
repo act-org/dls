@@ -32,5 +32,5 @@ export default {
       text: 'This is the text variant of the Link component.',
     },
   },
-  title: 'Components/Link',
+  title: 'Atoms/Link',
 };

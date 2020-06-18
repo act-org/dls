@@ -21,5 +21,5 @@ export default {
       text: 'This is the base variant of the Link component.',
     },
   },
-  title: 'Components/Link',
+  title: 'Atoms/Link',
 };

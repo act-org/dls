@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import '@storybook/addon-console';
+// import '@storybook/addon-console';
 import { addDecorator, addParameters } from '@storybook/react';
 import { configureActions } from '@storybook/addon-actions';
 import { grey } from '@material-ui/core/colors';

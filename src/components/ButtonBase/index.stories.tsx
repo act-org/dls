@@ -18,5 +18,5 @@ export default {
       text: 'This is the primary variant of the Button component.',
     },
   },
-  title: 'Components/Button',
+  title: 'Atoms/Button',
 };

@@ -25,5 +25,5 @@ export default {
       text: 'This is the base variant of the EmptyState component.',
     },
   },
-  title: 'Components/EmptyState',
+  title: 'Molecules/EmptyState',
 };
