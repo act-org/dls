@@ -19,14 +19,8 @@ addDecorator(withA11y());
 addDecorator(
   withInfo({
     header: true,
-    inline: true,
+    inline: false,
     source: true,
-    styles: {
-      infoStory: {
-        paddingLeft: 40,
-        marginTop: -15,
-      },
-    },
   }),
 );
 
