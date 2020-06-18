@@ -3,21 +3,24 @@
  */
 
 import * as React from 'react';
-import { Button as MuiButton, ButtonProps } from '@material-ui/core';
+
+import ButtonBase, { Props as ButtonBaseProps } from '~/components/ButtonBase';
 
 import useStyles from './styles';
 
-const Button: React.FC<ButtonProps> = ({
+export type Props = ButtonBaseProps;
+
+const ButtonPrimary: React.FC<ButtonBaseProps> = ({
   children,
   onClick,
   startIcon,
   style,
   ...props
-}: ButtonProps): React.ReactElement<ButtonProps> => {
+}: ButtonBaseProps): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (
-    <MuiButton
+    <ButtonBase
       classes={{
         label: classes.buttonLabel,
         outlined: classes.buttonOutlined,
@@ -30,8 +33,8 @@ const Button: React.FC<ButtonProps> = ({
       {...props}
     >
       {children || null}
-    </MuiButton>
+    </ButtonBase>
   );
 };
 
-export default Button;
+export default ButtonPrimary;
