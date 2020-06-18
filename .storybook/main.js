@@ -6,6 +6,7 @@ const path = require('path');
 
 module.exports = {
   addons: [
+    '@storybook/addon-backgrounds/register',
     '@storybook/addon-viewport/register',
     '@storybook/addon-knobs/register',
     '@storybook/addon-actions/register',

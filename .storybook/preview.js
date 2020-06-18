@@ -5,9 +5,11 @@
 import * as React from 'react';
 import { addDecorator, addParameters } from '@storybook/react';
 import { configureActions } from '@storybook/addon-actions';
+import { grey } from '@material-ui/core/colors';
 import { muiTheme } from 'storybook-addon-material-ui';
 import { withInfo } from '@storybook/addon-info';
 
+import COLORS from '../src/constants/colors';
 import { theme } from '../src/styles/theme';
 
 addDecorator(
@@ -34,9 +36,30 @@ addDecorator(
 );
 
 addParameters({
+  backgrounds: [
+    {
+      default: true,
+      name: 'White',
+      value: COLORS.WHITE,
+    },
+    {
+      name: 'Grey',
+      value: grey[300],
+    },
+    {
+      name: 'Black',
+      value: COLORS.BLACK,
+    },
+  ],
+});
+
+addParameters({
   options: {
     showRoots: true,
   },
+});
+
+addParameters({
   viewport: {
     defaultViewport: 'responsive',
   },
