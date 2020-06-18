@@ -12,7 +12,7 @@ export default makeStyles({
     textTransform: 'none',
   },
   buttonOutlined: {
-    border: `2px solid ${COLORS.PRIMARY}`,
+    border: `2px solid red`,
     borderRadius: 20,
     color: COLORS.PRIMARY,
     fontSize: 14,
