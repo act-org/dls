@@ -10,13 +10,13 @@ import useStyles from './styles';
 
 export type Props = ButtonBaseProps;
 
-const ButtonPrimary: React.FC<ButtonBaseProps> = ({
+const ButtonPrimary: React.FC<Props> = ({
   children,
   onClick,
   startIcon,
   style,
   ...props
-}: ButtonBaseProps): React.ReactElement<any> => {
+}: Props): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (
