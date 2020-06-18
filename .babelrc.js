@@ -8,6 +8,7 @@ module.exports = api => {
   const isTestEnv = api.env('test');
 
   const plugins = [
+    'styled-jsx/babel',
     [
       'babel-plugin-root-import',
       {

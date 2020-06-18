@@ -13,11 +13,13 @@
     "@material-ui/lab": "^4.0.0-alpha.56",
     "@material-ui/styles": "^4.10.0",
     "@material-ui/system": "^4.9.14",
+    "clsx": "^1.1.1",
     "lodash": "^4.17.15",
     "mdi-material-ui": "^6.16.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-jsx": "^3.3.0"
+    "styled-jsx": "^3.3.0",
+    "validator": "^13.1.1"
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
@@ -43,6 +45,7 @@
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
     "@types/styled-jsx": "^2.2.8",
+    "@types/validator": "^13.0.0",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-root-import": "^6.5.0",
@@ -105,5 +108,5 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
