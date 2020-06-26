@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableEmptyState matches the snapshot 1`] = `
+<div
+  className="jsx-2320243942 container"
+>
+  <div
+    className="jsx-3088997186 container"
+  >
+    <p
+      className="MuiTypography-root makeStyles-descriptionRoot-1 makeStyles-descriptionRootWithoutTitle-3 MuiTypography-body1 MuiTypography-alignCenter"
+      style={
+        Object {
+          "maxWidth": undefined,
+        }
+      }
+    >
+      No Things Found
+    </p>
+  </div>
+</div>
+`;

@@ -14,7 +14,7 @@ export default {
   TEXT_PRIMARY: '#2d2d2d',
   TEXT_SECONDARY: '#8f8f8f',
   TRANSPARENT: 'rgba(255, 255, 255, 0)',
-  WHITE: '#fff',
+  WHITE: '#ffffff',
   WHITE_12: 'rgba(255, 255, 255, 0.12)',
   WHITE_38: 'rgba(255, 255, 255, 0.38)',
   WHITE_54: 'rgba(255, 255, 255, 0.54)',

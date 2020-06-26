@@ -3,5 +3,6 @@
  */
 import * as components from './components';
 import * as constants from './constants';
-export { components, constants };
+import * as types from './types';
+export { components, constants, types };
 //# sourceMappingURL=index.d.ts.map

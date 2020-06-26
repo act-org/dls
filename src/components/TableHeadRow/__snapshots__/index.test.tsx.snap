@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeadRow matches the snapshot 1`] = `
+<tr
+  className="MuiTableRow-root makeStyles-tableRowRoot-1"
+  role={null}
+>
+  child
+</tr>
+`;
