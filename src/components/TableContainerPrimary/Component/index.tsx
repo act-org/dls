@@ -7,7 +7,7 @@ import { Paper, PaperProps } from '@material-ui/core';
 
 import useStyles from './styles';
 
-const TableContainerComponent: React.FC<PaperProps> = (
+const Component: React.FC<PaperProps> = (
   props: PaperProps,
 ): React.ReactElement<any> => {
   const classes = useStyles();
@@ -23,4 +23,4 @@ const TableContainerComponent: React.FC<PaperProps> = (
   );
 };
 
-export default TableContainerComponent;
+export default Component;

@@ -5,12 +5,12 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 
-import TableContainerComponent from '.';
+import TableEmptyStatePrimary from '.';
 
-describe('TableContainerComponent', () => {
+describe('TableEmptyStatePrimary', () => {
   it('matches the snapshot', () => {
     const tree = renderer
-      .create(<TableContainerComponent elevation={0} />)
+      .create(<TableEmptyStatePrimary description="No Things Found" />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

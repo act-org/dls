@@ -5,13 +5,13 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 
-import TableBodyCell from '.';
+import TableBodyCellPrimary from '.';
 
-describe('TableBodyCell', () => {
+describe('TableBodyCellPrimary', () => {
   it('matches the snapshot', () => {
     const tree = renderer
       .create(
-        <TableBodyCell
+        <TableBodyCellPrimary
           dataKey="itemKey"
           sortObject={{
             dataKey: 'itemKey',
@@ -19,7 +19,7 @@ describe('TableBodyCell', () => {
           }}
         >
           child
-        </TableBodyCell>,
+        </TableBodyCellPrimary>,
       )
       .toJSON();
 

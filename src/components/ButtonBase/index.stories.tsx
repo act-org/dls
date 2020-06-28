@@ -15,7 +15,7 @@ export default {
   component: ButtonBase,
   parameters: {
     info: {
-      text: 'This is the primary variant of the Button component.',
+      text: 'This is the base variant of the Button component.',
     },
   },
   title: 'Atoms/Button',

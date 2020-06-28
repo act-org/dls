@@ -13,9 +13,9 @@ import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
 
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
-import TableBodyCell from '~/components/TableBodyCell';
-import TableContainer from '~/components/TableContainer';
-import TableEmptyState from '~/components/TableEmptyState';
+import TableBodyCellPrimary from '~/components/TableBodyCellPrimary';
+import TableContainerPrimary from '~/components/TableContainerPrimary';
+import TableEmptyStatePrimary from '~/components/TableEmptyStatePrimary';
 import TableHeadCell from '~/components/TableHeadCell';
 import TableHeadRow from '~/components/TableHeadRow';
 
@@ -40,7 +40,7 @@ const TABLE_CELLS = [
     searchable: false,
     sortable: true,
     style: {
-      width: 125,
+      width: 150,
     },
   },
   {
@@ -76,7 +76,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
   });
 
   return (
-    <TableContainer>
+    <TableContainerPrimary>
       <Table>
         <TableHead>
           <TableHeadRow>
@@ -103,16 +103,14 @@ export const Things: React.FC = (): React.ReactElement<any> => {
               <TableRow hover key={thing.id}>
                 {TABLE_CELLS.map(
                   (tableCell): React.ReactElement<any> => (
-                    <TableBodyCell<ThingExtended>
-                      dataKey={tableCell.dataKey}
+                    <TableBodyCellPrimary<ThingExtended>
                       key={tableCell.dataKey}
-                      sortObject={sortObject}
                       style={tableCell.style}
                     >
                       {tableCell.displayValueFn
                         ? tableCell.displayValueFn(thing)
                         : thing[tableCell.dataKey]}
-                    </TableBodyCell>
+                    </TableBodyCellPrimary>
                   ),
                 )}
               </TableRow>
@@ -122,9 +120,12 @@ export const Things: React.FC = (): React.ReactElement<any> => {
       </Table>
 
       {THINGS.length === 0 && (
-        <TableEmptyState description="No Things Found" Icon={BubbleChart} />
+        <TableEmptyStatePrimary
+          description="No Things Found"
+          Icon={BubbleChart}
+        />
       )}
-    </TableContainer>
+    </TableContainerPrimary>
   );
 };
 

@@ -7,6 +7,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
   paperRoot: {
-    border: `1px solid ${grey[400]}`,
+    border: `1px solid ${grey[200]}`,
   },
 });

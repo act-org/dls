@@ -10,12 +10,12 @@ import { SortObject } from '~/types';
 
 import useStyles from './styles';
 
-interface Props<T> extends TableCellProps {
+export interface Props<T> extends TableCellProps {
   dataKey?: string;
   sortObject?: SortObject<T>;
 }
 
-const TableBodyCell = <T,>({
+const TableBodyCellPrimary = <T,>({
   dataKey,
   sortObject,
   ...otherProps
@@ -41,4 +41,4 @@ const TableBodyCell = <T,>({
   );
 };
 
-export default TableBodyCell;
+export default TableBodyCellPrimary;

@@ -9,8 +9,10 @@ import EmptyStatePrimary, {
   Props as EmptyStatePrimaryProps,
 } from '~/components/EmptyStatePrimary';
 
-const TableEmptyState: React.FC<EmptyStatePrimaryProps> = (
-  props: EmptyStatePrimaryProps,
+export type Props = EmptyStatePrimaryProps;
+
+const TableEmptyStatePrimary: React.FC<Props> = (
+  props: Props,
 ): React.ReactElement<any> => (
   <>
     <style jsx>
@@ -29,4 +31,4 @@ const TableEmptyState: React.FC<EmptyStatePrimaryProps> = (
   </>
 );
 
-export default TableEmptyState;
+export default TableEmptyStatePrimary;

@@ -16,7 +16,7 @@ import useStyles from './styles';
 const ArrowDownIcon = getIcon('general.arrow.down');
 const ArrowUpIcon = getIcon('general.arrow.up');
 
-interface Props<T> {
+export interface Props<T> {
   children: any;
   dataKey: string;
   setSortObject: (value: SortObject<T>) => void;
