@@ -3,6 +3,6 @@
  */
 import * as React from 'react';
 import { PaperProps } from '@material-ui/core';
-declare const TableContainerComponent: React.FC<PaperProps>;
-export default TableContainerComponent;
+declare const Component: React.FC<PaperProps>;
+export default Component;
 //# sourceMappingURL=index.d.ts.map

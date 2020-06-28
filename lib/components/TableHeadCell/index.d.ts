@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 import { SortObject } from '~/types';
-interface Props<T> {
+export interface Props<T> {
     children: any;
     dataKey: string;
     setSortObject: (value: SortObject<T>) => void;
