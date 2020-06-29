@@ -5,10 +5,10 @@
 import * as React from 'react';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
-import InputLabelBase from '.';
+import InputLabelPrimary from '.';
 
-export const Base = (): React.ReactElement<any> => (
-  <InputLabelBase
+export const Primary = (): React.ReactElement<any> => (
+  <InputLabelPrimary
     color={select(
       'Color',
       {
@@ -20,17 +20,20 @@ export const Base = (): React.ReactElement<any> => (
     disabled={boolean('Disabled?', false)}
     error={boolean('Error?', false)}
     focused={boolean('Focused?', false)}
-    required={boolean('Required?', false)}
+    required={boolean('Required?', true)}
+    style={{
+      width: 300,
+    }}
   >
     {text('Label', 'Input Label')}
-  </InputLabelBase>
+  </InputLabelPrimary>
 );
 
 export default {
-  component: InputLabelBase,
+  component: InputLabelPrimary,
   parameters: {
     info: {
-      text: 'This is the base variant of the InputLabel component.',
+      text: 'This is the primary variant of the InputLabel component.',
     },
   },
   title: 'Atoms/InputLabel',

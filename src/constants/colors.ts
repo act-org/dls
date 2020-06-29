@@ -11,6 +11,7 @@ export default {
   LINK: '#1976d2',
   PRIMARY: '#0079ad',
   PRIMARY_DARK: '#003c92',
+  REQUIRED: '#ff0000',
   TEXT_PRIMARY: '#2d2d2d',
   TEXT_SECONDARY: '#8f8f8f',
   TRANSPARENT: 'rgba(255, 255, 255, 0)',

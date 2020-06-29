@@ -10,6 +10,7 @@ declare const _default: {
     LINK: string;
     PRIMARY: string;
     PRIMARY_DARK: string;
+    REQUIRED: string;
     TEXT_PRIMARY: string;
     TEXT_SECONDARY: string;
     TRANSPARENT: string;

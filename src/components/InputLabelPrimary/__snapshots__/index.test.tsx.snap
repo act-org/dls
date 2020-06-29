@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputLabelPrimary matches the snapshot 1`] = `
+<div>
+  <label
+    class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-1 MuiInputLabel-animated"
+  >
+    <div
+      class="label-split"
+    >
+      <span>
+        InputLabel
+      </span>
+      <span
+        class="required"
+      >
+        Required
+      </span>
+    </div>
+  </label>
+</div>
+`;
