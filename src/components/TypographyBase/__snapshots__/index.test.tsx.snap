@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypographyBase matches the snapshot 1`] = `
+<div>
+  <p
+    class="MuiTypography-root MuiTypography-body1"
+  >
+    This is a test.
+  </p>
+</div>
+`;
