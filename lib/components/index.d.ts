@@ -29,6 +29,8 @@ export { default as IconButtonBase } from './IconButtonBase';
 export type { Props as IconButtonBaseProps } from './IconButtonBase';
 export { default as IconButtonPrimary } from './IconButtonPrimary';
 export type { Props as IconButtonPrimaryProps } from './IconButtonPrimary';
+export { default as InputAdornmentBase } from './InputAdornmentBase';
+export type { Props as InputAdornmentBaseProps } from './InputAdornmentBase';
 export { default as InputBase } from './InputBase';
 export type { Props as InputBaseProps } from './InputBase';
 export { default as InputLabelBase } from './InputLabelBase';
