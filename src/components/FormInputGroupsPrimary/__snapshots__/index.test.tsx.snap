@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-1 MuiGrid-spacing-xs-4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
+    >
+      <style>
+        
+          .contentContainer {
+            margin-bottom: 6px;
+          }
+          .inputContainer {
+            position: relative;
+          }
+        
+      </style>
+      <div
+        class="contentContainer"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-7 MuiInputLabel-animated"
+        >
+          <div
+            class="label-split"
+          >
+            <span>
+              Input 1
+            </span>
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+      </div>
+      <div
+        class="inputContainer"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          required=""
+        >
+          <input
+            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            placeholder="Input 1"
+            required=""
+            type="text"
+            value="value1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
+    >
+      <style>
+        
+          .contentContainer {
+            margin-bottom: 6px;
+          }
+          .inputContainer {
+            position: relative;
+          }
+        
+      </style>
+      <div
+        class="contentContainer"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-7 MuiInputLabel-animated"
+        >
+          <div
+            class="label-split"
+          >
+            <span>
+              Input 2
+            </span>
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+      </div>
+      <div
+        class="inputContainer"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          required=""
+        >
+          <input
+            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 makeStyles-inputBaseInputPassword-4 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            placeholder="Input 2"
+            required=""
+            type="password"
+            value="value2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-1 MuiGrid-spacing-xs-4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
+    >
+      <style>
+        
+          .contentContainer {
+            margin-bottom: 6px;
+          }
+          .inputContainer {
+            position: relative;
+          }
+        
+      </style>
+      <div
+        class="contentContainer"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-7 MuiInputLabel-animated"
+        >
+          <div
+            class="label-split"
+          >
+            <span>
+              Input 3
+            </span>
+          </div>
+        </label>
+      </div>
+      <div
+        class="inputContainer"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+        >
+          <input
+            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            placeholder="Input 3"
+            type="text"
+            value="value3"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

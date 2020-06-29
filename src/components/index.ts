@@ -11,6 +11,9 @@ export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
 export { default as EmptyStatePrimary } from './EmptyStatePrimary';
 export type { Props as EmptyStatePrimaryProps } from './EmptyStatePrimary';
 
+export { default as FormInputGroupsPrimary } from './FormInputGroupsPrimary';
+export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrimary';
+
 export { default as FormInputPrimary } from './FormInputPrimary';
 export type { Props as FormInputPrimaryProps } from './FormInputPrimary';
 
