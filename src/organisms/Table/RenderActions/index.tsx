@@ -5,7 +5,7 @@
 import * as React from 'react';
 import { Button, Grid, Typography } from '@material-ui/core';
 
-import getIcon from '~/helpers/getIcon';
+import { CloudDownload, Sync } from '~/icons';
 
 import type { Thing } from '../types';
 
@@ -20,7 +20,7 @@ const RenderActions: React.FC<Props> = ({
 }: Props): React.ReactElement<any> => {
   const actions = [
     {
-      Icon: getIcon('general.download'),
+      Icon: CloudDownload,
       label: 'Download',
       onClick: (e: any): void => {
         e.preventDefault();
@@ -30,7 +30,7 @@ const RenderActions: React.FC<Props> = ({
       },
     },
     {
-      Icon: getIcon('general.refresh'),
+      Icon: Sync,
       label: 'Regenerate',
       onClick: (e: any): void => {
         e.preventDefault();

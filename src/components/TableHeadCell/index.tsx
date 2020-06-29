@@ -6,15 +6,12 @@ import * as React from 'react';
 import clsx from 'clsx';
 import { Grid, TableCell, Typography } from '@material-ui/core';
 
+import { ChevronDown, ChevronUp } from '~/icons';
 import COLORS from '~/constants/colors';
-import getIcon from '~/helpers/getIcon';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
 import useStyles from './styles';
-
-const ArrowDownIcon = getIcon('general.arrow.down');
-const ArrowUpIcon = getIcon('general.arrow.up');
 
 export interface Props<T> {
   children: any;
@@ -89,7 +86,7 @@ const TableHeadCell = <T,>({
             root: classes.sortContainerRoot,
           }}
         >
-          <ArrowUpIcon
+          <ChevronUp
             classes={{
               root: classes.sortIconRoot,
             }}
@@ -104,7 +101,7 @@ const TableHeadCell = <T,>({
             viewBox="9 3 5 15"
           />
 
-          <ArrowDownIcon
+          <ChevronDown
             classes={{
               root: classes.sortIconRoot,
             }}
