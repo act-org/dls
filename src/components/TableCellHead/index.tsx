@@ -4,10 +4,10 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { Grid } from '@material-ui/core';
 
 import { ChevronDown, ChevronUp } from '~/icons';
 import COLORS from '~/constants/colors';
+import GridContainer from '~/components/GridContainer';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 import TableCellBase, {
@@ -87,7 +87,7 @@ const TableCellHead = <T,>({
       </TypographyBase>
 
       {sortable && (
-        <Grid
+        <GridContainer
           classes={{
             root: classes.sortContainerRoot,
           }}
@@ -121,7 +121,7 @@ const TableCellHead = <T,>({
             style={getStyleForIcon(SORT_DIRECTION_TYPES.DESC)}
             viewBox="9 7 5 15"
           />
-        </Grid>
+        </GridContainer>
       )}
     </TableCellBase>
   );

@@ -5,11 +5,12 @@
 import * as React from 'react';
 import clsx from 'clsx';
 import { isString } from 'lodash';
-import { Grid } from '@material-ui/core';
 
 import ButtonPrimary, {
   Props as ButtonPrimaryProps,
 } from '~/components/ButtonPrimary';
+import GridContainer from '~/components/GridContainer';
+import GridItem from '~/components/GridItem';
 import TypographyBase from '~/components/TypographyBase';
 
 import useStyles from './styles';
@@ -56,25 +57,23 @@ const EmptyStatePrimary: React.FC<Props> = ({
         )}
 
         {title && (
-          <Grid
+          <GridContainer
             alignItems="center"
             classes={{
               container: clsx(classes.titleGridContainer),
             }}
-            container
             justify="center"
           >
-            <Grid
+            <GridItem
               classes={{
                 item: classes.titleGridItem,
               }}
-              item
             >
               <TypographyBase align="center" variant="h6">
                 {title}
               </TypographyBase>
-            </Grid>
-          </Grid>
+            </GridItem>
+          </GridContainer>
         )}
 
         {description && (

@@ -3,9 +3,10 @@
  */
 
 import * as React from 'react';
-import { Grid } from '@material-ui/core';
 
 import ButtonBase from '~/components/ButtonBase';
+import GridContainer from '~/components/GridContainer';
+import GridItem from '~/components/GridItem';
 import TypographyBase from '~/components/TypographyBase';
 import { CloudDownload, Sync } from '~/icons';
 
@@ -48,14 +49,13 @@ const RenderActions: React.FC<Props> = ({
   return (
     <>
       {actions.length > 0 && (
-        <Grid container>
+        <GridContainer>
           {actions.map(
             (action): React.ReactElement<any> => (
-              <Grid
+              <GridItem
                 classes={{
                   item: classes.gridItemAction,
                 }}
-                item
                 key={action.label}
               >
                 <ButtonBase
@@ -76,10 +76,10 @@ const RenderActions: React.FC<Props> = ({
                     {action.label}
                   </TypographyBase>
                 </ButtonBase>
-              </Grid>
+              </GridItem>
             ),
           )}
-        </Grid>
+        </GridContainer>
       )}
 
       {actions.length === 0 && 'N/A'}

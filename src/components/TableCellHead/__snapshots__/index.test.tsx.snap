@@ -12,7 +12,7 @@ exports[`TableCellHead matches the snapshot 1`] = `
       child
     </p>
     <div
-      class="MuiGrid-root makeStyles-sortContainerRoot-1"
+      class="MuiGrid-root makeStyles-sortContainerRoot-1 MuiGrid-container"
     >
       <svg
         aria-hidden="true"
