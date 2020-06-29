@@ -57,7 +57,7 @@ const FormInputPrimary: React.FC<Props> = ({
     <>
       <style jsx>
         {`
-          .contentContainer {
+          .labelContainer {
             margin-bottom: ${DIMS.LAYOUT_PADDING / 2}px;
           }
           .inputContainer {
@@ -67,7 +67,7 @@ const FormInputPrimary: React.FC<Props> = ({
       </style>
 
       {labelProps && (
-        <div className="contentContainer">
+        <div className="labelContainer">
           <InputLabelPrimary
             disabled={disabled}
             required={required}
