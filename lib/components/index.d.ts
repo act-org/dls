@@ -47,6 +47,8 @@ export { default as TableContainerBase } from './TableContainerBase';
 export type { Props as TableContainerBaseProps } from './TableContainerBase';
 export { default as TableContainerPrimary } from './TableContainerPrimary';
 export type { Props as TableContainerPrimaryProps } from './TableContainerPrimary';
+export { default as TableRowBase } from './TableRowBase';
+export type { Props as TableRowBaseProps } from './TableRowBase';
 export { default as TypographyBase } from './TypographyBase';
 export type { Props as TypographyBaseProps } from './TypographyBase';
 //# sourceMappingURL=index.d.ts.map
