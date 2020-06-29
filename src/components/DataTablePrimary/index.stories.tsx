@@ -28,7 +28,7 @@ export const Primary = (): React.ReactElement<any> => {
           searchable: true,
           sortable: true,
           style: {
-            width: 75,
+            width: 50,
           },
         },
         {
@@ -48,7 +48,7 @@ export const Primary = (): React.ReactElement<any> => {
           searchable: false,
           sortable: true,
           style: {
-            width: 150,
+            width: 100,
           },
         },
       ]}
