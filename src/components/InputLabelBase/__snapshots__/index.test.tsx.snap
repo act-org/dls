@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputLabelBase matches the snapshot 1`] = `
+<div>
+  <label
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated Mui-required Mui-required"
+  >
+    InputLabel
+    <span
+      aria-hidden="true"
+      class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+    >
+       
+      *
+    </span>
+  </label>
+</div>
+`;

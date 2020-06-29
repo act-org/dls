@@ -32,6 +32,9 @@ export type { Props as IconButtonPrimaryProps } from './IconButtonPrimary';
 export { default as InputBase } from './InputBase';
 export type { Props as InputBaseProps } from './InputBase';
 
+export { default as InputLabelBase } from './InputLabelBase';
+export type { Props as InputLabelBaseProps } from './InputLabelBase';
+
 export { default as LinkBase } from './LinkBase';
 export type { Props as LinkBaseProps } from './LinkBase';
 
