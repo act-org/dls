@@ -11,7 +11,7 @@ import { Plus } from 'mdi-material-ui';
 
 import IconButtonPrimary from '.';
 
-export const primary = (): React.ReactElement<any> => (
+export const Primary = (): React.ReactElement<any> => (
   <IconButtonPrimary
     disabled={boolean('Disabled?', false)}
     onClick={action('onClick()')}

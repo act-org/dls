@@ -7,7 +7,7 @@ import { select } from '@storybook/addon-knobs';
 
 import GridContainer from '.';
 
-export const container = (): React.ReactElement<any> => (
+export const Container = (): React.ReactElement<any> => (
   <GridContainer
     alignContent={select(
       'AlignContent',

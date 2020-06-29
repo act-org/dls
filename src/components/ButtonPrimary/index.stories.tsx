@@ -11,7 +11,7 @@ import { Plus } from 'mdi-material-ui';
 
 import ButtonPrimary from '.';
 
-export const primary = (): React.ReactElement<any> => (
+export const Primary = (): React.ReactElement<any> => (
   <ButtonPrimary
     disabled={boolean('Disabled?', false)}
     endIcon={boolean('End Icon?', false) ? <Plus /> : undefined}

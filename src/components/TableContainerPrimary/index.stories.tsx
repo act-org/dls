@@ -8,7 +8,7 @@ import * as React from 'react';
 
 import TableContainerPrimary from '.';
 
-export const primary = (): React.ReactElement<any> => <TableContainerPrimary />;
+export const Primary = (): React.ReactElement<any> => <TableContainerPrimary />;
 
 export default {
   component: TableContainerPrimary,

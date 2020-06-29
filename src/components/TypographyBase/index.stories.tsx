@@ -7,7 +7,7 @@ import { select, text } from '@storybook/addon-knobs';
 
 import TypographyBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <TypographyBase
     color={select(
       'Color',

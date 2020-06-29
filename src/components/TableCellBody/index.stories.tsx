@@ -9,7 +9,7 @@ import { select, text } from '@storybook/addon-knobs';
 
 import TableCellBody from '.';
 
-export const body = (): React.ReactElement<any> => (
+export const Body = (): React.ReactElement<any> => (
   <TableCellBody
     dataKey="itemKey"
     sortObject={{

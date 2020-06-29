@@ -7,7 +7,7 @@ import { select, text as knobText } from '@storybook/addon-knobs';
 
 import LinkText from '.';
 
-export const text = (): React.ReactElement<any> => (
+export const Text = (): React.ReactElement<any> => (
   <LinkText
     target={select(
       'Target',

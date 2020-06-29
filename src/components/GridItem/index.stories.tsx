@@ -11,7 +11,7 @@ import GridContainer from '~/components/GridContainer';
 
 import GridItem from '.';
 
-export const item = (): React.ReactElement<any> => (
+export const Item = (): React.ReactElement<any> => (
   <GridContainer
     spacing={select(
       'Spacing',

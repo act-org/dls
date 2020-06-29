@@ -6,7 +6,7 @@ import * as React from 'react';
 
 import GridBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <GridBase>Grid Base</GridBase>
 );
 

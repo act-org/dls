@@ -8,7 +8,7 @@ import * as React from 'react';
 
 import LinkBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <LinkBase target="_blank" to="https://www.act.org">
     Click Me
   </LinkBase>

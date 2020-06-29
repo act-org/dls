@@ -7,7 +7,7 @@ import { text } from '@storybook/addon-knobs';
 
 import TableCellBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <TableCellBase>{text('Text', 'Table Cell')}</TableCellBase>
 );
 

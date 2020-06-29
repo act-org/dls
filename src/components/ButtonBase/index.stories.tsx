@@ -8,7 +8,7 @@ import { text } from '@storybook/addon-knobs';
 
 import ButtonBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <ButtonBase onClick={action('onClick()')}>
     {text('Text', 'Click Me')}
   </ButtonBase>

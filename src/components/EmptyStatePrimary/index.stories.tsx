@@ -9,7 +9,7 @@ import { action } from '@storybook/addon-actions';
 
 import EmptyStatePrimary from '.';
 
-export const primary = (): React.ReactElement<any> => (
+export const Primary = (): React.ReactElement<any> => (
   <EmptyStatePrimary
     buttonProps={
       boolean('Button?', true)

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputBase matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiInput-root MuiInput-underline"
+  >
+    <input
+      class="MuiInputBase-input MuiInput-input"
+      type="text"
+      value="Value"
+    />
+  </div>
+</div>
+`;

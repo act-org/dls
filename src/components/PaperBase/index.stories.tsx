@@ -9,7 +9,7 @@ import { boolean, select } from '@storybook/addon-knobs';
 
 import PaperBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <PaperBase
     elevation={select(
       'Elevation',

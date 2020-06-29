@@ -8,7 +8,7 @@ import { Plus } from 'mdi-material-ui';
 
 import IconButtonBase from '.';
 
-export const base = (): React.ReactElement<any> => (
+export const Base = (): React.ReactElement<any> => (
   <IconButtonBase onClick={action('onClick()')}>
     <Plus />
   </IconButtonBase>

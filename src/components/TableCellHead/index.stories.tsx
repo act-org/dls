@@ -10,7 +10,7 @@ import { number, select, text } from '@storybook/addon-knobs';
 
 import TableCellHead from '.';
 
-export const head = (): React.ReactElement<any> => (
+export const Head = (): React.ReactElement<any> => (
   <TableCellHead
     dataKey="itemKey"
     setSortObject={noop}
