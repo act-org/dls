@@ -11,6 +11,12 @@ export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
 export { default as EmptyStatePrimary } from './EmptyStatePrimary';
 export type { Props as EmptyStatePrimaryProps } from './EmptyStatePrimary';
 
+export { default as GridBase } from './GridBase';
+export type { Props as GridBaseProps } from './GridBase';
+
+export { default as GridContainer } from './GridContainer';
+export type { Props as GridContainerProps } from './GridContainer';
+
 export { default as IconBase } from './IconBase';
 export type { Props as IconBaseProps } from './IconBase';
 

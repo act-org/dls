@@ -4,8 +4,8 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { Grid } from '@material-ui/core';
 import { isString } from 'lodash';
+import { Grid } from '@material-ui/core';
 
 import ButtonPrimary, {
   Props as ButtonPrimaryProps,
