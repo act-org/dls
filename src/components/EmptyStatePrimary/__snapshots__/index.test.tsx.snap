@@ -13,7 +13,6 @@ Object {
             flex: 1;
             flex-direction: column;
           }
-          undefined
         
       </style>
       <div
@@ -38,12 +37,12 @@ Object {
           Description
         </p>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-outlined-15"
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-outlined-9"
           tabindex="0"
           type="button"
         >
           <span
-            class="MuiButton-label makeStyles-label-14"
+            class="MuiButton-label makeStyles-label-8"
           >
             Button Title
           </span>
@@ -63,7 +62,6 @@ Object {
             flex: 1;
             flex-direction: column;
           }
-          undefined
         
     </style>
     <div
@@ -88,12 +86,12 @@ Object {
         Description
       </p>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-outlined-15"
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-outlined-9"
         tabindex="0"
         type="button"
       >
         <span
-          class="MuiButton-label makeStyles-label-14"
+          class="MuiButton-label makeStyles-label-8"
         >
           Button Title
         </span>

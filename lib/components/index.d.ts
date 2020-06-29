@@ -9,8 +9,6 @@ export { default as LinkBase } from './LinkBase';
 export type { Props as LinkBaseProps } from './LinkBase';
 export { default as LinkText } from './LinkText';
 export type { Props as LinkTextProps } from './LinkText';
-export { default as EmptyStateBase } from './EmptyStateBase';
-export type { Props as EmptyStateBaseProps } from './EmptyStateBase';
 export { default as EmptyStatePrimary } from './EmptyStatePrimary';
 export type { Props as EmptyStatePrimaryProps } from './EmptyStatePrimary';
 //# sourceMappingURL=index.d.ts.map

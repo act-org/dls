@@ -23,7 +23,7 @@ exports[`TableHeadCell matches the snapshot 1`] = `
       role="button"
       style={
         Object {
-          "color": "#fff",
+          "color": "#ffffff",
         }
       }
       viewBox="9 3 5 15"

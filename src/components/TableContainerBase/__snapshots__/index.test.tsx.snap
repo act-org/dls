@@ -2,6 +2,6 @@
 
 exports[`TableContainer matches the snapshot 1`] = `
 <div
-  className="MuiPaper-root makeStyles-paperRoot-1 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
+  className="MuiTableContainer-root"
 />
 `;

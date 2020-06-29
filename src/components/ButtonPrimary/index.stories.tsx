@@ -14,6 +14,7 @@ import ButtonPrimary from '.';
 export const primary = (): React.ReactElement<any> => (
   <ButtonPrimary
     disabled={boolean('Disabled?', false)}
+    endIcon={boolean('End Icon?', false) ? <PlusIcon /> : undefined}
     onClick={action('onClick()')}
     size={select(
       'Size',

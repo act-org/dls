@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableBodyCell matches the snapshot 1`] = `
+exports[`TableBodyCellPrimary matches the snapshot 1`] = `
 <td
   aria-sort={null}
   className="MuiTableCell-root makeStyles-tableCellRoot-1 makeStyles-tableCellRootSortApplied-2 MuiTableCell-paddingNone"
