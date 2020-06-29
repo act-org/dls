@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataTablePrimary matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-paperRoot-1 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <div
+            class="MuiTableCell-root makeStyles-tableCellRoot-4 makeStyles-tableCellRootSortable-5 makeStyles-tableCellRootSortApplied-6 MuiTableCell-head"
+            role="columnheader"
+            scope="col"
+            style="width: 75px;"
+          >
+            <p
+              class="MuiTypography-root makeStyles-typographyRoot-7 MuiTypography-body1"
+            >
+              ID
+            </p>
+            <div
+              class="MuiGrid-root makeStyles-sortContainerRoot-2 MuiGrid-container"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-sortIconRoot-3"
+                focusable="false"
+                role="button"
+                style="color: rgb(255, 255, 255);"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-sortIconRoot-3"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="MuiTableCell-root makeStyles-tableCellRoot-4 makeStyles-tableCellRootSortable-5 MuiTableCell-head"
+            role="columnheader"
+            scope="col"
+            style="width: 100px;"
+          >
+            <p
+              class="MuiTypography-root makeStyles-typographyRoot-7 MuiTypography-body1"
+            >
+              Name
+            </p>
+            <div
+              class="MuiGrid-root makeStyles-sortContainerRoot-2 MuiGrid-container"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-sortIconRoot-3"
+                focusable="false"
+                role="button"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-sortIconRoot-3"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 75px;"
+          >
+            1
+          </td>
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 100px;"
+          >
+            Thing 1
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 75px;"
+          >
+            2
+          </td>
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 100px;"
+          >
+            Thing 2
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 75px;"
+          >
+            3
+          </td>
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 100px;"
+          >
+            Thing 3
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 75px;"
+          >
+            4
+          </td>
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 100px;"
+          >
+            Thing 4
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 75px;"
+          >
+            5
+          </td>
+          <td
+            class="MuiTableCell-root makeStyles-tableCellRoot-8 MuiTableCell-body MuiTableCell-paddingNone"
+            role="cell"
+            scope="row"
+            style="width: 100px;"
+          >
+            Thing 5
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
