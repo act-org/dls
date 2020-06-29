@@ -17,7 +17,7 @@ import TableCellBody from '~/components/TableCellBody';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
 // import TableEmptyStatePrimary from '~/components/TableEmptyStatePrimary';
 import TableCellHead from '~/components/TableCellHead';
-import TableHeadRow from '~/components/TableHeadRow';
+import TableRowHead from '~/components/TableRowHead';
 
 import RenderActions from './RenderActions';
 import type { Thing, ThingExtended } from './types';
@@ -79,7 +79,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
     <TableContainerPrimary>
       <Table>
         <TableHead>
-          <TableHeadRow>
+          <TableRowHead>
             {TABLE_CELLS.map(
               (tableCell): React.ReactElement<any> => (
                 <TableCellHead<ThingExtended>
@@ -94,7 +94,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
                 </TableCellHead>
               ),
             )}
-          </TableHeadRow>
+          </TableRowHead>
         </TableHead>
 
         <TableBody>

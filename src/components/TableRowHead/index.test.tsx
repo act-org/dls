@@ -6,11 +6,11 @@ import * as React from 'react';
 
 import render from '~/helpers/test/render';
 
-import TableHeadRow from '.';
+import TableRowHead from '.';
 
-describe('TableHeadRow', () => {
+describe('TableRowHead', () => {
   it('matches the snapshot', () => {
-    const { container } = render(<TableHeadRow>child</TableHeadRow>);
+    const { container } = render(<TableRowHead>TableRow</TableRowHead>);
 
     expect(container).toMatchSnapshot();
   });
