@@ -5,6 +5,7 @@
 import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
+import COLORS from '~/constants/colors';
 import DIMS from '~/constants/dims';
 
 export default makeStyles(({ typography }: any) => ({
@@ -24,6 +25,7 @@ export default makeStyles(({ typography }: any) => ({
     userSelect: 'auto',
   },
   tableCellRoot: {
+    backgroundColor: COLORS.PRIMARY,
     border: 'none',
     boxSizing: 'border-box',
     height: DIMS.HEIGHTS.TABLE_HEADER,

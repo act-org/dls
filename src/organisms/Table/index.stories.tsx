@@ -9,7 +9,7 @@ import * as React from 'react';
 // import { boolean, select, text } from '@storybook/addon-knobs';
 // import { BubbleChart } from '@material-ui/icons';
 import moment from 'moment';
-import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
+import { Table, TableBody, TableHead } from '@material-ui/core';
 
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
@@ -17,7 +17,7 @@ import TableCellBody from '~/components/TableCellBody';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
 // import TableEmptyStatePrimary from '~/components/TableEmptyStatePrimary';
 import TableCellHead from '~/components/TableCellHead';
-import TableRowHead from '~/components/TableRowHead';
+import TableRowBase from '~/components/TableRowBase';
 
 import RenderActions from './RenderActions';
 import type { Thing, ThingExtended } from './types';
@@ -79,7 +79,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
     <TableContainerPrimary>
       <Table>
         <TableHead>
-          <TableRowHead>
+          <TableRowBase>
             {TABLE_CELLS.map(
               (tableCell): React.ReactElement<any> => (
                 <TableCellHead<ThingExtended>
@@ -94,13 +94,13 @@ export const Things: React.FC = (): React.ReactElement<any> => {
                 </TableCellHead>
               ),
             )}
-          </TableRowHead>
+          </TableRowBase>
         </TableHead>
 
         <TableBody>
           {THINGS.map(
             (thing): React.ReactElement<any> => (
-              <TableRow hover key={thing.id}>
+              <TableRowBase hover key={thing.id}>
                 {TABLE_CELLS.map(
                   (tableCell): React.ReactElement<any> => (
                     <TableCellBody<ThingExtended>
@@ -113,7 +113,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
                     </TableCellBody>
                   ),
                 )}
-              </TableRow>
+              </TableRowBase>
             ),
           )}
         </TableBody>
