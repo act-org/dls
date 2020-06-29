@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 import { SortObject } from '~/types';
-interface Cell {
+interface Column {
     dataKey: string;
     displayValueFn?: (item: any) => void;
     label: string;
@@ -12,12 +12,12 @@ interface Cell {
     style?: React.CSSProperties;
 }
 export interface Props {
-    cells: Cell[];
+    columns: Column[];
     items: any[];
     searchQuery?: string;
     setSortObject: (sortObject: SortObject) => void;
     sortObject: SortObject;
 }
-declare const TablePrimary: React.FC<Props>;
-export default TablePrimary;
+declare const DataTablePrimary: React.FC<Props>;
+export default DataTablePrimary;
 //# sourceMappingURL=index.d.ts.map

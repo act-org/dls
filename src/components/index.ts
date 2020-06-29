@@ -8,6 +8,9 @@ export type { Props as ButtonBaseProps } from './ButtonBase';
 export { default as ButtonPrimary } from './ButtonPrimary';
 export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
 
+export { default as DataTablePrimary } from './DataTablePrimary';
+export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
+
 export { default as EmptyStatePrimary } from './EmptyStatePrimary';
 export type { Props as EmptyStatePrimaryProps } from './EmptyStatePrimary';
 
@@ -70,9 +73,6 @@ export type { Props as TableContainerBaseProps } from './TableContainerBase';
 
 export { default as TableContainerPrimary } from './TableContainerPrimary';
 export type { Props as TableContainerPrimaryProps } from './TableContainerPrimary';
-
-export { default as TablePrimary } from './TablePrimary';
-export type { Props as TablePrimaryProps } from './TablePrimary';
 
 export { default as TableRowBase } from './TableRowBase';
 export type { Props as TableRowBaseProps } from './TableRowBase';

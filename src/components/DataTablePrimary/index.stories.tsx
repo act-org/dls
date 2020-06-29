@@ -8,7 +8,7 @@ import moment from 'moment';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
-import TablePrimary from '.';
+import DataTablePrimary from '.';
 
 export const Primary = (): React.ReactElement<any> => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
@@ -17,8 +17,8 @@ export const Primary = (): React.ReactElement<any> => {
   });
 
   return (
-    <TablePrimary
-      cells={[
+    <DataTablePrimary
+      columns={[
         {
           dataKey: 'id',
           label: 'ID',
@@ -62,11 +62,11 @@ export const Primary = (): React.ReactElement<any> => {
 };
 
 export default {
-  component: TablePrimary,
+  component: DataTablePrimary,
   parameters: {
     info: {
-      text: 'This is the primary variant of the Table component.',
+      text: 'This is the primary variant of the DataTable component.',
     },
   },
-  title: 'Organisms/Table',
+  title: 'Organisms/DataTable',
 };

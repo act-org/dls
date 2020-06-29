@@ -14,7 +14,7 @@ import TableCellHead from '~/components/TableCellHead';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
 import TableRowBase from '~/components/TableRowBase';
 
-interface Cell {
+interface Column {
   dataKey: string;
   displayValueFn?: (item: any) => void;
   label: string;
@@ -24,15 +24,15 @@ interface Cell {
 }
 
 export interface Props {
-  cells: Cell[];
+  columns: Column[];
   items: any[];
   searchQuery?: string;
   setSortObject: (sortObject: SortObject) => void;
   sortObject: SortObject;
 }
 
-const TablePrimary: React.FC<Props> = ({
-  cells,
+const DataTablePrimary: React.FC<Props> = ({
+  columns,
   items: originalItems,
   searchQuery = '',
   setSortObject,
@@ -43,7 +43,7 @@ const TablePrimary: React.FC<Props> = ({
 
   // search items
   const searchableKeys = compact(
-    cells.map(({ dataKey, searchable }): string | null =>
+    columns.map(({ dataKey, searchable }): string | null =>
       searchable ? dataKey : null,
     ),
   );
@@ -56,17 +56,17 @@ const TablePrimary: React.FC<Props> = ({
       <Table>
         <TableHead>
           <TableRowBase>
-            {cells.map(
-              (cell): React.ReactElement<any> => (
+            {columns.map(
+              (column): React.ReactElement<any> => (
                 <TableCellHead
-                  dataKey={cell.dataKey}
-                  key={cell.dataKey}
+                  dataKey={column.dataKey}
+                  key={column.dataKey}
                   setSortObject={setSortObject}
-                  sortable={cell.sortable}
+                  sortable={column.sortable}
                   sortObject={sortObject}
-                  style={cell.style}
+                  style={column.style}
                 >
-                  {cell.label}
+                  {column.label}
                 </TableCellHead>
               ),
             )}
@@ -78,12 +78,12 @@ const TablePrimary: React.FC<Props> = ({
             (item, i): React.ReactElement<any> => (
               // eslint-disable-next-line react/no-array-index-key
               <TableRowBase key={i}>
-                {cells.map(
-                  (cell): React.ReactElement<any> => (
-                    <TableCellBody key={cell.dataKey} style={cell.style}>
-                      {cell.displayValueFn
-                        ? cell.displayValueFn(item)
-                        : item[cell.dataKey]}
+                {columns.map(
+                  (column): React.ReactElement<any> => (
+                    <TableCellBody key={column.dataKey} style={column.style}>
+                      {column.displayValueFn
+                        ? column.displayValueFn(item)
+                        : item[column.dataKey]}
                     </TableCellBody>
                   ),
                 )}
@@ -96,4 +96,4 @@ const TablePrimary: React.FC<Props> = ({
   );
 };
 
-export default TablePrimary;
+export default DataTablePrimary;
