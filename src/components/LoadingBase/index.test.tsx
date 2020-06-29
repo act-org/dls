@@ -6,13 +6,11 @@ import * as React from 'react';
 
 import render from '~/helpers/test/render';
 
-import CircularProgressBase from '.';
+import LoadingBase from '.';
 
-describe('CircularProgressBase', () => {
+describe('LoadingBase', () => {
   it('matches the snapshot', () => {
-    const { container } = render(
-      <CircularProgressBase size={30} thickness={4} />,
-    );
+    const { container } = render(<LoadingBase title="Loading..." />);
 
     expect(container).toMatchSnapshot();
   });

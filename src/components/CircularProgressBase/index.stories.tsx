@@ -13,7 +13,7 @@ export const Base = (): React.ReactElement<any> => {
   React.useEffect((): (() => any) => {
     const interval = setInterval((): void => {
       setValue((v): number => (v >= 100 ? 0 : v + 1));
-    }, 100);
+    }, 50);
 
     return (): any => clearInterval(interval);
   }, []);
