@@ -9,7 +9,7 @@ import { action } from '@storybook/addon-actions';
 
 import EmptyStatePrimary from '.';
 
-export const primary = (): React.ReactElement<any> => (
+export const EmptyStatePrimary = (): React.ReactElement<any> => (
   <EmptyStatePrimary
     buttonProps={
       boolean('Button?', true)
@@ -32,8 +32,8 @@ export default {
   component: EmptyStatePrimary,
   parameters: {
     info: {
-      text: 'This is the primary variant of the EmptyState component.',
+      text: 'This is the EmptyStatePrimary component.',
     },
   },
-  title: 'Molecules/EmptyState',
+  title: 'Molecules/EmptyStatePrimary',
 };

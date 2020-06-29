@@ -7,14 +7,14 @@
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { Plus as PlusIcon } from 'mdi-material-ui';
+import { Plus } from 'mdi-material-ui';
 
 import ButtonPrimary from '.';
 
 export const primary = (): React.ReactElement<any> => (
   <ButtonPrimary
     disabled={boolean('Disabled?', false)}
-    endIcon={boolean('End Icon?', false) ? <PlusIcon /> : undefined}
+    endIcon={boolean('End Icon?', false) ? <Plus /> : undefined}
     onClick={action('onClick()')}
     size={select(
       'Size',
@@ -25,7 +25,7 @@ export const primary = (): React.ReactElement<any> => (
       },
       'medium',
     )}
-    startIcon={boolean('Start Icon?', true) ? <PlusIcon /> : undefined}
+    startIcon={boolean('Start Icon?', true) ? <Plus /> : undefined}
   >
     {text('Text', 'Click Me')}
   </ButtonPrimary>

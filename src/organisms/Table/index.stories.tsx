@@ -7,16 +7,16 @@
 import * as React from 'react';
 // import { action } from '@storybook/addon-actions';
 // import { boolean, select, text } from '@storybook/addon-knobs';
-import { BubbleChart } from '@material-ui/icons';
+// import { BubbleChart } from '@material-ui/icons';
 import moment from 'moment';
 import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
 
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
-import TableBodyCellPrimary from '~/components/TableBodyCellPrimary';
+import TableCellBody from '~/components/TableCellBody';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
-import TableEmptyStatePrimary from '~/components/TableEmptyStatePrimary';
-import TableHeadCell from '~/components/TableHeadCell';
+// import TableEmptyStatePrimary from '~/components/TableEmptyStatePrimary';
+import TableCellHead from '~/components/TableCellHead';
 import TableHeadRow from '~/components/TableHeadRow';
 
 import RenderActions from './RenderActions';
@@ -82,7 +82,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
           <TableHeadRow>
             {TABLE_CELLS.map(
               (tableCell): React.ReactElement<any> => (
-                <TableHeadCell<ThingExtended>
+                <TableCellHead<ThingExtended>
                   dataKey={tableCell.dataKey}
                   key={tableCell.dataKey}
                   setSortObject={setSortObject}
@@ -91,7 +91,7 @@ export const Things: React.FC = (): React.ReactElement<any> => {
                   style={tableCell.style}
                 >
                   {tableCell.label}
-                </TableHeadCell>
+                </TableCellHead>
               ),
             )}
           </TableHeadRow>
@@ -103,14 +103,14 @@ export const Things: React.FC = (): React.ReactElement<any> => {
               <TableRow hover key={thing.id}>
                 {TABLE_CELLS.map(
                   (tableCell): React.ReactElement<any> => (
-                    <TableBodyCellPrimary<ThingExtended>
+                    <TableCellBody<ThingExtended>
                       key={tableCell.dataKey}
                       style={tableCell.style}
                     >
                       {tableCell.displayValueFn
                         ? tableCell.displayValueFn(thing)
                         : thing[tableCell.dataKey]}
-                    </TableBodyCellPrimary>
+                    </TableCellBody>
                   ),
                 )}
               </TableRow>
@@ -119,12 +119,12 @@ export const Things: React.FC = (): React.ReactElement<any> => {
         </TableBody>
       </Table>
 
-      {THINGS.length === 0 && (
+      {/* THINGS.length === 0 && (
         <TableEmptyStatePrimary
           description="No Things Found"
           Icon={BubbleChart}
         />
-      )}
+      ) */}
     </TableContainerPrimary>
   );
 };
