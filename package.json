@@ -108,7 +108,7 @@
     "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest --maxWorkers=2 --silent"
+    "test:unit": "jest --maxWorkers=2 --silent --updateSnapshot"
   },
   "version": "1.1.4"
 }

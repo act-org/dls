@@ -7,11 +7,13 @@ import { noop } from 'lodash';
 
 import render from '~/helpers/test/render';
 
-import SearchBar from '.';
+import SearchBarPrimary from '.';
 
-describe('SearchBar', () => {
+describe('SearchBarPrimary', () => {
   it('matches the snapshot', () => {
-    const { container } = render(<SearchBar onChange={noop} value="Value" />);
+    const { container } = render(
+      <SearchBarPrimary onChange={noop} value="Value" />,
+    );
 
     expect(container).toMatchSnapshot();
   });
