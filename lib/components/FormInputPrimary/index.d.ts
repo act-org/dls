@@ -2,11 +2,11 @@
  * @prettier
  */
 import * as React from 'react';
-import { Props as InputBaseProps } from '~/components/InputBase';
 import { Props as InputLabelPrimaryProps } from '~/components/InputLabelPrimary';
+import { Props as InputPrimaryProps } from '~/components/InputPrimary';
 export interface Props {
     disabled?: boolean;
-    inputProps?: InputBaseProps;
+    inputProps?: InputPrimaryProps;
     labelProps?: InputLabelPrimaryProps;
     required?: boolean;
 }

@@ -44,6 +44,9 @@ export type { Props as InputLabelBaseProps } from './InputLabelBase';
 export { default as InputLabelPrimary } from './InputLabelPrimary';
 export type { Props as InputLabelPrimaryProps } from './InputLabelPrimary';
 
+export { default as InputPrimary } from './InputPrimary';
+export type { Props as InputPrimaryProps } from './InputPrimary';
+
 export { default as LinkBase } from './LinkBase';
 export type { Props as LinkBaseProps } from './LinkBase';
 

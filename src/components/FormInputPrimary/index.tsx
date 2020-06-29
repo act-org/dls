@@ -3,22 +3,23 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
 import { get } from 'lodash';
 
 import { AlertOutline } from '~/icons';
 import COLORS from '~/constants/colors';
 import DIMS from '~/constants/dims';
-import InputBase, { Props as InputBaseProps } from '~/components/InputBase';
 import InputLabelPrimary, {
   Props as InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
+import InputPrimary, {
+  Props as InputPrimaryProps,
+} from '~/components/InputPrimary';
 
 import useStyles from './styles';
 
 export interface Props {
   disabled?: boolean;
-  inputProps?: InputBaseProps;
+  inputProps?: InputPrimaryProps;
   labelProps?: InputLabelPrimaryProps;
   required?: boolean;
 }
@@ -29,25 +30,12 @@ const FormInputPrimary: React.FC<Props> = ({
   labelProps,
   required,
 }: Props): React.ReactElement<Props> => {
-  const value: any = get(inputProps, 'value');
-
   const classes = useStyles();
 
   const children = (
     <div className="inputContainer">
-      <InputBase
-        classes={{
-          input: clsx(
-            classes.inputBaseInput,
-            get(inputProps, 'type') === 'password' &&
-              value &&
-              String(value).length > 0 &&
-              classes.inputBaseInputPassword,
-          ),
-          root: classes.inputBaseRoot,
-        }}
+      <InputPrimary
         disabled={disabled}
-        disableUnderline
         fullWidth
         margin="dense"
         required={required}

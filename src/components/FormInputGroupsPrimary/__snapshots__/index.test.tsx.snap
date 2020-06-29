@@ -22,7 +22,7 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
         class="contentContainer"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-7 MuiInputLabel-animated"
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-4 MuiInputLabel-animated"
         >
           <div
             class="label-split"
@@ -42,11 +42,11 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
         class="inputContainer"
       >
         <div
-          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-7 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
           required=""
         >
           <input
-            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-5 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
             placeholder="Input 1"
             required=""
             type="text"
@@ -72,7 +72,7 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
         class="contentContainer"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-7 MuiInputLabel-animated"
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-4 MuiInputLabel-animated"
         >
           <div
             class="label-split"
@@ -92,11 +92,11 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
         class="inputContainer"
       >
         <div
-          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-7 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
           required=""
         >
           <input
-            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 makeStyles-inputBaseInputPassword-4 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-5 makeStyles-inputBaseInputPassword-6 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
             placeholder="Input 2"
             required=""
             type="password"
@@ -126,7 +126,7 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
         class="contentContainer"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-7 MuiInputLabel-animated"
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-4 MuiInputLabel-animated"
         >
           <div
             class="label-split"
@@ -141,10 +141,10 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
         class="inputContainer"
       >
         <div
-          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-7 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
         >
           <input
-            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-5 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
             placeholder="Input 3"
             type="text"
             value="value3"
