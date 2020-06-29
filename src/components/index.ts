@@ -8,6 +8,9 @@ export type { Props as ButtonBaseProps } from './ButtonBase';
 export { default as ButtonPrimary } from './ButtonPrimary';
 export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
 
+export { default as CircularProgressBase } from './CircularProgressBase';
+export type { Props as CircularProgressBaseProps } from './CircularProgressBase';
+
 export { default as DataTablePrimary } from './DataTablePrimary';
 export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
 

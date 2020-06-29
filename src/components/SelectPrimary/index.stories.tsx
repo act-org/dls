@@ -60,5 +60,5 @@ export default {
       text: 'This is the primary variant of the Select component.',
     },
   },
-  title: 'Molecules/Select',
+  title: 'Atoms/Select',
 };
