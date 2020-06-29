@@ -19,7 +19,6 @@ export const Primary = (): React.ReactElement<any> => (
     )}
     disabled={boolean('Disabled?', false)}
     error={boolean('Error?', false)}
-    focused={boolean('Focused?', false)}
     required={boolean('Required?', true)}
     style={{
       width: 300,

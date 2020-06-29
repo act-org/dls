@@ -3,6 +3,7 @@
  */
 declare const _default: {
     HEIGHTS: {
+        INPUT: number;
         TABLE_HEADER: number;
     };
     LAYOUT_PADDING: number;

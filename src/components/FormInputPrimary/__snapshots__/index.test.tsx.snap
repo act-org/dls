@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInputPrimary matches the snapshot 1`] = `
+<div>
+  <style>
+    
+          .contentContainer {
+            margin-bottom: 6px;
+          }
+          .inputContainer {
+            position: relative;
+          }
+        
+  </style>
+  <div
+    class="contentContainer"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-5 MuiInputLabel-animated"
+    >
+      <div
+        class="label-split"
+      >
+        <span>
+          Label
+        </span>
+        <span
+          class="required"
+        >
+          Required
+        </span>
+      </div>
+    </label>
+  </div>
+  <div
+    class="inputContainer"
+  >
+    <div
+      class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-3 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+    >
+      <input
+        class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-1 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+        type="text"
+        value="Value"
+      />
+    </div>
+  </div>
+</div>
+`;
