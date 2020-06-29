@@ -31,6 +31,7 @@ const InputPrimary: React.FC<Props> = ({
         root: classes.inputBaseRoot,
       }}
       disableUnderline
+      margin="dense"
       type={type}
       value={value}
       {...otherProps}

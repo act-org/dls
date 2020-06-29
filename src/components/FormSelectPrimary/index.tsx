@@ -3,13 +3,18 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
-import { MenuItem, Select } from '@material-ui/core';
+import { get } from 'lodash';
 
-import { ChevronDown, AlertOutline } from '~/icons';
+import { AlertOutline } from '~/icons';
+import COLORS from '~/constants/colors';
+import DIMS from '~/constants/dims';
 import InputLabelPrimary, {
   Props as InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
+import MenuItemBase from '~/components/MenuItemBase';
+import SelectPrimary, {
+  Props as SelectPrimaryProps,
+} from '~/components/SelectPrimary';
 
 import useStyles from './styles';
 
@@ -20,71 +25,53 @@ interface SelectOption {
 
 export interface Props {
   disabled?: boolean;
-  // error?: boolean;
   labelProps?: InputLabelPrimaryProps;
-  // multiple?: boolean;
-  // onChange?: (event: any, child?: any) => void;
-  // options?: SelectOption[];
-  // placeholder?: string;
+  options?: SelectOption[];
+  placeholder?: string;
   required?: boolean;
-  // style?: React.CSSProperties;
-  // value?: number | number[] | string | string[];
+  selectProps?: SelectPrimaryProps;
 }
 
 const FormSelectPrimary: React.FC<Props> = ({
   disabled,
-  error,
   labelProps,
-  multiple,
-  onChange,
   options = [],
   placeholder,
   required,
-  style,
-  value,
+  selectProps,
 }: Props): React.ReactElement<Props> => {
   const classes = useStyles();
 
   const children = (
-    <div className="inputContainer">
-      <Select
-        classes={{
-          icon: classes.selectIcon,
-          root: clsx(classes.selectRoot, !value && classes.selectRootEmpty),
-          select: classes.selectComponentRoot,
-        }}
-        defaultValue="0"
+    <div className="selectContainer">
+      <SelectPrimary
         disabled={disabled}
-        disableUnderline
         fullWidth
-        IconComponent={ChevronDown}
-        margin="dense"
-        multiple={multiple}
-        onChange={onChange}
-        value={value || 'undefined'}
+        required={required}
+        {...selectProps}
       >
-        <MenuItem
+        <MenuItemBase
           classes={{ root: classes.selectOptionRoot }}
           disabled
           value="undefined"
         >
           {placeholder || 'Select'}
-        </MenuItem>
+        </MenuItemBase>
 
         {options.map(
           ({ label: optionLabel, value: optionValue }): React.ReactElement => (
-            <MenuItem
+            <MenuItemBase
               classes={{ root: classes.selectOptionRoot }}
               key={optionValue}
               value={optionValue}
             >
               {optionLabel}
-            </MenuItem>
+            </MenuItemBase>
           ),
         )}
-      </Select>
+      </SelectPrimary>
 
-      {get(inputProps, 'error') && (
+      {get(selectProps, 'error') && (
         <AlertOutline
           classes={{
             root: classes.warning,
@@ -102,7 +89,7 @@ const FormSelectPrimary: React.FC<Props> = ({
           .labelContainer {
             margin-bottom: ${DIMS.LAYOUT_PADDING / 2}px;
           }
-          .inputContainer {
+          .selectContainer {
             position: relative;
           }
         `}

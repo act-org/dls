@@ -20,6 +20,9 @@ export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrim
 export { default as FormInputPrimary } from './FormInputPrimary';
 export type { Props as FormInputPrimaryProps } from './FormInputPrimary';
 
+export { default as FormSelectPrimary } from './FormSelectPrimary';
+export type { Props as FormSelectPrimaryProps } from './FormSelectPrimary';
+
 export { default as GridBase } from './GridBase';
 export type { Props as GridBaseProps } from './GridBase';
 
@@ -64,6 +67,9 @@ export type { Props as PaperBaseProps } from './PaperBase';
 
 export { default as SelectBase } from './SelectBase';
 export type { Props as SelectBaseProps } from './SelectBase';
+
+export { default as SelectPrimary } from './SelectPrimary';
+export type { Props as SelectPrimaryProps } from './SelectPrimary';
 
 export { default as TableBase } from './TableBase';
 export type { Props as TableBaseProps } from './TableBase';

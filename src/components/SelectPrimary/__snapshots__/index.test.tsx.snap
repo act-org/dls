@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectPrimary matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiInput-root MuiInputBase-marginDense MuiInput-marginDense"
+  >
+    <div
+      aria-haspopup="listbox"
+      class="MuiSelect-root makeStyles-selectRoot-3 MuiSelect-select makeStyles-selectComponentRoot-1 MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+      role="button"
+      tabindex="0"
+    >
+      One
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput"
+      tabindex="-1"
+      value="ONE"
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSelect-icon makeStyles-selectIcon-2"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+      />
+    </svg>
+  </div>
+</div>
+`;

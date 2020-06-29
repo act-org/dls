@@ -37,7 +37,6 @@ const FormInputPrimary: React.FC<Props> = ({
       <InputPrimary
         disabled={disabled}
         fullWidth
-        margin="dense"
         required={required}
         {...inputProps}
       />

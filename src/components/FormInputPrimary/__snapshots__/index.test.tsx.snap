@@ -4,7 +4,7 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
 <div>
   <style>
     
-          .contentContainer {
+          .labelContainer {
             margin-bottom: 6px;
           }
           .inputContainer {
@@ -13,7 +13,7 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
         
   </style>
   <div
-    class="contentContainer"
+    class="labelContainer"
   >
     <label
       class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-2 MuiInputLabel-animated"

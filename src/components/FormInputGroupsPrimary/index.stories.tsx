@@ -5,13 +5,14 @@
 import * as React from 'react';
 
 import FormInputPrimary from '~/components/FormInputPrimary';
+import FormSelectPrimary from '~/components/FormSelectPrimary';
 
 import FormInputGroupsPrimary from '.';
 
 export const Primary = (): React.ReactElement<any> => {
   const [value1, setValue1] = React.useState('Value 1');
   const [value2, setValue2] = React.useState('Value 2');
-  const [value3, setValue3] = React.useState('Value 3');
+  const [value3, setValue3] = React.useState('THREE');
 
   return (
     <FormInputGroupsPrimary
@@ -59,17 +60,30 @@ export const Primary = (): React.ReactElement<any> => {
         [
           {
             formInput: (
-              <FormInputPrimary
-                inputProps={{
+              <FormSelectPrimary
+                labelProps={{
+                  children: 'Input 3',
+                }}
+                options={[
+                  {
+                    label: 'One',
+                    value: 'ONE',
+                  },
+                  {
+                    label: 'Two',
+                    value: 'TWO',
+                  },
+                  {
+                    label: 'Three',
+                    value: 'THREE',
+                  },
+                ]}
+                required
+                selectProps={{
                   onChange: (e: any): void => {
                     setValue3(e.target.value);
                   },
-                  placeholder: 'Input 3',
-                  type: 'text',
                   value: value3,
-                }}
-                labelProps={{
-                  children: 'Input 3',
                 }}
               />
             ),
