@@ -62,6 +62,9 @@ export type { Props as PaperBaseProps } from './PaperBase';
 export { default as TableBase } from './TableBase';
 export type { Props as TableBaseProps } from './TableBase';
 
+export { default as TableBodyBase } from './TableBodyBase';
+export type { Props as TableBodyBaseProps } from './TableBodyBase';
+
 export { default as TableCellBase } from './TableCellBase';
 export type { Props as TableCellBaseProps } from './TableCellBase';
 
