@@ -43,6 +43,8 @@ export { default as MenuItemBase } from './MenuItemBase';
 export type { Props as MenuItemBaseProps } from './MenuItemBase';
 export { default as PaperBase } from './PaperBase';
 export type { Props as PaperBaseProps } from './PaperBase';
+export { default as RenderMetaTagsBase } from './RenderMetaTagsBase';
+export type { Props as RenderMetaTagsBaseProps } from './RenderMetaTagsBase';
 export { default as SelectBase } from './SelectBase';
 export type { Props as SelectBaseProps } from './SelectBase';
 export { default as SelectPrimary } from './SelectPrimary';
