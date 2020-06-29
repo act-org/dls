@@ -3,17 +3,18 @@
  */
 
 import * as React from 'react';
-import { Paper, PaperProps } from '@material-ui/core';
+
+import PaperBase, { Props as PaperBaseProps } from '~/components/PaperBase';
 
 import useStyles from './styles';
 
-const Component: React.FC<PaperProps> = (
-  props: PaperProps,
+const Component: React.FC = (
+  props: PaperBaseProps,
 ): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (
-    <Paper
+    <PaperBase
       classes={{
         root: classes.paperRoot,
       }}

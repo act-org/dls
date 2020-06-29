@@ -26,6 +26,9 @@ export type { Props as LinkBaseProps } from './LinkBase';
 export { default as LinkText } from './LinkText';
 export type { Props as LinkTextProps } from './LinkText';
 
+export { default as PaperBase } from './PaperBase';
+export type { Props as PaperBaseProps } from './PaperBase';
+
 export { default as TableCellBase } from './TableCellBase';
 export type { Props as TableCellBaseProps } from './TableCellBase';
 

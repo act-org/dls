@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaperBase matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation3"
+  >
+    Paper
+  </div>
+</div>
+`;
