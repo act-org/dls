@@ -43,6 +43,8 @@ export { default as LinkText } from './LinkText';
 export type { Props as LinkTextProps } from './LinkText';
 export { default as MenuItemBase } from './MenuItemBase';
 export type { Props as MenuItemBaseProps } from './MenuItemBase';
+export { default as OutlinedInputBase } from './OutlinedInputBase';
+export type { Props as OutlinedInputBaseProps } from './OutlinedInputBase';
 export { default as PaperBase } from './PaperBase';
 export type { Props as PaperBaseProps } from './PaperBase';
 export { default as RenderMetaTagsBase } from './RenderMetaTagsBase';
