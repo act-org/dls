@@ -2,9 +2,9 @@
  * @prettier
  */
 import * as React from 'react';
-import { TableCellProps } from '@material-ui/core';
+import { Props as TableCellBaseProps } from '~/components/TableCellBase';
 import { SortObject } from '~/types';
-export interface Props<T> extends TableCellProps {
+export interface Props<T> extends TableCellBaseProps {
     dataKey?: string;
     sortObject?: SortObject<T>;
 }

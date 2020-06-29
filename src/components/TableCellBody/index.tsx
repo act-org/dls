@@ -4,13 +4,16 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { TableCell, TableCellProps } from '@material-ui/core';
+
+import TableCellBase, {
+  Props as TableCellBaseProps,
+} from '~/components/TableCellBase';
 
 import { SortObject } from '~/types';
 
 import useStyles from './styles';
 
-export interface Props<T> extends TableCellProps {
+export interface Props<T> extends TableCellBaseProps {
   dataKey?: string;
   sortObject?: SortObject<T>;
 }
@@ -26,7 +29,7 @@ const TableCellBody = <T,>({
   const classes = useStyles();
 
   return (
-    <TableCell
+    <TableCellBase
       classes={{
         root: clsx(
           classes.tableCellRoot,

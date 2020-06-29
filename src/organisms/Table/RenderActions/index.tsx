@@ -3,8 +3,10 @@
  */
 
 import * as React from 'react';
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
+import ButtonBase from '~/components/ButtonBase';
+import TypographyBase from '~/components/TypographyBase';
 import { CloudDownload, Sync } from '~/icons';
 
 import type { Thing } from '../types';
@@ -56,7 +58,7 @@ const RenderActions: React.FC<Props> = ({
                 item
                 key={action.label}
               >
-                <Button
+                <ButtonBase
                   classes={{
                     root: classes.buttonRoot,
                   }}
@@ -65,15 +67,15 @@ const RenderActions: React.FC<Props> = ({
                 >
                   <action.Icon fontSize="small" />
                   &nbsp;&nbsp;
-                  <Typography
+                  <TypographyBase
                     classes={{
                       root: classes.typographyRoot,
                     }}
                     variant="body1"
                   >
                     {action.label}
-                  </Typography>
-                </Button>
+                  </TypographyBase>
+                </ButtonBase>
               </Grid>
             ),
           )}

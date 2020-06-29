@@ -4,16 +4,20 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { Grid, TableCell, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 import { ChevronDown, ChevronUp } from '~/icons';
 import COLORS from '~/constants/colors';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
+import TableCellBase, {
+  Props as TableCellBaseProps,
+} from '~/components/TableCellBase';
+import TypographyBase from '~/components/TypographyBase';
 
 import useStyles from './styles';
 
-export interface Props<T> {
+export interface Props<T> extends TableCellBaseProps {
   children: any;
   dataKey: string;
   setSortObject: (value: SortObject<T>) => void;
@@ -29,6 +33,7 @@ const TableCellHead = <T,>({
   sortable = false,
   sortObject,
   style,
+  ...props
 }: Props<T>): React.ReactElement<any> => {
   const key = dataKey as SortObject<T>['dataKey'];
 
@@ -60,7 +65,7 @@ const TableCellHead = <T,>({
   const classes = useStyles();
 
   return (
-    <TableCell
+    <TableCellBase
       classes={{
         root: clsx(
           classes.tableCellRoot,
@@ -71,14 +76,15 @@ const TableCellHead = <T,>({
       component="div"
       onClick={sortable ? toggleSort : undefined}
       style={style}
+      {...props}
     >
-      <Typography
+      <TypographyBase
         classes={{
           root: classes.typographyRoot,
         }}
       >
         {children}
-      </Typography>
+      </TypographyBase>
 
       {sortable && (
         <Grid
@@ -117,7 +123,7 @@ const TableCellHead = <T,>({
           />
         </Grid>
       )}
-    </TableCell>
+    </TableCellBase>
   );
 };
 

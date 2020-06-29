@@ -10,7 +10,9 @@ import TableContainerBase, {
 
 import Component from './Component';
 
-export type Props = TableContainerBaseProps;
+export interface Props extends TableContainerBaseProps {
+  component?: React.ReactElement<any>;
+}
 
 const TableContainerPrimary: React.FC<Props> = (
   props: Props,
