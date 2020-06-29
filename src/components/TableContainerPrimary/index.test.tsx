@@ -3,14 +3,15 @@
  */
 
 import * as React from 'react';
-import renderer from 'react-test-renderer';
+
+import render from '~/helpers/test/render';
 
 import TableContainerPrimary from '.';
 
 describe('TableContainerPrimary', () => {
   it('matches the snapshot', () => {
-    const tree = renderer.create(<TableContainerPrimary />).toJSON();
+    const { container } = render(<TableContainerPrimary />);
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

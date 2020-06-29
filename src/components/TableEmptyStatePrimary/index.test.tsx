@@ -3,16 +3,17 @@
  */
 
 import * as React from 'react';
-import renderer from 'react-test-renderer';
+
+import render from '~/helpers/test/render';
 
 import TableEmptyStatePrimary from '.';
 
 describe('TableEmptyStatePrimary', () => {
   it('matches the snapshot', () => {
-    const tree = renderer
-      .create(<TableEmptyStatePrimary description="No Things Found" />)
-      .toJSON();
+    const { container } = render(
+      <TableEmptyStatePrimary description="No Things Found" />,
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

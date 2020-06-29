@@ -14,7 +14,7 @@ export default {
   component: TableContainerBase,
   parameters: {
     info: {
-      text: 'This is the base variant of the table container component.',
+      text: 'This is the base variant of the TableContainer component.',
     },
   },
   title: 'Atoms/TableContainer',

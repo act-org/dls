@@ -35,7 +35,7 @@ export default {
   component: ButtonPrimary,
   parameters: {
     info: {
-      text: 'This is the primary variant of the button component.',
+      text: 'This is the primary variant of the Button component.',
     },
   },
   title: 'Atoms/Button',

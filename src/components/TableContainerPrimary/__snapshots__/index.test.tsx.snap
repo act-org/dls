@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableContainerPrimary matches the snapshot 1`] = `
-<div
-  className="MuiPaper-root makeStyles-paperRoot-1 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
-/>
+<div>
+  <div
+    class="MuiPaper-root makeStyles-paperRoot-1 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
+  />
+</div>
 `;

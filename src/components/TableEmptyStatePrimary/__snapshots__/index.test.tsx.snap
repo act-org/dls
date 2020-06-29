@@ -1,10 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableEmptyStatePrimary matches the snapshot 1`] = `
-Array [
-  <style
-    jsx={true}
-  >
+<div>
+  <style>
     
         .container {
           padding: 30px 12px
@@ -12,13 +10,11 @@ Array [
           width: 100%;
         }
       
-  </style>,
+  </style>
   <div
-    className="container"
+    class="container"
   >
-    <style
-      jsx={true}
-    >
+    <style>
       
           .container {
             align-items: center;
@@ -29,14 +25,14 @@ Array [
         
     </style>
     <div
-      className="container"
+      class="container"
     >
       <p
-        className="MuiTypography-root makeStyles-descriptionRoot-1 makeStyles-descriptionRootWithoutTitle-3 MuiTypography-body1 MuiTypography-alignCenter"
+        class="MuiTypography-root makeStyles-descriptionRoot-1 makeStyles-descriptionRootWithoutTitle-3 MuiTypography-body1 MuiTypography-alignCenter"
       >
         No Things Found
       </p>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;

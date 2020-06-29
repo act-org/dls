@@ -11,10 +11,10 @@ import ButtonPrimary from '.';
 
 describe('ButtonPrimary', () => {
   it('matches the snapshot', () => {
-    const tree = render(
+    const { container } = render(
       <ButtonPrimary onClick={noop}>Button Label</ButtonPrimary>,
     );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

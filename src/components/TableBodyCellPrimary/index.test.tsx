@@ -3,26 +3,25 @@
  */
 
 import * as React from 'react';
-import renderer from 'react-test-renderer';
+
+import render from '~/helpers/test/render';
 
 import TableBodyCellPrimary from '.';
 
 describe('TableBodyCellPrimary', () => {
   it('matches the snapshot', () => {
-    const tree = renderer
-      .create(
-        <TableBodyCellPrimary
-          dataKey="itemKey"
-          sortObject={{
-            dataKey: 'itemKey',
-            direction: 'ASC',
-          }}
-        >
-          child
-        </TableBodyCellPrimary>,
-      )
-      .toJSON();
+    const { container } = render(
+      <TableBodyCellPrimary
+        dataKey="itemKey"
+        sortObject={{
+          dataKey: 'itemKey',
+          direction: 'ASC',
+        }}
+      >
+        child
+      </TableBodyCellPrimary>,
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

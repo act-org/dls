@@ -14,7 +14,7 @@ export default {
   component: TableContainerPrimary,
   parameters: {
     info: {
-      text: 'This is the primary variant of the table container component.',
+      text: 'This is the primary variant of the TableContainer component.',
     },
   },
   title: 'Atoms/TableContainer',

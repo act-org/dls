@@ -10,12 +10,12 @@ import LinkBase from '.';
 
 describe('LinkBase', () => {
   it('matches the snapshot', () => {
-    const tree = render(
+    const { container } = render(
       <LinkBase target="_blank" to="https://www.act.org">
         <div>children</div>
       </LinkBase>,
     );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

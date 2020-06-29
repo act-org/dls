@@ -1,50 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableHeadCell matches the snapshot 1`] = `
-<div
-  aria-sort={null}
-  className="MuiTableCell-root makeStyles-tableCellRoot-3 makeStyles-tableCellRootSortable-4 makeStyles-tableCellRootSortApplied-5"
-  onClick={[Function]}
-  role="cell"
->
-  <p
-    className="MuiTypography-root makeStyles-typographyRoot-6 MuiTypography-body1"
-  >
-    child
-  </p>
+<div>
   <div
-    className="MuiGrid-root makeStyles-sortContainerRoot-1"
+    class="MuiTableCell-root makeStyles-tableCellRoot-3 makeStyles-tableCellRootSortable-4 makeStyles-tableCellRootSortApplied-5"
+    role="cell"
   >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root makeStyles-sortIconRoot-2"
-      focusable="false"
-      onClick={[Function]}
-      role="button"
-      style={
-        Object {
-          "color": "#ffffff",
-        }
-      }
-      viewBox="9 3 5 15"
+    <p
+      class="MuiTypography-root makeStyles-typographyRoot-6 MuiTypography-body1"
     >
-      <path
-        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
-      />
-    </svg>
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root makeStyles-sortIconRoot-2"
-      focusable="false"
-      onClick={[Function]}
-      role="button"
-      style={Object {}}
-      viewBox="9 7 5 15"
+      child
+    </p>
+    <div
+      class="MuiGrid-root makeStyles-sortContainerRoot-1"
     >
-      <path
-        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-sortIconRoot-2"
+        focusable="false"
+        role="button"
+        style="color: rgb(255, 255, 255);"
+        viewBox="9 3 5 15"
+      >
+        <path
+          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-sortIconRoot-2"
+        focusable="false"
+        role="button"
+        viewBox="9 7 5 15"
+      >
+        <path
+          d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;

@@ -11,8 +11,10 @@ import ButtonBase from '.';
 
 describe('ButtonBase', () => {
   it('matches the snapshot', () => {
-    const tree = render(<ButtonBase onClick={noop}>Button Label</ButtonBase>);
+    const { container } = render(
+      <ButtonBase onClick={noop}>Button Label</ButtonBase>,
+    );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

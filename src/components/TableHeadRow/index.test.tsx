@@ -3,14 +3,15 @@
  */
 
 import * as React from 'react';
-import renderer from 'react-test-renderer';
+
+import render from '~/helpers/test/render';
 
 import TableHeadRow from '.';
 
 describe('TableHeadRow', () => {
   it('matches the snapshot', () => {
-    const tree = renderer.create(<TableHeadRow>child</TableHeadRow>).toJSON();
+    const { container } = render(<TableHeadRow>child</TableHeadRow>);
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

@@ -11,7 +11,7 @@ import EmptyStatePrimary from '.';
 
 describe('EmptyStatePrimary', () => {
   it('matches the snapshot', () => {
-    const tree = render(
+    const { container } = render(
       <EmptyStatePrimary
         buttonProps={{
           children: 'Button Title',
@@ -22,6 +22,6 @@ describe('EmptyStatePrimary', () => {
       />,
     );
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

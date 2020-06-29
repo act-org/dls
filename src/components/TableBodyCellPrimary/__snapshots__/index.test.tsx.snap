@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableBodyCellPrimary matches the snapshot 1`] = `
-<td
-  aria-sort={null}
-  className="MuiTableCell-root makeStyles-tableCellRoot-1 makeStyles-tableCellRootSortApplied-2 MuiTableCell-paddingNone"
-  role="cell"
-  scope="row"
->
-  child
-</td>
+<div>
+  <td
+    class="MuiTableCell-root makeStyles-tableCellRoot-1 makeStyles-tableCellRootSortApplied-2 MuiTableCell-paddingNone"
+    role="cell"
+    scope="row"
+  >
+    child
+  </td>
+</div>
 `;

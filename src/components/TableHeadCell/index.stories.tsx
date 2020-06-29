@@ -38,7 +38,7 @@ export default {
   component: TableHeadCell,
   parameters: {
     info: {
-      text: 'This is the primary variant of the table body cell component.',
+      text: 'This is the primary variant of the TableBodyCell component.',
     },
   },
   title: 'Atoms/TableHeadCell',
