@@ -53,6 +53,8 @@ export { default as TableContainerBase } from './TableContainerBase';
 export type { Props as TableContainerBaseProps } from './TableContainerBase';
 export { default as TableContainerPrimary } from './TableContainerPrimary';
 export type { Props as TableContainerPrimaryProps } from './TableContainerPrimary';
+export { default as TableHeadBase } from './TableHeadBase';
+export type { Props as TableHeadBaseProps } from './TableHeadBase';
 export { default as TableRowBase } from './TableRowBase';
 export type { Props as TableRowBaseProps } from './TableRowBase';
 export { default as TypographyBase } from './TypographyBase';

@@ -4,7 +4,6 @@
 
 import * as React from 'react';
 import { compact } from 'lodash';
-import { TableHead } from '@material-ui/core';
 
 import search from '~/helpers/search';
 import sort from '~/helpers/sort';
@@ -14,6 +13,7 @@ import TableBodyBase from '~/components/TableBodyBase';
 import TableCellBody from '~/components/TableCellBody';
 import TableCellHead from '~/components/TableCellHead';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
+import TableHeadBase from '~/components/TableHeadBase';
 import TableRowBase from '~/components/TableRowBase';
 
 interface Column {
@@ -56,7 +56,7 @@ const DataTablePrimary: React.FC<Props> = ({
   return (
     <TableContainerPrimary>
       <TableBase>
-        <TableHead>
+        <TableHeadBase>
           <TableRowBase>
             {columns.map(
               (column): React.ReactElement<any> => (
@@ -73,7 +73,7 @@ const DataTablePrimary: React.FC<Props> = ({
               ),
             )}
           </TableRowBase>
-        </TableHead>
+        </TableHeadBase>
 
         <TableBodyBase>
           {items.map(
