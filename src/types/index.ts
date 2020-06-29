@@ -5,6 +5,6 @@
 export type SortDirection = 'ASC' | 'DESC';
 
 export type SortObject<T> = {
-  dataKey: keyof T;
+  dataKey: string;
   direction: SortDirection;
 };

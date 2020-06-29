@@ -6,7 +6,7 @@ import { SortObject } from '~/types';
 import { Props as TableCellBaseProps } from '~/components/TableCellBase';
 export interface Props<T> extends TableCellBaseProps {
     children: any;
-    dataKey: string;
+    dataKey: keyof T;
     setSortObject: (value: SortObject<T>) => void;
     sortable?: boolean;
     sortObject: SortObject<T>;

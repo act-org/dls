@@ -10,7 +10,7 @@ export default {
   BLACK_87: 'rgba(0, 0, 0, 0.87)',
   LINK: '#1976d2',
   PRIMARY: '#0079ad',
-  PRIMARY_DARK: '#003c92',
+  PRIMARY_DARK: '#0061a2',
   REQUIRED: '#ff0000',
   TEXT_PRIMARY: '#2d2d2d',
   TEXT_SECONDARY: '#8f8f8f',

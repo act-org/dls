@@ -19,7 +19,7 @@ import useStyles from './styles';
 
 export interface Props<T> extends TableCellBaseProps {
   children: any;
-  dataKey: string;
+  dataKey: keyof T;
   setSortObject: (value: SortObject<T>) => void;
   sortable?: boolean;
   sortObject: SortObject<T>;
@@ -35,8 +35,6 @@ const TableCellHead = <T,>({
   style,
   ...props
 }: Props<T>): React.ReactElement<any> => {
-  const key = dataKey as SortObject<T>['dataKey'];
-
   const sortIsApplied: boolean = sortable && sortObject.dataKey === dataKey;
 
   const getStyleForIcon = (
@@ -59,7 +57,7 @@ const TableCellHead = <T,>({
           : SORT_DIRECTION_TYPES.ASC;
     }
 
-    setSortObject({ dataKey: key, direction });
+    setSortObject({ dataKey, direction });
   };
 
   const classes = useStyles();
@@ -98,7 +96,7 @@ const TableCellHead = <T,>({
             }}
             onClick={(): void => {
               setSortObject({
-                dataKey: key,
+                dataKey,
                 direction: SORT_DIRECTION_TYPES.ASC,
               });
             }}
@@ -113,7 +111,7 @@ const TableCellHead = <T,>({
             }}
             onClick={(): void => {
               setSortObject({
-                dataKey: key,
+                dataKey,
                 direction: SORT_DIRECTION_TYPES.DESC,
               });
             }}
