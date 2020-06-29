@@ -11,6 +11,8 @@ export { default as IconBase } from './IconBase';
 export type { Props as IconBaseProps } from './IconBase';
 export { default as IconButtonBase } from './IconButtonBase';
 export type { Props as IconButtonBaseProps } from './IconButtonBase';
+export { default as IconButtonPrimary } from './IconButtonPrimary';
+export type { Props as IconButtonPrimaryProps } from './IconButtonPrimary';
 export { default as LinkBase } from './LinkBase';
 export type { Props as LinkBaseProps } from './LinkBase';
 export { default as LinkText } from './LinkText';

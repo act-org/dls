@@ -24,7 +24,7 @@ export const body = (): React.ReactElement<any> => (
       ),
     }}
   >
-    {text('Text', 'Cell')}
+    {text('Text', 'Table Cell')}
   </TableCellBody>
 );
 

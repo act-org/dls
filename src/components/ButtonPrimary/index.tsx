@@ -10,27 +10,12 @@ import useStyles from './styles';
 
 export type Props = ButtonBaseProps;
 
-const ButtonPrimary: React.FC<Props> = ({
-  children,
-  onClick,
-  startIcon,
-  style,
-  ...props
-}: Props): React.ReactElement<any> => {
+const ButtonPrimary: React.FC<Props> = (
+  props: Props,
+): React.ReactElement<any> => {
   const classes = useStyles();
 
-  return (
-    <ButtonBase
-      classes={classes}
-      onClick={onClick}
-      startIcon={startIcon}
-      style={style}
-      variant="outlined"
-      {...props}
-    >
-      {children || null}
-    </ButtonBase>
-  );
+  return <ButtonBase classes={classes} variant="outlined" {...props} />;
 };
 
 export default ButtonPrimary;

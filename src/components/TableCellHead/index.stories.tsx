@@ -30,7 +30,7 @@ export const head = (): React.ReactElement<any> => (
       width: number('Style:Width', 300),
     }}
   >
-    {text('Text', 'Header')}
+    {text('Text', 'Table Cell')}
   </TableCellHead>
 );
 

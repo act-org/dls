@@ -7,14 +7,14 @@ import { noop } from 'lodash';
 
 import render from '~/helpers/test/render';
 
-import IconButtonBase from '.';
+import IconButtonPrimary from '.';
 
-describe('IconButtonBase', () => {
+describe('IconButtonPrimary', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <IconButtonBase onClick={noop}>
+      <IconButtonPrimary onClick={noop}>
         <div>Icon</div>
-      </IconButtonBase>,
+      </IconButtonPrimary>,
     );
 
     expect(container).toMatchSnapshot();
