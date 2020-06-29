@@ -17,16 +17,16 @@ import TypographyBase from '~/components/TypographyBase';
 
 import useStyles from './styles';
 
-export interface Props<T> extends TableCellBaseProps {
-  children: any;
-  dataKey: keyof T;
-  setSortObject: (value: SortObject<T>) => void;
+export interface Props extends TableCellBaseProps {
+  children: string | React.ReactElement<any>;
+  dataKey: string;
+  setSortObject: (sortObject: SortObject) => void;
   sortable?: boolean;
-  sortObject: SortObject<T>;
+  sortObject: SortObject;
   style?: React.CSSProperties;
 }
 
-const TableCellHead = <T,>({
+const TableCellHead: React.FC<Props> = ({
   children,
   dataKey,
   setSortObject,
@@ -34,11 +34,11 @@ const TableCellHead = <T,>({
   sortObject,
   style,
   ...props
-}: Props<T>): React.ReactElement<any> => {
+}: Props): React.ReactElement<any> => {
   const sortIsApplied: boolean = sortable && sortObject.dataKey === dataKey;
 
   const getStyleForIcon = (
-    direction: SortObject<T>['direction'],
+    direction: SortObject['direction'],
   ): React.CSSProperties => {
     if (!sortIsApplied || sortObject.direction !== direction) {
       return {};

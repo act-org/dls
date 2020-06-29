@@ -13,16 +13,16 @@ import { SortObject } from '~/types';
 
 import useStyles from './styles';
 
-export interface Props<T> extends TableCellBaseProps {
+export interface Props extends TableCellBaseProps {
   dataKey?: string;
-  sortObject?: SortObject<T>;
+  sortObject?: SortObject;
 }
 
-const TableCellBody = <T,>({
+const TableCellBody: React.FC<Props> = ({
   dataKey,
   sortObject,
   ...otherProps
-}: Props<T>): React.ReactElement<any> => {
+}: Props): React.ReactElement<any> => {
   const sortIsApplied: boolean =
     sortObject && dataKey ? sortObject.dataKey === dataKey : false;
 

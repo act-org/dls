@@ -14,40 +14,41 @@ import TableCellHead from '~/components/TableCellHead';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
 import TableRowBase from '~/components/TableRowBase';
 
-interface Cell<T> {
-  dataKey: keyof T;
+interface Cell {
+  dataKey: string;
+  displayValueFn?: (item: any) => void;
   label: string;
   searchable: boolean;
   sortable: boolean;
   style?: React.CSSProperties;
 }
 
-export interface Props<T> {
-  cells: Cell<T>[];
-  items: T[];
+export interface Props {
+  cells: Cell[];
+  items: any[];
   searchQuery?: string;
-  setSortObject: (sortObject: SortObject<T>) => void;
-  sortObject: SortObject<T>;
+  setSortObject: (sortObject: SortObject) => void;
+  sortObject: SortObject;
 }
 
-const TablePrimary = <T,>({
+const TablePrimary: React.FC<Props> = ({
   cells,
   items: originalItems,
   searchQuery = '',
   setSortObject,
   sortObject,
-}: Props<T>): React.ReactElement<any> => {
+}: Props): React.ReactElement<any> => {
   // sort items
-  let items = originalItems.sort(sort<T>(sortObject));
+  let items = originalItems.sort(sort(sortObject));
 
   // search items
   const searchableKeys = compact(
-    cells.map(({ dataKey, searchable }): keyof T | null =>
+    cells.map(({ dataKey, searchable }): string | null =>
       searchable ? dataKey : null,
     ),
   );
   if (searchableKeys.length > 0 && searchQuery.length > 0) {
-    items = search<T>(items, searchableKeys, searchQuery);
+    items = search(items, searchableKeys, searchQuery);
   }
 
   return (
@@ -57,9 +58,9 @@ const TablePrimary = <T,>({
           <TableRowBase>
             {cells.map(
               (cell): React.ReactElement<any> => (
-                <TableCellHead<T>
+                <TableCellHead
                   dataKey={cell.dataKey}
-                  key={String(cell.dataKey)}
+                  key={cell.dataKey}
                   setSortObject={setSortObject}
                   sortable={cell.sortable}
                   sortObject={sortObject}
@@ -75,14 +76,14 @@ const TablePrimary = <T,>({
         <TableBody>
           {items.map(
             (item, i): React.ReactElement<any> => (
+              // eslint-disable-next-line react/no-array-index-key
               <TableRowBase key={i}>
                 {cells.map(
                   (cell): React.ReactElement<any> => (
-                    <TableCellBody
-                      key={String(cell.dataKey)}
-                      style={cell.style}
-                    >
-                      {item[cell.dataKey]}
+                    <TableCellBody key={cell.dataKey} style={cell.style}>
+                      {cell.displayValueFn
+                        ? cell.displayValueFn(item)
+                        : item[cell.dataKey]}
                     </TableCellBody>
                   ),
                 )}

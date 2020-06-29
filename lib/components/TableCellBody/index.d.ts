@@ -4,10 +4,10 @@
 import * as React from 'react';
 import { Props as TableCellBaseProps } from '~/components/TableCellBase';
 import { SortObject } from '~/types';
-export interface Props<T> extends TableCellBaseProps {
+export interface Props extends TableCellBaseProps {
     dataKey?: string;
-    sortObject?: SortObject<T>;
+    sortObject?: SortObject;
 }
-declare const TableCellBody: <T>({ dataKey, sortObject, ...otherProps }: Props<T>) => React.ReactElement<any>;
+declare const TableCellBody: React.FC<Props>;
 export default TableCellBody;
 //# sourceMappingURL=index.d.ts.map

@@ -2,7 +2,7 @@
  * @prettier
  */
 import { SortObject } from '~/types';
-declare type SortFunction<T> = (itemA: T, itemB: T) => number;
-declare function sort<T>({ dataKey, direction }: SortObject<T>): SortFunction<T>;
+declare type SortFunction = (itemA: any, itemB: any) => number;
+declare function sort({ dataKey, direction }: SortObject): SortFunction;
 export default sort;
 //# sourceMappingURL=sort.d.ts.map

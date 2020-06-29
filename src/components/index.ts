@@ -71,6 +71,9 @@ export type { Props as TableContainerBaseProps } from './TableContainerBase';
 export { default as TableContainerPrimary } from './TableContainerPrimary';
 export type { Props as TableContainerPrimaryProps } from './TableContainerPrimary';
 
+export { default as TablePrimary } from './TablePrimary';
+export type { Props as TablePrimaryProps } from './TablePrimary';
+
 export { default as TableRowBase } from './TableRowBase';
 export type { Props as TableRowBaseProps } from './TableRowBase';
 

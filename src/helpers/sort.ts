@@ -7,9 +7,9 @@ import { isString } from 'lodash';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
-type SortFunction<T> = (itemA: T, itemB: T) => number;
+type SortFunction = (itemA: any, itemB: any) => number;
 
-function sort<T>({ dataKey, direction }: SortObject<T>): SortFunction<T> {
+function sort({ dataKey, direction }: SortObject): SortFunction {
   return ({ [dataKey]: itemA }, { [dataKey]: itemB }): number => {
     if (itemA === null || itemB === null) return 0;
 

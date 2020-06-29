@@ -1,6 +1,6 @@
 /**
  * @prettier
  */
-declare function search<T>(docs: T[], properties: (keyof T | string)[], value: string): T[];
+declare function search(docs: any[], properties: string[], value: string): any[];
 export default search;
 //# sourceMappingURL=search.d.ts.map

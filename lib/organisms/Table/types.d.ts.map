@@ -1,1 +1,0 @@
-{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../../src/organisms/Table/types.ts"],"names":[],"mappings":"AAAA;;GAEG;;AAEH,MAAM,WAAW,KAAK;IACpB,SAAS,EAAE,IAAI,CAAC;IAChB,EAAE,EAAE,MAAM,CAAC;IACX,IAAI,EAAE,MAAM,CAAC;CACd;AAED,MAAM,WAAW,aAAc,SAAQ,KAAK;IAC1C,OAAO,EAAE,KAAK,CAAC,YAAY,CAAC,GAAG,CAAC,CAAC;CAClC"}
