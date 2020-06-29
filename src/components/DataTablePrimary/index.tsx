@@ -4,11 +4,12 @@
 
 import * as React from 'react';
 import { compact } from 'lodash';
-import { Table, TableBody, TableHead } from '@material-ui/core';
+import { TableBody, TableHead } from '@material-ui/core';
 
 import search from '~/helpers/search';
 import sort from '~/helpers/sort';
 import { SortObject } from '~/types';
+import TableBase from '~/components/TableBase';
 import TableCellBody from '~/components/TableCellBody';
 import TableCellHead from '~/components/TableCellHead';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
@@ -53,7 +54,7 @@ const DataTablePrimary: React.FC<Props> = ({
 
   return (
     <TableContainerPrimary>
-      <Table>
+      <TableBase>
         <TableHead>
           <TableRowBase>
             {columns.map(
@@ -91,7 +92,7 @@ const DataTablePrimary: React.FC<Props> = ({
             ),
           )}
         </TableBody>
-      </Table>
+      </TableBase>
     </TableContainerPrimary>
   );
 };

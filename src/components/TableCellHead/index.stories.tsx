@@ -5,34 +5,33 @@
 /* eslint-disable sort-keys */
 
 import * as React from 'react';
-import { noop } from 'lodash';
-import { number, select, text } from '@storybook/addon-knobs';
+import { number, text } from '@storybook/addon-knobs';
+
+import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
+import { SortObject } from '~/types';
 
 import TableCellHead from '.';
 
-export const Head = (): React.ReactElement<any> => (
-  <TableCellHead
-    dataKey="itemKey"
-    setSortObject={noop}
-    sortable
-    sortObject={{
-      dataKey: 'itemKey',
-      direction: select(
-        'Sort Direction',
-        {
-          Ascending: 'ASC',
-          Descending: 'DESC',
-        },
-        'ASC',
-      ),
-    }}
-    style={{
-      width: number('Style:Width', 300),
-    }}
-  >
-    {text('Text', 'Table Cell')}
-  </TableCellHead>
-);
+export const Head = (): React.ReactElement<any> => {
+  const [sortObject, setSortObject] = React.useState<SortObject>({
+    dataKey: 'itemKey',
+    direction: SORT_DIRECTION_TYPES.ASC,
+  });
+
+  return (
+    <TableCellHead
+      dataKey="itemKey"
+      setSortObject={setSortObject}
+      sortable
+      sortObject={sortObject}
+      style={{
+        width: number('Style:Width', 300),
+      }}
+    >
+      {text('Text', 'Table Cell')}
+    </TableCellHead>
+  );
+};
 
 export default {
   component: TableCellHead,
