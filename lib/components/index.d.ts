@@ -11,6 +11,8 @@ export { default as GridBase } from './GridBase';
 export type { Props as GridBaseProps } from './GridBase';
 export { default as GridContainer } from './GridContainer';
 export type { Props as GridContainerProps } from './GridContainer';
+export { default as GridItem } from './GridItem';
+export type { Props as GridItemProps } from './GridItem';
 export { default as IconBase } from './IconBase';
 export type { Props as IconBaseProps } from './IconBase';
 export { default as IconButtonBase } from './IconButtonBase';

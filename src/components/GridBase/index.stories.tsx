@@ -7,9 +7,7 @@ import * as React from 'react';
 import GridBase from '.';
 
 export const base = (): React.ReactElement<any> => (
-  <GridBase>
-    <div>Grid Base</div>
-  </GridBase>
+  <GridBase>Grid Base</GridBase>
 );
 
 export default {

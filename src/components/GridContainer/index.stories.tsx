@@ -21,26 +21,12 @@ export const container = (): React.ReactElement<any> => (
       },
       'center',
     )}
-    /*
-    justify={select(
-      'Justify',
-      {
-        Center: 'center',
-        FlexEnd: 'flex-end',
-        FlexStart: 'flex-start',
-        SpaceAround: 'space-around',
-        SpaceBetween: 'space-between',
-        SpaceEvenly: 'space-evenly',
-      },
-      'center',
-    )}
-    */
     style={{
       height: 100,
       width: 100,
     }}
   >
-    <div>Grid Container</div>
+    Grid Container
   </GridContainer>
 );
 
