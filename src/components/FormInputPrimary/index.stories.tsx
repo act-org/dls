@@ -13,15 +13,18 @@ export const Primary = (): React.ReactElement<any> => {
 
   return (
     <FormInputPrimary
+      disabled={boolean('Disabled?', false)}
       inputProps={{
         autoFocus: boolean('Auto Focus?', false),
-        disabled: boolean('Disabled?', false),
         onChange: (e: any): void => {
           action('onChange()');
 
           setValue(e.target.value);
         },
         placeholder: text('Placeholder', 'Placeholder'),
+        style: {
+          width: 250,
+        },
         type: select(
           'Type',
           {
@@ -34,10 +37,9 @@ export const Primary = (): React.ReactElement<any> => {
       }}
       labelProps={{
         children: text('Label', 'Input Label'),
-        disabled: boolean('Disabled?', false),
         error: boolean('Error?', false),
-        required: boolean('Required?', true),
       }}
+      required={boolean('Required?', true)}
     />
   );
 };

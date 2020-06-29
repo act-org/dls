@@ -17,18 +17,19 @@ import InputLabelPrimary, {
 import useStyles from './styles';
 
 export interface Props {
+  disabled?: boolean;
   inputProps?: InputBaseProps;
   labelProps?: InputLabelPrimaryProps;
+  required?: boolean;
 }
 
 const FormInputPrimary: React.FC<Props> = ({
+  disabled,
   inputProps,
   labelProps,
+  required,
 }: Props): React.ReactElement<Props> => {
-  const required =
-    get(inputProps, 'required') || get(labelProps, 'required') || false;
-  const type: any = get(inputProps, 'type') || 'text';
-  const value: any = get(inputProps, 'value') || '';
+  const value: any = get(inputProps, 'value');
 
   const classes = useStyles();
 
@@ -38,16 +39,18 @@ const FormInputPrimary: React.FC<Props> = ({
         classes={{
           input: clsx(
             classes.inputBaseInput,
-            type === 'password' &&
+            get(inputProps, 'type') === 'password' &&
               value &&
               String(value).length > 0 &&
               classes.inputBaseInputPassword,
           ),
           root: classes.inputBaseRoot,
         }}
+        disabled={disabled}
         disableUnderline
         fullWidth
         margin="dense"
+        required={required}
         {...inputProps}
       />
 
@@ -77,7 +80,11 @@ const FormInputPrimary: React.FC<Props> = ({
 
       {labelProps && (
         <div className="contentContainer">
-          <InputLabelPrimary required={required} {...labelProps} />
+          <InputLabelPrimary
+            disabled={disabled}
+            required={required}
+            {...labelProps}
+          />
         </div>
       )}
 
