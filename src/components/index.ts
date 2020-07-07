@@ -20,6 +20,9 @@ export type { Props as CssBaselineBaseProps } from './CssBaselineBase';
 export { default as DataTablePrimary } from './DataTablePrimary';
 export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
 
+export { default as DividerBase } from './DividerBase';
+export type { Props as DividerBaseProps } from './DividerBase';
+
 export { default as EmptyStatePrimary } from './EmptyStatePrimary';
 export type { Props as EmptyStatePrimaryProps } from './EmptyStatePrimary';
 
