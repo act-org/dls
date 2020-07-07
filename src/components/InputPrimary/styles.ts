@@ -2,9 +2,10 @@
  * @prettier
  */
 
-import { DIMS, TYPOGRAPHY } from '~/constants';
-import { grey } from '~/colors';
-import { makeStyles } from '~/styles';
+import DIMS from '~/constants/dims';
+import grey from '~/colors/grey';
+import makeStyles from '~/styles/makeStyles';
+import TYPOGRAPHY from '~/constants/typography';
 
 export default makeStyles({
   inputBaseInput: {
