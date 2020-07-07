@@ -11,6 +11,9 @@ export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
 export { default as CircularProgressBase } from './CircularProgressBase';
 export type { Props as CircularProgressBaseProps } from './CircularProgressBase';
 
+export { default as ContainerBase } from './ContainerBase';
+export type { Props as ContainerBaseProps } from './ContainerBase';
+
 export { default as CssBaselineBase } from './CssBaselineBase';
 export type { Props as CssBaselineBaseProps } from './CssBaselineBase';
 
