@@ -81,6 +81,10 @@ export { default as TableHeadBase } from './TableHeadBase';
 export type { Props as TableHeadBaseProps } from './TableHeadBase';
 export { default as TableRowBase } from './TableRowBase';
 export type { Props as TableRowBaseProps } from './TableRowBase';
+export { default as ThemeProviderBase } from './ThemeProviderBase';
+export type { Props as ThemeProviderBaseProps } from './ThemeProviderBase';
+export { default as ThemeProviderPrimary } from './ThemeProviderPrimary';
+export type { Props as ThemeProviderPrimaryProps } from './ThemeProviderPrimary';
 export { default as TypographyBase } from './TypographyBase';
 export type { Props as TypographyBaseProps } from './TypographyBase';
 //# sourceMappingURL=index.d.ts.map
