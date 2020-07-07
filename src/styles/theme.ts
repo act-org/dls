@@ -2,9 +2,8 @@
  * @prettier
  */
 
-import { createMuiTheme } from '@material-ui/core/styles';
-
 import COLORS from '~/constants/colors';
+import createTheme from '~/styles/createTheme';
 import TYPOGRAPHY from '~/constants/typography';
 
 export const theme = {
@@ -32,4 +31,4 @@ export const theme = {
   },
 };
 
-export default createMuiTheme(theme);
+export default createTheme(theme);

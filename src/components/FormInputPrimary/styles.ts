@@ -2,7 +2,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/styles';
+import makeStyles from '~/styles/makeStyles';
 
 export default makeStyles({
   warning: {

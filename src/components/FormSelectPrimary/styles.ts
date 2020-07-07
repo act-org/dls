@@ -2,8 +2,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/styles';
-
+import makeStyles from '~/styles/makeStyles';
 import TYPOGRAPHY from '~/constants/typography';
 
 export default makeStyles({

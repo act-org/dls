@@ -2,10 +2,9 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
-
 import COLORS from '~/constants/colors';
 import DIMS from '~/constants/dims';
+import makeStyles from '~/styles/makeStyles';
 
 export default makeStyles({
   descriptionRoot: {
