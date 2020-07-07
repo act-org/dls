@@ -2,8 +2,7 @@
  * @prettier
  */
 
-import { grey } from '@material-ui/core/colors';
-
+import grey from '~/colors/grey';
 import makeStyles from '~/styles/makeStyles';
 
 export default makeStyles({

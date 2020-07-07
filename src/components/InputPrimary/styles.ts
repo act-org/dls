@@ -2,11 +2,9 @@
  * @prettier
  */
 
-import { grey } from '@material-ui/core/colors';
-
-import DIMS from '~/constants/dims';
-import makeStyles from '~/styles/makeStyles';
-import TYPOGRAPHY from '~/constants/typography';
+import { DIMS, TYPOGRAPHY } from '~/constants';
+import { grey } from '~/colors';
+import { makeStyles } from '~/styles';
 
 export default makeStyles({
   inputBaseInput: {

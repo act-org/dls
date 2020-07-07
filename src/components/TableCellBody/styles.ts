@@ -2,9 +2,8 @@
  * @prettier
  */
 
-import { grey } from '@material-ui/core/colors';
-
 import DIMS from '~/constants/dims';
+import grey from '~/colors/grey';
 import makeStyles from '~/styles/makeStyles';
 
 export default makeStyles(({ typography }: any) => ({

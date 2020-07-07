@@ -23,9 +23,41 @@ module.exports = api => {
           preventFullImport: true,
           transform: '@material-ui/core/${member}',
         },
+        '@material-ui/core/colors': {
+          preventFullImport: true,
+          transform: '@material-ui/core/colors/${member}',
+        },
+        '@material-ui/core/styles': {
+          preventFullImport: true,
+          transform: '@material-ui/core/styles/${member}',
+        },
         '@material-ui/icons': {
           preventFullImport: true,
           transform: '@material-ui/icons/${member}',
+        },
+        '~/colors': {
+          preventFullImport: true,
+          transform: '~/colors/${member}',
+        },
+        '~/components': {
+          preventFullImport: true,
+          transform: '~/components/${member}',
+        },
+        '~/constants': {
+          preventFullImport: true,
+          transform: '~/constants/${member}',
+        },
+        '~/helpers': {
+          preventFullImport: true,
+          transform: '~/helpers/${member}',
+        },
+        '~/icons': {
+          preventFullImport: true,
+          transform: '~/icons/${member}',
+        },
+        '~/styles': {
+          preventFullImport: true,
+          transform: '~/styles/${member}',
         },
         lodash: {
           preventFullImport: true,
