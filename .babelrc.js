@@ -38,6 +38,10 @@ module.exports = api => {
           preventFullImport: true,
           transform: '@material-ui/icons/${member}',
         },
+        '@material-ui/styles': {
+          preventFullImport: true,
+          transform: '@material-ui/styles/${member}',
+        },
         '~/colors': {
           preventFullImport: true,
           transform: '~/colors/${member}',
