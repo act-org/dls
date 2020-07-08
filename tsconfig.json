@@ -20,7 +20,9 @@
     "./node_modules/*",
     "./src/**/*.stories.*",
     "./src/**/*.test.*",
-    "**/test/*"
+    "**/test/*",
+    "**/colors/*",
+    "**/icons/*"
   ],
   "extends": "./node_modules/eslint-config/tsconfig.json",
   "include": [

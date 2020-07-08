@@ -1,10 +1,8 @@
-/**
- * @prettier
- */
 export { default as amber } from './amber';
 export { default as blue } from './blue';
 export { default as blueGrey } from './blueGrey';
 export { default as brown } from './brown';
+export { default as common } from './common';
 export { default as cyan } from './cyan';
 export { default as deepOrange } from './deepOrange';
 export { default as deepPurple } from './deepPurple';
@@ -20,4 +18,3 @@ export { default as purple } from './purple';
 export { default as red } from './red';
 export { default as teal } from './teal';
 export { default as yellow } from './yellow';
-//# sourceMappingURL=index.d.ts.map

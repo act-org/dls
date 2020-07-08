@@ -85,7 +85,7 @@ module.exports = api => {
   }
 
   return {
-    ignore: ['**/test/*'],
+    ignore: ['**/*.stories.tsx', '**/*.test.tsx', '**/test/*'],
     plugins,
     presets,
   };
