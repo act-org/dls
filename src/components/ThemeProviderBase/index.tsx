@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { ThemeProvider, ThemeProviderProps } from '@material-ui/core';
+import { ThemeProvider, ThemeProviderProps } from '@material-ui/styles';
 
 export type Props = ThemeProviderProps;
 
