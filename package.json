@@ -8,19 +8,19 @@
     "Jon Cursi <jon.cursi@act-et.org>"
   ],
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
-    "@material-ui/styles": "^4.10.0",
-    "@material-ui/system": "^4.9.14",
-    "clsx": "^1.1.1",
-    "lodash": "^4.17.15",
-    "mdi-material-ui": "^6.16.0",
-    "moment": "^2.27.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "styled-jsx": "^3.3.0",
-    "validator": "^13.1.1"
+    "@material-ui/core": "4.11.0",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "4.0.0-alpha.56",
+    "@material-ui/styles": "4.10.0",
+    "@material-ui/system": "4.9.14",
+    "clsx": "1.1.1",
+    "lodash": "4.17.19",
+    "mdi-material-ui": "6.16.0",
+    "moment": "2.27.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-jsx": "3.3.0",
+    "validator": "13.1.1"
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
@@ -46,6 +46,7 @@
     "@types/moment": "2.13.0",
     "@types/react": "16.9.41",
     "@types/react-dom": "16.9.8",
+    "@types/shelljs": "0.8.8",
     "@types/styled-jsx": "2.2.8",
     "@types/validator": "13.1.0",
     "babel-jest": "26.1.0",
@@ -62,10 +63,12 @@
     "prettier": "2.0.5",
     "react-docgen-typescript-loader": "3.7.2",
     "react-test-renderer": "16.13.1",
+    "shelljs": "0.8.4",
     "storybook-addon-material-ui": "0.9.0-alpha.21",
     "storybook-host": "5.1.0",
     "ts-jest": "26.1.1",
     "ts-loader": "7.0.5",
+    "ts-node": "8.10.2",
     "typescript": "3.9.6"
   },
   "husky": {
@@ -100,6 +103,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf lib",
+    "build:icons": "ts-node bin/buildIcons.ts",
     "build:main": "NODE_ENV=production babel src --extensions \".ts,.tsx\" --ignore \"**/*.stories.tsx,**/*.test.tsx\" --out-dir lib",
     "build:types": "tsc --project tsconfig.build.json",
     "start": "start-storybook",
