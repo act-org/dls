@@ -5,7 +5,7 @@
 import * as React from 'react';
 import { get } from 'lodash';
 
-import { AlertOutline } from '~/icons';
+import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
 import DIMS from '~/constants/dims';
 import InputLabelPrimary, {

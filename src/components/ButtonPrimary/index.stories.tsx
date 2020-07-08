@@ -7,7 +7,8 @@
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { Plus } from 'mdi-material-ui';
+
+import Plus from '~/icons/Plus';
 
 import ButtonPrimary from '.';
 

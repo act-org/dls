@@ -3,9 +3,10 @@
  */
 
 import * as React from 'react';
-import { Account as AccountIcon } from 'mdi-material-ui';
 import { boolean, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
+
+import Account from '~/icons/Account';
 
 import EmptyStatePrimary from '.';
 
@@ -23,7 +24,7 @@ export const Primary = (): React.ReactElement<any> => (
       'Description',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     )}
-    Icon={boolean('Icon?', true) ? AccountIcon : undefined}
+    Icon={boolean('Icon?', true) ? Account : undefined}
     title={text('Title', 'No users yet.')}
   />
 );

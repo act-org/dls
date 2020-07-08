@@ -5,7 +5,7 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
-import { ChevronDown } from '~/icons';
+import ChevronDown from '~/icons/ChevronDown';
 import SelectBase, { Props as SelectBaseProps } from '~/components/SelectBase';
 
 import useStyles from './styles';

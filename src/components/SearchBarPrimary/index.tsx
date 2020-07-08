@@ -5,9 +5,10 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
-import { CloseCircle, Magnify } from '~/icons';
+import CloseCircle from '~/icons/CloseCircle';
 import IconButtonBase from '~/components/IconButtonBase';
 import InputAdornmentBase from '~/components/InputAdornmentBase';
+import Magnify from '~/icons/Magnify';
 import OutlinedInputBase, {
   Props as OutlinedInputBaseProps,
 } from '~/components/OutlinedInputBase';

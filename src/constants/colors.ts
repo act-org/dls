@@ -2,8 +2,10 @@
  * @prettier
  */
 
+import common from '~/colors/common';
+
 export default {
-  BLACK: '#000000',
+  BLACK: common.black,
   BLACK_12: 'rgba(0, 0, 0, 0.12)',
   BLACK_38: 'rgba(0, 0, 0, 0.38)',
   BLACK_54: 'rgba(0, 0, 0, 0.54)',
@@ -15,7 +17,7 @@ export default {
   TEXT_PRIMARY: '#2d2d2d',
   TEXT_SECONDARY: '#8f8f8f',
   TRANSPARENT: 'rgba(255, 255, 255, 0)',
-  WHITE: '#ffffff',
+  WHITE: common.white,
   WHITE_12: 'rgba(255, 255, 255, 0.12)',
   WHITE_38: 'rgba(255, 255, 255, 0.38)',
   WHITE_54: 'rgba(255, 255, 255, 0.54)',

@@ -9,7 +9,7 @@ export declare const theme: {
             main: string;
         };
         secondary: {
-            main: string;
+            main: "#fff";
         };
         text: {
             primary: string;

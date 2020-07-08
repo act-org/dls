@@ -3,11 +3,12 @@
  */
 
 import * as React from 'react';
-import { Typography } from '@material-ui/core';
 
 import CircularProgressBase, {
   Props as CircularProgressBaseProps,
 } from '~/components/CircularProgressBase';
+import TypographyBase from '~/components/TypographyBase';
+
 import useStyles from './styles';
 
 export interface Props {
@@ -46,12 +47,12 @@ const LoadingBase: React.FC<Props> = ({
         />
 
         {title && (
-          <Typography
+          <TypographyBase
             classes={{ root: classes.typographyRoot }}
             variant="overline"
           >
             {title}
-          </Typography>
+          </TypographyBase>
         )}
       </div>
     </>

@@ -5,8 +5,9 @@
 /* eslint-disable sort-keys */
 
 import * as React from 'react';
-import { Plus } from 'mdi-material-ui';
 import { select } from '@storybook/addon-knobs';
+
+import Plus from '~/icons/Plus';
 
 import InputAdornmentBase from '.';
 

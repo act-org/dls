@@ -4,7 +4,8 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Plus } from 'mdi-material-ui';
+
+import Plus from '~/icons/Plus';
 
 import IconButtonBase from '.';
 

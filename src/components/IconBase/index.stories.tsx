@@ -3,9 +3,10 @@
  */
 
 import * as React from 'react';
-import * as MaterialCommunityIcons from 'mdi-material-ui';
 import { select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
+
+import * as icons from '~/icons';
 
 import IconBase from '.';
 
@@ -46,14 +47,14 @@ storiesOf('Atoms/Icon', module).add(
   ),
 );
 
-Object.keys(MaterialCommunityIcons).forEach((iconName): void => {
+Object.keys(icons).forEach((iconName): void => {
   storiesOf('Atoms/Icon', module).add(
     iconName,
     (): React.ReactElement<any> => {
-      const MaterialCommunityIcon = (MaterialCommunityIcons as any)[iconName];
+      const Icon = (icons as any)[iconName];
 
       return (
-        <MaterialCommunityIcon
+        <Icon
           color={select(
             'Color',
             {

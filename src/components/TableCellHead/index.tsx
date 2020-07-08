@@ -5,7 +5,8 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
-import { ChevronDown, ChevronUp } from '~/icons';
+import ChevronDown from '~/icons/ChevronDown';
+import ChevronUp from '~/icons/ChevronUp';
 import COLORS from '~/constants/colors';
 import GridContainer from '~/components/GridContainer';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
