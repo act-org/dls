@@ -53,6 +53,8 @@ export { default as LinkText } from './LinkText';
 export type { Props as LinkTextProps } from './LinkText';
 export { default as ListBase } from './ListBase';
 export type { Props as ListBaseProps } from './ListBase';
+export { default as ListItemBase } from './ListItemBase';
+export type { Props as ListItemBaseProps } from './ListItemBase';
 export { default as MenuItemBase } from './MenuItemBase';
 export type { Props as MenuItemBaseProps } from './MenuItemBase';
 export { default as OutlinedInputBase } from './OutlinedInputBase';

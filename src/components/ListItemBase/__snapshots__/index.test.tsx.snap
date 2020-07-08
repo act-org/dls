@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItemBase matches the snapshot 1`] = `
+<div>
+  <div
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button"
+    role="button"
+    tabindex="0"
+  >
+    ListItem
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </div>
+</div>
+`;
