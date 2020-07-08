@@ -37,5 +37,5 @@ export default {
       text: 'This is the container variant of the Grid component.',
     },
   },
-  title: 'Atoms/Grid',
+  title: 'Layouts/Grid',
 };

@@ -5,6 +5,8 @@ export { default as ButtonBase } from './ButtonBase';
 export type { Props as ButtonBaseProps } from './ButtonBase';
 export { default as ButtonPrimary } from './ButtonPrimary';
 export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
+export { default as CheckboxBase } from './CheckboxBase';
+export type { Props as CheckboxBaseProps } from './CheckboxBase';
 export { default as CircularProgressBase } from './CircularProgressBase';
 export type { Props as CircularProgressBaseProps } from './CircularProgressBase';
 export { default as ContainerBase } from './ContainerBase';

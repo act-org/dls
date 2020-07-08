@@ -17,5 +17,5 @@ export default {
       text: 'This is the primary variant of the ThemeProvider component.',
     },
   },
-  title: 'Atoms/ThemeProvider',
+  title: 'Utilities/ThemeProvider',
 };

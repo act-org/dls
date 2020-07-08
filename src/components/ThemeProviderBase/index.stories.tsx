@@ -32,5 +32,5 @@ export default {
       text: 'This is the base variant of the ThemeProvider component.',
     },
   },
-  title: 'Atoms/ThemeProvider',
+  title: 'Utilities/ThemeProvider',
 };

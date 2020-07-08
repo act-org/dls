@@ -17,5 +17,5 @@ export default {
       text: 'This is the base variant of the Container component.',
     },
   },
-  title: 'Atoms/Container',
+  title: 'Layouts/Container',
 };

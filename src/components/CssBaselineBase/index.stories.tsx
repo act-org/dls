@@ -17,5 +17,5 @@ export default {
       text: 'This is the base variant of the CssBaseline component.',
     },
   },
-  title: 'Atoms/CssBaseline',
+  title: 'Utilities/CssBaseline',
 };

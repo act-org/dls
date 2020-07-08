@@ -9,6 +9,9 @@ module.exports = api => {
 
   const plugins = [
     'styled-jsx/babel',
+    // FIXME:
+    // https://github.com/entwicklerstube/babel-plugin-root-import/issues/136
+    // https://bitbucket.org/amctheatres/babel-transform-imports/issues/17/compatibility-issue-with-babel-plugin-root
     [
       'babel-plugin-root-import',
       {

@@ -65,5 +65,5 @@ export default {
       text: 'This is the item variant of the Grid component.',
     },
   },
-  title: 'Atoms/Grid',
+  title: 'Layouts/Grid',
 };
