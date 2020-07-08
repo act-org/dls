@@ -55,6 +55,8 @@ export { default as ListBase } from './ListBase';
 export type { Props as ListBaseProps } from './ListBase';
 export { default as ListItemBase } from './ListItemBase';
 export type { Props as ListItemBaseProps } from './ListItemBase';
+export { default as ListItemIconBase } from './ListItemIconBase';
+export type { Props as ListItemIconBaseProps } from './ListItemIconBase';
 export { default as MenuItemBase } from './MenuItemBase';
 export type { Props as MenuItemBaseProps } from './MenuItemBase';
 export { default as OutlinedInputBase } from './OutlinedInputBase';
