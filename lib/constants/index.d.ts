@@ -1,8 +1,8 @@
 /**
  * @prettier
  */
-export { default as COLORS } from './colors';
-export { default as DIMS } from './dims';
-export { default as SORT_DIRECTION_TYPES } from './sortDirectionTypes';
-export { default as TYPOGRAPHY } from './typography';
+export { default as colors } from './colors';
+export { default as dims } from './dims';
+export { default as sortDirectionTypes } from './sortDirectionTypes';
+export { default as typography } from './typography';
 //# sourceMappingURL=index.d.ts.map
