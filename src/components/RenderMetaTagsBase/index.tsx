@@ -10,6 +10,7 @@ export interface Props {
   keywords?: string[];
   noIndex?: boolean;
   title?: string;
+  Wrapper?: (children: React.ReactElement<any>) => React.ReactElement<any>;
 }
 
 const RenderMetaTagsBase: React.FC<Props> = ({
@@ -18,59 +19,68 @@ const RenderMetaTagsBase: React.FC<Props> = ({
   keywords,
   noIndex,
   title,
-}: Props): React.ReactElement<Props> => (
-  <>
-    {/* Descriptions */}
-    {description && (
-      <>
-        {/* Search Engines */}
-        <meta content={description} name="description" />
+  Wrapper,
+}: Props): React.ReactElement<Props> => {
+  const children = (
+    <>
+      {/* Descriptions */}
+      {description && (
+        <>
+          {/* Search Engines */}
+          <meta content={description} name="description" />
 
-        {/* Facebook Open Graph */}
-        <meta content={description} property="og:description" />
+          {/* Facebook Open Graph */}
+          <meta content={description} property="og:description" />
 
-        {/* Twitter Cards */}
-        <meta content={description} name="twitter:text:description" />
-      </>
-    )}
+          {/* Twitter Cards */}
+          <meta content={description} name="twitter:text:description" />
+        </>
+      )}
 
-    {/* Images */}
-    {imageUrl && (
-      <>
-        {/* Facebook Open Graph */}
-        <meta content={imageUrl} property="og:image" />
+      {/* Images */}
+      {imageUrl && (
+        <>
+          {/* Facebook Open Graph */}
+          <meta content={imageUrl} property="og:image" />
 
-        <meta content={imageUrl} name="twitter:image" />
-      </>
-    )}
+          <meta content={imageUrl} name="twitter:image" />
+        </>
+      )}
 
-    {/* Keywords */}
-    {keywords && (
-      <>
-        {/* Search Engines */}
-        <meta content={keywords.toString()} name="keywords" />
-      </>
-    )}
+      {/* Keywords */}
+      {keywords && (
+        <>
+          {/* Search Engines */}
+          <meta content={keywords.toString()} name="keywords" />
+        </>
+      )}
 
-    {/* Titles */}
-    {title && (
-      <>
-        {/* Browser Tab, Search Engines */}
-        <title itemProp="name" lang="en">
-          {title}
-        </title>
+      {/* Titles */}
+      {title && (
+        <>
+          {/* Browser Tab, Search Engines */}
+          <title itemProp="name" lang="en">
+            {title}
+          </title>
 
-        {/* Facebook Open Graph */}
-        <meta content={title} property="og:title" />
+          {/* Facebook Open Graph */}
+          <meta content={title} property="og:title" />
 
-        {/* Twitter Cards */}
-        <meta content={title} name="twitter:title" />
-      </>
-    )}
+          {/* Twitter Cards */}
+          <meta content={title} name="twitter:title" />
+        </>
+      )}
 
-    {/* Utility Pages */}
-    {noIndex && <meta content="noindex,follow" name="robots" />}
-  </>
-);
+      {/* Utility Pages */}
+      {noIndex && <meta content="noindex,follow" name="robots" />}
+    </>
+  );
+
+  if (Wrapper) {
+    return Wrapper(children);
+  }
+
+  return children;
+};
 
 export default RenderMetaTagsBase;
