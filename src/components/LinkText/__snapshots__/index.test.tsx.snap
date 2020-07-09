@@ -2,22 +2,8 @@
 
 exports[`LinkText matches the snapshot 1`] = `
 <div>
-  <style>
-    
-        a {
-        }
-        
-      a {
-        color: #1976d2;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    
-      
-  </style>
   <a
+    class="makeStyles-linkBase-1"
     href="https://www.act.org"
     target="_blank"
   >

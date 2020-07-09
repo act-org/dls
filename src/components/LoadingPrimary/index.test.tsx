@@ -6,11 +6,11 @@ import * as React from 'react';
 
 import render from '~/helpers/test/render';
 
-import LoadingBase from '.';
+import LoadingPrimary from '.';
 
-describe('LoadingBase', () => {
+describe('LoadingPrimary', () => {
   it('matches the snapshot', () => {
-    const { container } = render(<LoadingBase title="Loading..." />);
+    const { container } = render(<LoadingPrimary title="Loading..." />);
 
     expect(container).toMatchSnapshot();
   });

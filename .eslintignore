@@ -2,3 +2,4 @@ lib
 node_modules
 src/colors
 src/icons
+storybook-static

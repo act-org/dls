@@ -7,7 +7,6 @@ import { get } from 'lodash';
 
 import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
-import DIMS from '~/constants/dims';
 import InputLabelPrimary, {
   Props as InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
@@ -45,7 +44,7 @@ const FormSelectPrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   const children = (
-    <div className="selectContainer">
+    <div className={classes.selectContainer}>
       <SelectPrimary
         {...selectProps}
         disabled={disabled}
@@ -87,19 +86,8 @@ const FormSelectPrimary: React.FC<Props> = ({
 
   return (
     <>
-      <style jsx>
-        {`
-          .labelContainer {
-            margin-bottom: ${DIMS.LAYOUT_PADDING / 2}px;
-          }
-          .selectContainer {
-            position: relative;
-          }
-        `}
-      </style>
-
       {labelProps && (
-        <div className="labelContainer">
+        <div className={classes.labelContainer}>
           <InputLabelPrimary
             disabled={disabled}
             required={required}

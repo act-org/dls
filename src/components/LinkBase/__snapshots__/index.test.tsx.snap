@@ -2,13 +2,6 @@
 
 exports[`LinkBase matches the snapshot 1`] = `
 <div>
-  <style>
-    
-        a {
-        }
-        undefined
-      
-  </style>
   <a
     href="https://www.act.org"
     target="_blank"

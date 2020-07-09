@@ -19,7 +19,6 @@
     "moment": "2.27.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-jsx": "3.3.0",
     "validator": "13.1.1"
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
@@ -47,7 +46,6 @@
     "@types/react": "16.9.41",
     "@types/react-dom": "16.9.8",
     "@types/shelljs": "0.8.8",
-    "@types/styled-jsx": "2.2.8",
     "@types/validator": "13.1.0",
     "babel-jest": "26.1.0",
     "babel-loader": "8.1.0",
@@ -118,7 +116,7 @@
     "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest --maxWorkers=2 --silent"
+    "test:unit": "jest --maxWorkers=2 --silent --updateSnapshot"
   },
   "version": "1.2.3"
 }

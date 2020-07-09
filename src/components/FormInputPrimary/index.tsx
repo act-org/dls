@@ -7,7 +7,6 @@ import { get } from 'lodash';
 
 import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
-import DIMS from '~/constants/dims';
 import InputLabelPrimary, {
   Props as InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
@@ -36,7 +35,7 @@ const FormInputPrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   const children = (
-    <div className="inputContainer">
+    <div className={classes.inputContainer}>
       <InputPrimary
         disabled={disabled}
         error={!!errorMessage || get(inputProps, 'error')}
@@ -60,19 +59,8 @@ const FormInputPrimary: React.FC<Props> = ({
 
   return (
     <>
-      <style jsx>
-        {`
-          .labelContainer {
-            margin-bottom: ${DIMS.LAYOUT_PADDING / 2}px;
-          }
-          .inputContainer {
-            position: relative;
-          }
-        `}
-      </style>
-
       {labelProps && (
-        <div className="labelContainer">
+        <div className={classes.labelContainer}>
           <InputLabelPrimary
             disabled={disabled}
             error={!!errorMessage || get(labelProps, 'error')}

@@ -6,7 +6,7 @@ import * as React from 'react';
 
 export interface Props {
   children?: React.ReactNode;
-  css?: string;
+  className?: string;
   download?: string | boolean;
   onClick?: (e: React.MouseEvent<HTMLElement>) => void;
   style?: React.CSSProperties;
@@ -16,7 +16,7 @@ export interface Props {
 
 const LinkBase: React.FC<Props> = ({
   children,
-  css,
+  className,
   download,
   onClick,
   style,
@@ -24,26 +24,17 @@ const LinkBase: React.FC<Props> = ({
   to,
   ...props
 }: Props): React.ReactElement<Props> => (
-  <>
-    <style jsx>
-      {`
-        a {
-        }
-        ${css}
-      `}
-    </style>
-
-    <a
-      download={download}
-      href={to}
-      onClick={onClick}
-      style={style}
-      target={target}
-      {...props}
-    >
-      {children || null}
-    </a>
-  </>
+  <a
+    className={className}
+    download={download}
+    href={to}
+    onClick={onClick}
+    style={style}
+    target={target}
+    {...props}
+  >
+    {children || null}
+  </a>
 );
 
 export default LinkBase;

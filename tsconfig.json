@@ -20,6 +20,7 @@
     "./node_modules/*",
     "./src/**/*.stories.*",
     "./src/**/*.test.*",
+    "./storybook-static/*",
     "**/test/*",
     "**/colors/*",
     "**/icons/*"

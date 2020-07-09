@@ -2,21 +2,11 @@
 
 exports[`FormInputPrimary matches the snapshot 1`] = `
 <div>
-  <style>
-    
-          .labelContainer {
-            margin-bottom: 6px;
-          }
-          .inputContainer {
-            position: relative;
-          }
-        
-  </style>
   <div
-    class="labelContainer"
+    class="makeStyles-labelContainer-2"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-2 MuiInputLabel-animated"
+      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-4 MuiInputLabel-animated"
     >
       <div
         class="label-split"
@@ -33,13 +23,13 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
     </label>
   </div>
   <div
-    class="inputContainer"
+    class="makeStyles-inputContainer-1"
   >
     <div
-      class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-5 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+      class="MuiInputBase-root MuiInput-root makeStyles-inputBaseRoot-7 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
     >
       <input
-        class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-3 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+        class="MuiInputBase-input MuiInput-input makeStyles-inputBaseInput-5 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
         type="text"
         value="Value"
       />

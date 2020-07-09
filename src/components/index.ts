@@ -89,6 +89,9 @@ export type { Props as ListItemIconBaseProps } from './ListItemIconBase';
 export { default as ListItemTextBase } from './ListItemTextBase';
 export type { Props as ListItemTextBaseProps } from './ListItemTextBase';
 
+export { default as LoadingPrimary } from './LoadingPrimary';
+export type { Props as LoadingPrimaryProps } from './LoadingPrimary';
+
 export { default as MenuItemBase } from './MenuItemBase';
 export type { Props as MenuItemBaseProps } from './MenuItemBase';
 

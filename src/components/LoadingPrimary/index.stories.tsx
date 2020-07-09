@@ -5,10 +5,10 @@
 import * as React from 'react';
 import { text } from '@storybook/addon-knobs';
 
-import LoadingBase from '.';
+import LoadingPrimary from '.';
 
-export const Base = (): React.ReactElement<any> => (
-  <LoadingBase
+export const Primary = (): React.ReactElement<any> => (
+  <LoadingPrimary
     circularProgressProps={{
       size: Number(text('Size', '24')),
       thickness: Number(text('Thickness', '4.5')),
@@ -18,10 +18,10 @@ export const Base = (): React.ReactElement<any> => (
 );
 
 export default {
-  component: LoadingBase,
+  component: LoadingPrimary,
   parameters: {
     info: {
-      text: 'This is the base variant of the Loading component.',
+      text: 'This is the primary variant of the Loading component.',
     },
   },
   title: 'Molecules/Loading',

@@ -33,67 +33,54 @@ const EmptyStatePrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <>
-      <style jsx>
-        {`
-          .container {
-            align-items: center;
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-          }
-        `}
-      </style>
+    <div className={classes.container} style={style}>
+      {Icon && (
+        <Icon
+          classes={{
+            root: clsx(classes.iconRoot),
+          }}
+          color="disabled"
+          titleAccess={isString(title) ? title : undefined}
+        />
+      )}
 
-      <div className="container" style={style}>
-        {Icon && (
-          <Icon
+      {title && (
+        <GridContainer
+          alignItems="center"
+          classes={{
+            container: clsx(classes.titleGridContainer),
+          }}
+          justify="center"
+        >
+          <GridItem
             classes={{
-              root: clsx(classes.iconRoot),
+              item: classes.titleGridItem,
             }}
-            color="disabled"
-            titleAccess={isString(title) ? title : undefined}
-          />
-        )}
-
-        {title && (
-          <GridContainer
-            alignItems="center"
-            classes={{
-              container: clsx(classes.titleGridContainer),
-            }}
-            justify="center"
           >
-            <GridItem
-              classes={{
-                item: classes.titleGridItem,
-              }}
-            >
-              <TypographyBase align="center" variant="h6">
-                {title}
-              </TypographyBase>
-            </GridItem>
-          </GridContainer>
-        )}
+            <TypographyBase align="center" variant="h6">
+              {title}
+            </TypographyBase>
+          </GridItem>
+        </GridContainer>
+      )}
 
-        {description && (
-          <TypographyBase
-            align="center"
-            classes={{
-              root: clsx(
-                classes.descriptionRoot,
-                !title && classes.descriptionRootWithoutTitle,
-              ),
-            }}
-            variant="body1"
-          >
-            {description}
-          </TypographyBase>
-        )}
+      {description && (
+        <TypographyBase
+          align="center"
+          classes={{
+            root: clsx(
+              classes.descriptionRoot,
+              !title && classes.descriptionRootWithoutTitle,
+            ),
+          }}
+          variant="body1"
+        >
+          {description}
+        </TypographyBase>
+      )}
 
-        {buttonProps && <ButtonPrimary {...buttonProps} />}
-      </div>
-    </>
+      {buttonProps && <ButtonPrimary {...buttonProps} />}
+    </div>
   );
 };
 

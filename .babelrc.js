@@ -4,11 +4,9 @@
 
 /* eslint-disable immutable/no-mutation, no-template-curly-in-string */
 
-module.exports = api => {
-  const isTestEnv = api.env('test');
-
-  const plugins = [
-    'styled-jsx/babel',
+module.exports = {
+  ignore: ['**/*.stories.tsx', '**/*.test.tsx', '**/test/*'],
+  plugins: [
     // FIXME:
     // https://github.com/entwicklerstube/babel-plugin-root-import/issues/136
     // https://bitbucket.org/amctheatres/babel-transform-imports/issues/17/compatibility-issue-with-babel-plugin-root
@@ -76,21 +74,10 @@ module.exports = api => {
         },
       },
     ],
-  ];
-
-  const presets = [
+  ],
+  presets: [
     '@babel/preset-env',
     '@babel/preset-typescript',
     '@babel/preset-react',
-  ];
-
-  if (isTestEnv) {
-    plugins.push('styled-jsx/babel-test');
-  }
-
-  return {
-    ignore: ['**/*.stories.tsx', '**/*.test.tsx', '**/test/*'],
-    plugins,
-    presets,
-  };
+  ],
 };

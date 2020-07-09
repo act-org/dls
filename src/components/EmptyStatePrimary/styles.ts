@@ -7,6 +7,12 @@ import DIMS from '~/constants/dims';
 import makeStyles from '~/styles/makeStyles';
 
 export default makeStyles({
+  container: {
+    alignItems: 'center',
+    display: 'flex',
+    flex: 1,
+    flexDirection: 'column',
+  },
   descriptionRoot: {
     color: COLORS.BLACK_54,
     marginBottom: DIMS.LAYOUT_PADDING * 2,

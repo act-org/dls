@@ -4,7 +4,7 @@
 import * as React from 'react';
 export interface Props {
     children?: React.ReactNode;
-    css?: string;
+    className?: string;
     download?: string | boolean;
     onClick?: (e: React.MouseEvent<HTMLElement>) => void;
     style?: React.CSSProperties;

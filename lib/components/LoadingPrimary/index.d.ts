@@ -8,6 +8,6 @@ export interface Props {
     style?: React.CSSProperties;
     title?: string;
 }
-declare const LoadingBase: React.FC<Props>;
-export default LoadingBase;
+declare const LoadingPrimary: React.FC<Props>;
+export default LoadingPrimary;
 //# sourceMappingURL=index.d.ts.map

@@ -2,10 +2,17 @@
  * @prettier
  */
 
+import DIMS from '~/constants/dims';
 import makeStyles from '~/styles/makeStyles';
 import TYPOGRAPHY from '~/constants/typography';
 
 export default makeStyles({
+  labelContainer: {
+    marginBottom: DIMS.LAYOUT_PADDING / 2,
+  },
+  selectContainer: {
+    position: 'relative',
+  },
   selectOptionRoot: {
     color: '#2d2d2d', // FIXME: COLORS.TEXT_PRIMARY,
     fontSize: 14,
