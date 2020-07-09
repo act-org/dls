@@ -111,6 +111,7 @@
     "build:styles": "NODE_ENV=production babel src/styles --extensions \".ts,.tsx\" --out-dir lib/styles",
     "build:types": "ts-node bin/buildTypes.mjs --experimental-modules",
     "build:declarations": "tsc --project tsconfig.build.json",
+    "build-storybook": "build-storybook",
     "start": "start-storybook",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
