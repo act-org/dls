@@ -13,8 +13,9 @@ export interface Props {
     labelProps?: InputLabelPrimaryProps;
     options?: SelectOption[];
     placeholder?: string;
+    placeholderIsDisabled?: boolean;
     required?: boolean;
-    selectProps?: SelectPrimaryProps;
+    selectProps: SelectPrimaryProps;
 }
 declare const FormSelectPrimary: React.FC<Props>;
 export default FormSelectPrimary;

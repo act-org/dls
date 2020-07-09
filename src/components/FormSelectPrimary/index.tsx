@@ -28,8 +28,9 @@ export interface Props {
   labelProps?: InputLabelPrimaryProps;
   options?: SelectOption[];
   placeholder?: string;
+  placeholderIsDisabled?: boolean;
   required?: boolean;
-  selectProps?: SelectPrimaryProps;
+  selectProps: SelectPrimaryProps;
 }
 
 const FormSelectPrimary: React.FC<Props> = ({
@@ -37,6 +38,7 @@ const FormSelectPrimary: React.FC<Props> = ({
   labelProps,
   options = [],
   placeholder,
+  placeholderIsDisabled,
   required,
   selectProps,
 }: Props): React.ReactElement<Props> => {
@@ -45,14 +47,15 @@ const FormSelectPrimary: React.FC<Props> = ({
   const children = (
     <div className="selectContainer">
       <SelectPrimary
+        {...selectProps}
         disabled={disabled}
         fullWidth
         required={required}
-        {...selectProps}
+        value={selectProps.value || 'undefined'}
       >
         <MenuItemBase
           classes={{ root: classes.selectOptionRoot }}
-          disabled
+          disabled={placeholderIsDisabled}
           value="undefined"
         >
           {placeholder || 'Select'}

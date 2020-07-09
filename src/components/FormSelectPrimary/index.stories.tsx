@@ -9,7 +9,7 @@ import { boolean, text } from '@storybook/addon-knobs';
 import FormSelectPrimary from '.';
 
 export const Primary = (): React.ReactElement<any> => {
-  const [value, setValue] = React.useState('ONE');
+  const [value, setValue] = React.useState<string | undefined>(undefined);
 
   return (
     <FormSelectPrimary
@@ -32,6 +32,8 @@ export const Primary = (): React.ReactElement<any> => {
           value: 'THREE',
         },
       ]}
+      placeholder={text('Placeholder', 'Placeholder')}
+      placeholderIsDisabled={boolean('Disable Placeholder?', true)}
       required={boolean('Required?', true)}
       selectProps={{
         onChange: (e: any): void => {
@@ -39,7 +41,6 @@ export const Primary = (): React.ReactElement<any> => {
 
           setValue(e.target.value);
         },
-        placeholder: text('Placeholder', 'Placeholder'),
         style: {
           width: 250,
         },
