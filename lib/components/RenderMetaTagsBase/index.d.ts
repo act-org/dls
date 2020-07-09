@@ -8,7 +8,7 @@ export interface Props {
     keywords?: string[];
     noIndex?: boolean;
     title?: string;
-    Wrapper?: (children: React.ReactElement<any>) => React.ReactElement<any>;
+    Wrapper?: (children: React.ReactElement<any>[]) => React.ReactElement<any>;
 }
 declare const RenderMetaTagsBase: React.FC<Props>;
 export default RenderMetaTagsBase;

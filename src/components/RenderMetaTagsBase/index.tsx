@@ -10,7 +10,7 @@ export interface Props {
   keywords?: string[];
   noIndex?: boolean;
   title?: string;
-  Wrapper?: (children: React.ReactElement<any>) => React.ReactElement<any>;
+  Wrapper?: (children: React.ReactElement<any>[]) => React.ReactElement<any>;
 }
 
 const RenderMetaTagsBase: React.FC<Props> = ({
@@ -20,61 +20,49 @@ const RenderMetaTagsBase: React.FC<Props> = ({
   noIndex,
   title,
   Wrapper,
-}: Props): React.ReactElement<Props> => {
-  const children = (
-    <>
-      {/* Descriptions */}
-      {description && (
-        <>
-          {/* Search Engines */}
-          <meta content={description} name="description" />
+}: Props): any => {
+  const children: React.ReactElement<any>[] = [];
 
-          {/* Facebook Open Graph */}
-          <meta content={description} property="og:description" />
+  if (description) {
+    // Search Engines
+    children.push(<meta content={description} name="description" />);
+    // Facebook Open Graph
+    children.push(<meta content={description} property="og:description" />);
+    // Twitter Cards
+    children.push(
+      <meta content={description} name="twitter:text:description" />,
+    );
+  }
 
-          {/* Twitter Cards */}
-          <meta content={description} name="twitter:text:description" />
-        </>
-      )}
+  if (imageUrl) {
+    // Facebook Open Graph
+    children.push(<meta content={imageUrl} property="og:image" />);
+    // Twitter Cards
+    children.push(<meta content={imageUrl} name="twitter:image" />);
+  }
 
-      {/* Images */}
-      {imageUrl && (
-        <>
-          {/* Facebook Open Graph */}
-          <meta content={imageUrl} property="og:image" />
+  if (keywords) {
+    // Search Engines
+    children.push(<meta content={keywords.toString()} name="keywords" />);
+  }
 
-          <meta content={imageUrl} name="twitter:image" />
-        </>
-      )}
+  if (title) {
+    // Browser Tab, Search Engines
+    children.push(
+      <title itemProp="name" lang="en">
+        {title}
+      </title>,
+    );
+    // Facebook Open Graph
+    children.push(<meta content={title} property="og:title" />);
+    // Twitter Cards
+    children.push(<meta content={title} name="twitter:title" />);
+  }
 
-      {/* Keywords */}
-      {keywords && (
-        <>
-          {/* Search Engines */}
-          <meta content={keywords.toString()} name="keywords" />
-        </>
-      )}
-
-      {/* Titles */}
-      {title && (
-        <>
-          {/* Browser Tab, Search Engines */}
-          <title itemProp="name" lang="en">
-            {title}
-          </title>
-
-          {/* Facebook Open Graph */}
-          <meta content={title} property="og:title" />
-
-          {/* Twitter Cards */}
-          <meta content={title} name="twitter:title" />
-        </>
-      )}
-
-      {/* Utility Pages */}
-      {noIndex && <meta content="noindex,follow" name="robots" />}
-    </>
-  );
+  if (noIndex) {
+    // Robots
+    children.push(<meta content="noindex,follow" name="robots" />);
+  }
 
   if (Wrapper) {
     return Wrapper(children);
