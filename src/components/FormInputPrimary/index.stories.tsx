@@ -14,6 +14,7 @@ export const Primary = (): React.ReactElement<any> => {
   return (
     <FormInputPrimary
       disabled={boolean('Disabled?', false)}
+      errorMessage={text('Error Message', '')}
       inputProps={{
         autoFocus: boolean('Auto Focus?', false),
         onChange: (e: any): void => {
@@ -37,7 +38,6 @@ export const Primary = (): React.ReactElement<any> => {
       }}
       labelProps={{
         children: text('Label', 'Input Label'),
-        error: boolean('Error?', false),
       }}
       required={boolean('Required?', true)}
     />

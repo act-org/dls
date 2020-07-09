@@ -14,11 +14,13 @@ import InputLabelPrimary, {
 import InputPrimary, {
   Props as InputPrimaryProps,
 } from '~/components/InputPrimary';
+import TooltipBase from '~/components/TooltipBase';
 
 import useStyles from './styles';
 
 export interface Props {
   disabled?: boolean;
+  errorMessage?: string;
   inputProps?: InputPrimaryProps;
   labelProps?: InputLabelPrimaryProps;
   required?: boolean;
@@ -26,6 +28,7 @@ export interface Props {
 
 const FormInputPrimary: React.FC<Props> = ({
   disabled,
+  errorMessage,
   inputProps,
   labelProps,
   required,
@@ -36,18 +39,21 @@ const FormInputPrimary: React.FC<Props> = ({
     <div className="inputContainer">
       <InputPrimary
         disabled={disabled}
+        error={!!errorMessage || get(inputProps, 'error')}
         fullWidth
         required={required}
         {...inputProps}
       />
 
-      {get(inputProps, 'error') && (
-        <AlertOutline
-          classes={{
-            root: classes.warning,
-          }}
-          htmlColor={COLORS.REQUIRED}
-        />
+      {errorMessage && (
+        <TooltipBase arrow placement="top" title={errorMessage}>
+          <AlertOutline
+            classes={{
+              root: classes.warning,
+            }}
+            htmlColor={COLORS.REQUIRED}
+          />
+        </TooltipBase>
       )}
     </div>
   );
@@ -69,6 +75,7 @@ const FormInputPrimary: React.FC<Props> = ({
         <div className="labelContainer">
           <InputLabelPrimary
             disabled={disabled}
+            error={!!errorMessage || get(labelProps, 'error')}
             required={required}
             {...labelProps}
           />
