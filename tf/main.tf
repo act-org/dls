@@ -7,7 +7,7 @@ terraform {
 terraform {
   backend "s3" {
     bucket = "actet-tf-state"
-    key    = "react-design/terraform.tfstate"
+    key    = "dls/terraform.tfstate"
     region = "us-east-1"
   }
 }

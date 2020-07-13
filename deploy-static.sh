@@ -1,6 +1,6 @@
 
 
-aws s3 cp ./storybook-static/ s3://react-design.act-et.org/ --recursive 
+aws s3 cp ./storybook-static/ s3://dls.act-et.org/ --recursive 
 # aws s3 cp ./static/app/out/404 s3://mawi.et-act.org/404 --recursive --profile prod
 # aws s3 cp ./static/app/out/static s3://mawi.et-act.org/static --recursive --profile prod
 # aws s3 cp ./static/app/out/404.html s3://mawi.et-act.org/404.html --profile prod
