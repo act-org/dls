@@ -2,19 +2,10 @@
 
 exports[`AppBarBase matches the snapshot 1`] = `
 <div>
-  <button
-    class="MuiAppBarBase-root MuiAppBar-root MuiAppBar-text"
-    tabindex="0"
-    type="button"
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
   >
-    <span
-      class="MuiAppBar-label"
-    >
-      AppBar Label
-    </span>
-    <span
-      class="MuiTouchRipple-root"
-    />
-  </button>
+    AppBar Base
+  </header>
 </div>
 `;
