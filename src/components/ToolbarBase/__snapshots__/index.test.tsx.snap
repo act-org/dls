@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarBase matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiToolbar-root MuiToolbar-positionFixed MuiToolbar-colorPrimary mui-fixed MuiPaper-elevation4"
+  >
+    Toolbar Base
+  </header>
+</div>
+`;

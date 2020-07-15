@@ -32,7 +32,7 @@ export const Base = (): React.ReactElement<any> => (
       'fixed',
     )}
   >
-    App Bar Here
+    AppBar
   </AppBarBase>
 );
 
