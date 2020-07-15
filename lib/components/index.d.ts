@@ -99,6 +99,8 @@ export { default as ThemeProviderBase } from './ThemeProviderBase';
 export type { Props as ThemeProviderBaseProps } from './ThemeProviderBase';
 export { default as ThemeProviderPrimary } from './ThemeProviderPrimary';
 export type { Props as ThemeProviderPrimaryProps } from './ThemeProviderPrimary';
+export { default as ToolbarBase } from './ToolbarBase';
+export type { Props as ToolbarBaseProps } from './ToolbarBase';
 export { default as TooltipBase } from './TooltipBase';
 export type { Props as TooltipBaseProps } from './TooltipBase';
 export { default as TypographyBase } from './TypographyBase';
