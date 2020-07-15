@@ -6,7 +6,7 @@ import * as React from 'react';
 import { select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 
-import * as icons from '~/icons';
+// import * as icons from '~/icons';
 
 import IconBase from '.';
 
@@ -47,6 +47,7 @@ storiesOf('Atoms/Icon', module).add(
   ),
 );
 
+/*
 Object.keys(icons).forEach((iconName): void => {
   storiesOf('Atoms/Icon', module).add(
     iconName,
@@ -82,6 +83,7 @@ Object.keys(icons).forEach((iconName): void => {
     },
   );
 });
+*/
 
 export default {
   component: IconBase,
