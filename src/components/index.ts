@@ -2,6 +2,9 @@
  * @prettier
  */
 
+export { default as AppBarBase } from './AppBarBase';
+export type { Props as AppBarBaseProps } from './AppBarBase';
+
 export { default as ButtonBase } from './ButtonBase';
 export type { Props as ButtonBaseProps } from './ButtonBase';
 
