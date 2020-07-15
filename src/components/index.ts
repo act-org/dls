@@ -89,6 +89,9 @@ export type { Props as ListItemBaseProps } from './ListItemBase';
 export { default as ListItemIconBase } from './ListItemIconBase';
 export type { Props as ListItemIconBaseProps } from './ListItemIconBase';
 
+export { default as ListItemSecondaryActionBase } from './ListItemSecondaryActionBase';
+export type { Props as ListItemSecondaryActionBaseProps } from './ListItemSecondaryActionBase';
+
 export { default as ListItemTextBase } from './ListItemTextBase';
 export type { Props as ListItemTextBaseProps } from './ListItemTextBase';
 
