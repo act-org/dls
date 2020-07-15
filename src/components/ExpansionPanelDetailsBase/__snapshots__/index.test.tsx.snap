@@ -3,26 +3,10 @@
 exports[`ExpansionPanelDetailsBase matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiExpansionPanel-root MuiExpansionPanel-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    class="MuiExpansionPanelDetails-root"
   >
     <div>
       ExpansionPanelDetailsBase
-    </div>
-    <div
-      class="MuiCollapse-container MuiCollapse-hidden"
-      style="min-height: 0px;"
-    >
-      <div
-        class="MuiCollapse-wrapper"
-      >
-        <div
-          class="MuiCollapse-wrapperInner"
-        >
-          <div
-            role="region"
-          />
-        </div>
-      </div>
     </div>
   </div>
 </div>

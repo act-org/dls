@@ -38,6 +38,9 @@ export type { Props as ExpansionPanelBaseProps } from './ExpansionPanelBase';
 export { default as ExpansionPanelDetailsBase } from './ExpansionPanelDetailsBase';
 export type { Props as ExpansionPanelDetailsBaseProps } from './ExpansionPanelDetailsBase';
 
+export { default as ExpansionPanelSummaryBase } from './ExpansionPanelSummaryBase';
+export type { Props as ExpansionPanelSummaryBaseProps } from './ExpansionPanelSummaryBase';
+
 export { default as FormInputGroupsPrimary } from './FormInputGroupsPrimary';
 export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrimary';
 
