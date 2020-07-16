@@ -2,24 +2,6 @@
 
 DLS for ACT front-end projects.
 
-## Getting Started
-
-1. Install node modules: `npm install`
-2. Start the [Storybook](https://storybook.js.org) component visualizer:
-`npm start`
-
-### npm Scripts
-
-There are lots of npm scripts at your disposal during local development.
-Here are some of the more important ones:
-
-| Script                  | Description                                                           |
-|:----------------------- |:--------------------------------------------------------------------- |
-| npm run build           | Transpile DLS from TypeScript (`./src`) into ES5 (`./lib`).           |
-| npm run build-storybook | Create a static website for deployment (`./storybook-static`).        |
-| npm start               | Start the [Storybook](https://storybook.js.org) component visualizer. |
-| npm test                | Run all tests.                                                        |
-
 ## Project Setup
 
 ### Installation
@@ -208,3 +190,23 @@ If your project is using Bitbucket Pipelines, you'll need to add an SSH Key
 to your pipeline as well as a new Access Key to this repository. The combination
 of these two things will enable your pipelines to successfully `npm install`
 this dependency.
+
+## Local Development
+
+In order to run the DLS locally:
+
+1. Install node modules: `npm install`
+2. Start the [Storybook](https://storybook.js.org) component visualizer:
+`npm start`
+
+### npm Scripts
+
+There are lots of npm scripts at your disposal during local development.
+Here are some of the more important ones:
+
+| Script                  | Description                                                           |
+|:----------------------- |:--------------------------------------------------------------------- |
+| npm run build           | Transpile DLS from TypeScript (`./src`) into ES5 (`./lib`).           |
+| npm run build-storybook | Create a static website for deployment (`./storybook-static`).        |
+| npm start               | Start the [Storybook](https://storybook.js.org) component visualizer. |
+| npm test                | Run all tests.                                                        |
