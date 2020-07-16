@@ -48,6 +48,22 @@ const MyApp = () => (
 )
 ```
 
+### Load Fonts
+
+The DLS uses [Montserrat](https://fonts.google.com/specimen/Montserrat) as the
+base font inside the default theme. To ensure that the browser has access to
+this font, it is recommend that you include the following font reference in
+the `head` of your React app:
+
+```jsx
+...
+<link
+  href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+  rel="stylesheet"
+/>
+...
+```
+
 ### CSS Baseline
 
 It is recommended to inject the `CssBaselineBase` component near the root of
@@ -163,7 +179,7 @@ module.exports = {
 }
 ```
 
-### Import Stuff!
+### Import Stuff
 
 That's it! You're ready to use the DLS. Simply import the colors, components,
 constants, helpers, icons, styles, and types that you need:
