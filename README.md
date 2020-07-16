@@ -52,7 +52,7 @@ const MyApp = () => (
 
 The DLS uses [Montserrat](https://fonts.google.com/specimen/Montserrat) as the
 base font inside the default theme. To ensure that the browser has access to
-this font, it is recommend that you include the following font reference in
+this font, it is recommended that you include the following font reference in
 the `head` of your React app:
 
 ```jsx

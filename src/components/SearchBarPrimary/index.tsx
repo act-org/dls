@@ -3,10 +3,7 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
 
-import CloseCircle from '~/icons/CloseCircle';
-import IconButtonBase from '~/components/IconButtonBase';
 import InputAdornmentBase from '~/components/InputAdornmentBase';
 import Magnify from '~/icons/Magnify';
 import OutlinedInputBase, {
@@ -22,8 +19,6 @@ const SearchBarPrimary: React.FC<Props> = ({
   value,
   ...otherProps
 }: Props): React.ReactElement<any> => {
-  const shouldHideCloseButton = !value;
-
   const classes = useStyles();
 
   return (
@@ -32,33 +27,6 @@ const SearchBarPrimary: React.FC<Props> = ({
         notchedOutline: classes.outlinedInputNotchedOutlined,
         root: classes.outlinedInputRoot,
       }}
-      endAdornment={
-        <InputAdornmentBase
-          classes={{
-            root: clsx(
-              classes.iconClose,
-              shouldHideCloseButton && classes.iconCloseHidden,
-            ),
-          }}
-          position="end"
-        >
-          <IconButtonBase
-            onClick={(e: any): void => {
-              if (onChange) {
-                onChange({
-                  ...e,
-                  target: {
-                    ...e.target,
-                    value: '',
-                  },
-                });
-              }
-            }}
-          >
-            <CloseCircle fontSize="small" />
-          </IconButtonBase>
-        </InputAdornmentBase>
-      }
       inputProps={{
         'aria-label': 'Search',
       }}

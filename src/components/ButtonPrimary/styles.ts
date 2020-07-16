@@ -9,7 +9,7 @@ export default makeStyles(({ palette, shape, typography }: any) => ({
     textTransform: 'none',
   },
   outlined: {
-    border: `2px solid ${palette.primary.main}`,
+    border: `2px solid red`,
     borderRadius: shape.borderRadius * 5,
     color: palette.primary.main,
     fontSize: typography.fontSize,
