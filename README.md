@@ -20,9 +20,10 @@ Add the following line to your `package.json` file:
 }
 ```
 
-Be sure to replace `vX.X.X` with the specific version of the DLS that you would
-like to install (e.g. `v1.4.0`). Then install the DLS into your project by
-running:
+Be sure to replace `vX.X.X` with the
+[specific tag](https://bitbucket.org/actet/act-dls/commits/) of the DLS that
+you would like to install (e.g. `v1.4.0`). Then install the DLS into your
+project by running:
 
 ```shell
 npm install
