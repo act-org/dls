@@ -118,5 +118,5 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "1.4.3"
+  "version": "1.4.4"
 }
