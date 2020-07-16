@@ -3,10 +3,10 @@
  */
 
 import * as React from 'react';
-import { compact } from 'lodash';
 
-import search from '~/helpers/search';
-import sort from '~/helpers/sort';
+import EmptyStatePrimary, {
+  Props as EmptyStatePrimaryProps,
+} from '~/components/EmptyStatePrimary';
 import { SortObject } from '~/types';
 import TableBase from '~/components/TableBase';
 import TableBodyBase from '~/components/TableBodyBase';
@@ -16,42 +16,36 @@ import TableContainerPrimary from '~/components/TableContainerPrimary';
 import TableHeadBase from '~/components/TableHeadBase';
 import TableRowBase from '~/components/TableRowBase';
 
-interface Column {
-  dataKey: string;
-  displayValueFn?: (item: any) => void;
+import useStyles from './styles';
+
+interface Column<T> {
+  renderValue: (item: T) => any;
   label: string;
-  searchable: boolean;
-  sortable: boolean;
+  sortBy?: string;
   style?: React.CSSProperties;
 }
 
-export interface Props {
-  columns: Column[];
-  items: any[];
-  searchQuery?: string;
-  setSortObject: (sortObject: SortObject) => void;
-  sortObject: SortObject;
+export interface Props<T> {
+  columns: Column<T>[];
+  currentSortObject: SortObject;
+  emptyStateProps: EmptyStatePrimaryProps;
+  items: T[];
+  onChangeSort: (sortObject: SortObject) => void;
+  RowWrapper?: (
+    item: T,
+    children: React.ReactElement<any>,
+  ) => React.ReactElement<any>;
 }
 
-const DataTablePrimary: React.FC<Props> = ({
+const DataTablePrimary = <T,>({
   columns,
-  items: originalItems,
-  searchQuery = '',
-  setSortObject,
-  sortObject,
-}: Props): React.ReactElement<any> => {
-  // sort items
-  let items = originalItems.sort(sort(sortObject));
-
-  // search items
-  const searchableKeys = compact(
-    columns.map(({ dataKey, searchable }): string | null =>
-      searchable ? dataKey : null,
-    ),
-  );
-  if (searchableKeys.length > 0 && searchQuery.length > 0) {
-    items = search(items, searchableKeys, searchQuery);
-  }
+  currentSortObject,
+  emptyStateProps,
+  items,
+  onChangeSort,
+  RowWrapper,
+}: Props<T>): React.ReactElement<any> => {
+  const classes = useStyles();
 
   return (
     <TableContainerPrimary>
@@ -61,11 +55,10 @@ const DataTablePrimary: React.FC<Props> = ({
             {columns.map(
               (column): React.ReactElement<any> => (
                 <TableCellHead
-                  dataKey={column.dataKey}
-                  key={column.dataKey}
-                  setSortObject={setSortObject}
-                  sortable={column.sortable}
-                  sortObject={sortObject}
+                  currentSortObject={currentSortObject}
+                  key={column.label}
+                  onChangeSort={onChangeSort}
+                  sortBy={column.sortBy}
                   style={column.style}
                 >
                   {column.label}
@@ -77,25 +70,46 @@ const DataTablePrimary: React.FC<Props> = ({
 
         <TableBodyBase>
           {items.map(
-            (item, i): React.ReactElement<any> => (
-              // eslint-disable-next-line react/no-array-index-key
-              <TableRowBase key={i}>
-                {columns.map(
-                  (column): React.ReactElement<any> => (
-                    <TableCellBody key={column.dataKey} style={column.style}>
-                      {column.displayValueFn
-                        ? column.displayValueFn(item)
-                        : item[column.dataKey]}
-                    </TableCellBody>
-                  ),
-                )}
-              </TableRowBase>
-            ),
+            (item, i): React.ReactElement<any> => {
+              /* eslint-disable react/no-array-index-key */
+              const children = (
+                <TableRowBase hover key={i}>
+                  {columns.map(
+                    (column): React.ReactElement<any> => (
+                      <TableCellBody key={column.label} style={column.style}>
+                        {column.renderValue(item)}
+                      </TableCellBody>
+                    ),
+                  )}
+                </TableRowBase>
+              );
+              /* eslint-enable react/no-array-index-key */
+
+              if (RowWrapper) {
+                return RowWrapper(item, children);
+              }
+
+              return children;
+            },
           )}
         </TableBodyBase>
       </TableBase>
+
+      {items.length === 0 && emptyStateProps && (
+        <div className={classes.emptyStateContainer}>
+          <EmptyStatePrimary
+            description="No Results Found"
+            {...emptyStateProps}
+          />
+        </div>
+      )}
     </TableContainerPrimary>
   );
+};
+
+// eslint-disable-next-line immutable/no-mutation
+DataTablePrimary.defaultProps = {
+  RowWrapper: undefined,
 };
 
 export default DataTablePrimary;

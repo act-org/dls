@@ -4,7 +4,7 @@
 
 import { get, toString } from 'lodash';
 
-function search(docs: any[], properties: string[], value: string): any[] {
+function search<T>(docs: T[], properties: string[], value: string): T[] {
   return docs.filter(doc => {
     return properties.some((property): boolean => {
       const currentValue = get(doc, property);

@@ -7,10 +7,13 @@ import { isString } from 'lodash';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
-type SortFunction = (itemA: any, itemB: any) => number;
+type SortFunction<T> = (itemA: T, itemB: T) => number;
 
-function sort({ dataKey, direction }: SortObject): SortFunction {
-  return ({ [dataKey]: itemA }, { [dataKey]: itemB }): number => {
+function sort<T>({ sortBy, sortDirection }: SortObject): SortFunction<T> {
+  return (
+    { [sortBy as keyof T]: itemA },
+    { [sortBy as keyof T]: itemB },
+  ): number => {
     if (itemA === null || itemB === null) return 0;
 
     let normalizedItemA: any = itemA;
@@ -25,11 +28,11 @@ function sort({ dataKey, direction }: SortObject): SortFunction {
     }
 
     if (normalizedItemA < normalizedItemB) {
-      return direction === SORT_DIRECTION_TYPES.ASC ? -1 : 1;
+      return sortDirection === SORT_DIRECTION_TYPES.ASCENDING ? -1 : 1;
     }
 
     if (normalizedItemA > normalizedItemB) {
-      return direction === SORT_DIRECTION_TYPES.ASC ? 1 : -1;
+      return sortDirection === SORT_DIRECTION_TYPES.ASCENDING ? 1 : -1;
     }
 
     return 0;

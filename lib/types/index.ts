@@ -2,9 +2,9 @@
  * @prettier
  */
 
-export type SortDirection = 'ASC' | 'DESC';
+export type SortDirection = 'ASCENDING' | 'DESCENDING';
 
 export type SortObject = {
-  dataKey: string;
-  direction: SortDirection;
+  sortBy: string;
+  sortDirection: SortDirection;
 };

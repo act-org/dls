@@ -10,7 +10,7 @@ import ChevronUp from '~/icons/ChevronUp';
 import COLORS from '~/constants/colors';
 import GridContainer from '~/components/GridContainer';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
-import { SortObject } from '~/types';
+import { SortDirection, SortObject } from '~/types';
 import TableCellBase, {
   Props as TableCellBaseProps,
 } from '~/components/TableCellBase';
@@ -20,28 +20,24 @@ import useStyles from './styles';
 
 export interface Props extends TableCellBaseProps {
   children: string | React.ReactElement<any>;
-  dataKey: string;
-  setSortObject: (sortObject: SortObject) => void;
-  sortable?: boolean;
-  sortObject: SortObject;
+  currentSortObject: SortObject;
+  onChangeSort: (sortObject: SortObject) => void;
+  sortBy?: string;
   style?: React.CSSProperties;
 }
 
 const TableCellHead: React.FC<Props> = ({
   children,
-  dataKey,
-  setSortObject,
-  sortable = false,
-  sortObject,
+  currentSortObject,
+  onChangeSort,
+  sortBy,
   style,
   ...props
 }: Props): React.ReactElement<any> => {
-  const sortIsApplied: boolean = sortable && sortObject.dataKey === dataKey;
+  const sortIsApplied: boolean = sortBy === currentSortObject.sortBy;
 
-  const getStyleForIcon = (
-    direction: SortObject['direction'],
-  ): React.CSSProperties => {
-    if (!sortIsApplied || sortObject.direction !== direction) {
+  const getStyleForIcon = (direction: SortDirection): React.CSSProperties => {
+    if (!sortIsApplied || currentSortObject.sortDirection !== direction) {
       return {};
     }
 
@@ -49,16 +45,21 @@ const TableCellHead: React.FC<Props> = ({
   };
 
   const toggleSort = (): void => {
-    let direction = SORT_DIRECTION_TYPES.ASC;
+    if (sortBy) {
+      let newSortDirection = SORT_DIRECTION_TYPES.ASCENDING;
 
-    if (sortIsApplied) {
-      direction =
-        sortObject.direction === SORT_DIRECTION_TYPES.ASC
-          ? SORT_DIRECTION_TYPES.DESC
-          : SORT_DIRECTION_TYPES.ASC;
+      if (sortIsApplied) {
+        newSortDirection =
+          currentSortObject.sortDirection === SORT_DIRECTION_TYPES.ASCENDING
+            ? SORT_DIRECTION_TYPES.DESCENDING
+            : SORT_DIRECTION_TYPES.ASCENDING;
+      }
+
+      onChangeSort({
+        sortBy,
+        sortDirection: newSortDirection,
+      });
     }
-
-    setSortObject({ dataKey, direction });
   };
 
   const classes = useStyles();
@@ -68,12 +69,12 @@ const TableCellHead: React.FC<Props> = ({
       classes={{
         root: clsx(
           classes.tableCellRoot,
-          sortable && classes.tableCellRootSortable,
+          sortBy && classes.tableCellRootSortable,
           sortIsApplied && classes.tableCellRootSortApplied,
         ),
       }}
       component="div"
-      onClick={sortable ? toggleSort : undefined}
+      onClick={sortBy ? toggleSort : undefined}
       style={style}
       {...props}
     >
@@ -85,7 +86,7 @@ const TableCellHead: React.FC<Props> = ({
         {children}
       </TypographyBase>
 
-      {sortable && (
+      {sortBy && (
         <GridContainer
           classes={{
             root: classes.sortContainerRoot,
@@ -96,13 +97,13 @@ const TableCellHead: React.FC<Props> = ({
               root: classes.sortIconRoot,
             }}
             onClick={(): void => {
-              setSortObject({
-                dataKey,
-                direction: SORT_DIRECTION_TYPES.ASC,
+              onChangeSort({
+                sortBy,
+                sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
               });
             }}
             role="button"
-            style={getStyleForIcon(SORT_DIRECTION_TYPES.ASC)}
+            style={getStyleForIcon(SORT_DIRECTION_TYPES.ASCENDING)}
             viewBox="9 3 5 15"
           />
 
@@ -111,13 +112,13 @@ const TableCellHead: React.FC<Props> = ({
               root: classes.sortIconRoot,
             }}
             onClick={(): void => {
-              setSortObject({
-                dataKey,
-                direction: SORT_DIRECTION_TYPES.DESC,
+              onChangeSort({
+                sortBy,
+                sortDirection: SORT_DIRECTION_TYPES.DESCENDING,
               });
             }}
             role="button"
-            style={getStyleForIcon(SORT_DIRECTION_TYPES.DESC)}
+            style={getStyleForIcon(SORT_DIRECTION_TYPES.DESCENDING)}
             viewBox="9 7 5 15"
           />
         </GridContainer>
@@ -126,4 +127,9 @@ const TableCellHead: React.FC<Props> = ({
   );
 };
 
+// eslint-disable-next-line immutable/no-mutation
+TableCellHead.defaultProps = {
+  sortBy: undefined,
+  style: undefined,
+};
 export default TableCellHead;

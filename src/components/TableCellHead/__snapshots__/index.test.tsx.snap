@@ -9,7 +9,7 @@ exports[`TableCellHead matches the snapshot 1`] = `
     <p
       class="MuiTypography-root makeStyles-typographyRoot-6 MuiTypography-body1"
     >
-      child
+      TableCellHead
     </p>
     <div
       class="MuiGrid-root makeStyles-sortContainerRoot-1 MuiGrid-container"

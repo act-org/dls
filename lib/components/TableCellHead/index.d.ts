@@ -6,10 +6,9 @@ import { SortObject } from '~/types';
 import { Props as TableCellBaseProps } from '~/components/TableCellBase';
 export interface Props extends TableCellBaseProps {
     children: string | React.ReactElement<any>;
-    dataKey: string;
-    setSortObject: (sortObject: SortObject) => void;
-    sortable?: boolean;
-    sortObject: SortObject;
+    currentSortObject: SortObject;
+    onChangeSort: (sortObject: SortObject) => void;
+    sortBy?: string;
     style?: React.CSSProperties;
 }
 declare const TableCellHead: React.FC<Props>;

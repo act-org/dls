@@ -4,17 +4,9 @@ DLS for ACT front-end projects.
 
 ## Getting Started
 
-1. Install node modules:
-
-    ```shell
-    npm install
-    ```
-
+1. Install node modules: `npm install`
 2. Start the [Storybook](https://storybook.js.org) component visualizer:
-
-    ```shell
-    npm start
-    ```
+`npm start`
 
 ## npm Scripts
 

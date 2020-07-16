@@ -14,16 +14,17 @@ import TableCellHead from '.';
 
 export const Head = (): React.ReactElement<any> => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
-    dataKey: 'itemKey',
-    direction: SORT_DIRECTION_TYPES.ASC,
+    sortBy: 'ITEM_KEY',
+    sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
   });
 
   return (
     <TableCellHead
-      dataKey="itemKey"
-      setSortObject={setSortObject}
-      sortable
-      sortObject={sortObject}
+      currentSortObject={sortObject}
+      onChangeSort={(newSortObject): void => {
+        setSortObject(newSortObject);
+      }}
+      sortBy="ITEM_KEY"
       style={{
         width: number('Style:Width', 300),
       }}

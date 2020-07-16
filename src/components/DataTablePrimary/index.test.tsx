@@ -15,33 +15,58 @@ describe('DataTablePrimary', () => {
       <DataTablePrimary
         columns={[
           {
-            dataKey: 'id',
             label: 'ID',
-            searchable: true,
-            sortable: true,
+            renderValue: (i: Item): string => i.id,
+            sortBy: 'id',
             style: {
-              width: 75,
+              width: 50,
             },
           },
           {
-            dataKey: 'name',
             label: 'Name',
-            searchable: true,
-            sortable: true,
+            renderValue: (i: Item): string => i.name,
+            sortBy: 'name',
+            style: {
+              width: 100,
+            },
+          },
+          {
+            label: 'Field A',
+            renderValue: (i: Item): string => i.fieldA,
+            sortBy: 'fieldA',
+            style: {
+              width: 100,
+            },
+          },
+          {
+            label: 'Field B',
+            renderValue: (i: Item): string => i.fieldB,
+            sortBy: 'fieldB',
+            style: {
+              width: 100,
+            },
+          },
+          {
+            label: 'Field C',
+            renderValue: (i: Item): string => i.fieldC,
+            sortBy: 'fieldC',
             style: {
               width: 100,
             },
           },
         ]}
-        items={Array(...Array(5)).map((_, i): any => ({
-          id: i + 1,
-          name: `Thing ${i + 1}`,
-        }))}
-        setSortObject={noop}
-        sortObject={{
-          dataKey: 'id',
-          direction: 'ASC',
+        currentSortObject={{
+          sortBy: 'id',
+          sortDirection: 'ASCENDING',
         }}
+        items={Array(...Array(5)).map((_, i): any => ({
+          fieldA: `Field A${i + 1}`,
+          fieldB: `Field B${i + 1}`,
+          fieldC: `Field C${i + 1}`,
+          id: i + 1,
+          name: `Item ${i + 1}`,
+        }))}
+        onChangeSort={noop}
       />,
     );
 

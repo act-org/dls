@@ -13,15 +13,14 @@ describe('TableCellHead', () => {
   it('matches the snapshot', () => {
     const { container } = render(
       <TableCellHead
-        dataKey="itemKey"
-        setSortObject={noop}
-        sortable
-        sortObject={{
-          dataKey: 'itemKey',
-          direction: 'ASC',
+        currentSortObject={{
+          sortBy: 'ITEM_KEY',
+          sortDirection: 'ASCENDING',
         }}
+        onChangeSort={noop}
+        sortBy="ITEM_KEY"
       >
-        child
+        TableCellHead
       </TableCellHead>,
     );
 

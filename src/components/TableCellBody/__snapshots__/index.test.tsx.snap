@@ -3,11 +3,11 @@
 exports[`TableCellBody matches the snapshot 1`] = `
 <div>
   <td
-    class="MuiTableCell-root makeStyles-tableCellRoot-1 makeStyles-tableCellRootSortApplied-2 MuiTableCell-paddingNone"
+    class="MuiTableCell-root makeStyles-tableCellRoot-1 MuiTableCell-paddingNone"
     role="cell"
     scope="row"
   >
-    child
+    TableCell
   </td>
 </div>
 `;
