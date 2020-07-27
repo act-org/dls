@@ -73,6 +73,8 @@ export { default as LoadingPrimary } from './LoadingPrimary';
 export type { Props as LoadingPrimaryProps } from './LoadingPrimary';
 export { default as MenuItemBase } from './MenuItemBase';
 export type { Props as MenuItemBaseProps } from './MenuItemBase';
+export { default as ModalBase } from './ModalBase';
+export type { Props as ModalBaseProps } from './ModalBase';
 export { default as OutlinedInputBase } from './OutlinedInputBase';
 export type { Props as OutlinedInputBaseProps } from './OutlinedInputBase';
 export { default as PaperBase } from './PaperBase';
