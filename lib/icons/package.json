@@ -1,26 +1,26 @@
 {
-  "_from": "mdi-material-ui@6.16.0",
-  "_id": "mdi-material-ui@6.16.0",
+  "_from": "mdi-material-ui@^6.16.0",
+  "_id": "mdi-material-ui@6.18.0",
   "_inBundle": false,
-  "_integrity": "sha512-i22DW95kady0ty5QylixkEa9h40YTt2KETvAd1OdrXkfnKkDH4RCXNtONw2KGsK6pANH+M2Oqh2SfG98UjcX8g==",
+  "_integrity": "sha512-/v8Aop6DTrbbLdbk+wEsFlO0Gdo7XX2PDQwgj/u3NLLNZxcSN2N5XN2ICpXWLfq+7aopFUw0XaZQ5Ufs6ayrLQ==",
   "_location": "/mdi-material-ui",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "mdi-material-ui@6.16.0",
+    "raw": "mdi-material-ui@^6.16.0",
     "name": "mdi-material-ui",
     "escapedName": "mdi-material-ui",
-    "rawSpec": "6.16.0",
+    "rawSpec": "^6.16.0",
     "saveSpec": null,
-    "fetchSpec": "6.16.0"
+    "fetchSpec": "^6.16.0"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/mdi-material-ui/-/mdi-material-ui-6.16.0.tgz",
-  "_shasum": "8ed39f43259c14040fa5298d8da5c051bbc437d3",
-  "_spec": "mdi-material-ui@6.16.0",
+  "_resolved": "https://registry.npmjs.org/mdi-material-ui/-/mdi-material-ui-6.18.0.tgz",
+  "_shasum": "c059da550dc3838c51d301a8eccb5e0a3a58bc71",
+  "_spec": "mdi-material-ui@^6.16.0",
   "_where": "/Users/joncursi/Sites/actet/act-dls",
   "author": {
     "name": "Wertarbyte"
@@ -57,5 +57,5 @@
     "start": "node server.js"
   },
   "sideEffects": false,
-  "version": "6.16.0"
+  "version": "6.18.0"
 }

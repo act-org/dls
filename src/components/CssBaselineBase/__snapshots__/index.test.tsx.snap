@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`CssBaselineBase matches the snapshot 1`] = `
-<div>
-  This is a test.
-</div>
-`;

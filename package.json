@@ -8,24 +8,20 @@
     "Jon Cursi <jon.cursi@act-et.org>"
   ],
   "dependencies": {
-    "@material-ui/core": "4.11.0",
-    "@material-ui/icons": "4.9.1",
-    "@material-ui/lab": "4.0.0-alpha.56",
-    "@material-ui/styles": "4.10.0",
-    "@material-ui/system": "4.9.14",
-    "clsx": "1.1.1",
-    "lodash": "4.17.19",
-    "mdi-material-ui": "6.16.0",
-    "moment": "2.27.0",
+    "@material-ui/core": "^4.11.0",
+    "clsx": "^1.1.1",
+    "lodash": "^4.17.19",
+    "mdi-material-ui": "^6.16.0",
+    "moment": "^2.27.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "validator": "13.1.1"
+    "validator": "^13.1.1"
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
-    "@babel/cli": "7.10.5",
-    "@babel/core": "7.10.5",
-    "@babel/preset-env": "7.10.4",
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.10.4",
     "@babel/preset-typescript": "7.10.4",
     "@storybook/addon-a11y": "5.3.19",
@@ -38,36 +34,36 @@
     "@storybook/addons": "5.3.19",
     "@storybook/react": "5.3.19",
     "@storybook/theming": "5.3.19",
-    "@testing-library/jest-dom": "5.11.1",
-    "@testing-library/react": "10.4.7",
-    "@types/jest": "26.0.4",
-    "@types/lodash": "4.14.157",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.0.4",
+    "@types/jest": "26.0.14",
+    "@types/lodash": "4.14.161",
     "@types/moment": "2.13.0",
-    "@types/react": "16.9.43",
+    "@types/react": "16.9.49",
     "@types/react-dom": "16.9.8",
     "@types/shelljs": "0.8.8",
     "@types/validator": "13.1.0",
-    "babel-jest": "26.1.0",
+    "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
     "babel-plugin-root-import": "6.5.0",
     "babel-plugin-transform-imports": "2.0.0",
     "eslint-config": "bitbucket:actet/eslint-config#v2.1.0",
     "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
-    "eslint-import-resolver-typescript": "2.0.0",
-    "husky": "4.2.5",
-    "jest": "26.1.0",
-    "lint-staged": "10.2.11",
+    "eslint-import-resolver-typescript": "2.3.0",
+    "husky": "4.3.0",
+    "jest": "26.4.2",
+    "lint-staged": "10.4.0",
     "npm-run-all": "4.1.5",
-    "prettier": "2.0.5",
+    "prettier": "2.1.2",
     "react-docgen-typescript-loader": "3.7.2",
     "react-test-renderer": "16.13.1",
     "shelljs": "0.8.4",
     "storybook-addon-material-ui": "0.9.0-alpha.21",
     "storybook-host": "5.1.0",
-    "ts-jest": "26.1.2",
-    "ts-loader": "8.0.1",
-    "ts-node": "8.10.2",
-    "typescript": "3.9.6"
+    "ts-jest": "26.3.0",
+    "ts-loader": "8.0.3",
+    "ts-node": "9.0.0",
+    "typescript": "4.0.2"
   },
   "husky": {
     "hooks": {
@@ -94,6 +90,11 @@
   },
   "main": "lib/index.js",
   "name": "act-dls",
+  "peerDependencies": {
+    "@material-ui/core": "4.x",
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://bitbucket.org/actet/act-dls.git"
@@ -101,7 +102,6 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf lib",
-    "build:colors": "ts-node bin/buildColors.mjs --experimental-modules",
     "build:components": "NODE_ENV=production babel src/components --extensions \".ts,.tsx\" --out-dir lib/components",
     "build:constants": "NODE_ENV=production babel src/constants --extensions \".ts,.tsx\" --out-dir lib/constants",
     "build:helpers": "NODE_ENV=production babel src/helpers --extensions \".ts,.tsx\" --out-dir lib/helpers",
@@ -118,5 +118,5 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "1.5.1"
+  "version": "2.0.0"
 }

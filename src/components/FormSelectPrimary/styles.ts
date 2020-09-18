@@ -2,8 +2,9 @@
  * @prettier
  */
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import DIMS from '~/constants/dims';
-import makeStyles from '~/styles/makeStyles';
 import TYPOGRAPHY from '~/constants/typography';
 
 export default makeStyles({

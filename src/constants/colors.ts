@@ -2,7 +2,7 @@
  * @prettier
  */
 
-import common from '~/colors/common';
+import { common } from '@material-ui/core/colors';
 
 export default {
   BLACK: common.black,

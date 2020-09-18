@@ -22,7 +22,6 @@
     "./src/**/*.test.*",
     "./storybook-static/*",
     "**/test/*",
-    "**/colors/*",
     "**/icons/*"
   ],
   "extends": "./node_modules/eslint-config/tsconfig.json",

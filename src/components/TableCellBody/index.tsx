@@ -3,14 +3,11 @@
  */
 
 import * as React from 'react';
-
-import TableCellBase, {
-  Props as TableCellBaseProps,
-} from '~/components/TableCellBase';
+import { TableCell, TableCellProps } from '@material-ui/core';
 
 import useStyles from './styles';
 
-export type Props = TableCellBaseProps;
+export type Props = TableCellProps;
 
 const TableCellBody: React.FC<Props> = (
   props: Props,
@@ -18,7 +15,7 @@ const TableCellBody: React.FC<Props> = (
   const classes = useStyles();
 
   return (
-    <TableCellBase
+    <TableCell
       classes={{
         root: classes.tableCellRoot,
       }}

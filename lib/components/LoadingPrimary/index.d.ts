@@ -2,9 +2,9 @@
  * @prettier
  */
 import * as React from 'react';
-import { Props as CircularProgressBaseProps } from '~/components/CircularProgressBase';
+import { CircularProgressProps } from '@material-ui/core';
 export interface Props {
-    circularProgressProps?: CircularProgressBaseProps;
+    circularProgressProps?: CircularProgressProps;
     style?: React.CSSProperties;
     title?: string;
 }

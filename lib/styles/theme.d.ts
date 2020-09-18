@@ -25,6 +25,6 @@ export declare const theme: {
         htmlFontSize: number;
     };
 };
-declare const _default: import("@material-ui/core").Theme;
+declare const _default: import("@material-ui/core/styles").Theme;
 export default _default;
 //# sourceMappingURL=theme.d.ts.map

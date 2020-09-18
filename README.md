@@ -6,14 +6,21 @@ DLS for ACT front-end projects.
 
 ### Installation
 
-Add the following line to your `package.json` file:
+In order to use the DLS, you must also install
+[Material UI](https://material-ui.com/) version `4.x` and
+[React](https://reactjs.org/) version `16.x`.
+
+To install the DLS, add the following to your `package.json` file:
 
 ```shell
 {
   ...
   "dependencies": {
     ...
-    "act-dls": "git+ssh://bitbucket.org/actet/act-dls.git#vX.X.X",
+    "@material-ui/core": "^4.11.0", // any 4.x version
+    "act-dls": "git+ssh://bitbucket.org/actet/act-dls.git#vX.X.X", // choose a specific X.X.X version
+    "react": "^16.13.1",  // any 16.x version
+    "react-dom": "^16.13.1", // any 16.x version
     ...
   }
   ...
@@ -22,7 +29,7 @@ Add the following line to your `package.json` file:
 
 Be sure to replace `vX.X.X` with the
 [specific tag](https://bitbucket.org/actet/act-dls/commits/) of the DLS that
-you would like to install (e.g. `v1.4.0`). Then install the DLS into your
+you would like to install (e.g. `v2.0.0`). Then install these packages into your
 project by running:
 
 ```shell
@@ -66,33 +73,41 @@ the `head` of your React app:
 
 ### CSS Baseline
 
-It is recommended to inject the `CssBaselineBase` component near the root of
-your component tree in order to reset and normalize browser styles for your
-project:
+It is recommended to inject the `CssBaseline` component from Material UI near
+the root of your component tree in order to reset and normalize browser styles
+for your project:
 
 ```jsx
-import { CssBaselineBase, ThemeProviderPrimary } from 'act-dls/lib/components';
+import { CssBaseline } from '@material-ui/core';
+import { ThemeProviderPrimary } from 'act-dls/lib/components';
 
 ...
 
 const MyApp = () => (
   <ThemeProviderPrimary>
-    <CssBaselineBase />
+    <CssBaseline />
     <App />
   </ThemeProviderPrimary>
-)
+);
 ```
 
 ### Server-Side Rendering
 
-If your project's React framework supports SSR, you can configure the DLS for
-server-side rendering by using the `ServerStyleSheets` style API.
+If your project's React framework supports SSR, you can configure the DLS
+components for server-side rendering by using the `ServerStyleSheets` API
+from the `@material-ui/styles` package.
 
-In a [Next.js](https://nextjs.org/) project, you would add the following to
-your `pages/_document.tsx` file:
+Start by installing any 4.x version of `@material-ui/styles` into your project:
+
+```shell
+npm install --save @material-ui/styles@4.x
+```
+
+Then, in a [Next.js](https://nextjs.org/) project for example, you would add the
+following to your `pages/_document.tsx` file:
 
 ```jsx
-import { ServerStyleSheets } from 'act-dls/lib/styles';
+import { ServerStyleSheets } from '@material-ui/styles';
 
 ...
 
@@ -122,6 +137,27 @@ class Document extends DocumentImport<Props> {
 }
 ```
 
+### Icons
+
+The DLS re-exports all icons that are provided by the
+[`mdi-material-ui`](https://www.npmjs.com/package/mdi-material-ui) package.
+
+You can search for a specific icon to use on
+[materialdesignicons.com](https://materialdesignicons.com). Once you've found
+the perfect icon, you can use it in your project like so:
+
+```jsx
+import { PollBox } from 'act-dls/lib/icons';
+
+...
+
+const MyComponent = () => (
+  ...
+  <PollBox />
+  ...
+);
+```
+
 ### Minimizing Bundle Size
 
 If you import modules from the ACT DLS using named imports, more code may be
@@ -143,10 +179,6 @@ module.exports = {
     [
       'babel-plugin-transform-imports',
       {
-        'act-dls/lib/colors': {
-          transform: 'act-dls/lib/colors/${member}',
-          preventFullImport: true,
-        },
         'act-dls/lib/components': {
           transform: 'act-dls/lib/components/${member}',
           preventFullImport: true,
@@ -185,8 +217,6 @@ That's it! You're ready to use the DLS. Simply import the colors, components,
 constants, helpers, icons, styles, and types that you need:
 
 ```jsx
-// colors
-import { red } from 'act-dls/lib/colors';
 // components
 import { ButtonPrimary } from 'act-dls/lib/components';
 // constants
@@ -196,7 +226,7 @@ import { search } from 'act-dls/lib/helpers';
 // icons
 import { ChevronDown } from 'act-dls/lib/icons';
 // styles
-import { makeStyles } from 'act-dls/lib/styles';
+import { theme } from 'act-dls/lib/styles';
 // types
 import { SortObject } from 'act-dls/lib/types';
 ```

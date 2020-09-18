@@ -3,9 +3,7 @@
  */
 
 import * as React from 'react';
-
-import GridContainer from '~/components/GridContainer';
-import GridItem from '~/components/GridItem';
+import { Grid } from '@material-ui/core';
 
 import useStyles from './styles';
 
@@ -28,16 +26,17 @@ const FormInputGroupsPrimary: React.FC<Props> = ({ groups }: Props) => {
       {/* eslint-disable react/no-array-index-key */}
       {groups.map(
         (group, i): React.ReactElement<any> => (
-          <GridContainer
+          <Grid
             classes={{
               container: classes.gridContainerRoot,
             }}
+            container
             key={i}
             spacing={4}
           >
             {group.map(
               (input): React.ReactElement<any> => (
-                <GridItem
+                <Grid
                   classes={{
                     item: classes.gridItemRoot,
                   }}
@@ -45,10 +44,10 @@ const FormInputGroupsPrimary: React.FC<Props> = ({ groups }: Props) => {
                   key={input.key}
                 >
                   {input.formInput}
-                </GridItem>
+                </Grid>
               ),
             )}
-          </GridContainer>
+          </Grid>
         ),
       )}
       {/* eslint-enable react/no-array-index-key */}

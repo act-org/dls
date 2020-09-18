@@ -3,14 +3,11 @@
  */
 
 import * as React from 'react';
-
-import InputLabelBase, {
-  Props as InputLabelBaseProps,
-} from '~/components/InputLabelBase';
+import { InputLabel, InputLabelProps } from '@material-ui/core';
 
 import useStyles from './styles';
 
-export type Props = InputLabelBaseProps;
+export type Props = InputLabelProps;
 
 const InputLabelPrimary: React.FC<Props> = ({
   children,
@@ -20,7 +17,7 @@ const InputLabelPrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <InputLabelBase
+    <InputLabel
       classes={{
         root: classes.labelRoot,
       }}
@@ -31,7 +28,7 @@ const InputLabelPrimary: React.FC<Props> = ({
 
         {required && <span className="required">Required</span>}
       </div>
-    </InputLabelBase>
+    </InputLabel>
   );
 };
 

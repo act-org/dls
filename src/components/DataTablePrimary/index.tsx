@@ -3,18 +3,15 @@
  */
 
 import * as React from 'react';
+import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
 
 import EmptyStatePrimary, {
   Props as EmptyStatePrimaryProps,
 } from '~/components/EmptyStatePrimary';
 import { SortObject } from '~/types';
-import TableBase from '~/components/TableBase';
-import TableBodyBase from '~/components/TableBodyBase';
 import TableCellBody from '~/components/TableCellBody';
 import TableCellHead from '~/components/TableCellHead';
 import TableContainerPrimary from '~/components/TableContainerPrimary';
-import TableHeadBase from '~/components/TableHeadBase';
-import TableRowBase from '~/components/TableRowBase';
 
 import useStyles from './styles';
 
@@ -49,9 +46,9 @@ const DataTablePrimary = <T,>({
 
   return (
     <TableContainerPrimary>
-      <TableBase>
-        <TableHeadBase>
-          <TableRowBase>
+      <Table>
+        <TableHead>
+          <TableRow>
             {columns.map(
               (column): React.ReactElement<any> => (
                 <TableCellHead
@@ -65,15 +62,15 @@ const DataTablePrimary = <T,>({
                 </TableCellHead>
               ),
             )}
-          </TableRowBase>
-        </TableHeadBase>
+          </TableRow>
+        </TableHead>
 
-        <TableBodyBase>
+        <TableBody>
           {items.map(
             (item, i): React.ReactElement<any> => {
               /* eslint-disable react/no-array-index-key */
               const children = (
-                <TableRowBase hover key={i}>
+                <TableRow hover key={i}>
                   {columns.map(
                     (column): React.ReactElement<any> => (
                       <TableCellBody key={column.label} style={column.style}>
@@ -81,7 +78,7 @@ const DataTablePrimary = <T,>({
                       </TableCellBody>
                     ),
                   )}
-                </TableRowBase>
+                </TableRow>
               );
               /* eslint-enable react/no-array-index-key */
 
@@ -92,8 +89,8 @@ const DataTablePrimary = <T,>({
               return children;
             },
           )}
-        </TableBodyBase>
-      </TableBase>
+        </TableBody>
+      </Table>
 
       {items.length === 0 && emptyStateProps && (
         <div className={classes.emptyStateContainer}>

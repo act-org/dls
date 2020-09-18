@@ -2,8 +2,8 @@
  * @prettier
  */
 
-import grey from '~/colors/grey';
-import makeStyles from '~/styles/makeStyles';
+import { grey } from '@material-ui/core/colors';
+import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
   paperRoot: {

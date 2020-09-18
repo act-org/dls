@@ -2,8 +2,9 @@
  * @prettier
  */
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import COLORS from '~/constants/colors';
-import makeStyles from '~/styles/makeStyles';
 
 export default makeStyles({
   linkBase: {

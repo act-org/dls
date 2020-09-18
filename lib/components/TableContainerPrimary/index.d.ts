@@ -2,8 +2,8 @@
  * @prettier
  */
 import * as React from 'react';
-import { Props as TableContainerBaseProps } from '~/components/TableContainerBase';
-export interface Props extends TableContainerBaseProps {
+import { TableContainerProps } from '@material-ui/core';
+export interface Props extends TableContainerProps {
     component?: React.ReactElement<any>;
 }
 declare const TableContainerPrimary: React.FC<Props>;

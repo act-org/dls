@@ -4,13 +4,13 @@
 
 import * as React from 'react';
 import { get } from 'lodash';
+import { MenuItem } from '@material-ui/core';
 
 import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
 import InputLabelPrimary, {
   Props as InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
-import MenuItemBase from '~/components/MenuItemBase';
 import SelectPrimary, {
   Props as SelectPrimaryProps,
 } from '~/components/SelectPrimary';
@@ -52,23 +52,23 @@ const FormSelectPrimary: React.FC<Props> = ({
         required={required}
         value={selectProps.value || 'undefined'}
       >
-        <MenuItemBase
+        <MenuItem
           classes={{ root: classes.selectOptionRoot }}
           disabled={placeholderIsDisabled}
           value="undefined"
         >
           {placeholder || 'Select'}
-        </MenuItemBase>
+        </MenuItem>
 
         {options.map(
           ({ label: optionLabel, value: optionValue }): React.ReactElement => (
-            <MenuItemBase
+            <MenuItem
               classes={{ root: classes.selectOptionRoot }}
               key={optionValue}
               value={optionValue}
             >
               {optionLabel}
-            </MenuItemBase>
+            </MenuItem>
           ),
         )}
       </SelectPrimary>

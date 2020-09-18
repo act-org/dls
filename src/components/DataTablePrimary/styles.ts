@@ -2,7 +2,7 @@
  * @prettier
  */
 
-import makeStyles from '~/styles/makeStyles';
+import { makeStyles } from '@material-ui/core/styles';
 
 import DIMS from '~/constants/dims';
 

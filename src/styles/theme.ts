@@ -3,7 +3,7 @@
  */
 
 import COLORS from '~/constants/colors';
-import createTheme from '~/styles/createTheme';
+import { createMuiTheme } from '@material-ui/core/styles';
 import TYPOGRAPHY from '~/constants/typography';
 
 export const theme = {
@@ -31,4 +31,4 @@ export const theme = {
   },
 };
 
-export default createTheme(theme);
+export default createMuiTheme(theme);

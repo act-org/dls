@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import { get } from 'lodash';
+import { Tooltip } from '@material-ui/core';
 
 import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
@@ -13,7 +14,6 @@ import InputLabelPrimary, {
 import InputPrimary, {
   Props as InputPrimaryProps,
 } from '~/components/InputPrimary';
-import TooltipBase from '~/components/TooltipBase';
 
 import useStyles from './styles';
 
@@ -45,14 +45,14 @@ const FormInputPrimary: React.FC<Props> = ({
       />
 
       {errorMessage && (
-        <TooltipBase arrow placement="top" title={errorMessage}>
+        <Tooltip arrow placement="top" title={errorMessage}>
           <AlertOutline
             classes={{
               root: classes.warning,
             }}
             htmlColor={COLORS.REQUIRED}
           />
-        </TooltipBase>
+        </Tooltip>
       )}
     </div>
   );

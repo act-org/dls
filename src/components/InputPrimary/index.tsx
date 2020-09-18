@@ -4,12 +4,11 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-
-import InputBase, { Props as InputBaseProps } from '~/components/InputBase';
+import { Input, InputProps } from '@material-ui/core';
 
 import useStyles from './styles';
 
-export type Props = InputBaseProps;
+export type Props = InputProps;
 
 const InputPrimary: React.FC<Props> = ({
   type,
@@ -19,16 +18,16 @@ const InputPrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <InputBase
+    <Input
       classes={{
         input: clsx(
-          classes.inputBaseInput,
+          classes.inputInput,
           type === 'password' &&
             value &&
             String(value).length > 0 &&
-            classes.inputBaseInputPassword,
+            classes.inputInputPassword,
         ),
-        root: classes.inputBaseRoot,
+        root: classes.inputRoot,
       }}
       disableUnderline
       margin="dense"

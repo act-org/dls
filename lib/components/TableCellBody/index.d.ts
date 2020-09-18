@@ -2,8 +2,8 @@
  * @prettier
  */
 import * as React from 'react';
-import { Props as TableCellBaseProps } from '~/components/TableCellBase';
-export declare type Props = TableCellBaseProps;
+import { TableCellProps } from '@material-ui/core';
+export declare type Props = TableCellProps;
 declare const TableCellBody: React.FC<Props>;
 export default TableCellBody;
 //# sourceMappingURL=index.d.ts.map

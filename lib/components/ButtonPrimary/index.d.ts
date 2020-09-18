@@ -2,8 +2,8 @@
  * @prettier
  */
 import * as React from 'react';
-import { Props as ButtonBaseProps } from '~/components/ButtonBase';
-export declare type Props = ButtonBaseProps;
+import { ButtonProps } from '@material-ui/core';
+export declare type Props = ButtonProps;
 declare const ButtonPrimary: React.FC<Props>;
 export default ButtonPrimary;
 //# sourceMappingURL=index.d.ts.map

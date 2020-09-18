@@ -4,13 +4,13 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
+import { Select, SelectProps } from '@material-ui/core';
 
 import ChevronDown from '~/icons/ChevronDown';
-import SelectBase, { Props as SelectBaseProps } from '~/components/SelectBase';
 
 import useStyles from './styles';
 
-export type Props = SelectBaseProps;
+export type Props = SelectProps;
 
 const SelectPrimary: React.FC<Props> = ({
   value,
@@ -19,7 +19,7 @@ const SelectPrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <SelectBase
+    <Select
       classes={{
         icon: classes.selectIcon,
         root: clsx(classes.selectRoot, !value && classes.selectRootEmpty),

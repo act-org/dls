@@ -6,9 +6,8 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
+import { MenuItem } from '@material-ui/core';
 import { select } from '@storybook/addon-knobs';
-
-import MenuItemBase from '~/components/MenuItemBase';
 
 import SelectPrimary from '.';
 
@@ -45,9 +44,9 @@ export const Primary = (): React.ReactElement<any> => {
         ),
       ).map((_, i): any => (
         // eslint-disable-next-line react/no-array-index-key
-        <MenuItemBase key={i} value={i}>
+        <MenuItem key={i} value={i}>
           {i + 1}
-        </MenuItemBase>
+        </MenuItem>
       ))}
     </SelectPrimary>
   );

@@ -4,21 +4,17 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
+import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
 
 import ChevronDown from '~/icons/ChevronDown';
 import ChevronUp from '~/icons/ChevronUp';
 import COLORS from '~/constants/colors';
-import GridContainer from '~/components/GridContainer';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortDirection, SortObject } from '~/types';
-import TableCellBase, {
-  Props as TableCellBaseProps,
-} from '~/components/TableCellBase';
-import TypographyBase from '~/components/TypographyBase';
 
 import useStyles from './styles';
 
-export interface Props extends TableCellBaseProps {
+export interface Props extends TableCellProps {
   children: string | React.ReactElement<any>;
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
@@ -65,7 +61,7 @@ const TableCellHead: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <TableCellBase
+    <TableCell
       classes={{
         root: clsx(
           classes.tableCellRoot,
@@ -78,19 +74,20 @@ const TableCellHead: React.FC<Props> = ({
       style={style}
       {...props}
     >
-      <TypographyBase
+      <Typography
         classes={{
           root: classes.typographyRoot,
         }}
       >
         {children}
-      </TypographyBase>
+      </Typography>
 
       {sortBy && (
-        <GridContainer
+        <Grid
           classes={{
             root: classes.sortContainerRoot,
           }}
+          container
         >
           <ChevronUp
             classes={{
@@ -121,9 +118,9 @@ const TableCellHead: React.FC<Props> = ({
             style={getStyleForIcon(SORT_DIRECTION_TYPES.DESCENDING)}
             viewBox="9 7 5 15"
           />
-        </GridContainer>
+        </Grid>
       )}
-    </TableCellBase>
+    </TableCell>
   );
 };
 

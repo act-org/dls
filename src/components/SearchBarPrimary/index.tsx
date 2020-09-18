@@ -4,18 +4,19 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
+import {
+  IconButton,
+  InputAdornment,
+  OutlinedInput,
+  OutlinedInputProps,
+} from '@material-ui/core';
 
 import CloseCircle from '~/icons/CloseCircle';
-import IconButtonBase from '~/components/IconButtonBase';
-import InputAdornmentBase from '~/components/InputAdornmentBase';
 import Magnify from '~/icons/Magnify';
-import OutlinedInputBase, {
-  Props as OutlinedInputBaseProps,
-} from '~/components/OutlinedInputBase';
 
 import useStyles from './styles';
 
-export type Props = OutlinedInputBaseProps;
+export type Props = OutlinedInputProps;
 
 const SearchBarPrimary: React.FC<Props> = ({
   onChange,
@@ -27,13 +28,13 @@ const SearchBarPrimary: React.FC<Props> = ({
   const classes = useStyles();
 
   return (
-    <OutlinedInputBase
+    <OutlinedInput
       classes={{
         notchedOutline: classes.outlinedInputNotchedOutlined,
         root: classes.outlinedInputRoot,
       }}
       endAdornment={
-        <InputAdornmentBase
+        <InputAdornment
           classes={{
             root: clsx(
               classes.iconClose,
@@ -42,7 +43,7 @@ const SearchBarPrimary: React.FC<Props> = ({
           }}
           position="end"
         >
-          <IconButtonBase
+          <IconButton
             onClick={(e: any): void => {
               if (onChange) {
                 onChange({
@@ -56,22 +57,22 @@ const SearchBarPrimary: React.FC<Props> = ({
             }}
           >
             <CloseCircle fontSize="small" />
-          </IconButtonBase>
-        </InputAdornmentBase>
+          </IconButton>
+        </InputAdornment>
       }
       inputProps={{
         'aria-label': 'Search',
       }}
       onChange={onChange}
       startAdornment={
-        <InputAdornmentBase
+        <InputAdornment
           classes={{
             root: classes.inputAdornmentRoot,
           }}
           position="start"
         >
           <Magnify />
-        </InputAdornmentBase>
+        </InputAdornment>
       }
       value={value}
       {...otherProps}
