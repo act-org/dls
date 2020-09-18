@@ -36,23 +36,31 @@ project by running:
 npm install
 ```
 
-### Connect Style System
+### Theme
 
-The DLS comes with a complete style and theming system that is based on
-[Material UI](https://material-ui.com/). In order to connect your project to
-this system, simply wrap your app with the `ThemeProviderBase` or
-`ThemeProviderPrimary` component.
+The DLS utilizes the style and theming system that is provided by Material UI.
+You can set up your app using the basic `ThemeProvider` component from
+Material UI, or `ThemeProviderPrimary` (which includes the ACT default theme)
+from the DLS.
 
 ```jsx
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+// or
 import { ThemeProviderPrimary } from 'act-dls/lib/components';
 
 ...
 
-const MyApp = () => (
+const MyApp1 = () => (
+  <ThemeProvider theme={createMuiTheme({ ... })}>
+    <App />
+  </ThemeProvider>
+);
+
+const MyApp2 = () => (
   <ThemeProviderPrimary>
     <App />
   </ThemeProviderPrimary>
-)
+);
 ```
 
 ### Load Fonts
@@ -79,15 +87,13 @@ for your project:
 
 ```jsx
 import { CssBaseline } from '@material-ui/core';
-import { ThemeProviderPrimary } from 'act-dls/lib/components';
 
 ...
 
 const MyApp = () => (
-  <ThemeProviderPrimary>
-    <CssBaseline />
-    <App />
-  </ThemeProviderPrimary>
+  ...
+  <CssBaseline />
+  ...
 );
 ```
 
