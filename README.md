@@ -29,7 +29,7 @@ To install the DLS, add the following to your `package.json` file:
 
 Be sure to replace `vX.X.X` with the
 [specific tag](https://bitbucket.org/actet/act-dls/commits/) of the DLS that
-you would like to install (e.g. `v2.0.1`). Then install these packages into your
+you would like to install (e.g. `v2.0.2`). Then install these packages into your
 project by running:
 
 ```shell
@@ -100,20 +100,14 @@ const MyApp = () => (
 ### Server-Side Rendering
 
 If your project's React framework supports SSR, you can configure the DLS
-components for server-side rendering by using the `ServerStyleSheets` API
-from the `@material-ui/styles` package.
+components for server-side rendering by using the `ServerStyleSheets` export
+from Material UI.
 
-Start by installing any 4.x version of `@material-ui/styles` into your project:
-
-```shell
-npm install --save @material-ui/styles@4.x
-```
-
-Then, in a [Next.js](https://nextjs.org/) project for example, you would add the
+In a [Next.js](https://nextjs.org/) project, for example, you would add the
 following to your `pages/_document.tsx` file:
 
 ```jsx
-import { ServerStyleSheets } from '@material-ui/styles';
+import { ServerStyleSheets } from '@material-ui/core/styles';
 
 ...
 
@@ -185,6 +179,14 @@ module.exports = {
     [
       'babel-plugin-transform-imports',
       {
+        '@material-ui/core': {
+          preventFullImport: true,
+          transform: '@material-ui/core/${member}',
+        },
+        '@material-ui/core/colors': {
+          preventFullImport: true,
+          transform: '@material-ui/core/colors/${member}',
+        },
         'act-dls/lib/components': {
           transform: 'act-dls/lib/components/${member}',
           preventFullImport: true,

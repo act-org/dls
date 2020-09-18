@@ -3,11 +3,11 @@
  */
 
 import * as React from 'react';
-import { ThemeProvider, ThemeProviderProps } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '~/styles/theme';
 
-export type Props = Omit<ThemeProviderProps, 'theme'>;
+export type Props = any;
 
 const ThemeProviderPrimary: React.FC<Props> = (
   props: Props,

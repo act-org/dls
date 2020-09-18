@@ -28,9 +28,9 @@ module.exports = {
           preventFullImport: true,
           transform: '@material-ui/core/colors/${member}',
         },
-        '@material-ui/core/styles': {
+        '@material-ui/styles': {
           preventFullImport: true,
-          transform: '@material-ui/core/styles/${member}',
+          transform: '@material-ui/styles/${member}',
         },
         '~/components': {
           preventFullImport: true,
