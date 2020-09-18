@@ -29,7 +29,7 @@ To install the DLS, add the following to your `package.json` file:
 
 Be sure to replace `vX.X.X` with the
 [specific tag](https://bitbucket.org/actet/act-dls/commits/) of the DLS that
-you would like to install (e.g. `v2.0.0`). Then install these packages into your
+you would like to install (e.g. `v2.0.1`). Then install these packages into your
 project by running:
 
 ```shell
