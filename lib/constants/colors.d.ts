@@ -7,6 +7,8 @@ declare const _default: {
     BLACK_38: string;
     BLACK_54: string;
     BLACK_87: string;
+    BORDER_SECONDARY: string;
+    DARK_SECONDARY: string;
     LINK: string;
     PRIMARY: string;
     PRIMARY_DARK: string;
