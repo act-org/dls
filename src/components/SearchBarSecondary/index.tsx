@@ -18,7 +18,7 @@ import { Size } from '~/types';
 
 import useStyles from './styles';
 
-type Props = OutlinedInputProps & {
+export type Props = OutlinedInputProps & {
   size?: Size;
 };
 

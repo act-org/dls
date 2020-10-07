@@ -5,6 +5,9 @@
 export { default as ButtonPrimary } from './ButtonPrimary';
 export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
 
+export { default as ButtonSecondary } from './ButtonSecondary';
+export type { Props as ButtonSecondaryPropsProps } from './ButtonSecondary';
+
 export { default as DataTablePrimary } from './DataTablePrimary';
 export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
 
@@ -26,6 +29,9 @@ export type { Props as InputLabelPrimaryProps } from './InputLabelPrimary';
 export { default as InputPrimary } from './InputPrimary';
 export type { Props as InputPrimaryProps } from './InputPrimary';
 
+export { default as InputSecondary } from './InputSecondary';
+export type { Props as InputSecondaryProps } from './InputSecondary';
+
 export { default as LinkBase } from './LinkBase';
 export type { Props as LinkBaseProps } from './LinkBase';
 
@@ -40,6 +46,9 @@ export type { Props as RenderMetaTagsBaseProps } from './RenderMetaTagsBase';
 
 export { default as SearchBarPrimary } from './SearchBarPrimary';
 export type { Props as SearchBarPrimaryProps } from './SearchBarPrimary';
+
+export { default as SearchBarSecondary } from './SearchBarSecondary';
+export type { Props as SearchBarSecondaryProps } from './SearchBarSecondary';
 
 export { default as SelectPrimary } from './SelectPrimary';
 export type { Props as SelectPrimaryProps } from './SelectPrimary';
