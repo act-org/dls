@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
+import { get, omit } from 'lodash';
 import {
   IconButton,
   InputAdornment,
@@ -13,14 +14,16 @@ import {
 
 import CloseCircle from '~/icons/CloseCircle';
 import Magnify from '~/icons/Magnify';
+import { Size } from '~/types';
 
 import useStyles from './styles';
 
 type Props = OutlinedInputProps & {
-  size?: 'default' | 'large';
+  size?: Size;
 };
 
 const SearchBarSecondary: React.FC<Props> = ({
+  classes: classesProp,
   onChange,
   size = 'default',
   value,
@@ -33,8 +36,16 @@ const SearchBarSecondary: React.FC<Props> = ({
   return (
     <OutlinedInput
       classes={{
-        notchedOutline: classes.outlinedInputNotchedOutlined,
-        root: clsx(classes.outlinedInputRoot, classes[size]),
+        notchedOutline: clsx(
+          classes.outlinedInputNotchedOutlined,
+          get(classesProp, 'notchedOutline'),
+        ),
+        root: clsx(
+          classes.outlinedInputRoot,
+          classes[size],
+          get(classesProp, 'root'),
+        ),
+        ...(omit(classesProp, ['notchedOutline', 'root']) || {}),
       }}
       endAdornment={
         <InputAdornment

@@ -7,12 +7,12 @@ import { noop } from 'lodash';
 
 import render from '~/helpers/test/render';
 
-import SearchBarSecondary from '.';
+import ButtonSecondary from '.';
 
-describe('SearchBarSecondary', () => {
+describe('ButtonSecondary', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <SearchBarSecondary onChange={noop} value="Value" />,
+      <ButtonSecondary onClick={noop}>Button Label</ButtonSecondary>,
     );
 
     expect(container).toMatchSnapshot();

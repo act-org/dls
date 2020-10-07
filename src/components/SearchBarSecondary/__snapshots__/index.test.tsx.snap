@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBarPrimary matches the snapshot 1`] = `
+exports[`SearchBarSecondary matches the snapshot 1`] = `
 <div>
   <div
     class="MuiInputBase-root MuiOutlinedInput-root makeStyles-outlinedInputRoot-8 makeStyles-default-2 MuiInputBase-adornedStart MuiOutlinedInput-adornedStart MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"

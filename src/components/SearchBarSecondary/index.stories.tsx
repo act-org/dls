@@ -6,7 +6,7 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { text, select } from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs';
 
 import SearchBarSecondary from '.';
 
