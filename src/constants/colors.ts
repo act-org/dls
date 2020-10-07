@@ -10,6 +10,8 @@ export default {
   BLACK_38: 'rgba(0, 0, 0, 0.38)',
   BLACK_54: 'rgba(0, 0, 0, 0.54)',
   BLACK_87: 'rgba(0, 0, 0, 0.87)',
+  BORDER_SECONDARY: '#929497',
+  DARK_SECONDARY: '#444444',
   LINK: '#1976d2',
   PRIMARY: '#0079ad',
   PRIMARY_DARK: '#0061a2',
