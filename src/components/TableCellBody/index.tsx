@@ -21,7 +21,6 @@ const TableCellBody: React.FC<Props> = (
       }}
       component="td"
       padding="none"
-      scope="row"
       {...props}
     />
   );

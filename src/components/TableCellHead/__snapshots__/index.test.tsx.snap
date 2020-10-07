@@ -2,7 +2,7 @@
 
 exports[`TableCellHead matches the snapshot 1`] = `
 <div>
-  <div
+  <td
     class="MuiTableCell-root makeStyles-tableCellRoot-3 makeStyles-tableCellRootSortable-4 makeStyles-tableCellRootSortApplied-5"
     role="cell"
   >
@@ -38,6 +38,6 @@ exports[`TableCellHead matches the snapshot 1`] = `
         />
       </svg>
     </div>
-  </div>
+  </td>
 </div>
 `;

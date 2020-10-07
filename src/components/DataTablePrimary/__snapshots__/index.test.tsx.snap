@@ -14,7 +14,7 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
         <tr
           class="MuiTableRow-root MuiTableRow-head"
         >
-          <div
+          <td
             class="MuiTableCell-root makeStyles-tableCellRoot-5 makeStyles-tableCellRootSortable-6 makeStyles-tableCellRootSortApplied-7 MuiTableCell-head"
             role="columnheader"
             scope="col"
@@ -52,8 +52,8 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
                 />
               </svg>
             </div>
-          </div>
-          <div
+          </td>
+          <td
             class="MuiTableCell-root makeStyles-tableCellRoot-5 makeStyles-tableCellRootSortable-6 MuiTableCell-head"
             role="columnheader"
             scope="col"
@@ -90,8 +90,8 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
                 />
               </svg>
             </div>
-          </div>
-          <div
+          </td>
+          <td
             class="MuiTableCell-root makeStyles-tableCellRoot-5 makeStyles-tableCellRootSortable-6 MuiTableCell-head"
             role="columnheader"
             scope="col"
@@ -128,8 +128,8 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
                 />
               </svg>
             </div>
-          </div>
-          <div
+          </td>
+          <td
             class="MuiTableCell-root makeStyles-tableCellRoot-5 makeStyles-tableCellRootSortable-6 MuiTableCell-head"
             role="columnheader"
             scope="col"
@@ -166,8 +166,8 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
                 />
               </svg>
             </div>
-          </div>
-          <div
+          </td>
+          <td
             class="MuiTableCell-root makeStyles-tableCellRoot-5 makeStyles-tableCellRootSortable-6 MuiTableCell-head"
             role="columnheader"
             scope="col"
@@ -204,7 +204,7 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
                 />
               </svg>
             </div>
-          </div>
+          </td>
         </tr>
       </thead>
       <tbody
@@ -216,7 +216,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 50px;"
           >
             1
@@ -224,7 +223,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Item 1
@@ -232,7 +230,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field A1
@@ -240,7 +237,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field B1
@@ -248,7 +244,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field C1
@@ -260,7 +255,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 50px;"
           >
             2
@@ -268,7 +262,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Item 2
@@ -276,7 +269,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field A2
@@ -284,7 +276,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field B2
@@ -292,7 +283,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field C2
@@ -304,7 +294,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 50px;"
           >
             3
@@ -312,7 +301,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Item 3
@@ -320,7 +308,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field A3
@@ -328,7 +315,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field B3
@@ -336,7 +322,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field C3
@@ -348,7 +333,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 50px;"
           >
             4
@@ -356,7 +340,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Item 4
@@ -364,7 +347,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field A4
@@ -372,7 +354,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field B4
@@ -380,7 +361,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field C4
@@ -392,7 +372,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 50px;"
           >
             5
@@ -400,7 +379,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Item 5
@@ -408,7 +386,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field A5
@@ -416,7 +393,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field B5
@@ -424,7 +400,6 @@ exports[`DataTablePrimary matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root makeStyles-tableCellRoot-9 MuiTableCell-body MuiTableCell-paddingNone"
             role="cell"
-            scope="row"
             style="width: 100px;"
           >
             Field C5

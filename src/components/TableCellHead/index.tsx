@@ -69,7 +69,7 @@ const TableCellHead: React.FC<Props> = ({
           sortIsApplied && classes.tableCellRootSortApplied,
         ),
       }}
-      component="div"
+      component="td"
       onClick={sortBy ? toggleSort : undefined}
       style={style}
       {...props}
