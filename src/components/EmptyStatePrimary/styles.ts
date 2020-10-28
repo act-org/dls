@@ -32,7 +32,7 @@ export default makeStyles({
     fontSize: 50,
   },
   titleGridContainer: {
-    marginBottom: DIMS.LAYOUT_PADDING * 2,
+    marginBottom: DIMS.LAYOUT_PADDING,
     marginTop: DIMS.LAYOUT_PADDING,
     maxWidth: 300,
   },
