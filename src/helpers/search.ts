@@ -5,8 +5,8 @@
 import { get, toString } from 'lodash';
 
 function search<T>(docs: T[], properties: string[], value: string): T[] {
-  return docs.filter(doc => {
-    return properties.some((property): boolean => {
+  return docs.filter(doc =>
+    properties.some((property): boolean => {
       const currentValue = get(doc, property);
       if (doc !== null && currentValue !== null) {
         return toString(currentValue)
@@ -14,8 +14,8 @@ function search<T>(docs: T[], properties: string[], value: string): T[] {
           .includes(value.trim().toLowerCase());
       }
       return false;
-    });
-  });
+    }),
+  );
 }
 
 export default search;

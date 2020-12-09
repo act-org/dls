@@ -8,7 +8,7 @@ DLS for ACT front-end projects.
 
 In order to use the DLS, you must also install
 [Material UI](https://material-ui.com/) version `4.x` and
-[React](https://reactjs.org/) version `16.x`.
+[React](https://reactjs.org/) version `16.x` or `17.x`.
 
 To install the DLS, add the following to your `package.json` file:
 
@@ -19,8 +19,8 @@ To install the DLS, add the following to your `package.json` file:
     ...
     "@material-ui/core": "^4.11.0", // any 4.x version
     "act-dls": "git+ssh://bitbucket.org/actet/act-dls.git#vX.X.X", // choose a specific X.X.X version
-    "react": "^16.13.1",  // any 16.x version
-    "react-dom": "^16.13.1", // any 16.x version
+    "react": "^17.0.1",  // any 16.x or 17.x version
+    "react-dom": "^17.0.1", // any 16.x or 17.x version
     ...
   }
   ...

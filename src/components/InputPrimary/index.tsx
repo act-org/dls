@@ -23,7 +23,7 @@ const InputPrimary: React.FC<Props> = ({
         input: clsx(
           classes.inputInput,
           type === 'password' &&
-            value &&
+            !!value &&
             String(value).length > 0 &&
             classes.inputInputPassword,
         ),
