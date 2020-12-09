@@ -17,7 +17,7 @@ import useStyles from './styles';
 
 interface Column<T> {
   renderValue: (item: T) => any;
-  label: string;
+  label?: string;
   sortBy?: string;
   style?: React.CSSProperties;
 }
@@ -50,15 +50,15 @@ const DataTablePrimary = <T,>({
         <TableHead>
           <TableRow>
             {columns.map(
-              (column): React.ReactElement<any> => (
+              (column, i): React.ReactElement<any> => (
                 <TableCellHead
                   currentSortObject={currentSortObject}
-                  key={column.label}
+                  key={column.label || i}
                   onChangeSort={onChangeSort}
                   sortBy={column.sortBy}
                   style={column.style}
                 >
-                  {column.label}
+                  {column.label || ''}
                 </TableCellHead>
               ),
             )}
@@ -72,8 +72,11 @@ const DataTablePrimary = <T,>({
               const children = (
                 <TableRow hover key={i}>
                   {columns.map(
-                    (column): React.ReactElement<any> => (
-                      <TableCellBody key={column.label} style={column.style}>
+                    (column, y): React.ReactElement<any> => (
+                      <TableCellBody
+                        key={column.label || y}
+                        style={column.style}
+                      >
                         {column.renderValue(item)}
                       </TableCellBody>
                     ),

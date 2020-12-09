@@ -6,7 +6,7 @@ import { Props as EmptyStatePrimaryProps } from '~/components/EmptyStatePrimary'
 import { SortObject } from '~/types';
 interface Column<T> {
     renderValue: (item: T) => any;
-    label: string;
+    label?: string;
     sortBy?: string;
     style?: React.CSSProperties;
 }
