@@ -13,12 +13,14 @@ import {
 
 import CloseCircle from '~/icons/CloseCircle';
 import Magnify from '~/icons/Magnify';
+import mergeClasses from '~/helpers/mergeClasses';
 
 import useStyles from './styles';
 
 export type Props = OutlinedInputProps;
 
 const SearchBarPrimary: React.FC<Props> = ({
+  classes: classesProp,
   onChange,
   value,
   ...otherProps
@@ -29,10 +31,13 @@ const SearchBarPrimary: React.FC<Props> = ({
 
   return (
     <OutlinedInput
-      classes={{
-        notchedOutline: classes.outlinedInputNotchedOutlined,
-        root: classes.outlinedInputRoot,
-      }}
+      classes={mergeClasses(
+        {
+          notchedOutline: classes.outlinedInputNotchedOutlined,
+          root: classes.outlinedInputRoot,
+        },
+        classesProp,
+      )}
       endAdornment={
         <InputAdornment
           classes={{

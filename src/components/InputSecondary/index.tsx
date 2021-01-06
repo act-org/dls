@@ -4,9 +4,9 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { get, omit } from 'lodash';
 import { Input, InputProps } from '@material-ui/core';
 
+import mergeClasses from '~/helpers/mergeClasses';
 import { Size } from '~/types';
 
 import useStyles from './styles';
@@ -25,23 +25,23 @@ const InputSecondary: React.FC<Props> = ({
 
   return (
     <Input
-      classes={{
-        input: clsx(
-          classes.inputInput,
-          type === 'password' &&
-            !!value &&
-            String(value).length > 0 &&
-            classes.inputInputPassword,
-          get(classesProp, 'input'),
-        ),
-        root: clsx(
-          classes.inputRoot,
-          classes[size],
-          multiline && classes.multiline,
-          get(classesProp, 'root'),
-        ),
-        ...(omit(classesProp, ['input', 'root']) || {}),
-      }}
+      classes={mergeClasses(
+        {
+          input: clsx(
+            classes.inputInput,
+            type === 'password' &&
+              !!value &&
+              String(value).length > 0 &&
+              classes.inputInputPassword,
+          ),
+          root: clsx(
+            classes.inputRoot,
+            classes[size],
+            multiline && classes.multiline,
+          ),
+        },
+        classesProp,
+      )}
       disableUnderline
       margin="dense"
       multiline={multiline}

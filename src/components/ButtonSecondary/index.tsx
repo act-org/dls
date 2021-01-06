@@ -6,7 +6,8 @@
 import * as React from 'react';
 import { Button, ButtonProps } from '@material-ui/core';
 import clsx from 'clsx';
-import { get, omit } from 'lodash';
+
+import mergeClasses from '~/helpers/mergeClasses';
 
 import useStyles from './styles';
 
@@ -26,20 +27,14 @@ const ButtonSecondary: React.FC<Props> = React.forwardRef<
 
     return (
       <Button
-        classes={{
-          contained: clsx(
-            classes.contained,
-            classes[size],
-            get(classesProp, 'contained'),
-          ),
-          label: clsx(classes.label, get(classesProp, 'label')),
-          outlined: clsx(
-            classes.outlined,
-            classes[size],
-            get(classesProp, 'outlined'),
-          ),
-          ...(omit(classesProp, ['contained', 'outlined', 'label']) || {}),
-        }}
+        classes={mergeClasses(
+          {
+            contained: clsx(classes.contained, classes[size]),
+            label: classes.label,
+            outlined: clsx(classes.outlined, classes[size]),
+          },
+          classesProp,
+        )}
         disableElevation
         ref={ref}
         variant="outlined"

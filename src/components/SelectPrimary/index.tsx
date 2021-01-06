@@ -4,15 +4,18 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
+import { isNil } from 'lodash';
 import { Select, SelectProps } from '@material-ui/core';
 
 import ChevronDown from '~/icons/ChevronDown';
+import mergeClasses from '~/helpers/mergeClasses';
 
 import useStyles from './styles';
 
 export type Props = SelectProps;
 
 const SelectPrimary: React.FC<Props> = ({
+  classes: classesProp,
   value,
   ...otherProps
 }: Props): React.ReactElement<any> => {
@@ -20,11 +23,17 @@ const SelectPrimary: React.FC<Props> = ({
 
   return (
     <Select
-      classes={{
-        icon: classes.selectIcon,
-        root: clsx(classes.selectRoot, !value && classes.selectRootEmpty),
-        select: classes.selectComponentRoot,
-      }}
+      classes={mergeClasses(
+        {
+          icon: classes.selectIcon,
+          root: clsx(
+            classes.selectRoot,
+            isNil(value) && classes.selectRootEmpty,
+          ),
+          select: classes.selectComponentRoot,
+        },
+        classesProp,
+      )}
       defaultValue="0"
       disableUnderline
       IconComponent={ChevronDown}

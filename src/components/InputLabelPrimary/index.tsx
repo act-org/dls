@@ -5,11 +5,14 @@
 import * as React from 'react';
 import { InputLabel, InputLabelProps } from '@material-ui/core';
 
+import mergeClasses from '~/helpers/mergeClasses';
+
 import useStyles from './styles';
 
 export type Props = InputLabelProps;
 
 const InputLabelPrimary: React.FC<Props> = ({
+  classes: classesProp,
   children,
   required,
   ...otherProps
@@ -18,9 +21,12 @@ const InputLabelPrimary: React.FC<Props> = ({
 
   return (
     <InputLabel
-      classes={{
-        root: classes.labelRoot,
-      }}
+      classes={mergeClasses(
+        {
+          root: classes.labelRoot,
+        },
+        classesProp,
+      )}
       {...otherProps}
     >
       <div className="label-split">

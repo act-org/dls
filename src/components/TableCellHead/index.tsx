@@ -9,6 +9,7 @@ import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
 import ChevronDown from '~/icons/ChevronDown';
 import ChevronUp from '~/icons/ChevronUp';
 import COLORS from '~/constants/colors';
+import mergeClasses from '~/helpers/mergeClasses';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortDirection, SortObject } from '~/types';
 
@@ -23,6 +24,7 @@ export interface Props extends TableCellProps {
 }
 
 const TableCellHead: React.FC<Props> = ({
+  classes: classesProp,
   children,
   currentSortObject,
   onChangeSort,
@@ -62,13 +64,16 @@ const TableCellHead: React.FC<Props> = ({
 
   return (
     <TableCell
-      classes={{
-        root: clsx(
-          classes.tableCellRoot,
-          sortBy && classes.tableCellRootSortable,
-          sortIsApplied && classes.tableCellRootSortApplied,
-        ),
-      }}
+      classes={mergeClasses(
+        {
+          root: clsx(
+            classes.tableCellRoot,
+            sortBy && classes.tableCellRootSortable,
+            sortIsApplied && classes.tableCellRootSortApplied,
+          ),
+        },
+        classesProp,
+      )}
       component="td"
       onClick={sortBy ? toggleSort : undefined}
       style={style}

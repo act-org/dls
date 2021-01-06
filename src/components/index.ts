@@ -53,6 +53,9 @@ export type { Props as SearchBarSecondaryProps } from './SearchBarSecondary';
 export { default as SelectPrimary } from './SelectPrimary';
 export type { Props as SelectPrimaryProps } from './SelectPrimary';
 
+export { default as SelectSecondary } from './SelectSecondary';
+export type { Props as SelectSecondaryProps } from './SelectSecondary';
+
 export { default as TableCellBody } from './TableCellBody';
 export type { Props as TableCellBodyProps } from './TableCellBody';
 

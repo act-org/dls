@@ -3,33 +3,34 @@
  */
 
 import * as React from 'react';
-import { TableCell, TableCellProps } from '@material-ui/core';
 
 import mergeClasses from '~/helpers/mergeClasses';
+import SelectPrimary, {
+  Props as SelectPrimaryProps,
+} from '~/components/SelectPrimary';
 
 import useStyles from './styles';
 
-export type Props = TableCellProps;
+export type Props = SelectPrimaryProps;
 
-const TableCellBody: React.FC<Props> = ({
+const SelectSecondary: React.FC<Props> = ({
   classes: classesProp,
   ...otherProps
 }: Props): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (
-    <TableCell
+    <SelectPrimary
       classes={mergeClasses(
         {
-          root: classes.tableCellRoot,
+          icon: classes.selectIcon,
+          root: classes.selectRoot,
         },
         classesProp,
       )}
-      component="td"
-      padding="none"
       {...otherProps}
     />
   );
 };
 
-export default TableCellBody;
+export default SelectSecondary;
