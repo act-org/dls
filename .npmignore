@@ -1,5 +1,6 @@
 .circleci
 .storybook
+storybook-static
 bin
 node_modules
 src
