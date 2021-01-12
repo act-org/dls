@@ -1,9 +1,7 @@
-/**
- * @prettier
- */
-
+#!/usr/bin/env node
+/* eslint-disable @typescript-eslint/no-var-requires */
 // eslint-disable-next-line import/no-extraneous-dependencies
-import shelljs from 'shelljs';
+const shelljs = require('shelljs');
 
 shelljs.mkdir('-p', './lib/types');
 shelljs.cp('-R', './src/types/*', './lib/types');
