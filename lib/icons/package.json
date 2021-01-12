@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/mdi-material-ui/-/mdi-material-ui-6.21.0.tgz",
   "_shasum": "e052215b0534e6c20abeb7e89c3fd8a421a519fd",
   "_spec": "mdi-material-ui@^6.21.0",
-  "_where": "/Users/joncursi/Sites/actet/act-dls",
+  "_where": "/home/watkinsj/src/act/et/act-dls",
   "author": {
     "name": "Wertarbyte"
   },
@@ -52,9 +52,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TeamWertarbyte/mdi-material-ui.git"
-  },
-  "scripts": {
-    "start": "node server.js"
   },
   "sideEffects": false,
   "version": "6.21.0"
