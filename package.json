@@ -89,6 +89,7 @@
     "*.md": "npm run test:lint:md"
   },
   "main": "lib/index.js",
+  "types": "lib/types",
   "name": "@act/dls",
   "peerDependencies": {
     "@material-ui/core": "4.x",
