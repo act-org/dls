@@ -11,6 +11,7 @@ module.exports = {
     '@storybook/addon-a11y/register',
     '@storybook/addon-backgrounds/register',
     '@storybook/addon-viewport/register',
+    '@storybook/addon-docs/register',
     // 'storybook-addon-material-ui/register',
   ],
   stories: ['../src/**/*.stories.tsx'],

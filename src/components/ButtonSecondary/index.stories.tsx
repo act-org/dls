@@ -48,5 +48,5 @@ export default {
       text: 'This is the secondary variant of the Button component.',
     },
   },
-  title: 'Atoms/Button',
+  title: 'Deprecated/Atoms/Button',
 };
