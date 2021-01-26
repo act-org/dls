@@ -7,7 +7,7 @@
     "outDir": "./.storybook",
     "paths": {
       "~/*": [
-        "./src/*"
+        "src/*"
       ]
     },
     "typeRoots": [

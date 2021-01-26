@@ -5,14 +5,18 @@
 /* eslint-disable sort-keys */
 
 import * as React from 'react';
-import { number, text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
-import TableCellHead from '.';
+import TableCellHead, { Props } from '.';
 
-export const Head = (): React.ReactElement<any> => {
+interface StoryProps extends Props {
+  text: string;
+}
+
+export const Head: Story<StoryProps> = ({ text, ...args }) => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'ITEM_KEY',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
@@ -26,20 +30,20 @@ export const Head = (): React.ReactElement<any> => {
       }}
       sortBy="ITEM_KEY"
       style={{
-        width: number('Style:Width', 300),
+        width: 300,
       }}
+      {...args}
     >
-      {text('Text', 'Table Cell')}
+      {text}
     </TableCellHead>
   );
+};
+Head.args = {
+  text: 'Table Cell',
 };
 
 export default {
   component: TableCellHead,
-  parameters: {
-    info: {
-      text: 'This is the head variant of the TableCell component.',
-    },
-  },
+  parameters: {},
   title: 'Atoms/TableCell',
-};
+} as Meta<StoryProps>;

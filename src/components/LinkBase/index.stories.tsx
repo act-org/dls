@@ -1,18 +1,22 @@
+/* eslint-disable immutable/no-mutation */
 /**
  * @prettier
  */
 
 import * as React from 'react';
-// import { action } from '@storybook/addon-actions';
-// import { text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import LinkBase from '.';
+import LinkBase, { Props } from '.';
 
-export const Base = (): React.ReactElement<any> => (
-  <LinkBase target="_blank" to="https://www.act.org">
+export const Base: Story<Props> = args => (
+  <LinkBase {...args}>
     Click Me
   </LinkBase>
 );
+Base.args = {
+  target: '_blank',
+  to: 'https://www.act.org',
+};
 
 export default {
   component: LinkBase,
@@ -22,4 +26,4 @@ export default {
     },
   },
   title: 'Atoms/Link',
-};
+} as Meta<Props>;

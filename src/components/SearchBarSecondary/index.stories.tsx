@@ -1,45 +1,35 @@
-/**
- * @prettier
- */
-
-/* eslint-disable sort-keys */
-
 import * as React from 'react';
-import { action } from '@storybook/addon-actions';
-import { select, text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import SearchBarSecondary from '.';
+import SearchBarSecondary, { Props } from '.';
 
-export const Secondary = (): React.ReactElement<any> => {
+export const Secondary: Story<Props> = args => {
   const [value, setValue] = React.useState('');
+  return <SearchBarSecondary
+    onChange= {(e: any): void => {
+      setValue(e.target.value);
+    }}
+    value
+    {...args} 
+  />;
+};
 
-  return (
-    <SearchBarSecondary
-      onChange={(e: any): void => {
-        action('onChange()');
-
-        setValue(e.target.value);
-      }}
-      placeholder={text('Placeholder', 'Search...')}
-      size={select(
-        'Size',
-        {
-          Default: 'default',
-          Large: 'large',
-        },
-        'default',
-      )}
-      value={value}
-    />
-  );
+Secondary.args = {
+  placeholder: 'Search...',
+  size: 'default'
 };
 
 export default {
   component: SearchBarSecondary,
   parameters: {
-    info: {
-      text: 'This is the secondary variant of the SearchBar component.',
-    },
+    argTypes: {
+      size: {
+        control: {
+          type: 'select',
+          options: ['default', 'large']
+        }
+      }
+    }
   },
   title: 'Molecules/SearchBar',
-};
+} as Meta<Props>;

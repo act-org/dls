@@ -1,44 +1,35 @@
-/**
- * @prettier
- */
-
-const path = require('path');
+const fs = require('fs');
 
 module.exports = {
-  addons: [
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-actions/register',
-    '@storybook/addon-a11y/register',
-    '@storybook/addon-backgrounds/register',
-    '@storybook/addon-viewport/register',
-    '@storybook/addon-docs/register',
-    // 'storybook-addon-material-ui/register',
+  "stories": [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  stories: ['../src/**/*.stories.tsx'],
-  webpackFinal: async config => {
-    config.module.rules.push({
-      test: /\.tsx?$/,
-      include: path.resolve(__dirname, '../src'),
-      use: [
-        require.resolve('ts-loader'),
-        {
-          loader: require.resolve('react-docgen-typescript-loader'),
-          options: {
-            // Provide the path to your tsconfig.json so that your stories can
-            // display types from outside each individual story.
-            tsconfigPath: path.resolve(__dirname, '../tsconfig.json'),
-          },
-        },
-      ],
-    });
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@react-theming/storybook-addon",
+    "@storybook/addon-a11y"
 
-    config.resolve.extensions.push('.ts', '.tsx');
-
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '~': path.resolve(__dirname, '../src'),
-    };
-
-    return config;
+  ],
+  typescript: {
+    check: true,
+    checkOptions: {},
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+    },
   },
-};
+  babel: async (options) => {
+    options.plugins.push([
+      'babel-plugin-root-import',
+      {
+        rootPathPrefix: '~',
+        rootPathSuffix: './src',
+      },
+    ]);
+    //fs.writeFileSync('./.babelrc', JSON.stringify(options));
+    return options;
+  }
+}

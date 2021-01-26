@@ -1,22 +1,16 @@
-/**
- * @prettier
- */
-
 import * as React from 'react';
-import { text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import LoadingPrimary from '.';
+import LoadingPrimary, { Props } from '.';
 
-export const Primary = (): React.ReactElement<any> => (
-  <LoadingPrimary
-    circularProgressProps={{
-      size: Number(text('Size', '24')),
-      thickness: Number(text('Thickness', '4.5')),
-    }}
-    title={text('Title', 'Loading...')}
-  />
-);
-
+export const Primary: Story<Props> = args => <LoadingPrimary {...args} />;
+Primary.args = {
+  circularProgressProps: {
+    size: 24,
+    thickness: 4.5,
+  },
+  title: 'Loading...'
+}
 export default {
   component: LoadingPrimary,
   parameters: {
@@ -25,4 +19,4 @@ export default {
     },
   },
   title: 'Molecules/Loading',
-};
+} as Meta<Props>;

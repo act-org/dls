@@ -1,29 +1,21 @@
-/**
- * @prettier
- */
-
-/* eslint-disable sort-keys */
-
 import * as React from 'react';
-import { action } from '@storybook/addon-actions';
-import { text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import SearchBarPrimary from '.';
+import SearchBarPrimary, { Props } from '.';
 
-export const Primary = (): React.ReactElement<any> => {
+export const Primary: Story<Props> = args => {
   const [value, setValue] = React.useState('');
+  return <SearchBarPrimary
+    onChange= {(e: any): void => {
+      setValue(e.target.value);
+    }}
+    value
+    {...args} 
+  />;
+};
 
-  return (
-    <SearchBarPrimary
-      onChange={(e: any): void => {
-        action('onChange()');
-
-        setValue(e.target.value);
-      }}
-      placeholder={text('Placeholder', 'Search...')}
-      value={value}
-    />
-  );
+Primary.args = {
+  placeholder: 'Search...',
 };
 
 export default {
@@ -34,4 +26,4 @@ export default {
     },
   },
   title: 'Molecules/SearchBar',
-};
+} as Meta<Props>;

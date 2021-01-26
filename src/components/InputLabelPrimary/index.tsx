@@ -9,7 +9,8 @@ import mergeClasses from '~/helpers/mergeClasses';
 
 import useStyles from './styles';
 
-export type Props = InputLabelProps;
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface Props extends InputLabelProps {}
 
 const InputLabelPrimary: React.FC<Props> = ({
   classes: classesProp,

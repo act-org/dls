@@ -5,39 +5,36 @@
 /* eslint-disable sort-keys */
 
 import * as React from 'react';
-import { action } from '@storybook/addon-actions';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import ButtonPrimary, { Props } from '.';
 
-import Plus from '~/icons/Plus';
+interface StoryProps extends Props {
+  text: string;
+}
 
-import ButtonPrimary from '.';
-
-export const Primary = (): React.ReactElement<any> => (
-  <ButtonPrimary
-    disabled={boolean('Disabled?', false)}
-    endIcon={boolean('End Icon?', false) ? <Plus /> : undefined}
-    onClick={action('onClick()')}
-    size={select(
-      'Size',
-      {
-        Small: 'small',
-        Medium: 'medium',
-        Large: 'large',
-      },
-      'medium',
-    )}
-    startIcon={boolean('Start Icon?', true) ? <Plus /> : undefined}
-  >
-    {text('Text', 'Click Me')}
-  </ButtonPrimary>
+export const Primary: Story<StoryProps> = ({ text, ...args }) => (
+  <ButtonPrimary {...args}>{text}</ButtonPrimary>
 );
+Primary.args = {
+  disabled: true,
+  size: 'medium',
+  text: 'Click Me',
+};
 
 export default {
   component: ButtonPrimary,
   parameters: {
-    info: {
-      text: 'This is the primary variant of the Button component.',
+    argTypes: {
+      onClick: {
+        action: 'click',
+      },
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: ['small', 'medium', 'large'],
+      },
     },
   },
-  title: 'Deprecated/Atoms/Button',
-};
+  title: 'Atoms/Button',
+} as Meta<StoryProps>;

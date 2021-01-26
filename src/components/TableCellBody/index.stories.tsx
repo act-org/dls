@@ -1,24 +1,22 @@
-/**
- * @prettier
- */
-
-/* eslint-disable sort-keys */
-
 import * as React from 'react';
-import { text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import TableCellBody from '.';
+import TableCellBody, { Props } from '.';
 
-export const Body = (): React.ReactElement<any> => (
-  <TableCellBody>{text('Text', 'Table Cell')}</TableCellBody>
+interface StoryProps extends Props {
+  text: string;
+}
+
+export const Body: Story<StoryProps> = ({text, ...args}) => (
+  <TableCellBody {...args}>{text}</TableCellBody>
 );
+Body.args = {
+  text: 'Table Cell'
+}
 
 export default {
   component: TableCellBody,
   parameters: {
-    info: {
-      text: 'This is the body variant of the TableCell component.',
-    },
   },
   title: 'Atoms/TableCell',
-};
+} as Meta<StoryProps>;

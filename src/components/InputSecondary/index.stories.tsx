@@ -1,54 +1,56 @@
+/* eslint-disable immutable/no-mutation */
 /**
  * @prettier
  */
 
 import * as React from 'react';
-import { action } from '@storybook/addon-actions';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import InputSecondary from '.';
+import InputSecondary, { Props } from '.';
 
-export const Secondary = (): React.ReactElement<any> => {
+const Template: Story<Props> = args => {
   const [value, setValue] = React.useState('Input');
-
   return (
     <InputSecondary
-      autoFocus={boolean('Auto Focus?', false)}
-      disabled={boolean('Disabled?', false)}
-      multiline={boolean('Multiple Lines?', false)}
-      onChange={(e: any): void => {
-        action('onChange()');
-
-        setValue(e.target.value);
-      }}
-      placeholder={text('Placeholder', 'Placeholder')}
-      size={select(
-        'Size',
-        {
-          Default: 'default',
-          Large: 'large',
-        },
-        'default',
-      )}
-      type={select(
-        'Type',
-        {
-          Password: 'password',
-          Text: 'text',
-        },
-        'text',
-      )}
       value={value}
+      {...args}
     />
   );
 };
 
+export const Secondary: Story<Props> = Template.bind({});
+Secondary.args = {
+  autoFocus: false,
+  disabled: false,
+  multiline: false,
+  placeholder: "Placeholder",
+  size: "default",
+  type: "text"
+}
+
 export default {
+  argTypes: {
+    onChange: {
+      action: "change"
+    },
+    size: {
+      control: {
+        options: ['default', 'large'],
+        type: 'select',
+      }
+    },
+    type: {
+      control: {
+        options: ['text', 'password'],
+        type: 'select',
+      }
+    }
+  },
   component: InputSecondary,
   parameters: {
     info: {
-      text: 'This is the secondary variant of the Input component.',
+      text: 'This is the primary variant of the Input component.',
     },
   },
   title: 'Atoms/Input',
-};
+} as Meta<Props>;

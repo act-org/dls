@@ -1,38 +1,41 @@
+/* eslint-disable immutable/no-mutation */
 /**
  * @prettier
  */
 
 import * as React from 'react';
-import { action } from '@storybook/addon-actions';
-import { boolean, text } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import InputPrimary from '.';
+import InputPrimary, { Props } from '.';
 
-export const Primary = (): React.ReactElement<any> => {
+const Template: Story<Props> = args => {
   const [value, setValue] = React.useState('Input');
-
   return (
     <InputPrimary
-      autoFocus={boolean('Auto Focus?', false)}
-      disabled={boolean('Disabled?', false)}
-      multiline={boolean('Multiple Lines?', false)}
-      onChange={(e: any): void => {
-        action('onChange()');
-
+      onChange={(e: React.ChangeEvent<HTMLInputElement>): void => {
         setValue(e.target.value);
       }}
-      placeholder={text('Placeholder', 'Placeholder')}
       value={value}
+      {...args}
     />
   );
 };
 
+export const Primary: Story<Props> = Template.bind({});
+Primary.args = {
+  autoFocus: false,
+  disabled: false,
+  multiline: false,
+  placeholder: "Placeholder"
+}
+
 export default {
   component: InputPrimary,
   parameters: {
+    controls: { expanded: true },
     info: {
       text: 'This is the primary variant of the Input component.',
     },
   },
   title: 'Atoms/Input',
-};
+} as Meta<Props>;

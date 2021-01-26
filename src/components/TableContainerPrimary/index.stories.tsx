@@ -5,10 +5,13 @@
 /* eslint-disable sort-keys */
 
 import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import TableContainerPrimary from '.';
+import TableContainerPrimary, { Props } from '.';
 
-export const Primary = (): React.ReactElement<any> => <TableContainerPrimary />;
+export const Primary: Story<Props> = args => (
+  <TableContainerPrimary {...args} />
+);
 
 export default {
   component: TableContainerPrimary,
@@ -18,4 +21,4 @@ export default {
     },
   },
   title: 'Atoms/TableContainer',
-};
+} as Meta<Props>;

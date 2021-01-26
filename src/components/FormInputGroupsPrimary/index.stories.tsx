@@ -3,13 +3,13 @@
  */
 
 import * as React from 'react';
+import { Meta, Story } from '@storybook/react/types-6-0';
+import FormInputPrimary from '../FormInputPrimary';
+import FormSelectPrimary from '../FormSelectPrimary';
 
-import FormInputPrimary from '~/components/FormInputPrimary';
-import FormSelectPrimary from '~/components/FormSelectPrimary';
+import FormInputGroupsPrimary, { Props } from '.';
 
-import FormInputGroupsPrimary from '.';
-
-export const Primary = (): React.ReactElement<any> => {
+const Template: Story<Props> = args => {
   const [value1, setValue1] = React.useState('Value 1');
   const [value2, setValue2] = React.useState('Value 2');
   const [value3, setValue3] = React.useState('THREE');
@@ -133,9 +133,12 @@ export const Primary = (): React.ReactElement<any> => {
           },
         ],
       ]}
+      {...args}
     />
   );
 };
+
+export const Primary: Story<Props> = Template.bind({});
 
 export default {
   component: FormInputGroupsPrimary,
@@ -145,4 +148,4 @@ export default {
     },
   },
   title: 'Organisms/FormInputGroups',
-};
+} as Meta<Props>;

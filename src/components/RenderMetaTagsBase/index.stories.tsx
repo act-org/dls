@@ -3,10 +3,11 @@
  */
 
 import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import RenderMetaTagsBase from '.';
+import RenderMetaTagsBase, { Props } from '.';
 
-export const Base = (): React.ReactElement<any> => <RenderMetaTagsBase />;
+export const Base: Story<Props> = args => <RenderMetaTagsBase {...args} />;
 
 export default {
   component: RenderMetaTagsBase,
@@ -16,4 +17,4 @@ export default {
     },
   },
   title: 'Utilities/RenderMetaTags',
-};
+} as Meta<Props>;

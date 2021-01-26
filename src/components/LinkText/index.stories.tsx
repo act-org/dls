@@ -1,31 +1,23 @@
+/* eslint-disable immutable/no-mutation */
 /**
  * @prettier
  */
 
 import * as React from 'react';
-import { select, text as knobText } from '@storybook/addon-knobs';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import LinkText, { Props } from '.';
 
-import LinkText from '.';
-
-export const Text = (): React.ReactElement<any> => (
-  <LinkText
-    target={select(
-      'Target',
-      {
-        Blank: '_blank',
-        Parent: '_parent',
-        Self: '_self',
-        Top: '_top',
-      },
-      '_blank',
-    )}
-    to={knobText('To', 'https://www.act.org')}
-  >
-    {knobText('Text', 'Click Me')}
-  </LinkText>
-);
+const Template: Story<Props> = args => <LinkText {...args}>Click Me</LinkText>;
+export const Text: Story<Props> = Template.bind({});
+Text.args = {
+  target: "_blank",
+  to: 'https://www.act.org',
+};
 
 export default {
+  argTypes: {
+
+  },
   component: LinkText,
   parameters: {
     info: {
@@ -33,4 +25,4 @@ export default {
     },
   },
   title: 'Atoms/Link',
-};
+} as Meta<Props>;

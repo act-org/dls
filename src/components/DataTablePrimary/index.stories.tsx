@@ -6,14 +6,14 @@
 
 import * as React from 'react';
 import moment from 'moment';
-import { select } from '@storybook/addon-knobs';
 
 import PackageVariant from '~/icons/PackageVariant';
 import sort from '~/helpers/sort';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import DataTablePrimary from '.';
+import DataTablePrimary, { Props } from '.';
 
 interface Item {
   id: string;
@@ -23,34 +23,13 @@ interface Item {
   fieldB: string;
   fieldC: string;
 }
-
-export const Primary = (): React.ReactElement<any> => {
+const Template: Story<Props<Item>> = args => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
   });
 
-  let items: Item[] = Array(
-    ...Array(
-      select(
-        'Items Count',
-        {
-          0: 0,
-          1: 1,
-          2: 2,
-          3: 3,
-          4: 4,
-          5: 5,
-          6: 6,
-          7: 7,
-          8: 8,
-          9: 9,
-          10: 10,
-        },
-        5,
-      ),
-    ),
-  ).map((_, i): any => ({
+  let items: Item[] = [...Array(10)].map((_, i): any => ({
     updatedAt: moment()
       .subtract(2, 'year')
       .subtract(i + 1, 'day')
@@ -127,9 +106,11 @@ export const Primary = (): React.ReactElement<any> => {
       onChangeSort={(newSortObject): void => {
         setSortObject(newSortObject);
       }}
+      {...args}
     />
   );
 };
+export const Primary: Story<Props<Item>> = Template.bind({});
 
 export default {
   component: DataTablePrimary,
@@ -137,6 +118,9 @@ export default {
     info: {
       text: 'This is the primary variant of the DataTable component.',
     },
+    controls: {
+      expanded: true,
+    },
   },
   title: 'Organisms/DataTable',
-};
+} as Meta<Props<Item>>;

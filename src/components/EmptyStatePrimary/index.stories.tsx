@@ -1,33 +1,23 @@
+/* eslint-disable immutable/no-mutation */
 /**
  * @prettier
  */
 
 import * as React from 'react';
-import { boolean, text } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Account from '~/icons/Account';
 
-import EmptyStatePrimary from '.';
+import EmptyStatePrimary, { Props } from '.';
 
-export const Primary = (): React.ReactElement<any> => (
-  <EmptyStatePrimary
-    buttonProps={
-      boolean('Button?', true)
-        ? {
-            children: text('Button Text', 'Add User'),
-            onClick: action('onClick()'),
-          }
-        : undefined
-    }
-    description={text(
-      'Description',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    )}
-    Icon={boolean('Icon?', true) ? Account : undefined}
-    title={text('Title', 'No users yet.')}
-  />
-);
+const Template: Story<Props> = args => (<EmptyStatePrimary {...args} />)
+
+export const Primary: Story<Props> = Template.bind({});
+Primary.args = {
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  Icon: Account,
+  title: 'No users yet.',
+};
 
 export default {
   component: EmptyStatePrimary,
@@ -37,4 +27,4 @@ export default {
     },
   },
   title: 'Molecules/EmptyState',
-};
+} as Meta<Props>;

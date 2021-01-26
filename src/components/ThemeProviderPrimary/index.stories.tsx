@@ -3,11 +3,12 @@
  */
 
 import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import ThemeProviderPrimary from '.';
+import ThemeProviderPrimary, { Props } from '.';
 
-export const Primary = (): React.ReactElement<any> => (
-  <ThemeProviderPrimary>ThemeProviderPrimary</ThemeProviderPrimary>
+export const Primary: Story<Props> = args => (
+  <ThemeProviderPrimary {...args}>ThemeProviderPrimary</ThemeProviderPrimary>
 );
 
 export default {
@@ -18,4 +19,4 @@ export default {
     },
   },
   title: 'Utilities/ThemeProvider',
-};
+} as Meta<Props>;
