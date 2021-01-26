@@ -41,9 +41,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
           },
           classesProp,
         )}
-        disableElevation
         ref={ref}
-        variant="outlined"
         {...otherProps}
       />
     );
@@ -55,4 +53,5 @@ Button.defaultProps = {
   size: 'default',
   color: 'primary',
   variant: 'outlined',
+  disableElevation: true,
 };
