@@ -44,7 +44,7 @@ export const Icon = <Plus />
 This is the primary button on a form/page.  Not all buttons should be primary to differentiate between primary and alternative paths for the user.
 
 <Canvas>
-    <Story name="Primary" args={{ size: 'default', text: 'Click me', disabled: false, color: 'primary', variant: 'contained' }}>
+    <Story name="Primary" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
        {({text, ...args}) => <Button {...args}>{text}</Button>}
     </Story>
 </Canvas>
@@ -53,7 +53,7 @@ This is the primary button on a form/page.  Not all buttons should be primary to
 ## Secondary Button
 The secondary button is useful for having additional options outside of the normal flow
 <Canvas>
-    <Story name="Secondary" args={{ size: 'default', text: 'Click me', disabled: false, color: 'primary', variant: 'outlined' }}>
+    <Story name="Secondary" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'outlined' }}>
         {({text, ...args}) => <Button {...args}>{text}</Button>}
     </Story>
 </Canvas>
@@ -62,7 +62,7 @@ The secondary button is useful for having additional options outside of the norm
 ## Icons
 The buttons also support icons with the startIcon and endIcon properties.  Here is an example.
 <Canvas>
-    <Story name="Icons" args={{ size: 'default', text: 'Click me', disabled: false, color: 'primary', variant: 'contained' }}>
+    <Story name="Icons" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
         {({text, ...args}) => <Button endIcon={Icon} {...args}>{text}</Button>}
     </Story>
 </Canvas>

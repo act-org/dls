@@ -53,4 +53,6 @@ export const Button: React.FC<ButtonProps> = React.forwardRef<
 // eslint-disable-next-line immutable/no-mutation
 Button.defaultProps = {
   size: 'default',
+  color: 'primary',
+  variant: 'outlined',
 };
