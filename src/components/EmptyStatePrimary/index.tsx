@@ -7,14 +7,12 @@ import clsx from 'clsx';
 import { Grid, Typography } from '@material-ui/core';
 import { isString } from 'lodash';
 
-import ButtonPrimary, {
-  Props as ButtonPrimaryProps,
-} from '~/components/ButtonPrimary';
+import { Button, ButtonProps } from '~/components/Button';
 
 import useStyles from './styles';
 
 export interface Props {
-  buttonProps?: ButtonPrimaryProps;
+  buttonProps?: ButtonProps;
   description?: any;
   Icon?: React.FC<any> | React.ComponentClass<any>;
   style?: React.CSSProperties;
@@ -79,7 +77,7 @@ const EmptyStatePrimary: React.FC<Props> = ({
         </Typography>
       )}
 
-      {buttonProps && <ButtonPrimary {...buttonProps} />}
+      {buttonProps && <Button {...buttonProps} />}
     </div>
   );
 };

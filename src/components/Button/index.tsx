@@ -4,29 +4,35 @@
 /* eslint-disable react/display-name */
 
 import * as React from 'react';
-import { Button, ButtonProps } from '@material-ui/core';
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from '@material-ui/core';
 import clsx from 'clsx';
 
 import mergeClasses from '~/helpers/mergeClasses';
 
 import useStyles from './styles';
 
-export type Props = Omit<ButtonProps, 'size'> & {
+export type ButtonProps = Omit<MuiButtonProps, 'size'> & {
   size?: 'default' | 'large' | 'small';
 };
 
-const ButtonSecondary: React.FC<Props> = React.forwardRef<
+/**
+ * This is the button desciprion
+ */
+export const Button: React.FC<ButtonProps> = React.forwardRef<
   HTMLButtonElement,
-  Props
+  ButtonProps
 >(
   (
-    { classes: classesProp, size = 'default', ...otherProps }: Props,
+    { classes: classesProp, size = 'default', ...otherProps }: ButtonProps,
     ref,
-  ): React.ReactElement<Props> => {
+  ): React.ReactElement<ButtonProps> => {
     const classes = useStyles();
 
     return (
-      <Button
+      <MuiButton
         classes={mergeClasses(
           {
             contained: clsx(classes.contained, classes[size]),
@@ -45,8 +51,6 @@ const ButtonSecondary: React.FC<Props> = React.forwardRef<
 );
 
 // eslint-disable-next-line immutable/no-mutation
-ButtonSecondary.defaultProps = {
+Button.defaultProps = {
   size: 'default',
 };
-
-export default ButtonSecondary;

@@ -2,11 +2,7 @@
  * @prettier
  */
 
-export { default as ButtonPrimary } from './ButtonPrimary';
-export type { Props as ButtonPrimaryProps } from './ButtonPrimary';
-
-export { default as ButtonSecondary } from './ButtonSecondary';
-export type { Props as ButtonSecondaryPropsProps } from './ButtonSecondary';
+export * from './Button';
 
 export { default as DataTablePrimary } from './DataTablePrimary';
 export type { Props as DataTablePrimaryProps } from './DataTablePrimary';

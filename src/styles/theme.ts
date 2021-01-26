@@ -3,18 +3,22 @@
  */
 
 import COLORS from '~/constants/colors';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
 import TYPOGRAPHY from '~/constants/typography';
 
-export const theme = {
+export const theme: ThemeOptions = {
   palette: {
     primary: {
-      dark: COLORS.PRIMARY,
-      light: COLORS.PRIMARY,
-      main: COLORS.PRIMARY,
+      dark: '#000336',
+      light: '#3e568e',
+      main: '#042e60',
+      contrastText: '#ffffff'
     },
     secondary: {
-      main: COLORS.WHITE,
+      dark: '#004043',
+      light: '#46999c',
+      main: '#016b6e',
+      contrastText: '#ffffff'
     },
     text: {
       primary: COLORS.TEXT_PRIMARY,

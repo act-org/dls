@@ -1,12 +1,28 @@
 import { ThemeProvider } from '@material-ui/styles';
+import actTheme from '../src/styles/theme';
 import COLORS from '../src/constants/colors';
-import theme from '../src/styles/theme';
 import { grey } from '@material-ui/core/colors';
-import { host } from 'storybook-host';
 
 export const parameters = {
   actions: { argTypesRegex: "^on.*" },
   controls: { expanded: true },
+  backgrounds: {
+    default: 'White',
+    values: [
+      {
+        name: 'White',
+        value: COLORS.WHITE,
+      },
+      {
+        name: 'Grey',
+        value: grey[300],
+      },
+      {
+        name: 'Black',
+        value: COLORS.BLACK,
+      },
+    ]
+  }
   // options: {
   //   showRoots: true,
   // },
@@ -16,13 +32,8 @@ export const parameters = {
 }
 export const decorators = [
   (Story) => {
-    console.log(Story, theme);
-    return (
-      <ThemeProvider theme={theme}>
-        <Story />
-      </ThemeProvider>
-    )
-  },
+    return (<ThemeProvider theme={actTheme}><Story /></ThemeProvider>)
+  }
   // () => {
   //   return host({
   //     align: 'center middle',
