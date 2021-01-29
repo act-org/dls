@@ -12,6 +12,7 @@ configureActions({
 
 export const parameters = {
   actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
+  layout: 'centered',
   controls: { expanded: false },
   backgrounds: {
     default: 'White',
