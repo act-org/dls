@@ -2,10 +2,17 @@ import { ThemeProvider } from '@material-ui/styles';
 import actTheme from '../src/styles/theme';
 import COLORS from '../src/constants/colors';
 import { grey } from '@material-ui/core/colors';
+import { configureActions } from '@storybook/addon-actions';
+
+
+configureActions({
+  depth: 3,
+  limit: 20,
+});
 
 export const parameters = {
-  actions: { argTypesRegex: "^on.*" },
-  controls: { expanded: true },
+  actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
+  controls: { expanded: false },
   backgrounds: {
     default: 'White',
     values: [
@@ -23,25 +30,9 @@ export const parameters = {
       },
     ]
   }
-  // options: {
-  //   showRoots: true,
-  // },
-  // viewport: {
-  //   defaultViewport: 'responsive',
-  // }
 }
 export const decorators = [
   (Story) => {
     return (<ThemeProvider theme={actTheme}><Story /></ThemeProvider>)
   }
-  // () => {
-  //   return host({
-  //     align: 'center middle',
-  //     backdrop: COLORS.TRANSPARENT,
-  //     background: COLORS.TRANSPARENT,
-  //     border: false,
-  //     cropMarks: true,
-  //     padding: 100,
-  //   })
-  // },
 ]

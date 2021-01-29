@@ -19,20 +19,9 @@ export type { Props as FormInputPrimaryProps } from './FormInputPrimary';
 export { default as FormSelectPrimary } from './FormSelectPrimary';
 export type { Props as FormSelectPrimaryProps } from './FormSelectPrimary';
 
-export { default as InputLabelPrimary } from './InputLabelPrimary';
-export type { Props as InputLabelPrimaryProps } from './InputLabelPrimary';
-
-export { default as InputPrimary } from './InputPrimary';
-export type { Props as InputPrimaryProps } from './InputPrimary';
-
-export { default as InputSecondary } from './InputSecondary';
-export type { Props as InputSecondaryProps } from './InputSecondary';
-
-export { default as LinkBase } from './LinkBase';
-export type { Props as LinkBaseProps } from './LinkBase';
-
-export { default as LinkText } from './LinkText';
-export type { Props as LinkTextProps } from './LinkText';
+export * from './InputLabel';
+export * from './Input';
+export * from './Link';
 
 export { default as LoadingPrimary } from './LoadingPrimary';
 export type { Props as LoadingPrimaryProps } from './LoadingPrimary';

@@ -1,0 +1,55 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import {Input, InputProps} from '.';
+import Plus from '../../icons/Plus';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Atoms/Input" component={Input} argTypes={argTypes} />
+
+<Description of={Input} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+        autoFocus: false,
+        disabled: false,
+        multiline: false,
+        placeholder: "Placeholder",
+        value: "Primary Value"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Secondary
+
+<Canvas>
+    <Story name="Secondary" args={{
+        autoFocus: false,
+        disabled: false,
+        multiline: false,
+        placeholder: "Placeholder",
+        value: "Secondary Value",
+        variant: "round"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+        autoFocus: false,
+        disabled: false,
+        multiline: false,
+        color: "primary",
+        placeholder: "Placeholder",
+        value: "Placeholder Value"
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+

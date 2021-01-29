@@ -17,7 +17,11 @@ module.exports = {
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
-      propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
+      propFilter: (prop) => {
+        return true;
+        //debugger;
+        //return (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true)
+      },
     },
   },
   babel: async (options) => {

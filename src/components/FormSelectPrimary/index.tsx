@@ -8,9 +8,7 @@ import { MenuItem } from '@material-ui/core';
 
 import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
-import InputLabelPrimary, {
-  Props as InputLabelPrimaryProps,
-} from '~/components/InputLabelPrimary';
+import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 import SelectPrimary, {
   Props as SelectPrimaryProps,
 } from '~/components/SelectPrimary';
@@ -24,7 +22,7 @@ interface SelectOption {
 
 export interface Props {
   disabled?: boolean;
-  labelProps?: InputLabelPrimaryProps;
+  labelProps?: InputLabelProps;
   options?: SelectOption[];
   placeholder?: string;
   placeholderIsDisabled?: boolean;
@@ -88,11 +86,7 @@ const FormSelectPrimary: React.FC<Props> = ({
     <>
       {labelProps && (
         <div className={classes.labelContainer}>
-          <InputLabelPrimary
-            disabled={disabled}
-            required={required}
-            {...labelProps}
-          />
+          <InputLabel disabled={disabled} required={required} {...labelProps} />
         </div>
       )}
 

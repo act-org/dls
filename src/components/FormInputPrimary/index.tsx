@@ -8,20 +8,16 @@ import { Tooltip } from '@material-ui/core';
 
 import AlertOutline from '~/icons/AlertOutline';
 import COLORS from '~/constants/colors';
-import InputLabelPrimary, {
-  Props as InputLabelPrimaryProps,
-} from '~/components/InputLabelPrimary';
-import InputPrimary, {
-  Props as InputPrimaryProps,
-} from '~/components/InputPrimary';
+import { InputLabel, InputLabelProps } from '~/components/InputLabel';
+import { Input, InputProps } from '~/components/Input';
 
 import useStyles from './styles';
 
 export interface Props {
   disabled?: boolean;
   errorMessage?: string;
-  inputProps?: InputPrimaryProps;
-  labelProps?: InputLabelPrimaryProps;
+  inputProps?: InputProps;
+  labelProps?: InputLabelProps;
   required?: boolean;
 }
 
@@ -36,7 +32,7 @@ const FormInputPrimary: React.FC<Props> = ({
 
   const children = (
     <div className={classes.inputContainer}>
-      <InputPrimary
+      <Input
         disabled={disabled}
         error={!!errorMessage || get(inputProps, 'error')}
         fullWidth
@@ -61,7 +57,7 @@ const FormInputPrimary: React.FC<Props> = ({
     <>
       {labelProps && (
         <div className={classes.labelContainer}>
-          <InputLabelPrimary
+          <InputLabel
             disabled={disabled}
             error={!!errorMessage || get(labelProps, 'error')}
             required={required}

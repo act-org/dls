@@ -1,46 +1,12 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable } from '@storybook/addon-docs/blocks';
-import {Button, Props} from '.';
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import {Button} from '.';
+import { Template, argTypes } from './index.stories.template';
 import Plus from '../../icons/Plus';
 
-<Meta title="Atoms/Button" component={Button} argTypes={{ 
-    size: { 
-        control: {
-            type: 'select',
-            options: ['small', 'default', 'large'] 
-        } 
-    },
-    color: { 
-        control: {
-            type: 'select',
-            options: ['inherit', 'primary', 'secondary', 'default'] 
-        } 
-    },
-    variant: { 
-        control: {
-            type: 'select',
-            options: ['text', 'outlined', 'contained'] 
-        } 
-    },
-    text: {
-        type: 'string'
-    },
-    disabled: {
-        type: 'boolean'
-    },
-    fullWidth: {
-        type: 'boolean'
-    },
-    onClick: {
-        action: 'clicked'
-    },
-    disableElevation: {
-        type: 'boolean'
-    }
-}} />
+<Meta title="Atoms/Button" component={Button} argTypes={argTypes} />
 
 export const Icon = <Plus />
 
-# Button
 <Description of={Button} />
 
 ## Primary Button
@@ -48,7 +14,7 @@ This is the primary button on a form/page.  Not all buttons should be primary to
 
 <Canvas>
     <Story name="Primary" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
-       {({text, ...args}) => <Button {...args}>{text}</Button>}
+       { Template.bind({}) }
     </Story>
 </Canvas>
 
@@ -57,7 +23,7 @@ This is the primary button on a form/page.  Not all buttons should be primary to
 The secondary button is useful for having additional options outside of the normal flow
 <Canvas>
     <Story name="Secondary" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'outlined' }}>
-        {({text, ...args}) => <Button {...args}>{text}</Button>}
+        { Template.bind({}) }
     </Story>
 </Canvas>
 
@@ -70,4 +36,13 @@ The buttons also support icons with the startIcon and endIcon properties.  Here 
     </Story>
 </Canvas>
 
-<ArgsTable of={Button} />
+## Playground
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
+       { Template.bind({}) }
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+
+

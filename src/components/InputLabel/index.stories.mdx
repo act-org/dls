@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import {InputLabel, InputLabelProps} from '.';
+import Plus from '../../icons/Plus';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Atoms/InputLabel" component={InputLabel} argTypes={argTypes} />
+
+<Description of={InputLabel} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+      text:"Some Label"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground" args={{
+    text:"Some Label"
+  }}>
+      {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
+

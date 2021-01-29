@@ -4,16 +4,16 @@
 
 import * as React from 'react';
 
-import render from '~/helpers/test/render';
+import render from '../../helpers/test/render';
 
-import LinkBase from '.';
+import { Link } from '.';
 
-describe('LinkBase', () => {
+describe('LinkText', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <LinkBase target="_blank" to="https://www.act.org">
+      <Link target="_blank" href="https://www.act.org">
         <div>children</div>
-      </LinkBase>,
+      </Link>,
     );
 
     expect(container).toMatchSnapshot();

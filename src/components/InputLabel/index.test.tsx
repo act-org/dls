@@ -4,16 +4,16 @@
 
 import * as React from 'react';
 
-import render from '~/helpers/test/render';
+import render from '../../helpers/test/render';
 
-import InputLabelPrimary from '.';
+import { InputLabel } from '.';
 
 describe('InputLabelPrimary', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <InputLabelPrimary color="primary" required>
+      <InputLabel color="primary" required>
         InputLabel
-      </InputLabelPrimary>,
+      </InputLabel>,
     );
 
     expect(container).toMatchSnapshot();
