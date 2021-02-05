@@ -17,12 +17,43 @@ import { Template, argTypes } from './index.stories.template';
     </Story>
 </Canvas>
 
+## Help Text Simple
+
+<Canvas>
+    <Story name="HelpTextSimple" args={{
+      text:"Label With Help",
+      helpText: "Simple Help Text"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Help Text Html
+
+export const TipText = (
+  <div>This is some advanced help text.
+      <p>with multiple sections</p>
+      <p>and a few paragraphs</p>
+  </div>
+)
+
+<Canvas>
+    <Story name="HelpTextHtml" args={{
+      text:"Label With Help",
+      helpText: TipText
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
   <Story name="Playground" args={{
-    text:"Some Label"
+    text:"Some Label",
+    helpText: "Some Text"
   }}>
       {Template.bind({})}
   </Story>

@@ -1,0 +1,44 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import {FormInput, FormInputProps} from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title='Molecules/FormInput' component={FormInput} argTypes={argTypes} />
+
+<Description of={FormInput} />
+
+## Primary
+
+<Canvas>
+    <Story name='Primary' args={{
+        label: 'Form Label',
+        placeholder: 'Placeholder'
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Primary Help Text
+
+<Canvas>
+    <Story name='Primary-Help' args={{
+        label: 'Form Label',
+        helpText: 'Some Help Text',
+        placeholder: 'Placeholder'
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language='jsx' story='Playground' />
+    <Story name='Playground' args={{
+        label: 'Form Label',
+        placeholder: 'Placeholder'
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story='Playground' />
+</Canvas>
+

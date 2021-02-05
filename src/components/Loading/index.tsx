@@ -1,0 +1,49 @@
+/**
+ * @prettier
+ */
+
+import * as React from 'react';
+import {
+  CircularProgress,
+  CircularProgressProps,
+  Typography,
+} from '@material-ui/core';
+
+import useStyles from './styles';
+
+export interface LoadingProps {
+  circularProgressProps?: CircularProgressProps;
+  style?: React.CSSProperties;
+  title?: string;
+}
+
+export const Loading: React.FC<LoadingProps> = ({
+  circularProgressProps,
+  style,
+  title,
+}: LoadingProps): React.ReactElement<LoadingProps> => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.container} data-testid="loading" style={style}>
+      <CircularProgress size={24} thickness={4.5} {...circularProgressProps} />
+
+      {title && (
+        <Typography
+          classes={{ root: classes.typographyRoot }}
+          variant="overline"
+        >
+          {title}
+        </Typography>
+      )}
+    </div>
+  );
+};
+
+Loading.defaultProps = {
+  circularProgressProps: {
+    size: 24,
+    thickness: 4.5,
+  },
+  title: 'Loading...',
+};

@@ -7,10 +7,58 @@ import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
 } from '@material-ui/core';
-import mergeClasses from '~/helpers/mergeClasses';
-import useStyles from './styles';
+import { makeStyles, Tooltip } from '@material-ui/core';
+import { mergeClasses } from '~/helpers';
+import HelpCircleOutline from '~/icons/HelpCircleOutline';
 
-export type InputLabelProps = MuiInputLabelProps;
+/**
+ * These are the options available for an Input Label
+ */
+export interface InputLabelProps extends MuiInputLabelProps {
+  /**
+   * Add a tooltip to the label for some additional context information
+   */
+  helpText?: string | React.ReactElement;
+  /**
+   * The placement of the tool tip text.  The default is right
+   */
+  helpPlacement?:
+    | 'bottom'
+    | 'left'
+    | 'right'
+    | 'top'
+    | 'bottom-end'
+    | 'bottom-start'
+    | 'left-end'
+    | 'left-start'
+    | 'right-end'
+    | 'right-start'
+    | 'top-end'
+    | 'top-start';
+}
+
+const useStyles = makeStyles({
+  labelRoot: {
+    '& .label-split': {
+      '& > .required': {
+        fontSize: '.875rem',
+      },
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'space-between',
+    },
+    '& .label-help': {
+      alignItems: 'flex-end',
+      display: 'flex',
+      '& .MuiSvgIcon-root': {
+        marginLeft: '.1em',
+        width: '.825em',
+        height: '.825em'
+      },
+    },
+    position: 'relative',
+  },
+});
 
 /**
  * #Input Label
@@ -22,12 +70,14 @@ export type InputLabelProps = MuiInputLabelProps;
  */
 export function InputLabel({
   classes: classesProp,
+  color,
   children,
   required,
+  helpText,
+  helpPlacement,
   ...otherProps
 }: InputLabelProps): React.ReactElement<InputLabelProps> {
   const classes = useStyles();
-
   return (
     <MuiInputLabel
       classes={mergeClasses(
@@ -39,7 +89,14 @@ export function InputLabel({
       {...otherProps}
     >
       <div className="label-split">
-        <span>{children}</span>
+        <span className="label-help">
+          {children}
+          {helpText && (
+            <Tooltip arrow placement={helpPlacement} title={helpText}>
+              <HelpCircleOutline color={color} />
+            </Tooltip>
+          )}
+        </span>
         {required && <span className="required">Required</span>}
       </div>
     </MuiInputLabel>
@@ -48,4 +105,5 @@ export function InputLabel({
 
 InputLabel.defaultProps = {
   color: 'primary',
+  helpPlacement: 'right',
 } as InputLabelProps;

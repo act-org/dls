@@ -13,7 +13,7 @@ export const Icon = <Plus />
 This is the primary button on a form/page.  Not all buttons should be primary to differentiate between primary and alternative paths for the user.
 
 <Canvas>
-    <Story name="Primary" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
+    <Story name="Primary" args={{ text: 'Click me', disabled: false, variant: 'contained' }}>
        { Template.bind({}) }
     </Story>
 </Canvas>
@@ -22,7 +22,7 @@ This is the primary button on a form/page.  Not all buttons should be primary to
 ## Secondary Button
 The secondary button is useful for having additional options outside of the normal flow
 <Canvas>
-    <Story name="Secondary" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'outlined' }}>
+    <Story name="Secondary" args={{ text: 'Click me', disabled: false, variant: 'outlined' }}>
         { Template.bind({}) }
     </Story>
 </Canvas>
@@ -31,7 +31,7 @@ The secondary button is useful for having additional options outside of the norm
 ## Icons
 The buttons also support icons with the startIcon and endIcon properties.  Here is an example.
 <Canvas>
-    <Story name="Icons" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
+    <Story name="Icons" args={{ text: 'Click me', disabled: false, variant: 'contained' }}>
         {({text, ...args}) => <Button endIcon={Icon} {...args}>{text}</Button>}
     </Story>
 </Canvas>
@@ -39,7 +39,7 @@ The buttons also support icons with the startIcon and endIcon properties.  Here 
 ## Playground
 <Canvas isColumn>
     <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{ size: 'default', text: 'Click me', disabled: false, variant: 'contained' }}>
+    <Story name="Playground" args={{ text: 'Click me', disabled: false, variant: 'contained' }}>
        { Template.bind({}) }
     </Story>
     <ArgsTable story="Playground" />

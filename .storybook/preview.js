@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@material-ui/styles';
+import { CssBaseline } from '@material-ui/core';
 import actTheme from '../src/styles/theme';
 import COLORS from '../src/constants/colors';
 import { grey } from '@material-ui/core/colors';
@@ -11,7 +12,7 @@ configureActions({
 });
 
 export const parameters = {
-  actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
+  //actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
   layout: 'centered',
   controls: { expanded: false },
   backgrounds: {
@@ -33,7 +34,17 @@ export const parameters = {
   }
 }
 export const decorators = [
-  (Story) => {
-    return (<ThemeProvider theme={actTheme}><Story /></ThemeProvider>)
-  }
+  (Story) => (
+    <ThemeProvider theme={actTheme}>
+      <CssBaseline />
+      <Story />
+    </ThemeProvider>
+  ),
+  // host({
+  //   align: 'center middle',
+  //   backdrop: COLORS.TRANSPARENT,
+  //   background: COLORS.TRANSPARENT,
+  //   border: false,
+  //   cropMarks: true,
+  // })
 ]

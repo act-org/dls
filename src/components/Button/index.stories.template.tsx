@@ -9,12 +9,13 @@ interface StoryProps extends ButtonProps {
 
 export const argTypes = PlayGround({ 
     color: {},
-    variant: {},
-    text: {},
     disabled: {},
-    type: {},
-    size: {},
     fullWidth: {},
+    onClick: {action: 'click'},
+    size: {},
+    text: {},
+    type: {},
+    variant: {},
 }, Button);
 
 export const Template: Story<StoryProps> = ({text, ...args}) => {

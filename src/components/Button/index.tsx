@@ -8,15 +8,13 @@ import {
   Button as MuiButton,
   ButtonProps as MuiButtonProps,
 } from '@material-ui/core';
-import clsx from 'clsx';
+// import clsx from 'clsx';
 
-import mergeClasses from '~/helpers/mergeClasses';
+// import mergeClasses from '~/helpers/mergeClasses';
 
-import useStyles from './styles';
+// import useStyles from './styles';
 
-export type ButtonProps = Omit<MuiButtonProps, 'size'> & {
-  size?: 'default' | 'large' | 'small';
-};
+export type ButtonProps = MuiButtonProps;
 
 /**
  * # Button
@@ -24,32 +22,29 @@ export type ButtonProps = Omit<MuiButtonProps, 'size'> & {
  * @param ButtonProps
  */
 export function Button({
-  classes: classesProp,
-  size = 'default',
-  ...otherProps
+  ...buttonProps
 }: ButtonProps): React.ReactElement<ButtonProps> {
-  const classes = useStyles();
+  //const classes = useStyles();
 
   return (
     <MuiButton
-      classes={mergeClasses(
-        {
-          contained: clsx(classes.contained, classes[size]),
-          label: classes.label,
-          outlined: clsx(classes.outlined, classes[size]),
-        },
-        classesProp,
-      )}
-      {...otherProps}
+      // classes={mergeClasses(
+      //   {
+      //     contained: clsx(classes.contained, classes[size]),
+      //     label: classes.label,
+      //     outlined: clsx(classes.outlined, classes[size]),
+      //   },
+      //   classesProp,
+      // )}
+      {...buttonProps}
     />
   );
 }
 
 // eslint-disable-next-line immutable/no-mutation
 Button.defaultProps = {
-  size: 'default',
+  size: 'medium',
   color: 'primary',
-  type: 'button',
   variant: 'outlined',
   disableElevation: true,
 } as ButtonProps;

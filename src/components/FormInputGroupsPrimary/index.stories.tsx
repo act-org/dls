@@ -4,8 +4,8 @@
 
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import FormInputPrimary from '../FormInputPrimary';
-import FormSelectPrimary from '../FormSelectPrimary';
+import { FormInput } from '../FormInput';
+import { FormSelect } from '../FormSelect';
 
 import FormInputGroupsPrimary, { Props } from '.';
 
@@ -22,7 +22,7 @@ const Template: Story<Props> = args => {
         [
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: (e: any): void => {
                     setValue1(e.target.value);
@@ -41,7 +41,7 @@ const Template: Story<Props> = args => {
           },
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: (e: any): void => {
                     setValue2(e.target.value);
@@ -62,7 +62,7 @@ const Template: Story<Props> = args => {
         [
           {
             formInput: (
-              <FormSelectPrimary
+              <FormSelect
                 labelProps={{
                   children: 'Input 3',
                 }}
@@ -80,7 +80,6 @@ const Template: Story<Props> = args => {
                     value: 'THREE',
                   },
                 ]}
-                required
                 selectProps={{
                   onChange: (e: any): void => {
                     setValue3(e.target.value);
@@ -95,7 +94,7 @@ const Template: Story<Props> = args => {
         [
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: (e: any): void => {
                     setValue4(e.target.value);
@@ -114,7 +113,7 @@ const Template: Story<Props> = args => {
           },
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: (e: any): void => {
                     setValue5(e.target.value);

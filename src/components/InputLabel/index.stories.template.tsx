@@ -27,6 +27,8 @@ export const argTypes: Record<string, any> = PlayGround({
     color: {},
     disabled: {},
     error: {},
+    helpText: { type: 'string'},
+    helpPlacement: {},
     margin: {},
     required: {}
 }, InputLabel);

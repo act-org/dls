@@ -1,20 +1,21 @@
 import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import {Input, InputProps} from '.';
+import {Loading, LoadingProps} from '.';
 import Plus from '../../icons/Plus';
 import { Template, argTypes } from './index.stories.template';
 
-<Meta title="Atoms/Input" component={Input} argTypes={argTypes} />
+<Meta title="Molecules/Loading" component={Loading} argTypes={argTypes} />
 
-<Description of={Input} />
+<Description of={Loading} />
 
 ## Primary
 
 <Canvas>
     <Story name="Primary" args={{
-        autoFocus: false,
-        disabled: false,
-        multiline: false,
-        placeholder: "Placeholder"
+        circularProgressProps: {
+            size: 24,
+            thickness: 4.5,
+        },
+        title: 'Loading...'
     }}>
        {Template.bind({})}
     </Story>
@@ -25,11 +26,11 @@ import { Template, argTypes } from './index.stories.template';
 <Canvas isColumn>
     <Source language="jsx" story="Playground" />
     <Story name="Playground" args={{
-        autoFocus: false,
-        disabled: false,
-        multiline: false,
-        color: "primary",
-        placeholder: "Placeholder"
+        circularProgressProps: {
+            size: 24,
+            thickness: 4.5,
+        },
+        title: 'Loading...'
     }}>
        {Template.bind({})}
     </Story>

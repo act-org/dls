@@ -1,20 +1,19 @@
 import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import {Input, InputProps} from '.';
-import Plus from '../../icons/Plus';
+import {EmptyState, EmptyStateProps} from '.';
+import Account from '../../icons/Account';
 import { Template, argTypes } from './index.stories.template';
 
-<Meta title="Atoms/Input" component={Input} argTypes={argTypes} />
+<Meta title="Molecules/EmptyState" component={EmptyState} argTypes={argTypes} />
 
-<Description of={Input} />
+<Description of={EmptyState} />
 
 ## Primary
 
 <Canvas>
     <Story name="Primary" args={{
-        autoFocus: false,
-        disabled: false,
-        multiline: false,
-        placeholder: "Placeholder"
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        Icon: Account,
+        title: 'No users yet.',
     }}>
        {Template.bind({})}
     </Story>
@@ -25,11 +24,9 @@ import { Template, argTypes } from './index.stories.template';
 <Canvas isColumn>
     <Source language="jsx" story="Playground" />
     <Story name="Playground" args={{
-        autoFocus: false,
-        disabled: false,
-        multiline: false,
-        color: "primary",
-        placeholder: "Placeholder"
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        Icon: Account,
+        title: 'No users yet.',
     }}>
        {Template.bind({})}
     </Story>

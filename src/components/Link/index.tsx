@@ -6,8 +6,6 @@ import * as React from 'react';
 
 import { Link as MuiLink, LinkProps as MuiLinkProps } from '@material-ui/core';
 
-import useStyles from './styles';
-
 export interface LinkProps extends MuiLinkProps {
   /**
    * Alias of href
@@ -32,8 +30,7 @@ export function Link({
   href,
   ...props
 }: LinkProps): React.ReactElement<LinkProps> {
-  const classes = useStyles();
-  return <MuiLink className={classes.linkBase} href={to || href} {...props} />;
+  return <MuiLink href={to || href} {...props} />;
 }
 
 Link.defaultProps = {
