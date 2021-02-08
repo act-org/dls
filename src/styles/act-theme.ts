@@ -38,7 +38,7 @@ const ACTColorPalette = {
 }
 
 
-export const theme: ThemeOptions = {
+export const ACTTheme: ThemeOptions = {
   palette: ACTColorPalette,
   typography: {
     fontFamily: ['Montserrat', 'Helvetica', 'sans-serif'].join(','),
@@ -100,4 +100,4 @@ export const theme: ThemeOptions = {
   }
 };
 
-export default createMuiTheme(theme);
+export default createMuiTheme(ACTTheme);

@@ -3,7 +3,7 @@ import { CssBaseline } from '@material-ui/core';
 import COLORS from '../src/constants/colors';
 import { grey } from '@material-ui/core/colors';
 import { configureActions } from '@storybook/addon-actions';
-
+import * as locales from '@material-ui/core/locale';
 
 configureActions({
   depth: 3,
@@ -34,7 +34,7 @@ export const parameters = {
 }
 export const decorators = [
   (Story, ctx) => (
-    <ThemeProvider theme={ctx.globals.theme}>
+    <ThemeProvider theme={ctx.globals.theme} locale={ctx.globals.language}>
       <CssBaseline />
       <Story />
     </ThemeProvider>
@@ -57,6 +57,16 @@ export const globalTypes = {
       icon: 'paintbrush',
       // array of plain string values or MenuItem shape (see below)
       items: ['act', 'act-et'],
+    },
+  },
+  language: {
+    name: 'Language',
+    description: 'Global language for components',
+    defaultValue: 'enUS',
+    toolbar: {
+      icon: 'book',
+      // array of plain string values or MenuItem shape (see below)
+      items: Object.keys(locales),
     },
   },
 };

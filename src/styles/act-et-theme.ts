@@ -6,7 +6,7 @@ import COLORS from '~/constants/colors';
 import { createMuiTheme } from '@material-ui/core/styles';
 import TYPOGRAPHY from '~/constants/typography';
 
-export const theme = {
+export const ActETTheme = {
     palette: {
         primary: {
             dark: COLORS.PRIMARY,
@@ -31,4 +31,4 @@ export const theme = {
     },
 };
 
-export default createMuiTheme(theme);
+export default createMuiTheme(ActETTheme);
