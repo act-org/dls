@@ -16,6 +16,7 @@ export * from './Link';
 export * from './Loading';
 export * from './SearchBar';
 export * from './Select';
+export * from './ThemeProvider';
 
 /**
  * Should we re-export using the old names for 1-2 versions?
@@ -46,6 +47,3 @@ export type { Props as TableCellHeadProps } from './TableCellHead';
 
 export { default as TableContainerPrimary } from './TableContainerPrimary';
 export type { Props as TableContainerPrimaryProps } from './TableContainerPrimary';
-
-export { default as ThemeProviderPrimary } from './ThemeProviderPrimary';
-export type { Props as ThemeProviderPrimaryProps } from './ThemeProviderPrimary';

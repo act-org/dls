@@ -4,14 +4,16 @@
 
 import * as React from 'react';
 
-import render from '~/helpers/test/render';
+import render from '../../helpers/test/render';
 
-import ThemeProviderPrimary from '.';
+import { ThemeProvider } from '.';
 
 describe('ThemeProviderPrimary', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <ThemeProviderPrimary>This is a test.</ThemeProviderPrimary>,
+      <ThemeProvider theme="act">
+        <p>This is a test</p>
+      </ThemeProvider>,
     );
 
     expect(container).toMatchSnapshot();

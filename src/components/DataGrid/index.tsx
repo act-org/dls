@@ -16,6 +16,8 @@ export type { ColDef } from '@material-ui/data-grid';
  * This is the core component for grids.  It wraps the Material UI DataGrid lab grid.
  *
  * This grid is currently being developed by the MUI team, so additional features will appear over time.
+ * The story book version of this component is fairly well documented, but for a more complete view
+ * of what's capable with this component see the [MaterialUI DataGrid Documentation](https://material-ui.com/components/data-grid/)
  *
  * @param dataGridProps
  */

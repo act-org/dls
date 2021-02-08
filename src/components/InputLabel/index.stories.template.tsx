@@ -1,4 +1,9 @@
-/* eslint-disable sort-keys */
+/**
+ * /* eslint-disable sort-keys
+ *
+ * @format
+ */
+
 /**
  * @prettier
  */
@@ -6,29 +11,30 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
-import {InputLabel, InputLabelProps} from '.';
+import { InputLabel, InputLabelProps } from '.';
 import { PlayGround } from '../../helpers/argBlocks';
 
-
-interface DocProps extends InputLabelProps 
-{ 
-    /**
-     * The default text for the label
-     */
-    text: string 
-};
+interface DocProps extends InputLabelProps {
+  /**
+   * The default text for the label
+   */
+  text: string;
+}
 
 export const Template: Story<DocProps> = ({ text, ...args }) => (
   <InputLabel {...args}>{text}</InputLabel>
 );
 
-export const argTypes: Record<string, any> = PlayGround({
+export const argTypes: Record<string, any> = PlayGround(
+  {
     text: {},
     color: {},
     disabled: {},
     error: {},
-    helpText: { type: 'string'},
+    helpText: { type: 'string' },
     helpPlacement: {},
     margin: {},
-    required: {}
-}, InputLabel);
+    required: {},
+  },
+  InputLabel,
+);

@@ -1,6 +1,5 @@
-import { ThemeProvider } from '@material-ui/styles';
+import { ThemeProvider } from '../src/components/ThemeProvider';
 import { CssBaseline } from '@material-ui/core';
-import actTheme from '../src/styles/theme';
 import COLORS from '../src/constants/colors';
 import { grey } from '@material-ui/core/colors';
 import { configureActions } from '@storybook/addon-actions';
@@ -34,8 +33,8 @@ export const parameters = {
   }
 }
 export const decorators = [
-  (Story) => (
-    <ThemeProvider theme={actTheme}>
+  (Story, ctx) => (
+    <ThemeProvider theme={ctx.globals.theme}>
       <CssBaseline />
       <Story />
     </ThemeProvider>
@@ -48,3 +47,16 @@ export const decorators = [
   //   cropMarks: true,
   // })
 ]
+
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: 'act',
+    toolbar: {
+      icon: 'paintbrush',
+      // array of plain string values or MenuItem shape (see below)
+      items: ['act', 'act-et'],
+    },
+  },
+};

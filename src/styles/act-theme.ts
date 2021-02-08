@@ -62,8 +62,8 @@ export const theme: ThemeOptions = {
       root: {
         "&$disabled": {
           cursor: "not-allowed",
-          border: "1px solid #CCCCCC",
-          color: "#CCCCCC",
+          border: `1px solid ${ACTColorPalette.text.disabled}`,
+          color: `${ACTColorPalette.text.disabled}`,
           backgroundColor: `${backgroundDisabled}`
         },
       },
