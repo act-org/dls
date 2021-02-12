@@ -1,0 +1,28 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import { Switch, SwitchProps } from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Atoms/Switch" component={Switch} argTypes={argTypes} />
+
+<Description of={Switch} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+

@@ -21,14 +21,17 @@ const ACTColorPalette = {
     main: '#016b6e',
     contrastText: '#ffffff'
   },
+  info: {
+    main: '#003B55',
+  },
   success: {
-    main: '#007B00'
+    main: '#007B00',
   },
   error: {
-    main: '#8E0024'
+    main: '#8E0024',
   },
   warning: {
-    main: '#826E0D'
+    main: '#826E0D',
   },
   text: {
     primary: '#000000',
@@ -95,6 +98,36 @@ export const ACTTheme: ThemeOptions = {
         backgroundColor: '#FFFFFF',
         height: '54px',
         padding: '20px 25px'
+      }
+    },
+    MuiAlert: {
+      standardError: {
+        backgroundColor: '#FAE6EB',
+        color: '#8E0024'
+      },
+      standardInfo: {
+        backgroundColor: '#E6F2F7',
+        color: '#003B55'
+      },
+      standardSuccess: {
+        backgroundColor: '#D9F0D9',
+        color: '#007B00'
+      },
+      standardWarning: {
+        backgroundColor: '#FEF8DC',
+        color: '#826E0D'
+      },
+      outlinedError: {
+        color: '#8E0024'
+      },
+      outlinedInfo: {
+        color: '#003B55'
+      },
+      outlinedSuccess: {
+        color: '#007B00'
+      },
+      outlinedWarning: {
+        color: '#826E0D'
       }
     }
   }

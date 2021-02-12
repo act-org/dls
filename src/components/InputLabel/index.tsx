@@ -7,7 +7,8 @@ import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
 } from '@material-ui/core';
-import { makeStyles, Tooltip } from '@material-ui/core';
+import { Tooltip } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import { mergeClasses } from '~/helpers';
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
 
@@ -53,7 +54,7 @@ const useStyles = makeStyles({
       '& .MuiSvgIcon-root': {
         marginLeft: '.1em',
         width: '.825em',
-        height: '.825em'
+        height: '.825em',
       },
     },
     position: 'relative',

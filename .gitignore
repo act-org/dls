@@ -6,3 +6,4 @@ storybook-static
 
 .terraform
 lib/**/package.json
+dist

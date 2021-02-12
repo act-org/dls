@@ -5,7 +5,7 @@
 /* eslint-disable immutable/no-mutation, no-template-curly-in-string */
 
 module.exports = {
-  ignore: ['**/*.stories.tsx', '**/*.test.tsx', '**/test/*'],
+  ignore: ['**/*.stories.tsx', '**/*.stories.template.tsx', '**/*.test.tsx', '**/test/*'],
   plugins: [
     // FIXME:
     // https://github.com/entwicklerstube/babel-plugin-root-import/issues/136

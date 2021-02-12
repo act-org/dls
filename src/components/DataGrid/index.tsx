@@ -8,7 +8,22 @@ import {
 } from '@material-ui/data-grid';
 
 export type DataGridProps = MuiDataGridProps;
-export type { ColDef } from '@material-ui/data-grid';
+export type {
+  ColDef,
+  PageChangeParams,
+  StateChangeParams,
+  ValueGetterParams,
+  ValueFormatterParams,
+  ColParams,
+  RowParams,
+  CellParams,
+  RowSelectedParams,
+  SelectionChangeParams,
+  ScrollParams,
+  FilterModelParams,
+  SortModelParams,
+  FilterItem,
+} from '@material-ui/data-grid';
 
 /**
  * # DataGrid

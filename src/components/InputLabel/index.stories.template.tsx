@@ -38,3 +38,11 @@ export const argTypes: Record<string, any> = PlayGround(
   },
   InputLabel,
 );
+
+export const TipText = (
+  <div>
+    This is some advanced help text.
+    <p>with multiple sections</p>
+    <p>and a few paragraphs</p>
+  </div>
+);

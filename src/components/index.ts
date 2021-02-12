@@ -6,18 +6,26 @@
  * Main exports
  */
 export * from './Alert';
+export * from './AppBar';
 export * from './Button';
+export * from './Container';
+export * from './DataGrid';
+export * from './Drawer';
 export * from './EmptyState';
 export * from './FormInput';
 export * from './FormSelect';
+export * from './FormSwitch';
+export * from './IconButton';
 export * from './Input';
 export * from './InputLabel';
 export * from './Link';
 export * from './Loading';
 export * from './SearchBar';
 export * from './Select';
+export * from './Switch';
 export * from './ThemeProvider';
-
+export * from './Toolbar';
+export * from './Typography';
 /**
  * Should we re-export using the old names for 1-2 versions?
  */

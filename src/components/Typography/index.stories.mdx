@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import { Typography, TypographyProps } from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Atoms/Typography" component={Typography} argTypes={argTypes} parameters={{}} />
+
+<Description of={Typography} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+        text: 'sample text'
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+        text: 'sample text'
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+

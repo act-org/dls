@@ -19,8 +19,6 @@ module.exports = {
       shouldExtractLiteralValuesFromEnum: true,
       propFilter: (prop) => {
         return true;
-        //debugger;
-        //return (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true)
       },
     },
   },

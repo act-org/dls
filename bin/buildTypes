@@ -3,5 +3,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const shelljs = require('shelljs');
 
-shelljs.mkdir('-p', './lib/types');
-shelljs.cp('-R', './src/types/*', './lib/types');
+shelljs.mkdir('-p', './dist/types');
+shelljs.cp('-R', './src/types/*', './dist/types');

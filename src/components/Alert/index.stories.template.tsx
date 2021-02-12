@@ -1,24 +1,26 @@
+/** @format */
+
 import * as React from 'react';
-import {Alert, AlertProps, AlertTitle} from '.';
+import { Alert, AlertProps, AlertTitle } from '.';
 import { Story } from '@storybook/react/types-6-0';
 import { PlayGround } from '../../helpers/argBlocks';
 
 interface DocProps extends AlertProps {
-    title: string;
-    text: string;
+  text: string;
 }
 
-export const Template: Story<DocProps> = ({title, text, ...args}) => (
-<Alert {...args}>
-    {title && <AlertTitle>{title}</AlertTitle>}
-    {text}
-</Alert>);
+export const Template: Story<DocProps> = ({ text, ...args }) => (
+  <Alert {...args}>{text}</Alert>
+);
 
-export const argTypes = PlayGround({
+export const argTypes = PlayGround(
+  {
+    alertTitle: { type: 'string' },
     closeText: {},
+    onClose: { action: 'close' },
     severity: {},
-    title: {},
     text: {},
     variant: {},
-    onClose: { action: 'close' }
-}, Alert)
+  },
+  Alert,
+);

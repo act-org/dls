@@ -78,7 +78,9 @@ export const rows = [
 ];
 
 export const Template: Story<DataGridProps> = args => (
-  <div style={{ width: '95vw', height: '90vh' }}>
-    <DataGrid columns={columns} rows={rows} {...args} />
+  <div style={{ display: 'flex', height: '100%', minHeight: '500px' }}>
+    <div style={{ flexGrow: 1 }}>
+      <DataGrid columns={columns} rows={rows} {...args} />
+    </div>
   </div>
 );

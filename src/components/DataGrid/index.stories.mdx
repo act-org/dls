@@ -2,7 +2,9 @@ import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@s
 import { DataGrid, ColDef } from '.';
 import { Template, argTypes, columns, rows } from './index.stories.template';
 
-<Meta title='Organisms/DataGrid' component={DataGrid} argTypes={argTypes}/>
+<Meta title='Organisms/DataGrid' component={DataGrid} argTypes={argTypes} parameters={{
+    layout: 'fullscreen'
+}} />
 
 <Description of={DataGrid} />
 

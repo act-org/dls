@@ -3,5 +3,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const shelljs = require('shelljs');
 
-shelljs.mkdir('-p', './lib/icons');
-shelljs.cp('-R', './node_modules/mdi-material-ui/*', './lib/icons');
+shelljs.mkdir('-p', './dist/icons');
+shelljs.cp('-R', './node_modules/mdi-material-ui/*', './dist/icons');
