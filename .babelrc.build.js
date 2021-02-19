@@ -11,8 +11,8 @@
 
 module.exports = {
   ignore: [
-    '**/*.stories.tsx',
     '**/*.stories.template.tsx',
+    '**/*.stories.tsx',
     '**/*.test.tsx',
     '**/test/*',
   ],
