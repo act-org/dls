@@ -1,6 +1,12 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
+
 /* eslint-disable react/display-name */
 
 import * as React from 'react';
@@ -24,7 +30,7 @@ export type ButtonProps = MuiButtonProps;
 export function Button({
   ...buttonProps
 }: ButtonProps): React.ReactElement<ButtonProps> {
-  //const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <MuiButton
@@ -41,7 +47,6 @@ export function Button({
   );
 }
 
-// eslint-disable-next-line immutable/no-mutation
 Button.defaultProps = {
   size: 'medium',
   color: 'primary',

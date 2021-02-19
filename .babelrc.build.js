@@ -1,11 +1,21 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
-/* eslint-disable immutable/no-mutation, no-template-curly-in-string */
+/* eslint-disable no-template-curly-in-string */
 
 module.exports = {
-  ignore: ['**/*.stories.tsx', '**/*.stories.template.tsx', '**/*.test.tsx', '**/test/*'],
+  ignore: [
+    '**/*.stories.template.tsx',
+    '**/*.stories.tsx',
+    '**/*.test.tsx',
+    '**/test/*',
+  ],
   plugins: [
     // FIXME:
     // https://github.com/entwicklerstube/babel-plugin-root-import/issues/136

@@ -1,3 +1,12 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 import { ThemeProvider } from '../src/components/ThemeProvider';
 import { CssBaseline } from '@material-ui/core';
 import COLORS from '../src/constants/colors';
@@ -11,7 +20,7 @@ configureActions({
 });
 
 export const parameters = {
-  //actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
+  // actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
   layout: 'centered',
   controls: { expanded: false },
   backgrounds: {
@@ -29,12 +38,13 @@ export const parameters = {
         name: 'Black',
         value: COLORS.BLACK,
       },
-    ]
-  }
-}
+    ],
+  },
+};
+
 export const decorators = [
   (Story, ctx) => (
-    <ThemeProvider theme={ctx.globals.theme} locale={ctx.globals.language}>
+    <ThemeProvider locale={ctx.globals.language} theme={ctx.globals.theme}>
       <CssBaseline />
       <Story />
     </ThemeProvider>
@@ -46,7 +56,7 @@ export const decorators = [
   //   border: false,
   //   cropMarks: true,
   // })
-]
+];
 
 export const globalTypes = {
   theme: {

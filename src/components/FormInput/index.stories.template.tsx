@@ -1,11 +1,9 @@
 /**
- * /* eslint-disable sort-keys
+ * Copyright (c) ACT, Inc. and its affiliates.
  *
- * @format
- */
-
-/* eslint-disable immutable/no-mutation */
-/**
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
@@ -18,11 +16,10 @@ import { PlayGround } from '../../helpers/argBlocks';
 export const Template: Story<FormInputProps> = args => {
   const { value } = args;
   const [state, setState] = useState<string>(value || '');
-  const onChange = e => {
-    console.log(e);
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setState(e.target.value);
   };
-  return <FormInput value={state} onChange={onChange} {...args} />;
+  return <FormInput onChange={onChange} value={state} {...args} />;
 };
 export const argTypes = PlayGround(
   {

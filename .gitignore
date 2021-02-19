@@ -1,9 +1,7 @@
 .DS_Store
+.storybook
+.terraform
 !icons
+dist
 node_modules
 storybook-static
-.storybook
-
-.terraform
-lib/**/package.json
-dist

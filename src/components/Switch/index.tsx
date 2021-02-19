@@ -1,4 +1,11 @@
-/** @format */
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
 
 import React from 'react';
 import {
@@ -22,7 +29,7 @@ export type SwitchProps = MuiSwitchProps;
 export function Switch(
   switchProps: SwitchProps,
 ): React.ReactElement<SwitchProps, any> {
-  return <MuiSwitch {...switchProps}></MuiSwitch>;
+  return <MuiSwitch {...switchProps} />;
 }
 
 Switch.defaultProps = {

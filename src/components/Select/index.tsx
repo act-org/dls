@@ -1,4 +1,9 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
@@ -12,9 +17,7 @@ export type SelectProps = MuiSelectProps;
 
 export const Select: React.FC<SelectProps> = (
   selectProps: SelectProps,
-): React.ReactElement<any> => {
-  return <MuiSelect {...selectProps} />;
-};
+): React.ReactElement<any> => <MuiSelect {...selectProps} />;
 
 Select.defaultProps = {
   variant: 'outlined',
