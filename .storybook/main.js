@@ -10,23 +10,11 @@
 const fs = require('fs');
 
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
   ],
-  typescript: {
-    check: true,
-    checkOptions: {},
-    reactDocgen: 'react-docgen-typescript',
-    reactDocgenTypescriptOptions: {
-      shouldExtractLiteralValuesFromEnum: true,
-      propFilter: prop => {
-        return true;
-      },
-    },
-  },
   babel: async options => {
     options.plugins.push([
       'babel-plugin-root-import',
@@ -37,5 +25,15 @@ module.exports = {
     ]);
     // fs.writeFileSync('./.babelrc', JSON.stringify(options));
     return options;
+  },
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  typescript: {
+    check: true,
+    checkOptions: {},
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      propFilter: prop => true,
+      shouldExtractLiteralValuesFromEnum: true,
+    },
   },
 };

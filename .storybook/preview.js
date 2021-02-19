@@ -44,7 +44,7 @@ export const parameters = {
 
 export const decorators = [
   (Story, ctx) => (
-    <ThemeProvider theme={ctx.globals.theme} locale={ctx.globals.language}>
+    <ThemeProvider locale={ctx.globals.language} theme={ctx.globals.theme}>
       <CssBaseline />
       <Story />
     </ThemeProvider>
