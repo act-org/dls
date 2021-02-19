@@ -16,9 +16,9 @@ export interface StoryProps extends TypographyProps {
   text: string;
 }
 
-export const Template: Story<StoryProps> = ({ text, ...args }) => {
-  return <Typography {...args}>{text}</Typography>;
-};
+export const Template: Story<StoryProps> = ({ text, ...args }) => (
+  <Typography {...args}>{text}</Typography>
+);
 export const argTypes = PlayGround(
   {
     align: {},

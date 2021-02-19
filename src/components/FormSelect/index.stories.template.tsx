@@ -14,9 +14,9 @@ import { FormSelect, FormSelectProps } from '.';
 import { PlayGround } from '../../helpers/argBlocks';
 import { get } from 'lodash';
 
-export const Template: Story<FormSelectProps> = args => {
-  return <FormSelect {...args} />;
-};
+export const Template: Story<FormSelectProps> = args => (
+  <FormSelect {...args} />
+);
 export const argTypes = PlayGround(
   {
     disabled: {},

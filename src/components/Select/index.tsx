@@ -17,9 +17,7 @@ export type SelectProps = MuiSelectProps;
 
 export const Select: React.FC<SelectProps> = (
   selectProps: SelectProps,
-): React.ReactElement<any> => {
-  return <MuiSelect {...selectProps} />;
-};
+): React.ReactElement<any> => <MuiSelect {...selectProps} />;
 
 Select.defaultProps = {
   variant: 'outlined',

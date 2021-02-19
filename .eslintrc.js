@@ -11,9 +11,9 @@ module.exports = {
   extends: ['./node_modules/eslint-config'],
   overrides: [
     {
-      files: ['./**/*.stories.tsx'],
+      files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
-        'sort-keys': false,
+        'sort-keys': 'off',
       },
     },
   ],

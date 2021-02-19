@@ -48,7 +48,7 @@ const elseGroup = 'Everything Else';
 export function PlayGround(args: Record<string, any>, type?: any) {
   for (const key in args) {
     if (!key.startsWith('on')) {
-      args[key]['table'] = { category: playgroundGroup };
+      args[key].table = { category: playgroundGroup };
     }
   }
   if (type) {
@@ -62,14 +62,12 @@ export function PlayGround(args: Record<string, any>, type?: any) {
       } else if (key.startsWith('on')) {
         category = eventsGroup;
       }
-      args[key] = Object.assign(
-        {
-          table: {
-            category,
-          },
+      args[key] = {
+        table: {
+          category,
         },
-        args[key],
-      );
+        ...args[key],
+      };
     }
   }
   return args;

@@ -37,8 +37,8 @@ export function FormSwitch({
   return (
     <FormControlLabel
       {...formSwitchProps}
-      label={label}
       control={<Switch {...switchProps} />}
-    ></FormControlLabel>
+      label={label}
+    />
   );
 }

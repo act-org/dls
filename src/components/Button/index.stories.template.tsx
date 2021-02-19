@@ -30,8 +30,8 @@ export const argTypes = PlayGround(
   Button,
 );
 
-export const Template: Story<StoryProps> = ({ text, ...args }) => {
-  return <Button {...args}>{text}</Button>;
-};
+export const Template: Story<StoryProps> = ({ text, ...args }) => (
+  <Button {...args}>{text}</Button>
+);
 
 export const Icon = <Plus />;

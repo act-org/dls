@@ -16,7 +16,7 @@ import { Link } from '.';
 describe('LinkText', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <Link target="_blank" href="https://www.act.org">
+      <Link href="https://www.act.org" target="_blank">
         <div>children</div>
       </Link>,
     );

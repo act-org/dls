@@ -13,13 +13,11 @@ import { PlayGround } from '../../helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
 import { PencilCircle } from '../../icons';
 
-export const Template: Story<IconButtonProps> = args => {
-  return (
-    <IconButton {...args}>
-      <PencilCircle />
-    </IconButton>
-  );
-};
+export const Template: Story<IconButtonProps> = args => (
+  <IconButton {...args}>
+    <PencilCircle />
+  </IconButton>
+);
 export const argTypes = PlayGround(
   {
     color: {},

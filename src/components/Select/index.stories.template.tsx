@@ -7,8 +7,6 @@
  * @prettier
  */
 
-/* eslint-disable sort-keys */
-
 import * as React from 'react';
 import { MenuItem } from '@material-ui/core';
 

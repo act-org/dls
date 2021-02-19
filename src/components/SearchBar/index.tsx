@@ -45,13 +45,13 @@ export function SearchBar({
       endAdornment={
         <InputAdornment position="end">
           <IconButton
+            aria-label="Clears the search"
             classes={{
               root: clsx(
                 !(internalValue && internalValue.length) &&
                   iconClasses.iconCloseHidden,
               ),
             }}
-            aria-label="Clears the search"
             onClick={(e: any) => {
               setValue('');
               if (onChange) {
@@ -71,7 +71,6 @@ export function SearchBar({
       inputProps={{
         'aria-label': 'Search',
       }}
-      value={internalValue}
       onChange={(e: any) => {
         setValue(e.target.value);
         if (onChange) {
@@ -83,6 +82,7 @@ export function SearchBar({
           <Magnify />
         </InputAdornment>
       }
+      value={internalValue}
       {...searchBarProps}
     />
   );

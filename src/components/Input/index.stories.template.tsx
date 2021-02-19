@@ -17,10 +17,10 @@ export const Template: Story<InputProps> = args => {
   const [value, setValue] = React.useState<string>(args.value as string);
   return (
     <Input
-      value={value}
       onChange={newValue => {
         setValue(newValue.target.value);
       }}
+      value={value}
       {...args}
     />
   );

@@ -45,7 +45,7 @@ export function FormSelect({
 
   const children = (
     <div className={classes.selectContainer}>
-      <Select {...selectProps} id={id} disabled={disabled} required={required}>
+      <Select {...selectProps} disabled={disabled} id={id} required={required}>
         <MenuItem
           classes={{ root: classes.selectOptionRoot }}
           disabled={placeholderIsDisabled}
@@ -72,11 +72,11 @@ export function FormSelect({
   );
 
   return (
-    <React.Fragment>
+    <>
       <div className={classes.labelContainer}>
         <InputLabel
-          htmlFor={id}
           disabled={disabled}
+          htmlFor={id}
           required={required}
           {...labelProps}
         >
@@ -84,6 +84,6 @@ export function FormSelect({
         </InputLabel>
       </div>
       {children}
-    </React.Fragment>
+    </>
   );
 }

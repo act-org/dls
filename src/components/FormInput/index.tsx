@@ -55,10 +55,10 @@ export function FormInput({
         <InputLabel
           {...labelProps}
           disabled={disabled}
-          required={required}
           error={error}
-          htmlFor={id}
           helpText={helpText}
+          htmlFor={id}
+          required={required}
         >
           {label}
         </InputLabel>
@@ -66,17 +66,17 @@ export function FormInput({
 
       <div className={classes.inputContainer}>
         <Input
-          id={id}
-          error={error}
-          required={required}
           disabled={disabled}
-          value={internalValue}
+          error={error}
+          id={id}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setValue(e.target.value);
             if (onChange) {
               onChange(e);
             }
           }}
+          required={required}
+          value={internalValue}
           {...formInputProps}
         />
 

@@ -30,7 +30,7 @@ export type ButtonProps = MuiButtonProps;
 export function Button({
   ...buttonProps
 }: ButtonProps): React.ReactElement<ButtonProps> {
-  //const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <MuiButton

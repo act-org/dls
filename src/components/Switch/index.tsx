@@ -29,7 +29,7 @@ export type SwitchProps = MuiSwitchProps;
 export function Switch(
   switchProps: SwitchProps,
 ): React.ReactElement<SwitchProps, any> {
-  return <MuiSwitch {...switchProps}></MuiSwitch>;
+  return <MuiSwitch {...switchProps} />;
 }
 
 Switch.defaultProps = {
