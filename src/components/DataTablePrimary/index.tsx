@@ -107,7 +107,6 @@ const DataTablePrimary = <T,>({
   );
 };
 
-// eslint-disable-next-line immutable/no-mutation
 DataTablePrimary.defaultProps = {
   RowWrapper: undefined,
 };

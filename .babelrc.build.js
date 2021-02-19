@@ -7,7 +7,7 @@
  * @prettier
  */
 
-/* eslint-disable immutable/no-mutation, no-template-curly-in-string */
+/* eslint-disable no-template-curly-in-string */
 
 module.exports = {
   ignore: [

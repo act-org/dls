@@ -7,8 +7,6 @@
  * @prettier
  */
 
-/* eslint-disable immutable/no-mutation */
-
 module.exports = {
   globals: {
     'ts-jest': {

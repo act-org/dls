@@ -47,7 +47,7 @@
     "babel-loader": "8.2.2",
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-transform-imports": "2.0.0",
-    "eslint-config": "bitbucket:actet/eslint-config#v2.1.4",
+    "eslint-config": "bitbucket:actet/eslint-config#v3.0.0",
     "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
     "eslint-import-resolver-typescript": "2.3.0",
     "husky": "4.3.6",
@@ -78,6 +78,7 @@
     "storybook",
     "typescript"
   ],
+  "license": "MIT",
   "lint-staged": {
     "*.{js}": "npm run test:lint:js",
     "*.{js,json,md,mdx,ts,tsx}": [

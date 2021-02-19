@@ -47,7 +47,6 @@ export function Button({
   );
 }
 
-// eslint-disable-next-line immutable/no-mutation
 Button.defaultProps = {
   size: 'medium',
   color: 'primary',

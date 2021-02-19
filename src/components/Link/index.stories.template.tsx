@@ -7,8 +7,6 @@
  * @prettier
  */
 
-/* eslint-disable immutable/no-mutation */
-
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import { Link, LinkProps } from '.';

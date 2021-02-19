@@ -134,7 +134,6 @@ const TableCellHead: React.FC<Props> = ({
   );
 };
 
-// eslint-disable-next-line immutable/no-mutation
 TableCellHead.defaultProps = {
   sortBy: undefined,
   style: undefined,
