@@ -38,7 +38,4 @@ export function Link({
   return <MuiLink href={to || href} {...props} />;
 }
 
-Link.defaultProps = {
-  color: 'primary',
-  underline: 'hover',
-} as LinkProps;
+export default Link;

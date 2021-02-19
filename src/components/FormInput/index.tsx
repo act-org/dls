@@ -47,18 +47,18 @@ export function FormInput({
       <InputLabel
         {...labelProps}
         disabled={disabled}
-        required={required}
         error={error}
-        htmlFor={id}
         helpText={helpText}
+        htmlFor={id}
+        required={required}
       >
         {label}
       </InputLabel>
       <Input
-        id={id}
-        error={error}
-        required={required}
         disabled={disabled}
+        error={error}
+        id={id}
+        required={required}
         {...formInputProps}
       />
 
@@ -70,3 +70,5 @@ export function FormInput({
     </FormControl>
   );
 }
+
+export default FormInput;

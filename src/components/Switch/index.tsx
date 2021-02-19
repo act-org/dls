@@ -28,11 +28,8 @@ export type SwitchProps = MuiSwitchProps;
  */
 export function Switch(
   switchProps: SwitchProps,
-): React.ReactElement<SwitchProps, any> {
+): React.ReactElement<SwitchProps> {
   return <MuiSwitch {...switchProps} />;
 }
 
-Switch.defaultProps = {
-  size: 'medium',
-  color: 'primary',
-} as SwitchProps;
+export default Switch;

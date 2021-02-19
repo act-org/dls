@@ -16,7 +16,7 @@ import {
 export type ContainerProps = MuiContainerProps;
 
 /**
- * # Drawer
+ * # Container
  *
  * @param containerProps
  */
@@ -25,5 +25,3 @@ export function Container(
 ): React.ReactElement<ContainerProps> {
   return <MuiContainer {...containerProps} />;
 }
-
-Container.defaultProps = {} as ContainerProps;

@@ -27,3 +27,5 @@ export function Typography(
 ): React.ReactElement<TypographyProps> {
   return <MuiTypography {...typographyProps} />;
 }
+
+export default Typography;

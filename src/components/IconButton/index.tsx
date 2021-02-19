@@ -21,12 +21,9 @@ export type IconButtonProps = MuiIconButtonProps;
  * @param IconButtonProps
  */
 export function IconButton(
-  IconButtonProps: IconButtonProps,
+  iconButtonProps: IconButtonProps,
 ): React.ReactElement<IconButtonProps> {
-  return <MuiIconButton {...IconButtonProps} />;
+  return <MuiIconButton {...iconButtonProps} />;
 }
 
-IconButton.defaultProps = {
-  color: 'primary',
-  edge: 'start',
-} as IconButtonProps;
+export default IconButton;

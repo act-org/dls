@@ -27,6 +27,4 @@ export function AppBar(
   return <MuiAppBar {...appBarProps} />;
 }
 
-AppBar.defaultProps = {
-  color: 'primary',
-} as AppBarProps;
+export default AppBar;

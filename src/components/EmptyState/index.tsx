@@ -6,7 +6,7 @@
  *
  * @prettier
  */
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from 'react';
 import clsx from 'clsx';
 import { Grid, Typography } from '@material-ui/core';
@@ -24,13 +24,13 @@ export interface EmptyStateProps {
   title?: string | React.ReactElement<any>;
 }
 
-export const EmptyState: React.FC<EmptyStateProps> = ({
+export function EmptyState({
   buttonProps,
   description,
   Icon,
   style,
   title,
-}: EmptyStateProps): React.ReactElement<any> => {
+}: EmptyStateProps): React.ReactElement<EmptyStateProps> {
   const classes = useStyles();
 
   return (
@@ -85,4 +85,6 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
       {buttonProps && <Button {...buttonProps} />}
     </div>
   );
-};
+}
+
+export default EmptyState;

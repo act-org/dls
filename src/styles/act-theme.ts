@@ -6,25 +6,37 @@
  *
  * @prettier
  */
-
+/* eslint-disable sort-keys */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
 import TYPOGRAPHY from '~/constants/typography';
-import type { } from '@material-ui/lab/themeAugmentation';
+import { DataGridProps } from '@material-ui/data-grid';
+// eslint-disable-next-line prettier/prettier
+import { LabComponentsPropsList } from '@material-ui/lab/themeAugmentation';
+
+export interface DataGridPropsList {
+  MuiDataGrid: DataGridProps;
+}
+
+declare module '@material-ui/core/styles/props' {
+  // eslint-disable-next-line prettier/prettier
+  interface ComponentsPropsList extends LabComponentsPropsList, DataGridPropsList { }
+}
 
 const backgroundDisabled = '#FCFCFC';
 const placeHolder = '#767676';
 const ACTColorPalette = {
   primary: {
+    contrastText: '#ffffff',
     dark: '#042E60',
     light: '#0077AA',
     main: '#0077AA',
-    contrastText: '#ffffff',
   },
   secondary: {
+    contrastText: '#ffffff',
     dark: '#004043',
     light: '#46999c',
     main: '#016b6e',
-    contrastText: '#ffffff',
   },
   info: {
     main: '#003B55',
@@ -65,8 +77,57 @@ export const ACTTheme: ThemeOptions = {
       type: 'text',
     },
     MuiCheckbox: {
-      color: 'primary'
-    }
+      color: 'primary',
+    },
+    MuiIcon: {
+      color: 'primary',
+    },
+    MuiIconButton: {
+      color: 'primary',
+      edge: 'start',
+    },
+    MuiInputLabel: {
+      color: 'primary',
+    },
+    MuiLink: {
+      color: 'primary',
+      underline: 'hover',
+    },
+    MuiAlert: {
+      closeText: 'Close',
+      severity: 'info',
+      variant: 'standard',
+    },
+    MuiAppBar: {
+      color: 'primary',
+    },
+    MuiButton: {
+      color: 'primary',
+      disableElevation: true,
+      size: 'medium',
+      variant: 'outlined',
+    },
+    MuiSelect: {
+      variant: 'outlined',
+    },
+    MuiSwitch: {
+      size: 'medium',
+      color: 'primary',
+    },
+    MuiDataGrid: {
+      autoHeight: true,
+      autoPageSize: true,
+      density: 'standard',
+      filterMode: 'client',
+      sortingMode: 'client',
+    },
+    MuiDrawer: {
+      color: 'primary',
+      variant: 'persistent',
+    },
+    MuiToolbar: {
+      color: 'primary',
+    },
   },
   overrides: {
     MuiButton: {
@@ -76,8 +137,8 @@ export const ACTTheme: ThemeOptions = {
     },
     MuiAppBar: {
       colorPrimary: {
-        backgroundColor: ACTColorPalette.primary.dark
-      }
+        backgroundColor: ACTColorPalette.primary.dark,
+      },
     },
     MuiOutlinedInput: {
       root: {
@@ -106,22 +167,22 @@ export const ACTTheme: ThemeOptions = {
       multiline: {
         paddingTop: '15px',
         paddingBottom: '15px',
-      }
+      },
     },
     MuiInputLabel: {
       root: {
         color: `${ACTColorPalette.text.primary}`,
         marginBottom: `15px`,
-        fontSize: `1rem`
+        fontSize: `1rem`,
       },
       formControl: {
-        position: "relative",
+        position: 'relative',
         transform: undefined,
       },
       shrink: {
         transform: undefined,
         transformOrigin: undefined,
-      }
+      },
     },
     MuiSelect: {
       outlined: {
@@ -159,15 +220,15 @@ export const ACTTheme: ThemeOptions = {
         color: '#007B00',
       },
       outlinedWarning: {
-        color: '#826E0D'
-      }
+        color: '#826E0D',
+      },
     },
     MuiTab: {
       root: {
         textTransform: undefined,
-      }
-    }
-  }
+      },
+    },
+  },
 };
 
 export default createMuiTheme(ACTTheme);

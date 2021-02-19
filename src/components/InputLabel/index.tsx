@@ -6,13 +6,13 @@
  *
  * @prettier
  */
-
+/* eslint-disable sort-keys */
 import * as React from 'react';
 import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
+  Tooltip,
 } from '@material-ui/core';
-import { Tooltip } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { mergeClasses } from '~/helpers';
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
@@ -110,6 +110,7 @@ export function InputLabel({
 }
 
 InputLabel.defaultProps = {
-  color: 'primary',
   helpPlacement: 'right',
 } as InputLabelProps;
+
+export default InputLabel;

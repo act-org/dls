@@ -14,11 +14,6 @@ import {
   Button as MuiButton,
   ButtonProps as MuiButtonProps,
 } from '@material-ui/core';
-// import clsx from 'clsx';
-
-// import mergeClasses from '~/helpers/mergeClasses';
-
-// import useStyles from './styles';
 
 export type ButtonProps = MuiButtonProps;
 
@@ -30,26 +25,7 @@ export type ButtonProps = MuiButtonProps;
 export function Button({
   ...buttonProps
 }: ButtonProps): React.ReactElement<ButtonProps> {
-  // const classes = useStyles();
-
-  return (
-    <MuiButton
-      // classes={mergeClasses(
-      //   {
-      //     contained: clsx(classes.contained, classes[size]),
-      //     label: classes.label,
-      //     outlined: clsx(classes.outlined, classes[size]),
-      //   },
-      //   classesProp,
-      // )}
-      {...buttonProps}
-    />
-  );
+  return <MuiButton {...buttonProps} />;
 }
 
-Button.defaultProps = {
-  size: 'medium',
-  color: 'primary',
-  variant: 'outlined',
-  disableElevation: true,
-} as ButtonProps;
+export default Button;

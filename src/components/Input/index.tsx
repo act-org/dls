@@ -24,3 +24,5 @@ export type InputProps = OutlinedInputProps;
 export function Input(inputProps: InputProps): React.ReactElement<InputProps> {
   return <OutlinedInput {...inputProps} />;
 }
+
+export default Input;

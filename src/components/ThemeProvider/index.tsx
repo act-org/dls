@@ -94,3 +94,5 @@ export function ThemeProvider({
   }
   return <MuiThemeProvider {...themeProps} theme={themeImpl} />;
 }
+
+export default ThemeProvider;

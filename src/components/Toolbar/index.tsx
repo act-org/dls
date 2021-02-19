@@ -27,6 +27,4 @@ export function Toolbar(
   return <MuiToolbar {...appBarProps} />;
 }
 
-Toolbar.defaultProps = {
-  color: 'primary',
-} as ToolbarProps;
+export default Toolbar;

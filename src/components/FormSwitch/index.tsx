@@ -43,15 +43,18 @@ export function FormSwitch({
   fullWidth,
   formControlProps,
   ...formSwitchProps
-}: FormSwitchProps) {
+}: FormSwitchProps): React.ReactElement<FormSwitchProps> {
   return (
     <FormControl {...formControlProps} fullWidth={fullWidth}>
       <FormControlLabel
-        label={label}
-        id={id}
         checked={value}
+        id={id}
+        label={label}
+        {...labelProps}
         control={<Switch {...formSwitchProps} />}
-      ></FormControlLabel>
+      />
     </FormControl>
   );
 }
+
+export default FormSwitch;

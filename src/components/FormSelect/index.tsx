@@ -87,3 +87,5 @@ export function FormSelect({
     </>
   );
 }
+
+export default FormSelect;

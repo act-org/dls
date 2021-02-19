@@ -48,10 +48,4 @@ export function DataGrid(
   return <MuiDataGrid {...dataGridProps} />;
 }
 
-DataGrid.defaultProps = {
-  density: 'standard',
-  autoHeight: true,
-  autoPageSize: true,
-  filterMode: 'client',
-  sortingMode: 'client',
-} as DataGridProps;
+export default DataGrid;

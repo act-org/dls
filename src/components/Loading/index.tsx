@@ -52,3 +52,5 @@ Loading.defaultProps = {
   },
   title: 'Loading...',
 };
+
+export default Loading;

@@ -15,9 +15,10 @@ import {
   AlertTitleProps as MuiAlertTitleProps,
 } from '@material-ui/lab';
 
-export interface AlertProps extends MuiAlertProps {
+export type AlertProps = MuiAlertProps & {
   alertTitle?: string | React.ReactElement;
-}
+};
+
 export type AlertTitleProps = MuiAlertTitleProps;
 
 /**
@@ -40,11 +41,7 @@ export function Alert({
   );
 }
 
-Alert.defaultProps = {
-  variant: 'standard',
-  severity: 'info',
-  closeText: 'Close',
-} as AlertProps;
+export default Alert;
 
 /**
  * The alert title element

@@ -6,7 +6,7 @@
  *
  * @prettier
  */
-
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import * as React from 'react';
 import { IconButton, InputAdornment } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -87,3 +87,5 @@ export function SearchBar({
     />
   );
 }
+
+export default SearchBar;

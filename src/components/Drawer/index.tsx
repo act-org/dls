@@ -26,7 +26,4 @@ export function Drawer(
   return <MuiDrawer {...appBarProps} />;
 }
 
-Drawer.defaultProps = {
-  color: 'primary',
-  variant: 'persistent',
-} as DrawerProps;
+export default Drawer;
