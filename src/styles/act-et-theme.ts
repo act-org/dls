@@ -1,4 +1,9 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
@@ -7,28 +12,28 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import TYPOGRAPHY from '~/constants/typography';
 
 export const ActETTheme = {
-    palette: {
-        primary: {
-            dark: COLORS.PRIMARY,
-            light: COLORS.PRIMARY,
-            main: COLORS.PRIMARY,
-        },
-        secondary: {
-            main: COLORS.WHITE,
-        },
-        text: {
-            primary: COLORS.TEXT_PRIMARY,
-            secondary: COLORS.TEXT_SECONDARY,
-        },
+  palette: {
+    primary: {
+      dark: COLORS.PRIMARY,
+      light: COLORS.PRIMARY,
+      main: COLORS.PRIMARY,
     },
-    typography: {
-        fontFamily: ['Montserrat', 'Helvetica', 'sans-serif'].join(','),
-        fontWeightBold: TYPOGRAPHY.WEIGHT_BOLD,
-        fontWeightLight: TYPOGRAPHY.WEIGHT_LIGHT,
-        fontWeightMedium: TYPOGRAPHY.WEIGHT_MEDIUM,
-        fontWeightRegular: TYPOGRAPHY.WEIGHT_REGULAR,
-        htmlFontSize: 18,
+    secondary: {
+      main: COLORS.WHITE,
     },
+    text: {
+      primary: COLORS.TEXT_PRIMARY,
+      secondary: COLORS.TEXT_SECONDARY,
+    },
+  },
+  typography: {
+    fontFamily: ['Montserrat', 'Helvetica', 'sans-serif'].join(','),
+    fontWeightBold: TYPOGRAPHY.WEIGHT_BOLD,
+    fontWeightLight: TYPOGRAPHY.WEIGHT_LIGHT,
+    fontWeightMedium: TYPOGRAPHY.WEIGHT_MEDIUM,
+    fontWeightRegular: TYPOGRAPHY.WEIGHT_REGULAR,
+    htmlFontSize: 18,
+  },
 };
 
 export default createMuiTheme(ActETTheme);

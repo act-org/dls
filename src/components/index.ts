@@ -1,4 +1,9 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
@@ -31,7 +36,6 @@ export * from './Typography';
  */
 export { Loading as LoadingPrimary } from './Loading';
 
-
 /**
  * Yet to be converted / migrated
  */
@@ -41,11 +45,8 @@ export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
 export { default as FormInputGroupsPrimary } from './FormInputGroupsPrimary';
 export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrimary';
 
-
-
 export { default as RenderMetaTagsBase } from './RenderMetaTagsBase';
 export type { Props as RenderMetaTagsBaseProps } from './RenderMetaTagsBase';
-
 
 export { default as TableCellBody } from './TableCellBody';
 export type { Props as TableCellBodyProps } from './TableCellBody';

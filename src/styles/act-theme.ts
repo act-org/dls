@@ -1,10 +1,15 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
 import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
 import TYPOGRAPHY from '~/constants/typography';
-import type { } from "@material-ui/lab/themeAugmentation";
+import type {} from '@material-ui/lab/themeAugmentation';
 
 const backgroundDisabled = '#FCFCFC';
 const placeHolder = '#767676';
@@ -13,13 +18,13 @@ const ACTColorPalette = {
     dark: '#042E60',
     light: '#0077AA',
     main: '#0077AA',
-    contrastText: '#ffffff'
+    contrastText: '#ffffff',
   },
   secondary: {
     dark: '#004043',
     light: '#46999c',
     main: '#016b6e',
-    contrastText: '#ffffff'
+    contrastText: '#ffffff',
   },
   info: {
     main: '#003B55',
@@ -38,8 +43,7 @@ const ACTColorPalette = {
     secondary: '#000000',
     disabled: '#CCCCCC',
   },
-}
-
+};
 
 export const ACTTheme: ThemeOptions = {
   palette: ACTColorPalette,
@@ -53,21 +57,21 @@ export const ACTTheme: ThemeOptions = {
     fontSize: 16,
   },
   shape: {
-    borderRadius: 2
+    borderRadius: 2,
   },
   overrides: {
     MuiButton: {
       label: {
-        textTransform: 'none'
-      }
+        textTransform: 'none',
+      },
     },
     MuiOutlinedInput: {
       root: {
-        "&$disabled": {
-          cursor: "not-allowed",
+        '&$disabled': {
+          cursor: 'not-allowed',
           border: `1px solid ${ACTColorPalette.text.disabled}`,
           color: `${ACTColorPalette.text.disabled}`,
-          backgroundColor: `${backgroundDisabled}`
+          backgroundColor: `${backgroundDisabled}`,
         },
       },
       notchedOutline: {
@@ -76,11 +80,11 @@ export const ACTTheme: ThemeOptions = {
       input: {
         '&::placeholder': {
           color: `${placeHolder}`,
-          opacity: 1
+          opacity: 1,
         },
         fontSize: `1rem`,
-        "&$disabled": {
-          cursor: "not-allowed",
+        '&$disabled': {
+          cursor: 'not-allowed',
         },
       },
     },
@@ -88,8 +92,8 @@ export const ACTTheme: ThemeOptions = {
       root: {
         color: `${ACTColorPalette.text.primary}`,
         marginBottom: `15px`,
-        fontSize: `1rem`
-      }
+        fontSize: `1rem`,
+      },
     },
     MuiSelect: {
       outlined: {
@@ -97,40 +101,40 @@ export const ACTTheme: ThemeOptions = {
         fontWeight: 'normal',
         backgroundColor: '#FFFFFF',
         height: '54px',
-        padding: '20px 25px'
-      }
+        padding: '20px 25px',
+      },
     },
     MuiAlert: {
       standardError: {
         backgroundColor: '#FAE6EB',
-        color: '#8E0024'
+        color: '#8E0024',
       },
       standardInfo: {
         backgroundColor: '#E6F2F7',
-        color: '#003B55'
+        color: '#003B55',
       },
       standardSuccess: {
         backgroundColor: '#D9F0D9',
-        color: '#007B00'
+        color: '#007B00',
       },
       standardWarning: {
         backgroundColor: '#FEF8DC',
-        color: '#826E0D'
+        color: '#826E0D',
       },
       outlinedError: {
-        color: '#8E0024'
+        color: '#8E0024',
       },
       outlinedInfo: {
-        color: '#003B55'
+        color: '#003B55',
       },
       outlinedSuccess: {
-        color: '#007B00'
+        color: '#007B00',
       },
       outlinedWarning: {
-        color: '#826E0D'
-      }
-    }
-  }
+        color: '#826E0D',
+      },
+    },
+  },
 };
 
 export default createMuiTheme(ACTTheme);

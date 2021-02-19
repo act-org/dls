@@ -80,7 +80,7 @@
   ],
   "lint-staged": {
     "*.{js}": "npm run test:lint:js",
-    "*.{js,json,md,ts,tsx}": [
+    "*.{js,json,md,mdx,ts,tsx}": [
       "prettier --write",
       "git add"
     ],
