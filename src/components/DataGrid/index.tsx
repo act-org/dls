@@ -24,7 +24,6 @@ export type {
   RowParams,
   CellParams,
   RowSelectedParams,
-  SelectionChangeParams,
   ScrollParams,
   FilterModelParams,
   SortModelParams,
