@@ -3,8 +3,7 @@
  */
 
 import * as React from 'react';
-import { Tooltip } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Tooltip, FormControl, FormControlProps } from '@material-ui/core';
 import AlertOutline from '~/icons/AlertOutline';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 import { Input, InputProps } from '~/components/Input';
@@ -14,12 +13,8 @@ export type FormInputProps = InputProps & {
   helpText?: string | React.ReactElement;
   errorMessage?: string;
   labelProps?: InputLabelProps;
+  formControlProps?: FormControlProps;
 };
-
-const useStyles = makeStyles({
-  labelContainer: {},
-  inputContainer: {},
-});
 
 /**
  * # Form Input
@@ -38,49 +33,35 @@ export function FormInput({
   label,
   labelProps,
   required,
-  value,
-  onChange,
+  fullWidth,
+  formControlProps,
   ...formInputProps
 }: FormInputProps): React.ReactElement<FormInputProps> {
-  const classes = useStyles();
-  const [internalValue, setValue] = React.useState<unknown>(value || '');
   return (
-    <div>
-      <div className={classes.labelContainer}>
-        <InputLabel
-          {...labelProps}
-          disabled={disabled}
-          required={required}
-          error={error}
-          htmlFor={id}
-          helpText={helpText}
-        >
-          {label}
-        </InputLabel>
-      </div>
+    <FormControl {...formControlProps} fullWidth={fullWidth}>
+      <InputLabel
+        {...labelProps}
+        disabled={disabled}
+        required={required}
+        error={error}
+        htmlFor={id}
+        helpText={helpText}
+      >
+        {label}
+      </InputLabel>
+      <Input
+        id={id}
+        error={error}
+        required={required}
+        disabled={disabled}
+        {...formInputProps}
+      />
 
-      <div className={classes.inputContainer}>
-        <Input
-          id={id}
-          error={error}
-          required={required}
-          disabled={disabled}
-          value={internalValue}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-            setValue(e.target.value);
-            if (onChange) {
-              onChange(e);
-            }
-          }}
-          {...formInputProps}
-        />
-
-        {errorMessage && (
-          <Tooltip arrow placement="top" title={errorMessage}>
-            <AlertOutline color="error" />
-          </Tooltip>
-        )}
-      </div>
-    </div>
+      {errorMessage && (
+        <Tooltip arrow placement="top" title={errorMessage}>
+          <AlertOutline color="error" />
+        </Tooltip>
+      )}
+    </FormControl>
   );
 }

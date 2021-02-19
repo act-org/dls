@@ -55,10 +55,24 @@ export const ACTTheme: ThemeOptions = {
   shape: {
     borderRadius: 2
   },
+  props: {
+    MuiOutlinedInput: {
+      color: 'primary',
+      type: 'text',
+    },
+    MuiCheckbox: {
+      color: 'primary'
+    }
+  },
   overrides: {
     MuiButton: {
       label: {
         textTransform: 'none'
+      }
+    },
+    MuiAppBar: {
+      colorPrimary: {
+        backgroundColor: ACTColorPalette.primary.dark
       }
     },
     MuiOutlinedInput: {
@@ -82,13 +96,27 @@ export const ACTTheme: ThemeOptions = {
         "&$disabled": {
           cursor: "not-allowed",
         },
+        paddingTop: '15px',
+        paddingBottom: '15px',
       },
+      multiline: {
+        paddingTop: '15px',
+        paddingBottom: '15px',
+      }
     },
     MuiInputLabel: {
       root: {
         color: `${ACTColorPalette.text.primary}`,
         marginBottom: `15px`,
         fontSize: `1rem`
+      },
+      formControl: {
+        position: "relative",
+        transform: undefined,
+      },
+      shrink: {
+        transform: undefined,
+        transformOrigin: undefined,
       }
     },
     MuiSelect: {
@@ -128,6 +156,11 @@ export const ACTTheme: ThemeOptions = {
       },
       outlinedWarning: {
         color: '#826E0D'
+      }
+    },
+    MuiTab: {
+      root: {
+        textTransform: undefined,
       }
     }
   }

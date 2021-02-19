@@ -2,20 +2,12 @@
  * @prettier
  */
 import React from 'react';
-import {
-  OutlinedInput as MuiInput,
-  OutlinedInputProps as MuiInputProps,
-} from '@material-ui/core';
-import mergeClasses from '~/helpers/mergeClasses';
-import { primary, secondary } from './styles';
-import clsx from 'clsx';
+import { OutlinedInput, OutlinedInputProps } from '@material-ui/core';
 
 /**
  * Input Props
  */
-export interface InputProps extends MuiInputProps {
-  variant?: 'round' | 'box';
-}
+export type InputProps = OutlinedInputProps;
 
 /**
  * # Input Component
@@ -23,28 +15,6 @@ export interface InputProps extends MuiInputProps {
  *
  * @param inputProps
  */
-export function Input({
-  variant,
-  type,
-  classes: classesProp,
-  ...props
-}: InputProps): React.ReactElement<InputProps> {
-  const classes = variant == 'round' ? secondary() : primary();
-  return (
-    <MuiInput
-      classes={mergeClasses(
-        {
-          input: clsx(type === 'password' && classes.inputInputPassword),
-          root: classes.inputRoot,
-        },
-        classesProp,
-      )}
-      {...props}
-    />
-  );
+export function Input(inputProps: InputProps): React.ReactElement<InputProps> {
+  return <OutlinedInput {...inputProps} />;
 }
-Input.defaultProps = {
-  color: 'primary',
-  variant: 'box',
-  type: 'text',
-} as InputProps;

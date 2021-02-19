@@ -27,13 +27,13 @@
     "@babel/preset-react": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
     "@react-theming/storybook-addon": "^1.0.3",
-    "@storybook/addon-a11y": "6.1.17",
+    "@storybook/addon-a11y": "6.1.18",
     "@storybook/addon-console": "1.2.3",
-    "@storybook/addon-essentials": "6.1.17",
-    "@storybook/addon-links": "^6.1.17",
-    "@storybook/addons": "6.1.17",
-    "@storybook/react": "6.1.17",
-    "@storybook/theming": "6.1.17",
+    "@storybook/addon-essentials": "6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/addons": "6.1.18",
+    "@storybook/react": "6.1.18",
+    "@storybook/theming": "6.1.18",
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
     "@types/jest": "26.0.20",
@@ -119,5 +119,6 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "4.0.0"
+  "version": "4.0.0",
+  "license": "MIT"
 }

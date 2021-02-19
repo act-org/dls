@@ -1,19 +1,25 @@
 /** @format */
 
 import React from 'react';
-import { FormControlLabel, FormControlLabelProps } from '@material-ui/core';
+import {
+  FormControl,
+  FormControlProps,
+  FormControlLabel,
+  FormControlLabelProps,
+} from '@material-ui/core';
 import { Switch, SwitchProps } from '../Switch';
 
-export interface FormSwitchProps extends FormControlLabelProps {
+export type FormSwitchProps = SwitchProps & {
   /**
    * Unique ID for the input.  This is required
    */
   id: string;
-  /**
-   * Overrides default properties of the switch element
-   */
-  switchProps?: SwitchProps;
-}
+  label: string;
+  value: boolean;
+  fullWidth: boolean;
+  formControlProps: FormControlProps;
+  labelProps: FormControlLabelProps;
+};
 
 /**
  * # FormSwitch
@@ -23,15 +29,22 @@ export interface FormSwitchProps extends FormControlLabelProps {
  * @param formSwitchProps
  */
 export function FormSwitch({
-  switchProps,
+  labelProps,
+  id,
   label,
+  value,
+  fullWidth,
+  formControlProps,
   ...formSwitchProps
 }: FormSwitchProps) {
   return (
-    <FormControlLabel
-      {...formSwitchProps}
-      label={label}
-      control={<Switch {...switchProps} />}
-    ></FormControlLabel>
+    <FormControl {...formControlProps} fullWidth={fullWidth}>
+      <FormControlLabel
+        label={label}
+        id={id}
+        checked={value}
+        control={<Switch {...formSwitchProps} />}
+      ></FormControlLabel>
+    </FormControl>
   );
 }
