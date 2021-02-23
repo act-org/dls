@@ -84,6 +84,45 @@ export const COLOR_PALETTE = {
 };
 
 export const ActETTheme = {
+  overrides: {
+    MuiAlert: {
+      filledWarning: {
+        // color: COLOR_BLACK,
+      },
+      /*
+      outlinedSuccess: {
+        // color: COLOR_WHITE,
+      },
+      standardSuccess: {
+        // backgroundColor: COLOR_SUCCESS_MAIN,
+        // color: COLOR_WHITE,
+      },
+      */
+      /*
+      standardError: {
+        backgroundColor: '#FAE6EB',
+        color: '#8E0024',
+      },
+      standardInfo: {
+        backgroundColor: '#E6F2F7',
+        color: '#003B55',
+      },
+      standardWarning: {
+        backgroundColor: 'red',
+        color: 'blue',
+      },
+      outlinedError: {
+        color: '#8E0024',
+      },
+      outlinedInfo: {
+        color: '#003B55',
+      },
+      outlinedWarning: {
+        color: '#826E0D',
+      },
+      */
+    },
+  },
   palette: {
     ...COLOR_PALETTE,
     contrastThreshold: 3,
@@ -163,15 +202,15 @@ export const ActETTheme = {
       letterSpacing: 0,
       lineHeight: '2rem',
     },
-    /*
-    h7: {
-      fontSize: '1rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_BOLD,
-      letterSpacing: 0,
-      lineHeight: '1.5rem',
-    },
-    */
     htmlFontSize: 16,
+    overline: {
+      color: COLOR_TEXT_SECONDARY,
+      fontSize: '0.75rem',
+      fontWeight: TYPOGRAPHY_WEIGHT_REGULAR,
+      letterSpacing: '0.031rem',
+      lineHeight: '1rem',
+      textTransform: 'uppercase' as any,
+    },
     subtitle1: {
       color: COLOR_TEXT_SECONDARY,
       fontSize: '0.75rem',
