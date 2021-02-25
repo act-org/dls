@@ -13,10 +13,11 @@ import {
   FormControlProps,
   FormControlLabel,
   FormControlLabelProps,
+  Checkbox,
+  CheckboxProps,
 } from '@material-ui/core';
-import { Switch, SwitchProps } from '../Switch';
 
-export type FormSwitchProps = SwitchProps & {
+export type FormCheckboxProps = CheckboxProps & {
   /**
    * Unique ID for the input.  This is required
    */
@@ -29,13 +30,13 @@ export type FormSwitchProps = SwitchProps & {
 };
 
 /**
- * # FormSwitch
+ * # FormCheckbox
  *
  * This molecule takes the basic switch and adds a label and various label capabilities
  *
  * @param formSwitchProps
  */
-export function FormSwitch({
+export function FormCheckbox({
   labelProps,
   id,
   label,
@@ -43,7 +44,7 @@ export function FormSwitch({
   fullWidth,
   formControlProps,
   ...formSwitchProps
-}: FormSwitchProps): React.ReactElement<FormSwitchProps> {
+}: FormCheckboxProps): React.ReactElement<FormCheckboxProps> {
   return (
     <FormControl {...formControlProps} fullWidth={fullWidth}>
       <FormControlLabel
@@ -51,10 +52,10 @@ export function FormSwitch({
         id={id}
         label={label}
         {...labelProps}
-        control={<Switch {...formSwitchProps} />}
+        control={<Checkbox {...formSwitchProps} />}
       />
     </FormControl>
   );
 }
 
-export default FormSwitch;
+export default FormCheckbox;

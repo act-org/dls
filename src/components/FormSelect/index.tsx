@@ -8,31 +8,40 @@
  */
 
 import * as React from 'react';
-import { get } from 'lodash';
-import { MenuItem } from '@material-ui/core';
-
+import {
+  MenuItem,
+  FormControl,
+  FormControlProps,
+  Tooltip,
+} from '@material-ui/core';
 import AlertOutline from '~/icons/AlertOutline';
-import { InputLabel, InputLabelProps } from '~/components/InputLabel';
-import { Select, SelectProps } from '~/components/Select';
+import { InputLabel, InputLabelProps } from '../InputLabel';
+import { Select, SelectProps } from '../Select';
 
-import useStyles from './styles';
-
-interface SelectOption {
+export interface SelectOption {
   label: string | null;
   value: number | string;
 }
 
-export interface FormSelectProps extends SelectProps {
-  label?: string;
+export type FormSelectProps = SelectProps & {
+  errorMessage?: string;
+  formControlProps?: FormControlProps;
+  helpText?: string;
+  label: string;
   labelProps?: InputLabelProps;
   options?: SelectOption[];
   placeholder?: string;
   placeholderIsDisabled?: boolean;
-}
+};
 
 export function FormSelect({
   id,
   disabled,
+  error,
+  errorMessage,
+  formControlProps,
+  fullWidth,
+  helpText,
   label,
   labelProps,
   options = [],
@@ -41,50 +50,40 @@ export function FormSelect({
   required,
   ...selectProps
 }: FormSelectProps): React.ReactElement<FormSelectProps> {
-  const classes = useStyles();
-
-  const children = (
-    <div className={classes.selectContainer}>
-      <Select {...selectProps} disabled={disabled} id={id} required={required}>
-        <MenuItem
-          classes={{ root: classes.selectOptionRoot }}
-          disabled={placeholderIsDisabled}
-          value="undefined"
-        >
+  return (
+    <FormControl {...formControlProps} fullWidth={fullWidth}>
+      <InputLabel
+        {...labelProps}
+        disabled={disabled}
+        error={error}
+        helpText={helpText}
+        htmlFor={id}
+        required={required}
+      >
+        {label}
+      </InputLabel>
+      <Select
+        {...selectProps}
+        disabled={disabled}
+        error={error}
+        id={id}
+        required={required}
+      >
+        <MenuItem disabled={placeholderIsDisabled} value="">
           {placeholder || 'Select'}
         </MenuItem>
-
-        {options.map(
-          ({ label: optionLabel, value: optionValue }): React.ReactElement => (
-            <MenuItem
-              classes={{ root: classes.selectOptionRoot }}
-              key={optionValue}
-              value={optionValue}
-            >
-              {optionLabel}
-            </MenuItem>
-          ),
-        )}
+        {options.map(item => (
+          <MenuItem key={item.value} value={item.value}>
+            {item.label}
+          </MenuItem>
+        ))}
       </Select>
-
-      {get(selectProps, 'error') && <AlertOutline />}
-    </div>
-  );
-
-  return (
-    <>
-      <div className={classes.labelContainer}>
-        <InputLabel
-          disabled={disabled}
-          htmlFor={id}
-          required={required}
-          {...labelProps}
-        >
-          {label}
-        </InputLabel>
-      </div>
-      {children}
-    </>
+      {errorMessage && (
+        <Tooltip arrow placement="top" title={errorMessage}>
+          <AlertOutline color="error" />
+        </Tooltip>
+      )}
+    </FormControl>
   );
 }
 

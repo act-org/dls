@@ -6,9 +6,7 @@
  *
  * @prettier
  */
-
-/* eslint-disable react/display-name */
-
+/*
 import * as React from 'react';
 import {
   Button as MuiButton,
@@ -16,16 +14,14 @@ import {
 } from '@material-ui/core';
 
 export type ButtonProps = MuiButtonProps;
-
+*/
 /**
  * # Button
  * This is the main Button component.  It has several variations and options for the display
  * @param ButtonProps
  */
-export function Button({
-  ...buttonProps
-}: ButtonProps): React.ReactElement<ButtonProps> {
-  return <MuiButton {...buttonProps} />;
-}
+import { Button, ButtonProps } from '@material-ui/core';
 
+export { Button };
+export type { ButtonProps };
 export default Button;

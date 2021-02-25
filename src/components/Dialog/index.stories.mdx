@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import { Dialog } from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Molecules/Dialog" component={Dialog} argTypes={argTypes} />
+
+<Description of={Dialog} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+        title:"Dialog Title",
+        text: "Some sample dialog text"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+        title:"Dialog Title",
+        text: "Some sample dialog text"
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+

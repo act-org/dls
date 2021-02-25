@@ -1,0 +1,42 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import { FormRadioGroup } from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Molecules/FormRadioGroup" component={FormRadioGroup} argTypes={argTypes} />
+
+<Description of={FormRadioGroup} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+        id: "primaryradiogroup",
+        label: "The label",
+        name: "radiooptions",
+        options: [
+            {id: "one", label: "one", value: "one"},
+            {id: "two", label: "two", value: "two"}
+        ]
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+        id: "playgroundradiogroup",
+        label: "The label",
+        name: "radiooptions",
+        options: [
+            {id: "one", label: "one", value: "one"},
+            {id: "two", label: "two", value: "two"}
+        ]
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+

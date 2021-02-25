@@ -1,0 +1,32 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import { FormRadio } from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Molecules/FormRadio" component={FormRadio} argTypes={argTypes} />
+
+<Description of={FormRadio} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+        id: "primaryswitch",
+        label: "The label"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+        id: "playgroundswitch",
+        label: "The label"
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+

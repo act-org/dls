@@ -76,7 +76,6 @@ const useStyles = makeStyles({
  */
 export function InputLabel({
   classes: classesProp,
-  color,
   children,
   required,
   helpText,
@@ -99,7 +98,7 @@ export function InputLabel({
           {children}
           {helpText && (
             <Tooltip arrow placement={helpPlacement} title={helpText}>
-              <HelpCircleOutline color={color} />
+              <HelpCircleOutline />
             </Tooltip>
           )}
         </span>

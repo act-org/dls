@@ -100,7 +100,7 @@
   },
   "scripts": {
     "build": "npm-run-all build:*",
-    "build:clean": "rimraf dist",
+    "build:clean": "rimraf dist/*",
     "build:components": "NODE_ENV=production babel src --extensions \".ts,.tsx\" --out-dir dist --config-file ./.babelrc.build.js",
     "build:icons": "bin/buildIcons",
     "build:types": "bin/buildTypes",

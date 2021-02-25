@@ -79,12 +79,18 @@ export const ACTTheme: ThemeOptions = {
     MuiCheckbox: {
       color: 'primary',
     },
+    MuiRadio: {
+      color: 'primary',
+    },
+    MuiDialog: {
+      fullWidth: true,
+      maxWidth: 'md',
+    },
     MuiIcon: {
       color: 'primary',
     },
     MuiIconButton: {
       color: 'primary',
-      edge: 'start',
     },
     MuiInputLabel: {
       color: 'primary',
@@ -109,6 +115,7 @@ export const ACTTheme: ThemeOptions = {
     },
     MuiSelect: {
       variant: 'outlined',
+      displayEmpty: true,
     },
     MuiSwitch: {
       size: 'medium',
@@ -128,6 +135,9 @@ export const ACTTheme: ThemeOptions = {
     MuiToolbar: {
       color: 'primary',
     },
+    MuiTooltip: {
+      color: 'primary',
+    },
   },
   overrides: {
     MuiButton: {
@@ -138,6 +148,16 @@ export const ACTTheme: ThemeOptions = {
     MuiAppBar: {
       colorPrimary: {
         backgroundColor: ACTColorPalette.primary.dark,
+      },
+    },
+    MuiDialogTitle: {
+      root: {
+        backgroundColor: '#F2F4F7',
+      },
+    },
+    MuiDialogActions: {
+      root: {
+        backgroundColor: '#F2F4F7',
       },
     },
     MuiOutlinedInput: {
@@ -189,8 +209,7 @@ export const ACTTheme: ThemeOptions = {
         fontSize: '1.125rem',
         fontWeight: 'normal',
         backgroundColor: '#FFFFFF',
-        height: '54px',
-        padding: '20px 25px',
+        padding: '15px 15px',
       },
     },
     MuiAlert: {
