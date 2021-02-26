@@ -223,10 +223,77 @@ import { Typography } from '.';
     args={{
       align: 'justify',
       children:
-        'Justified: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'Justify: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       variant: 'body1',
     }}
     name="Align: Justify"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Text Color
+
+<Canvas>
+  <Story
+    args={{
+      color: 'primary',
+      children: 'Primary',
+      variant: 'body1',
+    }}
+    name="Color: Primary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      color: 'textPrimary',
+      children: 'Text Primary',
+      variant: 'body1',
+    }}
+    name="Color: Text Primary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      color: 'secondary',
+      children: 'Secondary',
+      variant: 'body1',
+    }}
+    name="Color: Secondary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      color: 'textSecondary',
+      children: 'Text Secondary',
+      variant: 'body1',
+    }}
+    name="Color: Text Secondary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      color: 'error',
+      children: 'Error',
+      variant: 'body1',
+    }}
+    name="Color: Error"
   >
     {Template.bind({})}
   </Story>
