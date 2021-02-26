@@ -24,12 +24,12 @@ exports[`EmptyStatePrimary matches the snapshot 1`] = `
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-outlined-10"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
       tabindex="0"
       type="button"
     >
       <span
-        class="MuiButton-label makeStyles-label-9"
+        class="MuiButton-label"
       >
         Button Title
       </span>

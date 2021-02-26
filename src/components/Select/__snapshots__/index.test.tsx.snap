@@ -3,11 +3,11 @@
 exports[`SelectPrimary matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiInput-root MuiInputBase-marginDense MuiInput-marginDense"
+    class="MuiInputBase-root MuiOutlinedInput-root"
   >
     <div
       aria-haspopup="listbox"
-      class="MuiSelect-root makeStyles-selectRoot-3 MuiSelect-select makeStyles-selectComponentRoot-1 MuiSelect-selectMenu MuiInputBase-input MuiInput-input MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -21,14 +21,28 @@ exports[`SelectPrimary matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSelect-icon makeStyles-selectIcon-2"
+      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
       focusable="false"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        d="M7 10l5 5 5-5z"
       />
     </svg>
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-2"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
   </div>
 </div>
 `;

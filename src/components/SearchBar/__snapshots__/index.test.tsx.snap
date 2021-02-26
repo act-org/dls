@@ -3,10 +3,10 @@
 exports[`SearchBarPrimary matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root makeStyles-outlinedInputRoot-6 MuiInputBase-adornedStart MuiOutlinedInput-adornedStart MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-adornedStart MuiOutlinedInput-adornedStart MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
   >
     <div
-      class="MuiInputAdornment-root makeStyles-inputAdornmentRoot-4 MuiInputAdornment-positionStart"
+      class="MuiInputAdornment-root MuiInputAdornment-positionStart"
     >
       <svg
         aria-hidden="true"
@@ -26,10 +26,11 @@ exports[`SearchBarPrimary matches the snapshot 1`] = `
       value="Value"
     />
     <div
-      class="MuiInputAdornment-root makeStyles-iconClose-2 MuiInputAdornment-positionEnd"
+      class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
     >
       <button
-        class="MuiButtonBase-root MuiIconButton-root"
+        aria-label="Clears the search"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
         tabindex="0"
         type="button"
       >
@@ -54,11 +55,11 @@ exports[`SearchBarPrimary matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-outlinedInputNotchedOutlined-5"
+      class="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       style="padding-left: 8px;"
     >
       <legend
-        class="PrivateNotchedOutline-legend-8"
+        class="PrivateNotchedOutline-legend-3"
         style="width: 0.01px;"
       >
         <span>

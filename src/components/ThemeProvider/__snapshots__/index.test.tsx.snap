@@ -2,6 +2,8 @@
 
 exports[`ThemeProviderPrimary matches the snapshot 1`] = `
 <div>
-  This is a test.
+  <p>
+    This is a test
+  </p>
 </div>
 `;

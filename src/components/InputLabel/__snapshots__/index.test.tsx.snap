@@ -8,7 +8,9 @@ exports[`InputLabelPrimary matches the snapshot 1`] = `
     <div
       class="label-split"
     >
-      <span>
+      <span
+        class="label-help"
+      >
         InputLabel
       </span>
       <span

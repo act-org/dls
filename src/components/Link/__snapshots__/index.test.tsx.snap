@@ -3,7 +3,7 @@
 exports[`LinkText matches the snapshot 1`] = `
 <div>
   <a
-    class="makeStyles-linkBase-1"
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
     href="https://www.act.org"
     target="_blank"
   >

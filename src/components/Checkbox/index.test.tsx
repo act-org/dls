@@ -11,20 +11,17 @@ import * as React from 'react';
 
 import render from '~/helpers/test/render';
 
-import { Button } from '.';
+import { Checkbox } from '.';
 
-describe('Button', () => {
+describe('Checkbox', () => {
   it('ACT theme matches the snapshot', () => {
-    const { container } = render(
-      <Button color="primary">Click me</Button>,
-      'ACT',
-    );
+    const { container } = render(<Checkbox checked color="primary" />, 'ACT');
     expect(container).toMatchSnapshot();
   });
 
   it('ACT_ET theme matches the snapshot', () => {
     const { container } = render(
-      <Button color="primary">Click me</Button>,
+      <Checkbox checked color="primary" />,
       'ACT_ET',
     );
     expect(container).toMatchSnapshot();
