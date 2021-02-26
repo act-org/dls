@@ -54,7 +54,7 @@ const PALETTE = {
     contrastText: COLORS.WHITE,
     dark: COLORS.GREY_800,
     light: COLORS.GREY_500,
-    main: COLORS.GREY_700,
+    main: COLORS.SECONDARY,
   },
   success: {
     contrastText: COLORS.WHITE,
