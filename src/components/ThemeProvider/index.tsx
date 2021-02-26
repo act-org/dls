@@ -11,7 +11,6 @@ import * as locales from '@material-ui/core/locale';
 import * as React from 'react';
 import {
   createMuiTheme,
-  responsiveFontSizes,
   Theme,
   ThemeProvider as MuiThemeProvider,
   ThemeProviderProps as MuiThemeProviderProps,
@@ -95,9 +94,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
       themeImpl = theme;
   }
 
-  return (
-    <MuiThemeProvider {...themeProps} theme={responsiveFontSizes(themeImpl)} />
-  );
+  return <MuiThemeProvider {...themeProps} theme={themeImpl} />;
 };
 
 export default ThemeProvider;
