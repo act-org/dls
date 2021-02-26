@@ -31,6 +31,7 @@ export * from './Input';
 export * from './InputLabel';
 export * from './Link';
 export * from './Loading';
+export * from './Paper';
 export * from './Radio';
 export * from './SearchBar';
 export * from './Select';

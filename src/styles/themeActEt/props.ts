@@ -16,6 +16,9 @@ const PROPS = {
   MuiButton: {
     variant: 'outlined' as any,
   },
+  MuiPaper: {
+    elevation: 3,
+  },
 };
 
 export default PROPS;
