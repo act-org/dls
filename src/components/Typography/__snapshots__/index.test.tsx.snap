@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography ACT theme matches the snapshot 1`] = `
+<div>
+  <h1
+    class="MuiTypography-root MuiTypography-h1"
+  />
+</div>
+`;
+
+exports[`Typography ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <h1
+    class="MuiTypography-root MuiTypography-h1"
+  />
+</div>
+`;
