@@ -8,23 +8,32 @@
  */
 
 import * as React from 'react';
-import { IconButton, IconButtonProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
-import { PencilCircle } from '../../icons';
 
-export const Template: Story<IconButtonProps> = args => (
-  <IconButton {...args}>
-    <PencilCircle />
-  </IconButton>
+import { PencilCircle, PencilCircleOutline } from '~/icons';
+import { PlayGround } from '~/helpers/argBlocks';
+
+import { IconButton, IconButtonProps } from '.';
+
+export const Template: Story<IconButtonProps> = (props: IconButtonProps) => (
+  <>
+    <IconButton {...props}>
+      <PencilCircle />
+    </IconButton>
+
+    <IconButton {...props}>
+      <PencilCircleOutline />
+    </IconButton>
+  </>
 );
+
 export const argTypes = PlayGround(
   {
     color: {},
-    size: {},
+    disabled: {},
     edge: {},
     onClick: { action: 'click' },
-    disabled: {},
+    size: {},
   },
   IconButton,
 );

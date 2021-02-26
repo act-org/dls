@@ -9,21 +9,26 @@
 
 import * as React from 'react';
 import {
-  IconButton as MuiIconButton,
-  IconButtonProps as MuiIconButtonProps,
+  IconButton as MiuIconButton,
+  IconButtonProps,
 } from '@material-ui/core';
 
-export type IconButtonProps = MuiIconButtonProps;
+export type { IconButtonProps };
 
 /**
- * # Drawer
+ * # IconButton
+ *
+ * The IconButton component is commonly used in app bars and toolbars.  Our
+ * implementation is based on the
+ * <a href="https://material-ui.com/components/buttons/#icon-buttons" target="_blank">IconButton</a>
+ * &nbsp;component from Material UI.
  *
  * @param IconButtonProps
  */
-export function IconButton(
-  iconButtonProps: IconButtonProps,
-): React.ReactElement<IconButtonProps> {
-  return <MuiIconButton {...iconButtonProps} />;
-}
+export const IconButton: React.FC<IconButtonProps> = (
+  props: IconButtonProps,
+): React.ReactElement<IconButtonProps> => {
+  return <MiuIconButton {...props} />;
+};
 
 export default IconButton;
