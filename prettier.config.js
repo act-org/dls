@@ -7,4 +7,9 @@
  * @prettier
  */
 
-module.exports = require('eslint-config/prettier.config');
+const base = require('eslint-config/prettier.config');
+
+module.exports = {
+  ...base,
+  parser: undefined,
+};

@@ -12,44 +12,31 @@ import {
   Alert as MiuAlert,
   AlertProps as MuiAlertProps,
   AlertTitle as MuiAlertTitle,
-  AlertTitleProps as MuiAlertTitleProps,
 } from '@material-ui/lab';
 
 export type AlertProps = MuiAlertProps & {
-  alertTitle?: string | React.ReactElement;
+  title?: string | React.ReactElement;
 };
-
-export type AlertTitleProps = MuiAlertTitleProps;
 
 /**
  * # Alert
  *
- * This component creats a simple visual alert to notify the user of something
+ * This component creats a simple visual alert to notify the user of something.
  *
  * @param alertProps
  */
 export function Alert({
-  alertTitle,
   children,
+  title,
   ...alertProps
 }: AlertProps): React.ReactElement<AlertProps> {
   return (
     <MiuAlert {...alertProps}>
-      {alertTitle && <MuiAlertTitle>{alertTitle}</MuiAlertTitle>}
+      {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
+
       {children}
     </MiuAlert>
   );
 }
 
 export default Alert;
-
-/**
- * The alert title element
- * @param alertTitleProps
- */
-export function AlertTitle({
-  children,
-  ...alertTitleProps
-}: AlertTitleProps): React.ReactElement<AlertTitleProps> {
-  return <MuiAlertTitle {...alertTitleProps}>{children}</MuiAlertTitle>;
-}

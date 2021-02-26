@@ -1,42 +1,60 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+<!-- @prettier -->
+
+import {
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+  ArgsTable,
+  Description,
+} from '@storybook/addon-docs/blocks';
 import { Alert } from '.';
 import Plus from '../../icons/Plus';
 import { Template, argTypes } from './index.stories.template';
 
-<Meta title='Atoms/Alert' component={Alert} argTypes={argTypes} />
+<Meta title="Atoms/Alert" component={Alert} argTypes={argTypes} />
 
 <Description of={Alert} />
 
-## Primary
+## Simple
 
 <Canvas>
-    <Story name='Primary' args={{
-        text:'Alert Text'
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="Simple"
+    args={{
+      text: 'Some description goes here.',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## With Title
 
 <Canvas>
-    <Story name='With Title' args={{
-        text:'Alert Text',
-        alertTitle: 'Alert Title'
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="With Title"
+    args={{
+      text: 'Some description goes here.',
+      title: 'Some Title Here',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language='jsx' story='Playground' />
-    <Story name='Playground' args={{
-        text:'Alert Text'
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story='Playground' />
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      text: 'Alert Text',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-
