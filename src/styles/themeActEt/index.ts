@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 import OVERRIDES from './overrides';
 import PALETTE from './palette';
@@ -21,4 +21,4 @@ export const THEME_ACT_ET = {
   typography: TYPOGRAPHY,
 };
 
-export default createMuiTheme(THEME_ACT_ET);
+export default responsiveFontSizes(createMuiTheme(THEME_ACT_ET));
