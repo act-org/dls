@@ -11,11 +11,13 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 import OVERRIDES from './overrides';
 import PALETTE from './palette';
+import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
 export const THEME_ACT_ET = {
   overrides: OVERRIDES,
   palette: PALETTE,
+  shape: SHAPE,
   typography: TYPOGRAPHY,
 };
 
