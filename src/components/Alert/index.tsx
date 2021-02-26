@@ -21,7 +21,10 @@ export type AlertProps = MuiAlertProps & {
 /**
  * # Alert
  *
- * This component creats a simple visual alert to notify the user of something.
+ * The Alert component is used to notify the user of something. Our
+ * implementation is based on the
+ * [Alert](https://material-ui.com/components/alert/#alert) component from
+ * Material UI.
  *
  * @param alertProps
  */

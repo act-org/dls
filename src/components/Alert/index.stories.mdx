@@ -19,14 +19,14 @@ import { argTypes, Template } from './index.stories.template';
 
 <Description of={Alert} />
 
-## Simple
+## Simple Alert
 
-The simplest alert just has a description.
+You can create a simple alert by just specifying a child description.
 
 <Canvas>
   <Story
     args={{
-      text: 'Some alert description goes here.',
+      children: 'Some alert description goes here.',
     }}
     name="Simple"
   >
@@ -42,7 +42,7 @@ Alerts also support a primary title.
   <Story
     name="With Title"
     args={{
-      text: 'Some alert description goes here.',
+      children: 'Some alert description goes here.',
       title: 'Title Here',
     }}
   >
@@ -61,8 +61,8 @@ each severity:
   <Story
     name="Success: Standard"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'success',
-      text: 'Some alert description goes here.',
       title: 'Success: Standard',
       variant: 'standard',
     }}
@@ -75,8 +75,8 @@ each severity:
   <Story
     name="Success: Filled"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'success',
-      text: 'Some alert description goes here.',
       title: 'Success: Filled',
       variant: 'filled',
     }}
@@ -89,8 +89,8 @@ each severity:
   <Story
     name="Success: Outlined"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'success',
-      text: 'Some alert description goes here.',
       title: 'Success: Outlined',
       variant: 'outlined',
     }}
@@ -105,8 +105,8 @@ each severity:
   <Story
     name="Error: Standard"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'error',
-      text: 'Some alert description goes here.',
       title: 'Error: Standard',
       variant: 'standard',
     }}
@@ -119,8 +119,8 @@ each severity:
   <Story
     name="Error: Filled"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'error',
-      text: 'Some alert description goes here.',
       title: 'Error: Filled',
       variant: 'filled',
     }}
@@ -133,8 +133,8 @@ each severity:
   <Story
     name="Error: Outlined"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'error',
-      text: 'Some alert description goes here.',
       title: 'Error: Outlined',
       variant: 'outlined',
     }}
@@ -149,8 +149,8 @@ each severity:
   <Story
     name="Warning: Standard"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'warning',
-      text: 'Some alert description goes here.',
       title: 'Warning: Standard',
       variant: 'standard',
     }}
@@ -163,8 +163,8 @@ each severity:
   <Story
     name="Warning: Filled"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'warning',
-      text: 'Some alert description goes here.',
       title: 'Warning: Filled',
       variant: 'filled',
     }}
@@ -177,8 +177,8 @@ each severity:
   <Story
     name="Warning: Outlined"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'warning',
-      text: 'Some alert description goes here.',
       title: 'Warning: Outlined',
       variant: 'outlined',
     }}
@@ -193,8 +193,8 @@ each severity:
   <Story
     name="Info: Standard"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'info',
-      text: 'Some alert description goes here.',
       title: 'Info: Standard',
       variant: 'standard',
     }}
@@ -207,8 +207,8 @@ each severity:
   <Story
     name="Info: Filled"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'info',
-      text: 'Some alert description goes here.',
       title: 'Info: Filled',
       variant: 'filled',
     }}
@@ -221,8 +221,8 @@ each severity:
   <Story
     name="Info: Outlined"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'info',
-      text: 'Some alert description goes here.',
       title: 'Info: Outlined',
       variant: 'outlined',
     }}
@@ -240,8 +240,8 @@ You can use the controls below to build your own Alert.
   <Story
     name="Playground"
     args={{
+      children: 'Some alert description goes here.',
       severity: 'success',
-      text: 'Some alert description goes here.',
       title: 'Title Here',
       variant: 'standard',
     }}
