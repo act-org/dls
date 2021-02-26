@@ -20,8 +20,7 @@ addons.setConfig({
   sidebarAnimations: true,
   theme: create({
     base: 'light',
-    brandImage:
-      'https://www.act.org/etc/designs/act/clientlibs/act-base/img/logo-act-blue-300.png',
+    brandImage: 'https://i.imgur.com/P0gtzO0.png',
     brandTitle: 'ACT Design Language System',
     brandUrl: 'https://www.act.org/',
   }),
