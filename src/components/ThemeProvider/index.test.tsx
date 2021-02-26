@@ -16,7 +16,7 @@ import { ThemeProvider } from '.';
 describe('ThemeProviderPrimary', () => {
   it('matches the snapshot', () => {
     const { container } = render(
-      <ThemeProvider theme="act">
+      <ThemeProvider theme="ACT">
         <p>This is a test</p>
       </ThemeProvider>,
     );
