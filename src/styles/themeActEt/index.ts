@@ -9,6 +9,7 @@
 
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
+import DIMS from './dims';
 import OVERRIDES from './overrides';
 import PALETTE from './palette';
 import PROPS from './props';
@@ -20,6 +21,7 @@ export const THEME_ACT_ET = {
   palette: PALETTE,
   props: PROPS,
   shape: SHAPE,
+  spacing: DIMS.SPACING,
   typography: TYPOGRAPHY,
 };
 
