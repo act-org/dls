@@ -10,8 +10,8 @@ import {
   Story,
 } from '@storybook/addon-docs/blocks';
 
-import { Button } from '.';
 import { argTypes, Icon, Template } from './index.stories.template';
+import { Button } from '.';
 
 <Meta argTypes={argTypes} component={Button} title="Atoms/Button" />
 
@@ -19,13 +19,12 @@ import { argTypes, Icon, Template } from './index.stories.template';
 
 ## Primary Button
 
-This is the primary button on a form/page. Not all buttons should be primary to differentiate between primary and alternative paths for the user.
+The primary button is used to designate and handle a primary action the user
+should take on a form or page. Not all buttons on the page should be primary to
+differentiate between primary and alternative paths for the user.
 
 <Canvas>
-  <Story
-    name="Primary"
-    args={{ children: 'Click me', disabled: false, variant: 'contained' }}
-  >
+  <Story name="Primary" args={{ children: 'Click me', color: 'primary' }}>
     {Template.bind({})}
   </Story>
 </Canvas>

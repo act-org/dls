@@ -113,7 +113,7 @@ export const THEME_ACT: ThemeOptions = {
       color: 'primary',
       disableElevation: true,
       size: 'medium',
-      variant: 'outlined',
+      variant: 'contained',
     },
     MuiSelect: {
       variant: 'outlined',

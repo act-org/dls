@@ -24,6 +24,29 @@ const OVERRIDES = {
       color: COLORS.WARNING_DARK,
     },
   },
+  MuiButton: {
+    outlined: {
+      '&:hover': {
+        borderWidth: 2,
+      },
+      borderRadius: 18,
+      borderStyle: 'solid',
+      borderWidth: 2,
+    },
+    outlinedPrimary: {
+      '&:active': {
+        backgroundColor: COLORS.PRIMARY_DARK,
+        borderColor: COLORS.PRIMARY_DARK,
+        color: COLORS.WHITE,
+      },
+      '&:hover': {
+        borderWidth: 2,
+      },
+      borderColor: COLORS.PRIMARY,
+      borderStyle: 'solid',
+      borderWidth: 2,
+    },
+  },
 };
 
 export default OVERRIDES;

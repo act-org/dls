@@ -13,8 +13,8 @@ const PROPS = {
     severity: 'info' as any,
     variant: 'standard' as any,
   },
-  MuiButtoon: {
-    variant: 'outlined',
+  MuiButton: {
+    variant: 'outlined' as any,
   },
 };
 
