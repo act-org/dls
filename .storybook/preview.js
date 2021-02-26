@@ -7,12 +7,11 @@
  * @prettier
  */
 
-import { ThemeProvider } from '../src/components/ThemeProvider';
-import { CssBaseline } from '@material-ui/core';
-import COLORS from '../src/constants/colors';
-import { grey } from '@material-ui/core/colors';
-import { configureActions } from '@storybook/addon-actions';
 import * as locales from '@material-ui/core/locale';
+import { common, grey } from '@material-ui/core/colors';
+import { configureActions } from '@storybook/addon-actions';
+import { CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '../src/components/ThemeProvider';
 
 configureActions({
   depth: 3,
@@ -20,15 +19,13 @@ configureActions({
 });
 
 export const parameters = {
-  // actions: { argTypesRegex: '^onClick$|^onChange$|^onFocus&|^onBlur&' },
-  layout: 'centered',
   controls: { expanded: false },
   backgrounds: {
     default: 'White',
     values: [
       {
         name: 'White',
-        value: COLORS.WHITE,
+        value: common.white,
       },
       {
         name: 'Grey',
@@ -36,10 +33,11 @@ export const parameters = {
       },
       {
         name: 'Black',
-        value: COLORS.BLACK,
+        value: common.black,
       },
     ],
   },
+  layout: 'centered',
 };
 
 export const decorators = [
@@ -49,23 +47,15 @@ export const decorators = [
       <Story />
     </ThemeProvider>
   ),
-  // host({
-  //   align: 'center middle',
-  //   backdrop: COLORS.TRANSPARENT,
-  //   background: COLORS.TRANSPARENT,
-  //   border: false,
-  //   cropMarks: true,
-  // })
 ];
 
 export const globalTypes = {
   theme: {
-    name: 'Theme',
+    defaultValue: 'ACT',
     description: 'Global theme for components',
-    defaultValue: 'act',
+    name: 'Theme',
     toolbar: {
       icon: 'paintbrush',
-      // array of plain string values or MenuItem shape (see below)
       items: ['ACT', 'ACT_ET'],
     },
   },
@@ -75,7 +65,6 @@ export const globalTypes = {
     defaultValue: 'enUS',
     toolbar: {
       icon: 'book',
-      // array of plain string values or MenuItem shape (see below)
       items: Object.keys(locales),
     },
   },

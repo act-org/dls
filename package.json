@@ -107,7 +107,7 @@
     "build-storybook": "build-storybook",
     "build-storybook:dockerprep": "build-storybook -o ./storybook-static/www && cp Dockerfile ./storybook-static/Dockerfile",
     "build-storybook:docker": "cd storybook-static && docker build . -t dls-storybook",
-    "start": "start-storybook -p 6006",
+    "start": "start-storybook -p 6006 --no-manager-cache",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",

@@ -8,7 +8,7 @@
  */
 
 import { addons } from '@storybook/addons';
-import { themes } from '@storybook/theming';
+import { create } from '@storybook/theming';
 
 addons.setConfig({
   enableShortcuts: true,
@@ -18,9 +18,11 @@ addons.setConfig({
   showNav: true,
   showPanel: true,
   sidebarAnimations: true,
-  theme: {
-    ...themes.light,
-    // brandImage: 'https://www.act.org/etc/designs/act/clientlibs/act-base/img/logo-act-blue-300.png',
+  theme: create({
+    base: 'light',
+    brandImage:
+      'https://www.act.org/etc/designs/act/clientlibs/act-base/img/logo-act-blue-300.png',
     brandTitle: 'ACT Design Language System',
-  },
+    brandUrl: 'https://www.act.org/',
+  }),
 });
