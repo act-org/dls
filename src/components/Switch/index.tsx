@@ -8,28 +8,25 @@
  */
 
 import * as React from 'react';
-import {
-  Switch as MuiSwitch,
-  SwitchProps as MuiSwitchProps,
-} from '@material-ui/core';
+import { Switch as MiuSwitch, SwitchProps } from '@material-ui/core';
 
-/**
- * Basic props for a Switch element
- */
-export type SwitchProps = MuiSwitchProps;
+export type { SwitchProps };
 
 /**
  * # Switch
  *
- * Works like a radio button but better looking visually and works well on mobile devices.
+ * The Switch component works like a [radio](/?path=/docs/atoms-radio--primary)
+ * button, but has more visual appeal and works well on mobile devices. Our
+ * implementation is based on the
+ * [Switch](https://material-ui.com/components/switches) component from
+ * Material UI.
  *
- * See (Material UI Switch)[https://material-ui.com/components/switches/]
- * @param switchProps
+ * @param SwitchProps
  */
-export function Switch(
-  switchProps: SwitchProps,
-): React.ReactElement<SwitchProps> {
-  return <MuiSwitch {...switchProps} />;
-}
+export const Switch: React.FC<SwitchProps> = (
+  props: SwitchProps,
+): React.ReactElement<SwitchProps> => {
+  return <MiuSwitch {...props} />;
+};
 
 export default Switch;
