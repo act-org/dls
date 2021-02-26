@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch ACT theme matches the snapshot 1`] = `
+<div>
+  <span
+    class="MuiSwitch-root"
+  >
+    <span
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-checked-2 Mui-checked MuiIconButton-colorPrimary"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <input
+          checked=""
+          class="PrivateSwitchBase-input-4 MuiSwitch-input"
+          type="checkbox"
+          value=""
+        />
+        <span
+          class="MuiSwitch-thumb"
+        />
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </span>
+    <span
+      class="MuiSwitch-track"
+    />
+  </span>
+</div>
+`;
+
+exports[`Switch ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <span
+    class="MuiSwitch-root"
+  >
+    <span
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5 MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-checked-6 Mui-checked"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <input
+          checked=""
+          class="PrivateSwitchBase-input-8 MuiSwitch-input"
+          type="checkbox"
+          value=""
+        />
+        <span
+          class="MuiSwitch-thumb"
+        />
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </span>
+    <span
+      class="MuiSwitch-track"
+    />
+  </span>
+</div>
+`;
