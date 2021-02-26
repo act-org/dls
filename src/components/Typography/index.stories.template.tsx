@@ -8,26 +8,24 @@
  */
 
 import * as React from 'react';
-import { Typography, TypographyProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
 
-export interface StoryProps extends TypographyProps {
-  text: string;
-}
+import { PlayGround } from '~/helpers/argBlocks';
 
-export const Template: Story<StoryProps> = ({ text, ...args }) => (
-  <Typography {...args}>{text}</Typography>
+import { Typography, TypographyProps } from '.';
+
+export const Template: Story<TypographyProps> = (props: TypographyProps) => (
+  <Typography {...props} />
 );
+
 export const argTypes = PlayGround(
   {
     align: {},
+    children: { type: 'string' },
     color: {},
-    display: {},
     gutterBottom: {},
     noWrap: {},
     paragraph: {},
-    text: { type: 'string' },
     variant: {},
   },
   Typography,

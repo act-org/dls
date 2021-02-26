@@ -1,30 +1,249 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import { Typography, TypographyProps } from '.';
-import { Template, argTypes } from './index.stories.template';
+<!-- @prettier -->
 
-<Meta title="Atoms/Typography" component={Typography} argTypes={argTypes} parameters={{}} />
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { Typography } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={Typography}
+  parameters={{}}
+  title="Atoms/Typography"
+/>
 
 <Description of={Typography} />
 
-## Primary
+<Canvas>
+  <Story
+    args={{
+      children: 'Heading 1',
+      variant: 'h1',
+    }}
+    name="Heading 1"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
 
 <Canvas>
-    <Story name="Primary" args={{
-        text: 'sample text'
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    args={{
+      children: 'Heading 2',
+      variant: 'h2',
+    }}
+    name="Heading 2"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Heading 3',
+      variant: 'h3',
+    }}
+    name="Heading 3"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Heading 4',
+      variant: 'h4',
+    }}
+    name="Heading 4"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Heading 5',
+      variant: 'h5',
+    }}
+    name="Heading 5"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Heading 6',
+      variant: 'h6',
+    }}
+    name="Heading 6"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Subtitle 1',
+      variant: 'subtitle1',
+    }}
+    name="Subtitle 1"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Subtitle 2',
+      variant: 'subtitle2',
+    }}
+    name="Subtitle 2"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Body 1',
+      variant: 'body1',
+    }}
+    name="Body 1"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Body 2',
+      variant: 'body2',
+    }}
+    name="Body 2"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Caption 2',
+      variant: 'caption',
+    }}
+    name="Caption"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Button',
+      variant: 'button',
+    }}
+    name="Button"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Overline',
+      variant: 'overline',
+    }}
+    name="Overline"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Text Alignment
+
+<Canvas>
+  <Story
+    args={{
+      align: 'left',
+      children: 'Left',
+      variant: 'body1',
+    }}
+    name="Align: Left"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      align: 'center',
+      children: 'Center',
+      variant: 'body1',
+    }}
+    name="Align: Center"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      align: 'right',
+      children: 'Right',
+      variant: 'body1',
+    }}
+    name="Align: Right"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      align: 'justify',
+      children:
+        'Justified: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      variant: 'body1',
+    }}
+    name="Align: Justify"
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{
-        text: 'sample text'
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story
+    args={{
+      children: 'Hello world',
+      variant: 'body1',
+    }}
+    name="Playground"
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-
