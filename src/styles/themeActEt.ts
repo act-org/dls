@@ -9,15 +9,18 @@
 
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const COLOR_BLACK = '#000';
-const COLOR_WHITE = '#FFF';
-const COLOR_TEXT_SECONDARY = '#444444';
-const COLOR_PRIMARY_LIGHT = '#0077AA';
+import TYPOGRAPHY from '~/constants/typography';
 
-const TYPOGRAPHY_WEIGHT_LIGHT = 300;
-const TYPOGRAPHY_WEIGHT_REGULAR = 400;
-const TYPOGRAPHY_WEIGHT_MEDIUM = 500;
-const TYPOGRAPHY_WEIGHT_BOLD = 700;
+const COLORS = {
+  BLACK: '#000',
+  ERROR_DARK: '#8E0024',
+  INFO_DARK: '#1976D2',
+  PRIMARY_LIGHT: '#0077AA',
+  SUCCESS_DARK: '#007B00',
+  TEXT_SECONDARY: '#444444',
+  WARNING_DARK: '#D14900',
+  WHITE: '#FFF',
+};
 
 export const COLOR_PALETTE_ACT_ET = {
   action: {
@@ -35,50 +38,50 @@ export const COLOR_PALETTE_ACT_ET = {
   },
   background: {
     default: '#FAFAFA',
-    paper: COLOR_WHITE,
+    paper: COLORS.WHITE,
   },
   common: {
-    black: COLOR_BLACK,
-    white: COLOR_WHITE,
+    black: COLORS.BLACK,
+    white: COLORS.WHITE,
   },
   divider: '#B2B4B7',
   error: {
-    contrastText: COLOR_WHITE,
-    dark: '#8E0024',
+    contrastText: COLORS.WHITE,
+    dark: COLORS.ERROR_DARK,
     main: '#CC0033',
   },
   info: {
-    contrastText: COLOR_WHITE,
-    dark: '#1976D2',
+    contrastText: COLORS.WHITE,
+    dark: COLORS.INFO_DARK,
     light: '#64B5F6',
     main: '#2196F3',
   },
   primary: {
-    contrastText: COLOR_WHITE,
+    contrastText: COLORS.WHITE,
     dark: '#042E60',
-    light: COLOR_PRIMARY_LIGHT,
+    light: COLORS.PRIMARY_LIGHT,
     main: '#016089',
   },
   secondary: {
-    contrastText: COLOR_WHITE,
+    contrastText: COLORS.WHITE,
     dark: '#004043',
     light: '#46999c',
     main: '#016b6e',
   },
   success: {
-    contrastText: COLOR_WHITE,
-    dark: '#007B00',
+    contrastText: COLORS.WHITE,
+    dark: COLORS.SUCCESS_DARK,
     main: '#009900',
   },
   text: {
     disabled: '#B2B4B7',
-    hint: COLOR_TEXT_SECONDARY,
-    primary: COLOR_BLACK,
-    secondary: COLOR_TEXT_SECONDARY,
+    hint: COLORS.TEXT_SECONDARY,
+    primary: COLORS.BLACK,
+    secondary: COLORS.TEXT_SECONDARY,
   },
   warning: {
-    contrastText: COLOR_BLACK,
-    dark: '#D14900',
+    contrastText: COLORS.BLACK,
+    dark: COLORS.WARNING_DARK,
     main: '#FF9900',
   },
 };
@@ -86,41 +89,21 @@ export const COLOR_PALETTE_ACT_ET = {
 export const THEME_ACT_ET = {
   overrides: {
     MuiAlert: {
-      filledWarning: {
-        // color: COLOR_BLACK,
-      },
-      /*
-      outlinedSuccess: {
-        // color: COLOR_WHITE,
-      },
-      standardSuccess: {
-        // backgroundColor: COLOR_SUCCESS_MAIN,
-        // color: COLOR_WHITE,
-      },
-      */
-      /*
-      standardError: {
-        backgroundColor: '#FAE6EB',
-        color: '#8E0024',
-      },
-      standardInfo: {
-        backgroundColor: '#E6F2F7',
-        color: '#003B55',
-      },
-      standardWarning: {
-        backgroundColor: 'red',
-        color: 'blue',
-      },
+      closeText: 'Close',
       outlinedError: {
-        color: '#8E0024',
+        color: COLORS.ERROR_DARK,
       },
       outlinedInfo: {
-        color: '#003B55',
+        color: COLORS.INFO_DARK,
+      },
+      outlinedSuccess: {
+        color: COLORS.SUCCESS_DARK,
       },
       outlinedWarning: {
-        color: '#826E0D',
+        color: COLORS.WARNING_DARK,
       },
-      */
+      severity: 'info',
+      variant: 'standard',
     },
   },
   palette: {
@@ -134,94 +117,94 @@ export const THEME_ACT_ET = {
   typography: {
     body1: {
       fontSize: '1.125rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_REGULAR,
+      fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
       letterSpacing: 0,
       lineHeight: '1.5rem',
     },
     body2: {
-      color: COLOR_TEXT_SECONDARY,
+      color: COLORS.TEXT_SECONDARY,
       fontSize: '0.875rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_REGULAR,
+      fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
       letterSpacing: 0,
       lineHeight: '1.5rem',
     },
     button: {
-      color: COLOR_PRIMARY_LIGHT,
+      color: COLORS.PRIMARY_LIGHT,
       fontSize: '0.875rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_BOLD,
+      fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
       letterSpacing: 0,
       lineHeight: '1.5rem',
       textTransform: 'none' as any,
     },
     caption: {
-      color: COLOR_TEXT_SECONDARY,
+      color: COLORS.TEXT_SECONDARY,
       fontSize: '0.75rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_MEDIUM,
+      fontWeight: TYPOGRAPHY.WEIGHT_MEDIUM,
       letterSpacing: 0,
       lineHeight: '1rem',
     },
     fontFamily: ['Montserrat', 'Helvetica', 'sans-serif'].join(','),
     fontSize: 18,
-    fontWeightBold: TYPOGRAPHY_WEIGHT_BOLD,
-    fontWeightLight: TYPOGRAPHY_WEIGHT_LIGHT,
-    fontWeightMedium: TYPOGRAPHY_WEIGHT_MEDIUM,
-    fontWeightRegular: TYPOGRAPHY_WEIGHT_REGULAR,
+    fontWeightBold: TYPOGRAPHY.WEIGHT_BOLD,
+    fontWeightLight: TYPOGRAPHY.WEIGHT_LIGHT,
+    fontWeightMedium: TYPOGRAPHY.WEIGHT_MEDIUM,
+    fontWeightRegular: TYPOGRAPHY.WEIGHT_REGULAR,
     h1: {
       fontSize: '2.5rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_BOLD,
+      fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
       letterSpacing: 0,
       lineHeight: '3.5rem',
     },
     h2: {
       fontSize: '2rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_BOLD,
+      fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
       letterSpacing: 0,
       lineHeight: '3rem',
     },
     h3: {
       fontSize: '1.75rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_BOLD,
+      fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
       letterSpacing: 0,
       lineHeight: '2.5rem',
     },
     h4: {
       fontSize: '1.75rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_MEDIUM,
+      fontWeight: TYPOGRAPHY.WEIGHT_MEDIUM,
       letterSpacing: 0,
       lineHeight: '2.5rem',
     },
     h5: {
       fontSize: '1.5rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_BOLD,
+      fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
       letterSpacing: 0,
       lineHeight: '2rem',
     },
     h6: {
       fontSize: '1.5rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_MEDIUM,
+      fontWeight: TYPOGRAPHY.WEIGHT_MEDIUM,
       letterSpacing: 0,
       lineHeight: '2rem',
     },
     htmlFontSize: 16,
     overline: {
-      color: COLOR_TEXT_SECONDARY,
+      color: COLORS.TEXT_SECONDARY,
       fontSize: '0.75rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_REGULAR,
+      fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
       letterSpacing: '0.031rem',
       lineHeight: '1rem',
       textTransform: 'uppercase' as any,
     },
     subtitle1: {
-      color: COLOR_TEXT_SECONDARY,
+      color: COLORS.TEXT_SECONDARY,
       fontSize: '0.75rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_REGULAR,
+      fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
       letterSpacing: '0.031rem',
       lineHeight: '1rem',
       textTransform: 'uppercase' as any,
     },
     subtitle2: {
       fontSize: '0.875rem',
-      fontWeight: TYPOGRAPHY_WEIGHT_MEDIUM,
+      fontWeight: TYPOGRAPHY.WEIGHT_MEDIUM,
       letterSpacing: 0,
       lineHeight: '1.5rem',
     },
