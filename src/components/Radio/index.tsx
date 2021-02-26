@@ -17,8 +17,8 @@ export type { RadioProps };
  *
  * The Radio component is used to select a single option from a list.
  * Our implementation is based on the
- * [Radio](https://material-ui.com/components/radio-buttons) component from
- * Material UI.
+ * <a href="https://material-ui.com/components/radio-buttons" target="_blank">Radio</a>
+ * &nbsp;component from Material UI.
  *
  * @param RadioProps
  */

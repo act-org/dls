@@ -17,8 +17,8 @@ export type { CheckboxProps };
  *
  * The Checkbox component is used to select one or more options from a list.
  * Our implementation is based on the
- * [Checkbox](https://material-ui.com/components/checkboxes) component from
- * Material UI.
+ * <a href="https://material-ui.com/components/checkboxes" target="_blank">Checkbox</a>
+ * &nbsp;component from Material UI.
  *
  * @param CheckboxProps
  */

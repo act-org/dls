@@ -17,8 +17,8 @@ export type { ButtonProps };
  *
  * The Button component is used to create a clickable action on the screen.
  * Our implementation is based on the
- * [Button](https://material-ui.com/components/buttons) component from
- * Material UI.
+ * <a href="https://material-ui.com/components/buttons" target="_blank">Button</a>
+ * &nbsp;component from Material UI.
  *
  * @param ButtonProps
  */

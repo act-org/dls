@@ -8,17 +8,24 @@
  */
 
 import * as React from 'react';
-import { Switch, SwitchProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
 
-export const Template: Story<SwitchProps> = args => <Switch {...args} />;
+import { PlayGround } from '~/helpers/argBlocks';
+
+import { Switch, SwitchProps } from '.';
+
+export const Template: Story<SwitchProps> = (props: SwitchProps) => (
+  <Switch {...props} />
+);
+
 export const argTypes = PlayGround(
   {
-    size: {},
+    checked: {},
     color: {},
     disabled: {},
-    checked: {},
+    onChange: { action: 'click' },
+    size: {},
+    value: {},
   },
   Switch,
 );

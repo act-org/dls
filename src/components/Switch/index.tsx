@@ -15,11 +15,10 @@ export type { SwitchProps };
 /**
  * # Switch
  *
- * The Switch component works like a [radio](/?path=/docs/atoms-radio--primary)
- * button, but has more visual appeal and works well on mobile devices. Our
- * implementation is based on the
- * [Switch](https://material-ui.com/components/switches) component from
- * Material UI.
+ * The Switch component works like a Radio button, but has more visual appeal
+ * and works well on mobile devices. Our implementation is based on the
+ * <a href="https://material-ui.com/components/switches" target="_blank">Switch</a>
+ * &nbsp;component from Material UI.
  *
  * @param SwitchProps
  */
