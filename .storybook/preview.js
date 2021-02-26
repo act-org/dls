@@ -66,7 +66,7 @@ export const globalTypes = {
     toolbar: {
       icon: 'paintbrush',
       // array of plain string values or MenuItem shape (see below)
-      items: ['act', 'act-et'],
+      items: ['ACT', 'ACT_ET'],
     },
   },
   language: {

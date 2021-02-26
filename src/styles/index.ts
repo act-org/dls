@@ -7,6 +7,5 @@
  * @prettier
  */
 
-/* eslint-disable import/prefer-default-export */
-
-export { default as ACTTheme } from './act-theme';
+export { default as THEME_ACT } from './themeAct';
+export { default as THEME_ACT_ET } from './themeActEt';

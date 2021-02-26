@@ -9,14 +9,14 @@
 
 import * as locales from '@material-ui/core/locale';
 import * as React from 'react';
-import { ACTTheme } from '~/styles/act-theme';
-import { ActETTheme } from '~/styles/act-et-theme';
 import {
   createMuiTheme,
   Theme,
   ThemeProvider as MuiThemeProvider,
   ThemeProviderProps as MuiThemeProviderProps,
 } from '@material-ui/core/styles';
+import { THEME_ACT } from '~/styles/themeAct';
+import { THEME_ACT_ET } from '~/styles/themeActEt';
 
 /**
  * # Theme configuration.
@@ -80,13 +80,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   switch (theme) {
     case 'ACT':
       themeImpl = createMuiTheme(
-        ACTTheme,
+        THEME_ACT,
         locale ? locales[locale] : locales.enUS,
       );
       break;
     case 'ACT_ET':
       themeImpl = createMuiTheme(
-        ActETTheme,
+        THEME_ACT_ET,
         locale ? locales[locale] : locales.enUS,
       );
       break;

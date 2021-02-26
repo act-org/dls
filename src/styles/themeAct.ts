@@ -20,12 +20,14 @@ export interface DataGridPropsList {
 
 declare module '@material-ui/core/styles/props' {
   // eslint-disable-next-line prettier/prettier
-  interface ComponentsPropsList extends LabComponentsPropsList, DataGridPropsList { }
+  interface ComponentsPropsList
+    extends LabComponentsPropsList,
+      DataGridPropsList {}
 }
 
 const backgroundDisabled = '#FCFCFC';
 const placeHolder = '#767676';
-const ACTColorPalette = {
+const COLOR_PALETTE_ACT = {
   primary: {
     contrastText: '#ffffff',
     dark: '#042E60',
@@ -57,8 +59,8 @@ const ACTColorPalette = {
   },
 };
 
-export const ACTTheme: ThemeOptions = {
-  palette: ACTColorPalette,
+export const THEME_ACT: ThemeOptions = {
+  palette: COLOR_PALETTE_ACT,
   typography: {
     fontFamily: ['Montserrat', 'Helvetica', 'sans-serif'].join(','),
     fontWeightBold: TYPOGRAPHY.WEIGHT_BOLD,
@@ -147,7 +149,7 @@ export const ACTTheme: ThemeOptions = {
     },
     MuiAppBar: {
       colorPrimary: {
-        backgroundColor: ACTColorPalette.primary.dark,
+        backgroundColor: COLOR_PALETTE_ACT.primary.dark,
       },
     },
     MuiDialogTitle: {
@@ -164,13 +166,13 @@ export const ACTTheme: ThemeOptions = {
       root: {
         '&$disabled': {
           cursor: 'not-allowed',
-          border: `1px solid ${ACTColorPalette.text.disabled}`,
-          color: `${ACTColorPalette.text.disabled}`,
+          border: `1px solid ${COLOR_PALETTE_ACT.text.disabled}`,
+          color: `${COLOR_PALETTE_ACT.text.disabled}`,
           backgroundColor: `${backgroundDisabled}`,
         },
       },
       notchedOutline: {
-        border: `1px solid ${ACTColorPalette.primary.main}`,
+        border: `1px solid ${COLOR_PALETTE_ACT.primary.main}`,
       },
       input: {
         '&::placeholder': {
@@ -191,7 +193,7 @@ export const ACTTheme: ThemeOptions = {
     },
     MuiInputLabel: {
       root: {
-        color: `${ACTColorPalette.text.primary}`,
+        color: `${COLOR_PALETTE_ACT.text.primary}`,
         marginBottom: `15px`,
         fontSize: `1rem`,
       },
@@ -250,4 +252,4 @@ export const ACTTheme: ThemeOptions = {
   },
 };
 
-export default createMuiTheme(ACTTheme);
+export default createMuiTheme(THEME_ACT);

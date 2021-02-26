@@ -19,7 +19,7 @@ const TYPOGRAPHY_WEIGHT_REGULAR = 400;
 const TYPOGRAPHY_WEIGHT_MEDIUM = 500;
 const TYPOGRAPHY_WEIGHT_BOLD = 700;
 
-export const COLOR_PALETTE = {
+export const COLOR_PALETTE_ACT_ET = {
   action: {
     activatedOpacity: 0.12,
     active: 'rgba(0, 0, 0, 0.54)',
@@ -83,7 +83,7 @@ export const COLOR_PALETTE = {
   },
 };
 
-export const ActETTheme = {
+export const THEME_ACT_ET = {
   overrides: {
     MuiAlert: {
       filledWarning: {
@@ -124,7 +124,7 @@ export const ActETTheme = {
     },
   },
   palette: {
-    ...COLOR_PALETTE,
+    ...COLOR_PALETTE_ACT_ET,
     contrastThreshold: 3,
     tonalOffset: {
       dark: 0.2,
@@ -228,4 +228,4 @@ export const ActETTheme = {
   },
 };
 
-export default createMuiTheme(ActETTheme);
+export default createMuiTheme(THEME_ACT_ET);
