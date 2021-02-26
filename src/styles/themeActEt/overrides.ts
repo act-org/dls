@@ -25,6 +25,9 @@ const OVERRIDES = {
     },
   },
   MuiButton: {
+    contained: {
+      borderRadius: 18,
+    },
     outlined: {
       '&:hover': {
         borderWidth: 2,
@@ -45,6 +48,17 @@ const OVERRIDES = {
       borderColor: COLORS.PRIMARY,
       borderStyle: 'solid',
       borderWidth: 2,
+    },
+    outlinedSizeLarge: {
+      borderRadius: 24,
+    },
+    sizeSmall: {
+      fontSize: 14,
+    },
+    textPrimary: {
+      '&:active': {
+        color: COLORS.PRIMARY_DARK,
+      },
     },
   },
 };

@@ -52,9 +52,9 @@ const PALETTE = {
   },
   secondary: {
     contrastText: COLORS.WHITE,
-    dark: COLORS.SECONDARY_DARK,
-    light: COLORS.SECONDARY_LIGHT,
-    main: COLORS.SECONDARY,
+    dark: COLORS.BLACK,
+    light: COLORS.BLACK,
+    main: COLORS.BLACK,
   },
   success: {
     contrastText: COLORS.WHITE,

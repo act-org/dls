@@ -11,15 +11,12 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { PlayGround } from '~/helpers/argBlocks';
-import Plus from '~/icons/Plus';
 
 import { Button, ButtonProps } from '.';
 
 export const Template: Story<ButtonProps> = (props: ButtonProps) => (
   <Button {...props} />
 );
-
-export const Icon = <Plus />;
 
 export const argTypes = PlayGround(
   {
