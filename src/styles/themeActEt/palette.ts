@@ -24,7 +24,7 @@ const PALETTE = {
     selectedOpacity: 0.08,
   },
   background: {
-    default: '#FAFAFA',
+    default: COLORS.BACKGROUND,
     paper: COLORS.WHITE,
   },
   common: {
@@ -32,37 +32,37 @@ const PALETTE = {
     white: COLORS.WHITE,
   },
   contrastThreshold: 3,
-  divider: '#B2B4B7',
+  divider: COLORS.GREY_400,
   error: {
     contrastText: COLORS.WHITE,
     dark: COLORS.ERROR_DARK,
-    main: '#CC0033',
+    main: COLORS.ERROR,
   },
   info: {
     contrastText: COLORS.WHITE,
     dark: COLORS.INFO_DARK,
-    light: '#64B5F6',
-    main: '#2196F3',
+    light: COLORS.INFO_LIGHT,
+    main: COLORS.INFO,
   },
   primary: {
     contrastText: COLORS.WHITE,
-    dark: '#042E60',
+    dark: COLORS.PRIMARY_DARK,
     light: COLORS.PRIMARY_LIGHT,
-    main: '#016089',
+    main: COLORS.PRIMARY,
   },
   secondary: {
     contrastText: COLORS.WHITE,
-    dark: '#004043',
-    light: '#46999c',
-    main: '#016b6e',
+    dark: COLORS.SECONDARY_DARK,
+    light: COLORS.SECONDARY_LIGHT,
+    main: COLORS.SECONDARY,
   },
   success: {
     contrastText: COLORS.WHITE,
     dark: COLORS.SUCCESS_DARK,
-    main: '#009900',
+    main: COLORS.SUCCESS,
   },
   text: {
-    disabled: '#B2B4B7',
+    disabled: COLORS.GREY_400,
     hint: COLORS.TEXT_SECONDARY,
     primary: COLORS.BLACK,
     secondary: COLORS.TEXT_SECONDARY,
@@ -74,7 +74,7 @@ const PALETTE = {
   warning: {
     contrastText: COLORS.BLACK,
     dark: COLORS.WARNING_DARK,
-    main: '#FF9900',
+    main: COLORS.WARNING,
   },
 };
 
