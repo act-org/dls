@@ -14,7 +14,7 @@ const PROPS = {
     variant: 'standard' as any,
   },
   MuiButtoon: {
-    variant: 'outlined' as any,
+    variant: 'outlined',
   },
 };
 
