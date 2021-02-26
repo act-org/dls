@@ -11,12 +11,14 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 import OVERRIDES from './overrides';
 import PALETTE from './palette';
+import PROPS from './props';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
 export const THEME_ACT_ET = {
   overrides: OVERRIDES,
   palette: PALETTE,
+  props: PROPS,
   shape: SHAPE,
   typography: TYPOGRAPHY,
 };

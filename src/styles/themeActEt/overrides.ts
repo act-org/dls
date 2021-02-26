@@ -11,7 +11,6 @@ import COLORS from './colors';
 
 const OVERRIDES = {
   MuiAlert: {
-    closeText: 'Close',
     outlinedError: {
       color: COLORS.ERROR_DARK,
     },
@@ -24,8 +23,6 @@ const OVERRIDES = {
     outlinedWarning: {
       color: COLORS.WARNING_DARK,
     },
-    severity: 'info',
-    variant: 'standard',
   },
 };
 
