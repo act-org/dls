@@ -7,6 +7,8 @@
  * @prettier
  */
 
+import { get } from 'lodash';
+
 interface PropType {
   defaultValue: any;
   description: string;
@@ -24,11 +26,11 @@ interface DocGenType {
   };
 }
 
-function cleanPropType(prop: PropType) {
-  if (prop && prop.type && prop.type.name) {
+const cleanPropType = (prop: PropType) => {
+  if (get(prop, 'type.name')) {
     prop.type.name = prop.type.name.replace(' | undefined', '');
   }
-}
+};
 
 const playgroundGroup = 'Playground';
 const eventsGroup = 'Events';
@@ -45,12 +47,13 @@ const elseGroup = 'Everything Else';
  * @param args The arguments to put in the Playground group
  * @param type The base type of the arguments.  If passed will group all arguments by some basic rules
  */
-export function PlayGround(args: Record<string, any>, type?: any) {
+export const PlayGround = (args: Record<string, any>, type?: any) => {
   for (const key in args) {
     if (!key.startsWith('on')) {
       args[key].table = { category: playgroundGroup };
     }
   }
+
   if (type) {
     const docType = (type as unknown) as DocGenType;
     const props = docType.__docgenInfo?.props;
@@ -70,5 +73,6 @@ export function PlayGround(args: Record<string, any>, type?: any) {
       };
     }
   }
+
   return args;
-}
+};
