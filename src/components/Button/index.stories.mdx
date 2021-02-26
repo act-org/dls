@@ -1,45 +1,74 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import {Button} from '.';
-import { Template, argTypes, Icon } from './index.stories.template';
+<!-- @prettier -->
 
-<Meta title="Atoms/Button" component={Button} argTypes={argTypes} />
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { Button } from '.';
+import { argTypes, Icon, Template } from './index.stories.template';
+
+<Meta argTypes={argTypes} component={Button} title="Atoms/Button" />
 
 <Description of={Button} />
 
 ## Primary Button
-This is the primary button on a form/page.  Not all buttons should be primary to differentiate between primary and alternative paths for the user.
+
+This is the primary button on a form/page. Not all buttons should be primary to differentiate between primary and alternative paths for the user.
 
 <Canvas>
-    <Story name="Primary" args={{ text: 'Click me', disabled: false, variant: 'contained' }}>
-       { Template.bind({}) }
-    </Story>
+  <Story
+    name="Primary"
+    args={{ children: 'Click me', disabled: false, variant: 'contained' }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
-
 
 ## Secondary Button
+
 The secondary button is useful for having additional options outside of the normal flow
+
 <Canvas>
-    <Story name="Secondary" args={{ text: 'Click me', disabled: false, variant: 'outlined' }}>
-        { Template.bind({}) }
-    </Story>
+  <Story
+    name="Secondary"
+    args={{ children: 'Click me', disabled: false, variant: 'outlined' }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
-
 ## Icons
-The buttons also support icons with the startIcon and endIcon properties.  Here is an example.
+
+The buttons also support icons with the startIcon and endIcon properties. Here is an example.
+
 <Canvas>
-    <Story name="Icons" args={{ text: 'Click me', disabled: false, variant: 'contained' }}>
-        {({text, ...args}) => <Button endIcon={Icon} {...args}>{text}</Button>}
-    </Story>
+  <Story
+    name="Icons"
+    args={{ children: 'Click me', disabled: false, variant: 'contained' }}
+  >
+    {({ children, ...args }) => (
+      <Button endIcon={Icon} {...args}>
+        {children}
+      </Button>
+    )}
+  </Story>
 </Canvas>
 
 ## Playground
+
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{ text: 'Click me', disabled: false, variant: 'contained' }}>
-       { Template.bind({}) }
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{ children: 'Click me', disabled: false, variant: 'contained' }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-
-

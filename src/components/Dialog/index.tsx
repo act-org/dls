@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import React from 'react';
+import * as React from 'react';
 import { CloseCircle } from '~/icons';
 import {
   Dialog as MuiDialog,

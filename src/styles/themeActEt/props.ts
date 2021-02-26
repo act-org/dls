@@ -10,8 +10,11 @@
 const PROPS = {
   MuiAlert: {
     closeText: 'Close',
-    severity: 'info',
-    variant: 'standard',
+    severity: 'info' as any,
+    variant: 'standard' as any,
+  },
+  MuiButtoon: {
+    variant: 'outlined' as any,
   },
 };
 

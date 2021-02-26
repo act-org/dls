@@ -6,22 +6,26 @@
  *
  * @prettier
  */
-/*
-import * as React from 'react';
-import {
-  Button as MuiButton,
-  ButtonProps as MuiButtonProps,
-} from '@material-ui/core';
 
-export type ButtonProps = MuiButtonProps;
-*/
+import * as React from 'react';
+import { Button as MiuButton, ButtonProps } from '@material-ui/core';
+
+export type { ButtonProps };
+
 /**
  * # Button
- * This is the main Button component.  It has several variations and options for the display
+ *
+ * The Button component is used to create a clickable action on the screen.
+ * Our implementation is based on the
+ * [Button](https://material-ui.com/components/buttons) component from
+ * Material UI.
+ *
  * @param ButtonProps
  */
-import { Button, ButtonProps } from '@material-ui/core';
+export const Button: React.FC<ButtonProps> = (
+  props: ButtonProps,
+): React.ReactElement<ButtonProps> => {
+  return <MiuButton {...props} />;
+};
 
-export { Button };
-export type { ButtonProps };
 export default Button;

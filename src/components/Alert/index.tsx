@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import React from 'react';
+import * as React from 'react';
 import {
   Alert as MiuAlert,
   AlertProps as MuiAlertProps,
@@ -26,13 +26,13 @@ export type AlertProps = MuiAlertProps & {
  * [Alert](https://material-ui.com/components/alert/#alert) component from
  * Material UI.
  *
- * @param alertProps
+ * @param AlertProps
  */
-export function Alert({
+export const Alert: React.FC<AlertProps> = ({
   children,
   title,
   ...alertProps
-}: AlertProps): React.ReactElement<AlertProps> {
+}: AlertProps): React.ReactElement<AlertProps> => {
   return (
     <MiuAlert {...alertProps}>
       {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
@@ -40,6 +40,6 @@ export function Alert({
       {children}
     </MiuAlert>
   );
-}
+};
 
 export default Alert;

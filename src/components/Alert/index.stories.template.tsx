@@ -14,12 +14,8 @@ import { PlayGround } from '~/helpers/argBlocks';
 
 import { Alert, AlertProps } from '.';
 
-interface DocProps extends AlertProps {
-  children: string;
-}
-
-export const Template: Story<DocProps> = (docProps: DocProps) => (
-  <Alert {...docProps} />
+export const Template: Story<AlertProps> = (props: AlertProps) => (
+  <Alert {...props} />
 );
 
 export const argTypes = PlayGround(

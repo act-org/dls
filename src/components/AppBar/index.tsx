@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import React from 'react';
+import * as React from 'react';
 import {
   AppBar as MuiAppBar,
   AppBarProps as MuiAppBarProps,

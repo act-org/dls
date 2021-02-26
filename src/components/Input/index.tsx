@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import React from 'react';
+import * as React from 'react';
 import { OutlinedInput, OutlinedInputProps } from '@material-ui/core';
 
 /**

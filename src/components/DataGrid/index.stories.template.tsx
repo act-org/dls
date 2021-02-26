@@ -8,7 +8,7 @@
  */
 
 import { Story } from '@storybook/react/types-6-0';
-import React from 'react';
+import * as React from 'react';
 import { DataGrid, DataGridProps, ColDef } from '.';
 import { PlayGround } from '../../helpers/argBlocks';
 

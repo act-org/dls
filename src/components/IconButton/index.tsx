@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import React from 'react';
+import * as React from 'react';
 import {
   IconButton as MuiIconButton,
   IconButtonProps as MuiIconButtonProps,
