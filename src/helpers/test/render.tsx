@@ -10,15 +10,18 @@
 import * as React from 'react';
 import { render as originalRender } from '@testing-library/react';
 
-import ThemeProviderPrimary from '~/components/ThemeProviderPrimary';
+import ThemeProvider from '~/components/ThemeProvider';
 
-const Wrapper = ({
-  children,
-}: {
-  children: React.ReactElement<any>;
-}): React.ReactNode => <ThemeProviderPrimary>{children}</ThemeProviderPrimary>;
-
-const render = (Component: React.ReactNode): any =>
-  originalRender(Component, { wrapper: Wrapper });
+const render = (Component: React.ReactNode, theme?: 'ACT' | 'ACT_ET'): any =>
+  originalRender(Component, {
+    // eslint-disable-next-line react/display-name
+    wrapper: ({
+      children,
+    }: {
+      children: React.ReactElement<any>;
+    }): React.ReactNode => (
+      <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
+    ),
+  });
 
 export default render;
