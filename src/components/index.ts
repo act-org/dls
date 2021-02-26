@@ -13,6 +13,7 @@
 export * from './Alert';
 export * from './AppBar';
 export * from './Button';
+export * from './Checkbox';
 export * from './Container';
 export * from './DataGrid';
 export * from './Dialog';
@@ -30,6 +31,7 @@ export * from './Input';
 export * from './InputLabel';
 export * from './Link';
 export * from './Loading';
+export * from './Radio';
 export * from './SearchBar';
 export * from './Select';
 export * from './Switch';
