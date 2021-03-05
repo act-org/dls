@@ -13,7 +13,6 @@ export * from './Alert';
 export * from './AppBar';
 export * from './Button';
 export * from './Checkbox';
-export * from './Container';
 export * from './DataGrid';
 export * from './Dialog';
 export * from './DialogTitle';
