@@ -53,6 +53,7 @@
     "husky": "4.3.6",
     "jest": "26.6.3",
     "lint-staged": "10.5.3",
+    "np": "7.4.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
     "react-docgen-typescript-loader": "3.7.2",
@@ -88,12 +89,15 @@
     "*.{ts,tsx}": "npm run test:lint:ts",
     "*.md": "npm run test:lint:md"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "name": "act-dls",
   "peerDependencies": {
     "@material-ui/core": "4.x",
     "react": "16.x || 17.x",
     "react-dom": "16.x || 17.x"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -110,6 +114,7 @@
     "build:types": "ts-node bin/buildTypes.mjs --experimental-modules",
     "build:declarations": "tsc --project tsconfig.build.json",
     "build-storybook": "build-storybook",
+    "release": "np",
     "start": "start-storybook",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
@@ -118,5 +123,5 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "3.0.0"
+  "version": "3.0.1"
 }

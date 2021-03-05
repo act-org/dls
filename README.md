@@ -28,7 +28,7 @@ To install the DLS, add the following to your `package.json` file:
 ```
 
 Be sure to replace `vX.X.X` with the
-[specific tag](https://bitbucket.org/actet/act-dls/commits/) of the DLS that
+[specific tag](https://bitbucket.org/actet/@actinc/dls/commits/) of the DLS that
 you would like to install (e.g. `v2.0.2`). Then install these packages into your
 project by running:
 
@@ -46,7 +46,7 @@ from the DLS.
 ```jsx
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 // or
-import { ThemeProviderPrimary } from 'act-dls/lib/components';
+import { ThemeProviderPrimary } from '@actinc/dls/components';
 
 ...
 
@@ -147,7 +147,7 @@ You can search for a specific icon to use on
 the perfect icon, you can use it in your project like so:
 
 ```jsx
-import { PollBox } from 'act-dls/lib/icons';
+import { PollBox } from '@actinc/dls/icons';
 
 ...
 
@@ -187,28 +187,28 @@ module.exports = {
           preventFullImport: true,
           transform: '@material-ui/core/colors/${member}',
         },
-        'act-dls/lib/components': {
-          transform: 'act-dls/lib/components/${member}',
+        '@actinc/dls/components': {
+          transform: '@actinc/dls/components/${member}',
           preventFullImport: true,
         },
-        'act-dls/lib/constants': {
-          transform: 'act-dls/lib/constants/${member}',
+        '@actinc/dls/constants': {
+          transform: '@actinc/dls/constants/${member}',
           preventFullImport: true,
         },
-        'act-dls/lib/helpers': {
-          transform: 'act-dls/lib/helpers/${member}',
+        '@actinc/dls/helpers': {
+          transform: '@actinc/dls/helpers/${member}',
           preventFullImport: true,
         },
-        'act-dls/lib/icons': {
-          transform: 'act-dls/lib/icons/${member}',
+        '@actinc/dls/icons': {
+          transform: '@actinc/dls/icons/${member}',
           preventFullImport: true,
         },
-        'act-dls/lib/styles': {
-          transform: 'act-dls/lib/styles/${member}',
+        '@actinc/dls/styles': {
+          transform: '@actinc/dls/styles/${member}',
           preventFullImport: true,
         },
-        'act-dls/lib/types': {
-          transform: 'act-dls/lib/types/${member}',
+        '@actinc/dls/types': {
+          transform: '@actinc/dls/types/${member}',
           preventFullImport: true,
         },
       },
@@ -226,17 +226,17 @@ constants, helpers, icons, styles, and types that you need:
 
 ```jsx
 // components
-import { ButtonPrimary } from 'act-dls/lib/components';
+import { ButtonPrimary } from '@actinc/dls/components';
 // constants
-import { typography as TYPOGRAPHY } from 'act-dls/lib/constants';
+import { typography as TYPOGRAPHY } from '@actinc/dls/constants';
 // helpers
-import { search } from 'act-dls/lib/helpers';
+import { search } from '@actinc/dls/helpers';
 // icons
-import { ChevronDown } from 'act-dls/lib/icons';
+import { ChevronDown } from '@actinc/dls/icons';
 // styles
-import { theme } from 'act-dls/lib/styles';
+import { theme } from '@actinc/dls/styles';
 // types
-import { SortObject } from 'act-dls/lib/types';
+import { SortObject } from '@actinc/dls/types';
 ```
 
 ### Configure Pipelines
@@ -265,3 +265,4 @@ Here are some of the more important ones:
 | npm run build-storybook | Create a static website for deployment (`./storybook-static`).        |
 | npm start               | Start the [Storybook](https://storybook.js.org) component visualizer. |
 | npm test                | Run all tests.                                                        |
+| npm run release         | Publish a new release of the DLS.                                     |

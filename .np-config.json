@@ -1,0 +1,11 @@
+{
+  "anyBranch": false,
+  "branch": "master",
+  "cleanup": true,
+  "contents": "lib",
+  "message": "chore: Bump to v%s",
+  "publish": true,
+  "tag": "latest",
+  "tests": true,
+  "yarn": false
+}
