@@ -8,32 +8,29 @@
  */
 
 import * as React from 'react';
-import {
-  DataGrid as MuiDataGrid,
-  DataGridProps as MuiDataGridProps,
-} from '@material-ui/data-grid';
+import { DataGrid as MuiDataGrid, DataGridProps } from '@material-ui/data-grid';
 
-export type DataGridProps = MuiDataGridProps;
 export type {
+  DataGridProps,
+  GridColDef,
   ValueGetterParams,
   ValueFormatterParams,
 } from '@material-ui/data-grid';
 
 /**
- * # DataGrid
+ * # Data Grid
  *
- * This is the core component for grids.  It wraps the Material UI DataGrid lab grid.
+ * The Data Grid component is a fast and extendable data table and data grid for
+ * React. Our implementation is based on the
+ * <a href="https://material-ui.com/components/data-grid" target="_blank">Data Grid</a>
+ * &nbsp;component from Material UI.
  *
- * This grid is currently being developed by the MUI team, so additional features will appear over time.
- * The story book version of this component is fairly well documented, but for a more complete view
- * of what's capable with this component see the [MaterialUI DataGrid Documentation](https://material-ui.com/components/data-grid/)
- *
- * @param dataGridProps
+ * @param props
  */
 export function DataGrid(
-  dataGridProps: DataGridProps,
+  props: DataGridProps,
 ): React.ReactElement<DataGridProps> {
-  return <MuiDataGrid {...dataGridProps} />;
+  return <MuiDataGrid {...props} />;
 }
 
 export default DataGrid;

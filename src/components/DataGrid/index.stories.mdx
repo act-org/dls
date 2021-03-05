@@ -1,30 +1,28 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import { DataGrid, ColDef } from '.';
-import { Template, argTypes, columns, rows } from './index.stories.template';
+<!-- @prettier -->
 
-<Meta title='Organisms/DataGrid' component={DataGrid} argTypes={argTypes} parameters={{
-    layout: 'fullscreen'
-}} />
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { DataGrid } from '.';
+
+<Meta argTypes={argTypes} component={DataGrid} title="Organisms/DataGrid" />
 
 <Description of={DataGrid} />
-
-## Primary
-
-<Canvas>
-    <Story name='Primary' args={{
-    }}>
-       {Template.bind({})}
-    </Story>
-</Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language='jsx' story='Playground' />
-    <Story name='Playground' args={{
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story='Playground' />
+  <Source language="jsx" story="Playground" />
+  <Story args={{}} name="Playground">
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-

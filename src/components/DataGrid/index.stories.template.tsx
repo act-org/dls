@@ -7,10 +7,111 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
 import * as React from 'react';
-import { DataGrid, DataGridProps, ColDef } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Story } from '@storybook/react/types-6-0';
+
+import { PlayGround } from '~/helpers/argBlocks';
+
+import { DataGrid, DataGridProps } from '.';
+
+export const Template: Story<DataGridProps> = (props: DataGridProps) => (
+  <div style={{ height: 400, width: '100%' }}>
+    <DataGrid
+      columns={[
+        {
+          field: 'id',
+          headerName: 'ID',
+          width: 150,
+        },
+        {
+          field: 'firstName',
+          headerName: 'First name',
+          width: 200,
+        },
+        {
+          field: 'lastName',
+          headerName: 'Last name',
+          width: 200,
+        },
+        {
+          field: 'age',
+          headerName: 'Age',
+          type: 'number',
+          width: 150,
+        },
+        {
+          description: 'This column has a value getter and is not sortable.',
+          field: 'fullName',
+          headerName: 'Full name',
+          sortable: false,
+          valueGetter: (params: ValueGetterParams): string =>
+            `${params.getValue('firstName') || ''} ${
+              params.getValue('lastName') || ''
+            }`,
+          width: 200,
+        },
+      ]}
+      pageSize={5}
+      rows={[
+        {
+          age: 35,
+          firstName: 'Jon',
+          id: 1,
+          lastName: 'Snow',
+        },
+        {
+          age: 42,
+          firstName: 'Cersei',
+          id: 2,
+          lastName: 'Lannister',
+        },
+        {
+          age: 45,
+          firstName: 'Jaime',
+          id: 3,
+          lastName: 'Lannister',
+        },
+        {
+          age: 16,
+          firstName: 'Arya',
+          id: 4,
+          lastName: 'Stark',
+        },
+        {
+          age: null,
+          firstName: 'Daenerys',
+          id: 5,
+          lastName: 'Targaryen',
+        },
+        {
+          age: 150,
+          firstName: null,
+          id: 6,
+          lastName: 'Melisandre',
+        },
+        {
+          age: 44,
+          firstName: 'Ferrara',
+          id: 7,
+          lastName: 'Clifford',
+        },
+        {
+          age: 36,
+          firstName: 'Rossini',
+          id: 8,
+          lastName: 'Frances',
+        },
+        {
+          age: 65,
+          firstName: 'Harvey',
+          id: 9,
+          lastName: 'Roxie',
+        },
+      ]}
+      {...props}
+    />
+  </div>
+);
 
 export const argTypes = PlayGround(
   {
@@ -47,47 +148,4 @@ export const argTypes = PlayGround(
     sortingOrder: {},
   },
   DataGrid,
-);
-export const columns: ColDef[] = [
-  { field: 'id', headerName: 'ID', flex: 0.5 },
-  { field: 'firstName', headerName: 'First name', flex: 1 },
-  { field: 'lastName', headerName: 'Last name', flex: 1 },
-  {
-    field: 'age',
-    headerName: 'Age',
-    type: 'number',
-    width: 100,
-    flex: 0.5,
-  },
-  {
-    field: 'fullName',
-    headerName: 'Full name',
-    description: 'This column has a value getter and is not sortable.',
-    sortable: false,
-    flex: 2,
-    valueGetter: params =>
-      `${params.getValue('firstName') || ''} ${
-        params.getValue('lastName') || ''
-      }`,
-  },
-];
-
-export const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-];
-
-export const Template: Story<DataGridProps> = args => (
-  <div style={{ display: 'flex', height: '100%', minHeight: '500px' }}>
-    <div style={{ flexGrow: 1 }}>
-      <DataGrid columns={columns} rows={rows} {...args} />
-    </div>
-  </div>
 );
