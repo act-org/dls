@@ -110,6 +110,7 @@
     "build:constants": "NODE_ENV=production babel src/constants --extensions \".ts,.tsx\" --out-dir lib/constants",
     "build:helpers": "NODE_ENV=production babel src/helpers --extensions \".ts,.tsx\" --out-dir lib/helpers",
     "build:icons": "ts-node bin/buildIcons.mjs --experimental-modules",
+    "build:package": "cp -rf package.json lib",
     "build:styles": "NODE_ENV=production babel src/styles --extensions \".ts,.tsx\" --out-dir lib/styles",
     "build:types": "ts-node bin/buildTypes.mjs --experimental-modules",
     "build:declarations": "tsc --project tsconfig.build.json",
