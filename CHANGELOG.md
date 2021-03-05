@@ -2,6 +2,12 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v3.1.0] - March 05, 2021
+
+* This package is now open source! Available on NPM at `@actinc/dls`
+* Check the `README.md` file for slightly modified installation and usage
+instructions
+
 ## [v3.0.0] - January 06, 2021
 
 This release improves the ability for developers to extend / override DLS
