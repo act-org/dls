@@ -2,7 +2,7 @@
   "author": "ACT ET",
   "bugs": {
     "email": "jon.cursi@act-et.org",
-    "url": "https://bitbucket.org/actet/act-dls/issues"
+    "url": "https://github.com/act-org/dls/issues"
   },
   "contributors": [
     "Jon Cursi <jon.cursi@act-et.org>"
@@ -71,7 +71,7 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "homepage": "https://bitbucket.org/actet/act-dls/#README",
+  "homepage": "https://github.com/act-org/dls/#README",
   "keywords": [
     "design language system",
     "dls",
@@ -101,7 +101,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/actet/act-dls.git"
+    "url": "git+https://github.com/act-org/dls.git"
   },
   "scripts": {
     "build": "npm-run-all build:*",
@@ -123,5 +123,5 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "3.0.1"
+  "version": "3.0.0"
 }
