@@ -21,6 +21,7 @@
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
+    "@actinc/eslint-config": "3.2.0",
     "@babel/cli": "7.13.0",
     "@babel/core": "7.13.1",
     "@babel/preset-env": "7.13.5",
@@ -44,7 +45,6 @@
     "babel-loader": "8.2.2",
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-transform-imports": "2.0.0",
-    "eslint-config": "bitbucket:actet/eslint-config#v3.1.0",
     "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
     "eslint-import-resolver-typescript": "2.4.0",
     "husky": "4.3.6",
@@ -110,7 +110,7 @@
     "start": "start-storybook -p 6006 --no-manager-cache",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
-    "test:lint:md": "markdownlint README.md --config node_modules/eslint-config/markdownlint.config.json",
+    "test:lint:md": "markdownlint README.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"

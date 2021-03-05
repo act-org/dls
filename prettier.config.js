@@ -7,4 +7,4 @@
  * @prettier
  */
 
-module.exports = require('eslint-config/prettier.config');
+module.exports = require('@actinc/eslint-config/prettier.config');

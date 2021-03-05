@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  extends: ['./node_modules/eslint-config'],
+  extends: ['@actinc/eslint-config'],
   overrides: [
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],

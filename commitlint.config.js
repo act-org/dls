@@ -7,4 +7,4 @@
  * @prettier
  */
 
-module.exports = require('eslint-config/commitlint.config');
+module.exports = require('@actinc/eslint-config/commitlint.config');

@@ -24,7 +24,7 @@
     "**/test/*",
     "**/icons/*"
   ],
-  "extends": "./node_modules/eslint-config/tsconfig.json",
+  "extends": "./node_modules/@actinc/eslint-config/tsconfig.json",
   "include": [
     "./src/**/*"
   ]
