@@ -1,28 +1,65 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import { AppBar, AppBarProps } from '.';
-import { Template, argTypes } from './index.stories.template';
+<!-- @prettier -->
 
-<Meta title="Atoms/AppBar" component={AppBar} argTypes={argTypes} parameters={{}} />
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { AppBar } from '.';
+import { argTypes, Template } from './index.stories.template';
+
+<Meta argTypes={argTypes} component={AppBar} title="Atoms/AppBar" />
 
 <Description of={AppBar} />
 
-## Primary
+## Color: Primary
 
 <Canvas>
-    <Story name="Primary" args={{
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    args={{
+      color: 'primary',
+    }}
+    name="Color: Primary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Color: Secondary
+
+<Canvas>
+  <Story
+    args={{
+      color: 'secondary',
+    }}
+    name="Color: Secondary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Color: Transparent
+
+<Canvas>
+  <Story
+    args={{
+      color: 'transparent',
+    }}
+    name="Color: Transparent"
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground">{Template.bind({})}</Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-

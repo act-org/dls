@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBar ACT theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  />
+</div>
+`;
+
+exports[`AppBar ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  />
+</div>
+`;

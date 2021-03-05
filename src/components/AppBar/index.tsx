@@ -16,10 +16,14 @@ import {
 export type AppBarProps = MuiAppBarProps;
 
 /**
- * # AppBar Atom
+ * # App Bar
  *
- * This components creates a top level header for an application navigation
- * @param appBarProps
+ * The App Bar component is used to create a top-level header for application
+ * navigation. Our implementation is based on the
+ * <a href="https://material-ui.com/components/app-bar" target="_blank">App Bar</a>
+ * &nbsp;component from Material UI.
+ *
+ * @param AppBarProps
  */
 export function AppBar(
   appBarProps: AppBarProps,

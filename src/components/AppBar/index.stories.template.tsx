@@ -8,25 +8,30 @@
  */
 
 import * as React from 'react';
-import { AppBar, AppBarProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
-import { IconButton, Toolbar } from '@material-ui/core';
-import { Typography } from '../Typography';
-import MenuIcon from '../../icons/Menu';
+
+import { IconButton } from '~/components/IconButton';
+import { Menu } from '~/icons';
+import { PlayGround } from '~/helpers/argBlocks';
+import { Toolbar } from '~/components/Toolbar';
+import { Typography } from '~/components/Typography';
+
+import { AppBar, AppBarProps } from '.';
 
 export const Template: Story<AppBarProps> = args => (
-  <AppBar {...args}>
+  <AppBar position="static" {...args}>
     <Toolbar>
       <IconButton aria-label="menu" color="inherit" edge="start">
-        <MenuIcon />
+        <Menu />
       </IconButton>
-      <Typography color="inherit" variant="h6">
-        Photos
+
+      <Typography style={{ marginLeft: 8 }} variant="h6">
+        Title
       </Typography>
     </Toolbar>
   </AppBar>
 );
+
 export const argTypes = PlayGround(
   {
     color: {},
