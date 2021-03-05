@@ -9,18 +9,14 @@
 
 import * as React from 'react';
 
-import render from '~/helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { AppBar } from '.';
 
 describe('AppBar', () => {
-  it('ACT theme matches the snapshot', () => {
-    const { container } = render(<AppBar color="primary" />, 'ACT');
-    expect(container).toMatchSnapshot();
-  });
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
+    const { container } = render(<AppBar color="primary" />, theme);
 
-  it('ACT_ET theme matches the snapshot', () => {
-    const { container } = render(<AppBar color="primary" />, 'ACT_ET');
     expect(container).toMatchSnapshot();
   });
 });

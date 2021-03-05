@@ -12,7 +12,10 @@ import { render as originalRender } from '@testing-library/react';
 
 import ThemeProvider from '~/components/ThemeProvider';
 
-const render = (Component: React.ReactNode, theme?: 'ACT' | 'ACT_ET'): any =>
+const render = (
+  Component: React.ReactNode,
+  theme?: 'ACT' | 'ACT_ET' | string,
+): any =>
   originalRender(Component, {
     // eslint-disable-next-line react/display-name
     wrapper: ({

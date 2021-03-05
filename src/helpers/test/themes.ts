@@ -7,5 +7,6 @@
  * @prettier
  */
 
-export { default as render } from './render';
-export { default as THEMES } from './themes';
+const THEMES = [['ACT'], ['ACT_ET']];
+
+export default THEMES;

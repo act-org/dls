@@ -112,9 +112,9 @@
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint README.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
-    "test:lint:ts": "eslint ./src/components/Container --ext .ts,.tsx --fix --quiet",
+    "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest ./src/components/Container --maxWorkers=2 --silent"
+    "test:unit": "jest . --maxWorkers=2 --verbose"
   },
   "types": "dist/index.d.ts",
   "version": "4.0.0-rc.1"

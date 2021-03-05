@@ -5,7 +5,7 @@ exports[`Container ACT theme matches the snapshot 1`] = `
   <div
     class="MuiContainer-root MuiContainer-maxWidthLg"
   >
-    Hey
+    children
   </div>
 </div>
 `;
@@ -15,7 +15,7 @@ exports[`Container ACT_ET theme matches the snapshot 1`] = `
   <div
     class="MuiContainer-root MuiContainer-maxWidthLg"
   >
-    Hey
+    children
   </div>
 </div>
 `;
