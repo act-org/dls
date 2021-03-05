@@ -90,7 +90,7 @@
     "*.md": "npm run test:lint:md"
   },
   "main": "index.js",
-  "name": "act-dls",
+  "name": "@actinc/dls",
   "peerDependencies": {
     "@material-ui/core": "4.x",
     "react": "16.x || 17.x",
@@ -124,5 +124,5 @@
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
-  "version": "3.1.0"
+  "version": "3.0.0"
 }
