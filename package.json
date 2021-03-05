@@ -115,7 +115,7 @@
     "build:types": "ts-node bin/buildTypes.mjs --experimental-modules",
     "build:declarations": "tsc --project tsconfig.build.json",
     "build-storybook": "build-storybook",
-    "publish": "npm run build",
+    "prepublish": "npm run build",
     "release": "np",
     "start": "start-storybook",
     "test": "npm-run-all test:**",
