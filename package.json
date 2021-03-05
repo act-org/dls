@@ -45,6 +45,7 @@
     "babel-loader": "8.2.2",
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-transform-imports": "2.0.0",
+    "cross-env": "7.0.3",
     "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
     "eslint-import-resolver-typescript": "2.4.0",
     "husky": "4.3.6",
@@ -100,7 +101,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
-    "build:components": "NODE_ENV=production babel src --extensions \".ts,.tsx\" --out-dir dist --config-file ./.babelrc.build.js",
+    "build:components": "cross-env NODE_ENV=production babel src --extensions \".ts,.tsx\" --out-dir dist --config-file ./.babelrc.build.js",
     "build:icons": "bin/buildIcons",
     "build:types": "bin/buildTypes",
     "build:declarations": "tsc --project tsconfig.build.json",
