@@ -20,7 +20,7 @@ export type { CheckboxProps };
  * <a href="https://material-ui.com/components/checkboxes" target="_blank">Checkbox</a>
  * &nbsp;component from Material UI.
  *
- * @param CheckboxProps
+ * @param props
  */
 export const Checkbox: React.FC<CheckboxProps> = (
   props: CheckboxProps,

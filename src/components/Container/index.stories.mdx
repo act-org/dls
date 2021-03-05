@@ -1,28 +1,35 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import { Container } from '.';
-import { Template, argTypes } from './index.stories.template';
+<!-- @prettier -->
 
-<Meta title="Atoms/Container" component={Container} argTypes={argTypes} parameters={{}} />
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { Container } from '.';
+
+<Meta argTypes={argTypes} component={Container} title="Atoms/Container" />
 
 <Description of={Container} />
-
-## Primary
-
-<Canvas>
-    <Story name="Primary" args={{
-    }}>
-       {Template.bind({})}
-    </Story>
-</Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story inline={false} name="Playground" args={{
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story
+    args={{
+      disableGutters: false,
+      maxWidth: 'sm',
+    }}
+    inline={false}
+    name="Playground"
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-

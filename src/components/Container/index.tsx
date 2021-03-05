@@ -8,20 +8,22 @@
  */
 
 import * as React from 'react';
-import {
-  Container as MuiContainer,
-  ContainerProps as MuiContainerProps,
-} from '@material-ui/core';
+import { Container as MuiContainer, ContainerProps } from '@material-ui/core';
 
-export type ContainerProps = MuiContainerProps;
+export type { ContainerProps };
 
 /**
  * # Container
  *
- * @param containerProps
+ * The Container component is used to center your content horizontally. It's the
+ * most basic layout element. Our implementation is based on the
+ * <a href="https://material-ui.com/components/container" target="_blank">Container</a>
+ * &nbsp;component from Material UI.
+ *
+ * @param props
  */
 export function Container(
-  containerProps: ContainerProps,
+  props: ContainerProps,
 ): React.ReactElement<ContainerProps> {
-  return <MuiContainer {...containerProps} />;
+  return <MuiContainer {...props} />;
 }

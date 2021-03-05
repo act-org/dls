@@ -26,15 +26,15 @@ export type AlertProps = MuiAlertProps & {
  * <a href="https://material-ui.com/components/alert" target="_blank">Alert</a>
  * &nbsp;component from Material UI.
  *
- * @param AlertProps
+ * @param props
  */
 export const Alert: React.FC<AlertProps> = ({
   children,
   title,
-  ...alertProps
+  ...props
 }: AlertProps): React.ReactElement<AlertProps> => {
   return (
-    <MiuAlert {...alertProps}>
+    <MiuAlert {...props}>
       {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
 
       {children}

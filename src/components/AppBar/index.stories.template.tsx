@@ -18,8 +18,8 @@ import { Typography } from '~/components/Typography';
 
 import { AppBar, AppBarProps } from '.';
 
-export const Template: Story<AppBarProps> = args => (
-  <AppBar position="static" {...args}>
+export const Template: Story<AppBarProps> = (props: AppBarProps) => (
+  <AppBar position="static" {...props}>
     <Toolbar>
       <IconButton aria-label="menu" color="inherit" edge="start">
         <Menu />

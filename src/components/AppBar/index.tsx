@@ -8,12 +8,9 @@
  */
 
 import * as React from 'react';
-import {
-  AppBar as MuiAppBar,
-  AppBarProps as MuiAppBarProps,
-} from '@material-ui/core';
+import { AppBar as MuiAppBar, AppBarProps } from '@material-ui/core';
 
-export type AppBarProps = MuiAppBarProps;
+export type { AppBarProps };
 
 /**
  * # App Bar
@@ -23,12 +20,10 @@ export type AppBarProps = MuiAppBarProps;
  * <a href="https://material-ui.com/components/app-bar" target="_blank">App Bar</a>
  * &nbsp;component from Material UI.
  *
- * @param AppBarProps
+ * @param props
  */
-export function AppBar(
-  appBarProps: AppBarProps,
-): React.ReactElement<AppBarProps> {
-  return <MuiAppBar {...appBarProps} />;
+export function AppBar(props: AppBarProps): React.ReactElement<AppBarProps> {
+  return <MuiAppBar {...props} />;
 }
 
 export default AppBar;

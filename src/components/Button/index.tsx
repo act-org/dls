@@ -20,7 +20,7 @@ export type { ButtonProps };
  * <a href="https://material-ui.com/components/buttons" target="_blank">Button</a>
  * &nbsp;component from Material UI.
  *
- * @param ButtonProps
+ * @param props
  */
 export const Button: React.FC<ButtonProps> = (
   props: ButtonProps,
