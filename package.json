@@ -85,7 +85,7 @@
     "*.md": "npm run test:lint:md"
   },
   "main": "dist/index.js",
-  "name": "@act/dls",
+  "name": "@actinc/dls",
   "peerDependencies": {
     "@material-ui/core": "4.x",
     "@material-ui/data-grid": "4.x",
