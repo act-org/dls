@@ -1,8 +1,12 @@
-## deploy sattic content
+## Deploy Static Storybook
 
-\$ ./deploy-static.sh
+```
+sh ./deploy-static.sh
+```
 
-## Terraform scripts
+## Terraform Scripts
 
+```
 terraform init
 terraform apply -var-file="dev.tfvars" 
+```
