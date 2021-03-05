@@ -7,9 +7,8 @@
  * @prettier
  */
 
-/**
- * Main exports
- */
+// ACTIVE COMPONENTS -----------------------------------------------------------
+
 export * from './Alert';
 export * from './AppBar';
 export * from './Button';
@@ -39,22 +38,21 @@ export * from './Switch';
 export * from './ThemeProvider';
 export * from './Toolbar';
 export * from './Typography';
-/**
- * Should we re-export using the old names for 1-2 versions?
- */
-export { Loading as LoadingPrimary } from './Loading';
 
-/**
- * Yet to be converted / migrated
- */
-export { default as DataTablePrimary } from './DataTablePrimary';
-export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
+// WIP COMPONENTS --------------------------------------------------------------
 
 export { default as FormInputGroupsPrimary } from './FormInputGroupsPrimary';
 export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrimary';
 
+export { Loading as LoadingPrimary } from './Loading';
+
 export { default as RenderMetaTagsBase } from './RenderMetaTagsBase';
 export type { Props as RenderMetaTagsBaseProps } from './RenderMetaTagsBase';
+
+// DEPRECATED COMPONENTS -------------------------------------------------------
+
+export { default as DataTablePrimary } from './DataTablePrimary';
+export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
 
 export { default as TableCellBody } from './TableCellBody';
 export type { Props as TableCellBodyProps } from './TableCellBody';
