@@ -6,34 +6,12 @@ DLS for ACT front-end projects.
 
 ### Installation
 
-In order to use the DLS, you must also install
+In order to use the DLS, you must install it along with
 [Material UI](https://material-ui.com/) version `4.x` and
 [React](https://reactjs.org/) version `16.x` or `17.x`.
 
-To install the DLS, add the following to your `package.json` file:
-
 ```shell
-{
-  ...
-  "dependencies": {
-    ...
-    "@material-ui/core": "^4.11.0", // any 4.x version
-    "act-dls": "git+ssh://bitbucket.org/actet/act-dls.git#vX.X.X", // choose a specific X.X.X version
-    "react": "^17.0.1",  // any 16.x or 17.x version
-    "react-dom": "^17.0.1", // any 16.x or 17.x version
-    ...
-  }
-  ...
-}
-```
-
-Be sure to replace `vX.X.X` with the
-[specific tag](https://bitbucket.org/actet/@actinc/dls/commits/) of the DLS that
-you would like to install (e.g. `v2.0.2`). Then install these packages into your
-project by running:
-
-```shell
-npm install
+npm install --save-dev @actinc/dls @material-ui/core@4 react@17 react-dom@17
 ```
 
 ### Theme
@@ -238,13 +216,6 @@ import { theme } from '@actinc/dls/styles';
 // types
 import { SortObject } from '@actinc/dls/types';
 ```
-
-### Configure Pipelines
-
-If your project is using Bitbucket Pipelines, you'll need to add an SSH Key
-to your pipeline as well as a new Access Key to this repository. The combination
-of these two things will enable your pipelines to successfully `npm install`
-this dependency.
 
 ## Local Development
 
