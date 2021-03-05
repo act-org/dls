@@ -1,7 +1,7 @@
 {
   "anyBranch": false,
   "branch": "master",
-  "cleanup": true,
+  "cleanup": false,
   "contents": "lib",
   "message": "chore: Bump to v%s",
   "publish": true,
