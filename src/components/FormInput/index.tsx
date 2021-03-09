@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { Tooltip, FormControl, FormControlProps } from '@material-ui/core';
-import AlertOutline from '~/icons/AlertOutline';
+import { AlertOutline } from '~/icons';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 import { Input, InputProps } from '~/components/Input';
 

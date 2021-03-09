@@ -11,8 +11,7 @@ import * as React from 'react';
 import clsx from 'clsx';
 import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
 
-import ChevronDown from '~/icons/ChevronDown';
-import ChevronUp from '~/icons/ChevronUp';
+import { ChevronDown, ChevronUp } from '~/icons';
 import COLORS from '~/constants/colors';
 import mergeClasses from '~/helpers/mergeClasses';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';

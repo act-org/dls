@@ -14,7 +14,7 @@ import {
   FormControlProps,
   Tooltip,
 } from '@material-ui/core';
-import AlertOutline from '~/icons/AlertOutline';
+import { AlertOutline } from '~/icons';
 import { InputLabel, InputLabelProps } from '../InputLabel';
 import { Select, SelectProps } from '../Select';
 

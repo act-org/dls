@@ -15,7 +15,7 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { mergeClasses } from '~/helpers';
-import HelpCircleOutline from '~/icons/HelpCircleOutline';
+import { HelpCircleOutline } from '~/icons';
 
 /**
  * These are the options available for an Input Label

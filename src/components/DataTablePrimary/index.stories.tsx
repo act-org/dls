@@ -10,7 +10,7 @@
 import * as React from 'react';
 import moment from 'moment';
 
-import PackageVariant from '~/icons/PackageVariant';
+import { PackageVariant } from '~/icons';
 import sort from '~/helpers/sort';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';

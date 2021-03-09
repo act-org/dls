@@ -13,12 +13,12 @@ import { PlayGround } from '../../helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
 import { IconButton } from '@material-ui/core';
 import { Typography } from '../Typography';
-import MenuIcon from '../../icons/Menu';
+import { Menu } from '../../icons';
 
 export const Template: Story<ToolbarProps> = args => (
   <Toolbar {...args}>
     <IconButton aria-label="menu" color="inherit" edge="start">
-      <MenuIcon />
+      <Menu />
     </IconButton>
     <Typography color="inherit" variant="h6">
       Photos
