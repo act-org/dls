@@ -7,11 +7,8 @@
  * @prettier
  */
 
-export type Size = 'default' | 'large';
-
-export type SortDirection = 'ASCENDING' | 'DESCENDING';
-
-export type SortObject = {
-  sortBy: string;
-  sortDirection: SortDirection;
+const shape = {
+  borderRadius: 2,
 };
+
+export default shape;

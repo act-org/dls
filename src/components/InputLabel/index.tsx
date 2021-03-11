@@ -11,8 +11,8 @@ import * as React from 'react';
 import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
-  Tooltip,
 } from '@material-ui/core';
+import { Tooltip } from '~/components/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
 import { mergeClasses } from '~/helpers';
 import { HelpCircleOutline } from '~/icons';

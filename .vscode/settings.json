@@ -1,5 +1,9 @@
 {
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "git.ignoreLimitWarning": true
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "git.ignoreLimitWarning": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }

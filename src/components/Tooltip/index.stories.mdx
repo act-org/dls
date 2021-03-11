@@ -1,0 +1,34 @@
+import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+import { Tooltip } from '.';
+import { Template, argTypes } from './index.stories.template';
+
+<Meta title="Atoms/Tooltip" component={Tooltip} argTypes={argTypes} parameters={{}} />
+
+<Description of={Tooltip} />
+
+## Primary
+
+<Canvas>
+    <Story name="Primary" args={{
+        arrow: true,
+        title: "tooltip text goes here",
+        placement: "right"
+    }}>
+       {Template.bind({})}
+    </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+    <Source language="jsx" story="Playground" />
+    <Story name="Playground" args={{
+        arrow: true,
+        title: "tooltip text goes here",
+        placement: "right"
+    }}>
+       {Template.bind({})}
+    </Story>
+    <ArgsTable story="Playground" />
+</Canvas>
+
