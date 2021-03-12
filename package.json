@@ -121,13 +121,12 @@
     "publish-storybook": "npm run build-storybook && storybook-to-ghpages -e ./storybook-static/www",
     "release": "npm run build && np",
     "start": "start-storybook -p 6006 --no-manager-cache",
-    "test": "echo \"No test specified\"",
-    "test:fixme": "npm-run-all test:**",
+    "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint README.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint ./src/components/DataGrid --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest ./src/components/DataGrid --maxWorkers=2 --verbose"
+    "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
   "version": "4.0.0-2"

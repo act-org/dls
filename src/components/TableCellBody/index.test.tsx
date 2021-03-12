@@ -15,7 +15,12 @@ import TableCellBody from '.';
 
 describe('TableCellBody', () => {
   it('matches the snapshot', () => {
-    const { container } = render(<TableCellBody>TableCell</TableCellBody>);
+    const tableRow = document.createElement('tr');
+    const { container } = render(
+      <TableCellBody>TableCell</TableCellBody>,
+      'ACT_ET',
+      { container: document.body.appendChild(tableRow) },
+    );
 
     expect(container).toMatchSnapshot();
   });

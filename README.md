@@ -42,7 +42,9 @@ const MyApp = () => (
 #### Custom Themes
 
 Alternatively, you can build your own theme from scratch using the
-[`createMuiTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme) generator from Material UI:
+<!-- markdownlint-disable-next-line MD013 -->
+[`createMuiTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+generator from Material UI:
 
 ```jsx
 import { createMuiTheme } from '@material-ui/core/styles';

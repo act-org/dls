@@ -6,25 +6,27 @@
  *
  * @prettier
  */
-
+/* eslint-disable react/prop-types */
+/* eslint-disable react/display-name */
 import * as React from 'react';
-import { render as originalRender } from '@testing-library/react';
+import {
+  render as originalRender,
+  RenderResult,
+  RenderOptions,
+} from '@testing-library/react';
 
 import ThemeProvider from '~/components/ThemeProvider';
+import { Theme } from '@material-ui/core';
 
 const render = (
-  Component: React.ReactNode,
-  theme?: 'ACT' | 'ACT_ET' | string,
-): any =>
+  Component: React.ReactElement,
+  theme?: 'ACT' | 'ACT_ET' | Theme,
+  options?: RenderOptions,
+): RenderResult =>
   originalRender(Component, {
-    // eslint-disable-next-line react/display-name
-    wrapper: ({
-      children,
-    }: {
-      children: React.ReactElement<any>;
-    }): React.ReactNode => (
+    wrapper: ({ children }) => (
       <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
     ),
+    ...options,
   });
-
 export default render;

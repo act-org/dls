@@ -8,6 +8,8 @@
  */
 
 module.exports = {
+  collectCoverage: true,
+  coverageReporters: ['text', 'html'],
   globals: {
     'ts-jest': {
       diagnostics: false,

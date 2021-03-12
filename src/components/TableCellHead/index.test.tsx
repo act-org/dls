@@ -16,6 +16,7 @@ import TableCellHead from '.';
 
 describe('TableCellHead', () => {
   it('matches the snapshot', () => {
+    const tableRow = document.createElement('tr');
     const { container } = render(
       <TableCellHead
         currentSortObject={{
@@ -27,6 +28,8 @@ describe('TableCellHead', () => {
       >
         TableCellHead
       </TableCellHead>,
+      'ACT_ET',
+      { container: document.body.appendChild(tableRow) },
     );
 
     expect(container).toMatchSnapshot();

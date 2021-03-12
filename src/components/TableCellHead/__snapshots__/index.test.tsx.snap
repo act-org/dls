@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TableCellHead matches the snapshot 1`] = `
-<div>
+<tr>
   <td
     class="MuiTableCell-root makeStyles-tableCellRoot-3 makeStyles-tableCellRootSortable-4 makeStyles-tableCellRootSortApplied-5"
     role="cell"
@@ -39,5 +39,5 @@ exports[`TableCellHead matches the snapshot 1`] = `
       </svg>
     </div>
   </td>
-</div>
+</tr>
 `;

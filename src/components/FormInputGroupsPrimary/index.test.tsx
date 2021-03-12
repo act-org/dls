@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { noop } from 'lodash';
 
-import FormInputPrimary from '~/components/FormInputPrimary';
+import FormInputPrimary from '~/components/FormInput';
 import render from '~/helpers/test/render';
 
 import FormInputGroupsPrimary from '.';

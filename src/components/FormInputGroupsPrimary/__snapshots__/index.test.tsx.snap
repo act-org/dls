@@ -9,17 +9,18 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
     >
       <div
-        class="makeStyles-labelContainer-4"
+        class="MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-animated"
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
         >
           <div
             class="label-split"
           >
-            <span>
-              Input 1
-            </span>
+            <span
+              class="label-help"
+            />
             <span
               class="required"
             >
@@ -27,21 +28,32 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
             </span>
           </div>
         </label>
-      </div>
-      <div
-        class="makeStyles-inputContainer-3"
-      >
         <div
-          class="MuiInputBase-root MuiInput-root makeStyles-inputRoot-9 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
           required=""
         >
           <input
-            class="MuiInputBase-input MuiInput-input makeStyles-inputInput-7 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input"
             placeholder="Input 1"
             required=""
             type="text"
             value="value1"
           />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-5"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
         </div>
       </div>
     </div>
@@ -49,17 +61,18 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
     >
       <div
-        class="makeStyles-labelContainer-4"
+        class="MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-animated"
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
         >
           <div
             class="label-split"
           >
-            <span>
-              Input 2
-            </span>
+            <span
+              class="label-help"
+            />
             <span
               class="required"
             >
@@ -67,21 +80,32 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
             </span>
           </div>
         </label>
-      </div>
-      <div
-        class="makeStyles-inputContainer-3"
-      >
         <div
-          class="MuiInputBase-root MuiInput-root makeStyles-inputRoot-9 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
           required=""
         >
           <input
-            class="MuiInputBase-input MuiInput-input makeStyles-inputInput-7 makeStyles-inputInputPassword-8 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input"
             placeholder="Input 2"
             required=""
             type="password"
             value="value2"
           />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-5"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
         </div>
       </div>
     </div>
@@ -93,32 +117,44 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
     >
       <div
-        class="makeStyles-labelContainer-4"
+        class="MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-animated"
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
         >
           <div
             class="label-split"
           >
-            <span>
-              Input 3
-            </span>
+            <span
+              class="label-help"
+            />
           </div>
         </label>
-      </div>
-      <div
-        class="makeStyles-inputContainer-3"
-      >
         <div
-          class="MuiInputBase-root MuiInput-root makeStyles-inputRoot-9 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-marginDense MuiInput-marginDense"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
         >
           <input
-            class="MuiInputBase-input MuiInput-input makeStyles-inputInput-7 MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input"
             placeholder="Input 3"
             type="text"
             value="value3"
           />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-5"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
         </div>
       </div>
     </div>
