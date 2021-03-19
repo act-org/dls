@@ -1,7 +1,19 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import {InputLabel, InputLabelProps} from '.';
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
 import { Plus } from '~/icons';
-import { Template, argTypes, TipText } from './index.stories.template';
+
+import { argTypes, Template, TipText } from './index.stories.template';
+import { InputLabel, InputLabelProps } from '.';
 
 <Meta title="Atoms/InputLabel" component={InputLabel} argTypes={argTypes} />
 
@@ -10,48 +22,56 @@ import { Template, argTypes, TipText } from './index.stories.template';
 ## Primary
 
 <Canvas>
-    <Story name="Primary" args={{
-      text:"Some Label"
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="Primary"
+    args={{
+      text: 'Some Label',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Help Text Simple
 
 <Canvas>
-    <Story name="HelpTextSimple" args={{
-      text:"Label With Help",
-      helpText: "Simple Help Text"
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="HelpTextSimple"
+    args={{
+      text: 'Label With Help',
+      helpText: 'Simple Help Text',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Help Text Html
 
-
-
 <Canvas>
-    <Story name="HelpTextHtml" args={{
-      text:"Label With Help",
-      helpText: TipText
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="HelpTextHtml"
+    args={{
+      text: 'Label With Help',
+      helpText: TipText,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
-
 
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{
-    text:"Some Label",
-    helpText: "Some Text"
-  }}>
-      {Template.bind({})}
+  <Story
+    name="Playground"
+    args={{
+      text: 'Some Label',
+      helpText: 'Some Text',
+    }}
+  >
+    {Template.bind({})}
   </Story>
   <ArgsTable story="Playground" />
 </Canvas>
-

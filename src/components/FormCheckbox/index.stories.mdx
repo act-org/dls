@@ -1,32 +1,52 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import { FormCheckbox, FormCheckboxProps } from '.';
-import { Template, argTypes } from './index.stories.template';
+<!-- @prettier -->
 
-<Meta title="Molecules/FormCheckbox" component={FormCheckbox} argTypes={argTypes} />
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { FormCheckbox, FormCheckboxProps } from '.';
+
+<Meta
+  title="Molecules/FormCheckbox"
+  component={FormCheckbox}
+  argTypes={argTypes}
+/>
 
 <Description of={FormCheckbox} />
 
 ## Primary
 
 <Canvas>
-    <Story name="Primary" args={{
-        id: "primarycheckbox",
-        label: "The label"
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="Primary"
+    args={{
+      id: 'primarycheckbox',
+      label: 'The label',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{
-        id: "playgroundcheckbox",
-        label: "The label"
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      id: 'playgroundcheckbox',
+      label: 'The label',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-
