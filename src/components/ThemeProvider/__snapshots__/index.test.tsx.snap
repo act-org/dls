@@ -15,11 +15,3 @@ exports[`ThemeProvider ACT_ET theme matches the snapshot 1`] = `
   </p>
 </div>
 `;
-
-exports[`ThemeProviderPrimary matches the snapshot 1`] = `
-<div>
-  <p>
-    This is a test
-  </p>
-</div>
-`;

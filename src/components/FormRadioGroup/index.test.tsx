@@ -13,7 +13,7 @@ import { render, THEMES } from '~/helpers/test';
 
 import { FormRadioGroup } from '.';
 
-describe('FormRadioGroup', () => {
+describe.skip('FormRadioGroup', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
       <FormRadioGroup

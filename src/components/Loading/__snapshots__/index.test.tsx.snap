@@ -67,37 +67,3 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
-
-exports[`LoadingPrimary matches the snapshot 1`] = `
-<div>
-  <div
-    class="makeStyles-container-1"
-    data-testid="loading"
-  >
-    <div
-      class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
-      role="progressbar"
-      style="width: 24px; height: 24px;"
-    >
-      <svg
-        class="MuiCircularProgress-svg"
-        viewBox="22 22 44 44"
-      >
-        <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-          cx="44"
-          cy="44"
-          fill="none"
-          r="19.75"
-          stroke-width="4.5"
-        />
-      </svg>
-    </div>
-    <span
-      class="MuiTypography-root makeStyles-typographyRoot-2 MuiTypography-overline"
-    >
-      Loading...
-    </span>
-  </div>
-</div>
-`;

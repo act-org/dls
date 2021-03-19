@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RenderMetaTags matches the snapshot 1`] = `
+exports[`RenderMetaTagsBase matches the snapshot 1`] = `
 Array [
   <meta
     content="Some description."
