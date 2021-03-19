@@ -9,7 +9,7 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '../../constants/dims';
+import DIMS from '~/constants/dims';
 
 export default makeStyles({
   container: {

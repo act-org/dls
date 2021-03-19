@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { noop } from 'lodash';
 
-import render from '../../helpers/test/render';
+import render from '~/helpers/test/render';
 
 import { EmptyState } from '.';
 

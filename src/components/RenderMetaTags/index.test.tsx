@@ -10,15 +10,15 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 
-import RenderMetaTagsBase from '.';
+import { RenderMetaTags } from '.';
 
-describe('RenderMetaTagsBase', () => {
-  it('matches the snapshot', () => {
+describe('RenderMetaTags', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
     const tree = renderer
       .create(
-        <RenderMetaTagsBase
+        <RenderMetaTags
           description="Some description."
-          imageUrl="https://mawi.et-act.org"
+          imageUrl="https://www.act.org/etc/designs/act/clientlibs/act-base/img/logo-act-blue-300.png"
           keywords={['keyword1', 'keyword2', 'keyword3']}
           title="Some Title"
         />,

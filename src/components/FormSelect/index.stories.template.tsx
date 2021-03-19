@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { FormSelect, FormSelectProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { PlayGround } from '~/helpers/argBlocks';
 
 export const Template: Story<FormSelectProps> = args => {
   const { value } = args;

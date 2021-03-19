@@ -9,17 +9,11 @@
 
 import * as React from 'react';
 
-import render from '../../helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
-import { ThemeProvider } from '.';
-
-describe('ThemeProviderPrimary', () => {
-  it('matches the snapshot', () => {
-    const { container } = render(
-      <ThemeProvider theme="ACT">
-        <p>This is a test</p>
-      </ThemeProvider>,
-    );
+describe('ThemeProvider', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
+    const { container } = render(<p>This is a test</p>, theme);
 
     expect(container).toMatchSnapshot();
   });

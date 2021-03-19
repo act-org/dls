@@ -11,11 +11,14 @@ import * as React from 'react';
 
 import { render, THEMES } from '~/helpers/test';
 
-import { Radio } from '.';
+import { FormRadio } from '.';
 
-describe('Radio', () => {
+describe('FormRadio', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Radio checked color="primary" />, theme);
+    const { container } = render(
+      <FormRadio id="primaryswitch" label="The label" />,
+      theme,
+    );
 
     expect(container).toMatchSnapshot();
   });

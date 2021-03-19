@@ -9,18 +9,14 @@
 
 import * as React from 'react';
 
-import render from '~/helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { Typography } from '.';
 
 describe('Typography', () => {
-  it('ACT theme matches the snapshot', () => {
-    const { container } = render(<Typography variant="h1" />, 'ACT');
-    expect(container).toMatchSnapshot();
-  });
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
+    const { container } = render(<Typography variant="h1" />, theme);
 
-  it('ACT_ET theme matches the snapshot', () => {
-    const { container } = render(<Typography variant="h1" />, 'ACT_ET');
     expect(container).toMatchSnapshot();
   });
 });

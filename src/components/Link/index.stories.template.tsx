@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import { Link, LinkProps } from '.';
 import { Button } from '../Button';
-import { PlayGround } from '../../helpers/argBlocks';
+import { PlayGround } from '~/helpers/argBlocks';
 
 interface StoryProps extends LinkProps {
   text: string;

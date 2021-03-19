@@ -8,16 +8,32 @@
  */
 
 import * as React from 'react';
-import { noop } from 'lodash';
 
 import { render, THEMES } from '~/helpers/test';
 
-import { SearchBar } from '.';
+import { FormSelect } from '.';
 
-describe('SearchBar', () => {
+describe('FormSelect', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
-      <SearchBar onChange={noop} value="Value" />,
+      <FormSelect
+        label="Select Label"
+        options={[
+          {
+            label: 'One',
+            value: 'ONE',
+          },
+          {
+            label: 'Two',
+            value: 'TWO',
+          },
+          {
+            label: 'Three',
+            value: 'THREE',
+          },
+        ]}
+        placeholder="Placeholder"
+      />,
       theme,
     );
 

@@ -9,13 +9,19 @@
 
 import * as React from 'react';
 
+import { Button } from '~/components/Button';
 import { render, THEMES } from '~/helpers/test';
 
-import { Radio } from '.';
+import { DialogActions } from '.';
 
-describe('Radio', () => {
+describe('DialogActions', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Radio checked color="primary" />, theme);
+    const { container } = render(
+      <DialogActions>
+        <Button>Close</Button>
+      </DialogActions>,
+      theme,
+    );
 
     expect(container).toMatchSnapshot();
   });

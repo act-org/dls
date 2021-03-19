@@ -11,11 +11,14 @@ import * as React from 'react';
 
 import { render, THEMES } from '~/helpers/test';
 
-import { Radio } from '.';
+import { FormCheckbox } from '.';
 
-describe('Radio', () => {
+describe('FormCheckbox', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Radio checked color="primary" />, theme);
+    const { container } = render(
+      <FormCheckbox id="primarycheckbox" label="The label" />,
+      theme,
+    );
 
     expect(container).toMatchSnapshot();
   });

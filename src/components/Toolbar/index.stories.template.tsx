@@ -9,11 +9,11 @@
 
 import * as React from 'react';
 import { Toolbar, ToolbarProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { PlayGround } from '~/helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
 import { IconButton } from '@material-ui/core';
 import { Typography } from '../Typography';
-import { Menu } from '../../icons';
+import { Menu } from '~/icons';
 
 export const Template: Story<ToolbarProps> = args => (
   <Toolbar {...args}>

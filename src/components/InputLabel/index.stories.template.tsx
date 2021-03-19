@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { InputLabel, InputLabelProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { PlayGround } from '~/helpers/argBlocks';
 
 interface DocProps extends InputLabelProps {
   /**

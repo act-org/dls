@@ -10,7 +10,7 @@
 import React, { useState } from 'react';
 import { FormRadioGroup, FormRadioGroupProps } from '.';
 import { action } from '@storybook/addon-actions';
-import { PlayGround } from '../../helpers/argBlocks';
+import { PlayGround } from '~/helpers/argBlocks';
 import { Story } from '@storybook/react/types-6-0';
 
 export const Template: Story<FormRadioGroupProps> = args => {

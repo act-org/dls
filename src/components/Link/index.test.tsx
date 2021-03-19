@@ -9,16 +9,17 @@
 
 import * as React from 'react';
 
-import render from '../../helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { Link } from '.';
 
-describe('LinkText', () => {
-  it('matches the snapshot', () => {
+describe('Link', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
       <Link href="https://www.act.org" target="_blank">
         <div>children</div>
       </Link>,
+      theme,
     );
 
     expect(container).toMatchSnapshot();

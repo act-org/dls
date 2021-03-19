@@ -9,13 +9,13 @@
 
 import * as React from 'react';
 
-import render from '../../helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { Loading } from '.';
 
-describe('LoadingPrimary', () => {
-  it('matches the snapshot', () => {
-    const { container } = render(<Loading title="Loading..." />);
+describe('Loading', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
+    const { container } = render(<Loading title="Loading..." />, theme);
 
     expect(container).toMatchSnapshot();
   });

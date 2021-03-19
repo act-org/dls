@@ -11,11 +11,11 @@ import * as React from 'react';
 
 import { render, THEMES } from '~/helpers/test';
 
-import { Radio } from '.';
+import { Drawer } from '.';
 
-describe('Radio', () => {
+describe('Drawer', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Radio checked color="primary" />, theme);
+    const { container } = render(<Drawer open>Hey</Drawer>, theme);
 
     expect(container).toMatchSnapshot();
   });
