@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { DataGrid, DataGridProps } from '.';
 
@@ -113,7 +113,7 @@ export const Template: Story<DataGridProps> = (props: DataGridProps) => (
   </div>
 );
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     autoHeight: {},
     autoPageSize: {},

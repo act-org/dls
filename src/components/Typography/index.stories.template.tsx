@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { Typography, TypographyProps } from '.';
 
@@ -18,7 +18,7 @@ export const Template: Story<TypographyProps> = (props: TypographyProps) => (
   <Typography {...props} />
 );
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     align: {},
     children: { type: 'string' },

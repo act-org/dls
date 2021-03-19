@@ -6,12 +6,43 @@
  *
  * @prettier
  */
-/* eslint-disable sort-keys */
+
 import { Overrides } from '@material-ui/core/styles/overrides';
+
 import COLOR_PALETTE_ACT from './palette';
 import COLORS from './colors';
 
-const overrides: Overrides = {
+const OVERRIDES: Overrides = {
+  MuiAlert: {
+    outlinedError: {
+      color: COLORS.ERROR,
+    },
+    outlinedInfo: {
+      color: COLORS.INFO,
+    },
+    outlinedSuccess: {
+      color: COLORS.SUCCESS,
+    },
+    outlinedWarning: {
+      color: COLORS.WARNING,
+    },
+    standardError: {
+      backgroundColor: COLORS.ERROR_BACKGROUND,
+      color: COLORS.ERROR,
+    },
+    standardInfo: {
+      backgroundColor: COLORS.INFO_BACKGROUND,
+      color: COLORS.INFO,
+    },
+    standardSuccess: {
+      backgroundColor: COLORS.SUCCESS_BACKGROUND,
+      color: COLORS.SUCCESS,
+    },
+    standardWarning: {
+      backgroundColor: COLORS.WARNING_BACKGROUND,
+      color: COLORS.WARNING,
+    },
+  },
   MuiAppBar: {
     colorPrimary: {
       backgroundColor: COLORS.PRIMARY_DARK,
@@ -30,6 +61,21 @@ const overrides: Overrides = {
   MuiDialogTitle: {
     root: {
       backgroundColor: COLORS.OVERLAY_BACKGROUND,
+    },
+  },
+  MuiInputLabel: {
+    formControl: {
+      position: 'relative',
+      transform: undefined,
+    },
+    root: {
+      color: `${COLOR_PALETTE_ACT.text?.primary}`,
+      fontSize: `1rem`,
+      marginBottom: `15px`,
+    },
+    shrink: {
+      transform: undefined,
+      transformOrigin: undefined,
     },
   },
   MuiOutlinedInput: {
@@ -61,22 +107,6 @@ const overrides: Overrides = {
       },
     },
   },
-  MuiInputLabel: {
-    formControl: {
-      position: 'relative',
-      transform: undefined,
-    },
-    root: {
-      color: `${COLOR_PALETTE_ACT.text?.primary}`,
-      fontSize: `1rem`,
-      marginBottom: `15px`,
-    },
-
-    shrink: {
-      transform: undefined,
-      transformOrigin: undefined,
-    },
-  },
   MuiSelect: {
     outlined: {
       backgroundColor: COLORS.WHITE,
@@ -85,50 +115,20 @@ const overrides: Overrides = {
       padding: '15px 15px',
     },
   },
-  MuiAlert: {
-    standardError: {
-      backgroundColor: COLORS.ERROR_BACKGROUND,
-      color: COLORS.ERROR,
-    },
-    standardInfo: {
-      backgroundColor: COLORS.INFO_BACKGROUND,
-      color: COLORS.INFO,
-    },
-    standardSuccess: {
-      backgroundColor: COLORS.SUCCESS_BACKGROUND,
-      color: COLORS.SUCCESS,
-    },
-    standardWarning: {
-      backgroundColor: COLORS.WARNING_BACKGROUND,
-      color: COLORS.WARNING,
-    },
-    outlinedError: {
-      color: COLORS.ERROR,
-    },
-    outlinedInfo: {
-      color: COLORS.INFO,
-    },
-    outlinedSuccess: {
-      color: COLORS.SUCCESS,
-    },
-    outlinedWarning: {
-      color: COLORS.WARNING,
-    },
-  },
   MuiTab: {
     root: {
       textTransform: undefined,
     },
   },
   MuiTooltip: {
-    tooltip: {
-      color: COLORS.WHITE,
-      backgroundColor: COLORS.PRIMARY_DARK,
-    },
     arrow: {
       color: COLORS.PRIMARY_DARK,
+    },
+    tooltip: {
+      backgroundColor: COLORS.PRIMARY_DARK,
+      color: COLORS.WHITE,
     },
   },
 };
 
-export default overrides;
+export default OVERRIDES;

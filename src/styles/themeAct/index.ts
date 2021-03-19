@@ -6,8 +6,10 @@
  *
  * @prettier
  */
+
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
+
 import TYPOGRAPHY from './typography';
 import PALETTE from './palette';
 import PROPS from './props';

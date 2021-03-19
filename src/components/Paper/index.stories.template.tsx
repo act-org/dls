@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { Paper, PaperProps } from '.';
 
@@ -27,7 +27,7 @@ export const Template: Story<PaperProps> = (props: PaperProps) => (
   />
 );
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     children: {},
     elevation: {},

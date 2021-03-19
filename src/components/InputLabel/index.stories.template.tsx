@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { InputLabel, InputLabelProps } from '.';
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 interface StoryProps extends InputLabelProps {
   /**
@@ -24,7 +24,7 @@ export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
   <InputLabel {...args}>{text}</InputLabel>
 );
 
-export const argTypes: Record<string, any> = PlayGround(
+export const argTypes: Record<string, any> = Playground(
   {
     text: {},
     color: {},

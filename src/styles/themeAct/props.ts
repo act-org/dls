@@ -6,9 +6,10 @@
  *
  * @prettier
  */
+
+import { ComponentsProps } from '@material-ui/core/styles/props';
 import { DataGridProps } from '@material-ui/data-grid';
 import { LabComponentsPropsList } from '@material-ui/lab/themeAugmentation';
-import { ComponentsProps } from '@material-ui/core/styles/props';
 
 export interface DataGridPropsList {
   MuiDataGrid: DataGridProps;
@@ -16,10 +17,12 @@ export interface DataGridPropsList {
 
 declare module '@material-ui/core/styles/props' {
   // eslint-disable-next-line prettier/prettier
-  interface ComponentsPropsList extends LabComponentsPropsList, DataGridPropsList { }
+  interface ComponentsPropsList
+    extends LabComponentsPropsList,
+      DataGridPropsList {}
 }
 
-const props: ComponentsProps = {
+const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
     severity: 'info',
@@ -88,4 +91,4 @@ const props: ComponentsProps = {
   },
 };
 
-export default props;
+export default PROPS;

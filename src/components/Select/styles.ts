@@ -10,8 +10,6 @@
 import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
-import TYPOGRAPHY from '~/constants/typography';
-
 export default makeStyles({
   selectComponentRoot: {
     fontSize: 14,
@@ -31,7 +29,7 @@ export default makeStyles({
     borderRadius: 2,
     color: '#2d2d2d', // FIXME: TEXT_PRIMARY
     fontSize: 14,
-    fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
+    fontWeight: 500,
     marginTop: 8,
   },
   selectRootEmpty: {

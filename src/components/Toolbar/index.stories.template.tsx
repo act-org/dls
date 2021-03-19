@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { Toolbar, ToolbarProps } from '.';
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
 import { IconButton } from '@material-ui/core';
 import { Typography } from '../Typography';
@@ -25,4 +25,4 @@ export const Template: Story<ToolbarProps> = args => (
     </Typography>
   </Toolbar>
 );
-export const argTypes = PlayGround({}, Toolbar);
+export const argTypes = Playground({}, Toolbar);

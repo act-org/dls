@@ -53,7 +53,7 @@ const elseGroup = 'Everything Else';
  * @param type The base type of the arguments.  If passed will group all
  * arguments by some basic rules.
  */
-export const PlayGround = (args: Record<string, any>, type?: any): any => {
+export const Playground = (args: Record<string, any>, type?: any): any => {
   // eslint-disable-next-line no-loops/no-loops, no-restricted-syntax
   for (const key in args) {
     if (!key.startsWith('on')) {
@@ -64,6 +64,7 @@ export const PlayGround = (args: Record<string, any>, type?: any): any => {
 
   if (type) {
     const docType = (type as unknown) as DocGenType;
+    // eslint-disable-next-line no-underscore-dangle
     const props = docType.__docgenInfo?.props;
 
     // eslint-disable-next-line guard-for-in, no-loops/no-loops, no-restricted-syntax

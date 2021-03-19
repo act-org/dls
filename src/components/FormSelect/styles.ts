@@ -10,7 +10,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 import DIMS from '~/constants/dims';
-import TYPOGRAPHY from '~/constants/typography';
 
 export default makeStyles({
   labelContainer: {
@@ -22,7 +21,7 @@ export default makeStyles({
   selectOptionRoot: {
     color: '#2d2d2d', // FIXME: COLORS.TEXT_PRIMARY,
     fontSize: 14,
-    fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
+    fontWeight: 500,
   },
   warning: {
     left: '100%',

@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { Checkbox, CheckboxProps } from '.';
 
@@ -18,7 +18,7 @@ export const Template: Story<CheckboxProps> = (props: CheckboxProps) => (
   <Checkbox {...props} />
 );
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     checked: {},
     color: {},

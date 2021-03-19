@@ -7,7 +7,9 @@
  * @prettier
  */
 
-const PROPS = {
+import { ComponentsProps } from '@material-ui/core/styles/props';
+
+const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
     severity: 'info' as any,

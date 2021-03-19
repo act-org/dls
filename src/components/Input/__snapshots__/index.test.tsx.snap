@@ -1,5 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Input ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root"
+  >
+    <input
+      class="MuiInputBase-input MuiOutlinedInput-input"
+      type="text"
+      value="Value"
+    />
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-2"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Input ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root"
+  >
+    <input
+      class="MuiInputBase-input MuiOutlinedInput-input"
+      type="text"
+      value="Value"
+    />
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-5 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-6"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
 exports[`InputPrimary matches the snapshot 1`] = `
 <div>
   <div

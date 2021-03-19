@@ -11,12 +11,12 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { EmptyState, EmptyStateProps } from '.';
-import { PlayGround } from '~/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 export const Template: Story<EmptyStateProps> = args => (
   <EmptyState {...args} />
 );
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     title: { type: 'string' },
     description: { type: 'string' },
