@@ -68,7 +68,7 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "homepage": "https://github.com/act-org/dls/#README",
+  "homepage": "https://act-org.github.io/dls",
   "keywords": [
     "design language system",
     "dls",
