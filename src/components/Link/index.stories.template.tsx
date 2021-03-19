@@ -10,14 +10,13 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import { Link, LinkProps } from '.';
-import { Button } from '../Button';
-import { PlayGround } from '~/helpers/argBlocks';
+import { PlayGround } from '~/helpers/playground';
 
 interface StoryProps extends LinkProps {
   text: string;
 }
 
-export const Template: Story<StoryProps> = ({ text, ...args }) => (
+export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
   <Link {...args}>{text}</Link>
 );
 

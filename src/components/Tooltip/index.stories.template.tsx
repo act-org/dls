@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { Tooltip, TooltipProps } from '.';
-import { PlayGround } from '~/helpers/argBlocks';
+import { PlayGround } from '~/helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
 import { HelpCircleOutline } from '~/icons';
 

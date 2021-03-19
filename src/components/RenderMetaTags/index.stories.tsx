@@ -12,7 +12,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import RenderMetaTags, { Props } from '.';
 
-export const : Story<Props> = args => <RenderMetaTags {...args} />;
+export const Base: Story<Props> = args => <RenderMetaTags {...args} />;
 
 export default {
   component: RenderMetaTags,

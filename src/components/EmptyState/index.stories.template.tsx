@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { EmptyState, EmptyStateProps } from '.';
-import { PlayGround } from '~/helpers/argBlocks';
+import { PlayGround } from '~/helpers/playground';
 
 export const Template: Story<EmptyStateProps> = args => (
   <EmptyState {...args} />

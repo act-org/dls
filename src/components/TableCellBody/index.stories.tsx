@@ -16,7 +16,7 @@ interface StoryProps extends Props {
   text: string;
 }
 
-export const Body: Story<StoryProps> = ({ text, ...args }) => (
+export const Body: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
   <TableCellBody {...args}>{text}</TableCellBody>
 );
 Body.args = {

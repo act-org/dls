@@ -12,7 +12,7 @@ import { Story } from '@storybook/react/types-6-0';
 
 import { IconButton } from '~/components/IconButton';
 import { Menu } from '~/icons';
-import { PlayGround } from '~/helpers/argBlocks';
+import { PlayGround } from '~/helpers/playground';
 import { Toolbar } from '~/components/Toolbar';
 import { Typography } from '~/components/Typography';
 
