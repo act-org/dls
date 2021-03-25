@@ -114,11 +114,11 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-5902"
+                  aria-controls="mui-12345"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
-                  id="mui-42432"
+                  id="mui-12345"
                   tabindex="0"
                   title="Menu"
                   type="button"
@@ -186,11 +186,11 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-73290"
+                  aria-controls="mui-12345"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
-                  id="mui-90940"
+                  id="mui-12345"
                   tabindex="0"
                   title="Menu"
                   type="button"
@@ -258,7 +258,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
               >
                 <div
                   class="rendering-zone"
-                  style="max-height: 988px; width: 948px; pointer-events: none; transform: translate3d(-0px, -0px, 0);"
+                  style="max-height: 468px; width: 948px; pointer-events: none; transform: translate3d(-0px, -0px, 0);"
                 >
                   <div
                     aria-rowindex="2"
@@ -1171,11 +1171,11 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-14610"
+                  aria-controls="mui-12345"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-sizeSmall"
-                  id="mui-33937"
+                  id="mui-12345"
                   tabindex="0"
                   title="Menu"
                   type="button"
@@ -1242,11 +1242,11 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-67113"
+                  aria-controls="mui-12345"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-sizeSmall"
-                  id="mui-83002"
+                  id="mui-12345"
                   tabindex="0"
                   title="Menu"
                   type="button"
@@ -1314,7 +1314,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
               >
                 <div
                   class="rendering-zone"
-                  style="max-height: 52px; width: 948px; pointer-events: none; transform: translate3d(-0px, -NaNpx, 0);"
+                  style="max-height: 0; width: 948px; pointer-events: none; transform: translate3d(-0px, -NaNpx, 0);"
                 />
               </div>
             </div>

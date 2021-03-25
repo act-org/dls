@@ -9,6 +9,12 @@
 
 module.exports = {
   collectCoverage: true,
+  collectCoverageFrom: [
+    '**/*.{ts,tsx}',
+    '!**/node_modules/**',
+    '!**/icons/**',
+    '!**/*stories*.tsx',
+  ],
   coverageReporters: ['text', 'html'],
   globals: {
     'ts-jest': {

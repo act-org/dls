@@ -15,10 +15,10 @@ import {
   RenderOptions,
 } from '@testing-library/react';
 
-import ThemeProvider from '~/components/ThemeProvider';
+import ThemeProvider from '../../components/ThemeProvider';
 import { Theme } from '@material-ui/core';
 
-const render = (
+export const render = (
   Component: React.ReactElement,
   theme?: 'ACT' | 'ACT_ET' | Theme,
   options?: RenderOptions,

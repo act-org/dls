@@ -1,5 +1,5 @@
 # Design Language System (DLS)
-
+<!-- markdownlint-disable-next-line MD013 -->
 [![Build Status](https://travis-ci.com/act-org/dls.svg?branch=v4)](https://travis-ci.com/act-org/dls)
 
 DLS for ACT front-end projects.

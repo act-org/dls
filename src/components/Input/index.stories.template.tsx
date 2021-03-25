@@ -17,7 +17,7 @@ export const Template: Story<InputProps> = args => {
   const [value, setValue] = React.useState<string>(args.value as string);
   return (
     <Input
-      onChange={newValue => {
+      onChange={(newValue): void => {
         setValue(newValue.target.value);
       }}
       value={value}

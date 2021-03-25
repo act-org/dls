@@ -19,7 +19,7 @@ interface StoryProps extends Props {
   text: string;
 }
 
-export const Head: Story<StoryProps> = ({ text, ...args }) => {
+export const Head: Story<StoryProps> = ({ text, ...args }: StoryProps) => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'ITEM_KEY',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,

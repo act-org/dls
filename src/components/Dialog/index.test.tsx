@@ -11,12 +11,14 @@ import * as React from 'react';
 
 import { render, THEMES } from '../../helpers/test';
 
-import { Alert } from '.';
+import { Dialog } from '.';
 
-describe('Alert', () => {
+describe('Dialog', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
-      <Alert title="Title Here">Alert text</Alert>,
+      <Dialog open title="Title Here">
+        Dilog Text
+      </Dialog>,
       theme,
     );
 

@@ -20,11 +20,11 @@ interface DocProps extends InputLabelProps {
   text: string;
 }
 
-export const Template: Story<DocProps> = ({ text, ...args }) => (
+export const Template: Story<DocProps> = ({ text, ...args }: DocProps) => (
   <InputLabel {...args}>{text}</InputLabel>
 );
 
-export const argTypes: Record<string, any> = PlayGround(
+export const argTypes: Record<string, Record<string, unknown>> = PlayGround(
   {
     text: {},
     color: {},

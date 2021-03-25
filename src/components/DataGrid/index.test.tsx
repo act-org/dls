@@ -8,13 +8,21 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { render, THEMES } from '../../helpers/test';
 import { DataGrid, ValueGetterParams } from '.';
 
-describe.skip('DataGrid', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
+jest.mock('@material-ui/core/utils', () => {
+  const sourceLib = jest.requireActual<Record<string, unknown>>(
+    '@material-ui/core/utils',
+  );
+  return {
+    ...sourceLib,
+    unstable_useId: jest.fn().mockReturnValue('mui-12345'),
+  };
+});
+
+describe('DataGrid', () => {
+  test.each(THEMES)('%s theme matches the snapshot', (theme): void => {
     const { container } = render(
       <DataGrid
         checkboxSelection

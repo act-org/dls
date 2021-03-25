@@ -11,12 +11,12 @@ import * as React from 'react';
 
 import { render, THEMES } from '../../helpers/test';
 
-import { Alert } from '.';
+import { FormSwitch } from '.';
 
 describe('Alert', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
-      <Alert title="Title Here">Alert text</Alert>,
+      <FormSwitch id="FormSwitchId" label="Form Switch Label" />,
       theme,
     );
 

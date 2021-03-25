@@ -6,16 +6,24 @@
  *
  * @prettier
  */
-
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-param-reassign */
+/* eslint-disable guard-for-in */
+/* eslint-disable no-loops/no-loops */
 import { get } from 'lodash';
 
 interface PropType {
-  defaultValue: any;
+  defaultValue: unknown;
   description: string;
   name: string;
   required: boolean;
   type: {
     name: string;
+  };
+  table: {
+    category: string;
   };
 }
 interface DocGenType {
@@ -26,8 +34,9 @@ interface DocGenType {
   };
 }
 
-const cleanPropType = (prop: PropType) => {
+const cleanPropType = (prop: PropType): void => {
   if (get(prop, 'type.name')) {
+    // eslint-disable-next-line no-param-reassign
     prop.type.name = prop.type.name.replace(' | undefined', '');
   }
 };
@@ -47,7 +56,10 @@ const elseGroup = 'Everything Else';
  * @param args The arguments to put in the Playground group
  * @param type The base type of the arguments.  If passed will group all arguments by some basic rules
  */
-export const PlayGround = (args: Record<string, any>, type?: any) => {
+export const PlayGround = (
+  args: Record<string, PropType>,
+  type?: unknown,
+): Record<string, unknown> => {
   for (const key in args) {
     if (!key.startsWith('on')) {
       args[key].table = { category: playgroundGroup };
@@ -55,7 +67,8 @@ export const PlayGround = (args: Record<string, any>, type?: any) => {
   }
 
   if (type) {
-    const docType = (type as unknown) as DocGenType;
+    const docType = type as DocGenType;
+    // eslint-disable-next-line no-underscore-dangle
     const props = docType.__docgenInfo?.props;
     for (const key in props) {
       cleanPropType(props[key]);
@@ -66,10 +79,10 @@ export const PlayGround = (args: Record<string, any>, type?: any) => {
         category = eventsGroup;
       }
       args[key] = {
+        ...args[key],
         table: {
           category,
         },
-        ...args[key],
       };
     }
   }

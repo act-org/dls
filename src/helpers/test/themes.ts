@@ -7,6 +7,6 @@
  * @prettier
  */
 
-const THEMES = [['ACT'], ['ACT_ET']];
+export const THEMES: ['ACT' | 'ACT_ET'][] = [['ACT'], ['ACT_ET']];
 
 export default THEMES;
