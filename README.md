@@ -2,7 +2,8 @@
 <!-- markdownlint-disable-next-line MD013 -->
 [![Build Status](https://travis-ci.com/act-org/dls.svg?branch=v4)](https://travis-ci.com/act-org/dls)
 
-DLS for ACT front-end projects.
+The Design Language System for ACT front-end projects. View the UI components
+[here](https://act-org.github.io/dls).
 
 ## Project Setup
 

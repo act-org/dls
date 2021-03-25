@@ -45,8 +45,8 @@ export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrim
 
 export { Loading as LoadingPrimary } from './Loading';
 
-export { default as RenderMetaTagsBase } from './RenderMetaTagsBase';
-export type { Props as RenderMetaTagsBaseProps } from './RenderMetaTagsBase';
+export { default as RenderMetaTags } from './RenderMetaTags';
+export type { Props as RenderMetaTagsProps } from './RenderMetaTags';
 
 // DEPRECATED COMPONENTS -------------------------------------------------------
 

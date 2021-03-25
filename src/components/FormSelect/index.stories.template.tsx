@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { FormSelect, FormSelectProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 
 export const Template: Story<FormSelectProps> = args => {
   const { value } = args;
@@ -21,7 +21,7 @@ export const Template: Story<FormSelectProps> = args => {
   };
   return <FormSelect {...args} onChange={onChange} value={state} />;
 };
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     disabled: {},
     error: {},

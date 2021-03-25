@@ -7,9 +7,11 @@
  * @prettier
  */
 
+import { PaletteOptions } from '@material-ui/core/styles/createPalette';
+
 import COLORS from './colors';
 
-const PALETTE = {
+const PALETTE: PaletteOptions = {
   action: {
     activatedOpacity: 0.12,
     active: 'rgba(0, 0, 0, 0.54)',

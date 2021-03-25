@@ -1,7 +1,19 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-import {Link, LinkProps} from '.';
-import { Plus } from '../../icons';
-import { Template, argTypes } from './index.stories.template';
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { Plus } from '~/icons';
+
+import { argTypes, Template } from './index.stories.template';
+import { Link, LinkProps } from '.';
 
 <Meta title="Atoms/Link" component={Link} argTypes={argTypes} />
 
@@ -10,26 +22,31 @@ import { Template, argTypes } from './index.stories.template';
 ## Primary
 
 <Canvas>
-    <Story name="Primary" args={{
-      text:"Click Me",
-      target: "_blank",
-      to: "https://www.act.org"
-    }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="Primary"
+    args={{
+      text: 'Click Me',
+      target: '_blank',
+      to: 'https://www.act.org',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{
-      text:"Click Me",
-      target: "_blank",
-      to: "https://www.act.org"
-    }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      text: 'Click Me',
+      target: '_blank',
+      to: 'https://www.act.org',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-

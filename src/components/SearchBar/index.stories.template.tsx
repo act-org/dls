@@ -8,14 +8,14 @@
  */
 
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Story } from '@storybook/react/types-6-0';
 
 import { SearchBar, SearchBarProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 
 export const Template: Story<SearchBarProps> = args => <SearchBar {...args} />;
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     autoFocus: {},
     disabled: {},

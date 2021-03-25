@@ -10,13 +10,13 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 
-import RenderMetaTagsBase from '.';
+import { RenderMetaTags } from '.';
 
 describe('RenderMetaTagsBase', () => {
   it('matches the snapshot', () => {
     const tree = renderer
       .create(
-        <RenderMetaTagsBase
+        <RenderMetaTags
           description="Some description."
           imageUrl="https://mawi.et-act.org"
           keywords={['keyword1', 'keyword2', 'keyword3']}

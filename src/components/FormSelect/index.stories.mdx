@@ -1,6 +1,17 @@
-import { Meta, Story, Canvas, Source, Preview, ArgsTable, Description } from '@storybook/addon-docs/blocks';
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
 import { FormSelect, FormSelectProps } from '.';
-import { Template, argTypes } from './index.stories.template';
 
 <Meta title="Molecules/FormSelect" component={FormSelect} argTypes={argTypes} />
 
@@ -9,52 +20,57 @@ import { Template, argTypes } from './index.stories.template';
 ## Primary
 
 <Canvas>
-    <Story name="Primary" args={{
-        label: "Select Label",
-        placeholder: "Placeholder",
-        options: [
-            {
-                label: 'One',
-                value: 'ONE',
-            },
-            {
-                label: 'Two',
-                value: 'TWO',
-            },
-            {
-                label: 'Three',
-                value: 'THREE',
-            },
-        ]
-        }}>
-       {Template.bind({})}
-    </Story>
+  <Story
+    name="Primary"
+    args={{
+      label: 'Select Label',
+      placeholder: 'Placeholder',
+      options: [
+        {
+          label: 'One',
+          value: 'ONE',
+        },
+        {
+          label: 'Two',
+          value: 'TWO',
+        },
+        {
+          label: 'Three',
+          value: 'THREE',
+        },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-    <Source language="jsx" story="Playground" />
-    <Story name="Playground" args={{
-        label: "Select Label",
-        placeholder: "Placeholder",
-        options: [
-            {
-                label: 'One',
-                value: 'ONE',
-            },
-            {
-                label: 'Two',
-                value: 'TWO',
-            },
-            {
-                label: 'Three',
-                value: 'THREE',
-            },
-        ]
-        }}>
-       {Template.bind({})}
-    </Story>
-    <ArgsTable story="Playground" />
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      label: 'Select Label',
+      placeholder: 'Placeholder',
+      options: [
+        {
+          label: 'One',
+          value: 'ONE',
+        },
+        {
+          label: 'Two',
+          value: 'TWO',
+        },
+        {
+          label: 'Three',
+          value: 'THREE',
+        },
+      ],
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
 </Canvas>
-

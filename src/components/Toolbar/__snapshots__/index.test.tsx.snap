@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+    color="primary"
+  />
+</div>
+`;
+
+exports[`Toolbar ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+  />
+</div>
+`;

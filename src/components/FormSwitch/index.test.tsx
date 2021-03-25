@@ -9,14 +9,14 @@
 
 import * as React from 'react';
 
-import { render, THEMES } from '../../helpers/test';
+import { render, THEMES } from '~/helpers/test';
 
 import { FormSwitch } from '.';
 
-describe('Alert', () => {
+describe('FormSwitch', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
-      <FormSwitch id="FormSwitchId" label="Form Switch Label" />,
+      <FormSwitch id="uniqueId" label="Form Switch Label" value={false} />,
       theme,
     );
 

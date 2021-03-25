@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectPrimary matches the snapshot 1`] = `
+exports[`Select ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiInputBase-root MuiOutlinedInput-root"
@@ -43,6 +43,39 @@ exports[`SelectPrimary matches the snapshot 1`] = `
         </span>
       </legend>
     </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Select ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiInput-root MuiInput-underline"
+  >
+    <div
+      aria-haspopup="listbox"
+      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+      role="button"
+      tabindex="0"
+    >
+      One
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput"
+      tabindex="-1"
+      value="ONE"
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSelect-icon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
   </div>
 </div>
 `;

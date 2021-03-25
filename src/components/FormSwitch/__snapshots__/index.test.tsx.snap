@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alert ACT theme matches the snapshot 1`] = `
+exports[`FormSwitch ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root"
-      id="FormSwitchId"
+      id="uniqueId"
     >
       <span
         class="MuiSwitch-root"
@@ -46,14 +46,14 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Alert ACT_ET theme matches the snapshot 1`] = `
+exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root"
-      id="FormSwitchId"
+      id="uniqueId"
     >
       <span
         class="MuiSwitch-root"

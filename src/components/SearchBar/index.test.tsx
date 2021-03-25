@@ -10,13 +10,16 @@
 import * as React from 'react';
 import { noop } from 'lodash';
 
-import render from '../../helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { SearchBar } from '.';
 
-describe('SearchBarPrimary', () => {
-  it('matches the snapshot', () => {
-    const { container } = render(<SearchBar onChange={noop} value="Value" />);
+describe('SearchBar', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
+    const { container } = render(
+      <SearchBar onChange={noop} value="Value" />,
+      theme,
+    );
 
     expect(container).toMatchSnapshot();
   });

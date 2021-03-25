@@ -7,10 +7,12 @@
  * @prettier
  */
 
+import { Overrides } from '@material-ui/core/styles/overrides';
+
 import COLORS from './colors';
 import DIMS from './dims';
 
-const OVERRIDES = {
+const OVERRIDES: Overrides = {
   MuiAlert: {
     outlinedError: {
       color: COLORS.ERROR_DARK,

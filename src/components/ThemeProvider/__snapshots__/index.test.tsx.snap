@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeProviderPrimary matches the snapshot 1`] = `
+exports[`ThemeProvider ACT theme matches the snapshot 1`] = `
+<div>
+  <p>
+    This is a test
+  </p>
+</div>
+`;
+
+exports[`ThemeProvider ACT_ET theme matches the snapshot 1`] = `
 <div>
   <p>
     This is a test

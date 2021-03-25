@@ -9,29 +9,20 @@
 
 import * as React from 'react';
 
-import render from '~/helpers/test/render';
+import { HelpCircleOutline } from '~/icons';
+import { render, THEMES } from '~/helpers/test';
 
 import { Tooltip } from '.';
-import { HelpCircleOutline } from '~/icons';
 
-describe('Switch', () => {
-  it('ACT theme matches the snapshot', () => {
+describe('Tooltip', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
-      <Tooltip title="test text">
+      <Tooltip title="Title text here">
         <HelpCircleOutline />
       </Tooltip>,
-      'ACT',
+      theme,
     );
-    expect(container).toMatchSnapshot();
-  });
 
-  it('ACT_ET theme matches the snapshot', () => {
-    const { container } = render(
-      <Tooltip title="test text">
-        <HelpCircleOutline />
-      </Tooltip>,
-      'ACT_ET',
-    );
     expect(container).toMatchSnapshot();
   });
 });

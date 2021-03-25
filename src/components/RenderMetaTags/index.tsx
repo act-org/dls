@@ -18,7 +18,7 @@ export interface Props {
   Wrapper?: (children: React.ReactElement<any>[]) => React.ReactElement<any>;
 }
 
-const RenderMetaTagsBase: React.FC<Props> = ({
+export const RenderMetaTags: React.FC<Props> = ({
   description,
   imageUrl,
   keywords,
@@ -96,4 +96,4 @@ const RenderMetaTagsBase: React.FC<Props> = ({
   return children;
 };
 
-export default RenderMetaTagsBase;
+export default RenderMetaTags;

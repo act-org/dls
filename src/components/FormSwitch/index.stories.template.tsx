@@ -9,13 +9,13 @@
 
 import * as React from 'react';
 import { FormSwitch, FormSwitchProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
 
 export const Template: Story<FormSwitchProps> = args => (
   <FormSwitch {...args} />
 );
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     checked: {},
     disabled: {},

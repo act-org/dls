@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Switch ACT theme matches the snapshot 1`] = `
+exports[`Tooltip ACT theme matches the snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root MuiSvgIcon-colorPrimary"
     focusable="false"
-    title="test text"
+    title="Title text here"
     viewBox="0 0 24 24"
   >
     <path
@@ -16,13 +16,13 @@ exports[`Switch ACT theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Switch ACT_ET theme matches the snapshot 1`] = `
+exports[`Tooltip ACT_ET theme matches the snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    title="test text"
+    title="Title text here"
     viewBox="0 0 24 24"
   >
     <path

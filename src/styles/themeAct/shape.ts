@@ -7,8 +7,8 @@
  * @prettier
  */
 
-const shape = {
+const SHAPE = {
   borderRadius: 2,
 };
 
-export default shape;
+export default SHAPE;

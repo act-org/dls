@@ -15,12 +15,7 @@ import { Dialog } from '.';
 
 describe('Dialog', () => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <Dialog open title="Title Here">
-        Dilog Text
-      </Dialog>,
-      theme,
-    );
+    const { container } = render(<Dialog open>Hey</Dialog>, theme);
 
     expect(container).toMatchSnapshot();
   });

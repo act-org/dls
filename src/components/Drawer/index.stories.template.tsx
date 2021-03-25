@@ -9,10 +9,10 @@
 
 import * as React from 'react';
 import { Drawer, DrawerProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
 
 export const Template: Story<DrawerProps> = args => (
   <Drawer {...args}>some text</Drawer>
 );
-export const argTypes = PlayGround({}, Drawer);
+export const argTypes = Playground({}, Drawer);

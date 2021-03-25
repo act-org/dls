@@ -11,20 +11,20 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { InputLabel, InputLabelProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 
-interface DocProps extends InputLabelProps {
+interface StoryProps extends InputLabelProps {
   /**
    * The default text for the label
    */
   text: string;
 }
 
-export const Template: Story<DocProps> = ({ text, ...args }: DocProps) => (
+export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
   <InputLabel {...args}>{text}</InputLabel>
 );
 
-export const argTypes: Record<string, Record<string, unknown>> = PlayGround(
+export const argTypes: Record<string, any> = Playground(
   {
     text: {},
     color: {},

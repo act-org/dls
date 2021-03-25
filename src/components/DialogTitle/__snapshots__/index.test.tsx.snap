@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogTitle ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogTitle-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Hey
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogTitle-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Hey
+    </h2>
+  </div>
+</div>
+`;

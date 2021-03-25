@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PlayGround } from '~/helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 
 import { Alert, AlertProps } from '.';
 
@@ -18,7 +18,7 @@ export const Template: Story<AlertProps> = (props: AlertProps) => (
   <Alert {...props} />
 );
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     children: { type: 'string' },
     closeText: {},

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogContent ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogContent-root"
+  >
+    Hey
+  </div>
+</div>
+`;
+
+exports[`DialogContent ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogContent-root"
+  >
+    Hey
+  </div>
+</div>
+`;

@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { FormInput, FormInputProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 
 export const Template: Story<FormInputProps> = args => {
   const { value } = args;
@@ -21,7 +21,7 @@ export const Template: Story<FormInputProps> = args => {
   };
   return <FormInput onChange={onChange} value={state} {...args} />;
 };
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     autoFocus: {},
     disabled: {},

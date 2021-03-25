@@ -11,7 +11,7 @@ import * as React from 'react';
 import { MenuItem } from '@material-ui/core';
 
 import { Select, SelectProps } from '.';
-import { PlayGround } from '../../helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
 
 export const Template: Story<SelectProps> = args => {
@@ -34,7 +34,7 @@ export const Template: Story<SelectProps> = args => {
     </Select>
   );
 };
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     autoWidth: {},
     disabled: {},

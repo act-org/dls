@@ -8,30 +8,22 @@
  */
 
 import * as React from 'react';
+import { noop } from 'lodash';
 
 import { PencilCircle } from '~/icons';
-import render from '~/helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { IconButton } from '.';
 
 describe('IconButton', () => {
-  it('ACT theme matches the snapshot', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
-      <IconButton>
+      <IconButton onClick={noop}>
         <PencilCircle />
       </IconButton>,
-      'ACT',
+      theme,
     );
-    expect(container).toMatchSnapshot();
-  });
 
-  it('ACT_ET theme matches the snapshot', () => {
-    const { container } = render(
-      <IconButton>
-        <PencilCircle />
-      </IconButton>,
-      'ACT_ET',
-    );
     expect(container).toMatchSnapshot();
   });
 });

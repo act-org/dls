@@ -9,16 +9,17 @@
 
 import * as React from 'react';
 
-import render from '../../helpers/test/render';
+import { render, THEMES } from '~/helpers/test';
 
 import { InputLabel } from '.';
 
-describe('InputLabelPrimary', () => {
-  it('matches the snapshot', () => {
+describe('InputLabel', () => {
+  test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(
       <InputLabel color="primary" required>
         InputLabel
       </InputLabel>,
+      theme,
     );
 
     expect(container).toMatchSnapshot();

@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { PencilCircle, PencilCircleOutline } from '~/icons';
-import { PlayGround } from '~/helpers/argBlocks';
+import { Playground } from '~/helpers/playground';
 
 import { IconButton, IconButtonProps } from '.';
 
@@ -27,7 +27,7 @@ export const Template: Story<IconButtonProps> = (props: IconButtonProps) => (
   </>
 );
 
-export const argTypes = PlayGround(
+export const argTypes = Playground(
   {
     color: {},
     disabled: {},

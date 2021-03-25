@@ -1,5 +1,3 @@
-import { PaletteOptions } from "@material-ui/core/styles/createPalette";
-import COLORS from './colors';
 /**
  * Copyright (c) ACT, Inc. and its affiliates.
  *
@@ -9,8 +7,17 @@ import COLORS from './colors';
  * @prettier
  */
 
-/* eslint-disable sort-keys */
-const palette: PaletteOptions = {
+import { PaletteOptions } from '@material-ui/core/styles/createPalette';
+
+import COLORS from './colors';
+
+const PALETTE: PaletteOptions = {
+  error: {
+    main: COLORS.ERROR,
+  },
+  info: {
+    main: COLORS.INFO,
+  },
   primary: {
     contrastText: COLORS.WHITE,
     dark: COLORS.PRIMARY_DARK,
@@ -23,23 +30,17 @@ const palette: PaletteOptions = {
     light: COLORS.SECONDARY_LIGHT,
     main: COLORS.SECONDARY,
   },
-  info: {
-    main: COLORS.INFO,
-  },
   success: {
     main: COLORS.SUCCESS,
   },
-  error: {
-    main: COLORS.ERROR,
+  text: {
+    disabled: COLORS.TEXT_DISABLED,
+    primary: COLORS.TEXT_PRIMARY,
+    secondary: COLORS.TEXT_SECONDARY,
   },
   warning: {
     main: COLORS.WARNING,
   },
-  text: {
-    primary: COLORS.TEXT_PRIMARY,
-    secondary: COLORS.TEXT_SECONDARY,
-    disabled: COLORS.TEXT_DISABLED,
-  },
 };
 
-export default palette;
+export default PALETTE;
