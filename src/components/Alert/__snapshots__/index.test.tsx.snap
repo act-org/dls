@@ -5,7 +5,6 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
   <div
     class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
     role="alert"
-    text="Some alert description goes here."
   >
     <div
       class="MuiAlert-icon"
@@ -29,6 +28,7 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
       >
         Title Here
       </div>
+      Alert text
     </div>
   </div>
 </div>
@@ -39,7 +39,6 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
   <div
     class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
     role="alert"
-    text="Some alert description goes here."
   >
     <div
       class="MuiAlert-icon"
@@ -63,6 +62,7 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
       >
         Title Here
       </div>
+      Alert text
     </div>
   </div>
 </div>

@@ -48,5 +48,5 @@ Head.args = {
 export default {
   component: TableCellHead,
   parameters: {},
-  title: 'Atoms/TableCell',
+  title: 'Deprecated/Atoms/TableCell',
 } as Meta<StoryProps>;

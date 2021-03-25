@@ -26,5 +26,5 @@ Body.args = {
 export default {
   component: TableCellBody,
   parameters: {},
-  title: 'Atoms/TableCell',
+  title: 'Deprecated/Atoms/TableCell',
 } as Meta<StoryProps>;

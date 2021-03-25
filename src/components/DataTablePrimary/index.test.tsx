@@ -14,6 +14,14 @@ import render from '~/helpers/test/render';
 
 import DataTablePrimary from '.';
 
+interface Item {
+  id: string;
+  name: string;
+  fieldA: string;
+  fieldB: string;
+  fieldC: string;
+}
+
 describe('DataTablePrimary', () => {
   it('matches the snapshot', () => {
     const { container } = render(

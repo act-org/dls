@@ -23,5 +23,5 @@ export default {
       text: 'This is the primary variant of the TableContainer component.',
     },
   },
-  title: 'Atoms/TableContainer',
+  title: 'Deprecated/Atoms/TableContainer',
 } as Meta<Props>;

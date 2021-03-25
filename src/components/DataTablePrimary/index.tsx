@@ -28,7 +28,7 @@ interface Column<T> {
 export interface Props<T> {
   columns: Column<T>[];
   currentSortObject: SortObject;
-  emptyStateProps: EmptyStateProps;
+  emptyStateProps?: EmptyStateProps;
   items: T[];
   onChangeSort: (sortObject: SortObject) => void;
   RowWrapper?: (
