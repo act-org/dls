@@ -15,6 +15,13 @@ module.exports = {
     '!**/icons/**',
     '!**/*stories*.tsx',
   ],
+  coveragePathIgnorePatterns: [
+    'src/styles/index.ts',
+    'src/constants/index.ts',
+    'src/components/index.ts',
+    'src/index.ts',
+    'src/styles/index.ts',
+  ],
   coverageReporters: ['text', 'html'],
   globals: {
     'ts-jest': {
