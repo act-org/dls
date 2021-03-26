@@ -12,7 +12,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import { FormInput } from '../FormInput';
 import { FormSelect } from '../FormSelect';
 
-import FormInputGroupsPrimary, { Props } from '.';
+import FormInputGroups, { Props } from '.';
 
 const Template: Story<Props> = args => {
   const [value1, setValue1] = React.useState('Value 1');
@@ -22,7 +22,7 @@ const Template: Story<Props> = args => {
   const [value5, setValue5] = React.useState('Value 5');
 
   return (
-    <FormInputGroupsPrimary
+    <FormInputGroups
       groups={[
         [
           {
@@ -145,7 +145,7 @@ const Template: Story<Props> = args => {
 export const Primary: Story<Props> = Template.bind({});
 
 export default {
-  component: FormInputGroupsPrimary,
+  component: FormInputGroups,
   parameters: {
     info: {
       text: 'This is the primary variant of the FormInputGroups component.',

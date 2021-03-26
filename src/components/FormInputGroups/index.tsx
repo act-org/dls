@@ -23,7 +23,7 @@ export interface Props {
   groups: FormInputGroup[];
 }
 
-const FormInputGroupsPrimary: React.FC<Props> = ({ groups }: Props) => {
+const FormInputGroups: React.FC<Props> = ({ groups }: Props) => {
   const classes = useStyles();
 
   return (
@@ -60,4 +60,4 @@ const FormInputGroupsPrimary: React.FC<Props> = ({ groups }: Props) => {
   );
 };
 
-export default FormInputGroupsPrimary;
+export default FormInputGroups;

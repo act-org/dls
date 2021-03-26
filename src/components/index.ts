@@ -40,8 +40,8 @@ export * from './Typography';
 
 // WIP COMPONENTS --------------------------------------------------------------
 
-export { default as FormInputGroupsPrimary } from './FormInputGroupsPrimary';
-export type { Props as FormInputGroupsPrimaryProps } from './FormInputGroupsPrimary';
+export { default as FormInputGroups } from './FormInputGroups';
+export type { Props as FormInputGroupsProps } from './FormInputGroups';
 
 export { Loading as LoadingPrimary } from './Loading';
 
