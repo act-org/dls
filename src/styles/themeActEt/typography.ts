@@ -13,10 +13,10 @@ import COLORS from './colors';
 
 const TYPOGRAPHY: TypographyOptions = {
   body1: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 500,
     letterSpacing: 0,
-    lineHeight: 24 / 18,
+    lineHeight: 24 / 16,
   },
   body2: {
     color: COLORS.TEXT_SECONDARY,
@@ -77,10 +77,10 @@ const TYPOGRAPHY: TypographyOptions = {
     lineHeight: 32 / 24,
   },
   h6: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 600,
     letterSpacing: 0,
-    lineHeight: 32 / 24,
+    lineHeight: 32 / 20,
   },
   htmlFontSize: 16,
   overline: {

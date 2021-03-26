@@ -7,6 +7,8 @@
  * @prettier
  */
 
+/* eslint-disable react/display-name */
+
 import * as React from 'react';
 import {
   Alert as MiuAlert,
@@ -28,18 +30,19 @@ export type AlertProps = MuiAlertProps & {
  *
  * @param props
  */
-export const Alert: React.FC<AlertProps> = ({
-  children,
-  title,
-  ...props
-}: AlertProps): React.ReactElement<AlertProps> => {
-  return (
-    <MiuAlert {...props}>
-      {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
+export const Alert: React.FC<AlertProps> = React.forwardRef(
+  (
+    { children, title, ...props }: AlertProps,
+    ref,
+  ): React.ReactElement<AlertProps> => {
+    return (
+      <MiuAlert ref={ref} {...props}>
+        {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
 
-      {children}
-    </MiuAlert>
-  );
-};
+        {children}
+      </MiuAlert>
+    );
+  },
+);
 
 export default Alert;

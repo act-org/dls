@@ -34,7 +34,8 @@ export default makeStyles({
     marginTop: DIMS.LAYOUT_PADDING * 2,
   },
   iconRoot: {
-    fontSize: 50,
+    height: 50,
+    width: 50,
   },
   titleGridContainer: {
     marginBottom: DIMS.LAYOUT_PADDING,

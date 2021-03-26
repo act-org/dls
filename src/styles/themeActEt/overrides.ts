@@ -55,13 +55,51 @@ const OVERRIDES: Overrides = {
     outlinedSizeLarge: {
       borderRadius: 24,
     },
-    sizeSmall: {
+    root: {
       fontSize: 14,
+      height: 36,
+    },
+    sizeLarge: {
+      fontSize: 18,
+      height: 40,
+    },
+    sizeSmall: {
+      fontSize: 12,
+      height: 32,
     },
     textPrimary: {
       '&:active': {
         color: COLORS.PRIMARY_DARK,
       },
+    },
+  },
+  MuiIconButton: {
+    root: {
+      height: 36,
+      width: 36,
+    },
+    sizeSmall: {
+      height: 32,
+      width: 32,
+    },
+  },
+  MuiLink: {
+    root: {
+      cursor: 'pointer',
+    },
+  },
+  MuiSvgIcon: {
+    fontSizeLarge: {
+      height: 32,
+      width: 32,
+    },
+    fontSizeSmall: {
+      height: 17,
+      width: 17,
+    },
+    root: {
+      height: 22,
+      width: 22,
     },
   },
   MuiSwitch: {

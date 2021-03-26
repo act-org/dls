@@ -7,6 +7,8 @@
  * @prettier
  */
 
+/* eslint-disable react/display-name */
+
 import * as React from 'react';
 import { Paper as MiuPaper, PaperProps } from '@material-ui/core';
 
@@ -22,10 +24,10 @@ export type { PaperProps };
  *
  * @param PaperProps
  */
-export const Paper: React.FC<PaperProps> = (
-  props: PaperProps,
-): React.ReactElement<PaperProps> => {
-  return <MiuPaper {...props} />;
-};
+export const Paper: React.FC<PaperProps> = React.forwardRef(
+  (props: PaperProps, ref): React.ReactElement<PaperProps> => {
+    return <MiuPaper ref={ref} {...props} />;
+  },
+);
 
 export default Paper;
