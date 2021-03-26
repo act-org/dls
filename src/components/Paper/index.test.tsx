@@ -8,15 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Paper } from '.';
 
 describe('Paper', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Paper elevation={2}>Paper</Paper>, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Paper elevation={2}>Paper</Paper>;
+  standard(Component);
 });

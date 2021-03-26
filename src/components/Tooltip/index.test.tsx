@@ -8,21 +8,15 @@
  */
 
 import * as React from 'react';
-
-import { HelpCircleOutline } from '~/icons';
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
+import { HelpCircleOutline } from '../../icons';
 import { Tooltip } from '.';
 
 describe('Tooltip', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <Tooltip title="Title text here">
-        <HelpCircleOutline />
-      </Tooltip>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <Tooltip title="Title text here">
+      <HelpCircleOutline />
+    </Tooltip>
+  );
+  standard(Component);
 });

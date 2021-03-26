@@ -8,21 +8,15 @@
  */
 
 import * as React from 'react';
-
-import { Button } from '~/components/Button';
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { DialogActions } from '.';
+import { Button } from '../Button';
 
 describe('DialogActions', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <DialogActions>
-        <Button>Close</Button>
-      </DialogActions>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <DialogActions>
+      <Button>Close</Button>
+    </DialogActions>
+  );
+  standard(Component);
 });

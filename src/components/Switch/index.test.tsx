@@ -8,15 +8,18 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Switch } from '.';
 
 describe('Switch', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Switch checked color="primary" />, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Switch checked color="primary" />;
+  standard(
+    Component,
+    {},
+    {
+      rules: {
+        label: { enabled: false }, // specific unit test for the control without the label
+      },
+    },
+  );
 });

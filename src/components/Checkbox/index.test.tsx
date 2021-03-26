@@ -8,15 +8,18 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Checkbox } from '.';
 
 describe('Checkbox', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Checkbox checked color="primary" />, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Checkbox checked color="primary" />;
+  standard(
+    Component,
+    {},
+    {
+      rules: {
+        label: { enabled: false }, // specific unit test for the control without the label
+      },
+    },
+  );
 });

@@ -32,6 +32,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
         aria-label="Clears the search"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
         tabindex="0"
+        title="Clears the search"
         type="button"
       >
         <span
@@ -103,6 +104,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
         aria-label="Clears the search"
         class="MuiButtonBase-root MuiIconButton-root"
         tabindex="0"
+        title="Clears the search"
         type="button"
       >
         <span

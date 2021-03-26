@@ -8,35 +8,29 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { FormSelect } from '.';
 
 describe('FormSelect', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <FormSelect
-        label="Select Label"
-        options={[
-          {
-            label: 'One',
-            value: 'ONE',
-          },
-          {
-            label: 'Two',
-            value: 'TWO',
-          },
-          {
-            label: 'Three',
-            value: 'THREE',
-          },
-        ]}
-        placeholder="Placeholder"
-      />,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <FormSelect
+      label="Select Label"
+      options={[
+        {
+          label: 'One',
+          value: 'ONE',
+        },
+        {
+          label: 'Two',
+          value: 'TWO',
+        },
+        {
+          label: 'Three',
+          value: 'THREE',
+        },
+      ]}
+      placeholder="Placeholder"
+    />
+  );
+  standard(Component);
 });

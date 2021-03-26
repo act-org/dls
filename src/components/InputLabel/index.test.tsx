@@ -8,20 +8,14 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { InputLabel } from '.';
 
 describe('InputLabel', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <InputLabel color="primary" required>
-        InputLabel
-      </InputLabel>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <InputLabel color="primary" required>
+      InputLabel
+    </InputLabel>
+  );
+  standard(Component);
 });

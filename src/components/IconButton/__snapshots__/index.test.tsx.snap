@@ -5,6 +5,7 @@ exports[`IconButton ACT theme matches the snapshot 1`] = `
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
     tabindex="0"
+    title="icon button"
     type="button"
   >
     <span
@@ -33,6 +34,7 @@ exports[`IconButton ACT_ET theme matches the snapshot 1`] = `
   <button
     class="MuiButtonBase-root MuiIconButton-root"
     tabindex="0"
+    title="icon button"
     type="button"
   >
     <span

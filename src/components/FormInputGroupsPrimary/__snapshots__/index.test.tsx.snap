@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
+exports[`FormInputGroupsPrimary ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-1 MuiGrid-spacing-xs-4"
@@ -148,6 +148,168 @@ exports[`FormInputGroupsPrimary matches the snapshot 1`] = `
           >
             <legend
               class="PrivateNotchedOutline-legend-5"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FormInputGroupsPrimary ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-8 MuiGrid-spacing-xs-4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-9"
+    >
+      <div
+        class="MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-10 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+          required=""
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input"
+            placeholder="Input 1"
+            required=""
+            type="text"
+            value="value1"
+          />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-11 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-12"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-9"
+    >
+      <div
+        class="MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-10 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+          required=""
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input"
+            placeholder="Input 2"
+            required=""
+            type="password"
+            value="value2"
+          />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-11 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-12"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-8 MuiGrid-spacing-xs-4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-9"
+    >
+      <div
+        class="MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-10 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input"
+            placeholder="Input 3"
+            type="text"
+            value="value3"
+          />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-11 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-12"
               style="width: 0.01px;"
             >
               <span>

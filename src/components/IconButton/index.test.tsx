@@ -8,22 +8,16 @@
  */
 
 import * as React from 'react';
+import { standard } from '../../helpers/test';
 import { noop } from 'lodash';
-
-import { PencilCircle } from '~/icons';
-import { render, THEMES } from '~/helpers/test';
-
+import { PencilCircle } from '../../icons';
 import { IconButton } from '.';
 
 describe('IconButton', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <IconButton onClick={noop}>
-        <PencilCircle />
-      </IconButton>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <IconButton onClick={noop} title="icon button">
+      <PencilCircle />
+    </IconButton>
+  );
+  standard(Component);
 });

@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Input, InputProps } from '.';
-import { Playground } from '~/helpers/playground';
+import { Playground } from '../../helpers/playground';
 
 export const Template: Story<InputProps> = args => {
   const [value, setValue] = React.useState<string>(args.value as string);

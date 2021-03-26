@@ -8,19 +8,19 @@
  */
 
 import * as React from 'react';
+import { standard } from '../../helpers/test';
 import { noop } from 'lodash';
-
-import { render, THEMES } from '~/helpers/test';
-
 import { Input } from '.';
 
 describe('Input', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <Input onChange={noop} value="Value" />,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Input onChange={noop} value="Value" />;
+  standard(
+    Component,
+    {},
+    {
+      rules: {
+        label: { enabled: false }, // specific unit test for the control without the label
+      },
+    },
+  );
 });

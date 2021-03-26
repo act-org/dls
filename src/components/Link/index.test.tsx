@@ -8,20 +8,14 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Link } from '.';
 
 describe('Link', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <Link href="https://www.act.org" target="_blank">
-        <div>children</div>
-      </Link>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <Link href="https://www.act.org" target="_blank">
+      <div>children</div>
+    </Link>
+  );
+  standard(Component);
 });

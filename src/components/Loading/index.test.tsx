@@ -8,15 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Loading } from '.';
 
 describe('Loading', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Loading title="Loading..." />, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Loading title="Loading..." />;
+  standard(Component);
 });

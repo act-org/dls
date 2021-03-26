@@ -8,18 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Button } from '.';
 
 describe('Button', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <Button color="primary">Click me</Button>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Button color="primary">Click me</Button>;
+  standard(Component);
 });

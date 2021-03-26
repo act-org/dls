@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormInputPrimary matches the snapshot 1`] = `
+exports[`FormInputPrimary ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
@@ -14,7 +14,9 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
       >
         <span
           class="label-help"
-        />
+        >
+          Label
+        </span>
       </div>
     </label>
     <div
@@ -23,8 +25,9 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
       <input
         aria-invalid="false"
         class="MuiInputBase-input MuiOutlinedInput-input"
+        placeholder="Placeholder"
         type="text"
-        value="Value"
+        value="test"
       />
       <fieldset
         aria-hidden="true"
@@ -33,6 +36,54 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
       >
         <legend
           class="PrivateNotchedOutline-legend-3"
+          style="width: 0.01px;"
+        >
+          <span>
+            ​
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FormInputPrimary ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      data-shrink="true"
+    >
+      <div
+        class="label-split"
+      >
+        <span
+          class="label-help"
+        >
+          Label
+        </span>
+      </div>
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input"
+        placeholder="Placeholder"
+        type="text"
+        value="test"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
+        style="padding-left: 8px;"
+      >
+        <legend
+          class="PrivateNotchedOutline-legend-8"
           style="width: 0.01px;"
         >
           <span>

@@ -3,6 +3,7 @@
 exports[`Loading ACT theme matches the snapshot 1`] = `
 <div>
   <div
+    aria-label="Loading..."
     class="makeStyles-container-1"
     data-testid="loading"
   >
@@ -10,6 +11,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
       class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
       role="progressbar"
       style="width: 24px; height: 24px;"
+      title="Loading..."
     >
       <svg
         class="MuiCircularProgress-svg"
@@ -37,6 +39,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
 exports[`Loading ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
+    aria-label="Loading..."
     class="makeStyles-container-3"
     data-testid="loading"
   >
@@ -44,6 +47,7 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
       class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
       role="progressbar"
       style="width: 24px; height: 24px;"
+      title="Loading..."
     >
       <svg
         class="MuiCircularProgress-svg"

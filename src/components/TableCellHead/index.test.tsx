@@ -8,30 +8,23 @@
  */
 
 import * as React from 'react';
+import { snapshot } from '../../helpers/test';
 import { noop } from 'lodash';
-
-import render from '~/helpers/test/render';
-
 import TableCellHead from '.';
 
 describe('TableCellHead', () => {
-  it('matches the snapshot', () => {
-    const tableRow = document.createElement('tr');
-    const { container } = render(
-      <TableCellHead
-        currentSortObject={{
-          sortBy: 'ITEM_KEY',
-          sortDirection: 'ASCENDING',
-        }}
-        onChangeSort={noop}
-        sortBy="ITEM_KEY"
-      >
-        TableCellHead
-      </TableCellHead>,
-      'ACT_ET',
-      { container: document.body.appendChild(tableRow) },
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <TableCellHead
+      currentSortObject={{
+        sortBy: 'ITEM_KEY',
+        sortDirection: 'ASCENDING',
+      }}
+      onChangeSort={noop}
+      sortBy="ITEM_KEY"
+    >
+      TableCellHead
+    </TableCellHead>
+  );
+  const tableRow = document.createElement('tr');
+  snapshot(Component, { container: document.body.appendChild(tableRow) });
 });

@@ -8,15 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Toolbar } from '.';
 
 describe('Toolbar', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Toolbar variant="dense" />, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Toolbar variant="dense" />;
+  standard(Component);
 });

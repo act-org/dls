@@ -8,10 +8,8 @@
  */
 
 import * as React from 'react';
+import { snapshot } from '../../helpers/test';
 import { noop } from 'lodash';
-
-import render from '~/helpers/test/render';
-
 import DataTablePrimary from '.';
 
 interface Item {
@@ -23,66 +21,63 @@ interface Item {
 }
 
 describe('DataTablePrimary', () => {
-  it('matches the snapshot', () => {
-    const { container } = render(
-      <DataTablePrimary
-        columns={[
-          {
-            label: 'ID',
-            renderValue: (i: Item): string => i.id,
-            sortBy: 'id',
-            style: {
-              width: 50,
-            },
-          },
-          {
-            label: 'Name',
-            renderValue: (i: Item): string => i.name,
-            sortBy: 'name',
-            style: {
-              width: 100,
-            },
-          },
-          {
-            label: 'Field A',
-            renderValue: (i: Item): string => i.fieldA,
-            sortBy: 'fieldA',
-            style: {
-              width: 100,
-            },
-          },
-          {
-            label: 'Field B',
-            renderValue: (i: Item): string => i.fieldB,
-            sortBy: 'fieldB',
-            style: {
-              width: 100,
-            },
-          },
-          {
-            label: 'Field C',
-            renderValue: (i: Item): string => i.fieldC,
-            sortBy: 'fieldC',
-            style: {
-              width: 100,
-            },
-          },
-        ]}
-        currentSortObject={{
+  const Component = (
+    <DataTablePrimary
+      columns={[
+        {
+          label: 'ID',
+          renderValue: (i: Item): string => i.id,
           sortBy: 'id',
-          sortDirection: 'ASCENDING',
-        }}
-        items={Array(...Array(5)).map((_, i): any => ({
-          fieldA: `Field A${i + 1}`,
-          fieldB: `Field B${i + 1}`,
-          fieldC: `Field C${i + 1}`,
-          id: i + 1,
-          name: `Item ${i + 1}`,
-        }))}
-        onChangeSort={noop}
-      />,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+          style: {
+            width: 50,
+          },
+        },
+        {
+          label: 'Name',
+          renderValue: (i: Item): string => i.name,
+          sortBy: 'name',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field A',
+          renderValue: (i: Item): string => i.fieldA,
+          sortBy: 'fieldA',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field B',
+          renderValue: (i: Item): string => i.fieldB,
+          sortBy: 'fieldB',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field C',
+          renderValue: (i: Item): string => i.fieldC,
+          sortBy: 'fieldC',
+          style: {
+            width: 100,
+          },
+        },
+      ]}
+      currentSortObject={{
+        sortBy: 'id',
+        sortDirection: 'ASCENDING',
+      }}
+      items={Array(...Array(5)).map((_, i): any => ({
+        fieldA: `Field A${i + 1}`,
+        fieldB: `Field B${i + 1}`,
+        fieldC: `Field C${i + 1}`,
+        id: i + 1,
+        name: `Item ${i + 1}`,
+      }))}
+      onChangeSort={noop}
+    />
+  );
+  snapshot(Component);
 });

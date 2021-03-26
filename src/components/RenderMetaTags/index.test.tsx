@@ -8,23 +8,17 @@
  */
 
 import * as React from 'react';
-import renderer from 'react-test-renderer';
-
+import { standard } from '../../helpers/test';
 import { RenderMetaTags } from '.';
 
 describe('RenderMetaTagsBase', () => {
-  it('matches the snapshot', () => {
-    const tree = renderer
-      .create(
-        <RenderMetaTags
-          description="Some description."
-          imageUrl="https://mawi.et-act.org"
-          keywords={['keyword1', 'keyword2', 'keyword3']}
-          title="Some Title"
-        />,
-      )
-      .toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
+  const Component = (
+    <RenderMetaTags
+      description="Some description."
+      imageUrl="https://mawi.et-act.org"
+      keywords={['keyword1', 'keyword2', 'keyword3']}
+      title="Some Title"
+    />
+  );
+  standard(Component);
 });

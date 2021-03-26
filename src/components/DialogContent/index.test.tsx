@@ -8,15 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { DialogContent } from '.';
 
 describe('DialogContent', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<DialogContent>Hey</DialogContent>, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <DialogContent>Hey</DialogContent>;
+  standard(Component);
 });

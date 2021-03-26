@@ -8,18 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { FormCheckbox } from '.';
 
 describe('FormCheckbox', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <FormCheckbox id="primarycheckbox" label="The label" />,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <FormCheckbox id="primarycheckbox" label="The label" />;
+  standard(Component);
 });

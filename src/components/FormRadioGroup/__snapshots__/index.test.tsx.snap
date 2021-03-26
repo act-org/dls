@@ -38,7 +38,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
           >
             <input
               class="PrivateSwitchBase-input-5"
-              name="mui-88580"
+              name="mui-12345"
               type="radio"
               value="one"
             />
@@ -90,7 +90,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
           >
             <input
               class="PrivateSwitchBase-input-5"
-              name="mui-88580"
+              name="mui-12345"
               type="radio"
               value="two"
             />
@@ -172,7 +172,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
           >
             <input
               class="PrivateSwitchBase-input-13"
-              name="mui-99851"
+              name="mui-12346"
               type="radio"
               value="one"
             />
@@ -224,7 +224,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
           >
             <input
               class="PrivateSwitchBase-input-13"
-              name="mui-99851"
+              name="mui-12346"
               type="radio"
               value="two"
             />

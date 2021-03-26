@@ -8,18 +8,12 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { FormSwitch } from '.';
 
 describe('FormSwitch', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <FormSwitch id="uniqueId" label="Form Switch Label" value={false} />,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = (
+    <FormSwitch id="uniqueId" label="Form Switch Label" value={false} />
+  );
+  standard(Component);
 });

@@ -8,20 +8,11 @@
  */
 
 import * as React from 'react';
-
-import render from '~/helpers/test/render';
-
+import { snapshot } from '../../helpers/test';
 import TableCellBody from '.';
 
 describe('TableCellBody', () => {
-  it('matches the snapshot', () => {
-    const tableRow = document.createElement('tr');
-    const { container } = render(
-      <TableCellBody>TableCell</TableCellBody>,
-      'ACT_ET',
-      { container: document.body.appendChild(tableRow) },
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <TableCellBody>TableCell</TableCellBody>;
+  const tableRow = document.createElement('tr');
+  snapshot(Component, { container: document.body.appendChild(tableRow) });
 });

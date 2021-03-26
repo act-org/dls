@@ -8,15 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { AppBar } from '.';
 
 describe('AppBar', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<AppBar color="primary" />, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <AppBar color="primary" />;
+  standard(Component);
 });

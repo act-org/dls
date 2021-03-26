@@ -62,6 +62,7 @@ export function SearchBar({
                 });
               }
             }}
+            title="Clears the search"
           >
             <CloseCircle fontSize="small" />
           </IconButton>

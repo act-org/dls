@@ -8,15 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Typography } from '.';
 
 describe('Typography', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Typography variant="h1" />, theme);
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Typography variant="h1">Heading Title</Typography>;
+  standard(Component);
 });

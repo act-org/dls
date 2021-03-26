@@ -8,15 +8,39 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '../../helpers/test';
-
+import { standard, render } from '../../helpers/test';
 import { Dialog } from '.';
+import userEvent from '@testing-library/user-event';
 
 describe('Dialog', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(<Dialog open>Hey</Dialog>, theme);
+  const Component = (
+    <Dialog open title="Test Title">
+      Hey
+    </Dialog>
+  );
+  standard(Component);
 
-    expect(container).toMatchSnapshot();
+  it('should publish an onClose event when the close icon is clicked', () => {
+    const onClose = jest.fn();
+    const rendered = render(
+      <Dialog onClose={onClose} open title="Test Title">
+        Dialog Content
+      </Dialog>,
+      'ACT',
+    );
+    userEvent.click(rendered.getByRole('button'));
+    expect(onClose).toHaveBeenCalled();
+  });
+
+  it('should not publish an onClose event when no onClose hander is provided', () => {
+    const onClose = jest.fn();
+    const rendered = render(
+      <Dialog open title="Test Title">
+        Dialog Content
+      </Dialog>,
+      'ACT',
+    );
+    userEvent.click(rendered.getByRole('button'));
+    expect(onClose).toHaveBeenCalledTimes(0);
   });
 });

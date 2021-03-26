@@ -8,18 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '../../helpers/test';
-
+import { standard } from '../../helpers/test';
 import { Alert } from '.';
 
 describe('Alert', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <Alert title="Title Here">Alert text</Alert>,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <Alert title="Title Here">Alert text</Alert>;
+  standard(Component);
 });

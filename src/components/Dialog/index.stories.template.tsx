@@ -12,7 +12,7 @@ import { Dialog, DialogProps } from '.';
 import { DialogContent } from '../DialogContent';
 import { DialogActions } from '../DialogActions';
 import { Button } from '../Button';
-import { Playground } from '~/helpers/playground';
+import { Playground } from '../../helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
 
 interface StoryProps extends DialogProps {

@@ -11,7 +11,7 @@ import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { PencilCircle, PencilCircleOutline } from '~/icons';
-import { Playground } from '~/helpers/playground';
+import { Playground } from '../../helpers/playground';
 
 import { IconButton, IconButtonProps } from '.';
 

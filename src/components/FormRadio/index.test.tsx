@@ -8,18 +8,10 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { FormRadio } from '.';
 
 describe('FormRadio', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <FormRadio id="primaryswitch" label="The label" />,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
+  const Component = <FormRadio id="primaryswitch" label="The label" />;
+  standard(Component);
 });

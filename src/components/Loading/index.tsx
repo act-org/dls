@@ -30,8 +30,18 @@ export const Loading: React.FC<LoadingProps> = ({
   const classes = useStyles();
 
   return (
-    <div className={classes.container} data-testid="loading" style={style}>
-      <CircularProgress size={24} thickness={4.5} {...circularProgressProps} />
+    <div
+      aria-label={title}
+      className={classes.container}
+      data-testid="loading"
+      style={style}
+    >
+      <CircularProgress
+        size={24}
+        thickness={4.5}
+        title={title}
+        {...circularProgressProps}
+      />
 
       {title && (
         <Typography

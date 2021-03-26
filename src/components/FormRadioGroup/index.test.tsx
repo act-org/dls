@@ -8,26 +8,28 @@
  */
 
 import * as React from 'react';
-
-import { render, THEMES } from '~/helpers/test';
-
+import { standard } from '../../helpers/test';
 import { FormRadioGroup } from '.';
 
-describe.skip('FormRadioGroup', () => {
-  test.each(THEMES)('%s theme matches the snapshot', theme => {
-    const { container } = render(
-      <FormRadioGroup
-        id="primaryradiogroup"
-        label="The label"
-        name="radiooptions"
-        options={[
-          { id: 'one', label: 'one', value: 'one' },
-          { id: 'two', label: 'two', value: 'two' },
-        ]}
-      />,
-      theme,
-    );
-
-    expect(container).toMatchSnapshot();
+jest.mock('@material-ui/core/utils/unstable_useId', () => {
+  let initialId = 12345;
+  return jest.fn(() => {
+    // eslint-disable-next-line no-plusplus
+    return `mui-${initialId++}`;
   });
+});
+
+describe('FormRadioGroup', () => {
+  const Component = (
+    <FormRadioGroup
+      id="primaryradiogroup"
+      label="The label"
+      name="radiooptions"
+      options={[
+        { id: 'one', label: 'one', value: 'one' },
+        { id: 'two', label: 'two', value: 'two' },
+      ]}
+    />
+  );
+  standard(Component);
 });
