@@ -81,7 +81,9 @@ export const Playground = (args: Record<string, any>, type?: any): any => {
 
       let category: string = elseGroup;
 
-      if (key.startsWith('aria')) {
+      if (args[key] && !key.startsWith('on')) {
+        category = playgroundGroup;
+      } else if (key.startsWith('aria')) {
         category = ariaGroup;
       } else if (key.startsWith('on')) {
         category = eventsGroup;
