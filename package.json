@@ -69,11 +69,6 @@
     "ts-node": "9.1.1",
     "typescript": "4.2.3"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "homepage": "https://act-org.github.io/dls",
   "keywords": [
     "design language system",
@@ -136,5 +131,5 @@
     "prepare": "husky install"
   },
   "types": "index.d.ts",
-  "version": "4.0.0-3"
+  "version": "4.0.0-4"
 }

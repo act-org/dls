@@ -13,8 +13,8 @@ import { DataGrid as MuiDataGrid, DataGridProps } from '@material-ui/data-grid';
 export type {
   DataGridProps,
   GridColDef,
-  ValueGetterParams,
-  ValueFormatterParams,
+  GridValueGetterParams,
+  GridValueFormatterParams,
 } from '@material-ui/data-grid';
 
 /**

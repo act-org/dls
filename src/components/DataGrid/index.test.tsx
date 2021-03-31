@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { standard } from '../../helpers/test';
-import { DataGrid, ValueGetterParams } from '.';
+import { DataGrid, GridValueGetterParams } from '.';
 
 jest.mock('@material-ui/core/utils', () => {
   let initialId = 12345;
@@ -59,7 +59,7 @@ describe('DataGrid', () => {
           flex: 1,
           headerName: 'Full name',
           sortable: false,
-          valueGetter: (params: ValueGetterParams): string =>
+          valueGetter: (params: GridValueGetterParams): string =>
             `${params.getValue('firstName') || ''} ${
               params.getValue('lastName') || ''
             }`,

@@ -380,8 +380,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-            role="cell"
+            class="MuiDataGrid-cell"
             style="min-width: 100px; max-width: 100px; line-height: 55px; min-height: 56px; max-height: 56px;"
           />
         </div>
@@ -421,10 +420,11 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="0"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
-                      tabindex="0"
+                      tabindex="-1"
                     >
                       <span
                         aria-disabled="false"
@@ -460,6 +460,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="1"
                       role="cell"
@@ -472,6 +473,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="Jon"
                       role="cell"
@@ -484,6 +486,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="Snow"
                       role="cell"
@@ -496,6 +499,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="35"
                       role="cell"
@@ -505,8 +509,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       35
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -523,6 +526,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="1"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -562,6 +566,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="2"
                       role="cell"
@@ -574,6 +579,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="Cersei"
                       role="cell"
@@ -586,6 +592,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="Lannister"
                       role="cell"
@@ -598,6 +605,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="42"
                       role="cell"
@@ -607,8 +615,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       42
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -625,6 +632,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="2"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -664,6 +672,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="3"
                       role="cell"
@@ -676,6 +685,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="Jaime"
                       role="cell"
@@ -688,6 +698,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="Lannister"
                       role="cell"
@@ -700,6 +711,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="45"
                       role="cell"
@@ -709,8 +721,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       45
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -727,6 +738,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="3"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -766,6 +778,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="4"
                       role="cell"
@@ -778,6 +791,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="Arya"
                       role="cell"
@@ -790,6 +804,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="Stark"
                       role="cell"
@@ -802,6 +817,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="16"
                       role="cell"
@@ -811,8 +827,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       16
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -829,6 +844,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="4"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -868,6 +884,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="4"
                       data-value="5"
                       role="cell"
@@ -880,6 +897,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="4"
                       data-value="Daenerys"
                       role="cell"
@@ -892,6 +910,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="4"
                       data-value="Targaryen"
                       role="cell"
@@ -904,14 +923,14 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="4"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
                     />
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -928,6 +947,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="5"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -967,6 +987,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="5"
                       data-value="6"
                       role="cell"
@@ -979,6 +1000,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="5"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -988,6 +1010,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="5"
                       data-value="Melisandre"
                       role="cell"
@@ -1000,6 +1023,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="5"
                       data-value="150"
                       role="cell"
@@ -1009,8 +1033,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       150
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -1027,6 +1050,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="6"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1066,6 +1090,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="6"
                       data-value="7"
                       role="cell"
@@ -1078,6 +1103,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="6"
                       data-value="Ferrara"
                       role="cell"
@@ -1090,6 +1116,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="6"
                       data-value="Clifford"
                       role="cell"
@@ -1102,6 +1129,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="6"
                       data-value="44"
                       role="cell"
@@ -1111,8 +1139,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       44
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -1129,6 +1156,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="7"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1168,6 +1196,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="7"
                       data-value="8"
                       role="cell"
@@ -1180,6 +1209,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="7"
                       data-value="Rossini"
                       role="cell"
@@ -1192,6 +1222,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="7"
                       data-value="Frances"
                       role="cell"
@@ -1204,6 +1235,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="7"
                       data-value="36"
                       role="cell"
@@ -1213,8 +1245,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       36
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -1231,6 +1262,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="8"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1270,6 +1302,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="8"
                       data-value="9"
                       role="cell"
@@ -1282,6 +1315,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="8"
                       data-value="Harvey"
                       role="cell"
@@ -1294,6 +1328,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="8"
                       data-value="Roxie"
                       role="cell"
@@ -1306,6 +1341,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="8"
                       data-value="65"
                       role="cell"
@@ -1315,8 +1351,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       65
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -1795,8 +1830,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-            role="cell"
+            class="MuiDataGrid-cell"
             style="min-width: 100px; max-width: 100px; line-height: 55px; min-height: 56px; max-height: 56px;"
           />
         </div>
@@ -1836,10 +1870,11 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="0"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
-                      tabindex="0"
+                      tabindex="-1"
                     >
                       <span
                         aria-disabled="false"
@@ -1875,6 +1910,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="1"
                       role="cell"
@@ -1887,6 +1923,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="Jon"
                       role="cell"
@@ -1899,6 +1936,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="Snow"
                       role="cell"
@@ -1911,6 +1949,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="0"
                       data-value="35"
                       role="cell"
@@ -1920,8 +1959,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       35
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -1938,6 +1976,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="1"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1977,6 +2016,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="2"
                       role="cell"
@@ -1989,6 +2029,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="Cersei"
                       role="cell"
@@ -2001,6 +2042,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="Lannister"
                       role="cell"
@@ -2013,6 +2055,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="1"
                       data-value="42"
                       role="cell"
@@ -2022,8 +2065,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       42
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -2040,6 +2082,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="2"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2079,6 +2122,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="3"
                       role="cell"
@@ -2091,6 +2135,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="Jaime"
                       role="cell"
@@ -2103,6 +2148,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="Lannister"
                       role="cell"
@@ -2115,6 +2161,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="2"
                       data-value="45"
                       role="cell"
@@ -2124,8 +2171,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       45
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -2142,6 +2188,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="3"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2181,6 +2228,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="4"
                       role="cell"
@@ -2193,6 +2241,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="Arya"
                       role="cell"
@@ -2205,6 +2254,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="Stark"
                       role="cell"
@@ -2217,6 +2267,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="3"
                       data-value="16"
                       role="cell"
@@ -2226,8 +2277,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       16
                     </div>
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
@@ -2244,6 +2294,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="0"
                       class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
                       data-field="__check__"
+                      data-mode="view"
                       data-rowindex="4"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2283,6 +2334,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="1"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="id"
+                      data-mode="view"
                       data-rowindex="4"
                       data-value="5"
                       role="cell"
@@ -2295,6 +2347,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="2"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="firstName"
+                      data-mode="view"
                       data-rowindex="4"
                       data-value="Daenerys"
                       role="cell"
@@ -2307,6 +2360,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="3"
                       class="MuiDataGrid-cell MuiDataGrid-cellLeft"
                       data-field="lastName"
+                      data-mode="view"
                       data-rowindex="4"
                       data-value="Targaryen"
                       role="cell"
@@ -2319,14 +2373,14 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-colindex="4"
                       class="MuiDataGrid-cell MuiDataGrid-cellRight"
                       data-field="age"
+                      data-mode="view"
                       data-rowindex="4"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
                     />
                     <div
-                      class="MuiDataGrid-cell MuiDataGrid-cellLeft"
-                      role="cell"
+                      class="MuiDataGrid-cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                     />
                   </div>
