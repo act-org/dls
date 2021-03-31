@@ -128,6 +128,7 @@
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --verbose",
+    "test:outdated": "npm outdated",
     "prepare": "husky install"
   },
   "types": "index.d.ts",
