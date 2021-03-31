@@ -1,7 +1,7 @@
 {
   "anyBranch": true,
   "cleanup": false,
-  "contents": "dist",
+  "contents": "./dist",
   "message": "chore: Bump to v%s",
   "publish": true,
   "releaseDraft": false,
