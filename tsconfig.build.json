@@ -5,7 +5,7 @@
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
-    "outDir": "./lib",
+    "outDir": "./dist",
     "sourceMap": true
   }
 }

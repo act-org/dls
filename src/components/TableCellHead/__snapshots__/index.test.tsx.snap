@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableCellHead matches the snapshot 1`] = `
-<div>
+exports[`TableCellHead ACT theme matches the snapshot 1`] = `
+<tr>
   <td
     class="MuiTableCell-root makeStyles-tableCellRoot-3 makeStyles-tableCellRootSortable-4 makeStyles-tableCellRootSortApplied-5"
     role="cell"
@@ -39,5 +39,47 @@ exports[`TableCellHead matches the snapshot 1`] = `
       </svg>
     </div>
   </td>
-</div>
+</tr>
+`;
+
+exports[`TableCellHead ACT_ET theme matches the snapshot 1`] = `
+<tr>
+  <td
+    class="MuiTableCell-root makeStyles-tableCellRoot-9 makeStyles-tableCellRootSortable-10 makeStyles-tableCellRootSortApplied-11"
+    role="cell"
+  >
+    <p
+      class="MuiTypography-root makeStyles-typographyRoot-12 MuiTypography-body1"
+    >
+      TableCellHead
+    </p>
+    <div
+      class="MuiGrid-root makeStyles-sortContainerRoot-7 MuiGrid-container"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-sortIconRoot-8"
+        focusable="false"
+        role="button"
+        style="color: rgb(255, 255, 255);"
+        viewBox="9 3 5 15"
+      >
+        <path
+          d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root makeStyles-sortIconRoot-8"
+        focusable="false"
+        role="button"
+        viewBox="9 7 5 15"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </div>
+  </td>
+</tr>
 `;

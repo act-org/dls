@@ -1,8 +1,7 @@
 {
-  "anyBranch": false,
-  "branch": "master",
+  "anyBranch": true,
   "cleanup": false,
-  "contents": "lib",
+  "contents": "./dist",
   "message": "chore: Bump to v%s",
   "publish": true,
   "releaseDraft": false,

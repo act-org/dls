@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paper ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+  >
+    Paper
+  </div>
+</div>
+`;
+
+exports[`Paper ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+  >
+    Paper
+  </div>
+</div>
+`;

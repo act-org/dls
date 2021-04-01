@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyStatePrimary ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="makeStyles-container-1"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-6 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-8"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter"
+        >
+          Title
+        </h6>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root makeStyles-descriptionRoot-2 MuiTypography-body1 MuiTypography-alignCenter"
+    >
+      Description
+    </p>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Button Title
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`EmptyStatePrimary ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="makeStyles-container-9"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-14 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-16"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter"
+        >
+          Title
+        </h6>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root makeStyles-descriptionRoot-10 MuiTypography-body1 MuiTypography-alignCenter"
+    >
+      Description
+    </p>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Button Title
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

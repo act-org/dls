@@ -1,92 +1,80 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
-import * as React from 'react';
-// import '@storybook/addon-console';
-import { addDecorator, addParameters } from '@storybook/react';
+import * as locales from '@material-ui/core/locale';
+import { addParameters } from '@storybook/react';
+import { common, grey } from '@material-ui/core/colors';
 import { configureActions } from '@storybook/addon-actions';
-import { grey } from '@material-ui/core/colors';
-import { host } from 'storybook-host';
-// import { muiTheme } from 'storybook-addon-material-ui';
-import { ThemeProvider } from '@material-ui/styles';
-import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
-import { withKnobs } from '@storybook/addon-knobs';
-
-import COLORS from '../src/constants/colors';
-import theme from '../src/styles/theme';
-
-addDecorator(
-  withInfo({
-    header: true,
-    inline: false,
-    source: true,
-  }),
-);
-
-addDecorator(
-  host({
-    align: 'center middle',
-    backdrop: COLORS.TRANSPARENT,
-    background: COLORS.TRANSPARENT,
-    border: false,
-    cropMarks: true,
-    padding: 100,
-  }),
-);
-
-addDecorator(storyFn => (
-  <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
-));
-
-addDecorator(withA11y());
-
-addDecorator(withKnobs());
-
-/*
-addDecorator(
-  muiTheme([
-    {
-      ...theme,
-      themeName: 'ACT Primary Theme',
-    },
-  ]),
-);
-*/
+import { CssBaseline } from '@material-ui/core';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import { ThemeProvider } from '../src/components/ThemeProvider';
 
 addParameters({
-  backgrounds: [
-    {
-      default: true,
-      name: 'White',
-      value: COLORS.WHITE,
-    },
-    {
-      name: 'Grey',
-      value: grey[300],
-    },
-    {
-      name: 'Black',
-      value: COLORS.BLACK,
-    },
-  ],
-});
-
-addParameters({
-  options: {
-    showRoots: true,
-  },
-});
-
-addParameters({
-  viewport: {
-    defaultViewport: 'responsive',
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
   },
 });
 
 configureActions({
-  clearOnStoryChange: true,
-  depth: 100,
+  depth: 3,
   limit: 20,
 });
+
+export const parameters = {
+  controls: { expanded: false },
+  backgrounds: {
+    default: 'White',
+    values: [
+      {
+        name: 'White',
+        value: common.white,
+      },
+      {
+        name: 'Grey',
+        value: grey[300],
+      },
+      {
+        name: 'Black',
+        value: common.black,
+      },
+    ],
+  },
+  layout: 'centered',
+};
+
+export const decorators = [
+  (Story, ctx) => (
+    <ThemeProvider locale={ctx.globals.language} theme={ctx.globals.theme}>
+      <CssBaseline />
+      <Story />
+    </ThemeProvider>
+  ),
+];
+
+export const globalTypes = {
+  theme: {
+    defaultValue: 'ACT',
+    description: 'Global theme for components',
+    name: 'Theme',
+    toolbar: {
+      icon: 'paintbrush',
+      items: ['ACT', 'ACT_ET'],
+    },
+  },
+  language: {
+    name: 'Language',
+    description: 'Global language for components',
+    defaultValue: 'enUS',
+    toolbar: {
+      icon: 'book',
+      items: Object.keys(locales),
+    },
+  },
+};

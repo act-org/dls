@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link ACT theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Link ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;

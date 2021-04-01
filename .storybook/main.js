@@ -1,43 +1,40 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
-const path = require('path');
+const fs = require('fs');
 
 module.exports = {
   addons: [
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-actions/register',
-    '@storybook/addon-a11y/register',
-    '@storybook/addon-backgrounds/register',
-    '@storybook/addon-viewport/register',
-    // 'storybook-addon-material-ui/register',
+    '@storybook/addon-a11y',
+    '@storybook/addon-docs',
+    '@storybook/addon-essentials',
+    '@storybook/addon-links',
   ],
-  stories: ['../src/**/*.stories.tsx'],
-  webpackFinal: async config => {
-    config.module.rules.push({
-      test: /\.tsx?$/,
-      include: path.resolve(__dirname, '../src'),
-      use: [
-        require.resolve('ts-loader'),
-        {
-          loader: require.resolve('react-docgen-typescript-loader'),
-          options: {
-            // Provide the path to your tsconfig.json so that your stories can
-            // display types from outside each individual story.
-            tsconfigPath: path.resolve(__dirname, '../tsconfig.json'),
-          },
-        },
-      ],
-    });
-
-    config.resolve.extensions.push('.ts', '.tsx');
-
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '~': path.resolve(__dirname, '../src'),
-    };
-
-    return config;
+  babel: async options => {
+    options.plugins.push([
+      'babel-plugin-root-import',
+      {
+        rootPathPrefix: '~',
+        rootPathSuffix: './src',
+      },
+    ]);
+    // fs.writeFileSync('./.babelrc', JSON.stringify(options));
+    return options;
+  },
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  typescript: {
+    check: true,
+    checkOptions: {},
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      propFilter: prop => true,
+      shouldExtractLiteralValuesFromEnum: true,
+    },
   },
 };

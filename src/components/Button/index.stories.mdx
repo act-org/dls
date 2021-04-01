@@ -1,0 +1,291 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { Plus, PlusCircleOutline } from '~/icons';
+
+import { argTypes, Template } from './index.stories.template';
+import { Button } from '.';
+
+<Meta argTypes={argTypes} component={Button} title="Atoms/Button" />
+
+<Description of={Button} />
+
+## Primary Button
+
+The primary button is used to designate and handle a primary action the user
+should take on a form or page. Not all buttons on the page should be primary to
+differentiate between primary and alternative paths for the user.
+
+<Canvas>
+  <Story args={{ children: 'Click me', color: 'primary' }} name="Primary">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Primary Disabled
+
+<Canvas>
+  <Story
+    args={{ children: 'Disabled', color: 'primary', disabled: true }}
+    name="Primary: Disabled"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Primary w/ Starting Icon
+
+<Canvas>
+  <Story
+    args={{ children: 'Click me', color: 'primary', startIcon: <Plus /> }}
+    name="Primary: With Starting Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Primary w/ Ending Icon
+
+<Canvas>
+  <Story
+    args={{ children: 'Click me', color: 'primary', endIcon: <Plus /> }}
+    name="Primary: With Ending Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Secondary Buttons
+
+Secondary buttons are useful for designating alternative actions that the user
+can take.
+
+### Outlined Button
+
+<Canvas>
+  <Story
+    args={{ children: 'Click me', color: 'secondary', variant: 'outlined' }}
+    name="Secondary: Outlined"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Disabled',
+      color: 'secondary',
+      disabled: true,
+      variant: 'outlined',
+    }}
+    name="Secondary: Outlined: Disabled"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Starting Icon',
+      color: 'secondary',
+      startIcon: <Plus />,
+      variant: 'outlined',
+    }}
+    name="Secondary: Outlined: With Starting Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Ending Icon',
+      color: 'secondary',
+      endIcon: <Plus />,
+      variant: 'outlined',
+    }}
+    name="Secondary: Outlined: With Ending Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Text Button
+
+<Canvas>
+  <Story
+    args={{ children: 'Click me', color: 'secondary', variant: 'text' }}
+    name="Secondary: Text"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Disabled',
+      color: 'secondary',
+      disabled: true,
+      variant: 'text',
+    }}
+    name="Secondary: Text: Disabled"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Starting Icon',
+      color: 'secondary',
+      startIcon: <PlusCircleOutline />,
+      variant: 'text',
+    }}
+    name="Secondary: Text: With Starting Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Ending Icon',
+      color: 'secondary',
+      endIcon: <PlusCircleOutline />,
+      variant: 'text',
+    }}
+    name="Secondary: Text: With Ending Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Contained Button
+
+<Canvas>
+  <Story
+    args={{ children: 'Click me', color: 'secondary', variant: 'contained' }}
+    name="Secondary: Contained"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Disabled',
+      color: 'secondary',
+      disabled: true,
+      variant: 'contained',
+    }}
+    name="Secondary: Contained: Disabled"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Starting Icon',
+      color: 'secondary',
+      startIcon: <Plus />,
+      variant: 'contained',
+    }}
+    name="Secondary: Contained: With Starting Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Ending Icon',
+      color: 'secondary',
+      endIcon: <Plus />,
+      variant: 'contained',
+    }}
+    name="Secondary: Contained: With Ending Icon"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Button Sizes
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Small',
+      color: 'primary',
+      size: 'small',
+      variant: 'outlined',
+    }}
+    name="Size: Small"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Medium',
+      color: 'primary',
+      size: 'medium',
+      variant: 'outlined',
+    }}
+    name="Size: Medium"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Large',
+      color: 'primary',
+      size: 'large',
+      variant: 'outlined',
+    }}
+    name="Size: Large"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    args={{
+      children: 'Click me',
+      color: 'primary',
+      disabled: false,
+      variant: 'outlined',
+    }}
+    name="Playground"
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

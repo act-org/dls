@@ -1,0 +1,41 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { Toolbar, ToolbarProps } from '.';
+
+<Meta
+  title="Atoms/Toolbar"
+  component={Toolbar}
+  argTypes={argTypes}
+  parameters={{}}
+/>
+
+<Description of={Toolbar} />
+
+## Primary
+
+<Canvas>
+  <Story name="Primary" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground" args={{}}>
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

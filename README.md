@@ -1,6 +1,9 @@
 # Design Language System (DLS)
+<!-- markdownlint-disable-next-line MD013 -->
+[![Build Status](https://travis-ci.com/act-org/dls.svg?branch=v4)](https://travis-ci.com/act-org/dls)
 
-DLS for ACT front-end projects.
+The Design Language System for ACT front-end projects. View the UI components
+[here](https://act-org.github.io/dls).
 
 ## Project Setup
 
@@ -11,33 +14,51 @@ In order to use the DLS, you must install it along with
 [React](https://reactjs.org/) version `16.x` or `17.x`.
 
 ```shell
-npm install --save @actinc/dls @material-ui/core@4 react@17 react-dom@17
+npm install --save @actinc/dls@next @material-ui/core@4 react@17 react-dom@17
 ```
 
-### Theme
+### Choosing a Theme
 
-The DLS utilizes the style and theming system that is provided by Material UI.
-You can set up your app using the basic `ThemeProvider` component from
-Material UI, or `ThemeProviderPrimary` (which includes the ACT default theme)
-from the DLS.
+This DLS is built on top of the
+[theming engine](https://material-ui.com/customization/theming/) from
+Material UI, and ships with two themes out of the box:
+
+1. `"ACT"` - for ACT's "traditional" look and feel
+2. `"ACT_ET"` - for ACT's "emerging technology" look and feel
+
+To apply one of these themes to your components, simply wrap your application
+in the `ThemeProvider` component and specify a theme!
 
 ```jsx
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-// or
-import { ThemeProviderPrimary } from '@actinc/dls/components';
+import { ThemeProvider } from '@actinc/dls/components';
 
 ...
 
-const MyApp1 = () => (
-  <ThemeProvider theme={createMuiTheme({ ... })}>
+const MyApp = () => (
+  // specify a theme here!
+  <ThemeProvider theme="ACT_ET">
     <App />
   </ThemeProvider>
 );
+```
 
-const MyApp2 = () => (
-  <ThemeProviderPrimary>
+#### Custom Themes
+
+Alternatively, you can build your own theme from scratch using the
+<!-- markdownlint-disable-next-line MD013 -->
+[`createMuiTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+generator from Material UI:
+
+```jsx
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@actinc/dls/components';
+
+const myCustomTheme = createMuiTheme({ ... });
+
+const MyApp = () => (
+  <ThemeProvider theme={myCustomTheme}>
     <App />
-  </ThemeProviderPrimary>
+  </ThemeProvider>
 );
 ```
 
@@ -204,15 +225,15 @@ constants, helpers, icons, styles, and types that you need:
 
 ```jsx
 // components
-import { ButtonPrimary } from '@actinc/dls/components';
+import { Button } from '@actinc/dls/components';
 // constants
 import { typography as TYPOGRAPHY } from '@actinc/dls/constants';
 // helpers
 import { search } from '@actinc/dls/helpers';
 // icons
 import { ChevronDown } from '@actinc/dls/icons';
-// styles
-import { theme } from '@actinc/dls/styles';
+// styles & themes
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 // types
 import { SortObject } from '@actinc/dls/types';
 ```
@@ -232,7 +253,7 @@ Here are some of the more important ones:
 
 | Script                  | Description                                                           |
 |:----------------------- |:--------------------------------------------------------------------- |
-| npm run build           | Transpile DLS from TypeScript (`./src`) into ES5 (`./lib`).           |
+| npm run build           | Transpile DLS from TypeScript (`./src`) into ES5 (`./dist`).          |
 | npm run build-storybook | Create a static website for deployment (`./storybook-static`).        |
 | npm start               | Start the [Storybook](https://storybook.js.org) component visualizer. |
 | npm test                | Run all tests.                                                        |

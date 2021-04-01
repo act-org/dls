@@ -1,13 +1,16 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
 
 import * as React from 'react';
 import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
 
-import EmptyStatePrimary, {
-  Props as EmptyStatePrimaryProps,
-} from '~/components/EmptyStatePrimary';
+import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
 import { SortObject } from '~/types';
 import TableCellBody from '~/components/TableCellBody';
 import TableCellHead from '~/components/TableCellHead';
@@ -25,7 +28,7 @@ interface Column<T> {
 export interface Props<T> {
   columns: Column<T>[];
   currentSortObject: SortObject;
-  emptyStateProps: EmptyStatePrimaryProps;
+  emptyStateProps?: EmptyStateProps;
   items: T[];
   onChangeSort: (sortObject: SortObject) => void;
   RowWrapper?: (
@@ -97,17 +100,13 @@ const DataTablePrimary = <T,>({
 
       {items.length === 0 && emptyStateProps && (
         <div className={classes.emptyStateContainer}>
-          <EmptyStatePrimary
-            description="No Results Found"
-            {...emptyStateProps}
-          />
+          <EmptyState description="No Results Found" {...emptyStateProps} />
         </div>
       )}
     </TableContainerPrimary>
   );
 };
 
-// eslint-disable-next-line immutable/no-mutation
 DataTablePrimary.defaultProps = {
   RowWrapper: undefined,
 };

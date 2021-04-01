@@ -1,0 +1,251 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { Alert } from '.';
+import { argTypes, Template } from './index.stories.template';
+
+<Meta argTypes={argTypes} component={Alert} title="Atoms/Alert" />
+
+<Description of={Alert} />
+
+## Simple Alert
+
+You can create a simple alert by just specifying a child description.
+
+<Canvas>
+  <Story
+    args={{
+      children: 'Some alert description goes here.',
+    }}
+    name="Simple"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Alert w/ Title
+
+Alerts also support a primary title.
+
+<Canvas>
+  <Story
+    name="With Title"
+    args={{
+      children: 'Some alert description goes here.',
+      title: 'Title Here',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Severities & Variants
+
+There are 4 different severities available, and 3 different style variants for
+each severity:
+
+### Success Alerts
+
+<Canvas>
+  <Story
+    name="Success: Standard"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'success',
+      title: 'Success: Standard',
+      variant: 'standard',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Success: Filled"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'success',
+      title: 'Success: Filled',
+      variant: 'filled',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Success: Outlined"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'success',
+      title: 'Success: Outlined',
+      variant: 'outlined',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Error Alerts
+
+<Canvas>
+  <Story
+    name="Error: Standard"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'error',
+      title: 'Error: Standard',
+      variant: 'standard',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Error: Filled"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'error',
+      title: 'Error: Filled',
+      variant: 'filled',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Error: Outlined"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'error',
+      title: 'Error: Outlined',
+      variant: 'outlined',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Warning Alerts
+
+<Canvas>
+  <Story
+    name="Warning: Standard"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'warning',
+      title: 'Warning: Standard',
+      variant: 'standard',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Warning: Filled"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'warning',
+      title: 'Warning: Filled',
+      variant: 'filled',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Warning: Outlined"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'warning',
+      title: 'Warning: Outlined',
+      variant: 'outlined',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Info Alerts
+
+<Canvas>
+  <Story
+    name="Info: Standard"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'info',
+      title: 'Info: Standard',
+      variant: 'standard',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Info: Filled"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'info',
+      title: 'Info: Filled',
+      variant: 'filled',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Info: Outlined"
+    args={{
+      children: 'Some alert description goes here.',
+      severity: 'info',
+      title: 'Info: Outlined',
+      variant: 'outlined',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+You can use the controls below to build your own Alert.
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      children: 'Some alert description goes here.',
+      closeText: 'Close',
+      severity: 'info',
+      title: 'Title Here',
+      variant: 'standard',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

@@ -1,0 +1,124 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { Switch } from '.';
+
+<Meta argTypes={argTypes} component={Switch} title="Atoms/Switch" />
+
+<Description of={Switch} />
+
+## Primary Switch
+
+<Canvas>
+  <Story
+    args={{
+      color: 'primary',
+      value: 'value',
+    }}
+    name="Primary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story
+    args={{
+      color: 'primary',
+      disabled: true,
+      value: 'value',
+    }}
+    name="Primary: Disabled"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Secondary Switch
+
+<Canvas>
+  <Story
+    args={{
+      color: 'secondary',
+      value: 'value',
+    }}
+    name="Secondary"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story
+    args={{
+      color: 'secondary',
+      disabled: true,
+      value: 'value',
+    }}
+    name="Secondary: Disabled"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Switch Sizes
+
+### Small
+
+<Canvas>
+  <Story
+    args={{
+      size: 'small',
+      value: 'value',
+    }}
+    name="Size: Small"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Medium
+
+<Canvas>
+  <Story
+    args={{
+      size: 'medium',
+      value: 'value',
+    }}
+    name="Size: Medium"
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    args={{
+      checked: true,
+      color: 'primary',
+      disabled: false,
+      size: 'medium',
+      value: 'value',
+    }}
+    name="Playground"
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
