@@ -51,6 +51,7 @@
     "babel-loader": "8.2.2",
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-transform-imports": "2.0.0",
+    "clean-publish": "^2.1.1",
     "cross-env": "7.0.3",
     "eslint-import-resolver-babel-plugin-root-import": "1.1.1",
     "eslint-import-resolver-typescript": "2.4.0",
@@ -118,9 +119,10 @@
     "copy:changelog": "cp -rf CHANGELOG.md dist",
     "copy:license": "cp -rf LICENSE dist",
     "copy:package": "cp -rf package.json dist",
+    "copy:packageclean": "clear-package-json dist/package.json -o dist/package.json",
     "copy:readme": "cp -rf README.md dist",
     "postversion": "npm run copy",
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "release": "npm-run-all release:**",
     "release:npm": "npm run build && np",
     "release:storybook": "npm run build-storybook && storybook-to-ghpages -e ./storybook-static/www",
@@ -134,5 +136,5 @@
     "test:outdated": "npm outdated"
   },
   "types": "index.d.ts",
-  "version": "4.0.1"
+  "version": "4.0.2"
 }
