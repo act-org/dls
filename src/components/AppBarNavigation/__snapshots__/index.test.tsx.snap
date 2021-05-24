@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root makeStyles-appBarRoot-1 makeStyles-appBarRoot-3 MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+  >
+    <a
+      class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-6 MuiTypography-colorPrimary"
+      href="https://act-et.org"
+    >
+      <img
+        alt="ACT"
+        class="makeStyles-logoImgWrapped-5"
+        src="https://i.imgur.com/P0gtzO0.png"
+      />
+    </a>
+    <div
+      class="MuiGrid-root MuiGrid-container makeStyles-navContainer-2 MuiGrid-spacing-xs-4"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 MuiTypography-colorPrimary"
+          href="#"
+        >
+          <p
+            class="MuiTypography-root makeStyles-navTypography-8 makeStyles-navTypography-9 MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            Home
+          </p>
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 MuiTypography-colorPrimary"
+          href="#"
+        >
+          <p
+            class="MuiTypography-root makeStyles-navTypography-8 makeStyles-navTypography-10 MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            Other Page
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root makeStyles-appBarRoot-11 makeStyles-appBarRoot-13 MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+  >
+    <a
+      class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-16 MuiTypography-colorPrimary"
+      href="https://act-et.org"
+    >
+      <img
+        alt="ACT"
+        class="makeStyles-logoImgWrapped-15"
+        src="https://i.imgur.com/P0gtzO0.png"
+      />
+    </a>
+    <div
+      class="MuiGrid-root MuiGrid-container makeStyles-navContainer-12 MuiGrid-spacing-xs-4"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-17 MuiTypography-colorPrimary"
+          href="#"
+        >
+          <p
+            class="MuiTypography-root makeStyles-navTypography-18 makeStyles-navTypography-19 MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            Home
+          </p>
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-17 MuiTypography-colorPrimary"
+          href="#"
+        >
+          <p
+            class="MuiTypography-root makeStyles-navTypography-18 makeStyles-navTypography-20 MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            Other Page
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;

@@ -11,6 +11,7 @@
 
 export * from './Alert';
 export * from './AppBar';
+export * from './AppBarNavigation';
 export * from './Button';
 export * from './Checkbox';
 export * from './DataGrid';
