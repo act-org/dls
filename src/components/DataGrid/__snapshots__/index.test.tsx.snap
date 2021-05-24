@@ -13,9 +13,10 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
     aria-rowcount="9"
     class="MuiDataGrid-root MuiDataGrid-root MuiDataGrid-autoHeight"
     role="grid"
-    tabindex="0"
   >
-    <div />
+    <div>
+      <div />
+    </div>
     <div
       class="MuiDataGrid-main"
     >
@@ -25,24 +26,24 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
       >
         <div
           aria-rowindex="1"
-          class="MuiDataGrid-colCellWrapper scroll"
+          class="MuiDataGrid-columnHeaderWrapper scroll"
           role="row"
           style="transform: translate3d(-0px, 0, 0); min-width: 548px;"
         >
           <div
             aria-colindex="1"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellCheckbox MuiDataGrid-colCellCenter"
+            class="MuiDataGrid-columnHeaderCheckbox MuiDataGrid-columnHeaderCenter MuiDataGrid-columnHeader"
             data-field="__check__"
             role="columnheader"
             style="width: 48px; min-width: 48px; max-width: 48px;"
-            tabindex="-1"
+            tabindex="0"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <span
                   aria-disabled="false"
@@ -55,6 +56,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       aria-label="Select All Rows checkbox"
                       class="PrivateSwitchBase-input-7"
                       data-indeterminate="false"
+                      tabindex="-1"
                       type="checkbox"
                       value=""
                     />
@@ -93,37 +95,66 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="2"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellSortable"
+            class="MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeader"
             data-field="id"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <div
-                  class="MuiDataGrid-colCellTitle"
+                  class="MuiDataGrid-columnHeaderTitle"
                   color="primary"
                   title=""
                 >
                   ID
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
                 </div>
               </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12362"
+                  aria-controls="mui-12347"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
-                  id="mui-12361"
-                  tabindex="0"
+                  id="mui-12348"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -165,37 +196,66 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="3"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellSortable"
+            class="MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeader"
             data-field="firstName"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <div
-                  class="MuiDataGrid-colCellTitle"
+                  class="MuiDataGrid-columnHeaderTitle"
                   color="primary"
                   title=""
                 >
                   First name
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
                 </div>
               </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12364"
+                  aria-controls="mui-12349"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
-                  id="mui-12363"
-                  tabindex="0"
+                  id="mui-12350"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -237,37 +297,66 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="4"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellSortable"
+            class="MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeader"
             data-field="lastName"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <div
-                  class="MuiDataGrid-colCellTitle"
+                  class="MuiDataGrid-columnHeaderTitle"
                   color="primary"
                   title=""
                 >
                   Last name
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
                 </div>
               </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12366"
+                  aria-controls="mui-12351"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
-                  id="mui-12365"
-                  tabindex="0"
+                  id="mui-12352"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -309,26 +398,66 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="5"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellRight MuiDataGrid-colCellSortable MuiDataGrid-colCellNumeric"
+            class="MuiDataGrid-columnHeaderRight MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeaderNumeric MuiDataGrid-columnHeader"
             data-field="age"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
+              <div
+                class="MuiDataGrid-columnHeaderTitleContainer"
+              >
+                <div
+                  class="MuiDataGrid-columnHeaderTitle"
+                  color="primary"
+                  title=""
+                >
+                  Age
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12368"
+                  aria-controls="mui-12353"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-colorPrimary MuiIconButton-sizeSmall"
-                  id="mui-12367"
-                  tabindex="0"
+                  id="mui-12354"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -350,17 +479,6 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                     class="MuiTouchRipple-root"
                   />
                 </button>
-              </div>
-              <div
-                class="MuiDataGrid-colCellTitleContainer"
-              >
-                <div
-                  class="MuiDataGrid-colCellTitle"
-                  color="primary"
-                  title=""
-                >
-                  Age
-                </div>
               </div>
             </div>
             <div
@@ -389,6 +507,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
         style="overflow: visible; width: 0px;"
       >
         <div
+          class="MuiDataGrid-windowContainer"
           style="width: 0px; height: 524px;"
         >
           <div
@@ -397,20 +516,20 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
           >
             <div
               class="MuiDataGrid-dataContainer data-container"
-              style="min-height: 468px; min-width: 548px;"
+              style="min-width: 548px;"
             >
               <div
                 class="MuiDataGrid-viewport"
-                style="min-width: 0; max-width: 0; min-height: 468px; max-height: 468px;"
+                style="min-width: 0; max-width: 0; max-height: 468px;"
               >
                 <div
-                  class="rendering-zone"
+                  class="MuiDataGrid-renderingZone"
                   style="max-height: 468px; width: 548px; pointer-events: none; transform: translate3d(-0px, -0px, 0);"
                 >
                   <div
                     aria-rowindex="2"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="1"
                     data-rowindex="0"
                     role="row"
@@ -418,10 +537,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -437,6 +558,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -462,6 +584,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="1"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -475,6 +598,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="Jon"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -488,6 +612,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="Snow"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -501,6 +626,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="35"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -516,7 +642,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="3"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-odd"
+                    class="Mui-odd MuiDataGrid-row"
                     data-id="2"
                     data-rowindex="1"
                     role="row"
@@ -524,10 +650,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -543,6 +671,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -568,6 +697,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="2"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -581,6 +711,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="Cersei"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -594,6 +725,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="Lannister"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -607,6 +739,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="42"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -622,7 +755,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="4"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="3"
                     data-rowindex="2"
                     role="row"
@@ -630,10 +763,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -649,6 +784,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -674,6 +810,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="3"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -687,6 +824,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="Jaime"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -700,6 +838,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="Lannister"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -713,6 +852,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="45"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -728,7 +868,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="5"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-odd"
+                    class="Mui-odd MuiDataGrid-row"
                     data-id="4"
                     data-rowindex="3"
                     role="row"
@@ -736,10 +876,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -755,6 +897,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -780,6 +923,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="4"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -793,6 +937,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="Arya"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -806,6 +951,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="Stark"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -819,6 +965,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="16"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -834,7 +981,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="6"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="5"
                     data-rowindex="4"
                     role="row"
@@ -842,10 +989,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -861,6 +1010,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -886,6 +1036,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       data-value="5"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -899,6 +1050,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       data-value="Daenerys"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -912,6 +1064,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       data-value="Targaryen"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -925,6 +1078,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -937,7 +1091,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="7"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-odd"
+                    class="Mui-odd MuiDataGrid-row"
                     data-id="6"
                     data-rowindex="5"
                     role="row"
@@ -945,10 +1099,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="5"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -964,6 +1120,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -989,6 +1146,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="5"
+                      data-rowselected="false"
                       data-value="6"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1002,6 +1160,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="5"
+                      data-rowselected="false"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -1012,6 +1171,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="5"
+                      data-rowselected="false"
                       data-value="Melisandre"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1025,6 +1185,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="5"
+                      data-rowselected="false"
                       data-value="150"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1040,7 +1201,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="8"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="7"
                     data-rowindex="6"
                     role="row"
@@ -1048,10 +1209,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="6"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -1067,6 +1230,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -1092,6 +1256,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="6"
+                      data-rowselected="false"
                       data-value="7"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1105,6 +1270,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="6"
+                      data-rowselected="false"
                       data-value="Ferrara"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1118,6 +1284,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="6"
+                      data-rowselected="false"
                       data-value="Clifford"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1131,6 +1298,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="6"
+                      data-rowselected="false"
                       data-value="44"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1146,7 +1314,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="9"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-odd"
+                    class="Mui-odd MuiDataGrid-row"
                     data-id="8"
                     data-rowindex="7"
                     role="row"
@@ -1154,10 +1322,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="7"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -1173,6 +1343,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -1198,6 +1369,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="7"
+                      data-rowselected="false"
                       data-value="8"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1211,6 +1383,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="7"
+                      data-rowselected="false"
                       data-value="Rossini"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1224,6 +1397,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="7"
+                      data-rowselected="false"
                       data-value="Frances"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1237,6 +1411,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="7"
+                      data-rowselected="false"
                       data-value="36"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1252,7 +1427,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="10"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="9"
                     data-rowindex="8"
                     role="row"
@@ -1260,10 +1435,12 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="8"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -1279,6 +1456,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-7"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -1304,6 +1482,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="8"
+                      data-rowselected="false"
                       data-value="9"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1317,6 +1496,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="8"
+                      data-rowselected="false"
                       data-value="Harvey"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1330,6 +1510,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="8"
+                      data-rowselected="false"
                       data-value="Roxie"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1343,6 +1524,7 @@ exports[`DataGrid ACT theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="8"
+                      data-rowselected="false"
                       data-value="65"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1467,9 +1649,10 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
     aria-rowcount="9"
     class="MuiDataGrid-root MuiDataGrid-root MuiDataGrid-autoHeight"
     role="grid"
-    tabindex="0"
   >
-    <div />
+    <div>
+      <div />
+    </div>
     <div
       class="MuiDataGrid-main"
     >
@@ -1479,24 +1662,24 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
       >
         <div
           aria-rowindex="1"
-          class="MuiDataGrid-colCellWrapper scroll"
+          class="MuiDataGrid-columnHeaderWrapper scroll"
           role="row"
           style="transform: translate3d(-0px, 0, 0); min-width: 548px;"
         >
           <div
             aria-colindex="1"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellCheckbox MuiDataGrid-colCellCenter"
+            class="MuiDataGrid-columnHeaderCheckbox MuiDataGrid-columnHeaderCenter MuiDataGrid-columnHeader"
             data-field="__check__"
             role="columnheader"
             style="width: 48px; min-width: 48px; max-width: 48px;"
-            tabindex="-1"
+            tabindex="0"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <span
                   aria-disabled="false"
@@ -1509,6 +1692,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       aria-label="Select All Rows checkbox"
                       class="PrivateSwitchBase-input-14"
                       data-indeterminate="false"
+                      tabindex="-1"
                       type="checkbox"
                       value=""
                     />
@@ -1547,36 +1731,65 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="2"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellSortable"
+            class="MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeader"
             data-field="id"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <div
-                  class="MuiDataGrid-colCellTitle"
+                  class="MuiDataGrid-columnHeaderTitle"
                   title=""
                 >
                   ID
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
                 </div>
               </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12370"
+                  aria-controls="mui-12357"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-sizeSmall"
-                  id="mui-12369"
-                  tabindex="0"
+                  id="mui-12358"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -1618,36 +1831,65 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="3"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellSortable"
+            class="MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeader"
             data-field="firstName"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <div
-                  class="MuiDataGrid-colCellTitle"
+                  class="MuiDataGrid-columnHeaderTitle"
                   title=""
                 >
                   First name
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
                 </div>
               </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12372"
+                  aria-controls="mui-12359"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-sizeSmall"
-                  id="mui-12371"
-                  tabindex="0"
+                  id="mui-12360"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -1689,36 +1931,65 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="4"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellSortable"
+            class="MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeader"
             data-field="lastName"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
               <div
-                class="MuiDataGrid-colCellTitleContainer"
+                class="MuiDataGrid-columnHeaderTitleContainer"
               >
                 <div
-                  class="MuiDataGrid-colCellTitle"
+                  class="MuiDataGrid-columnHeaderTitle"
                   title=""
                 >
                   Last name
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
                 </div>
               </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12374"
+                  aria-controls="mui-12361"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-sizeSmall"
-                  id="mui-12373"
-                  tabindex="0"
+                  id="mui-12362"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -1760,26 +2031,65 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
           </div>
           <div
             aria-colindex="5"
-            class="MuiDataGrid-colCell MuiDataGrid-colCellRight MuiDataGrid-colCellSortable MuiDataGrid-colCellNumeric"
+            class="MuiDataGrid-columnHeaderRight MuiDataGrid-columnHeaderSortable MuiDataGrid-columnHeaderNumeric MuiDataGrid-columnHeader"
             data-field="age"
             role="columnheader"
             style="width: 100px; min-width: 100px; max-width: 100px;"
             tabindex="-1"
           >
             <div
-              class="MuiDataGrid-colCell-draggable"
+              class="MuiDataGrid-columnHeader-draggable"
               draggable="false"
             >
+              <div
+                class="MuiDataGrid-columnHeaderTitleContainer"
+              >
+                <div
+                  class="MuiDataGrid-columnHeaderTitle"
+                  title=""
+                >
+                  Age
+                </div>
+                <div
+                  class="MuiDataGrid-iconButtonContainer"
+                >
+                  <button
+                    aria-label="Sort"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+                    tabindex="-1"
+                    title="Sort"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiDataGrid-sortIcon MuiSvgIcon-fontSizeSmall"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
               <div
                 class="MuiDataGrid-menuIcon"
               >
                 <button
-                  aria-controls="mui-12376"
+                  aria-controls="mui-12363"
                   aria-haspopup="true"
                   aria-label="Menu"
                   class="MuiButtonBase-root MuiIconButton-root MuiDataGrid-menuIconButton MuiIconButton-sizeSmall"
-                  id="mui-12375"
-                  tabindex="0"
+                  id="mui-12364"
+                  tabindex="-1"
                   title="Menu"
                   type="button"
                 >
@@ -1801,16 +2111,6 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                     class="MuiTouchRipple-root"
                   />
                 </button>
-              </div>
-              <div
-                class="MuiDataGrid-colCellTitleContainer"
-              >
-                <div
-                  class="MuiDataGrid-colCellTitle"
-                  title=""
-                >
-                  Age
-                </div>
               </div>
             </div>
             <div
@@ -1839,6 +2139,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
         style="overflow: visible; width: 0px;"
       >
         <div
+          class="MuiDataGrid-windowContainer"
           style="width: 0px; height: 316px;"
         >
           <div
@@ -1847,20 +2148,20 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
           >
             <div
               class="MuiDataGrid-dataContainer data-container"
-              style="min-height: 260px; min-width: 548px;"
+              style="min-width: 548px;"
             >
               <div
                 class="MuiDataGrid-viewport"
-                style="min-width: 0; max-width: 0; min-height: 260px; max-height: 260px;"
+                style="min-width: 0; max-width: 0; max-height: 260px;"
               >
                 <div
-                  class="rendering-zone"
+                  class="MuiDataGrid-renderingZone"
                   style="max-height: 260px; width: 548px; pointer-events: none; transform: translate3d(-0px, -0px, 0);"
                 >
                   <div
                     aria-rowindex="2"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="1"
                     data-rowindex="0"
                     role="row"
@@ -1868,10 +2169,12 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -1887,6 +2190,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-14"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -1912,6 +2216,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="1"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1925,6 +2230,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="Jon"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1938,6 +2244,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="Snow"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1951,6 +2258,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="0"
+                      data-rowselected="false"
                       data-value="35"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -1966,7 +2274,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="3"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-odd"
+                    class="Mui-odd MuiDataGrid-row"
                     data-id="2"
                     data-rowindex="1"
                     role="row"
@@ -1974,10 +2282,12 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -1993,6 +2303,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-14"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -2018,6 +2329,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="2"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2031,6 +2343,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="Cersei"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2044,6 +2357,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="Lannister"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2057,6 +2371,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="1"
+                      data-rowselected="false"
                       data-value="42"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2072,7 +2387,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="4"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="3"
                     data-rowindex="2"
                     role="row"
@@ -2080,10 +2395,12 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -2099,6 +2416,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-14"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -2124,6 +2442,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="3"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2137,6 +2456,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="Jaime"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2150,6 +2470,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="Lannister"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2163,6 +2484,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="2"
+                      data-rowselected="false"
                       data-value="45"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2178,7 +2500,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="5"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-odd"
+                    class="Mui-odd MuiDataGrid-row"
                     data-id="4"
                     data-rowindex="3"
                     role="row"
@@ -2186,10 +2508,12 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -2205,6 +2529,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-14"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -2230,6 +2555,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="4"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2243,6 +2569,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="Arya"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2256,6 +2583,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="Stark"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2269,6 +2597,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="3"
+                      data-rowselected="false"
                       data-value="16"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2284,7 +2613,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   <div
                     aria-rowindex="6"
                     aria-selected="false"
-                    class="MuiDataGrid-row Mui-even"
+                    class="Mui-even MuiDataGrid-row"
                     data-id="5"
                     data-rowindex="4"
                     role="row"
@@ -2292,10 +2621,12 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                   >
                     <div
                       aria-colindex="0"
-                      class="MuiDataGrid-cell MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cellCenter"
+                      class="MuiDataGrid-cellCheckbox MuiDataGrid-cellWithRenderer MuiDataGrid-cell MuiDataGrid-cellCenter"
                       data-field="__check__"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
+                      data-value="false"
                       role="cell"
                       style="min-width: 48px; max-width: 48px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
@@ -2311,6 +2642,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                             aria-label="Select Row checkbox"
                             class="PrivateSwitchBase-input-14"
                             data-indeterminate="false"
+                            tabindex="-1"
                             type="checkbox"
                             value=""
                           />
@@ -2336,6 +2668,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="id"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       data-value="5"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2349,6 +2682,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="firstName"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       data-value="Daenerys"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2362,6 +2696,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="lastName"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       data-value="Targaryen"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
@@ -2375,6 +2710,7 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
                       data-field="age"
                       data-mode="view"
                       data-rowindex="4"
+                      data-rowselected="false"
                       role="cell"
                       style="min-width: 100px; max-width: 100px; line-height: 51px; min-height: 52px; max-height: 52px;"
                       tabindex="-1"
