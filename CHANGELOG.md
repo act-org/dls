@@ -2,6 +2,20 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v4.1.0] - May 25, 2021
+
+* This release includes a new
+[`<AppBarNavigation />`](https://act-org.github.io/dls/?path=/docs/organisms-appbarnavigation--default-navigation)
+component, courtesy of @stefansolyom.
+
+## [v4.0.0] - April 01, 2021
+
+* The DLS has been completely rebuilt on top of the Material UI
+[theme engine](https://material-ui.com/customization/theming/).
+  * There are two UI themes that are provided out of the box:
+  `ACT` and `ACT_ET`. 
+  * Refer to the README for usage instructions and more details.
+
 ## [v3.1.0] - March 05, 2021
 
 * This package is now open source! Available on NPM at `@actinc/dls`
