@@ -9,17 +9,17 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles({
+export default makeStyles(theme => ({
   navLink: {
     '&, &:hover': {
       color: 'unset',
       textDecoration: 'none',
     },
   },
-  navTypography: ({ isActive }: any) => ({
+  navTypography: ({ isActive }: any): any => ({
     '&:after': {
       backgroundColor: isActive ? 'currentcolor' : 'transparent',
-      borderRadius: 4,
+      borderRadius: theme.shape.borderRadius,
       bottom: '-2px',
       content: '""',
       height: 4,
@@ -40,4 +40,4 @@ export default makeStyles({
     position: 'relative',
     transition: 'all .15s linear',
   }),
-});
+}));

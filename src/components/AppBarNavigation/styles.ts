@@ -9,18 +9,16 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles({
-  appBarRoot: ({ appBarHeight }: any) => ({
+export default makeStyles(theme => ({
+  appBarRoot: ({ appBarHeight }: any): any => ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'row',
     height: appBarHeight,
-    padding: `0 ${DIMS.LAYOUT_PADDING * 2.58}px`,
+    padding: `0 ${theme.spacing(1) * 2.58}px`,
   }),
   navContainer: {
     alignItems: 'center',
-    paddingLeft: DIMS.LAYOUT_PADDING * 3,
+    paddingLeft: theme.spacing(3),
   },
-});
+}));
