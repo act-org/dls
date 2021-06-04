@@ -26,7 +26,9 @@ export default makeStyles(({ typography }: any) => ({
     color: 'rgba(255, 255, 255, 0.35)',
     cursor: 'pointer',
     fontSize: typography.fontSize, // FIXME 14
+    height: 14,
     userSelect: 'auto',
+    width: 14,
   },
   tableCellRoot: {
     backgroundColor: COLORS.PRIMARY,
@@ -44,8 +46,8 @@ export default makeStyles(({ typography }: any) => ({
   },
   typographyRoot: {
     color: 'white',
-    fontSize: typography.fontSize, // FIXME 16
-    fontWeight: typography.fontWeightMedium, // FIXME 500
+    fontSize: 16,
+    fontWeight: typography.fontWeightMedium,
     lineHeight: 1,
     userSelect: 'none',
   },

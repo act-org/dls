@@ -87,6 +87,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
         classes={{
           root: classes.typographyRoot,
         }}
+        variant="body1"
       >
         {children}
       </Typography>

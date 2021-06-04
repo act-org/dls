@@ -11,6 +11,7 @@
     "@material-ui/core": "^4.11.3",
     "@material-ui/data-grid": "^4.0.0-alpha.23",
     "@material-ui/lab": "^4.0.0-alpha.57",
+    "@storybook/addon-knobs": "6.2.9",
     "clsx": "^1.1.1",
     "lodash": "^4.17.19",
     "mdi-material-ui": "^6.22.0",

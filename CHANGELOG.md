@@ -9,10 +9,20 @@ import directly from Material UI, such as `<Button />` and `<Link />`.
 * In almost all cases, there is no functional/stylistic difference between
 importing a MUI component from the DLS vs. MUI. The only exception is with the
 `<Link />` component, as the MUI `Link` component does not accept a `to` prop.
-* Removed `Primary` from all component names:
+* Renamed the following components:
   * Renamed `<DataTablePrimary />` to `<DataTable />`
   * Renamed `<LoadingPrimary />` to `<Loading />`
   * Renamed `<TableContainerPrimary />` to `<TableContainer />`
+* Re-instated, and marked as deprecated, the following v3 components to help
+with reverse compatibility / application migration. These components should
+be removed when they have suitable alternatives that are powered by the MUI
+themeing engine:
+  * `<FormInputPrimary />`
+  * `<FormSelectPrimary />`
+  * `<InputLabelPrimary />`
+  * `<InputPrimary />`
+  * `<SelectPrimary />`
+  * `<SelectSecondary />`
 
 ## [v4.1.0] - May 25, 2021
 
