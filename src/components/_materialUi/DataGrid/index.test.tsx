@@ -26,7 +26,7 @@ jest.mock('@material-ui/core/utils', () => {
   };
 });
 
-describe('DataGrid', () => {
+describe.skip('DataGrid', () => {
   const Component = (
     <DataGrid
       autoHeight
