@@ -5,9 +5,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 import DIMS from '~/constants/dims';
-import TYPOGRAPHY from '~/constants/typography';
 
-export default makeStyles({
+export default makeStyles(({ typography }) => ({
   labelContainer: {
     marginBottom: DIMS.LAYOUT_PADDING / 2,
   },
@@ -17,7 +16,7 @@ export default makeStyles({
   selectOptionRoot: {
     color: '#2d2d2d', // FIXME: COLORS.TEXT_PRIMARY,
     fontSize: 14,
-    fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
+    fontWeight: typography.fontWeightRegular,
   },
   warning: {
     left: '100%',
@@ -26,4 +25,4 @@ export default makeStyles({
     position: 'absolute',
     top: '45%',
   },
-});
+}));

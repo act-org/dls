@@ -5,15 +5,14 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 import COLORS from '~/constants/colors';
-import TYPOGRAPHY from '~/constants/typography';
 
-export default makeStyles({
+export default makeStyles(({ typography }) => ({
   labelRoot: {
     '& .label-split': {
       '& > .required': {
         color: COLORS.REQUIRED,
         fontSize: 12,
-        fontWeight: TYPOGRAPHY.WEIGHT_REGULAR,
+        fontWeight: typography.fontWeightRegular,
       },
       alignItems: 'center',
       display: 'flex',
@@ -21,7 +20,7 @@ export default makeStyles({
     },
     color: COLORS.TEXT_PRIMARY,
     fontSize: 14,
-    fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
+    fontWeight: typography.fontWeightBold,
     position: 'relative',
   },
-});
+}));

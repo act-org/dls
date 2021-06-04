@@ -6,9 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
 
 import DIMS from '~/constants/dims';
-import TYPOGRAPHY from '~/constants/typography';
 
-export default makeStyles({
+export default makeStyles(({ typography }) => ({
   inputInput: {
     '&.Mui-disabled': {
       cursor: 'not-allowed',
@@ -20,7 +19,7 @@ export default makeStyles({
   },
   inputInputPassword: {
     fontSize: 22,
-    fontWeight: TYPOGRAPHY.WEIGHT_BOLD,
+    fontWeight: typography.fontWeightBold,
     letterSpacing: 4,
   },
   inputRoot: {
@@ -29,4 +28,4 @@ export default makeStyles({
     borderRadius: 2,
     marginTop: 8,
   },
-});
+}));
