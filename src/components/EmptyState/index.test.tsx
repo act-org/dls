@@ -8,8 +8,10 @@
  */
 
 import * as React from 'react';
-import { standard } from '../../helpers/test';
 import { noop } from 'lodash';
+
+import { standard } from '~/helpers/test';
+
 import { EmptyState } from '.';
 
 describe('EmptyStatePrimary', () => {

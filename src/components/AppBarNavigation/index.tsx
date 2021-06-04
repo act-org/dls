@@ -8,9 +8,7 @@
  */
 
 import * as React from 'react';
-import { Grid } from '@material-ui/core';
-
-import AppBar, { AppBarProps } from '~/components/AppBar';
+import { AppBar, AppBarProps, Grid } from '@material-ui/core';
 
 import RenderLogo, { Props as LogoProps } from './RenderLogo';
 import RenderNavigationItem, {

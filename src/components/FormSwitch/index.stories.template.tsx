@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { FormSwitch, FormSwitchProps } from '.';
-import { Playground } from '../../helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
+
+import { Playground } from '~/helpers/playground';
+
+import { FormSwitch, FormSwitchProps } from '.';
 
 export const Template: Story<FormSwitchProps> = args => (
   <FormSwitch {...args} />

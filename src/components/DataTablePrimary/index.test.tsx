@@ -8,8 +8,10 @@
  */
 
 import * as React from 'react';
-import { snapshot } from '../../helpers/test';
 import { noop } from 'lodash';
+
+import { snapshot } from '~/helpers/test';
+
 import DataTablePrimary from '.';
 
 interface Item {

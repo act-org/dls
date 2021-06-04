@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { standard } from '../../helpers/test';
 import { noop } from 'lodash';
-import FormInputPrimary from '../FormInput';
+
+import { FormInputPrimary } from '~/components/FormInput';
+import { standard } from '~/helpers/test';
+
 import FormInputGroupsPrimary from '.';
 
 describe('FormInputGroupsPrimary', () => {

@@ -19,11 +19,13 @@ interface FormInput {
 
 type FormInputGroup = FormInput[];
 
-export interface Props {
+export interface FormInputGroupsProps {
   groups: FormInputGroup[];
 }
 
-const FormInputGroups: React.FC<Props> = ({ groups }: Props) => {
+const FormInputGroups: React.FC<FormInputGroupsProps> = ({
+  groups,
+}: FormInputGroupsProps) => {
   const classes = useStyles();
 
   return (

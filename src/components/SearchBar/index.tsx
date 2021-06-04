@@ -6,12 +6,17 @@
  *
  * @prettier
  */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
+
 import * as React from 'react';
-import { IconButton, InputAdornment } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import { Input, InputProps } from '../Input';
+import {
+  IconButton,
+  InputAdornment,
+  OutlinedInput,
+  OutlinedInputProps,
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+
 import { CloseCircle, Magnify } from '~/icons';
 
 const useStyles = makeStyles({
@@ -21,7 +26,7 @@ const useStyles = makeStyles({
   },
 });
 
-export type SearchBarProps = InputProps;
+export type SearchBarProps = OutlinedInputProps;
 
 /**
  * # SearchBar
@@ -40,7 +45,7 @@ export function SearchBar({
   );
   const iconClasses = useStyles();
   return (
-    <Input
+    <OutlinedInput
       endAdornment={
         <InputAdornment position="end">
           <IconButton

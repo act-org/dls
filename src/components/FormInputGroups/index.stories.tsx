@@ -9,8 +9,9 @@
 
 import * as React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { FormInput } from '../FormInput';
-import { FormSelect } from '../FormSelect';
+
+import { FormInput } from '~/components/FormInput';
+import { FormSelect } from '~/components/FormSelect';
 
 import FormInputGroups, { Props } from '.';
 

@@ -10,9 +10,9 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import TableContainerPrimary, { Props } from '.';
+import TableContainerPrimary, { TableContainerPrimaryProps } from '.';
 
-export const Primary: Story<Props> = args => (
+export const Primary: Story<TableContainerPrimaryProps> = args => (
   <TableContainerPrimary {...args} />
 );
 
@@ -24,4 +24,4 @@ export default {
     },
   },
   title: 'Deprecated/Atoms/TableContainer',
-} as Meta<Props>;
+} as Meta<TableContainerPrimaryProps>;

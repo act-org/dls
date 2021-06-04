@@ -1,0 +1,52 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import { Link, LinkProps } from '@material-ui/core';
+
+import { Plus } from '~/icons';
+
+import { argTypes, Template } from './index.stories.template';
+
+<Meta title="Material UI/Link" component={Link} argTypes={argTypes} />
+
+<Description of={Link} />
+
+## Primary
+
+<Canvas>
+  <Story
+    name="Primary"
+    args={{
+      href: 'https://www.act.org',
+      text: 'Click Me',
+      target: '_blank',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      href: 'https://www.act.org',
+      text: 'Click Me',
+      target: '_blank',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

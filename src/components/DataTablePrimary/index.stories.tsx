@@ -8,15 +8,15 @@
  */
 
 import * as React from 'react';
+import { Meta, Story } from '@storybook/react/types-6-0';
 import moment from 'moment';
 
 import { PackageVariant } from '~/icons';
 import sort from '~/helpers/sort';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
-import { Story, Meta } from '@storybook/react/types-6-0';
 
-import DataTablePrimary, { Props } from '.';
+import DataTablePrimary, { DataTablePrimaryProps } from '.';
 
 interface Item {
   id: string;
@@ -26,7 +26,7 @@ interface Item {
   fieldB: string;
   fieldC: string;
 }
-const Template: Story<Props<Item>> = args => {
+const Template: Story<DataTablePrimaryProps<Item>> = args => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
@@ -113,7 +113,7 @@ const Template: Story<Props<Item>> = args => {
     />
   );
 };
-export const Primary: Story<Props<Item>> = Template.bind({});
+export const Primary: Story<DataTablePrimaryProps<Item>> = Template.bind({});
 
 export default {
   component: DataTablePrimary,
@@ -126,4 +126,4 @@ export default {
     },
   },
   title: 'Deprecated/Organisms/DataTable',
-} as Meta<Props<Item>>;
+} as Meta<DataTablePrimaryProps<Item>>;

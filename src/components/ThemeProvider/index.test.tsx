@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { standard } from '../../helpers/test';
+
+import { standard } from '~/helpers/test';
 
 describe('ThemeProvider', () => {
   const Component = <p>This is a test</p>;
+
   standard(Component);
 });

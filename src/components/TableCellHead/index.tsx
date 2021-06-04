@@ -19,7 +19,7 @@ import { SortDirection, SortObject } from '~/types';
 
 import useStyles from './styles';
 
-export interface Props extends TableCellProps {
+export interface TableCellHeadProps extends TableCellProps {
   children: string | React.ReactElement<any>;
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
@@ -27,7 +27,7 @@ export interface Props extends TableCellProps {
   style?: React.CSSProperties;
 }
 
-const TableCellHead: React.FC<Props> = ({
+const TableCellHead: React.FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
   currentSortObject,
@@ -35,7 +35,7 @@ const TableCellHead: React.FC<Props> = ({
   sortBy,
   style,
   ...props
-}: Props): React.ReactElement<any> => {
+}: TableCellHeadProps): React.ReactElement<any> => {
   const sortIsApplied: boolean = sortBy === currentSortObject.sortBy;
 
   const getStyleForIcon = (direction: SortDirection): React.CSSProperties => {
@@ -137,4 +137,5 @@ TableCellHead.defaultProps = {
   sortBy: undefined,
   style: undefined,
 };
+
 export default TableCellHead;

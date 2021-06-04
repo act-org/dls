@@ -25,7 +25,7 @@ interface Column<T> {
   style?: React.CSSProperties;
 }
 
-export interface Props<T> {
+export interface DataTablePrimaryProps<T> {
   columns: Column<T>[];
   currentSortObject: SortObject;
   emptyStateProps?: EmptyStateProps;
@@ -44,7 +44,7 @@ const DataTablePrimary = <T,>({
   items,
   onChangeSort,
   RowWrapper,
-}: Props<T>): React.ReactElement<any> => {
+}: DataTablePrimaryProps<T>): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (

@@ -12,12 +12,12 @@ import { TableContainer, TableContainerProps } from '@material-ui/core';
 
 import Component from './Component';
 
-export interface Props extends TableContainerProps {
+export interface TableContainerPrimaryProps extends TableContainerProps {
   component?: React.ReactElement<any>;
 }
 
-const TableContainerPrimary: React.FC<Props> = (
-  props: Props,
+const TableContainerPrimary: React.FC<TableContainerPrimaryProps> = (
+  props: TableContainerPrimaryProps,
 ): React.ReactElement<any> => (
   <TableContainer component={Component} {...props} />
 );

@@ -6,16 +6,17 @@
  *
  * @prettier
  */
-/* eslint-disable sort-keys */
+
 import * as React from 'react';
 import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
+  Tooltip,
 } from '@material-ui/core';
-import { Tooltip } from '~/components/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
-import { mergeClasses } from '~/helpers';
+
 import { HelpCircleOutline } from '~/icons';
+import { mergeClasses } from '~/helpers';
 
 /**
  * These are the options available for an Input Label
