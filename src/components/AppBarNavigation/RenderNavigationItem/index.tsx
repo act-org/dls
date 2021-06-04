@@ -24,7 +24,7 @@ const RenderNavigationItem: React.FC<RenderNavigationItemProps> = ({
   LinkComponent,
   LinkProps: linkProps,
   title,
-}: RenderNavigationItemProps): React.ReactElement<Props> => {
+}: RenderNavigationItemProps): React.ReactElement<RenderNavigationItemProps> => {
   const NavLink = LinkComponent || Link;
 
   const classes = useStyles({ isActive });

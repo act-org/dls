@@ -25,7 +25,7 @@ const RenderLogo: React.FC<RenderLogoProps> = ({
   LinkComponent,
   LinkProps: linkProps,
   src,
-}: Props): React.ReactElement<RenderLogoProps> => {
+}: RenderLogoProps): React.ReactElement<RenderLogoProps> => {
   const classes = useStyles();
   const LogoLink = LinkComponent || Link;
 

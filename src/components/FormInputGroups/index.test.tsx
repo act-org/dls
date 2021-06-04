@@ -10,7 +10,7 @@
 import * as React from 'react';
 import { noop } from 'lodash';
 
-import { FormInputPrimary } from '~/components/FormInput';
+import { FormInput } from '~/components/FormInput';
 import { standard } from '~/helpers/test';
 
 import FormInputGroupsPrimary from '.';
@@ -22,7 +22,7 @@ describe('FormInputGroupsPrimary', () => {
         [
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: noop,
                   placeholder: 'Input 1',
@@ -39,7 +39,7 @@ describe('FormInputGroupsPrimary', () => {
           },
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: noop,
                   placeholder: 'Input 2',
@@ -58,7 +58,7 @@ describe('FormInputGroupsPrimary', () => {
         [
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: noop,
                   placeholder: 'Input 3',

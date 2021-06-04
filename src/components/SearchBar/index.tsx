@@ -56,6 +56,7 @@ export function SearchBar({
                   iconClasses.iconCloseHidden,
               ),
             }}
+            // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
             onClick={(e: any) => {
               setValue('');
               if (onChange) {
@@ -76,6 +77,7 @@ export function SearchBar({
       inputProps={{
         'aria-label': 'Search',
       }}
+      // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
       onChange={(e: any) => {
         setValue(e.target.value);
         if (onChange) {
