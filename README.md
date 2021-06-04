@@ -225,9 +225,9 @@ constants, helpers, icons, styles, and types that you need:
 
 ```jsx
 // components
-import { Button } from '@actinc/dls/components';
+import { Alert } from '@actinc/dls/components';
 // constants
-import { typography as TYPOGRAPHY } from '@actinc/dls/constants';
+import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
 // helpers
 import { search } from '@actinc/dls/helpers';
 // icons

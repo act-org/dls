@@ -69,32 +69,27 @@ const DataTablePrimary = <T,>({
         </TableHead>
 
         <TableBody>
-          {items.map(
-            (item, i): React.ReactElement<any> => {
-              /* eslint-disable react/no-array-index-key */
-              const children = (
-                <TableRow hover key={i}>
-                  {columns.map(
-                    (column, y): React.ReactElement<any> => (
-                      <TableCellBody
-                        key={column.label || y}
-                        style={column.style}
-                      >
-                        {column.renderValue(item)}
-                      </TableCellBody>
-                    ),
-                  )}
-                </TableRow>
-              );
-              /* eslint-enable react/no-array-index-key */
+          {items.map((item, i): React.ReactElement<any> => {
+            /* eslint-disable react/no-array-index-key */
+            const children = (
+              <TableRow hover key={i}>
+                {columns.map(
+                  (column, y): React.ReactElement<any> => (
+                    <TableCellBody key={column.label || y} style={column.style}>
+                      {column.renderValue(item)}
+                    </TableCellBody>
+                  ),
+                )}
+              </TableRow>
+            );
+            /* eslint-enable react/no-array-index-key */
 
-              if (RowWrapper) {
-                return RowWrapper(item, children);
-              }
+            if (RowWrapper) {
+              return RowWrapper(item, children);
+            }
 
-              return children;
-            },
-          )}
+            return children;
+          })}
         </TableBody>
       </Table>
 

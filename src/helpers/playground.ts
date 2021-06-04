@@ -71,7 +71,7 @@ export const Playground = (args: Record<string, any>, type?: any): any => {
   }
 
   if (type) {
-    const docType = (type as unknown) as DocGenType;
+    const docType = type as unknown as DocGenType;
     // eslint-disable-next-line no-underscore-dangle
     const props = docType.__docgenInfo?.props;
 
