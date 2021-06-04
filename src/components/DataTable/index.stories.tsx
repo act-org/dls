@@ -113,13 +113,14 @@ const Template: Story<DataTableProps<Item>> = args => {
     />
   );
 };
-export const Primary: Story<DataTableProps<Item>> = Template.bind({});
+
+export const Preview: Story<DataTableProps<Item>> = Template.bind({});
 
 export default {
   component: DataTable,
   parameters: {
     info: {
-      text: 'This is the primary variant of the DataTable component.',
+      text: 'This is a custom DataTable component.',
     },
     controls: {
       expanded: true,

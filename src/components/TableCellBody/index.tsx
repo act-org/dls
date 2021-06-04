@@ -16,7 +16,7 @@ import useStyles from './styles';
 
 export type TableCellBodyProps = TableCellProps;
 
-const TableCellBody: React.FC<TableCellBodyProps> = ({
+export const TableCellBody: React.FC<TableCellBodyProps> = ({
   classes: classesProp,
   ...otherProps
 }: TableCellBodyProps): React.ReactElement<any> => {

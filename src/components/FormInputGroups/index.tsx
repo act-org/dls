@@ -23,7 +23,7 @@ export interface FormInputGroupsProps {
   groups: FormInputGroup[];
 }
 
-const FormInputGroups: React.FC<FormInputGroupsProps> = ({
+export const FormInputGroups: React.FC<FormInputGroupsProps> = ({
   groups,
 }: FormInputGroupsProps) => {
   const classes = useStyles();

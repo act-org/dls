@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmptyStatePrimary ACT theme matches the snapshot 1`] = `
+exports[`EmptyState ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="makeStyles-container-1"
@@ -41,7 +41,7 @@ exports[`EmptyStatePrimary ACT theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`EmptyStatePrimary ACT_ET theme matches the snapshot 1`] = `
+exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     class="makeStyles-container-9"

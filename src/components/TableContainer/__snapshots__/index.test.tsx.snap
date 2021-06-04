@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableContainerPrimary ACT theme matches the snapshot 1`] = `
+exports[`TableContainer ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiPaper-root makeStyles-paperRoot-1 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
@@ -8,7 +8,7 @@ exports[`TableContainerPrimary ACT theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`TableContainerPrimary ACT_ET theme matches the snapshot 1`] = `
+exports[`TableContainer ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiPaper-root makeStyles-paperRoot-2 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"

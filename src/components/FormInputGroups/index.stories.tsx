@@ -143,13 +143,13 @@ const Template: Story<FormInputGroupsProps> = args => {
   );
 };
 
-export const Primary: Story<FormInputGroupsProps> = Template.bind({});
+export const Preview: Story<FormInputGroupsProps> = Template.bind({});
 
 export default {
   component: FormInputGroups,
   parameters: {
     info: {
-      text: 'This is the primary variant of the FormInputGroups component.',
+      text: 'This is a custom FormInputGroups component.',
     },
   },
   title: 'Organisms/FormInputGroups',

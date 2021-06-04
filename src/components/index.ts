@@ -23,24 +23,12 @@ export * from './ThemeProvider';
 
 // WIP COMPONENTS --------------------------------------------------------------
 
-export { default as FormInputGroups } from './FormInputGroups';
-export type { FormInputGroupsProps } from './FormInputGroups';
-
-export { Loading as LoadingPrimary } from './Loading';
-
-export { default as RenderMetaTags } from './RenderMetaTags';
-export type { RenderMetaTagsProps } from './RenderMetaTags';
+export * from './FormInputGroups';
+export * from './RenderMetaTags';
 
 // DEPRECATED COMPONENTS -------------------------------------------------------
 
-export { default as DataTable } from './DataTable';
-export type { DataTableProps } from './DataTable';
-
-export { default as TableCellBody } from './TableCellBody';
-export type { TableCellBodyProps } from './TableCellBody';
-
-export { default as TableCellHead } from './TableCellHead';
-export type { TableCellHeadProps } from './TableCellHead';
-
-export { default as TableContainerPrimary } from './TableContainerPrimary';
-export type { TableContainerPrimaryProps } from './TableContainerPrimary';
+export * from './DataTable';
+export * from './TableCellBody';
+export * from './TableCellHead';
+export * from './TableContainer';

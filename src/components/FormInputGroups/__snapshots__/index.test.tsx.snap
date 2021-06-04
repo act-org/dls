@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormInputGroupsPrimary ACT theme matches the snapshot 1`] = `
+exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-1 MuiGrid-spacing-xs-4"
@@ -120,7 +120,7 @@ exports[`FormInputGroupsPrimary ACT theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`FormInputGroupsPrimary ACT_ET theme matches the snapshot 1`] = `
+exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-4 MuiGrid-spacing-xs-4"

@@ -11,9 +11,9 @@ import * as React from 'react';
 
 import { snapshot } from '~/helpers/test';
 
-import TableContainerPrimary from '.';
+import TableContainer from '.';
 
-describe('TableContainerPrimary', () => {
-  const Container = <TableContainerPrimary />;
+describe('TableContainer', () => {
+  const Container = <TableContainer />;
   snapshot(Container);
 });

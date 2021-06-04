@@ -10,18 +10,18 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import TableContainerPrimary, { TableContainerPrimaryProps } from '.';
+import TableContainer, { TableContainerProps } from '.';
 
-export const Primary: Story<TableContainerPrimaryProps> = args => (
-  <TableContainerPrimary {...args} />
+export const Preview: Story<TableContainerProps> = args => (
+  <TableContainer {...args} />
 );
 
 export default {
-  component: TableContainerPrimary,
+  component: TableContainer,
   parameters: {
     info: {
-      text: 'This is the primary variant of the TableContainer component.',
+      text: 'This is a customized version of the MUI TableContainer component.',
     },
   },
   title: 'Deprecated/Atoms/TableContainer',
-} as Meta<TableContainerPrimaryProps>;
+} as Meta<TableContainerProps>;

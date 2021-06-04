@@ -14,7 +14,7 @@ import { standard } from '~/helpers/test';
 
 import { EmptyState } from '.';
 
-describe('EmptyStatePrimary', () => {
+describe('EmptyState', () => {
   const Component = (
     <EmptyState
       buttonProps={{

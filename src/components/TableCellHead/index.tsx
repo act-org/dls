@@ -27,7 +27,7 @@ export interface TableCellHeadProps extends TableCellProps {
   style?: React.CSSProperties;
 }
 
-const TableCellHead: React.FC<TableCellHeadProps> = ({
+export const TableCellHead: React.FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
   currentSortObject,

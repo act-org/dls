@@ -12,8 +12,8 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 
 import { ThemeProvider, ThemeProviderProps } from '.';
 
-export const Primary: Story<ThemeProviderProps> = args => (
-  <ThemeProvider {...args}>ThemeProviderPrimary</ThemeProvider>
+export const Preview: Story<ThemeProviderProps> = args => (
+  <ThemeProvider {...args}>ThemeProvider</ThemeProvider>
 );
 
 export default {

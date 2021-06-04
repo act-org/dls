@@ -13,11 +13,11 @@ import { noop } from 'lodash';
 import { FormInput } from '~/components/FormInput';
 import { standard } from '~/helpers/test';
 
-import FormInputGroupsPrimary from '.';
+import FormInputGroups from '.';
 
-describe('FormInputGroupsPrimary', () => {
+describe('FormInputGroups', () => {
   const Component = (
-    <FormInputGroupsPrimary
+    <FormInputGroups
       groups={[
         [
           {

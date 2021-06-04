@@ -13,7 +13,7 @@ import { standard } from '~/helpers/test';
 
 import { FormInput } from '.';
 
-describe('FormInputPrimary', () => {
+describe('FormInput', () => {
   const Component = (
     <FormInput label="Label" placeholder="Placeholder" value="test" />
   );

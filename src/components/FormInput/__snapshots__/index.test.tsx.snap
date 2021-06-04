@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormInputPrimary ACT theme matches the snapshot 1`] = `
+exports[`FormInput ACT theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
@@ -34,7 +34,7 @@ exports[`FormInputPrimary ACT theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`FormInputPrimary ACT_ET theme matches the snapshot 1`] = `
+exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
