@@ -2,6 +2,11 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.0.0] - June 04, 2021
+
+* The DLS no longer exports components that you can import directly from
+Material UI, such as `<Button />` and `<Link />`.
+
 ## [v4.1.0] - May 25, 2021
 
 * This release includes a new
