@@ -4,8 +4,11 @@ Chronological history of changes to the Design Language System.
 
 ## [v5.0.0] - June 04, 2021
 
-* The DLS no longer exports components that you can import directly from
-Material UI, such as `<Button />` and `<Link />`.
+* With this release, the DLS will no longer export components that you can
+import directly from Material UI, such as `<Button />` and `<Link />`.
+* In almost all cases, there is no functional/stylistic difference between
+importing a MUI component from the DLS vs. MUI. The only exception is with the
+`<Link />` component, as the MUI `Link` component does not accept a `to` prop.
 
 ## [v4.1.0] - May 25, 2021
 
