@@ -31,7 +31,8 @@ const RenderLogo: React.FC<RenderLogoProps> = ({
 
   const children = (
     <img
-      alt={alt}
+      alt={alt || 'Logo'}
+      aria-label={alt || 'Logo'}
       className={clsx(
         !linkProps && classes.logoImg,
         !!linkProps && classes.logoImgWrapped,
