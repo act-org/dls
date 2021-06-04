@@ -33,8 +33,8 @@ export type { RenderMetaTagsProps } from './RenderMetaTags';
 
 // DEPRECATED COMPONENTS -------------------------------------------------------
 
-export { default as DataTablePrimary } from './DataTablePrimary';
-export type { DataTablePrimaryProps } from './DataTablePrimary';
+export { default as DataTable } from './DataTable';
+export type { DataTableProps } from './DataTable';
 
 export { default as TableCellBody } from './TableCellBody';
 export type { TableCellBodyProps } from './TableCellBody';

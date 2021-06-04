@@ -16,7 +16,7 @@ import sort from '~/helpers/sort';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
-import DataTablePrimary, { DataTablePrimaryProps } from '.';
+import DataTable, { DataTableProps } from '.';
 
 interface Item {
   id: string;
@@ -26,7 +26,7 @@ interface Item {
   fieldB: string;
   fieldC: string;
 }
-const Template: Story<DataTablePrimaryProps<Item>> = args => {
+const Template: Story<DataTableProps<Item>> = args => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
@@ -48,7 +48,7 @@ const Template: Story<DataTablePrimaryProps<Item>> = args => {
   items = items.sort(sort<Item>(sortObject));
 
   return (
-    <DataTablePrimary<Item>
+    <DataTable<Item>
       columns={[
         {
           label: 'ID',
@@ -113,10 +113,10 @@ const Template: Story<DataTablePrimaryProps<Item>> = args => {
     />
   );
 };
-export const Primary: Story<DataTablePrimaryProps<Item>> = Template.bind({});
+export const Primary: Story<DataTableProps<Item>> = Template.bind({});
 
 export default {
-  component: DataTablePrimary,
+  component: DataTable,
   parameters: {
     info: {
       text: 'This is the primary variant of the DataTable component.',
@@ -126,4 +126,4 @@ export default {
     },
   },
   title: 'Deprecated/Organisms/DataTable',
-} as Meta<DataTablePrimaryProps<Item>>;
+} as Meta<DataTableProps<Item>>;

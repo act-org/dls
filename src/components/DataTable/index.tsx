@@ -25,7 +25,7 @@ interface Column<T> {
   style?: React.CSSProperties;
 }
 
-export interface DataTablePrimaryProps<T> {
+export interface DataTableProps<T> {
   columns: Column<T>[];
   currentSortObject: SortObject;
   emptyStateProps?: EmptyStateProps;
@@ -37,14 +37,14 @@ export interface DataTablePrimaryProps<T> {
   ) => React.ReactElement<any>;
 }
 
-const DataTablePrimary = <T,>({
+const DataTable = <T,>({
   columns,
   currentSortObject,
   emptyStateProps,
   items,
   onChangeSort,
   RowWrapper,
-}: DataTablePrimaryProps<T>): React.ReactElement<any> => {
+}: DataTableProps<T>): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (
@@ -69,27 +69,32 @@ const DataTablePrimary = <T,>({
         </TableHead>
 
         <TableBody>
-          {items.map((item, i): React.ReactElement<any> => {
-            /* eslint-disable react/no-array-index-key */
-            const children = (
-              <TableRow hover key={i}>
-                {columns.map(
-                  (column, y): React.ReactElement<any> => (
-                    <TableCellBody key={column.label || y} style={column.style}>
-                      {column.renderValue(item)}
-                    </TableCellBody>
-                  ),
-                )}
-              </TableRow>
-            );
-            /* eslint-enable react/no-array-index-key */
+          {items.map(
+            (item, i): React.ReactElement<any> => {
+              /* eslint-disable react/no-array-index-key */
+              const children = (
+                <TableRow hover key={i}>
+                  {columns.map(
+                    (column, y): React.ReactElement<any> => (
+                      <TableCellBody
+                        key={column.label || y}
+                        style={column.style}
+                      >
+                        {column.renderValue(item)}
+                      </TableCellBody>
+                    ),
+                  )}
+                </TableRow>
+              );
+              /* eslint-enable react/no-array-index-key */
 
-            if (RowWrapper) {
-              return RowWrapper(item, children);
-            }
+              if (RowWrapper) {
+                return RowWrapper(item, children);
+              }
 
-            return children;
-          })}
+              return children;
+            },
+          )}
         </TableBody>
       </Table>
 
@@ -102,8 +107,8 @@ const DataTablePrimary = <T,>({
   );
 };
 
-DataTablePrimary.defaultProps = {
+DataTable.defaultProps = {
   RowWrapper: undefined,
 };
 
-export default DataTablePrimary;
+export default DataTable;

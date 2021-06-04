@@ -12,7 +12,7 @@ import { noop } from 'lodash';
 
 import { snapshot } from '~/helpers/test';
 
-import DataTablePrimary from '.';
+import DataTable from '.';
 
 interface Item {
   id: string;
@@ -22,9 +22,9 @@ interface Item {
   fieldC: string;
 }
 
-describe('DataTablePrimary', () => {
+describe('DataTable', () => {
   const Component = (
-    <DataTablePrimary
+    <DataTable
       columns={[
         {
           label: 'ID',
