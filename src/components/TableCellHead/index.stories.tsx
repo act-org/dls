@@ -8,14 +8,14 @@
  */
 
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react/types-6-0';
 
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortObject } from '~/types';
 
-import TableCellHead, { Props } from '.';
+import TableCellHead, { TableCellHeadProps } from '.';
 
-interface StoryProps extends Props {
+interface StoryProps extends TableCellHeadProps {
   text: string;
 }
 
@@ -41,6 +41,7 @@ export const Head: Story<StoryProps> = ({ text, ...args }: StoryProps) => {
     </TableCellHead>
   );
 };
+
 Head.args = {
   text: 'Table Cell',
 };

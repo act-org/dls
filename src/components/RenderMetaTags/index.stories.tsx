@@ -10,9 +10,11 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import RenderMetaTags, { Props } from '.';
+import RenderMetaTags, { RenderMetaTagsProps } from '.';
 
-export const Base: Story<Props> = args => <RenderMetaTags {...args} />;
+export const Base: Story<RenderMetaTagsProps> = args => (
+  <RenderMetaTags {...args} />
+);
 
 export default {
   component: RenderMetaTags,
@@ -21,5 +23,5 @@ export default {
       text: 'This is the base variant of the RenderMetaTags component.',
     },
   },
-  title: 'Utilities/RenderMetaTags',
-} as Meta<Props>;
+  title: 'Work in Progress/RenderMetaTags',
+} as Meta<RenderMetaTagsProps>;

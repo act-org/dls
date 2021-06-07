@@ -10,55 +10,31 @@
 // ACTIVE COMPONENTS -----------------------------------------------------------
 
 export * from './Alert';
-export * from './AppBar';
 export * from './AppBarNavigation';
-export * from './Button';
-export * from './Checkbox';
-export * from './DataGrid';
 export * from './Dialog';
-export * from './DialogTitle';
-export * from './DialogActions';
-export * from './DialogContent';
-export * from './DialogContentText';
-export * from './Drawer';
 export * from './EmptyState';
-export * from './FormInput';
-export * from './FormSelect';
+export * from './FormInputGroups';
 export * from './FormSwitch';
-export * from './IconButton';
-export * from './Input';
-export * from './InputLabel';
-export * from './Link';
 export * from './Loading';
-export * from './Paper';
-export * from './Radio';
 export * from './SearchBar';
-export * from './Select';
-export * from './Switch';
 export * from './ThemeProvider';
-export * from './Toolbar';
-export * from './Typography';
 
 // WIP COMPONENTS --------------------------------------------------------------
 
-export { default as FormInputGroups } from './FormInputGroups';
-export type { Props as FormInputGroupsProps } from './FormInputGroups';
-
-export { Loading as LoadingPrimary } from './Loading';
-
-export { default as RenderMetaTags } from './RenderMetaTags';
-export type { Props as RenderMetaTagsProps } from './RenderMetaTags';
+export * from './FormInput';
+export * from './FormSelect';
+export * from './InputLabel';
+export * from './RenderMetaTags';
 
 // DEPRECATED COMPONENTS -------------------------------------------------------
 
-export { default as DataTablePrimary } from './DataTablePrimary';
-export type { Props as DataTablePrimaryProps } from './DataTablePrimary';
-
-export { default as TableCellBody } from './TableCellBody';
-export type { Props as TableCellBodyProps } from './TableCellBody';
-
-export { default as TableCellHead } from './TableCellHead';
-export type { Props as TableCellHeadProps } from './TableCellHead';
-
-export { default as TableContainerPrimary } from './TableContainerPrimary';
-export type { Props as TableContainerPrimaryProps } from './TableContainerPrimary';
+export * from './DataTable';
+export * from './FormInputPrimary';
+export * from './FormSelectPrimary';
+export * from './InputLabelPrimary';
+export * from './InputPrimary';
+export * from './SelectPrimary';
+export * from './SelectSecondary';
+export * from './TableCellBody';
+export * from './TableCellHead';
+export * from './TableContainer';

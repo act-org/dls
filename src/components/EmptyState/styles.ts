@@ -9,10 +9,7 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import COLORS from '~/constants/colors';
-import DIMS from '~/constants/dims';
-
-export default makeStyles({
+export default makeStyles(({ palette, spacing }) => ({
   container: {
     alignItems: 'center',
     display: 'flex',
@@ -20,9 +17,9 @@ export default makeStyles({
     flexDirection: 'column',
   },
   descriptionRoot: {
-    color: COLORS.BLACK_54,
-    marginBottom: DIMS.LAYOUT_PADDING * 2,
-    marginTop: DIMS.LAYOUT_PADDING / 2,
+    color: palette.text.secondary,
+    marginBottom: spacing(2),
+    marginTop: spacing(1) / 2,
     maxWidth: 350,
   },
   descriptionRootFlexibleHeight: {
@@ -31,21 +28,21 @@ export default makeStyles({
     flexDirection: 'column',
   },
   descriptionRootWithoutTitle: {
-    marginTop: DIMS.LAYOUT_PADDING * 2,
+    marginTop: spacing(2),
   },
   iconRoot: {
     height: 50,
     width: 50,
   },
   titleGridContainer: {
-    marginBottom: DIMS.LAYOUT_PADDING,
-    marginTop: DIMS.LAYOUT_PADDING,
+    marginBottom: spacing(1),
+    marginTop: spacing(1),
     maxWidth: 300,
   },
   titleGridContainerWithDescription: {
-    marginBottom: DIMS.LAYOUT_PADDING / 2,
+    marginBottom: spacing(1) / 2,
   },
   titleGridItem: {
     display: 'flex',
   },
-});
+}));

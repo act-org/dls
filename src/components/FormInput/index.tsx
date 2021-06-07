@@ -8,10 +8,16 @@
  */
 
 import * as React from 'react';
-import { Tooltip, FormControl, FormControlProps } from '@material-ui/core';
+import {
+  Input,
+  InputProps,
+  FormControl,
+  FormControlProps,
+  Tooltip,
+} from '@material-ui/core';
+
 import { AlertOutline } from '~/icons';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
-import { Input, InputProps } from '~/components/Input';
 
 export type FormInputProps = InputProps & {
   label?: string | React.ReactElement;

@@ -8,25 +8,23 @@
  */
 
 import * as React from 'react';
-
-import Link, { LinkProps } from '~/components/Link';
-import Typography from '~/components/Typography';
+import { Link, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
 
-export interface Props {
+export interface RenderNavigationItemProps {
   isActive?: boolean;
   LinkComponent?: React.ComponentType;
-  LinkProps: LinkProps;
+  LinkProps: any;
   title: string;
 }
 
-const RenderNavigationItem: React.FC<Props> = ({
+const RenderNavigationItem: React.FC<RenderNavigationItemProps> = ({
   isActive,
   LinkComponent,
   LinkProps: linkProps,
   title,
-}: Props): React.ReactElement<Props> => {
+}: RenderNavigationItemProps): React.ReactElement<RenderNavigationItemProps> => {
   const NavLink = LinkComponent || Link;
 
   const classes = useStyles({ isActive });

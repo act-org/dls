@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 
-export interface Props {
+export interface RenderMetaTagsProps {
   description?: string;
   imageUrl?: string;
   keywords?: string[];
@@ -18,14 +18,14 @@ export interface Props {
   Wrapper?: (children: React.ReactElement<any>[]) => React.ReactElement<any>;
 }
 
-export const RenderMetaTags: React.FC<Props> = ({
+export const RenderMetaTags: React.FC<RenderMetaTagsProps> = ({
   description,
   imageUrl,
   keywords,
   noIndex,
   title,
   Wrapper,
-}: Props): any => {
+}: RenderMetaTagsProps): any => {
   const children: React.ReactElement<any>[] = [];
 
   if (description) {

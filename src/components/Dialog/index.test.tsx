@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { standard, render } from '../../helpers/test';
-import { Dialog } from '.';
 import userEvent from '@testing-library/user-event';
+
+import { standard, render } from '~/helpers/test';
+
+import { Dialog } from '.';
 
 describe('Dialog', () => {
   const Component = (

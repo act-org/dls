@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { standard, render } from '../../helpers/test';
-import { SearchBar } from '.';
 import userEvent from '@testing-library/user-event';
+
+import { standard, render } from '~/helpers/test';
+
+import { SearchBar } from '.';
 
 describe('SearchBar', () => {
   const Component = <SearchBar value="Value" />;

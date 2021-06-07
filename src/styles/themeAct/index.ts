@@ -10,18 +10,21 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
 
-import TYPOGRAPHY from './typography';
+import DIMS from './dims';
+import OVERRIDES from './overrides';
 import PALETTE from './palette';
 import PROPS from './props';
 import SHAPE from './shape';
-import OVERRIDES from './overrides';
+import TYPOGRAPHY from './typography';
 
 export const THEME_ACT: ThemeOptions = {
+  customDims: DIMS.CUSTOM,
   overrides: OVERRIDES,
   palette: PALETTE,
   props: PROPS,
   shape: SHAPE,
+  spacing: DIMS.SPACING,
   typography: TYPOGRAPHY,
-};
+} as any;
 
 export default createMuiTheme(THEME_ACT);

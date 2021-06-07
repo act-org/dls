@@ -6,13 +6,11 @@
  *
  * @prettier
  */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import * as React from 'react';
-import clsx from 'clsx';
-import { Grid, Typography } from '@material-ui/core';
-import { isString } from 'lodash';
 
-import { Button, ButtonProps } from '~/components/Button';
+import * as React from 'react';
+import { Button, ButtonProps, Grid, Typography } from '@material-ui/core';
+import clsx from 'clsx';
+import { isString } from 'lodash';
 
 import useStyles from './styles';
 

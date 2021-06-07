@@ -18,12 +18,13 @@ import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
 export const THEME_ACT_ET: ThemeOptions = {
+  customDims: DIMS.CUSTOM,
   overrides: OVERRIDES,
   palette: PALETTE,
   props: PROPS,
   shape: SHAPE,
   spacing: DIMS.SPACING,
   typography: TYPOGRAPHY,
-};
+} as any;
 
 export default createMuiTheme(THEME_ACT_ET);

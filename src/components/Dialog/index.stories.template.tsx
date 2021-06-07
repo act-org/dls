@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import React, { useState } from 'react';
-import { Dialog, DialogProps } from '.';
-import { DialogContent } from '../DialogContent';
-import { DialogActions } from '../DialogActions';
-import { Button } from '../Button';
-import { Playground } from '../../helpers/playground';
+import * as React from 'react';
+import { Button, DialogActions, DialogContent } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
+
+import { Playground } from '~/helpers/playground';
+
+import { Dialog, DialogProps } from '.';
 
 interface StoryProps extends DialogProps {
   text?: string;
@@ -21,7 +21,7 @@ interface StoryProps extends DialogProps {
 
 // eslint-disable-next-line react/prop-types
 export const Template: Story<StoryProps> = ({ text, ...args }) => {
-  const [open, setOpen] = useState<boolean>(false);
+  const [open, setOpen] = React.useState<boolean>(false);
   return (
     <>
       <Button

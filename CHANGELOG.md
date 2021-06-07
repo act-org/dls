@@ -2,6 +2,30 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.0.0] - June 07, 2021
+
+* With this release, the DLS will no longer export components that you can
+import directly from Material UI, such as `<Button />` and `<Link />`.
+* In almost all cases, there is no functional/stylistic difference between
+importing a MUI component from the DLS vs. MUI. The only exception is with the
+`<Link />` component, as the MUI `Link` component does not accept a `to` prop.
+* Removed `COLORS` and `DIMS` constants. All DLS components are now powered
+by the theme engine.
+* Renamed the following components:
+  * Renamed `<DataTablePrimary />` to `<DataTable />`
+  * Renamed `<LoadingPrimary />` to `<Loading />`
+  * Renamed `<TableContainerPrimary />` to `<TableContainer />`
+* Re-instated, and marked as deprecated, the following v3 components to help
+with reverse compatibility / application migration. These components should
+be removed when they have suitable alternatives that are powered by the MUI
+themeing engine:
+  * `<FormInputPrimary />`
+  * `<FormSelectPrimary />`
+  * `<InputLabelPrimary />`
+  * `<InputPrimary />`
+  * `<SelectPrimary />`
+  * `<SelectSecondary />`
+
 ## [v4.1.0] - May 25, 2021
 
 * This release includes a new

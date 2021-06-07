@@ -8,13 +8,11 @@
  */
 
 import * as React from 'react';
-import { Grid } from '@material-ui/core';
+import { AppBar, AppBarProps, Grid } from '@material-ui/core';
 
-import AppBar, { AppBarProps } from '~/components/AppBar';
-
-import RenderLogo, { Props as LogoProps } from './RenderLogo';
+import RenderLogo, { RenderLogoProps } from './RenderLogo';
 import RenderNavigationItem, {
-  Props as NavigationItem,
+  RenderNavigationItemProps,
 } from './RenderNavigationItem';
 import useStyles from './styles';
 
@@ -22,8 +20,8 @@ export interface AppBarNavigationProps {
   appBarHeight?: number;
   AppBarProps?: AppBarProps;
   headerRightElement?: React.ReactElement<any>;
-  LogoProps: LogoProps;
-  navigationItems: NavigationItem[];
+  RenderLogoProps: RenderLogoProps;
+  navigationItems: RenderNavigationItemProps[];
 }
 
 /**
@@ -37,7 +35,7 @@ export const AppBarNavigation: React.FC<AppBarNavigationProps> = ({
   appBarHeight,
   AppBarProps: appBarProps,
   headerRightElement,
-  LogoProps: logoProps,
+  RenderLogoProps: logoProps,
   navigationItems,
 }: AppBarNavigationProps): React.ReactElement<AppBarNavigationProps> => {
   const classes = useStyles({ appBarHeight: appBarHeight || 72 });
@@ -52,7 +50,7 @@ export const AppBarNavigation: React.FC<AppBarNavigationProps> = ({
 
       <Grid classes={{ container: classes.navContainer }} container spacing={4}>
         {navigationItems.map(
-          (n: NavigationItem): React.ReactElement<any> => (
+          (n: RenderNavigationItemProps): React.ReactElement<any> => (
             <Grid item key={n.title}>
               <RenderNavigationItem {...n} />
             </Grid>

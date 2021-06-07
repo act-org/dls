@@ -12,11 +12,13 @@ import {
   MenuItem,
   FormControl,
   FormControlProps,
+  Select,
+  SelectProps,
   Tooltip,
 } from '@material-ui/core';
+
 import { AlertOutline } from '~/icons';
-import { InputLabel, InputLabelProps } from '../InputLabel';
-import { Select, SelectProps } from '../Select';
+import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 
 export interface SelectOption {
   label: string | null;

@@ -8,7 +8,9 @@
  */
 
 import * as React from 'react';
-import { standard } from '../../helpers/test';
+
+import { standard } from '~/helpers/test';
+
 import { AppBarNavigation } from '.';
 
 describe('AppBarNavigation', () => {

@@ -8,19 +8,21 @@
  */
 
 import * as React from 'react';
-import { standard } from '../../helpers/test';
 import { noop } from 'lodash';
-import FormInputPrimary from '../FormInput';
-import FormInputGroupsPrimary from '.';
 
-describe('FormInputGroupsPrimary', () => {
+import { FormInput } from '~/components/FormInput';
+import { standard } from '~/helpers/test';
+
+import FormInputGroups from '.';
+
+describe('FormInputGroups', () => {
   const Component = (
-    <FormInputGroupsPrimary
+    <FormInputGroups
       groups={[
         [
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: noop,
                   placeholder: 'Input 1',
@@ -37,7 +39,7 @@ describe('FormInputGroupsPrimary', () => {
           },
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: noop,
                   placeholder: 'Input 2',
@@ -56,7 +58,7 @@ describe('FormInputGroupsPrimary', () => {
         [
           {
             formInput: (
-              <FormInputPrimary
+              <FormInput
                 inputProps={{
                   onChange: noop,
                   placeholder: 'Input 3',

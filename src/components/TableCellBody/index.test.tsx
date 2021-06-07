@@ -8,7 +8,9 @@
  */
 
 import * as React from 'react';
-import { snapshot } from '../../helpers/test';
+
+import { snapshot } from '~/helpers/test';
+
 import TableCellBody from '.';
 
 describe('TableCellBody', () => {

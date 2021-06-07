@@ -8,15 +8,15 @@
  */
 
 import * as React from 'react';
-import { CloseCircle } from '~/icons';
 import {
+  Box,
   Dialog as MuiDialog,
   DialogProps as MuiDialogProps,
-  Box,
+  DialogTitle,
   IconButton,
 } from '@material-ui/core';
 
-import { DialogTitle } from '../DialogTitle';
+import { CloseCircle } from '~/icons';
 
 export type DialogProps = MuiDialogProps & {
   title?: string;

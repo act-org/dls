@@ -14,12 +14,12 @@ import mergeClasses from '~/helpers/mergeClasses';
 
 import useStyles from './styles';
 
-export type Props = TableCellProps;
+export type TableCellBodyProps = TableCellProps;
 
-const TableCellBody: React.FC<Props> = ({
+export const TableCellBody: React.FC<TableCellBodyProps> = ({
   classes: classesProp,
   ...otherProps
-}: Props): React.ReactElement<any> => {
+}: TableCellBodyProps): React.ReactElement<any> => {
   const classes = useStyles();
 
   return (

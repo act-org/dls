@@ -9,9 +9,7 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles({
+export default makeStyles(({ spacing }) => ({
   container: {
     alignItems: 'center',
     display: 'flex',
@@ -21,6 +19,6 @@ export default makeStyles({
     width: '100%',
   },
   typographyRoot: {
-    marginTop: DIMS.LAYOUT_PADDING / 2,
+    marginTop: spacing(1) / 2,
   },
-});
+}));

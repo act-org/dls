@@ -9,30 +9,30 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-
-import Link, { LinkProps } from '~/components/Link';
+import { Link } from '@material-ui/core';
 
 import useStyles from './styles';
 
-export interface Props {
+export interface RenderLogoProps {
   alt: string;
   LinkComponent?: React.ComponentType;
-  LinkProps?: LinkProps;
+  LinkProps?: any;
   src: string;
 }
 
-const RenderLogo: React.FC<Props> = ({
+const RenderLogo: React.FC<RenderLogoProps> = ({
   alt,
   LinkComponent,
   LinkProps: linkProps,
   src,
-}: Props): React.ReactElement<Props> => {
+}: RenderLogoProps): React.ReactElement<RenderLogoProps> => {
   const classes = useStyles();
   const LogoLink = LinkComponent || Link;
 
   const children = (
     <img
-      alt={alt}
+      alt={alt || 'Logo'}
+      aria-label={alt || 'Logo'}
       className={clsx(
         !linkProps && classes.logoImg,
         !!linkProps && classes.logoImgWrapped,

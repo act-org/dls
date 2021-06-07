@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { FormCheckbox, FormCheckboxProps } from '.';
-import { Playground } from '../../helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
+
+import { Playground } from '~/helpers/playground';
+
+import { FormCheckbox, FormCheckboxProps } from '.';
 
 export const Template: Story<FormCheckboxProps> = args => (
   <FormCheckbox {...args} />

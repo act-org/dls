@@ -10,16 +10,16 @@
 import * as React from 'react';
 import clsx from 'clsx';
 import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import { ChevronDown, ChevronUp } from '~/icons';
-import COLORS from '~/constants/colors';
 import mergeClasses from '~/helpers/mergeClasses';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortDirection, SortObject } from '~/types';
 
 import useStyles from './styles';
 
-export interface Props extends TableCellProps {
+export interface TableCellHeadProps extends TableCellProps {
   children: string | React.ReactElement<any>;
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
@@ -27,7 +27,7 @@ export interface Props extends TableCellProps {
   style?: React.CSSProperties;
 }
 
-const TableCellHead: React.FC<Props> = ({
+export const TableCellHead: React.FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
   currentSortObject,
@@ -35,7 +35,9 @@ const TableCellHead: React.FC<Props> = ({
   sortBy,
   style,
   ...props
-}: Props): React.ReactElement<any> => {
+}: TableCellHeadProps): React.ReactElement<any> => {
+  const { palette } = useTheme();
+
   const sortIsApplied: boolean = sortBy === currentSortObject.sortBy;
 
   const getStyleForIcon = (direction: SortDirection): React.CSSProperties => {
@@ -43,7 +45,7 @@ const TableCellHead: React.FC<Props> = ({
       return {};
     }
 
-    return { color: COLORS.WHITE };
+    return { color: palette.common.white };
   };
 
   const toggleSort = (): void => {
@@ -87,6 +89,7 @@ const TableCellHead: React.FC<Props> = ({
         classes={{
           root: classes.typographyRoot,
         }}
+        variant="body1"
       >
         {children}
       </Typography>
@@ -137,4 +140,5 @@ TableCellHead.defaultProps = {
   sortBy: undefined,
   style: undefined,
 };
+
 export default TableCellHead;

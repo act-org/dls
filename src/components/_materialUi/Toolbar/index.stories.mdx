@@ -1,0 +1,41 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import { Toolbar, ToolbarProps } from '@material-ui/core';
+
+import { argTypes, Template } from './index.stories.template';
+
+<Meta
+  title="Material UI/Toolbar"
+  component={Toolbar}
+  argTypes={argTypes}
+  parameters={{}}
+/>
+
+<Description of={Toolbar} />
+
+## Primary
+
+<Canvas>
+  <Story name="Primary" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground" args={{}}>
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

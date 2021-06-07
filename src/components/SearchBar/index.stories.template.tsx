@@ -10,8 +10,9 @@
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
+import { Playground } from '~/helpers/playground';
+
 import { SearchBar, SearchBarProps } from '.';
-import { Playground } from '../../helpers/playground';
 
 export const Template: Story<SearchBarProps> = args => <SearchBar {...args} />;
 

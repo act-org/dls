@@ -14,8 +14,9 @@ import {
   RadioGroup,
   RadioGroupProps,
 } from '@material-ui/core';
-import { FormRadio, FormRadioProps } from '../FormRadio';
-import { InputLabel, InputLabelProps } from '../InputLabel';
+
+import { FormRadio, FormRadioProps } from '~/components/FormRadio';
+import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 
 export type FormRadioGroupProps = RadioGroupProps & {
   options: FormRadioProps[];

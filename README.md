@@ -1,5 +1,5 @@
 # Design Language System (DLS)
-<!-- markdownlint-disable-next-line MD013 -->
+
 [![Build Status](https://travis-ci.com/act-org/dls.svg)](https://travis-ci.com/act-org/dls)
 
 The Design Language System for ACT front-end projects. View the UI components
@@ -42,10 +42,32 @@ const MyApp = () => (
 );
 ```
 
+#### Extending Themes
+
+You can exend the core DLS themes using the
+[`createMuiTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+generator from Material UI:
+
+```jsx
+import { createMuiTheme } from '@material-ui/core/styles';
+import { merge } from 'lodash';
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import { ThemeProvider } from '@actinc/dls/components';
+
+const myExtendedTheme = createMuiTheme(merge(THEME_ACT_ET, {
+  // theme customizations go here!
+}));
+
+const MyApp = () => (
+  <ThemeProvider theme={myExtendedTheme}>
+    <App />
+  </ThemeProvider>
+);
+```
+
 #### Custom Themes
 
 Alternatively, you can build your own theme from scratch using the
-<!-- markdownlint-disable-next-line MD013 -->
 [`createMuiTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
 generator from Material UI:
 
@@ -53,7 +75,9 @@ generator from Material UI:
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@actinc/dls/components';
 
-const myCustomTheme = createMuiTheme({ ... });
+const myCustomTheme = createMuiTheme({
+  // build your theme here!
+});
 
 const MyApp = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -225,9 +249,9 @@ constants, helpers, icons, styles, and types that you need:
 
 ```jsx
 // components
-import { Button } from '@actinc/dls/components';
+import { Alert } from '@actinc/dls/components';
 // constants
-import { typography as TYPOGRAPHY } from '@actinc/dls/constants';
+import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
 // helpers
 import { search } from '@actinc/dls/helpers';
 // icons
@@ -258,3 +282,12 @@ Here are some of the more important ones:
 | npm start               | Start the [Storybook](https://storybook.js.org) component visualizer. |
 | npm test                | Run all tests.                                                        |
 | npm run release         | Publish a new release of the DLS.                                     |
+
+## Pinned Packages
+
+Some npm packages are pinned to non-current versions for a specific reason:
+
+| Package      | Version | Reason                                                                      |
+|:------------ |:------- |:--------------------------------------------------------------------------- |
+| `np`         | `7.4.0` | Version `7.5.0` is [broken](https://github.com/sindresorhus/np/issues/613). |
+| `typescript` | `4.2.3` | Version `4.3.2` has issues with the test suite.                             |

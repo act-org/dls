@@ -6,16 +6,18 @@
  *
  * @prettier
  */
-/* eslint-disable sort-keys */
+
 import * as React from 'react';
 import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
+  Tooltip,
 } from '@material-ui/core';
-import { Tooltip } from '~/components/Tooltip';
-import { makeStyles } from '@material-ui/core/styles';
-import { mergeClasses } from '~/helpers';
+
 import { HelpCircleOutline } from '~/icons';
+import { mergeClasses } from '~/helpers';
+
+import useStyles from './styles';
 
 /**
  * These are the options available for an Input Label
@@ -42,29 +44,6 @@ export interface InputLabelProps extends MuiInputLabelProps {
     | 'top-end'
     | 'top-start';
 }
-
-const useStyles = makeStyles({
-  labelRoot: {
-    '& .label-split': {
-      '& > .required': {
-        fontSize: '.875rem',
-      },
-      alignItems: 'center',
-      display: 'flex',
-      justifyContent: 'space-between',
-    },
-    '& .label-help': {
-      alignItems: 'flex-end',
-      display: 'flex',
-      '& .MuiSvgIcon-root': {
-        marginLeft: '.1em',
-        width: '.825em',
-        height: '.825em',
-      },
-    },
-    position: 'relative',
-  },
-});
 
 /**
  * #Input Label

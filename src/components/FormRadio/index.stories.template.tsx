@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { FormRadio, FormRadioProps } from '.';
-import { Playground } from '../../helpers/playground';
 import { Story } from '@storybook/react/types-6-0';
+
+import { Playground } from '~/helpers/playground';
+
+import { FormRadio, FormRadioProps } from '.';
 
 export const Template: Story<FormRadioProps> = args => <FormRadio {...args} />;
 export const argTypes = Playground(

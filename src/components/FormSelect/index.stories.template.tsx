@@ -7,15 +7,15 @@
  * @prettier
  */
 
-import React, { useState } from 'react';
+import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 
 import { FormSelect, FormSelectProps } from '.';
-import { Playground } from '../../helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 export const Template: Story<FormSelectProps> = args => {
   const { value } = args;
-  const [state, setState] = useState<string>((value as string) || '');
+  const [state, setState] = React.useState<string>((value as string) || '');
   const onChange = (e): void => {
     setState(e.target.value);
   };
