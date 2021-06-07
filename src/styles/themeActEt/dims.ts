@@ -8,6 +8,12 @@
  */
 
 const DIMS = {
+  CUSTOM: {
+    heights: {
+      input: 40,
+      tableHeader: 58,
+    },
+  },
   SPACING: 8,
 };
 

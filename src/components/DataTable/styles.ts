@@ -9,12 +9,10 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles({
+export default makeStyles(({ spacing }) => ({
   emptyStateContainer: {
-    padding: `${DIMS.LAYOUT_PADDING * 2.5}px ${DIMS.LAYOUT_PADDING}px
-      ${DIMS.LAYOUT_PADDING}px ${DIMS.LAYOUT_PADDING}px`,
+    padding: `${spacing(1) * 2.5}px ${spacing(1)}px
+      ${spacing(1)}px ${spacing(1)}px`,
     width: '100%',
   },
-});
+}));

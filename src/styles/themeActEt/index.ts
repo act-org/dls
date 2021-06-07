@@ -18,6 +18,7 @@ import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
 export const THEME_ACT_ET: ThemeOptions = {
+  customDims: DIMS.CUSTOM,
   overrides: OVERRIDES,
   palette: PALETTE,
   props: PROPS,

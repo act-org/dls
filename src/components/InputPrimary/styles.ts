@@ -5,17 +5,15 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { grey } from '@material-ui/core/colors';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles(({ typography }) => ({
+export default makeStyles(({ customDims, spacing, typography }: any) => ({
   inputInput: {
     '&.Mui-disabled': {
       cursor: 'not-allowed',
     },
     fontSize: 14,
-    height: DIMS.HEIGHTS.INPUT,
-    minHeight: DIMS.HEIGHTS.INPUT,
-    padding: `0 ${DIMS.LAYOUT_PADDING}px`,
+    height: customDims.heights.input,
+    minHeight: customDims.heights.input,
+    padding: `0 ${spacing(1)}px`,
   },
   inputInputPassword: {
     fontSize: 22,

@@ -4,14 +4,12 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles({
+export default makeStyles(({ spacing }) => ({
   inputContainer: {
     position: 'relative',
   },
   labelContainer: {
-    marginBottom: DIMS.LAYOUT_PADDING / 2,
+    marginBottom: spacing(1) / 2,
   },
   warning: {
     marginLeft: 3,
@@ -20,4 +18,4 @@ export default makeStyles({
     right: -28,
     top: '35%',
   },
-});
+}));

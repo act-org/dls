@@ -4,11 +4,9 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles(({ palette, typography }) => ({
+export default makeStyles(({ palette, spacing, typography }) => ({
   labelContainer: {
-    marginBottom: DIMS.LAYOUT_PADDING / 2,
+    marginBottom: spacing(1) / 2,
   },
   selectContainer: {
     position: 'relative',

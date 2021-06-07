@@ -9,9 +9,7 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import DIMS from '~/constants/dims';
-
-export default makeStyles(({ palette, typography }: any) => ({
+export default makeStyles(({ customDims, palette, typography }: any) => ({
   sortContainerRoot: {
     alignItems: 'center',
     display: 'flex',
@@ -33,7 +31,7 @@ export default makeStyles(({ palette, typography }: any) => ({
     backgroundColor: palette.primary.main,
     border: 'none',
     boxSizing: 'border-box',
-    height: DIMS.HEIGHTS.TABLE_HEADER,
+    height: customDims.heights.tableHeader,
     position: 'relative',
   },
   tableCellRootSortable: {
