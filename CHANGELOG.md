@@ -9,6 +9,8 @@ import directly from Material UI, such as `<Button />` and `<Link />`.
 * In almost all cases, there is no functional/stylistic difference between
 importing a MUI component from the DLS vs. MUI. The only exception is with the
 `<Link />` component, as the MUI `Link` component does not accept a `to` prop.
+* Removed `COLORS` and `DIMS` constants. All DLS components are now powered
+by the theme engine.
 * Renamed the following components:
   * Renamed `<DataTablePrimary />` to `<DataTable />`
   * Renamed `<LoadingPrimary />` to `<Loading />`
