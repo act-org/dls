@@ -42,6 +42,30 @@ const MyApp = () => (
 );
 ```
 
+#### Extending Themes
+
+You can exend the core DLS themes using the
+<!-- markdownlint-disable-next-line MD013 -->
+[`createMuiTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+generator from Material UI:
+
+```jsx
+import { createMuiTheme } from '@material-ui/core/styles';
+import { merge } from 'lodash';
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import { ThemeProvider } from '@actinc/dls/components';
+
+const myExtendedTheme = createMuiTheme(merge(THEME_ACT_ET, {
+  // theme customizations go here!
+}));
+
+const MyApp = () => (
+  <ThemeProvider theme={myExtendedTheme}>
+    <App />
+  </ThemeProvider>
+);
+```
+
 #### Custom Themes
 
 Alternatively, you can build your own theme from scratch using the
@@ -53,7 +77,9 @@ generator from Material UI:
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@actinc/dls/components';
 
-const myCustomTheme = createMuiTheme({ ... });
+const myCustomTheme = createMuiTheme({
+  // build your theme here!
+});
 
 const MyApp = () => (
   <ThemeProvider theme={myCustomTheme}>
