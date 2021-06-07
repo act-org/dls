@@ -25,6 +25,6 @@ export const THEME_ACT: ThemeOptions = {
   shape: SHAPE,
   spacing: DIMS.SPACING,
   typography: TYPOGRAPHY,
-};
+} as any;
 
 export default createMuiTheme(THEME_ACT);
