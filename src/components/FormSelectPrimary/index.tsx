@@ -5,9 +5,9 @@
 import * as React from 'react';
 import { get } from 'lodash';
 import { MenuItem } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import AlertOutline from '~/icons/AlertOutline';
-import COLORS from '~/constants/colors';
 import InputLabelPrimary, {
   InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
@@ -40,6 +40,7 @@ export const FormSelectPrimary: React.FC<FormSelectPrimaryProps> = ({
   selectProps,
 }: FormSelectPrimaryProps): React.ReactElement<FormSelectPrimaryProps> => {
   const classes = useStyles();
+  const { palette } = useTheme();
 
   const children = (
     <div className={classes.selectContainer}>
@@ -76,7 +77,7 @@ export const FormSelectPrimary: React.FC<FormSelectPrimaryProps> = ({
           classes={{
             root: classes.warning,
           }}
-          htmlColor={COLORS.REQUIRED}
+          htmlColor={palette.error.main}
         />
       )}
     </div>

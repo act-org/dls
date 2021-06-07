@@ -5,9 +5,9 @@
 import * as React from 'react';
 import { get } from 'lodash';
 import { Tooltip } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import AlertOutline from '~/icons/AlertOutline';
-import COLORS from '~/constants/colors';
 import InputLabelPrimary, {
   InputLabelPrimaryProps,
 } from '~/components/InputLabelPrimary';
@@ -31,6 +31,7 @@ export const FormInputPrimary: React.FC<FormInputPrimaryProps> = ({
   required,
 }: FormInputPrimaryProps): React.ReactElement<FormInputPrimaryProps> => {
   const classes = useStyles();
+  const { palette } = useTheme();
 
   const children = (
     <div className={classes.inputContainer}>
@@ -48,7 +49,7 @@ export const FormInputPrimary: React.FC<FormInputPrimaryProps> = ({
             classes={{
               root: classes.warning,
             }}
-            htmlColor={COLORS.REQUIRED}
+            htmlColor={palette.error.main}
           />
         </Tooltip>
       )}

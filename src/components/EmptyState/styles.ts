@@ -9,10 +9,9 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import COLORS from '~/constants/colors';
 import DIMS from '~/constants/dims';
 
-export default makeStyles({
+export default makeStyles(({ palette }) => ({
   container: {
     alignItems: 'center',
     display: 'flex',
@@ -20,7 +19,7 @@ export default makeStyles({
     flexDirection: 'column',
   },
   descriptionRoot: {
-    color: COLORS.BLACK_54,
+    color: palette.text.secondary,
     marginBottom: DIMS.LAYOUT_PADDING * 2,
     marginTop: DIMS.LAYOUT_PADDING / 2,
     maxWidth: 350,
@@ -48,4 +47,4 @@ export default makeStyles({
   titleGridItem: {
     display: 'flex',
   },
-});
+}));

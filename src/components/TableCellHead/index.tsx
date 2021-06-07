@@ -10,9 +10,9 @@
 import * as React from 'react';
 import clsx from 'clsx';
 import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import { ChevronDown, ChevronUp } from '~/icons';
-import COLORS from '~/constants/colors';
 import mergeClasses from '~/helpers/mergeClasses';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortDirection, SortObject } from '~/types';
@@ -36,6 +36,8 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
   style,
   ...props
 }: TableCellHeadProps): React.ReactElement<any> => {
+  const { palette } = useTheme();
+
   const sortIsApplied: boolean = sortBy === currentSortObject.sortBy;
 
   const getStyleForIcon = (direction: SortDirection): React.CSSProperties => {
@@ -43,7 +45,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
       return {};
     }
 
-    return { color: COLORS.WHITE };
+    return { color: palette.common.white };
   };
 
   const toggleSort = (): void => {

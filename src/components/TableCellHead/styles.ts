@@ -9,10 +9,9 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import COLORS from '~/constants/colors';
 import DIMS from '~/constants/dims';
 
-export default makeStyles(({ typography }: any) => ({
+export default makeStyles(({ palette, typography }: any) => ({
   sortContainerRoot: {
     alignItems: 'center',
     display: 'flex',
@@ -31,7 +30,7 @@ export default makeStyles(({ typography }: any) => ({
     width: 14,
   },
   tableCellRoot: {
-    backgroundColor: COLORS.PRIMARY,
+    backgroundColor: palette.primary.main,
     border: 'none',
     boxSizing: 'border-box',
     height: DIMS.HEIGHTS.TABLE_HEADER,
@@ -42,7 +41,7 @@ export default makeStyles(({ typography }: any) => ({
     paddingRight: 30,
   },
   tableCellRootSortApplied: {
-    backgroundColor: COLORS.PRIMARY_DARK,
+    backgroundColor: palette.primary.dark,
   },
   typographyRoot: {
     color: 'white',
