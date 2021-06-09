@@ -1,0 +1,10 @@
+<!-- @prettier -->
+
+import { Description, Meta } from '@storybook/addon-docs/blocks';
+
+import CHANGELOG from '~/../CHANGELOG.md';
+import { version } from '~/../package.json';
+
+<Meta title={`DLS v${version}/Changelog`} />
+
+<Description markdown={CHANGELOG} />
