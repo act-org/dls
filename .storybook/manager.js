@@ -10,6 +10,8 @@
 import { addons } from '@storybook/addons';
 import { create } from '@storybook/theming';
 
+import { version } from '../package.json';
+
 addons.setConfig({
   enableShortcuts: true,
   isFullscreen: false,
@@ -21,7 +23,7 @@ addons.setConfig({
   theme: create({
     base: 'light',
     brandImage: 'https://i.imgur.com/P0gtzO0.png',
-    brandTitle: 'ACT Design Language System',
-    brandUrl: 'https://www.act.org/',
+    brandTitle: `ACT Design Language System v${version}`,
+    brandUrl: '/',
   }),
 });
