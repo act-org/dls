@@ -104,6 +104,3 @@ const CustomButtonForTestPrep: React.FC<Props> = ({
 
 export default CustomButtonForTestPrep;
 ```
-
-* [Git Commit](https://bitbucket.org/actet/act-dls/commits/f41917a1ca382b0378f14a862a2c876462fd047c)
-* [Git Tag](https://bitbucket.org/actet/act-dls/commits/tag/v3.0.0)
