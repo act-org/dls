@@ -75,7 +75,7 @@ export function FormSelect({
           {placeholder || 'Select'}
         </MenuItem>
         {options.map(item => (
-          <MenuItem key={item.value} value={item.value}>
+          <MenuItem disabled={item.disabled} key={item.value} value={item.value}>
             {item.label}
           </MenuItem>
         ))}
