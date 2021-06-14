@@ -21,6 +21,7 @@ import { AlertOutline } from '~/icons';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 
 export interface SelectOption {
+  disabled?: boolean;
   label: string | null;
   value: number | string;
 }
@@ -75,7 +76,11 @@ export function FormSelect({
           {placeholder || 'Select'}
         </MenuItem>
         {options.map(item => (
-          <MenuItem disabled={item.disabled} key={item.value} value={item.value}>
+          <MenuItem
+            disabled={item.disabled}
+            key={item.value}
+            value={item.value}
+          >
             {item.label}
           </MenuItem>
         ))}
