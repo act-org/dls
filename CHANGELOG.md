@@ -2,6 +2,11 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.1.0] - June 15, 2021
+
+* Updated `<FormSelect />` component to allow options to be disabled. See:
+https://github.com/act-org/dls/pull/9
+
 ## [v5.0.0] - June 07, 2021
 
 * With this release, the DLS will no longer export components that you can
