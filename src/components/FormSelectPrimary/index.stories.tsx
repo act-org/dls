@@ -57,5 +57,5 @@ export default {
       text: 'This is the primary variant of the FormSelect component.',
     },
   },
-  title: 'Deprecated/Molecules/FormSelectPrimary',
+  title: 'V3/Molecules/FormSelectPrimary',
 };

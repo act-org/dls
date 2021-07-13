@@ -126,5 +126,5 @@ export default {
       expanded: true,
     },
   },
-  title: 'Deprecated/Organisms/DataTable',
+  title: 'V3/Organisms/DataTable',
 } as Meta<DataTableProps<Item>>;

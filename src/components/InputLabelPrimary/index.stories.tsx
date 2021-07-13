@@ -35,5 +35,5 @@ export default {
       text: 'This is a custom InputLabel component.',
     },
   },
-  title: 'Deprecated/Atoms/InputLabelPrimary',
+  title: 'V3/Atoms/InputLabelPrimary',
 };

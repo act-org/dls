@@ -23,5 +23,5 @@ export default {
       text: 'This is a customized version of the MUI TableContainer component.',
     },
   },
-  title: 'Deprecated/Atoms/TableContainer',
+  title: 'V3/Atoms/TableContainer',
 } as Meta<TableContainerProps>;

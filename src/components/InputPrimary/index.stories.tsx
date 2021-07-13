@@ -34,5 +34,5 @@ export default {
       text: 'This is a custom Input component.',
     },
   },
-  title: 'Deprecated/Atoms/InputPrimary',
+  title: 'V3/Atoms/InputPrimary',
 };

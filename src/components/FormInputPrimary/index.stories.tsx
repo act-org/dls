@@ -51,5 +51,5 @@ export default {
       text: 'This is the primary variant of the FormInput component.',
     },
   },
-  title: 'Deprecated/Molecules/FormInputPrimary',
+  title: 'V3/Molecules/FormInputPrimary',
 };
