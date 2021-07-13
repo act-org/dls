@@ -1,0 +1,30 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { withSession } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={withSession}
+  title="Utilities/withSession"
+/>
+
+## Playground
+
+Test.
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground" args={{}}>
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
