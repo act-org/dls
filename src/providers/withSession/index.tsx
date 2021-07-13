@@ -8,11 +8,7 @@
  */
 
 import * as React from 'react';
-import {
-  deleteFromStorage,
-  useLocalStorage,
-  writeStorage,
-} from '@rehooks/local-storage';
+import useLocalStorage from 'react-use-localstorage';
 import { useSessionStorage } from 'react-use-storage';
 
 export const withSession: React.FC<any> = (
@@ -20,15 +16,21 @@ export const withSession: React.FC<any> = (
 ): any =>
   function WithSession(props: any): React.ReactElement {
     const [session, setSession] = useSessionStorage('session', '');
-    const [localStorageSession] = useLocalStorage('session');
-    const [isRequestingSession] = useLocalStorage('REQUESTING_SESSION');
+    const [localStorageSession, setLocalStorageSession] = useLocalStorage(
+      'session',
+      '',
+    );
+    const [isRequestingSession, setIsRequestingSession] = useLocalStorage(
+      'REQUESTING_SESSION',
+      '',
+    );
 
     // If we don't have the session key, request it from other session(s) that
     // may have it in their Session Storage.
     React.useEffect((): void => {
       if (!session) {
         console.log('requesting session...');
-        writeStorage('REQUESTING_SESSION', true);
+        setIsRequestingSession('true');
       }
     }, [session]);
 
@@ -37,9 +39,9 @@ export const withSession: React.FC<any> = (
     React.useEffect((): void => {
       if (isRequestingSession && session) {
         console.log('sending session...');
-        writeStorage('session', session);
+        setLocalStorageSession(session);
         console.log('session', session);
-        deleteFromStorage('REQUESTING_SESSION');
+        setIsRequestingSession('');
       }
     }, [isRequestingSession, session]);
 
@@ -50,7 +52,7 @@ export const withSession: React.FC<any> = (
         console.log('setting session...');
         console.log('localStorageSession', localStorageSession);
         setSession(localStorageSession);
-        deleteFromStorage('session');
+        setLocalStorageSession('');
       }
     }, [localStorageSession, session]);
 
