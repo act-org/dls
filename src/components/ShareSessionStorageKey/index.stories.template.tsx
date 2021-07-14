@@ -39,6 +39,12 @@ export const Template: Story<ShareSessionStorageKeyProps> = ({
     setKeyValue(kv);
   };
 
+  React.useEffect((): void => {
+    if (keyName) {
+      handleSetKeyValue(sessionStorage.getItem(keyName) || '');
+    }
+  }, [keyName]);
+
   return (
     <>
       <ShareSessionStorageKey
