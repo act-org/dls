@@ -11,23 +11,29 @@ import * as React from 'react';
 import useLocalStorage from 'react-use-localstorage';
 import { useSessionStorage } from 'react-use-storage';
 
+const LOCAL_STORAGE_REQUESTING_SESSION = 'localStorageRequestingSession';
+const LOCAL_STORAGE_SESSION = 'session';
+
 export const withSession: React.FC<any> = (
   WrappedComponent: React.ComponentType<any>,
 ): any =>
-  function WithSession(props: any): React.ReactElement {
+  function WithSession(props: any): React.ReactElement<any> | null {
     const [session, setSession] = useSessionStorage('session', null);
+    const sessionParsed = JSON.parse(session || null);
+
     const [localStorageSession, setLocalStorageSession] = useLocalStorage(
-      'session',
+      LOCAL_STORAGE_SESSION,
       null,
     );
-    const [isRequestingSession, setIsRequestingSession] = useLocalStorage(
-      'REQUESTING_SESSION',
-      false,
+    const localStorageSessionParsed = JSON.parse(localStorageSession || null);
+
+    const [localStorageRequestingSession, setLocalStorageRequestingSession] =
+      useLocalStorage(LOCAL_STORAGE_REQUESTING_SESSION, false);
+    const localStorageRequestingSessionParsed = JSON.parse(
+      localStorageRequestingSession || null,
     );
 
-    const sessionParsed = JSON.parse(session || null);
-    const localStorageSessionParsed = JSON.parse(localStorageSession || null);
-    const isRequestingSessionParsed = JSON.parse(isRequestingSession || null);
+    const [sessionWasRequested, setSessionWasRequested] = React.useState(false);
 
     // If we don't have the session key, request it from other session(s) that
     // may have it in their Session Storage.
@@ -35,7 +41,8 @@ export const withSession: React.FC<any> = (
       const fn = async (): Promise<void> => {
         if (!sessionParsed) {
           console.log('requesting session...');
-          setIsRequestingSession(true);
+          setLocalStorageRequestingSession(true);
+          setSessionWasRequested(true);
         }
       };
 
@@ -46,15 +53,15 @@ export const withSession: React.FC<any> = (
     // to Local Storage and terminate the request.
     React.useEffect((): void => {
       const fn = async (): Promise<void> => {
-        if (isRequestingSessionParsed && sessionParsed) {
+        if (localStorageRequestingSessionParsed && sessionParsed) {
           console.log('sending session...');
-          setIsRequestingSession(false);
+          localStorage.removeItem(LOCAL_STORAGE_REQUESTING_SESSION);
           setLocalStorageSession(sessionParsed);
         }
       };
 
       fn();
-    }, [isRequestingSessionParsed, sessionParsed]);
+    }, [localStorageRequestingSessionParsed, sessionParsed]);
 
     // If we received the session key via Local Storage, let's set it in our
     // own Session Storage and remove it from Local Storage.
@@ -62,7 +69,7 @@ export const withSession: React.FC<any> = (
       const fn = async (): Promise<void> => {
         if (localStorageSessionParsed && !sessionParsed) {
           console.log('setting session...');
-          setLocalStorageSession(null);
+          localStorage.removeItem(LOCAL_STORAGE_SESSION);
           setSession(localStorageSessionParsed);
         }
       };
@@ -70,7 +77,11 @@ export const withSession: React.FC<any> = (
       fn();
     }, [localStorageSessionParsed, sessionParsed]);
 
-    return <WrappedComponent {...props} session={sessionParsed} />;
+    if (sessionParsed || sessionWasRequested) {
+      return <WrappedComponent {...props} session={sessionParsed} />;
+    }
+
+    return <></>;
   };
 
 export default withSession;

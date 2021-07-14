@@ -19,7 +19,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-use-localstorage": "^3.5.3",
-    "react-use-sessionstorage": "^1.0.2",
     "react-use-storage": "^0.5.1",
     "validator": "^13.5.2"
   },
