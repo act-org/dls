@@ -12,7 +12,7 @@ import { addParameters } from '@storybook/react';
 import { common, grey } from '@material-ui/core/colors';
 import { configureActions } from '@storybook/addon-actions';
 import { CssBaseline } from '@material-ui/core';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 import { ThemeProvider } from '../src/components/ThemeProvider';
 
 addParameters({
