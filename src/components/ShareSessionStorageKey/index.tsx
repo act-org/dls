@@ -9,28 +9,23 @@
 
 import * as React from 'react';
 import useLocalStorage from 'react-use-localstorage';
-import { useSessionStorage } from 'react-use-storage';
 
 const LOCAL_STORAGE_KEY_REQUEST = 'LOCAL_STORAGE_KEY_REQUEST';
 
 export interface ShareSessionStorageKeyProps {
   keyName: string;
+  onKeyValue?: (keyValue: any) => void;
 }
 
 export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
   keyName,
+  onKeyValue,
 }: ShareSessionStorageKeyProps): null => {
-  const [sessionStorageKeyValue, setSessionStorageKeyValue] = useSessionStorage(
-    keyName,
-    null,
-  );
-  const [localStorageKeyValue, setLocalStorageSession] = useLocalStorage(
-    keyName,
-    null,
-  );
+  const sessionStorageKeyValue = sessionStorage.getItem(keyName) || '';
+  const [localStorageKeyValue, setLocalStorageSession] =
+    useLocalStorage(keyName);
   const [localStorageKeyRequest, setLocalStorageKeyRequest] = useLocalStorage(
     LOCAL_STORAGE_KEY_REQUEST,
-    false,
   );
 
   let sessionStorageKeyValueParsed = sessionStorageKeyValue || null;
@@ -80,7 +75,10 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
       if (localStorageKeyValueParsed && !sessionStorageKeyValueParsed) {
         console.log('setting key...');
         localStorage.removeItem(keyName);
-        setSessionStorageKeyValue(localStorageKeyValueParsed);
+        sessionStorage.setItem(keyName, localStorageKeyValueParsed);
+        if (onKeyValue) {
+          onKeyValue(localStorageKeyValueParsed);
+        }
       }
     };
 

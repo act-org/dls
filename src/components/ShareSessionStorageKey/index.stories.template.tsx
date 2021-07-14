@@ -9,7 +9,6 @@
 
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { useStorageState } from 'react-storage-hooks';
 
 import { Playground } from '~/helpers/playground';
 
@@ -18,11 +17,28 @@ import { ShareSessionStorageKey, ShareSessionStorageKeyProps } from '.';
 export const Template: Story<ShareSessionStorageKeyProps> = ({
   keyName,
 }: ShareSessionStorageKeyProps) => {
-  const [keyValue, setKeyValue] = useStorageState(sessionStorage, keyName);
+  const [keyValueUnparsed, setKeyValue] = React.useState(
+    sessionStorage.getItem(keyName) || '',
+  );
+
+  let keyValue = keyValueUnparsed;
+  try {
+    keyValue = JSON.parse(keyValueUnparsed);
+  } catch (err) {}
+
+  const updateKeyValue = (kv): void => {
+    sessionStorage.setItem(keyName, kv);
+    setKeyValue(kv);
+  };
 
   return (
     <>
-      <ShareSessionStorageKey keyName={keyName} />
+      <ShareSessionStorageKey
+        keyName={keyName}
+        onKeyValue={(): void => {
+          updateKeyValue(kv);
+        }}
+      />
 
       <div>session key name: {keyName}</div>
 
@@ -30,7 +46,7 @@ export const Template: Story<ShareSessionStorageKeyProps> = ({
         session key value:&nbsp;
         <input
           onChange={(e): void => {
-            setKeyValue(e.target.value);
+            updateKeyValue(e.target.value);
           }}
           type="text"
           value={keyValue || ''}
@@ -39,7 +55,7 @@ export const Template: Story<ShareSessionStorageKeyProps> = ({
 
       <button
         onClick={(): void => {
-          setKeyValue('');
+          updateKeyValue('');
         }}
       >
         clear value
