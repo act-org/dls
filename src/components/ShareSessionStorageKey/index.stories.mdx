@@ -9,12 +9,12 @@ import {
 } from '@storybook/addon-docs/blocks';
 
 import { argTypes, Template } from './index.stories.template';
-import { withSession } from '.';
+import { ShareSessionStorageKey } from '.';
 
 <Meta
   argTypes={argTypes}
-  component={withSession}
-  title="Utilities/withSession"
+  component={ShareSessionStorageKey}
+  title="Utilities/ShareSessionStorageKey"
 />
 
 ## Playground
@@ -23,7 +23,12 @@ Test.
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
+  <Story
+    name="Playground"
+    args={{
+      keyName: 'my-key',
+    }}
+  >
     {Template.bind({})}
   </Story>
   <ArgsTable story="Playground" />
