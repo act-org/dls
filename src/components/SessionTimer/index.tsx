@@ -19,7 +19,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
   a,
   b,
 }: SessionTimerProps): React.ReactElement<any> => {
-  const idleTimerEl = useRef(null);
+  const idleTimerEl = React.useRef(null);
 
   console.log('a', a);
   console.log('b', b);
@@ -39,7 +39,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
         console.log('last active', idleTimerEl.current.getLastActiveTime());
       }}
       ref={idleTimerEl}
-      timeout={1000 * 60 * 15}
+      timeout={1000 * 60 * 1}
     />
   );
 };
