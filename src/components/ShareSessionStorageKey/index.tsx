@@ -37,7 +37,7 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
   const localStorageKeyRequestParsed =
     JSONParseSafe(localStorageKeyRequest).value || localStorageKeyRequest;
 
-  // If we don't have the key key, request it from other key(s) that
+  // If we don't have the session key, request it from other tab(s) that
   // may have it in their Session Storage.
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {
@@ -49,7 +49,7 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
     fn();
   }, []);
 
-  // If another key requests the key key and we have it, provide it
+  // If another tab requests the session key and we have it, provide it
   // to Local Storage and terminate the request.
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {
@@ -63,7 +63,7 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
     fn();
   }, [localStorageKeyRequestParsed, sessionStorageKeyValueParsed]);
 
-  // If we received the key key via Local Storage, let's set it in our
+  // If we see the session key posted to Local Storage, let's set it in our
   // own Session Storage and remove it from Local Storage.
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {

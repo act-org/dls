@@ -13,6 +13,10 @@ tab.
   having to re-authenticate.
   * The implementation was inspired by
   [this blog post](https://medium.com/@marciomariani/sharing-sessionstorage-between-tabs-5b6f42c6348c).
+  * Note: Since this component makes use of Session Storage and Local Storage,
+  this component is only meant to be rendered in the browser context. SSR apps
+  should not use Session Storage for key/value pairs that are critical to the
+  render (such as the user's auth token).
 
 ## [v5.1.0] - June 15, 2021
 
