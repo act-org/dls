@@ -8,8 +8,19 @@
  */
 
 import * as React from 'react';
+import JSONParseSafe from 'json-parse-safe';
 import { Story } from '@storybook/react/types-6-0';
-
+import {
+  Button,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TextField,
+  Typography,
+} from '@material-ui/core';
 import { Playground } from '~/helpers/playground';
 
 import { ShareSessionStorageKey, ShareSessionStorageKeyProps } from '.';
@@ -17,16 +28,13 @@ import { ShareSessionStorageKey, ShareSessionStorageKeyProps } from '.';
 export const Template: Story<ShareSessionStorageKeyProps> = ({
   keyName,
 }: ShareSessionStorageKeyProps) => {
-  const [keyValueUnparsed, setKeyValue] = React.useState(
+  const [keyValueRaw, setKeyValue] = React.useState(
     sessionStorage.getItem(keyName) || '',
   );
 
-  let keyValue = keyValueUnparsed;
-  try {
-    keyValue = JSON.parse(keyValueUnparsed);
-  } catch (err) {}
+  const keyValue = JSONParseSafe(keyValueRaw).value || keyValueRaw;
 
-  const updateKeyValue = (kv): void => {
+  const handleSetKeyValue = (kv): void => {
     sessionStorage.setItem(keyName, kv);
     setKeyValue(kv);
   };
@@ -35,31 +43,54 @@ export const Template: Story<ShareSessionStorageKeyProps> = ({
     <>
       <ShareSessionStorageKey
         keyName={keyName}
-        onKeyValue={(): void => {
-          updateKeyValue(kv);
+        onSetKeyValue={(kv): void => {
+          handleSetKeyValue(kv);
         }}
       />
 
-      <div>session key name: {keyName}</div>
+      <TableContainer>
+        <Table size="small">
+          <TableHead>
+            <TableRow>
+              <TableCell>
+                <Typography variant="overline">Key Name</Typography>
+              </TableCell>
+              <TableCell>
+                <Typography variant="overline">Key Value</Typography>
+              </TableCell>
+              <TableCell />
+            </TableRow>
+          </TableHead>
 
-      <div>
-        session key value:&nbsp;
-        <input
-          onChange={(e): void => {
-            updateKeyValue(e.target.value);
-          }}
-          type="text"
-          value={keyValue || ''}
-        />
-      </div>
-
-      <button
-        onClick={(): void => {
-          updateKeyValue('');
-        }}
-      >
-        clear value
-      </button>
+          <TableBody>
+            <TableRow>
+              <TableCell>
+                <Typography>{keyName}</Typography>
+              </TableCell>
+              <TableCell>
+                <TextField
+                  onChange={(e): void => {
+                    handleSetKeyValue(e.target.value);
+                  }}
+                  type="text"
+                  value={keyValue || ''}
+                  variant="outlined"
+                />
+              </TableCell>
+              <TableCell>
+                <Button
+                  color="primary"
+                  onClick={(): void => {
+                    handleSetKeyValue('');
+                  }}
+                >
+                  Clear
+                </Button>
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
     </>
   );
 };

@@ -8,61 +8,59 @@
  */
 
 import * as React from 'react';
+import JSONParseSafe from 'json-parse-safe';
 import useLocalStorage from 'react-use-localstorage';
 
 const LOCAL_STORAGE_KEY_REQUEST = 'LOCAL_STORAGE_KEY_REQUEST';
 
 export interface ShareSessionStorageKeyProps {
   keyName: string;
-  onKeyValue?: (keyValue: any) => void;
+  onSetKeyValue?: (keyValue: any) => void;
 }
 
 export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
   keyName,
-  onKeyValue,
+  onSetKeyValue,
 }: ShareSessionStorageKeyProps): null => {
   const sessionStorageKeyValue = sessionStorage.getItem(keyName) || '';
-  const [localStorageKeyValue, setLocalStorageSession] =
-    useLocalStorage(keyName);
+
+  const [localStorageKeyValue, setLocalStorageSession] = useLocalStorage(
+    keyName,
+    null,
+  );
   const [localStorageKeyRequest, setLocalStorageKeyRequest] = useLocalStorage(
     LOCAL_STORAGE_KEY_REQUEST,
+    false,
   );
 
-  let sessionStorageKeyValueParsed = sessionStorageKeyValue || null;
-  try {
-    sessionStorageKeyValueParsed = JSON.parse(sessionStorageKeyValue);
-  } catch (err) {}
-  let localStorageKeyValueParsed = localStorageKeyValue || null;
-  try {
-    localStorageKeyValueParsed = JSON.parse(localStorageKeyValue);
-  } catch (err) {}
-  let localStorageKeyRequestParsed = localStorageKeyRequest || null;
-  try {
-    localStorageKeyRequestParsed = JSON.parse(localStorageKeyRequest);
-  } catch (err) {}
+  const sessionStorageKeyValueParsed =
+    JSONParseSafe(sessionStorageKeyValue).value || sessionStorageKeyValue;
+  const localStorageKeyValueParsed =
+    JSONParseSafe(localStorageKeyValue).value || localStorageKeyValue;
+  const localStorageKeyRequestParsed =
+    JSONParseSafe(localStorageKeyRequest).value || localStorageKeyRequest;
 
   // If we don't have the key key, request it from other key(s) that
   // may have it in their Session Storage.
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {
       if (!sessionStorageKeyValueParsed) {
-        console.log('requesting key...');
         setLocalStorageKeyRequest(true);
       }
     };
 
     fn();
-  }, [sessionStorageKeyValueParsed]);
+  }, []);
 
   // If another key requests the key key and we have it, provide it
   // to Local Storage and terminate the request.
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {
       if (localStorageKeyRequestParsed && sessionStorageKeyValueParsed) {
-        console.log('sending key...');
-        localStorage.removeItem(LOCAL_STORAGE_KEY_REQUEST);
         setLocalStorageSession(sessionStorageKeyValueParsed);
       }
+
+      localStorage.removeItem(LOCAL_STORAGE_KEY_REQUEST);
     };
 
     fn();
@@ -73,13 +71,13 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {
       if (localStorageKeyValueParsed && !sessionStorageKeyValueParsed) {
-        console.log('setting key...');
-        localStorage.removeItem(keyName);
         sessionStorage.setItem(keyName, localStorageKeyValueParsed);
-        if (onKeyValue) {
-          onKeyValue(localStorageKeyValueParsed);
+        if (onSetKeyValue) {
+          onSetKeyValue(localStorageKeyValueParsed);
         }
       }
+
+      localStorage.removeItem(keyName);
     };
 
     fn();
