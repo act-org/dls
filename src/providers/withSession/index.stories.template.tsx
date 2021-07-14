@@ -10,18 +10,21 @@
 import * as React from 'react';
 import { flow } from 'lodash';
 import { Story } from '@storybook/react/types-6-0';
+import { useSessionStorage } from 'react-use-storage';
 
 import { Playground } from '~/helpers/playground';
 
 import { withSession } from '.';
 
 const TemplateComponent: Story = ({ session }) => {
+  const [_, setSession] = useSessionStorage('session');
+
   return (
     <>
       <div>session: {session}</div>
       <button
         onClick={(): void => {
-          sessionStorage.removeItem('session');
+          setSession('');
         }}
       >
         clear session

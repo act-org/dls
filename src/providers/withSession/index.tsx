@@ -21,6 +21,16 @@ export const withSession: React.FC<any> = (
     const [session, setSession] = useSessionStorage('session', null);
     const sessionParsed = JSON.parse(session || null);
 
+    React.useEffect((): void => {
+      window.addEventListener('storage', function (e) {
+        if (e.storageArea === sessionStorage) {
+          if (e.key === 'session') {
+            setSession(e.newValue);
+          }
+        }
+      });
+    }, []);
+
     const [localStorageSession, setLocalStorageSession] = useLocalStorage(
       LOCAL_STORAGE_SESSION,
       null,
