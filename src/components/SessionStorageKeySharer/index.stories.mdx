@@ -9,17 +9,17 @@ import {
 } from '@storybook/addon-docs/blocks';
 
 import { argTypes, Template } from './index.stories.template';
-import { ShareSessionStorageKey } from '.';
+import { SessionStorageKeySharer } from '.';
 
 <Meta
   argTypes={argTypes}
-  component={ShareSessionStorageKey}
-  title="Utilities/ShareSessionStorageKey"
+  component={SessionStorageKeySharer}
+  title="Utilities/SessionStorageKeySharer"
 />
 
 ## Playground
 
-The `<ShareSessionStorageKey />` component allows a newly-opened tab to obtain
+The `<SessionStorageKeySharer />` component allows a newly-opened tab to obtain
 a key/value pair from the Session Storage of another tab. This is useful if you
 are storing your application's auth token in Session Storage and want to allow
 your users to open your app in another tab without having to re-authenticate.
