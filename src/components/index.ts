@@ -18,6 +18,7 @@ export * from './FormSwitch';
 export * from './Loading';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
+export * from './SessionTimer';
 export * from './ThemeProvider';
 
 // WIP COMPONENTS --------------------------------------------------------------

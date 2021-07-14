@@ -1,0 +1,36 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { SessionTimer } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={SessionTimer}
+  title="Utilities/SessionTimer"
+/>
+
+## Playground
+
+The `<SessionTimer />` component...
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      a: 'a',
+      b: 'b',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
