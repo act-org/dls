@@ -50,7 +50,7 @@ export function EmptyState({
             container: clsx(classes.titleGridContainer),
           }}
           container
-          justify="center"
+          justifyContent="center"
         >
           <Grid
             classes={{

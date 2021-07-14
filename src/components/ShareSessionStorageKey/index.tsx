@@ -24,13 +24,10 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
 }: ShareSessionStorageKeyProps): null => {
   const sessionStorageKeyValue = sessionStorage.getItem(keyName) || '';
 
-  const [localStorageKeyValue, setLocalStorageSession] = useLocalStorage(
-    keyName,
-    null,
-  );
+  const [localStorageKeyValue, setLocalStorageSession] =
+    useLocalStorage(keyName);
   const [localStorageKeyRequest, setLocalStorageKeyRequest] = useLocalStorage(
     LOCAL_STORAGE_KEY_REQUEST,
-    false,
   );
 
   const sessionStorageKeyValueParsed =
@@ -45,7 +42,7 @@ export const ShareSessionStorageKey: React.FC<ShareSessionStorageKeyProps> = ({
   React.useEffect((): void => {
     const fn = async (): Promise<void> => {
       if (!sessionStorageKeyValueParsed) {
-        setLocalStorageKeyRequest(true);
+        setLocalStorageKeyRequest('true');
       }
     };
 

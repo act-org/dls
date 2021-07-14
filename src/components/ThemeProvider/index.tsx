@@ -10,7 +10,7 @@
 import * as locales from '@material-ui/core/locale';
 import * as React from 'react';
 import {
-  createMuiTheme,
+  createTheme,
   Theme,
   ThemeProvider as MuiThemeProvider,
   ThemeProviderProps as MuiThemeProviderProps,
@@ -80,13 +80,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   let themeImpl: Theme;
   switch (theme) {
     case 'ACT':
-      themeImpl = createMuiTheme(
+      themeImpl = createTheme(
         THEME_ACT,
         locale ? locales[locale] : locales.enUS,
       );
       break;
     case 'ACT_ET':
-      themeImpl = createMuiTheme(
+      themeImpl = createTheme(
         THEME_ACT_ET,
         locale ? locales[locale] : locales.enUS,
       );

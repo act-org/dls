@@ -6,7 +6,7 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
     class="makeStyles-container-1"
   >
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-6 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-6 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
     >
       <div
         class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-8"
@@ -47,7 +47,7 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
     class="makeStyles-container-9"
   >
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-14 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-14 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
     >
       <div
         class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-16"
