@@ -11,8 +11,6 @@ import * as React from 'react';
 import JSONParseSafe from 'json-parse-safe';
 import useLocalStorage from 'react-use-localstorage';
 
-const LOCAL_STORAGE_KEY_REQUEST = 'LOCAL_STORAGE_KEY_REQUEST';
-
 export interface SessionStorageKeySharerProps {
   keyName: string;
   onSetKeyValue?: (keyValue: any) => void;
@@ -20,6 +18,8 @@ export interface SessionStorageKeySharerProps {
 
 export const SessionStorageKeySharer: React.FC<SessionStorageKeySharerProps> =
   ({ keyName, onSetKeyValue }: SessionStorageKeySharerProps): null => {
+    const LOCAL_STORAGE_KEY_REQUEST = `REQUEST-${keyName}`;
+
     const sessionStorageKeyValue = sessionStorage.getItem(keyName) || '';
 
     const [localStorageKeyValue, setLocalStorageSession] =
@@ -38,44 +38,32 @@ export const SessionStorageKeySharer: React.FC<SessionStorageKeySharerProps> =
     // If we don't have the session key, request it from other tab(s) that
     // may have it in their Session Storage.
     React.useEffect((): void => {
-      const fn = async (): Promise<void> => {
-        if (!sessionStorageKeyValueParsed) {
-          setLocalStorageKeyRequest('true');
-        }
-      };
-
-      fn();
+      if (!sessionStorageKeyValueParsed) {
+        setLocalStorageKeyRequest('true');
+      }
     }, []);
 
     // If another tab requests the session key and we have it, provide it
     // to Local Storage and terminate the request.
     React.useEffect((): void => {
-      const fn = async (): Promise<void> => {
-        if (localStorageKeyRequestParsed && sessionStorageKeyValueParsed) {
-          setLocalStorageSession(sessionStorageKeyValueParsed);
-        }
+      if (localStorageKeyRequestParsed && sessionStorageKeyValueParsed) {
+        setLocalStorageSession(sessionStorageKeyValueParsed);
+      }
 
-        localStorage.removeItem(LOCAL_STORAGE_KEY_REQUEST);
-      };
-
-      fn();
+      localStorage.removeItem(LOCAL_STORAGE_KEY_REQUEST);
     }, [localStorageKeyRequestParsed, sessionStorageKeyValueParsed]);
 
     // If we see the session key posted to Local Storage, let's set it in our
     // own Session Storage and remove it from Local Storage.
     React.useEffect((): void => {
-      const fn = async (): Promise<void> => {
-        if (localStorageKeyValueParsed && !sessionStorageKeyValueParsed) {
-          sessionStorage.setItem(keyName, localStorageKeyValueParsed);
-          if (onSetKeyValue) {
-            onSetKeyValue(localStorageKeyValueParsed);
-          }
+      if (localStorageKeyValueParsed && !sessionStorageKeyValueParsed) {
+        sessionStorage.setItem(keyName, localStorageKeyValueParsed);
+        if (onSetKeyValue) {
+          onSetKeyValue(localStorageKeyValueParsed);
         }
+      }
 
-        localStorage.removeItem(keyName);
-      };
-
-      fn();
+      localStorage.removeItem(keyName);
     }, [localStorageKeyValueParsed, sessionStorageKeyValueParsed]);
 
     return null;
