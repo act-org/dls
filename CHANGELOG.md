@@ -2,6 +2,18 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.2.0] - July 14, 2021
+
+* NPM package updates
+* Added `<ShareSessionStorageKey />` utility component which allows a
+newly-opened tab to obtain a key:value pair from the Session Storage of another
+tab.
+  * This is useful if you are storing your application's auth token in Session
+  Storage and want to allow your users to open your app in another tab without
+  having to re-authenticate.
+  * The implementation was inspired by
+  [this blog post](https://medium.com/@marciomariani/sharing-sessionstorage-between-tabs-5b6f42c6348c).
+
 ## [v5.1.0] - June 15, 2021
 
 * Updated `<FormSelect />` component to allow options to be disabled. See:
