@@ -5,7 +5,7 @@ Chronological history of changes to the Design Language System.
 ## [v5.2.0] - July 14, 2021
 
 * NPM package updates (`@material-ui/core` -> `^4.12.1`)
-* Added `<ShareSessionStorageKey />` utility component which allows a
+* Added `<SessionStorageKeySharer />` utility component which allows a
 newly-opened tab to obtain a key:value pair from the Session Storage of another
 tab.
   * This is useful if you are storing your application's auth token in Session

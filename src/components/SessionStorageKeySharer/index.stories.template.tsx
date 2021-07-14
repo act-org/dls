@@ -23,11 +23,11 @@ import {
 } from '@material-ui/core';
 import { Playground } from '~/helpers/playground';
 
-import { ShareSessionStorageKey, ShareSessionStorageKeyProps } from '.';
+import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 
-export const Template: Story<ShareSessionStorageKeyProps> = ({
+export const Template: Story<SessionStorageKeySharerProps> = ({
   keyName,
-}: ShareSessionStorageKeyProps) => {
+}: SessionStorageKeySharerProps) => {
   const [keyValueRaw, setKeyValue] = React.useState(
     sessionStorage.getItem(keyName) || '',
   );
@@ -47,7 +47,7 @@ export const Template: Story<ShareSessionStorageKeyProps> = ({
 
   return (
     <>
-      <ShareSessionStorageKey
+      <SessionStorageKeySharer
         keyName={keyName}
         onSetKeyValue={(kv): void => {
           handleSetKeyValue(kv);
@@ -105,5 +105,5 @@ export const argTypes = Playground(
   {
     keyName: { type: 'string' },
   },
-  ShareSessionStorageKey,
+  SessionStorageKeySharer,
 );
