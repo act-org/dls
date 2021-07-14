@@ -15,48 +15,62 @@ export const withSession: React.FC<any> = (
   WrappedComponent: React.ComponentType<any>,
 ): any =>
   function WithSession(props: any): React.ReactElement {
-    const [session, setSession] = useSessionStorage('session', '');
+    const [session, setSession] = useSessionStorage('session', null);
     const [localStorageSession, setLocalStorageSession] = useLocalStorage(
       'session',
-      '',
+      null,
     );
     const [isRequestingSession, setIsRequestingSession] = useLocalStorage(
       'REQUESTING_SESSION',
-      '',
+      false,
     );
+
+    const sessionParsed = JSON.parse(session || null);
+    const localStorageSessionParsed = JSON.parse(localStorageSession || null);
+    const isRequestingSessionParsed = JSON.parse(isRequestingSession || null);
 
     // If we don't have the session key, request it from other session(s) that
     // may have it in their Session Storage.
     React.useEffect((): void => {
-      if (!session) {
-        console.log('requesting session...');
-        setIsRequestingSession('true');
-      }
-    }, [session]);
+      const fn = async (): Promise<void> => {
+        if (!sessionParsed) {
+          console.log('requesting session...');
+          setIsRequestingSession(true);
+        }
+      };
+
+      fn();
+    }, [sessionParsed]);
 
     // If another session requests the session key and we have it, provide it
     // to Local Storage and terminate the request.
     React.useEffect((): void => {
-      if (isRequestingSession && session) {
-        console.log('sending session...');
-        setLocalStorageSession(session);
-        console.log('session', session);
-        setIsRequestingSession('');
-      }
-    }, [isRequestingSession, session]);
+      const fn = async (): Promise<void> => {
+        if (isRequestingSessionParsed && sessionParsed) {
+          console.log('sending session...');
+          setIsRequestingSession(false);
+          setLocalStorageSession(sessionParsed);
+        }
+      };
+
+      fn();
+    }, [isRequestingSessionParsed, sessionParsed]);
 
     // If we received the session key via Local Storage, let's set it in our
     // own Session Storage and remove it from Local Storage.
     React.useEffect((): void => {
-      if (localStorageSession && !session) {
-        console.log('setting session...');
-        console.log('localStorageSession', localStorageSession);
-        setSession(localStorageSession);
-        setLocalStorageSession('');
-      }
-    }, [localStorageSession, session]);
+      const fn = async (): Promise<void> => {
+        if (localStorageSessionParsed && !sessionParsed) {
+          console.log('setting session...');
+          setLocalStorageSession(null);
+          setSession(localStorageSessionParsed);
+        }
+      };
 
-    return <WrappedComponent {...props} session={session} />;
+      fn();
+    }, [localStorageSessionParsed, sessionParsed]);
+
+    return <WrappedComponent {...props} session={sessionParsed} />;
   };
 
 export default withSession;
