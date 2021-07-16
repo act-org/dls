@@ -8,39 +8,92 @@
  */
 
 import * as React from 'react';
-import IdleTimer from 'react-idle-timer';
+import { Button } from '@material-ui/core';
+import pluralize from 'pluralize';
+import { round } from 'lodash';
+import { useIdleTimer } from 'react-idle-timer';
 
 export interface SessionTimerProps {
-  a: string;
-  b: string;
+  timeoutMs: number;
 }
 
 export const SessionTimer: React.FC<SessionTimerProps> = ({
-  a,
-  b,
+  timeoutMs,
 }: SessionTimerProps): React.ReactElement<any> => {
-  const idleTimerEl = React.useRef(null);
+  const [dialogIsOpen, setDialogIsOpen] = React.useState(false);
+  const [remainingTime, setRemainingTime] = React.useState(timeoutMs); // ms
+  const [timeout, setTimeout] = React.useState(timeoutMs); // ms
 
-  console.log('a', a);
-  console.log('b', b);
+  const { getRemainingTime, reset } = useIdleTimer({
+    debounce: 50,
+    onAction: (event): void => {
+      console.log('dialogIsOpen', dialogIsOpen);
+      if (!dialogIsOpen) {
+        // setTimeout(timeoutMs);
+      }
+    },
+    onActive: (event): void => {},
+    onIdle: (event): void => {},
+    stopOnIdle: true,
+    timeout,
+  });
+
+  const refresh = (): void => {
+    setRemainingTime(getRemainingTime());
+  };
+
+  React.useEffect((): void => {
+    setInterval((): void => {
+      refresh();
+    }, 1000);
+  }, []);
+
+  const remainingTimeSeconds = round(remainingTime / 1000, 0);
+
+  React.useEffect((): void => {
+    if (remainingTimeSeconds === 0) {
+      if (dialogIsOpen) {
+        setDialogIsOpen(false);
+      }
+    } else if (remainingTimeSeconds <= 5) {
+      if (!dialogIsOpen) {
+        setDialogIsOpen(true);
+      }
+    }
+  }, [dialogIsOpen, remainingTimeSeconds]);
 
   return (
-    <IdleTimer
-      debounce={250}
-      onAction={(event): void => {
-        console.log('user did something', event);
-      }}
-      onActive={(event): void => {
-        console.log('user is active', event);
-        console.log('time remaining', idleTimerEl.current.getRemainingTime());
-      }}
-      onIdle={(event): void => {
-        console.log('user is idle', event);
-        console.log('last active', idleTimerEl.current.getLastActiveTime());
-      }}
-      ref={idleTimerEl}
-      timeout={1000 * 60 * 1}
-    />
+    <>
+      {remainingTimeSeconds > 0 && (
+        <>
+          <span>
+            {`Session expires in ${remainingTimeSeconds} ${pluralize(
+              'seconds',
+              remainingTimeSeconds,
+            )}`}
+          </span>
+        </>
+      )}
+
+      {dialogIsOpen && <div>open</div>}
+
+      {remainingTimeSeconds === 0 && (
+        <>
+          <div>Session expired!</div>
+
+          <br />
+
+          <Button
+            color="primary"
+            onClick={(): void => {
+              reset();
+            }}
+          >
+            Start Over
+          </Button>
+        </>
+      )}
+    </>
   );
 };
 

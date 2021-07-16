@@ -13,21 +13,19 @@ import { Playground } from '~/helpers/playground';
 
 import { SessionTimer, SessionTimerProps } from '.';
 
-export const Template: Story<SessionTimerProps> = ({
-  a,
-  b,
-}: SessionTimerProps) => {
+export const Template: Story<SessionTimerProps> = (
+  props: SessionTimerProps,
+) => {
   return (
     <>
-      <SessionTimer />
+      <SessionTimer {...props} />
     </>
   );
 };
 
 export const argTypes = Playground(
   {
-    a: { type: 'string' },
-    b: { type: 'string' },
+    timeoutMs: { type: 'number' },
   },
   SessionTimer,
 );
