@@ -290,4 +290,3 @@ Some npm packages are pinned to non-current versions for a specific reason:
 | Package      | Version | Reason                                                                      |
 |:------------ |:------- |:--------------------------------------------------------------------------- |
 | `np`         | `7.4.0` | Version `7.5.0` is [broken](https://github.com/sindresorhus/np/issues/613). |
-| `typescript` | `4.2.3` | Version `4.3.2` has issues with the test suite.                             |
