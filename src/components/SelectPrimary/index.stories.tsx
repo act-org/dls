@@ -59,5 +59,5 @@ export default {
       text: 'This is the primary variant of the Select component.',
     },
   },
-  title: 'Deprecated/Atoms/SelectPrimary',
+  title: 'V3/Atoms/SelectPrimary',
 };

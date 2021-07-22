@@ -8,7 +8,7 @@
  */
 
 /* eslint-disable @typescript-eslint/no-empty-interface */
-import { createMuiTheme, ThemeOptions } from '@material-ui/core/styles';
+import { createTheme, ThemeOptions } from '@material-ui/core/styles';
 
 import DIMS from './dims';
 import OVERRIDES from './overrides';
@@ -27,4 +27,4 @@ export const THEME_ACT: ThemeOptions = {
   typography: TYPOGRAPHY,
 } as any;
 
-export default createMuiTheme(THEME_ACT);
+export default createTheme(THEME_ACT);

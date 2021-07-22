@@ -17,6 +17,7 @@ export * from './FormInputGroups';
 export * from './FormSwitch';
 export * from './Loading';
 export * from './SearchBar';
+export * from './SessionStorageKeySharer';
 export * from './ThemeProvider';
 
 // WIP COMPONENTS --------------------------------------------------------------

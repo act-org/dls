@@ -1,0 +1,46 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { SessionStorageKeySharer } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={SessionStorageKeySharer}
+  title="Utilities/SessionStorageKeySharer"
+/>
+
+## Playground
+
+The `<SessionStorageKeySharer />` component allows a newly-opened tab to obtain
+a key/value pair from the Session Storage of another tab. This is useful if you
+are storing your application's auth token in Session Storage and want to allow
+your users to open your app in another tab without having to re-authenticate.
+
+The implementation was inspired by
+[this blog post](https://medium.com/@marciomariani/sharing-sessionstorage-between-tabs-5b6f42c6348c).
+
+Note: Since this component makes use of Session Storage and Local Storage, this
+component is only meant to be rendered in the browser context. SSR apps should
+not use Session Storage for key/value pairs that are critical to the render
+(such as the user's auth token).
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      keyName: 'mySessionKey',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
