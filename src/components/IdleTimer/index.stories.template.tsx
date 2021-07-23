@@ -16,16 +16,14 @@ import { Playground } from '~/helpers/playground';
 
 import DialogSessionTimer from '~/components/DialogSessionTimer';
 
-import { SessionTimer, SessionTimerProps } from '.';
+import { IdleTimer, IdleTimerProps } from '.';
 
-export const Template: Story<SessionTimerProps> = (
-  props: SessionTimerProps,
-) => {
+export const Template: Story<IdleTimerProps> = (props: IdleTimerProps) => {
   const [expired, setExpired] = React.useState(false);
 
   return (
     <>
-      <SessionTimer {...props}>
+      <IdleTimer {...props}>
         {({ remainingTimeMs, reset }): React.ReactElement<any> => {
           const remainingTimeSeconds = round(remainingTimeMs / 1000, 0);
 
@@ -73,7 +71,7 @@ export const Template: Story<SessionTimerProps> = (
             </>
           );
         }}
-      </SessionTimer>
+      </IdleTimer>
     </>
   );
 };
@@ -82,5 +80,5 @@ export const argTypes = Playground(
   {
     timeoutMs: { type: 'number' },
   },
-  SessionTimer,
+  IdleTimer,
 );

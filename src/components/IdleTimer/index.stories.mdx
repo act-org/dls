@@ -3,17 +3,13 @@
 import { ArgsTable, Canvas, Meta, Source, Story } from '@storybook/addon-docs';
 
 import { argTypes, Template } from './index.stories.template';
-import { SessionTimer } from '.';
+import { IdleTimer } from '.';
 
-<Meta
-  argTypes={argTypes}
-  component={SessionTimer}
-  title="Utilities/SessionTimer"
-/>
+<Meta argTypes={argTypes} component={IdleTimer} title="Utilities/IdleTimer" />
 
 ## Playground
 
-The `<SessionTimer />` component...
+The `<IdleTimer />` component...
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />

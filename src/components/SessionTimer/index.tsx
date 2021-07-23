@@ -8,55 +8,89 @@
  */
 
 import * as React from 'react';
-import { useIdleTimer } from 'react-idle-timer';
+
+import DialogSessionTimer from '~/components/DialogSessionTimer';
+import IdleTimer from '~/components/IdleTimer';
 
 export interface SessionTimerProps {
-  children: ({
-    remainingTimeMs,
-    reset,
-  }: {
-    remainingTimeMs: number;
-    reset: () => void;
-  }) => React.ReactElement<any>;
-  onIdle: () => void;
-  timeoutMs: number;
+  expiresAt: Date;
+  firstTimeoutMs: number;
+  onContinue: (reset) => void;
+  onExpire: () => void;
+  onFirstIdle?: (event: any) => void;
+  onSecondAction?: (event: any, reset: () => void) => void;
+  secondTimeoutMs: number;
 }
 
 export const SessionTimer: React.FC<SessionTimerProps> = ({
-  children,
-  onIdle,
-  timeoutMs,
-}: SessionTimerProps): React.ReactElement<any> => {
-  const [remainingTimeMs, setRemainingTimeMs] = React.useState(timeoutMs);
-
-  const { getRemainingTime, reset } = useIdleTimer({
-    debounce: 50,
-    onAction: (event): void => {},
-    onActive: (event): void => {},
-    onIdle: (event): void => {
-      if (onIdle) {
-        onIdle();
+  expiresAt,
+  firstTimeoutMs,
+  onContinue,
+  onExpire,
+  onFirstIdle,
+  onSecondAction,
+  secondTimeoutMs,
+}: SessionTimerProps): React.ReactElement<any> | null => (
+  <IdleTimer
+    onIdle={async (e): Promise<void> => {
+      if (onFirstIdle) {
+        onFirstIdle(e);
       }
-    },
-    stopOnIdle: true,
-    timeout: timeoutMs,
-  });
+    }}
+    stopOnIdle
+    timeoutMs={firstTimeoutMs}
+  >
+    {({
+      remainingTimeMs: remainingTimeFirst,
+      reset,
+    }): React.ReactElement<any> | null => {
+      console.log('remainingTimeFirst', remainingTimeFirst);
 
-  const refresh = (): void => {
-    setRemainingTimeMs(getRemainingTime());
-  };
+      // The user has been idle for the first timeout.
+      if (remainingTimeFirst === 0) {
+        return (
+          <IdleTimer
+            onAction={async (e): Promise<void> => {
+              if (onSecondAction) {
+                onSecondAction(e, reset);
+              }
+            }}
+            stopOnIdle
+            timeoutMs={secondTimeoutMs}
+          >
+            {({
+              remainingTimeMs: remainingTimeSecond,
+            }): React.ReactElement<any> | null => {
+              console.log('remainingTimeSecond', remainingTimeSecond);
 
-  React.useEffect((): (() => void) => {
-    const interval = setInterval((): void => {
-      refresh();
-    }, 1000);
+              // The user has been idle for the first timeout and the second
+              // timeout.
+              if (remainingTimeSecond === 0) {
+                return (
+                  <DialogSessionTimer
+                    expiresAt={expiresAt}
+                    onContinue={(): void => {
+                      onContinue(reset);
+                    }}
+                    onExpire={onExpire}
+                  />
+                );
+              }
 
-    return (): void => {
-      clearInterval(interval);
-    };
-  }, []);
+              return null;
+            }}
+          </IdleTimer>
+        );
+      }
 
-  return children({ remainingTimeMs, reset });
+      return null;
+    }}
+  </IdleTimer>
+);
+
+SessionTimer.defaultProps = {
+  onFirstIdle: undefined,
+  onSecondAction: undefined,
 };
 
 export default SessionTimer;

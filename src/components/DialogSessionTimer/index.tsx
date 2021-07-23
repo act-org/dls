@@ -14,33 +14,35 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
-  Divider,
   Typography,
 } from '@material-ui/core';
-import pluralize from 'pluralize';
-import { round } from 'lodash';
+import moment from 'moment';
 
 export interface DialogSessionTimerProps {
+  expiresAt: Date;
   onContinue: () => void;
   onExpire: () => void;
 }
 
 export const DialogSessionTimer: React.FC<DialogSessionTimerProps> = ({
+  expiresAt,
   onContinue,
   onExpire,
 }: DialogSessionTimerProps): React.ReactElement<any> | null => {
-  const [time, setTime] = React.useState(1000 * 8);
+  const [timeUntilExpiration, setTimeUntilExpiration] = React.useState<number>(
+    expiresAt.getTime() - Date.now(),
+  );
 
   React.useEffect((): (() => void) => {
     let timer;
 
-    if (time >= 1000) {
+    if (timeUntilExpiration >= 1000) {
       timer = setTimeout((): void => {
-        setTime(time - 1000);
+        setTimeUntilExpiration(timeUntilExpiration - 1000);
       }, 1000);
     }
 
-    if (time === 0) {
+    if (timeUntilExpiration === 0) {
       onExpire();
     }
 
@@ -49,11 +51,9 @@ export const DialogSessionTimer: React.FC<DialogSessionTimerProps> = ({
         clearTimeout(timer);
       }
     };
-  }, [time]);
+  }, [onExpire, setTimeUntilExpiration, timeUntilExpiration]);
 
-  const timeSeconds = round(time / 1000, 0);
-
-  if (time > 0) {
+  if (timeUntilExpiration > 0) {
     return (
       <Dialog
         aria-labelledby="session-dialog-title"
@@ -67,16 +67,11 @@ export const DialogSessionTimer: React.FC<DialogSessionTimerProps> = ({
 
         <DialogContent>
           <Typography variant="body1">
-            {`For security reasons, your session will timeout in ${timeSeconds} ${pluralize(
-              'seconds',
-              timeSeconds,
-            )} unless you continue.`}
+            {`For security reasons, your session will timeout at ${moment(
+              expiresAt,
+            ).format('h:mm A')} unless you continue.`}
           </Typography>
         </DialogContent>
-
-        <br />
-
-        <Divider />
 
         <DialogActions>
           <Button
