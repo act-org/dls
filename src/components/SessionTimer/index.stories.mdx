@@ -8,7 +8,6 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs/blocks';
-import moment from 'moment';
 
 import { argTypes, Template } from './index.stories.template';
 import { SessionTimer } from '.';
@@ -32,9 +31,8 @@ the user's session.
   <Story
     name="Playground"
     args={{
-      expiresAt: moment().add(1, 'minutes').toDate(),
-      stageOneTimeoutMs: 5000,
-      stageTwoTimeoutMs: 10000,
+      promptWithMsRemaining: 5000,
+      tokenMaxAgeMs: 15 * 1000,
     }}
   >
     {Template.bind({})}

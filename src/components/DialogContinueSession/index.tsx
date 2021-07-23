@@ -50,7 +50,7 @@ export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
     return (): void => {
       clearTimeout(timer);
     };
-  }, [onExpire, setTimeUntilExpiration, timeUntilExpiration]);
+  }, [setTimeUntilExpiration, timeUntilExpiration]);
 
   const classes = useStyles();
 

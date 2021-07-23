@@ -8,6 +8,7 @@
  */
 
 import * as React from 'react';
+import { noop } from 'lodash';
 
 import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
@@ -21,118 +22,136 @@ export interface SessionTimerProps {
     remainingTimeStageTwo: number;
   }) => React.ReactElement<any> | null;
   expiresAt: Date;
-  onContinue: (reset: () => void) => void;
   onExpire: () => void;
-  onStageOneAction?: (event: any) => void;
-  onStageOneIdle?: (event: any) => void;
-  onStageTwoAction?: (event: any, reset: () => void) => void;
-  onStageTwoIdle?: (event: any) => void;
-  stageOneTimeoutMs: number;
-  stageTwoTimeoutMs: number;
+  onKeepAlive: () => void;
+  promptWithMsRemaining: number;
+  tokenMaxAgeMs: number;
 }
 
 export const SessionTimer: React.FC<SessionTimerProps> = ({
   children,
   expiresAt,
-  onContinue,
   onExpire,
-  onStageOneAction,
-  onStageOneIdle,
-  onStageTwoAction,
-  onStageTwoIdle,
-  stageOneTimeoutMs,
-  stageTwoTimeoutMs,
-}: SessionTimerProps): React.ReactElement<any> | null => (
-  <IdleTimer
-    onAction={async (e): Promise<void> => {
-      if (onStageOneAction) {
-        onStageOneAction(e);
-      }
-    }}
-    onIdle={async (e): Promise<void> => {
-      if (onStageOneIdle) {
-        onStageOneIdle(e);
-      }
-    }}
-    stopOnIdle
-    timeoutMs={stageOneTimeoutMs}
-  >
-    {({
-      remainingTimeMs: remainingTimeStageOne,
-      reset,
-    }): React.ReactElement<any> | null => {
-      // The user has been idle for the entire first stage.
-      if (remainingTimeStageOne === 0) {
-        return (
-          <IdleTimer
-            onAction={async (e): Promise<void> => {
-              if (onStageTwoAction) {
-                onStageTwoAction(e, reset);
-              }
-            }}
-            onIdle={async (e): Promise<void> => {
-              if (onStageTwoIdle) {
-                onStageTwoIdle(e);
-              }
-            }}
-            stopOnIdle
-            timeoutMs={stageTwoTimeoutMs}
-          >
-            {({
-              remainingTimeMs: remainingTimeStageTwo,
-            }): React.ReactElement<any> | null => {
-              // The user has been idle for the entire first and second stages.
-              if (remainingTimeStageTwo === 0) {
-                return (
-                  <>
-                    <DialogContinueSession
-                      expiresAt={expiresAt}
-                      onContinue={(): void => {
-                        onContinue(reset);
-                      }}
-                      onExpire={onExpire}
-                    />
+  onKeepAlive,
+  promptWithMsRemaining,
+  tokenMaxAgeMs,
+}: SessionTimerProps): React.ReactElement<any> | null => {
+  const [stageOneIsIdle, setStageOneIsIdle] = React.useState(false);
+  const [tick, setTick] = React.useState(0);
 
-                    {children &&
-                      children({
-                        remainingTimeStageOne,
-                        remainingTimeStageTwo,
-                      })}
-                  </>
-                );
-              }
+  const stageTwoTimeoutMs = tokenMaxAgeMs - promptWithMsRemaining;
 
-              if (children) {
-                return children({
-                  remainingTimeStageOne,
-                  remainingTimeStageTwo,
-                });
-              }
+  React.useEffect((): (() => void) => {
+    if (typeof window !== 'undefined') {
+      const timeUntilExpirationMs = new Date(expiresAt).getTime() - Date.now();
 
-              return null;
-            }}
-          </IdleTimer>
-        );
+      // If the user is active but the token is about to expire, renew it.
+      if (!stageOneIsIdle && timeUntilExpirationMs < promptWithMsRemaining) {
+        onKeepAlive();
       }
 
-      if (children) {
-        return children({
-          remainingTimeStageOne,
-          remainingTimeStageTwo: stageTwoTimeoutMs,
-        });
-      }
+      const timer = setTimeout((): void => {
+        setTick(tick + 1);
+      }, 1000);
 
-      return null;
-    }}
-  </IdleTimer>
-);
+      return (): void => {
+        clearTimeout(timer);
+      };
+    }
+
+    return noop;
+  }, [expiresAt, onKeepAlive, promptWithMsRemaining, stageOneIsIdle, tick]);
+
+  return (
+    <IdleTimer
+      onIdle={async (): Promise<void> => {
+        // If the user goes idle for the first stage, refresh the token
+        // and start the main timer.
+
+        setStageOneIsIdle(true);
+
+        await onKeepAlive();
+      }}
+      stopOnIdle
+      timeoutMs={promptWithMsRemaining}
+    >
+      {({
+        remainingTimeMs: remainingTimeStageOne,
+        reset,
+      }): React.ReactElement<any> | null => {
+        // The user has been idle for the entire first stage.
+        if (remainingTimeStageOne === 0) {
+          return (
+            <IdleTimer
+              onAction={async (): Promise<void> => {
+                // If the user comes back within the second stage,
+                // refresh the token and start over.
+
+                setStageOneIsIdle(false);
+
+                await onKeepAlive();
+
+                reset();
+              }}
+              stopOnIdle
+              timeoutMs={stageTwoTimeoutMs}
+            >
+              {({
+                remainingTimeMs: remainingTimeStageTwo,
+              }): React.ReactElement<any> | null => {
+                // The user has been idle for the entire first and second stages.
+                if (remainingTimeStageTwo === 0) {
+                  return (
+                    <>
+                      <DialogContinueSession
+                        expiresAt={expiresAt}
+                        onContinue={async (): Promise<void> => {
+                          // If the user chooses to continue the session before
+                          // it expires, keep the session alive and start over.
+                          await onKeepAlive();
+
+                          reset();
+                        }}
+                        onExpire={onExpire}
+                      />
+
+                      {children &&
+                        children({
+                          remainingTimeStageOne,
+                          remainingTimeStageTwo,
+                        })}
+                    </>
+                  );
+                }
+
+                if (children) {
+                  return children({
+                    remainingTimeStageOne,
+                    remainingTimeStageTwo,
+                  });
+                }
+
+                return null;
+              }}
+            </IdleTimer>
+          );
+        }
+
+        if (children) {
+          return children({
+            remainingTimeStageOne,
+            remainingTimeStageTwo: stageTwoTimeoutMs,
+          });
+        }
+
+        return null;
+      }}
+    </IdleTimer>
+  );
+};
 
 SessionTimer.defaultProps = {
   children: undefined,
-  onStageOneAction: undefined,
-  onStageOneIdle: undefined,
-  onStageTwoAction: undefined,
-  onStageTwoIdle: undefined,
 };
 
 export default SessionTimer;

@@ -9,6 +9,7 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
+import moment from 'moment';
 import pluralize from 'pluralize';
 import { round } from 'lodash';
 import { Story } from '@storybook/react/types-6-0';
@@ -27,48 +28,33 @@ import { Playground } from '~/helpers/playground';
 import { SessionTimer, SessionTimerProps } from '.';
 
 export const Template: Story<SessionTimerProps> = ({
-  stageOneTimeoutMs,
-  stageTwoTimeoutMs,
+  promptWithMsRemaining,
+  tokenMaxAgeMs,
   ...otherProps
 }: SessionTimerProps) => {
-  const stageOneTimeoutSeconds = stageOneTimeoutMs / 1000;
-  const stageTwoTimeoutSeconds = stageTwoTimeoutMs / 1000;
+  const [expiresAt, setExpiresAt] = React.useState(
+    moment().add(tokenMaxAgeMs, 'ms').toDate(),
+  );
 
-  const onContinue = action('onContinue');
+  const stageOneTimeoutSeconds = promptWithMsRemaining / 1000;
+  const stageTwoTimeoutSeconds = (tokenMaxAgeMs - promptWithMsRemaining) / 1000;
+
   const onExpire = action('onExpire');
-  const onStageOneAction = action('onStageOneAction');
-  const onStageOneIdle = action('onStageOneIdle');
-  const onStageTwoAction = action('onStageTwoAction');
-  const onStageTwoIdle = action('onStageTwoIdle');
+  const onKeepAlive = action('onKeepAlive');
 
   return (
     <SessionTimer
-      onContinue={async (): Promise<void> => {
-        onContinue();
-
-        window.location.reload();
-      }}
+      expiresAt={expiresAt}
       onExpire={(): void => {
         onExpire();
+      }}
+      onKeepAlive={(): void => {
+        onKeepAlive();
 
-        window.location.reload();
+        setExpiresAt(moment().add(tokenMaxAgeMs, 'ms').toDate());
       }}
-      onStageOneAction={(e): void => {
-        onStageOneAction(e);
-      }}
-      onStageOneIdle={(e): void => {
-        onStageOneIdle(e);
-      }}
-      onStageTwoAction={(e, reset): void => {
-        onStageTwoAction(e);
-
-        reset();
-      }}
-      onStageTwoIdle={(e): void => {
-        onStageTwoIdle(e);
-      }}
-      stageOneTimeoutMs={stageOneTimeoutMs}
-      stageTwoTimeoutMs={stageTwoTimeoutMs}
+      promptWithMsRemaining={promptWithMsRemaining}
+      tokenMaxAgeMs={tokenMaxAgeMs}
       {...otherProps}
     >
       {({
@@ -165,8 +151,8 @@ export const Template: Story<SessionTimerProps> = ({
 export const argTypes = Playground(
   {
     expiresAt: { type: 'date' },
-    stageOneTimeoutMs: { type: 'number' },
-    stageTwoTimeoutMs: { type: 'number' },
+    promptWithMsRemaining: { type: 'number' },
+    tokenMaxAgeMs: { type: 'number' },
   },
   SessionTimer,
 );
