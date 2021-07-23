@@ -2,6 +2,19 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.3.0-0] - July 23, 2021
+
+* Added `<IdleTimer />` utility
+  * Monitors keyboard and mouse activity to determine when the user
+  has gone idle.
+* Added `<DialogContinueSession />` molecule
+  * Used to prompt the user to continue their current session. If the user does
+  not choose to continue their session by the provided date, the user's
+  session will expire.
+* Added `<SessionTimer />` organism
+  * Combines two `IdleTimer`s with the `DialogContinueSession` component
+  in order to fully and effectively manage the user's session.
+
 ## [v5.2.0] - July 22, 2021
 
 * NPM package updates (`@material-ui/core` -> `^4.12.1`)
