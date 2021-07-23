@@ -18,50 +18,51 @@ import {
 } from '@material-ui/core';
 import moment from 'moment';
 
-export interface DialogSessionTimerProps {
+import useStyles from './styles';
+
+export interface DialogContinueSessionProps {
   expiresAt: Date;
   onContinue: () => void;
   onExpire: () => void;
 }
 
-export const DialogSessionTimer: React.FC<DialogSessionTimerProps> = ({
+export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
   expiresAt,
   onContinue,
   onExpire,
-}: DialogSessionTimerProps): React.ReactElement<any> | null => {
+}: DialogContinueSessionProps): React.ReactElement<any> | null => {
   const [timeUntilExpiration, setTimeUntilExpiration] = React.useState<number>(
     expiresAt.getTime() - Date.now(),
   );
 
   React.useEffect((): (() => void) => {
-    let timer;
+    const newTime =
+      timeUntilExpiration - 1000 <= 0 ? 0 : timeUntilExpiration - 1000;
 
-    if (timeUntilExpiration >= 1000) {
-      timer = setTimeout((): void => {
-        setTimeUntilExpiration(timeUntilExpiration - 1000);
-      }, 1000);
-    }
+    const timer = setTimeout((): void => {
+      setTimeUntilExpiration(newTime);
+    }, 1000);
 
-    if (timeUntilExpiration === 0) {
+    if (!timeUntilExpiration) {
       onExpire();
     }
 
     return (): void => {
-      if (timer) {
-        clearTimeout(timer);
-      }
+      clearTimeout(timer);
     };
   }, [onExpire, setTimeUntilExpiration, timeUntilExpiration]);
+
+  const classes = useStyles();
 
   if (timeUntilExpiration > 0) {
     return (
       <Dialog
-        aria-labelledby="session-dialog-title"
+        aria-labelledby="dialog-continue-session-title"
         fullWidth
         maxWidth="xs"
         open
       >
-        <DialogTitle id="session-dialog-title">
+        <DialogTitle id="dialog-continue-session-title">
           Do you want to continue your session?
         </DialogTitle>
 
@@ -73,13 +74,18 @@ export const DialogSessionTimer: React.FC<DialogSessionTimerProps> = ({
           </Typography>
         </DialogContent>
 
-        <DialogActions>
+        <DialogActions
+          classes={{
+            root: classes.dialogActionsRoot,
+          }}
+        >
           <Button
             color="primary"
             fullWidth
             onClick={(): void => {
               onContinue();
             }}
+            variant="contained"
           >
             Continue Session
           </Button>
@@ -91,4 +97,4 @@ export const DialogSessionTimer: React.FC<DialogSessionTimerProps> = ({
   return null;
 };
 
-export default DialogSessionTimer;
+export default DialogContinueSession;

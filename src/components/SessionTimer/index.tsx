@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 
-import DialogSessionTimer from '~/components/DialogSessionTimer';
+import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
 
 export interface SessionTimerProps {
@@ -67,7 +67,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
               // timeout.
               if (remainingTimeSecond === 0) {
                 return (
-                  <DialogSessionTimer
+                  <DialogContinueSession
                     expiresAt={expiresAt}
                     onContinue={(): void => {
                       onContinue(reset);
