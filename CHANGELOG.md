@@ -2,7 +2,7 @@
 
 Chronological history of changes to the Design Language System.
 
-## [v5.3.0-0] - July 23, 2021
+## [v5.3.0] - July 23, 2021
 
 * Added `<IdleTimer />` utility
   * Monitors keyboard and mouse activity to determine when the user
