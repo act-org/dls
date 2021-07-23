@@ -13,68 +13,97 @@ import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
 
 export interface SessionTimerProps {
+  children?: ({
+    remainingTimeStageOne,
+    remainingTimeStageTwo,
+  }) => React.ReactElement<any>;
   expiresAt: Date;
-  firstTimeoutMs: number;
   onContinue: (reset) => void;
   onExpire: () => void;
-  onFirstIdle?: (event: any) => void;
-  onSecondAction?: (event: any, reset: () => void) => void;
-  secondTimeoutMs: number;
+  onStageOneAction?: (event: any) => void;
+  onStageOneIdle?: (event: any) => void;
+  onStageTwoAction?: (event: any, reset: () => void) => void;
+  onStageTwoIdle?: (event: any) => void;
+  stageOneTimeoutMs: number;
+  stageTwoTimeoutMs: number;
 }
 
 export const SessionTimer: React.FC<SessionTimerProps> = ({
+  children,
   expiresAt,
-  firstTimeoutMs,
   onContinue,
   onExpire,
-  onFirstIdle,
-  onSecondAction,
-  secondTimeoutMs,
+  onStageOneAction,
+  onStageOneIdle,
+  onStageTwoAction,
+  onStageTwoIdle,
+  stageOneTimeoutMs,
+  stageTwoTimeoutMs,
 }: SessionTimerProps): React.ReactElement<any> | null => (
   <IdleTimer
+    onAction={async (e): Promise<void> => {
+      if (onStageOneAction) {
+        onStageOneAction(e);
+      }
+    }}
     onIdle={async (e): Promise<void> => {
-      if (onFirstIdle) {
-        onFirstIdle(e);
+      if (onStageOneIdle) {
+        onStageOneIdle(e);
       }
     }}
     stopOnIdle
-    timeoutMs={firstTimeoutMs}
+    timeoutMs={stageOneTimeoutMs}
   >
     {({
-      remainingTimeMs: remainingTimeFirst,
+      remainingTimeMs: remainingTimeStageOne,
       reset,
     }): React.ReactElement<any> | null => {
-      console.log('remainingTimeFirst', remainingTimeFirst);
-
-      // The user has been idle for the first timeout.
-      if (remainingTimeFirst === 0) {
+      // The user has been idle for the entire first stage.
+      if (remainingTimeStageOne === 0) {
         return (
           <IdleTimer
             onAction={async (e): Promise<void> => {
-              if (onSecondAction) {
-                onSecondAction(e, reset);
+              if (onStageTwoAction) {
+                onStageTwoAction(e, reset);
+              }
+            }}
+            onIdle={async (e): Promise<void> => {
+              if (onStageTwoIdle) {
+                onStageTwoIdle(e);
               }
             }}
             stopOnIdle
-            timeoutMs={secondTimeoutMs}
+            timeoutMs={stageTwoTimeoutMs}
           >
             {({
-              remainingTimeMs: remainingTimeSecond,
+              remainingTimeMs: remainingTimeStageTwo,
             }): React.ReactElement<any> | null => {
-              console.log('remainingTimeSecond', remainingTimeSecond);
-
-              // The user has been idle for the first timeout and the second
-              // timeout.
-              if (remainingTimeSecond === 0) {
+              // The user has been idle for the entire first and second stages.
+              if (remainingTimeStageTwo === 0) {
                 return (
-                  <DialogContinueSession
-                    expiresAt={expiresAt}
-                    onContinue={(): void => {
-                      onContinue(reset);
-                    }}
-                    onExpire={onExpire}
-                  />
+                  <>
+                    <DialogContinueSession
+                      expiresAt={expiresAt}
+                      onContinue={(): void => {
+                        onContinue(reset);
+                      }}
+                      onExpire={onExpire}
+                    />
+
+                    {children &&
+                      children({
+                        remainingTimeStageOne,
+                        remainingTimeStageTwo,
+                      })}
+                  </>
                 );
+              }
+
+              if (children) {
+                return children({
+                  remainingTimeStageOne,
+                  remainingTimeStageTwo,
+                });
               }
 
               return null;
@@ -83,14 +112,24 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
         );
       }
 
+      if (children) {
+        return children({
+          remainingTimeStageOne,
+          remainingTimeStageTwo: stageTwoTimeoutMs,
+        });
+      }
+
       return null;
     }}
   </IdleTimer>
 );
 
 SessionTimer.defaultProps = {
-  onFirstIdle: undefined,
-  onSecondAction: undefined,
+  children: undefined,
+  onStageOneAction: undefined,
+  onStageOneIdle: undefined,
+  onStageTwoAction: undefined,
+  onStageTwoIdle: undefined,
 };
 
 export default SessionTimer;

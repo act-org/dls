@@ -30,7 +30,7 @@ export * from './FormSelect';
 export * from './InputLabel';
 export * from './RenderMetaTags';
 
-// DEPRECATED COMPONENTS -------------------------------------------------------
+// V3 COMPONENTS ---------------------------------------------------------------
 
 export * from './DataTable';
 export * from './FormInputPrimary';
