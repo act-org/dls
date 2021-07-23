@@ -17,7 +17,7 @@ export interface IdleTimerProps {
   }: {
     remainingTimeMs: number;
     reset: () => void;
-  }) => React.ReactElement<any>;
+  }) => React.ReactElement<any> | null;
   onAction?: (event?: any) => void;
   onActive?: (event?: any) => void;
   onIdle?: (event?: any) => void;

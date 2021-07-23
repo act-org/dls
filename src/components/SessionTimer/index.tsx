@@ -16,9 +16,12 @@ export interface SessionTimerProps {
   children?: ({
     remainingTimeStageOne,
     remainingTimeStageTwo,
-  }) => React.ReactElement<any>;
+  }: {
+    remainingTimeStageOne: number;
+    remainingTimeStageTwo: number;
+  }) => React.ReactElement<any> | null;
   expiresAt: Date;
-  onContinue: (reset) => void;
+  onContinue: (reset: () => void) => void;
   onExpire: () => void;
   onStageOneAction?: (event: any) => void;
   onStageOneIdle?: (event: any) => void;

@@ -34,7 +34,7 @@ the user's session.
     args={{
       expiresAt: moment().add(1, 'minutes').toDate(),
       stageOneTimeoutMs: 5000,
-      stageTwoTimeoutMs: 5000,
+      stageTwoTimeoutMs: 10000,
     }}
   >
     {Template.bind({})}
