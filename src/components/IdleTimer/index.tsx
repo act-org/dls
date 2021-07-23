@@ -36,7 +36,7 @@ export const IdleTimer: React.FC<IdleTimerProps> = ({
   const [remainingTimeMs, setRemainingTimeMs] = React.useState(timeoutMs);
 
   const { getRemainingTime, reset } = useIdleTimer({
-    debounce: 50,
+    debounce: 250,
     onAction: (event): void => {
       if (onAction) {
         onAction(event);

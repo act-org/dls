@@ -8,76 +8,63 @@
  */
 
 import * as React from 'react';
-import { Button } from '@material-ui/core';
+import { action } from '@storybook/addon-actions';
 import pluralize from 'pluralize';
 import { round } from 'lodash';
 import { Story } from '@storybook/react/types-6-0';
-import { Playground } from '~/helpers/playground';
 
-import DialogSessionTimer from '~/components/DialogSessionTimer';
+import { Playground } from '~/helpers/playground';
 
 import { IdleTimer, IdleTimerProps } from '.';
 
-export const Template: Story<IdleTimerProps> = (props: IdleTimerProps) => {
-  const [expired, setExpired] = React.useState(false);
+export const Template: Story<IdleTimerProps> = ({
+  timeoutMs,
+  ...otherProps
+}: IdleTimerProps) => {
+  const timeoutSeconds = timeoutMs / 1000;
+
+  const onAction = action('onAction');
+  const onActive = action('onActive');
+  const onIdle = action('onIdle');
 
   return (
-    <>
-      <IdleTimer {...props}>
-        {({ remainingTimeMs, reset }): React.ReactElement<any> => {
-          const remainingTimeSeconds = round(remainingTimeMs / 1000, 0);
+    <IdleTimer
+      onAction={(event): void => {
+        onAction(event);
+      }}
+      onActive={(event): void => {
+        onActive(event);
+      }}
+      onIdle={(event): void => {
+        onIdle(event);
+      }}
+      timeoutMs={timeoutMs}
+      {...otherProps}
+    >
+      {({ remainingTimeMs }): React.ReactElement<any> => {
+        const remainingTimeSeconds = round(remainingTimeMs / 1000, 0);
 
-          return (
-            <>
-              {remainingTimeSeconds > 0 && (
-                <>
-                  <span>
-                    {`Idle in ${remainingTimeSeconds} ${pluralize(
-                      'seconds',
-                      remainingTimeSeconds,
-                    )}`}
-                  </span>
-                </>
-              )}
-
-              {remainingTimeSeconds === 0 && (
-                <DialogSessionTimer
-                  onContinue={(): void => {
-                    reset();
-                  }}
-                  onExpire={(): void => {
-                    setExpired(true);
-                  }}
-                />
-              )}
-
-              {expired && (
-                <>
-                  <div>Session expired!</div>
-
-                  <br />
-
-                  <Button
-                    color="primary"
-                    onClick={(): void => {
-                      setExpired(false);
-                      reset();
-                    }}
-                  >
-                    Start Over
-                  </Button>
-                </>
-              )}
-            </>
-          );
-        }}
-      </IdleTimer>
-    </>
+        return (
+          <span>
+            {remainingTimeSeconds > 0
+              ? `Going idle in ${remainingTimeSeconds} ${pluralize(
+                  'seconds',
+                  remainingTimeSeconds,
+                )}...`
+              : `You went idle for ${timeoutSeconds} ${pluralize(
+                  'seconds',
+                  timeoutSeconds,
+                )}!`}
+          </span>
+        );
+      }}
+    </IdleTimer>
   );
 };
 
 export const argTypes = Playground(
   {
+    stopOnIdle: { type: 'boolean' },
     timeoutMs: { type: 'number' },
   },
   IdleTimer,
