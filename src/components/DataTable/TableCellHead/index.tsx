@@ -8,7 +8,6 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
 import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
@@ -21,6 +20,7 @@ import useStyles from './styles';
 
 export interface TableCellHeadProps extends TableCellProps {
   children: string | React.ReactElement<any>;
+  color?: 'primary' | 'secondary';
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
   sortBy?: string;
@@ -30,6 +30,7 @@ export interface TableCellHeadProps extends TableCellProps {
 export const TableCellHead: React.FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
+  color,
   currentSortObject,
   onChangeSort,
   sortBy,
@@ -45,7 +46,10 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
       return {};
     }
 
-    return { color: palette.common.white };
+    return {
+      color:
+        color === 'secondary' ? palette.text.primary : palette.common.white,
+    };
   };
 
   const toggleSort = (): void => {
@@ -66,17 +70,13 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
     }
   };
 
-  const classes = useStyles();
+  const classes = useStyles({ color, sortBy, sortIsApplied });
 
   return (
     <TableCell
       classes={mergeClasses(
         {
-          root: clsx(
-            classes.tableCellRoot,
-            sortBy && classes.tableCellRootSortable,
-            sortIsApplied && classes.tableCellRootSortApplied,
-          ),
+          root: classes.tableCellRoot,
         },
         classesProp,
       )}
@@ -137,6 +137,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
 };
 
 TableCellHead.defaultProps = {
+  color: undefined,
   sortBy: undefined,
   style: undefined,
 };
