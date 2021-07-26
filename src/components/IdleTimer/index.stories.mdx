@@ -1,0 +1,68 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+
+import { argTypes, Template } from './index.stories.template';
+import { IdleTimer } from '.';
+
+<Meta argTypes={argTypes} component={IdleTimer} title="Utilities/IdleTimer" />
+
+<Description of={IdleTimer} />
+
+## Simple
+
+The `<IdleTimer />` component monitors keyboard and mouse activity to determine
+when the user has gone idle.
+
+<Canvas isColumn>
+  <Story
+    name="Simple"
+    args={{
+      timeoutMs: 10000,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Stop On Idle
+
+Use `stopOnIdle: true` to prevent the timer from resetting itself when the
+user comes back after having been idle.
+
+<Canvas isColumn>
+  <Story
+    name="Stop On Idle"
+    args={{
+      stopOnIdle: true,
+      timeoutMs: 10000,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+The `<IdleTimer />` component...
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      stopOnIdle: false,
+      timeoutMs: 10000,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

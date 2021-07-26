@@ -1,0 +1,41 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import { argTypes, Template } from './index.stories.template';
+import { SessionTimer } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={SessionTimer}
+  title="Organisms/SessionTimer"
+/>
+
+<Description of={SessionTimer} />
+
+## Playground
+
+The `<SessionTimer />` component combines two `IdleTimer`s with the
+`DialogContinueSession` component in order to fully and effectively manage
+the user's session.
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      promptWithMsRemaining: 5000,
+      tokenMaxAgeMs: 15 * 1000,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

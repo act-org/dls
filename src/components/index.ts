@@ -12,12 +12,15 @@
 export * from './Alert';
 export * from './AppBarNavigation';
 export * from './Dialog';
+export * from './DialogContinueSession';
 export * from './EmptyState';
 export * from './FormInputGroups';
 export * from './FormSwitch';
+export * from './IdleTimer';
 export * from './Loading';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
+export * from './SessionTimer';
 export * from './ThemeProvider';
 
 // WIP COMPONENTS --------------------------------------------------------------
@@ -27,7 +30,7 @@ export * from './FormSelect';
 export * from './InputLabel';
 export * from './RenderMetaTags';
 
-// DEPRECATED COMPONENTS -------------------------------------------------------
+// V3 COMPONENTS ---------------------------------------------------------------
 
 export * from './DataTable';
 export * from './FormInputPrimary';
