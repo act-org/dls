@@ -17,15 +17,15 @@ describe('AppBarNavigation', () => {
   const Component = (
     <AppBarNavigation
       AppBarProps={{ position: 'static' }}
-      LogoProps={{
-        alt: 'ACT',
-        LinkProps: { to: 'https://act-et.org' },
-        src: 'https://i.imgur.com/P0gtzO0.png',
-      }}
       navigationItems={[
         { isActive: true, LinkProps: { to: '#' }, title: 'Home' },
         { isActive: false, LinkProps: { to: '#' }, title: 'Other Page' },
       ]}
+      RenderLogoProps={{
+        alt: 'ACT',
+        LinkProps: { to: 'https://act-et.org' },
+        src: 'https://i.imgur.com/P0gtzO0.png',
+      }}
     />
   );
   standard(Component);

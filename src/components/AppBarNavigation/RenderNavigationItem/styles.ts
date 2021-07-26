@@ -15,6 +15,7 @@ export default makeStyles(theme => ({
       color: 'unset',
       textDecoration: 'none',
     },
+    cursor: 'pointer',
   },
   navTypography: ({ isActive }: any): any => ({
     '&:after': {
@@ -26,18 +27,21 @@ export default makeStyles(theme => ({
       left: 0,
       position: 'absolute',
       right: 0,
+      transition: 'all .2s linear',
     },
     '&:hover': {
       '&:after': {
         backgroundColor: 'currentcolor',
       },
-      fontWeight: 'bold',
+      textShadow: '0 0 .65px currentcolor, 0 0 .65px currentcolor',
     },
-    '&:not(:hover)': !isActive ? { color: 'unset' } : {},
+    '&:not(:hover)': !isActive ? { color: 'none' } : {},
     fontSize: '0.75rem',
-    fontWeight: isActive ? 'bold' : 'initial',
     lineHeight: '1.5rem',
     position: 'relative',
-    transition: 'all .15s linear',
+    textShadow: isActive
+      ? '0 0 .65px currentcolor, 0 0 .65px currentcolor'
+      : 'unset',
+    transition: 'all .2s linear',
   }),
 }));
