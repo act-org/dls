@@ -127,7 +127,9 @@ const OVERRIDES: Overrides = {
         border: `6px solid ${COLORS.WHITE}`,
         color: COLORS.PRIMARY,
       },
+      height: 'unset',
       padding: 3,
+      width: 'unset',
     },
     thumb: {
       boxShadow: '0 1px 2px 1px rgba(0, 0, 0, 0.08)',
