@@ -77,42 +77,50 @@ const OVERRIDES: Overrides = {
   },
   MuiDataGrid: {
     root: {
-      '& .MuiDataGrid-columnHeader': {
-        '& .MuiDataGrid-columnHeaderTitle': {
-          color: COLORS.WHITE,
-          userSelect: 'none',
-        },
-        '& .MuiDataGrid-iconButtonContainer': {
-          alignItems: 'center',
-          display: 'flex',
-        },
-        '& .MuiDataGrid-iconButtonContainer': {
-          '& .MuiIconButton-root': {
-            color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
-            padding: '0 0 3px 0',
+      '& .MuiDataGrid-main': {
+        '& .MuiDataGrid-columnHeader': {
+          '& .MuiDataGrid-columnHeaderTitleContainer': {
+            '& .MuiCheckbox-root': {
+              color: COLORS.WHITE,
+            },
+            '& .MuiDataGrid-columnHeaderTitle': {
+              color: COLORS.WHITE,
+              userSelect: 'none',
+            },
           },
-          '& .MuiIconButton-root[aria-label="Show filters"]': {
+          '& .MuiDataGrid-iconButtonContainer': {
+            '& .MuiIconButton-root': {
+              color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+              padding: '0 0 1px 0',
+            },
+            '& .MuiIconButton-root[aria-label="Show filters"]': {
+              color: `${COLORS.WHITE} !important`,
+            },
+            alignItems: 'center',
+            display: 'flex',
+          },
+          '& .MuiDataGrid-menuIcon': {
+            '& .MuiIconButton-root[aria-label="Menu"]': {
+              color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+            },
+          },
+        },
+        '& .MuiDataGrid-columnHeader--sorted': {
+          '& .MuiIconButton-root[aria-label="Sort"]': {
             color: `${COLORS.WHITE} !important`,
           },
-          width: 22,
+          backgroundColor: Color(COLORS.PRIMARY).darken(0.15).hex(),
         },
-        '& .MuiDataGrid-menuIcon': {
-          '& .MuiIconButton-root[aria-label="Menu"]': {
-            color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
-          },
+        '& .MuiDataGrid-columnHeaderWrapper': {
+          backgroundColor: COLORS.PRIMARY,
         },
-      },
-      '& .MuiDataGrid-columnHeader--sorted': {
-        '& .MuiIconButton-root[aria-label="Sort"]': {
-          color: `${COLORS.WHITE} !important`,
+        '& .MuiDataGrid-columnSeparator': {
+          marginRight: 1.5,
         },
-        backgroundColor: Color(COLORS.PRIMARY).darken(0.15).hex(),
-      },
-      '& .MuiDataGrid-columnHeaderWrapper': {
-        backgroundColor: COLORS.PRIMARY,
-      },
-      '& .MuiDataGrid-columnSeparator': {
-        marginRight: 1.5,
+        '& .MuiDataGrid-overlay': {
+          backgroundColor: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+          zIndex: 1,
+        },
       },
       borderRadius: SHAPE.borderRadius,
       overflow: 'hidden',

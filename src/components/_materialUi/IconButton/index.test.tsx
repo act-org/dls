@@ -11,8 +11,8 @@ import * as React from 'react';
 import { IconButton } from '@material-ui/core';
 import { noop } from 'lodash';
 
+import PencilCircle from '~/icons/PencilCircle';
 import { standard } from '~/helpers/test';
-import { PencilCircle } from '~/icons';
 
 describe('IconButton', () => {
   const Component = (

@@ -16,7 +16,7 @@ import {
 } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
-import { Menu } from '~/icons';
+import Menu from '~/icons/Menu';
 import { Playground } from '~/helpers/playground';
 
 export const Template: Story<ToolbarProps> = args => (

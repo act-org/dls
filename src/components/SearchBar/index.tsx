@@ -17,7 +17,8 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import { CloseCircle, Magnify } from '~/icons';
+import CloseCircle from '~/icons/CloseCircle';
+import Magnify from '~/icons/Magnify';
 
 const useStyles = makeStyles({
   iconCloseHidden: {

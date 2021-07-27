@@ -11,7 +11,8 @@ import * as React from 'react';
 import { IconButton, IconButtonProps } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PencilCircle, PencilCircleOutline } from '~/icons';
+import PencilCircle from '~/icons/PencilCircle';
+import PencilCircleOutline from '~/icons/PencilCircleOutline';
 import { Playground } from '~/helpers/playground';
 
 export const Template: Story<IconButtonProps> = (props: IconButtonProps) => (

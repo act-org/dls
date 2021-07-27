@@ -9,6 +9,8 @@
 
 import { ComponentsProps } from '@material-ui/core/styles/props';
 
+import Menu from '~/icons/Menu';
+
 const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
@@ -17,6 +19,11 @@ const PROPS: ComponentsProps = {
   },
   MuiButton: {
     variant: 'outlined' as any,
+  },
+  MuiDataGrid: {
+    components: {
+      ColumnSortedAscendingIcon: Menu,
+    },
   },
   MuiPaper: {
     elevation: 3,
