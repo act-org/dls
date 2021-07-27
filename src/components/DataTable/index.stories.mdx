@@ -65,8 +65,10 @@ import { DataTable, DataTableProps } from '.';
     args={{
       RowWrapper: (item, children) => (
         <Link
-          color="textPrimary"
           href={`https://www.google.com/search?q=${item.name}`}
+          style={{
+            display: 'contents',
+          }}
           target="_blank"
           underline="none"
         >
