@@ -72,11 +72,7 @@ export const DataTable = <T,>({
           </TableRow>
         </TableHead>
 
-        <TableBody
-          classes={{
-            root: classes.tableBodyRoot,
-          }}
-        >
+        <TableBody>
           {items.map((item, i): React.ReactElement<any> => {
             /* eslint-disable react/no-array-index-key */
             const children = (

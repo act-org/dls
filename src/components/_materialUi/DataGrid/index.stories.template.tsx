@@ -8,13 +8,17 @@
  */
 
 import * as React from 'react';
-import { DataGrid, DataGridProps } from '@material-ui/data-grid';
+import {
+  DataGrid,
+  DataGridProps,
+  GridValueGetterParams,
+} from '@material-ui/data-grid';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
 export const Template: Story<DataGridProps> = (props: DataGridProps) => (
-  <div style={{ height: 400, width: '100%' }}>
+  <div style={{ height: 370, width: 902 }}>
     <DataGrid
       columns={[
         {
@@ -33,21 +37,21 @@ export const Template: Story<DataGridProps> = (props: DataGridProps) => (
           width: 200,
         },
         {
-          field: 'age',
-          headerName: 'Age',
-          type: 'number',
-          width: 150,
-        },
-        {
           description: 'This column has a value getter and is not sortable.',
           field: 'fullName',
           headerName: 'Full name',
           sortable: false,
-          valueGetter: (params: ValueGetterParams): string =>
-            `${params.getValue('firstName') || ''} ${
-              params.getValue('lastName') || ''
+          valueGetter: (params: GridValueGetterParams): string =>
+            `${params.getValue(params.id, 'firstName') || ''} ${
+              params.getValue(params.id, 'lastName') || ''
             }`,
           width: 200,
+        },
+        {
+          field: 'age',
+          headerName: 'Age',
+          type: 'number',
+          width: 150,
         },
       ]}
       pageSize={5}
