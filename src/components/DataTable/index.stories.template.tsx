@@ -11,7 +11,6 @@ import * as React from 'react';
 import moment from 'moment';
 import { Story } from '@storybook/react/types-6-0';
 
-import { PackageVariant } from '~/icons';
 import { Playground } from '~/helpers/playground';
 import sort from '~/helpers/sort';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
@@ -102,10 +101,6 @@ export const Template: Story<DataTableProps<Item>> = args => {
         },
       ]}
       currentSortObject={sortObject}
-      emptyStateProps={{
-        description: 'No Items Found',
-        Icon: PackageVariant,
-      }}
       items={items}
       onChangeSort={(newSortObject): void => {
         setSortObject(newSortObject);

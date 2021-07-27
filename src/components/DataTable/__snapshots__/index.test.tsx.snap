@@ -33,7 +33,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
                 class="MuiSvgIcon-root makeStyles-sortIconRoot-4 makeStyles-sortIconRoot-7"
                 focusable="false"
                 role="button"
-                style="color: rgb(255, 255, 255);"
+                style="color: rgb(0, 0, 0);"
                 viewBox="9 3 5 15"
               >
                 <path
@@ -444,7 +444,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
                 class="MuiSvgIcon-root makeStyles-sortIconRoot-26 makeStyles-sortIconRoot-29"
                 focusable="false"
                 role="button"
-                style="color: rgb(255, 255, 255);"
+                style="color: rgb(0, 0, 0);"
                 viewBox="9 3 5 15"
               >
                 <path

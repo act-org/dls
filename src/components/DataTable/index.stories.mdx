@@ -11,6 +11,8 @@ import {
 } from '@storybook/addon-docs';
 import { Link } from '@material-ui/core';
 
+import { PackageVariant } from '~/icons';
+
 import { argTypes, Template } from './index.stories.template';
 import { DataTable, DataTableProps } from '.';
 
@@ -75,6 +77,23 @@ import { DataTable, DataTableProps } from '.';
           {children}
         </Link>
       ),
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Empty State
+
+<Canvas>
+  <Story
+    name="Empty State"
+    args={{
+      emptyStateProps: {
+        description: 'No Items Found',
+        Icon: PackageVariant,
+      },
+      items: [],
     }}
   >
     {Template.bind({})}
