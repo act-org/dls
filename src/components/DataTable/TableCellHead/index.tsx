@@ -20,7 +20,7 @@ import useStyles from './styles';
 
 export interface TableCellHeadProps extends TableCellProps {
   children: string | React.ReactElement<any>;
-  color?: 'primary' | 'secondary';
+  color?: 'default' | 'primary' | 'secondary';
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
   sortBy?: string;
@@ -47,8 +47,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
     }
 
     return {
-      color:
-        color === 'secondary' ? palette.text.primary : palette.common.white,
+      color: color === 'default' ? palette.text.primary : palette.common.white,
     };
   };
 
@@ -137,7 +136,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
 };
 
 TableCellHead.defaultProps = {
-  color: undefined,
+  color: 'default',
   sortBy: undefined,
   style: undefined,
 };

@@ -27,7 +27,7 @@ interface Column<T> {
 }
 
 export interface DataTableProps<T> {
-  color?: 'primary' | 'secondary';
+  color?: 'default' | 'primary' | 'secondary';
   columns: Column<T>[];
   currentSortObject: SortObject;
   emptyStateProps?: EmptyStateProps;
@@ -107,7 +107,7 @@ export const DataTable = <T,>({
 };
 
 DataTable.defaultProps = {
-  color: undefined,
+  color: 'default',
   RowWrapper: undefined,
 };
 

@@ -13,13 +13,22 @@ import {
 import { argTypes, Template } from './index.stories.template';
 import { DataTable, DataTableProps } from '.';
 
-<Meta
-  title="V3/Organisms/DataTable"
-  component={DataTable}
-  argTypes={argTypes}
-/>
+<Meta title="Organisms/DataTable" component={DataTable} argTypes={argTypes} />
 
 <Description of={DataTable} />
+
+## Color: Default
+
+<Canvas>
+  <Story
+    name="Color: Default"
+    args={{
+      color: 'default',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
 
 ## Color: Primary
 
