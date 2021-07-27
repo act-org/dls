@@ -134,12 +134,13 @@ import { argTypes, Template } from './index.stories.template';
   </Story>
 </Canvas>
 
-## Show Column Right Border
+## With Borders
 
 <Canvas>
   <Story
-    name="Show Column Right Border"
+    name="With Borders"
     args={{
+      showCellRightBorder: true,
       showColumnRightBorder: true,
     }}
   >
@@ -147,13 +148,30 @@ import { argTypes, Template } from './index.stories.template';
   </Story>
 </Canvas>
 
-## Show Cell Right Border
+## With Borders, Primary
 
 <Canvas>
   <Story
-    name="Hide Cell Right Border"
+    name="With Borders, Primary"
     args={{
-      showCellRightBorder: false,
+      className: 'primary',
+      showCellRightBorder: true,
+      showColumnRightBorder: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Borders, Secondary
+
+<Canvas>
+  <Story
+    name="With Borders, Secondary"
+    args={{
+      className: 'secondary',
+      showCellRightBorder: true,
+      showColumnRightBorder: true,
     }}
   >
     {Template.bind({})}

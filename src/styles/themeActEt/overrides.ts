@@ -115,6 +115,9 @@ const OVERRIDES: Overrides = {
               color: Color(COLORS.BLACK).fade(0.35).rgb().string(),
             },
           },
+          '&.MuiDataGrid-withBorder': {
+            borderRightColor: COLORS.GREY_300,
+          },
           outline: 'none',
         },
         '& .MuiDataGrid-columnHeader--sorted': {
@@ -164,6 +167,9 @@ const OVERRIDES: Overrides = {
                 color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
               },
             },
+            '&.MuiDataGrid-withBorder': {
+              borderRightColor: Color(COLORS.PRIMARY).lighten(0.2).hex(),
+            },
           },
           '& .MuiDataGrid-columnHeader--sorted': {
             '& .MuiIconButton-root[aria-label="Sort"]': {
@@ -199,6 +205,9 @@ const OVERRIDES: Overrides = {
               '& .MuiIconButton-root[aria-label="Menu"]': {
                 color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
               },
+            },
+            '&.MuiDataGrid-withBorder': {
+              borderRightColor: Color(COLORS.SECONDARY).lighten(0.5).hex(),
             },
           },
           '& .MuiDataGrid-columnHeader--sorted': {

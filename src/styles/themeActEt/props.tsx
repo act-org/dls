@@ -25,7 +25,6 @@ const PROPS: ComponentsProps = {
       ColumnFilteredIcon: FilterVariant,
     },
     disableSelectionOnClick: true,
-    showCellRightBorder: true,
   },
   MuiPaper: {
     elevation: 3,
