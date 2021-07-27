@@ -42,7 +42,7 @@ export const Template: Story<StoryProps> = ({
     <div
       style={{
         height: autoHeight || autoPageSize ? undefined : 370,
-        width: 902,
+        minWidth: 902,
       }}
     >
       <DataGrid
