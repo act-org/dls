@@ -287,6 +287,7 @@ Here are some of the more important ones:
 
 Some npm packages are pinned to non-current versions for a specific reason:
 
-| Package      | Version | Reason                                                                      |
-|:------------ |:------- |:--------------------------------------------------------------------------- |
-| `np`         | `7.4.0` | Version `7.5.0` is [broken](https://github.com/sindresorhus/np/issues/613). |
+| Package      | Version | Reason                                                                                                  |
+|:------------ |:------- |:------------------------------------------------------------------------------------------------------- |
+| `color`      | `3.2.1` | Version `4.x` cannot be run in Storybook due to [this issue](https://github.com/Qix-/color/issues/206). |
+| `np`         | `7.4.0` | Version `7.5.0` is [broken](https://github.com/sindresorhus/np/issues/613).                             |
