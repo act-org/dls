@@ -94,39 +94,37 @@ const OVERRIDES: Overrides = {
       '& .MuiDataGrid-main': {
         '& .MuiDataGrid-columnHeader': {
           '& .MuiDataGrid-columnHeaderTitleContainer': {
-            '& .MuiCheckbox-root': {
-              color: COLORS.WHITE,
-            },
             '& .MuiDataGrid-columnHeaderTitle': {
-              color: COLORS.WHITE,
+              color: COLORS.BLACK,
               userSelect: 'none',
             },
           },
           '& .MuiDataGrid-iconButtonContainer': {
             '& .MuiIconButton-root': {
-              color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+              color: Color(COLORS.BLACK).fade(0).rgb().string(),
               padding: '0 0 1px 0',
             },
             '& .MuiIconButton-root[aria-label="Show filters"]': {
-              color: `${COLORS.WHITE} !important`,
+              color: `${COLORS.BLACK} !important`,
             },
             alignItems: 'center',
             display: 'flex',
           },
           '& .MuiDataGrid-menuIcon': {
             '& .MuiIconButton-root[aria-label="Menu"]': {
-              color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+              color: Color(COLORS.BLACK).fade(0.35).rgb().string(),
             },
           },
+          outline: 'none',
         },
         '& .MuiDataGrid-columnHeader--sorted': {
           '& .MuiIconButton-root[aria-label="Sort"]': {
-            color: `${COLORS.WHITE} !important`,
+            color: `${COLORS.BLACK} !important`,
           },
-          backgroundColor: Color(COLORS.PRIMARY).darken(0.15).hex(),
+          backgroundColor: COLORS.GREY_300,
         },
         '& .MuiDataGrid-columnHeaderWrapper': {
-          backgroundColor: COLORS.PRIMARY,
+          backgroundColor: COLORS.GREY_200,
         },
         '& .MuiDataGrid-columnSeparator': {
           display: 'none',
@@ -141,6 +139,78 @@ const OVERRIDES: Overrides = {
           marginRight: DIMS.SPACING,
         },
         padding: DIMS.SPACING,
+      },
+      '&.primary': {
+        '& .MuiDataGrid-main': {
+          '& .MuiDataGrid-columnHeader': {
+            '& .MuiDataGrid-columnHeaderTitleContainer': {
+              '& .MuiCheckbox-root': {
+                color: COLORS.WHITE,
+              },
+              '& .MuiDataGrid-columnHeaderTitle': {
+                color: COLORS.WHITE,
+              },
+            },
+            '& .MuiDataGrid-iconButtonContainer': {
+              '& .MuiIconButton-root': {
+                color: Color(COLORS.WHITE).fade(0.1).rgb().string(),
+              },
+              '& .MuiIconButton-root[aria-label="Show filters"]': {
+                color: `${COLORS.WHITE} !important`,
+              },
+            },
+            '& .MuiDataGrid-menuIcon': {
+              '& .MuiIconButton-root[aria-label="Menu"]': {
+                color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+              },
+            },
+          },
+          '& .MuiDataGrid-columnHeader--sorted': {
+            '& .MuiIconButton-root[aria-label="Sort"]': {
+              color: `${COLORS.WHITE} !important`,
+            },
+            backgroundColor: Color(COLORS.PRIMARY).darken(0.15).hex(),
+          },
+          '& .MuiDataGrid-columnHeaderWrapper': {
+            backgroundColor: COLORS.PRIMARY,
+          },
+        },
+      },
+      '&.secondary': {
+        '& .MuiDataGrid-main': {
+          '& .MuiDataGrid-columnHeader': {
+            '& .MuiDataGrid-columnHeaderTitleContainer': {
+              '& .MuiCheckbox-root': {
+                color: COLORS.WHITE,
+              },
+              '& .MuiDataGrid-columnHeaderTitle': {
+                color: COLORS.WHITE,
+              },
+            },
+            '& .MuiDataGrid-iconButtonContainer': {
+              '& .MuiIconButton-root': {
+                color: Color(COLORS.WHITE).fade(0.1).rgb().string(),
+              },
+              '& .MuiIconButton-root[aria-label="Show filters"]': {
+                color: `${COLORS.WHITE} !important`,
+              },
+            },
+            '& .MuiDataGrid-menuIcon': {
+              '& .MuiIconButton-root[aria-label="Menu"]': {
+                color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+              },
+            },
+          },
+          '& .MuiDataGrid-columnHeader--sorted': {
+            '& .MuiIconButton-root[aria-label="Sort"]': {
+              color: `${COLORS.WHITE} !important`,
+            },
+            backgroundColor: Color(COLORS.SECONDARY).darken(0.15).hex(),
+          },
+          '& .MuiDataGrid-columnHeaderWrapper': {
+            backgroundColor: COLORS.SECONDARY,
+          },
+        },
       },
       borderRadius: SHAPE.borderRadius,
       overflow: 'hidden',

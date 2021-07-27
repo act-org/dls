@@ -26,13 +26,26 @@ import { argTypes, Template } from './index.stories.template';
   </Story>
 </Canvas>
 
-## Loading
+## ClassName: Primary
 
 <Canvas>
   <Story
-    name="Loading"
+    name="ClassName: Primary"
     args={{
-      loading: true,
+      className: 'primary',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## ClassName: Secondary
+
+<Canvas>
+  <Story
+    name="ClassName: Secondary"
+    args={{
+      className: 'secondary',
     }}
   >
     {Template.bind({})}
@@ -46,6 +59,114 @@ import { argTypes, Template } from './index.stories.template';
     name="Sortable"
     args={{
       sortable: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Sortable, Primary
+
+<Canvas>
+  <Story
+    name="Sortable, Primary"
+    args={{
+      className: 'primary',
+      sortable: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Sortable, Secondary
+
+<Canvas>
+  <Story
+    name="Sortable, Secondary"
+    args={{
+      className: 'secondary',
+      sortable: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Checkbox Selection
+
+<Canvas>
+  <Story
+    name="Checkbox Selection"
+    args={{
+      checkboxSelection: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Checkbox Selection, Primary
+
+<Canvas>
+  <Story
+    name="Checkbox Selection, Primary"
+    args={{
+      checkboxSelection: true,
+      className: 'primary',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Checkbox Selection, Secondary
+
+<Canvas>
+  <Story
+    name="Checkbox Selection, Secondary"
+    args={{
+      checkboxSelection: true,
+      className: 'secondary',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Show Column Right Border
+
+<Canvas>
+  <Story
+    name="Show Column Right Border"
+    args={{
+      showColumnRightBorder: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Show Cell Right Border
+
+<Canvas>
+  <Story
+    name="Hide Cell Right Border"
+    args={{
+      showCellRightBorder: false,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Loading
+
+<Canvas>
+  <Story
+    name="Loading"
+    args={{
+      loading: true,
     }}
   >
     {Template.bind({})}
@@ -98,19 +219,6 @@ import { argTypes, Template } from './index.stories.template';
     name="Auto Page Size"
     args={{
       autoPageSize: true,
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-## Checkbox Selection
-
-<Canvas>
-  <Story
-    name="Checkbox Selection"
-    args={{
-      checkboxSelection: true,
     }}
   >
     {Template.bind({})}
@@ -241,32 +349,6 @@ import { argTypes, Template } from './index.stories.template';
     name="Custom Row Height"
     args={{
       rowHeight: 100,
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-## Show Cell Right Border
-
-<Canvas>
-  <Story
-    name="Hide Cell Right Border"
-    args={{
-      showCellRightBorder: false,
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-## Show Column Right Border
-
-<Canvas>
-  <Story
-    name="Show Column Right Border"
-    args={{
-      showColumnRightBorder: true,
     }}
   >
     {Template.bind({})}

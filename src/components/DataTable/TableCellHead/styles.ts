@@ -48,7 +48,7 @@ export default makeStyles(
     tableCellRoot: ({ color, sortBy, sortIsApplied }: Args): any => {
       let cssProperties = {
         backgroundColor: clsx(
-          color === 'default' && grey[300],
+          color === 'default' && grey[200],
           color === 'primary' && palette.primary.main,
           color === 'secondary' && palette.secondary.main,
         ),
@@ -62,7 +62,7 @@ export default makeStyles(
         cssProperties = {
           ...cssProperties,
           backgroundColor: clsx(
-            color === 'default' && grey[400],
+            color === 'default' && grey[300],
             color === 'primary' &&
               Color(palette.primary.main).darken(0.15).hex(),
             color === 'secondary' &&
