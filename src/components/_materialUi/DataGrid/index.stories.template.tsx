@@ -12,6 +12,7 @@ import { action } from '@storybook/addon-actions';
 import {
   DataGrid,
   DataGridProps,
+  GridCellParams,
   GridValueGetterParams,
 } from '@material-ui/data-grid';
 import { Story } from '@storybook/react/types-6-0';
@@ -19,12 +20,16 @@ import { Story } from '@storybook/react/types-6-0';
 import { Playground } from '~/helpers/playground';
 
 interface StoryProps extends DataGridProps {
+  editable?: boolean;
+  filterable?: boolean;
   sortable?: boolean;
 }
 
 export const Template: Story<StoryProps> = ({
   autoHeight,
   autoPageSize,
+  editable,
+  filterable = true,
   page: pageProps,
   pageSize,
   sortable,
@@ -44,44 +49,74 @@ export const Template: Story<StoryProps> = ({
         autoPageSize={autoPageSize}
         columns={[
           {
+            align: 'left',
             description: "The user's ID.",
+            editable,
             field: 'id',
+            filterable,
+            headerAlign: 'left',
             headerName: 'User ID',
+            // eslint-disable-next-line react/display-name
+            renderCell: ({
+              formattedValue,
+            }: GridCellParams): React.ReactElement<any> => (
+              <span>{formattedValue}</span>
+            ),
             sortable,
-            width: 150,
+            type: 'string',
+            width: 175,
           },
           {
+            align: 'left',
             description: "The user's first name.",
+            editable,
             field: 'firstName',
+            filterable,
+            flex: 1,
+            headerAlign: 'left',
             headerName: 'First name',
             sortable,
-            width: 200,
+            type: 'string',
           },
           {
+            align: 'left',
             description: "The user's last name.",
+            editable,
             field: 'lastName',
+            filterable,
+            flex: 1,
+            headerAlign: 'left',
             headerName: 'Last name',
             sortable,
-            width: 200,
+            type: 'string',
           },
           {
+            align: 'left',
             description: "The user's full name.",
+            editable,
             field: 'fullName',
+            filterable,
+            flex: 1,
+            headerAlign: 'left',
             headerName: 'Full name',
             sortable,
+            type: 'string',
             valueGetter: (params: GridValueGetterParams): string =>
               `${params.getValue(params.id, 'firstName') || ''} ${
                 params.getValue(params.id, 'lastName') || ''
               }`,
-            width: 200,
           },
           {
+            align: 'right',
             description: "The user's age.",
+            editable,
             field: 'age',
+            filterable,
+            headerAlign: 'right',
             headerName: 'Age',
             sortable,
             type: 'number',
-            width: 150,
+            width: 175,
           },
         ]}
         onCellClick={action('onCellClick')}
@@ -167,6 +202,7 @@ export const Template: Story<StoryProps> = ({
             lastName: 'Roxie',
           },
         ]}
+        rowsPerPageOptions={[5, 10, 20]}
         sortingMode="client"
         {...otherProps}
       />
@@ -175,6 +211,8 @@ export const Template: Story<StoryProps> = ({
 };
 
 Template.defaultProps = {
+  editable: undefined,
+  filterable: undefined,
   sortable: undefined,
 };
 

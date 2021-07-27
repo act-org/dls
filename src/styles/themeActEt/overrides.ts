@@ -29,6 +29,11 @@ const OVERRIDES: Overrides = {
       color: COLORS.WARNING_DARK,
     },
   },
+  MuiBadge: {
+    badge: {
+      fontSize: 10,
+    },
+  },
   MuiButton: {
     contained: {
       borderRadius: 18,
@@ -77,6 +82,15 @@ const OVERRIDES: Overrides = {
   },
   MuiDataGrid: {
     root: {
+      '& .MuiDataGrid-footerContainer': {
+        '& .MuiTablePagination-root': {
+          '& .MuiToolbar-root': {
+            '& .MuiSelect-root': {
+              fontSize: 14,
+            },
+          },
+        },
+      },
       '& .MuiDataGrid-main': {
         '& .MuiDataGrid-columnHeader': {
           '& .MuiDataGrid-columnHeaderTitleContainer': {
@@ -115,12 +129,18 @@ const OVERRIDES: Overrides = {
           backgroundColor: COLORS.PRIMARY,
         },
         '& .MuiDataGrid-columnSeparator': {
-          marginRight: 1.5,
+          display: 'none',
         },
         '& .MuiDataGrid-overlay': {
           backgroundColor: Color(COLORS.WHITE).fade(0.35).rgb().string(),
           zIndex: 1,
         },
+      },
+      '& .MuiDataGrid-toolbarContainer': {
+        '& .MuiButton-root': {
+          marginRight: DIMS.SPACING,
+        },
+        padding: DIMS.SPACING,
       },
       borderRadius: SHAPE.borderRadius,
       overflow: 'hidden',

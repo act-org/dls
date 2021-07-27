@@ -9,7 +9,7 @@
 
 import { ComponentsProps } from '@material-ui/core/styles/props';
 
-import Menu from '~/icons/Menu';
+import FilterVariant from '~/icons/FilterVariant';
 
 const PROPS: ComponentsProps = {
   MuiAlert: {
@@ -22,8 +22,10 @@ const PROPS: ComponentsProps = {
   },
   MuiDataGrid: {
     components: {
-      ColumnSortedAscendingIcon: Menu,
+      ColumnFilteredIcon: FilterVariant,
     },
+    disableSelectionOnClick: true,
+    showCellRightBorder: true,
   },
   MuiPaper: {
     elevation: 3,
