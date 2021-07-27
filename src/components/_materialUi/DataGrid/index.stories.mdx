@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs';
 import { DataGrid } from '@material-ui/data-grid';
 import { GridToolbar } from '@material-ui/data-grid';
+import { Link } from '@material-ui/core';
 
 import { argTypes, Template } from './index.stories.template';
 
@@ -185,6 +186,31 @@ import { argTypes, Template } from './index.stories.template';
     name="Loading"
     args={{
       loading: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Linked Rows
+
+<Canvas>
+  <Story
+    name="With Linked Rows"
+    args={{
+      renderCell: ({ formattedValue, id }) => (
+        <Link
+          color="textPrimary"
+          href={`https://www.google.com/search?q=${id}`}
+          style={{
+            width: '100%',
+          }}
+          target="_blank"
+          underline="none"
+        >
+          {formattedValue}
+        </Link>
+      ),
     }}
   >
     {Template.bind({})}

@@ -12,7 +12,6 @@ import { action } from '@storybook/addon-actions';
 import {
   DataGrid,
   DataGridProps,
-  GridCellParams,
   GridValueGetterParams,
 } from '@material-ui/data-grid';
 import { Story } from '@storybook/react/types-6-0';
@@ -22,6 +21,7 @@ import { Playground } from '~/helpers/playground';
 interface StoryProps extends DataGridProps {
   editable?: boolean;
   filterable?: boolean;
+  renderCell?: any;
   sortable?: boolean;
 }
 
@@ -32,6 +32,7 @@ export const Template: Story<StoryProps> = ({
   filterable = true,
   page: pageProps,
   pageSize,
+  renderCell,
   sortable,
   ...otherProps
 }: StoryProps) => {
@@ -56,12 +57,7 @@ export const Template: Story<StoryProps> = ({
             filterable,
             headerAlign: 'left',
             headerName: 'User ID',
-            // eslint-disable-next-line react/display-name
-            renderCell: ({
-              formattedValue,
-            }: GridCellParams): React.ReactElement<any> => (
-              <span>{formattedValue}</span>
-            ),
+            renderCell,
             sortable,
             type: 'string',
             width: 175,
@@ -75,6 +71,7 @@ export const Template: Story<StoryProps> = ({
             flex: 1,
             headerAlign: 'left',
             headerName: 'First name',
+            renderCell,
             sortable,
             type: 'string',
           },
@@ -87,6 +84,7 @@ export const Template: Story<StoryProps> = ({
             flex: 1,
             headerAlign: 'left',
             headerName: 'Last name',
+            renderCell,
             sortable,
             type: 'string',
           },
@@ -99,6 +97,7 @@ export const Template: Story<StoryProps> = ({
             flex: 1,
             headerAlign: 'left',
             headerName: 'Full name',
+            renderCell,
             sortable,
             type: 'string',
             valueGetter: (params: GridValueGetterParams): string =>
@@ -114,6 +113,7 @@ export const Template: Story<StoryProps> = ({
             filterable,
             headerAlign: 'right',
             headerName: 'Age',
+            renderCell,
             sortable,
             type: 'number',
             width: 175,
@@ -213,6 +213,7 @@ export const Template: Story<StoryProps> = ({
 Template.defaultProps = {
   editable: undefined,
   filterable: undefined,
+  renderCell: undefined,
   sortable: undefined,
 };
 
