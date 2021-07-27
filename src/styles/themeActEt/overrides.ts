@@ -7,10 +7,12 @@
  * @prettier
  */
 
+import Color from 'color';
 import { Overrides } from '@material-ui/core/styles/overrides';
 
 import COLORS from './colors';
 import DIMS from './dims';
+import SHAPE from './shape';
 
 const OVERRIDES: Overrides = {
   MuiAlert: {
@@ -71,6 +73,49 @@ const OVERRIDES: Overrides = {
       '&:active': {
         color: COLORS.PRIMARY_DARK,
       },
+    },
+  },
+  MuiDataGrid: {
+    root: {
+      '& .MuiDataGrid-columnHeader': {
+        '& .MuiDataGrid-columnHeaderTitle': {
+          color: COLORS.WHITE,
+          userSelect: 'none',
+        },
+        '& .MuiDataGrid-iconButtonContainer': {
+          alignItems: 'center',
+          display: 'flex',
+        },
+        '& .MuiDataGrid-iconButtonContainer': {
+          '& .MuiIconButton-root': {
+            color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+            padding: '0 0 3px 0',
+          },
+          '& .MuiIconButton-root[aria-label="Show filters"]': {
+            color: `${COLORS.WHITE} !important`,
+          },
+          width: 22,
+        },
+        '& .MuiDataGrid-menuIcon': {
+          '& .MuiIconButton-root[aria-label="Menu"]': {
+            color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+          },
+        },
+      },
+      '& .MuiDataGrid-columnHeader--sorted': {
+        '& .MuiIconButton-root[aria-label="Sort"]': {
+          color: `${COLORS.WHITE} !important`,
+        },
+        backgroundColor: Color(COLORS.PRIMARY).darken(0.15).hex(),
+      },
+      '& .MuiDataGrid-columnHeaderWrapper': {
+        backgroundColor: COLORS.PRIMARY,
+      },
+      '& .MuiDataGrid-columnSeparator': {
+        marginRight: 1.5,
+      },
+      borderRadius: SHAPE.borderRadius,
+      overflow: 'hidden',
     },
   },
   MuiIconButton: {
@@ -144,6 +189,6 @@ const OVERRIDES: Overrides = {
       opacity: 1,
     },
   },
-};
+} as Overrides;
 
 export default OVERRIDES;

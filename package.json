@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "@material-ui/core": "^4.12.1",
-    "@material-ui/data-grid": "^4.0.0-alpha.23",
+    "@material-ui/data-grid": "^4.0.0-alpha.34",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "clsx": "^1.1.1",
     "color": "^3.2.1",
