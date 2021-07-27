@@ -27,7 +27,7 @@ export default makeStyles(
       display: 'flex',
       flexDirection: 'column',
       position: 'absolute',
-      right: 10,
+      right: spacing(1),
       top: `calc(50% - ${ICON_SIZE}px)`,
       width: ICON_SIZE,
     },

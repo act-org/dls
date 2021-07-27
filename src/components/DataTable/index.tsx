@@ -80,17 +80,15 @@ export const DataTable = <T,>({
                 {columns.map(
                   (column, y): React.ReactElement<any> => (
                     <TableCellBody key={column.label || y} style={column.style}>
-                      {column.renderValue(item)}
+                      {RowWrapper
+                        ? RowWrapper(item, column.renderValue(item))
+                        : column.renderValue(item)}
                     </TableCellBody>
                   ),
                 )}
               </TableRow>
             );
             /* eslint-enable react/no-array-index-key */
-
-            if (RowWrapper) {
-              return RowWrapper(item, children);
-            }
 
             return children;
           })}

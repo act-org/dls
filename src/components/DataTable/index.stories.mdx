@@ -9,6 +9,7 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
+import { Link } from '@material-ui/core';
 
 import { argTypes, Template } from './index.stories.template';
 import { DataTable, DataTableProps } from '.';
@@ -50,6 +51,28 @@ import { DataTable, DataTableProps } from '.';
     name="Color: Secondary"
     args={{
       color: 'secondary',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Linked Rows
+
+<Canvas>
+  <Story
+    name="Linked Rows"
+    args={{
+      RowWrapper: (item, children) => (
+        <Link
+          color="textPrimary"
+          href={`https://www.google.com/search?q=${item.name}`}
+          target="_blank"
+          underline="none"
+        >
+          {children}
+        </Link>
+      ),
     }}
   >
     {Template.bind({})}
