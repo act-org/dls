@@ -19,8 +19,8 @@ import { Playground } from '~/helpers/playground';
 import { SnackbarAlert } from '.';
 
 interface StoryProps {
-  anchorOriginHorizontal?: string;
-  anchorOriginVertical?: string;
+  anchorOriginHorizontal?: 'left' | 'right' | 'center';
+  anchorOriginVertical?: 'bottom' | 'top';
   maxSnack?: number;
 }
 

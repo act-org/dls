@@ -23,6 +23,8 @@ import SnackbarAlert from '~/components/SnackbarAlert';
 import AlertContext from '.';
 
 interface Props extends WithSnackbarProps {
+  anchorOriginHorizontal?: 'left' | 'right' | 'center';
+  anchorOriginVertical?: 'bottom' | 'top';
   children: React.ReactNode;
   maxSnack?: number;
 }
@@ -98,6 +100,8 @@ export const AlertContextProvider = ({
 );
 
 AlertContextProvider.defaultProps = {
+  anchorOriginHorizontal: undefined,
+  anchorOriginVertical: undefined,
   maxSnack: undefined,
 };
 
