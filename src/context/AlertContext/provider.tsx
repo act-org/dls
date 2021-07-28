@@ -24,6 +24,7 @@ import AlertContext from '.';
 
 interface Props extends WithSnackbarProps {
   children: React.ReactNode;
+  maxSnack?: number;
 }
 
 class Provider extends React.Component<Props> {
@@ -61,45 +62,43 @@ class Provider extends React.Component<Props> {
     const { children } = this.props;
 
     return (
-      <SnackbarProvider
-        anchorOrigin={{
-          horizontal: 'center',
-          vertical: 'bottom',
+      <AlertContext.Provider
+        value={{
+          actions: {
+            addAlert: this._addAlert,
+          },
         }}
-        classes={{
-          containerAnchorOriginBottomRight: 'notistackContainer',
-        }}
-        maxSnack={3}
       >
-        <AlertContext.Provider
-          value={{
-            actions: {
-              addAlert: this._addAlert,
-            },
-          }}
-        >
-          {children}
-        </AlertContext.Provider>
-      </SnackbarProvider>
+        {children}
+      </AlertContext.Provider>
     );
   }
 }
 
 const EnhancedProvider = flow(withSnackbar)(Provider);
 
-export const AlertContextProvider = (props: Props): React.ReactElement<any> => (
+export const AlertContextProvider = ({
+  anchorOriginHorizontal,
+  anchorOriginVertical,
+  maxSnack,
+  ...otherProps
+}: Props): React.ReactElement<any> => (
   <SnackbarProvider
     anchorOrigin={{
-      horizontal: 'center',
-      vertical: 'bottom',
+      horizontal: anchorOriginHorizontal || 'center',
+      vertical: anchorOriginVertical || 'bottom',
     }}
     classes={{
       containerAnchorOriginBottomRight: 'notistackContainer',
     }}
-    maxSnack={3}
+    maxSnack={maxSnack || 3}
   >
-    <EnhancedProvider {...props} />
+    <EnhancedProvider {...otherProps} />
   </SnackbarProvider>
 );
+
+AlertContextProvider.defaultProps = {
+  maxSnack: undefined,
+};
 
 export default AlertContextProvider;

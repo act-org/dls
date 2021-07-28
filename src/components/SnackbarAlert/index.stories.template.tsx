@@ -18,11 +18,25 @@ import { Playground } from '~/helpers/playground';
 
 import { SnackbarAlert } from '.';
 
-export const Template: Story = () => {
+interface StoryProps {
+  anchorOriginHorizontal?: string;
+  anchorOriginVertical?: string;
+  maxSnack?: number;
+}
+
+export const Template: Story<StoryProps> = ({
+  anchorOriginHorizontal,
+  anchorOriginVertical,
+  maxSnack,
+}: StoryProps) => {
   const [counter, setCounter] = React.useState(0);
 
   return (
-    <AlertContextProvider>
+    <AlertContextProvider
+      anchorOriginHorizontal={anchorOriginHorizontal}
+      anchorOriginVertical={anchorOriginVertical}
+      maxSnack={maxSnack}
+    >
       <AlertContext.Consumer>
         {({ actions }): React.ReactElement<any> => (
           <Grid container spacing={2}>
@@ -55,4 +69,17 @@ export const Template: Story = () => {
   );
 };
 
-export const argTypes = Playground({}, SnackbarAlert);
+Template.defaultProps = {
+  anchorOriginHorizontal: undefined,
+  anchorOriginVertical: undefined,
+  maxSnack: undefined,
+};
+
+export const argTypes = Playground(
+  {
+    anchorOriginHorizontal: { type: 'string' },
+    anchorOriginVertical: { type: 'string' },
+    maxSnack: { type: 'number' },
+  },
+  SnackbarAlert,
+);

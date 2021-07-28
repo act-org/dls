@@ -20,11 +20,54 @@ import { SnackbarAlert } from '.';
 
 <Description of={SnackbarAlert} />
 
+## Simple
+
+The `<SnackbarAlert />` component is used to animate the `<Alert />` component
+on and off the screen.
+
+<Canvas>
+  <Story name="Simple" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Custom Max Snack
+
+Show up to `5` different `<SnackbarAlert />`s on the screen, rather than the
+default (`3`).
+
+<Canvas>
+  <Story
+    name="Custom Max Snack"
+    args={{
+      maxSnack: 5,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Custom Anchor Origin
+
+By default, the `<SnackbarAlert />` is anchored to the bottom center of the
+screen. Both the horizontal and vertical anchor origins can be changed.
+
+<Canvas>
+  <Story
+    name="Custom Anchor Origin"
+    args={{
+      anchorOriginHorizontal: 'right',
+      anchorOriginVertical: 'top',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
 ## Playground
 
-The `<SnackbarAlert />` component combines two `IdleTimer`s with the
-`DialogContinueSession` component in order to fully and effectively manage
-the user's session.
+The `<SnackbarAlert />` component is used to animate the `<Alert />` component
+on and off the screen.
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
