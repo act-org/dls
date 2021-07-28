@@ -17,6 +17,7 @@
     "lodash": "^4.17.19",
     "mdi-material-ui": "^6.22.0",
     "moment": "^2.29.1",
+    "notistack": "^1.0.9",
     "pluralize": "^8.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -21,6 +21,7 @@ export * from './Loading';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
 export * from './SessionTimer';
+export * from './SnackbarAlert';
 export * from './ThemeProvider';
 
 // WIP COMPONENTS --------------------------------------------------------------
