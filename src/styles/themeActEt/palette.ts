@@ -34,7 +34,7 @@ const PALETTE: PaletteOptions = {
     white: COLORS.WHITE,
   },
   contrastThreshold: 3,
-  divider: COLORS.GREY_400,
+  divider: 'rgba(0, 0, 0, 0.12)',
   error: {
     contrastText: COLORS.WHITE,
     dark: COLORS.ERROR_DARK,

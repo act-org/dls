@@ -14,7 +14,7 @@ import {
   Tooltip,
 } from '@material-ui/core';
 
-import { HelpCircleOutline } from '~/icons';
+import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { mergeClasses } from '~/helpers';
 
 import useStyles from './styles';

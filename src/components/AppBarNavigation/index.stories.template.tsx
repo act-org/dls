@@ -22,8 +22,8 @@ export const argTypes = Playground(
   {
     AppBarProps: {},
     headerRightElement: {},
-    LogoProps: {},
     navigationItems: [],
+    RenderLogoProps: {},
   },
   AppBarNavigation,
 );

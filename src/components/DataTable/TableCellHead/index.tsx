@@ -8,11 +8,11 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
 import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 
-import { ChevronDown, ChevronUp } from '~/icons';
+import ChevronDown from '~/icons/ChevronDown';
+import ChevronUp from '~/icons/ChevronUp';
 import mergeClasses from '~/helpers/mergeClasses';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortDirection, SortObject } from '~/types';
@@ -21,6 +21,7 @@ import useStyles from './styles';
 
 export interface TableCellHeadProps extends TableCellProps {
   children: string | React.ReactElement<any>;
+  color?: 'default' | 'primary' | 'secondary';
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
   sortBy?: string;
@@ -30,6 +31,7 @@ export interface TableCellHeadProps extends TableCellProps {
 export const TableCellHead: React.FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
+  color,
   currentSortObject,
   onChangeSort,
   sortBy,
@@ -45,7 +47,9 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
       return {};
     }
 
-    return { color: palette.common.white };
+    return {
+      color: color === 'default' ? palette.text.primary : palette.common.white,
+    };
   };
 
   const toggleSort = (): void => {
@@ -66,17 +70,13 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
     }
   };
 
-  const classes = useStyles();
+  const classes = useStyles({ color, sortBy, sortIsApplied });
 
   return (
     <TableCell
       classes={mergeClasses(
         {
-          root: clsx(
-            classes.tableCellRoot,
-            sortBy && classes.tableCellRootSortable,
-            sortIsApplied && classes.tableCellRootSortApplied,
-          ),
+          root: classes.tableCellRoot,
         },
         classesProp,
       )}
@@ -137,6 +137,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
 };
 
 TableCellHead.defaultProps = {
+  color: 'default',
   sortBy: undefined,
   style: undefined,
 };

@@ -9,6 +9,8 @@
 
 import { ComponentsProps } from '@material-ui/core/styles/props';
 
+import FilterVariant from '~/icons/FilterVariant';
+
 const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
@@ -17,6 +19,12 @@ const PROPS: ComponentsProps = {
   },
   MuiButton: {
     variant: 'outlined' as any,
+  },
+  MuiDataGrid: {
+    components: {
+      ColumnFilteredIcon: FilterVariant,
+    },
+    disableSelectionOnClick: true,
   },
   MuiPaper: {
     elevation: 3,

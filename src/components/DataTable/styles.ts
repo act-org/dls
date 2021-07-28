@@ -11,8 +11,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(({ spacing }) => ({
   emptyStateContainer: {
-    padding: `${spacing(1) * 2.5}px ${spacing(1)}px
-      ${spacing(1)}px ${spacing(1)}px`,
+    paddingBottom: spacing(1),
+    paddingLeft: spacing(1),
+    paddingRight: spacing(1),
+    paddingTop: spacing(1) * 2.5,
     width: '100%',
   },
 }));

@@ -12,9 +12,10 @@ import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
 
 import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
 import { SortObject } from '~/types';
-import TableCellBody from '~/components/TableCellBody';
-import TableCellHead from '~/components/TableCellHead';
-import TableContainer from '~/components/TableContainer';
+
+import TableCellBody from './TableCellBody';
+import TableCellHead from './TableCellHead';
+import TableContainer from './TableContainer';
 
 import useStyles from './styles';
 
@@ -26,6 +27,7 @@ interface Column<T> {
 }
 
 export interface DataTableProps<T> {
+  color?: 'default' | 'primary' | 'secondary';
   columns: Column<T>[];
   currentSortObject: SortObject;
   emptyStateProps?: EmptyStateProps;
@@ -38,6 +40,7 @@ export interface DataTableProps<T> {
 }
 
 export const DataTable = <T,>({
+  color,
   columns,
   currentSortObject,
   emptyStateProps,
@@ -55,6 +58,7 @@ export const DataTable = <T,>({
             {columns.map(
               (column, i): React.ReactElement<any> => (
                 <TableCellHead
+                  color={color}
                   currentSortObject={currentSortObject}
                   key={column.label || i}
                   onChangeSort={onChangeSort}
@@ -103,6 +107,7 @@ export const DataTable = <T,>({
 };
 
 DataTable.defaultProps = {
+  color: 'default',
   RowWrapper: undefined,
 };
 

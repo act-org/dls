@@ -8,15 +8,14 @@
  */
 
 import * as React from 'react';
-import { Meta, Story } from '@storybook/react/types-6-0';
 import moment from 'moment';
+import { Story } from '@storybook/react/types-6-0';
 
-import { PackageVariant } from '~/icons';
+import { Playground } from '~/helpers/playground';
 import sort from '~/helpers/sort';
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
-import { SortObject } from '~/types';
 
-import DataTable, { DataTableProps } from '.';
+import { DataTable, DataTableProps } from '.';
 
 interface Item {
   id: string;
@@ -26,7 +25,8 @@ interface Item {
   fieldB: string;
   fieldC: string;
 }
-const Template: Story<DataTableProps<Item>> = args => {
+
+export const Template: Story<DataTableProps<Item>> = args => {
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
@@ -101,10 +101,6 @@ const Template: Story<DataTableProps<Item>> = args => {
         },
       ]}
       currentSortObject={sortObject}
-      emptyStateProps={{
-        description: 'No Items Found',
-        Icon: PackageVariant,
-      }}
       items={items}
       onChangeSort={(newSortObject): void => {
         setSortObject(newSortObject);
@@ -114,17 +110,9 @@ const Template: Story<DataTableProps<Item>> = args => {
   );
 };
 
-export const Preview: Story<DataTableProps<Item>> = Template.bind({});
-
-export default {
-  component: DataTable,
-  parameters: {
-    info: {
-      text: 'This is a custom DataTable component.',
-    },
-    controls: {
-      expanded: true,
-    },
+export const argTypes = Playground(
+  {
+    color: { type: 'string' },
   },
-  title: 'V3/Organisms/DataTable',
-} as Meta<DataTableProps<Item>>;
+  DataTable,
+);

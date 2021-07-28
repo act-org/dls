@@ -10,8 +10,8 @@
 import * as React from 'react';
 import { Tooltip } from '@material-ui/core';
 
+import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { standard } from '~/helpers/test';
-import { HelpCircleOutline } from '~/icons';
 
 describe('Tooltip', () => {
   const Component = (

@@ -39,6 +39,3 @@ export * from './InputLabelPrimary';
 export * from './InputPrimary';
 export * from './SelectPrimary';
 export * from './SelectSecondary';
-export * from './TableCellBody';
-export * from './TableCellHead';
-export * from './TableContainer';

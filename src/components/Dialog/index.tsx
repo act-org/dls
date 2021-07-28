@@ -16,7 +16,7 @@ import {
   IconButton,
 } from '@material-ui/core';
 
-import { CloseCircle } from '~/icons';
+import CloseCircle from '~/icons/CloseCircle';
 
 export type DialogProps = MuiDialogProps & {
   title?: string;

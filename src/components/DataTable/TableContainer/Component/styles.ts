@@ -7,11 +7,10 @@
  * @prettier
  */
 
-import { grey } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles({
+export default makeStyles(({ palette }) => ({
   paperRoot: {
-    border: `1px solid ${grey[200]}`,
+    border: `1px solid ${palette.divider}`,
   },
-});
+}));

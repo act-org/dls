@@ -2,6 +2,26 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.4.0] - July 27, 2021
+
+* Lots of CSS improvements for the `<DataGrid />` component on the `ACT_ET`
+theme
+* Revamped the `<DataTable />` component as a simpler alternative to
+`<DataGrid />`
+  * All styles are now pulled from the Material UI theme
+  * Introduced a new `color: 'default' | 'primary' | 'secondary'` prop
+    * BREAKING STYLE CHANGE: Previously, the default color treatment was
+    `primary` (blue header row). The new default color treatment is `default`
+    (grey header row).
+* Fixed some style issues with the `<Switch />` and `<Badge />` components in
+the `ACT_ET` theme
+* Fixed some minor style issues with the `<AppBarNavigation />` component
+* We are no longer exporting the some components that were previously marked
+as V3 / Deprecated:
+  * `<TableCellHead />`
+  * `<TableCellBody />`
+  * `<TableContainer />`
+
 ## [v5.3.0] - July 23, 2021
 
 * Added `<IdleTimer />` utility
