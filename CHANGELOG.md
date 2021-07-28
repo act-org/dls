@@ -10,6 +10,7 @@ component that can transition on and off of the screen.
 multiple `SnackbarAlert`s at the same time. Downstream apps should use the
 provided `AlertContext` to programmatically trigger alerts, rather than
 using `SnackbarAlert` directly. Example below!
+  * Powered by [notistack](https://github.com/iamhosseindhv/notistack).
 
 ```jsx
 // APP SETUP:
