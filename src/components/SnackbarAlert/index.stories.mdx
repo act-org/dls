@@ -1,0 +1,35 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+
+import { argTypes, Template } from './index.stories.template';
+import { SnackbarAlert } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={SnackbarAlert}
+  title="Molecules/SnackbarAlert"
+/>
+
+<Description of={SnackbarAlert} />
+
+## Playground
+
+The `<SnackbarAlert />` component combines two `IdleTimer`s with the
+`DialogContinueSession` component in order to fully and effectively manage
+the user's session.
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground" args={{}}>
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
