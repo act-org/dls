@@ -17,9 +17,6 @@ module.exports = {
     '**/test/*',
   ],
   plugins: [
-    // FIXME:
-    // https://github.com/entwicklerstube/babel-plugin-root-import/issues/136
-    // https://bitbucket.org/amctheatres/babel-transform-imports/issues/17/compatibility-issue-with-babel-plugin-root
     [
       'babel-plugin-root-import',
       {
@@ -70,6 +67,12 @@ module.exports = {
           preventFullImport: true,
           transform: 'mdi-material-ui/${member}',
         },
+      },
+    ],
+    [
+      '@babel/plugin-transform-runtime',
+      {
+        regenerator: true,
       },
     ],
   ],

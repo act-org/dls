@@ -218,6 +218,10 @@ module.exports = {
           transform: '@actinc/dls/constants/${member}',
           preventFullImport: true,
         },
+        '@actinc/dls/context': {
+          transform: '@actinc/dls/context/${member}',
+          preventFullImport: true,
+        },
         '@actinc/dls/helpers': {
           transform: '@actinc/dls/helpers/${member}',
           preventFullImport: true,
@@ -252,6 +256,8 @@ constants, helpers, icons, styles, and types that you need:
 import { Alert } from '@actinc/dls/components';
 // constants
 import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
+// context
+import { AlertContext } from '@actinc/dls/context';
 // helpers
 import { search } from '@actinc/dls/helpers';
 // icons

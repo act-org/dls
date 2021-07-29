@@ -2,6 +2,60 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.5.1] - July 29, 2021
+
+* Fixes the `ReferenceError: regeneratorRuntime is not defined` exception in
+`AlertContext`.
+
+## [v5.5.0] - July 28, 2021
+
+* Added `<SnackbarAlert />` component, which is an enhanced `<Alert />`
+component that can transition on and off of the screen.
+* Added `AlertContext` (React Context) to queue and manage the display of
+multiple `SnackbarAlert`s at the same time. Downstream apps should use the
+provided `AlertContext` to programmatically trigger alerts, rather than
+using `SnackbarAlert` directly. Example below!
+  * Powered by [notistack](https://github.com/iamhosseindhv/notistack).
+
+```jsx
+// APP SETUP:
+import AlertContextProvider from '@actinc/dls/context/AlertContext/provider';
+
+const Root: React.FC = (): React.ReactElement<any> => (
+  <AlertContextProvider
+    anchorOriginHorizontal="right" // optional
+    anchorOriginVertical="bottom" // optional
+    maxSnack={5} // optional
+  >
+    <MyApp />
+  </AlertContextProvider>
+);
+```
+
+```jsx
+// COMPONENT USAGE:
+import { AlertContext } from '@actinc/dls/context';
+
+const MyComponent: React.FC = (): React.ReactElement<any> => {
+  const { actions } = React.useContext(AlertContext);
+
+  return (
+    <span
+      onClick={async (): Promise<void> => {
+        await actions.addAlert({
+          message: 'Some error message',
+          options: {
+            variant: 'error',
+          },
+        });
+      }}
+    >
+      Click Me
+    </span>
+  );
+};
+```
+
 ## [v5.4.0] - July 27, 2021
 
 * Lots of CSS improvements for the `<DataGrid />` component on the `ACT_ET`
