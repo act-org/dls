@@ -2,6 +2,11 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.5.1] - July 29, 2021
+
+* Fixes the `ReferenceError: regeneratorRuntime is not defined` exception in
+`AlertContext`.
+
 ## [v5.5.0] - July 28, 2021
 
 * Added `<SnackbarAlert />` component, which is an enhanced `<Alert />`
