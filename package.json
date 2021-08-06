@@ -23,7 +23,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-idle-timer": "^4.6.4",
-    "react-use-localstorage": "^3.5.3",
     "validator": "^13.5.2"
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
