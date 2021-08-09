@@ -9,7 +9,8 @@
 
 import * as React from 'react';
 import JSONParseSafe from 'json-parse-safe';
-import useLocalStorage from 'react-use-localstorage';
+
+import useLocalStorage from '~/hooks/useLocalStorage';
 
 export interface SessionStorageKeySharerProps {
   keyName: string;
