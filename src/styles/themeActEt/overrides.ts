@@ -235,9 +235,42 @@ const OVERRIDES: Overrides = {
       width: 32,
     },
   },
+  MuiInputLabel: {
+    formControl: {
+      position: 'relative',
+      transform: 'unset',
+    },
+    marginDense: {
+      transform: 'unset',
+    },
+    outlined: {
+      '&.MuiInputLabel-marginDense': {
+        transform: 'unset',
+      },
+      transform: 'unset',
+      transformOrigin: 'unset',
+    },
+    root: {
+      color: COLORS.BLACK,
+      fontSize: 14,
+      fontWeight: 600,
+      marginBottom: DIMS.SPACING,
+    },
+  },
   MuiLink: {
     root: {
       cursor: 'pointer',
+    },
+  },
+  MuiOutlinedInput: {
+    input: {
+      '&.Mui-disabled': {
+        cursor: 'not-allowed',
+      },
+    },
+    root: {
+      backgroundColor: COLORS.WHITE,
+      fontSize: 14,
     },
   },
   MuiSvgIcon: {

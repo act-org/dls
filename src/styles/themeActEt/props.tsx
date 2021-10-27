@@ -29,6 +29,16 @@ const PROPS: ComponentsProps = {
   MuiPaper: {
     elevation: 3,
   },
+  MuiTextField: {
+    InputLabelProps: {
+      shrink: true,
+    },
+    InputProps: {
+      notched: false,
+    },
+    size: 'small',
+    variant: 'outlined',
+  },
 };
 
 export default PROPS;
