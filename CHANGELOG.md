@@ -2,9 +2,14 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.6.0] - Nov 01, 2021
+
+* Added a new helper: `oxfordCommaJoin`
+
 ## [v5.5.2] - Aug 06, 2021
 
-* Added `useLocalStorage` hook, which replaces the NPM package `react-use-localstorage`. 
+* Added `useLocalStorage` hook, which replaces the NPM package
+`react-use-localstorage`. 
 
 ## [v5.5.1] - July 29, 2021
 
