@@ -1,0 +1,135 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+import { TextField, TextFieldProps } from '@material-ui/core';
+
+import { argTypes, SelectTemplate, Template } from './index.stories.template';
+
+<Meta argTypes={argTypes} component={TextField} title="Material UI/TextField" />
+
+<Description of={TextField} />
+
+## Default
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+      type: 'text',
+      value: 'Field Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Error
+
+<Canvas>
+  <Story
+    name="Error"
+    args={{
+      error: true,
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+      type: 'text',
+      value: 'Field Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Helper Text
+
+<Canvas>
+  <Story
+    name="Helper Text"
+    args={{
+      helperText: 'Helper Text Here',
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+      type: 'text',
+      value: 'Field Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Disabled
+
+<Canvas>
+  <Story
+    name="Disabled"
+    args={{
+      disabled: true,
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+      type: 'text',
+      value: 'Field Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Select
+
+<Canvas>
+  <Story
+    name="Select"
+    args={{
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select Disabled
+
+<Canvas>
+  <Story
+    name="Select Disabled"
+    args={{
+      disabled: true,
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      disabled: false,
+      error: false,
+      fullWidth: false,
+      helperText: '',
+      label: 'Label Text Here',
+      placeholder: 'Placeholder',
+      type: 'text',
+      value: 'Field Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

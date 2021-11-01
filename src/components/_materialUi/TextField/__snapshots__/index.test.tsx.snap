@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      data-shrink="true"
+      for="test-text-field"
+      id="test-text-field-label"
+    >
+      TextField Test Label
+    </label>
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiInput-input"
+        id="test-text-field"
+        type="text"
+        value="test"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextField ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled"
+      data-shrink="true"
+      for="test-text-field"
+      id="test-text-field-label"
+    >
+      TextField Test Label
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        id="test-text-field"
+        type="text"
+        value="test"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="PrivateNotchedOutline-legendLabelled-3"
+        >
+          <span>
+            TextField Test Label
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;

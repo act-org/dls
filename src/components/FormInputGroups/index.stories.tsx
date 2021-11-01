@@ -8,17 +8,15 @@
  */
 
 import * as React from 'react';
+import { MenuItem, TextField } from '@material-ui/core';
 import { Meta, Story } from '@storybook/react/types-6-0';
-
-import { FormInput } from '~/components/FormInput';
-import { FormSelect } from '~/components/FormSelect';
 
 import FormInputGroups, { FormInputGroupsProps } from '.';
 
 const Template: Story<FormInputGroupsProps> = args => {
   const [value1, setValue1] = React.useState('Value 1');
   const [value2, setValue2] = React.useState('Value 2');
-  const [value3, setValue3] = React.useState('THREE');
+  const [value3, setValue3] = React.useState('undefined');
   const [value4, setValue4] = React.useState('Value 4');
   const [value5, setValue5] = React.useState('Value 5');
 
@@ -28,38 +26,30 @@ const Template: Story<FormInputGroupsProps> = args => {
         [
           {
             formInput: (
-              <FormInput
-                inputProps={{
-                  onChange: (e: any): void => {
-                    setValue1(e.target.value);
-                  },
-                  placeholder: 'Input 1',
-                  type: 'text',
-                  value: value1,
+              <TextField
+                label="Input 1"
+                onChange={(e: any): void => {
+                  setValue1(e.target.value);
                 }}
-                labelProps={{
-                  children: 'Input 1',
-                }}
+                placeholder="Required Text"
                 required
+                type="text"
+                value={value1}
               />
             ),
             key: 'INPUT_1',
           },
           {
             formInput: (
-              <FormInput
-                inputProps={{
-                  onChange: (e: any): void => {
-                    setValue2(e.target.value);
-                  },
-                  placeholder: 'Input 2',
-                  type: 'password',
-                  value: value2,
+              <TextField
+                label="Input 2"
+                onChange={(e: any): void => {
+                  setValue2(e.target.value);
                 }}
-                labelProps={{
-                  children: 'Input 2',
-                }}
+                placeholder="Required Password"
                 required
+                type="password"
+                value={value2}
               />
             ),
             key: 'INPUT_2',
@@ -68,31 +58,32 @@ const Template: Story<FormInputGroupsProps> = args => {
         [
           {
             formInput: (
-              <FormSelect
-                labelProps={{
-                  children: 'Input 3',
+              <TextField
+                fullWidth
+                label="Input 3"
+                onChange={(e: any): void => {
+                  setValue3(e.target.value);
                 }}
-                options={[
-                  {
-                    label: 'One',
-                    value: 'ONE',
-                  },
-                  {
-                    label: 'Two',
-                    value: 'TWO',
-                  },
-                  {
-                    label: 'Three',
-                    value: 'THREE',
-                  },
-                ]}
-                selectProps={{
-                  onChange: (e: any): void => {
-                    setValue3(e.target.value);
-                  },
-                  value: value3,
-                }}
-              />
+                select
+                type="password"
+                value={value3}
+              >
+                <MenuItem key="undefined" value="undefined">
+                  Select
+                </MenuItem>
+
+                <MenuItem key="ONE" value="ONE">
+                  One
+                </MenuItem>
+
+                <MenuItem key="TWO" value="TWO">
+                  Two
+                </MenuItem>
+
+                <MenuItem key="THREE" value="THREE">
+                  Three
+                </MenuItem>
+              </TextField>
             ),
             key: 'INPUT_3',
           },
@@ -100,38 +91,29 @@ const Template: Story<FormInputGroupsProps> = args => {
         [
           {
             formInput: (
-              <FormInput
-                inputProps={{
-                  onChange: (e: any): void => {
-                    setValue4(e.target.value);
-                  },
-                  placeholder: 'Input 4',
-                  type: 'number',
-                  value: value4,
+              <TextField
+                label="Input 4"
+                onChange={(e: any): void => {
+                  setValue4(e.target.value);
                 }}
-                labelProps={{
-                  children: 'Input 4',
-                }}
+                placeholder="Required Number"
                 required
+                type="number"
+                value={value4}
               />
             ),
             key: 'INPUT_4',
           },
           {
             formInput: (
-              <FormInput
-                inputProps={{
-                  onChange: (e: any): void => {
-                    setValue5(e.target.value);
-                  },
-                  placeholder: 'Input 5',
-                  type: 'text',
-                  value: value5,
+              <TextField
+                label="Input 5"
+                onChange={(e: any): void => {
+                  setValue5(e.target.value);
                 }}
-                labelProps={{
-                  children: 'Input 5',
-                }}
-                required
+                placeholder="Optional Text"
+                type="text"
+                value={value5}
               />
             ),
             key: 'INPUT_5',
