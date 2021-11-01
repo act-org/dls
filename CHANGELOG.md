@@ -2,6 +2,14 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.7.0] - Nov 01, 2021
+
+* Updated the `ACT_ET` theme to produce cleaner text inputs and dropdowns
+when using Material UI's
+[`<TextField />`](https://v4.mui.com/api/text-field/#textfield-api) component.
+* Updated the documentation for `<FormInputGroups />` to use `<TextField />`
+under the hood, since this is now the preferred way to add inputs to your app.
+
 ## [v5.6.0] - Nov 01, 2021
 
 * Added a new helper: `oxfordCommaJoin`
