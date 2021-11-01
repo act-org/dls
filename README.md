@@ -1,6 +1,6 @@
 # Design Language System (DLS)
 
-[![Build Status](https://travis-ci.com/act-org/dls.svg)](https://travis-ci.com/act-org/dls)
+[![Build Status](https://app.travis-ci.com/act-org/dls.svg?branch=master)](https://app.travis-ci.com/github/act-org/dls)
 
 The Design Language System for ACT front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
