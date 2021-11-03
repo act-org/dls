@@ -2,6 +2,11 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.8.0] - Nov 03, 2021
+
+* Added a new helper: `getErrorMessage`
+* Added new action for `AlertContext`: `addError`.
+
 ## [v5.7.0] - Nov 01, 2021
 
 * Updated the `ACT_ET` theme to produce cleaner text inputs and dropdowns

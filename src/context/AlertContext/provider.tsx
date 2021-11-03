@@ -18,6 +18,8 @@ import {
   WithSnackbarProps,
 } from 'notistack';
 
+import getErrorMessage from '~/helpers/getErrorMessage';
+import { ServerError } from '~/types';
 import SnackbarAlert from '~/components/SnackbarAlert';
 
 import AlertContext from '.';
@@ -60,6 +62,15 @@ class Provider extends React.Component<Props> {
     });
   }
 
+  async _addError(error: Error | ServerError | unknown): Promise<void> {
+    await this._addAlert({
+      message: getErrorMessage(error),
+      options: {
+        variant: 'error',
+      },
+    });
+  }
+
   render(): React.ReactNode {
     const { children } = this.props;
 
@@ -68,6 +79,7 @@ class Provider extends React.Component<Props> {
         value={{
           actions: {
             addAlert: this._addAlert,
+            addError: this._addError,
           },
         }}
       >

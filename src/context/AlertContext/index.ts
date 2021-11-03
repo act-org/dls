@@ -11,6 +11,8 @@ import * as React from 'react';
 import { noop } from 'lodash';
 import { OptionsObject } from 'notistack';
 
+import { ServerError } from '~/types';
+
 export const AlertContext = React.createContext({
   actions: {
     /* eslint-disable @typescript-eslint/no-unused-vars, lodash/no-extra-args */
@@ -18,6 +20,7 @@ export const AlertContext = React.createContext({
       message: React.ReactNode;
       options?: OptionsObject;
     }): void => noop(alert),
+    addError: (error: Error | ServerError | unknown): void => noop(error),
     /* eslint-enable @typescript-eslint/no-unused-vars, lodash/no-extra-args */
   },
 });
