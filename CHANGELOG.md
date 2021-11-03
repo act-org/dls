@@ -2,6 +2,10 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.8.1] - Nov 03, 2021
+
+* Bind `this` to `addError` in `AlertContext`.
+
 ## [v5.8.0] - Nov 03, 2021
 
 * Added a new helper: `getErrorMessage`
