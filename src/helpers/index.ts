@@ -7,6 +7,7 @@
  * @prettier
  */
 
+export { default as getErrorMessage } from './getErrorMessage';
 export { default as mergeClasses } from './mergeClasses';
 export { default as oxfordCommaJoin } from './oxfordCommaJoin';
 export { default as search } from './search';

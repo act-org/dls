@@ -15,3 +15,30 @@ export type SortObject = {
   sortBy: string;
   sortDirection: SortDirection;
 };
+
+export interface GraphQLError {
+  extensions: {
+    code: string;
+    message: string;
+    stackTrace?: string;
+  };
+  locations: {
+    column: number;
+    line: number;
+  }[];
+  message: string;
+  path: string[];
+}
+
+export interface ServerError {
+  extraInfo?: undefined | string;
+  graphQLErrors?: [] | string[];
+  message: string;
+  networkError: {
+    name: string;
+    response: any;
+    result: {
+      errors: GraphQLError[];
+    };
+  };
+}
