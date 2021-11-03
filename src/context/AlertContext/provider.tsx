@@ -36,6 +36,7 @@ class Provider extends React.Component<Props> {
     super(props);
 
     this._addAlert = this._addAlert.bind(this);
+    this._addError = this._addError.bind(this);
   }
 
   async _addAlert({
