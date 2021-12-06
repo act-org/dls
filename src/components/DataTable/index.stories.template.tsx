@@ -8,6 +8,7 @@
  */
 
 import * as React from 'react';
+import { isNumber } from 'lodash';
 import moment from 'moment';
 import { Story } from '@storybook/react/types-6-0';
 
@@ -26,13 +27,20 @@ interface Item {
   fieldC: string;
 }
 
-export const Template: Story<DataTableProps<Item>> = args => {
+export const Template: Story<DataTableProps<Item>> = ({
+  limit: limitProps,
+  offset: offsetProps,
+  totalCount,
+  ...args
+}: DataTableProps<Item>) => {
+  const [limit, setLimit] = React.useState<number | undefined>(limitProps);
+  const [offset, setOffset] = React.useState<number | undefined>(offsetProps);
   const [sortObject, setSortObject] = React.useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
   });
 
-  let items: Item[] = [...Array(10)].map((_, i): any => ({
+  let items: Item[] = [...Array(totalCount || 0)].map((_, i): any => ({
     updatedAt: moment()
       .subtract(2, 'year')
       .subtract(i + 1, 'day')
@@ -43,6 +51,10 @@ export const Template: Story<DataTableProps<Item>> = args => {
     id: i + 1,
     name: `Item ${i + 1}`,
   }));
+
+  if (isNumber(limit) && isNumber(offset)) {
+    items = items.slice(offset, offset + limit);
+  }
 
   // sort items
   items = items.sort(sort<Item>(sortObject));
@@ -102,9 +114,12 @@ export const Template: Story<DataTableProps<Item>> = args => {
       ]}
       currentSortObject={sortObject}
       items={items}
-      onChangeSort={(newSortObject): void => {
-        setSortObject(newSortObject);
-      }}
+      limit={limit}
+      offset={offset}
+      onChangeLimit={setLimit}
+      onChangeOffset={setOffset}
+      onChangeSort={setSortObject}
+      totalCount={totalCount}
       {...args}
     />
   );

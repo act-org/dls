@@ -2,6 +2,22 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.9.0] - Dec 06, 2021
+
+* New component: `<TablePaginationActions />`
+  * Useful for paginating large lists and tables
+* Enhanced `<DataTable />` component with `<TablePaginationActions />` and
+optional props to support server-side pagination:
+
+    ```ts
+    limit?: number;
+    offset?: number;
+    onChangeLimit?: (limit: number) => void;
+    onChangeOffset?: (offset: number) => void;
+    rowsPerPageOptions?: number[];
+    totalCount?: number;
+    ```
+
 ## [v5.8.1] - Nov 03, 2021
 
 * Bind `this` to `addError` in `AlertContext`.
@@ -26,7 +42,7 @@ under the hood, since this is now the preferred way to add inputs to your app.
 ## [v5.5.2] - Aug 06, 2021
 
 * Added `useLocalStorage` hook, which replaces the NPM package
-`react-use-localstorage`. 
+`react-use-localstorage`.
 
 ## [v5.5.1] - July 29, 2021
 
@@ -133,8 +149,8 @@ tab.
 
 ## [v5.1.0] - June 15, 2021
 
-* Updated `<FormSelect />` component to allow options to be disabled. See:
-https://github.com/act-org/dls/pull/9
+* Updated `<FormSelect />` component to allow options to be disabled.
+([Pull Request](https://github.com/act-org/dls/pull/9))
 
 ## [v5.0.0] - June 07, 2021
 
@@ -171,7 +187,7 @@ component, courtesy of @stefansolyom.
 * The DLS has been completely rebuilt on top of the Material UI
 [theme engine](https://material-ui.com/customization/theming/).
   * There are two UI themes that are provided out of the box:
-  `ACT` and `ACT_ET`. 
+  `ACT` and `ACT_ET`.
   * Refer to the README for usage instructions and more details.
 
 ## [v3.1.0] - March 05, 2021

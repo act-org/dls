@@ -23,6 +23,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-idle-timer": "^4.6.4",
+    "react-window": "^1.8.6",
     "validator": "^13.5.2"
   },
   "description": "Design Language System (DLS) for ACT front-end projects.",
@@ -55,6 +56,7 @@
     "@types/pluralize": "0.0.29",
     "@types/react": "17.0.15",
     "@types/react-dom": "17.0.9",
+    "@types/react-window": "1.8.5",
     "@types/shelljs": "0.8.9",
     "@types/validator": "13.6.3",
     "axe-core": "4.3.2",
@@ -140,12 +142,12 @@
     "start": "start-storybook -p 6006 --no-manager-cache",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
-    "test:lint:md": "markdownlint README.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
+    "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --verbose",
     "test:outdated": "npm outdated"
   },
   "types": "index.d.ts",
-  "version": "5.8.1"
+  "version": "5.9.0"
 }

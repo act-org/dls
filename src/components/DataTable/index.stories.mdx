@@ -30,6 +30,7 @@ component from Material UI.
     name="Color: Default"
     args={{
       color: 'default',
+      totalCount: 10,
     }}
   >
     {Template.bind({})}
@@ -43,6 +44,7 @@ component from Material UI.
     name="Color: Primary"
     args={{
       color: 'primary',
+      totalCount: 10,
     }}
   >
     {Template.bind({})}
@@ -56,6 +58,7 @@ component from Material UI.
     name="Color: Secondary"
     args={{
       color: 'secondary',
+      totalCount: 10,
     }}
   >
     {Template.bind({})}
@@ -80,6 +83,7 @@ component from Material UI.
           {children}
         </Link>
       ),
+      totalCount: 10,
     }}
   >
     {Template.bind({})}
@@ -96,7 +100,23 @@ component from Material UI.
         description: 'No Items Found',
         Icon: PackageVariant,
       },
-      items: [],
+      totalCount: 0,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Paginated
+
+<Canvas>
+  <Story
+    name="Paginated"
+    args={{
+      limit: 10,
+      offset: 0,
+      rowsPerPageOptions: [10, 25, 50],
+      totalCount: 100,
     }}
   >
     {Template.bind({})}
@@ -107,7 +127,12 @@ component from Material UI.
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
+  <Story
+    name="Playground"
+    args={{
+      totalCount: 10,
+    }}
+  >
     {Template.bind({})}
   </Story>
   <ArgsTable story="Playground" />
