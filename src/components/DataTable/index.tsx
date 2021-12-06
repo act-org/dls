@@ -8,10 +8,17 @@
  */
 
 import * as React from 'react';
-import { Table, TableBody, TableHead, TableRow } from '@material-ui/core';
+import {
+  Table,
+  TableBody,
+  TableHead,
+  TablePagination,
+  TableRow,
+} from '@material-ui/core';
 
 import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
 import { SortObject } from '~/types';
+import TablePaginationActions from '~/components/TablePaginationActions';
 
 import TableCellBody from './TableCellBody';
 import TableCellHead from './TableCellHead';
@@ -32,11 +39,16 @@ export interface DataTableProps<T> {
   currentSortObject: SortObject;
   emptyStateProps?: EmptyStateProps;
   items: T[];
+  limit?: number;
+  offset?: number;
+  onChangeLimit?: (limit: number) => void;
+  onChangeOffset?: (offset: number) => void;
   onChangeSort: (sortObject: SortObject) => void;
   RowWrapper?: (
     item: T,
     children: React.ReactElement<any>,
   ) => React.ReactElement<any>;
+  totalCount?: number;
 }
 
 export const DataTable = <T,>({
@@ -45,8 +57,13 @@ export const DataTable = <T,>({
   currentSortObject,
   emptyStateProps,
   items,
+  limit,
+  offset,
+  onChangeLimit,
+  onChangeOffset,
   onChangeSort,
   RowWrapper,
+  totalCount,
 }: DataTableProps<T>): React.ReactElement<any> => {
   const classes = useStyles();
 
@@ -94,6 +111,34 @@ export const DataTable = <T,>({
 
             return children;
           })}
+
+          {items.length > 0 &&
+            isNumber(limit) &&
+            isNumber(offset) &&
+            isNumber(totalCount) && (
+              <TablePagination
+                ActionsComponent={TablePaginationActions as any}
+                classes={{
+                  root: classes.tablePaginationRoot,
+                }}
+                count={totalCount}
+                labelDisplayedRows={constant('')}
+                labelRowsPerPage="Rows Per Page:"
+                onPageChange={(_, zeroBasedPage: number): void => {
+                  if (onChangeOffset) {
+                    onChangeOffset(zeroBasedPage * limit);
+                  }
+                }}
+                onRowsPerPageChange={(e): void => {
+                  if (onChangeLimit) {
+                    onChangeLimit(Number(e.target.value));
+                  }
+                }}
+                page={round(offset / limit, 0)}
+                rowsPerPage={limit}
+                rowsPerPageOptions={[25, 50, 100]}
+              />
+            )}
         </TableBody>
       </Table>
 
@@ -108,7 +153,12 @@ export const DataTable = <T,>({
 
 DataTable.defaultProps = {
   color: 'default',
+  limit: undefined,
+  offset: undefined,
+  onChangeLimit: undefined,
+  onChangeOffset: undefined,
   RowWrapper: undefined,
+  totalCount: undefined,
 };
 
 export default DataTable;
