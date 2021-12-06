@@ -8,6 +8,7 @@
  */
 
 import * as React from 'react';
+import { constant, isNumber, round } from 'lodash';
 import {
   Table,
   TableBody,
