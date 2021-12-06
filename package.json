@@ -142,7 +142,7 @@
     "start": "start-storybook -p 6006 --no-manager-cache",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
-    "test:lint:md": "markdownlint README.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
+    "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --verbose",
