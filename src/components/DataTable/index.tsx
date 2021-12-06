@@ -45,6 +45,7 @@ export interface DataTableProps<T> {
   onChangeLimit?: (limit: number) => void;
   onChangeOffset?: (offset: number) => void;
   onChangeSort: (sortObject: SortObject) => void;
+  rowsPerPageOptions?: number[];
   RowWrapper?: (
     item: T,
     children: React.ReactElement<any>,
@@ -63,6 +64,7 @@ export const DataTable = <T,>({
   onChangeLimit,
   onChangeOffset,
   onChangeSort,
+  rowsPerPageOptions,
   RowWrapper,
   totalCount,
 }: DataTableProps<T>): React.ReactElement<any> => {
@@ -134,10 +136,14 @@ export const DataTable = <T,>({
                   if (onChangeLimit) {
                     onChangeLimit(Number(e.target.value));
                   }
+
+                  if (onChangeOffset) {
+                    onChangeOffset(0);
+                  }
                 }}
                 page={round(offset / limit, 0)}
                 rowsPerPage={limit}
-                rowsPerPageOptions={[25, 50, 100]}
+                rowsPerPageOptions={rowsPerPageOptions || [25, 50, 100]}
               />
             )}
         </TableBody>
@@ -158,6 +164,7 @@ DataTable.defaultProps = {
   offset: undefined,
   onChangeLimit: undefined,
   onChangeOffset: undefined,
+  rowsPerPageOptions: undefined,
   RowWrapper: undefined,
   totalCount: undefined,
 };
