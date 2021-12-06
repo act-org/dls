@@ -1,0 +1,114 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+
+import { Magnify } from '~/icons';
+
+import { argTypes, Template } from './index.stories.template';
+import { TablePaginationActions, TablePaginationActionsProps } from '.';
+
+<Meta
+  title="Molecules/TablePaginationActions"
+  component={TablePaginationActions}
+  argTypes={argTypes}
+/>
+
+<Description of={TablePaginationActions} />
+
+## Standard
+
+<Canvas>
+  <Story
+    name="Standard"
+    args={{
+      count: 100,
+      rowsPerPage: 25,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Disabled
+
+<Canvas>
+  <Story
+    name="Disabled"
+    args={{
+      count: 100,
+      disabled: true,
+      rowsPerPage: 25,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Custom Noun
+
+<Canvas>
+  <Story
+    name="Custom Noun"
+    args={{
+      count: 100,
+      noun: 'Thing',
+      rowsPerPage: 25,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Custom Tooltip Placement
+
+<Canvas>
+  <Story
+    name="Custom Tooltip Placement"
+    args={{
+      count: 100,
+      rowsPerPage: 25,
+      tooltipPlacement: 'top',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Variant: Inverted
+
+<Canvas>
+  <Story
+    name="Variant: Inverted"
+    args={{
+      count: 100,
+      rowsPerPage: 25,
+      variant: 'inverted',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story
+    name="Playground"
+    args={{
+      count: 100,
+      rowsPerPage: 25,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>
