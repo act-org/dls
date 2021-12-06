@@ -32,7 +32,7 @@ export const Template: Story<DataTableProps<Item>> = ({
   offset: offsetProps,
   totalCount,
   ...args
-}) => {
+}: DataTableProps<Item>) => {
   const [limit, setLimit] = React.useState<number | undefined>(limitProps);
   const [offset, setOffset] = React.useState<number | undefined>(offsetProps);
   const [sortObject, setSortObject] = React.useState<SortObject>({
