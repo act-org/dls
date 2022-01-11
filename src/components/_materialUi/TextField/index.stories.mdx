@@ -19,47 +19,44 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Value
+
+<Canvas>
   <Story
-    name="Default"
+    name="With Value"
     args={{
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
+      value: 'Some Value',
     }}
   >
     {Template.bind({})}
   </Story>
 </Canvas>
 
-## Error
+## Color: Primary
 
 <Canvas>
   <Story
-    name="Error"
+    name="Color: Primary"
     args={{
-      error: true,
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
+      color: 'primary',
     }}
   >
     {Template.bind({})}
   </Story>
 </Canvas>
 
-## Helper Text
+## Color: Secondary
 
 <Canvas>
   <Story
-    name="Helper Text"
+    name="Color: Secondary"
     args={{
-      helperText: 'Helper Text Here',
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
+      color: 'secondary',
     }}
   >
     {Template.bind({})}
@@ -73,42 +70,9 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     name="Disabled"
     args={{
       disabled: true,
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
     }}
   >
     {Template.bind({})}
-  </Story>
-</Canvas>
-
-## Select
-
-<Canvas>
-  <Story
-    name="Select"
-    args={{
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-    }}
-  >
-    {SelectTemplate.bind({})}
-  </Story>
-</Canvas>
-
-## Select Disabled
-
-<Canvas>
-  <Story
-    name="Select Disabled"
-    args={{
-      disabled: true,
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-    }}
-  >
-    {SelectTemplate.bind({})}
   </Story>
 </Canvas>
 
@@ -124,8 +88,6 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
       fullWidth: false,
       helperText: '',
       label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
       value: 'Field Value',
     }}
   >

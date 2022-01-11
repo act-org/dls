@@ -24,6 +24,8 @@ export const Template: Story<TextFieldProps> = ({
       onChange={(e: any): void => {
         setTextValue(e.target.value);
       }}
+      placeholder="Placeholder"
+      type="text"
       value={textValue}
       {...props}
     />

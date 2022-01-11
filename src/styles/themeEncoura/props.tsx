@@ -34,6 +34,7 @@ const PROPS: ComponentsProps = {
     elevation: 3,
   },
   MuiTextField: {
+    color: 'secondary',
     InputLabelProps: {
       shrink: true,
     },

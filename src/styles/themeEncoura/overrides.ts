@@ -210,7 +210,6 @@ const OVERRIDES: Overrides = {
       width: 32,
     },
   },
-  /*
   MuiInputLabel: {
     formControl: {
       position: 'relative',
@@ -229,11 +228,10 @@ const OVERRIDES: Overrides = {
     root: {
       color: COLORS.BLACK,
       fontSize: 14,
-      fontWeight: 600,
+      fontWeight: 700,
       marginBottom: DIMS.SPACING,
     },
   },
-  */
   MuiLink: {
     root: {
       cursor: 'pointer',
