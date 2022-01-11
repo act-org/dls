@@ -22,10 +22,119 @@ import { argTypes, Template } from './index.stories.template';
 
 <Description of={Drawer} />
 
-## Primary
+## Anchor: Left
 
 <Canvas>
-  <Story name="Primary" args={{}}>
+  <Story
+    name="Anchor: Left"
+    args={{
+      anchor: 'left',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Anchor: Right
+
+<Canvas>
+  <Story
+    name="Anchor: Right"
+    args={{
+      anchor: 'right',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Anchor: Top
+
+<Canvas>
+  <Story
+    name="Anchor: Top"
+    args={{
+      anchor: 'top',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Anchor: Bottom
+
+<Canvas>
+  <Story
+    name="Anchor: Bottom"
+    args={{
+      anchor: 'bottom',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Elevation: None
+
+<Canvas>
+  <Story
+    name="Elevation: None"
+    args={{
+      elevation: 0,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Elevation: Custom
+
+<Canvas>
+  <Story
+    name="Elevation: Custom"
+    args={{
+      elevation: 24,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Variant: Permanent
+
+<Canvas>
+  <Story
+    name="Variant: Permanent"
+    args={{
+      variant: 'permanent',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Variant: Persistent
+
+<Canvas>
+  <Story
+    name="Variant: Persistent"
+    args={{
+      variant: 'persistent',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Variant: Temporary
+
+<Canvas>
+  <Story
+    name="Variant: Temporary"
+    args={{
+      variant: 'temporary',
+    }}
+  >
     {Template.bind({})}
   </Story>
 </Canvas>

@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Button, Drawer, DrawerProps } from '@material-ui/core';
+import { Button, Drawer, DrawerProps, Typography } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
@@ -21,10 +21,10 @@ export const Template: Story<DrawerProps> = args => {
       <Button
         color="primary"
         onClick={(): void => {
-          setOpen(true);
+          setOpen(!open);
         }}
       >
-        Open Drawer
+        {open ? 'Close' : 'Open'} Drawer
       </Button>
 
       <Drawer
@@ -34,9 +34,23 @@ export const Template: Story<DrawerProps> = args => {
         }}
         open={open}
       >
-        Drawer Content
+        <div
+          style={{
+            padding: 50,
+          }}
+        >
+          <Typography variant="body1">Drawer Content</Typography>
+        </div>
       </Drawer>
     </>
   );
 };
-export const argTypes = Playground({}, Drawer);
+
+export const argTypes = Playground(
+  {
+    anchor: {},
+    elevation: {},
+    variant: {},
+  },
+  Drawer,
+);
