@@ -260,8 +260,8 @@ const OVERRIDES: Overrides = {
       width: 17,
     },
     root: {
-      height: 22,
-      width: 22,
+      height: 20,
+      width: 20,
     },
   },
   MuiSwitch: {

@@ -18,16 +18,18 @@ interface StoryProps extends LinkProps {
 }
 
 export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
-  <Link {...args}>{text}</Link>
+  <Link href="https://www.act.org" target="_blank" {...args}>
+    Click Me
+  </Link>
 );
 
 export const argTypes: Record<string, unknown> = Playground(
   {
-    text: {},
-    variant: {},
     color: {},
     target: {},
+    text: {},
     underline: {},
+    variant: {},
   },
   Link,
 );
