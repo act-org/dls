@@ -12,7 +12,7 @@ import { createTheme, ThemeOptions } from '@material-ui/core/styles';
 
 import DIMS from './dims';
 // import OVERRIDES from './overrides';
-// import PALETTE from './palette';
+import PALETTE from './palette';
 // import PROPS from './props';
 import SHAPE from './shape';
 // import TYPOGRAPHY from './typography';
@@ -20,7 +20,7 @@ import SHAPE from './shape';
 export const THEME_ENCOURA: ThemeOptions = {
   customDims: DIMS.CUSTOM,
   // overrides: OVERRIDES,
-  // palette: PALETTE,
+  palette: PALETTE,
   // props: PROPS,
   shape: SHAPE,
   spacing: DIMS.SPACING,
