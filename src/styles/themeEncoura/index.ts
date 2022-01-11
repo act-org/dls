@@ -10,7 +10,7 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import { createTheme, ThemeOptions } from '@material-ui/core/styles';
 
-// import DIMS from './dims';
+import DIMS from './dims';
 // import OVERRIDES from './overrides';
 // import PALETTE from './palette';
 // import PROPS from './props';
@@ -23,7 +23,7 @@ export const THEME_ENCOURA: ThemeOptions = {
   // palette: PALETTE,
   // props: PROPS,
   shape: SHAPE,
-  // spacing: DIMS.SPACING,
+  spacing: DIMS.SPACING,
   // typography: TYPOGRAPHY,
 } as any;
 
