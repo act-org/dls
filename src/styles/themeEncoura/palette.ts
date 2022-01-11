@@ -54,8 +54,8 @@ const PALETTE: PaletteOptions = {
   },
   secondary: {
     contrastText: COLORS.WHITE,
-    dark: COLORS.GREY_800,
-    light: COLORS.GREY_500,
+    dark: COLORS.SECONDARY_DARK,
+    light: COLORS.SECONDARY_LIGHT,
     main: COLORS.SECONDARY,
   },
   success: {
