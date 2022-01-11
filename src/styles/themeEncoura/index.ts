@@ -18,7 +18,7 @@ import SHAPE from './shape';
 // import TYPOGRAPHY from './typography';
 
 export const THEME_ENCOURA: ThemeOptions = {
-  // customDims: DIMS.CUSTOM,
+  customDims: DIMS.CUSTOM,
   // overrides: OVERRIDES,
   // palette: PALETTE,
   // props: PROPS,
