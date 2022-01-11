@@ -13,11 +13,7 @@ import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
-interface StoryProps extends LinkProps {
-  text: string;
-}
-
-export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
+export const Template: Story<LinkProps> = (args: LinkProps) => (
   <Link href="https://www.act.org" target="_blank" {...args}>
     Click Me
   </Link>

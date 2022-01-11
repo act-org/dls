@@ -27,6 +27,9 @@ const PROPS: ComponentsProps = {
     },
     disableSelectionOnClick: true,
   },
+  MuiOutlinedInput: {
+    color: 'secondary',
+  },
   MuiPaper: {
     elevation: 3,
   },

@@ -271,6 +271,12 @@ const OVERRIDES: Overrides = {
       },
     },
     root: {
+      '& .MuiOutlinedInput-inputAdornedEnd': {
+        paddingRight: DIMS.SPACING,
+      },
+      '& .MuiOutlinedInput-inputAdornedStart': {
+        paddingLeft: DIMS.SPACING,
+      },
       backgroundColor: COLORS.WHITE,
       fontSize: 14,
     },

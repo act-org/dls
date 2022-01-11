@@ -233,6 +233,7 @@ const OVERRIDES: Overrides = {
       marginBottom: DIMS.SPACING,
     },
   },
+  */
   MuiLink: {
     root: {
       cursor: 'pointer',
@@ -245,11 +246,16 @@ const OVERRIDES: Overrides = {
       },
     },
     root: {
+      '& .MuiOutlinedInput-inputAdornedEnd': {
+        paddingRight: DIMS.SPACING,
+      },
+      '& .MuiOutlinedInput-inputAdornedStart': {
+        paddingLeft: DIMS.SPACING,
+      },
       backgroundColor: COLORS.WHITE,
       fontSize: 14,
     },
   },
-  */
   MuiSvgIcon: {
     fontSizeLarge: {
       height: 32,
