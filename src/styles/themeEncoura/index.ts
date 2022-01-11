@@ -15,7 +15,7 @@ import DIMS from './dims';
 import PALETTE from './palette';
 // import PROPS from './props';
 import SHAPE from './shape';
-// import TYPOGRAPHY from './typography';
+import TYPOGRAPHY from './typography';
 
 export const THEME_ENCOURA: ThemeOptions = {
   customDims: DIMS.CUSTOM,
@@ -24,7 +24,7 @@ export const THEME_ENCOURA: ThemeOptions = {
   // props: PROPS,
   shape: SHAPE,
   spacing: DIMS.SPACING,
-  // typography: TYPOGRAPHY,
+  typography: TYPOGRAPHY,
 } as any;
 
 export default createTheme(THEME_ENCOURA);
