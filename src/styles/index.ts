@@ -9,3 +9,4 @@
 
 export { default as THEME_ACT } from './themeAct';
 export { default as THEME_ACT_ET } from './themeActEt';
+export { default as THEME_ENCOURA } from './themeEncoura';

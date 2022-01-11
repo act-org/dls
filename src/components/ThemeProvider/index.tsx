@@ -18,6 +18,7 @@ import {
 
 import { THEME_ACT } from '~/styles/themeAct';
 import { THEME_ACT_ET } from '~/styles/themeActEt';
+import { THEME_ENCOURA } from '~/styles/themeEncoura';
 
 /**
  * # Theme configuration.
@@ -29,7 +30,7 @@ import { THEME_ACT_ET } from '~/styles/themeActEt';
  */
 
 export interface ThemeProviderProps extends MuiThemeProviderProps {
-  theme: 'ACT' | 'ACT_ET' | Theme;
+  theme: 'ACT' | 'ACT_ET' | 'ENCOURA' | Theme;
   locale?:
     | 'azAZ'
     | 'bgBG'
@@ -88,6 +89,12 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
     case 'ACT_ET':
       themeImpl = createTheme(
         THEME_ACT_ET,
+        locale ? locales[locale] : locales.enUS,
+      );
+      break;
+    case 'ENCOURA':
+      themeImpl = createTheme(
+        THEME_ENCOURA,
         locale ? locales[locale] : locales.enUS,
       );
       break;

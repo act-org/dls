@@ -96,13 +96,41 @@ The `ACT` and `ACT_ET` themes assume that the
 the browser. Therefore, it is recommended that you include the following font
 reference in the `head` of your React app:
 
-```jsx
-...
+```html
 <link
   href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
   rel="stylesheet"
 />
-...
+```
+
+#### Museo
+
+The `ENCOURA` theme assumes that the
+[Museo](https://github.com/act-org/dls/tree/master/src/public/fonts/Museo) font
+is available in the browser. Therefore, it is recommended that you include the
+following font reference in the `head` of your React app:
+
+```html
+<style type="text/css">
+  @font-face {
+    font-family: 'Museo';
+    src: url('/fonts/Museo/Museo300.otf');
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Museo';
+    src: url('/fonts/Museo/Museo500.otf');
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Museo';
+    src: url('/fonts/Museo/Museo700.otf');
+    font-style: normal;
+    font-weight: 700;
+  }
+</style>
 ```
 
 ### CSS Baseline
