@@ -16,7 +16,7 @@ const PALETTE: PaletteOptions = {
     activatedOpacity: 0.12,
     active: 'rgba(0, 0, 0, 0.54)',
     disabled: 'rgba(0, 0, 0, 0.26)',
-    disabledBackground: 'rgba(0, 0, 0, 0.12)',
+    disabledBackground: '#C1C1C1',
     disabledOpacity: 0.38,
     focus: 'rgba(0, 0, 0, 0.12)',
     focusOpacity: 0.12,

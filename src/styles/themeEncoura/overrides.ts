@@ -36,48 +36,21 @@ const OVERRIDES: Overrides = {
   },
   MuiButton: {
     contained: {
-      borderRadius: 18,
-    },
-    outlined: {
-      '&:hover': {
-        borderWidth: 2,
-      },
-      borderRadius: 18,
-      borderStyle: 'solid',
-      borderWidth: 2,
-    },
-    outlinedPrimary: {
-      '&:active': {
-        backgroundColor: COLORS.PRIMARY_DARK,
-        borderColor: COLORS.PRIMARY_DARK,
+      '&:disabled': {
         color: COLORS.WHITE,
       },
-      '&:hover': {
-        borderWidth: 2,
-      },
-      borderColor: COLORS.PRIMARY,
-      borderStyle: 'solid',
-      borderWidth: 2,
-    },
-    outlinedSizeLarge: {
-      borderRadius: 24,
     },
     root: {
-      fontSize: 14,
+      fontSize: 12,
       height: 36,
     },
     sizeLarge: {
-      fontSize: 18,
-      height: 40,
+      fontSize: 14,
+      height: 36,
     },
     sizeSmall: {
       fontSize: 12,
-      height: 32,
-    },
-    textPrimary: {
-      '&:active': {
-        color: COLORS.PRIMARY_DARK,
-      },
+      height: 30,
     },
   },
   MuiDataGrid: {
@@ -237,6 +210,7 @@ const OVERRIDES: Overrides = {
       width: 32,
     },
   },
+  /*
   MuiInputLabel: {
     formControl: {
       position: 'relative',
@@ -275,6 +249,7 @@ const OVERRIDES: Overrides = {
       fontSize: 14,
     },
   },
+  */
   MuiSvgIcon: {
     fontSizeLarge: {
       height: 32,

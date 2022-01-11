@@ -8,12 +8,35 @@
  */
 
 import * as React from 'react';
-import { Drawer, DrawerProps } from '@material-ui/core';
+import { Button, Drawer, DrawerProps } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
-export const Template: Story<DrawerProps> = args => (
-  <Drawer {...args}>some text</Drawer>
-);
+export const Template: Story<DrawerProps> = args => {
+  const [open, setOpen] = React.useState(false);
+
+  return (
+    <>
+      <Button
+        color="primary"
+        onClick={(): void => {
+          setOpen(true);
+        }}
+      >
+        Open Drawer
+      </Button>
+
+      <Drawer
+        {...args}
+        onClose={(): void => {
+          setOpen(false);
+        }}
+        open={open}
+      >
+        Drawer Content
+      </Drawer>
+    </>
+  );
+};
 export const argTypes = Playground({}, Drawer);
