@@ -22,7 +22,7 @@ const TYPOGRAPHY: TypographyOptions = {
   body2: {
     color: COLORS.TEXT_SECONDARY,
     fontSize: 12,
-    fontStyle: 'italic',
+    // fontStyle: 'italic',
     fontWeight: 300,
     letterSpacing: 0,
     lineHeight: 14 / 12,
