@@ -8,14 +8,14 @@
  */
 
 import * as React from 'react';
-import { Link, LinkProps } from '@material-ui/core';
+import { Link, LinkProps, Typography } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
 export const Template: Story<LinkProps> = (args: LinkProps) => (
   <Link href="https://www.act.org" target="_blank" {...args}>
-    Click Me
+    <Typography>Click Me</Typography>
   </Link>
 );
 
