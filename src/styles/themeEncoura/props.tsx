@@ -9,6 +9,7 @@
 
 import { ComponentsProps } from '@material-ui/core/styles/props';
 
+import ChevronDown from '~/icons/ChevronDown';
 import FilterVariant from '~/icons/FilterVariant';
 
 const PROPS: ComponentsProps = {
@@ -32,6 +33,10 @@ const PROPS: ComponentsProps = {
   },
   MuiPaper: {
     elevation: 3,
+  },
+  MuiSelect: {
+    IconComponent: ChevronDown,
+    variant: 'outlined',
   },
   MuiTextField: {
     color: 'secondary',

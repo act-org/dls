@@ -8,6 +8,7 @@
  */
 
 import * as React from 'react';
+import { get } from 'lodash';
 import { MenuItem, TextField, TextFieldProps } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
@@ -32,10 +33,14 @@ export const Template: Story<TextFieldProps> = ({
   );
 };
 
+const values = ['One', 'Two', 'Three', 'Four', 'Five'];
+
 export const SelectTemplate: Story<TextFieldProps> = (
   props: TextFieldProps,
 ) => {
-  const [value, setValue] = React.useState(1);
+  const [value, setValue] = React.useState<string | string[]>(
+    get(props, 'SelectProps.multiple') ? ['One'] : 'One',
+  );
 
   return (
     <TextField
@@ -46,10 +51,9 @@ export const SelectTemplate: Story<TextFieldProps> = (
       value={value}
       {...props}
     >
-      {Array(...Array(10)).map((_, i): any => (
-        // eslint-disable-next-line react/no-array-index-key
-        <MenuItem key={i} value={i}>
-          {i + 1}
+      {values.map((v): any => (
+        <MenuItem key={v} value={v}>
+          {v}
         </MenuItem>
       ))}
     </TextField>

@@ -272,6 +272,129 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
   </Story>
 </Canvas>
 
+## Type: Text
+
+<Canvas>
+  <Story
+    name="Type: Text"
+    args={{
+      type: 'text',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Number
+
+<Canvas>
+  <Story
+    name="Type: Number"
+    args={{
+      type: 'number',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Password
+
+<Canvas>
+  <Story
+    name="Type: Password"
+    args={{
+      type: 'password',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Email
+
+<Canvas>
+  <Story
+    name="Type: Email"
+    args={{
+      type: 'email',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Select
+
+<Canvas>
+  <Story
+    name="Select"
+    args={{
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: Primary
+
+<Canvas>
+  <Story
+    name="Select: Primary"
+    args={{
+      color: 'primary',
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: Secondary
+
+<Canvas>
+  <Story
+    name="Select: Secondary"
+    args={{
+      color: 'secondary',
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: With Label
+
+<Canvas>
+  <Story
+    name="Select: With Label"
+    args={{
+      label: 'Label Here',
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: Multiple
+
+<Canvas>
+  <Story
+    name="Select: Multiple"
+    args={{
+      select: true,
+      SelectProps: {
+        multiple: true,
+      },
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
 ## Playground
 
 <Canvas isColumn>

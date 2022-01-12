@@ -32,6 +32,9 @@ const PROPS: ComponentsProps = {
   MuiPaper: {
     elevation: 3,
   },
+  MuiSelect: {
+    variant: 'outlined',
+  },
   MuiTextField: {
     InputLabelProps: {
       shrink: true,
