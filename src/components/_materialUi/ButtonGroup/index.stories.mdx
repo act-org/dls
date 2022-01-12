@@ -1,0 +1,75 @@
+<!-- @prettier -->
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+import { ButtonGroup } from '@material-ui/core';
+
+import Plus from '~/icons/Plus';
+import PlusCircleOutline from '~/icons/PlusCircleOutline';
+
+import { argTypes, Template } from './index.stories.template';
+
+<Meta
+  argTypes={argTypes}
+  component={ButtonGroup}
+  title="Material UI/ButtonGroup"
+/>
+
+<Description of={ButtonGroup} />
+
+## Default
+
+<Canvas>
+  <Story args={{}} name="Default">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Color: Primary
+
+<Canvas>
+  <Story args={{ color: 'primary' }} name="Color: Primary">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Color: Secondary
+
+<Canvas>
+  <Story args={{ color: 'secondary' }} name="Color: Secondary">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story args={{ disabled: true }} name="Disabled">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Full Width
+
+<Canvas>
+  <Story args={{ fullWidth: true }} name="Full Width">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story args={{}} name="Playground">
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

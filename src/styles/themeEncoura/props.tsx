@@ -21,6 +21,9 @@ const PROPS: ComponentsProps = {
     disableElevation: true,
     variant: 'contained' as any,
   },
+  MuiButtonGroup: {
+    disableElevation: true,
+  },
   MuiDataGrid: {
     components: {
       ColumnFilteredIcon: FilterVariant,

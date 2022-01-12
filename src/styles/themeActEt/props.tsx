@@ -20,6 +20,9 @@ const PROPS: ComponentsProps = {
   MuiButton: {
     variant: 'outlined' as any,
   },
+  MuiButtonGroup: {
+    disableElevation: true,
+  },
   MuiDataGrid: {
     components: {
       ColumnFilteredIcon: FilterVariant,
