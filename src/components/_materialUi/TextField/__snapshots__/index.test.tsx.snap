@@ -67,3 +67,43 @@ exports[`TextField ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`TextField ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled"
+      data-shrink="true"
+      for="test-text-field"
+      id="test-text-field-label"
+    >
+      TextField Test Label
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiOutlinedInput-colorSecondary MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        id="test-text-field"
+        type="text"
+        value="test"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="PrivateNotchedOutline-root-5 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="PrivateNotchedOutline-legendLabelled-7"
+        >
+          <span>
+            TextField Test Label
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;

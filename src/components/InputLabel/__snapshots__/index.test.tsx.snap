@@ -45,3 +45,26 @@ exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
   </label>
 </div>
 `;
+
+exports[`InputLabel ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <label
+    class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-animated"
+  >
+    <div
+      class="label-split"
+    >
+      <span
+        class="label-help"
+      >
+        InputLabel
+      </span>
+      <span
+        class="required"
+      >
+        Required
+      </span>
+    </div>
+  </label>
+</div>
+`;

@@ -67,3 +67,37 @@ exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`FormInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      data-shrink="true"
+    >
+      <div
+        class="label-split"
+      >
+        <span
+          class="label-help"
+        >
+          Label
+        </span>
+      </div>
+    </label>
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiInput-input"
+        placeholder="Placeholder"
+        type="text"
+        value="test"
+      />
+    </div>
+  </div>
+</div>
+`;

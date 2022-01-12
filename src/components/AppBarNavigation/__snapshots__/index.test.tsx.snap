@@ -103,3 +103,55 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
   </header>
 </div>
 `;
+
+exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root makeStyles-appBarRoot-21 makeStyles-appBarRoot-23 MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+  >
+    <a
+      class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-26 MuiTypography-colorPrimary"
+      to="https://act-et.org"
+    >
+      <img
+        alt="ACT"
+        aria-label="ACT"
+        class="makeStyles-logoImgWrapped-25"
+        src="https://i.imgur.com/P0gtzO0.png"
+      />
+    </a>
+    <div
+      class="MuiGrid-root MuiGrid-container makeStyles-navContainer-22 MuiGrid-spacing-xs-4"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-27 MuiTypography-colorPrimary"
+          to="#"
+        >
+          <p
+            class="MuiTypography-root makeStyles-navTypography-28 makeStyles-navTypography-29 MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            Home
+          </p>
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-27 MuiTypography-colorPrimary"
+          to="#"
+        >
+          <p
+            class="MuiTypography-root makeStyles-navTypography-28 makeStyles-navTypography-30 MuiTypography-body1 MuiTypography-colorPrimary"
+          >
+            Other Page
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;

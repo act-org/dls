@@ -15,3 +15,11 @@ exports[`AppBar ACT_ET theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`AppBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  />
+</div>
+`;

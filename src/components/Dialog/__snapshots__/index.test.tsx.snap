@@ -11,3 +11,9 @@ exports[`Dialog ACT_ET theme matches the snapshot 1`] = `
   aria-hidden="true"
 />
 `;
+
+exports[`Dialog ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

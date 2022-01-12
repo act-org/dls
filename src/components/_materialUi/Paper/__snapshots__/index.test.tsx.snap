@@ -19,3 +19,13 @@ exports[`Paper ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`Paper ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+  >
+    Paper
+  </div>
+</div>
+`;

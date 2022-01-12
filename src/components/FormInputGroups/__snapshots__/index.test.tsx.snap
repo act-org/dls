@@ -239,3 +239,123 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-7 MuiGrid-spacing-xs-4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-8"
+    >
+      <div
+        class="MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-9 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          required=""
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            placeholder="Input 1"
+            required=""
+            type="text"
+            value="value1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-8"
+    >
+      <div
+        class="MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-9 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          required=""
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            placeholder="Input 2"
+            required=""
+            type="password"
+            value="value2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-7 MuiGrid-spacing-xs-4"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-8"
+    >
+      <div
+        class="MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-9 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input"
+            placeholder="Input 3"
+            type="text"
+            value="value3"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

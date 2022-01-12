@@ -27,3 +27,17 @@ exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`DialogTitle ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogTitle-root"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Hey
+    </h2>
+  </div>
+</div>
+`;

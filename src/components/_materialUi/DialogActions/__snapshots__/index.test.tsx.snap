@@ -45,3 +45,26 @@ exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`DialogActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Close
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

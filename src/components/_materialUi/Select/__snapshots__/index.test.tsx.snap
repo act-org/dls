@@ -50,11 +50,11 @@ exports[`Select ACT theme matches the snapshot 1`] = `
 exports[`Select ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiInput-root MuiInput-underline"
+    class="MuiInputBase-root MuiOutlinedInput-root"
   >
     <div
       aria-haspopup="listbox"
-      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -68,7 +68,7 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
       focusable="false"
       viewBox="0 0 24 24"
     >
@@ -76,6 +76,67 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
         d="M7 10l5 5 5-5z"
       />
     </svg>
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-5 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-6"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Select ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root"
+  >
+    <div
+      aria-haspopup="listbox"
+      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+      role="button"
+      tabindex="0"
+    >
+      One
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput"
+      tabindex="-1"
+      value="ONE"
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="PrivateNotchedOutline-root-9 MuiOutlinedInput-notchedOutline"
+      style="padding-left: 8px;"
+    >
+      <legend
+        class="PrivateNotchedOutline-legend-10"
+        style="width: 0.01px;"
+      >
+        <span>
+          ​
+        </span>
+      </legend>
+    </fieldset>
   </div>
 </div>
 `;

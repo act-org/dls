@@ -46,7 +46,6 @@ const TYPOGRAPHY: TypographyOptions = {
   },
   fontFamily: ['Museo', 'Helvetica', 'sans-serif'].join(','),
   fontSize: 18,
-  fontStyle: 'normal',
   fontWeightBold: 700,
   fontWeightLight: 300,
   fontWeightMedium: 500,
