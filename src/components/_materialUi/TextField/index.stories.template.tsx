@@ -18,11 +18,11 @@ export const Template: Story<TextFieldProps> = ({
   value,
   ...props
 }: TextFieldProps) => {
-  const [textValue, setTextValue] = React.useState(value as string);
+  const [textValue, setTextValue] = React.useState(String(value || ''));
 
   return (
     <TextField
-      onChange={(e: any): void => {
+      onChange={(e): void => {
         setTextValue(e.target.value);
       }}
       placeholder="Placeholder"
@@ -44,18 +44,20 @@ export const SelectTemplate: Story<TextFieldProps> = (
 
   return (
     <TextField
-      onChange={(e: any): void => {
+      onChange={(e): void => {
         setValue(e.target.value);
       }}
       select
       value={value}
       {...props}
     >
-      {values.map((v): any => (
-        <MenuItem key={v} value={v}>
-          {v}
-        </MenuItem>
-      ))}
+      {values.map(
+        (v): React.ReactElement<unknown> => (
+          <MenuItem key={v} value={v}>
+            {v}
+          </MenuItem>
+        ),
+      )}
     </TextField>
   );
 };
