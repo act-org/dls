@@ -18,7 +18,7 @@ import {
 
 import { THEME_ACT } from '~/styles/themeAct';
 import { THEME_ACT_ET } from '~/styles/themeActEt';
-import { THEME_ENCOURA } from '~/styles/themeEncoura';
+import { THEME_ENCOURA_DATALAB } from '~/styles/themeEncouraDatalab';
 
 /**
  * # Theme configuration.
@@ -30,7 +30,7 @@ import { THEME_ENCOURA } from '~/styles/themeEncoura';
  */
 
 export interface ThemeProviderProps extends MuiThemeProviderProps {
-  theme: 'ACT' | 'ACT_ET' | 'ENCOURA' | Theme;
+  theme: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme;
   locale?:
     | 'azAZ'
     | 'bgBG'
@@ -92,9 +92,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
         locale ? locales[locale] : locales.enUS,
       );
       break;
-    case 'ENCOURA':
+    case 'ENCOURA_DATALAB':
       themeImpl = createTheme(
-        THEME_ENCOURA,
+        THEME_ENCOURA_DATALAB,
         locale ? locales[locale] : locales.enUS,
       );
       break;

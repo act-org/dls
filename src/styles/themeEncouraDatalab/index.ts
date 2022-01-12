@@ -17,7 +17,7 @@ import PROPS from './props';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
-export const THEME_ENCOURA: ThemeOptions = {
+export const THEME_ENCOURA_DATALAB: ThemeOptions = {
   customDims: DIMS.CUSTOM,
   overrides: OVERRIDES,
   palette: PALETTE,
@@ -27,4 +27,4 @@ export const THEME_ENCOURA: ThemeOptions = {
   typography: TYPOGRAPHY,
 } as any;
 
-export default createTheme(THEME_ENCOURA);
+export default createTheme(THEME_ENCOURA_DATALAB);

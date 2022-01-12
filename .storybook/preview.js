@@ -65,7 +65,7 @@ export const globalTypes = {
     name: 'Theme',
     toolbar: {
       icon: 'paintbrush',
-      items: ['ACT', 'ACT_ET', 'ENCOURA'],
+      items: ['ACT', 'ACT_ET', 'ENCOURA_DATALAB'],
     },
   },
   language: {

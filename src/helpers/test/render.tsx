@@ -20,7 +20,7 @@ import { Theme } from '@material-ui/core';
 
 export const render = (
   Component: React.ReactElement,
-  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA' | Theme,
+  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme,
   options?: RenderOptions,
 ): RenderResult =>
   originalRender(Component, {

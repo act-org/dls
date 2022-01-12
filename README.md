@@ -25,7 +25,7 @@ Material UI, and ships with two themes out of the box:
 
 1. `"ACT"` - for ACT's "traditional" look and feel
 2. `"ACT_ET"` - for ACT's "emerging technology" look and feel
-3. `"ENCOURA"` - for Encoura's "traditional" look and feel
+3. `"ENCOURA_DATALAB"` - for Encoura's "Datalab" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -105,7 +105,7 @@ reference in the `head` of your React app:
 
 #### Museo
 
-The `ENCOURA` theme assumes that the
+The `ENCOURA_DATALAB` theme assumes that the
 [Museo](https://github.com/act-org/dls/tree/master/src/public/fonts/Museo) font
 is available in the browser. Therefore, it is recommended that you include the
 following font reference in the `head` of your React app:
@@ -114,19 +114,19 @@ following font reference in the `head` of your React app:
 <style type="text/css">
   @font-face {
     font-family: 'Museo';
-    src: url('/fonts/Museo/Museo300.otf');
+    src: url('/path/to/Museo300.otf');
     font-style: normal;
     font-weight: 300;
   }
   @font-face {
     font-family: 'Museo';
-    src: url('/fonts/Museo/Museo500.otf');
+    src: url('/path/to/Museo500.otf');
     font-style: normal;
     font-weight: 500;
   }
   @font-face {
     font-family: 'Museo';
-    src: url('/fonts/Museo/Museo700.otf');
+    src: url('/path/to/Museo700.otf');
     font-style: normal;
     font-weight: 700;
   }
