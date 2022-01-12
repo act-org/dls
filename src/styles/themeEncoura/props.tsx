@@ -41,6 +41,9 @@ const PROPS: ComponentsProps = {
     size: 'small',
     variant: 'outlined',
   },
+  MuiTooltip: {
+    arrow: true,
+  },
 };
 
 export default PROPS;

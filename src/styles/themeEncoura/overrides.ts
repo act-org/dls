@@ -304,6 +304,19 @@ const OVERRIDES: Overrides = {
       opacity: 1,
     },
   },
+  MuiTooltip: {
+    arrow: {
+      '&:before': {
+        backgroundColor: COLORS.WHITE,
+        border: `1px solid ${COLORS.TEXT_SECONDARY}`,
+      },
+    },
+    tooltip: {
+      backgroundColor: COLORS.WHITE,
+      border: `1px solid ${COLORS.TEXT_SECONDARY}`,
+      color: COLORS.TEXT_SECONDARY,
+    },
+  },
 } as Overrides;
 
 export default OVERRIDES;

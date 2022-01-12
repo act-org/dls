@@ -22,15 +22,191 @@ import { argTypes, Template } from './index.stories.template';
 
 <Description of={Tooltip} />
 
-## Primary
+## Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Interactive
 
 <Canvas>
   <Story
-    name="Primary"
+    name="Interactive"
     args={{
-      arrow: true,
-      title: 'tooltip text goes here',
+      interactive: true,
+      title: 'You can highlight this text.',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Open
+
+<Canvas>
+  <Story
+    name="Open"
+    args={{
+      open: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Top
+
+<Canvas>
+  <Story
+    name="Placement: Top"
+    args={{
+      placement: 'top',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Top Start
+
+<Canvas>
+  <Story
+    name="Placement: Top Start"
+    args={{
+      placement: 'top-start',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Top End
+
+<Canvas>
+  <Story
+    name="Placement: Top End"
+    args={{
+      placement: 'top-end',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Bottom
+
+<Canvas>
+  <Story
+    name="Placement: Bottom"
+    args={{
+      placement: 'bottom',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Bottom Start
+
+<Canvas>
+  <Story
+    name="Placement: Bottom Start"
+    args={{
+      placement: 'bottom-start',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Bottom End
+
+<Canvas>
+  <Story
+    name="Placement: Bottom End"
+    args={{
+      placement: 'bottom-end',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Left
+
+<Canvas>
+  <Story
+    name="Placement: Left"
+    args={{
+      placement: 'left',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Left Start
+
+<Canvas>
+  <Story
+    name="Placement: Left Start"
+    args={{
+      placement: 'left-start',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Left End
+
+<Canvas>
+  <Story
+    name="Placement: Left End"
+    args={{
+      placement: 'left-end',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Right
+
+<Canvas>
+  <Story
+    name="Placement: Right"
+    args={{
       placement: 'right',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Right Start
+
+<Canvas>
+  <Story
+    name="Placement: Right Start"
+    args={{
+      placement: 'right-start',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Placement: Right End
+
+<Canvas>
+  <Story
+    name="Placement: Right End"
+    args={{
+      placement: 'right-end',
     }}
   >
     {Template.bind({})}
