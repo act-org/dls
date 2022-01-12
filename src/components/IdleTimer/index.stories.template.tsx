@@ -41,7 +41,7 @@ export const Template: Story<IdleTimerProps> = ({
       timeoutMs={timeoutMs}
       {...otherProps}
     >
-      {({ remainingTimeMs }): React.ReactElement<any> => {
+      {({ remainingTimeMs }): React.ReactElement<unknown> => {
         const remainingTimeSeconds = round(remainingTimeMs / 1000, 0);
 
         return (

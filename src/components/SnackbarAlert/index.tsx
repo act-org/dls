@@ -25,7 +25,7 @@ export const SnackbarAlert: React.FC<SnackbarAlertProps> = React.forwardRef(
   (
     { id, message, variant }: SnackbarAlertProps,
     ref,
-  ): React.ReactElement<any> => {
+  ): React.ReactElement<unknown> => {
     const { closeSnackbar } = useSnackbar();
 
     const handleDismiss = React.useCallback(() => {

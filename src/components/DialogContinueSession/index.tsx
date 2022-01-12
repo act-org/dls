@@ -30,7 +30,7 @@ export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
   expiresAt,
   onContinue,
   onExpire,
-}: DialogContinueSessionProps): React.ReactElement<any> | null => {
+}: DialogContinueSessionProps): React.ReactElement<unknown> | null => {
   const [timeUntilExpiration, setTimeUntilExpiration] = React.useState<number>(
     expiresAt.getTime() - Date.now(),
   );

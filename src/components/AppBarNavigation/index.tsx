@@ -19,7 +19,7 @@ import useStyles from './styles';
 export interface AppBarNavigationProps {
   appBarHeight?: number;
   AppBarProps?: AppBarProps;
-  headerRightElement?: React.ReactElement<any>;
+  headerRightElement?: React.ReactElement<unknown>;
   RenderLogoProps: RenderLogoProps;
   navigationItems: RenderNavigationItemProps[];
 }
@@ -50,7 +50,7 @@ export const AppBarNavigation: React.FC<AppBarNavigationProps> = ({
 
       <Grid classes={{ container: classes.navContainer }} container spacing={4}>
         {navigationItems.map(
-          (n: RenderNavigationItemProps): React.ReactElement<any> => (
+          (n: RenderNavigationItemProps): React.ReactElement<unknown> => (
             <Grid item key={n.title}>
               <RenderNavigationItem {...n} />
             </Grid>

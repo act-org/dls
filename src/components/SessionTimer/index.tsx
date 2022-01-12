@@ -20,7 +20,7 @@ export interface SessionTimerProps {
   }: {
     remainingTimeStageOne: number;
     remainingTimeStageTwo: number;
-  }) => React.ReactElement<any> | null;
+  }) => React.ReactElement<unknown> | null;
   expiresAt: Date;
   onExpire: () => void;
   onKeepAlive: () => void;
@@ -35,7 +35,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
   onKeepAlive,
   promptWithMsRemaining,
   tokenMaxAgeMs,
-}: SessionTimerProps): React.ReactElement<any> | null => {
+}: SessionTimerProps): React.ReactElement<unknown> | null => {
   const [stageOneIsIdle, setStageOneIsIdle] = React.useState(false);
   const [tick, setTick] = React.useState(0);
 
@@ -78,7 +78,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
       {({
         remainingTimeMs: remainingTimeStageOne,
         reset,
-      }): React.ReactElement<any> | null => {
+      }): React.ReactElement<unknown> | null => {
         // The user has been idle for the entire first stage.
         if (remainingTimeStageOne === 0) {
           return (
@@ -98,7 +98,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
             >
               {({
                 remainingTimeMs: remainingTimeStageTwo,
-              }): React.ReactElement<any> | null => {
+              }): React.ReactElement<unknown> | null => {
                 // The user has been idle for the entire first and second stages.
                 if (remainingTimeStageTwo === 0) {
                   return (

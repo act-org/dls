@@ -19,7 +19,7 @@ export interface EmptyStateProps {
   description?: any;
   Icon?: React.FC<any> | React.ComponentClass<any>;
   style?: React.CSSProperties;
-  title?: string | React.ReactElement<any>;
+  title?: string | React.ReactElement<unknown>;
 }
 
 export function EmptyState({

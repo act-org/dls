@@ -48,8 +48,8 @@ export interface DataTableProps<T> {
   rowsPerPageOptions?: number[];
   RowWrapper?: (
     item: T,
-    children: React.ReactElement<any>,
-  ) => React.ReactElement<any>;
+    children: React.ReactElement<unknown>,
+  ) => React.ReactElement<unknown>;
   totalCount?: number;
 }
 
@@ -67,7 +67,7 @@ export const DataTable = <T,>({
   rowsPerPageOptions,
   RowWrapper,
   totalCount,
-}: DataTableProps<T>): React.ReactElement<any> => {
+}: DataTableProps<T>): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (
@@ -76,7 +76,7 @@ export const DataTable = <T,>({
         <TableHead>
           <TableRow>
             {columns.map(
-              (column, i): React.ReactElement<any> => (
+              (column, i): React.ReactElement<unknown> => (
                 <TableCellHead
                   color={color}
                   currentSortObject={currentSortObject}
@@ -93,12 +93,12 @@ export const DataTable = <T,>({
         </TableHead>
 
         <TableBody>
-          {items.map((item, i): React.ReactElement<any> => {
+          {items.map((item, i): React.ReactElement<unknown> => {
             /* eslint-disable react/no-array-index-key */
             const children = (
               <TableRow hover key={i}>
                 {columns.map(
-                  (column, y): React.ReactElement<any> => (
+                  (column, y): React.ReactElement<unknown> => (
                     <TableCellBody key={column.label || y} style={column.style}>
                       {column.renderValue(item)}
                     </TableCellBody>

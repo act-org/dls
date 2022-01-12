@@ -60,7 +60,7 @@ export const Template: Story<SessionTimerProps> = ({
       {({
         remainingTimeStageOne,
         remainingTimeStageTwo,
-      }): React.ReactElement<any> => {
+      }): React.ReactElement<unknown> => {
         const remainingTimeStageOneSeconds = round(
           remainingTimeStageOne / 1000,
           0,

@@ -16,12 +16,12 @@ import {
 import Component from './Component';
 
 export interface TableContainerProps extends MuiTableContainerProps {
-  component?: React.ReactElement<any>;
+  component?: React.ReactElement<unknown>;
 }
 
 const TableContainer: React.FC<TableContainerProps> = (
   props: TableContainerProps,
-): React.ReactElement<any> => (
+): React.ReactElement<unknown> => (
   <MuiTableContainer component={Component} {...props} />
 );
 

@@ -17,7 +17,7 @@ export interface IdleTimerProps {
   }: {
     remainingTimeMs: number;
     reset: () => void;
-  }) => React.ReactElement<any> | null;
+  }) => React.ReactElement<unknown> | null;
   onAction?: (event?: any) => void;
   onActive?: (event?: any) => void;
   onIdle?: (event?: any) => void;
@@ -32,7 +32,7 @@ export const IdleTimer: React.FC<IdleTimerProps> = ({
   onIdle,
   stopOnIdle,
   timeoutMs,
-}: IdleTimerProps): React.ReactElement<any> | null => {
+}: IdleTimerProps): React.ReactElement<unknown> | null => {
   const [remainingTimeMs, setRemainingTimeMs] = React.useState(timeoutMs);
 
   const { getRemainingTime, reset } = useIdleTimer({

@@ -17,7 +17,7 @@ const InputPrimary: React.FC<InputPrimaryProps> = ({
   type,
   value,
   ...otherProps
-}: InputPrimaryProps): React.ReactElement<any> => {
+}: InputPrimaryProps): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (

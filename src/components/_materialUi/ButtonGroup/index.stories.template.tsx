@@ -21,7 +21,7 @@ export const Template: Story<ButtonGroupProps> = (props: ButtonGroupProps) => {
   return (
     <ButtonGroup {...props}>
       {buttonLabels.map(
-        (buttonLabel): React.ReactElement<any> => (
+        (buttonLabel): React.ReactElement<unknown> => (
           <Button
             key={buttonLabel}
             onClick={(): void => {

@@ -16,7 +16,7 @@ export const InputLabelPrimary: React.FC<InputLabelPrimaryProps> = ({
   children,
   required,
   ...otherProps
-}: InputLabelPrimaryProps): React.ReactElement<any> => {
+}: InputLabelPrimaryProps): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (
