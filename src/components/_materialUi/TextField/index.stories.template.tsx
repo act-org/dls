@@ -35,11 +35,12 @@ export const Template: Story<TextFieldProps> = ({
 
 const values = ['One', 'Two', 'Three', 'Four', 'Five'];
 
-export const SelectTemplate: Story<TextFieldProps> = (
-  props: TextFieldProps,
-) => {
+export const SelectTemplate: Story<TextFieldProps> = ({
+  SelectProps,
+  ...props
+}: TextFieldProps) => {
   const [value, setValue] = React.useState<string | string[]>(
-    get(props, 'SelectProps.multiple') ? ['One'] : 'One',
+    SelectProps?.multiple ? ['One'] : 'One',
   );
 
   return (
@@ -48,6 +49,7 @@ export const SelectTemplate: Story<TextFieldProps> = (
         setValue(e.target.value);
       }}
       select
+      SelectProps={SelectProps}
       value={value}
       {...props}
     >
