@@ -14,11 +14,11 @@ import FilterVariant from '~/icons/FilterVariant';
 const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
-    severity: 'info' as any,
-    variant: 'standard' as any,
+    severity: 'info',
+    variant: 'standard',
   },
   MuiButton: {
-    variant: 'outlined' as any,
+    variant: 'outlined',
   },
   MuiButtonGroup: {
     disableElevation: true,

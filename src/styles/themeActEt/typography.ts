@@ -31,7 +31,7 @@ const TYPOGRAPHY: TypographyOptions = {
     fontWeight: 700,
     letterSpacing: 0,
     lineHeight: 24 / 14,
-    textTransform: 'none' as any,
+    textTransform: 'none',
   },
   caption: {
     color: COLORS.TEXT_SECONDARY,
@@ -89,7 +89,7 @@ const TYPOGRAPHY: TypographyOptions = {
     fontWeight: 500,
     letterSpacing: 0.496,
     lineHeight: 16 / 12,
-    textTransform: 'uppercase' as any,
+    textTransform: 'uppercase',
   },
   subtitle1: {
     color: COLORS.TEXT_SECONDARY,
@@ -97,7 +97,7 @@ const TYPOGRAPHY: TypographyOptions = {
     fontWeight: 500,
     letterSpacing: 0.496,
     lineHeight: 16 / 12,
-    textTransform: 'uppercase' as any,
+    textTransform: 'uppercase',
   },
   subtitle2: {
     fontSize: 14,

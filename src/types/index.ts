@@ -7,6 +7,14 @@
  * @prettier
  */
 
+import { ThemeOptions } from '@material-ui/core/styles';
+
+export type CustomThemeOptions = ThemeOptions & {
+  customDims: {
+    heights: Record<string, number>;
+  };
+};
+
 export type Size = 'default' | 'large';
 
 export type SortDirection = 'ASCENDING' | 'DESCENDING';

@@ -15,12 +15,12 @@ import FilterVariant from '~/icons/FilterVariant';
 const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
-    severity: 'info' as any,
-    variant: 'standard' as any,
+    severity: 'info',
+    variant: 'standard',
   },
   MuiButton: {
     disableElevation: true,
-    variant: 'contained' as any,
+    variant: 'contained',
   },
   MuiButtonGroup: {
     disableElevation: true,

@@ -8,7 +8,9 @@
  */
 
 /* eslint-disable @typescript-eslint/no-empty-interface */
-import { createTheme, ThemeOptions } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
+
+import { CustomThemeOptions } from '~/types';
 
 import DIMS from './dims';
 import OVERRIDES from './overrides';
@@ -17,7 +19,7 @@ import PROPS from './props';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
-export const THEME_ENCOURA_DATALAB: ThemeOptions = {
+export const THEME_ENCOURA_DATALAB: CustomThemeOptions = {
   customDims: DIMS.CUSTOM,
   overrides: OVERRIDES,
   palette: PALETTE,
@@ -25,6 +27,6 @@ export const THEME_ENCOURA_DATALAB: ThemeOptions = {
   shape: SHAPE,
   spacing: DIMS.SPACING,
   typography: TYPOGRAPHY,
-} as any;
+};
 
 export default createTheme(THEME_ENCOURA_DATALAB);
