@@ -8,7 +8,14 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { TextField, TextFieldProps } from '@material-ui/core';
+import {
+  IconButton,
+  InputAdornment,
+  TextField,
+  TextFieldProps,
+} from '@material-ui/core';
+
+import Plus from '~/icons/Plus';
 
 import { argTypes, SelectTemplate, Template } from './index.stories.template';
 
@@ -70,6 +77,195 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     name="Disabled"
     args={{
       disabled: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Start Adornment
+
+<Canvas>
+  <Story
+    name="With Start Adornment"
+    args={{
+      InputProps: {
+        startAdornment: (
+          <InputAdornment position="start">
+            <IconButton>
+              <Plus />
+            </IconButton>
+          </InputAdornment>
+        ),
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With End Adornment
+
+<Canvas>
+  <Story
+    name="With End Adornment"
+    args={{
+      InputProps: {
+        endAdornment: (
+          <InputAdornment position="end">
+            <IconButton>
+              <Plus />
+            </IconButton>
+          </InputAdornment>
+        ),
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Error
+
+<Canvas>
+  <Story
+    name="With Error"
+    args={{
+      error: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Helper Text
+
+<Canvas>
+  <Story
+    name="Helper Text"
+    args={{
+      helperText: 'Helper text goes here.',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Full Width
+
+<Canvas>
+  <Story
+    name="Full Width"
+    args={{
+      fullWidth: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Label
+
+<Canvas>
+  <Story
+    name="With Label"
+    args={{
+      label: 'Label Here',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Required
+
+<Canvas>
+  <Story
+    name="Required"
+    args={{
+      label: 'Label Here',
+      required: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: Normal
+
+<Canvas>
+  <Story
+    name="Margin: Normal"
+    args={{
+      margin: 'normal',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: Dense
+
+<Canvas>
+  <Story
+    name="Margin: Dense"
+    args={{
+      margin: 'dense',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: None
+
+<Canvas>
+  <Story
+    name="Margin: None"
+    args={{
+      margin: 'none',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Multiline
+
+<Canvas>
+  <Story
+    name="Multiline"
+    args={{
+      fullWidth: true,
+      maxRows: 5,
+      multiline: true,
+      rows: 3,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Size: Small
+
+<Canvas>
+  <Story
+    name="Size: Small"
+    args={{
+      size: 'small',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Size: Medium
+
+<Canvas>
+  <Story
+    name="Size: Medium"
+    args={{
+      size: 'medium',
     }}
   >
     {Template.bind({})}

@@ -11,6 +11,7 @@ import {
 } from '@storybook/addon-docs';
 import {
   IconButton,
+  InputAdornment,
   OutlinedInput,
   OutlinedInputProps,
 } from '@material-ui/core';
@@ -87,23 +88,6 @@ import { argTypes, Template } from './index.stories.template';
   </Story>
 </Canvas>
 
-## With End Adornment
-
-<Canvas>
-  <Story
-    name="With End Adornment"
-    args={{
-      endAdornment: (
-        <IconButton>
-          <Plus />
-        </IconButton>
-      ),
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
 ## With Start Adornment
 
 <Canvas>
@@ -111,9 +95,30 @@ import { argTypes, Template } from './index.stories.template';
     name="With Start Adornment"
     args={{
       startAdornment: (
-        <IconButton>
-          <Plus />
-        </IconButton>
+        <InputAdornment position="start">
+          <IconButton>
+            <Plus />
+          </IconButton>
+        </InputAdornment>
+      ),
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With End Adornment
+
+<Canvas>
+  <Story
+    name="With End Adornment"
+    args={{
+      endAdornment: (
+        <InputAdornment position="end">
+          <IconButton>
+            <Plus />
+          </IconButton>
+        </InputAdornment>
       ),
     }}
   >
