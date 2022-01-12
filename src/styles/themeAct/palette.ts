@@ -7,6 +7,7 @@
  * @prettier
  */
 
+import { common } from '@material-ui/core/colors';
 import { PaletteOptions } from '@material-ui/core/styles/createPalette';
 
 import COLORS from './colors';
@@ -19,13 +20,13 @@ const PALETTE: PaletteOptions = {
     main: COLORS.INFO,
   },
   primary: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.PRIMARY_DARK,
     light: COLORS.PRIMARY_LIGHT,
     main: COLORS.PRIMARY,
   },
   secondary: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.SECONDARY_DARK,
     light: COLORS.SECONDARY_LIGHT,
     main: COLORS.SECONDARY,

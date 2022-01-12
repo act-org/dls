@@ -7,6 +7,7 @@
  * @prettier
  */
 
+import { common, grey } from '@material-ui/core/colors';
 import { PaletteOptions } from '@material-ui/core/styles/createPalette';
 
 import COLORS from './colors';
@@ -27,46 +28,46 @@ const PALETTE: PaletteOptions = {
   },
   background: {
     default: COLORS.BACKGROUND,
-    paper: COLORS.WHITE,
+    paper: common.white,
   },
   common: {
-    black: COLORS.BLACK,
-    white: COLORS.WHITE,
+    black: common.black,
+    white: common.white,
   },
   contrastThreshold: 3,
   divider: 'rgba(0, 0, 0, 0.12)',
   error: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.ERROR_DARK,
     main: COLORS.ERROR,
   },
   info: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.INFO_DARK,
     light: COLORS.INFO_LIGHT,
     main: COLORS.INFO,
   },
   primary: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.PRIMARY_DARK,
     light: COLORS.PRIMARY_LIGHT,
     main: COLORS.PRIMARY,
   },
   secondary: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.SECONDARY_DARK,
     light: COLORS.SECONDARY_LIGHT,
     main: COLORS.SECONDARY,
   },
   success: {
-    contrastText: COLORS.WHITE,
+    contrastText: common.white,
     dark: COLORS.SUCCESS_DARK,
     main: COLORS.SUCCESS,
   },
   text: {
-    disabled: COLORS.GREY_400,
+    disabled: grey[400],
     hint: COLORS.TEXT_SECONDARY,
-    primary: COLORS.BLACK,
+    primary: common.black,
     secondary: COLORS.TEXT_SECONDARY,
   },
   tonalOffset: {
@@ -74,7 +75,7 @@ const PALETTE: PaletteOptions = {
     light: 0.2,
   },
   warning: {
-    contrastText: COLORS.BLACK,
+    contrastText: common.black,
     dark: COLORS.WARNING_DARK,
     main: COLORS.WARNING,
   },
