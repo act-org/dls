@@ -106,7 +106,7 @@ reference in the `head` of your React app:
 #### Museo
 
 The `ENCOURA_DATALAB` theme assumes that the
-[Museo](https://github.com/act-org/dls/tree/master/src/public/fonts/Museo) font
+[Museo](https://github.com/act-org/dls/tree/master/public/fonts/Museo) font
 is available in the browser. Therefore, it is recommended that you include the
 following font reference in the `head` of your React app:
 
