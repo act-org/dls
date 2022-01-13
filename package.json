@@ -149,5 +149,5 @@
     "test:outdated": "npm outdated"
   },
   "types": "index.d.ts",
-  "version": "5.9.0"
+  "version": "5.10.0"
 }
