@@ -13,7 +13,9 @@ import { common, grey } from '@material-ui/core/colors';
 import { configureActions } from '@storybook/addon-actions';
 import { CssBaseline } from '@material-ui/core';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs';
+
 import { ThemeProvider } from '../src/components/ThemeProvider';
+import { version } from '../package.json';
 
 addParameters({
   docs: {
@@ -47,6 +49,20 @@ export const parameters = {
     ],
   },
   layout: 'centered',
+  options: {
+    storySort: {
+      order: [
+        `DLS v${version}`,
+        'Material UI',
+        'Atoms',
+        'Molecules',
+        'Organisms',
+        'Utilities',
+        'Forms (WIP)',
+        'Deprecated',
+      ],
+    },
+  },
 };
 
 export const decorators = [
@@ -65,7 +81,7 @@ export const globalTypes = {
     name: 'Theme',
     toolbar: {
       icon: 'paintbrush',
-      items: ['ACT', 'ACT_ET'],
+      items: ['ACT', 'ACT_ET', 'ENCOURA_DATALAB'],
     },
   },
   language: {

@@ -97,7 +97,7 @@ export const AlertContextProvider = ({
   anchorOriginVertical,
   maxSnack,
   ...otherProps
-}: Props): React.ReactElement<any> => (
+}: Props): React.ReactElement<unknown> => (
   <SnackbarProvider
     anchorOrigin={{
       horizontal: anchorOriginHorizontal || 'center',

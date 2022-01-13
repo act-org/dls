@@ -12,7 +12,9 @@ import { Paper, PaperProps } from '@material-ui/core';
 
 import useStyles from './styles';
 
-const Component: React.FC = (props: PaperProps): React.ReactElement<any> => {
+const Component: React.FC = (
+  props: PaperProps,
+): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (

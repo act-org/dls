@@ -8,7 +8,14 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { TextField, TextFieldProps } from '@material-ui/core';
+import {
+  IconButton,
+  InputAdornment,
+  TextField,
+  TextFieldProps,
+} from '@material-ui/core';
+
+import Plus from '~/icons/Plus';
 
 import { argTypes, SelectTemplate, Template } from './index.stories.template';
 
@@ -19,47 +26,44 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Value
+
+<Canvas>
   <Story
-    name="Default"
+    name="With Value"
     args={{
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
+      value: 'Some Value',
     }}
   >
     {Template.bind({})}
   </Story>
 </Canvas>
 
-## Error
+## Color: Primary
 
 <Canvas>
   <Story
-    name="Error"
+    name="Color: Primary"
     args={{
-      error: true,
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
+      color: 'primary',
     }}
   >
     {Template.bind({})}
   </Story>
 </Canvas>
 
-## Helper Text
+## Color: Secondary
 
 <Canvas>
   <Story
-    name="Helper Text"
+    name="Color: Secondary"
     args={{
-      helperText: 'Helper Text Here',
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
-      value: 'Field Value',
+      color: 'secondary',
     }}
   >
     {Template.bind({})}
@@ -73,10 +77,247 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     name="Disabled"
     args={{
       disabled: true,
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Start Adornment
+
+<Canvas>
+  <Story
+    name="With Start Adornment"
+    args={{
+      InputProps: {
+        startAdornment: (
+          <InputAdornment position="start">
+            <IconButton>
+              <Plus />
+            </IconButton>
+          </InputAdornment>
+        ),
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With End Adornment
+
+<Canvas>
+  <Story
+    name="With End Adornment"
+    args={{
+      InputProps: {
+        endAdornment: (
+          <InputAdornment position="end">
+            <IconButton>
+              <Plus />
+            </IconButton>
+          </InputAdornment>
+        ),
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Error
+
+<Canvas>
+  <Story
+    name="With Error"
+    args={{
+      error: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Helper Text
+
+<Canvas>
+  <Story
+    name="Helper Text"
+    args={{
+      helperText: 'Helper text goes here.',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Full Width
+
+<Canvas>
+  <Story
+    name="Full Width"
+    args={{
+      fullWidth: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Label
+
+<Canvas>
+  <Story
+    name="With Label"
+    args={{
+      label: 'Label Here',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Required
+
+<Canvas>
+  <Story
+    name="Required"
+    args={{
+      label: 'Label Here',
+      required: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: Normal
+
+<Canvas>
+  <Story
+    name="Margin: Normal"
+    args={{
+      margin: 'normal',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: Dense
+
+<Canvas>
+  <Story
+    name="Margin: Dense"
+    args={{
+      margin: 'dense',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: None
+
+<Canvas>
+  <Story
+    name="Margin: None"
+    args={{
+      margin: 'none',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Multiline
+
+<Canvas>
+  <Story
+    name="Multiline"
+    args={{
+      fullWidth: true,
+      maxRows: 5,
+      multiline: true,
+      rows: 3,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Size: Small
+
+<Canvas>
+  <Story
+    name="Size: Small"
+    args={{
+      size: 'small',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Size: Medium
+
+<Canvas>
+  <Story
+    name="Size: Medium"
+    args={{
+      size: 'medium',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Text
+
+<Canvas>
+  <Story
+    name="Type: Text"
+    args={{
       type: 'text',
-      value: 'Field Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Number
+
+<Canvas>
+  <Story
+    name="Type: Number"
+    args={{
+      type: 'number',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Password
+
+<Canvas>
+  <Story
+    name="Type: Password"
+    args={{
+      type: 'password',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Type: Email
+
+<Canvas>
+  <Story
+    name="Type: Email"
+    args={{
+      type: 'email',
     }}
   >
     {Template.bind({})}
@@ -89,23 +330,65 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
   <Story
     name="Select"
     args={{
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
+      select: true,
     }}
   >
     {SelectTemplate.bind({})}
   </Story>
 </Canvas>
 
-## Select Disabled
+## Select: Primary
 
 <Canvas>
   <Story
-    name="Select Disabled"
+    name="Select: Primary"
     args={{
-      disabled: true,
-      label: 'Label Text Here',
-      placeholder: 'Placeholder',
+      color: 'primary',
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: Secondary
+
+<Canvas>
+  <Story
+    name="Select: Secondary"
+    args={{
+      color: 'secondary',
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: With Label
+
+<Canvas>
+  <Story
+    name="Select: With Label"
+    args={{
+      label: 'Label Here',
+      select: true,
+    }}
+  >
+    {SelectTemplate.bind({})}
+  </Story>
+</Canvas>
+
+## Select: Multiple
+
+<Canvas>
+  <Story
+    name="Select: Multiple"
+    args={{
+      select: true,
+      SelectProps: {
+        multiple: true,
+      },
     }}
   >
     {SelectTemplate.bind({})}
@@ -119,13 +402,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
   <Story
     name="Playground"
     args={{
-      disabled: false,
-      error: false,
-      fullWidth: false,
-      helperText: '',
       label: 'Label Text Here',
-      placeholder: 'Placeholder',
-      type: 'text',
       value: 'Field Value',
     }}
   >

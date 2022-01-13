@@ -25,6 +25,7 @@ Material UI, and ships with two themes out of the box:
 
 1. `"ACT"` - for ACT's "traditional" look and feel
 2. `"ACT_ET"` - for ACT's "emerging technology" look and feel
+3. `"ENCOURA_DATALAB"` - for Encoura's "datalab" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -88,18 +89,48 @@ const MyApp = () => (
 
 ### Load Fonts
 
-The DLS uses [Montserrat](https://fonts.google.com/specimen/Montserrat) as the
-base font inside the default theme. To ensure that the browser has access to
-this font, it is recommended that you include the following font reference in
-the `head` of your React app:
+#### Montserrat
 
-```jsx
-...
+The `ACT` and `ACT_ET` themes assume that the
+[Montserrat](https://fonts.google.com/specimen/Montserrat) font is available in
+the browser. Therefore, it is recommended that you include the following font
+reference in the `head` of your React app:
+
+```html
 <link
   href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
   rel="stylesheet"
 />
-...
+```
+
+#### Museo
+
+The `ENCOURA_DATALAB` theme assumes that the
+[Museo](https://github.com/act-org/dls/tree/master/src/public/fonts/Museo) font
+is available in the browser. Therefore, it is recommended that you include the
+following font reference in the `head` of your React app:
+
+```html
+<style type="text/css">
+  @font-face {
+    font-family: 'Museo';
+    src: url('/path/to/Museo300.otf');
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Museo';
+    src: url('/path/to/Museo500.otf');
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Museo';
+    src: url('/path/to/Museo700.otf');
+    font-style: normal;
+    font-weight: 700;
+  }
+</style>
 ```
 
 ### CSS Baseline
@@ -226,6 +257,10 @@ module.exports = {
           transform: '@actinc/dls/helpers/${member}',
           preventFullImport: true,
         },
+        '@actinc/dls/helpers': {
+          transform: '@actinc/dls/hooks/${member}',
+          preventFullImport: true,
+        },
         '@actinc/dls/icons': {
           transform: '@actinc/dls/icons/${member}',
           preventFullImport: true,
@@ -260,6 +295,8 @@ import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constant
 import { AlertContext } from '@actinc/dls/context';
 // helpers
 import { search } from '@actinc/dls/helpers';
+// hooks
+import { useLocalStorage } from '@actinc/dls/hooks';
 // icons
 import { ChevronDown } from '@actinc/dls/icons';
 // styles & themes

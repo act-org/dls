@@ -11,7 +11,7 @@ import { select } from '@storybook/addon-knobs';
 
 import SelectSecondary from '.';
 
-export const Preview = (): React.ReactElement<any> => {
+export const Preview = (): React.ReactElement<unknown> => {
   const [value, setValue] = React.useState(1);
 
   return (
@@ -59,5 +59,5 @@ export default {
       text: 'This is the secondary variant of the Select component.',
     },
   },
-  title: 'V3/Atoms/SelectSecondary',
+  title: 'Deprecated/Atoms/SelectSecondary',
 };

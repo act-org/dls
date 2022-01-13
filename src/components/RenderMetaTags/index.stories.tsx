@@ -23,5 +23,5 @@ export default {
       text: 'This is the base variant of the RenderMetaTags component.',
     },
   },
-  title: 'Work in Progress/RenderMetaTags',
+  title: 'Utilities/RenderMetaTags',
 } as Meta<RenderMetaTagsProps>;

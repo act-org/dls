@@ -14,7 +14,7 @@ export type SelectSecondaryProps = SelectPrimaryProps;
 export const SelectSecondary: React.FC<SelectSecondaryProps> = ({
   classes: classesProp,
   ...otherProps
-}: SelectSecondaryProps): React.ReactElement<any> => {
+}: SelectSecondaryProps): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (

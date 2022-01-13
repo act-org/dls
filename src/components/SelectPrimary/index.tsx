@@ -18,7 +18,7 @@ export const SelectPrimary: React.FC<SelectPrimaryProps> = ({
   classes: classesProp,
   value,
   ...otherProps
-}: SelectPrimaryProps): React.ReactElement<any> => {
+}: SelectPrimaryProps): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (

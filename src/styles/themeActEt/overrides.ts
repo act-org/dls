@@ -8,6 +8,7 @@
  */
 
 import Color from 'color';
+import { common, grey } from '@material-ui/core/colors';
 import { Overrides } from '@material-ui/core/styles/overrides';
 
 import COLORS from './colors';
@@ -50,7 +51,7 @@ const OVERRIDES: Overrides = {
       '&:active': {
         backgroundColor: COLORS.PRIMARY_DARK,
         borderColor: COLORS.PRIMARY_DARK,
-        color: COLORS.WHITE,
+        color: common.white,
       },
       '&:hover': {
         borderWidth: 2,
@@ -95,45 +96,47 @@ const OVERRIDES: Overrides = {
         '& .MuiDataGrid-columnHeader': {
           '& .MuiDataGrid-columnHeaderTitleContainer': {
             '& .MuiDataGrid-columnHeaderTitle': {
-              color: COLORS.BLACK,
+              color: common.black,
               userSelect: 'none',
             },
           },
           '& .MuiDataGrid-iconButtonContainer': {
             '& .MuiIconButton-root': {
-              color: Color(COLORS.BLACK).fade(0).rgb().string(),
+              color: Color(common.black).fade(0).rgb().string(),
               padding: '0 0 1px 0',
             },
             '& .MuiIconButton-root[aria-label="Show filters"]': {
-              color: `${COLORS.BLACK} !important`,
+              color: `${common.black} !important`,
             },
             alignItems: 'center',
             display: 'flex',
           },
           '& .MuiDataGrid-menuIcon': {
             '& .MuiIconButton-root[aria-label="Menu"]': {
-              color: Color(COLORS.BLACK).fade(0.35).rgb().string(),
+              color: Color(common.black).fade(0.35).rgb().string(),
             },
           },
           '&.MuiDataGrid-withBorder': {
-            borderRightColor: COLORS.GREY_300,
+            borderRightColor: grey[300],
           },
           outline: 'none',
+          paddingLeft: DIMS.SPACING / 2,
+          paddingRight: DIMS.SPACING / 2,
         },
         '& .MuiDataGrid-columnHeader--sorted': {
           '& .MuiIconButton-root[aria-label="Sort"]': {
-            color: `${COLORS.BLACK} !important`,
+            color: `${common.black} !important`,
           },
-          backgroundColor: COLORS.GREY_300,
+          backgroundColor: grey[300],
         },
         '& .MuiDataGrid-columnHeaderWrapper': {
-          backgroundColor: COLORS.GREY_200,
+          backgroundColor: grey[200],
         },
         '& .MuiDataGrid-columnSeparator': {
           display: 'none',
         },
         '& .MuiDataGrid-overlay': {
-          backgroundColor: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+          backgroundColor: Color(common.white).fade(0.35).rgb().string(),
           zIndex: 1,
         },
       },
@@ -148,23 +151,23 @@ const OVERRIDES: Overrides = {
           '& .MuiDataGrid-columnHeader': {
             '& .MuiDataGrid-columnHeaderTitleContainer': {
               '& .MuiCheckbox-root': {
-                color: COLORS.WHITE,
+                color: common.white,
               },
               '& .MuiDataGrid-columnHeaderTitle': {
-                color: COLORS.WHITE,
+                color: common.white,
               },
             },
             '& .MuiDataGrid-iconButtonContainer': {
               '& .MuiIconButton-root': {
-                color: Color(COLORS.WHITE).fade(0.1).rgb().string(),
+                color: Color(common.white).fade(0.1).rgb().string(),
               },
               '& .MuiIconButton-root[aria-label="Show filters"]': {
-                color: `${COLORS.WHITE} !important`,
+                color: `${common.white} !important`,
               },
             },
             '& .MuiDataGrid-menuIcon': {
               '& .MuiIconButton-root[aria-label="Menu"]': {
-                color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+                color: Color(common.white).fade(0.35).rgb().string(),
               },
             },
             '&.MuiDataGrid-withBorder': {
@@ -173,7 +176,7 @@ const OVERRIDES: Overrides = {
           },
           '& .MuiDataGrid-columnHeader--sorted': {
             '& .MuiIconButton-root[aria-label="Sort"]': {
-              color: `${COLORS.WHITE} !important`,
+              color: `${common.white} !important`,
             },
             backgroundColor: Color(COLORS.PRIMARY).darken(0.15).hex(),
           },
@@ -187,23 +190,23 @@ const OVERRIDES: Overrides = {
           '& .MuiDataGrid-columnHeader': {
             '& .MuiDataGrid-columnHeaderTitleContainer': {
               '& .MuiCheckbox-root': {
-                color: COLORS.WHITE,
+                color: common.white,
               },
               '& .MuiDataGrid-columnHeaderTitle': {
-                color: COLORS.WHITE,
+                color: common.white,
               },
             },
             '& .MuiDataGrid-iconButtonContainer': {
               '& .MuiIconButton-root': {
-                color: Color(COLORS.WHITE).fade(0.1).rgb().string(),
+                color: Color(common.white).fade(0.1).rgb().string(),
               },
               '& .MuiIconButton-root[aria-label="Show filters"]': {
-                color: `${COLORS.WHITE} !important`,
+                color: `${common.white} !important`,
               },
             },
             '& .MuiDataGrid-menuIcon': {
               '& .MuiIconButton-root[aria-label="Menu"]': {
-                color: Color(COLORS.WHITE).fade(0.35).rgb().string(),
+                color: Color(common.white).fade(0.35).rgb().string(),
               },
             },
             '&.MuiDataGrid-withBorder': {
@@ -212,7 +215,7 @@ const OVERRIDES: Overrides = {
           },
           '& .MuiDataGrid-columnHeader--sorted': {
             '& .MuiIconButton-root[aria-label="Sort"]': {
-              color: `${COLORS.WHITE} !important`,
+              color: `${common.white} !important`,
             },
             backgroundColor: Color(COLORS.SECONDARY).darken(0.15).hex(),
           },
@@ -251,7 +254,7 @@ const OVERRIDES: Overrides = {
       transformOrigin: 'unset',
     },
     root: {
-      color: COLORS.BLACK,
+      color: common.black,
       fontSize: 14,
       fontWeight: 600,
       marginBottom: DIMS.SPACING,
@@ -269,7 +272,7 @@ const OVERRIDES: Overrides = {
       },
     },
     root: {
-      backgroundColor: COLORS.WHITE,
+      backgroundColor: common.white,
       fontSize: 14,
     },
   },
@@ -305,11 +308,11 @@ const OVERRIDES: Overrides = {
           border: COLORS.PRIMARY,
           opacity: 1,
         },
-        color: COLORS.WHITE,
+        color: common.white,
         transform: 'translateX(16px)',
       },
       '&$focusVisible $thumb': {
-        border: `6px solid ${COLORS.WHITE}`,
+        border: `6px solid ${common.white}`,
         color: COLORS.PRIMARY,
       },
       height: 'unset',
@@ -318,13 +321,13 @@ const OVERRIDES: Overrides = {
     },
     thumb: {
       boxShadow: '0 1px 2px 1px rgba(0, 0, 0, 0.08)',
-      color: COLORS.WHITE,
+      color: common.white,
       height: 20,
       width: 20,
     },
     track: {
-      backgroundColor: COLORS.GREY_300,
-      border: `1px solid ${COLORS.GREY_300}`,
+      backgroundColor: grey[300],
+      border: `1px solid ${grey[300]}`,
       borderRadius: 26 / 2,
       opacity: 1,
     },

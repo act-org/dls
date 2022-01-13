@@ -7,6 +7,10 @@
  * @prettier
  */
 
-export const THEMES: ['ACT' | 'ACT_ET'][] = [['ACT'], ['ACT_ET']];
+export const THEMES: ['ACT' | 'ACT_ET' | 'ENCOURA_DATALAB'][] = [
+  ['ACT'],
+  ['ACT_ET'],
+  ['ENCOURA_DATALAB'],
+];
 
 export default THEMES;

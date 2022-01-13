@@ -16,3 +16,11 @@ exports[`Toolbar ACT_ET theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`Toolbar ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+  />
+</div>
+`;

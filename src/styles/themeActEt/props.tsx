@@ -14,11 +14,14 @@ import FilterVariant from '~/icons/FilterVariant';
 const PROPS: ComponentsProps = {
   MuiAlert: {
     closeText: 'Close',
-    severity: 'info' as any,
-    variant: 'standard' as any,
+    severity: 'info',
+    variant: 'standard',
   },
   MuiButton: {
-    variant: 'outlined' as any,
+    variant: 'outlined',
+  },
+  MuiButtonGroup: {
+    disableElevation: true,
   },
   MuiDataGrid: {
     components: {
@@ -29,6 +32,9 @@ const PROPS: ComponentsProps = {
   MuiPaper: {
     elevation: 3,
   },
+  MuiSelect: {
+    variant: 'outlined',
+  },
   MuiTextField: {
     InputLabelProps: {
       shrink: true,
@@ -38,6 +44,9 @@ const PROPS: ComponentsProps = {
     },
     size: 'small',
     variant: 'outlined',
+  },
+  MuiTooltip: {
+    arrow: true,
   },
 };
 

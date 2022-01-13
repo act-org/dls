@@ -28,7 +28,6 @@ const COLORS = {
   TEXT_SECONDARY: '#000000',
   WARNING: '#826E0D',
   WARNING_BACKGROUND: '#FEF8DC',
-  WHITE: '#ffffff',
 };
 
 export default COLORS;

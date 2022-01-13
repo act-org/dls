@@ -7,7 +7,7 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 
 import InputLabelPrimary from '.';
 
-export const Preview = (): React.ReactElement<any> => (
+export const Preview = (): React.ReactElement<unknown> => (
   <InputLabelPrimary
     color={select(
       'Color',
@@ -35,5 +35,5 @@ export default {
       text: 'This is a custom InputLabel component.',
     },
   },
-  title: 'V3/Atoms/InputLabelPrimary',
+  title: 'Deprecated/Atoms/InputLabelPrimary',
 };

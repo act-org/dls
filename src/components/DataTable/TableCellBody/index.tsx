@@ -19,7 +19,7 @@ export type TableCellBodyProps = TableCellProps;
 export const TableCellBody: React.FC<TableCellBodyProps> = ({
   classes: classesProp,
   ...otherProps
-}: TableCellBodyProps): React.ReactElement<any> => {
+}: TableCellBodyProps): React.ReactElement<unknown> => {
   const classes = useStyles();
 
   return (

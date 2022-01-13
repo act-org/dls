@@ -8,7 +8,7 @@ import { boolean, text } from '@storybook/addon-knobs';
 
 import FormSelectPrimary from '.';
 
-export const Preview = (): React.ReactElement<any> => {
+export const Preview = (): React.ReactElement<unknown> => {
   const [value, setValue] = React.useState<string | undefined>(undefined);
 
   return (
@@ -57,5 +57,5 @@ export default {
       text: 'This is the primary variant of the FormSelect component.',
     },
   },
-  title: 'V3/Molecules/FormSelectPrimary',
+  title: 'Deprecated/Molecules/FormSelectPrimary',
 };

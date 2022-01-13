@@ -22,10 +22,49 @@ import { argTypes, Template } from './index.stories.template';
 
 <Description of={Toolbar} />
 
-## Primary
+## Default
 
 <Canvas>
   <Story name="Primary" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Disable Gutters
+
+<Canvas>
+  <Story
+    name="Disable Gutters"
+    args={{
+      disableGutters: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Variant: Regular
+
+<Canvas>
+  <Story
+    name="Variant: Regular"
+    args={{
+      variant: 'regular',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Variant: Dense
+
+<Canvas>
+  <Story
+    name="Variant: Dense"
+    args={{
+      variant: 'dense',
+    }}
+  >
     {Template.bind({})}
   </Story>
 </Canvas>

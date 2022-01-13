@@ -9,7 +9,12 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { OutlinedInput, OutlinedInputProps } from '@material-ui/core';
+import {
+  IconButton,
+  InputAdornment,
+  OutlinedInput,
+  OutlinedInputProps,
+} from '@material-ui/core';
 
 import Plus from '~/icons/Plus';
 
@@ -23,16 +28,166 @@ import { argTypes, Template } from './index.stories.template';
 
 <Description of={OutlinedInput} />
 
-## Primary
+## Default
+
+<Canvas>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Value
 
 <Canvas>
   <Story
-    name="Primary"
+    name="With Value"
     args={{
-      autoFocus: false,
-      disabled: false,
-      multiline: false,
-      placeholder: 'Placeholder',
+      value: 'Some Value',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Color: Primary
+
+<Canvas>
+  <Story
+    name="Color: Primary"
+    args={{
+      color: 'primary',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Color: Secondary
+
+<Canvas>
+  <Story
+    name="Color: Secondary"
+    args={{
+      color: 'secondary',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Disabled
+
+<Canvas>
+  <Story
+    name="Disabled"
+    args={{
+      disabled: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Start Adornment
+
+<Canvas>
+  <Story
+    name="With Start Adornment"
+    args={{
+      startAdornment: (
+        <InputAdornment position="start">
+          <IconButton>
+            <Plus />
+          </IconButton>
+        </InputAdornment>
+      ),
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With End Adornment
+
+<Canvas>
+  <Story
+    name="With End Adornment"
+    args={{
+      endAdornment: (
+        <InputAdornment position="end">
+          <IconButton>
+            <Plus />
+          </IconButton>
+        </InputAdornment>
+      ),
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## With Error
+
+<Canvas>
+  <Story
+    name="With Error"
+    args={{
+      error: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Full Width
+
+<Canvas>
+  <Story
+    name="Full Width"
+    args={{
+      fullWidth: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: Dense
+
+<Canvas>
+  <Story
+    name="Margin: Dense"
+    args={{
+      margin: 'dense',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Margin: None
+
+<Canvas>
+  <Story
+    name="Margin: None"
+    args={{
+      margin: 'none',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Multiline
+
+<Canvas>
+  <Story
+    name="Multiline"
+    args={{
+      fullWidth: true,
+      maxRows: 5,
+      multiline: true,
+      rows: 3,
     }}
   >
     {Template.bind({})}
@@ -46,11 +201,7 @@ import { argTypes, Template } from './index.stories.template';
   <Story
     name="Playground"
     args={{
-      autoFocus: false,
-      disabled: false,
-      multiline: false,
       color: 'primary',
-      placeholder: 'Placeholder',
     }}
   >
     {Template.bind({})}

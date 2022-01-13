@@ -13,15 +13,20 @@ import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
-export const Template: Story<OutlinedInputProps> = args => {
-  const [value, setValue] = React.useState<string>(args.value as string);
+export const Template: Story<OutlinedInputProps> = ({
+  value,
+  ...args
+}: OutlinedInputProps) => {
+  const [v, setV] = React.useState<string>(String(value || ''));
+
   return (
     <OutlinedInput
-      onChange={(newValue): void => {
-        setValue(newValue.target.value);
-      }}
-      value={value}
       {...args}
+      onChange={(e): void => {
+        setV(e.target.value);
+      }}
+      placeholder="Placeholder"
+      value={v}
     />
   );
 };

@@ -38,10 +38,10 @@ export const Template: Story<StoryProps> = ({
       maxSnack={maxSnack}
     >
       <AlertContext.Consumer>
-        {({ actions }): React.ReactElement<any> => (
+        {({ actions }): React.ReactElement<unknown> => (
           <Grid container spacing={2}>
             {['error', 'info', 'warning', 'success'].map(
-              (variant): React.ReactElement<any> => (
+              (variant): React.ReactElement<unknown> => (
                 <Grid item key={variant}>
                   <Button
                     onClick={async (): Promise<void> => {

@@ -8,26 +8,24 @@
  */
 
 import * as React from 'react';
-import { Link, LinkProps } from '@material-ui/core';
+import { Link, LinkProps, Typography } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
-interface StoryProps extends LinkProps {
-  text: string;
-}
-
-export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
-  <Link {...args}>{text}</Link>
+export const Template: Story<LinkProps> = (args: LinkProps) => (
+  <Link href="https://www.act.org" target="_blank" {...args}>
+    <Typography>Click Me</Typography>
+  </Link>
 );
 
 export const argTypes: Record<string, unknown> = Playground(
   {
-    text: {},
-    variant: {},
     color: {},
     target: {},
+    text: {},
     underline: {},
+    variant: {},
   },
   Link,
 );

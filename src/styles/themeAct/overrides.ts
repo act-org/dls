@@ -7,6 +7,7 @@
  * @prettier
  */
 
+import { common } from '@material-ui/core/colors';
 import { Overrides } from '@material-ui/core/styles/overrides';
 
 import COLOR_PALETTE_ACT from './palette';
@@ -109,7 +110,7 @@ const OVERRIDES: Overrides = {
   },
   MuiSelect: {
     outlined: {
-      backgroundColor: COLORS.WHITE,
+      backgroundColor: common.white,
       fontSize: '1.125rem',
       fontWeight: 'normal',
       padding: '15px 15px',
@@ -126,7 +127,7 @@ const OVERRIDES: Overrides = {
     },
     tooltip: {
       backgroundColor: COLORS.PRIMARY_DARK,
-      color: COLORS.WHITE,
+      color: common.white,
     },
   },
 };

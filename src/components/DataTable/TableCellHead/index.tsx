@@ -20,7 +20,7 @@ import { SortDirection, SortObject } from '~/types';
 import useStyles from './styles';
 
 export interface TableCellHeadProps extends TableCellProps {
-  children: string | React.ReactElement<any>;
+  children: string | React.ReactElement<unknown>;
   color?: 'default' | 'primary' | 'secondary';
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
@@ -37,7 +37,7 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
   sortBy,
   style,
   ...props
-}: TableCellHeadProps): React.ReactElement<any> => {
+}: TableCellHeadProps): React.ReactElement<unknown> => {
   const { palette } = useTheme();
 
   const sortIsApplied: boolean = sortBy === currentSortObject.sortBy;

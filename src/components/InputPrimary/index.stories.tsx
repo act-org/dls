@@ -8,7 +8,7 @@ import { boolean, text } from '@storybook/addon-knobs';
 
 import InputPrimary from '.';
 
-export const Preview = (): React.ReactElement<any> => {
+export const Preview = (): React.ReactElement<unknown> => {
   const [value, setValue] = React.useState('Input');
 
   return (
@@ -34,5 +34,5 @@ export default {
       text: 'This is a custom Input component.',
     },
   },
-  title: 'V3/Atoms/InputPrimary',
+  title: 'Deprecated/Atoms/InputPrimary',
 };

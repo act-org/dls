@@ -8,7 +8,7 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 
 import FormInputPrimary from '.';
 
-export const Preview = (): React.ReactElement<any> => {
+export const Preview = (): React.ReactElement<unknown> => {
   const [value, setValue] = React.useState('Input');
 
   return (
@@ -51,5 +51,5 @@ export default {
       text: 'This is the primary variant of the FormInput component.',
     },
   },
-  title: 'V3/Molecules/FormInputPrimary',
+  title: 'Deprecated/Molecules/FormInputPrimary',
 };

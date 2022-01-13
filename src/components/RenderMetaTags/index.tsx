@@ -15,7 +15,9 @@ export interface RenderMetaTagsProps {
   keywords?: string[];
   noIndex?: boolean;
   title?: string;
-  Wrapper?: (children: React.ReactElement<any>[]) => React.ReactElement<any>;
+  Wrapper?: (
+    children: React.ReactElement<unknown>[],
+  ) => React.ReactElement<unknown>;
 }
 
 export const RenderMetaTags: React.FC<RenderMetaTagsProps> = ({
@@ -26,7 +28,7 @@ export const RenderMetaTags: React.FC<RenderMetaTagsProps> = ({
   title,
   Wrapper,
 }: RenderMetaTagsProps): any => {
-  const children: React.ReactElement<any>[] = [];
+  const children: React.ReactElement<unknown>[] = [];
 
   if (description) {
     // Search Engines

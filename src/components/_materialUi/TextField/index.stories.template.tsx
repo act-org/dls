@@ -8,6 +8,7 @@
  */
 
 import * as React from 'react';
+import { get } from 'lodash';
 import { MenuItem, TextField, TextFieldProps } from '@material-ui/core';
 import { Story } from '@storybook/react/types-6-0';
 
@@ -17,39 +18,48 @@ export const Template: Story<TextFieldProps> = ({
   value,
   ...props
 }: TextFieldProps) => {
-  const [textValue, setTextValue] = React.useState(value as string);
+  const [textValue, setTextValue] = React.useState(String(value || ''));
 
   return (
     <TextField
-      onChange={(e: any): void => {
+      onChange={(e): void => {
         setTextValue(e.target.value);
       }}
+      placeholder="Placeholder"
+      type="text"
       value={textValue}
       {...props}
     />
   );
 };
 
-export const SelectTemplate: Story<TextFieldProps> = (
-  props: TextFieldProps,
-) => {
-  const [value, setValue] = React.useState(1);
+const values = ['One', 'Two', 'Three', 'Four', 'Five'];
+
+export const SelectTemplate: Story<TextFieldProps> = ({
+  SelectProps,
+  ...props
+}: TextFieldProps) => {
+  const [value, setValue] = React.useState<string | string[]>(
+    SelectProps?.multiple ? ['One'] : 'One',
+  );
 
   return (
     <TextField
-      onChange={(e: any): void => {
+      onChange={(e): void => {
         setValue(e.target.value);
       }}
       select
+      SelectProps={SelectProps}
       value={value}
       {...props}
     >
-      {Array(...Array(10)).map((_, i): any => (
-        // eslint-disable-next-line react/no-array-index-key
-        <MenuItem key={i} value={i}>
-          {i + 1}
-        </MenuItem>
-      ))}
+      {values.map(
+        (v): React.ReactElement<unknown> => (
+          <MenuItem key={v} value={v}>
+            {v}
+          </MenuItem>
+        ),
+      )}
     </TextField>
   );
 };

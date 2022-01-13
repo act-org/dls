@@ -60,7 +60,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
   style,
   tooltipPlacement,
   variant,
-}: TablePaginationActionsProps): React.ReactElement<any> => {
+}: TablePaginationActionsProps): React.ReactElement<unknown> => {
   const [open, setOpen] = React.useState(false);
 
   const listEl = React.useRef(null);
@@ -159,7 +159,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             },
             open,
             // eslint-disable-next-line react/display-name
-            renderValue: (value): React.ReactElement<any> => (
+            renderValue: (value): React.ReactElement<unknown> => (
               <span>{`${noun} ${Number(value) + 1}`}</span>
             ),
           }}
@@ -172,7 +172,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             ref={listEl}
             width={`${noun} ${numberOfPages}`.length * 14}
           >
-            {({ index, style: menuItemStyle }): React.ReactElement<any> => (
+            {({ index, style: menuItemStyle }): React.ReactElement<unknown> => (
               // eslint-disable-next-line react/no-array-index-key
               <MenuItem
                 classes={{

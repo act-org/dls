@@ -13,7 +13,7 @@ import { Grid } from '@material-ui/core';
 import useStyles from './styles';
 
 interface FormInput {
-  formInput: React.ReactElement<any>;
+  formInput: React.ReactElement<unknown>;
   key: string;
 }
 
@@ -32,7 +32,7 @@ export const FormInputGroups: React.FC<FormInputGroupsProps> = ({
     <>
       {/* eslint-disable react/no-array-index-key */}
       {groups.map(
-        (group, i): React.ReactElement<any> => (
+        (group, i): React.ReactElement<unknown> => (
           <Grid
             classes={{
               container: classes.gridContainerRoot,
@@ -42,7 +42,7 @@ export const FormInputGroups: React.FC<FormInputGroupsProps> = ({
             spacing={4}
           >
             {group.map(
-              (input): React.ReactElement<any> => (
+              (input): React.ReactElement<unknown> => (
                 <Grid
                   classes={{
                     item: classes.gridItemRoot,

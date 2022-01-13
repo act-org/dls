@@ -15,17 +15,17 @@ import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { Playground } from '~/helpers/playground';
 
 export const Template: Story<TooltipProps> = args => (
-  <Tooltip {...args}>
+  <Tooltip title="Tooltip text goes here." {...args}>
     <HelpCircleOutline />
   </Tooltip>
 );
 export const argTypes = Playground(
   {
-    title: { type: 'string' },
     arrow: {},
     interactive: {},
-    placement: {},
     open: {},
+    placement: {},
+    title: { type: 'string' },
   },
   Tooltip,
 );
