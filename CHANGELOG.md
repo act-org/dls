@@ -2,7 +2,7 @@
 
 Chronological history of changes to the Design Language System.
 
-## [v5.10.0] - Jan 12, 2021
+## [v5.10.0] - Jan 13, 2021
 
 * Added a new theme, `ENCOURA_DATALAB`, to the DLS. This theme is representative
 of one of [Encoura](https://encoura.org/)'s product lines.
