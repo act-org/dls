@@ -114,19 +114,19 @@ following font reference in the `head` of your React app:
 <style type="text/css">
   @font-face {
     font-family: 'Museo';
-    src: url('/path/to/Museo300.otf');
+    src: url('path/to/Museo300.otf');
     font-style: normal;
     font-weight: 300;
   }
   @font-face {
     font-family: 'Museo';
-    src: url('/path/to/Museo500.otf');
+    src: url('path/to/Museo500.otf');
     font-style: normal;
     font-weight: 500;
   }
   @font-face {
     font-family: 'Museo';
-    src: url('/path/to/Museo700.otf');
+    src: url('path/to/Museo700.otf');
     font-style: normal;
     font-weight: 700;
   }
