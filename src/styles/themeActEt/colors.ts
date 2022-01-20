@@ -9,6 +9,11 @@
 
 const COLORS = {
   BACKGROUND: '#F7F7F7',
+  CUSTOM: {
+    tertiary: {
+      main: '#2D2D2D',
+    },
+  },
   ERROR: '#CC0033',
   ERROR_DARK: '#8E0024',
   INFO: '#2196F3',

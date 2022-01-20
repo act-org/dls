@@ -10,6 +10,11 @@
 import { ThemeOptions } from '@material-ui/core/styles';
 
 export type CustomThemeOptions = ThemeOptions & {
+  customColors: {
+    tertiary: {
+      main: string;
+    };
+  };
   customDims: {
     heights: Record<string, number>;
   };

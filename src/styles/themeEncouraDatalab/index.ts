@@ -12,6 +12,7 @@ import { createTheme } from '@material-ui/core/styles';
 
 import { CustomThemeOptions } from '~/types';
 
+import COLORS from './colors';
 import DIMS from './dims';
 import OVERRIDES from './overrides';
 import PALETTE from './palette';
@@ -20,6 +21,7 @@ import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
 export const THEME_ENCOURA_DATALAB: CustomThemeOptions = {
+  customColors: COLORS.CUSTOM,
   customDims: DIMS.CUSTOM,
   overrides: OVERRIDES,
   palette: PALETTE,
