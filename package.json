@@ -145,8 +145,7 @@
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest --maxWorkers=2 --verbose",
-    "test:outdated": "npm outdated"
+    "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
   "version": "5.10.0"
