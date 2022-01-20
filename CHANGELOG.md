@@ -2,6 +2,14 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.11.0] - Jan 20, 2021
+
+* Added a new color option, `customColors.tertiary.main`, to all themes.
+  * Material UI v4 does not support the "tertiary" keyword on the `palette`, so
+  this was implemented through `customColors` instead.
+* Updated the `palette.secondary.dark` color on the `ENCOURA_DATALAB` theme to
+`#003359`.
+
 ## [v5.10.1] - Jan 20, 2021
 
 * Enable more flexibility on the react version used by downstream projects by

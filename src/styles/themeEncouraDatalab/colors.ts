@@ -9,6 +9,11 @@
 
 const COLORS = {
   BACKGROUND: '#EBF0F1',
+  CUSTOM: {
+    tertiary: {
+      main: '#E68329',
+    },
+  },
   ERROR: '#E80000',
   ERROR_DARK: '#E80000',
   INFO: '#0390BF',
@@ -18,7 +23,7 @@ const COLORS = {
   PRIMARY_DARK: '#00AF3F',
   PRIMARY_LIGHT: '#00AF3F',
   SECONDARY: '#0098C3',
-  SECONDARY_DARK: '#0098C3',
+  SECONDARY_DARK: '#003359',
   SECONDARY_LIGHT: '#0098C3',
   SUCCESS: '#03AE43',
   SUCCESS_DARK: '#03AE43',
