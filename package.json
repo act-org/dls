@@ -20,8 +20,6 @@
     "moment": "^2.29.1",
     "notistack": "^1.0.9",
     "pluralize": "^8.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "react-idle-timer": "^4.6.4",
     "react-window": "^1.8.6",
     "validator": "^13.5.2"
@@ -75,7 +73,9 @@
     "np": "7.4.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.3.2",
+    "react": "17.0.2",
     "react-docgen-typescript-loader": "3.7.2",
+    "react-dom": "17.0.2",
     "react-test-renderer": "17.0.2",
     "semantic-release": "17.4.4",
     "shelljs": "0.8.5",
@@ -145,9 +145,8 @@
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tsc --noEmit",
-    "test:unit": "jest --maxWorkers=2 --verbose",
-    "test:outdated": "npm outdated"
+    "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
-  "version": "5.10.0"
+  "version": "5.10.1"
 }

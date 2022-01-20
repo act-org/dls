@@ -2,6 +2,11 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.10.1] - Jan 20, 2021
+
+* Enable more flexibility on the react version used by downstream projects by
+moving `react` and `react-dom` to dev dependencies.
+
 ## [v5.10.0] - Jan 13, 2021
 
 * Added a new theme, `ENCOURA_DATALAB`, to the DLS. This theme is representative

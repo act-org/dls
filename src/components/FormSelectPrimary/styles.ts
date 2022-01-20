@@ -14,7 +14,7 @@ export default makeStyles(({ palette, spacing, typography }) => ({
   selectOptionRoot: {
     color: palette.text.primary,
     fontSize: 14,
-    fontWeight: typography.fontWeightRegular,
+    fontWeight: Number(typography.fontWeightRegular),
   },
   warning: {
     left: '100%',

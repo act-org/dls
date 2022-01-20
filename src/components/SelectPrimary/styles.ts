@@ -24,7 +24,7 @@ export default makeStyles(({ typography }) => ({
     borderRadius: 2,
     color: '#2d2d2d', // FIXME: TEXT_PRIMARY
     fontSize: 14,
-    fontWeight: typography.fontWeightRegular,
+    fontWeight: Number(typography.fontWeightRegular),
     marginTop: 8,
   },
   selectRootEmpty: {

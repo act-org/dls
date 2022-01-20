@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(({ spacing, typography }) => ({
   tableCellRoot: {
     fontSize: '0.888rem',
-    fontWeight: typography.fontWeightRegular,
+    fontWeight: Number(typography.fontWeightRegular),
     padding: `${spacing(1)}px !important`,
   },
 }));

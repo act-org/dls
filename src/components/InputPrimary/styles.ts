@@ -17,7 +17,7 @@ export default makeStyles(({ customDims, spacing, typography }: any) => ({
   },
   inputInputPassword: {
     fontSize: 22,
-    fontWeight: typography.fontWeightBold,
+    fontWeight: Number(typography.fontWeightBold),
     letterSpacing: 4,
   },
   inputRoot: {

@@ -88,7 +88,7 @@ export default makeStyles(
         color === 'secondary' && palette.secondary.contrastText,
       ),
       fontSize: typography.body1.fontSize,
-      fontWeight: typography.fontWeightMedium,
+      fontWeight: Number(typography.fontWeightMedium),
       lineHeight: 1,
       userSelect: 'none',
     }),
