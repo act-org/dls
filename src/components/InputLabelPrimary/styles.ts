@@ -10,7 +10,7 @@ export default makeStyles(({ palette, typography }) => ({
       '& > .required': {
         color: palette.error.main,
         fontSize: 12,
-        fontWeight: typography.fontWeightRegular,
+        fontWeight: Number(typography.fontWeightRegular),
       },
       alignItems: 'center',
       display: 'flex',
@@ -18,7 +18,7 @@ export default makeStyles(({ palette, typography }) => ({
     },
     color: palette.text.primary,
     fontSize: 14,
-    fontWeight: typography.fontWeightBold,
+    fontWeight: Number(typography.fontWeightBold),
     position: 'relative',
   },
 }));

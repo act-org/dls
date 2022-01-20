@@ -17,7 +17,7 @@ export default makeStyles(({ palette, shape, typography }) => ({
     color: `${palette.primary.main} !important`,
     display: 'flex !important',
     fontSize: `${typography.fontSize}px !important`,
-    fontWeight: typography.fontWeightMedium,
+    fontWeight: Number(typography.fontWeightMedium),
     height: `${38 - BORDER_WIDTH * 2}px !important`,
     marginTop: '0px !important',
     paddingBottom: '0px !important',
