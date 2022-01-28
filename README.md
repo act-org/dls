@@ -23,9 +23,9 @@ This DLS is built on top of the
 [theming engine](https://material-ui.com/customization/theming/) from
 Material UI, and ships with two themes out of the box:
 
-1. `"ACT"` - for ACT's "traditional" look and feel
-2. `"ACT_ET"` - for ACT's "emerging technology" look and feel
-3. `"ENCOURA_DATALAB"` - for Encoura's "datalab" look and feel
+1. `"ACT"`: for ACT's "traditional" look and feel
+2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
+3. `"ENCOURA_DATALAB"`: for Encoura's "Datalab" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -307,7 +307,10 @@ import { SortObject } from '@actinc/dls/types';
 
 ## Local Development
 
-In order to run the DLS locally:
+Check out the [developer guide](./docs/GUIDE.md) to learn how to build
+effectively for the DLS.
+
+To run the DLS locally:
 
 1. Install node modules: `npm install`
 2. Start the [Storybook](https://storybook.js.org) component visualizer:
