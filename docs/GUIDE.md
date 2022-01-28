@@ -3,7 +3,7 @@
 This developer guide outlines the core principles that you should keep in mind
 in order to build effectively for the DLS.
 
-## Decoupling Business Logic from Rendering
+## Decouple Business Logic from Render Logic
 
 DLS components are maximally flexible and useful when they are decoupled from
 business logic, API calls, and stylistic assumptions from a particular
@@ -43,7 +43,7 @@ const ProjectComponent = () => {
 };
 ```
 
-## Technology Agnostic
+## Be Technology Agnostic
 
 DLS components should work equally well, regardless of the downstream project's
 render strategy (e.g. SSR vs. Static), state management solution (e.g. React
@@ -74,7 +74,7 @@ familiar with the components (and their APIs) that are offered by the library.
 dynamic way using [themes](https://v4.mui.com/customization/theming/). But
 we'll touch on these items later in the guide!)
 
-### Material UI Components > Native DOM Elements
+### Use Material UI Components Over Native DOM Elements
 
 When writing components for the DLS, you should always prefer to use Material UI
 components over native DOM elements.
@@ -110,7 +110,7 @@ The DLS currently supports
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
 3. `"ENCOURA_DATALAB"`: for Encoura's "Datalab" look and feel
 
-#### Decoupling Style from Functionality
+#### Decouple Style from Functionality
 
 Themes allow us to separate the way a component functions, from the way the
 component looks and feels. For example, the
@@ -191,7 +191,7 @@ However, this does not completely eliminate the need for custom styling, and
 thus at some point you'll need to add a few custom styles to your `styles.ts`
 file using [`makeStyles`](https://v4.mui.com/styles/basics/).
 
-### Avoiding Hardcoded Values
+### Avoid Hardcoded Values
 
 When it comes to defining custom styles, the number one rule is to avoid
 hard-coding values. When a style value is hard-coded, we are making a strong
