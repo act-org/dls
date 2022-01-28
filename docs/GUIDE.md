@@ -1,4 +1,7 @@
-# Building for the DLS
+# Developer Guide
+
+This developer guide outlines the core principles that you should keep in mind
+in order to build effectively for the DLS.
 
 ## Decoupling Business Logic from Rendering
 

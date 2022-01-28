@@ -307,7 +307,8 @@ import { SortObject } from '@actinc/dls/types';
 
 ## Local Development
 
-Check out our developer guide on [Building for the DLS](./docs/GUIDE.md).
+Check out our [developer guide](./docs/GUIDE.md) on how to build effectively
+for the DLS.
 
 In order to run the DLS locally:
 
