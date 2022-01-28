@@ -20,6 +20,10 @@ const DlsComponent = () => {
     // do something with arrayOfItems
   );
 };
+
+const ProjectComponent = () => (
+  <DlsComponent />
+);
 ```
 
 For that reason, DLS components should be as "dumb" as possible. Ideally, they
@@ -29,7 +33,7 @@ downstream project.
 ```jsx
 // GOOD:
 
-const NewDlsComponent = ({ items }) => (
+const DlsComponent = ({ items }) => (
   // do something with items
 );
 
