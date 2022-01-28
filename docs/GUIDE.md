@@ -116,12 +116,12 @@ The DLS currently supports
 
 #### Decouple Style from Functionality
 
-Themes allow us to separate the way a component functions, from the way the
+Themes allow us to separate the way a component functions from the way the
 component looks and feels. For example, the
 [`Button`](https://v4.mui.com/api/button/#button-api) component from Material UI
 has certain core functionality, such as having a label, firing events, and
-being disabled. This functionality is required regardless of the way the button
-looks.
+being enabled or disabled. This functionality must exist regardless of the
+appearance of the button.
 
 Using themes, we can take this core functionality and style it multiple
 different ways:
@@ -132,7 +132,7 @@ Themes are the keystone that enable us to share common functionality
 (components) across different projects that have a completely different
 look and feel. And this is why you should always prefer to use Material UI
 primitives over native DOM elements — the theme flows throughout all Material
-UI building blocks, and this is not the case with native DOM elements.
+UI building blocks. This is not the case for native DOM elements.
 
 ## Creating a Custom Component
 
@@ -195,12 +195,12 @@ However, this does not completely eliminate the need for custom styling, and
 thus at some point you'll need to add a few custom styles to your `styles.ts`
 file using [`makeStyles`](https://v4.mui.com/styles/basics/).
 
-### Avoid Hardcoded Values
+### Avoid Hard Coding
 
 When it comes to defining custom styles, the number one rule is to avoid
-hard-coding values. When a style value is hard-coded, we are making a strong
-opinion that this style is fixed for this component, even across themes. Often,
-this is not the right assumption to make.
+hard coding values. When a style value is hard coded, we are making a strong
+opinion that this style should be applied globally for this component across all
+themes. Often times, this is not the right assumption to make.
 
 ```tsx
 // BAD:
@@ -279,11 +279,8 @@ the custom styles are no longer needed!
 ```tsx
 // BEST:
 
-// No custom styles are needed...
-export const useStyles = makeStyles({});
-
-// ... because this component is using Material UI primitives. We can handle
-// everything using a few simple props!
+// No custom styles are needed because this component is using Material UI
+// primitives. We can handle everything using a few simple props!
 const MyComponent = () => (
   <Paper elevation={1}>
     <Typography variant="caption">Hello World</Typography>
