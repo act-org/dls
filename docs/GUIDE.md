@@ -230,10 +230,12 @@ const NewComponent = () => {
 };
 ```
 
-Instead, create dynamic styles by tapping into the theme.
-To learn about the values that are available to you on the theme object
+Instead, create dynamic styles by tapping into the theme. This will allow this
+component to look and feel differently across themes!
+
+(To learn about the values that are available to you on the theme object
 see [here](https://v4.mui.com/customization/theming/) and
-[here](https://v4.mui.com/customization/default-theme/).
+[here](https://v4.mui.com/customization/default-theme/).)
 
 ```tsx
 // BETTER:
