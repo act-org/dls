@@ -151,9 +151,7 @@ structure:
  ┗ index.ts
 ```
 
-A few things to note:
-
-1. Ensure that all prop types and components are exported from the component's
+Ensure that all prop types and components are exported from the component's
 `index.tsx` file:
 
 ```tsx
@@ -174,7 +172,7 @@ export const NewComponent = () => { ... };
 export default NewComponent;
 ```
 
-2. Don't forget to also export this component from `src/components/index.ts`:
+Also, don't forget to also export this component from `src/components/index.ts`:
 
 ```ts
 // src/components/index.ts
