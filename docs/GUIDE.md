@@ -233,7 +233,7 @@ const NewComponent = () => {
 Instead, create dynamic styles by tapping into the theme. This will allow this
 component to look and feel differently across themes!
 
-(To learn about the values that are available to you on the theme object
+(To learn about the values that are available to you on the theme object,
 see [here](https://v4.mui.com/customization/theming/) and
 [here](https://v4.mui.com/customization/default-theme/).)
 
@@ -279,7 +279,7 @@ the custom styles are no longer needed!
 ```tsx
 // BEST:
 
-// No custom styles are needed because this component is using Material UI
+// No custom styles are needed because this component is built using Material UI
 // primitives. We can handle everything using a few simple props!
 const MyComponent = () => (
   <Paper elevation={1}>
