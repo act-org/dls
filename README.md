@@ -307,6 +307,8 @@ import { SortObject } from '@actinc/dls/types';
 
 ## Local Development
 
+Check out our developer guide on [Building for the DLS](./docs/GUIDE.md).
+
 In order to run the DLS locally:
 
 1. Install node modules: `npm install`
