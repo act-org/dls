@@ -57,7 +57,7 @@ being used by the downstream project, aside from one special exception:
 
 ## Material UI (v4)
 
-The DLS is based on [Material UI (v4)](https://v4.mui.com/) -- one of the most
+The DLS is based on [Material UI (v4)](https://v4.mui.com/) — one of the most
 popular and robust component libraries that exists today in the React
 ecosystem.
 
@@ -106,9 +106,9 @@ the Material UI components that we use will look and feel.
 The DLS currently supports
 [3 different themes](https://github.com/act-org/dls/tree/master/src/styles):
 
-1. `"ACT"` - for ACT's "traditional" look and feel
-2. `"ACT_ET"` - for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA_DATALAB"` - for Encoura's "Datalab" look and feel
+1. `"ACT"`: for ACT's "traditional" look and feel
+2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
+3. `"ENCOURA_DATALAB"`: for Encoura's "Datalab" look and feel
 
 #### Decoupling Style from Functionality
 
@@ -122,13 +122,13 @@ looks.
 Using themes, we can take this core functionality and style it multiple
 different ways:
 
-![Style vs. Functionality](./img/style-vs-functionality.png)
+![Style vs. Functionality](https://user-images.githubusercontent.com/4974609/151506765-5158b283-636c-42ba-b51a-ffb77996252a.png)
 
 Themes are the keystone that enable us to share common functionality
 (components) across different projects that have a completely different
 look and feel. And this is why you should always prefer to use Material UI
-primitives over native DOM elements -- the theme flows throughout all Material
-UI building blocks, but not through native DOM elements.
+primitives over native DOM elements — the theme flows throughout all Material
+UI building blocks, and this is not the case with native DOM elements.
 
 ## Creating a Custom Component
 
@@ -143,40 +143,42 @@ structure:
  ┃ ┣ index.stories.template.tsx  // storybook template goes here
  ┃ ┣ index.test.tsx              // component tests go here
  ┃ ┣ index.tsx                   // component functionality goes here
- ┃ ┗ styles.ts                   // component styles go here
+ ┃ ┗ styles.ts                   // component custom styles go here
  ┗ index.ts
 ```
 
-* Ensure that all prop types and components are exported from the component's
+A few things to note:
+
+1. Ensure that all prop types and components are exported from the component's
 `index.tsx` file:
 
-    ```tsx
-    // src/components/NewComponent/index.tsx
+```tsx
+// src/components/NewComponent/index.tsx
 
-    // Ensure that the main prop type can be imported by the downstream project.
-    // To be consistent with the way Material UI names their prop types, the name
-    // of the main prop type should be the name of the component, followed
-    // by "Props".
-    export type NewComponentProps = { ... };
+// Ensure that the main prop type can be imported by the downstream project.
+// To be consistent with the way Material UI names their prop types, the name
+// of the main prop type should be the name of the component, followed
+// by "Props".
+export type NewComponentProps = { ... };
 
-    // Ensure that the main component can be imported by the downstream project
-    // using a named import statement.
-    export const NewComponent = () => { ... };
+// Ensure that the main component can be imported by the downstream project
+// using a named import statement.
+export const NewComponent = () => { ... };
 
-    // Ensure that the main component can be imported by the downstream project
-    // using a default import statement.
-    export default NewComponent;
-    ```
+// Ensure that the main component can be imported by the downstream project
+// using a default import statement.
+export default NewComponent;
+```
 
-* Don't forget to also export this component from `src/components/index.ts`:
+2. Don't forget to also export this component from `src/components/index.ts`:
 
-    ```ts
-    // src/components/index.ts
+```ts
+// src/components/index.ts
 
-    ...
-    export * from './NewComponent';
-    ...
-    ```
+...
+export * from './NewComponent';
+...
+```
 
 ## Styling a Custom Component
 
@@ -186,8 +188,8 @@ Material UI components are designed to look great out of the box and to
 compose well together, so definitely use them!
 
 However, this does not completely eliminate the need for custom styling, and
-thus you'll probably need to add a few custom styles to your `styles.ts` file
-using [`makeStyles`](https://v4.mui.com/styles/basics/).
+thus at some point you'll need to add a few custom styles to your `styles.ts`
+file using [`makeStyles`](https://v4.mui.com/styles/basics/).
 
 ### Avoiding Hardcoded Values
 

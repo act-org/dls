@@ -23,9 +23,9 @@ This DLS is built on top of the
 [theming engine](https://material-ui.com/customization/theming/) from
 Material UI, and ships with two themes out of the box:
 
-1. `"ACT"` - for ACT's "traditional" look and feel
-2. `"ACT_ET"` - for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA_DATALAB"` - for Encoura's "Datalab" look and feel
+1. `"ACT"`: for ACT's "traditional" look and feel
+2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
+3. `"ENCOURA_DATALAB"`: for Encoura's "Datalab" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
