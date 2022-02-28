@@ -17,6 +17,9 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    'react/function-component-definition': 'off', // Allows const defined components
+  },
   settings: {
     'import/resolver': {
       'babel-plugin-root-import': {},

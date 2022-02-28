@@ -2,7 +2,12 @@
 
 Chronological history of changes to the Design Language System.
 
-## [v5.11.0] - Jan 20, 2021
+## [v5.11.1] - Feb 28, 2022
+
+* Upgraded most of the NPM dependencies and dev-dependencies to their latest
+compatible releases.
+
+## [v5.11.0] - Jan 20, 2022
 
 * Added a new color option, `customColors.tertiary.main`, to all themes.
   * Material UI v4 does not support the "tertiary" keyword on the `palette`, so
@@ -10,12 +15,12 @@ Chronological history of changes to the Design Language System.
 * Updated the `palette.secondary.dark` color on the `ENCOURA_DATALAB` theme to
 `#003359`.
 
-## [v5.10.1] - Jan 20, 2021
+## [v5.10.1] - Jan 20, 2022
 
 * Enable more flexibility on the react version used by downstream projects by
 moving `react` and `react-dom` to dev dependencies.
 
-## [v5.10.0] - Jan 13, 2021
+## [v5.10.0] - Jan 13, 2022
 
 * Added a new theme, `ENCOURA_DATALAB`, to the DLS. This theme is representative
 of one of [Encoura](https://encoura.org/)'s product lines.
