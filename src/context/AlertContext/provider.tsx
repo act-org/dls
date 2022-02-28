@@ -77,6 +77,7 @@ class Provider extends React.Component<Props> {
 
     return (
       <AlertContext.Provider
+        // eslint-disable-next-line react/jsx-no-constructed-context-values
         value={{
           actions: {
             addAlert: this._addAlert,
