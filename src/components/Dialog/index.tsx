@@ -14,7 +14,7 @@ import {
   DialogProps as MuiDialogProps,
   DialogTitle,
   IconButton,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import CloseCircle from '~/icons/CloseCircle';
 
@@ -53,6 +53,7 @@ export function Dialog({
                     onClose({}, 'closeIconClick');
                   }
                 }}
+                size="large"
               >
                 <CloseCircle />
               </IconButton>

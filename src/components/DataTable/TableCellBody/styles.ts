@@ -7,12 +7,12 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ spacing, typography }) => ({
   tableCellRoot: {
     fontSize: '0.888rem',
     fontWeight: Number(typography.fontWeightRegular),
-    padding: `${spacing(1)}px !important`,
+    padding: `${spacing(1)} !important`,
   },
 }));

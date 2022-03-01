@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

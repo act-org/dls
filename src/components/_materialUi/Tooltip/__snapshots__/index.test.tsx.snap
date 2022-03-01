@@ -4,9 +4,11 @@ exports[`Tooltip ACT theme matches the snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-colorPrimary"
+    aria-label="Title text here"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+    data-mui-internal-clone-element="true"
+    data-testid="HelpCircleOutlineIcon"
     focusable="false"
-    title="Title text here"
     viewBox="0 0 24 24"
   >
     <path
@@ -20,9 +22,11 @@ exports[`Tooltip ACT_ET theme matches the snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root"
+    aria-label="Title text here"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+    data-mui-internal-clone-element="true"
+    data-testid="HelpCircleOutlineIcon"
     focusable="false"
-    title="Title text here"
     viewBox="0 0 24 24"
   >
     <path
@@ -36,9 +40,11 @@ exports[`Tooltip ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root"
+    aria-label="Title text here"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+    data-mui-internal-clone-element="true"
+    data-testid="HelpCircleOutlineIcon"
     focusable="false"
-    title="Title text here"
     viewBox="0 0 24 24"
   >
     <path

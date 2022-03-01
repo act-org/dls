@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ spacing }) => ({
   container: {
@@ -19,6 +19,6 @@ export default makeStyles(({ spacing }) => ({
     width: '100%',
   },
   typographyRoot: {
-    marginTop: spacing(1) / 2,
+    marginTop: spacing(0.5),
   },
 }));

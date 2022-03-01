@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { ButtonGroup } from '@material-ui/core';
+import { ButtonGroup } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

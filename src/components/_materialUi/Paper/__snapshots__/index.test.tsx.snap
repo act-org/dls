@@ -3,7 +3,7 @@
 exports[`Paper ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-1mbunh-MuiPaper-root"
   >
     Paper
   </div>
@@ -13,7 +13,7 @@ exports[`Paper ACT theme matches the snapshot 1`] = `
 exports[`Paper ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-1mbunh-MuiPaper-root"
   >
     Paper
   </div>
@@ -23,7 +23,7 @@ exports[`Paper ACT_ET theme matches the snapshot 1`] = `
 exports[`Paper ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation2 MuiPaper-rounded"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-1mbunh-MuiPaper-root"
   >
     Paper
   </div>

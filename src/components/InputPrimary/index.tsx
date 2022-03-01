@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { Input, InputProps } from '@material-ui/core';
+import { Input, InputProps } from '@mui/material';
 
 import mergeClasses from '~/helpers/mergeClasses';
 

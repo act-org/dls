@@ -3,16 +3,16 @@
 exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-1 MuiGrid-spacing-xs-4"
+    class="MuiGrid-root makeStyles-gridContainerRoot-1 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
+      class="MuiGrid-root makeStyles-gridItemRoot-2 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-3 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -29,12 +29,12 @@ exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 1"
             required=""
             type="text"
@@ -44,13 +44,13 @@ exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
+      class="MuiGrid-root makeStyles-gridItemRoot-2 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-3 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -67,12 +67,12 @@ exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 2"
             required=""
             type="password"
@@ -83,16 +83,16 @@ exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-1 MuiGrid-spacing-xs-4"
+    class="MuiGrid-root makeStyles-gridContainerRoot-1 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-2"
+      class="MuiGrid-root makeStyles-gridItemRoot-2 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-3 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -104,11 +104,11 @@ exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 3"
             type="text"
             value="value3"
@@ -123,16 +123,16 @@ exports[`FormInputGroups ACT theme matches the snapshot 1`] = `
 exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-4 MuiGrid-spacing-xs-4"
+    class="MuiGrid-root makeStyles-gridContainerRoot-4 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-5"
+      class="MuiGrid-root makeStyles-gridItemRoot-5 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-6 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -149,12 +149,12 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 1"
             required=""
             type="text"
@@ -164,13 +164,13 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-5"
+      class="MuiGrid-root makeStyles-gridItemRoot-5 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-6 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -187,12 +187,12 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 2"
             required=""
             type="password"
@@ -203,16 +203,16 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-4 MuiGrid-spacing-xs-4"
+    class="MuiGrid-root makeStyles-gridContainerRoot-4 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-5"
+      class="MuiGrid-root makeStyles-gridItemRoot-5 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-6 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -224,11 +224,11 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 3"
             type="text"
             value="value3"
@@ -243,16 +243,16 @@ exports[`FormInputGroups ACT_ET theme matches the snapshot 1`] = `
 exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-7 MuiGrid-spacing-xs-4"
+    class="MuiGrid-root makeStyles-gridContainerRoot-7 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-8"
+      class="MuiGrid-root makeStyles-gridItemRoot-8 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-9 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-9 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -269,12 +269,12 @@ exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 1"
             required=""
             type="text"
@@ -284,13 +284,13 @@ exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-8"
+      class="MuiGrid-root makeStyles-gridItemRoot-8 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-9 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-9 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -307,12 +307,12 @@ exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 2"
             required=""
             type="password"
@@ -323,16 +323,16 @@ exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container makeStyles-gridContainerRoot-7 MuiGrid-spacing-xs-4"
+    class="MuiGrid-root makeStyles-gridContainerRoot-7 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item makeStyles-gridItemRoot-8"
+      class="MuiGrid-root makeStyles-gridItemRoot-8 MuiGrid-item css-13i4rnv-MuiGrid-root"
     >
       <div
-        class="MuiFormControl-root"
+        class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-9 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+          class="makeStyles-labelRoot-9 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -344,11 +344,11 @@ exports[`FormInputGroups ENCOURA_DATALAB theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input"
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
             placeholder="Input 3"
             type="text"
             value="value3"

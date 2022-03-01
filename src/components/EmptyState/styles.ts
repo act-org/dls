@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ palette, spacing }) => ({
   container: {
@@ -19,7 +19,7 @@ export default makeStyles(({ palette, spacing }) => ({
   descriptionRoot: {
     color: palette.text.secondary,
     marginBottom: spacing(2),
-    marginTop: spacing(1) / 2,
+    marginTop: spacing(0.5),
     maxWidth: 350,
   },
   descriptionRootFlexibleHeight: {
@@ -40,7 +40,7 @@ export default makeStyles(({ palette, spacing }) => ({
     maxWidth: 300,
   },
   titleGridContainerWithDescription: {
-    marginBottom: spacing(1) / 2,
+    marginBottom: spacing(0.5),
   },
   titleGridItem: {
     display: 'flex',

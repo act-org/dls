@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Button, Drawer, DrawerProps, Typography } from '@material-ui/core';
+import { Button, Drawer, DrawerProps, Typography } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

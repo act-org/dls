@@ -5,7 +5,7 @@
 import * as React from 'react';
 import clsx from 'clsx';
 import { isNil } from 'lodash';
-import { Select, SelectProps } from '@material-ui/core';
+import { Select, SelectProps } from '@mui/material';
 
 import ChevronDown from '~/icons/ChevronDown';
 import mergeClasses from '~/helpers/mergeClasses';

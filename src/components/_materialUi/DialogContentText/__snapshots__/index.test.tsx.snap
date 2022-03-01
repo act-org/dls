@@ -3,7 +3,7 @@
 exports[`DialogContentText ACT theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+    class="MuiDialogContentText-root MuiTypography-root MuiTypography-body1 css-qfso29-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>
@@ -13,7 +13,7 @@ exports[`DialogContentText ACT theme matches the snapshot 1`] = `
 exports[`DialogContentText ACT_ET theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+    class="MuiDialogContentText-root MuiTypography-root MuiTypography-body1 css-qfso29-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>
@@ -23,7 +23,7 @@ exports[`DialogContentText ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogContentText ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+    class="MuiDialogContentText-root MuiTypography-root MuiTypography-body1 css-qfso29-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>

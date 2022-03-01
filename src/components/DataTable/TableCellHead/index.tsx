@@ -8,8 +8,8 @@
  */
 
 import * as React from 'react';
-import { Grid, TableCell, TableCellProps, Typography } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Grid, TableCell, TableCellProps, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 import ChevronDown from '~/icons/ChevronDown';
 import ChevronUp from '~/icons/ChevronUp';

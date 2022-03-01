@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(theme => ({
   appBarRoot: ({ appBarHeight }: any): any => ({
@@ -15,7 +15,7 @@ export default makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'row',
     height: appBarHeight,
-    padding: `0 ${theme.spacing(1) * 2.58}px`,
+    padding: `0 calc(${theme.spacing(1)} * 2.58)`,
   }),
   navContainer: {
     alignItems: 'center',

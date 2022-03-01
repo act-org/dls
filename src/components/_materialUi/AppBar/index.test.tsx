@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { AppBar } from '@material-ui/core';
+import { AppBar } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

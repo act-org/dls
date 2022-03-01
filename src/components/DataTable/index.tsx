@@ -15,7 +15,7 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
 import { SortObject } from '~/types';

@@ -2,7 +2,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 const BORDER_WIDTH = 2;
 
@@ -13,7 +13,7 @@ export default makeStyles(({ palette, shape, typography }) => ({
   selectRoot: {
     alignItems: 'center !important',
     border: `${BORDER_WIDTH}px solid ${palette.primary.main} !important`,
-    borderRadius: `${shape.borderRadius * 5}px !important`,
+    borderRadius: `${(shape.borderRadius as number) * 5}px !important`,
     color: `${palette.primary.main} !important`,
     display: 'flex !important',
     fontSize: `${typography.fontSize}px !important`,

@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { OutlinedInput, OutlinedInputProps } from '@material-ui/core';
+import { OutlinedInput, OutlinedInputProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

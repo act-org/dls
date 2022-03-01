@@ -12,7 +12,7 @@ import {
   InputLabel as MuiInputLabel,
   InputLabelProps as MuiInputLabelProps,
   Tooltip,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { mergeClasses } from '~/helpers';

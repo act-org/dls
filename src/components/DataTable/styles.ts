@@ -7,15 +7,15 @@
  * @prettier
  */
 
-import { grey } from '@material-ui/core/colors';
-import { makeStyles } from '@material-ui/core/styles';
+import { grey } from '@mui/material/colors';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ spacing, typography }) => ({
   emptyStateContainer: {
     paddingBottom: spacing(1),
     paddingLeft: spacing(1),
     paddingRight: spacing(1),
-    paddingTop: spacing(1) * 2.5,
+    paddingTop: spacing(2.5),
     width: '100%',
   },
   tablePaginationRoot: {

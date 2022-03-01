@@ -14,8 +14,8 @@ import {
   InputAdornment,
   OutlinedInput,
   OutlinedInputProps,
-} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+} from '@mui/material';
+import makeStyles from '@mui/styles/makeStyles';
 
 import CloseCircle from '~/icons/CloseCircle';
 import Magnify from '~/icons/Magnify';
@@ -69,6 +69,7 @@ export function SearchBar({
                 });
               }
             }}
+            size="large"
             title="Clears the search"
           >
             <CloseCircle fontSize="small" />

@@ -8,7 +8,7 @@
  */
 
 /* eslint-disable @typescript-eslint/no-empty-interface */
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme, adaptV4Theme } from '@mui/material/styles';
 
 import { CustomThemeOptions } from '~/types';
 
@@ -31,4 +31,4 @@ export const THEME_ACT: CustomThemeOptions = {
   typography: TYPOGRAPHY,
 };
 
-export default createTheme(THEME_ACT);
+export default createTheme(adaptV4Theme(THEME_ACT));

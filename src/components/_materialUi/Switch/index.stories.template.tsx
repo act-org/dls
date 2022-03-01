@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { Switch, SwitchProps } from '@material-ui/core';
+import { Switch, SwitchProps } from '@mui/material';
 
 import { Playground } from '~/helpers/playground';
 

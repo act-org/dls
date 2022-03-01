@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Link, Typography } from '@material-ui/core';
+import { Link, Typography } from '@mui/material';
 
 import useStyles from './styles';
 

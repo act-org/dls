@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Switch } from '@material-ui/core';
+import { Switch } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

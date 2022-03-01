@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import { common } from '@material-ui/core/colors';
-import { PaletteOptions } from '@material-ui/core/styles/createPalette';
+import { common } from '@mui/material/colors';
+import { PaletteOptions } from '@mui/material/styles';
 
 import COLORS from './colors';
 

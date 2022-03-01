@@ -10,14 +10,14 @@
 import * as React from 'react';
 import clsx from 'clsx';
 import { FixedSizeList } from 'react-window';
-import { grey } from '@material-ui/core/colors';
+import { grey } from '@mui/material/colors';
 import {
   IconButton,
   MenuItem,
   PopperProps,
   TextField,
   Tooltip,
-} from '@material-ui/core';
+} from '@mui/material';
 import { min } from 'lodash';
 
 import { ChevronLeft, ChevronRight, PageFirst, PageLast } from '~/icons';
@@ -92,6 +92,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             aria-label={`First ${noun}`}
             disabled={disableFirst}
             onClick={(event): void => onPageChange(event, 0)}
+            size="large"
           >
             <PageFirst
               fontSize="small"
@@ -112,6 +113,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             aria-label={`Previous ${noun}`}
             disabled={disablePrevious}
             onClick={(event): void => onPageChange(event, zeroBasedPage - 1)}
+            size="large"
           >
             <ChevronLeft
               fontSize="small"
@@ -206,6 +208,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             aria-label={`Next ${noun}`}
             disabled={disableNext}
             onClick={(event): void => onPageChange(event, zeroBasedPage + 1)}
+            size="large"
           >
             <ChevronRight
               fontSize="small"
@@ -231,6 +234,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
                 Math.max(0, Math.ceil(count / rowsPerPage) - 1),
               );
             }}
+            size="large"
           >
             <PageLast
               fontSize="small"

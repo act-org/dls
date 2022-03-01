@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import * as locales from '@material-ui/core/locale';
+import * as locales from '@mui/material/locale';
 import { addParameters } from '@storybook/react';
-import { common, grey } from '@material-ui/core/colors';
+import { common, grey } from '@mui/material/colors';
 import { configureActions } from '@storybook/addon-actions';
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 
 import { ThemeProvider } from '../src/components/ThemeProvider';

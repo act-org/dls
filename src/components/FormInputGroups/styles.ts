@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ spacing }) => ({
   gridContainerRoot: {
-    marginBottom: spacing(1) / 2,
+    marginBottom: spacing(0.5),
   },
   gridItemRoot: {
     flex: 1,

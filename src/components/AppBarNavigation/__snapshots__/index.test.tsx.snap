@@ -3,10 +3,10 @@
 exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiAppBar-root makeStyles-appBarRoot-1 makeStyles-appBarRoot-3 MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 makeStyles-appBarRoot-1 makeStyles-appBarRoot-3 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-v526sl-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-6 MuiTypography-colorPrimary"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-logoLink-6 css-1iwtne7-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -17,31 +17,31 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-navContainer-2 MuiGrid-spacing-xs-4"
+      class="MuiGrid-root makeStyles-navContainer-2 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 MuiTypography-colorPrimary"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-7 css-1iwtne7-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root makeStyles-navTypography-8 makeStyles-navTypography-9 MuiTypography-body1 MuiTypography-colorPrimary"
+            class="makeStyles-navTypography-8 makeStyles-navTypography-9 MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 MuiTypography-colorPrimary"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-7 css-1iwtne7-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root makeStyles-navTypography-8 makeStyles-navTypography-10 MuiTypography-body1 MuiTypography-colorPrimary"
+            class="makeStyles-navTypography-8 makeStyles-navTypography-10 MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
           >
             Other Page
           </p>
@@ -55,10 +55,10 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiAppBar-root makeStyles-appBarRoot-11 makeStyles-appBarRoot-13 MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 makeStyles-appBarRoot-11 makeStyles-appBarRoot-13 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-v526sl-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-16 MuiTypography-colorPrimary"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-logoLink-16 css-1iwtne7-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -69,31 +69,31 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-navContainer-12 MuiGrid-spacing-xs-4"
+      class="MuiGrid-root makeStyles-navContainer-12 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-17 MuiTypography-colorPrimary"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-17 css-1iwtne7-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root makeStyles-navTypography-18 makeStyles-navTypography-19 MuiTypography-body1 MuiTypography-colorPrimary"
+            class="makeStyles-navTypography-18 makeStyles-navTypography-19 MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-17 MuiTypography-colorPrimary"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-17 css-1iwtne7-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root makeStyles-navTypography-18 makeStyles-navTypography-20 MuiTypography-body1 MuiTypography-colorPrimary"
+            class="makeStyles-navTypography-18 makeStyles-navTypography-20 MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
           >
             Other Page
           </p>
@@ -107,10 +107,10 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiAppBar-root makeStyles-appBarRoot-21 makeStyles-appBarRoot-23 MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 makeStyles-appBarRoot-21 makeStyles-appBarRoot-23 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-v526sl-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-26 MuiTypography-colorPrimary"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-logoLink-26 css-1iwtne7-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -121,31 +121,31 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-navContainer-22 MuiGrid-spacing-xs-4"
+      class="MuiGrid-root makeStyles-navContainer-22 MuiGrid-container MuiGrid-spacing-xs-4 css-480o17-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-27 MuiTypography-colorPrimary"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-27 css-1iwtne7-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root makeStyles-navTypography-28 makeStyles-navTypography-29 MuiTypography-body1 MuiTypography-colorPrimary"
+            class="makeStyles-navTypography-28 makeStyles-navTypography-29 MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item"
+        class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-27 MuiTypography-colorPrimary"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-27 css-1iwtne7-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root makeStyles-navTypography-28 makeStyles-navTypography-30 MuiTypography-body1 MuiTypography-colorPrimary"
+            class="makeStyles-navTypography-28 makeStyles-navTypography-30 MuiTypography-root MuiTypography-body1 css-vkc4v8-MuiTypography-root"
           >
             Other Page
           </p>

@@ -3,7 +3,7 @@
 exports[`DialogContent ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root"
+    class="MuiDialogContent-root css-ypiqx9-MuiDialogContent-root"
   >
     Hey
   </div>
@@ -13,7 +13,7 @@ exports[`DialogContent ACT theme matches the snapshot 1`] = `
 exports[`DialogContent ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root"
+    class="MuiDialogContent-root css-ypiqx9-MuiDialogContent-root"
   >
     Hey
   </div>
@@ -23,7 +23,7 @@ exports[`DialogContent ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogContent ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root"
+    class="MuiDialogContent-root css-ypiqx9-MuiDialogContent-root"
   >
     Hey
   </div>

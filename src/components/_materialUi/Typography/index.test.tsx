@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

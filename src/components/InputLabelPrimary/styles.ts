@@ -2,7 +2,7 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ palette, typography }) => ({
   labelRoot: {

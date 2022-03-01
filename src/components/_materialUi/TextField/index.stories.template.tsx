@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { get } from 'lodash';
-import { MenuItem, TextField, TextFieldProps } from '@material-ui/core';
+import { MenuItem, TextField, TextFieldProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import { ThemeOptions } from '@material-ui/core/styles';
+import { DeprecatedThemeOptions } from '@mui/material/styles';
 
-export type CustomThemeOptions = ThemeOptions & {
+export type CustomThemeOptions = DeprecatedThemeOptions & {
   customColors: {
     tertiary: {
       main: string;

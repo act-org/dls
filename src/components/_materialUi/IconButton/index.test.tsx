@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { IconButton } from '@material-ui/core';
+import { IconButton } from '@mui/material';
 import { noop } from 'lodash';
 
 import PencilCircle from '~/icons/PencilCircle';
@@ -16,7 +16,7 @@ import { standard } from '~/helpers/test';
 
 describe('IconButton', () => {
   const Component = (
-    <IconButton onClick={noop} title="icon button">
+    <IconButton onClick={noop} size="large" title="icon button">
       <PencilCircle />
     </IconButton>
   );

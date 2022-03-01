@@ -13,7 +13,7 @@ import {
   DataGrid,
   DataGridProps,
   GridValueGetterParams,
-} from '@material-ui/data-grid';
+} from '@mui/x-data-grid';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

@@ -2,8 +2,8 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
-import { grey } from '@material-ui/core/colors';
+import makeStyles from '@mui/styles/makeStyles';
+import { grey } from '@mui/material/colors';
 
 export default makeStyles(({ customDims, spacing, typography }: any) => ({
   inputInput: {
@@ -13,7 +13,7 @@ export default makeStyles(({ customDims, spacing, typography }: any) => ({
     fontSize: 14,
     height: customDims.heights.input,
     minHeight: customDims.heights.input,
-    padding: `0 ${spacing(1)}px`,
+    padding: `0 ${spacing(1)}`,
   },
   inputInputPassword: {
     fontSize: 22,

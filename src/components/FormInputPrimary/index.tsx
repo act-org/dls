@@ -4,8 +4,8 @@
 
 import * as React from 'react';
 import { get } from 'lodash';
-import { Tooltip } from '@material-ui/core';
-import { useTheme } from '@material-ui/core/styles';
+import { Tooltip } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 import AlertOutline from '~/icons/AlertOutline';
 import InputLabelPrimary, {

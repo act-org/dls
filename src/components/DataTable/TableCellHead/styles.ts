@@ -9,8 +9,8 @@
 
 import clsx from 'clsx';
 import Color from 'color';
-import { grey } from '@material-ui/core/colors';
-import { makeStyles } from '@material-ui/core/styles';
+import { grey } from '@mui/material/colors';
+import makeStyles from '@mui/styles/makeStyles';
 
 const ICON_SIZE = 14;
 

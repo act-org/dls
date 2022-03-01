@@ -1,15 +1,6 @@
-/**
- * Copyright (c) ACT, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @prettier
- */
+import { TypographyVariantsOptions } from '@mui/material/styles';
 
-import { TypographyOptions } from '@material-ui/core/styles/createTypography';
-
-const TYPOGRAPHY: TypographyOptions = {
+const TYPOGRAPHY: TypographyVariantsOptions = {
   body1: {
     fontSize: '1.5em',
     fontWeight: 400,

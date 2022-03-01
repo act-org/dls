@@ -7,15 +7,15 @@
  * @prettier
  */
 
-import { ComponentsProps } from '@material-ui/core/styles/props';
-import { DataGridProps } from '@material-ui/data-grid';
-import { LabComponentsPropsList } from '@material-ui/lab/themeAugmentation';
+import { ComponentsProps } from '@mui/material/styles';
+import { DataGridProps } from '@mui/x-data-grid';
+import { LabComponentsPropsList } from '@mui/lab/themeAugmentation';
 
 export interface DataGridPropsList {
   MuiDataGrid: DataGridProps;
 }
 
-declare module '@material-ui/core/styles/props' {
+declare module '@mui/material/styles/props' {
   // eslint-disable-next-line prettier/prettier
   interface ComponentsPropsList
     extends LabComponentsPropsList,

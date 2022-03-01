@@ -8,12 +8,7 @@
  */
 
 import * as React from 'react';
-import {
-  IconButton,
-  Toolbar,
-  ToolbarProps,
-  Typography,
-} from '@material-ui/core';
+import { IconButton, Toolbar, ToolbarProps, Typography } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import Menu from '~/icons/Menu';
@@ -21,7 +16,7 @@ import { Playground } from '~/helpers/playground';
 
 export const Template: Story<ToolbarProps> = args => (
   <Toolbar {...args}>
-    <IconButton aria-label="menu" color="inherit" edge="start">
+    <IconButton aria-label="menu" color="inherit" edge="start" size="large">
       <Menu />
     </IconButton>
     <Typography color="inherit" variant="h6">

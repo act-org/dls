@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Paper, PaperProps } from '@material-ui/core';
+import { Paper, PaperProps } from '@mui/material';
 
 import useStyles from './styles';
 

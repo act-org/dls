@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { IconButton, IconButtonProps } from '@material-ui/core';
+import { IconButton, IconButtonProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import PencilCircle from '~/icons/PencilCircle';
@@ -17,11 +17,11 @@ import { Playground } from '~/helpers/playground';
 
 export const Template: Story<IconButtonProps> = (props: IconButtonProps) => (
   <>
-    <IconButton {...props}>
+    <IconButton {...props} size="large">
       <PencilCircle />
     </IconButton>
 
-    <IconButton {...props}>
+    <IconButton {...props} size="large">
       <PencilCircleOutline />
     </IconButton>
   </>

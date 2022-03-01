@@ -11,7 +11,7 @@ import * as React from 'react';
 import {
   TableContainer as MuiTableContainer,
   TableContainerProps as MuiTableContainerProps,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import Component from './Component';
 

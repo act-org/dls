@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { MenuItem, TextField } from '@material-ui/core';
+import { MenuItem, TextField } from '@mui/material';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import FormInputGroups, { FormInputGroupsProps } from '.';

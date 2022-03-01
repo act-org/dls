@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { MenuItem } from '@material-ui/core';
+import { MenuItem } from '@mui/material';
 import { noop } from 'lodash';
 
 import render from '~/helpers/test/render';

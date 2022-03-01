@@ -3,11 +3,12 @@
 exports[`SelectSecondary matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-expanded="false"
       aria-haspopup="listbox"
-      class="MuiSelect-root makeStyles-selectRoot-5 makeStyles-selectRoot-2 MuiSelect-select makeStyles-selectComponentRoot-3 MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+      class="makeStyles-selectComponentRoot-3 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -15,13 +16,14 @@ exports[`SelectSecondary matches the snapshot 1`] = `
     </div>
     <input
       aria-hidden="true"
-      class="MuiSelect-nativeInput"
+      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
       tabindex="-1"
       value="ONE"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSelect-icon makeStyles-selectIcon-4 makeStyles-selectIcon-1 MuiSelect-iconOutlined"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium makeStyles-selectIcon-4 makeStyles-selectIcon-1 MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+      data-testid="ChevronDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
     >
@@ -31,14 +33,14 @@ exports[`SelectSecondary matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
-      style="padding-left: 8px;"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="PrivateNotchedOutline-legend-8"
-        style="width: 0.01px;"
+        class="css-hdw1oc"
       >
-        <span>
+        <span
+          class="notranslate"
+        >
           ​
         </span>
       </legend>

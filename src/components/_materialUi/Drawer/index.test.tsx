@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Drawer } from '@material-ui/core';
+import { Drawer } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

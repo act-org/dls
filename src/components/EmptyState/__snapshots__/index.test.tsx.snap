@@ -6,35 +6,31 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
     class="makeStyles-container-1"
   >
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-6 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
+      class="MuiGrid-root makeStyles-titleGridContainer-6 MuiGrid-container css-go2vvz-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-8"
+        class="MuiGrid-root makeStyles-titleGridItem-8 MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter"
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-1kgxqm0-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root makeStyles-descriptionRoot-2 MuiTypography-body1 MuiTypography-alignCenter"
+      class="makeStyles-descriptionRoot-2 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1uwgr7b-MuiTypography-root"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
+      Button Title
       <span
-        class="MuiButton-label"
-      >
-        Button Title
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </button>
   </div>
@@ -47,35 +43,31 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
     class="makeStyles-container-9"
   >
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-14 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
+      class="MuiGrid-root makeStyles-titleGridContainer-14 MuiGrid-container css-go2vvz-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-16"
+        class="MuiGrid-root makeStyles-titleGridItem-16 MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter"
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-1kgxqm0-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root makeStyles-descriptionRoot-10 MuiTypography-body1 MuiTypography-alignCenter"
+      class="makeStyles-descriptionRoot-10 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1uwgr7b-MuiTypography-root"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
+      Button Title
       <span
-        class="MuiButton-label"
-      >
-        Button Title
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </button>
   </div>
@@ -88,35 +80,31 @@ exports[`EmptyState ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="makeStyles-container-17"
   >
     <div
-      class="MuiGrid-root MuiGrid-container makeStyles-titleGridContainer-22 MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-center"
+      class="MuiGrid-root makeStyles-titleGridContainer-22 MuiGrid-container css-go2vvz-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item makeStyles-titleGridItem-24"
+        class="MuiGrid-root makeStyles-titleGridItem-24 MuiGrid-item css-13i4rnv-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter"
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-1kgxqm0-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root makeStyles-descriptionRoot-18 MuiTypography-body1 MuiTypography-alignCenter"
+      class="makeStyles-descriptionRoot-18 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1uwgr7b-MuiTypography-root"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
+      Button Title
       <span
-        class="MuiButton-label"
-      >
-        Button Title
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </button>
   </div>

@@ -3,10 +3,10 @@
 exports[`FormSelect ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-1 MuiInputLabel-formControl MuiInputLabel-animated"
+      class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -20,27 +20,31 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
     >
       <div
+        aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
-        <span>
+        <span
+          class="notranslate"
+        >
           ​
         </span>
       </div>
       <input
         aria-hidden="true"
-        class="MuiSelect-nativeInput"
+        class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value=""
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -50,14 +54,14 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
       </svg>
       <fieldset
         aria-hidden="true"
-        class="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
-        style="padding-left: 8px;"
+        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="PrivateNotchedOutline-legend-3"
-          style="width: 0.01px;"
+          class="css-hdw1oc"
         >
-          <span>
+          <span
+            class="notranslate"
+          >
             ​
           </span>
         </legend>
@@ -70,10 +74,10 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
 exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-6 MuiInputLabel-formControl MuiInputLabel-animated"
+      class="makeStyles-labelRoot-2 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -87,27 +91,31 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
     >
       <div
+        aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
-        <span>
+        <span
+          class="notranslate"
+        >
           ​
         </span>
       </div>
       <input
         aria-hidden="true"
-        class="MuiSelect-nativeInput"
+        class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value=""
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -117,14 +125,14 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
       </svg>
       <fieldset
         aria-hidden="true"
-        class="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline"
-        style="padding-left: 8px;"
+        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="PrivateNotchedOutline-legend-8"
-          style="width: 0.01px;"
+          class="css-hdw1oc"
         >
-          <span>
+          <span
+            class="notranslate"
+          >
             ​
           </span>
         </legend>
@@ -137,10 +145,10 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
 exports[`FormSelect ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-11 MuiInputLabel-formControl MuiInputLabel-animated"
+      class="makeStyles-labelRoot-3 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -154,44 +162,48 @@ exports[`FormSelect ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
+      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
     >
       <div
+        aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
-        <span>
+        <span
+          class="notranslate"
+        >
           ​
         </span>
       </div>
       <input
         aria-hidden="true"
-        class="MuiSelect-nativeInput"
+        class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value=""
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+          d="M7 10l5 5 5-5z"
         />
       </svg>
       <fieldset
         aria-hidden="true"
-        class="PrivateNotchedOutline-root-12 MuiOutlinedInput-notchedOutline"
-        style="padding-left: 8px;"
+        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="PrivateNotchedOutline-legend-13"
-          style="width: 0.01px;"
+          class="css-hdw1oc"
         >
-          <span>
+          <span
+            class="notranslate"
+          >
             ​
           </span>
         </legend>

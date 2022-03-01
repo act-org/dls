@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { common } from '@material-ui/core/colors';
-import { Overrides } from '@material-ui/core/styles/overrides';
+import { common } from '@mui/material/colors';
+import { ComponentsOverrides } from '@mui/material/styles';
 
 import COLOR_PALETTE_ACT from './palette';
 import COLORS from './colors';
 
-const OVERRIDES: Overrides = {
+const OVERRIDES: ComponentsOverrides = {
   MuiAlert: {
     outlinedError: {
       color: COLORS.ERROR,
@@ -49,11 +49,7 @@ const OVERRIDES: Overrides = {
       backgroundColor: COLORS.PRIMARY_DARK,
     },
   },
-  MuiButton: {
-    label: {
-      // textTransform: 'none',
-    },
-  },
+  MuiButton: {},
   MuiDialogActions: {
     root: {
       backgroundColor: COLORS.OVERLAY_BACKGROUND,

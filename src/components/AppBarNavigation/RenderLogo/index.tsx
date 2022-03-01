@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { Link } from '@material-ui/core';
+import { Link } from '@mui/material';
 
 import useStyles from './styles';
 

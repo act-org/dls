@@ -8,14 +8,14 @@
  */
 
 import Color from 'color';
-import { common, grey } from '@material-ui/core/colors';
-import { Overrides } from '@material-ui/core/styles/overrides';
+import { common, grey } from '@mui/material/colors';
+import { ComponentsOverrides } from '@mui/material/styles';
 
 import COLORS from './colors';
 import DIMS from './dims';
 import SHAPE from './shape';
 
-const OVERRIDES: Overrides = {
+const OVERRIDES: ComponentsOverrides = {
   MuiAlert: {
     outlinedError: {
       color: COLORS.ERROR_DARK,
@@ -332,6 +332,6 @@ const OVERRIDES: Overrides = {
       opacity: 1,
     },
   },
-} as Overrides;
+} as ComponentsOverrides;
 
 export default OVERRIDES;

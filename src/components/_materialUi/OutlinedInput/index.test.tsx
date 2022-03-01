@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { noop } from 'lodash';
-import { OutlinedInput } from '@material-ui/core';
+import { OutlinedInput } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

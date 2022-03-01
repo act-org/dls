@@ -13,7 +13,7 @@ import {
   FormControlProps,
   RadioGroup,
   RadioGroupProps,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import { FormRadio, FormRadioProps } from '~/components/FormRadio';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';

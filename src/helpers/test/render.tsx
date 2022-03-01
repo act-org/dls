@@ -16,7 +16,7 @@ import {
 } from '@testing-library/react';
 
 import ThemeProvider from '../../components/ThemeProvider';
-import { Theme } from '@material-ui/core';
+import { StyledEngineProvider, Theme } from '@mui/material';
 
 export const render = (
   Component: React.ReactElement,
@@ -25,7 +25,9 @@ export const render = (
 ): RenderResult =>
   originalRender(Component, {
     wrapper: ({ children }) => (
-      <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
+      </StyledEngineProvider>
     ),
     ...options,
   });

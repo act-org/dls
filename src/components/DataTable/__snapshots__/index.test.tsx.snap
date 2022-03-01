@@ -3,34 +3,34 @@
 exports[`DataTable ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root makeStyles-paperRoot-3 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
+    class="makeStyles-paperRoot-3 MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-zdf2ig-MuiPaper-root-MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root css-rqglhn-MuiTable-root"
     >
       <thead
-        class="MuiTableHead-root"
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-head"
+          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-9 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-9 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 50px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-7 makeStyles-typographyRoot-10 MuiTypography-body1"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-10 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               ID
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-4 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-4 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-8"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-8 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 style="color: rgb(0, 0, 0);"
@@ -42,7 +42,8 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-8"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-8 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -54,22 +55,22 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-12 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-12 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-7 makeStyles-typographyRoot-13 MuiTypography-body1"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-13 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Name
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-4 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-4 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-11"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-11 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -80,7 +81,8 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-11"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-11 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -92,22 +94,22 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-15 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-15 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-7 makeStyles-typographyRoot-16 MuiTypography-body1"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-16 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field A
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-4 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-4 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-14"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-14 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -118,7 +120,8 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-14"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-14 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -130,22 +133,22 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-18 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-18 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-7 makeStyles-typographyRoot-19 MuiTypography-body1"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-19 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field B
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-4 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-4 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-17"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-17 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -156,7 +159,8 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-17"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-17 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -168,22 +172,22 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-21 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-21 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-7 makeStyles-typographyRoot-22 MuiTypography-body1"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-22 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field C
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-4 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-4 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-20"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-20 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -194,7 +198,8 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-20"
+                class="makeStyles-sortIconRoot-5 makeStyles-sortIconRoot-20 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -208,198 +213,173 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
         </tr>
       </thead>
       <tbody
-        class="MuiTableBody-root"
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C1
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C2
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C3
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C4
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-23 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C5
@@ -414,34 +394,34 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
 exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root makeStyles-paperRoot-26 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
+    class="makeStyles-paperRoot-26 MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-zdf2ig-MuiPaper-root-MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root css-rqglhn-MuiTable-root"
     >
       <thead
-        class="MuiTableHead-root"
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-head"
+          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-32 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-32 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 50px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-30 makeStyles-typographyRoot-33 MuiTypography-body1"
+              class="makeStyles-typographyRoot-30 makeStyles-typographyRoot-33 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               ID
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-27 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-27 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-31"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-31 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 style="color: rgb(0, 0, 0);"
@@ -453,7 +433,8 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-31"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-31 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -465,22 +446,22 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-35 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-35 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-30 makeStyles-typographyRoot-36 MuiTypography-body1"
+              class="makeStyles-typographyRoot-30 makeStyles-typographyRoot-36 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Name
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-27 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-27 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-34"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-34 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -491,7 +472,8 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-34"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-34 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -503,22 +485,22 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-38 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-38 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-30 makeStyles-typographyRoot-39 MuiTypography-body1"
+              class="makeStyles-typographyRoot-30 makeStyles-typographyRoot-39 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field A
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-27 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-27 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-37"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-37 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -529,7 +511,8 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-37"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-37 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -541,22 +524,22 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-41 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-41 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-30 makeStyles-typographyRoot-42 MuiTypography-body1"
+              class="makeStyles-typographyRoot-30 makeStyles-typographyRoot-42 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field B
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-27 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-27 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-40"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-40 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -567,7 +550,8 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-40"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-40 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -579,22 +563,22 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-44 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-29 makeStyles-tableCellRoot-44 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-30 makeStyles-typographyRoot-45 MuiTypography-body1"
+              class="makeStyles-typographyRoot-30 makeStyles-typographyRoot-45 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field C
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-27 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-27 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-43"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-43 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -605,7 +589,8 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-43"
+                class="makeStyles-sortIconRoot-28 makeStyles-sortIconRoot-43 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -619,198 +604,173 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
         </tr>
       </thead>
       <tbody
-        class="MuiTableBody-root"
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C1
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C2
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C3
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C4
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-46 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-46 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C5
@@ -825,34 +785,34 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
 exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root makeStyles-paperRoot-49 MuiTableContainer-root MuiPaper-elevation0 MuiPaper-rounded"
+    class="makeStyles-paperRoot-49 MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-zdf2ig-MuiPaper-root-MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root css-rqglhn-MuiTable-root"
     >
       <thead
-        class="MuiTableHead-root"
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-head"
+          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-55 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-55 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 50px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-53 makeStyles-typographyRoot-56 MuiTypography-body1"
+              class="makeStyles-typographyRoot-53 makeStyles-typographyRoot-56 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               ID
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-50 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-50 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-54"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-54 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 style="color: rgb(0, 0, 0);"
@@ -864,7 +824,8 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-54"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-54 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -876,22 +837,22 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-58 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-58 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-53 makeStyles-typographyRoot-59 MuiTypography-body1"
+              class="makeStyles-typographyRoot-53 makeStyles-typographyRoot-59 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Name
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-50 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-50 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-57"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-57 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -902,7 +863,8 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-57"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-57 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -914,22 +876,22 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-61 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-61 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-53 makeStyles-typographyRoot-62 MuiTypography-body1"
+              class="makeStyles-typographyRoot-53 makeStyles-typographyRoot-62 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field A
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-50 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-50 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-60"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-60 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -940,7 +902,8 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-60"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-60 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -952,22 +915,22 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-64 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-64 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-53 makeStyles-typographyRoot-65 MuiTypography-body1"
+              class="makeStyles-typographyRoot-53 makeStyles-typographyRoot-65 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field B
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-50 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-50 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-63"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-63 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -978,7 +941,8 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-63"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-63 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -990,22 +954,22 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-67 MuiTableCell-head"
-            role="columnheader"
+            class="makeStyles-tableCellRoot-52 makeStyles-tableCellRoot-67 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root makeStyles-typographyRoot-53 makeStyles-typographyRoot-68 MuiTypography-body1"
+              class="makeStyles-typographyRoot-53 makeStyles-typographyRoot-68 MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
             >
               Field C
             </p>
             <div
-              class="MuiGrid-root makeStyles-sortContainerRoot-50 MuiGrid-container"
+              class="makeStyles-sortContainerRoot-50 MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-66"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-66 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 3 5 15"
@@ -1016,7 +980,8 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               </svg>
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-66"
+                class="makeStyles-sortIconRoot-51 makeStyles-sortIconRoot-66 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
                 focusable="false"
                 role="button"
                 viewBox="9 7 5 15"
@@ -1030,198 +995,173 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
         </tr>
       </thead>
       <tbody
-        class="MuiTableBody-root"
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B1
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C1
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B2
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C2
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B3
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C3
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B4
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C4
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root MuiTableRow-hover"
+          class="MuiTableRow-root MuiTableRow-hover css-1q1u3t4-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 50px;"
           >
             5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B5
           </td>
           <td
-            class="MuiTableCell-root makeStyles-tableCellRoot-69 MuiTableCell-body MuiTableCell-paddingNone"
-            role="cell"
+            class="makeStyles-tableCellRoot-69 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-11w94w9-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C5

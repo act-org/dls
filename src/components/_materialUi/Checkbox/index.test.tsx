@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react';
-import { Checkbox } from '@material-ui/core';
+import { Checkbox } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

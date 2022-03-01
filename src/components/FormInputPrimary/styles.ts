@@ -2,14 +2,14 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import makeStyles from '@mui/styles/makeStyles';
 
 export default makeStyles(({ spacing }) => ({
   inputContainer: {
     position: 'relative',
   },
   labelContainer: {
-    marginBottom: spacing(1) / 2,
+    marginBottom: spacing(0.5),
   },
   warning: {
     marginLeft: 3,

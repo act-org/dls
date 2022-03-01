@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import { InputLabel, InputLabelProps } from '@material-ui/core';
+import { InputLabel, InputLabelProps } from '@mui/material';
 
 import mergeClasses from '~/helpers/mergeClasses';
 

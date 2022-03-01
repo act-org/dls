@@ -15,7 +15,7 @@ import {
   Select,
   SelectProps,
   Tooltip,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import AlertOutline from '~/icons/AlertOutline';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
