@@ -1,7 +1,3 @@
-# Changelog
-
-Chronological history of changes to the Design Language System.
-
 ## [v5.11.1] - Feb 28, 2022
 
 * Upgraded most of the NPM dependencies and dev-dependencies to their latest

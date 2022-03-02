@@ -10,11 +10,11 @@ The Design Language System for ACT front-end projects. View the UI components
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://material-ui.com/) version `4.x` and
+[Material UI](https://mui.com/) version `5.x` and
 [React](https://reactjs.org/) version `16.x` or `17.x`.
 
 ```shell
-npm install --save @actinc/dls@latest @material-ui/core@4 react@17 react-dom@17
+npm install --save @actinc/dls@latest @mui/materail@5 @mui/styles@5 @mui/lab @mui/x-data-grid @emotion/styled@11 @emotion/react@11 react@17 react-dom@17
 ```
 
 ### Choosing a Theme
@@ -50,7 +50,7 @@ You can exend the core DLS themes using the
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/materia/styles';
 import { merge } from 'lodash';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components';
@@ -73,7 +73,7 @@ Alternatively, you can build your own theme from scratch using the
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@actinc/dls/components';
 
 const myCustomTheme = createTheme({
@@ -140,7 +140,7 @@ the root of your component tree in order to reset and normalize browser styles
 for your project:
 
 ```jsx
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 
 ...
 
@@ -161,7 +161,7 @@ In a [Next.js](https://nextjs.org/) project, for example, you would add the
 following to your `pages/_document.tsx` file:
 
 ```jsx
-import { ServerStyleSheets } from '@material-ui/core/styles';
+import { ServerStyleSheets } from '@mui/styles';
 
 ...
 
@@ -233,13 +233,17 @@ module.exports = {
     [
       'babel-plugin-transform-imports',
       {
-        '@material-ui/core': {
+        '@mui/material': {
           preventFullImport: true,
-          transform: '@material-ui/core/${member}',
+          transform: '@mui/material/${member}',
         },
-        '@material-ui/core/colors': {
+        '@mui/material/colors': {
           preventFullImport: true,
-          transform: '@material-ui/core/colors/${member}',
+          transform: '@mui/material/colors/${member}',
+        },
+        '@mui/styles': {
+          preventFullImport: true,
+          transform: '@mui/styles/${member}',
         },
         '@actinc/dls/components': {
           transform: '@actinc/dls/components/${member}',
