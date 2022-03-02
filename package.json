@@ -158,5 +158,5 @@
     "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
-  "version": "5.11.1"
+  "version": "6.0.0-alpha.0"
 }
