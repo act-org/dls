@@ -3,10 +3,10 @@
 exports[`SearchBar ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-147nx2y-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ittuaa-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
     >
       <span
         class="notranslate"
@@ -15,7 +15,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
         data-testid="MagnifyIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -27,23 +27,24 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-1u3r8wa-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-1laqsz7-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-1om5its-MuiInputAdornment-root"
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-mf1cb5-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+        color="primary"
         tabindex="0"
         title="Clears the search"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ead8px-MuiSvgIcon-root"
           data-testid="CloseCircleIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -59,7 +60,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
     >
       <legend
         class="css-hdw1oc"
@@ -78,10 +79,10 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
 exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ouvqtk-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ittuaa-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
     >
       <span
         class="notranslate"
@@ -90,7 +91,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
         data-testid="MagnifyIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -102,23 +103,23 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-46w5yo-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-1laqsz7-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-1om5its-MuiInputAdornment-root"
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-mf1cb5-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         title="Clears the search"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1redh2f-MuiSvgIcon-root"
           data-testid="CloseCircleIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -153,10 +154,10 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
 exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ctjm4-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ittuaa-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
     >
       <span
         class="notranslate"
@@ -165,7 +166,7 @@ exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
         data-testid="MagnifyIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -177,23 +178,23 @@ exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-46w5yo-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-1laqsz7-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionEnd css-1om5its-MuiInputAdornment-root"
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-mf1cb5-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         title="Clears the search"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
           data-testid="CloseCircleIcon"
           focusable="false"
           viewBox="0 0 24 24"

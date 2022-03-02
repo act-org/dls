@@ -3,10 +3,11 @@
 exports[`Switch ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-tnsvld-MuiSwitch-root"
   >
     <span
-      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase"
+      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-m489x8-MuiButtonBase-root-MuiSwitch-switchBase"
+      color="primary"
     >
       <input
         checked=""
@@ -30,10 +31,10 @@ exports[`Switch ACT theme matches the snapshot 1`] = `
 exports[`Switch ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
   >
     <span
-      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase"
+      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-1naxtjv-MuiButtonBase-root-MuiSwitch-switchBase"
     >
       <input
         checked=""
@@ -41,14 +42,14 @@ exports[`Switch ACT_ET theme matches the snapshot 1`] = `
         type="checkbox"
       />
       <span
-        class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+        class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
       />
       <span
         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </span>
     <span
-      class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
+      class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
     />
   </span>
 </div>
@@ -57,10 +58,10 @@ exports[`Switch ACT_ET theme matches the snapshot 1`] = `
 exports[`Switch ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-julti5-MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
   >
     <span
-      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase"
+      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-q207r6-MuiButtonBase-root-MuiSwitch-switchBase"
     >
       <input
         checked=""
@@ -68,14 +69,14 @@ exports[`Switch ENCOURA_DATALAB theme matches the snapshot 1`] = `
         type="checkbox"
       />
       <span
-        class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+        class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
       />
       <span
         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </span>
     <span
-      class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
+      class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
     />
   </span>
 </div>

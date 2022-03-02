@@ -18,6 +18,7 @@ import { argTypes, Template } from './index.stories.template';
   component={Toolbar}
   argTypes={argTypes}
   parameters={{}}
+  render={Template}
 />
 
 <Description of={Toolbar} />
@@ -25,9 +26,7 @@ import { argTypes, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
-  <Story name="Primary" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Primary" args={{}}/>
 </Canvas>
 
 ## Disable Gutters
@@ -38,9 +37,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       disableGutters: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Variant: Regular
@@ -51,9 +48,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       variant: 'regular',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Variant: Dense
@@ -64,17 +59,13 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       variant: 'dense',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Playground" args={{}}/>
   <ArgsTable story="Playground" />
 </Canvas>

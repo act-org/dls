@@ -3,7 +3,8 @@
 exports[`Checkbox ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-10m3sgg-MuiButtonBase-root-MuiCheckbox-root"
+    color="primary"
   >
     <input
       checked=""
@@ -13,7 +14,7 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -32,7 +33,7 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
 exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-1e3aweb-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -42,7 +43,7 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -61,7 +62,7 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-wakehq-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -71,7 +72,7 @@ exports[`Checkbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"

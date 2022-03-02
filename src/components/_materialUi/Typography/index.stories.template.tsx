@@ -9,9 +9,12 @@
 
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { Typography, TypographyProps } from '@mui/material';
+import { Typography as MuiTypography, TypographyProps as MuiTypographyProps } from '@mui/material';
 
 import { Playground } from '~/helpers/playground';
+
+export const Typography = MuiTypography;
+export type TypographyProps = MuiTypographyProps;
 
 export const Template: Story<TypographyProps> = (props: TypographyProps) => (
   <Typography {...props} />

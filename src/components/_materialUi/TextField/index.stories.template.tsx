@@ -9,10 +9,13 @@
 
 import * as React from 'react';
 import { get } from 'lodash';
-import { MenuItem, TextField, TextFieldProps } from '@mui/material';
+import { MenuItem, TextField as MuiTextField, TextFieldProps as MuiTextFieldProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const TextField = MuiTextField;
+export type TextFieldProps = MuiTextFieldProps;
 
 export const Template: Story<TextFieldProps> = ({
   value,

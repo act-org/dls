@@ -8,10 +8,13 @@
  */
 
 import * as React from 'react';
-import { Paper, PaperProps } from '@mui/material';
+import { Paper as MuiPaper, PaperProps as MuiPaperProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const Paper = MuiPaper;
+export type PaperProps = MuiPaperProps;
 
 export const Template: Story<PaperProps> = (props: PaperProps) => (
   <Paper

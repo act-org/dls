@@ -12,7 +12,7 @@ import { Radio } from '@mui/material';
 
 import { argTypes, Template } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Radio} title="Material UI/Radio" />
+<Meta argTypes={argTypes} component={Radio} title="Material UI/Radio" render={Template} />
 
 <Description of={Radio} />
 
@@ -25,9 +25,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Primary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -40,9 +38,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Primary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Secondary Radio
@@ -54,9 +50,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Secondary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -69,9 +63,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Secondary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Radio Sizes
@@ -86,9 +78,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Size: Small"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Medium
@@ -100,9 +90,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Size: Medium"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
@@ -118,8 +106,6 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Playground"
-  >
-    {Template.bind({})}
-  </Story>
+  />
   <ArgsTable story="Playground" />
 </Canvas>

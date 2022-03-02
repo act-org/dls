@@ -3,7 +3,8 @@
 exports[`Button ACT theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1evqelc-MuiButtonBase-root-MuiButton-root"
+    color="primary"
     tabindex="0"
     type="button"
   >
@@ -18,7 +19,7 @@ exports[`Button ACT theme matches the snapshot 1`] = `
 exports[`Button ACT_ET theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+    class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-q8ru1j-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >
@@ -33,7 +34,7 @@ exports[`Button ACT_ET theme matches the snapshot 1`] = `
 exports[`Button ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1m9ygoa-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >

@@ -3,14 +3,15 @@
 exports[`IconButton ACT theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-mf1cb5-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+    color="primary"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -29,14 +30,14 @@ exports[`IconButton ACT theme matches the snapshot 1`] = `
 exports[`IconButton ACT_ET theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-mf1cb5-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -55,14 +56,14 @@ exports[`IconButton ACT_ET theme matches the snapshot 1`] = `
 exports[`IconButton ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-mf1cb5-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"

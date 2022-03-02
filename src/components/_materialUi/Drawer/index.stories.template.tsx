@@ -8,10 +8,13 @@
  */
 
 import * as React from 'react';
-import { Button, Drawer, DrawerProps, Typography } from '@mui/material';
+import { Button, Drawer as MuiDrawer, DrawerProps as MuiDrawerProps, Typography } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const Drawer = MuiDrawer;
+export type DrawerProps = MuiDrawerProps;
 
 export const Template: Story<DrawerProps> = args => {
   const [open, setOpen] = React.useState(false);

@@ -8,10 +8,13 @@
  */
 
 import * as React from 'react';
-import { OutlinedInput, OutlinedInputProps } from '@mui/material';
+import { OutlinedInput as MuiOutlinedInput, OutlinedInputProps as MuiOutlinedInputProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const OutlinedInput = MuiOutlinedInput;
+export type OutlinedInputProps = MuiOutlinedInputProps;
 
 export const Template: Story<OutlinedInputProps> = ({
   value,

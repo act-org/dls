@@ -20,6 +20,7 @@ import { argTypes, Template } from './index.stories.template';
   argTypes={argTypes}
   component={ButtonGroup}
   title="Material UI/ButtonGroup"
+  render={Template}
 />
 
 <Description of={ButtonGroup} />
@@ -27,49 +28,37 @@ import { argTypes, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
-  <Story args={{}} name="Default">
-    {Template.bind({})}
-  </Story>
+  <Story args={{}} name="Default"/>
 </Canvas>
 
 ## Color: Primary
 
 <Canvas>
-  <Story args={{ color: 'primary' }} name="Color: Primary">
-    {Template.bind({})}
-  </Story>
+  <Story args={{ color: 'primary' }} name="Color: Primary"/>
 </Canvas>
 
 ## Color: Secondary
 
 <Canvas>
-  <Story args={{ color: 'secondary' }} name="Color: Secondary">
-    {Template.bind({})}
-  </Story>
+  <Story args={{ color: 'secondary' }} name="Color: Secondary"/>
 </Canvas>
 
 ### Disabled
 
 <Canvas>
-  <Story args={{ disabled: true }} name="Disabled">
-    {Template.bind({})}
-  </Story>
+  <Story args={{ disabled: true }} name="Disabled"/>
 </Canvas>
 
 ### Full Width
 
 <Canvas>
-  <Story args={{ fullWidth: true }} name="Full Width">
-    {Template.bind({})}
-  </Story>
+  <Story args={{ fullWidth: true }} name="Full Width"/>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story args={{}} name="Playground">
-    {Template.bind({})}
-  </Story>
+  <Story args={{}} name="Playground"/>
   <ArgsTable story="Playground" />
 </Canvas>

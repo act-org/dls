@@ -3,10 +3,10 @@
 exports[`InputPrimary matches the snapshot 1`] = `
 <div>
   <div
-    class="makeStyles-inputRoot-3 MuiInput-root MuiInputBase-root MuiInputBase-colorPrimary css-spqcwk-MuiInputBase-root-MuiInput-root"
+    class="makeStyles-inputRoot-3 MuiInput-root MuiInputBase-root MuiInputBase-colorPrimary css-1evj5ty-MuiInputBase-root-MuiInput-root"
   >
     <input
-      class="makeStyles-inputInput-1 MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+      class="makeStyles-inputInput-1 MuiInput-input MuiInputBase-input css-m09luf-MuiInputBase-input-MuiInput-input"
       type="text"
       value="Value"
     />

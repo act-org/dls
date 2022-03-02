@@ -8,7 +8,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-k3dqfz-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
@@ -18,7 +18,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14v5g9i-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -28,7 +28,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="makeStyles-typographyRoot-2 MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+      class="makeStyles-typographyRoot-2 MuiTypography-root MuiTypography-overline css-1ufe46o-MuiTypography-root"
     >
       Loading...
     </span>
@@ -44,7 +44,7 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-k3dqfz-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
@@ -54,7 +54,7 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14v5g9i-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -64,7 +64,7 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="makeStyles-typographyRoot-4 MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+      class="makeStyles-typographyRoot-4 MuiTypography-root MuiTypography-overline css-1kl3vl2-MuiTypography-root"
     >
       Loading...
     </span>
@@ -80,7 +80,7 @@ exports[`Loading ENCOURA_DATALAB theme matches the snapshot 1`] = `
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-8n06pu-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
@@ -90,7 +90,7 @@ exports[`Loading ENCOURA_DATALAB theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14v5g9i-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -100,7 +100,7 @@ exports[`Loading ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="makeStyles-typographyRoot-6 MuiTypography-root MuiTypography-overline css-b3fch5-MuiTypography-root"
+      class="makeStyles-typographyRoot-6 MuiTypography-root MuiTypography-overline css-sg2rkh-MuiTypography-root"
     >
       Loading...
     </span>

@@ -19,16 +19,14 @@ import Plus from '~/icons/Plus';
 
 import { argTypes, SelectTemplate, Template } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={TextField} title="Material UI/TextField" />
+<Meta argTypes={argTypes} component={TextField} title="Material UI/TextField" render={Template} />
 
 <Description of={TextField} />
 
 ## Default
 
 <Canvas>
-  <Story name="Default" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Default" args={{}}/>
 </Canvas>
 
 ## With Value
@@ -39,9 +37,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       value: 'Some Value',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Primary
@@ -52,9 +48,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       color: 'primary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Secondary
@@ -65,9 +59,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       color: 'secondary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Disabled
@@ -78,9 +70,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       disabled: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Start Adornment
@@ -99,9 +89,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
         ),
       },
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With End Adornment
@@ -120,9 +108,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
         ),
       },
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Error
@@ -133,9 +119,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       error: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Helper Text
@@ -146,9 +130,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       helperText: 'Helper text goes here.',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Full Width
@@ -159,9 +141,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       fullWidth: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Label
@@ -172,9 +152,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       label: 'Label Here',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Required
@@ -186,9 +164,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
       label: 'Label Here',
       required: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Margin: Normal
@@ -199,9 +175,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       margin: 'normal',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Margin: Dense
@@ -212,9 +186,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       margin: 'dense',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Margin: None
@@ -225,9 +197,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       margin: 'none',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Multiline
@@ -241,9 +211,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
       multiline: true,
       rows: 3,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Size: Small
@@ -254,9 +222,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       size: 'small',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Size: Medium
@@ -267,9 +233,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       size: 'medium',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Type: Text
@@ -280,9 +244,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       type: 'text',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Type: Number
@@ -293,9 +255,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       type: 'number',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Type: Password
@@ -306,9 +266,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       type: 'password',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Type: Email
@@ -319,9 +277,7 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
     args={{
       type: 'email',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Select
@@ -405,8 +361,6 @@ import { argTypes, SelectTemplate, Template } from './index.stories.template';
       label: 'Label Text Here',
       value: 'Field Value',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
   <ArgsTable story="Playground" />
 </Canvas>

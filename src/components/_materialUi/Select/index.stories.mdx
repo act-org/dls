@@ -13,24 +13,20 @@ import { Select, SelectProps } from '@mui/material';
 
 import { argTypes, Template } from './index.stories.template';
 
-<Meta title="Material UI/Select" component={Select} argTypes={argTypes} />
+<Meta title="Material UI/Select" component={Select} argTypes={argTypes} render={Template} />
 
 <Description of={Select} />
 
 ## Primary
 
 <Canvas>
-  <Story name="Primary" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Primary" args={{}}/>
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Playground" args={{}}/>
   <ArgsTable story="Playground" />
 </Canvas>

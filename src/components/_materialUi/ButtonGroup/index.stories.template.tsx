@@ -8,10 +8,14 @@
  */
 
 import * as React from 'react';
-import { Button, ButtonGroup, ButtonGroupProps } from '@mui/material';
+import { Button as MuiButton, ButtonGroup as MuiButtonGroup, ButtonGroupProps as MuiButtonGroupProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const Button = MuiButton;
+export const ButtonGroup = MuiButtonGroup;
+export type ButtonGroupProps = MuiButtonGroupProps;
 
 const buttonLabels = ['One', 'Two', 'Three'];
 

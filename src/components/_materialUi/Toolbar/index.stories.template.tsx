@@ -8,11 +8,14 @@
  */
 
 import * as React from 'react';
-import { IconButton, Toolbar, ToolbarProps, Typography } from '@mui/material';
+import { IconButton, Toolbar as MuiToolbar, ToolbarProps as MuiToolbarProps, Typography } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import Menu from '~/icons/Menu';
 import { Playground } from '~/helpers/playground';
+
+export const Toolbar = MuiToolbar;
+export type ToolbarProps = MuiToolbarProps;
 
 export const Template: Story<ToolbarProps> = args => (
   <Toolbar {...args}>

@@ -15,16 +15,14 @@ import { Link } from '@mui/material';
 
 import { argTypes, Template } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={DataGrid} title="Material UI/DataGrid" />
+<Meta argTypes={argTypes} component={DataGrid} title="Material UI/DataGrid" render={Template}/>
 
 <Description of={DataGrid} />
 
 ## Simple
 
 <Canvas>
-  <Story name="Simple" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Simple" args={{}}/>
 </Canvas>
 
 ## ClassName: Primary
@@ -35,9 +33,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       className: 'primary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## ClassName: Secondary
@@ -48,9 +44,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       className: 'secondary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Sortable
@@ -61,9 +55,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       sortable: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Sortable, Primary
@@ -75,9 +67,7 @@ import { argTypes, Template } from './index.stories.template';
       className: 'primary',
       sortable: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Sortable, Secondary
@@ -89,9 +79,7 @@ import { argTypes, Template } from './index.stories.template';
       className: 'secondary',
       sortable: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Checkbox Selection
@@ -102,9 +90,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       checkboxSelection: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Checkbox Selection, Primary
@@ -116,9 +102,7 @@ import { argTypes, Template } from './index.stories.template';
       checkboxSelection: true,
       className: 'primary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Checkbox Selection, Secondary
@@ -130,9 +114,7 @@ import { argTypes, Template } from './index.stories.template';
       checkboxSelection: true,
       className: 'secondary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Borders
@@ -144,9 +126,7 @@ import { argTypes, Template } from './index.stories.template';
       showCellRightBorder: true,
       showColumnRightBorder: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Borders, Primary
@@ -159,9 +139,7 @@ import { argTypes, Template } from './index.stories.template';
       showCellRightBorder: true,
       showColumnRightBorder: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Borders, Secondary
@@ -174,9 +152,7 @@ import { argTypes, Template } from './index.stories.template';
       showCellRightBorder: true,
       showColumnRightBorder: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Loading
@@ -187,9 +163,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       loading: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Linked Rows
@@ -212,9 +186,7 @@ import { argTypes, Template } from './index.stories.template';
         </Link>
       ),
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Editable
@@ -225,9 +197,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       editable: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Not Filterable
@@ -238,9 +208,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       filterable: false,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Auto Height
@@ -251,9 +219,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       autoHeight: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Auto Page Size
@@ -264,9 +230,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       autoPageSize: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Density: Standard
@@ -277,9 +241,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       density: 'standard',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Density: Comfortable
@@ -290,9 +252,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       density: 'comfortable',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Density: Compact
@@ -303,9 +263,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       density: 'compact',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Disable Column Menus
@@ -316,9 +274,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       disableColumnMenu: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Hide Footer
@@ -329,9 +285,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       hideFooter: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Hide Footer Pagination
@@ -342,9 +296,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       hideFooterPagination: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Hide Footer Selected Row Count
@@ -355,9 +307,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       hideFooterSelectedRowCount: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Custom Default Page
@@ -368,9 +318,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       page: 1,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Custom Page Size
@@ -381,9 +329,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       pageSize: 8,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Custom Row Height
@@ -394,9 +340,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       rowHeight: 100,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Toolbar
@@ -409,17 +353,13 @@ import { argTypes, Template } from './index.stories.template';
         Toolbar: GridToolbar,
       },
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Playground" args={{}}/>
   <ArgsTable story="Playground" />
 </Canvas>

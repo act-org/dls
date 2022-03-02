@@ -3,12 +3,12 @@
 exports[`Select ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-37jrt-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"
       aria-haspopup="listbox"
-      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-1w3yx3g-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -22,7 +22,7 @@ exports[`Select ACT theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-115bljm-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ArrowDropDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -33,7 +33,7 @@ exports[`Select ACT theme matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
     >
       <legend
         class="css-hdw1oc"
@@ -52,12 +52,12 @@ exports[`Select ACT theme matches the snapshot 1`] = `
 exports[`Select ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-11956l7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"
       aria-haspopup="listbox"
-      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-1jfpuyl-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -71,7 +71,7 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-9q8pxw-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ArrowDropDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -101,12 +101,12 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
 exports[`Select ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1uoibu0-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"
       aria-haspopup="listbox"
-      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-p8sous-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -120,13 +120,13 @@ exports[`Select ENCOURA_DATALAB theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
-      data-testid="ArrowDropDownIcon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1cg639m-MuiSvgIcon-root-MuiSelect-icon"
+      data-testid="ChevronDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
     >
       <path
-        d="M7 10l5 5 5-5z"
+        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
       />
     </svg>
     <fieldset

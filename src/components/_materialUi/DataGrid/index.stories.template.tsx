@@ -10,13 +10,16 @@
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import {
-  DataGrid,
-  DataGridProps,
+  DataGrid as MuiDataGrid,
+  DataGridProps as MuiDataGridProps,
   GridValueGetterParams,
 } from '@mui/x-data-grid';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const DataGrid = MuiDataGrid;
+export type DataGridProps = MuiDataGridProps;
 
 interface StoryProps extends DataGridProps {
   editable?: boolean;
@@ -101,8 +104,7 @@ export const Template: Story<StoryProps> = ({
             sortable,
             type: 'string',
             valueGetter: (params: GridValueGetterParams): string =>
-              `${params.getValue(params.id, 'firstName') || ''} ${
-                params.getValue(params.id, 'lastName') || ''
+              `${params.getValue(params.id, 'firstName') || ''} ${params.getValue(params.id, 'lastName') || ''
               }`,
           },
           {

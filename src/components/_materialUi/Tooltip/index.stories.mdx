@@ -18,6 +18,7 @@ import { argTypes, Template } from './index.stories.template';
   component={Tooltip}
   argTypes={argTypes}
   parameters={{}}
+  render={Template}
 />
 
 <Description of={Tooltip} />
@@ -25,9 +26,7 @@ import { argTypes, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
-  <Story name="Default" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Default" args={{}}/>
 </Canvas>
 
 ## Interactive
@@ -39,9 +38,7 @@ import { argTypes, Template } from './index.stories.template';
       interactive: true,
       title: 'You can highlight this text.',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Open
@@ -52,9 +49,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       open: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Top
@@ -65,9 +60,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'top',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Top Start
@@ -78,9 +71,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'top-start',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Top End
@@ -91,9 +82,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'top-end',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Bottom
@@ -104,9 +93,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'bottom',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Bottom Start
@@ -117,9 +104,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'bottom-start',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Bottom End
@@ -130,9 +115,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'bottom-end',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Left
@@ -143,9 +126,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'left',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Left Start
@@ -156,9 +137,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'left-start',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Left End
@@ -169,9 +148,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'left-end',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Right
@@ -182,9 +159,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'right',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Right Start
@@ -195,9 +170,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'right-start',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Placement: Right End
@@ -208,9 +181,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       placement: 'right-end',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
@@ -224,8 +195,6 @@ import { argTypes, Template } from './index.stories.template';
       title: 'tooltip text goes here',
       placement: 'right',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
   <ArgsTable story="Playground" />
 </Canvas>

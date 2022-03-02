@@ -18,6 +18,7 @@ import { argTypes, Template } from './index.stories.template';
   component={Drawer}
   argTypes={argTypes}
   parameters={{}}
+  render={Template}
 />
 
 <Description of={Drawer} />
@@ -30,9 +31,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       anchor: 'left',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Anchor: Right
@@ -43,9 +42,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       anchor: 'right',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Anchor: Top
@@ -56,9 +53,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       anchor: 'top',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Anchor: Bottom
@@ -69,9 +64,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       anchor: 'bottom',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Elevation: None
@@ -82,9 +75,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       elevation: 0,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Elevation: Custom
@@ -95,9 +86,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       elevation: 24,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Variant: Persistent
@@ -108,9 +97,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       variant: 'persistent',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Variant: Temporary
@@ -121,17 +108,13 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       variant: 'temporary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
   <Source language="jsx" story="Playground" />
-  <Story inline={false} name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story inline={false} name="Playground" args={{}}/>
   <ArgsTable story="Playground" />
 </Canvas>

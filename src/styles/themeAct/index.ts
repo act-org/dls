@@ -8,27 +8,25 @@
  */
 
 /* eslint-disable @typescript-eslint/no-empty-interface */
-import { createTheme, adaptV4Theme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 
 import { CustomThemeOptions } from '~/types';
 
 import COLORS from './colors';
 import DIMS from './dims';
-import OVERRIDES from './overrides';
+import COMPONENTS from './components';
 import PALETTE from './palette';
-import PROPS from './props';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
 export const THEME_ACT: CustomThemeOptions = {
+  components: COMPONENTS,
   customColors: COLORS.CUSTOM,
   customDims: DIMS.CUSTOM,
-  overrides: OVERRIDES,
   palette: PALETTE,
-  props: PROPS,
   shape: SHAPE,
   spacing: DIMS.SPACING,
   typography: TYPOGRAPHY,
 };
 
-export default createTheme(adaptV4Theme(THEME_ACT));
+export default createTheme(THEME_ACT);

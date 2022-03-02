@@ -9,8 +9,8 @@
 
 import * as React from 'react';
 import {
-  AppBar,
-  AppBarProps,
+  AppBar as MuiAppBar,
+  AppBarProps as MuiAppBarProps,
   IconButton,
   Toolbar,
   Typography,
@@ -19,6 +19,9 @@ import { Story } from '@storybook/react/types-6-0';
 
 import Menu from '~/icons/Menu';
 import { Playground } from '~/helpers/playground';
+
+export const AppBar = MuiAppBar;
+export type AppBarProps = MuiAppBarProps;
 
 export const Template: Story<AppBarProps> = (props: AppBarProps) => (
   <AppBar position="static" {...props}>

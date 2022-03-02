@@ -3,7 +3,8 @@
 exports[`Radio ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-vqmohf-MuiButtonBase-root-MuiRadio-root"
+    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-el8npw-MuiButtonBase-root-MuiRadio-root"
+    color="primary"
   >
     <input
       checked=""
@@ -16,7 +17,7 @@ exports[`Radio ACT theme matches the snapshot 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbvpl3-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-go9nqr-MuiSvgIcon-root"
         data-testid="RadioButtonUncheckedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -27,7 +28,7 @@ exports[`Radio ACT theme matches the snapshot 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-11zohuh-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ycyses-MuiSvgIcon-root"
         data-testid="RadioButtonCheckedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -47,7 +48,7 @@ exports[`Radio ACT theme matches the snapshot 1`] = `
 exports[`Radio ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-vqmohf-MuiButtonBase-root-MuiRadio-root"
+    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-y82o97-MuiButtonBase-root-MuiRadio-root"
   >
     <input
       checked=""
@@ -60,7 +61,7 @@ exports[`Radio ACT_ET theme matches the snapshot 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbvpl3-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ki5g6-MuiSvgIcon-root"
         data-testid="RadioButtonUncheckedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -71,7 +72,7 @@ exports[`Radio ACT_ET theme matches the snapshot 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-11zohuh-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-12cp8u1-MuiSvgIcon-root"
         data-testid="RadioButtonCheckedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -91,7 +92,7 @@ exports[`Radio ACT_ET theme matches the snapshot 1`] = `
 exports[`Radio ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-vqmohf-MuiButtonBase-root-MuiRadio-root"
+    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
   >
     <input
       checked=""
@@ -104,7 +105,7 @@ exports[`Radio ENCOURA_DATALAB theme matches the snapshot 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1hbvpl3-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1e4ds1u-MuiSvgIcon-root"
         data-testid="RadioButtonUncheckedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -115,7 +116,7 @@ exports[`Radio ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-11zohuh-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1vs7xxf-MuiSvgIcon-root"
         data-testid="RadioButtonCheckedIcon"
         focusable="false"
         viewBox="0 0 24 24"

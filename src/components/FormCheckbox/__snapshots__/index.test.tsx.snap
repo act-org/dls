@@ -6,11 +6,12 @@ exports[`FormCheckbox ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-j204z7-MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
       id="primarycheckbox"
     >
       <span
-        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-10m3sgg-MuiButtonBase-root-MuiCheckbox-root"
+        color="primary"
       >
         <input
           class="PrivateSwitchBase-input css-1m9pwf3"
@@ -19,7 +20,7 @@ exports[`FormCheckbox ACT theme matches the snapshot 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
           data-testid="CheckBoxOutlineBlankIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -33,7 +34,7 @@ exports[`FormCheckbox ACT theme matches the snapshot 1`] = `
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1n5122j-MuiTypography-root"
       >
         The label
       </span>
@@ -48,11 +49,11 @@ exports[`FormCheckbox ACT_ET theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-j204z7-MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
       id="primarycheckbox"
     >
       <span
-        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-1e3aweb-MuiButtonBase-root-MuiCheckbox-root"
       >
         <input
           class="PrivateSwitchBase-input css-1m9pwf3"
@@ -61,7 +62,7 @@ exports[`FormCheckbox ACT_ET theme matches the snapshot 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
           data-testid="CheckBoxOutlineBlankIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -75,7 +76,7 @@ exports[`FormCheckbox ACT_ET theme matches the snapshot 1`] = `
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-q09moy-MuiTypography-root"
       >
         The label
       </span>
@@ -90,11 +91,11 @@ exports[`FormCheckbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-j204z7-MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
       id="primarycheckbox"
     >
       <span
-        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-wakehq-MuiButtonBase-root-MuiCheckbox-root"
       >
         <input
           class="PrivateSwitchBase-input css-1m9pwf3"
@@ -103,7 +104,7 @@ exports[`FormCheckbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
           data-testid="CheckBoxOutlineBlankIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -117,7 +118,7 @@ exports[`FormCheckbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1ph3hqj-MuiTypography-root"
       >
         The label
       </span>
