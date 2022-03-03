@@ -127,6 +127,7 @@
     "build:components": "cross-env NODE_ENV=production babel src --extensions \".ts,.tsx\" --out-dir dist --config-file ./.babelrc.build.js",
     "build:icons": "bin/buildIcons",
     "build:declarations": "tsc --project tsconfig.build.json",
+    "build:cleanPackage": "bin/cleanPackage",
     "build-storybook": "build-storybook -o ./storybook-static/www -s ./public",
     "build-storybook:dockerprep": "build-storybook -o ./storybook-static/www -s ./public && cp Dockerfile ./storybook-static/Dockerfile",
     "build-storybook:docker": "cd storybook-static && docker build . -t dls-storybook",
