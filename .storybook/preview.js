@@ -8,21 +8,12 @@
  */
 
 import * as locales from '@material-ui/core/locale';
-import { addParameters } from '@storybook/react';
 import { common, grey } from '@material-ui/core/colors';
 import { configureActions } from '@storybook/addon-actions';
 import { CssBaseline } from '@material-ui/core';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs';
-
 import { ThemeProvider } from '../src/components/ThemeProvider';
-import { version } from '../package.json';
 
-addParameters({
-  docs: {
-    container: DocsContainer,
-    page: DocsPage,
-  },
-});
 
 configureActions({
   depth: 3,
@@ -31,6 +22,11 @@ configureActions({
 
 export const parameters = {
   controls: { expanded: false },
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+    inlineStories: true,
+  },
   backgrounds: {
     default: 'White',
     values: [
@@ -52,7 +48,7 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        `DLS v${version}`,
+        'DLS',
         'Material UI',
         'Atoms',
         'Molecules',

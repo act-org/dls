@@ -7,15 +7,19 @@
  * @prettier
  */
 
-const fs = require('fs');
-
 module.exports = {
   addons: [
     '@storybook/addon-a11y',
-    '@storybook/addon-docs',
     '@storybook/addon-essentials',
-    '@storybook/addon-links',
   ],
+  framework: '@storybook/react',
+  core: {
+    builder: 'webpack5'
+  },
+  features: {
+    storyStoreV7: true,
+    babelModeV7: true,
+  },
   babel: async options => {
     options.plugins.push([
       'babel-plugin-root-import',
@@ -24,7 +28,6 @@ module.exports = {
         rootPathSuffix: './src',
       },
     ]);
-    // fs.writeFileSync('./.babelrc', JSON.stringify(options));
     return options;
   },
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],

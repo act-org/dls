@@ -4,52 +4,58 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, select, text } from '@storybook/addon-knobs';
 
 import FormInputPrimary from '.';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export const Preview = (): React.ReactElement<unknown> => {
   const [value, setValue] = React.useState('Input');
 
   return (
     <FormInputPrimary
-      disabled={boolean('Disabled?', false)}
-      errorMessage={text('Error Message', '')}
       inputProps={{
-        autoFocus: boolean('Auto Focus?', false),
         onChange: (e: any): void => {
           action('onChange()');
 
           setValue(e.target.value);
         },
-        placeholder: text('Placeholder', 'Placeholder'),
+        placeholder: 'Placeholder',
         style: {
           width: 250,
         },
-        type: select(
-          'Type',
-          {
-            Password: 'password',
-            Text: 'text',
-          },
-          'text',
-        ),
-        value,
+        type: 'text',
       }}
       labelProps={{
-        children: text('Label', 'Input Label'),
+        children: 'Input Label',
       }}
-      required={boolean('Required?', true)}
     />
   );
 };
 
 export default {
   component: FormInputPrimary,
+  argTypes: {
+    disabled: {
+      type: 'boolean',
+      description: 'Disabled?',
+      defaultValue: false
+    },
+    errorMessage: {
+      type: 'string',
+      description: 'Error Message',
+      defaultValue: 'Error Message'
+    },
+    inputProps: {},
+    required: {
+      type: 'boolean',
+      defaultValue: false
+    }
+
+  },
   parameters: {
     info: {
       text: 'This is the primary variant of the FormInput component.',
     },
   },
   title: 'Deprecated/Molecules/FormInputPrimary',
-};
+} as ComponentMeta<typeof FormInputPrimary>;

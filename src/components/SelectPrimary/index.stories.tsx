@@ -7,7 +7,6 @@
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import { MenuItem } from '@material-ui/core';
-import { select } from '@storybook/addon-knobs';
 
 import SelectPrimary from '.';
 
@@ -25,22 +24,7 @@ export const Preview = (): React.ReactElement<unknown> => {
     >
       {Array(
         ...Array(
-          select(
-            'Menu Items Count',
-            {
-              1: 1,
-              2: 2,
-              3: 3,
-              4: 4,
-              5: 5,
-              6: 6,
-              7: 7,
-              8: 8,
-              9: 9,
-              10: 10,
-            },
-            5,
-          ),
+          10,
         ),
       ).map((_, i): any => (
         // eslint-disable-next-line react/no-array-index-key

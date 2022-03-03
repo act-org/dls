@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  extends: ['@actinc/eslint-config'],
+  extends: ['@actinc/eslint-config', 'plugin:mdx/recommended'],
   overrides: [
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
@@ -18,12 +18,19 @@ module.exports = {
     },
   ],
   rules: {
-    'react/function-component-definition': 'off', // Allows const defined components
+    'import/no-extraneous-dependencies': 'off',
+    'react/function-component-definition': 'off', // Allows const defined components,
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     'import/resolver': {
       'babel-plugin-root-import': {},
       typescript: {},
     },
+    'mdx/code-blocks': true,
+    // optional, if you want to disable language mapper, set it to `false`
+    // if you want to override the default language mapper inside, you can provide your own
+    'mdx/language-mapper': {},
   },
 };

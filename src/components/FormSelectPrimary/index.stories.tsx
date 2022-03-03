@@ -4,7 +4,6 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, text } from '@storybook/addon-knobs';
 
 import FormSelectPrimary from '.';
 
@@ -13,10 +12,10 @@ export const Preview = (): React.ReactElement<unknown> => {
 
   return (
     <FormSelectPrimary
-      disabled={boolean('Disabled?', false)}
+      disabled={false}
       labelProps={{
-        children: text('Label', 'Input Label'),
-        error: boolean('Error?', false),
+        children: 'Input Label',
+        error: false,
       }}
       options={[
         {
@@ -32,9 +31,9 @@ export const Preview = (): React.ReactElement<unknown> => {
           value: 'THREE',
         },
       ]}
-      placeholder={text('Placeholder', 'Placeholder')}
-      placeholderIsDisabled={boolean('Disable Placeholder?', true)}
-      required={boolean('Required?', true)}
+      placeholder='Placeholder'
+      placeholderIsDisabled={true}
+      required={true}
       selectProps={{
         onChange: (e: any): void => {
           action('onChange()');

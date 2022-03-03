@@ -35,8 +35,8 @@ interface DocGenType {
   };
 }
 
-const cleanPropType = (prop: PropType): void => {
-  if (get(prop, 'type.name')) {
+const cleanPropType = (prop: PropType | undefined): void => {
+  if (prop && get(prop, 'type.name')) {
     // eslint-disable-next-line no-param-reassign
     prop.type.name = prop.type.name.replace(' | undefined', '');
   }
@@ -66,7 +66,20 @@ export const Playground = (args: Record<string, any>, type?: any): any => {
   for (const key in args) {
     if (!key.startsWith('on')) {
       // eslint-disable-next-line no-param-reassign
-      args[key].table = { category: playgroundGroup };
+      args[key] = {
+        ...args[key],
+        table: {
+          category: playgroundGroup,
+        },
+      };
+    } else if (key.startsWith('on')) {
+      args[key] = {
+        ...args[key],
+        action: key,
+        table: {
+          category: eventsGroup,
+        },
+      };
     }
   }
 

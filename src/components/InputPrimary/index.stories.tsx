@@ -4,7 +4,6 @@
 
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, text } from '@storybook/addon-knobs';
 
 import InputPrimary from '.';
 
@@ -13,15 +12,15 @@ export const Preview = (): React.ReactElement<unknown> => {
 
   return (
     <InputPrimary
-      autoFocus={boolean('Auto Focus?', false)}
-      disabled={boolean('Disabled?', false)}
-      multiline={boolean('Multiple Lines?', false)}
+      autoFocus={false}
+      disabled={false}
+      multiline={false}
       onChange={(e: any): void => {
         action('onChange()');
 
         setValue(e.target.value);
       }}
-      placeholder={text('Placeholder', 'Placeholder')}
+      placeholder='Placeholder'
       value={value}
     />
   );
