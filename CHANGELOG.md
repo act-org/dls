@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0-alpha.1](https://github.com/act-org/dls/compare/v6.0.0-alpha.0...v6.0.0-alpha.1) (2022-03-04)
+
 ## [6.0.0-alpha.0](https://github.com/act-org/dls/compare/v5.11.1...v6.0.0-alpha.0) (2022-03-02)
 
 
