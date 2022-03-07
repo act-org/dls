@@ -8,7 +8,7 @@ import InputLabelPrimary from '.';
 
 export const Preview = (): React.ReactElement<unknown> => (
   <InputLabelPrimary
-    color='primary'
+    color="primary"
     disabled={false}
     error={false}
     required={false}

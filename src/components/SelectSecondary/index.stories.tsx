@@ -22,11 +22,7 @@ export const Preview = (): React.ReactElement<unknown> => {
       }}
       value={value}
     >
-      {Array(
-        ...Array(
-          5,
-        ),
-      ).map((_, i): any => (
+      {Array(...Array(5)).map((_, i): any => (
         // eslint-disable-next-line react/no-array-index-key
         <MenuItem key={i} value={i}>
           {i + 1}

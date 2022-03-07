@@ -38,19 +38,18 @@ export default {
     disabled: {
       type: 'boolean',
       description: 'Disabled?',
-      defaultValue: false
+      defaultValue: false,
     },
     errorMessage: {
       type: 'string',
       description: 'Error Message',
-      defaultValue: 'Error Message'
+      defaultValue: 'Error Message',
     },
     inputProps: {},
     required: {
       type: 'boolean',
-      defaultValue: false
-    }
-
+      defaultValue: false,
+    },
   },
   parameters: {
     info: {

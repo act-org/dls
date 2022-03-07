@@ -31,9 +31,9 @@ export const Preview = (): React.ReactElement<unknown> => {
           value: 'THREE',
         },
       ]}
-      placeholder='Placeholder'
-      placeholderIsDisabled={true}
-      required={true}
+      placeholder="Placeholder"
+      placeholderIsDisabled
+      required
       selectProps={{
         onChange: (e: any): void => {
           action('onChange()');

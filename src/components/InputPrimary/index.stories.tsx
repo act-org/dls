@@ -20,7 +20,7 @@ export const Preview = (): React.ReactElement<unknown> => {
 
         setValue(e.target.value);
       }}
-      placeholder='Placeholder'
+      placeholder="Placeholder"
       value={value}
     />
   );
