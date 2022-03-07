@@ -22,7 +22,7 @@ addons.setConfig({
   sidebarAnimations: true,
   theme: create({
     base: 'light',
-    brandImage: 'https://i.imgur.com/P0gtzO0.png',
+    brandImage: 'img/dls-logo.png',
     brandTitle: `ACT Design Language System v${version}`,
     brandUrl: '/',
   }),
