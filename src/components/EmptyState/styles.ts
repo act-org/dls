@@ -9,7 +9,7 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
-export default makeStyles(({ palette, spacing }) => ({
+export default makeStyles(({ spacing, typography }) => ({
   container: {
     alignItems: 'center',
     display: 'flex',
@@ -17,7 +17,6 @@ export default makeStyles(({ palette, spacing }) => ({
     flexDirection: 'column',
   },
   descriptionRoot: {
-    color: palette.text.secondary,
     marginBottom: spacing(2),
     marginTop: spacing(1) / 2,
     maxWidth: 350,
@@ -44,5 +43,11 @@ export default makeStyles(({ palette, spacing }) => ({
   },
   titleGridItem: {
     display: 'flex',
+  },
+  titleRoot: {
+    // Use one font weight higher than `body1` (varies from theme to theme)
+    fontWeight: Number(typography.body1.fontWeight) + 100,
+    // Scale the font to be 20% larger than `body1` (also varies from theme to theme)
+    transform: 'scale(1.2)',
   },
 }));
