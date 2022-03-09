@@ -8,7 +8,14 @@
  */
 
 import * as React from 'react';
-import { Button, ButtonProps, Grid, Typography } from '@material-ui/core';
+import {
+  Button,
+  ButtonProps,
+  Grid,
+  IconProps,
+  Typography,
+  TypographyProps,
+} from '@material-ui/core';
 import clsx from 'clsx';
 import { isString } from 'lodash';
 
@@ -17,17 +24,23 @@ import useStyles from './styles';
 export interface EmptyStateProps {
   buttonProps?: ButtonProps;
   description?: any;
+  descriptionTypographyProps?: TypographyProps;
   Icon?: React.FC<any> | React.ComponentClass<any>;
+  iconProps?: IconProps;
   style?: React.CSSProperties;
   title?: string | React.ReactElement<unknown>;
+  titleTypographyProps?: TypographyProps;
 }
 
 export function EmptyState({
   buttonProps,
   description,
+  descriptionTypographyProps,
   Icon,
+  iconProps,
   style,
   title,
+  titleTypographyProps,
 }: EmptyStateProps): React.ReactElement<EmptyStateProps> {
   const classes = useStyles();
 
@@ -40,6 +53,7 @@ export function EmptyState({
           }}
           color="disabled"
           titleAccess={isString(title) ? title : undefined}
+          {...iconProps}
         />
       )}
 
@@ -58,7 +72,7 @@ export function EmptyState({
             }}
             item
           >
-            <Typography align="center" variant="h6">
+            <Typography align="center" variant="h6" {...titleTypographyProps}>
               {title}
             </Typography>
           </Grid>
@@ -75,6 +89,7 @@ export function EmptyState({
             ),
           }}
           variant="body1"
+          {...descriptionTypographyProps}
         >
           {description}
         </Typography>

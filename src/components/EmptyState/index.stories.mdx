@@ -34,6 +34,60 @@ import { EmptyState, EmptyStateProps } from '.';
   </Story>
 </Canvas>
 
+## Custom Title
+
+<Canvas>
+  <Story
+    name="Custom Title"
+    args={{
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      Icon: Account,
+      title: 'No users yet.',
+      titleTypographyProps: {
+        variant: 'h1',
+      },
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Custom Description
+
+<Canvas>
+  <Story
+    name="Custom Description"
+    args={{
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionTypographyProps: {
+        variant: 'h1',
+      },
+      Icon: Account,
+      title: 'No users yet.',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Custom Icon
+
+<Canvas>
+  <Story
+    name="Custom Icon"
+    args={{
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      Icon: Account,
+      iconProps: {
+        color: 'error',
+      },
+      title: 'No users yet.',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
 ## Playground
 
 <Canvas isColumn>
