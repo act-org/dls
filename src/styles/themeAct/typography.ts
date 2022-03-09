@@ -2,14 +2,14 @@ import { TypographyVariantsOptions } from '@mui/material/styles';
 
 const TYPOGRAPHY: TypographyVariantsOptions = {
   body1: {
-    fontSize: '1.5em',
-    fontWeight: 400,
-    lineHeight: '1.5em',
-  },
-  body2: {
     fontSize: '1em',
     fontWeight: 400,
-    lineHeight: '1.5em',
+    lineHeight: '1em',
+  },
+  body2: {
+    fontSize: '0.9em',
+    fontWeight: 400,
+    lineHeight: '0.9em',
   },
   button: {
     textTransform: 'none',
