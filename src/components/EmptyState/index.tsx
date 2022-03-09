@@ -79,7 +79,7 @@ export function EmptyState({
               }}
               component="h6"
               variant="body1"
-              {...titleTypographyProps}
+              {...(titleTypographyProps as any)}
             >
               {title}
             </Typography>
