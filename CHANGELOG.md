@@ -2,6 +2,15 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.12.0] - Mar 09, 2022
+
+* Added new optional props to the `EmptyState` component
+  * `descriptionTypographyProps`
+  * `iconProps`
+  * `titleTypographyProps`
+* Improved the styling of the `EmptyState` title so that this component
+looks good across all themes.
+
 ## [v5.11.1] - Feb 28, 2022
 
 * Upgraded most of the NPM dependencies and dev-dependencies to their latest
