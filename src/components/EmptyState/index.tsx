@@ -72,7 +72,14 @@ export function EmptyState({
             }}
             item
           >
-            <Typography align="center" variant="h6" {...titleTypographyProps}>
+            <Typography
+              align="center"
+              classes={{
+                root: classes.titleRoot,
+              }}
+              variant="body1"
+              {...titleTypographyProps}
+            >
               {title}
             </Typography>
           </Grid>
@@ -88,6 +95,7 @@ export function EmptyState({
               !title && classes.descriptionRootWithoutTitle,
             ),
           }}
+          color="textSecondary"
           variant="body1"
           {...descriptionTypographyProps}
         >
