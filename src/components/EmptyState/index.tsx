@@ -77,6 +77,7 @@ export function EmptyState({
               classes={{
                 root: classes.titleRoot,
               }}
+              component="h6"
               variant="body1"
               {...titleTypographyProps}
             >
