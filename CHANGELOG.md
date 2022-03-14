@@ -2,6 +2,11 @@
 
 Chronological history of changes to the Design Language System.
 
+## [v5.12.1] - Mar 09, 2022
+
+* Improved the TypeScript definition of the `titleTypographyProps` prop on 
+the `<EmptyState />` component.
+
 ## [v5.12.0] - Mar 09, 2022
 
 * Added new optional props to the `EmptyState` component
