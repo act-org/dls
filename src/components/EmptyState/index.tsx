@@ -29,7 +29,9 @@ export interface EmptyStateProps {
   iconProps?: IconProps;
   style?: React.CSSProperties;
   title?: string | React.ReactElement<unknown>;
-  titleTypographyProps?: TypographyProps;
+  titleTypographyProps?: TypographyProps & {
+    component?: string;
+  };
 }
 
 export function EmptyState({
@@ -79,7 +81,7 @@ export function EmptyState({
               }}
               component="h6"
               variant="body1"
-              {...(titleTypographyProps as any)}
+              {...titleTypographyProps}
             >
               {title}
             </Typography>
