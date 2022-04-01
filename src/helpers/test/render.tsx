@@ -16,7 +16,8 @@ import {
 } from '@testing-library/react';
 
 import ThemeProvider from '../../components/ThemeProvider';
-import { StyledEngineProvider, Theme } from '@mui/material';
+import { Theme } from '@mui/material';
+import { StyledEngineProvider } from '@mui/styled-engine';
 
 export const render = (
   Component: React.ReactElement,
