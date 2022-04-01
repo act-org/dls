@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import userEvent from '@testing-library/user-event';
 
 import { standard, render } from '~/helpers/test';

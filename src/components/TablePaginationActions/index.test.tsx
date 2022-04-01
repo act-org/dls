@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { noop } from 'lodash';
 
 import { standard } from '~/helpers/test';

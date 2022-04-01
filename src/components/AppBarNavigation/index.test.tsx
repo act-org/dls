@@ -7,8 +7,6 @@
  * @prettier
  */
 
-;
-
 import { standard } from '~/helpers/test';
 
 import { AppBarNavigation } from '.';

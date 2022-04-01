@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { DialogContent } from '@mui/material';
 
 import { standard } from '~/helpers/test';

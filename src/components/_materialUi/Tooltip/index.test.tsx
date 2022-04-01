@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { Tooltip } from '@mui/material';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';

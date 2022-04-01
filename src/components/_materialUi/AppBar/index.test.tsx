@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { AppBar } from '@mui/material';
 
 import { standard } from '~/helpers/test';

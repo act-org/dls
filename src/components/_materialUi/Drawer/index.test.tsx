@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { Drawer } from '@mui/material';
 
 import { standard } from '~/helpers/test';

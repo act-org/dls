@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { noop } from 'lodash';
 import { OutlinedInput } from '@mui/material';
 

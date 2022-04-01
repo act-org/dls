@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { Switch } from '@mui/material';
 
 import { standard } from '~/helpers/test';

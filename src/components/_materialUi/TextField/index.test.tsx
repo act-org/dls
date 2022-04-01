@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { TextField } from '@mui/material';
 
 import { standard } from '~/helpers/test';

@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { Typography } from '@mui/material';
 
 import { standard } from '~/helpers/test';

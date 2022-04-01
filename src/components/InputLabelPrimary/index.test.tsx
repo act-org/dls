@@ -2,8 +2,6 @@
  * @prettier
  */
 
-;
-
 import render from '~/helpers/test/render';
 
 import InputLabelPrimary from '.';

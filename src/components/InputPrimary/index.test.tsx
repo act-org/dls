@@ -2,7 +2,6 @@
  * @prettier
  */
 
-;
 import { noop } from 'lodash';
 
 import render from '~/helpers/test/render';

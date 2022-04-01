@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { Button } from '@mui/material';
 
 import { standard } from '~/helpers/test';

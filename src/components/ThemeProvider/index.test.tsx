@@ -7,8 +7,6 @@
  * @prettier
  */
 
-;
-
 import { standard } from '~/helpers/test';
 
 describe('ThemeProvider', () => {

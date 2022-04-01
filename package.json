@@ -34,6 +34,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/lab": "^5.0.0-alpha.75",
     "@mui/material": "^5.5.3",
+    "@mui/styled-engine": "^5.5.2",
     "@mui/styles": "^5.5.3",
     "@mui/x-data-grid": "^5.7.0",
     "@storybook/addon-a11y": "6.4.20",
@@ -119,6 +120,7 @@
     "@mui/lab": "^5.0.0-alpha.75",
     "@mui/material": "5.x",
     "@mui/styles": "5.x",
+    "@mui/styled-engine": "5.x",
     "@mui/x-data-grid": "5.x",
     "react": "16.x || 17.x",
     "react-dom": "16.x || 17.x"

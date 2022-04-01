@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { noop } from 'lodash';
 
 import { FormInput } from '~/components/FormInput';

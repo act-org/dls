@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { MenuItem, Select } from '@mui/material';
 import { noop } from 'lodash';
 

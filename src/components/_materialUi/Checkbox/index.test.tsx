@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { Checkbox } from '@mui/material';
 
 import { standard } from '~/helpers/test';

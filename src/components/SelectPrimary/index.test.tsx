@@ -2,7 +2,6 @@
  * @prettier
  */
 
-;
 import { MenuItem } from '@mui/material';
 import { noop } from 'lodash';
 

@@ -7,7 +7,6 @@
  * @prettier
  */
 
-;
 import { IconButton } from '@mui/material';
 import { noop } from 'lodash';
 
