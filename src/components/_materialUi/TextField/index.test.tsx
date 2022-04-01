@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 import { TextField } from '@mui/material';
 
 import { standard } from '~/helpers/test';

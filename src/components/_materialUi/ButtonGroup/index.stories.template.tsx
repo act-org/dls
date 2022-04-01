@@ -8,7 +8,11 @@
  */
 
 import * as React from 'react';
-import { Button as MuiButton, ButtonGroup as MuiButtonGroup, ButtonGroupProps as MuiButtonGroupProps } from '@mui/material';
+import {
+  Button as MuiButton,
+  ButtonGroup as MuiButtonGroup,
+  ButtonGroupProps as MuiButtonGroupProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

@@ -104,7 +104,8 @@ export const Template: Story<StoryProps> = ({
             sortable,
             type: 'string',
             valueGetter: (params: GridValueGetterParams): string =>
-              `${params.getValue(params.id, 'firstName') || ''} ${params.getValue(params.id, 'lastName') || ''
+              `${params.getValue(params.id, 'firstName') || ''} ${
+                params.getValue(params.id, 'lastName') || ''
               }`,
           },
           {

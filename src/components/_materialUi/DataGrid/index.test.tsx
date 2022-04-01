@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
 
 import { standard } from '~/helpers/test';
@@ -61,8 +61,7 @@ describe.skip('DataGrid', () => {
           headerName: 'Full name',
           sortable: false,
           valueGetter: (params: GridValueGetterParams): string =>
-            `${params.getValue('firstName') || ''} ${
-              params.getValue('lastName') || ''
+            `${params.getValue('firstName') || ''} ${params.getValue('lastName') || ''
             }`,
         },
       ]}

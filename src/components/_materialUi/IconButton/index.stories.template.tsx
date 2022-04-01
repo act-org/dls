@@ -8,7 +8,10 @@
  */
 
 import * as React from 'react';
-import { IconButton as MuiIconButton, IconButtonProps as MuiIconButtonProps } from '@mui/material';
+import {
+  IconButton as MuiIconButton,
+  IconButtonProps as MuiIconButtonProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import PencilCircle from '~/icons/PencilCircle';

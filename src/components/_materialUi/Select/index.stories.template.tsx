@@ -8,7 +8,11 @@
  */
 
 import * as React from 'react';
-import { MenuItem, Select as MuiSelect, SelectProps as MuiSelectProps } from '@mui/material';
+import {
+  MenuItem,
+  Select as MuiSelect,
+  SelectProps as MuiSelectProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';

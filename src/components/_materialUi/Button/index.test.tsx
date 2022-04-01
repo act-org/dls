@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 import { Button } from '@mui/material';
 
 import { standard } from '~/helpers/test';

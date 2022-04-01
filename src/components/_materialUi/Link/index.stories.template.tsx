@@ -8,10 +8,15 @@
  */
 
 import * as React from 'react';
-import { Link as MuiLink, LinkProps as MuiLinkProps, Typography } from '@mui/material';
+import {
+  Link as MuiLink,
+  LinkProps as MuiLinkProps,
+  Typography,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
 export const Link = MuiLink;
 export type LinkProps = MuiLinkProps;
 export const Template: Story<LinkProps> = (args: LinkProps) => (

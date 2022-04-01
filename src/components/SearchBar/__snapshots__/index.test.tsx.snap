@@ -3,7 +3,7 @@
 exports[`SearchBar ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-147nx2y-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-n9zwvw-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"

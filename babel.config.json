@@ -19,55 +19,6 @@
       }
     ],
     [
-      "babel-plugin-transform-imports",
-      {
-        "@mui/material": {
-          "preventFullImport": true,
-          "transform": "@mui/material/${member}"
-        },
-        "@mui/material/colors": {
-          "preventFullImport": true,
-          "transform": "@mui/material/colors/${member}"
-        },
-        "@mui/styles": {
-          "preventFullImport": true,
-          "transform": "@mui/styles/${member}"
-        },
-        "~/components": {
-          "preventFullImport": true,
-          "transform": "~/components/${member}"
-        },
-        "~/constants": {
-          "preventFullImport": true,
-          "transform": "~/constants/${member}"
-        },
-        "~/helpers": {
-          "preventFullImport": true,
-          "transform": "~/helpers/${member}"
-        },
-        "~/icons": {
-          "preventFullImport": true,
-          "transform": "mdi-material-ui/${member}"
-        },
-        "~/styles": {
-          "preventFullImport": true,
-          "transform": "~/styles/${member}"
-        },
-        "lodash": {
-          "preventFullImport": true,
-          "transform": "lodash/${member}"
-        },
-        "mdi-material-ui": {
-          "preventFullImport": true,
-          "transform": "mdi-material-ui/${member}"
-        },
-        "@material-ui/core": {
-          "preventFullImport": true,
-          "transform": "@mui/material/${member}"
-        }
-      }
-    ],
-    [
       "@babel/plugin-transform-runtime",
       {
         "regenerator": true

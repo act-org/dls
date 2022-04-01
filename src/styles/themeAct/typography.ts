@@ -23,14 +23,17 @@ const TYPOGRAPHY: TypographyVariantsOptions = {
   h1: {
     fontSize: '2.5em',
     fontWeight: 700,
+    marginBottom: '2em',
   },
   h2: {
     fontSize: '2.125em',
     fontWeight: 700,
+    marginBottom: '1.5em',
   },
   h3: {
     fontSize: '1.75em',
     fontWeight: 700,
+    marginBottom: '1em',
   },
   h4: {
     fontSize: '1.5em',

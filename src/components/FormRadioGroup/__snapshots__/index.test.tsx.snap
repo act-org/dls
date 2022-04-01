@@ -6,7 +6,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-12kayv5-MuiFormLabel-root-MuiInputLabel-root"
+      class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-17iusvp-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -70,7 +70,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1n5122j-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
         >
           one
         </span>
@@ -120,7 +120,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1n5122j-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
         >
           two
         </span>

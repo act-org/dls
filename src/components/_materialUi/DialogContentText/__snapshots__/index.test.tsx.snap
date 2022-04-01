@@ -3,7 +3,7 @@
 exports[`DialogContentText ACT theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiDialogContentText-root MuiTypography-root MuiTypography-body1 css-rckh1x-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiDialogContentText-root MuiTypography-root MuiTypography-body1 css-1rxhis5-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>

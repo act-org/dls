@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 
 import { standard } from '~/helpers/test';
 

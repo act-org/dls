@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 import { DialogContentText } from '@mui/material';
 
 import { standard } from '~/helpers/test';

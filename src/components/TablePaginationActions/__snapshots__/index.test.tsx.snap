@@ -68,7 +68,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         class="MuiFormControl-root makeStyles-textFieldRoot-7 MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="makeStyles-inputRoot-2 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-criif9-MuiInputBase-root-MuiOutlinedInput-root"
+          class="makeStyles-inputRoot-2 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-4r699z-MuiInputBase-root-MuiOutlinedInput-root"
           variant="outlined"
         >
           <div

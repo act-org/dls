@@ -9,7 +9,10 @@
 
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { Tooltip as MuiTooltip, TooltipProps as MuiTooltipProps } from '@mui/material';
+import {
+  Tooltip as MuiTooltip,
+  TooltipProps as MuiTooltipProps,
+} from '@mui/material';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { Playground } from '~/helpers/playground';

@@ -73,7 +73,6 @@ export const components: Components = {
         backgroundColor: COLORS.PRIMARY_DARK,
       },
     },
-
   },
   MuiAutocomplete: {
     defaultProps: {},
@@ -104,15 +103,20 @@ export const components: Components = {
     styleOverrides: {},
   },
   MuiBreadcrumbs: {
-    defaultProps: {},
-    styleOverrides: {},
+    defaultProps: {
+      color: 'primary',
+    },
+    styleOverrides: {
+      root: {
+        marginBottom: '.6em',
+      }
+    },
   },
   MuiButton: {
     defaultProps: {
       color: 'primary',
       disableElevation: true,
       size: 'medium',
-      variant: 'contained'
     },
     styleOverrides: {},
   },
@@ -120,9 +124,6 @@ export const components: Components = {
 
     defaultProps: {
       color: 'primary',
-
-      // disableElevation: true,
-      // size: 'medium',
     },
     styleOverrides: {},
   },
@@ -306,6 +307,7 @@ export const components: Components = {
   MuiInputLabel: {
     defaultProps: {
       color: 'primary',
+      variant: 'outlined'
     },
     styleOverrides: {
       formControl: {

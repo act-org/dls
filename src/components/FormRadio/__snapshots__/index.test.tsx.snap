@@ -46,7 +46,7 @@ exports[`FormRadio ACT theme matches the snapshot 1`] = `
       />
     </span>
     <span
-      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1n5122j-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
     >
       The label
     </span>

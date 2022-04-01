@@ -3,7 +3,7 @@
 exports[`SelectSecondary matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-37jrt-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-17dtubt-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"

@@ -8,7 +8,12 @@
  */
 
 import * as React from 'react';
-import { IconButton, Toolbar as MuiToolbar, ToolbarProps as MuiToolbarProps, Typography } from '@mui/material';
+import {
+  IconButton,
+  Toolbar as MuiToolbar,
+  ToolbarProps as MuiToolbarProps,
+  Typography,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import Menu from '~/icons/Menu';

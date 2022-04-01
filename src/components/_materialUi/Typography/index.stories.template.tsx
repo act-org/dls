@@ -9,7 +9,10 @@
 
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { Typography as MuiTypography, TypographyProps as MuiTypographyProps } from '@mui/material';
+import {
+  Typography as MuiTypography,
+  TypographyProps as MuiTypographyProps,
+} from '@mui/material';
 
 import { Playground } from '~/helpers/playground';
 

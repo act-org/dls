@@ -6,7 +6,7 @@ exports[`FormInput ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-ql1dy7-MuiFormLabel-root-MuiInputLabel-root"
+      class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1n9em2m-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -20,7 +20,7 @@ exports[`FormInput ACT theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-m4as2b-MuiInputBase-root-MuiInput-root"
+      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-15z0m7-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"

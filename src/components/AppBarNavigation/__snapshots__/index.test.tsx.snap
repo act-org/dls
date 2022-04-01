@@ -27,7 +27,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
           to="#"
         >
           <p
-            class="makeStyles-navTypography-8 makeStyles-navTypography-9 MuiTypography-root MuiTypography-body1 css-iw08tp-MuiTypography-root"
+            class="makeStyles-navTypography-8 makeStyles-navTypography-9 MuiTypography-root MuiTypography-body1 css-17q35n3-MuiTypography-root"
           >
             Home
           </p>
@@ -41,7 +41,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
           to="#"
         >
           <p
-            class="makeStyles-navTypography-8 makeStyles-navTypography-10 MuiTypography-root MuiTypography-body1 css-iw08tp-MuiTypography-root"
+            class="makeStyles-navTypography-8 makeStyles-navTypography-10 MuiTypography-root MuiTypography-body1 css-17q35n3-MuiTypography-root"
           >
             Other Page
           </p>

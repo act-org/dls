@@ -6,7 +6,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
     class="makeStyles-paperRoot-3 MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-1uipbnm-MuiPaper-root-MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root css-1y20jno-MuiTable-root"
+      class="MuiTable-root css-1mtkklo-MuiTable-root"
     >
       <thead
         class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
@@ -15,12 +15,12 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-head css-mjudad-MuiTableRow-root"
         >
           <td
-            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-9 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-qccmrg-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-9 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1yougzl-MuiTableCell-root"
             scope="col"
             style="width: 50px;"
           >
             <p
-              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-10 MuiTypography-root MuiTypography-body1 css-1n5122j-MuiTypography-root"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-10 MuiTypography-root MuiTypography-body1 css-own0hv-MuiTypography-root"
             >
               ID
             </p>
@@ -55,12 +55,12 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-12 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-qccmrg-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-12 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1yougzl-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-13 MuiTypography-root MuiTypography-body1 css-1n5122j-MuiTypography-root"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-13 MuiTypography-root MuiTypography-body1 css-own0hv-MuiTypography-root"
             >
               Name
             </p>
@@ -94,12 +94,12 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-15 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-qccmrg-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-15 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1yougzl-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-16 MuiTypography-root MuiTypography-body1 css-1n5122j-MuiTypography-root"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-16 MuiTypography-root MuiTypography-body1 css-own0hv-MuiTypography-root"
             >
               Field A
             </p>
@@ -133,12 +133,12 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-18 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-qccmrg-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-18 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1yougzl-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-19 MuiTypography-root MuiTypography-body1 css-1n5122j-MuiTypography-root"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-19 MuiTypography-root MuiTypography-body1 css-own0hv-MuiTypography-root"
             >
               Field B
             </p>
@@ -172,12 +172,12 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-21 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-qccmrg-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-6 makeStyles-tableCellRoot-21 MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1yougzl-MuiTableCell-root"
             scope="col"
             style="width: 100px;"
           >
             <p
-              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-22 MuiTypography-root MuiTypography-body1 css-1n5122j-MuiTypography-root"
+              class="makeStyles-typographyRoot-7 makeStyles-typographyRoot-22 MuiTypography-root MuiTypography-body1 css-own0hv-MuiTypography-root"
             >
               Field C
             </p>
@@ -219,31 +219,31 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-mjudad-MuiTableRow-root"
         >
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 50px;"
           >
             1
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 1
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A1
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B1
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C1
@@ -253,31 +253,31 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-mjudad-MuiTableRow-root"
         >
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 50px;"
           >
             2
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 2
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A2
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B2
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C2
@@ -287,31 +287,31 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-mjudad-MuiTableRow-root"
         >
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 50px;"
           >
             3
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 3
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A3
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B3
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C3
@@ -321,31 +321,31 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-mjudad-MuiTableRow-root"
         >
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 50px;"
           >
             4
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 4
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A4
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B4
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C4
@@ -355,31 +355,31 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-mjudad-MuiTableRow-root"
         >
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 50px;"
           >
             5
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 5
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A5
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B5
           </td>
           <td
-            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hg4v18-MuiTableCell-root"
+            class="makeStyles-tableCellRoot-23 MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-9n3r2f-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C5

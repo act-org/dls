@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 import { Toolbar } from '@mui/material';
 
 import { standard } from '~/helpers/test';

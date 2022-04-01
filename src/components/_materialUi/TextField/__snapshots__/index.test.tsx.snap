@@ -6,7 +6,7 @@ exports[`TextField ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-ql1dy7-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1n9em2m-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
       for="test-text-field"
       id="test-text-field-label"
@@ -14,7 +14,7 @@ exports[`TextField ACT theme matches the snapshot 1`] = `
       TextField Test Label
     </label>
     <div
-      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-criif9-MuiInputBase-root-MuiOutlinedInput-root"
+      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-4r699z-MuiInputBase-root-MuiOutlinedInput-root"
     >
       <input
         aria-invalid="false"
@@ -28,7 +28,7 @@ exports[`TextField ACT theme matches the snapshot 1`] = `
         class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="css-7nxzgd"
+          class="css-1in441m"
         >
           <span>
             TextField Test Label
@@ -68,7 +68,7 @@ exports[`TextField ACT_ET theme matches the snapshot 1`] = `
         class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="css-1g8cwq9"
+          class="css-1ftyaf0"
         >
           <span>
             TextField Test Label
@@ -108,7 +108,7 @@ exports[`TextField ENCOURA_DATALAB theme matches the snapshot 1`] = `
         class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
       >
         <legend
-          class="css-1g8cwq9"
+          class="css-1ftyaf0"
         >
           <span>
             TextField Test Label

@@ -3,7 +3,7 @@
 exports[`InputLabel ACT theme matches the snapshot 1`] = `
 <div>
   <label
-    class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-1sy92wk-MuiFormLabel-root-MuiInputLabel-root"
+    class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1wh2czn-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"

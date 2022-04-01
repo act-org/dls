@@ -19,12 +19,12 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
       </div>
     </div>
     <p
-      class="makeStyles-descriptionRoot-2 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1yl1tyq-MuiTypography-root"
+      class="makeStyles-descriptionRoot-2 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1r9rzg6-MuiTypography-root"
     >
       Description
     </p>
     <button
-      class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1evqelc-MuiButtonBase-root-MuiButton-root"
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-gq5jh7-MuiButtonBase-root-MuiButton-root"
       color="primary"
       tabindex="0"
       type="button"

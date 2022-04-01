@@ -2,7 +2,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+;
 
 import render from '~/helpers/test/render';
 

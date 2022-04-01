@@ -6,7 +6,7 @@ exports[`DialogActions ACT theme matches the snapshot 1`] = `
     class="MuiDialogActions-root MuiDialogActions-spacing css-1c059f0-MuiDialogActions-root"
   >
     <button
-      class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1evqelc-MuiButtonBase-root-MuiButton-root"
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-gq5jh7-MuiButtonBase-root-MuiButton-root"
       color="primary"
       tabindex="0"
       type="button"
