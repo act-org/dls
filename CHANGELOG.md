@@ -1,7 +1,8 @@
-<!-- markdownlint-disable MD013 MD012 -->
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [6.0.0-alpha.4](https://github.com/act-org/dls/compare/v6.0.0-alpha.3...v6.0.0-alpha.4) (2022-04-01)
 
 ## [6.0.0-alpha.3](https://github.com/act-org/dls/compare/v6.0.0-alpha.2...v6.0.0-alpha.3) (2022-03-31)
 
