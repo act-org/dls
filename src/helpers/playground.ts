@@ -12,7 +12,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable guard-for-in */
 /* eslint-disable no-loops/no-loops */
-import { get } from 'lodash';
+// import { get } from 'lodash';
 
 interface PropType {
   defaultValue: unknown;
@@ -35,12 +35,12 @@ interface DocGenType {
   };
 }
 
-const cleanPropType = (prop: PropType): void => {
-  if (get(prop, 'type.name')) {
-    // eslint-disable-next-line no-param-reassign
-    prop.type.name = prop.type.name.replace(' | undefined', '');
-  }
-};
+// const cleanPropType = (prop: PropType): void => {
+//   if (get(prop, 'type.name')) {
+//     // eslint-disable-next-line no-param-reassign
+//     prop.type.name = prop.type.name.replace(' | undefined', '');
+//   }
+// };
 
 const playgroundGroup = 'Playground';
 const eventsGroup = 'Events';
@@ -69,7 +69,6 @@ export const Playground = (args: Record<string, any>, type?: any): any => {
       args[key].table = { category: playgroundGroup };
     }
   }
-
   if (type) {
     const docType = type as unknown as DocGenType;
     // eslint-disable-next-line no-underscore-dangle
@@ -77,7 +76,7 @@ export const Playground = (args: Record<string, any>, type?: any): any => {
 
     // eslint-disable-next-line guard-for-in, no-loops/no-loops, no-restricted-syntax
     for (const key in props) {
-      cleanPropType(props[key]);
+      // cleanPropType(props[key]);
 
       let category: string = elseGroup;
 
@@ -92,13 +91,13 @@ export const Playground = (args: Record<string, any>, type?: any): any => {
       // eslint-disable-next-line no-param-reassign
       args[key] = {
         ...args[key],
+        // ...props[key],
         table: {
           category,
         },
       };
     }
   }
-
   return args;
 };
 

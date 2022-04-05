@@ -6,7 +6,7 @@ exports[`FormInputPrimary matches the snapshot 1`] = `
     class="makeStyles-labelContainer-2"
   >
     <label
-      class="makeStyles-labelRoot-4 MuiInputLabel-root MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1wh2czn-MuiFormLabel-root-MuiInputLabel-root"
+      class="makeStyles-labelRoot-4 MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-k1ceyf-MuiFormLabel-root-MuiInputLabel-root"
     >
       <div
         class="label-split"

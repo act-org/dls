@@ -8,11 +8,10 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Radio } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Radio } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Radio} title="Material UI/Radio" render={Template} />
+<Meta component={Radio} title="Material UI/Radio" render={Template} />
 
 <Description of={Radio} />
 
@@ -96,7 +95,7 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story
     args={{
       checked: true,
@@ -107,5 +106,6 @@ import { argTypes, Template } from './index.stories.template';
     }}
     name="Playground"
   />
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

@@ -9,15 +9,13 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { ButtonGroup } from '@mui/material';
 
 import Plus from '~/icons/Plus';
 import PlusCircleOutline from '~/icons/PlusCircleOutline';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, ButtonGroup } from './index.stories.template';
 
 <Meta
-  argTypes={argTypes}
   component={ButtonGroup}
   title="Material UI/ButtonGroup"
   render={Template}
@@ -58,7 +56,8 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story args={{}} name="Playground"/>
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

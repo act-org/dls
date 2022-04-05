@@ -36,11 +36,3 @@ export const Template: Story<AppBarProps> = (props: AppBarProps) => (
     </Toolbar>
   </AppBar>
 );
-
-export const argTypes = Playground(
-  {
-    color: {},
-    position: {},
-  },
-  AppBar,
-);

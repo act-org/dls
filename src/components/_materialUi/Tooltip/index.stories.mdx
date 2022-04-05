@@ -11,12 +11,11 @@ import {
 } from '@storybook/addon-docs';
 import { Tooltip } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template } from './index.stories.template';
 
 <Meta
   title="Material UI/Tooltip"
   component={Tooltip}
-  argTypes={argTypes}
   parameters={{}}
   render={Template}
 />
@@ -52,142 +51,10 @@ import { argTypes, Template } from './index.stories.template';
   />
 </Canvas>
 
-## Placement: Top
-
-<Canvas>
-  <Story
-    name="Placement: Top"
-    args={{
-      placement: 'top',
-    }}
-  />
-</Canvas>
-
-## Placement: Top Start
-
-<Canvas>
-  <Story
-    name="Placement: Top Start"
-    args={{
-      placement: 'top-start',
-    }}
-  />
-</Canvas>
-
-## Placement: Top End
-
-<Canvas>
-  <Story
-    name="Placement: Top End"
-    args={{
-      placement: 'top-end',
-    }}
-  />
-</Canvas>
-
-## Placement: Bottom
-
-<Canvas>
-  <Story
-    name="Placement: Bottom"
-    args={{
-      placement: 'bottom',
-    }}
-  />
-</Canvas>
-
-## Placement: Bottom Start
-
-<Canvas>
-  <Story
-    name="Placement: Bottom Start"
-    args={{
-      placement: 'bottom-start',
-    }}
-  />
-</Canvas>
-
-## Placement: Bottom End
-
-<Canvas>
-  <Story
-    name="Placement: Bottom End"
-    args={{
-      placement: 'bottom-end',
-    }}
-  />
-</Canvas>
-
-## Placement: Left
-
-<Canvas>
-  <Story
-    name="Placement: Left"
-    args={{
-      placement: 'left',
-    }}
-  />
-</Canvas>
-
-## Placement: Left Start
-
-<Canvas>
-  <Story
-    name="Placement: Left Start"
-    args={{
-      placement: 'left-start',
-    }}
-  />
-</Canvas>
-
-## Placement: Left End
-
-<Canvas>
-  <Story
-    name="Placement: Left End"
-    args={{
-      placement: 'left-end',
-    }}
-  />
-</Canvas>
-
-## Placement: Right
-
-<Canvas>
-  <Story
-    name="Placement: Right"
-    args={{
-      placement: 'right',
-    }}
-  />
-</Canvas>
-
-## Placement: Right Start
-
-<Canvas>
-  <Story
-    name="Placement: Right Start"
-    args={{
-      placement: 'right-start',
-    }}
-  />
-</Canvas>
-
-## Placement: Right End
-
-<Canvas>
-  <Story
-    name="Placement: Right End"
-    args={{
-      placement: 'right-end',
-    }}
-  />
-</Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     name="Playground"
     args={{
@@ -196,5 +63,6 @@ import { argTypes, Template } from './index.stories.template';
       placement: 'right',
     }}
   />
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

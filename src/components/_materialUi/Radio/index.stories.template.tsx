@@ -19,15 +19,3 @@ export type RadioProps = MuiRadioProps;
 export const Template: Story<RadioProps> = (props: RadioProps) => (
   <Radio {...props} />
 );
-
-export const argTypes = Playground(
-  {
-    checked: {},
-    color: {},
-    disabled: {},
-    onChange: { action: 'click' },
-    size: {},
-    value: {},
-  },
-  Radio,
-);

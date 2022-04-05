@@ -3,16 +3,16 @@
 exports[`OutlinedInput ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary css-4r699z-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
-      class="MuiOutlinedInput-input MuiInputBase-input css-18lf8l2-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiOutlinedInput-input MuiInputBase-input css-qkcx2b-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
         class="css-hdw1oc"

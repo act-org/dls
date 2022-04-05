@@ -3,7 +3,7 @@
 exports[`SearchBar ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-n9zwvw-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-11uauor-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
@@ -27,7 +27,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-1u3r8wa-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-1291m2l-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
@@ -60,7 +60,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
         class="css-hdw1oc"

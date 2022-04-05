@@ -39,8 +39,13 @@ module.exports = {
     checkOptions: {},
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
-      propFilter: prop => true,
       shouldExtractLiteralValuesFromEnum: true,
+      shouldExtractValuesFromUnion: false,
+      shouldRemoveUndefinedFromOptional: true,
+      skipChildrenPropWithoutDoc: false,
+
+
+
     },
   },
 };

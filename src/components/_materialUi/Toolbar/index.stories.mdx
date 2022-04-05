@@ -9,14 +9,12 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Toolbar, ToolbarProps } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Toolbar, ToolbarProps } from './index.stories.template';
 
 <Meta
   title="Material UI/Toolbar"
   component={Toolbar}
-  argTypes={argTypes}
   parameters={{}}
   render={Template}
 />
@@ -65,7 +63,8 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story name="Playground" args={{}}/>
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

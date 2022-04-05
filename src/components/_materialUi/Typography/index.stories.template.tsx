@@ -22,13 +22,3 @@ export type TypographyProps = MuiTypographyProps;
 export const Template: Story<TypographyProps> = (props: TypographyProps) => (
   <Typography {...props} />
 );
-
-export const argTypes = Playground(
-  {
-    align: {},
-    children: { type: 'string' },
-    color: {},
-    variant: {},
-  },
-  Typography,
-);

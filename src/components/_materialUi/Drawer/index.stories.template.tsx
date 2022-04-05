@@ -53,12 +53,3 @@ export const Template: Story<DrawerProps> = args => {
     </>
   );
 };
-
-export const argTypes = Playground(
-  {
-    anchor: {},
-    elevation: {},
-    variant: {},
-  },
-  Drawer,
-);

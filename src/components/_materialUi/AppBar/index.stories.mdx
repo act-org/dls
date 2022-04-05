@@ -1,6 +1,5 @@
 <!-- @prettier -->
 
-import { AppBar } from '@mui/material';
 import {
   ArgsTable,
   Canvas,
@@ -11,9 +10,9 @@ import {
   Story,
 } from '@storybook/addon-docs';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, AppBar } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={AppBar} title="Material UI/AppBar" render={Template} />
+<Meta component={AppBar} title="Material UI/AppBar" render={Template} />
 
 <Description of={AppBar} />
 
@@ -53,7 +52,8 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story name="Playground">{Template.bind({})}</Story>
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

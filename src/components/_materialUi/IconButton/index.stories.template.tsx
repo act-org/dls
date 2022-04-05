@@ -32,14 +32,3 @@ export const Template: Story<IconButtonProps> = (props: IconButtonProps) => (
     </IconButton>
   </>
 );
-
-export const argTypes = Playground(
-  {
-    color: {},
-    disabled: {},
-    edge: {},
-    onClick: { action: 'click' },
-    size: {},
-  },
-  IconButton,
-);

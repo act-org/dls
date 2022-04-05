@@ -44,16 +44,3 @@ export const Template: Story<ButtonGroupProps> = (props: ButtonGroupProps) => {
     </ButtonGroup>
   );
 };
-
-export const argTypes = Playground(
-  {
-    children: {},
-    color: {},
-    disabled: {},
-    fullWidth: {},
-    orientation: {},
-    size: {},
-    variant: {},
-  },
-  ButtonGroup,
-);

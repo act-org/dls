@@ -8,11 +8,10 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Switch } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Switch } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Switch} title="Material UI/Switch" render={Template} />
+<Meta component={Switch} title="Material UI/Switch" render={Template} />
 
 <Description of={Switch} />
 
@@ -95,7 +94,6 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     args={{
       checked: true,
@@ -106,5 +104,7 @@ import { argTypes, Template } from './index.stories.template';
     }}
     name="Playground"
   />
-  <ArgsTable story="Playground" />
+  
 </Canvas>
+
+<ArgsTable story="Playground" />

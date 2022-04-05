@@ -28,13 +28,3 @@ export const Template: Story<PaperProps> = (props: PaperProps) => (
     }}
   />
 );
-
-export const argTypes = Playground(
-  {
-    children: {},
-    elevation: {},
-    square: {},
-    variant: {},
-  },
-  Paper,
-);

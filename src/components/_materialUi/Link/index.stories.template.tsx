@@ -24,14 +24,3 @@ export const Template: Story<LinkProps> = (args: LinkProps) => (
     <Typography>Click Me</Typography>
   </Link>
 );
-
-export const argTypes: Record<string, unknown> = Playground(
-  {
-    color: {},
-    target: {},
-    text: {},
-    underline: {},
-    variant: {},
-  },
-  Link,
-);

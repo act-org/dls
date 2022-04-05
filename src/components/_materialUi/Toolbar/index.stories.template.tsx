@@ -32,4 +32,3 @@ export const Template: Story<ToolbarProps> = args => (
     </Typography>
   </Toolbar>
 );
-export const argTypes = Playground({}, Toolbar);

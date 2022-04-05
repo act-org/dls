@@ -9,13 +9,12 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Link, LinkProps } from '@mui/material';
 
 import Plus from '~/icons/Plus';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Link, LinkProps } from './index.stories.template';
 
-<Meta title="Material UI/Link" component={Link} argTypes={argTypes} render={Template}/>
+<Meta title="Material UI/Link" component={Link} render={Template}/>
 
 <Description of={Link} />
 
@@ -110,7 +109,8 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story name="Playground" args={{}}/>
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

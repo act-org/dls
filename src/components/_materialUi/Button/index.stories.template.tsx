@@ -21,16 +21,3 @@ export type ButtonProps = MuiButtonProps;
 export const Template: Story<ButtonProps> = (props: ButtonProps) => (
   <Button {...props} />
 );
-export const argTypes = Playground(
-  {
-    children: {},
-    color: {},
-    disabled: {},
-    fullWidth: {},
-    onClick: { action: 'click' },
-    size: {},
-    type: {},
-    variant: {},
-  },
-  Button,
-);

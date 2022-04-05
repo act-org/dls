@@ -1,6 +1,5 @@
 import { Components } from '@mui/material/styles';
 import { common } from '@mui/material/colors';
-import COLOR_PALETTE_ACT from './palette';
 import COLORS from './colors';
 import type { } from '@mui/lab/themeAugmentation';
 import type { } from '@mui/x-data-grid/themeAugmentation';
@@ -306,22 +305,26 @@ export const components: Components = {
   },
   MuiInputLabel: {
     defaultProps: {
-      color: 'primary',
-      variant: 'outlined'
+      color: 'primary'
     },
     styleOverrides: {
       formControl: {
         position: 'relative',
-        transform: undefined,
+        transform: 'unset',
+      },
+
+      outlined: {
+        '&.MuiInputLabel-marginDense': {
+          transform: 'unset',
+        },
+        transform: 'unset',
+        transformOrigin: 'unset',
       },
       root: {
-        color: `${COLOR_PALETTE_ACT.text?.primary}`,
-        fontSize: `1rem`,
-        marginBottom: `15px`,
-      },
-      shrink: {
-        transform: undefined,
-        transformOrigin: undefined,
+        color: common.black,
+        fontSize: 14,
+        fontWeight: 600,
+        marginBottom: '.5rem'
       },
     },
   },
@@ -394,33 +397,7 @@ export const components: Components = {
       type: 'text',
     },
     styleOverrides: {
-      input: {
-        '&$disabled': {
-          cursor: 'not-allowed',
-        },
-        '&::placeholder': {
-          color: COLORS.PLACEHOLDER,
-          opacity: 1,
-        },
-        fontSize: `1rem`,
-        paddingBottom: '15px',
-        paddingTop: '15px',
-      },
-      multiline: {
-        paddingBottom: '15px',
-        paddingTop: '15px',
-      },
-      notchedOutline: {
-        border: `1px solid ${COLORS.PRIMARY}`,
-      },
-      root: {
-        '&$disabled': {
-          backgroundColor: COLORS.BACKGROUND_DISABLED,
-          border: `1px solid ${COLOR_PALETTE_ACT.text?.disabled}`,
-          color: `${COLOR_PALETTE_ACT.text?.disabled}`,
-          cursor: 'not-allowed',
-        },
-      },
+
     },
   },
   MuiPagination: {
@@ -583,7 +560,16 @@ export const components: Components = {
     styleOverrides: {},
   },
   MuiTextField: {
-    defaultProps: {},
+    defaultProps: {
+      InputLabelProps: {
+        shrink: true,
+      },
+      InputProps: {
+        notched: false,
+      },
+      size: 'small',
+      variant: 'outlined',
+    },
     styleOverrides: {},
   },
   MuiToggleButton: {

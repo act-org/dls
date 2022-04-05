@@ -3,12 +3,12 @@
 exports[`SelectSecondary matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-17dtubt-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-prxojz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"
       aria-haspopup="listbox"
-      class="makeStyles-selectComponentRoot-3 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-1w3yx3g-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="makeStyles-selectComponentRoot-3 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-9t6dra-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="button"
       tabindex="0"
     >
@@ -33,7 +33,7 @@ exports[`SelectSecondary matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
         class="css-hdw1oc"

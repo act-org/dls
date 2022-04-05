@@ -22,15 +22,3 @@ export type SwitchProps = MuiSwitchProps;
 export const Template: Story<SwitchProps> = (props: SwitchProps) => (
   <Switch {...props} />
 );
-
-export const argTypes = Playground(
-  {
-    checked: {},
-    color: {},
-    disabled: {},
-    onChange: { action: 'click' },
-    size: {},
-    value: {},
-  },
-  Switch,
-);

@@ -36,20 +36,3 @@ export const Template: Story<OutlinedInputProps> = ({
     />
   );
 };
-
-export const argTypes: Record<string, any> = Playground(
-  {
-    autoFocus: {},
-    color: {},
-    disabled: {},
-    error: {},
-    onChange: { action: 'change' },
-    multiline: {},
-    placeholder: {},
-    required: {},
-    type: {},
-    value: { type: 'string' },
-    variant: {},
-  },
-  OutlinedInput,
-);

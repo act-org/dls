@@ -22,16 +22,3 @@ export type CheckboxProps = MuiCheckboxProps;
 export const Template: Story<CheckboxProps> = (props: CheckboxProps) => (
   <Checkbox {...props} />
 );
-
-export const argTypes = Playground(
-  {
-    checked: {},
-    color: {},
-    disabled: {},
-    indeterminate: {},
-    onChange: { action: 'click' },
-    size: {},
-    value: {},
-  },
-  Checkbox,
-);

@@ -40,14 +40,3 @@ export const Template: Story<SelectProps> = args => {
     </Select>
   );
 };
-export const argTypes = Playground(
-  {
-    autoWidth: {},
-    disabled: {},
-    error: {},
-    fullWidth: {},
-    multiple: {},
-    value: { type: 'string' },
-  },
-  Select,
-);

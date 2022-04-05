@@ -9,14 +9,12 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Drawer } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Drawer } from './index.stories.template';
 
 <Meta
   title="Material UI/Drawer"
   component={Drawer}
-  argTypes={argTypes}
   parameters={{}}
   render={Template}
 />
@@ -114,7 +112,8 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story inline={false} name="Playground" args={{}}/>
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

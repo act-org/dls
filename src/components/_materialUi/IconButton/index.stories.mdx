@@ -8,12 +8,10 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { IconButton } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, IconButton } from './index.stories.template';
 
 <Meta
-  argTypes={argTypes}
   component={IconButton}
   title="Material UI/IconButton"
   render={Template}
@@ -96,7 +94,7 @@ import { argTypes, Template } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
+  
   <Story
     args={{
       color: 'primary',
@@ -106,5 +104,6 @@ import { argTypes, Template } from './index.stories.template';
     }}
     name="Playground"
   />
-  <ArgsTable story="Playground" />
 </Canvas>
+
+<ArgsTable story="Playground" />

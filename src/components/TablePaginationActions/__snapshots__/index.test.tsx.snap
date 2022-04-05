@@ -68,14 +68,14 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         class="MuiFormControl-root makeStyles-textFieldRoot-7 MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="makeStyles-inputRoot-2 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-4r699z-MuiInputBase-root-MuiOutlinedInput-root"
+          class="makeStyles-inputRoot-2 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
           variant="outlined"
         >
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby="mui-3"
-            class="makeStyles-selectSelect-5 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-1w3yx3g-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="makeStyles-selectSelect-5 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-ti0aj3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id="mui-3"
             role="button"
             tabindex="0"
@@ -103,7 +103,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-b8b9jo-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
           >
             <legend
               class="css-hdw1oc"

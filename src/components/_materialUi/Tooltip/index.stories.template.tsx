@@ -25,13 +25,3 @@ export const Template: Story<TooltipProps> = args => (
     <HelpCircleOutline />
   </Tooltip>
 );
-export const argTypes = Playground(
-  {
-    arrow: {},
-    interactive: {},
-    open: {},
-    placement: {},
-    title: { type: 'string' },
-  },
-  Tooltip,
-);
