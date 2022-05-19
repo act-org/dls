@@ -4,10 +4,10 @@ Chronological history of changes to the Design Language System.
 
 ## [v5.12.2] - May 19, 2022
 
-* Moved `@material-ui/core` and `@material-ui/lab` to the `devDependencies`
-section of `package.json`, since they are peer dependencies. This allows
-the downstream project to choose the exact versions of these packages that
-they would like to use. Any `4.x` version should suffice!
+* Moved `@material-ui/core`, `@material-ui/data-grid`, and `@material-ui/lab`\
+to the `devDependencies` section of `package.json`, since they are peer
+dependencies. This allows the downstream project to choose the exact versions of
+these packages that they would like to use. Any `4.x` version should suffice!
 
 ## [v5.12.1] - Mar 09, 2022
 

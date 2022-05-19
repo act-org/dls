@@ -14,7 +14,7 @@ In order to use the DLS, you must install it along with
 [React](https://reactjs.org/) version `16.x` or `17.x`.
 
 ```shell
-npm install --save @actinc/dls@latest @material-ui/core@4 @material-ui/lab@4 react@17 react-dom@17
+npm install --save @actinc/dls@latest @material-ui/core@4 @material-ui/data-grid@4 @material-ui/lab@4 react@17 react-dom@17
 ```
 
 ### Choosing a Theme
