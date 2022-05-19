@@ -12,14 +12,14 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
         class="MuiGrid-root makeStyles-titleGridItem-8 MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-178u6cx-MuiTypography-root"
+          class="makeStyles-titleRoot-9 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1r9rzg6-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="makeStyles-descriptionRoot-2 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1r9rzg6-MuiTypography-root"
+      class="makeStyles-descriptionRoot-2 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1c01ggb-MuiTypography-root"
     >
       Description
     </p>
@@ -41,23 +41,23 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
 exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="makeStyles-container-9"
+    class="makeStyles-container-10"
   >
     <div
-      class="MuiGrid-root makeStyles-titleGridContainer-14 MuiGrid-container css-1ca7zd9-MuiGrid-root"
+      class="MuiGrid-root makeStyles-titleGridContainer-15 MuiGrid-container css-1ca7zd9-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root makeStyles-titleGridItem-16 MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root makeStyles-titleGridItem-17 MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-v1zrkh-MuiTypography-root"
+          class="makeStyles-titleRoot-18 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1w85r6d-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="makeStyles-descriptionRoot-10 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1w85r6d-MuiTypography-root"
+      class="makeStyles-descriptionRoot-11 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1w0n7z2-MuiTypography-root"
     >
       Description
     </p>
@@ -78,23 +78,23 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
 exports[`EmptyState ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="makeStyles-container-17"
+    class="makeStyles-container-19"
   >
     <div
-      class="MuiGrid-root makeStyles-titleGridContainer-22 MuiGrid-container css-1ca7zd9-MuiGrid-root"
+      class="MuiGrid-root makeStyles-titleGridContainer-24 MuiGrid-container css-1ca7zd9-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root makeStyles-titleGridItem-24 MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root makeStyles-titleGridItem-26 MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-1gsoat4-MuiTypography-root"
+          class="makeStyles-titleRoot-27 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-bdrn9d-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="makeStyles-descriptionRoot-18 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-bdrn9d-MuiTypography-root"
+      class="makeStyles-descriptionRoot-20 MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-xxikd4-MuiTypography-root"
     >
       Description
     </p>

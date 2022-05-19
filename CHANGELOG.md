@@ -30,6 +30,20 @@ All notable changes to this project will be documented in this file. See [standa
 * Material UI 5 support ([36c942e](https://github.com/act-org/dls/commit/36c942e828ba558e13a20624a9aa18e0396ff009))
 * Mui 5 functional themes, cleaned up Mui storybook examples ([2ae784b](https://github.com/act-org/dls/commit/2ae784bddd0ca32af48bc8b545df60a1a2115acb))
 
+## [v5.12.1] - Mar 09, 2022
+
+* Improved the TypeScript definition of the `titleTypographyProps` prop on
+the `<EmptyState />` component.
+
+## [v5.12.0] - Mar 09, 2022
+
+* Added new optional props to the `EmptyState` component
+  * `descriptionTypographyProps`
+  * `iconProps`
+  * `titleTypographyProps`
+* Improved the styling of the `EmptyState` title so that this component
+looks good across all themes.
+
 ## [v5.11.1] - Feb 28, 2022
 
 * Upgraded most of the NPM dependencies and dev-dependencies to their latest
