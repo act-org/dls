@@ -2,7 +2,7 @@
 
 Chronological history of changes to the Design Language System.
 
-## [v5.12.2] - May 19, 2022
+## [v5.12.3] - May 19, 2022
 
 * Moved `@material-ui/core`, `@material-ui/data-grid`, and `@material-ui/lab`\
 to the `devDependencies` section of `package.json`, since they are peer
