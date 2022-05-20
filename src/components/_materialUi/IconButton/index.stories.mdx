@@ -11,15 +11,17 @@ import {
 
 import { Template, IconButton } from './index.stories.template';
 
-<Meta
-  component={IconButton}
-  title="Material UI/IconButton"
-  render={Template}
-/>
+<Meta component={IconButton} title="Material UI/IconButton" render={Template} />
 
 <Description of={IconButton} />
 
-## Primary IconButton
+## Default
+
+<Canvas>
+  <Story args={{}} name="Default" />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -94,7 +96,6 @@ import { Template, IconButton } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  
   <Story
     args={{
       color: 'primary',

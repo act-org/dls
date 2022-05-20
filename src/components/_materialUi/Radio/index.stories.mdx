@@ -15,7 +15,18 @@ import { Template, Radio } from './index.stories.template';
 
 <Description of={Radio} />
 
-## Primary Radio
+## Default
+
+<Canvas>
+  <Story
+    args={{
+      value: 'value',
+    }}
+    name="Default"
+  />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -95,7 +106,6 @@ import { Template, Radio } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  
   <Story
     args={{
       checked: true,

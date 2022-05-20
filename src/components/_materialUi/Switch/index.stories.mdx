@@ -15,7 +15,18 @@ import { Template, Switch } from './index.stories.template';
 
 <Description of={Switch} />
 
-## Primary Switch
+## Default
+
+<Canvas>
+  <Story
+    args={{
+      value: 'value',
+    }}
+    name="Default"
+  />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -104,7 +115,6 @@ import { Template, Switch } from './index.stories.template';
     }}
     name="Playground"
   />
-  
 </Canvas>
 
 <ArgsTable story="Playground" />

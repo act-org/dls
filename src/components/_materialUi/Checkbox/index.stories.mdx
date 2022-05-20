@@ -15,7 +15,18 @@ import { Template, Checkbox } from './index.stories.template';
 
 <Description of={Checkbox} />
 
-## Primary Checkbox
+## Default
+
+<Canvas>
+  <Story
+    args={{
+      value: 'value',
+    }}
+    name="Default"
+  />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -122,7 +133,6 @@ import { Template, Checkbox } from './index.stories.template';
 ## Playground
 
 <Canvas isColumn>
-  
   <Story
     args={{
       checked: true,
