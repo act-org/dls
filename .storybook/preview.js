@@ -49,7 +49,7 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        'Docs',
+        'DLS',
         'Material UI',
         'Atoms',
         'Molecules',
