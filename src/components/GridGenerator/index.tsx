@@ -8,24 +8,28 @@
  */
 
 import * as React from 'react';
-import { Grid } from '@mui/material';
+import { Grid, GridProps } from '@mui/material';
 
 import useStyles from './styles';
 
-interface FormInput {
-  formInput: React.ReactElement<unknown>;
+interface IGridContent {
+  children: React.ReactElement<unknown>;
   key: string;
 }
 
-type FormInputGroup = FormInput[];
+type GridContentGroup = IGridContent[];
 
-export interface FormInputGroupsProps {
-  groups: FormInputGroup[];
+export interface GridGeneratorProps {
+  groups: GridContentGroup[];
+  gridContainerProps?: GridProps;
+  gridItemProps?: GridProps;
 }
 
-export const FormInputGroups: React.FC<FormInputGroupsProps> = ({
+export const GridGenerator: React.FC<GridGeneratorProps> = ({
   groups,
-}: FormInputGroupsProps) => {
+  gridContainerProps,
+  gridItemProps,
+}: GridGeneratorProps) => {
   const classes = useStyles();
 
   return (
@@ -40,17 +44,20 @@ export const FormInputGroups: React.FC<FormInputGroupsProps> = ({
             container
             key={i}
             spacing={4}
+            {...gridContainerProps}
           >
             {group.map(
-              (input): React.ReactElement<unknown> => (
+              (gridItem): React.ReactElement<unknown> => (
                 <Grid
                   classes={{
                     item: classes.gridItemRoot,
                   }}
                   item
-                  key={input.key}
+                  key={gridItem.key}
+                  xs
+                  {...gridItemProps}
                 >
-                  {input.formInput}
+                  {gridItem.children}
                 </Grid>
               ),
             )}
@@ -62,4 +69,4 @@ export const FormInputGroups: React.FC<FormInputGroupsProps> = ({
   );
 };
 
-export default FormInputGroups;
+export default GridGenerator;
