@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0-alpha.8](https://github.com/act-org/dls/compare/v6.0.0-alpha.7...v6.0.0-alpha.8) (2022-05-20)
+
+
+### Features
+
+* Replace ACT logo with ACT|Encoura lockup logo ([#40](https://github.com/act-org/dls/issues/40)) ([4e18c14](https://github.com/act-org/dls/commit/4e18c1418606cc6a56740256e9bc4596cba63d1f))
+
 ## [6.0.0-alpha.7](https://github.com/act-org/dls/compare/v6.0.0-alpha.6...v6.0.0-alpha.7) (2022-04-05)
 
 ## [6.0.0-alpha.6](https://github.com/act-org/dls/compare/v6.0.0-alpha.5...v6.0.0-alpha.6) (2022-04-04)
