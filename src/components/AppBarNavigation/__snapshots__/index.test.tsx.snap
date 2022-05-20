@@ -6,7 +6,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 makeStyles-appBarRoot-1 makeStyles-appBarRoot-3 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-151qxhw-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-logoLink-6 css-1cv20o7-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-logoLink-6 css-14f5v1x-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -23,7 +23,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 css-1cv20o7-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 css-14f5v1x-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -37,7 +37,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 css-1cv20o7-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-7 css-14f5v1x-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -58,7 +58,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 makeStyles-appBarRoot-11 makeStyles-appBarRoot-13 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-my345k-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-logoLink-16 css-1x5ln1b-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-logoLink-16 css-1mvlmp5-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -75,7 +75,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-17 css-1x5ln1b-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-17 css-1mvlmp5-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -89,7 +89,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-17 css-1x5ln1b-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-17 css-1mvlmp5-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -110,7 +110,7 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 makeStyles-appBarRoot-21 makeStyles-appBarRoot-23 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-my345k-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-logoLink-26 css-nw0326-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-logoLink-26 css-grzwhc-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -127,7 +127,7 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-27 css-nw0326-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-27 css-grzwhc-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -141,7 +141,7 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways makeStyles-navLink-27 css-nw0326-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover makeStyles-navLink-27 css-grzwhc-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p

@@ -66,7 +66,6 @@ const PALETTE: PaletteOptions = {
   },
   text: {
     disabled: grey[400],
-    // hint: COLORS.TEXT_SECONDARY,
     primary: common.black,
     secondary: COLORS.TEXT_SECONDARY,
   },

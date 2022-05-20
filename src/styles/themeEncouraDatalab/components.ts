@@ -463,7 +463,10 @@ export const components: Components = {
     styleOverrides: {},
   },
   MuiLink: {
-    defaultProps: {},
+    defaultProps: {
+      color: 'primary',
+      underline: 'hover',
+    },
     styleOverrides: {
       root: {
         cursor: 'pointer',
