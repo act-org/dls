@@ -691,7 +691,7 @@ export const components: Components = {
         width: 42 * 0.9,
       },
       switchBase: {
-        '&$checked': {
+        '&.Mui-checked': {
           '& + $track': {
             backgroundColor: COLORS.PRIMARY,
             border: COLORS.PRIMARY,
@@ -700,7 +700,7 @@ export const components: Components = {
           color: common.white,
           transform: 'translateX(16px)',
         },
-        '&$focusVisible $thumb': {
+        '&.Mui-focusVisible .MuiSwitch-thumb': {
           border: `6px solid ${common.white}`,
           color: COLORS.PRIMARY,
         },

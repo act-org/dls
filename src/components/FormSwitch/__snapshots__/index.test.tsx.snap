@@ -54,7 +54,7 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-1naxtjv-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-143zrxq-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
@@ -94,7 +94,7 @@ exports[`FormSwitch ENCOURA_DATALAB theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-q207r6-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
