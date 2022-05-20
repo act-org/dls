@@ -1,3 +1,6 @@
+<!-- markdownlint-disable no-duplicate-heading -->
+<!-- markdownlint-disable no-duplicate-header -->
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
@@ -36,6 +39,13 @@ All notable changes to this project will be documented in this file. See [standa
 * Documentation and Working build for mui-5 upgrade ([be6662e](https://github.com/act-org/dls/commit/be6662eb006e35c526d6752d8f7af4dd022edf3b))
 * Material UI 5 support ([36c942e](https://github.com/act-org/dls/commit/36c942e828ba558e13a20624a9aa18e0396ff009))
 * Mui 5 functional themes, cleaned up Mui storybook examples ([2ae784b](https://github.com/act-org/dls/commit/2ae784bddd0ca32af48bc8b545df60a1a2115acb))
+
+## [v5.12.3] - May 19, 2022
+
+* Moved `@material-ui/core`, `@material-ui/data-grid`, and `@material-ui/lab`
+to the `devDependencies` section of `package.json`, since they are peer
+dependencies. This allows the downstream project to choose the exact versions
+of these packages that they would like to use. Any `4.x` version should suffice!
 
 ## [v5.12.1] - Mar 09, 2022
 

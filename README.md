@@ -1,6 +1,10 @@
 # Design Language System (DLS)
 
-[![Build Status](https://app.travis-ci.com/act-org/dls.svg?branch=master)](https://app.travis-ci.com/github/act-org/dls)
+<!-- markdownlint-disable line-length -->
+
+[![Version](https://img.shields.io/npm/v/@actinc/dls)](https://github.com/act-org/dls) [![Build Status](https://img.shields.io/travis/act-org/dls/master)](https://app.travis-ci.com/github/act-org/dls) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/dls/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/dls?color=orange)](https://www.npmjs.com/package/@actinc/dls)
+
+<!-- markdownlint-enable line-length -->
 
 The Design Language System for ACT front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
@@ -14,7 +18,7 @@ In order to use the DLS, you must install it along with
 [React](https://reactjs.org/) version `16.x` or `17.x`.
 
 ```shell
-npm install --save @actinc/dls@latest @mui/materail@5 @mui/styles@5 @mui/lab @mui/x-data-grid @emotion/styled@11 @emotion/react@11 react@17 react-dom@17
+npm install --save @actinc/dls@latest @mui/material@5 @mui/styles@5 @mui/lab @mui/x-data-grid @emotion/styled@11 @emotion/react@11 react@17 react-dom@17
 ```
 
 ### Choosing a Theme
@@ -340,4 +344,3 @@ Some npm packages are pinned to non-current versions for a specific reason:
 | Package      | Version | Reason                                                                                                  |
 |:------------ |:------- |:------------------------------------------------------------------------------------------------------- |
 | `color`      | `3.2.1` | Version `4.x` cannot be run in Storybook due to [this issue](https://github.com/Qix-/color/issues/206). |
-| `np`         | `7.4.0` | Version `7.5.0` is [broken](https://github.com/sindresorhus/np/issues/613).                             |

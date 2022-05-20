@@ -16,7 +16,6 @@ import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 import { ThemeProvider } from '../src/components/ThemeProvider';
 import { version } from '../package.json';
 
-
 configureActions({
   depth: 3,
   limit: 20,
@@ -50,7 +49,7 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        `DLS v${version}`,
+        'Docs',
         'Material UI',
         'Atoms',
         'Molecules',
@@ -70,7 +69,7 @@ export const decorators = [
         <CssBaseline />
         <Story />
       </ThemeProvider>
-    )
+    );
   },
 ];
 
