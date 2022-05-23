@@ -7,6 +7,8 @@
  * @prettier
  */
 
+/* eslint-disable import/prefer-default-export */
+
 import { styled } from '@mui/material/styles';
 import { Paper, paperClasses } from '@mui/material';
 

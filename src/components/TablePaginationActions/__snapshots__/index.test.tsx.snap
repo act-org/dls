@@ -74,9 +74,9 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby="mui-3"
+            aria-labelledby=":r2:"
             class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-ti0aj3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="mui-3"
+            id=":r2:"
             role="button"
             tabindex="0"
           >
@@ -250,9 +250,9 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby="mui-8"
+            aria-labelledby=":r7:"
             class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-yx7z46-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="mui-8"
+            id=":r7:"
             role="button"
             tabindex="0"
           >
@@ -422,9 +422,9 @@ exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] =
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby="mui-13"
+            aria-labelledby=":rc:"
             class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1417ihe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="mui-13"
+            id=":rc:"
             role="button"
             tabindex="0"
           >

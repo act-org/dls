@@ -7,6 +7,8 @@
  * @prettier
  */
 
+/* eslint-disable import/prefer-default-export */
+
 import { styled } from '@mui/material/styles';
 
 export const StyledImg = styled('img')<any>(({ isWrapped }) => ({

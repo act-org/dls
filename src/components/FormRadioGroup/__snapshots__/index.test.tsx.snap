@@ -35,7 +35,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name="mui-1"
+            name=":r0:"
             type="radio"
             value="one"
           />
@@ -85,7 +85,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name="mui-1"
+            name=":r0:"
             type="radio"
             value="two"
           />
@@ -164,7 +164,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name="mui-2"
+            name=":r1:"
             type="radio"
             value="one"
           />
@@ -213,7 +213,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name="mui-2"
+            name=":r1:"
             type="radio"
             value="two"
           />
@@ -292,7 +292,7 @@ exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name="mui-3"
+            name=":r2:"
             type="radio"
             value="one"
           />
@@ -341,7 +341,7 @@ exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name="mui-3"
+            name=":r2:"
             type="radio"
             value="two"
           />

@@ -10,6 +10,7 @@
 module.exports = {
   addons: [
     '@storybook/addon-a11y',
+    '@storybook/addon-controls',
     '@storybook/addon-docs',
     '@storybook/addon-essentials',
     '@storybook/addon-links',
@@ -19,6 +20,7 @@ module.exports = {
     builder: 'webpack5',
   },
   features: {
+    previewMdx2: true,
     storyStoreV7: true,
     babelModeV7: true,
     emotionAlias: false,
