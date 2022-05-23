@@ -7,10 +7,11 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import { InputLabel, inputLabelClasses } from '@mui/material';
 
-export default makeStyles({
-  labelRoot: {
+export const StyledInputLabel = styled(InputLabel)({
+  [`&.${inputLabelClasses.root}`]: {
     '& .label-help': {
       '& .MuiSvgIcon-root': {
         height: '.825em',

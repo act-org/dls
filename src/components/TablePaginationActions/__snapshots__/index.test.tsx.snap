@@ -3,7 +3,7 @@
 exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="makeStyles-container-1"
+    class="css-l1f5px"
   >
     <span
       aria-label="First Page"
@@ -65,17 +65,17 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root makeStyles-textFieldRoot-7 MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-1goyl5l-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="makeStyles-inputRoot-2 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
           variant="outlined"
         >
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby="mui-3"
-            class="makeStyles-selectSelect-5 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-ti0aj3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-ti0aj3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id="mui-3"
             role="button"
             tabindex="0"
@@ -183,7 +183,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
 exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="makeStyles-container-8"
+    class="css-l1f5px"
   >
     <span
       aria-label="First Page"
@@ -241,17 +241,17 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root makeStyles-textFieldRoot-14 MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-s0qjqj-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="makeStyles-inputRoot-9 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1a4gudp-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1a4gudp-MuiInputBase-root-MuiOutlinedInput-root"
           variant="outlined"
         >
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby="mui-8"
-            class="makeStyles-selectSelect-12 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-yx7z46-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-yx7z46-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id="mui-8"
             role="button"
             tabindex="0"
@@ -355,7 +355,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
 exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="makeStyles-container-15"
+    class="css-l1f5px"
   >
     <span
       aria-label="First Page"
@@ -413,17 +413,17 @@ exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] =
     </span>
     <div>
       <div
-        class="MuiFormControl-root makeStyles-textFieldRoot-21 MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-s0qjqj-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="makeStyles-inputRoot-16 MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-t97913-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-t97913-MuiInputBase-root-MuiOutlinedInput-root"
           variant="outlined"
         >
           <div
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby="mui-13"
-            class="makeStyles-selectSelect-19 MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1417ihe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1417ihe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id="mui-13"
             role="button"
             tabindex="0"

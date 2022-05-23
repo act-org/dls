@@ -8,9 +8,9 @@
  */
 
 import * as React from 'react';
-import { Grid, GridProps } from '@mui/material';
+import { GridProps } from '@mui/material';
 
-import useStyles from './styles';
+import { StyledGridContainer, StyledGridItem } from './styles';
 
 interface IGridContent {
   children: React.ReactElement<unknown>;
@@ -29,44 +29,29 @@ export const GridGenerator: React.FC<GridGeneratorProps> = ({
   groups,
   gridContainerProps,
   gridItemProps,
-}: GridGeneratorProps) => {
-  const classes = useStyles();
-
-  return (
-    <>
-      {/* eslint-disable react/no-array-index-key */}
-      {groups.map(
-        (group, i): React.ReactElement<unknown> => (
-          <Grid
-            classes={{
-              container: classes.gridContainerRoot,
-            }}
-            container
-            key={i}
-            spacing={4}
-            {...gridContainerProps}
-          >
-            {group.map(
-              (gridItem): React.ReactElement<unknown> => (
-                <Grid
-                  classes={{
-                    item: classes.gridItemRoot,
-                  }}
-                  item
-                  key={gridItem.key}
-                  xs
-                  {...gridItemProps}
-                >
-                  {gridItem.children}
-                </Grid>
-              ),
-            )}
-          </Grid>
-        ),
-      )}
-      {/* eslint-enable react/no-array-index-key */}
-    </>
-  );
-};
+}: GridGeneratorProps) => (
+  <>
+    {/* eslint-disable react/no-array-index-key */}
+    {groups.map(
+      (group, i): React.ReactElement<unknown> => (
+        <StyledGridContainer
+          container
+          key={i}
+          spacing={4}
+          {...gridContainerProps}
+        >
+          {group.map(
+            (gridItem): React.ReactElement<unknown> => (
+              <StyledGridItem item key={gridItem.key} xs {...gridItemProps}>
+                {gridItem.children}
+              </StyledGridItem>
+            ),
+          )}
+        </StyledGridContainer>
+      ),
+    )}
+    {/* eslint-enable react/no-array-index-key */}
+  </>
+);
 
 export default GridGenerator;

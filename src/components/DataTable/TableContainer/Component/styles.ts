@@ -7,10 +7,11 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import { Paper, paperClasses } from '@mui/material';
 
-export default makeStyles(({ palette }) => ({
-  paperRoot: {
-    border: `1px solid ${palette.divider}`,
+export const StyledPaper = styled(Paper)(({ theme }) => ({
+  [`&.${paperClasses.root}`]: {
+    border: `1px solid ${theme.palette.divider}`,
   },
 }));

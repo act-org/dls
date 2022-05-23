@@ -7,17 +7,15 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { Typography, typographyClasses, TypographyProps } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-export default makeStyles(theme => ({
-  navLink: {
-    '&, &:hover': {
-      color: 'unset',
-      textDecoration: 'none',
-    },
-    cursor: 'pointer',
-  },
-  navTypography: ({ isActive }: any): any => ({
+export const StyledTypography = styled(Typography)<
+  TypographyProps & {
+    isActive?: boolean;
+  }
+>(({ isActive, theme }) => ({
+  [`&.${typographyClasses.root}`]: {
     '&:after': {
       backgroundColor: isActive ? 'currentcolor' : 'transparent',
       borderRadius: theme.shape.borderRadius,
@@ -43,5 +41,5 @@ export default makeStyles(theme => ({
       ? '0 0 .65px currentcolor, 0 0 .65px currentcolor'
       : 'unset',
     transition: 'all .2s linear',
-  }),
+  },
 }));

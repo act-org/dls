@@ -7,16 +7,8 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
 
-export default makeStyles({
-  logoImg: {
-    height: '38.88%',
-  },
-  logoImgWrapped: {
-    height: '100%',
-  },
-  logoLink: {
-    height: '38.88%',
-  },
-});
+export const StyledImg = styled('img')<any>(({ isWrapped }) => ({
+  height: isWrapped ? '100%' : '38.88%',
+}));

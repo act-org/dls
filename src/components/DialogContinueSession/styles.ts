@@ -7,10 +7,11 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import { DialogActions, dialogActionsClasses } from '@mui/material';
 
-export default makeStyles(({ spacing }) => ({
-  dialogActionsRoot: {
-    padding: spacing(2),
+export const StyledDialogActions = styled(DialogActions)(({ theme }) => ({
+  [`&.${dialogActionsClasses.root}`]: {
+    padding: theme.spacing(2),
   },
 }));

@@ -8,24 +8,12 @@
  */
 
 import * as React from 'react';
-import { Paper, PaperProps } from '@mui/material';
+import { PaperProps } from '@mui/material';
 
-import useStyles from './styles';
+import { StyledPaper } from './styles';
 
 const Component: React.FC = (
   props: PaperProps,
-): React.ReactElement<unknown> => {
-  const classes = useStyles();
-
-  return (
-    <Paper
-      classes={{
-        root: classes.paperRoot,
-      }}
-      elevation={0}
-      {...props}
-    />
-  );
-};
+): React.ReactElement<unknown> => <StyledPaper elevation={0} {...props} />;
 
 export default Component;

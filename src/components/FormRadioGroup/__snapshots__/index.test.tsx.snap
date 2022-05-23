@@ -6,7 +6,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="makeStyles-labelRoot-1 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-oeyp1q-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-70jh9d-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -136,7 +136,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="makeStyles-labelRoot-2 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-yt3r7l-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-11ye4gi-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -264,7 +264,7 @@ exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="makeStyles-labelRoot-3 MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-wj1cnn-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-86j95q-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div

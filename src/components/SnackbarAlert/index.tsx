@@ -12,8 +12,6 @@ import { SnackbarContent, useSnackbar } from 'notistack';
 
 import Alert from '~/components/Alert';
 
-import useStyles from './styles';
-
 export interface SnackbarAlertProps {
   id: number;
   message: string;
@@ -32,16 +30,14 @@ export const SnackbarAlert: React.FC<SnackbarAlertProps> = React.forwardRef(
       closeSnackbar(id);
     }, [id, closeSnackbar]);
 
-    const classes = useStyles();
-
     return (
       <SnackbarContent ref={ref as any}>
         <Alert
-          classes={{
-            root: classes.snackbarContentRoot,
-          }}
           onClose={handleDismiss}
           severity={variant}
+          style={{
+            width: '100%',
+          }}
           variant="filled"
         >
           {message}

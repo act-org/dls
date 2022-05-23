@@ -36,7 +36,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-bm8ttf-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         tabindex="0"
         title="Clears the search"
@@ -112,7 +112,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-v3d0c0-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         title="Clears the search"
         type="button"
@@ -187,7 +187,7 @@ exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-v3d0c0-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         title="Clears the search"
         type="button"

@@ -7,17 +7,31 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import {
+  AppBar,
+  AppBarProps,
+  appBarClasses,
+  Grid,
+  gridClasses,
+} from '@mui/material';
 
-export default makeStyles(theme => ({
-  appBarRoot: ({ appBarHeight }: any): any => ({
+export const StyledAppBar = styled(AppBar)<
+  AppBarProps & {
+    appBarHeight: number;
+  }
+>(({ appBarHeight, theme }) => ({
+  [`&.${appBarClasses.root}`]: {
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'row',
     height: appBarHeight,
     padding: `0 calc(${theme.spacing(1)} * 2.58)`,
-  }),
-  navContainer: {
+  },
+}));
+
+export const StyledGrid = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
     alignItems: 'center',
     paddingLeft: theme.spacing(3),
   },

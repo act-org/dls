@@ -8,18 +8,20 @@
  */
 
 import { grey } from '@mui/material/colors';
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import { TablePagination, tablePaginationClasses } from '@mui/material';
 
-export default makeStyles(({ spacing, typography }) => ({
-  emptyStateContainer: {
-    paddingBottom: spacing(1),
-    paddingLeft: spacing(1),
-    paddingRight: spacing(1),
-    paddingTop: spacing(2.5),
-    width: '100%',
-  },
-  tablePaginationRoot: {
+export const StyledEmptyStateContainer = styled('div')(({ theme }) => ({
+  paddingBottom: theme.spacing(1),
+  paddingLeft: theme.spacing(1),
+  paddingRight: theme.spacing(1),
+  paddingTop: theme.spacing(2.5),
+  width: '100%',
+}));
+
+export const StyledTablePagination = styled(TablePagination)(({ theme }) => ({
+  [`&.${tablePaginationClasses.root}`]: {
     backgroundColor: grey[50],
-    fontSize: typography.body2.fontSize,
+    fontSize: theme.typography.body2.fontSize,
   },
 }));

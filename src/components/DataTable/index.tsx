@@ -9,13 +9,7 @@
 
 import * as React from 'react';
 import { constant, isNumber, round } from 'lodash';
-import {
-  Table,
-  TableBody,
-  TableHead,
-  TablePagination,
-  TableRow,
-} from '@mui/material';
+import { Table, TableBody, TableHead, TableRow } from '@mui/material';
 
 import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
 import { SortObject } from '~/types';
@@ -25,7 +19,7 @@ import TableCellBody from './TableCellBody';
 import TableCellHead from './TableCellHead';
 import TableContainer from './TableContainer';
 
-import useStyles from './styles';
+import { StyledEmptyStateContainer, StyledTablePagination } from './styles';
 
 interface Column<T> {
   renderValue: (item: T) => any;
@@ -67,96 +61,89 @@ export const DataTable = <T,>({
   rowsPerPageOptions,
   RowWrapper,
   totalCount,
-}: DataTableProps<T>): React.ReactElement<unknown> => {
-  const classes = useStyles();
+}: DataTableProps<T>): React.ReactElement<unknown> => (
+  <TableContainer>
+    <Table>
+      <TableHead>
+        <TableRow>
+          {columns.map(
+            (column, i): React.ReactElement<unknown> => (
+              <TableCellHead
+                color={color}
+                currentSortObject={currentSortObject}
+                key={column.label || i}
+                onChangeSort={onChangeSort}
+                sortBy={column.sortBy}
+                style={column.style}
+              >
+                {column.label || ''}
+              </TableCellHead>
+            ),
+          )}
+        </TableRow>
+      </TableHead>
 
-  return (
-    <TableContainer>
-      <Table>
-        <TableHead>
-          <TableRow>
-            {columns.map(
-              (column, i): React.ReactElement<unknown> => (
-                <TableCellHead
-                  color={color}
-                  currentSortObject={currentSortObject}
-                  key={column.label || i}
-                  onChangeSort={onChangeSort}
-                  sortBy={column.sortBy}
-                  style={column.style}
-                >
-                  {column.label || ''}
-                </TableCellHead>
-              ),
-            )}
-          </TableRow>
-        </TableHead>
+      <TableBody>
+        {items.map((item, i): React.ReactElement<unknown> => {
+          /* eslint-disable react/no-array-index-key */
+          const children = (
+            <TableRow hover key={i}>
+              {columns.map(
+                (column, y): React.ReactElement<unknown> => (
+                  <TableCellBody key={column.label || y} style={column.style}>
+                    {column.renderValue(item)}
+                  </TableCellBody>
+                ),
+              )}
+            </TableRow>
+          );
+          /* eslint-enable react/no-array-index-key */
 
-        <TableBody>
-          {items.map((item, i): React.ReactElement<unknown> => {
-            /* eslint-disable react/no-array-index-key */
-            const children = (
-              <TableRow hover key={i}>
-                {columns.map(
-                  (column, y): React.ReactElement<unknown> => (
-                    <TableCellBody key={column.label || y} style={column.style}>
-                      {column.renderValue(item)}
-                    </TableCellBody>
-                  ),
-                )}
-              </TableRow>
-            );
-            /* eslint-enable react/no-array-index-key */
+          if (RowWrapper) {
+            return RowWrapper(item, children);
+          }
 
-            if (RowWrapper) {
-              return RowWrapper(item, children);
-            }
+          return children;
+        })}
 
-            return children;
-          })}
+        {items.length > 0 &&
+          isNumber(limit) &&
+          isNumber(offset) &&
+          isNumber(totalCount) && (
+            <StyledTablePagination
+              ActionsComponent={TablePaginationActions as any}
+              count={totalCount}
+              labelDisplayedRows={constant('')}
+              labelRowsPerPage="Rows Per Page:"
+              onPageChange={(_, zeroBasedPage: number): void => {
+                if (onChangeOffset) {
+                  onChangeOffset(zeroBasedPage * limit);
+                }
+              }}
+              onRowsPerPageChange={(e): void => {
+                if (onChangeLimit) {
+                  onChangeLimit(Number(e.target.value));
+                }
 
-          {items.length > 0 &&
-            isNumber(limit) &&
-            isNumber(offset) &&
-            isNumber(totalCount) && (
-              <TablePagination
-                ActionsComponent={TablePaginationActions as any}
-                classes={{
-                  root: classes.tablePaginationRoot,
-                }}
-                count={totalCount}
-                labelDisplayedRows={constant('')}
-                labelRowsPerPage="Rows Per Page:"
-                onPageChange={(_, zeroBasedPage: number): void => {
-                  if (onChangeOffset) {
-                    onChangeOffset(zeroBasedPage * limit);
-                  }
-                }}
-                onRowsPerPageChange={(e): void => {
-                  if (onChangeLimit) {
-                    onChangeLimit(Number(e.target.value));
-                  }
+                if (onChangeOffset) {
+                  onChangeOffset(0);
+                }
+              }}
+              page={round(offset / limit, 0)}
+              rowsPerPage={limit}
+              rowsPerPageOptions={rowsPerPageOptions || [25, 50, 100]}
+            />
+          )}
+      </TableBody>
+    </Table>
 
-                  if (onChangeOffset) {
-                    onChangeOffset(0);
-                  }
-                }}
-                page={round(offset / limit, 0)}
-                rowsPerPage={limit}
-                rowsPerPageOptions={rowsPerPageOptions || [25, 50, 100]}
-              />
-            )}
-        </TableBody>
-      </Table>
-
-      {items.length === 0 && emptyStateProps && (
-        <div className={classes.emptyStateContainer}>
-          <EmptyState description="No Results Found" {...emptyStateProps} />
-        </div>
-      )}
-    </TableContainer>
-  );
-};
+    {items.length === 0 && emptyStateProps && (
+      <StyledEmptyStateContainer>
+        <EmptyState description="No Results Found" {...emptyStateProps} />
+      </StyledEmptyStateContainer>
+    )}
+  </TableContainer>
+);
 
 DataTable.defaultProps = {
   color: 'default',

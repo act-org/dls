@@ -8,36 +8,51 @@
  */
 
 import { grey } from '@mui/material/colors';
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import {
+  MenuItem,
+  menuItemClasses,
+  MenuItemProps,
+  TextField,
+  textFieldClasses,
+} from '@mui/material';
 
-export default makeStyles(({ palette }) => ({
-  container: {
-    alignItems: 'center',
-    display: 'inline-flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    userSelect: 'none',
-  },
-  inputRoot: {
-    color: palette.text.primary,
+export const StyledContainer = styled('div')({
+  alignItems: 'center',
+  display: 'inline-flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  userSelect: 'none',
+});
+
+export const StyledTextField = styled(TextField)(({ theme }) => ({
+  [`&.${textFieldClasses.root}`]: {
+    color: theme.palette.text.primary,
     fontSize: 14,
-  },
-  menuItemRootSelected: {
-    backgroundColor: grey[200],
-  },
-  selectIconRoot: {
-    color: grey[200],
-  },
-  selectSelect: {
-    paddingLeft: 8,
-    paddingRight: 24,
-    textAlign: 'right',
-    textAlignLast: 'right',
-  },
-  selectSelectInverted: {
-    color: grey[200],
-  },
-  textFieldRoot: {
     margin: 0,
+  },
+  /* FIXME: SelectProps.classes.select
+    selectSelect: {
+      paddingLeft: 8,
+      paddingRight: 24,
+      textAlign: 'right',
+      textAlignLast: 'right',
+    },
+    selectSelectInverted: { // variant === 'inverted'
+      color: grey[200],
+    },
+  */
+  /* FIXME: SelectProps.classes.icon
+    selectIconRoot: {
+      color: grey[200],
+    },
+  */
+}));
+
+export const StyledMenuItem = styled(MenuItem)<
+  MenuItemProps & { isSelected: boolean }
+>(({ isSelected }) => ({
+  [`&.${menuItemClasses.root}`]: {
+    backgroundColor: isSelected ? grey[200] : undefined,
   },
 }));

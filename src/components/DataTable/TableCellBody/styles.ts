@@ -7,12 +7,13 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import { TableCell, tableCellClasses } from '@mui/material';
 
-export default makeStyles(({ spacing, typography }) => ({
-  tableCellRoot: {
+export const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.root}`]: {
     fontSize: '0.888rem',
-    fontWeight: Number(typography.fontWeightRegular),
-    padding: `${spacing(1)} !important`,
+    fontWeight: Number(theme.typography.fontWeightRegular),
+    padding: `${theme.spacing(1)} !important`,
   },
 }));

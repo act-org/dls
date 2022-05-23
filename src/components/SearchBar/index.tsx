@@ -8,24 +8,16 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
 import {
-  IconButton,
   InputAdornment,
   OutlinedInput,
   OutlinedInputProps,
 } from '@mui/material';
-import makeStyles from '@mui/styles/makeStyles';
 
 import CloseCircle from '~/icons/CloseCircle';
 import Magnify from '~/icons/Magnify';
 
-const useStyles = makeStyles({
-  iconCloseHidden: {
-    opacity: 0,
-    pointerEvents: 'none',
-  },
-});
+import { StyledIconButton } from './styles';
 
 export type SearchBarProps = OutlinedInputProps;
 
@@ -44,19 +36,14 @@ export function SearchBar({
   const [internalValue, setValue] = React.useState<string>(
     (value || '') as string,
   );
-  const iconClasses = useStyles();
+
   return (
     <OutlinedInput
       endAdornment={
         <InputAdornment position="end">
-          <IconButton
+          <StyledIconButton
             aria-label="Clears the search"
-            classes={{
-              root: clsx(
-                !(internalValue && internalValue.length) &&
-                  iconClasses.iconCloseHidden,
-              ),
-            }}
+            isHidden={!(internalValue && internalValue.length)}
             // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
             onClick={(e: any) => {
               setValue('');
@@ -73,7 +60,7 @@ export function SearchBar({
             title="Clears the search"
           >
             <CloseCircle fontSize="small" />
-          </IconButton>
+          </StyledIconButton>
         </InputAdornment>
       }
       inputProps={{

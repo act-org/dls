@@ -7,13 +7,17 @@
  * @prettier
  */
 
-import makeStyles from '@mui/styles/makeStyles';
+import { styled } from '@mui/material/styles';
+import { Grid, gridClasses } from '@mui/material';
 
-export default makeStyles(({ spacing }) => ({
-  gridContainerRoot: {
-    marginBottom: spacing(0.5),
-  },
-  gridItemRoot: {
-    flex: 1,
+export const StyledGridContainer = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
+    marginBottom: theme.spacing(0.5),
   },
 }));
+
+export const StyledGridItem = styled(Grid)({
+  [`&.${gridClasses.item}`]: {
+    flex: 1,
+  },
+});

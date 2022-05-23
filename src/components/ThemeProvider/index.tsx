@@ -21,16 +21,6 @@ import { THEME_ACT } from '~/styles/themeAct';
 import { THEME_ACT_ET } from '~/styles/themeActEt';
 import { THEME_ENCOURA_DATALAB } from '~/styles/themeEncouraDatalab';
 
-declare module '@mui/styles/defaultTheme' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
-}
-
-declare module '@mui/styles/defaultTheme' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
-}
-
 /**
  * # Theme configuration.
  *
