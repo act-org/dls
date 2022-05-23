@@ -18,7 +18,7 @@ In order to use the DLS, you must install it along with
 [React](https://reactjs.org/) version `16.x` or `17.x`.
 
 ```shell
-npm install --save @actinc/dls@latest @mui/material@5 @mui/styles@5 @mui/lab @mui/x-data-grid @emotion/styled@11 @emotion/react@11 react@17 react-dom@17
+npm install --save @actinc/dls@latest @mui/material@5 @mui/lab @mui/x-data-grid @emotion/styled@11 @emotion/react@11 react@17 react-dom@17
 ```
 
 ### Choosing a Theme
@@ -158,42 +158,8 @@ const MyApp = () => (
 ### Server-Side Rendering
 
 If your project's React framework supports SSR, you can configure the DLS
-components for server-side rendering by using the `ServerStyleSheets` export
-from Material UI.
-
-In a [Next.js](https://nextjs.org/) project, for example, you would add the
-following to your `pages/_document.tsx` file:
-
-```jsx
-import { ServerStyleSheets } from '@mui/styles';
-
-...
-
-class Document extends DocumentImport<Props> {
-  static async getInitialProps(ctx: Context): Promise<Props> {
-    ...
-
-    const sheets = new ServerStyleSheets();
-    const originalRenderPage = ctx.renderPage;
-
-    ctx.renderPage = (): void =>
-      originalRenderPage({
-        enhanceApp: (App: any): any => (props: any): any =>
-          sheets.collect(<App {...props} />),
-      });
-
-    ...
-
-    return {
-      ...
-      styles: sheets.getStyleElement(),
-      ...
-    }
-  }
-
-  ...
-}
-```
+components for server-side rendering. See the official Next.js example
+[here](https://github.com/mui/material-ui/tree/master/examples/nextjs-with-typescript).
 
 ### Icons
 
@@ -244,10 +210,6 @@ module.exports = {
         '@mui/material/colors': {
           preventFullImport: true,
           transform: '@mui/material/colors/${member}',
-        },
-        '@mui/styles': {
-          preventFullImport: true,
-          transform: '@mui/styles/${member}',
         },
         '@actinc/dls/components': {
           transform: '@actinc/dls/components/${member}',
