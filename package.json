@@ -50,7 +50,7 @@
     "@types/color": "3.0.3",
     "@types/jest": "27.4.1",
     "@types/jest-axe": "3.5.3",
-    "@types/lodash": "4.14.179",
+    "@types/lodash": "4.14.182",
     "@types/pluralize": "0.0.29",
     "@types/react": "17.0.39",
     "@types/react-dom": "17.0.11",
