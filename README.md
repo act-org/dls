@@ -14,8 +14,8 @@ The Design Language System for ACT front-end projects. View the UI components
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://mui.com/) version `5.x` and
-[React](https://reactjs.org/) version `16.x` or `17.x`.
+[Material UI](https://mui.com/) and
+[React](https://reactjs.org/) version `17.x` or `18.x`.
 
 ```shell
 npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
