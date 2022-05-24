@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -8,14 +8,16 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import {
-  IconButton,
-  InputAdornment,
-} from '@mui/material';
+import { IconButton, InputAdornment } from '@mui/material';
 
 import Plus from '~/icons/Plus';
 
-import { SelectTemplate, Template, TextField, TextFieldProps } from './index.stories.template';
+import {
+  SelectTemplate,
+  Template,
+  TextField,
+  TextFieldProps,
+} from './index.stories.template';
 
 <Meta component={TextField} title="Material UI/TextField" render={Template} />
 
@@ -24,7 +26,7 @@ import { SelectTemplate, Template, TextField, TextFieldProps } from './index.sto
 ## Default
 
 <Canvas>
-  <Story name="Default" args={{}}/>
+  <Story name="Default" args={{}} />
 </Canvas>
 
 ## With Value
@@ -41,7 +43,6 @@ import { SelectTemplate, Template, TextField, TextFieldProps } from './index.sto
 ## Playground
 
 <Canvas isColumn>
-  
   <Story
     name="Playground"
     args={{
