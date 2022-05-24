@@ -1,9 +1,21 @@
-<!-- markdownlint-disable no-duplicate-heading -->
-<!-- markdownlint-disable no-duplicate-header -->
-
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [6.0.0-alpha.9](https://github.com/act-org/dls/compare/v6.0.0-alpha.8...v6.0.0-alpha.9) (2022-05-24)
+
+
+### Features
+
+* Added status badges, documentation cleanup ([19a6207](https://github.com/act-org/dls/commit/19a6207714c4b7ff408b07e19433226db1db26ff))
+* Remove deprecated components ([232d221](https://github.com/act-org/dls/commit/232d2215815d79433df51c6a2cfe9f27446e655a))
+
+
+### Bug Fixes
+
+* Fix issues with React 18 upgrade ([795c361](https://github.com/act-org/dls/commit/795c361829269158b168660fed43c6252a605ade))
+* Remove @mui/styles dep ([eab73de](https://github.com/act-org/dls/commit/eab73de5b8a9ff3bf582581e85a18a7150f345d2))
+* Rename story names ([913d10c](https://github.com/act-org/dls/commit/913d10c4dd9c7f17561a420e93190fc0f980a83f))
 
 ## [6.0.0-alpha.8](https://github.com/act-org/dls/compare/v6.0.0-alpha.7...v6.0.0-alpha.8) (2022-05-20)
 
