@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0-alpha.12](https://github.com/act-org/dls/compare/v6.0.0-alpha.11...v6.0.0-alpha.12) (2022-05-26)
+
+
+### Bug Fixes
+
+* Fix import of StyledEngineProvider ([77cd478](https://github.com/act-org/dls/commit/77cd478d6d20e37d0b700620595e60f2726f2432))
+
 ## [6.0.0-alpha.11](https://github.com/act-org/dls/compare/v6.0.0-alpha.10...v6.0.0-alpha.11) (2022-05-26)
 
 
