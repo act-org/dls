@@ -201,9 +201,9 @@ opinion that this style should be applied globally for this component across all
 themes. Often times, this is not the right assumption to make.
 
 ```tsx
-// BAD:
+import { styled } from '@mui/material/styles';
 
-// These style values are hard-coded.
+// BAD: These style values are hard-coded.
 export const StyledDiv = styled('div')({
   backgroundColor: '#FFFFFF',
   borderRadius: 4,
@@ -233,9 +233,9 @@ see [here](https://mui.com/material-ui/customization/theming/) and
 [here](https://mui.com/material-ui/customization/default-theme/).)
 
 ```tsx
-// BETTER:
+import { styled } from '@mui/material/styles';
 
-// These style values are dynamic based on the theme.
+// BETTER: These style values are dynamic based on the theme.
 export const StyledDiv = styled('div')(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
   borderRadius: theme.shape.borderRadius,
@@ -261,10 +261,10 @@ When our custom components are built using Material UI primitives, often times
 the custom styles are no longer needed!
 
 ```tsx
-// BEST:
+import { styled } from '@mui/material/styles';
 
-// No custom styles are needed because this component is built using Material UI
-// primitives. We can handle everything using a few simple props!
+// BEST: No custom styles are needed because this component is built using
+// Material UI primitives. We can handle everything using a few simple props!
 const MyComponent = () => (
   <Paper elevation={1}>
     <Typography variant="caption">Hello World</Typography>

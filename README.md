@@ -54,12 +54,12 @@ You can exend the core DLS themes using the
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@mui/materia/styles';
-import { merge } from 'lodash';
+import { createTheme } from '@mui/material/styles';
+import deepMerge from 'deepmerge';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components';
 
-const myExtendedTheme = createTheme(merge(THEME_ACT_ET, {
+const myExtendedTheme = createTheme(deepMerge(THEME_ACT_ET, {
   // theme customizations go here!
 }));
 
@@ -227,7 +227,7 @@ module.exports = {
           transform: '@actinc/dls/helpers/${member}',
           preventFullImport: true,
         },
-        '@actinc/dls/helpers': {
+        '@actinc/dls/hooks': {
           transform: '@actinc/dls/hooks/${member}',
           preventFullImport: true,
         },
@@ -237,10 +237,6 @@ module.exports = {
         },
         '@actinc/dls/styles': {
           transform: '@actinc/dls/styles/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/types': {
-          transform: '@actinc/dls/types/${member}',
           preventFullImport: true,
         },
       },
