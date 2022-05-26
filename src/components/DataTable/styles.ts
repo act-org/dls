@@ -9,7 +9,8 @@
 
 import { grey } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
-import { TablePagination, tablePaginationClasses } from '@mui/material';
+import { TablePagination } from '@mui/material';
+import { tablePaginationClasses } from '@mui/material/TablePagination';
 
 export const StyledEmptyStateContainer = styled('div')(({ theme }) => ({
   paddingBottom: theme.spacing(1),

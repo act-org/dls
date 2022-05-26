@@ -10,7 +10,8 @@
 /* eslint-disable import/prefer-default-export */
 
 import { styled } from '@mui/material/styles';
-import { InputLabel, inputLabelClasses } from '@mui/material';
+import { InputLabel } from '@mui/material';
+import { inputLabelClasses } from '@mui/material/InputLabel';
 
 export const StyledInputLabel = styled(InputLabel)({
   [`&.${inputLabelClasses.root}`]: {

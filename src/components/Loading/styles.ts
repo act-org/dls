@@ -8,7 +8,8 @@
  */
 
 import { styled } from '@mui/material/styles';
-import { Typography, typographyClasses } from '@mui/material';
+import { Typography } from '@mui/material';
+import { typographyClasses } from '@mui/material/Typography';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',

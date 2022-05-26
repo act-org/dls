@@ -8,7 +8,8 @@
  */
 
 import { styled } from '@mui/material/styles';
-import { Grid, gridClasses } from '@mui/material';
+import { Grid } from '@mui/material';
+import { gridClasses } from '@mui/material/Grid';
 
 export const StyledGridContainer = styled(Grid)(({ theme }) => ({
   [`&.${gridClasses.container}`]: {

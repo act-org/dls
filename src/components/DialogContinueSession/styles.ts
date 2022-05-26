@@ -10,7 +10,8 @@
 /* eslint-disable import/prefer-default-export */
 
 import { styled } from '@mui/material/styles';
-import { DialogActions, dialogActionsClasses } from '@mui/material';
+import { DialogActions } from '@mui/material';
+import { dialogActionsClasses } from '@mui/material/DialogActions';
 
 export const StyledDialogActions = styled(DialogActions)(({ theme }) => ({
   [`&.${dialogActionsClasses.root}`]: {

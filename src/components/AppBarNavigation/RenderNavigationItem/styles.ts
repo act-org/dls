@@ -9,8 +9,9 @@
 
 /* eslint-disable import/prefer-default-export */
 
-import { Typography, typographyClasses, TypographyProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { Typography, TypographyProps } from '@mui/material';
+import { typographyClasses } from '@mui/material/Typography';
 
 export const StyledTypography = styled(Typography)<
   TypographyProps & {

@@ -7,14 +7,10 @@
  * @prettier
  */
 
+import { AppBar, AppBarProps, Grid } from '@mui/material';
+import { appBarClasses } from '@mui/material/AppBar';
+import { gridClasses } from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
-import {
-  AppBar,
-  AppBarProps,
-  appBarClasses,
-  Grid,
-  gridClasses,
-} from '@mui/material';
 
 export const StyledAppBar = styled(AppBar)<
   AppBarProps & {

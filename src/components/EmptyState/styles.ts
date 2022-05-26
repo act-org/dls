@@ -7,14 +7,10 @@
  * @prettier
  */
 
+import { Grid, Typography, TypographyProps } from '@mui/material';
+import { gridClasses } from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
-import {
-  Grid,
-  gridClasses,
-  Typography,
-  TypographyProps,
-  typographyClasses,
-} from '@mui/material';
+import { typographyClasses } from '@mui/material/Typography';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',

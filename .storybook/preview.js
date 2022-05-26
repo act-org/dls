@@ -14,7 +14,6 @@ import { CssBaseline } from '@mui/material';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 
 import { ThemeProvider } from '../src/components/ThemeProvider';
-import { version } from '../package.json';
 
 configureActions({
   depth: 3,

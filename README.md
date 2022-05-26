@@ -24,7 +24,7 @@ npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @e
 ### Choosing a Theme
 
 This DLS is built on top of the
-[theming engine](https://material-ui.com/customization/theming/) from
+[theming engine](https://mui.com/material-ui/customization/theming/) from
 Material UI, and ships with two themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
@@ -50,7 +50,7 @@ const MyApp = () => (
 #### Extending Themes
 
 You can exend the core DLS themes using the
-[`createTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+[`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
 generator from Material UI:
 
 ```jsx
@@ -73,7 +73,7 @@ const MyApp = () => (
 #### Custom Themes
 
 Alternatively, you can build your own theme from scratch using the
-[`createTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+[`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
 generator from Material UI:
 
 ```jsx

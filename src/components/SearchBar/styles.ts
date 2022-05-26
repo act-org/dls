@@ -10,7 +10,8 @@
 /* eslint-disable import/prefer-default-export */
 
 import { styled } from '@mui/material/styles';
-import { IconButton, iconButtonClasses, IconButtonProps } from '@mui/material';
+import { IconButton, IconButtonProps } from '@mui/material';
+import { iconButtonClasses } from '@mui/material/IconButton';
 
 export const StyledIconButton = styled(IconButton)<
   IconButtonProps & {

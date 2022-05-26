@@ -8,14 +8,10 @@
  */
 
 import { grey } from '@mui/material/colors';
+import { MenuItem, MenuItemProps, TextField } from '@mui/material';
+import { menuItemClasses } from '@mui/material/MenuItem';
 import { styled } from '@mui/material/styles';
-import {
-  MenuItem,
-  menuItemClasses,
-  MenuItemProps,
-  TextField,
-  textFieldClasses,
-} from '@mui/material';
+import { textFieldClasses } from '@mui/material/TextField';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',

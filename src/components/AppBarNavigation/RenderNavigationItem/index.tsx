@@ -8,7 +8,8 @@
  */
 
 import * as React from 'react';
-import { Link, linkClasses, LinkProps } from '@mui/material';
+import { Link, LinkProps } from '@mui/material';
+import { linkClasses } from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
 
 import { StyledTypography } from './styles';

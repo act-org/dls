@@ -10,7 +10,8 @@
 /* eslint-disable import/prefer-default-export */
 
 import { styled } from '@mui/material/styles';
-import { TableCell, tableCellClasses } from '@mui/material';
+import { TableCell } from '@mui/material';
+import { tableCellClasses } from '@mui/material/TableCell';
 
 export const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.root}`]: {
