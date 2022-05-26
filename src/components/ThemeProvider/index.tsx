@@ -11,11 +11,10 @@ import * as locales from '@mui/material/locale';
 import * as React from 'react';
 import {
   createTheme,
+  StyledEngineProvider,
   Theme,
   ThemeProvider as MuiThemeProvider,
 } from '@mui/material/styles';
-
-import { StyledEngineProvider } from '@mui/styled-engine';
 
 import { THEME_ACT } from '~/styles/themeAct';
 import { THEME_ACT_ET } from '~/styles/themeActEt';

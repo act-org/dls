@@ -14,10 +14,10 @@ import {
   RenderResult,
   RenderOptions,
 } from '@testing-library/react';
+import { StyledEngineProvider } from '@mui/material/styles';
+import { Theme } from '@mui/material';
 
 import ThemeProvider from '../../components/ThemeProvider';
-import { Theme } from '@mui/material';
-import { StyledEngineProvider } from '@mui/styled-engine';
 
 export const render = (
   Component: React.ReactElement,

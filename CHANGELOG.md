@@ -2,13 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [6.0.0-alpha.10](https://github.com/act-org/dls/compare/v6.0.0-alpha.9...v6.0.0-alpha.10) (2022-05-26)
-
-
-### Bug Fixes
-
-* Import classes directly to fix downstream module issues ([a4875be](https://github.com/act-org/dls/commit/a4875be722bf55270757621f74026df65d2bd066))
-
 ## [6.0.0-alpha.9](https://github.com/act-org/dls/compare/v6.0.0-alpha.8...v6.0.0-alpha.9) (2022-05-24)
 
 
@@ -357,4 +350,4 @@ const CustomButtonForTestPrep: React.FC<Props> = ({
 
 export default CustomButtonForTestPrep;
 ```
-<!-- markdownlint-disable-file MD013 MD012 -->
+<!-- markdownlint-disable-file MD012 MD013 MD024 -->
