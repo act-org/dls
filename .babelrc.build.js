@@ -31,10 +31,6 @@ module.exports = {
           preventFullImport: true,
           transform: '@mui/material/colors/${member}',
         },
-        '@mui/material/styles': {
-          preventFullImport: true,
-          transform: '@mui/material/styles/${member}',
-        },
         '@mui/material': {
           preventFullImport: true,
           transform: '@mui/material/${member}',
