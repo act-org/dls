@@ -153,7 +153,7 @@
     "release:version": "standard-version --prerelease alpha",
     "release:commit": "git push --follow-tags origin migrate-mui-5",
     "release:npm": "npm run build && cd dist && npm publish --tag alpha",
-    "release:storybook": "npm run build-storybook && storybook-to-ghpages -e ./storybook-static/www",
+    "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
     "start": "start-storybook -p 6006 -s ./public --no-manager-cache",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
