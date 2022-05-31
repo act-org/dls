@@ -207,10 +207,6 @@ module.exports = {
           preventFullImport: true,
           transform: '@mui/material/${member}',
         },
-        '@mui/material/colors': {
-          preventFullImport: true,
-          transform: '@mui/material/colors/${member}',
-        },
         '@actinc/dls/components': {
           transform: '@actinc/dls/components/${member}',
           preventFullImport: true,

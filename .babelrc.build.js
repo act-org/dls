@@ -27,10 +27,6 @@ module.exports = {
     [
       'babel-plugin-transform-imports',
       {
-        '@mui/material/colors': {
-          preventFullImport: true,
-          transform: '@mui/material/colors/${member}',
-        },
         '@mui/material': {
           preventFullImport: true,
           transform: '@mui/material/${member}',
