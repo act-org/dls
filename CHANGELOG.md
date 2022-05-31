@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0-alpha.13](https://github.com/act-org/dls/compare/v6.0.0-alpha.12...v6.0.0-alpha.13) (2022-05-31)
+
+
+### Bug Fixes
+
+* Do not import colors on private path ([d21b426](https://github.com/act-org/dls/commit/d21b4263ee43f4734ffdd45000cd0401e09dde51))
+
 ## [6.0.0-alpha.12](https://github.com/act-org/dls/compare/v6.0.0-alpha.11...v6.0.0-alpha.12) (2022-05-26)
 
 
