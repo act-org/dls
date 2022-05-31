@@ -2,6 +2,129 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/act-org/dls/compare/v5.11.1...v7.0.0) (2022-05-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* mui 5 and mui 4 are incompatible
+* mui 5 no longer uses JSS but emotion
+
+* chore(release): 6.0.0-alpha.0
+
+* chore: Add release scripts
+
+* chore: Fix labs peer dep
+
+* chore(release): 6.0.0-alpha.1
+
+* chore: Cleanup typography settings after migration
+
+* chore(release): 6.0.0-alpha.2
+
+* chore: Clean up babel build overrides
+
+* chore(release): 6.0.0-alpha.3
+
+* chore: Clean up act theme fix babel remaps and config inheritance
+
+* chore(release): 6.0.0-alpha.4
+
+* chore: Refactor styled engine provider location
+
+* chore: Fix styled-engine peerDep
+
+* chore(release): 6.0.0-alpha.5
+
+* chore: Use rem for typography spacing
+
+* chore(release): 6.0.0-alpha.6
+
+* chore: Update snap
+
+* chore: Clean ui mui stories and update tests
+
+* chore(release): 6.0.0-alpha.7
+
+* chore: Update lock file
+
+* chore(release): 6.0.0-alpha.8
+
+* chore: NPM package upgrades
+
+* test: Update tests
+
+* test: Fix all tests
+
+* fix: Rename story names
+
+* feat: Remove deprecated components
+
+* refactor: Rename FormInputGroups to GridGenerator
+
+* feat: Added status badges, documentation cleanup
+
+* chore: Documentation cleanup
+
+* refactor: Migrate styling from JSS to emotion
+
+* fix: Remove @mui/styles dep
+
+* chore: Updated packages
+
+* test: Fix tests
+
+* fix: Fix issues with React 18 upgrade
+
+* docs: Remove versions from install command since we are compatible with latest
+
+* docs: Fix versions
+
+* docs: Fix dev guide for mui5
+
+* chore(release): 6.0.0-alpha.9
+
+* fix: Import classes directly to fix downstream module issues
+
+* chore(release): 6.0.0-alpha.10
+
+* fix: Import StyledEngineProvider from main package
+
+* chore(release): 6.0.0-alpha.11
+
+* fix: Fix import of StyledEngineProvider
+
+* chore(release): 6.0.0-alpha.12
+
+* docs: Minor doc improvements
+
+* chore: Fix storybook publish command
+
+* fix: Do not import colors on private path
+
+* chore(release): 6.0.0-alpha.13
+
+* build: Prep for release
+
+* chore(release): 6.0.0
+
+* build: Prep for release
+
+* chore(release): 6.0.0
+
+* build: Prep for release
+
+* chore(release): 6.0.0
+
+Co-authored-by: Justin Watkins <justin.watkins@act.org>
+
+### Features
+
+* Replace ACT logo with ACT|Encoura lockup logo ([#40](https://github.com/act-org/dls/issues/40)) ([4e18c14](https://github.com/act-org/dls/commit/4e18c1418606cc6a56740256e9bc4596cba63d1f))
+
+
+* Migrate to MUI5, Add Support for React 18 (#75) ([13528a5](https://github.com/act-org/dls/commit/13528a523e3003e37e4c04290cd7389c05ed3114)), closes [#75](https://github.com/act-org/dls/issues/75)
+
 ## [6.0.0-alpha.13](https://github.com/act-org/dls/compare/v6.0.0-alpha.12...v6.0.0-alpha.13) (2022-05-31)
 
 
