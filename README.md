@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable line-length -->
 
-[![Version](https://img.shields.io/npm/v/@actinc/dls)](https://github.com/act-org/dls) [![Build Status](https://img.shields.io/travis/act-org/dls/master)](https://app.travis-ci.com/github/act-org/dls) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/dls/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/dls?color=orange)](https://www.npmjs.com/package/@actinc/dls)
+[![Version](https://img.shields.io/npm/v/@actinc/dls)](https://www.npmjs.com/package/@actinc/dls) [![Build Status](https://img.shields.io/travis/act-org/dls/master)](https://app.travis-ci.com/github/act-org/dls) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/dls/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/dls?color=orange)](https://www.npmjs.com/package/@actinc/dls)
 
 <!-- markdownlint-enable line-length -->
 
