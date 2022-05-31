@@ -152,7 +152,7 @@
     "release": "npm-run-all release:**",
     "release:version": "standard-version",
     "release:commit": "git push --follow-tags origin migrate-mui-5",
-    "release:npm": "npm run build && cd dist && npm publish --tag alpha",
+    "release:npm": "npm run build && cd dist && npm publish",
     "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
     "start": "start-storybook -p 6006 -s ./public --no-manager-cache",
     "test": "npm-run-all test:**",
@@ -163,5 +163,5 @@
     "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
-  "version": "6.0.0"
+  "version": "6.0.0-alpha.13"
 }
