@@ -150,7 +150,7 @@
     "postversion": "npm run copy",
     "prepare": "husky install",
     "release": "npm-run-all release:**",
-    "release:version": "standard-version --prerelease alpha",
+    "release:version": "standard-version",
     "release:commit": "git push --follow-tags origin migrate-mui-5",
     "release:npm": "npm run build && cd dist && npm publish --tag alpha",
     "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
