@@ -8,12 +8,16 @@
  */
 
 import * as React from 'react';
-import { MenuItem, TextField } from '@material-ui/core';
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { MenuItem, TextField } from '@mui/material';
+import { Story } from '@storybook/react/types-6-0';
 
-import FormInputGroups, { FormInputGroupsProps } from '.';
+import { Playground } from '~/helpers/playground';
 
-const Template: Story<FormInputGroupsProps> = args => {
+import { GridGenerator, GridGeneratorProps } from '.';
+
+export const Template: Story<GridGeneratorProps> = (
+  props: GridGeneratorProps,
+) => {
   const [value1, setValue1] = React.useState('Value 1');
   const [value2, setValue2] = React.useState('Value 2');
   const [value3, setValue3] = React.useState('undefined');
@@ -21,11 +25,11 @@ const Template: Story<FormInputGroupsProps> = args => {
   const [value5, setValue5] = React.useState('Value 5');
 
   return (
-    <FormInputGroups
+    <GridGenerator
       groups={[
         [
           {
-            formInput: (
+            children: (
               <TextField
                 label="Input 1"
                 onChange={(e: any): void => {
@@ -40,7 +44,7 @@ const Template: Story<FormInputGroupsProps> = args => {
             key: 'INPUT_1',
           },
           {
-            formInput: (
+            children: (
               <TextField
                 label="Input 2"
                 onChange={(e: any): void => {
@@ -57,7 +61,7 @@ const Template: Story<FormInputGroupsProps> = args => {
         ],
         [
           {
-            formInput: (
+            children: (
               <TextField
                 fullWidth
                 label="Input 3"
@@ -90,7 +94,7 @@ const Template: Story<FormInputGroupsProps> = args => {
         ],
         [
           {
-            formInput: (
+            children: (
               <TextField
                 label="Input 4"
                 onChange={(e: any): void => {
@@ -105,7 +109,7 @@ const Template: Story<FormInputGroupsProps> = args => {
             key: 'INPUT_4',
           },
           {
-            formInput: (
+            children: (
               <TextField
                 label="Input 5"
                 onChange={(e: any): void => {
@@ -120,19 +124,9 @@ const Template: Story<FormInputGroupsProps> = args => {
           },
         ],
       ]}
-      {...args}
+      {...props}
     />
   );
 };
 
-export const Preview: Story<FormInputGroupsProps> = Template.bind({});
-
-export default {
-  component: FormInputGroups,
-  parameters: {
-    info: {
-      text: 'This is a custom FormInputGroups component.',
-    },
-  },
-  title: 'Organisms/FormInputGroups',
-} as Meta<FormInputGroupsProps>;
+export const argTypes = Playground({}, GridGenerator);

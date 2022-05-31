@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -8,15 +8,25 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Radio } from '@material-ui/core';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Radio } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Radio} title="Material UI/Radio" />
+<Meta component={Radio} title="Material UI/Radio" render={Template} />
 
 <Description of={Radio} />
 
-## Primary Radio
+## Default
+
+<Canvas>
+  <Story
+    args={{
+      value: 'value',
+    }}
+    name="Default"
+  />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -25,9 +35,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Primary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -40,9 +48,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Primary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Secondary Radio
@@ -54,9 +60,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Secondary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -69,9 +73,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Secondary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Radio Sizes
@@ -86,9 +88,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Size: Small"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Medium
@@ -100,15 +100,12 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Size: Medium"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     args={{
       checked: true,
@@ -118,8 +115,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Playground"
-  >
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  />
 </Canvas>
+
+<ArgsTable story="Playground" />

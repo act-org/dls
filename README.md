@@ -1,6 +1,10 @@
 # Design Language System (DLS)
 
-[![Build Status](https://app.travis-ci.com/act-org/dls.svg?branch=master)](https://app.travis-ci.com/github/act-org/dls)
+<!-- markdownlint-disable line-length -->
+
+[![Version](https://img.shields.io/npm/v/@actinc/dls)](https://github.com/act-org/dls) [![Build Status](https://img.shields.io/travis/act-org/dls/master)](https://app.travis-ci.com/github/act-org/dls) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/dls/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/dls?color=orange)](https://www.npmjs.com/package/@actinc/dls)
+
+<!-- markdownlint-enable line-length -->
 
 The Design Language System for ACT front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
@@ -10,17 +14,17 @@ The Design Language System for ACT front-end projects. View the UI components
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://material-ui.com/) version `4.x` and
-[React](https://reactjs.org/) version `16.x` or `17.x`.
+[Material UI](https://mui.com/) and
+[React](https://reactjs.org/) version `17.x` or `18.x`.
 
 ```shell
-npm install --save @actinc/dls @material-ui/core @material-ui/data-grid @material-ui/lab react@17 react-dom@17
+npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
 ```
 
 ### Choosing a Theme
 
 This DLS is built on top of the
-[theming engine](https://material-ui.com/customization/theming/) from
+[theming engine](https://mui.com/material-ui/customization/theming/) from
 Material UI, and ships with two themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
@@ -46,16 +50,16 @@ const MyApp = () => (
 #### Extending Themes
 
 You can exend the core DLS themes using the
-[`createTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+[`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@material-ui/core/styles';
-import { merge } from 'lodash';
+import { createTheme } from '@mui/material/styles';
+import deepMerge from 'deepmerge';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components';
 
-const myExtendedTheme = createTheme(merge(THEME_ACT_ET, {
+const myExtendedTheme = createTheme(deepMerge(THEME_ACT_ET, {
   // theme customizations go here!
 }));
 
@@ -69,11 +73,11 @@ const MyApp = () => (
 #### Custom Themes
 
 Alternatively, you can build your own theme from scratch using the
-[`createTheme`](https://material-ui.com/customization/theming/#createmuitheme-options-args-theme)
+[`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@actinc/dls/components';
 
 const myCustomTheme = createTheme({
@@ -140,7 +144,7 @@ the root of your component tree in order to reset and normalize browser styles
 for your project:
 
 ```jsx
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 
 ...
 
@@ -154,42 +158,8 @@ const MyApp = () => (
 ### Server-Side Rendering
 
 If your project's React framework supports SSR, you can configure the DLS
-components for server-side rendering by using the `ServerStyleSheets` export
-from Material UI.
-
-In a [Next.js](https://nextjs.org/) project, for example, you would add the
-following to your `pages/_document.tsx` file:
-
-```jsx
-import { ServerStyleSheets } from '@material-ui/core/styles';
-
-...
-
-class Document extends DocumentImport<Props> {
-  static async getInitialProps(ctx: Context): Promise<Props> {
-    ...
-
-    const sheets = new ServerStyleSheets();
-    const originalRenderPage = ctx.renderPage;
-
-    ctx.renderPage = (): void =>
-      originalRenderPage({
-        enhanceApp: (App: any): any => (props: any): any =>
-          sheets.collect(<App {...props} />),
-      });
-
-    ...
-
-    return {
-      ...
-      styles: sheets.getStyleElement(),
-      ...
-    }
-  }
-
-  ...
-}
-```
+components for server-side rendering. See the official Next.js example
+[here](https://github.com/mui/material-ui/tree/master/examples/nextjs-with-typescript).
 
 ### Icons
 
@@ -233,13 +203,9 @@ module.exports = {
     [
       'babel-plugin-transform-imports',
       {
-        '@material-ui/core': {
+        '@mui/material': {
           preventFullImport: true,
-          transform: '@material-ui/core/${member}',
-        },
-        '@material-ui/core/colors': {
-          preventFullImport: true,
-          transform: '@material-ui/core/colors/${member}',
+          transform: '@mui/material/${member}',
         },
         '@actinc/dls/components': {
           transform: '@actinc/dls/components/${member}',
@@ -257,7 +223,7 @@ module.exports = {
           transform: '@actinc/dls/helpers/${member}',
           preventFullImport: true,
         },
-        '@actinc/dls/helpers': {
+        '@actinc/dls/hooks': {
           transform: '@actinc/dls/hooks/${member}',
           preventFullImport: true,
         },
@@ -267,10 +233,6 @@ module.exports = {
         },
         '@actinc/dls/styles': {
           transform: '@actinc/dls/styles/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/types': {
-          transform: '@actinc/dls/types/${member}',
           preventFullImport: true,
         },
       },
@@ -336,4 +298,3 @@ Some npm packages are pinned to non-current versions for a specific reason:
 | Package      | Version | Reason                                                                                                  |
 |:------------ |:------- |:------------------------------------------------------------------------------------------------------- |
 | `color`      | `3.2.1` | Version `4.x` cannot be run in Storybook due to [this issue](https://github.com/Qix-/color/issues/206). |
-| `np`         | `7.4.0` | Version `7.5.0` is [broken](https://github.com/sindresorhus/np/issues/613).                             |

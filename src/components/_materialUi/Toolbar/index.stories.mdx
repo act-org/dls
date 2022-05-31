@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -9,15 +9,14 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Toolbar, ToolbarProps } from '@material-ui/core';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Toolbar, ToolbarProps } from './index.stories.template';
 
 <Meta
   title="Material UI/Toolbar"
   component={Toolbar}
-  argTypes={argTypes}
   parameters={{}}
+  render={Template}
 />
 
 <Description of={Toolbar} />
@@ -25,9 +24,7 @@ import { argTypes, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
-  <Story name="Primary" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Primary" args={{}} />
 </Canvas>
 
 ## Disable Gutters
@@ -38,9 +35,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       disableGutters: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Variant: Regular
@@ -51,9 +46,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       variant: 'regular',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Variant: Dense
@@ -64,17 +57,13 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       variant: 'dense',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  <Story name="Playground" args={{}} />
 </Canvas>
+
+<ArgsTable story="Playground" />

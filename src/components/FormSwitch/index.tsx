@@ -15,7 +15,7 @@ import {
   FormControlLabelProps,
   Switch,
   SwitchProps,
-} from '@material-ui/core';
+} from '@mui/material';
 
 export type FormSwitchProps = SwitchProps & {
   /**

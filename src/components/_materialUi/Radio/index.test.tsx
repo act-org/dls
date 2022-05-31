@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { Radio } from '@material-ui/core';
+import { Radio } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

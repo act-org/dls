@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -8,19 +8,20 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { IconButton } from '@material-ui/core';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, IconButton } from './index.stories.template';
 
-<Meta
-  argTypes={argTypes}
-  component={IconButton}
-  title="Material UI/IconButton"
-/>
+<Meta component={IconButton} title="Material UI/IconButton" render={Template} />
 
 <Description of={IconButton} />
 
-## Primary IconButton
+## Default
+
+<Canvas>
+  <Story args={{}} name="Default" />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -28,9 +29,7 @@ import { argTypes, Template } from './index.stories.template';
       color: 'primary',
     }}
     name="Primary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -42,9 +41,7 @@ import { argTypes, Template } from './index.stories.template';
       disabled: true,
     }}
     name="Primary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Secondary IconButton
@@ -55,9 +52,7 @@ import { argTypes, Template } from './index.stories.template';
       color: 'secondary',
     }}
     name="Secondary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -69,9 +64,7 @@ import { argTypes, Template } from './index.stories.template';
       disabled: true,
     }}
     name="Secondary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## IconButton Sizes
@@ -85,9 +78,7 @@ import { argTypes, Template } from './index.stories.template';
       size: 'small',
     }}
     name="Size: Small"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Medium
@@ -99,15 +90,12 @@ import { argTypes, Template } from './index.stories.template';
       size: 'medium',
     }}
     name="Size: Medium"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     args={{
       color: 'primary',
@@ -116,8 +104,7 @@ import { argTypes, Template } from './index.stories.template';
       size: 'medium',
     }}
     name="Playground"
-  >
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  />
 </Canvas>
+
+<ArgsTable story="Playground" />

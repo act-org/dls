@@ -3,31 +3,26 @@
 exports[`Switch ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-tnsvld-MuiSwitch-root"
   >
     <span
-      aria-disabled="false"
-      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-checked-2 Mui-checked MuiIconButton-colorPrimary"
+      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-m489x8-MuiButtonBase-root-MuiSwitch-switchBase"
+      color="primary"
     >
+      <input
+        checked=""
+        class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+        type="checkbox"
+      />
       <span
-        class="MuiIconButton-label"
-      >
-        <input
-          checked=""
-          class="PrivateSwitchBase-input-4 MuiSwitch-input"
-          type="checkbox"
-          value=""
-        />
-        <span
-          class="MuiSwitch-thumb"
-        />
-      </span>
+        class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+      />
       <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </span>
     <span
-      class="MuiSwitch-track"
+      class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
     />
   </span>
 </div>
@@ -36,31 +31,25 @@ exports[`Switch ACT theme matches the snapshot 1`] = `
 exports[`Switch ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
   >
     <span
-      aria-disabled="false"
-      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5 MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-checked-6 Mui-checked"
+      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-143zrxq-MuiButtonBase-root-MuiSwitch-switchBase"
     >
+      <input
+        checked=""
+        class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+        type="checkbox"
+      />
       <span
-        class="MuiIconButton-label"
-      >
-        <input
-          checked=""
-          class="PrivateSwitchBase-input-8 MuiSwitch-input"
-          type="checkbox"
-          value=""
-        />
-        <span
-          class="MuiSwitch-thumb"
-        />
-      </span>
+        class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
+      />
       <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </span>
     <span
-      class="MuiSwitch-track"
+      class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
     />
   </span>
 </div>
@@ -69,31 +58,25 @@ exports[`Switch ACT_ET theme matches the snapshot 1`] = `
 exports[`Switch ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
   >
     <span
-      aria-disabled="false"
-      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-checked-10 Mui-checked"
+      class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
     >
+      <input
+        checked=""
+        class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+        type="checkbox"
+      />
       <span
-        class="MuiIconButton-label"
-      >
-        <input
-          checked=""
-          class="PrivateSwitchBase-input-12 MuiSwitch-input"
-          type="checkbox"
-          value=""
-        />
-        <span
-          class="MuiSwitch-thumb"
-        />
-      </span>
+        class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
+      />
       <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </span>
     <span
-      class="MuiSwitch-track"
+      class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
     />
   </span>
 </div>

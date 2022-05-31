@@ -7,16 +7,10 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+/* eslint-disable import/prefer-default-export */
 
-export default makeStyles({
-  logoImg: {
-    height: '38.88%',
-  },
-  logoImgWrapped: {
-    height: '100%',
-  },
-  logoLink: {
-    height: '38.88%',
-  },
-});
+import { styled } from '@mui/material/styles';
+
+export const StyledImg = styled('img')<any>(({ isWrapped }) => ({
+  height: isWrapped ? '100%' : '38.88%',
+}));

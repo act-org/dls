@@ -7,26 +7,17 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { Button, ButtonProps } from '@material-ui/core';
+import {
+  Button as MuiButton,
+  ButtonProps as MuiButtonProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
+export const Button = MuiButton;
+export type ButtonProps = MuiButtonProps;
+
 export const Template: Story<ButtonProps> = (props: ButtonProps) => (
   <Button {...props} />
-);
-
-export const argTypes = Playground(
-  {
-    children: {},
-    color: {},
-    disabled: {},
-    fullWidth: {},
-    onClick: { action: 'click' },
-    size: {},
-    type: {},
-    variant: {},
-  },
-  Button,
 );

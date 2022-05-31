@@ -8,9 +8,11 @@
  */
 
 import * as React from 'react';
-import { Link, Typography } from '@material-ui/core';
+import { Link, LinkProps } from '@mui/material';
+import { linkClasses } from '@mui/material/Link';
+import { styled } from '@mui/material/styles';
 
-import useStyles from './styles';
+import { StyledTypography } from './styles';
 
 export interface RenderNavigationItemProps {
   isActive?: boolean;
@@ -25,16 +27,22 @@ const RenderNavigationItem: React.FC<RenderNavigationItemProps> = ({
   LinkProps: linkProps,
   title,
 }: RenderNavigationItemProps): React.ReactElement<RenderNavigationItemProps> => {
-  const NavLink = LinkComponent || Link;
-
-  const classes = useStyles({ isActive });
+  const StyledLink = styled(LinkComponent || Link)<LinkProps>(() => ({
+    [`&.${linkClasses.root}`]: {
+      '&, &:hover': {
+        color: 'unset',
+        textDecoration: 'none',
+      },
+      cursor: 'pointer',
+    },
+  }));
 
   return (
-    <NavLink className={classes.navLink} {...linkProps}>
-      <Typography classes={{ root: classes.navTypography }} color="primary">
+    <StyledLink {...linkProps}>
+      <StyledTypography color="primary" isActive={isActive}>
         {title}
-      </Typography>
-    </NavLink>
+      </StyledTypography>
+    </StyledLink>
   );
 };
 

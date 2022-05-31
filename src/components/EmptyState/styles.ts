@@ -7,47 +7,49 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import { Grid, Typography, TypographyProps } from '@mui/material';
+import { gridClasses } from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
+import { typographyClasses } from '@mui/material/Typography';
 
-export default makeStyles(({ spacing, typography }) => ({
-  container: {
-    alignItems: 'center',
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'column',
-  },
-  descriptionRoot: {
-    marginBottom: spacing(2),
-    marginTop: spacing(1) / 2,
+export const StyledContainer = styled('div')({
+  alignItems: 'center',
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+});
+
+export const StyledTypographyDescription = styled(Typography)<
+  TypographyProps & {
+    withoutTitle: boolean;
+  }
+>(({ theme, withoutTitle }) => ({
+  [`&.${typographyClasses.root}`]: {
+    marginBottom: theme.spacing(2),
+    marginTop: withoutTitle ? theme.spacing(2) : theme.spacing(0.5),
     maxWidth: 350,
   },
-  descriptionRootFlexibleHeight: {
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'column',
-  },
-  descriptionRootWithoutTitle: {
-    marginTop: spacing(2),
-  },
-  iconRoot: {
-    height: 50,
-    width: 50,
-  },
-  titleGridContainer: {
-    marginBottom: spacing(1),
-    marginTop: spacing(1),
-    maxWidth: 300,
-  },
-  titleGridContainerWithDescription: {
-    marginBottom: spacing(1) / 2,
-  },
-  titleGridItem: {
-    display: 'flex',
-  },
-  titleRoot: {
+}));
+
+export const StyledTypographyTitle = styled(Typography)(({ theme }) => ({
+  [`&.${typographyClasses.root}`]: {
     // Use one font weight higher than `body1` (varies from theme to theme)
-    fontWeight: Number(typography.body1.fontWeight) + 100,
+    fontWeight: Number(theme.typography.body1.fontWeight) + 100,
     // Scale the font to be 20% larger than `body1` (also varies from theme to theme)
     transform: 'scale(1.2)',
   },
 }));
+
+export const StyledGridContainer = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
+    marginBottom: theme.spacing(1),
+    marginTop: theme.spacing(1),
+    maxWidth: 300,
+  },
+}));
+
+export const StyledGridItem = styled(Grid)({
+  [`&.${gridClasses.item}`]: {
+    display: 'flex',
+  },
+});

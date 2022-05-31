@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -9,27 +9,30 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Button } from '@material-ui/core';
 
 import Plus from '~/icons/Plus';
 import PlusCircleOutline from '~/icons/PlusCircleOutline';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Button } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Button} title="Material UI/Button" />
+<Meta component={Button} title="Material UI/Button" render={Template} />
 
 <Description of={Button} />
 
-## Primary Button
+## Default
+
+<Canvas>
+  <Story args={{ children: 'Click me' }} name="Default" />
+</Canvas>
+
+## Primary
 
 The primary button is used to designate and handle a primary action the user
 should take on a form or page. Not all buttons on the page should be primary to
 differentiate between primary and alternative paths for the user.
 
 <Canvas>
-  <Story args={{ children: 'Click me', color: 'primary' }} name="Primary">
-    {Template.bind({})}
-  </Story>
+  <Story args={{ children: 'Click me', color: 'primary' }} name="Primary" />
 </Canvas>
 
 ### Primary Disabled
@@ -38,9 +41,7 @@ differentiate between primary and alternative paths for the user.
   <Story
     args={{ children: 'Disabled', color: 'primary', disabled: true }}
     name="Primary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Primary w/ Starting Icon
@@ -49,9 +50,7 @@ differentiate between primary and alternative paths for the user.
   <Story
     args={{ children: 'Click me', color: 'primary', startIcon: <Plus /> }}
     name="Primary: With Starting Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Primary w/ Ending Icon
@@ -60,9 +59,7 @@ differentiate between primary and alternative paths for the user.
   <Story
     args={{ children: 'Click me', color: 'primary', endIcon: <Plus /> }}
     name="Primary: With Ending Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Secondary Buttons
@@ -76,9 +73,7 @@ can take.
   <Story
     args={{ children: 'Click me', color: 'secondary', variant: 'outlined' }}
     name="Secondary: Outlined"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -90,9 +85,7 @@ can take.
       variant: 'outlined',
     }}
     name="Secondary: Outlined: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -104,9 +97,7 @@ can take.
       variant: 'outlined',
     }}
     name="Secondary: Outlined: With Starting Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -118,9 +109,7 @@ can take.
       variant: 'outlined',
     }}
     name="Secondary: Outlined: With Ending Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Text Button
@@ -129,9 +118,7 @@ can take.
   <Story
     args={{ children: 'Click me', color: 'secondary', variant: 'text' }}
     name="Secondary: Text"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -143,9 +130,7 @@ can take.
       variant: 'text',
     }}
     name="Secondary: Text: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -157,9 +142,7 @@ can take.
       variant: 'text',
     }}
     name="Secondary: Text: With Starting Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -171,9 +154,7 @@ can take.
       variant: 'text',
     }}
     name="Secondary: Text: With Ending Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Contained Button
@@ -182,9 +163,7 @@ can take.
   <Story
     args={{ children: 'Click me', color: 'secondary', variant: 'contained' }}
     name="Secondary: Contained"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -196,9 +175,7 @@ can take.
       variant: 'contained',
     }}
     name="Secondary: Contained: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -210,9 +187,7 @@ can take.
       variant: 'contained',
     }}
     name="Secondary: Contained: With Starting Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -224,9 +199,7 @@ can take.
       variant: 'contained',
     }}
     name="Secondary: Contained: With Ending Icon"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Button Sizes
@@ -236,14 +209,11 @@ can take.
     args={{
       children: 'Small',
       color: 'primary',
-      endIcon: <Plus />,
       size: 'small',
       variant: 'outlined',
     }}
     name="Size: Small"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -251,14 +221,11 @@ can take.
     args={{
       children: 'Medium',
       color: 'primary',
-      endIcon: <Plus />,
       size: 'medium',
       variant: 'outlined',
     }}
     name="Size: Medium"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -266,20 +233,16 @@ can take.
     args={{
       children: 'Large',
       color: 'primary',
-      endIcon: <Plus />,
       size: 'large',
       variant: 'outlined',
     }}
     name="Size: Large"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     args={{
       children: 'Click me',
@@ -288,8 +251,7 @@ can take.
       variant: 'outlined',
     }}
     name="Playground"
-  >
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  />
 </Canvas>
+
+<ArgsTable story="Playground" />

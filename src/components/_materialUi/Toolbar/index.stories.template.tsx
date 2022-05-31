@@ -10,18 +10,21 @@
 import * as React from 'react';
 import {
   IconButton,
-  Toolbar,
-  ToolbarProps,
+  Toolbar as MuiToolbar,
+  ToolbarProps as MuiToolbarProps,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import Menu from '~/icons/Menu';
 import { Playground } from '~/helpers/playground';
 
+export const Toolbar = MuiToolbar;
+export type ToolbarProps = MuiToolbarProps;
+
 export const Template: Story<ToolbarProps> = args => (
   <Toolbar {...args}>
-    <IconButton aria-label="menu" color="inherit" edge="start">
+    <IconButton aria-label="menu" color="inherit" edge="start" size="large">
       <Menu />
     </IconButton>
     <Typography color="inherit" variant="h6">
@@ -29,4 +32,3 @@ export const Template: Story<ToolbarProps> = args => (
     </Typography>
   </Toolbar>
 );
-export const argTypes = Playground({}, Toolbar);

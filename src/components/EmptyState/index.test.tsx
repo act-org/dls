@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { noop } from 'lodash';
 
 import { standard } from '~/helpers/test';

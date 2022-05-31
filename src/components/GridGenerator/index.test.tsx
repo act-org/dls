@@ -7,21 +7,20 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { noop } from 'lodash';
 
 import { FormInput } from '~/components/FormInput';
 import { standard } from '~/helpers/test';
 
-import FormInputGroups from '.';
+import GridGenerator from '.';
 
-describe('FormInputGroups', () => {
+describe('GridGenerator', () => {
   const Component = (
-    <FormInputGroups
+    <GridGenerator
       groups={[
         [
           {
-            formInput: (
+            children: (
               <FormInput
                 inputProps={{
                   onChange: noop,
@@ -38,7 +37,7 @@ describe('FormInputGroups', () => {
             key: 'INPUT_1',
           },
           {
-            formInput: (
+            children: (
               <FormInput
                 inputProps={{
                   onChange: noop,
@@ -57,7 +56,7 @@ describe('FormInputGroups', () => {
         ],
         [
           {
-            formInput: (
+            children: (
               <FormInput
                 inputProps={{
                   onChange: noop,

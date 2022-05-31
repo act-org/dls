@@ -10,11 +10,8 @@
 /* eslint-disable react/display-name */
 
 import * as React from 'react';
-import {
-  Alert as MiuAlert,
-  AlertProps as MuiAlertProps,
-  AlertTitle as MuiAlertTitle,
-} from '@material-ui/lab';
+import { Alert as MiuAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
+import { AlertProps as MuiAlertProps } from '@mui/lab';
 
 export type AlertProps = MuiAlertProps & {
   title?: string | React.ReactElement;

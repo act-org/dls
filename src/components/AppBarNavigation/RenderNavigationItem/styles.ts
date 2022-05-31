@@ -7,17 +7,18 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+/* eslint-disable import/prefer-default-export */
 
-export default makeStyles(theme => ({
-  navLink: {
-    '&, &:hover': {
-      color: 'unset',
-      textDecoration: 'none',
-    },
-    cursor: 'pointer',
-  },
-  navTypography: ({ isActive }: any): any => ({
+import { styled } from '@mui/material/styles';
+import { Typography, TypographyProps } from '@mui/material';
+import { typographyClasses } from '@mui/material/Typography';
+
+export const StyledTypography = styled(Typography)<
+  TypographyProps & {
+    isActive?: boolean;
+  }
+>(({ isActive, theme }) => ({
+  [`&.${typographyClasses.root}`]: {
     '&:after': {
       backgroundColor: isActive ? 'currentcolor' : 'transparent',
       borderRadius: theme.shape.borderRadius,
@@ -43,5 +44,5 @@ export default makeStyles(theme => ({
       ? '0 0 .65px currentcolor, 0 0 .65px currentcolor'
       : 'unset',
     transition: 'all .2s linear',
-  }),
+  },
 }));

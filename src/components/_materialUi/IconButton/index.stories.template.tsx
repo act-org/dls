@@ -8,32 +8,27 @@
  */
 
 import * as React from 'react';
-import { IconButton, IconButtonProps } from '@material-ui/core';
+import {
+  IconButton as MuiIconButton,
+  IconButtonProps as MuiIconButtonProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import PencilCircle from '~/icons/PencilCircle';
 import PencilCircleOutline from '~/icons/PencilCircleOutline';
 import { Playground } from '~/helpers/playground';
 
+export const IconButton = MuiIconButton;
+export type IconButtonProps = MuiIconButtonProps;
+
 export const Template: Story<IconButtonProps> = (props: IconButtonProps) => (
   <>
-    <IconButton {...props}>
+    <IconButton {...props} size="large">
       <PencilCircle />
     </IconButton>
 
-    <IconButton {...props}>
+    <IconButton {...props} size="large">
       <PencilCircleOutline />
     </IconButton>
   </>
-);
-
-export const argTypes = Playground(
-  {
-    color: {},
-    disabled: {},
-    edge: {},
-    onClick: { action: 'click' },
-    size: {},
-  },
-  IconButton,
 );

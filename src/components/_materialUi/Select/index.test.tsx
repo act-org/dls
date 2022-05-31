@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { MenuItem, Select } from '@material-ui/core';
+import { MenuItem, Select } from '@mui/material';
 import { noop } from 'lodash';
 
 import { standard } from '~/helpers/test';

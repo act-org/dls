@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -9,28 +9,24 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Select, SelectProps } from '@material-ui/core';
+import { Select, SelectProps } from '@mui/material';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template } from './index.stories.template';
 
-<Meta title="Material UI/Select" component={Select} argTypes={argTypes} />
+<Meta title="Material UI/Select" component={Select} render={Template} />
 
 <Description of={Select} />
 
-## Primary
+## Default
 
 <Canvas>
-  <Story name="Primary" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Default" args={{}} />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  <Story name="Playground" args={{}} />
 </Canvas>
+
+<ArgsTable story="Playground" />

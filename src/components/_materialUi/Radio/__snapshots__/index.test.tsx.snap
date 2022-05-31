@@ -3,45 +3,43 @@
 exports[`Radio ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-checked-2 Mui-checked MuiIconButton-colorPrimary"
+    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-el8npw-MuiButtonBase-root-MuiRadio-root"
+    color="primary"
   >
+    <input
+      checked=""
+      class="PrivateSwitchBase-input css-1m9pwf3"
+      type="radio"
+      value=""
+    />
     <span
-      class="MuiIconButton-label"
+      class="css-hyxlzm"
     >
-      <input
-        checked=""
-        class="PrivateSwitchBase-input-4"
-        type="radio"
-        value=""
-      />
-      <div
-        class="PrivateRadioButtonIcon-root-5 PrivateRadioButtonIcon-checked-7"
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-go9nqr-MuiSvgIcon-root"
+        data-testid="RadioButtonUncheckedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-6"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
-          />
-        </svg>
-      </div>
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ycyses-MuiSvgIcon-root"
+        data-testid="RadioButtonCheckedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+        />
+      </svg>
     </span>
     <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </span>
 </div>
@@ -50,45 +48,42 @@ exports[`Radio ACT theme matches the snapshot 1`] = `
 exports[`Radio ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-8 MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-checked-9 Mui-checked MuiIconButton-colorPrimary"
+    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-y82o97-MuiButtonBase-root-MuiRadio-root"
   >
+    <input
+      checked=""
+      class="PrivateSwitchBase-input css-1m9pwf3"
+      type="radio"
+      value=""
+    />
     <span
-      class="MuiIconButton-label"
+      class="css-hyxlzm"
     >
-      <input
-        checked=""
-        class="PrivateSwitchBase-input-11"
-        type="radio"
-        value=""
-      />
-      <div
-        class="PrivateRadioButtonIcon-root-12 PrivateRadioButtonIcon-checked-14"
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ki5g6-MuiSvgIcon-root"
+        data-testid="RadioButtonUncheckedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-13"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
-          />
-        </svg>
-      </div>
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-12cp8u1-MuiSvgIcon-root"
+        data-testid="RadioButtonCheckedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+        />
+      </svg>
     </span>
     <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </span>
 </div>
@@ -97,45 +92,42 @@ exports[`Radio ACT_ET theme matches the snapshot 1`] = `
 exports[`Radio ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <span
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-checked-16 Mui-checked MuiIconButton-colorPrimary"
+    class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root Mui-checked css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
   >
+    <input
+      checked=""
+      class="PrivateSwitchBase-input css-1m9pwf3"
+      type="radio"
+      value=""
+    />
     <span
-      class="MuiIconButton-label"
+      class="css-hyxlzm"
     >
-      <input
-        checked=""
-        class="PrivateSwitchBase-input-18"
-        type="radio"
-        value=""
-      />
-      <div
-        class="PrivateRadioButtonIcon-root-19 PrivateRadioButtonIcon-checked-21"
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1e4ds1u-MuiSvgIcon-root"
+        data-testid="RadioButtonUncheckedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-20"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
-          />
-        </svg>
-      </div>
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+        />
+      </svg>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1vs7xxf-MuiSvgIcon-root"
+        data-testid="RadioButtonCheckedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+        />
+      </svg>
     </span>
     <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </span>
 </div>

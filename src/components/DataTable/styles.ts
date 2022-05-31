@@ -7,19 +7,22 @@
  * @prettier
  */
 
-import { grey } from '@material-ui/core/colors';
-import { makeStyles } from '@material-ui/core/styles';
+import { grey } from '@mui/material/colors';
+import { styled } from '@mui/material/styles';
+import { TablePagination } from '@mui/material';
+import { tablePaginationClasses } from '@mui/material/TablePagination';
 
-export default makeStyles(({ spacing, typography }) => ({
-  emptyStateContainer: {
-    paddingBottom: spacing(1),
-    paddingLeft: spacing(1),
-    paddingRight: spacing(1),
-    paddingTop: spacing(1) * 2.5,
-    width: '100%',
-  },
-  tablePaginationRoot: {
+export const StyledEmptyStateContainer = styled('div')(({ theme }) => ({
+  paddingBottom: theme.spacing(1),
+  paddingLeft: theme.spacing(1),
+  paddingRight: theme.spacing(1),
+  paddingTop: theme.spacing(2.5),
+  width: '100%',
+}));
+
+export const StyledTablePagination = styled(TablePagination)(({ theme }) => ({
+  [`&.${tablePaginationClasses.root}`]: {
     backgroundColor: grey[50],
-    fontSize: typography.body2.fontSize,
+    fontSize: theme.typography.body2.fontSize,
   },
 }));

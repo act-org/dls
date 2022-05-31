@@ -3,41 +3,36 @@
 exports[`FormSwitch ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
       id="uniqueId"
     >
       <span
-        class="MuiSwitch-root"
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-tnsvld-MuiSwitch-root"
       >
         <span
-          aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiSwitch-switchBase MuiSwitch-colorPrimary MuiIconButton-colorPrimary"
+          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-m489x8-MuiButtonBase-root-MuiSwitch-switchBase"
+          color="primary"
         >
+          <input
+            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            type="checkbox"
+          />
           <span
-            class="MuiIconButton-label"
-          >
-            <input
-              class="PrivateSwitchBase-input-4 MuiSwitch-input"
-              type="checkbox"
-              value=""
-            />
-            <span
-              class="MuiSwitch-thumb"
-            />
-          </span>
+            class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+          />
           <span
-            class="MuiTouchRipple-root"
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
         <span
-          class="MuiSwitch-track"
+          class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
       >
         Form Switch Label
       </span>
@@ -49,41 +44,35 @@ exports[`FormSwitch ACT theme matches the snapshot 1`] = `
 exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
       id="uniqueId"
     >
       <span
-        class="MuiSwitch-root"
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-143zrxq-MuiButtonBase-root-MuiSwitch-switchBase"
         >
+          <input
+            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            type="checkbox"
+          />
           <span
-            class="MuiIconButton-label"
-          >
-            <input
-              class="PrivateSwitchBase-input-8 MuiSwitch-input"
-              type="checkbox"
-              value=""
-            />
-            <span
-              class="MuiSwitch-thumb"
-            />
-          </span>
+            class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
+          />
           <span
-            class="MuiTouchRipple-root"
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
         <span
-          class="MuiSwitch-track"
+          class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-q09moy-MuiTypography-root"
       >
         Form Switch Label
       </span>
@@ -95,41 +84,35 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
 exports[`FormSwitch ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
       id="uniqueId"
     >
       <span
-        class="MuiSwitch-root"
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          aria-disabled="false"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiSwitch-switchBase MuiSwitch-colorSecondary"
+          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
         >
+          <input
+            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            type="checkbox"
+          />
           <span
-            class="MuiIconButton-label"
-          >
-            <input
-              class="PrivateSwitchBase-input-12 MuiSwitch-input"
-              type="checkbox"
-              value=""
-            />
-            <span
-              class="MuiSwitch-thumb"
-            />
-          </span>
+            class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
+          />
           <span
-            class="MuiTouchRipple-root"
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </span>
         <span
-          class="MuiSwitch-track"
+          class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1ph3hqj-MuiTypography-root"
       >
         Form Switch Label
       </span>

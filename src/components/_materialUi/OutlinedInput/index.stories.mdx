@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -9,21 +9,20 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import {
-  IconButton,
-  InputAdornment,
-  OutlinedInput,
-  OutlinedInputProps,
-} from '@material-ui/core';
+import { IconButton, InputAdornment } from '@mui/material';
 
 import Plus from '~/icons/Plus';
 
-import { argTypes, Template } from './index.stories.template';
+import {
+  Template,
+  OutlinedInput,
+  OutlinedInputProps,
+} from './index.stories.template';
 
 <Meta
   title="Material UI/OutlinedInput"
   component={OutlinedInput}
-  argTypes={argTypes}
+  render={Template}
 />
 
 <Description of={OutlinedInput} />
@@ -31,9 +30,7 @@ import { argTypes, Template } from './index.stories.template';
 ## Default
 
 <Canvas>
-  <Story name="Default" args={{}}>
-    {Template.bind({})}
-  </Story>
+  <Story name="Default" args={{}} />
 </Canvas>
 
 ## With Value
@@ -44,9 +41,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       value: 'Some Value',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Primary
@@ -57,9 +52,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'primary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Secondary
@@ -70,9 +63,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'secondary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Disabled
@@ -83,9 +74,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       disabled: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Start Adornment
@@ -102,9 +91,7 @@ import { argTypes, Template } from './index.stories.template';
         </InputAdornment>
       ),
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With End Adornment
@@ -121,9 +108,7 @@ import { argTypes, Template } from './index.stories.template';
         </InputAdornment>
       ),
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## With Error
@@ -134,9 +119,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       error: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Full Width
@@ -147,9 +130,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       fullWidth: true,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Margin: Dense
@@ -160,9 +141,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       margin: 'dense',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Margin: None
@@ -173,9 +152,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       margin: 'none',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Multiline
@@ -189,22 +166,18 @@ import { argTypes, Template } from './index.stories.template';
       multiline: true,
       rows: 3,
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     name="Playground"
     args={{
       color: 'primary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  />
 </Canvas>
+
+<ArgsTable story="Playground" />

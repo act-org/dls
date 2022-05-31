@@ -27,17 +27,13 @@ module.exports = {
     [
       'babel-plugin-transform-imports',
       {
-        '@material-ui/core': {
+        '@mui/material': {
           preventFullImport: true,
-          transform: '@material-ui/core/${member}',
+          transform: '@mui/material/${member}',
         },
-        '@material-ui/core/colors': {
+        '@mui/styles': {
           preventFullImport: true,
-          transform: '@material-ui/core/colors/${member}',
-        },
-        '@material-ui/styles': {
-          preventFullImport: true,
-          transform: '@material-ui/styles/${member}',
+          transform: '@mui/styles/${member}',
         },
         '~/components': {
           preventFullImport: true,

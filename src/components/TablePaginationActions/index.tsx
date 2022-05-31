@@ -8,21 +8,14 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
 import { FixedSizeList } from 'react-window';
-import { grey } from '@material-ui/core/colors';
-import {
-  IconButton,
-  MenuItem,
-  PopperProps,
-  TextField,
-  Tooltip,
-} from '@material-ui/core';
+import { grey } from '@mui/material/colors';
+import { IconButton, PopperProps, Tooltip } from '@mui/material';
 import { min } from 'lodash';
 
 import { ChevronLeft, ChevronRight, PageFirst, PageLast } from '~/icons';
 
-import useStyles from './styles';
+import { StyledContainer, StyledMenuItem, StyledTextField } from './styles';
 
 export interface TablePaginationActionsProps {
   count: number;
@@ -65,8 +58,6 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
 
   const listEl = React.useRef(null);
 
-  const classes = useStyles();
-
   const numberOfPages = Math.ceil(count / rowsPerPage);
 
   const htmlColor = variant === 'inverted' ? grey[200] : undefined;
@@ -80,7 +71,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
     disabled || zeroBasedPage >= Math.ceil(count / rowsPerPage) - 1;
 
   return (
-    <div className={classes.container} style={style}>
+    <StyledContainer style={style}>
       <Tooltip
         arrow
         placement={tooltipPlacement}
@@ -92,6 +83,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             aria-label={`First ${noun}`}
             disabled={disableFirst}
             onClick={(event): void => onPageChange(event, 0)}
+            size="large"
           >
             <PageFirst
               fontSize="small"
@@ -112,6 +104,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             aria-label={`Previous ${noun}`}
             disabled={disablePrevious}
             onClick={(event): void => onPageChange(event, zeroBasedPage - 1)}
+            size="large"
           >
             <ChevronLeft
               fontSize="small"
@@ -122,26 +115,13 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
       </Tooltip>
 
       <div>
-        <TextField
-          classes={{
-            root: classes.textFieldRoot,
-          }}
+        <StyledTextField
           disabled={disabled}
           InputProps={{
-            classes: {
-              root: classes.inputRoot,
-            },
             disableUnderline: true,
           }}
           select
           SelectProps={{
-            classes: {
-              icon: variant === 'inverted' ? classes.selectIconRoot : undefined,
-              select: clsx(
-                classes.selectSelect,
-                variant === 'inverted' && classes.selectSelectInverted,
-              ),
-            },
             MenuProps: PP as any,
             onClose: (): void => {
               setOpen(false);
@@ -174,12 +154,8 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
           >
             {({ index, style: menuItemStyle }): React.ReactElement<unknown> => (
               // eslint-disable-next-line react/no-array-index-key
-              <MenuItem
-                classes={{
-                  root: clsx(
-                    zeroBasedPage === index && classes.menuItemRootSelected,
-                  ),
-                }}
+              <StyledMenuItem
+                isSelected={zeroBasedPage === index}
                 key={index}
                 onMouseDown={(event): void => {
                   onPageChange(event, index);
@@ -189,10 +165,10 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
                 value={index}
               >
                 {`${noun} ${index + 1}`}
-              </MenuItem>
+              </StyledMenuItem>
             )}
           </FixedSizeList>
-        </TextField>
+        </StyledTextField>
       </div>
 
       <Tooltip
@@ -206,6 +182,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             aria-label={`Next ${noun}`}
             disabled={disableNext}
             onClick={(event): void => onPageChange(event, zeroBasedPage + 1)}
+            size="large"
           >
             <ChevronRight
               fontSize="small"
@@ -231,6 +208,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
                 Math.max(0, Math.ceil(count / rowsPerPage) - 1),
               );
             }}
+            size="large"
           >
             <PageLast
               fontSize="small"
@@ -239,7 +217,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
           </IconButton>
         </span>
       </Tooltip>
-    </div>
+    </StyledContainer>
   );
 };
 

@@ -3,20 +3,17 @@
 exports[`DialogActions ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-1c059f0-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-gq5jh7-MuiButtonBase-root-MuiButton-root"
+      color="primary"
       tabindex="0"
       type="button"
     >
+      Close
       <span
-        class="MuiButton-label"
-      >
-        Close
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </button>
   </div>
@@ -26,20 +23,16 @@ exports[`DialogActions ACT theme matches the snapshot 1`] = `
 exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-q8ru1j-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
+      Close
       <span
-        class="MuiButton-label"
-      >
-        Close
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </button>
   </div>
@@ -49,20 +42,16 @@ exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-disableElevation"
+      class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1m9ygoa-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
+      Close
       <span
-        class="MuiButton-label"
-      >
-        Close
-      </span>
-      <span
-        class="MuiTouchRipple-root"
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
     </button>
   </div>

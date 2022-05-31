@@ -7,10 +7,14 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+/* eslint-disable import/prefer-default-export */
 
-export default makeStyles(({ palette }) => ({
-  paperRoot: {
-    border: `1px solid ${palette.divider}`,
+import { styled } from '@mui/material/styles';
+import { Paper } from '@mui/material';
+import { paperClasses } from '@mui/material/Paper';
+
+export const StyledPaper = styled(Paper)(({ theme }) => ({
+  [`&.${paperClasses.root}`]: {
+    border: `1px solid ${theme.palette.divider}`,
   },
 }));

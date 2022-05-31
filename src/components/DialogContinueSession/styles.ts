@@ -7,10 +7,14 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+/* eslint-disable import/prefer-default-export */
 
-export default makeStyles(({ spacing }) => ({
-  dialogActionsRoot: {
-    padding: spacing(2),
+import { styled } from '@mui/material/styles';
+import { DialogActions } from '@mui/material';
+import { dialogActionsClasses } from '@mui/material/DialogActions';
+
+export const StyledDialogActions = styled(DialogActions)(({ theme }) => ({
+  [`&.${dialogActionsClasses.root}`]: {
+    padding: theme.spacing(2),
   },
 }));

@@ -8,23 +8,14 @@
  */
 
 import * as React from 'react';
-import { Radio, RadioProps } from '@material-ui/core';
+import { Radio as MuiRadio, RadioProps as MuiRadioProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
+export const Radio = MuiRadio;
+export type RadioProps = MuiRadioProps;
+
 export const Template: Story<RadioProps> = (props: RadioProps) => (
   <Radio {...props} />
-);
-
-export const argTypes = Playground(
-  {
-    checked: {},
-    color: {},
-    disabled: {},
-    onChange: { action: 'click' },
-    size: {},
-    value: {},
-  },
-  Radio,
 );

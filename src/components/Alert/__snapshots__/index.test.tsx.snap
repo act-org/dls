@@ -3,15 +3,16 @@
 exports[`Alert ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-1t9c51-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
-      class="MuiAlert-icon"
+      class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-13ct9s2-MuiSvgIcon-root"
+        data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -21,10 +22,10 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="MuiAlert-message"
+      class="MuiAlert-message css-acap47-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1u1mytm-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
@@ -37,15 +38,16 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
 exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-7bnazj-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
-      class="MuiAlert-icon"
+      class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1r7sts2-MuiSvgIcon-root"
+        data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -55,10 +57,10 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="MuiAlert-message"
+      class="MuiAlert-message css-acap47-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-28nnwk-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
@@ -71,15 +73,16 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 exports[`Alert ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-1pgvigm-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
-      class="MuiAlert-icon"
+      class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-ex4jjw-MuiSvgIcon-root"
+        data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >
@@ -89,10 +92,10 @@ exports[`Alert ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="MuiAlert-message"
+      class="MuiAlert-message css-acap47-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1hza8ki-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>

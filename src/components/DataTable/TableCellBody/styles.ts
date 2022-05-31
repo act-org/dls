@@ -7,12 +7,16 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+/* eslint-disable import/prefer-default-export */
 
-export default makeStyles(({ spacing, typography }) => ({
-  tableCellRoot: {
+import { styled } from '@mui/material/styles';
+import { TableCell } from '@mui/material';
+import { tableCellClasses } from '@mui/material/TableCell';
+
+export const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.root}`]: {
     fontSize: '0.888rem',
-    fontWeight: Number(typography.fontWeightRegular),
-    padding: `${spacing(1)}px !important`,
+    fontWeight: Number(theme.typography.fontWeightRegular),
+    padding: `${theme.spacing(1)} !important`,
   },
 }));

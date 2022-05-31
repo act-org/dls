@@ -1,14 +1,20 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "module": "CommonJS",
+    "target": "es2020",
     "incremental": false,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "noEmit": false,
     "outDir": "./.storybook",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": [
+        "./src/*"
+      ],
     },
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
   },
   "exclude": [
     "./.storybook/*",
@@ -21,5 +27,8 @@
     "**/icons/*"
   ],
   "extends": "./node_modules/@actinc/eslint-config/tsconfig.json",
-  "include": ["./index.d.ts", "./src/**/*"]
+  "include": [
+    "./index.d.ts",
+    "./src/**/*"
+  ]
 }

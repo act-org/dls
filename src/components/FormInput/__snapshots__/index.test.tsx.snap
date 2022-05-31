@@ -3,10 +3,10 @@
 exports[`FormInput ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-1 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-yblnas-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -20,11 +20,11 @@ exports[`FormInput ACT theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1fks88r-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"
-        class="MuiInputBase-input MuiInput-input"
+        class="MuiInput-input MuiInputBase-input css-m09luf-MuiInputBase-input-MuiInput-input"
         placeholder="Placeholder"
         type="text"
         value="test"
@@ -37,10 +37,10 @@ exports[`FormInput ACT theme matches the snapshot 1`] = `
 exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-2 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-16xra3p-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -54,11 +54,11 @@ exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-s4g2go-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"
-        class="MuiInputBase-input MuiInput-input"
+        class="MuiInput-input MuiInputBase-input css-1tylqhy-MuiInputBase-input-MuiInput-input"
         placeholder="Placeholder"
         type="text"
         value="test"
@@ -71,10 +71,10 @@ exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
 exports[`FormInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-742zqy-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -88,11 +88,11 @@ exports[`FormInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-zvgpop-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"
-        class="MuiInputBase-input MuiInput-input"
+        class="MuiInput-input MuiInputBase-input css-1tylqhy-MuiInputBase-input-MuiInput-input"
         placeholder="Placeholder"
         type="text"
         value="test"

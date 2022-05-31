@@ -9,23 +9,19 @@
 
 import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
-import { Tooltip, TooltipProps } from '@material-ui/core';
+import {
+  Tooltip as MuiTooltip,
+  TooltipProps as MuiTooltipProps,
+} from '@mui/material';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { Playground } from '~/helpers/playground';
+
+export const Tooltip = MuiTooltip;
+export type TooltipProps = MuiTooltipProps;
 
 export const Template: Story<TooltipProps> = args => (
   <Tooltip title="Tooltip text goes here." {...args}>
     <HelpCircleOutline />
   </Tooltip>
-);
-export const argTypes = Playground(
-  {
-    arrow: {},
-    interactive: {},
-    open: {},
-    placement: {},
-    title: { type: 'string' },
-  },
-  Tooltip,
 );

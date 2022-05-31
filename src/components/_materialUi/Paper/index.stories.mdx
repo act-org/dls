@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -8,11 +8,10 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Paper } from '@material-ui/core';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Paper } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Paper} title="Material UI/Paper" />
+<Meta component={Paper} title="Material UI/Paper" render={Template} />
 
 <Description of={Paper} />
 
@@ -25,9 +24,7 @@ import { argTypes, Template } from './index.stories.template';
       variant: 'elevation',
     }}
     name="Variant: Elevation"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -37,9 +34,7 @@ import { argTypes, Template } from './index.stories.template';
       variant: 'outlined',
     }}
     name="Variant: Outlined"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Paper Shapes
@@ -51,9 +46,7 @@ import { argTypes, Template } from './index.stories.template';
       square: false,
     }}
     name="Shape: Rounded"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 <Canvas>
@@ -63,342 +56,12 @@ import { argTypes, Template } from './index.stories.template';
       square: true,
     }}
     name="Shape: Square"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-## Paper Elevations
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 0',
-      elevation: 0,
-      variant: 'elevation',
-    }}
-    name="Elevation: 0"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 1',
-      elevation: 1,
-      variant: 'elevation',
-    }}
-    name="Elevation: 1"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 2',
-      elevation: 2,
-      variant: 'elevation',
-    }}
-    name="Elevation: 2"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 3',
-      elevation: 3,
-      variant: 'elevation',
-    }}
-    name="Elevation: 3"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 4',
-      elevation: 4,
-      variant: 'elevation',
-    }}
-    name="Elevation: 4"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 5',
-      elevation: 5,
-      variant: 'elevation',
-    }}
-    name="Elevation: 5"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 6',
-      elevation: 6,
-      variant: 'elevation',
-    }}
-    name="Elevation: 6"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 7',
-      elevation: 7,
-      variant: 'elevation',
-    }}
-    name="Elevation: 7"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 8',
-      elevation: 8,
-      variant: 'elevation',
-    }}
-    name="Elevation: 8"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 9',
-      elevation: 9,
-      variant: 'elevation',
-    }}
-    name="Elevation: 9"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 10',
-      elevation: 10,
-      variant: 'elevation',
-    }}
-    name="Elevation: 10"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 11',
-      elevation: 11,
-      variant: 'elevation',
-    }}
-    name="Elevation: 11"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 12',
-      elevation: 12,
-      variant: 'elevation',
-    }}
-    name="Elevation: 12"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 13',
-      elevation: 13,
-      variant: 'elevation',
-    }}
-    name="Elevation: 13"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 14',
-      elevation: 14,
-      variant: 'elevation',
-    }}
-    name="Elevation: 14"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 15',
-      elevation: 15,
-      variant: 'elevation',
-    }}
-    name="Elevation: 15"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 16',
-      elevation: 16,
-      variant: 'elevation',
-    }}
-    name="Elevation: 16"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 17',
-      elevation: 17,
-      variant: 'elevation',
-    }}
-    name="Elevation: 17"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 18',
-      elevation: 18,
-      variant: 'elevation',
-    }}
-    name="Elevation: 18"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 19',
-      elevation: 19,
-      variant: 'elevation',
-    }}
-    name="Elevation: 19"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 20',
-      elevation: 20,
-      variant: 'elevation',
-    }}
-    name="Elevation: 20"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 21',
-      elevation: 21,
-      variant: 'elevation',
-    }}
-    name="Elevation: 21"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 22',
-      elevation: 22,
-      variant: 'elevation',
-    }}
-    name="Elevation: 22"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 23',
-      elevation: 23,
-      variant: 'elevation',
-    }}
-    name="Elevation: 23"
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    args={{
-      children: 'Elevation 24',
-      elevation: 24,
-      variant: 'elevation',
-    }}
-    name="Elevation: 24"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     args={{
       children: 'Paper',
@@ -407,8 +70,7 @@ import { argTypes, Template } from './index.stories.template';
       variant: 'elevation',
     }}
     name="Playground"
-  >
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  />
 </Canvas>
+
+<ArgsTable story="Playground" />

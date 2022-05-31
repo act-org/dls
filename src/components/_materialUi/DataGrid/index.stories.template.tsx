@@ -10,13 +10,16 @@
 import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import {
-  DataGrid,
-  DataGridProps,
+  DataGrid as MuiDataGrid,
+  DataGridProps as MuiDataGridProps,
   GridValueGetterParams,
-} from '@material-ui/data-grid';
+} from '@mui/x-data-grid';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const DataGrid = MuiDataGrid;
+export type DataGridProps = MuiDataGridProps;
 
 interface StoryProps extends DataGridProps {
   editable?: boolean;
@@ -216,40 +219,3 @@ Template.defaultProps = {
   renderCell: undefined,
   sortable: undefined,
 };
-
-export const argTypes = Playground(
-  {
-    autoHeight: {},
-    autoPageSize: {},
-    checkboxSelection: {},
-    columns: {},
-    density: {},
-    disableColumnFilter: {},
-    disableColumnMenu: {},
-    disableColumnSelector: {},
-    disableDensitySelector: {},
-    disableExtendRowFullWidth: {},
-    disableSelectionOnClick: {},
-    error: {},
-    filterMode: {},
-    headerHeight: {},
-    hideFooter: {},
-    hideFooterPagination: {},
-    hideFooterRowCount: {},
-    hideFooterSelectedRowCount: {},
-    loading: {},
-    page: {},
-    pageSize: {},
-    paginationMode: {},
-    rowHeight: {},
-    rows: {},
-    rowsPerPageOptions: {},
-    scrollbarSize: {},
-    showCellRightBorder: {},
-    showColumnRightBorder: {},
-    showToolbar: {},
-    sortingMode: {},
-    sortingOrder: {},
-  },
-  DataGrid,
-);

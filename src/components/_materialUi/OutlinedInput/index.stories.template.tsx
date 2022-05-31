@@ -8,10 +8,16 @@
  */
 
 import * as React from 'react';
-import { OutlinedInput, OutlinedInputProps } from '@material-ui/core';
+import {
+  OutlinedInput as MuiOutlinedInput,
+  OutlinedInputProps as MuiOutlinedInputProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const OutlinedInput = MuiOutlinedInput;
+export type OutlinedInputProps = MuiOutlinedInputProps;
 
 export const Template: Story<OutlinedInputProps> = ({
   value,
@@ -30,20 +36,3 @@ export const Template: Story<OutlinedInputProps> = ({
     />
   );
 };
-
-export const argTypes: Record<string, any> = Playground(
-  {
-    autoFocus: {},
-    color: {},
-    disabled: {},
-    error: {},
-    onChange: { action: 'change' },
-    multiline: {},
-    placeholder: {},
-    required: {},
-    type: {},
-    value: { type: 'string' },
-    variant: {},
-  },
-  OutlinedInput,
-);

@@ -8,10 +8,10 @@
  */
 
 import * as React from 'react';
-import clsx from 'clsx';
-import { Link } from '@material-ui/core';
+import { Link, LinkProps } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-import useStyles from './styles';
+import { StyledImg } from './styles';
 
 export interface RenderLogoProps {
   alt: string;
@@ -26,27 +26,21 @@ const RenderLogo: React.FC<RenderLogoProps> = ({
   LinkProps: linkProps,
   src,
 }: RenderLogoProps): React.ReactElement<RenderLogoProps> => {
-  const classes = useStyles();
-  const LogoLink = LinkComponent || Link;
+  const StyledLink = styled(LinkComponent || Link)<LinkProps>(() => ({
+    height: '38.88%',
+  }));
 
   const children = (
-    <img
+    <StyledImg
       alt={alt || 'Logo'}
       aria-label={alt || 'Logo'}
-      className={clsx(
-        !linkProps && classes.logoImg,
-        !!linkProps && classes.logoImgWrapped,
-      )}
+      isWrapped={!!linkProps}
       src={src}
     />
   );
 
   if (linkProps) {
-    return (
-      <LogoLink className={classes.logoLink} {...linkProps}>
-        {children}
-      </LogoLink>
-    );
+    return <StyledLink {...linkProps}>{children}</StyledLink>;
   }
 
   return children;

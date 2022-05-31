@@ -1,6 +1,84 @@
 # Changelog
 
-Chronological history of changes to the Design Language System.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [6.0.0-alpha.13](https://github.com/act-org/dls/compare/v6.0.0-alpha.12...v6.0.0-alpha.13) (2022-05-31)
+
+
+### Bug Fixes
+
+* Do not import colors on private path ([d21b426](https://github.com/act-org/dls/commit/d21b4263ee43f4734ffdd45000cd0401e09dde51))
+
+## [6.0.0-alpha.12](https://github.com/act-org/dls/compare/v6.0.0-alpha.11...v6.0.0-alpha.12) (2022-05-26)
+
+
+### Bug Fixes
+
+* Fix import of StyledEngineProvider ([77cd478](https://github.com/act-org/dls/commit/77cd478d6d20e37d0b700620595e60f2726f2432))
+
+## [6.0.0-alpha.11](https://github.com/act-org/dls/compare/v6.0.0-alpha.10...v6.0.0-alpha.11) (2022-05-26)
+
+
+### Bug Fixes
+
+* Import StyledEngineProvider from main package ([a2e489f](https://github.com/act-org/dls/commit/a2e489f5d7bfa65ecb88590c12416b4612cb1f29))
+
+## [6.0.0-alpha.9](https://github.com/act-org/dls/compare/v6.0.0-alpha.8...v6.0.0-alpha.9) (2022-05-24)
+
+
+### Features
+
+* Added status badges, documentation cleanup ([19a6207](https://github.com/act-org/dls/commit/19a6207714c4b7ff408b07e19433226db1db26ff))
+* Remove deprecated components ([232d221](https://github.com/act-org/dls/commit/232d2215815d79433df51c6a2cfe9f27446e655a))
+
+
+### Bug Fixes
+
+* Fix issues with React 18 upgrade ([795c361](https://github.com/act-org/dls/commit/795c361829269158b168660fed43c6252a605ade))
+* Remove @mui/styles dep ([eab73de](https://github.com/act-org/dls/commit/eab73de5b8a9ff3bf582581e85a18a7150f345d2))
+* Rename story names ([913d10c](https://github.com/act-org/dls/commit/913d10c4dd9c7f17561a420e93190fc0f980a83f))
+
+## [6.0.0-alpha.8](https://github.com/act-org/dls/compare/v6.0.0-alpha.7...v6.0.0-alpha.8) (2022-05-20)
+
+
+### Features
+
+* Replace ACT logo with ACT|Encoura lockup logo ([#40](https://github.com/act-org/dls/issues/40)) ([4e18c14](https://github.com/act-org/dls/commit/4e18c1418606cc6a56740256e9bc4596cba63d1f))
+
+## [6.0.0-alpha.7](https://github.com/act-org/dls/compare/v6.0.0-alpha.6...v6.0.0-alpha.7) (2022-04-05)
+
+## [6.0.0-alpha.6](https://github.com/act-org/dls/compare/v6.0.0-alpha.5...v6.0.0-alpha.6) (2022-04-04)
+
+## [6.0.0-alpha.5](https://github.com/act-org/dls/compare/v6.0.0-alpha.4...v6.0.0-alpha.5) (2022-04-01)
+
+## [6.0.0-alpha.4](https://github.com/act-org/dls/compare/v6.0.0-alpha.3...v6.0.0-alpha.4) (2022-04-01)
+
+## [6.0.0-alpha.3](https://github.com/act-org/dls/compare/v6.0.0-alpha.2...v6.0.0-alpha.3) (2022-03-31)
+
+## [6.0.0-alpha.2](https://github.com/act-org/dls/compare/v6.0.0-alpha.1...v6.0.0-alpha.2) (2022-03-09)
+
+## [6.0.0-alpha.1](https://github.com/act-org/dls/compare/v6.0.0-alpha.0...v6.0.0-alpha.1) (2022-03-04)
+
+## [6.0.0-alpha.0](https://github.com/act-org/dls/compare/v5.11.1...v6.0.0-alpha.0) (2022-03-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* mui 5 and mui 4 are incompatible
+* mui 5 no longer uses JSS but emotion
+
+### Features
+
+* Documentation and Working build for mui-5 upgrade ([be6662e](https://github.com/act-org/dls/commit/be6662eb006e35c526d6752d8f7af4dd022edf3b))
+* Material UI 5 support ([36c942e](https://github.com/act-org/dls/commit/36c942e828ba558e13a20624a9aa18e0396ff009))
+* Mui 5 functional themes, cleaned up Mui storybook examples ([2ae784b](https://github.com/act-org/dls/commit/2ae784bddd0ca32af48bc8b545df60a1a2115acb))
+
+## [v5.12.3] - May 19, 2022
+
+* Moved `@material-ui/core`, `@material-ui/data-grid`, and `@material-ui/lab`
+to the `devDependencies` section of `package.json`, since they are peer
+dependencies. This allows the downstream project to choose the exact versions
+of these packages that they would like to use. Any `4.x` version should suffice!
 
 ## [v5.12.3] - May 19, 2022
 
@@ -300,3 +378,4 @@ const CustomButtonForTestPrep: React.FC<Props> = ({
 
 export default CustomButtonForTestPrep;
 ```
+<!-- markdownlint-disable-file MD012 MD013 MD024 -->

@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import { common, grey } from '@material-ui/core/colors';
-import { PaletteOptions } from '@material-ui/core/styles/createPalette';
+import { common, grey } from '@mui/material/colors';
+import { PaletteOptions } from '@mui/material/styles';
 
 import COLORS from './colors';
 
@@ -66,7 +66,6 @@ const PALETTE: PaletteOptions = {
   },
   text: {
     disabled: grey[400],
-    hint: COLORS.TEXT_SECONDARY,
     primary: common.black,
     secondary: COLORS.TEXT_SECONDARY,
   },

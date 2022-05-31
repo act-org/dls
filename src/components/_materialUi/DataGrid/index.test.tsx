@@ -7,15 +7,14 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { DataGrid, GridValueGetterParams } from '@material-ui/data-grid';
+import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
 
 import { standard } from '~/helpers/test';
 
-jest.mock('@material-ui/core/utils', () => {
+jest.mock('@mui/material/utils', () => {
   let initialId = 12345;
   const sourceLib = jest.requireActual<Record<string, unknown>>(
-    '@material-ui/core/utils',
+    '@mui/material/utils',
   );
   return {
     ...sourceLib,

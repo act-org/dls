@@ -1,24 +1,15 @@
-/**
- * Copyright (c) ACT, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @prettier
- */
+import { TypographyVariantsOptions } from '@mui/material/styles';
 
-import { TypographyOptions } from '@material-ui/core/styles/createTypography';
-
-const TYPOGRAPHY: TypographyOptions = {
+const TYPOGRAPHY: TypographyVariantsOptions = {
   body1: {
-    fontSize: '1.5em',
-    fontWeight: 400,
-    lineHeight: '1.5em',
-  },
-  body2: {
     fontSize: '1em',
     fontWeight: 400,
-    lineHeight: '1.5em',
+    lineHeight: '1em',
+  },
+  body2: {
+    fontSize: '0.9em',
+    fontWeight: 400,
+    lineHeight: '0.9em',
   },
   button: {
     textTransform: 'none',
@@ -32,14 +23,17 @@ const TYPOGRAPHY: TypographyOptions = {
   h1: {
     fontSize: '2.5em',
     fontWeight: 700,
+    marginBottom: '1.5rem',
   },
   h2: {
     fontSize: '2.125em',
     fontWeight: 700,
+    marginBottom: '1.3rem',
   },
   h3: {
     fontSize: '1.75em',
     fontWeight: 700,
+    marginBottom: '1rem',
   },
   h4: {
     fontSize: '1.5em',

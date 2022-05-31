@@ -1,17 +1,8 @@
-/**
- * Copyright (c) ACT, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @prettier
- */
-
-import { TypographyOptions } from '@material-ui/core/styles/createTypography';
+import { TypographyVariantsOptions } from '@mui/material/styles';
 
 import COLORS from './colors';
 
-const TYPOGRAPHY: TypographyOptions = {
+const TYPOGRAPHY: TypographyVariantsOptions = {
   body1: {
     fontSize: 16,
     fontStyle: 'normal',

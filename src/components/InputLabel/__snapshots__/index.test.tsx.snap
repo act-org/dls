@@ -3,7 +3,7 @@
 exports[`InputLabel ACT theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-1 MuiInputLabel-animated"
+    class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-vcfoys-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
@@ -26,7 +26,7 @@ exports[`InputLabel ACT theme matches the snapshot 1`] = `
 exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-2 MuiInputLabel-animated"
+    class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-1oykn1l-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
@@ -49,7 +49,7 @@ exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root makeStyles-labelRoot-3 MuiInputLabel-animated"
+    class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-z5mzf4-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"

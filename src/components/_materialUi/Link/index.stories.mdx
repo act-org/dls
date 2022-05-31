@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -9,13 +9,12 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Link, LinkProps } from '@material-ui/core';
 
 import Plus from '~/icons/Plus';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Link, LinkProps } from './index.stories.template';
 
-<Meta title="Material UI/Link" component={Link} argTypes={argTypes} />
+<Meta title="Material UI/Link" component={Link} render={Template} />
 
 <Description of={Link} />
 
@@ -27,9 +26,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'primary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Secondary
@@ -40,9 +37,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'secondary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Text Primary
@@ -53,9 +48,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'textPrimary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Text Secondary
@@ -66,9 +59,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'textSecondary',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Color: Error
@@ -79,9 +70,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       color: 'error',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Underline: None
@@ -92,9 +81,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       underline: 'none',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Underline: Hover
@@ -105,9 +92,7 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       underline: 'hover',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Underline: Always
@@ -118,17 +103,13 @@ import { argTypes, Template } from './index.stories.template';
     args={{
       underline: 'always',
     }}
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
-  <Story name="Playground" args={{}}>
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  <Story name="Playground" args={{}} />
 </Canvas>
+
+<ArgsTable story="Playground" />

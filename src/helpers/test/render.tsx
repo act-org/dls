@@ -14,9 +14,10 @@ import {
   RenderResult,
   RenderOptions,
 } from '@testing-library/react';
+import { StyledEngineProvider } from '@mui/material/styles';
+import { Theme } from '@mui/material';
 
 import ThemeProvider from '../../components/ThemeProvider';
-import { Theme } from '@material-ui/core';
 
 export const render = (
   Component: React.ReactElement,
@@ -25,7 +26,9 @@ export const render = (
 ): RenderResult =>
   originalRender(Component, {
     wrapper: ({ children }) => (
-      <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
+      </StyledEngineProvider>
     ),
     ...options,
   });

@@ -8,16 +8,11 @@
  */
 
 import * as React from 'react';
-import {
-  InputLabel as MuiInputLabel,
-  InputLabelProps as MuiInputLabelProps,
-  Tooltip,
-} from '@material-ui/core';
+import { InputLabelProps as MuiInputLabelProps, Tooltip } from '@mui/material';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
-import { mergeClasses } from '~/helpers';
 
-import useStyles from './styles';
+import { StyledInputLabel } from './styles';
 
 /**
  * These are the options available for an Input Label
@@ -53,39 +48,28 @@ export interface InputLabelProps extends MuiInputLabelProps {
  * a molecule does not exist for your use case.
  * @param InputProps
  */
-export function InputLabel({
+export const InputLabel: React.FC<InputLabelProps> = ({
   classes: classesProp,
   children,
   required,
   helpText,
   helpPlacement,
   ...otherProps
-}: InputLabelProps): React.ReactElement<InputLabelProps> {
-  const classes = useStyles();
-  return (
-    <MuiInputLabel
-      classes={mergeClasses(
-        {
-          root: classes.labelRoot,
-        },
-        classesProp,
-      )}
-      {...otherProps}
-    >
-      <div className="label-split">
-        <span className="label-help">
-          {children}
-          {helpText && (
-            <Tooltip arrow placement={helpPlacement} title={helpText}>
-              <HelpCircleOutline />
-            </Tooltip>
-          )}
-        </span>
-        {required && <span className="required">Required</span>}
-      </div>
-    </MuiInputLabel>
-  );
-}
+}: InputLabelProps): React.ReactElement<InputLabelProps> => (
+  <StyledInputLabel classes={classesProp} {...otherProps}>
+    <div className="label-split">
+      <span className="label-help">
+        {children}
+        {helpText && (
+          <Tooltip arrow placement={helpPlacement} title={helpText}>
+            <HelpCircleOutline />
+          </Tooltip>
+        )}
+      </span>
+      {required && <span className="required">Required</span>}
+    </div>
+  </StyledInputLabel>
+);
 
 InputLabel.defaultProps = {
   helpPlacement: 'right',

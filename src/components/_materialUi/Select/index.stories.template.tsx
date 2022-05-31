@@ -8,10 +8,17 @@
  */
 
 import * as React from 'react';
-import { MenuItem, Select, SelectProps } from '@material-ui/core';
+import {
+  MenuItem,
+  Select as MuiSelect,
+  SelectProps as MuiSelectProps,
+} from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
+
+export const Select = MuiSelect;
+export type SelectProps = MuiSelectProps;
 
 export const Template: Story<SelectProps> = args => {
   const [value, setValue] = React.useState(1);
@@ -33,14 +40,3 @@ export const Template: Story<SelectProps> = args => {
     </Select>
   );
 };
-export const argTypes = Playground(
-  {
-    autoWidth: {},
-    disabled: {},
-    error: {},
-    fullWidth: {},
-    multiple: {},
-    value: { type: 'string' },
-  },
-  Select,
-);

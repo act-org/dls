@@ -1,0 +1,39 @@
+{/* @prettier */}
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+
+import { argTypes, Template } from './index.stories.template';
+import { GridGenerator } from '.';
+
+<Meta
+  argTypes={argTypes}
+  component={GridGenerator}
+  title="Organisms/GridGenerator"
+/>
+
+<Description of={GridGenerator} />
+
+## Default
+
+<Canvas isColumn>
+  <Story name="Default" args={{}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Playground
+
+<Canvas isColumn>
+  <Source language="jsx" story="Playground" />
+  <Story name="Playground" args={{}}>
+    {Template.bind({})}
+  </Story>
+  <ArgsTable story="Playground" />
+</Canvas>

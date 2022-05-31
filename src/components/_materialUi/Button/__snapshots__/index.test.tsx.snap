@@ -3,17 +3,14 @@
 exports[`Button ACT theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+    class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-gq5jh7-MuiButtonBase-root-MuiButton-root"
+    color="primary"
     tabindex="0"
     type="button"
   >
+    Click me
     <span
-      class="MuiButton-label"
-    >
-      Click me
-    </span>
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </div>
@@ -22,17 +19,13 @@ exports[`Button ACT theme matches the snapshot 1`] = `
 exports[`Button ACT_ET theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+    class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-q8ru1j-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >
+    Click me
     <span
-      class="MuiButton-label"
-    >
-      Click me
-    </span>
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </div>
@@ -41,17 +34,13 @@ exports[`Button ACT_ET theme matches the snapshot 1`] = `
 exports[`Button ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation"
+    class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1m9ygoa-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >
+    Click me
     <span
-      class="MuiButton-label"
-    >
-      Click me
-    </span>
-    <span
-      class="MuiTouchRipple-root"
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
     />
   </button>
 </div>

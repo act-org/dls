@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { DialogTitle } from '@material-ui/core';
+import { DialogTitle } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

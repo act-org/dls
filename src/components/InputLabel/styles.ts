@@ -7,10 +7,14 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+/* eslint-disable import/prefer-default-export */
 
-export default makeStyles({
-  labelRoot: {
+import { styled } from '@mui/material/styles';
+import { InputLabel } from '@mui/material';
+import { inputLabelClasses } from '@mui/material/InputLabel';
+
+export const StyledInputLabel = styled(InputLabel)({
+  [`&.${inputLabelClasses.root}`]: {
     '& .label-help': {
       '& .MuiSvgIcon-root': {
         height: '.825em',

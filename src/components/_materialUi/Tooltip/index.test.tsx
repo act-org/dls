@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { Tooltip } from '@material-ui/core';
+import { Tooltip } from '@mui/material';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
 import { standard } from '~/helpers/test';

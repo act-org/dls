@@ -57,25 +57,25 @@ library (e.g. React Router vs. Next Routes), or network layer
 
 Simply put, the DLS components should make 0 assumptions about the technologies
 being used by the downstream project, aside from one special exception:
-[Material UI (v4)](https://v4.mui.com/).
+[Material UI](https://mui.com/).
 
-## Material UI (v4)
+## Material UI
 
-The DLS is based on [Material UI (v4)](https://v4.mui.com/) — one of the most
+The DLS is based on [Material UI](https://mui.com/) — one of the most
 popular and robust component libraries that exists today in the React
 ecosystem.
 
-[Material UI (v4)](https://v4.mui.com/) is integral to the way the DLS functions
+[Material UI](https://mui.com/) is integral to the way the DLS functions
 (namely, the theme system), and thus is the only technological requirement that
 is forced upon downstream projects.
 
 In order to build effectively for the DLS, you really need to know
-[Material UI (v4)](https://v4.mui.com/). So if you're not already, become
+[Material UI](https://mui.com/). So if you're not already, become
 familiar with the components (and their APIs) that are offered by the library.
 
 (It is also important to understand how to style components using
-[`makeStyles`](https://v4.mui.com/styles/basics/), and how to do so in a
-dynamic way using [themes](https://v4.mui.com/customization/theming/). But
+[`styled`](https://mui.com/system/styled/), and how to do so in a
+dynamic way using [themes](https://mui.com/customization/theming/). But
 we'll touch on these items later in the guide!)
 
 ### Use Material UI Components Over Native DOM Elements
@@ -84,15 +84,15 @@ When writing components for the DLS, you should always prefer to use Material UI
 components over native DOM elements.
 
 * If you're building a list (`ul`, `ol`, `li`), use
-[`List`](https://v4.mui.com/api/list/) and
-[`ListItem`](https://v4.mui.com/api/list-item/).
+[`List`](https://mui.com/api/list/) and
+[`ListItem`](https://mui.com/api/list-item/).
 
 * If you're writing text (`h1...h6`, `p`, `span`), use
-[`Typography`](https://v4.mui.com/api/typography/#typography-api).
+[`Typography`](https://mui.com/api/typography/#typography-api).
 
 * If you need a button or input field (`button`, `input`, `textarea`), use
-[`Button`](https://v4.mui.com/api/button/#button-api) and
-[`TextField`](https://v4.mui.com/api/text-field/#textfield-api).
+[`Button`](https://mui.com/api/button/#button-api) and
+[`TextField`](https://mui.com/api/text-field/#textfield-api).
 
 Whenever you find yourself writing a native DOM element, stop and ask yourself:
 "Is there a suitable alternative provided by the Material UI library?"
@@ -103,9 +103,9 @@ Why is this so important? Themes!
 ### Themes
 
 The DLS makes full use of Material UI's
-[theme system](https://v4.mui.com/customization/theming/). You can think of a
-theme as a CSS stylesheet that gets injected into the browser and dictates how
-the Material UI components that we use will look and feel.
+[theme system](https://mui.com/material-ui/customization/theming/). You can
+think of a theme as a CSS stylesheet that gets injected into the browser
+and dictates how the Material UI components that we use will look and feel.
 
 The DLS currently supports
 [3 different themes](https://github.com/act-org/dls/tree/master/src/styles):
@@ -118,10 +118,10 @@ The DLS currently supports
 
 Themes allow us to separate the way a component functions from the way the
 component looks and feels. For example, the
-[`Button`](https://v4.mui.com/api/button/#button-api) component from Material UI
-has certain core functionality, such as having a label, firing events, and
-being enabled or disabled. This functionality must exist regardless of the
-appearance of the button.
+[`Button`](https://mui.com/material-ui/api/button/#button-api) component from
+Material UI has certain core functionality, such as having a label, firing
+events, and being enabled or disabled. This functionality must exist regardless
+of the appearance of the button.
 
 Using themes, we can take this core functionality and style it multiple
 different ways:
@@ -191,7 +191,7 @@ compose well together, so definitely use them!
 
 However, this does not completely eliminate the need for custom styling, and
 thus at some point you'll need to add a few custom styles to your `styles.ts`
-file using [`makeStyles`](https://v4.mui.com/styles/basics/).
+file using [`styled`](https://mui.com/system/styled/).
 
 ### Avoid Hard Coding
 
@@ -201,86 +201,70 @@ opinion that this style should be applied globally for this component across all
 themes. Often times, this is not the right assumption to make.
 
 ```tsx
-// BAD:
+import { styled } from '@mui/material/styles';
 
-// These style values are hard-coded.
-export const useStyles = makeStyles({
-  container: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 4,
-    boxShadow: "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
-    padding: 16,
-  },
-  text: {
-    fontFamily: 'Museo',
-    fontSize: 10,
-  },
+// BAD: These style values are hard-coded.
+export const StyledDiv = styled('div')({
+  backgroundColor: '#FFFFFF',
+  borderRadius: 4,
+  boxShadow: "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+  padding: 16,
+});
+
+export const StyledSpan = styled('span')({
+  fontFamily: 'Museo',
+  fontSize: 10,
 });
 
 // This component is using native DOM elements when there are suitable
 // counterparts in the Material UI library.
-const NewComponent = () => {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.container}>
-      <span className={classes.text}>Hello World</span>
-    </div>
-  );
-};
+const NewComponent = () => (
+  <StyledDiv>
+    <StyledSpan>Hello World</StyledSpan>
+  </StyledDiv>
+);
 ```
 
 Instead, create dynamic styles by tapping into the theme. This will allow this
 component to look and feel differently across themes!
 
 (To learn about the values that are available to you on the theme object,
-see [here](https://v4.mui.com/customization/theming/) and
-[here](https://v4.mui.com/customization/default-theme/).)
+see [here](https://mui.com/material-ui/customization/theming/) and
+[here](https://mui.com/material-ui/customization/default-theme/).)
 
 ```tsx
-// BETTER:
+import { styled } from '@mui/material/styles';
 
-// These style values are dynamic based on the theme.
-export const useStyles = makeStyles(({
-  palette,
-  shadows,
-  shape,
-  spacing,
-  typography
-}) => ({
-  container: {
-    backgroundColor: palette.background.paper,
-    borderRadius: shape.borderRadius,
-    boxShadow: shadows[1],
-    padding: spacing(2),
-  },
-  text: {
-    fontFamily: typography.fontFamily,
-    fontSize: typography.caption.fontSize,
-  },
+// BETTER: These style values are dynamic based on the theme.
+export const StyledDiv = styled('div')(({ theme }) => ({
+  backgroundColor: theme.palette.background.paper,
+  borderRadius: theme.shape.borderRadius,
+  boxShadow: theme.shadows[1],
+  padding: theme.spacing(2),
+}));
+
+export const StyledSpan = styled('span')(({ theme }) => ({
+  fontFamily: theme.typography.fontFamily,
+  fontSize: theme.typography.caption.fontSize,
 }));
 
 // But this component is still using native DOM elements when there are suitable
 // counterparts in the Material UI library.
-const MyComponent = () => {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.container}>
-      <span className={classes.text}>Hello World</span>
-    </div>
-  );
-};
+const MyComponent = () => (
+  <StyledDiv>
+    <StyledSpan>Hello World</StyledSpan>
+  </StyledDiv>
+);
 ```
 
 When our custom components are built using Material UI primitives, often times
 the custom styles are no longer needed!
 
 ```tsx
-// BEST:
+import { styled } from '@mui/material/styles';
 
-// No custom styles are needed because this component is built using Material UI
-// primitives. We can handle everything using a few simple props!
+// BEST: No custom styles are needed because this component is built using
+// Material UI primitives. We can handle everything using a few simple props!
 const MyComponent = () => (
   <Paper elevation={1}>
     <Typography variant="caption">Hello World</Typography>

@@ -15,7 +15,7 @@ import {
   FormControlLabelProps,
   Checkbox,
   CheckboxProps,
-} from '@material-ui/core';
+} from '@mui/material';
 
 export type FormCheckboxProps = CheckboxProps & {
   /**

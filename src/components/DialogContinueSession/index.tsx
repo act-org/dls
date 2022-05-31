@@ -11,14 +11,13 @@ import * as React from 'react';
 import {
   Button,
   Dialog,
-  DialogActions,
   DialogContent,
   DialogTitle,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import moment from 'moment';
 
-import useStyles from './styles';
+import { StyledDialogActions } from './styles';
 
 export interface DialogContinueSessionProps {
   expiresAt: Date;
@@ -52,8 +51,6 @@ export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
     };
   }, [setTimeUntilExpiration, timeUntilExpiration]);
 
-  const classes = useStyles();
-
   if (timeUntilExpiration > 0) {
     return (
       <Dialog
@@ -74,11 +71,7 @@ export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
           </Typography>
         </DialogContent>
 
-        <DialogActions
-          classes={{
-            root: classes.dialogActionsRoot,
-          }}
-        >
+        <StyledDialogActions>
           <Button
             color="primary"
             fullWidth
@@ -89,7 +82,7 @@ export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
           >
             Continue Session
           </Button>
-        </DialogActions>
+        </StyledDialogActions>
       </Dialog>
     );
   }

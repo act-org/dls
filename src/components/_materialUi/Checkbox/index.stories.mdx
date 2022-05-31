@@ -1,4 +1,4 @@
-<!-- @prettier -->
+{/* @prettier */}
 
 import {
   ArgsTable,
@@ -8,15 +8,25 @@ import {
   Source,
   Story,
 } from '@storybook/addon-docs';
-import { Checkbox } from '@material-ui/core';
 
-import { argTypes, Template } from './index.stories.template';
+import { Template, Checkbox } from './index.stories.template';
 
-<Meta argTypes={argTypes} component={Checkbox} title="Material UI/Checkbox" />
+<Meta component={Checkbox} title="Material UI/Checkbox" render={Template} />
 
 <Description of={Checkbox} />
 
-## Primary Checkbox
+## Default
+
+<Canvas>
+  <Story
+    args={{
+      value: 'value',
+    }}
+    name="Default"
+  />
+</Canvas>
+
+## Primary
 
 <Canvas>
   <Story
@@ -25,9 +35,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Primary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -40,9 +48,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Primary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Secondary Checkbox
@@ -54,9 +60,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Secondary"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -69,9 +73,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Secondary: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Indeterminate Checkbox
@@ -84,9 +86,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Indeterminate: Disabled"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Disabled
@@ -100,9 +100,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Indeterminate"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Checkbox Sizes
@@ -117,9 +115,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Size: Small"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ### Medium
@@ -131,15 +127,12 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Size: Medium"
-  >
-    {Template.bind({})}
-  </Story>
+  />
 </Canvas>
 
 ## Playground
 
 <Canvas isColumn>
-  <Source language="jsx" story="Playground" />
   <Story
     args={{
       checked: true,
@@ -149,8 +142,7 @@ import { argTypes, Template } from './index.stories.template';
       value: 'value',
     }}
     name="Playground"
-  >
-    {Template.bind({})}
-  </Story>
-  <ArgsTable story="Playground" />
+  />
 </Canvas>
+
+<ArgsTable story="Playground" />

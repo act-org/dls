@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { Paper } from '@material-ui/core';
+import { Paper } from '@mui/material';
 
 import { standard } from '~/helpers/test';
 

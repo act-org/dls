@@ -8,18 +8,17 @@
  */
 
 import * as React from 'react';
-import {
-  Button,
-  ButtonProps,
-  Grid,
-  IconProps,
-  Typography,
-  TypographyProps,
-} from '@material-ui/core';
-import clsx from 'clsx';
+import { Button, ButtonProps, IconProps, TypographyProps } from '@mui/material';
 import { isString } from 'lodash';
+import { styled } from '@mui/material/styles';
 
-import useStyles from './styles';
+import {
+  StyledContainer,
+  StyledGridContainer,
+  StyledGridItem,
+  StyledTypographyDescription,
+  StyledTypographyTitle,
+} from './styles';
 
 export interface EmptyStateProps {
   buttonProps?: ButtonProps;
@@ -34,7 +33,7 @@ export interface EmptyStateProps {
   };
 }
 
-export function EmptyState({
+export const EmptyState: React.FC<EmptyStateProps> = ({
   buttonProps,
   description,
   descriptionTypographyProps,
@@ -43,16 +42,22 @@ export function EmptyState({
   style,
   title,
   titleTypographyProps,
-}: EmptyStateProps): React.ReactElement<EmptyStateProps> {
-  const classes = useStyles();
+}: EmptyStateProps): React.ReactElement<EmptyStateProps> => {
+  const StyledIcon = Icon
+    ? styled(Icon)<
+        IconProps & {
+          titleAccess?: string;
+        }
+      >({
+        height: 50,
+        width: 50,
+      })
+    : undefined;
 
   return (
-    <div className={classes.container} style={style}>
-      {Icon && (
-        <Icon
-          classes={{
-            root: clsx(classes.iconRoot),
-          }}
+    <StyledContainer style={style}>
+      {StyledIcon && (
+        <StyledIcon
           color="disabled"
           titleAccess={isString(title) ? title : undefined}
           {...iconProps}
@@ -60,55 +65,39 @@ export function EmptyState({
       )}
 
       {title && (
-        <Grid
+        <StyledGridContainer
           alignItems="center"
-          classes={{
-            container: clsx(classes.titleGridContainer),
-          }}
           container
           justifyContent="center"
         >
-          <Grid
-            classes={{
-              item: classes.titleGridItem,
-            }}
-            item
-          >
-            <Typography
+          <StyledGridItem item>
+            <StyledTypographyTitle
               align="center"
-              classes={{
-                root: classes.titleRoot,
-              }}
               component="h6"
               variant="body1"
               {...titleTypographyProps}
             >
               {title}
-            </Typography>
-          </Grid>
-        </Grid>
+            </StyledTypographyTitle>
+          </StyledGridItem>
+        </StyledGridContainer>
       )}
 
       {description && (
-        <Typography
+        <StyledTypographyDescription
           align="center"
-          classes={{
-            root: clsx(
-              classes.descriptionRoot,
-              !title && classes.descriptionRootWithoutTitle,
-            ),
-          }}
           color="textSecondary"
           variant="body1"
+          withoutTitle={!title}
           {...descriptionTypographyProps}
         >
           {description}
-        </Typography>
+        </StyledTypographyDescription>
       )}
 
       {buttonProps && <Button {...buttonProps} />}
-    </div>
+    </StyledContainer>
   );
-}
+};
 
 export default EmptyState;

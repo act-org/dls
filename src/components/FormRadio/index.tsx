@@ -13,7 +13,7 @@ import {
   FormControlLabelProps,
   Radio,
   RadioProps,
-} from '@material-ui/core';
+} from '@mui/material';
 
 export type FormRadioProps = RadioProps & {
   /**

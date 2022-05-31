@@ -7,18 +7,21 @@
  * @prettier
  */
 
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
+import { Typography } from '@mui/material';
+import { typographyClasses } from '@mui/material/Typography';
 
-export default makeStyles(({ spacing }) => ({
-  container: {
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%',
-    justifyContent: 'center',
-    width: '100%',
-  },
-  typographyRoot: {
-    marginTop: spacing(1) / 2,
+export const StyledContainer = styled('div')({
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  height: '100%',
+  justifyContent: 'center',
+  width: '100%',
+});
+
+export const StyledTypography = styled(Typography)(({ theme }) => ({
+  [`&.${typographyClasses.root}`]: {
+    marginTop: theme.spacing(1),
   },
 }));

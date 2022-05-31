@@ -8,13 +8,13 @@
  */
 
 import * as React from 'react';
-import { AppBar, AppBarProps, Grid } from '@material-ui/core';
+import { AppBarProps, Grid } from '@mui/material';
 
 import RenderLogo, { RenderLogoProps } from './RenderLogo';
 import RenderNavigationItem, {
   RenderNavigationItemProps,
 } from './RenderNavigationItem';
-import useStyles from './styles';
+import { StyledAppBar, StyledGrid } from './styles';
 
 export interface AppBarNavigationProps {
   appBarHeight?: number;
@@ -37,33 +37,29 @@ export const AppBarNavigation: React.FC<AppBarNavigationProps> = ({
   headerRightElement,
   RenderLogoProps: logoProps,
   navigationItems,
-}: AppBarNavigationProps): React.ReactElement<AppBarNavigationProps> => {
-  const classes = useStyles({ appBarHeight: appBarHeight || 72 });
+}: AppBarNavigationProps): React.ReactElement<AppBarNavigationProps> => (
+  <StyledAppBar
+    appBarHeight={appBarHeight || 72}
+    color="transparent"
+    {...appBarProps}
+  >
+    <RenderLogo {...logoProps} />
 
-  return (
-    <AppBar
-      classes={{ root: classes.appBarRoot }}
-      color="transparent"
-      {...appBarProps}
-    >
-      <RenderLogo {...logoProps} />
-
-      <Grid classes={{ container: classes.navContainer }} container spacing={4}>
-        {navigationItems.map(
-          (n: RenderNavigationItemProps): React.ReactElement<unknown> => (
-            <Grid item key={n.title}>
-              <RenderNavigationItem {...n} />
-            </Grid>
-          ),
-        )}
-      </Grid>
-
-      {Boolean(headerRightElement) && (
-        <Grid style={{ marginLeft: 'auto' }}>{headerRightElement}</Grid>
+    <StyledGrid container spacing={4}>
+      {navigationItems.map(
+        (n: RenderNavigationItemProps): React.ReactElement<unknown> => (
+          <Grid item key={n.title}>
+            <RenderNavigationItem {...n} />
+          </Grid>
+        ),
       )}
-    </AppBar>
-  );
-};
+    </StyledGrid>
+
+    {Boolean(headerRightElement) && (
+      <Grid style={{ marginLeft: 'auto' }}>{headerRightElement}</Grid>
+    )}
+  </StyledAppBar>
+);
 
 AppBarNavigation.defaultProps = {
   appBarHeight: undefined,
