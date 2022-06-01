@@ -91,7 +91,7 @@
     "ts-jest": "28.0.2",
     "ts-loader": "9.3.0",
     "ts-node": "10.8.0",
-    "typescript": "4.6.4",
+    "typescript": "4.7.2",
     "webpack": "5.72.1"
   },
   "homepage": "https://act-org.github.io/dls",
