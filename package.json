@@ -36,7 +36,7 @@
     "@mui/lab": "5.0.0-alpha.83",
     "@mui/material": "5.8.1",
     "@mui/x-data-grid": "5.11.1",
-    "@storybook/addon-a11y": "6.5.4",
+    "@storybook/addon-a11y": "6.5.7",
     "@storybook/addon-actions": "6.5.4",
     "@storybook/addon-controls": "6.5.4",
     "@storybook/addon-essentials": "6.5.4",
