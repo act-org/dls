@@ -51,7 +51,7 @@
     "@storybook/theming": "6.5.4",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",
-    "@testing-library/user-event": "13.5.0",
+    "@testing-library/user-event": "14.2.1",
     "@types/axe-core": "2.0.7",
     "@types/color": "3.0.3",
     "@types/jest": "27.5.1",
