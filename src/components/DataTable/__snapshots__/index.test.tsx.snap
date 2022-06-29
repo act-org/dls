@@ -28,7 +28,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               ID
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -73,7 +73,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               Name
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -117,7 +117,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               Field A
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -161,7 +161,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               Field B
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -205,7 +205,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
               Field C
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -444,7 +444,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               ID
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -489,7 +489,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               Name
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -533,7 +533,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               Field A
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -577,7 +577,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               Field B
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -621,7 +621,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
               Field C
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -860,7 +860,7 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               ID
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -905,7 +905,7 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               Name
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -949,7 +949,7 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               Field A
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -993,7 +993,7 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               Field B
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"
@@ -1037,7 +1037,7 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
               Field C
             </p>
             <div
-              class="MuiGrid-root MuiGrid-container css-d1qptq-MuiGrid-root"
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
             >
               <svg
                 aria-hidden="true"

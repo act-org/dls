@@ -24,7 +24,6 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
-      'babel-plugin-root-import': {},
       typescript: {},
     },
     'mdx/code-blocks': true,

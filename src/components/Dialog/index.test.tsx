@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import userEvent from '@testing-library/user-event';
+import UserEvent from '@testing-library/user-event';
 
 import { standard, render } from '~/helpers/test';
 
@@ -21,7 +21,7 @@ describe('Dialog', () => {
   );
   standard(Component);
 
-  it('should publish an onClose event when the close icon is clicked', () => {
+  it('should publish an onClose event when the close icon is clicked', async () => {
     const onClose = jest.fn();
     const rendered = render(
       <Dialog onClose={onClose} open title="Test Title">
@@ -29,11 +29,12 @@ describe('Dialog', () => {
       </Dialog>,
       'ACT',
     );
-    userEvent.click(rendered.getByRole('button'));
+    const user = UserEvent.setup();
+    await user.click(rendered.getByRole('button'));
     expect(onClose).toHaveBeenCalled();
   });
 
-  it('should not publish an onClose event when no onClose hander is provided', () => {
+  it('should not publish an onClose event when no onClose hander is provided', async () => {
     const onClose = jest.fn();
     const rendered = render(
       <Dialog open title="Test Title">
@@ -41,7 +42,8 @@ describe('Dialog', () => {
       </Dialog>,
       'ACT',
     );
-    userEvent.click(rendered.getByRole('button'));
+    const user = UserEvent.setup();
+    await user.click(rendered.getByRole('button'));
     expect(onClose).toHaveBeenCalledTimes(0);
   });
 });

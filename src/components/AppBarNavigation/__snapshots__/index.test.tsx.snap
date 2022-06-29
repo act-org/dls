@@ -18,10 +18,10 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1q22u1g-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1p6l37g-MuiTypography-root-MuiLink-root"
@@ -35,7 +35,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1p6l37g-MuiTypography-root-MuiLink-root"
@@ -71,10 +71,10 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1q22u1g-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-7f0x13-MuiTypography-root-MuiLink-root"
@@ -88,7 +88,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-7f0x13-MuiTypography-root-MuiLink-root"
@@ -124,10 +124,10 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-1q22u1g-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-tmq4yf-MuiTypography-root-MuiLink-root"
@@ -141,7 +141,7 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-1bxaljh-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
           class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-tmq4yf-MuiTypography-root-MuiLink-root"

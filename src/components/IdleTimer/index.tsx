@@ -47,9 +47,9 @@ export const IdleTimer: React.FC<IdleTimerProps> = ({
         onActive(event);
       }
     },
-    onIdle: (event): void => {
+    onIdle: (): void => {
       if (onIdle) {
-        onIdle(event);
+        onIdle({});
       }
     },
     stopOnIdle,
