@@ -150,7 +150,7 @@
     "prepare": "husky install",
     "release": "npm-run-all release:**",
     "release:version": "standard-version",
-    "release:commit": "git push --follow-tags origin master",
+    "release:commit": "git push --follow-tags origin main",
     "release:npm": "npm run build && cd dist && npm publish",
     "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
     "start": "start-storybook -p 6006 -s ./public --no-manager-cache",
