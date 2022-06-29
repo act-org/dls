@@ -7,8 +7,9 @@
  * @prettier
  */
 
+import { StyledComponent } from '@emotion/styled';
 import { Grid, Typography, TypographyProps } from '@mui/material';
-import { gridClasses } from '@mui/material/Grid';
+import { gridClasses, GridProps } from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { typographyClasses } from '@mui/material/Typography';
 
@@ -40,15 +41,17 @@ export const StyledTypographyTitle = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export const StyledGridContainer = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.container}`]: {
-    marginBottom: theme.spacing(1),
-    marginTop: theme.spacing(1),
-    maxWidth: 300,
-  },
-}));
+export const StyledGridContainer: StyledComponent<GridProps> = styled(Grid)(
+  ({ theme }) => ({
+    [`&.${gridClasses.container}`]: {
+      marginBottom: theme.spacing(1),
+      marginTop: theme.spacing(1),
+      maxWidth: 300,
+    },
+  }),
+);
 
-export const StyledGridItem = styled(Grid)({
+export const StyledGridItem: StyledComponent<GridProps> = styled(Grid)({
   [`&.${gridClasses.item}`]: {
     display: 'flex',
   },

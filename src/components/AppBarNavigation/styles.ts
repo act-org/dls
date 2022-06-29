@@ -7,9 +7,10 @@
  * @prettier
  */
 
+import { StyledComponent } from '@emotion/styled';
 import { AppBar, AppBarProps, Grid } from '@mui/material';
 import { appBarClasses } from '@mui/material/AppBar';
-import { gridClasses } from '@mui/material/Grid';
+import { gridClasses, GridProps } from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 
 export const StyledAppBar = styled(AppBar)<
@@ -26,9 +27,11 @@ export const StyledAppBar = styled(AppBar)<
   },
 }));
 
-export const StyledGrid = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.container}`]: {
-    alignItems: 'center',
-    paddingLeft: theme.spacing(3),
-  },
-}));
+export const StyledGrid: StyledComponent<GridProps> = styled(Grid)(
+  ({ theme }) => ({
+    [`&.${gridClasses.container}`]: {
+      alignItems: 'center',
+      paddingLeft: theme.spacing(3),
+    },
+  }),
+);

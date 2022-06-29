@@ -9,15 +9,18 @@
 
 import { styled } from '@mui/material/styles';
 import { Grid } from '@mui/material';
-import { gridClasses } from '@mui/material/Grid';
+import { gridClasses, GridProps } from '@mui/material/Grid';
+import { StyledComponent } from '@emotion/styled';
 
-export const StyledGridContainer = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.container}`]: {
-    marginBottom: theme.spacing(0.5),
-  },
-}));
+export const StyledGridContainer: StyledComponent<GridProps> = styled(Grid)(
+  ({ theme }) => ({
+    [`&.${gridClasses.container}`]: {
+      marginBottom: theme.spacing(0.5),
+    },
+  }),
+);
 
-export const StyledGridItem = styled(Grid)({
+export const StyledGridItem: StyledComponent<GridProps> = styled(Grid)({
   [`&.${gridClasses.item}`]: {
     flex: 1,
   },

@@ -12,6 +12,7 @@ import Color from 'color';
 import { grey } from '@mui/material/colors';
 import {
   Grid,
+  GridProps,
   SvgIconProps,
   TableCell,
   TableCellProps,
@@ -22,6 +23,7 @@ import { styled } from '@mui/material/styles';
 
 import ChevronDown from '~/icons/ChevronDown';
 import ChevronUp from '~/icons/ChevronUp';
+import { StyledComponent } from '@emotion/styled';
 
 const ICON_SIZE = 14;
 
@@ -33,9 +35,9 @@ export const StyledChevronUp = styled(ChevronUp)<
   color: clsx(
     colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
     colorProp === 'primary' &&
-      Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+    Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
     colorProp === 'secondary' &&
-      Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+    Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
   ),
   cursor: 'pointer',
   fontSize: theme.typography.fontSize,
@@ -52,9 +54,9 @@ export const StyledChevronDown = styled(ChevronDown)<
   color: clsx(
     colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
     colorProp === 'primary' &&
-      Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+    Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
     colorProp === 'secondary' &&
-      Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+    Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
   ),
   cursor: 'pointer',
   fontSize: theme.typography.fontSize,
@@ -63,15 +65,17 @@ export const StyledChevronDown = styled(ChevronDown)<
   width: ICON_SIZE,
 }));
 
-export const StyledGrid = styled(Grid)(({ theme }) => ({
-  alignItems: 'center',
-  display: 'flex',
-  flexDirection: 'column',
-  position: 'absolute',
-  right: theme.spacing(1),
-  top: `calc(50% - ${ICON_SIZE}px)`,
-  width: ICON_SIZE,
-}));
+export const StyledGrid: StyledComponent<GridProps> = styled(Grid)(
+  ({ theme }) => ({
+    alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: `calc(50% - ${ICON_SIZE}px)`,
+    width: ICON_SIZE,
+  }),
+);
 
 export const StyledTableCell = styled(TableCell)<
   TableCellProps & {
@@ -99,9 +103,9 @@ export const StyledTableCell = styled(TableCell)<
       backgroundColor: clsx(
         color === 'default' && grey[300],
         color === 'primary' &&
-          Color(theme.palette.primary.main).darken(0.15).hex(),
+        Color(theme.palette.primary.main).darken(0.15).hex(),
         color === 'secondary' &&
-          Color(theme.palette.secondary.main).darken(0.15).hex(),
+        Color(theme.palette.secondary.main).darken(0.15).hex(),
       ),
     } as React.CSSProperties;
   }
