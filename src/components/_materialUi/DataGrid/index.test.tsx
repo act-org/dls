@@ -60,8 +60,7 @@ describe.skip('DataGrid', () => {
           headerName: 'Full name',
           sortable: false,
           valueGetter: (params: GridValueGetterParams): string =>
-            `${params.getValue('firstName') || ''} ${
-              params.getValue('lastName') || ''
+            `${params.getValue(params.id, 'firstName') || ''} ${params.getValue(params.id, 'lastName') || ''
             }`,
         },
       ]}

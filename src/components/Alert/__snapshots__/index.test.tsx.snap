@@ -22,7 +22,7 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="MuiAlert-message css-acap47-MuiAlert-message"
+      class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
         class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1u1mytm-MuiTypography-root-MuiAlertTitle-root"
@@ -57,7 +57,7 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="MuiAlert-message css-acap47-MuiAlert-message"
+      class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
         class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-28nnwk-MuiTypography-root-MuiAlertTitle-root"
@@ -92,7 +92,7 @@ exports[`Alert ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="MuiAlert-message css-acap47-MuiAlert-message"
+      class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
         class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1hza8ki-MuiTypography-root-MuiAlertTitle-root"

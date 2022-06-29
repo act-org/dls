@@ -6,10 +6,10 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-dpg4t2-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-k5koou-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1qw1a70-MuiTypography-root"
@@ -44,10 +44,10 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-dpg4t2-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-k5koou-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1tkcs05-MuiTypography-root"
@@ -81,10 +81,10 @@ exports[`EmptyState ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-dpg4t2-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-k5koou-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-lvvnln-MuiTypography-root"
