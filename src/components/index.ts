@@ -11,6 +11,7 @@
 
 export * from './Alert';
 export * from './AppBarNavigation';
+export * from './ConfirmationDialog';
 export * from './DataTable';
 export * from './Dialog';
 export * from './DialogContinueSession';

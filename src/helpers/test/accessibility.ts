@@ -11,15 +11,14 @@ import React from 'react';
 import THEMES from './themes';
 import render from './render';
 import { RenderOptions } from '@testing-library/react';
-import { axe, toHaveNoViolations } from 'jest-axe';
-import { RunOptions } from 'axe-core';
+import { axe, toHaveNoViolations, JestAxeConfigureOptions } from 'jest-axe';
 
 expect.extend(toHaveNoViolations);
 // eslint-disable-next-line jest/no-export
 export default function accessibility(
   Component: React.ReactElement,
   renderOptions?: RenderOptions,
-  axeOptions?: RunOptions,
+  axeOptions?: JestAxeConfigureOptions,
 ): void {
   test.each(THEMES)(
     '%s theme should not have accessibility issues',

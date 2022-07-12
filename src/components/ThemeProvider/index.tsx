@@ -16,7 +16,7 @@ import {
   ThemeProvider as MuiThemeProvider,
 } from '@mui/material/styles';
 
-import { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider'
+import { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider';
 
 import { THEME_ACT } from '~/styles/themeAct';
 import { THEME_ACT_ET } from '~/styles/themeActEt';
@@ -34,38 +34,38 @@ import { THEME_ENCOURA_DATALAB } from '~/styles/themeEncouraDatalab';
 export interface ThemeProviderProps extends MuiThemeProviderProps {
   theme: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme;
   locale?:
-  | 'azAZ'
-  | 'bgBG'
-  | 'caES'
-  | 'csCZ'
-  | 'deDE'
-  | 'enUS'
-  | 'esES'
-  | 'etEE'
-  | 'faIR'
-  | 'fiFI'
-  | 'frFR'
-  | 'heIL'
-  | 'hiIN'
-  | 'huHU'
-  | 'hyAM'
-  | 'idID'
-  | 'isIS'
-  | 'itIT'
-  | 'jaJP'
-  | 'koKR'
-  | 'nlNL'
-  | 'plPL'
-  | 'ptBR'
-  | 'ptPT'
-  | 'roRO'
-  | 'ruRU'
-  | 'skSK'
-  | 'svSE'
-  | 'trTR'
-  | 'ukUA'
-  | 'viVN'
-  | 'zhCN';
+    | 'azAZ'
+    | 'bgBG'
+    | 'caES'
+    | 'csCZ'
+    | 'deDE'
+    | 'enUS'
+    | 'esES'
+    | 'etEE'
+    | 'faIR'
+    | 'fiFI'
+    | 'frFR'
+    | 'heIL'
+    | 'hiIN'
+    | 'huHU'
+    | 'hyAM'
+    | 'idID'
+    | 'isIS'
+    | 'itIT'
+    | 'jaJP'
+    | 'koKR'
+    | 'nlNL'
+    | 'plPL'
+    | 'ptBR'
+    | 'ptPT'
+    | 'roRO'
+    | 'ruRU'
+    | 'skSK'
+    | 'svSE'
+    | 'trTR'
+    | 'ukUA'
+    | 'viVN'
+    | 'zhCN';
 }
 
 /**

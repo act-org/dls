@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmationDialog ACT theme matches the snapshot 1`] = `<div />`;
+
+exports[`ConfirmationDialog ACT_ET theme matches the snapshot 1`] = `<div />`;
+
+exports[`ConfirmationDialog ENCOURA_DATALAB theme matches the snapshot 1`] = `<div />`;

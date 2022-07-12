@@ -1,0 +1,57 @@
+{/* @prettier */}
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+
+import { useConfirm, ConfirmationDialog } from '.';
+import { argTypes, Template } from './useConfirm.stories.template';
+
+<Meta
+  argTypes={argTypes}
+  component={ConfirmationDialog}
+  title="Organisms/ConfirmationDialog/Hook"
+  render={Template}
+/>
+
+<Description of={useConfirm} />
+
+```tsx
+  <ThemeProvider theme="ACT">
+    <ConfirmProvider>
+      {// Your application code here}
+    </ConfirmProvider>
+  </ThemeProvider>
+
+
+  // Then later
+  import { useConfirm } from '@actinc/dls';
+  import { Button } from '@mui/material';
+  export function ConfirmExample() {
+      const confirm = useConfirm();
+
+      const openConfirm = async () => {
+          if (await confirm({description: 'Are you sure you want to do this?'})) {
+              console.log('confirmed');
+          } else {
+              console.log('cancelled');
+          }
+      }
+
+      return (
+          <Button onClick={openConfirm}>Open Confirm</Button>
+      );
+  }
+```
+
+<Canvas>
+  <Story args={{}} name="Default" />
+</Canvas>
+
+<ArgsTable story="Default" />

@@ -135,7 +135,7 @@
     "build:clean": "rimraf dist/*",
     "build:components": "cross-env NODE_ENV=production babel src --extensions \".ts,.tsx\" --out-dir dist --config-file ./.babelrc.build.js",
     "build:icons": "bin/buildIcons",
-    "build:declarations": "tsc --project tsconfig.build.json",
+    "build:declarations": "tsc --project tsconfig.build.json --emitDeclarationOnly",
     "build:copy": "npm run copy",
     "build-storybook": "build-storybook -o ./storybook-static/www -s ./public",
     "build-storybook:dockerprep": "build-storybook -o ./storybook-static/www -s ./public && cp Dockerfile ./storybook-static/Dockerfile",
@@ -158,7 +158,7 @@
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
-    "test:types": "tsc --noEmit",
+    "test:types": "tsc --project tsconfig.build.json --noEmit",
     "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",

@@ -4,8 +4,17 @@
     "allowJs": true,
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": true,
     "outDir": "./dist",
     "sourceMap": true
-  }
+  },
+  "exclude": [
+    "./.storybook/*",
+    "./lib/*",
+    "./node_modules/*",
+    "./src/**/*.stories.*",
+    "./src/**/*.test.*",
+    "./storybook-static/*",
+    "**/test/*",
+    "**/icons/*"
+  ],
 }

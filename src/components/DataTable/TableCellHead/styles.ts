@@ -35,9 +35,9 @@ export const StyledChevronUp = styled(ChevronUp)<
   color: clsx(
     colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
     colorProp === 'primary' &&
-    Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+      Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
     colorProp === 'secondary' &&
-    Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+      Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
   ),
   cursor: 'pointer',
   fontSize: theme.typography.fontSize,
@@ -54,9 +54,9 @@ export const StyledChevronDown = styled(ChevronDown)<
   color: clsx(
     colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
     colorProp === 'primary' &&
-    Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+      Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
     colorProp === 'secondary' &&
-    Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+      Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
   ),
   cursor: 'pointer',
   fontSize: theme.typography.fontSize,
@@ -103,9 +103,9 @@ export const StyledTableCell = styled(TableCell)<
       backgroundColor: clsx(
         color === 'default' && grey[300],
         color === 'primary' &&
-        Color(theme.palette.primary.main).darken(0.15).hex(),
+          Color(theme.palette.primary.main).darken(0.15).hex(),
         color === 'secondary' &&
-        Color(theme.palette.secondary.main).darken(0.15).hex(),
+          Color(theme.palette.secondary.main).darken(0.15).hex(),
       ),
     } as React.CSSProperties;
   }

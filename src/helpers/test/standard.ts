@@ -10,12 +10,12 @@ import React from 'react';
 import snapshot from './snapshot';
 import accessibility from './accessibility';
 import { RenderOptions } from '@testing-library/react';
-import { RunOptions } from 'axe-core';
+import { JestAxeConfigureOptions } from 'jest-axe';
 
 export default function standard(
   Component: React.ReactElement,
   renderOptions?: RenderOptions,
-  runOptions?: RunOptions,
+  runOptions?: JestAxeConfigureOptions,
 ): void {
   snapshot(Component, renderOptions);
   accessibility(Component, renderOptions, runOptions);
