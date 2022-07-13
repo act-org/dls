@@ -7,17 +7,17 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { TableCellProps } from '@mui/material';
+import { FC, ReactElement } from 'react';
 
 import { StyledTableCell } from './styles';
 
 export type TableCellBodyProps = TableCellProps;
 
-export const TableCellBody: React.FC<TableCellBodyProps> = ({
+export const TableCellBody: FC<TableCellBodyProps> = ({
   classes: classesProp,
   ...otherProps
-}: TableCellBodyProps): React.ReactElement<unknown> => (
+}: TableCellBodyProps): ReactElement<unknown> => (
   <StyledTableCell
     classes={classesProp}
     component="td"

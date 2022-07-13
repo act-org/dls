@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { action } from '@storybook/addon-actions';
-import pluralize from 'pluralize';
-import { round } from 'lodash';
 import { Story } from '@storybook/react/types-6-0';
+import { round } from 'lodash';
+import pluralize from 'pluralize';
+import { ReactElement } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
@@ -41,7 +41,7 @@ export const Template: Story<IdleTimerProps> = ({
       timeoutMs={timeoutMs}
       {...otherProps}
     >
-      {({ remainingTimeMs }): React.ReactElement<unknown> => {
+      {({ remainingTimeMs }): ReactElement<unknown> => {
         const remainingTimeSeconds = round(remainingTimeMs / 1000, 0);
 
         return (

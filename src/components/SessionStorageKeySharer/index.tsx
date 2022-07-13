@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import * as React from 'react';
 import JSONParseSafe from 'json-parse-safe';
+import { FC, useEffect } from 'react';
 
 import useLocalStorage from '~/hooks/useLocalStorage';
 
@@ -17,9 +17,10 @@ export interface SessionStorageKeySharerProps {
   onSetKeyValue?: (keyValue: any) => void;
 }
 
-export const SessionStorageKeySharer: React.FC<
-  SessionStorageKeySharerProps
-> = ({ keyName, onSetKeyValue }: SessionStorageKeySharerProps): null => {
+export const SessionStorageKeySharer: FC<SessionStorageKeySharerProps> = ({
+  keyName,
+  onSetKeyValue,
+}: SessionStorageKeySharerProps): null => {
   const LOCAL_STORAGE_KEY_REQUEST = `REQUEST-${keyName}`;
 
   const sessionStorageKeyValue = sessionStorage.getItem(keyName) || '';
@@ -39,7 +40,7 @@ export const SessionStorageKeySharer: React.FC<
 
   // If we don't have the session key, request it from other tab(s) that
   // may have it in their Session Storage.
-  React.useEffect((): void => {
+  useEffect((): void => {
     if (!sessionStorageKeyValueParsed) {
       setLocalStorageKeyRequest('true');
     }
@@ -47,7 +48,7 @@ export const SessionStorageKeySharer: React.FC<
 
   // If another tab requests the session key and we have it, provide it
   // to Local Storage and terminate the request.
-  React.useEffect((): void => {
+  useEffect((): void => {
     if (localStorageKeyRequestParsed && sessionStorageKeyValueParsed) {
       setLocalStorageSession(sessionStorageKeyValueParsed);
     }
@@ -57,7 +58,7 @@ export const SessionStorageKeySharer: React.FC<
 
   // If we see the session key posted to Local Storage, let's set it in our
   // own Session Storage and remove it from Local Storage.
-  React.useEffect((): void => {
+  useEffect((): void => {
     if (localStorageKeyValueParsed && !sessionStorageKeyValueParsed) {
       sessionStorage.setItem(keyName, localStorageKeyValueParsed);
       if (onSetKeyValue) {

@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { AppBarProps, Grid } from '@mui/material';
+import { FC, ReactElement } from 'react';
 
 import RenderLogo, { RenderLogoProps } from './RenderLogo';
 import RenderNavigationItem, {
@@ -19,7 +19,7 @@ import { StyledAppBar, StyledGrid } from './styles';
 export interface AppBarNavigationProps {
   appBarHeight?: number;
   AppBarProps?: AppBarProps;
-  headerRightElement?: React.ReactElement<unknown>;
+  headerRightElement?: ReactElement<unknown>;
   RenderLogoProps: RenderLogoProps;
   navigationItems: RenderNavigationItemProps[];
 }
@@ -31,13 +31,13 @@ export interface AppBarNavigationProps {
  *
  * @param props
  */
-export const AppBarNavigation: React.FC<AppBarNavigationProps> = ({
+export const AppBarNavigation: FC<AppBarNavigationProps> = ({
   appBarHeight,
   AppBarProps: appBarProps,
   headerRightElement,
   RenderLogoProps: logoProps,
   navigationItems,
-}: AppBarNavigationProps): React.ReactElement<AppBarNavigationProps> => (
+}: AppBarNavigationProps): ReactElement<AppBarNavigationProps> => (
   <StyledAppBar
     appBarHeight={appBarHeight || 72}
     color="transparent"
@@ -47,7 +47,7 @@ export const AppBarNavigation: React.FC<AppBarNavigationProps> = ({
 
     <StyledGrid container spacing={4}>
       {navigationItems.map(
-        (n: RenderNavigationItemProps): React.ReactElement<unknown> => (
+        (n: RenderNavigationItemProps): ReactElement<unknown> => (
           <Grid item key={n.title}>
             <RenderNavigationItem {...n} />
           </Grid>

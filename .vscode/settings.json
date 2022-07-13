@@ -3,8 +3,16 @@
   "editor.formatOnPaste": true,
   "git.ignoreLimitWarning": true,
   "editor.tabSize": 2,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.fixAll",
+    "source.addMissingImports"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

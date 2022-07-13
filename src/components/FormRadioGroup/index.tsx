@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   FormControl,
   FormControlProps,
   RadioGroup,
   RadioGroupProps,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
 import { FormRadio, FormRadioProps } from '~/components/FormRadio';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
@@ -41,7 +41,7 @@ export function FormRadioGroup({
   helpText,
   name,
   ...radioGroupProps
-}: FormRadioGroupProps): React.ReactElement<FormRadioGroupProps> {
+}: FormRadioGroupProps): ReactElement<FormRadioGroupProps> {
   return (
     <FormControl {...formControlProps}>
       <InputLabel helpText={helpText}>{label}</InputLabel>

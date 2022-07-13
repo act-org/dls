@@ -7,18 +7,18 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
-  MenuItem,
   FormControl,
   FormControlProps,
+  MenuItem,
   Select,
   SelectProps,
   Tooltip,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
-import AlertOutline from '~/icons/AlertOutline';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
+import AlertOutline from '~/icons/AlertOutline';
 
 export interface SelectOption {
   disabled?: boolean;
@@ -52,7 +52,7 @@ export function FormSelect({
   placeholderIsDisabled,
   required,
   ...selectProps
-}: FormSelectProps): React.ReactElement<FormSelectProps> {
+}: FormSelectProps): ReactElement<FormSelectProps> {
   return (
     <FormControl {...formControlProps} fullWidth={fullWidth}>
       <InputLabel

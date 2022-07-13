@@ -7,10 +7,10 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Button, ButtonProps, IconProps, TypographyProps } from '@mui/material';
-import { isString } from 'lodash';
 import { styled } from '@mui/material/styles';
+import { isString } from 'lodash';
+import { ComponentClass, CSSProperties, FC, ReactElement } from 'react';
 
 import {
   StyledContainer,
@@ -24,16 +24,16 @@ export interface EmptyStateProps {
   buttonProps?: ButtonProps;
   description?: any;
   descriptionTypographyProps?: TypographyProps;
-  Icon?: React.FC<any> | React.ComponentClass<any>;
+  Icon?: FC<any> | ComponentClass<any>;
   iconProps?: IconProps;
-  style?: React.CSSProperties;
-  title?: string | React.ReactElement<unknown>;
+  style?: CSSProperties;
+  title?: string | ReactElement<unknown>;
   titleTypographyProps?: TypographyProps & {
     component?: string;
   };
 }
 
-export const EmptyState: React.FC<EmptyStateProps> = ({
+export const EmptyState: FC<EmptyStateProps> = ({
   buttonProps,
   description,
   descriptionTypographyProps,
@@ -42,7 +42,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   style,
   title,
   titleTypographyProps,
-}: EmptyStateProps): React.ReactElement<EmptyStateProps> => {
+}: EmptyStateProps): ReactElement<EmptyStateProps> => {
   const StyledIcon = Icon
     ? styled(Icon)<
         IconProps & {

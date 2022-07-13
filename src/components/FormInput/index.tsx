@@ -7,21 +7,21 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
-  Input,
-  InputProps,
   FormControl,
   FormControlProps,
+  Input,
+  InputProps,
   Tooltip,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
-import AlertOutline from '~/icons/AlertOutline';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
+import AlertOutline from '~/icons/AlertOutline';
 
 export type FormInputProps = InputProps & {
-  label?: string | React.ReactElement;
-  helpText?: string | React.ReactElement;
+  label?: string | ReactElement;
+  helpText?: string | ReactElement;
   errorMessage?: string;
   labelProps?: InputLabelProps;
   formControlProps?: FormControlProps;
@@ -47,7 +47,7 @@ export function FormInput({
   fullWidth,
   formControlProps,
   ...formInputProps
-}: FormInputProps): React.ReactElement<FormInputProps> {
+}: FormInputProps): ReactElement<FormInputProps> {
   return (
     <FormControl {...formControlProps} fullWidth={fullWidth}>
       <InputLabel

@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   Box,
   Dialog as MuiDialog,
@@ -15,6 +14,7 @@ import {
   DialogTitle,
   IconButton,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
 import CloseCircle from '~/icons/CloseCircle';
 
@@ -38,7 +38,7 @@ export function Dialog({
   onClose,
   children,
   ...dialogProps
-}: DialogProps): React.ReactElement<DialogProps> {
+}: DialogProps): ReactElement<DialogProps> {
   return (
     <MuiDialog {...dialogProps} onClose={onClose}>
       {title && (

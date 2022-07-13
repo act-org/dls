@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { TableCellProps } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { CSSProperties, FC, ReactElement } from 'react';
 
 import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { SortDirection, SortObject } from '~/types';
@@ -23,15 +23,15 @@ import {
 } from './styles';
 
 export interface TableCellHeadProps extends TableCellProps {
-  children: string | React.ReactElement<unknown>;
+  children: string | ReactElement<unknown>;
   color?: 'default' | 'primary' | 'secondary';
   currentSortObject: SortObject;
   onChangeSort: (sortObject: SortObject) => void;
   sortBy?: string;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 }
 
-export const TableCellHead: React.FC<TableCellHeadProps> = ({
+export const TableCellHead: FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
   color,
@@ -40,12 +40,12 @@ export const TableCellHead: React.FC<TableCellHeadProps> = ({
   sortBy,
   style,
   ...props
-}: TableCellHeadProps): React.ReactElement<unknown> => {
+}: TableCellHeadProps): ReactElement<unknown> => {
   const { palette } = useTheme();
 
   const sortIsApplied: boolean = sortBy === currentSortObject.sortBy;
 
-  const getStyleForIcon = (direction: SortDirection): React.CSSProperties => {
+  const getStyleForIcon = (direction: SortDirection): CSSProperties => {
     if (!sortIsApplied || currentSortObject.sortDirection !== direction) {
       return {};
     }

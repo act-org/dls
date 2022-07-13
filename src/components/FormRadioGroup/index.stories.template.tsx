@@ -7,16 +7,16 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
 import { FormRadioGroup, FormRadioGroupProps } from '.';
 
 export const Template: Story<FormRadioGroupProps> = args => {
-  const [state, setState] = React.useState<string>('one');
+  const [state, setState] = useState<string>('one');
   const clickAction = action('click');
   return (
     <FormRadioGroup

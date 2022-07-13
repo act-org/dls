@@ -7,15 +7,15 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
-  FormControl,
-  FormControlProps,
-  FormControlLabel,
-  FormControlLabelProps,
   Checkbox,
   CheckboxProps,
+  FormControl,
+  FormControlLabel,
+  FormControlLabelProps,
+  FormControlProps,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
 export type FormCheckboxProps = CheckboxProps & {
   /**
@@ -44,7 +44,7 @@ export function FormCheckbox({
   fullWidth,
   formControlProps,
   ...formSwitchProps
-}: FormCheckboxProps): React.ReactElement<FormCheckboxProps> {
+}: FormCheckboxProps): ReactElement<FormCheckboxProps> {
   return (
     <FormControl {...formControlProps} fullWidth={fullWidth}>
       <FormControlLabel

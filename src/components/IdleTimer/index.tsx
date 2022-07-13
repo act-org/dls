@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+import { FC, ReactElement, useEffect, useState } from 'react';
 import { useIdleTimer } from 'react-idle-timer';
 
 export interface IdleTimerProps {
@@ -17,7 +17,7 @@ export interface IdleTimerProps {
   }: {
     remainingTimeMs: number;
     reset: () => void;
-  }) => React.ReactElement<unknown> | null;
+  }) => ReactElement<unknown> | null;
   onAction?: (event?: any) => void;
   onActive?: (event?: any) => void;
   onIdle?: (event?: any) => void;
@@ -25,15 +25,15 @@ export interface IdleTimerProps {
   timeoutMs: number;
 }
 
-export const IdleTimer: React.FC<IdleTimerProps> = ({
+export const IdleTimer: FC<IdleTimerProps> = ({
   children,
   onAction,
   onActive,
   onIdle,
   stopOnIdle,
   timeoutMs,
-}: IdleTimerProps): React.ReactElement<unknown> | null => {
-  const [remainingTimeMs, setRemainingTimeMs] = React.useState(timeoutMs);
+}: IdleTimerProps): ReactElement<unknown> | null => {
+  const [remainingTimeMs, setRemainingTimeMs] = useState(timeoutMs);
 
   const { getRemainingTime, reset } = useIdleTimer({
     debounce: 250,
@@ -60,7 +60,7 @@ export const IdleTimer: React.FC<IdleTimerProps> = ({
     setRemainingTimeMs(getRemainingTime());
   };
 
-  React.useEffect((): (() => void) => {
+  useEffect((): (() => void) => {
     const interval = setInterval((): void => {
       refresh();
     }, 1000);

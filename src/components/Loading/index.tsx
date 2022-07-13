@@ -7,22 +7,22 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { CircularProgress, CircularProgressProps } from '@mui/material';
+import { CSSProperties, FC, ReactElement } from 'react';
 
 import { StyledContainer, StyledTypography } from './styles';
 
 export interface LoadingProps {
   circularProgressProps?: CircularProgressProps;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
   title?: string;
 }
 
-export const Loading: React.FC<LoadingProps> = ({
+export const Loading: FC<LoadingProps> = ({
   circularProgressProps,
   style,
   title,
-}: LoadingProps): React.ReactElement<LoadingProps> => (
+}: LoadingProps): ReactElement<LoadingProps> => (
   <StyledContainer aria-label={title} data-testid="loading" style={style}>
     <CircularProgress
       size={24}

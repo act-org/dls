@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { noop } from 'lodash';
+import { FC, ReactElement, useEffect, useState } from 'react';
 
 import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
@@ -20,7 +20,7 @@ export interface SessionTimerProps {
   }: {
     remainingTimeStageOne: number;
     remainingTimeStageTwo: number;
-  }) => React.ReactElement<unknown> | null;
+  }) => ReactElement<unknown> | null;
   expiresAt: Date;
   onExpire: () => void;
   onKeepAlive: () => void;
@@ -28,20 +28,20 @@ export interface SessionTimerProps {
   tokenMaxAgeMs: number;
 }
 
-export const SessionTimer: React.FC<SessionTimerProps> = ({
+export const SessionTimer: FC<SessionTimerProps> = ({
   children,
   expiresAt,
   onExpire,
   onKeepAlive,
   promptWithMsRemaining,
   tokenMaxAgeMs,
-}: SessionTimerProps): React.ReactElement<unknown> | null => {
-  const [stageOneIsIdle, setStageOneIsIdle] = React.useState(false);
-  const [tick, setTick] = React.useState(0);
+}: SessionTimerProps): ReactElement<unknown> | null => {
+  const [stageOneIsIdle, setStageOneIsIdle] = useState(false);
+  const [tick, setTick] = useState(0);
 
   const stageTwoTimeoutMs = tokenMaxAgeMs - promptWithMsRemaining;
 
-  React.useEffect((): (() => void) => {
+  useEffect((): (() => void) => {
     if (typeof window !== 'undefined') {
       const timeUntilExpirationMs = new Date(expiresAt).getTime() - Date.now();
 
@@ -78,7 +78,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
       {({
         remainingTimeMs: remainingTimeStageOne,
         reset,
-      }): React.ReactElement<unknown> | null => {
+      }): ReactElement<unknown> | null => {
         // The user has been idle for the entire first stage.
         if (remainingTimeStageOne === 0) {
           return (
@@ -98,7 +98,7 @@ export const SessionTimer: React.FC<SessionTimerProps> = ({
             >
               {({
                 remainingTimeMs: remainingTimeStageTwo,
-              }): React.ReactElement<unknown> | null => {
+              }): ReactElement<unknown> | null => {
                 // The user has been idle for the entire first and second stages.
                 if (remainingTimeStageTwo === 0) {
                   return (

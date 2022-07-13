@@ -7,26 +7,26 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Link, LinkProps } from '@mui/material';
 import { linkClasses } from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
+import { ComponentType, FC, ReactElement } from 'react';
 
 import { StyledTypography } from './styles';
 
 export interface RenderNavigationItemProps {
   isActive?: boolean;
-  LinkComponent?: React.ComponentType;
+  LinkComponent?: ComponentType;
   LinkProps: any;
   title: string;
 }
 
-const RenderNavigationItem: React.FC<RenderNavigationItemProps> = ({
+const RenderNavigationItem: FC<RenderNavigationItemProps> = ({
   isActive,
   LinkComponent,
   LinkProps: linkProps,
   title,
-}: RenderNavigationItemProps): React.ReactElement<RenderNavigationItemProps> => {
+}: RenderNavigationItemProps): ReactElement<RenderNavigationItemProps> => {
   const StyledLink = styled(LinkComponent || Link)<LinkProps>(() => ({
     [`&.${linkClasses.root}`]: {
       '&, &:hover': {

@@ -2,14 +2,14 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { isFunction } from 'lodash';
+import { useEffect, useState } from 'react';
 
 const useLocalStorage = (
   key: string,
   initValue = '',
 ): [string, (v: string) => void] => {
-  const [storedValue, setStoredValue] = React.useState(() => {
+  const [storedValue, setStoredValue] = useState(() => {
     try {
       const item = window.localStorage.getItem(key);
 
@@ -26,7 +26,7 @@ const useLocalStorage = (
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     try {
       window.addEventListener('storage', handleStorage);
     } catch (err) {

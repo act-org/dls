@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { InputLabelProps as MuiInputLabelProps, Tooltip } from '@mui/material';
+import { FC, ReactElement } from 'react';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
 
@@ -21,7 +21,7 @@ export interface InputLabelProps extends MuiInputLabelProps {
   /**
    * Add a tooltip to the label for some additional context information
    */
-  helpText?: string | React.ReactElement;
+  helpText?: string | ReactElement;
   /**
    * The placement of the tool tip text.  The default is right
    */
@@ -48,14 +48,14 @@ export interface InputLabelProps extends MuiInputLabelProps {
  * a molecule does not exist for your use case.
  * @param InputProps
  */
-export const InputLabel: React.FC<InputLabelProps> = ({
+export const InputLabel: FC<InputLabelProps> = ({
   classes: classesProp,
   children,
   required,
   helpText,
   helpPlacement,
   ...otherProps
-}: InputLabelProps): React.ReactElement<InputLabelProps> => (
+}: InputLabelProps): ReactElement<InputLabelProps> => (
   <StyledInputLabel classes={classesProp} {...otherProps}>
     <div className="label-split">
       <span className="label-help">

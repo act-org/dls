@@ -7,15 +7,15 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   FormControl,
-  FormControlProps,
   FormControlLabel,
   FormControlLabelProps,
+  FormControlProps,
   Switch,
   SwitchProps,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
 export type FormSwitchProps = SwitchProps & {
   /**
@@ -44,7 +44,7 @@ export function FormSwitch({
   fullWidth,
   formControlProps,
   ...formSwitchProps
-}: FormSwitchProps): React.ReactElement<FormSwitchProps> {
+}: FormSwitchProps): ReactElement<FormSwitchProps> {
   return (
     <FormControl {...formControlProps} fullWidth={fullWidth}>
       <FormControlLabel

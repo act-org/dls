@@ -7,28 +7,28 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 import {
   DataGrid as MuiDataGrid,
   DataGridProps as MuiDataGridProps,
+  GridColDef,
   GridValueGetterParams,
 } from '@mui/x-data-grid';
 import { Story } from '@storybook/react/types-6-0';
-
-import { Playground } from '~/helpers/playground';
+import { useState } from 'react';
 
 export const DataGrid = MuiDataGrid;
 export type DataGridProps = MuiDataGridProps;
+type PropType<TObj, TProp extends keyof TObj> = TObj[TProp];
 
 interface StoryProps extends DataGridProps {
   editable?: boolean;
   filterable?: boolean;
-  renderCell?: any;
+  renderCell?: PropType<GridColDef, 'renderCell'>;
   sortable?: boolean;
 }
-
-export const Template: Story<StoryProps> = ({
+type DefaultProps = { defaultProps: Record<string, unknown> };
+export const Template: Story<StoryProps> & DefaultProps = ({
   autoHeight,
   autoPageSize,
   editable,
@@ -39,7 +39,7 @@ export const Template: Story<StoryProps> = ({
   sortable,
   ...otherProps
 }: StoryProps) => {
-  const [page, setPage] = React.useState(pageProps || 0);
+  const [page, setPage] = useState(pageProps || 0);
 
   return (
     <div
@@ -49,6 +49,7 @@ export const Template: Story<StoryProps> = ({
       }}
     >
       <DataGrid
+        {...otherProps}
         autoHeight={autoHeight || autoPageSize}
         autoPageSize={autoPageSize}
         columns={[
@@ -104,9 +105,9 @@ export const Template: Story<StoryProps> = ({
             sortable,
             type: 'string',
             valueGetter: (params: GridValueGetterParams): string =>
-              `${params.getValue(params.id, 'firstName') || ''} ${
-                params.getValue(params.id, 'lastName') || ''
-              }`,
+              // don't wrap the next line
+              // eslint-disable-next-line prettier/prettier
+              `${params.getValue(params.id, 'firstName') || ''} ${params.getValue(params.id, 'lastName') || ''}`,
           },
           {
             align: 'right',
@@ -124,18 +125,12 @@ export const Template: Story<StoryProps> = ({
         ]}
         onCellClick={action('onCellClick')}
         onCellDoubleClick={action('onCellDoubleClick')}
-        onCellModeChange={action('onCellModeChange')}
         onColumnHeaderClick={action('onColumnHeaderClick')}
         onColumnHeaderDoubleClick={action('onColumnHeaderDoubleClick')}
         onColumnOrderChange={action('onColumnOrderChange')}
-        onColumnResize={action('onColumnResize')}
         onColumnVisibilityChange={action('onColumnVisibilityChange')}
-        onColumnWidthChange={action('onColumnWidthChange')}
-        onEditCellChange={action('onEditCellChange')}
-        onEditCellChangeCommitted={action('onEditCellChangeCommitted')}
-        onEditRowModelChange={action('onEditRowModelChange')}
         onFilterModelChange={action('onFilterModelChange')}
-        onPageChange={({ page: p }): void => {
+        onPageChange={(p): void => {
           setPage(p);
 
           action('onPageChange')();
@@ -207,7 +202,6 @@ export const Template: Story<StoryProps> = ({
         ]}
         rowsPerPageOptions={[5, 10, 20]}
         sortingMode="client"
-        {...otherProps}
       />
     </div>
   );

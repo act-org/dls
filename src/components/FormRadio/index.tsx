@@ -7,20 +7,20 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   FormControlLabel,
   FormControlLabelProps,
   Radio,
   RadioProps,
 } from '@mui/material';
+import { ReactElement } from 'react';
 
 export type FormRadioProps = RadioProps & {
   /**
    * Unique ID for the input.  This is required
    */
   id: string;
-  label: string | React.ReactElement;
+  label: string | ReactElement;
   labelProps?: FormControlLabelProps;
 };
 
@@ -37,7 +37,7 @@ export function FormRadio({
   label,
   value,
   ...formSwitchProps
-}: FormRadioProps): React.ReactElement<FormRadioProps> {
+}: FormRadioProps): ReactElement<FormRadioProps> {
   return (
     <FormControlLabel
       id={id}

@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { MenuItem, TextField } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
@@ -18,14 +18,15 @@ import { GridGenerator, GridGeneratorProps } from '.';
 export const Template: Story<GridGeneratorProps> = (
   props: GridGeneratorProps,
 ) => {
-  const [value1, setValue1] = React.useState('Value 1');
-  const [value2, setValue2] = React.useState('Value 2');
-  const [value3, setValue3] = React.useState('undefined');
-  const [value4, setValue4] = React.useState('Value 4');
-  const [value5, setValue5] = React.useState('Value 5');
+  const [value1, setValue1] = useState('Value 1');
+  const [value2, setValue2] = useState('Value 2');
+  const [value3, setValue3] = useState('undefined');
+  const [value4, setValue4] = useState('Value 4');
+  const [value5, setValue5] = useState('Value 5');
 
   return (
     <GridGenerator
+      {...props}
       groups={[
         [
           {
@@ -124,7 +125,6 @@ export const Template: Story<GridGeneratorProps> = (
           },
         ],
       ]}
-      {...props}
     />
   );
 };

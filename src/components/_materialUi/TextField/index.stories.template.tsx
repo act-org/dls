@@ -7,14 +7,13 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   TextField as MuiTextField,
   TextFieldProps as MuiTextFieldProps,
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
+import { useState } from 'react';
 
 export const TextField = MuiTextField;
 export type TextFieldProps = MuiTextFieldProps;
@@ -23,7 +22,7 @@ export const Template: Story<TextFieldProps> = ({
   value,
   ...props
 }: TextFieldProps) => {
-  const [textValue, setTextValue] = React.useState(String(value || ''));
+  const [textValue, setTextValue] = useState(String(value || ''));
 
   return (
     <TextField

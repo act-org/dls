@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { PaperProps } from '@mui/material';
+import { FC, ReactElement } from 'react';
 
 import { StyledPaper } from './styles';
 
-const Component: React.FC = (
-  props: PaperProps,
-): React.ReactElement<unknown> => <StyledPaper elevation={0} {...props} />;
+const Component: FC = (props: PaperProps): ReactElement<unknown> => (
+  <StyledPaper elevation={0} {...props} />
+);
 
 export default Component;

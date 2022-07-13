@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { GridProps } from '@mui/material';
+import { FC, ReactElement } from 'react';
 
 import { StyledGridContainer, StyledGridItem } from './styles';
 
 interface IGridContent {
-  children: React.ReactElement<unknown>;
+  children: ReactElement<unknown>;
   key: string;
 }
 
@@ -25,7 +25,7 @@ export interface GridGeneratorProps {
   gridItemProps?: GridProps;
 }
 
-export const GridGenerator: React.FC<GridGeneratorProps> = ({
+export const GridGenerator: FC<GridGeneratorProps> = ({
   groups,
   gridContainerProps,
   gridItemProps,
@@ -33,7 +33,7 @@ export const GridGenerator: React.FC<GridGeneratorProps> = ({
   <>
     {/* eslint-disable react/no-array-index-key */}
     {groups.map(
-      (group, i): React.ReactElement<unknown> => (
+      (group, i): ReactElement<unknown> => (
         <StyledGridContainer
           container
           key={i}
@@ -41,7 +41,7 @@ export const GridGenerator: React.FC<GridGeneratorProps> = ({
           {...gridContainerProps}
         >
           {group.map(
-            (gridItem): React.ReactElement<unknown> => (
+            (gridItem): ReactElement<unknown> => (
               <StyledGridItem item key={gridItem.key} xs {...gridItemProps}>
                 {gridItem.children}
               </StyledGridItem>

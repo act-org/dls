@@ -21,7 +21,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root css-19fxcl9-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >

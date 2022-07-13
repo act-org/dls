@@ -11,9 +11,9 @@ import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
-import { ConfirmationDialog, ConfirmDialogProps } from '.';
 import { Box, Button } from '@mui/material';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { ConfirmationDialog, ConfirmDialogProps } from '.';
 
 export const Template: Story<ConfirmDialogProps> = (
   props: ConfirmDialogProps,

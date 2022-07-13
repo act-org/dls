@@ -7,16 +7,16 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
+import { ChangeEvent, useState } from 'react';
 
-import { FormInput, FormInputProps } from '.';
 import { Playground } from '~/helpers/playground';
+import { FormInput, FormInputProps } from '.';
 
 export const Template: Story<FormInputProps> = args => {
   const { value } = args;
-  const [state, setState] = React.useState<string>(value || '');
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+  const [state, setState] = useState<string>((value as string) || '');
+  const onChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setState(e.target.value);
   };
   return <FormInput onChange={onChange} value={state} {...args} />;

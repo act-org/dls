@@ -7,12 +7,12 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   InputAdornment,
   OutlinedInput,
   OutlinedInputProps,
 } from '@mui/material';
+import { ReactElement, useState } from 'react';
 
 import CloseCircle from '~/icons/CloseCircle';
 import Magnify from '~/icons/Magnify';
@@ -32,10 +32,8 @@ export function SearchBar({
   value,
   onChange,
   ...searchBarProps
-}: SearchBarProps): React.ReactElement<SearchBarProps> {
-  const [internalValue, setValue] = React.useState<string>(
-    (value || '') as string,
-  );
+}: SearchBarProps): ReactElement<SearchBarProps> {
+  const [internalValue, setValue] = useState<string>((value || '') as string);
 
   return (
     <OutlinedInput

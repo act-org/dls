@@ -9,12 +9,12 @@
 
 /* eslint-disable react/display-name */
 
-import * as React from 'react';
-import { Alert as MiuAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
 import { AlertProps as MuiAlertProps } from '@mui/lab';
+import { Alert as MiuAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
+import { FC, forwardRef, ReactElement } from 'react';
 
 export type AlertProps = MuiAlertProps & {
-  title?: string | React.ReactElement;
+  title?: string | ReactElement;
 };
 
 /**
@@ -27,11 +27,11 @@ export type AlertProps = MuiAlertProps & {
  *
  * @param props
  */
-export const Alert: React.FC<AlertProps> = React.forwardRef(
+export const Alert: FC<AlertProps> = forwardRef(
   (
     { children, title, ...props }: AlertProps,
     ref,
-  ): React.ReactElement<AlertProps> => {
+  ): ReactElement<AlertProps> => {
     return (
       <MiuAlert ref={ref} {...props}>
         {title && <MuiAlertTitle>{title}</MuiAlertTitle>}

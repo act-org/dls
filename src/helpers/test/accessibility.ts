@@ -7,11 +7,11 @@
  * @prettier
  */
 
+import { configure, RenderOptions } from '@testing-library/react';
+import { axe, JestAxeConfigureOptions, toHaveNoViolations } from 'jest-axe';
 import React from 'react';
-import THEMES from './themes';
 import render from './render';
-import { RenderOptions } from '@testing-library/react';
-import { axe, toHaveNoViolations, JestAxeConfigureOptions } from 'jest-axe';
+import THEMES from './themes';
 
 expect.extend(toHaveNoViolations);
 // eslint-disable-next-line jest/no-export
@@ -20,6 +20,9 @@ export default function accessibility(
   renderOptions?: RenderOptions,
   axeOptions?: JestAxeConfigureOptions,
 ): void {
+  configure({
+    computedStyleSupportsPseudoElements: false,
+  });
   test.each(THEMES)(
     '%s theme should not have accessibility issues',
     async theme => {

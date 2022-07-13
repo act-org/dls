@@ -8,7 +8,6 @@
  */
 
 import * as locales from '@mui/material/locale';
-import * as React from 'react';
 import {
   createTheme,
   StyledEngineProvider,
@@ -17,6 +16,7 @@ import {
 } from '@mui/material/styles';
 
 import { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider';
+import { FC, ReactElement } from 'react';
 
 import { THEME_ACT } from '~/styles/themeAct';
 import { THEME_ACT_ET } from '~/styles/themeActEt';
@@ -75,11 +75,11 @@ export interface ThemeProviderProps extends MuiThemeProviderProps {
  *
  * @param themeProps
  */
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({
+export const ThemeProvider: FC<ThemeProviderProps> = ({
   theme,
   locale,
   ...themeProps
-}: ThemeProviderProps): React.ReactElement<ThemeProviderProps> => {
+}: ThemeProviderProps): ReactElement<ThemeProviderProps> => {
   let themeImpl: Theme;
   switch (theme) {
     case 'ACT':
