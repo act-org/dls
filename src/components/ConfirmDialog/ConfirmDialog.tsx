@@ -98,7 +98,7 @@ export type ConfirmDialogProps = {
  * controlling the open state property and then listening for the various close events,
  * however the simplest usage for this is the use the ConfirmProvider and useConfirm hook
  */
-export const ConfirmationDialog = (props: ConfirmDialogProps): ReactElement => {
+export const ConfirmDialog = (props: ConfirmDialogProps): ReactElement => {
   const {
     isOpen = false,
     onCancel,
@@ -156,7 +156,7 @@ export const ConfirmationDialog = (props: ConfirmDialogProps): ReactElement => {
   );
 };
 
-ConfirmationDialog.defaultProps = {
+ConfirmDialog.defaultProps = {
   allowClose: true,
   cancellationText: 'Cancel',
   confirmationText: 'Ok',
@@ -164,4 +164,4 @@ ConfirmationDialog.defaultProps = {
   title: 'Confirmation',
 } as ConfirmDialogProps;
 
-export default ConfirmationDialog;
+export default ConfirmDialog;

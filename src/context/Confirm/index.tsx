@@ -6,7 +6,5 @@
  *
  * @prettier
  */
-
-export * from './components';
-export * from './context';
-export * from './hooks';
+export * from './confirmContext';
+export * from './confirmProvider';

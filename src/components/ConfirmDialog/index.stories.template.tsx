@@ -13,7 +13,7 @@ import { Playground } from '~/helpers/playground';
 
 import { Box, Button } from '@mui/material';
 import { useState } from 'react';
-import { ConfirmationDialog, ConfirmDialogProps } from '.';
+import { ConfirmDialog, ConfirmDialogProps } from '.';
 
 export const Template: Story<ConfirmDialogProps> = (
   props: ConfirmDialogProps,
@@ -31,7 +31,7 @@ export const Template: Story<ConfirmDialogProps> = (
       <Button color="primary" onClick={openDialog} variant="contained">
         open
       </Button>
-      <ConfirmationDialog
+      <ConfirmDialog
         {...props}
         isOpen={isOpen}
         onCancel={closeDialog}
@@ -53,5 +53,5 @@ export const argTypes = Playground(
     isOpen: {},
     allowClose: {},
   },
-  ConfirmationDialog,
+  ConfirmDialog,
 );

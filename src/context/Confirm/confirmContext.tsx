@@ -8,9 +8,13 @@
  */
 
 import { createContext } from 'react';
-import { ConfirmDialogProps } from './ConfirmationDialog';
+import { ConfirmDialogProps } from '../../components/ConfirmDialog';
 
 type ConfirmContextType = (options?: ConfirmDialogProps) => Promise<boolean>;
+/**
+ * This is an internal type form the ConfirmProvider.  You should use
+ * the ConfirmProvider rather than referencing this directly.
+ */
 export const ConfirmContext = createContext<ConfirmContextType>(() =>
   Promise.resolve(true),
 );

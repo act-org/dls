@@ -11,14 +11,11 @@ import { Story } from '@storybook/react/types-6-0';
 
 import { Playground } from '~/helpers/playground';
 
-import {
-  ConfirmationDialog,
-  ConfirmDialogProps,
-  ConfirmProvider,
-  useConfirm,
-} from '.';
 import { Button } from '@mui/material';
 import { ReactElement } from 'react';
+import { ConfirmDialog, ConfirmDialogProps } from '~/components';
+import { ConfirmProvider } from '~/context';
+import { useConfirm } from '.';
 
 const ConfirmHook = (props: ConfirmDialogProps): ReactElement => {
   const confirm = useConfirm();
@@ -57,5 +54,5 @@ export const argTypes = Playground(
     isOpen: {},
     allowClose: {},
   },
-  ConfirmationDialog,
+  ConfirmDialog,
 );

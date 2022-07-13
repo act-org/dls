@@ -8,8 +8,11 @@
  */
 
 import { useCallback, useState } from 'react';
-import { ConfirmationDialog, ConfirmDialogProps } from './ConfirmationDialog';
-import { ConfirmContext } from './ConfirmContext';
+import {
+  ConfirmDialog,
+  ConfirmDialogProps,
+} from '../../components/ConfirmDialog';
+import { ConfirmContext } from './confirmContext';
 
 type ConfirmCallback = (value: boolean | PromiseLike<boolean>) => void;
 type ConfirmRejection = (reason: unknown) => void;
@@ -32,13 +35,19 @@ export const ConfirmProvider: React.ComponentType<ConfirmProviderProps> = (
 
   const confirm = useCallback(
     (confirmOptions = {}) => {
+      if (resolveHandler) {
+        // There is an existing hook waiting to respond, the user
+        // circumvented the blocking nature of confirms, so we will
+        // auto trigger a default case.
+        resolveHandler(false);
+      }
       // eslint-disable-next-line promise/avoid-new
       return new Promise<boolean>((resolve, reject) => {
         setOptions({ ...options, ...confirmOptions });
         setResolveReject({ reject, resolve });
       });
     },
-    [options],
+    [options, resolveHandler],
   );
 
   const handleClose = useCallback(() => {
@@ -48,22 +57,22 @@ export const ConfirmProvider: React.ComponentType<ConfirmProviderProps> = (
   const handleCancel = useCallback(() => {
     if (resolveHandler) {
       resolveHandler(false);
-      handleClose();
     }
+    handleClose();
   }, [resolveHandler, handleClose]);
 
   const handleConfirm = useCallback(() => {
     if (resolveHandler) {
       resolveHandler(true);
-      handleClose();
     }
+    handleClose();
   }, [resolveHandler, handleClose]);
   return (
     <>
       <ConfirmContext.Provider value={confirm}>
         {children}
       </ConfirmContext.Provider>
-      <ConfirmationDialog
+      <ConfirmDialog
         isOpen={resolveHandler !== undefined}
         onCancel={handleCancel}
         onClose={handleClose}

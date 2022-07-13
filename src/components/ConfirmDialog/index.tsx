@@ -7,6 +7,8 @@
  * @prettier
  */
 
-export * from './components';
-export * from './context';
-export * from './hooks';
+import { ConfirmDialog } from './ConfirmDialog';
+
+export * from './ConfirmDialog';
+
+export default ConfirmDialog;

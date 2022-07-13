@@ -8,8 +8,8 @@
  */
 
 import { useContext } from 'react';
-import { ConfirmDialogProps } from './ConfirmationDialog';
-import { ConfirmContext } from './ConfirmContext';
+import { ConfirmDialogProps } from '../../components/ConfirmDialog';
+import { ConfirmContext } from '../../context/Confirm';
 
 /**
  * Hook to facilitate an easy api for opening a confirmation dialog.  This requires
