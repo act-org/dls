@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import '@testing-library/jest-dom';
 import UserEvent from '@testing-library/user-event';
 import { noop } from 'lodash';
@@ -26,63 +26,63 @@ describe('ConfirmationDialog', () => {
   );
   standard(Component);
 
-  // it('should allow for title props', async () => {
-  //   const rendered = render(
-  //     <ConfirmDialog
-  //       isOpen
-  //       title="Confirmation Test"
-  //       titleProps={{
-  //         title: 'TestPassingTitle',
-  //       }}
-  //     />,
-  //     'ACT',
-  //   );
-  //   const titleTag = rendered.getByTitle('TestPassingTitle');
-  //   expect(titleTag).toBeVisible();
-  // });
+  it('should allow for title props', async () => {
+    const rendered = render(
+      <ConfirmDialog
+        isOpen
+        title="Confirmation Test"
+        titleProps={{
+          title: 'TestPassingTitle',
+        }}
+      />,
+      'ACT',
+    );
+    const titleTag = rendered.getByTitle('TestPassingTitle');
+    expect(titleTag).toBeVisible();
+  });
 
-  // it('should allow for confirm button props', async () => {
-  //   const rendered = render(
-  //     <ConfirmDialog
-  //       confirmationButtonProps={{
-  //         title: 'TestPassingTitle',
-  //       }}
-  //       isOpen
-  //     />,
-  //     'ACT',
-  //   );
-  //   const titleTag = rendered.getByTitle('TestPassingTitle');
-  //   expect(titleTag).toBeVisible();
-  // });
+  it('should allow for confirm button props', async () => {
+    const rendered = render(
+      <ConfirmDialog
+        confirmationButtonProps={{
+          title: 'TestPassingTitle',
+        }}
+        isOpen
+      />,
+      'ACT',
+    );
+    const titleTag = rendered.getByTitle('TestPassingTitle');
+    expect(titleTag).toBeVisible();
+  });
 
-  // it('should allow for content props', async () => {
-  //   const rendered = render(
-  //     <ConfirmDialog
-  //       content={<Box>Test</Box>}
-  //       contentProps={{
-  //         title: 'TestPassingTitle',
-  //       }}
-  //       isOpen
-  //     />,
-  //     'ACT',
-  //   );
-  //   const titleTag = rendered.getByTitle('TestPassingTitle');
-  //   expect(titleTag).toBeVisible();
-  // });
+  it('should allow for content props', async () => {
+    const rendered = render(
+      <ConfirmDialog
+        content={<Box>Test</Box>}
+        contentProps={{
+          title: 'TestPassingTitle',
+        }}
+        isOpen
+      />,
+      'ACT',
+    );
+    const titleTag = rendered.getByTitle('TestPassingTitle');
+    expect(titleTag).toBeVisible();
+  });
 
-  // it('should allow for cancel button props', async () => {
-  //   const rendered = render(
-  //     <ConfirmDialog
-  //       cancellationButtonProps={{
-  //         title: 'TestPassingTitle',
-  //       }}
-  //       isOpen
-  //     />,
-  //     'ACT',
-  //   );
-  //   const titleTag = rendered.getByTitle('TestPassingTitle');
-  //   expect(titleTag).toBeVisible();
-  // });
+  it('should allow for cancel button props', async () => {
+    const rendered = render(
+      <ConfirmDialog
+        cancellationButtonProps={{
+          title: 'TestPassingTitle',
+        }}
+        isOpen
+      />,
+      'ACT',
+    );
+    const titleTag = rendered.getByTitle('TestPassingTitle');
+    expect(titleTag).toBeVisible();
+  });
 
   const confirmHookBuilder = (
     options: ConfirmDialogProps = {},
@@ -104,24 +104,24 @@ describe('ConfirmationDialog', () => {
     };
   };
 
-  // it('should allow default options passed in to provider', async () => {
-  //   const ConfirmHook = confirmHookBuilder();
-  //   const rendered = render(
-  //     <ConfirmProvider
-  //       defaultOptions={{
-  //         description: 'TestConfirmation Description',
-  //         title: 'TestConfirmation Title',
-  //       }}
-  //     >
-  //       <ConfirmHook />
-  //     </ConfirmProvider>,
-  //     'ACT',
-  //   );
-  //   const user = UserEvent.setup();
-  //   await user.click(rendered.getByTitle('Opens Dialog'));
-  //   const titleTag = rendered.getByText('TestConfirmation Title');
-  //   expect(titleTag).toBeVisible();
-  // });
+  it('should allow default options passed in to provider', async () => {
+    const ConfirmHook = confirmHookBuilder();
+    const rendered = render(
+      <ConfirmProvider
+        defaultOptions={{
+          description: 'TestConfirmation Description',
+          title: 'TestConfirmation Title',
+        }}
+      >
+        <ConfirmHook />
+      </ConfirmProvider>,
+      'ACT',
+    );
+    const user = UserEvent.setup();
+    await user.click(rendered.getByTitle('Opens Dialog'));
+    const titleTag = rendered.getByText('TestConfirmation Title');
+    expect(titleTag).toBeVisible();
+  });
 
   it('should allow multiple confirm hooks on a single DOM render', async () => {
     const onConfirm = jest.fn();
@@ -208,66 +208,66 @@ describe('ConfirmationDialog', () => {
     expect(onCancel).toHaveBeenCalledTimes(1);
   });
 
-  // it('should render custom content in the dialog', async () => {
-  //   const ConfirmHook = confirmHookBuilder({
-  //     content: (
-  //       <Box>
-  //         <Typography title="TestingContent" variant="h1">
-  //           Some Text Goes Here
-  //         </Typography>
-  //       </Box>
-  //     ),
-  //   });
-  //   const rendered = render(
-  //     <ConfirmProvider>
-  //       <ConfirmHook />
-  //     </ConfirmProvider>,
-  //     'ACT',
-  //   );
-  //   const user = UserEvent.setup();
-  //   await user.click(rendered.getByTitle('Opens Dialog'));
-  //   const testContent = rendered.getByTitle('TestingContent');
-  //   expect(testContent).toBeVisible();
-  // });
+  it('should render custom content in the dialog', async () => {
+    const ConfirmHook = confirmHookBuilder({
+      content: (
+        <Box>
+          <Typography title="TestingContent" variant="h1">
+            Some Text Goes Here
+          </Typography>
+        </Box>
+      ),
+    });
+    const rendered = render(
+      <ConfirmProvider>
+        <ConfirmHook />
+      </ConfirmProvider>,
+      'ACT',
+    );
+    const user = UserEvent.setup();
+    await user.click(rendered.getByTitle('Opens Dialog'));
+    const testContent = rendered.getByTitle('TestingContent');
+    expect(testContent).toBeVisible();
+  });
 
-  // it('should open a dialog and trigger the confirm when the user presses ok', async () => {
-  //   const onConfirm = jest.fn();
-  //   const ConfirmHook = confirmHookBuilder(
-  //     {
-  //       confirmationText: 'TestOk',
-  //     },
-  //     onConfirm,
-  //   );
-  //   const rendered = render(
-  //     <ConfirmProvider>
-  //       <ConfirmHook />
-  //     </ConfirmProvider>,
-  //     'ACT',
-  //   );
-  //   const user = UserEvent.setup();
-  //   await user.click(rendered.getByTitle('Opens Dialog'));
-  //   await user.click(rendered.getByText('TestOk') as HTMLButtonElement);
-  //   expect(onConfirm).toHaveBeenCalled();
-  // });
+  it('should open a dialog and trigger the confirm when the user presses ok', async () => {
+    const onConfirm = jest.fn();
+    const ConfirmHook = confirmHookBuilder(
+      {
+        confirmationText: 'TestOk',
+      },
+      onConfirm,
+    );
+    const rendered = render(
+      <ConfirmProvider>
+        <ConfirmHook />
+      </ConfirmProvider>,
+      'ACT',
+    );
+    const user = UserEvent.setup();
+    await user.click(rendered.getByTitle('Opens Dialog'));
+    await user.click(rendered.getByText('TestOk') as HTMLButtonElement);
+    expect(onConfirm).toHaveBeenCalled();
+  });
 
-  // it('should open a dialog and trigger the cancel when the user presses cancel', async () => {
-  //   const onCancel = jest.fn();
-  //   const ConfirmHook = confirmHookBuilder(
-  //     {
-  //       cancellationText: 'TestCancel',
-  //     },
-  //     noop,
-  //     onCancel,
-  //   );
-  //   const rendered = render(
-  //     <ConfirmProvider>
-  //       <ConfirmHook />
-  //     </ConfirmProvider>,
-  //     'ACT',
-  //   );
-  //   const user = UserEvent.setup();
-  //   await user.click(rendered.getByTitle('Opens Dialog'));
-  //   await user.click(rendered.getByText('TestCancel') as HTMLButtonElement);
-  //   expect(onCancel).toHaveBeenCalled();
-  // });
+  it('should open a dialog and trigger the cancel when the user presses cancel', async () => {
+    const onCancel = jest.fn();
+    const ConfirmHook = confirmHookBuilder(
+      {
+        cancellationText: 'TestCancel',
+      },
+      noop,
+      onCancel,
+    );
+    const rendered = render(
+      <ConfirmProvider>
+        <ConfirmHook />
+      </ConfirmProvider>,
+      'ACT',
+    );
+    const user = UserEvent.setup();
+    await user.click(rendered.getByTitle('Opens Dialog'));
+    await user.click(rendered.getByText('TestCancel') as HTMLButtonElement);
+    expect(onCancel).toHaveBeenCalled();
+  });
 });
