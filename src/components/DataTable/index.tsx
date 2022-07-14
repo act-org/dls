@@ -7,25 +7,25 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { constant, isNumber, round } from 'lodash';
 import { Table, TableBody, TableHead, TableRow } from '@mui/material';
+import { constant, isNumber, round } from 'lodash';
 
 import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
-import { SortObject } from '~/types';
 import TablePaginationActions from '~/components/TablePaginationActions';
+import { SortObject } from '~/types';
 
 import TableCellBody from './TableCellBody';
 import TableCellHead from './TableCellHead';
 import TableContainer from './TableContainer';
 
+import { CSSProperties, ReactElement } from 'react';
 import { StyledEmptyStateContainer, StyledTablePagination } from './styles';
 
 interface Column<T> {
   renderValue: (item: T) => any;
   label?: string;
   sortBy?: string;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 }
 
 export interface DataTableProps<T> {
@@ -42,8 +42,8 @@ export interface DataTableProps<T> {
   rowsPerPageOptions?: number[];
   RowWrapper?: (
     item: T,
-    children: React.ReactElement<unknown>,
-  ) => React.ReactElement<unknown>;
+    children: ReactElement<unknown>,
+  ) => ReactElement<unknown>;
   totalCount?: number;
 }
 
@@ -61,13 +61,13 @@ export const DataTable = <T,>({
   rowsPerPageOptions,
   RowWrapper,
   totalCount,
-}: DataTableProps<T>): React.ReactElement<unknown> => (
+}: DataTableProps<T>): ReactElement<unknown> => (
   <TableContainer>
     <Table>
       <TableHead>
         <TableRow>
           {columns.map(
-            (column, i): React.ReactElement<unknown> => (
+            (column, i): ReactElement<unknown> => (
               <TableCellHead
                 color={color}
                 currentSortObject={currentSortObject}
@@ -84,12 +84,12 @@ export const DataTable = <T,>({
       </TableHead>
 
       <TableBody>
-        {items.map((item, i): React.ReactElement<unknown> => {
+        {items.map((item, i): ReactElement<unknown> => {
           /* eslint-disable react/no-array-index-key */
           const children = (
             <TableRow hover key={i}>
               {columns.map(
-                (column, y): React.ReactElement<unknown> => (
+                (column, y): ReactElement<unknown> => (
                   <TableCellBody key={column.label || y} style={column.style}>
                     {column.renderValue(item)}
                   </TableCellBody>

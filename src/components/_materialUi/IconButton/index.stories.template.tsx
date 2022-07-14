@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   IconButton as MuiIconButton,
   IconButtonProps as MuiIconButtonProps,
@@ -16,7 +15,6 @@ import { Story } from '@storybook/react/types-6-0';
 
 import PencilCircle from '~/icons/PencilCircle';
 import PencilCircleOutline from '~/icons/PencilCircleOutline';
-import { Playground } from '~/helpers/playground';
 
 export const IconButton = MuiIconButton;
 export type IconButtonProps = MuiIconButtonProps;

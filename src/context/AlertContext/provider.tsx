@@ -9,7 +9,6 @@
 
 /* eslint-disable filenames/match-exported */
 
-import * as React from 'react';
 import { flow, get } from 'lodash';
 import {
   OptionsObject,
@@ -17,21 +16,22 @@ import {
   withSnackbar,
   WithSnackbarProps,
 } from 'notistack';
+import { Component, ReactElement, ReactNode } from 'react';
 
+import SnackbarAlert from '~/components/SnackbarAlert';
 import getErrorMessage from '~/helpers/getErrorMessage';
 import { ServerError } from '~/types';
-import SnackbarAlert from '~/components/SnackbarAlert';
 
 import AlertContext from '.';
 
-interface Props extends WithSnackbarProps {
+interface Props extends Partial<WithSnackbarProps> {
   anchorOriginHorizontal?: 'left' | 'right' | 'center';
   anchorOriginVertical?: 'bottom' | 'top';
-  children: React.ReactNode;
+  children: ReactNode;
   maxSnack?: number;
 }
 
-class Provider extends React.Component<Props> {
+class Provider extends Component<Props> {
   constructor(props: Props) {
     super(props);
 
@@ -43,24 +43,25 @@ class Provider extends React.Component<Props> {
     message,
     options,
   }: {
-    message: React.ReactNode;
+    message: ReactNode;
     options?: OptionsObject;
   }): Promise<void> {
     const { enqueueSnackbar } = this.props;
 
     const key = new Date().getTime();
-
-    enqueueSnackbar(message, {
-      content: (
-        <SnackbarAlert
-          id={key}
-          message={String(message)}
-          variant={get(options, 'variant')}
-        />
-      ),
-      key,
-      ...options,
-    });
+    if (enqueueSnackbar) {
+      enqueueSnackbar(message, {
+        content: (
+          <SnackbarAlert
+            id={key}
+            message={String(message)}
+            variant={get(options, 'variant')}
+          />
+        ),
+        key,
+        ...options,
+      });
+    }
   }
 
   async _addError(error: Error | ServerError | unknown): Promise<void> {
@@ -72,7 +73,7 @@ class Provider extends React.Component<Props> {
     });
   }
 
-  render(): React.ReactNode {
+  render(): ReactNode {
     const { children } = this.props;
 
     return (
@@ -98,7 +99,7 @@ export const AlertContextProvider = ({
   anchorOriginVertical,
   maxSnack,
   ...otherProps
-}: Props): React.ReactElement<unknown> => (
+}: Props): ReactElement<unknown> => (
   <SnackbarProvider
     anchorOrigin={{
       horizontal: anchorOriginHorizontal || 'center',

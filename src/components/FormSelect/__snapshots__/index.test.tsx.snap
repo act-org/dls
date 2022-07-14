@@ -6,8 +6,8 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-70jh9d-MuiFormLabel-root-MuiInputLabel-root"
-      data-shrink="false"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-yblnas-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
     >
       <div
         class="label-split"
@@ -29,17 +29,13 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
         role="button"
         tabindex="0"
       >
-        <span
-          class="notranslate"
-        >
-          ​
-        </span>
+        One
       </div>
       <input
         aria-hidden="true"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
-        value=""
+        value="ONE"
       />
       <svg
         aria-hidden="true"
@@ -77,8 +73,8 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-11ye4gi-MuiFormLabel-root-MuiInputLabel-root"
-      data-shrink="false"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-16xra3p-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
     >
       <div
         class="label-split"
@@ -100,17 +96,13 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
         role="button"
         tabindex="0"
       >
-        <span
-          class="notranslate"
-        >
-          ​
-        </span>
+        One
       </div>
       <input
         aria-hidden="true"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
-        value=""
+        value="ONE"
       />
       <svg
         aria-hidden="true"
@@ -148,8 +140,8 @@ exports[`FormSelect ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-86j95q-MuiFormLabel-root-MuiInputLabel-root"
-      data-shrink="false"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-742zqy-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
     >
       <div
         class="label-split"
@@ -171,17 +163,13 @@ exports[`FormSelect ENCOURA_DATALAB theme matches the snapshot 1`] = `
         role="button"
         tabindex="0"
       >
-        <span
-          class="notranslate"
-        >
-          ​
-        </span>
+        One
       </div>
       <input
         aria-hidden="true"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
-        value=""
+        value="ONE"
       />
       <svg
         aria-hidden="true"

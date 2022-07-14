@@ -30,6 +30,7 @@ describe('FormSelect', () => {
         },
       ]}
       placeholder="Placeholder"
+      value="ONE"
     />
   );
   standard(Component);

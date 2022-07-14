@@ -1,0 +1,29 @@
+{/* @prettier */}
+
+import {
+  ArgsTable,
+  Canvas,
+  Description,
+  Meta,
+  Preview,
+  Source,
+  Story,
+} from '@storybook/addon-docs';
+
+import { ConfirmationDialog } from '.';
+import { argTypes, Template } from './index.stories.template';
+
+<Meta
+  argTypes={argTypes}
+  component={ConfirmationDialog}
+  title="Organisms/ConfirmDialog/Component"
+  render={Template}
+/>
+
+<Description of={ConfirmationDialog} />
+
+<Canvas>
+  <Story args={{}} name="Default" />
+</Canvas>
+
+<ArgsTable story="Default" />

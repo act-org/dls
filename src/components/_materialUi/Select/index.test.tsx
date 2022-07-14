@@ -14,7 +14,7 @@ import { standard } from '~/helpers/test';
 
 describe('Select', () => {
   const Component = (
-    <Select onChange={noop} value="ONE">
+    <Select defaultValue="" onChange={noop} value="ONE">
       <MenuItem value="ONE">One</MenuItem>
     </Select>
   );

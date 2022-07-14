@@ -7,14 +7,11 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
 import {
   Switch as MuiSwitch,
   SwitchProps as MuiSwitchProps,
 } from '@mui/material';
-
-import { Playground } from '~/helpers/playground';
 
 export const Switch = MuiSwitch;
 export type SwitchProps = MuiSwitchProps;

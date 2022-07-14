@@ -11,6 +11,7 @@
 
 export * from './Alert';
 export * from './AppBarNavigation';
+export * from './ConfirmDialog';
 export * from './DataTable';
 export * from './Dialog';
 export * from './DialogContinueSession';
@@ -25,13 +26,11 @@ export * from './GridGenerator';
 export * from './IdleTimer';
 export * from './InputLabel';
 export * from './Loading';
+// WIP COMPONENTS --------------------------------------------------------------
+export * from './RenderMetaTags';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
 export * from './SessionTimer';
 export * from './SnackbarAlert';
 export * from './TablePaginationActions';
 export * from './ThemeProvider';
-
-// WIP COMPONENTS --------------------------------------------------------------
-
-export * from './RenderMetaTags';

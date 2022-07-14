@@ -17,8 +17,9 @@ describe('TablePaginationActions', () => {
   const Component = (
     <TablePaginationActions
       count={1000}
+      key="test"
       onPageChange={noop}
-      page={1}
+      page={0}
       rowsPerPage={100}
     />
   );

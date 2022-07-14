@@ -7,14 +7,15 @@
  * @prettier
  */
 
-import * as React from 'react';
+import { Story } from '@storybook/react/types-6-0';
 import { isNumber } from 'lodash';
 import moment from 'moment';
-import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
+import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
 import { Playground } from '~/helpers/playground';
 import sort from '~/helpers/sort';
-import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
+import { SortObject } from '~/types';
 
 import { DataTable, DataTableProps } from '.';
 
@@ -33,9 +34,9 @@ export const Template: Story<DataTableProps<Item>> = ({
   totalCount,
   ...args
 }: DataTableProps<Item>) => {
-  const [limit, setLimit] = React.useState<number | undefined>(limitProps);
-  const [offset, setOffset] = React.useState<number | undefined>(offsetProps);
-  const [sortObject, setSortObject] = React.useState<SortObject>({
+  const [limit, setLimit] = useState<number | undefined>(limitProps);
+  const [offset, setOffset] = useState<number | undefined>(offsetProps);
+  const [sortObject, setSortObject] = useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
   });
@@ -61,6 +62,7 @@ export const Template: Story<DataTableProps<Item>> = ({
 
   return (
     <DataTable<Item>
+      {...args}
       columns={[
         {
           label: 'ID',
@@ -120,7 +122,6 @@ export const Template: Story<DataTableProps<Item>> = ({
       onChangeOffset={setOffset}
       onChangeSort={setSortObject}
       totalCount={totalCount}
-      {...args}
     />
   );
 };

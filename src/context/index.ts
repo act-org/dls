@@ -8,3 +8,4 @@
  */
 
 export * from './AlertContext';
+export * from './Confirm';

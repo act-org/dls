@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import * as React from 'react';
+import { FC, ReactElement } from 'react';
 
 export interface RenderMetaTagsProps {
   description?: string;
@@ -15,12 +15,10 @@ export interface RenderMetaTagsProps {
   keywords?: string[];
   noIndex?: boolean;
   title?: string;
-  Wrapper?: (
-    children: React.ReactElement<unknown>[],
-  ) => React.ReactElement<unknown>;
+  Wrapper?: (children: ReactElement<unknown>[]) => ReactElement<unknown>;
 }
 
-export const RenderMetaTags: React.FC<RenderMetaTagsProps> = ({
+export const RenderMetaTags: FC<RenderMetaTagsProps> = ({
   description,
   imageUrl,
   keywords,
@@ -28,7 +26,7 @@ export const RenderMetaTags: React.FC<RenderMetaTagsProps> = ({
   title,
   Wrapper,
 }: RenderMetaTagsProps): any => {
-  const children: React.ReactElement<unknown>[] = [];
+  const children: ReactElement<unknown>[] = [];
 
   if (description) {
     // Search Engines

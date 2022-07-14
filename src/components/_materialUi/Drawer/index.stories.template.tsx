@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   Button,
   Drawer as MuiDrawer,
@@ -15,14 +14,13 @@ import {
   Typography,
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
-
-import { Playground } from '~/helpers/playground';
+import { useState } from 'react';
 
 export const Drawer = MuiDrawer;
 export type DrawerProps = MuiDrawerProps;
 
 export const Template: Story<DrawerProps> = args => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>

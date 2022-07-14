@@ -7,25 +7,25 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Link, LinkProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { ComponentType, FC, ReactElement } from 'react';
 
 import { StyledImg } from './styles';
 
 export interface RenderLogoProps {
   alt: string;
-  LinkComponent?: React.ComponentType;
+  LinkComponent?: ComponentType;
   LinkProps?: any;
   src: string;
 }
 
-const RenderLogo: React.FC<RenderLogoProps> = ({
+const RenderLogo: FC<RenderLogoProps> = ({
   alt,
   LinkComponent,
   LinkProps: linkProps,
   src,
-}: RenderLogoProps): React.ReactElement<RenderLogoProps> => {
+}: RenderLogoProps): ReactElement<RenderLogoProps> => {
   const StyledLink = styled(LinkComponent || Link)<LinkProps>(() => ({
     height: '38.88%',
   }));

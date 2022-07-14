@@ -7,21 +7,19 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { Story } from '@storybook/react/types-6-0';
 import {
   Tooltip as MuiTooltip,
   TooltipProps as MuiTooltipProps,
 } from '@mui/material';
+import { Story } from '@storybook/react/types-6-0';
 
 import HelpCircleOutline from '~/icons/HelpCircleOutline';
-import { Playground } from '~/helpers/playground';
 
 export const Tooltip = MuiTooltip;
 export type TooltipProps = MuiTooltipProps;
 
 export const Template: Story<TooltipProps> = args => (
-  <Tooltip title="Tooltip text goes here." {...args}>
+  <Tooltip {...args} title="Tooltip text goes here.">
     <HelpCircleOutline />
   </Tooltip>
 );

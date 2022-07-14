@@ -8,19 +8,19 @@
  */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/display-name */
-import * as React from 'react';
+import { Theme } from '@mui/material';
+import { StyledEngineProvider } from '@mui/material/styles';
 import {
   render as originalRender,
-  RenderResult,
   RenderOptions,
+  RenderResult,
 } from '@testing-library/react';
-import { StyledEngineProvider } from '@mui/material/styles';
-import { Theme } from '@mui/material';
+import { ReactElement } from 'react';
 
 import ThemeProvider from '../../components/ThemeProvider';
 
 export const render = (
-  Component: React.ReactElement,
+  Component: ReactElement,
   theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme,
   options?: RenderOptions,
 ): RenderResult =>

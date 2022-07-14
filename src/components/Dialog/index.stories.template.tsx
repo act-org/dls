@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Button, DialogActions, DialogContent } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
@@ -21,7 +21,7 @@ interface StoryProps extends DialogProps {
 
 // eslint-disable-next-line react/prop-types
 export const Template: Story<StoryProps> = ({ text, ...args }) => {
-  const [open, setOpen] = React.useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <>
       <Button
@@ -32,11 +32,11 @@ export const Template: Story<StoryProps> = ({ text, ...args }) => {
         open
       </Button>
       <Dialog
+        {...args}
         onClose={(): void => {
           setOpen(false);
         }}
         open={open}
-        {...args}
       >
         <DialogContent>{text}</DialogContent>
         <DialogActions>

@@ -7,15 +7,16 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Button, Grid } from '@mui/material';
-import { startCase } from 'lodash';
 import { Story } from '@storybook/react/types-6-0';
+import { startCase } from 'lodash';
 
 import AlertContext from '~/context/AlertContext';
 import AlertContextProvider from '~/context/AlertContext/provider';
 import { Playground } from '~/helpers/playground';
 
+import { VariantType } from 'notistack';
+import { ReactElement, useState } from 'react';
 import { SnackbarAlert } from '.';
 
 interface StoryProps {
@@ -24,12 +25,16 @@ interface StoryProps {
   maxSnack?: number;
 }
 
-export const Template: Story<StoryProps> = ({
+type DefaultProps = {
+  defaultProps: Record<string, unknown>;
+};
+
+export const Template: Story<StoryProps> & DefaultProps = ({
   anchorOriginHorizontal,
   anchorOriginVertical,
   maxSnack,
 }: StoryProps) => {
-  const [counter, setCounter] = React.useState(0);
+  const [counter, setCounter] = useState(0);
 
   return (
     <AlertContextProvider
@@ -38,10 +43,10 @@ export const Template: Story<StoryProps> = ({
       maxSnack={maxSnack}
     >
       <AlertContext.Consumer>
-        {({ actions }): React.ReactElement<unknown> => (
+        {({ actions }): ReactElement<unknown> => (
           <Grid container spacing={2}>
-            {['error', 'info', 'warning', 'success'].map(
-              (variant): React.ReactElement<unknown> => (
+            {(['error', 'info', 'warning', 'success'] as VariantType[]).map(
+              (variant): ReactElement<unknown> => (
                 <Grid item key={variant}>
                   <Button
                     onClick={async (): Promise<void> => {

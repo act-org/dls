@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { SnackbarContent, useSnackbar } from 'notistack';
+import { FC, forwardRef, ReactElement, useCallback } from 'react';
 
 import Alert from '~/components/Alert';
 
@@ -19,14 +19,14 @@ export interface SnackbarAlertProps {
 }
 
 // eslint-disable-next-line react/display-name
-export const SnackbarAlert: React.FC<SnackbarAlertProps> = React.forwardRef(
+export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
   (
     { id, message, variant }: SnackbarAlertProps,
     ref,
-  ): React.ReactElement<unknown> => {
+  ): ReactElement<unknown> => {
     const { closeSnackbar } = useSnackbar();
 
-    const handleDismiss = React.useCallback(() => {
+    const handleDismiss = useCallback(() => {
       closeSnackbar(id);
     }, [id, closeSnackbar]);
 

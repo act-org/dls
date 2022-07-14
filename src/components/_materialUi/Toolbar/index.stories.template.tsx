@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   IconButton,
   Toolbar as MuiToolbar,
@@ -17,7 +16,6 @@ import {
 import { Story } from '@storybook/react/types-6-0';
 
 import Menu from '~/icons/Menu';
-import { Playground } from '~/helpers/playground';
 
 export const Toolbar = MuiToolbar;
 export type ToolbarProps = MuiToolbarProps;

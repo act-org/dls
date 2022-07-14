@@ -7,14 +7,11 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   Checkbox as MuiCheckbox,
   CheckboxProps as MuiCheckboxProps,
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
-
-import { Playground } from '~/helpers/playground';
 
 export const Checkbox = MuiCheckbox;
 export type CheckboxProps = MuiCheckboxProps;

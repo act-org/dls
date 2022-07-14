@@ -7,17 +7,18 @@
  * @prettier
  */
 
-import * as React from 'react';
+import { SelectChangeEvent } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
-import { FormSelect, FormSelectProps } from '.';
 import { Playground } from '~/helpers/playground';
+import { FormSelect, FormSelectProps } from '.';
 
 export const Template: Story<FormSelectProps> = args => {
   const { value } = args;
-  const [state, setState] = React.useState<string>((value as string) || '');
-  const onChange = (e): void => {
-    setState(e.target.value);
+  const [state, setState] = useState<string>((value as string) || '');
+  const onChange = (e: SelectChangeEvent<unknown>): void => {
+    setState(e.target.value as string);
   };
   return <FormSelect {...args} onChange={onChange} value={state} />;
 };

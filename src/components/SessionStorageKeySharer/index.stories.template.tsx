@@ -7,9 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
-import JSONParseSafe from 'json-parse-safe';
-import { Story } from '@storybook/react/types-6-0';
 import {
   Button,
   Table,
@@ -21,6 +18,9 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
+import { Story } from '@storybook/react/types-6-0';
+import JSONParseSafe from 'json-parse-safe';
+import { useEffect, useState } from 'react';
 import { Playground } from '~/helpers/playground';
 
 import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
@@ -28,22 +28,23 @@ import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 export const Template: Story<SessionStorageKeySharerProps> = ({
   keyName,
 }: SessionStorageKeySharerProps) => {
-  const [keyValueRaw, setKeyValue] = React.useState(
+  const [keyValueRaw, setKeyValue] = useState(
     sessionStorage.getItem(keyName) || '',
   );
 
   const keyValue = JSONParseSafe(keyValueRaw).value || keyValueRaw;
 
-  const handleSetKeyValue = (kv): void => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const handleSetKeyValue = (kv: string): void => {
     sessionStorage.setItem(keyName, kv);
     setKeyValue(kv);
   };
 
-  React.useEffect((): void => {
+  useEffect((): void => {
     if (keyName) {
       handleSetKeyValue(sessionStorage.getItem(keyName) || '');
     }
-  }, [keyName]);
+  }, [handleSetKeyValue, keyName]);
 
   return (
     <>

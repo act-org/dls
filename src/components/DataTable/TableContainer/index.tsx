@@ -7,21 +7,21 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   TableContainer as MuiTableContainer,
   TableContainerProps as MuiTableContainerProps,
 } from '@mui/material';
+import { FC, ReactElement } from 'react';
 
 import Component from './Component';
 
 export interface TableContainerProps extends MuiTableContainerProps {
-  component?: React.ReactElement<unknown>;
+  component?: ReactElement<unknown>;
 }
 
-const TableContainer: React.FC<TableContainerProps> = (
+const TableContainer: FC<TableContainerProps> = (
   props: TableContainerProps,
-): React.ReactElement<unknown> => (
+): ReactElement<unknown> => (
   <MuiTableContainer component={Component} {...props} />
 );
 

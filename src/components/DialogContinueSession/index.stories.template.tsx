@@ -7,17 +7,17 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { action } from '@storybook/addon-actions';
 import { Button } from '@mui/material';
+import { action } from '@storybook/addon-actions';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
 import { DialogContinueSession, DialogContinueSessionProps } from '.';
 
 export const Template: Story<DialogContinueSessionProps> = args => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const onContinue = action('onContinue');
   const onExpire = action('onExpire');
@@ -25,6 +25,7 @@ export const Template: Story<DialogContinueSessionProps> = args => {
   if (open)
     return (
       <DialogContinueSession
+        {...args}
         onContinue={(): void => {
           onContinue();
 
@@ -35,7 +36,6 @@ export const Template: Story<DialogContinueSessionProps> = args => {
 
           window.location.reload();
         }}
-        {...args}
       />
     );
 

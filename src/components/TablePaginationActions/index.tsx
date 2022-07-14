@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { FixedSizeList } from 'react-window';
-import { grey } from '@mui/material/colors';
 import { IconButton, PopperProps, Tooltip } from '@mui/material';
+import { grey } from '@mui/material/colors';
 import { min } from 'lodash';
+import { CSSProperties, FC, ReactElement, useRef, useState } from 'react';
+import { FixedSizeList } from 'react-window';
 
 import { ChevronLeft, ChevronRight, PageFirst, PageLast } from '~/icons';
 
@@ -25,7 +25,7 @@ export interface TablePaginationActionsProps {
   page: number;
   PopperProps?: Partial<PopperProps>;
   rowsPerPage: number;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
   tooltipPlacement?:
     | 'bottom'
     | 'left'
@@ -42,7 +42,7 @@ export interface TablePaginationActionsProps {
   variant?: 'inverted';
 }
 
-export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
+export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
   count,
   disabled,
   noun,
@@ -53,10 +53,10 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
   style,
   tooltipPlacement,
   variant,
-}: TablePaginationActionsProps): React.ReactElement<unknown> => {
-  const [open, setOpen] = React.useState(false);
+}: TablePaginationActionsProps): ReactElement<unknown> => {
+  const [open, setOpen] = useState(false);
 
-  const listEl = React.useRef(null);
+  const listEl = useRef(null);
 
   const numberOfPages = Math.ceil(count / rowsPerPage);
 
@@ -117,9 +117,6 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
       <div>
         <StyledTextField
           disabled={disabled}
-          InputProps={{
-            disableUnderline: true,
-          }}
           select
           SelectProps={{
             MenuProps: PP as any,
@@ -139,7 +136,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             },
             open,
             // eslint-disable-next-line react/display-name
-            renderValue: (value): React.ReactElement<unknown> => (
+            renderValue: (value): ReactElement<unknown> => (
               <span>{`${noun} ${Number(value) + 1}`}</span>
             ),
           }}
@@ -152,7 +149,7 @@ export const TablePaginationActions: React.FC<TablePaginationActionsProps> = ({
             ref={listEl}
             width={`${noun} ${numberOfPages}`.length * 14}
           >
-            {({ index, style: menuItemStyle }): React.ReactElement<unknown> => (
+            {({ index, style: menuItemStyle }): ReactElement<unknown> => (
               // eslint-disable-next-line react/no-array-index-key
               <StyledMenuItem
                 isSelected={zeroBasedPage === index}

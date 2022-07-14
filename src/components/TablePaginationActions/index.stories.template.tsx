@@ -7,22 +7,22 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
-import { TablePaginationActions, TablePaginationActionsProps } from '.';
 import { Playground } from '~/helpers/playground';
+import { TablePaginationActions, TablePaginationActionsProps } from '.';
 
 export const Template: Story<TablePaginationActionsProps> = args => {
-  const [page, setPage] = React.useState(0);
+  const [page, setPage] = useState(0);
 
   return (
-    <TablePaginationActions<Thing>
+    <TablePaginationActions
+      {...args}
       onPageChange={(_, p): void => {
         setPage(p);
       }}
       page={page}
-      {...args}
     />
   );
 };

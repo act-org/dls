@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
 import {
   Button,
   Dialog,
@@ -16,6 +15,7 @@ import {
   Typography,
 } from '@mui/material';
 import moment from 'moment';
+import { FC, ReactElement, useEffect, useState } from 'react';
 
 import { StyledDialogActions } from './styles';
 
@@ -25,16 +25,16 @@ export interface DialogContinueSessionProps {
   onExpire: () => void;
 }
 
-export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
+export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
   expiresAt,
   onContinue,
   onExpire,
-}: DialogContinueSessionProps): React.ReactElement<unknown> | null => {
-  const [timeUntilExpiration, setTimeUntilExpiration] = React.useState<number>(
+}: DialogContinueSessionProps): ReactElement<unknown> | null => {
+  const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(
     expiresAt.getTime() - Date.now(),
   );
 
-  React.useEffect((): (() => void) => {
+  useEffect((): (() => void) => {
     const newTime =
       timeUntilExpiration - 1000 <= 0 ? 0 : timeUntilExpiration - 1000;
 
@@ -49,7 +49,7 @@ export const DialogContinueSession: React.FC<DialogContinueSessionProps> = ({
     return (): void => {
       clearTimeout(timer);
     };
-  }, [setTimeUntilExpiration, timeUntilExpiration]);
+  }, [onExpire, setTimeUntilExpiration, timeUntilExpiration]);
 
   if (timeUntilExpiration > 0) {
     return (

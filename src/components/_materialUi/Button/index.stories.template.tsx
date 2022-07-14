@@ -13,8 +13,6 @@ import {
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
-
 export const Button = MuiButton;
 export type ButtonProps = MuiButtonProps;
 

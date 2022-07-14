@@ -7,12 +7,6 @@
  * @prettier
  */
 
-import * as React from 'react';
-import { action } from '@storybook/addon-actions';
-import moment from 'moment';
-import pluralize from 'pluralize';
-import { round } from 'lodash';
-import { Story } from '@storybook/react/types-6-0';
 import {
   Table,
   TableBody,
@@ -22,6 +16,12 @@ import {
   TableRow,
   Typography,
 } from '@mui/material';
+import { action } from '@storybook/addon-actions';
+import { Story } from '@storybook/react/types-6-0';
+import { round } from 'lodash';
+import moment from 'moment';
+import pluralize from 'pluralize';
+import { ReactElement, useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
@@ -32,7 +32,7 @@ export const Template: Story<SessionTimerProps> = ({
   tokenMaxAgeMs,
   ...otherProps
 }: SessionTimerProps) => {
-  const [expiresAt, setExpiresAt] = React.useState(
+  const [expiresAt, setExpiresAt] = useState(
     moment().add(tokenMaxAgeMs, 'ms').toDate(),
   );
 
@@ -44,6 +44,7 @@ export const Template: Story<SessionTimerProps> = ({
 
   return (
     <SessionTimer
+      {...otherProps}
       expiresAt={expiresAt}
       onExpire={(): void => {
         onExpire();
@@ -55,12 +56,11 @@ export const Template: Story<SessionTimerProps> = ({
       }}
       promptWithMsRemaining={promptWithMsRemaining}
       tokenMaxAgeMs={tokenMaxAgeMs}
-      {...otherProps}
     >
       {({
         remainingTimeStageOne,
         remainingTimeStageTwo,
-      }): React.ReactElement<unknown> => {
+      }): ReactElement<unknown> => {
         const remainingTimeStageOneSeconds = round(
           remainingTimeStageOne / 1000,
           0,

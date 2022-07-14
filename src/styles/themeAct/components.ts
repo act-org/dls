@@ -1,8 +1,8 @@
-import { Components } from '@mui/material/styles';
-import { common } from '@mui/material/colors';
-import COLORS from './colors';
 import type { } from '@mui/lab/themeAugmentation';
+import { common } from '@mui/material/colors';
+import { Components } from '@mui/material/styles';
 import type { } from '@mui/x-data-grid/themeAugmentation';
+import COLORS from './colors';
 
 export const components: Components = {
   MuiAccordion: {
@@ -253,7 +253,13 @@ export const components: Components = {
   },
   MuiFormGroup: {
     defaultProps: {},
-    styleOverrides: {},
+    styleOverrides: {
+      root: {
+          '.MuiFormControl-root': {
+            marginBottom: '1em'
+          }
+      }
+    },
   },
   MuiFormHelperText: {
     defaultProps: {},

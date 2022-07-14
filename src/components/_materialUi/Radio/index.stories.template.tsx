@@ -7,11 +7,8 @@
  * @prettier
  */
 
-import * as React from 'react';
 import { Radio as MuiRadio, RadioProps as MuiRadioProps } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
-
-import { Playground } from '~/helpers/playground';
 
 export const Radio = MuiRadio;
 export type RadioProps = MuiRadioProps;
