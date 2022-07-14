@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/act-org/dls/compare/v6.0.4...v6.1.0) (2022-07-14)
+
+
+### Features
+
+* Add Confirmation Dialog component ([7c43699](https://github.com/act-org/dls/commit/7c436991432637a9218e15d39e84fccc9e856da1))
+
+
+### Bug Fixes
+
+* Confirmation hook multiple fires and API organization ([9531207](https://github.com/act-org/dls/commit/953120790e00561f914625d0ad544c9fa86f1aa1))
+* Remove story types from build ([3d1b80b](https://github.com/act-org/dls/commit/3d1b80bf0c0601ebd50527747202593f4dc458f4))
+
 ### [6.0.4](https://github.com/act-org/dls/compare/v6.0.3...v6.0.4) (2022-07-05)
 
 ### [6.0.3](https://github.com/act-org/dls/compare/v6.0.2...v6.0.3) (2022-06-29)
