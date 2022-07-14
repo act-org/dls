@@ -10,12 +10,13 @@ import {
   Story,
 } from '@storybook/addon-docs';
 
-import { useConfirm, ConfirmationDialog } from '.';
+import { useConfirm } from '.';
+import { ConfirmDialog } from '../../components';
 import { argTypes, Template } from './useConfirm.stories.template';
 
 <Meta
   argTypes={argTypes}
-  component={ConfirmationDialog}
+  component={ConfirmDialog}
   title="Organisms/ConfirmDialog/Hook"
   render={Template}
 />
