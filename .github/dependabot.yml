@@ -10,3 +10,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "monday"
+    ignore:
+      - dependency-name: "color"
+        # For Express, ignore all updates for version 4 and 5
+        versions: ["4.x"]
