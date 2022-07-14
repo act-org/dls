@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.1.1](https://github.com/act-org/dls/compare/v6.1.0...v6.1.1) (2022-07-14)
+
+
+### Bug Fixes
+
+* React runtime build ([4a9fa81](https://github.com/act-org/dls/commit/4a9fa8149708377c9e09ee28a1b73fc26d17eb44))
+* Update Confirm Story imports and storybook warnings ([08e9859](https://github.com/act-org/dls/commit/08e98593c6dd7bb2849fc61c96acbe442dad504c))
+
+### [6.0.5](https://github.com/act-org/dls/compare/v6.0.4...v6.0.5) (2022-07-14)
+
 ## [6.1.0](https://github.com/act-org/dls/compare/v6.0.4...v6.1.0) (2022-07-14)
 
 
