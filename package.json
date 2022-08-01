@@ -70,7 +70,7 @@
     "babel-plugin-transform-imports": "2.0.0",
     "clean-publish": "4.0.1",
     "cross-env": "7.0.3",
-    "eslint-import-resolver-typescript": "3.2.5",
+    "eslint-import-resolver-typescript": "3.4.0",
     "eslint-plugin-mdx": "2.0.1",
     "husky": "8.0.1",
     "jest": "28.1.3",
