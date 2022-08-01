@@ -34,7 +34,7 @@
     "@emotion/styled": "11.10.0",
     "@mdx-js/react": "2.1.2",
     "@mui/lab": "5.0.0-alpha.90",
-    "@mui/material": "5.9.0",
+    "@mui/material": "5.9.3",
     "@mui/x-data-grid": "5.15.0",
     "@storybook/addon-a11y": "6.5.9",
     "@storybook/addon-actions": "6.5.9",
