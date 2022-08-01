@@ -10,7 +10,7 @@ exports[`FormCheckbox ACT theme matches the snapshot 1`] = `
       id="primarycheckbox"
     >
       <span
-        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-10m3sgg-MuiButtonBase-root-MuiCheckbox-root"
+        class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary css-10m3sgg-MuiButtonBase-root-MuiCheckbox-root"
         color="primary"
       >
         <input
@@ -53,7 +53,7 @@ exports[`FormCheckbox ACT_ET theme matches the snapshot 1`] = `
       id="primarycheckbox"
     >
       <span
-        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-1e3aweb-MuiButtonBase-root-MuiCheckbox-root"
+        class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary css-1e3aweb-MuiButtonBase-root-MuiCheckbox-root"
       >
         <input
           class="PrivateSwitchBase-input css-1m9pwf3"
@@ -95,7 +95,7 @@ exports[`FormCheckbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
       id="primarycheckbox"
     >
       <span
-        class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-wakehq-MuiButtonBase-root-MuiCheckbox-root"
+        class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary css-wakehq-MuiButtonBase-root-MuiCheckbox-root"
       >
         <input
           class="PrivateSwitchBase-input css-1m9pwf3"

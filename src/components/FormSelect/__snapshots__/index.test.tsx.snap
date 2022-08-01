@@ -6,7 +6,7 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-yblnas-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled css-yblnas-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -20,12 +20,12 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-prxojz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-prxojz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
     >
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-9t6dra-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-9t6dra-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
@@ -73,7 +73,7 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-16xra3p-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled css-16xra3p-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -87,12 +87,12 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-11956l7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-11956l7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
     >
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-1jfpuyl-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1jfpuyl-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
@@ -140,7 +140,7 @@ exports[`FormSelect ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-742zqy-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled css-742zqy-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
     >
       <div
@@ -154,12 +154,12 @@ exports[`FormSelect ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1uoibu0-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1uoibu0-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
     >
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-p8sous-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-p8sous-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
