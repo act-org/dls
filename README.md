@@ -6,7 +6,7 @@
 
 <!-- markdownlint-enable line-length -->
 
-The Design Language System for ACT front-end projects. View the UI components
+The Design Language System for ACT & Encoura front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
 
 ## Project Setup
