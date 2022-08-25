@@ -11,25 +11,17 @@ import {
   MenuItem,
   Select as MuiSelect,
   SelectProps as MuiSelectProps,
-} from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+} from "@mui/material";
+import { Story } from "@storybook/react/types-6-0";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export const Select = MuiSelect;
 export type SelectProps = MuiSelectProps;
 
-export const Template: Story<SelectProps> = args => {
-  const [value, setValue] = useState(1);
-
+const RenderSelect: Story<SelectProps> = (args) => {
   return (
-    <Select
-      onChange={(e: any): void => {
-        setValue(e.target.value);
-      }}
-      value={value}
-      {...args}
-    >
+    <Select {...args}>
       {Array(...Array(10)).map((_, i): any => (
         // eslint-disable-next-line react/no-array-index-key
         <MenuItem key={i} value={i}>
@@ -38,4 +30,38 @@ export const Template: Story<SelectProps> = args => {
       ))}
     </Select>
   );
+};
+
+const MultipleValueSelect: Story<SelectProps> = (args) => {
+  const [value, setValue] = useState([1]);
+
+  return (
+    <RenderSelect
+      onChange={(e: any): void => {
+        setValue(e.target.value);
+      }}
+      value={value}
+      {...args}
+    />
+  );
+};
+
+const SingleValueSelect: Story<SelectProps> = (args) => {
+  const [value, setValue] = useState(1);
+
+  return (
+    <RenderSelect
+      onChange={(e: any): void => {
+        setValue(e.target.value);
+      }}
+      value={value}
+      {...args}
+    />
+  );
+};
+
+export const Template: Story<SelectProps> = ({ multiple, ...args }) => {
+  const Component = multiple ? MultipleValueSelect : SingleValueSelect;
+
+  return <Component multiple={multiple} {...args} />;
 };
