@@ -11,15 +11,15 @@ import {
   MenuItem,
   Select as MuiSelect,
   SelectProps as MuiSelectProps,
-} from "@mui/material";
-import { Story } from "@storybook/react/types-6-0";
+} from '@mui/material';
+import { Story } from '@storybook/react/types-6-0';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 export const Select = MuiSelect;
 export type SelectProps = MuiSelectProps;
 
-const RenderSelect: Story<SelectProps> = (args) => {
+const RenderSelect: Story<SelectProps> = args => {
   return (
     <Select {...args}>
       {Array(...Array(10)).map((_, i): any => (
@@ -32,7 +32,7 @@ const RenderSelect: Story<SelectProps> = (args) => {
   );
 };
 
-const MultipleValueSelect: Story<SelectProps> = (args) => {
+const MultipleValueSelect: Story<SelectProps> = args => {
   const [value, setValue] = useState([1]);
 
   return (
@@ -46,7 +46,7 @@ const MultipleValueSelect: Story<SelectProps> = (args) => {
   );
 };
 
-const SingleValueSelect: Story<SelectProps> = (args) => {
+const SingleValueSelect: Story<SelectProps> = args => {
   const [value, setValue] = useState(1);
 
   return (
@@ -60,7 +60,10 @@ const SingleValueSelect: Story<SelectProps> = (args) => {
   );
 };
 
-export const Template: Story<SelectProps> = ({ multiple, ...args }) => {
+export const Template: Story<SelectProps> = ({
+  multiple,
+  ...args
+}: SelectProps) => {
   const Component = multiple ? MultipleValueSelect : SingleValueSelect;
 
   return <Component multiple={multiple} {...args} />;
