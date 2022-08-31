@@ -6,7 +6,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-70jh9d-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary css-70jh9d-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -30,12 +30,12 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
         id="one"
       >
         <span
-          class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root css-el8npw-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-el8npw-MuiButtonBase-root-MuiRadio-root"
           color="primary"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name=":r0:"
+            name="mui-12345"
             type="radio"
             value="one"
           />
@@ -80,12 +80,12 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
         id="two"
       >
         <span
-          class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root css-el8npw-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-el8npw-MuiButtonBase-root-MuiRadio-root"
           color="primary"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name=":r0:"
+            name="mui-12345"
             type="radio"
             value="two"
           />
@@ -136,7 +136,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-11ye4gi-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary css-11ye4gi-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -160,11 +160,11 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
         id="one"
       >
         <span
-          class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root css-y82o97-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-y82o97-MuiButtonBase-root-MuiRadio-root"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name=":r1:"
+            name="mui-12346"
             type="radio"
             value="one"
           />
@@ -209,11 +209,11 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
         id="two"
       >
         <span
-          class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root css-y82o97-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-y82o97-MuiButtonBase-root-MuiRadio-root"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name=":r1:"
+            name="mui-12346"
             type="radio"
             value="two"
           />
@@ -264,7 +264,7 @@ exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-86j95q-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary css-86j95q-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -288,11 +288,11 @@ exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
         id="one"
       >
         <span
-          class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name=":r2:"
+            name="mui-12347"
             type="radio"
             value="one"
           />
@@ -337,11 +337,11 @@ exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
         id="two"
       >
         <span
-          class="MuiRadio-root MuiRadio-colorPrimary MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
         >
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
-            name=":r2:"
+            name="mui-12347"
             type="radio"
             value="two"
           />

@@ -13,11 +13,11 @@ exports[`FormSwitch ACT theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-tnsvld-MuiSwitch-root"
       >
         <span
-          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-m489x8-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-m489x8-MuiButtonBase-root-MuiSwitch-switchBase"
           color="primary"
         >
           <input
-            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
             type="checkbox"
           />
           <span
@@ -54,10 +54,10 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-143zrxq-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-143zrxq-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
-            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
             type="checkbox"
           />
           <span
@@ -94,10 +94,10 @@ exports[`FormSwitch ENCOURA_DATALAB theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
-            class="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
             type="checkbox"
           />
           <span

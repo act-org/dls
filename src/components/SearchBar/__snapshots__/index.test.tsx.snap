@@ -3,7 +3,7 @@
 exports[`SearchBar ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-11uauor-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-11uauor-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
@@ -27,7 +27,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-1291m2l-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-1291m2l-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
@@ -79,7 +79,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
 exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ouvqtk-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ouvqtk-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
@@ -103,7 +103,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-46w5yo-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-46w5yo-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
@@ -154,7 +154,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
 exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ctjm4-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ctjm4-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-ze1zvs-MuiInputAdornment-root"
@@ -178,7 +178,7 @@ exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
     </div>
     <input
       aria-label="Search"
-      class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-46w5yo-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-46w5yo-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
