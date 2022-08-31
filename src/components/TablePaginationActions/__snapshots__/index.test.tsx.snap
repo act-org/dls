@@ -65,7 +65,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
-          variant="outlined"
         >
           <div
             aria-expanded="false"
@@ -237,7 +236,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1a4gudp-MuiInputBase-root-MuiOutlinedInput-root"
-          variant="outlined"
         >
           <div
             aria-expanded="false"
@@ -405,7 +403,6 @@ exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] =
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-t97913-MuiInputBase-root-MuiOutlinedInput-root"
-          variant="outlined"
         >
           <div
             aria-expanded="false"
