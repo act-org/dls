@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.1.2](https://github.com/act-org/dls/compare/v6.1.1...v6.1.2) (2022-08-31)
+
+
+### Bug Fixes
+
+* Fix 'Select' component playground not interacting well with 'multiple' control ([9f0e9ae](https://github.com/act-org/dls/commit/9f0e9aef74d576dd0931203d0ba47f7528aa47ea))
+
 ### [6.1.1](https://github.com/act-org/dls/compare/v6.1.0...v6.1.1) (2022-07-14)
 
 
