@@ -7,7 +7,7 @@ exports[`FormRadio ACT theme matches the snapshot 1`] = `
     id="primaryswitch"
   >
     <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-el8npw-MuiButtonBase-root-MuiRadio-root"
+      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-el8npw-MuiButtonBase-root-MuiRadio-root"
       color="primary"
     >
       <input
@@ -61,7 +61,7 @@ exports[`FormRadio ACT_ET theme matches the snapshot 1`] = `
     id="primaryswitch"
   >
     <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-y82o97-MuiButtonBase-root-MuiRadio-root"
+      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-y82o97-MuiButtonBase-root-MuiRadio-root"
     >
       <input
         class="PrivateSwitchBase-input css-1m9pwf3"
@@ -114,7 +114,7 @@ exports[`FormRadio ENCOURA_DATALAB theme matches the snapshot 1`] = `
     id="primaryswitch"
   >
     <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
+      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-r4mfqc-MuiButtonBase-root-MuiRadio-root"
     >
       <input
         class="PrivateSwitchBase-input css-1m9pwf3"
