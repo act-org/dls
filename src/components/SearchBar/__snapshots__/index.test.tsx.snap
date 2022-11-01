@@ -63,7 +63,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
       class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-hdw1oc"
+        class="css-ihdtdm"
       >
         <span
           class="notranslate"
@@ -138,7 +138,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
       class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-hdw1oc"
+        class="css-ihdtdm"
       >
         <span
           class="notranslate"
@@ -213,7 +213,7 @@ exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
       class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-hdw1oc"
+        class="css-ihdtdm"
       >
         <span
           class="notranslate"
