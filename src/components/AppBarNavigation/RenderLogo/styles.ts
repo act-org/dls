@@ -9,8 +9,10 @@
 
 /* eslint-disable import/prefer-default-export */
 
-import { styled } from '@mui/material/styles';
+import { styled } from '~/helpers/material/styled';
 
-export const StyledImg = styled('img')<any>(({ isWrapped }) => ({
-  height: isWrapped ? '100%' : '38.88%',
-}));
+export const StyledImg = styled('img')<{ $isWrapped: boolean }>(
+  ({ $isWrapped }) => ({
+    height: $isWrapped ? '100%' : '38.88%',
+  }),
+);

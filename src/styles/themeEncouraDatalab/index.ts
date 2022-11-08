@@ -13,8 +13,8 @@ import { createTheme } from '@mui/material/styles';
 import { CustomThemeOptions } from '~/types';
 
 import COLORS from './colors';
-import DIMS from './dims';
 import COMPONENTS from './components';
+import DIMS from './dims';
 import PALETTE from './palette';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';

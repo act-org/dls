@@ -18,6 +18,38 @@ module.exports = {
     },
   ],
   rules: {
+    'import/order': [
+      'warn',
+      {
+        alphabetize: { caseInsensitive: true, order: 'asc' },
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            group: 'internal',
+            pattern: '~/**',
+          },
+          {
+            group: 'internal',
+            pattern: '~/icons/**',
+          },
+          {
+            group: 'external',
+            pattern: '@**',
+          },
+        ],
+        warnOnUnassignedImports: true,
+      },
+    ],
     'react/function-component-definition': 'off', // Allows const defined components,
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',

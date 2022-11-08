@@ -83,3 +83,31 @@ exports[`OutlinedInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`OutlinedInput ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1ydy6d4-MuiInputBase-root-MuiOutlinedInput-root"
+  >
+    <input
+      class="MuiInputBase-input MuiOutlinedInput-input css-jaerwt-MuiInputBase-input-MuiOutlinedInput-input"
+      type="text"
+      value="Value"
+    />
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-ihdtdm"
+      >
+        <span
+          class="notranslate"
+        >
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;

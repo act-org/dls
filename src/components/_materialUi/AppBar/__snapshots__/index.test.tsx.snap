@@ -23,3 +23,11 @@ exports[`AppBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`AppBar ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-1yrwdib-MuiPaper-root-MuiAppBar-root"
+  />
+</div>
+`;

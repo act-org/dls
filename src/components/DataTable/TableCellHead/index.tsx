@@ -75,23 +75,23 @@ export const TableCellHead: FC<TableCellHeadProps> = ({
 
   return (
     <StyledTableCell
+      $sortBy={sortBy}
+      $sortIsApplied={sortIsApplied}
       classes={classesProp}
       color={color}
       component="td"
       onClick={sortBy ? toggleSort : undefined}
-      sortBy={sortBy}
-      sortIsApplied={sortIsApplied}
       style={style}
       {...props}
     >
-      <StyledTypography colorProp={color} variant="body1">
+      <StyledTypography $colorProp={color} variant="body1">
         {children}
       </StyledTypography>
 
       {sortBy && (
         <StyledGrid container>
           <StyledChevronUp
-            colorProp={color}
+            $colorProp={color}
             onClick={(): void => {
               onChangeSort({
                 sortBy,
@@ -104,7 +104,7 @@ export const TableCellHead: FC<TableCellHeadProps> = ({
           />
 
           <StyledChevronDown
-            colorProp={color}
+            $colorProp={color}
             onClick={(): void => {
               onChangeSort({
                 sortBy,

@@ -101,3 +101,37 @@ exports[`FormInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`FormInput ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-jayakb-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-wgxiy8-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+    >
+      <div
+        class="label-split"
+      >
+        <span
+          class="label-help"
+        >
+          Label
+        </span>
+      </div>
+    </label>
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1b22ogc-MuiInputBase-root-MuiInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiInput-input css-x4ya5x-MuiInputBase-input-MuiInput-input"
+        placeholder="Placeholder"
+        type="text"
+        value="test"
+      />
+    </div>
+  </div>
+</div>
+`;

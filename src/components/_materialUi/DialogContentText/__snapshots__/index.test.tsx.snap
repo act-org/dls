@@ -29,3 +29,13 @@ exports[`DialogContentText ENCOURA_DATALAB theme matches the snapshot 1`] = `
   </p>
 </div>
 `;
+
+exports[`DialogContentText ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <p
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-3xw9iw-MuiTypography-root-MuiDialogContentText-root"
+  >
+    Hey
+  </p>
+</div>
+`;

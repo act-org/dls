@@ -5,3 +5,5 @@ exports[`ConfirmationDialog ACT theme matches the snapshot 1`] = `<div />`;
 exports[`ConfirmationDialog ACT_ET theme matches the snapshot 1`] = `<div />`;
 
 exports[`ConfirmationDialog ENCOURA_DATALAB theme matches the snapshot 1`] = `<div />`;
+
+exports[`ConfirmationDialog ENCOURAGE_E4S theme matches the snapshot 1`] = `<div />`;

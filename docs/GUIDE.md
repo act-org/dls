@@ -201,7 +201,7 @@ opinion that this style should be applied globally for this component across all
 themes. Often times, this is not the right assumption to make.
 
 ```tsx
-import { styled } from '@mui/material/styles';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 // BAD: These style values are hard-coded.
 export const StyledDiv = styled('div')({
@@ -233,7 +233,7 @@ see [here](https://mui.com/material-ui/customization/theming/) and
 [here](https://mui.com/material-ui/customization/default-theme/).)
 
 ```tsx
-import { styled } from '@mui/material/styles';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 // BETTER: These style values are dynamic based on the theme.
 export const StyledDiv = styled('div')(({ theme }) => ({
@@ -261,7 +261,7 @@ When our custom components are built using Material UI primitives, often times
 the custom styles are no longer needed!
 
 ```tsx
-import { styled } from '@mui/material/styles';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 // BEST: No custom styles are needed because this component is built using
 // Material UI primitives. We can handle everything using a few simple props!

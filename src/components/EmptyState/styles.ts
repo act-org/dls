@@ -8,10 +8,13 @@
  */
 
 import { StyledComponent } from '@emotion/styled';
-import { Grid, Typography, TypographyProps } from '@mui/material';
-import { gridClasses, GridProps } from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
-import { typographyClasses } from '@mui/material/Typography';
+import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
+import Typography, {
+  TypographyProps,
+  typographyClasses,
+} from '@mui/material/Typography';
+
+import { styled } from '~/helpers/material/styled';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',
@@ -22,12 +25,12 @@ export const StyledContainer = styled('div')({
 
 export const StyledTypographyDescription = styled(Typography)<
   TypographyProps & {
-    withoutTitle: boolean;
+    $withoutTitle: boolean;
   }
->(({ theme, withoutTitle }) => ({
+>(({ $withoutTitle, theme }) => ({
   [`&.${typographyClasses.root}`]: {
     marginBottom: theme.spacing(2),
-    marginTop: withoutTitle ? theme.spacing(2) : theme.spacing(0.5),
+    marginTop: $withoutTitle ? theme.spacing(2) : theme.spacing(0.5),
     maxWidth: 350,
   },
 }));

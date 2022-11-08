@@ -57,3 +57,22 @@ exports[`DialogActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`DialogActions ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing css-u1w580-MuiDialogActions-root"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-1ohtedi-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Close
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

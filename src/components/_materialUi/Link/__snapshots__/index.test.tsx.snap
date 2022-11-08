@@ -41,3 +41,17 @@ exports[`Link ENCOURA_DATALAB theme matches the snapshot 1`] = `
   </a>
 </div>
 `;
+
+exports[`Link ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1rjygfk-MuiTypography-root-MuiLink-root"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;

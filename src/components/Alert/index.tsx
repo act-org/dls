@@ -10,7 +10,7 @@
 /* eslint-disable react/display-name */
 
 import { AlertProps as MuiAlertProps } from '@mui/lab';
-import { Alert as MiuAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
+import { Alert as MuiAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
 import { FC, forwardRef, ReactElement } from 'react';
 
 export type AlertProps = MuiAlertProps & {
@@ -33,11 +33,11 @@ export const Alert: FC<AlertProps> = forwardRef(
     ref,
   ): ReactElement<AlertProps> => {
     return (
-      <MiuAlert ref={ref} {...props}>
+      <MuiAlert ref={ref} {...props}>
         {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
 
         {children}
-      </MiuAlert>
+      </MuiAlert>
     );
   },
 );

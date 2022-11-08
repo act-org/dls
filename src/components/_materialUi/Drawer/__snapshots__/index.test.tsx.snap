@@ -26,3 +26,9 @@ exports[`Drawer ENCOURA_DATALAB theme matches the snapshot 1`] = `
   aria-hidden="true"
 />
 `;
+
+exports[`Drawer ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

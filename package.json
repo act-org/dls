@@ -5,12 +5,14 @@
     "url": "https://github.com/act-org/dls/issues"
   },
   "contributors": [
-    "Jon Cursi <jon.cursi@act-et.org>"
+    "Jon Cursi <jon.cursi@act-et.org>",
+    "Adam Weeden <adam.weeden@encoura.org"
   ],
   "dependencies": {
     "@babel/runtime": "^7.20.1",
     "clsx": "^1.2.1",
     "color": "^3.2.1",
+    "deepmerge": "4.2.2",
     "json-parse-safe": "^2.0.0",
     "lodash": "^4.17.21",
     "mdi-material-ui": "^7.6.0",
@@ -35,6 +37,7 @@
     "@mdx-js/react": "2.1.5",
     "@mui/lab": "5.0.0-alpha.106",
     "@mui/material": "5.10.12",
+    "@mui/system": "5.10.12",
     "@mui/x-data-grid": "5.17.9",
     "@storybook/addon-a11y": "6.5.13",
     "@storybook/addon-actions": "6.5.13",
@@ -70,6 +73,7 @@
     "babel-plugin-transform-imports": "2.0.0",
     "clean-publish": "4.0.1",
     "cross-env": "7.0.3",
+    "eslint": "8.27.0",
     "eslint-import-resolver-typescript": "3.5.2",
     "eslint-plugin-mdx": "2.0.5",
     "husky": "8.0.1",
@@ -104,11 +108,8 @@
   ],
   "license": "MIT",
   "lint-staged": {
-    "*.{js}": "npm run test:lint:js",
-    "*.{js,json,md,mdx,ts,tsx}": [
-      "prettier --write",
-      "git add"
-    ],
+    "*.js": "npm run test:lint:js",
+    "*.{js,json,md,mdx,ts,tsx}": "prettier --write",
     "*.{ts,tsx}": "npm run test:lint:ts",
     "*.md": "npm run test:lint:md"
   },
@@ -119,6 +120,7 @@
     "@emotion/styled": "11.x",
     "@mui/lab": "^5.0.0-alpha.82",
     "@mui/material": "5.x",
+    "@mui/system": "5.x",
     "@mui/x-data-grid": "5.x",
     "react": "17.x || 18.x",
     "react-dom": "17.x || 18.x"

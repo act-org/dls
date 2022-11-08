@@ -68,3 +68,26 @@ exports[`InputLabel ENCOURA_DATALAB theme matches the snapshot 1`] = `
   </label>
 </div>
 `;
+
+exports[`InputLabel ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <label
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-6r4psl-MuiFormLabel-root-MuiInputLabel-root"
+  >
+    <div
+      class="label-split"
+    >
+      <span
+        class="label-help"
+      >
+        InputLabel
+      </span>
+      <span
+        class="required"
+      >
+        Required
+      </span>
+    </div>
+  </label>
+</div>
+`;

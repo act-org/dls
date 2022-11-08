@@ -15,7 +15,6 @@ import {
   Typography,
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
-
 import Menu from '~/icons/Menu';
 
 export const AppBar = MuiAppBar;

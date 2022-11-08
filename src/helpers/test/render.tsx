@@ -21,7 +21,7 @@ import ThemeProvider from '../../components/ThemeProvider';
 
 export const render = (
   Component: ReactElement,
-  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme,
+  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | 'ENCOURAGE_E4S' | Theme,
   options?: RenderOptions,
 ): RenderResult =>
   originalRender(Component, {
