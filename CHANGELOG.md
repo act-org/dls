@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.3.0](https://github.com/act-org/dls/compare/v6.2.0...v6.3.0) (2022-12-02)
+
+
+### Features
+
+* Bump npm packages to their latest compatible releases ([12321f7](https://github.com/act-org/dls/commit/12321f734bdb11d5f05c6e42b7859b2540555011))
+
 ## [6.2.0](https://github.com/act-org/dls/compare/v6.1.2...v6.2.0) (2022-11-01)
 
 
