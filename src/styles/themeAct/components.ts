@@ -1,8 +1,11 @@
 import type { } from '@mui/lab/themeAugmentation';
+
 import { common } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
+
 import type { } from '@mui/x-data-grid/themeAugmentation';
-import COLORS from './colors';
+
+import {COLORS} from './palette';
 
 export const components: Components = {
   MuiAccordion: {

@@ -55,8 +55,8 @@ You can exend the core DLS themes using the
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@mui/material/styles';
 import deepMerge from 'deepmerge';
+import { createTheme } from '@actinc/dls/styles/createTheme';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components';
 
@@ -73,13 +73,15 @@ const MyApp = () => (
 
 #### Custom Themes
 
-Alternatively, you can build your own theme from scratch using the
+Alternatively, you can build your own theme from scratch using our variation on the
 [`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
-generator from Material UI:
+generator from Material UI. Our version takes the same parameters, but will
+return a strongly typed version of the theme with any customizations you may
+have added.
 
 ```jsx
-import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@actinc/dls/components';
+import { createTheme } from '@actinc/dls/styles/createTheme';
 
 const myCustomTheme = createTheme({
   // build your theme here!
@@ -90,6 +92,26 @@ const MyApp = () => (
     <App />
   </ThemeProvider>
 );
+```
+
+#### Custom Themes And Styled Components
+
+If you'd like to use a custom theme (or one of the provided themes) with your
+styled components, and your custom theme includes theme options that are not
+present in the default MUI Theme type, then we provide a helper function to
+generate a styled function that is strongly typed to your theme:
+
+```jsx
+import { createThemeStyled } from '@actinc/dls/helpers/material/styled';
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import TableCell from '@mui/material/TableCell';
+
+const styled = createThemeStyled(THEME_ACT);
+
+const StyledTypography = styled(TableCell)(({ theme}) => ({
+   // customDims isn't available on a regular theme
+  height: theme.customDims.heights.tableHeader,
+}))
 ```
 
 ### Load Fonts
@@ -138,6 +160,30 @@ following font reference in the `head` of your React app:
 </style>
 ```
 
+#### Work Sans, Roboto, Roboto Mono
+
+The `ENCOURAGE_E4S` theme assumes that the
+[Work Sans](https://fonts.google.com/specimen/Work+Sans),
+[Roboto](https://fonts.google.com/specimen/Roboto), and the
+[Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) fonts are available
+in the browser. Therefore, it is recommended that you include the following font
+reference in the `head` of your React app:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Roboto:wght@300;400;500;700"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono:wght@200..700"
+  rel="stylesheet"
+/>
+```
+
 ### CSS Baseline
 
 It is recommended to inject the `CssBaseline` component from Material UI near
@@ -182,6 +228,34 @@ const MyComponent = () => (
   ...
 );
 ```
+
+### Transient Props and Styled Components
+
+The DLS provides a customized styled helper which omits transient props
+(those starting with $) from the rendered HTML, while still being able to use
+those parameters in styled components. Use as a drop in replacement of the
+`styled` function that exists in `@mui/material/styles`:
+
+```jsx
+import { styled } from '@actinc/dls/helpers/material/styled';
+import Button, { ButtonProps } from '@mui/material/Button';
+import * as React from 'react';
+
+const StyledButton = styled(Button)<ButtonProps & { $ultraWide: boolean }>(
+  ({ $ultraWide, theme }) => ({
+    paddingLeft: $ultraWide ? theme.spacing(8) : theme.spacing(4),
+    paddingRight: $ultraWide ? theme.spacing(8) : theme.spacing(4),
+  }),
+);
+
+const MyComponent: React.FC = () => {
+  return <StyledButton $ultraWide />;
+};
+```
+
+* This implementation is how Styled Components does it: <https://styled-components.com/docs/api#transient-props>
+* Unfortunately emotion (the default styling engine in React) doesn't seem to
+care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
 
 ### Minimizing Bundle Size
 

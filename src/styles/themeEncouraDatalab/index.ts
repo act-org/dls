@@ -7,21 +7,21 @@
  * @prettier
  */
 
-/* eslint-disable @typescript-eslint/no-empty-interface */
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from '~/styles/createTheme';
+import { CustomThemeOptions, ICustomDims } from '~/types';
 
-import { CustomThemeOptions } from '~/types';
-
-import COLORS from './colors';
 import COMPONENTS from './components';
 import DIMS from './dims';
-import PALETTE from './palette';
+import PALETTE, { CustomPaletteOptions } from './palette';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
-export const THEME_ENCOURA_DATALAB: CustomThemeOptions = {
+type ThemeCustomizations = ICustomDims & {
+  palette: CustomPaletteOptions;
+};
+
+export const THEME_ENCOURA_DATALAB: CustomThemeOptions<ThemeCustomizations> = {
   components: COMPONENTS,
-  customColors: COLORS.CUSTOM,
   customDims: DIMS.CUSTOM,
   palette: PALETTE,
   shape: SHAPE,

@@ -8,11 +8,34 @@
  */
 
 import { common, grey } from '@mui/material/colors';
-import { PaletteOptions } from '@mui/material/styles';
+import { PaletteColorOptions, PaletteOptions } from '@mui/material/styles';
 
-import COLORS from './colors';
+import { typeOk } from '~/helpers/types';
 
-const PALETTE: PaletteOptions = {
+export const COLORS = {
+  BACKGROUND: '#F7F7F7',
+  ERROR: '#CC0033',
+  ERROR_DARK: '#8E0024',
+  INFO: '#2196F3',
+  INFO_DARK: '#1976D2',
+  INFO_LIGHT: '#64B5F6',
+  PRIMARY: '#0077AA',
+  PRIMARY_DARK: '#042E60',
+  PRIMARY_LIGHT: '#0077AA',
+  SECONDARY: '#2D2D2D',
+  SUCCESS: '#009900',
+  SUCCESS_DARK: '#007B00',
+  TERTIARY: '#2D2D2D',
+  TEXT_SECONDARY: '#444444',
+  WARNING: '#FF9900',
+  WARNING_DARK: '#D14900',
+};
+
+export type CustomPaletteOptions = PaletteOptions & {
+  tertiary: PaletteColorOptions;
+};
+
+const PALETTE = typeOk<CustomPaletteOptions>()({
   action: {
     activatedOpacity: 0.12,
     active: 'rgba(0, 0, 0, 0.54)',
@@ -64,6 +87,9 @@ const PALETTE: PaletteOptions = {
     dark: COLORS.SUCCESS_DARK,
     main: COLORS.SUCCESS,
   },
+  tertiary: {
+    main: COLORS.TERTIARY,
+  },
   text: {
     disabled: grey[400],
     primary: common.black,
@@ -78,6 +104,6 @@ const PALETTE: PaletteOptions = {
     dark: COLORS.WARNING_DARK,
     main: COLORS.WARNING,
   },
-};
+});
 
 export default PALETTE;

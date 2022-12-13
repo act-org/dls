@@ -1,6 +1,6 @@
 import { TypographyVariantsOptions } from '@mui/material/styles';
 
-import COLORS from './colors';
+import {COLORS} from './palette';
 
 const TYPOGRAPHY: TypographyVariantsOptions = {
   body1: {

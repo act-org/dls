@@ -7,21 +7,21 @@
  * @prettier
  */
 
-/* eslint-disable @typescript-eslint/no-empty-interface */
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from '~/styles/createTheme';
+import { CustomThemeOptions, ICustomDims } from '~/types';
 
-import { CustomThemeOptions } from '~/types';
-
-import COLORS from './colors';
-import DIMS from './dims';
 import COMPONENTS from './components';
-import PALETTE from './palette';
+import DIMS from './dims';
+import PALETTE, { CustomPaletteOptions } from './palette';
 import SHAPE from './shape';
 import TYPOGRAPHY from './typography';
 
-export const THEME_ACT_ET: CustomThemeOptions = {
+type ThemeCustomizations = ICustomDims & {
+  palette: CustomPaletteOptions;
+};
+
+export const THEME_ACT_ET: CustomThemeOptions<ThemeCustomizations> = {
   components: COMPONENTS,
-  customColors: COLORS.CUSTOM,
   customDims: DIMS.CUSTOM,
   palette: PALETTE,
   shape: SHAPE,

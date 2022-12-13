@@ -16,12 +16,12 @@ import { styled } from '~/helpers/material/styled';
 
 export const StyledTypography = styled(Typography)<
   TypographyProps & {
-    isActive?: boolean;
+    $isActive?: boolean;
   }
->(({ isActive, theme }) => ({
+>(({ $isActive, theme }) => ({
   [`&.${typographyClasses.root}`]: {
     '&:after': {
-      backgroundColor: isActive ? 'currentcolor' : 'transparent',
+      backgroundColor: $isActive ? 'currentcolor' : 'transparent',
       borderRadius: theme.shape.borderRadius,
       bottom: '-2px',
       content: '""',
@@ -37,11 +37,11 @@ export const StyledTypography = styled(Typography)<
       },
       textShadow: '0 0 .65px currentcolor, 0 0 .65px currentcolor',
     },
-    '&:not(:hover)': !isActive ? { color: 'none' } : {},
+    '&:not(:hover)': !$isActive ? { color: 'none' } : {},
     fontSize: '0.75rem',
     lineHeight: '1.5rem',
     position: 'relative',
-    textShadow: isActive
+    textShadow: $isActive
       ? '0 0 .65px currentcolor, 0 0 .65px currentcolor'
       : 'unset',
     transition: 'all .2s linear',

@@ -5,30 +5,41 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Breakpoints, createTheme, ThemeOptions } from '@mui/material/styles';
+import { BreakpointsOptions } from '@mui/material/styles';
 import deepMerge from 'deepmerge';
+
+import { typeOk } from '~/helpers/types';
+import { createTheme } from '~/styles/createTheme';
+import { CustomThemeOptions, ICustomDims } from '~/types';
 
 import baseTheme from './baseTheme';
 import components from './components';
 import customDims from './customDims';
-import palette from './palette';
+import palette, { CustomPaletteOptions } from './palette';
 import props from './props';
 import shadows from './shadows';
 import spacing, { SPACING_PX } from './spacing';
 import typography from './typography';
 import zIndex from './zIndex';
 
-export const THEME_ENCOURAGE_E4S_OPTIONS: ThemeOptions = deepMerge(
-  baseTheme as ThemeOptions,
-  {
+type ThemeCustomizations = ICustomDims & {
+  breakpoints: BreakpointsOptions & {values: BreakpointsOptions['values'] & {mobile: number}};
+  palette: CustomPaletteOptions,
+  spacingPx: number;
+}
+
+export const THEME_ENCOURAGE_E4S_OPTIONS: CustomThemeOptions<ThemeCustomizations> = deepMerge(
+  baseTheme,
+  typeOk<CustomThemeOptions<ThemeCustomizations>>()({
     breakpoints: {
       values: {
+        lg: 1280,
         md: 960,
         mobile: 720,
         sm: 720,
         xl: 1280,
         xs: 375,
-      } as Breakpoints['values'],
+      },
     },
     components,
     customDims,
@@ -39,7 +50,7 @@ export const THEME_ENCOURAGE_E4S_OPTIONS: ThemeOptions = deepMerge(
     spacingPx: SPACING_PX,
     typography,
     zIndex,
-  } as ThemeOptions,
+  }),
   // Replace arrays instead of merging them together
   { arrayMerge: (_: unknown[], source: unknown[]) => source },
 );

@@ -1,11 +1,11 @@
+import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 
 import Color from 'color';
-import { common, grey } from '@mui/material/colors';
-import FilterVariant from '~/icons/FilterVariant';
 import ChevronDown from '~/icons/ChevronDown';
-import COLORS from './colors';
+import FilterVariant from '~/icons/FilterVariant';
 import DIMS from './dims';
+import {COLORS} from './palette';
 import SHAPE from './shape';
 
 import type { } from '@mui/lab/themeAugmentation';

@@ -39,7 +39,7 @@ const RenderNavigationItem: FC<RenderNavigationItemProps> = ({
 
   return (
     <StyledLink {...linkProps}>
-      <StyledTypography color="primary" isActive={isActive}>
+      <StyledTypography $isActive={isActive} color="primary">
         {title}
       </StyledTypography>
     </StyledLink>

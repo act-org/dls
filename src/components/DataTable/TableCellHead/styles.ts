@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import { StyledComponent } from '@emotion/styled';
 import { grey } from '@mui/material/colors';
-import Grid, { GridProps } from '@mui/material/Grid';
+import Grid from '@mui/material/Grid';
+import { Theme } from '@mui/material/styles';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import TableCell, { TableCellProps } from '@mui/material/TableCell';
 import Typography, { TypographyProps } from '@mui/material/Typography';
@@ -18,14 +18,17 @@ import Color from 'color';
 import ChevronDown from '~/icons/ChevronDown';
 import ChevronUp from '~/icons/ChevronUp';
 
-import { styled } from '~/helpers/material/styled';
+import { createThemeStyled } from '~/helpers/material/styled';
 import { typeOk } from '~/helpers/types';
+import { ICustomDims } from '~/types';
 
 const ICON_SIZE = 14;
 
 interface IColorProp {
   $colorProp?: string;
 }
+
+const styled = createThemeStyled<Theme & ICustomDims>();
 
 export const StyledChevronUp = styled(ChevronUp)<SvgIconProps & IColorProp>(
   ({ $colorProp, theme }) => ({
@@ -61,17 +64,15 @@ export const StyledChevronDown = styled(ChevronDown)<SvgIconProps & IColorProp>(
   }),
 );
 
-export const StyledGrid: StyledComponent<GridProps> = styled(Grid)(
-  ({ theme }) => ({
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'absolute',
-    right: theme.spacing(1),
-    top: `calc(50% - ${ICON_SIZE}px)`,
-    width: ICON_SIZE,
-  }),
-);
+export const StyledGrid = styled(Grid)(({ theme }) => ({
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'absolute',
+  right: theme.spacing(1),
+  top: `calc(50% - ${ICON_SIZE}px)`,
+  width: ICON_SIZE,
+}));
 
 export const StyledTableCell = styled(TableCell)<
   TableCellProps & {

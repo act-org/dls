@@ -18,11 +18,11 @@ import { styled } from '~/helpers/material/styled';
 
 export const StyledIconButton = styled(IconButton)<
   IconButtonProps & {
-    isHidden: boolean;
+    $isHidden: boolean;
   }
->(({ isHidden }) => ({
+>(({ $isHidden }) => ({
   [`&.${iconButtonClasses.root}`]: {
-    opacity: isHidden ? 0 : undefined,
-    pointerEvents: isHidden ? 'none' : undefined,
+    opacity: $isHidden ? 0 : undefined,
+    pointerEvents: $isHidden ? 'none' : undefined,
   },
 }));

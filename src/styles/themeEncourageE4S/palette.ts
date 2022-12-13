@@ -1,3 +1,4 @@
+import { TypeText } from '@mui/material';
 import { common, green, grey, red } from '@mui/material/colors';
 import { alpha, lighten, PaletteOptions, recomposeColor } from '@mui/material/styles';
 
@@ -18,7 +19,44 @@ export const teal = '#00ada7';
 export const watermelon = '#f94868';
 export const yellow = neon;
 
-const palette = typeOk<PaletteOptions>()({
+export type CustomPaletteOptions = PaletteOptions & {
+  action: PaletteOptions['action'] & {
+    activeHover: string;
+  },
+  background: PaletteOptions['background'] & {
+    inset: string;
+    disabled: string;
+    overlay: string;
+  },
+  branding: {
+    fuschia: string;
+    mist: string;
+    navy: string;
+    neon: string;
+    orange: string;
+    seafoam: string;
+    teal: string;
+    watermelon: string;
+    yellow: string;
+  };
+  progress: {
+    ongoing: string;
+  };
+  text: TypeText & {
+    over: {
+      dark: {
+        medium: string;
+        high: string;
+      };
+      light: {
+        medium: string;
+        high: string;
+      };
+    };
+  };
+}
+
+const palette = typeOk<CustomPaletteOptions>()({
   action: {
     active: navy,
     activeHover: navyHover,
