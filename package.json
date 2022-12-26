@@ -24,7 +24,7 @@
   "description": "Design Language System (DLS) for ACT front-end projects.",
   "devDependencies": {
     "@actinc/eslint-config": "3.4.2",
-    "@babel/cli": "7.19.3",
+    "@babel/cli": "7.20.7",
     "@babel/core": "7.20.5",
     "@babel/plugin-transform-runtime": "7.19.6",
     "@babel/preset-env": "7.20.2",
