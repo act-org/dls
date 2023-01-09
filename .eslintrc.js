@@ -8,12 +8,17 @@
  */
 
 module.exports = {
-  extends: ['@actinc/eslint-config', 'plugin:mdx/recommended'],
+  extends: [
+    '@actinc/eslint-config',
+    'plugin:mdx/recommended',
+    'plugin:storybook/recommended',
+  ],
   overrides: [
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
         'sort-keys': 'off',
+        'storybook/story-exports': 'off',
       },
     },
   ],
@@ -21,7 +26,10 @@ module.exports = {
     'import/order': [
       'warn',
       {
-        alphabetize: { caseInsensitive: true, order: 'asc' },
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+        },
         groups: [
           'builtin',
           'external',
@@ -50,7 +58,8 @@ module.exports = {
         warnOnUnassignedImports: true,
       },
     ],
-    'react/function-component-definition': 'off', // Allows const defined components,
+    'react/function-component-definition': 'off',
+    // Allows const defined components,
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
   },

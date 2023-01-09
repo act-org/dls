@@ -17,7 +17,6 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-rhoc42-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 50px;"
           >
             <p
@@ -58,7 +57,6 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8ijrl7-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -98,7 +96,6 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8ijrl7-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -138,7 +135,6 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8ijrl7-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -178,7 +174,6 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8ijrl7-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -413,7 +408,6 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-z02e0r-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 50px;"
           >
             <p
@@ -454,7 +448,6 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1fmggip-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -494,7 +487,6 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1fmggip-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -534,7 +526,6 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1fmggip-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -574,7 +565,6 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1fmggip-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -809,7 +799,6 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1slat08-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 50px;"
           >
             <p
@@ -850,7 +839,6 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1w1n898-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -890,7 +878,6 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1w1n898-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -930,7 +917,6 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1w1n898-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -970,7 +956,6 @@ exports[`DataTable ENCOURA_DATALAB theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1w1n898-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -1205,7 +1190,6 @@ exports[`DataTable ENCOURAGE_E4S theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-ybk42f-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 50px;"
           >
             <p
@@ -1246,7 +1230,6 @@ exports[`DataTable ENCOURAGE_E4S theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-pri5bu-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -1286,7 +1269,6 @@ exports[`DataTable ENCOURAGE_E4S theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-pri5bu-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -1326,7 +1308,6 @@ exports[`DataTable ENCOURAGE_E4S theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-pri5bu-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p
@@ -1366,7 +1347,6 @@ exports[`DataTable ENCOURAGE_E4S theme matches the snapshot 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-pri5bu-MuiTableCell-root"
             color="default"
-            scope="col"
             style="width: 100px;"
           >
             <p

@@ -20,7 +20,7 @@ exports[`FormInput ACT theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1fks88r-MuiInputBase-root-MuiInput-root"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1j5c1n0-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"
@@ -54,7 +54,7 @@ exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-s4g2go-MuiInputBase-root-MuiInput-root"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-16mc4nl-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"
@@ -88,7 +88,7 @@ exports[`FormInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-zvgpop-MuiInputBase-root-MuiInput-root"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-101f3a2-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"
@@ -122,7 +122,7 @@ exports[`FormInput ENCOURAGE_E4S theme matches the snapshot 1`] = `
       </div>
     </label>
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1b22ogc-MuiInputBase-root-MuiInput-root"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1lw3bb-MuiInputBase-root-MuiInput-root"
     >
       <input
         aria-invalid="false"

@@ -3,7 +3,7 @@
 exports[`Alert ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-1t9c51-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-1ynxst0-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
@@ -38,7 +38,7 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
 exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-7bnazj-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-u88zp8-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
@@ -108,7 +108,7 @@ exports[`Alert ENCOURA_DATALAB theme matches the snapshot 1`] = `
 exports[`Alert ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-c815de-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-tw8vhd-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
