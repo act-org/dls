@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paper ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-4wmgkb-MuiPaper-root"
+  >
+    Paper
+  </div>
+</div>
+`;
+
+exports[`Paper ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-uw1sjj-MuiPaper-root"
+  >
+    Paper
+  </div>
+</div>
+`;
+
+exports[`Paper ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-ooqq8c-MuiPaper-root"
+  >
+    Paper
+  </div>
+</div>
+`;
+
+exports[`Paper ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-1xmdifv-MuiPaper-root"
+  >
+    Paper
+  </div>
+</div>
+`;

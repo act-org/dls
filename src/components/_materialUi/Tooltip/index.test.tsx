@@ -7,10 +7,9 @@
  * @prettier
  */
 
-import { Tooltip } from '@mui/material';
-
-import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
 import { standard } from '@actinc/dls/helpers/test';
+import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
+import { Tooltip } from '@mui/material';
 
 describe('Tooltip', () => {
   const Component = (

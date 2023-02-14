@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { Switch } from '@mui/material';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { Switch } from '@mui/material';
 
 describe('Switch', () => {
   const Component = <Switch checked color="primary" />;

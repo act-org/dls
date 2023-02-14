@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogTitle ACT theme matches the snapshot 1`] = `
+<div>
+  <h2
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-m810tk-MuiTypography-root-MuiDialogTitle-root"
+  >
+    Hey
+  </h2>
+</div>
+`;
+
+exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <h2
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-14sp70i-MuiTypography-root-MuiDialogTitle-root"
+  >
+    Hey
+  </h2>
+</div>
+`;
+
+exports[`DialogTitle ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <h2
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-bjusod-MuiTypography-root-MuiDialogTitle-root"
+  >
+    Hey
+  </h2>
+</div>
+`;
+
+exports[`DialogTitle ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <h2
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1n5zccy-MuiTypography-root-MuiDialogTitle-root"
+  >
+    Hey
+  </h2>
+</div>
+`;

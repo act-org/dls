@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { Button, DialogActions } from '@mui/material';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { Button, DialogActions } from '@mui/material';
 
 describe('DialogActions', () => {
   const Component = (

@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1seckti-MuiFormLabel-root"
+      id="slider-label"
+    >
+      Slider Label
+    </label>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-15ip2pn-MuiSlider-root"
+    >
+      <span
+        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        style="left: 0%; width: 0%;"
+      />
+      <span
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
+        data-focusvisible="false"
+        data-index="0"
+        style="left: 0%;"
+      >
+        <input
+          aria-labelledby="slider-label"
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          data-index="0"
+          max="100"
+          min="0"
+          step="1"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          type="range"
+          value="0"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Slider ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-sgerws-MuiFormLabel-root"
+      id="slider-label"
+    >
+      Slider Label
+    </label>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-15ip2pn-MuiSlider-root"
+    >
+      <span
+        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        style="left: 0%; width: 0%;"
+      />
+      <span
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
+        data-focusvisible="false"
+        data-index="0"
+        style="left: 0%;"
+      >
+        <input
+          aria-labelledby="slider-label"
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          data-index="0"
+          max="100"
+          min="0"
+          step="1"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          type="range"
+          value="0"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Slider ENCOURA_DATALAB theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-17h563u-MuiFormLabel-root"
+      id="slider-label"
+    >
+      Slider Label
+    </label>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1bwgw5o-MuiSlider-root"
+    >
+      <span
+        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        style="left: 0%; width: 0%;"
+      />
+      <span
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-2kpwjl-MuiSlider-thumb"
+        data-focusvisible="false"
+        data-index="0"
+        style="left: 0%;"
+      >
+        <input
+          aria-labelledby="slider-label"
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          data-index="0"
+          max="100"
+          min="0"
+          step="1"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          type="range"
+          value="0"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Slider ENCOURAGE_E4S theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-jayakb-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-ykdn8w-MuiFormLabel-root"
+      id="slider-label"
+    >
+      Slider Label
+    </label>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1i90vee-MuiSlider-root"
+    >
+      <span
+        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        style="left: 0%; width: 0%;"
+      />
+      <span
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-17jp4ga-MuiSlider-thumb"
+        data-focusvisible="false"
+        data-index="0"
+        style="left: 0%;"
+      >
+        <input
+          aria-labelledby="slider-label"
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          data-index="0"
+          max="100"
+          min="0"
+          step="1"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          type="range"
+          value="0"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;

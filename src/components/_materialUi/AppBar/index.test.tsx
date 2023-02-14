@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { AppBar } from '@mui/material';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { AppBar } from '@mui/material';
 
 describe('AppBar', () => {
   const Component = <AppBar color="primary" />;

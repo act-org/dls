@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { Paper } from '@mui/material';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { Paper } from '@mui/material';
 
 describe('Paper', () => {
   const Component = <Paper elevation={2}>Paper</Paper>;

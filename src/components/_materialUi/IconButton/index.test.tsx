@@ -7,11 +7,11 @@
  * @prettier
  */
 
+import { standard } from '@actinc/dls/helpers/test';
 import { IconButton } from '@mui/material';
 import { noop } from 'lodash';
 
 import PencilCircle from '@actinc/dls/icons/PencilCircle';
-import { standard } from '@actinc/dls/helpers/test';
 
 describe('IconButton', () => {
   const Component = (

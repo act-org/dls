@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
 
 jest.mock('@mui/material/utils', () => {
   let initialId = 12345;

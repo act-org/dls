@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { DialogTitle } from '@mui/material';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { DialogTitle } from '@mui/material';
 
 describe('DialogTitle', () => {
   const Component = <DialogTitle>Hey</DialogTitle>;

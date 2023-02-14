@@ -24,7 +24,7 @@ export default {
     disablePortal: false,
     options: topFilms,
     renderInput: (params: AutocompleteRenderInputParams) => (
-      <TextField label="Movie" {...params} />
+      <TextField {...params} label="Movie" />
     ),
   },
   parameters: {
@@ -54,17 +54,4 @@ export const Multiple = (
       }
     />
   );
-  // args: {
-  //   multiple: true,
-  //   getOptionLabel: (option: FilmType) => option.title,
-  //   renderTags: (value: FilmType[], getTagProps) => {
-  //     return value.map((option: FilmType, index: number) => (
-  //       <Chip
-  //         variant="outlined"
-  //         label={option.label}
-  //         {...getTagProps({ index })}
-  //       />
-  //     ));
-  //   },
-  // },
 };

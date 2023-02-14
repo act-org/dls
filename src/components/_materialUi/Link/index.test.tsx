@@ -7,9 +7,8 @@
  * @prettier
  */
 
-import { Link } from '@mui/material';
-
 import { standard } from '@actinc/dls/helpers/test';
+import { Link } from '@mui/material';
 
 describe('Link', () => {
   const Component = (
