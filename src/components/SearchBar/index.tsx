@@ -13,8 +13,8 @@ import {
   OutlinedInputProps,
 } from '@mui/material';
 import { ReactElement, useState } from 'react';
-import CloseCircle from '~/icons/CloseCircle';
-import Magnify from '~/icons/Magnify';
+import CloseCircle from '@actinc/dls/icons/CloseCircle';
+import Magnify from '@actinc/dls/icons/Magnify';
 
 import { StyledIconButton } from './styles';
 

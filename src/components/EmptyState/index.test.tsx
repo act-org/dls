@@ -9,7 +9,7 @@
 
 import { noop } from 'lodash';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 import { EmptyState } from '.';
 

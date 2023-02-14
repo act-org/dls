@@ -13,7 +13,12 @@ import { min } from 'lodash';
 import { CSSProperties, FC, ReactElement, useRef, useState } from 'react';
 import { FixedSizeList } from 'react-window';
 
-import { ChevronLeft, ChevronRight, PageFirst, PageLast } from '~/icons';
+import {
+  ChevronLeft,
+  ChevronRight,
+  PageFirst,
+  PageLast,
+} from '@actinc/dls/icons';
 
 import { StyledContainer, StyledMenuItem, StyledTextField } from './styles';
 

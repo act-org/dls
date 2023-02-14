@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
-import Menu from '~/icons/Menu';
+import Menu from '@actinc/dls/icons/Menu';
 
 export const Toolbar = MuiToolbar;
 export type ToolbarProps = MuiToolbarProps;

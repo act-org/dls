@@ -9,12 +9,12 @@
 
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { Button } from '@mui/material';
 import { ReactElement } from 'react';
-import { ConfirmDialog, ConfirmDialogProps } from '~/components';
-import { ConfirmProvider } from '~/context';
+import { ConfirmDialog, ConfirmDialogProps } from '@actinc/dls/components';
+import { ConfirmProvider } from '@actinc/dls/context';
 import { useConfirm } from '.';
 
 const ConfirmHook = (props: ConfirmDialogProps): ReactElement => {

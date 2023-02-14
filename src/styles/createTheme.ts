@@ -1,6 +1,6 @@
 import { createTheme as muiCreateTheme } from '@mui/material/styles';
 
-import { CustomTheme, CustomThemeOptions } from "~/types";
+import { CustomTheme, CustomThemeOptions } from "@actinc/dls/types";
 
 export const createTheme = <T extends object>(
   options: CustomThemeOptions<T>,

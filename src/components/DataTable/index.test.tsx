@@ -9,7 +9,7 @@
 
 import { noop } from 'lodash';
 
-import { snapshot } from '~/helpers/test';
+import { snapshot } from '@actinc/dls/helpers/test';
 
 import DataTable from '.';
 

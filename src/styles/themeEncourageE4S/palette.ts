@@ -2,7 +2,7 @@ import { TypeText } from '@mui/material';
 import { common, green, grey, red } from '@mui/material/colors';
 import { alpha, lighten, PaletteOptions, recomposeColor } from '@mui/material/styles';
 
-import { typeOk } from '~/helpers/types';
+import { typeOk } from '@actinc/dls/helpers/types';
 
 export const black60 = '#666666';
 export const fuschia = '#d66bbd';

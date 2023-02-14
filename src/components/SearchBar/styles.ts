@@ -14,7 +14,7 @@ import IconButton, {
   iconButtonClasses,
 } from '@mui/material/IconButton';
 
-import { styled } from '~/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 export const StyledIconButton = styled(IconButton)<
   IconButtonProps & {

@@ -10,8 +10,8 @@
 import { noop } from 'lodash';
 import { FC, ReactElement, useEffect, useState } from 'react';
 
-import DialogContinueSession from '~/components/DialogContinueSession';
-import IdleTimer from '~/components/IdleTimer';
+import DialogContinueSession from '@actinc/dls/components/DialogContinueSession';
+import IdleTimer from '@actinc/dls/components/IdleTimer';
 
 export interface SessionTimerProps {
   children?: ({

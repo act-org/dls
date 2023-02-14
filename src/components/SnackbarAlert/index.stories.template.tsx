@@ -11,9 +11,9 @@ import { Button, Grid } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 import { startCase } from 'lodash';
 
-import AlertContext from '~/context/AlertContext';
-import AlertContextProvider from '~/context/AlertContext/provider';
-import { Playground } from '~/helpers/playground';
+import AlertContext from '@actinc/dls/context/AlertContext';
+import AlertContextProvider from '@actinc/dls/context/AlertContext/provider';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';

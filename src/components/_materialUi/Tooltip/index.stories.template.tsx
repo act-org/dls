@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
-import HelpCircleOutline from '~/icons/HelpCircleOutline';
+import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
 
 export const Tooltip = MuiTooltip;
 export type TooltipProps = MuiTooltipProps;

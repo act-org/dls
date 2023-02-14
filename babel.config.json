@@ -14,7 +14,7 @@
     [
       "babel-plugin-root-import",
       {
-        "rootPathPrefix": "~",
+        "rootPathPrefix": "@actinc/dls",
         "rootPathSuffix": "./src"
       }
     ],

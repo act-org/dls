@@ -9,7 +9,7 @@
 
 import { Button } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Button', () => {
   const Component = <Button color="primary">Click me</Button>;

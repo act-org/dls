@@ -6,8 +6,10 @@
  *
  * @prettier
  */
+import type { StorybookConfig } from '@storybook/core-common';
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-module.exports = {
+const config: StorybookConfig = {
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-controls',
@@ -24,17 +26,19 @@ module.exports = {
     storyStoreV7: true,
     babelModeV7: true,
     emotionAlias: false,
+    previewCsfV3: true,
+    modernInlineRender: true,
   },
-  babel: async options => {
-    options.plugins.push([
-      'babel-plugin-root-import',
-      {
-        rootPathPrefix: '~',
-        rootPathSuffix: './src',
-      },
-    ]);
-    return options;
-  },
+  // babel: async options => {
+  //   options.plugins.push([
+  //     'babel-plugin-root-import',
+  //     {
+  //       rootPathPrefix: '@actinc/dls',
+  //       rootPathSuffix: './src',
+  //     },
+  //   ]);
+  //   return options;
+  // },
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   staticDirs: ['../public'],
   typescript: {
@@ -48,4 +52,18 @@ module.exports = {
       skipChildrenPropWithoutDoc: false,
     },
   },
+  webpackFinal: async config => {
+    if (config.resolve) {
+      config.resolve.plugins = [
+        ...(config.resolve.plugins || []),
+        new TsconfigPathsPlugin({
+          extensions: config.resolve.extensions,
+        }),
+      ];
+    }
+
+    return config;
+  },
 };
+
+export default config;

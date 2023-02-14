@@ -12,7 +12,7 @@
 import { DialogActions } from '@mui/material';
 import { dialogActionsClasses } from '@mui/material/DialogActions';
 
-import { styled } from '~/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 export const StyledDialogActions = styled(DialogActions)(({ theme }) => ({
   [`&.${dialogActionsClasses.root}`]: {

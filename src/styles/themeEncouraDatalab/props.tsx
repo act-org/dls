@@ -1,7 +1,7 @@
 import { ComponentsProps } from '@mui/material/styles';
 
-import ChevronDown from '~/icons/ChevronDown';
-import FilterVariant from '~/icons/FilterVariant';
+import ChevronDown from '@actinc/dls/icons/ChevronDown';
+import FilterVariant from '@actinc/dls/icons/FilterVariant';
 
 const PROPS: ComponentsProps = {
   MuiAlert: {

@@ -9,7 +9,7 @@
 
 import { get } from 'lodash';
 
-import { ServerError } from '~/types';
+import { ServerError } from '@actinc/dls/types';
 
 const getErrorMessage = (err: Error | ServerError | unknown): string => {
   let errorMessage = '';

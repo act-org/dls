@@ -1,3 +1,4 @@
+/* eslint-disable filenames/match-exported */
 /**
  * Copyright (c) ACT, Inc. and its affiliates.
  *
@@ -7,8 +8,12 @@
  * @prettier
  */
 
-module.exports = {
-  collectCoverage: true,
+import { JestConfigWithTsJest, pathsToModuleNameMapper } from 'ts-jest';
+
+import { compilerOptions } from './tsconfig.json';
+
+const config: JestConfigWithTsJest = {
+collectCoverage: true,
   collectCoverageFrom: [
     '**/*.{ts,tsx}',
     '!**/node_modules/**',
@@ -21,21 +26,23 @@ module.exports = {
     'src/components/index.ts',
     'src/index.ts',
     'src/styles/index.ts',
+    'internal.tsx',
   ],
   coverageReporters: ['text', 'html'],
-  moduleNameMapper: {
-    '~/(.*)': '<rootDir>/src/$1',
-  },
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' }),
   preset: 'ts-jest',
   roots: ['<rootDir>/src'],
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.[tj]sx?$': [
+    '^.+\\.tsx?$': [
       'ts-jest',
       {
+        babelConfig: 'babel.test.js',
         diagnostics: false,
-        tsconfig: './tsconfig.json',
+        tsconfig: './tsconfig.json'
       },
     ],
   },
 };
+
+export default config;

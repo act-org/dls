@@ -21,7 +21,7 @@ import {
 import { Story } from '@storybook/react/types-6-0';
 import JSONParseSafe from 'json-parse-safe';
 import { useEffect, useState } from 'react';
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 

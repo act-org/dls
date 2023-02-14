@@ -8,9 +8,9 @@
     "noEmit": false,
     "outDir": "./.storybook",
     "paths": {
-      "~/*": [
+      "@actinc/dls/*": [
         "./src/*"
-      ],
+      ]
     },
     "typeRoots": [
       "./node_modules/@types"

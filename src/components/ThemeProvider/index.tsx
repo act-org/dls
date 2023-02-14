@@ -17,10 +17,10 @@ import {
 import { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider';
 import { FC, ReactElement } from 'react';
 
-import { THEME_ACT } from '~/styles/themeAct';
-import { THEME_ACT_ET } from '~/styles/themeActEt';
-import { THEME_ENCOURA_DATALAB } from '~/styles/themeEncouraDatalab';
-import { THEME_ENCOURAGE_E4S } from '~/styles/themeEncourageE4S';
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import { THEME_ACT_ET } from '@actinc/dls/styles/themeActEt';
+import { THEME_ENCOURA_DATALAB } from '@actinc/dls/styles/themeEncouraDatalab';
+import { THEME_ENCOURAGE_E4S } from '@actinc/dls/styles/themeEncourageE4S';
 
 /**
  * # Theme configuration.

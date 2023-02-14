@@ -10,7 +10,7 @@
 import { noop } from 'lodash';
 import { OutlinedInput } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('OutlinedInput', () => {
   const Component = <OutlinedInput onChange={noop} value="Value" />;

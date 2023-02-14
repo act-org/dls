@@ -16,8 +16,8 @@ import {
 } from '@mui/material';
 import { ReactElement } from 'react';
 
-import { InputLabel, InputLabelProps } from '~/components/InputLabel';
-import AlertOutline from '~/icons/AlertOutline';
+import { InputLabel, InputLabelProps } from '@actinc/dls/components/InputLabel';
+import AlertOutline from '@actinc/dls/icons/AlertOutline';
 
 export type FormInputProps = InputProps & {
   label?: string | ReactElement;

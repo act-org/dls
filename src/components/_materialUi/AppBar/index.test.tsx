@@ -9,7 +9,7 @@
 
 import { AppBar } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('AppBar', () => {
   const Component = <AppBar color="primary" />;

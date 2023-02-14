@@ -9,8 +9,8 @@
 
 import { Tooltip } from '@mui/material';
 
-import HelpCircleOutline from '~/icons/HelpCircleOutline';
-import { standard } from '~/helpers/test';
+import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Tooltip', () => {
   const Component = (

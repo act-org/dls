@@ -12,10 +12,10 @@ import { isNumber } from 'lodash';
 import moment from 'moment';
 import { useState } from 'react';
 
-import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
-import { Playground } from '~/helpers/playground';
-import sort from '~/helpers/sort';
-import { SortObject } from '~/types';
+import SORT_DIRECTION_TYPES from '@actinc/dls/constants/sortDirectionTypes';
+import { Playground } from '@actinc/dls/helpers/playground';
+import sort from '@actinc/dls/helpers/sort';
+import { SortObject } from '@actinc/dls/types';
 
 import { DataTable, DataTableProps } from '.';
 

@@ -6,7 +6,7 @@ import DIMS from './dims';
 import {COLORS} from './palette';
 import SHAPE from './shape';
 
-import FilterVariant from '~/icons/FilterVariant';
+import FilterVariant from '@actinc/dls/icons/FilterVariant';
 
 import type { } from '@mui/lab/themeAugmentation';
 import type { } from '@mui/x-data-grid/themeAugmentation';

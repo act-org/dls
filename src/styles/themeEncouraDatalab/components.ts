@@ -2,8 +2,8 @@ import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 
 import Color from 'color';
-import ChevronDown from '~/icons/ChevronDown';
-import FilterVariant from '~/icons/FilterVariant';
+import ChevronDown from '@actinc/dls/icons/ChevronDown';
+import FilterVariant from '@actinc/dls/icons/FilterVariant';
 import DIMS from './dims';
 import {COLORS} from './palette';
 import SHAPE from './shape';

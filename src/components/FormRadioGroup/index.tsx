@@ -15,8 +15,8 @@ import {
 } from '@mui/material';
 import { ReactElement } from 'react';
 
-import { FormRadio, FormRadioProps } from '~/components/FormRadio';
-import { InputLabel, InputLabelProps } from '~/components/InputLabel';
+import { FormRadio, FormRadioProps } from '@actinc/dls/components/FormRadio';
+import { InputLabel, InputLabelProps } from '@actinc/dls/components/InputLabel';
 
 export type FormRadioGroupProps = RadioGroupProps & {
   options: FormRadioProps[];

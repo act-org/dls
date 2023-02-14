@@ -10,7 +10,7 @@
 import { common, grey } from '@mui/material/colors';
 import { PaletteColorOptions, PaletteOptions } from '@mui/material/styles';
 
-import { typeOk } from '~/helpers/types';
+import { typeOk } from '@actinc/dls/helpers/types';
 
 export const COLORS = {
   BACKGROUND: '#EBF0F1',

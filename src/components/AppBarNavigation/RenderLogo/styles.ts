@@ -9,7 +9,7 @@
 
 /* eslint-disable import/prefer-default-export */
 
-import { styled } from '~/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 export const StyledImg = styled('img')<{ $isWrapped: boolean }>(
   ({ $isWrapped }) => ({

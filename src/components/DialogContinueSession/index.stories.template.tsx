@@ -12,7 +12,7 @@ import { action } from '@storybook/addon-actions';
 import { Story } from '@storybook/react/types-6-0';
 import { useState } from 'react';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { DialogContinueSession, DialogContinueSessionProps } from '.';
 

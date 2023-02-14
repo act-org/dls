@@ -16,7 +16,7 @@ import {
 } from '@mui/material';
 import { ReactElement } from 'react';
 
-import CloseCircle from '~/icons/CloseCircle';
+import CloseCircle from '@actinc/dls/icons/CloseCircle';
 
 export type DialogProps = MuiDialogProps & {
   title?: string;

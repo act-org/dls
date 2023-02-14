@@ -15,12 +15,12 @@ import TableCell, { TableCellProps } from '@mui/material/TableCell';
 import Typography, { TypographyProps } from '@mui/material/Typography';
 import clsx from 'clsx';
 import Color from 'color';
-import ChevronDown from '~/icons/ChevronDown';
-import ChevronUp from '~/icons/ChevronUp';
+import ChevronDown from '@actinc/dls/icons/ChevronDown';
+import ChevronUp from '@actinc/dls/icons/ChevronUp';
 
-import { createThemeStyled } from '~/helpers/material/styled';
-import { typeOk } from '~/helpers/types';
-import { ICustomDims } from '~/types';
+import { createThemeStyled } from '@actinc/dls/helpers/material/styled';
+import { typeOk } from '@actinc/dls/helpers/types';
+import { ICustomDims } from '@actinc/dls/types';
 
 const ICON_SIZE = 14;
 

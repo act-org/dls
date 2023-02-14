@@ -11,7 +11,7 @@ import { Button, DialogActions, DialogContent } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 import { useState } from 'react';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { Dialog, DialogProps } from '.';
 

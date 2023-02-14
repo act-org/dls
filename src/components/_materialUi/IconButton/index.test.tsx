@@ -10,8 +10,8 @@
 import { IconButton } from '@mui/material';
 import { noop } from 'lodash';
 
-import PencilCircle from '~/icons/PencilCircle';
-import { standard } from '~/helpers/test';
+import PencilCircle from '@actinc/dls/icons/PencilCircle';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('IconButton', () => {
   const Component = (

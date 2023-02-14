@@ -10,7 +10,7 @@
 import { Story } from '@storybook/react/types-6-0';
 import { ChangeEvent, useState } from 'react';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 import { FormInput, FormInputProps } from '.';
 
 export const Template: Story<FormInputProps> = args => {

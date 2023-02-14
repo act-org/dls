@@ -17,12 +17,25 @@ module.exports = {
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        'react-hooks/rules-of-hooks': 'off',
+        'react/no-array-index-key': 'off',
         'sort-keys': 'off',
         'storybook/story-exports': 'off',
       },
     },
+    {
+      files: ['./**/*.test.tsx', './**/*.spec.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        'react/no-array-index-key': 'off',
+        'sort-keys': 'off',
+      },
+    },
   ],
   rules: {
+    'import/no-extraneous-dependencies': 'off',
+    'import/no-unresolved': 'off',
     'import/order': [
       'warn',
       {
@@ -44,11 +57,11 @@ module.exports = {
         pathGroups: [
           {
             group: 'internal',
-            pattern: '~/**',
+            pattern: '@actinc/dls/**',
           },
           {
             group: 'internal',
-            pattern: '~/icons/**',
+            pattern: '@actinc/dls/icons/**',
           },
           {
             group: 'external',

@@ -9,7 +9,7 @@
 
 import { Link } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Link', () => {
   const Component = (

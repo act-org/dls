@@ -9,7 +9,7 @@
 
 import Typography, { typographyClasses } from '@mui/material/Typography';
 
-import { styled } from '~/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/material/styled';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',

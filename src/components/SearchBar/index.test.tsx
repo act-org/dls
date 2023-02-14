@@ -9,7 +9,7 @@
 
 import UserEvent from '@testing-library/user-event';
 
-import { standard, render } from '~/helpers/test';
+import { standard, render } from '@actinc/dls/helpers/test';
 
 import { SearchBar } from '.';
 

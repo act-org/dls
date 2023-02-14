@@ -10,9 +10,9 @@
 import { Table, TableBody, TableHead, TableRow } from '@mui/material';
 import { constant, isNumber, round } from 'lodash';
 
-import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
-import TablePaginationActions from '~/components/TablePaginationActions';
-import { SortObject } from '~/types';
+import { EmptyState, EmptyStateProps } from '@actinc/dls/components/EmptyState';
+import TablePaginationActions from '@actinc/dls/components/TablePaginationActions';
+import { SortObject } from '@actinc/dls/types';
 
 import TableCellBody from './TableCellBody';
 import TableCellHead from './TableCellHead';

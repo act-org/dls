@@ -9,8 +9,8 @@
 
 import { noop } from 'lodash';
 
-import { FormInput } from '~/components/FormInput';
-import { standard } from '~/helpers/test';
+import { FormInput } from '@actinc/dls/components/FormInput';
+import { standard } from '@actinc/dls/helpers/test';
 
 import GridGenerator from '.';
 

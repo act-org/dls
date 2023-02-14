@@ -13,8 +13,8 @@ import {
 } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
 
-import PencilCircle from '~/icons/PencilCircle';
-import PencilCircleOutline from '~/icons/PencilCircleOutline';
+import PencilCircle from '@actinc/dls/icons/PencilCircle';
+import PencilCircleOutline from '@actinc/dls/icons/PencilCircleOutline';
 
 export const IconButton = MuiIconButton;
 export type IconButtonProps = MuiIconButtonProps;

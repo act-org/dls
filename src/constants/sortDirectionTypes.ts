@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { SortDirection } from '~/types';
+import { SortDirection } from '@actinc/dls/types';
 
 const SORT_DIRECTION_TYPES: Record<SortDirection, SortDirection> = {
   ASCENDING: 'ASCENDING' as SortDirection,
