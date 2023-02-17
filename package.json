@@ -131,6 +131,19 @@
   "publishConfig": {
     "access": "public"
   },
+  "release": {
+    "repositoryUrl": "git@github.com:act-org/dls.git",
+    "branches": [
+      {
+        "name": "main",
+        "prerelease": false
+      },
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/act-org/dls.git"
