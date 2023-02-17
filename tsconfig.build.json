@@ -17,6 +17,7 @@
     "./lib/*",
     "./node_modules/*",
     "./src/**/*.stories.*",
+    "./src/**/internal.tsx",
     "./src/**/*.test.*",
     "./storybook-static/*",
     "**/test/*",

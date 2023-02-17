@@ -257,7 +257,24 @@ const MyComponent: React.FC = () => {
 * Unfortunately emotion (the default styling engine in React) doesn't seem to
 care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
 
-### Minimizing Bundle Size
+## Minimizing Bundle Size
+
+The DLS has been refactored to publish more ES friendly JavaScript classes
+instead of the prior CommonJS format. This enables mostly out of the box
+deep tree shaking by the most common bundlers. The package.json has also
+been updated to set
+
+```json
+"sideEffects": false,
+```
+
+which instructs builders to enable deeper tree shaking.  This should make
+bundle sizes significantly smaller with less effort, however the tradeoff
+is in certain scenarios, like Lazy Loading, if you are expecting a dependency
+to be there that is now removed from tree shaking things will break and you
+may need to import that dependency directly in a parent bundle.
+
+### DLS < 7 Bundle Minimizing
 
 If you import modules from the ACT DLS using named imports, more code may be
 loaded into memory than you need. In order to use named imports while keeping
