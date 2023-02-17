@@ -20,8 +20,6 @@
 
 * Breaking changes to the theme creation format and the module output
 
-# Changelog
-
 ## [6.3.0](https://github.com/act-org/dls/compare/v6.2.0...v6.3.0) (2022-12-02)
 
 
@@ -571,4 +569,4 @@ const CustomButtonForTestPrep: React.FC<Props> = ({
 
 export default CustomButtonForTestPrep;
 ```
-<!-- markdownlint-disable-file MD001 MD012 MD013 MD024 -->
+<!-- markdownlint-disable-file -->
