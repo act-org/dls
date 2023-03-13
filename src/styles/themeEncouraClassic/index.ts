@@ -22,7 +22,7 @@ type ThemeCustomizations = ICustomDims & {
   spacingPx: number;
 };
 
-export const THEME_ENCOURA_DATALAB: CustomThemeOptions<ThemeCustomizations> = {
+export const THEME_ENCOURA_CLASSIC: CustomThemeOptions<ThemeCustomizations> = {
   components: COMPONENTS,
   customDims: CUSTOM_DIMS,
   palette: PALETTE,
@@ -32,4 +32,4 @@ export const THEME_ENCOURA_DATALAB: CustomThemeOptions<ThemeCustomizations> = {
   typography: TYPOGRAPHY,
 };
 
-export default createTheme(THEME_ENCOURA_DATALAB);
+export default createTheme(THEME_ENCOURA_CLASSIC);

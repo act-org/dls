@@ -39,6 +39,25 @@ exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`DialogActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation css-1m9ygoa-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Close
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
 exports[`DialogActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
 <div>
   <div

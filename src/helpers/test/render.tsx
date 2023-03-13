@@ -23,7 +23,7 @@ import ThemeProvider from '@actinc/dls/components/ThemeProvider';
 
 export const render = (
   Component: ReactElement,
-  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | 'ENCOURAGE_E4S' | Theme,
+  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE_E4S' | Theme,
   options?: RenderOptions,
 ): RenderResult =>
   originalRender(Component, {
