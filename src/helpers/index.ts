@@ -8,6 +8,7 @@
  */
 
 export * from './getErrorMessage';
+export * from './makeShadow';
 export * from './mergeClasses';
 export * from './oxfordCommaJoin';
 export * from './px';

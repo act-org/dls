@@ -7,14 +7,13 @@
  * @prettier
  */
 
-const DIMS = {
-  CUSTOM: {
-    heights: {
-      header: 64,
-      input: 40,
-      tableHeader: 58,
-    },
+const CUSTOM_DIMS = {
+  heights: {
+    header: 64,
+    input: 40,
+    tableHeader: 58,
   },
+  widths: {},
 };
 
-export default DIMS;
+export default CUSTOM_DIMS;

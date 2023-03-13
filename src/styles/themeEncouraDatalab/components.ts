@@ -13,7 +13,7 @@ import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
 
-import DIMS from './dims';
+import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
 import SHAPE from './shape';
 import spacing from './spacing';
@@ -67,7 +67,7 @@ export const components: Components = {
     defaultProps: {},
     styleOverrides: {
       root: {
-        height: DIMS.CUSTOM.heights.header,
+        height: CUSTOM_DIMS.heights.header,
       },
     },
   },

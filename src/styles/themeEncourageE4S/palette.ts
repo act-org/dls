@@ -54,7 +54,11 @@ export type CustomPaletteOptions = PaletteOptions & {
     yellow: string;
   };
   progress: {
+    failure: string;
+    idle: string;
+    interrupted: string;
     ongoing: string;
+    success: string;
   };
   text: TypeText & {
     over: {

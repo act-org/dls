@@ -11,7 +11,7 @@ import { createTheme } from '@actinc/dls/styles/createTheme';
 import { CustomThemeOptions, ICustomDims } from '@actinc/dls/types';
 
 import COMPONENTS from './components';
-import DIMS from './dims';
+import CUSTOM_DIMS from './customDims';
 import PALETTE, { CustomPaletteOptions } from './palette';
 import SHAPE from './shape';
 import spacing, { SPACING_PX } from './spacing';
@@ -24,7 +24,7 @@ type ThemeCustomizations = ICustomDims & {
 
 export const THEME_ACT_ET: CustomThemeOptions<ThemeCustomizations> = {
   components: COMPONENTS,
-  customDims: DIMS.CUSTOM,
+  customDims: CUSTOM_DIMS,
   palette: PALETTE,
   shape: SHAPE,
   spacing,
