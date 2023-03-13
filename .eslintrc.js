@@ -23,10 +23,8 @@ module.exports = {
     },
   ],
   rules: {
-    'import/no-extraneous-dependencies': 'off',
-    'import/no-unresolved': 'off',
     'import/order': [
-      'warn',
+      'error',
       {
         alphabetize: {
           caseInsensitive: true,
@@ -60,9 +58,6 @@ module.exports = {
         warnOnUnassignedImports: true,
       },
     ],
-    'react/function-component-definition': 'off',
-    // Allows const defined components,
-    'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
   },
   settings: {
