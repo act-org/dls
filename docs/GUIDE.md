@@ -141,7 +141,7 @@ You can create a new DLS component by creating a folder (using ProperCase)
 inside `src/components`. Each component folder should abide by the following
 structure:
 
-```shell
+```sh
 📂 components
  ┣ 📂 NewComponent
  ┃ ┣ index.stories.mdx           // storybook stories go here

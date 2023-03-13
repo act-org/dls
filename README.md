@@ -17,7 +17,7 @@ In order to use the DLS, you must install it along with
 [Material UI](https://mui.com/) and
 [React](https://reactjs.org/) version `17.x` or `18.x`.
 
-```shell
+```sh
 npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
 ```
 
@@ -285,7 +285,7 @@ your bundle size as small as possible, we recommend configuring the
 [babel-plugin-transform-imports](https://bitbucket.org/amctheatres/babel-transform-imports/src/master/)
 plugin for [Babel](https://babeljs.io/).
 
-```shell
+```sh
 npm install --save-dev babel-plugin-transform-imports
 ```
 

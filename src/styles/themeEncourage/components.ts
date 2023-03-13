@@ -7,6 +7,8 @@
  * @prettier
  */
 
+import { accordionClasses } from '@mui/material/Accordion';
+import { accordionSummaryClasses } from '@mui/material/AccordionSummary';
 import { common } from '@mui/material/colors';
 import { ThemeOptions } from '@mui/material/styles';
 
@@ -18,6 +20,8 @@ import customDims from './customDims';
 import palette, {
   black60,
   mist30,
+  navy15,
+  navy30,
   navyHover,
   seafoam,
   seafoam30,
@@ -43,15 +47,62 @@ export const LARGE_RADIUS = cssRadius(LARGE_RADIUS_VALUE);
 // https://github.com/act-org/dls/blob/main/src/styles/themeActEt/components.ts
 export const components: ThemeOptions['components'] = {
   MuiAccordion: {
+    defaultProps: {
+      square: true,
+    },
+    styleOverrides: {
+      root: ({ ownerState }) => ({
+        ...(!ownerState.disableGutters && {
+          '&::before': {
+            display: 'none',
+          },
+          '&:first-of-type': {
+            marginTop: 0,
+          },
+          '&:last-of-type': {
+            marginBottom: 0,
+          },
+          boxShadow: 'none',
+          margin: `${spacing(1)} 0`,
+          [`&.${accordionClasses.expanded}`]: {
+            margin: `${spacing(1)} 0`,
+          },
+        }),
+      }),
+    },
+  },
+  MuiAccordionDetails: {
     styleOverrides: {
       root: {
-        ':first-of-type': {
-          ...cssRadius(0),
-        },
-        ':last-of-type': {
-          ...cssRadius(0),
-        },
+        padding: `${spacing(3)} ${spacing(2)} ${spacing(2)}`,
       },
+    },
+  },
+  MuiAccordionSummary: {
+    styleOverrides: {
+      content: ({ ownerState }) => ({
+        alignItems: 'center',
+        margin: 0,
+        minHeight: 48,
+
+        ...(!ownerState.disableGutters && {
+          [`&.${accordionSummaryClasses.expanded}`]: {
+            margin: 0,
+          },
+        }),
+      }),
+      root: ({ ownerState }) => ({
+        ...cssRadius(12),
+        background: navy15,
+        border: `1px solid ${navy30}`,
+        padding: `${spacing(2)} ${spacing(3)}`,
+
+        ...(!ownerState.disableGutters && {
+          [`&.${accordionSummaryClasses.expanded}`]: {
+            minHeight: undefined,
+          },
+        }),
+      }),
     },
   },
   MuiAlert: {

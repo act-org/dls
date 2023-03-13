@@ -18,15 +18,19 @@ import {
 
 import { typeOk } from '@actinc/dls/helpers/types';
 
+export const beige = '#fffbe0';
 export const black60 = '#666666';
 export const fuschia = '#d66bbd';
 export const mist = '#c9d1d6';
 // Tints, or lighter values, of each color are defined at 70%, 50%, and 30% of each base color.
 export const mist30 = lighten(mist, 0.3);
 export const navy = '#002d61';
+export const navy15 = '#D9E0E7';
+export const navy30 = '#B3C0D0';
 export const navyHover = ' #566C8E';
 export const neon = '#fbe232';
 export const orange = '#eb6645';
+export const paleBrown = '#d6dce0';
 export const seafoam = '#added1';
 export const seafoam30 = lighten(seafoam, 0.3);
 export const teal = '#00ada7';
@@ -53,6 +57,10 @@ export type CustomPaletteOptions = PaletteOptions & {
     watermelon: string;
     yellow: string;
   };
+  maintenance: {
+    background: string;
+    border: string;
+  };
   progress: {
     failure: string;
     idle: string;
@@ -78,7 +86,7 @@ const palette = typeOk<CustomPaletteOptions>()({
   action: {
     active: navy,
     activeHover: navyHover,
-    hover: '#D9E0E7',
+    hover: navy15,
   },
   background: {
     default: recomposeColor({ type: 'rgba', values: [193, 200, 212, 0.2] }),
@@ -103,6 +111,10 @@ const palette = typeOk<CustomPaletteOptions>()({
   },
   info: {
     main: common.white,
+  },
+  maintenance: {
+    background: beige,
+    border: paleBrown,
   },
   primary: {
     contrastText: common.white,

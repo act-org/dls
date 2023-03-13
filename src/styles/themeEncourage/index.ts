@@ -32,7 +32,7 @@ type ThemeCustomizations = ICustomDims & {
   spacingPx: number;
 };
 
-export const THEME_ENCOURAGE_OPTIONS: CustomThemeOptions<ThemeCustomizations> =
+export const THEME_ENCOURAGE: CustomThemeOptions<ThemeCustomizations> =
   deepMerge(
     baseTheme,
     typeOk<CustomThemeOptions<ThemeCustomizations>>()({
@@ -60,6 +60,4 @@ export const THEME_ENCOURAGE_OPTIONS: CustomThemeOptions<ThemeCustomizations> =
     { arrayMerge: (_: unknown[], source: unknown[]) => source },
   );
 
-export const THEME_ENCOURAGE = createTheme(THEME_ENCOURAGE_OPTIONS);
-
-export default THEME_ENCOURAGE;
+export default createTheme(THEME_ENCOURAGE);
