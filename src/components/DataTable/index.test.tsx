@@ -70,7 +70,7 @@ describe('DataTable', () => {
         sortBy: 'id',
         sortDirection: 'ASCENDING',
       }}
-      items={range(5).map((_, i): any => ({
+      items={range(5).map((i): any => ({
         fieldA: `Field A${i + 1}`,
         fieldB: `Field B${i + 1}`,
         fieldC: `Field C${i + 1}`,

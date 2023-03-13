@@ -70,8 +70,7 @@ export const ToolTipLabel: Story = {
  */
 export const Select: Story = {
   args: {
-    children: range(10).map((_, i): any => (
-      // eslint-disable-next-line react/no-array-index-key
+    children: range(10).map((i): any => (
       <MenuItem key={i} value={i}>
         {i + 1}
       </MenuItem>
@@ -93,8 +92,7 @@ export const SelectMultiple: Story = {
         SelectProps={{ multiple: true }}
         value={value}
       >
-        {range(10).map((_, i): any => (
-          // eslint-disable-next-line react/no-array-index-key
+        {range(10).map((i): any => (
           <MenuItem key={i} value={i}>
             {i + 1}
           </MenuItem>
