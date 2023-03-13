@@ -10,6 +10,7 @@
 import { Button } from '@mui/material';
 import { StoryObj } from '@storybook/react';
 import { useState } from 'react';
+
 import { ButtonGroup } from './internal';
 
 const ButtonChildren = () => {
@@ -30,7 +31,6 @@ const ButtonChildren = () => {
           </Button>
         ),
       )}
-      ;
     </>
   );
 };

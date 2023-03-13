@@ -9,11 +9,12 @@
 
 import {
   DataGridProps,
-  GridColumns,
+  GridColDef,
   GridToolbar,
   GridValueGetterParams,
 } from '@mui/x-data-grid';
 import { Meta, StoryObj } from '@storybook/react';
+
 import { DataGrid } from './internal';
 
 type StoryGridRow = {
@@ -22,7 +23,8 @@ type StoryGridRow = {
   firstName?: string | null;
   lastName?: string | null;
 };
-const columns: GridColumns<StoryGridRow> = [
+
+const columns: GridColDef[] = [
   {
     align: 'left',
     description: "The user's ID.",
