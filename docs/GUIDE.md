@@ -113,7 +113,7 @@ The DLS currently supports
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
 3. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-4. `"ENCOURAGE_E4S"`: for Encourage's "E4S" look and feel
+4. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
 
 #### Decouple Style from Functionality
 
@@ -141,7 +141,7 @@ You can create a new DLS component by creating a folder (using ProperCase)
 inside `src/components`. Each component folder should abide by the following
 structure:
 
-```shell
+```sh
 📂 components
  ┣ 📂 NewComponent
  ┃ ┣ index.stories.mdx           // storybook stories go here

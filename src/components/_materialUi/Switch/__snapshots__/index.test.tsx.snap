@@ -82,7 +82,7 @@ exports[`Switch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Switch ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`Switch ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <span
     class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"

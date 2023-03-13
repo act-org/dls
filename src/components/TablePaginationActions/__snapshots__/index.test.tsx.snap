@@ -509,7 +509,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
 </div>
 `;
 
-exports[`TablePaginationActions ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="css-l1f5px"

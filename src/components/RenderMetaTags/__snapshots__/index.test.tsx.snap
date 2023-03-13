@@ -129,7 +129,7 @@ exports[`RenderMetaTagsBase ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`RenderMetaTagsBase ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`RenderMetaTagsBase ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <meta
     content="Some description."

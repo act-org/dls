@@ -40,7 +40,7 @@ export const styled = ((...args: Parameters<typeof muiStyled>) =>
 
 /**
  * Function generator that will generate a `styled` function that has a specific theme type injected. E.g.,
- * const styled = createThemeStyled(THEME_ENCOURAGE_E4S);
+ * const styled = createThemeStyled(THEME_ENCOURAGE);
  * const StyledTypography = styled(Typography)(({ theme }) => ({ color: theme.palette.branding.teal }));
  */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

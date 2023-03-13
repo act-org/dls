@@ -27,7 +27,7 @@ exports[`Drawer ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 />
 `;
 
-exports[`Drawer ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`Drawer ENCOURAGE theme matches the snapshot 1`] = `
 <div
   aria-hidden="true"
 />

@@ -17,7 +17,7 @@ In order to use the DLS, you must install it along with
 [Material UI](https://mui.com/) and
 [React](https://reactjs.org/) version `17.x` or `18.x`.
 
-```shell
+```sh
 npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
 ```
 
@@ -30,7 +30,7 @@ Material UI, and ships with two themes out of the box:
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
 3. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-4. `"ENCOURAGE_E4S"`: for Encourage's "E4S" look and feel
+4. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -165,7 +165,7 @@ The Museo font files can be downloaded
 
 #### Work Sans, Roboto, Roboto Mono
 
-The `ENCOURAGE_E4S` theme assumes that the
+The `ENCOURAGE` theme assumes that the
 [Work Sans](https://fonts.google.com/specimen/Work+Sans),
 [Roboto](https://fonts.google.com/specimen/Roboto), and the
 [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) fonts are available
@@ -240,7 +240,7 @@ those parameters in styled components. Use as a drop in replacement of the
 `styled` function that exists in `@mui/material/styles`:
 
 ```jsx
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/styled';
 import Button, { ButtonProps } from '@mui/material/Button';
 import * as React from 'react';
 
@@ -260,7 +260,7 @@ const MyComponent: React.FC = () => {
 * Unfortunately emotion (the default styling engine in React) doesn't seem to
 care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
 
-## Minimizing Bundle Size
+## Minimizing Bundle Size (DLS >= 7)
 
 The DLS has been refactored to publish more ES friendly JavaScript classes
 instead of the prior CommonJS format. This enables mostly out of the box
@@ -277,7 +277,7 @@ is in certain scenarios, like Lazy Loading, if you are expecting a dependency
 to be there that is now removed from tree shaking things will break and you
 may need to import that dependency directly in a parent bundle.
 
-### DLS < 7 Bundle Minimizing
+### Minimizing Bundle Size (DLS < 7)
 
 If you import modules from the ACT DLS using named imports, more code may be
 loaded into memory than you need. In order to use named imports while keeping
@@ -285,7 +285,7 @@ your bundle size as small as possible, we recommend configuring the
 [babel-plugin-transform-imports](https://bitbucket.org/amctheatres/babel-transform-imports/src/master/)
 plugin for [Babel](https://babeljs.io/).
 
-```shell
+```sh
 npm install --save-dev babel-plugin-transform-imports
 ```
 

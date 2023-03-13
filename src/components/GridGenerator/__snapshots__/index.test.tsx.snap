@@ -360,7 +360,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`GridGenerator ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-16oepvt-MuiGrid-root"

@@ -9,6 +9,7 @@
 
 import { MenuItem, SelectProps } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+import { range } from 'lodash';
 import { useState } from 'react';
 
 import { Select } from './internal';
@@ -19,8 +20,7 @@ import { Select } from './internal';
  */
 export default {
   args: {
-    children: Array(...Array(10)).map((_, i): any => (
-      // eslint-disable-next-line react/no-array-index-key
+    children: range(10).map((i): any => (
       <MenuItem key={i} value={i}>
         {i + 1}
       </MenuItem>

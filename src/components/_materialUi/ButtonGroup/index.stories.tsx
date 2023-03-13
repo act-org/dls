@@ -13,7 +13,7 @@ import { ReactElement, useState } from 'react';
 
 import { ButtonGroup } from './internal';
 
-const ButtonChildren = (): ReactElement<any> => {
+const ButtonChildren = (): ReactElement<unknown> => {
   const buttonLabels = ['One', 'Two', 'Three'];
   const [active, setActive] = useState('One');
 

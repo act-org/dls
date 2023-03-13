@@ -42,7 +42,7 @@ exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Link ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`Link ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <a
     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1rjygfk-MuiTypography-root-MuiLink-root"

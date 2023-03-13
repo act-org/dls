@@ -79,7 +79,7 @@ exports[`IconButton ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`IconButton ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`IconButton ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1hv8qdn-MuiButtonBase-root-MuiIconButton-root"

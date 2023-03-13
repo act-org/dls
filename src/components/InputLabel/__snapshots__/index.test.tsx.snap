@@ -69,7 +69,7 @@ exports[`InputLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`InputLabel ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <label
     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-6r4psl-MuiFormLabel-root-MuiInputLabel-root"

@@ -108,7 +108,7 @@ exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Loading ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`Loading ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Loading..."
