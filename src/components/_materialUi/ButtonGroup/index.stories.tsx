@@ -9,17 +9,18 @@
 
 import { Button } from '@mui/material';
 import { StoryObj } from '@storybook/react';
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 
 import { ButtonGroup } from './internal';
 
-const ButtonChildren = () => {
+const ButtonChildren = (): ReactElement<any> => {
   const buttonLabels = ['One', 'Two', 'Three'];
   const [active, setActive] = useState('One');
+
   return (
     <>
       {buttonLabels.map(
-        (buttonLabel): React.ReactElement<unknown> => (
+        (buttonLabel): ReactElement<unknown> => (
           <Button
             key={buttonLabel}
             onClick={(): void => {

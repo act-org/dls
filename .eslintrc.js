@@ -17,7 +17,6 @@ module.exports = {
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
         'react-hooks/rules-of-hooks': 'off',
         'react/no-array-index-key': 'off',
         'sort-keys': 'off',

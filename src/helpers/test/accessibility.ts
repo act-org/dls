@@ -9,7 +9,7 @@
 
 import { configure, RenderOptions } from '@testing-library/react';
 import { axe, JestAxeConfigureOptions, toHaveNoViolations } from 'jest-axe';
-import React from 'react';
+import { ReactElement } from 'react';
 
 import render from './render';
 import THEMES from './themes';
@@ -17,7 +17,7 @@ import THEMES from './themes';
 expect.extend(toHaveNoViolations);
 // eslint-disable-next-line jest/no-export
 export default function accessibility(
-  Component: React.ReactElement,
+  Component: ReactElement,
   renderOptions?: RenderOptions,
   axeOptions?: JestAxeConfigureOptions,
 ): void {

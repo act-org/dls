@@ -8,14 +8,14 @@
  */
 
 import { RenderOptions } from '@testing-library/react';
-import React from 'react';
+import { ReactElement } from 'react';
 
 import render from './render';
 import THEMES from './themes';
 
 // eslint-disable-next-line jest/no-export
 export default function snapshot(
-  Component: React.ReactElement,
+  Component: ReactElement,
   renderOptions?: RenderOptions,
 ): void {
   test.each(THEMES)('%s theme matches the snapshot', theme => {

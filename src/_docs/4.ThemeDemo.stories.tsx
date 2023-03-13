@@ -161,7 +161,9 @@ const demos = [
         options: topFilms,
         disablePortal: true,
         fullWidth: true,
-        renderInput: params => <TextField {...params} label="Movie" />,
+        renderInput: (params): ReactElement<any> => (
+          <TextField {...params} label="Movie" />
+        ),
       },
     ],
     render: props => <Autocomplete sx={{ mx: '.5em' }} {...props} />,

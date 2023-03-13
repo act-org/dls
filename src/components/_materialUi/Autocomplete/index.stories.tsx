@@ -9,6 +9,7 @@
 
 import { AutocompleteRenderInputParams, Chip, TextField } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+import { ReactElement } from 'react';
 
 import {
   Autocomplete,
@@ -36,13 +37,13 @@ export default {
 export const Primary: StoryObj<Autocomplete> = { args: { color: 'primary' } };
 export const Multiple = (
   args: AutocompleteProps<FilmType, true, false, false, typeof Chip>,
-) => {
+): ReactElement<any> => {
   return (
     <Autocomplete
       {...args}
-      getOptionLabel={option => option.label}
+      getOptionLabel={(option): string => option.label}
       multiple
-      renderTags={(value: FilmType[], getTagProps) =>
+      renderTags={(value: FilmType[], getTagProps): ReactElement<any>[] =>
         value.map((option: FilmType, index: number) => (
           // eslint-disable-next-line react/jsx-key
           <Chip

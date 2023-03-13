@@ -40,12 +40,12 @@ export default {
       <>
         <Button
           color="primary"
-          onClick={() => setOpen(true)}
+          onClick={(): void => setOpen(true)}
           variant="contained"
         >
           Open Backdrop
         </Button>
-        <Backdrop {...args} onClick={() => setOpen(false)} open={open} />
+        <Backdrop {...args} onClick={(): void => setOpen(false)} open={open} />
       </>
     );
   },

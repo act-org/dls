@@ -37,7 +37,9 @@ export default {
 type Story = StoryObj<TextFieldProps>;
 
 export const Primary: Story = {};
+
 export const Standard: Story = { args: { variant: 'standard' } };
+
 export const ToolTipLabel: Story = {
   args: {
     label: (
@@ -61,6 +63,7 @@ export const ToolTipLabel: Story = {
     ),
   },
 };
+
 /**
  * You most likely will want to use this version of the Select component where it incorporates a label
  */
@@ -81,7 +84,9 @@ export const SelectMultiple: Story = {
     return (
       <TextField
         {...args}
-        onChange={event => setValue(event.target.value as unknown as string[])}
+        onChange={(event): void =>
+          setValue(event.target.value as unknown as string[])
+        }
         select
         SelectProps={{ multiple: true }}
         value={value}
