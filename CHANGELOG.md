@@ -1,3 +1,10 @@
+# [7.0.0-next.2](https://github.com/act-org/dls/compare/v7.0.0-next.1...v7.0.0-next.2) (2023-03-13)
+
+
+### Features
+
+* Add spacingPx to all themes ([0039309](https://github.com/act-org/dls/commit/003930931dddaefba7d335070a112960fe5d4353))
+
 # [7.0.0-next.1](https://github.com/act-org/dls/compare/v6.3.0...v7.0.0-next.1) (2023-02-17)
 
 
