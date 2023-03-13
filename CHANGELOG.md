@@ -1,3 +1,10 @@
+# [7.0.0-next.3](https://github.com/act-org/dls/compare/v7.0.0-next.2...v7.0.0-next.3) (2023-03-13)
+
+
+### Features
+
+* Encourage theme tweaks based on latest E4S ([96a5346](https://github.com/act-org/dls/commit/96a53465404ebf02cccdd3c97f190b59a7f034b9))
+
 # [7.0.0-next.2](https://github.com/act-org/dls/compare/v7.0.0-next.1...v7.0.0-next.2) (2023-03-13)
 
 
