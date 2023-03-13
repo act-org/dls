@@ -30,16 +30,6 @@ exports[`Paper ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Paper ENCOURA_DATALAB theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-ooqq8c-MuiPaper-root"
-  >
-    Paper
-  </div>
-</div>
-`;
-
 exports[`Paper ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <div

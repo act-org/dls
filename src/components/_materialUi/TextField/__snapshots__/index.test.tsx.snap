@@ -120,46 +120,6 @@ exports[`TextField ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`TextField ENCOURA_DATALAB theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-  >
-    <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jtrwu1-MuiFormLabel-root-MuiInputLabel-root"
-      data-shrink="true"
-      for="test-text-field"
-      id="test-text-field-label"
-    >
-      TextField Test Label
-    </label>
-    <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-t97913-MuiInputBase-root-MuiOutlinedInput-root"
-    >
-      <input
-        aria-invalid="false"
-        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-ly5abb-MuiInputBase-input-MuiOutlinedInput-input"
-        id="test-text-field"
-        type="text"
-        value="test"
-      />
-      <fieldset
-        aria-hidden="true"
-        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-      >
-        <legend
-          class="css-yjsfm1"
-        >
-          <span>
-            TextField Test Label
-          </span>
-        </legend>
-      </fieldset>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`TextField ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <div

@@ -24,14 +24,6 @@ exports[`ThemeProvider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`ThemeProvider ENCOURA_DATALAB theme matches the snapshot 1`] = `
-<div>
-  <p>
-    This is a test
-  </p>
-</div>
-`;
-
 exports[`ThemeProvider ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <p>

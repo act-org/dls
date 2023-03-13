@@ -108,42 +108,6 @@ exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Loading ENCOURA_DATALAB theme matches the snapshot 1`] = `
-<div>
-  <div
-    aria-label="Loading..."
-    class="css-1hnxvz3"
-    data-testid="loading"
-  >
-    <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-8n06pu-MuiCircularProgress-root"
-      role="progressbar"
-      style="width: 24px; height: 24px;"
-      title="Loading..."
-    >
-      <svg
-        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-        viewBox="22 22 44 44"
-      >
-        <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-14v5g9i-MuiCircularProgress-circle"
-          cx="44"
-          cy="44"
-          fill="none"
-          r="19.75"
-          stroke-width="4.5"
-        />
-      </svg>
-    </span>
-    <span
-      class="MuiTypography-root MuiTypography-overline css-13ko9gs-MuiTypography-root"
-    >
-      Loading...
-    </span>
-  </div>
-</div>
-`;
-
 exports[`Loading ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <div

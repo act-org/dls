@@ -30,16 +30,6 @@ exports[`DialogTitle ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`DialogTitle ENCOURA_DATALAB theme matches the snapshot 1`] = `
-<div>
-  <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-bjusod-MuiTypography-root-MuiDialogTitle-root"
-  >
-    Hey
-  </h2>
-</div>
-`;
-
 exports[`DialogTitle ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <h2

@@ -82,33 +82,6 @@ exports[`Switch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Switch ENCOURA_DATALAB theme matches the snapshot 1`] = `
-<div>
-  <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
-  >
-    <span
-      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
-    >
-      <input
-        checked=""
-        class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
-        type="checkbox"
-      />
-      <span
-        class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
-      />
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
-    </span>
-    <span
-      class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
-    />
-  </span>
-</div>
-`;
-
 exports[`Switch ENCOURAGE_E4S theme matches the snapshot 1`] = `
 <div>
   <span
