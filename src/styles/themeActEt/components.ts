@@ -15,6 +15,7 @@ import Color from 'color';
 import DIMS from './dims';
 import { COLORS } from './palette';
 import SHAPE from './shape';
+import spacing from './spacing';
 
 import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
@@ -260,8 +261,8 @@ export const components: Components = {
               borderRightColor: grey[300],
             },
             outline: 'none',
-            paddingLeft: DIMS.SPACING / 2,
-            paddingRight: DIMS.SPACING / 2,
+            paddingLeft: spacing(0.5),
+            paddingRight: spacing(0.5),
           },
           '& .MuiDataGrid-columnHeader--sorted': {
             '& .MuiIconButton-root[aria-label="Sort"]': {
@@ -282,9 +283,9 @@ export const components: Components = {
         },
         '& .MuiDataGrid-toolbarContainer': {
           '& .MuiButton-root': {
-            marginRight: DIMS.SPACING,
+            marginRight: spacing(1),
           },
-          padding: DIMS.SPACING,
+          padding: spacing(1),
         },
         '&.primary': {
           '& .MuiDataGrid-main': {
@@ -491,7 +492,7 @@ export const components: Components = {
         color: common.black,
         fontSize: 14,
         fontWeight: 600,
-        marginBottom: DIMS.SPACING,
+        marginBottom: spacing(1),
       },
     },
   },
@@ -690,7 +691,7 @@ export const components: Components = {
     styleOverrides: {
       root: {
         height: 26,
-        margin: DIMS.SPACING,
+        margin: spacing(1),
         padding: 0,
         width: 42,
       },

@@ -14,10 +14,12 @@ import COMPONENTS from './components';
 import DIMS from './dims';
 import PALETTE, { CustomPaletteOptions } from './palette';
 import SHAPE from './shape';
+import spacing, { SPACING_PX } from './spacing';
 import TYPOGRAPHY from './typography';
 
 type ThemeCustomizations = ICustomDims & {
   palette: CustomPaletteOptions;
+  spacingPx: number;
 };
 
 export const THEME_ENCOURA_DATALAB: CustomThemeOptions<ThemeCustomizations> = {
@@ -25,7 +27,8 @@ export const THEME_ENCOURA_DATALAB: CustomThemeOptions<ThemeCustomizations> = {
   customDims: DIMS.CUSTOM,
   palette: PALETTE,
   shape: SHAPE,
-  spacing: DIMS.SPACING,
+  spacing,
+  spacingPx: SPACING_PX,
   typography: TYPOGRAPHY,
 };
 

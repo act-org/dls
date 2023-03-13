@@ -15,7 +15,6 @@ const DIMS = {
       tableHeader: 58,
     },
   },
-  SPACING: 8,
 };
 
 export default DIMS;
