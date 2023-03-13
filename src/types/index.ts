@@ -20,6 +20,8 @@ export interface ICustomDims {
   };
 }
 
+export type Px = `${number}px` | '';
+
 export type Size = 'default' | 'large';
 
 export type SortDirection = 'ASCENDING' | 'DESCENDING';

@@ -160,6 +160,9 @@ following font reference in the `head` of your React app:
 </style>
 ```
 
+The Museo font files can be downloaded
+[here](https://github.com/act-org/dls/tree/main/public/fonts/Museo).
+
 #### Work Sans, Roboto, Roboto Mono
 
 The `ENCOURAGE_E4S` theme assumes that the

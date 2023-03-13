@@ -8,7 +8,9 @@
  */
 
 import { TypographyVariantsOptions } from '@mui/material/styles';
-import { isNumber } from 'lodash';
+
+import px from '@actinc/dls/helpers/px';
+import { Px } from '@actinc/dls/types';
 
 import palette from './palette';
 
@@ -52,21 +54,11 @@ export const tertiaryFontFamily = [
   'sans-serif',
 ].join(', ');
 
-export type Px = `${number}px` | '';
-
 export interface IFontSize {
   fontSize: number | Px;
   letterSpacing: number | Px;
   lineHeight: number | Px;
 }
-
-export const px = (value?: number): Px => {
-  return value !== undefined ? `${value}px` : '';
-};
-
-export const pxToNumber = (value: Px | number): number => {
-  return isNumber(value) ? value : parseInt(value.replace('px', ''), 10);
-};
 
 export const BASE_FONT_SIZE: IFontSize = {
   fontSize: px(16),

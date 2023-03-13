@@ -10,6 +10,7 @@
 import { common } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 
+import DIMS from './dims';
 import { COLORS } from './palette';
 
 import type {} from '@mui/lab/themeAugmentation';
@@ -80,6 +81,9 @@ export const components: Components = {
     styleOverrides: {
       colorPrimary: {
         backgroundColor: COLORS.PRIMARY_DARK,
+      },
+      root: {
+        height: DIMS.CUSTOM.heights.header,
       },
     },
   },

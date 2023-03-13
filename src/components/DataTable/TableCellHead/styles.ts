@@ -18,7 +18,7 @@ import Typography, { TypographyProps } from '@mui/material/Typography';
 import clsx from 'clsx';
 import Color from 'color';
 
-import { createThemeStyled } from '@actinc/dls/helpers/material/styled';
+import { createThemeStyled } from '@actinc/dls/helpers/styled';
 import { typeOk } from '@actinc/dls/helpers/types';
 import { ICustomDims } from '@actinc/dls/types';
 

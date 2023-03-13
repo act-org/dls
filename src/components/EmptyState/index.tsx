@@ -19,7 +19,7 @@ import {
   ReactNode,
 } from 'react';
 
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/styled';
 
 import {
   StyledContainer,

@@ -64,7 +64,11 @@ export const components: Components = {
   },
   MuiAppBar: {
     defaultProps: {},
-    styleOverrides: {},
+    styleOverrides: {
+      root: {
+        height: DIMS.CUSTOM.heights.header,
+      },
+    },
   },
   MuiAutocomplete: {
     defaultProps: {},

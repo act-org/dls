@@ -14,6 +14,6 @@ import { createSpacing } from '@mui/system';
 // Override here to change
 export const SPACING_PX = 8;
 
-const spacing = createSpacing(SPACING_PX);
+export const spacing = createSpacing(SPACING_PX);
 
 export default spacing;

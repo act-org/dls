@@ -9,8 +9,9 @@
 
 import { Shadows } from '@mui/material/styles';
 
+import px from '@actinc/dls/helpers/px';
+
 import baseTheme from './baseTheme';
-import { px } from './typography';
 
 export const shadows: Shadows = [...baseTheme.shadows];
 

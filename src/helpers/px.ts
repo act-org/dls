@@ -7,15 +7,10 @@
  * @prettier
  */
 
-const DIMS = {
-  CUSTOM: {
-    heights: {
-      header: 72,
-      input: 40,
-      tableHeader: 58,
-    },
-  },
-  SPACING: 8,
+import { Px } from '@actinc/dls/types';
+
+export const px = (value?: number): Px => {
+  return value !== undefined ? `${value}px` : '';
 };
 
-export default DIMS;
+export default px;

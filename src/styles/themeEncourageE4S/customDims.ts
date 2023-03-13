@@ -14,6 +14,8 @@ import baseTheme from './baseTheme';
 export const customDims = deepmerge(baseTheme.customDims, {
   heights: {
     header: 60,
+    input: 40,
+    tableHeader: 58,
   },
   widths: {
     listItemIcon: 40,

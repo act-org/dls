@@ -10,6 +10,7 @@
 const DIMS = {
   CUSTOM: {
     heights: {
+      header: 64,
       input: 40,
       tableHeader: 58,
     },

@@ -9,7 +9,10 @@
 
 import { common } from '@mui/material/colors';
 import { ThemeOptions } from '@mui/material/styles';
-import { StandardCSSProperties } from '@mui/system';
+
+import cssRadius from '@actinc/dls/helpers/cssRadius';
+import px from '@actinc/dls/helpers/px';
+import pxToNumber from '@actinc/dls/helpers/pxToNumber';
 
 import customDims from './customDims';
 import palette, {
@@ -24,28 +27,9 @@ import spacing, { SPACING_PX } from './spacing';
 import typography, {
   BASE_FONT_SIZE,
   INPUT_FONT_SIZE,
-  px,
-  pxToNumber,
   secondaryFontFamily,
 } from './typography';
 import zIndex from './zIndex';
-
-type BorderRadius = Pick<
-  StandardCSSProperties,
-  | 'borderBottomLeftRadius'
-  | 'borderBottomRightRadius'
-  | 'borderRadius'
-  | 'borderTopLeftRadius'
-  | 'borderTopRightRadius'
->;
-
-export const cssRadius = (value: number): BorderRadius => ({
-  borderBottomLeftRadius: px(value),
-  borderBottomRightRadius: px(value),
-  borderRadius: px(value),
-  borderTopLeftRadius: px(value),
-  borderTopRightRadius: px(value),
-});
 
 export const LARGE_RADIUS_VALUE = 1000;
 
