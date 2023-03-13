@@ -1,6 +1,15 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 import { TypographyVariantsOptions } from '@mui/material/styles';
 
-import {COLORS} from './palette';
+import { COLORS } from './palette';
 
 const TYPOGRAPHY: TypographyVariantsOptions = {
   body1: {

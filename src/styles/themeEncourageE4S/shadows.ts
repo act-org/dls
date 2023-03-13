@@ -1,3 +1,12 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 import { Shadows } from '@mui/material/styles';
 
 import baseTheme from './baseTheme';
@@ -13,9 +22,9 @@ const makeShadow = (
   color: string,
   inset = false,
 ): string => {
-  return `${inset ? 'inset ' : ''}${px(xOffset)} ${px(yOffset)} ${`${px(blurRadius)} `}${`${px(
-    spreadRadius,
-  )} `}${color}`;
+  return `${inset ? 'inset ' : ''}${px(xOffset)} ${px(yOffset)} ${`${px(
+    blurRadius,
+  )} `}${`${px(spreadRadius)} `}${color}`;
 };
 
 shadows[1] = makeShadow(0, 4, 4, undefined, 'rgba(0, 0, 0, 0.1)'); // "South" elevation 100

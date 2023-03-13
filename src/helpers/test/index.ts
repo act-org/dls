@@ -6,6 +6,7 @@
  *
  * @prettier
  */
+
 export { default as render } from './render';
 export { default as THEMES } from './themes';
 export { default as snapshot } from './snapshot';

@@ -1,17 +1,42 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 import { common } from '@mui/material/colors';
 import { ThemeOptions } from '@mui/material/styles';
 import { StandardCSSProperties } from '@mui/system';
 
 import customDims from './customDims';
-import palette, { black60, mist30, navyHover, seafoam, seafoam30 } from './palette';
+import palette, {
+  black60,
+  mist30,
+  navyHover,
+  seafoam,
+  seafoam30,
+} from './palette';
 import shadows from './shadows';
 import spacing, { SPACING_PX } from './spacing';
-import typography, { BASE_FONT_SIZE, INPUT_FONT_SIZE, px, pxToNumber, secondaryFontFamily } from './typography';
+import typography, {
+  BASE_FONT_SIZE,
+  INPUT_FONT_SIZE,
+  px,
+  pxToNumber,
+  secondaryFontFamily,
+} from './typography';
 import zIndex from './zIndex';
 
 type BorderRadius = Pick<
   StandardCSSProperties,
-  'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius'
+  | 'borderBottomLeftRadius'
+  | 'borderBottomRightRadius'
+  | 'borderRadius'
+  | 'borderTopLeftRadius'
+  | 'borderTopRightRadius'
 >;
 
 export const cssRadius = (value: number): BorderRadius => ({
@@ -400,7 +425,9 @@ export const components: ThemeOptions['components'] = {
         }),
       }),
       root: ({ ownerState }) => ({
-        ...cssRadius(pxToNumber(BASE_FONT_SIZE.lineHeight) / 2 + SPACING_PX * 1.5),
+        ...cssRadius(
+          pxToNumber(BASE_FONT_SIZE.lineHeight) / 2 + SPACING_PX * 1.5,
+        ),
         ...BASE_FONT_SIZE,
         '& legend': {
           marginLeft: spacing(2.5),

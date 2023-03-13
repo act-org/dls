@@ -1,11 +1,19 @@
-import type { } from '@mui/lab/themeAugmentation';
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
 
 import { common } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 
-import type { } from '@mui/x-data-grid/themeAugmentation';
+import { COLORS } from './palette';
 
-import {COLORS} from './palette';
+import type {} from '@mui/lab/themeAugmentation';
+import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
   MuiAccordion: {
@@ -60,7 +68,6 @@ export const components: Components = {
         color: COLORS.WARNING,
       },
     },
-
   },
   MuiAlertTitle: {
     defaultProps: {},
@@ -111,7 +118,7 @@ export const components: Components = {
     styleOverrides: {
       root: {
         marginBottom: '.6em',
-      }
+      },
     },
   },
   MuiButton: {
@@ -123,7 +130,6 @@ export const components: Components = {
     styleOverrides: {},
   },
   MuiButtonBase: {
-
     defaultProps: {
       color: 'primary',
     },
@@ -162,7 +168,6 @@ export const components: Components = {
       color: 'primary',
     },
     styleOverrides: {},
-
   },
   MuiChip: {
     defaultProps: {},
@@ -208,7 +213,6 @@ export const components: Components = {
         backgroundColor: COLORS.OVERLAY_BACKGROUND,
       },
     },
-
   },
   MuiDialogContent: {
     defaultProps: {},
@@ -225,7 +229,6 @@ export const components: Components = {
         backgroundColor: COLORS.OVERLAY_BACKGROUND,
       },
     },
-
   },
   MuiDivider: {
     defaultProps: {},
@@ -258,10 +261,10 @@ export const components: Components = {
     defaultProps: {},
     styleOverrides: {
       root: {
-          '.MuiFormControl-root': {
-            marginBottom: '1em'
-          }
-      }
+        '.MuiFormControl-root': {
+          marginBottom: '1em',
+        },
+      },
     },
   },
   MuiFormHelperText: {
@@ -314,7 +317,7 @@ export const components: Components = {
   },
   MuiInputLabel: {
     defaultProps: {
-      color: 'primary'
+      color: 'primary',
     },
     styleOverrides: {
       formControl: {
@@ -333,7 +336,7 @@ export const components: Components = {
         color: common.black,
         fontSize: 14,
         fontWeight: 600,
-        marginBottom: '.5rem'
+        marginBottom: '.5rem',
       },
     },
   },
@@ -405,9 +408,7 @@ export const components: Components = {
       color: 'primary',
       type: 'text',
     },
-    styleOverrides: {
-
-    },
+    styleOverrides: {},
   },
   MuiPagination: {
     defaultProps: {},
@@ -618,6 +619,6 @@ export const components: Components = {
   MuiUseMediaQuery: {
     defaultProps: {},
   },
-}
+};
 
 export default components;

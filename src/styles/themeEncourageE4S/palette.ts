@@ -1,6 +1,20 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 import { TypeText } from '@mui/material';
 import { common, green, grey, red } from '@mui/material/colors';
-import { alpha, lighten, PaletteOptions, recomposeColor } from '@mui/material/styles';
+import {
+  alpha,
+  lighten,
+  PaletteOptions,
+  recomposeColor,
+} from '@mui/material/styles';
 
 import { typeOk } from '@actinc/dls/helpers/types';
 
@@ -22,12 +36,12 @@ export const yellow = neon;
 export type CustomPaletteOptions = PaletteOptions & {
   action: PaletteOptions['action'] & {
     activeHover: string;
-  },
+  };
   background: PaletteOptions['background'] & {
     inset: string;
     disabled: string;
     overlay: string;
-  },
+  };
   branding: {
     fuschia: string;
     mist: string;
@@ -54,7 +68,7 @@ export type CustomPaletteOptions = PaletteOptions & {
       };
     };
   };
-}
+};
 
 const palette = typeOk<CustomPaletteOptions>()({
   action: {

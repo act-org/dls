@@ -9,17 +9,16 @@
 
 import { Table, TableBody, TableHead, TableRow } from '@mui/material';
 import { constant, isNumber, round } from 'lodash';
+import { CSSProperties, ReactElement } from 'react';
 
 import { EmptyState, EmptyStateProps } from '@actinc/dls/components/EmptyState';
 import TablePaginationActions from '@actinc/dls/components/TablePaginationActions';
 import { SortObject } from '@actinc/dls/types';
 
+import { StyledEmptyStateContainer, StyledTablePagination } from './styles';
 import TableCellBody from './TableCellBody';
 import TableCellHead from './TableCellHead';
 import TableContainer from './TableContainer';
-
-import { CSSProperties, ReactElement } from 'react';
-import { StyledEmptyStateContainer, StyledTablePagination } from './styles';
 
 interface Column<T> {
   renderValue: (item: T) => any;

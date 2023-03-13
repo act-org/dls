@@ -7,12 +7,12 @@
  * @prettier
  */
 
+import { Box, Button } from '@mui/material';
 import { Story } from '@storybook/react/types-6-0';
+import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
-import { Box, Button } from '@mui/material';
-import { useState } from 'react';
 import { ConfirmDialog, ConfirmDialogProps } from '.';
 
 export const Template: Story<ConfirmDialogProps> = (

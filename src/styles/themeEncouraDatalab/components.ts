@@ -1,15 +1,24 @@
-import { common, grey } from '@mui/material/colors';
-import { Components } from '@mui/material/styles';
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
 
-import Color from 'color';
 import ChevronDown from '@actinc/dls/icons/ChevronDown';
 import FilterVariant from '@actinc/dls/icons/FilterVariant';
+import { common, grey } from '@mui/material/colors';
+import { Components } from '@mui/material/styles';
+import Color from 'color';
+
 import DIMS from './dims';
-import {COLORS} from './palette';
+import { COLORS } from './palette';
 import SHAPE from './shape';
 
-import type { } from '@mui/lab/themeAugmentation';
-import type { } from '@mui/x-data-grid/themeAugmentation';
+import type {} from '@mui/lab/themeAugmentation';
+import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
   MuiAccordion: {
@@ -456,7 +465,6 @@ export const components: Components = {
         marginBottom: DIMS.SPACING,
       },
     },
-
   },
   MuiLinearProgress: {
     defaultProps: {},
@@ -791,6 +799,6 @@ export const components: Components = {
   MuiUseMediaQuery: {
     defaultProps: {},
   },
-}
+};
 
 export default components;

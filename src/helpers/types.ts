@@ -1,4 +1,13 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
+/**
  * Helper which validates against the options interface without changing the actual value type.
  */
 export const typeOk =

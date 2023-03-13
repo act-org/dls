@@ -6,6 +6,7 @@
  *
  * @prettier
  */
+
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-param-reassign */

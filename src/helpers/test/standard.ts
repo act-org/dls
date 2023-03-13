@@ -6,11 +6,13 @@
  *
  * @prettier
  */
-import React from 'react';
-import snapshot from './snapshot';
-import accessibility from './accessibility';
+
 import { RenderOptions } from '@testing-library/react';
 import { JestAxeConfigureOptions } from 'jest-axe';
+import React from 'react';
+
+import accessibility from './accessibility';
+import snapshot from './snapshot';
 
 export default function standard(
   Component: React.ReactElement,

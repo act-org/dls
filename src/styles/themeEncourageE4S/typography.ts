@@ -1,3 +1,12 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 import { TypographyVariantsOptions } from '@mui/material/styles';
 import { isNumber } from 'lodash';
 
@@ -59,8 +68,16 @@ export const pxToNumber = (value: Px | number): number => {
   return isNumber(value) ? value : parseInt(value.replace('px', ''), 10);
 };
 
-export const BASE_FONT_SIZE: IFontSize = { fontSize: px(16), letterSpacing: px(0), lineHeight: px(24) };
-export const INPUT_FONT_SIZE: IFontSize = { fontSize: px(16), letterSpacing: px(0), lineHeight: px(20) };
+export const BASE_FONT_SIZE: IFontSize = {
+  fontSize: px(16),
+  letterSpacing: px(0),
+  lineHeight: px(24),
+};
+export const INPUT_FONT_SIZE: IFontSize = {
+  fontSize: px(16),
+  letterSpacing: px(0),
+  lineHeight: px(20),
+};
 
 // Base values found here:
 // https://github.com/act-org/dls/blob/main/src/styles/themeActEt/typography.ts

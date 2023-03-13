@@ -7,10 +7,11 @@
  * @prettier
  */
 
-import React from 'react';
-import THEMES from './themes';
-import render from './render';
 import { RenderOptions } from '@testing-library/react';
+import React from 'react';
+
+import render from './render';
+import THEMES from './themes';
 
 // eslint-disable-next-line jest/no-export
 export default function snapshot(
