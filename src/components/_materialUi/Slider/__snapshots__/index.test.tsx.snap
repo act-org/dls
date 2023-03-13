@@ -22,8 +22,7 @@ exports[`Slider ACT theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
-        data-focusvisible="false"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -69,8 +68,7 @@ exports[`Slider ACT_ET theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
-        data-focusvisible="false"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -116,8 +114,7 @@ exports[`Slider ENCOURA_DATALAB theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-2kpwjl-MuiSlider-thumb"
-        data-focusvisible="false"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-2kpwjl-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -163,8 +160,7 @@ exports[`Slider ENCOURAGE_E4S theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-17jp4ga-MuiSlider-thumb"
-        data-focusvisible="false"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-17jp4ga-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >

@@ -20,7 +20,7 @@ const PROPS: ComponentsProps = {
     components: {
       ColumnFilteredIcon: FilterVariant,
     },
-    disableSelectionOnClick: true,
+    disableRowSelectionOnClick: true,
   },
   MuiPaper: {
     elevation: 3,

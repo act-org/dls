@@ -181,7 +181,7 @@ export const components: Components = {
       components: {
         ColumnFilteredIcon: FilterVariant,
       },
-      disableSelectionOnClick: true,
+      disableRowSelectionOnClick: true,
     },
     styleOverrides: {
       root: {
