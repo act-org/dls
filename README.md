@@ -60,7 +60,7 @@ import { createTheme } from '@actinc/dls/styles/createTheme';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components';
 
-const myExtendedTheme = createTheme(deepMerge(THEME_ACT_ET, {
+const myExtendedTheme = createTheme(deepMerge(THEME_ACT, {
   // theme customizations go here!
 }));
 
@@ -102,7 +102,7 @@ present in the default MUI Theme type, then we provide a helper function to
 generate a styled function that is strongly typed to your theme:
 
 ```jsx
-import { createThemeStyled } from '@actinc/dls/helpers/material/styled';
+import { createThemeStyled } from '@actinc/dls/helpers/styled';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import TableCell from '@mui/material/TableCell';
 
