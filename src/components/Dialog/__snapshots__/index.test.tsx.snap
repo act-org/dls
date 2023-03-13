@@ -18,7 +18,7 @@ exports[`Dialog ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 />
 `;
 
-exports[`Dialog ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`Dialog ENCOURAGE theme matches the snapshot 1`] = `
 <div
   aria-hidden="true"
 />

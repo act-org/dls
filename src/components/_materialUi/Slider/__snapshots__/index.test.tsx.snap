@@ -138,7 +138,7 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Slider ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root css-jayakb-MuiFormControl-root"

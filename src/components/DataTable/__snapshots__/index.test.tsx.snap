@@ -1173,7 +1173,7 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`DataTable ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`DataTable ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-n91l8h-MuiPaper-root-MuiTableContainer-root"

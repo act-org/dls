@@ -127,7 +127,7 @@ exports[`FormCheckbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`FormCheckbox ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`FormCheckbox ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root css-jayakb-MuiFormControl-root"

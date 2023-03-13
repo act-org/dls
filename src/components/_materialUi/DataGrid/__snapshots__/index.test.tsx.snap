@@ -1041,29 +1041,3 @@ exports[`DataGrid ACT_ET theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
-
-exports[`DataGrid ENCOURAGE_E4S theme matches the snapshot 1`] = `
-<div
-  role="main"
-  style="width: 100%; height: 100vh;"
-  width="100%"
->
-  <div
-    aria-colcount="6"
-    aria-multiselectable="false"
-    aria-rowcount="10"
-    class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard css-12cjavf-MuiDataGrid-root"
-    role="grid"
-  >
-    <div
-      class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
-    >
-      <div
-        class="MuiDataGrid-overlay css-1v72n8c-MuiDataGrid-overlay"
-      >
-        root.getElementById is not a function
-      </div>
-    </div>
-  </div>
-</div>
-`;

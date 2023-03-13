@@ -112,7 +112,7 @@ exports[`EmptyState ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`EmptyState ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`EmptyState ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="css-2rfp0i"

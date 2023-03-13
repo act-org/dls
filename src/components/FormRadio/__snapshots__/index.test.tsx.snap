@@ -160,7 +160,7 @@ exports[`FormRadio ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`FormRadio ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <label
     class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1s9jovc-MuiFormControlLabel-root"

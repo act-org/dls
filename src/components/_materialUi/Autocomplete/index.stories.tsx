@@ -38,12 +38,12 @@ export const Primary: StoryObj<Autocomplete> = { args: { color: 'primary' } };
 
 export const Multiple = (
   args: AutocompleteProps<FilmType, true, false, false, typeof Chip>,
-): ReactElement<any> => (
+): ReactElement<unknown> => (
   <Autocomplete
     {...args}
     getOptionLabel={(option): string => option.label}
     multiple
-    renderTags={(value: FilmType[], getTagProps): ReactElement<any>[] =>
+    renderTags={(value: FilmType[], getTagProps): ReactElement<unknown>[] =>
       value.map((option: FilmType, index: number) => (
         // eslint-disable-next-line react/jsx-key
         <Chip

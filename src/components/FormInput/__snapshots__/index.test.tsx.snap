@@ -102,7 +102,7 @@ exports[`FormInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`FormInput ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`FormInput ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root css-jayakb-MuiFormControl-root"

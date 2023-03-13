@@ -20,7 +20,7 @@ describe('Autocomplete', () => {
       disablePortal
       id="combo-box-demo"
       options={topFilms}
-      renderInput={(params): ReactElement<any> => (
+      renderInput={(params): ReactElement<unknown> => (
         <TextField {...params} label="Movie" />
       )}
       sx={{ width: 300 }}

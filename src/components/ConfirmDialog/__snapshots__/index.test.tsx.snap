@@ -6,4 +6,4 @@ exports[`ConfirmationDialog ACT_ET theme matches the snapshot 1`] = `<div />`;
 
 exports[`ConfirmationDialog ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;
 
-exports[`ConfirmationDialog ENCOURAGE_E4S theme matches the snapshot 1`] = `<div />`;
+exports[`ConfirmationDialog ENCOURAGE theme matches the snapshot 1`] = `<div />`;

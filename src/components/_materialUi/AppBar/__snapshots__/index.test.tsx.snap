@@ -24,7 +24,7 @@ exports[`AppBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`AppBar ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`AppBar ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-1raszdx-MuiPaper-root-MuiAppBar-root"

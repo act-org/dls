@@ -58,7 +58,7 @@ exports[`DialogActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`DialogActions ENCOURAGE_E4S theme matches the snapshot 1`] = `
+exports[`DialogActions ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiDialogActions-root MuiDialogActions-spacing css-u1w580-MuiDialogActions-root"

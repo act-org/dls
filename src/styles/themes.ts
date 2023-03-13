@@ -15,7 +15,7 @@ export enum THEMES {
   // ACT_2023 = 'ACT_2023',
   ACT_ET = 'ACT_ET',
   ENCOURA_CLASSIC = 'ENCOURA_CLASSIC',
-  ENCOURAGE_E4S = 'ENCOURAGE_E4S',
+  ENCOURAGE = 'ENCOURAGE',
 }
 
 export type Themes = keyof typeof THEMES;

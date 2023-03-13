@@ -10,6 +10,7 @@
 import HelpIcon from '@actinc/dls/icons/HelpCircle';
 import { Box, MenuItem, Tooltip, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+import { range } from 'lodash';
 import { useState } from 'react';
 
 import { TextField, TextFieldProps } from './internal';
@@ -69,7 +70,7 @@ export const ToolTipLabel: Story = {
  */
 export const Select: Story = {
   args: {
-    children: Array(...Array(10)).map((_, i): any => (
+    children: range(10).map((_, i): any => (
       // eslint-disable-next-line react/no-array-index-key
       <MenuItem key={i} value={i}>
         {i + 1}
@@ -92,7 +93,7 @@ export const SelectMultiple: Story = {
         SelectProps={{ multiple: true }}
         value={value}
       >
-        {Array(...Array(10)).map((_, i): any => (
+        {range(10).map((_, i): any => (
           // eslint-disable-next-line react/no-array-index-key
           <MenuItem key={i} value={i}>
             {i + 1}
