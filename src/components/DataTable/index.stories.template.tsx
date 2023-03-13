@@ -12,7 +12,7 @@ import { isNumber } from 'lodash';
 import moment from 'moment';
 import { useState } from 'react';
 
-import SORT_DIRECTION_TYPES from '@actinc/dls/constants/sortDirectionTypes';
+import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
 import { Playground } from '@actinc/dls/helpers/playground';
 import sort from '@actinc/dls/helpers/sort';
 import { SortObject } from '@actinc/dls/types';

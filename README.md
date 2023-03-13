@@ -344,7 +344,7 @@ constants, helpers, icons, styles, and types that you need:
 // components
 import { Alert } from '@actinc/dls/components';
 // constants
-import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
+import { SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
 // context
 import { AlertContext } from '@actinc/dls/context';
 // helpers

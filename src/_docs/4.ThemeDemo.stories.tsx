@@ -8,7 +8,9 @@
  */
 
 /* eslint-disable filenames/match-exported */
+
 import MailIcon from '@actinc/dls/icons/Mailbox';
+import Menu from '@actinc/dls/icons/Menu';
 import AddIcon from '@actinc/dls/icons/Plus';
 import {
   AppBar,
@@ -50,12 +52,11 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Meta, StoryFn } from '@storybook/react';
 import { sortBy } from 'lodash';
 import { ReactElement } from 'react';
-import Menu from '@actinc/dls/icons/Menu';
 
 import {
   FilmType,
   topFilms,
-} from '../components/_materialUi/Autocomplete/internal';
+} from '@actinc/dls/components/_materialUi/Autocomplete/internal';
 
 type Demo<ComponentProps> = {
   flex?: number;
