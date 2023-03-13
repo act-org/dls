@@ -45,7 +45,7 @@
     "@storybook/builder-webpack5": "6.5.14",
     "@storybook/cli": "6.5.14",
     "@storybook/manager-webpack5": "6.5.14",
-    "@storybook/mdx2-csf": "0.0.3",
+    "@storybook/mdx2-csf": "0.0.4",
     "@storybook/react": "6.5.14",
     "@storybook/storybook-deployer": "2.8.16",
     "@storybook/theming": "6.5.14",
