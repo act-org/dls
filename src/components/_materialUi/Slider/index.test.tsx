@@ -7,8 +7,9 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import { FormControl, FormLabel, Slider } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Slider', () => {
   const Component = (

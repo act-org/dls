@@ -7,8 +7,9 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import { Radio } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Radio', () => {
   const Component = <Radio checked color="primary" />;

@@ -9,6 +9,7 @@
 
 import { FormControlLabel } from '@mui/material';
 import { StoryObj } from '@storybook/react';
+
 import { Checkbox } from './internal';
 
 export default {

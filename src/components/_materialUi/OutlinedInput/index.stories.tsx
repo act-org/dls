@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { OutlinedInput, OutlinedInputProps } from './internal';
 
 export default {

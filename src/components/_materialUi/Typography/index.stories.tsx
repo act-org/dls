@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Typography } from './internal';
 
 export default {

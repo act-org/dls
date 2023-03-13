@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Slider } from './internal';
 
 export default {

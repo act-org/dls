@@ -7,9 +7,10 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import AddIcon from '@actinc/dls/icons/Plus';
 import { Fab } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Fab', () => {
   const Component = (
