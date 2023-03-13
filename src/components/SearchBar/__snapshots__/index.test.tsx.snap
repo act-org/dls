@@ -151,7 +151,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`SearchBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`SearchBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-ctjm4-MuiInputBase-root-MuiOutlinedInput-root"

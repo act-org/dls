@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Switch } from './internal';
 
 export default {

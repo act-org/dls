@@ -9,12 +9,15 @@
 
 import { isString } from 'lodash';
 
-import SORT_DIRECTION_TYPES from '@actinc/dls/constants/sortDirectionTypes';
+import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
 import { SortObject } from '@actinc/dls/types';
 
 type SortFunction<T> = (itemA: T, itemB: T) => number;
 
-function sort<T>({ sortBy, sortDirection }: SortObject): SortFunction<T> {
+export function sort<T>({
+  sortBy,
+  sortDirection,
+}: SortObject): SortFunction<T> {
   return (
     { [sortBy as keyof T]: itemA },
     { [sortBy as keyof T]: itemB },

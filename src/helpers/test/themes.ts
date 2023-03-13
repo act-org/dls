@@ -8,7 +8,7 @@
  */
 
 export const THEMES: [
-  'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | 'ENCOURAGE_E4S',
-][] = [['ACT'], ['ACT_ET'], ['ENCOURA_DATALAB'], ['ENCOURAGE_E4S']];
+  'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE_E4S',
+][] = [['ACT'], ['ACT_ET'], ['ENCOURA_CLASSIC'], ['ENCOURAGE_E4S']];
 
 export default THEMES;

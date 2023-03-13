@@ -36,7 +36,7 @@ exports[`Tooltip ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Tooltip ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Tooltip ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"

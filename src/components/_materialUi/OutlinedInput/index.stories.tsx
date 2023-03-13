@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { OutlinedInput, OutlinedInputProps } from './internal';
 
 export default {
@@ -16,9 +17,9 @@ export default {
     placeholder: 'Placeholder',
   },
   argTypes: {
+    onBlur: { action: 'onBlur' },
     onChange: { action: 'onChange' },
     onFocus: { action: 'onFocus' },
-    onBlur: { action: 'onBlur' },
   },
   component: OutlinedInput,
   tags: ['autodocs'],

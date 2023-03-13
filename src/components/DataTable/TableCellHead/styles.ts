@@ -7,6 +7,8 @@
  * @prettier
  */
 
+import ChevronDown from '@actinc/dls/icons/ChevronDown';
+import ChevronUp from '@actinc/dls/icons/ChevronUp';
 import { grey } from '@mui/material/colors';
 import Grid from '@mui/material/Grid';
 import { Theme } from '@mui/material/styles';
@@ -15,10 +17,8 @@ import TableCell, { TableCellProps } from '@mui/material/TableCell';
 import Typography, { TypographyProps } from '@mui/material/Typography';
 import clsx from 'clsx';
 import Color from 'color';
-import ChevronDown from '@actinc/dls/icons/ChevronDown';
-import ChevronUp from '@actinc/dls/icons/ChevronUp';
 
-import { createThemeStyled } from '@actinc/dls/helpers/material/styled';
+import { createThemeStyled } from '@actinc/dls/helpers/styled';
 import { typeOk } from '@actinc/dls/helpers/types';
 import { ICustomDims } from '@actinc/dls/types';
 

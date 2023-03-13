@@ -55,7 +55,7 @@ exports[`Switch ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Switch ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Switch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <span
     class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"

@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Rating } from './internal';
 
 /**
@@ -15,14 +16,14 @@ import { Rating } from './internal';
  * chosen theme parameters
  */
 export default {
-  component: Rating,
-  title: 'Material UI / Rating',
   args: {},
   argTypes: {
-    onClick: { action: 'onClick' },
     onChange: { action: 'onChange' },
+    onClick: { action: 'onClick' },
   },
+  component: Rating,
   tags: ['autodocs'],
+  title: 'Material UI / Rating',
 } as Meta<Rating>;
 
 export const Primary: StoryObj<Rating> = { args: {} };

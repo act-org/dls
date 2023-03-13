@@ -153,7 +153,7 @@ exports[`Autocomplete ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Autocomplete ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Autocomplete ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-sg6k2u-MuiAutocomplete-root"

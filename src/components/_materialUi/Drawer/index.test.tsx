@@ -7,8 +7,9 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import { Drawer } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Drawer', () => {
   const Component = <Drawer open>Hey</Drawer>;

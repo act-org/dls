@@ -11,21 +11,24 @@ import { createTheme } from '@actinc/dls/styles/createTheme';
 import { CustomThemeOptions, ICustomDims } from '@actinc/dls/types';
 
 import COMPONENTS from './components';
-import DIMS from './dims';
+import CUSTOM_DIMS from './customDims';
 import PALETTE, { CustomPaletteOptions } from './palette';
 import SHAPE from './shape';
+import spacing, { SPACING_PX } from './spacing';
 import TYPOGRAPHY from './typography';
 
 type ThemeCustomizations = ICustomDims & {
   palette: CustomPaletteOptions;
+  spacingPx: number;
 };
 
 export const THEME_ACT_ET: CustomThemeOptions<ThemeCustomizations> = {
   components: COMPONENTS,
-  customDims: DIMS.CUSTOM,
+  customDims: CUSTOM_DIMS,
   palette: PALETTE,
   shape: SHAPE,
-  spacing: DIMS.SPACING,
+  spacing,
+  spacingPx: SPACING_PX,
   typography: TYPOGRAPHY,
 };
 

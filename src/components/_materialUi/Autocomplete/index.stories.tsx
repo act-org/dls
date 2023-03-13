@@ -9,6 +9,7 @@
 
 import { AutocompleteRenderInputParams, Chip, TextField } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+import { ReactElement } from 'react';
 
 import {
   Autocomplete,
@@ -18,8 +19,6 @@ import {
 } from './internal';
 
 export default {
-  component: Autocomplete,
-  title: 'Material UI / Autocomplete',
   args: {
     disablePortal: false,
     options: topFilms,
@@ -27,31 +26,32 @@ export default {
       <TextField {...params} label="Movie" />
     ),
   },
+  component: Autocomplete,
   parameters: {
     layout: 'padded',
   },
   tags: ['autodocs'],
+  title: 'Material UI / Autocomplete',
 } as Meta<Autocomplete>;
 
 export const Primary: StoryObj<Autocomplete> = { args: { color: 'primary' } };
+
 export const Multiple = (
   args: AutocompleteProps<FilmType, true, false, false, typeof Chip>,
-) => {
-  return (
-    <Autocomplete
-      {...args}
-      getOptionLabel={option => option.label}
-      multiple
-      renderTags={(value: FilmType[], getTagProps) =>
-        value.map((option: FilmType, index: number) => (
-          // eslint-disable-next-line react/jsx-key
-          <Chip
-            label={option.label}
-            variant="outlined"
-            {...getTagProps({ index })}
-          />
-        ))
-      }
-    />
-  );
-};
+): ReactElement<any> => (
+  <Autocomplete
+    {...args}
+    getOptionLabel={(option): string => option.label}
+    multiple
+    renderTags={(value: FilmType[], getTagProps): ReactElement<any>[] =>
+      value.map((option: FilmType, index: number) => (
+        // eslint-disable-next-line react/jsx-key
+        <Chip
+          label={option.label}
+          variant="outlined"
+          {...getTagProps({ index })}
+        />
+      ))
+    }
+  />
+);

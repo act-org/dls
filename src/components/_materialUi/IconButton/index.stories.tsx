@@ -9,17 +9,18 @@
 
 import PencilCircle from '@actinc/dls/icons/PencilCircle';
 import { Meta, StoryObj } from '@storybook/react';
+
 import { IconButton } from './internal';
 
 export default {
-  component: IconButton,
-  title: 'Material UI / IconButton',
   args: {
+    children: <PencilCircle />,
     color: 'primary',
     size: 'medium',
-    children: <PencilCircle />,
   },
+  component: IconButton,
   tags: ['autodocs'],
+  title: 'Material UI / IconButton',
 } as Meta<IconButton>;
 
 export const Primary: StoryObj<IconButton> = {};

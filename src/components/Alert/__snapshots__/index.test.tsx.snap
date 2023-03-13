@@ -70,7 +70,7 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Alert ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Alert ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-1pgvigm-MuiPaper-root-MuiAlert-root"

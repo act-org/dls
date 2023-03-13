@@ -59,7 +59,7 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Checkbox ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <span
     class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary css-wakehq-MuiButtonBase-root-MuiCheckbox-root"

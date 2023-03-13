@@ -9,16 +9,17 @@
 
 import { FormControlLabel } from '@mui/material';
 import { StoryObj } from '@storybook/react';
+
 import { Checkbox } from './internal';
 
 export default {
-  title: 'Material UI / Checkbox',
-  component: Checkbox,
   argTypes: {
-    onClick: { action: 'onClick' },
     onChange: { action: 'onChange' },
+    onClick: { action: 'onClick' },
   },
+  component: Checkbox,
   tags: ['autodocs'],
+  title: 'Material UI / Checkbox',
 } as StoryObj<Checkbox>;
 
 export const Primary: StoryObj<Checkbox> = { args: { color: 'primary' } };

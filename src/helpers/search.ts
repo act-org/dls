@@ -9,7 +9,7 @@
 
 import { get, toString } from 'lodash';
 
-function search<T>(docs: T[], properties: string[], value: string): T[] {
+export function search<T>(docs: T[], properties: string[], value: string): T[] {
   return docs.filter(doc =>
     properties.some((property): boolean => {
       const currentValue = get(doc, property);

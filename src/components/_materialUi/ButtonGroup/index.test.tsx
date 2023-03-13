@@ -7,8 +7,9 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import { ButtonGroup } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('ButtonGroup', () => {
   const Component = <ButtonGroup color="primary">Click me</ButtonGroup>;

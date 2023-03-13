@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Button } from './internal';
 
 /**
@@ -15,8 +16,6 @@ import { Button } from './internal';
  * chosen theme parameters
  */
 export default {
-  component: Button,
-  title: 'Material UI / Button',
   args: {
     children: 'Click Me',
     variant: 'contained',
@@ -24,7 +23,9 @@ export default {
   argTypes: {
     onClick: { action: 'onClick' },
   },
+  component: Button,
   tags: ['autodocs'],
+  title: 'Material UI / Button',
 } as Meta<Button>;
 
 /**

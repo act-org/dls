@@ -9,18 +9,19 @@
 
 import { Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Paper } from './internal';
 
 export default {
-  argTypes: {},
   args: {
     children: <Typography variant="h6">Paper Content</Typography>,
     sx: {
-      minHeight: '100px',
       display: 'flex',
       justifyContent: 'center',
+      minHeight: '100px',
     },
   },
+  argTypes: {},
   component: Paper,
   parameters: {
     layout: 'padded',

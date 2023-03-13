@@ -86,7 +86,7 @@ exports[`RenderMetaTagsBase ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`RenderMetaTagsBase ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`RenderMetaTagsBase ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <meta
     content="Some description."

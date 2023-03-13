@@ -53,7 +53,7 @@ exports[`Fab ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Fab ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Fab ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"

@@ -10,6 +10,7 @@
 import Menu from '@actinc/dls/icons/Menu';
 import { IconButton, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Toolbar } from './internal';
 
 export default {

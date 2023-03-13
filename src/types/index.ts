@@ -17,8 +17,11 @@ export type CustomThemeOptions<T extends object = Record<string, never>> =
 export interface ICustomDims {
   customDims: {
     heights: Record<string, number>;
+    widths: Record<string, number>;
   };
 }
+
+export type Px = `${number}px` | '';
 
 export type Size = 'default' | 'large';
 

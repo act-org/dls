@@ -8,6 +8,8 @@
  */
 
 import { Autocomplete, TextField } from '@mui/material';
+import { ReactElement } from 'react';
+
 import { standard } from '@actinc/dls/helpers/test';
 
 import { topFilms } from './internal';
@@ -18,7 +20,9 @@ describe('Autocomplete', () => {
       disablePortal
       id="combo-box-demo"
       options={topFilms}
-      renderInput={params => <TextField {...params} label="Movie" />}
+      renderInput={(params): ReactElement<any> => (
+        <TextField {...params} label="Movie" />
+      )}
       sx={{ width: 300 }}
     />
   );

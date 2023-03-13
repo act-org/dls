@@ -98,7 +98,7 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Select ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-1uoibu0-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"

@@ -9,4 +9,4 @@
 
 /* eslint-disable import/prefer-default-export */
 
-export { default as sortDirectionTypes } from './sortDirectionTypes';
+export * from './SORT_DIRECTION_TYPES';

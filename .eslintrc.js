@@ -17,27 +17,14 @@ module.exports = {
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
         'react-hooks/rules-of-hooks': 'off',
-        'react/no-array-index-key': 'off',
-        'sort-keys': 'off',
         'storybook/story-exports': 'off',
-      },
-    },
-    {
-      files: ['./**/*.test.tsx', './**/*.spec.tsx'],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        'react/no-array-index-key': 'off',
-        'sort-keys': 'off',
       },
     },
   ],
   rules: {
-    'import/no-extraneous-dependencies': 'off',
-    'import/no-unresolved': 'off',
     'import/order': [
-      'warn',
+      'error',
       {
         alphabetize: {
           caseInsensitive: true,
@@ -71,9 +58,6 @@ module.exports = {
         warnOnUnassignedImports: true,
       },
     ],
-    'react/function-component-definition': 'off',
-    // Allows const defined components,
-    'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
   },
   settings: {

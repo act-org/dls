@@ -8,10 +8,12 @@
  */
 
 import { useCallback, useState } from 'react';
+
 import {
   ConfirmDialog,
   ConfirmDialogProps,
-} from '../../components/ConfirmDialog';
+} from '@actinc/dls/components/ConfirmDialog';
+
 import { ConfirmContext } from './confirmContext';
 
 type ConfirmCallback = (value: boolean | PromiseLike<boolean>) => void;

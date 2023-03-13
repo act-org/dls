@@ -7,19 +7,13 @@
  * @prettier
  */
 
-import deepmerge from 'deepmerge';
-
-import baseTheme from './baseTheme';
-
-export const customDims = deepmerge(baseTheme.customDims, {
+const CUSTOM_DIMS = {
   heights: {
-    header: 60,
+    header: 64,
     input: 40,
     tableHeader: 58,
   },
-  widths: {
-    listItemIcon: 40,
-  },
-});
+  widths: {},
+};
 
-export default customDims;
+export default CUSTOM_DIMS;

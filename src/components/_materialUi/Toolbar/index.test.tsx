@@ -7,8 +7,9 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import { Toolbar } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Toolbar', () => {
   const Component = <Toolbar variant="dense" />;

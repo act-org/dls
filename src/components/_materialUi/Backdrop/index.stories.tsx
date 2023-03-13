@@ -18,38 +18,39 @@ import { Backdrop } from './internal';
  * chosen theme parameters
  */
 export default {
-  component: Backdrop,
-  title: 'Material UI / Backdrop',
   args: {
     children: <CircularProgress />,
   },
   argTypes: {
     onClick: { action: 'onClick' },
   },
+  component: Backdrop,
   parameters: {
-    layout: 'padded',
     docs: {
       story: {
         inline: false,
       },
     },
+    layout: 'padded',
   },
   render: args => {
     const [open, setOpen] = useState(false);
+
     return (
       <>
         <Button
           color="primary"
-          onClick={() => setOpen(true)}
+          onClick={(): void => setOpen(true)}
           variant="contained"
         >
           Open Backdrop
         </Button>
-        <Backdrop {...args} onClick={() => setOpen(false)} open={open} />
+        <Backdrop {...args} onClick={(): void => setOpen(false)} open={open} />
       </>
     );
   },
   tags: ['autodocs'],
+  title: 'Material UI / Backdrop',
 } as Meta<Backdrop>;
 
 /**

@@ -10,6 +10,6 @@
 export { createTheme } from './createTheme';
 export { default as THEME_ACT } from './themeAct';
 export { default as THEME_ACT_ET } from './themeActEt';
+export { default as THEME_ENCOURA_CLASSIC } from './themeEncouraClassic';
 export { default as THEME_ENCOURAGE_E4S } from './themeEncourageE4S';
-export { default as THEME_ENCOURA_DATALAB } from './themeEncouraDatalab';
 export * from './themes';

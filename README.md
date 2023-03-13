@@ -29,7 +29,7 @@ Material UI, and ships with two themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA_DATALAB"`: for Encoura's "Datalab" look and feel
+3. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
 4. `"ENCOURAGE_E4S"`: for Encourage's "E4S" look and feel
 
 To apply one of these themes to your components, simply wrap your application
@@ -132,7 +132,7 @@ reference in the `head` of your React app:
 
 #### Museo
 
-The `ENCOURA_DATALAB` theme assumes that the
+The `ENCOURA_CLASSIC` theme assumes that the
 [Museo](https://github.com/act-org/dls/tree/master/public/fonts/Museo) font
 is available in the browser. Therefore, it is recommended that you include the
 following font reference in the `head` of your React app:
@@ -159,6 +159,9 @@ following font reference in the `head` of your React app:
   }
 </style>
 ```
+
+The Museo font files can be downloaded
+[here](https://github.com/act-org/dls/tree/main/public/fonts/Museo).
 
 #### Work Sans, Roboto, Roboto Mono
 
@@ -344,7 +347,7 @@ constants, helpers, icons, styles, and types that you need:
 // components
 import { Alert } from '@actinc/dls/components';
 // constants
-import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
+import { SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
 // context
 import { AlertContext } from '@actinc/dls/context';
 // helpers
@@ -387,6 +390,6 @@ Here are some of the more important ones:
 
 Some npm packages are pinned to non-current versions for a specific reason:
 
-| Package      | Version | Reason                                                                                                  |
-|:------------ |:------- |:------------------------------------------------------------------------------------------------------- |
-| `color`      | `3.2.1` | Version `4.x` cannot be run in Storybook due to [this issue](https://github.com/Qix-/color/issues/206). |
+| Package               | Version | Reason                                                      |
+|:--------------------- |:------- |:----------------------------------------------------------- |
+| `@storybook/mdx2-csf` | `0.0.3` | `0.0.4` is not yet compatible with `@storybook/addon-docs`. |

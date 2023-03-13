@@ -7,14 +7,14 @@
  * @prettier
  */
 
+import CloseCircle from '@actinc/dls/icons/CloseCircle';
+import Magnify from '@actinc/dls/icons/Magnify';
 import {
   InputAdornment,
   OutlinedInput,
   OutlinedInputProps,
 } from '@mui/material';
 import { ReactElement, useState } from 'react';
-import CloseCircle from '@actinc/dls/icons/CloseCircle';
-import Magnify from '@actinc/dls/icons/Magnify';
 
 import { StyledIconButton } from './styles';
 

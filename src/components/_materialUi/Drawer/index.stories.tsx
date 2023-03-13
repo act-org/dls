@@ -14,9 +14,8 @@ import { useState } from 'react';
 import { Drawer } from './internal';
 
 export default {
-  component: Drawer,
-  title: 'Material UI / Drawer',
   args: {},
+  component: Drawer,
   render: args => {
     const [open, setOpen] = useState(false);
     return (
@@ -49,6 +48,7 @@ export default {
     );
   },
   tags: ['autodocs'],
+  title: 'Material UI / Drawer',
 } as Meta<Drawer>;
 
 export const Left: StoryObj<Drawer> = { args: { anchor: 'left' } };

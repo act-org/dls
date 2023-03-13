@@ -1,15 +1,24 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
+import FilterVariant from '@actinc/dls/icons/FilterVariant';
 import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
 
-import DIMS from './dims';
-import {COLORS} from './palette';
+import CUSTOM_DIMS from './customDims';
+import { COLORS } from './palette';
 import SHAPE from './shape';
+import spacing from './spacing';
 
-import FilterVariant from '@actinc/dls/icons/FilterVariant';
-
-import type { } from '@mui/lab/themeAugmentation';
-import type { } from '@mui/x-data-grid/themeAugmentation';
+import type {} from '@mui/lab/themeAugmentation';
+import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
   MuiAccordion: {
@@ -48,7 +57,6 @@ export const components: Components = {
         color: COLORS.WARNING_DARK,
       },
     },
-
   },
   MuiAlertTitle: {
     defaultProps: {},
@@ -56,7 +64,11 @@ export const components: Components = {
   },
   MuiAppBar: {
     defaultProps: {},
-    styleOverrides: {},
+    styleOverrides: {
+      root: {
+        height: CUSTOM_DIMS.heights.header,
+      },
+    },
   },
   MuiAutocomplete: {
     defaultProps: {},
@@ -81,7 +93,6 @@ export const components: Components = {
         fontSize: 10,
       },
     },
-
   },
   MuiBottomNavigation: {
     defaultProps: {},
@@ -145,7 +156,6 @@ export const components: Components = {
         },
       },
     },
-
   },
   MuiButtonBase: {
     defaultProps: {},
@@ -156,7 +166,6 @@ export const components: Components = {
       disableElevation: true,
     },
     styleOverrides: {},
-
   },
   MuiCard: {
     defaultProps: {},
@@ -211,7 +220,7 @@ export const components: Components = {
       components: {
         ColumnFilteredIcon: FilterVariant,
       },
-      disableSelectionOnClick: true,
+      disableRowSelectionOnClick: true,
     },
     styleOverrides: {
       root: {
@@ -252,8 +261,8 @@ export const components: Components = {
               borderRightColor: grey[300],
             },
             outline: 'none',
-            paddingLeft: DIMS.SPACING / 2,
-            paddingRight: DIMS.SPACING / 2,
+            paddingLeft: spacing(0.5),
+            paddingRight: spacing(0.5),
           },
           '& .MuiDataGrid-columnHeader--sorted': {
             '& .MuiIconButton-root[aria-label="Sort"]': {
@@ -274,9 +283,9 @@ export const components: Components = {
         },
         '& .MuiDataGrid-toolbarContainer': {
           '& .MuiButton-root': {
-            marginRight: DIMS.SPACING,
+            marginRight: spacing(1),
           },
-          padding: DIMS.SPACING,
+          padding: spacing(1),
         },
         '&.primary': {
           '& .MuiDataGrid-main': {
@@ -360,7 +369,6 @@ export const components: Components = {
         overflow: 'hidden',
       },
     },
-
   },
   MuiDialog: {
     defaultProps: {},
@@ -484,7 +492,7 @@ export const components: Components = {
         color: common.black,
         fontSize: 14,
         fontWeight: 600,
-        marginBottom: DIMS.SPACING,
+        marginBottom: spacing(1),
       },
     },
   },
@@ -683,7 +691,7 @@ export const components: Components = {
     styleOverrides: {
       root: {
         height: 26,
-        margin: DIMS.SPACING,
+        margin: spacing(1),
         padding: 0,
         width: 42,
       },
@@ -809,6 +817,6 @@ export const components: Components = {
   MuiUseMediaQuery: {
     defaultProps: {},
   },
-}
+};
 
 export default components;

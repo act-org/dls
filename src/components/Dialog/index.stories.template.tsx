@@ -54,13 +54,13 @@ export const Template: Story<StoryProps> = ({ text, ...args }) => {
 };
 export const argTypes = Playground(
   {
-    title: {},
-    text: {},
+    draggable: { type: 'boolean' },
     fullScreen: {},
     fullWidth: {},
     maxWidth: {},
     scroll: {},
-    draggable: { type: 'boolean' },
+    text: {},
+    title: {},
   },
   Dialog,
 );

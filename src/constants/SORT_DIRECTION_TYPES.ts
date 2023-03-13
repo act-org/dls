@@ -7,9 +7,11 @@
  * @prettier
  */
 
+/* eslint-disable filenames/match-exported */
+
 import { SortDirection } from '@actinc/dls/types';
 
-const SORT_DIRECTION_TYPES: Record<SortDirection, SortDirection> = {
+export const SORT_DIRECTION_TYPES: Record<SortDirection, SortDirection> = {
   ASCENDING: 'ASCENDING' as SortDirection,
   DESCENDING: 'DESCENDING' as SortDirection,
 };

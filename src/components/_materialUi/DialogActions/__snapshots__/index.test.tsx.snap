@@ -39,7 +39,7 @@ exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`DialogActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`DialogActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"

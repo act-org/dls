@@ -342,7 +342,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="css-l1f5px"

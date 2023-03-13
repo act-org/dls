@@ -89,7 +89,7 @@ exports[`Radio ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Radio ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Radio ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <span
     class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary Mui-checked MuiRadio-root MuiRadio-colorPrimary css-r4mfqc-MuiButtonBase-root-MuiRadio-root"

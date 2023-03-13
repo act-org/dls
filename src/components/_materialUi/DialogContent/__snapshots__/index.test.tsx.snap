@@ -20,7 +20,7 @@ exports[`DialogContent ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`DialogContent ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`DialogContent ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiDialogContent-root css-1k1mhv3-MuiDialogContent-root"

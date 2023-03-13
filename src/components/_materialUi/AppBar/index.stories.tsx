@@ -29,20 +29,22 @@ const appBarChildren = (
  * The default App Bar exports
  */
 export default {
-  component: AppBar,
-  title: 'Material UI / AppBar',
   args: {
-    position: 'static',
     children: appBarChildren,
+    position: 'static',
   },
+  component: AppBar,
   parameters: {
     layout: 'padded',
   },
   tags: ['autodocs'],
+  title: 'Material UI / AppBar',
 } as Meta<AppBar>;
 
 type Story = StoryObj<AppBarProps>;
 
 export const Primary: Story = { args: { color: 'primary' } };
+
 export const Secondary: Story = { args: { color: 'secondary' } };
+
 export const Transparent: Story = { args: { color: 'transparent' } };

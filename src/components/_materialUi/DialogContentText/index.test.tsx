@@ -7,8 +7,9 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
 import { DialogContentText } from '@mui/material';
+
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('DialogContentText', () => {
   const Component = <DialogContentText>Hey</DialogContentText>;

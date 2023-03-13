@@ -28,7 +28,7 @@ exports[`Link ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Link ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <a
     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-grzwhc-MuiTypography-root-MuiLink-root"

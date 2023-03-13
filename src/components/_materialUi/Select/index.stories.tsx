@@ -20,6 +20,7 @@ import { Select } from './internal';
 export default {
   args: {
     children: Array(...Array(10)).map((_, i): any => (
+      // eslint-disable-next-line react/no-array-index-key
       <MenuItem key={i} value={i}>
         {i + 1}
       </MenuItem>
@@ -35,10 +36,13 @@ export default {
 } as Meta<Select>;
 
 export const Primary: StoryObj<SelectProps> = {};
+
 export const Secondary: StoryObj<SelectProps> = {
   args: { color: 'secondary' },
 };
+
 export const Disabled: StoryObj<SelectProps> = { args: { disabled: true } };
+
 export const Multiple: StoryObj<SelectProps> = {
   render: args => {
     const { children } = args;
@@ -47,7 +51,9 @@ export const Multiple: StoryObj<SelectProps> = {
       <Select
         {...args}
         multiple
-        onChange={event => setValue(event.target.value as unknown as string[])}
+        onChange={(event): void =>
+          setValue(event.target.value as unknown as string[])
+        }
         value={value}
       >
         {children}

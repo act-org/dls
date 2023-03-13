@@ -12,7 +12,7 @@
 import { Paper } from '@mui/material';
 import { paperClasses } from '@mui/material/Paper';
 
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/styled';
 
 export const StyledPaper = styled(Paper)(({ theme }) => ({
   [`&.${paperClasses.root}`]: {

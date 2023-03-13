@@ -16,7 +16,7 @@ exports[`ThemeProvider ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`ThemeProvider ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`ThemeProvider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <p>
     This is a test

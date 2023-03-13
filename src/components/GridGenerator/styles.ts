@@ -10,7 +10,7 @@
 import { StyledComponent } from '@emotion/styled';
 import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
 
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@actinc/dls/helpers/styled';
 
 export const StyledGridContainer: StyledComponent<GridProps> = styled(Grid)(
   ({ theme }) => ({

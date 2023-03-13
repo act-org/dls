@@ -258,7 +258,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`FormRadioGroup ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
