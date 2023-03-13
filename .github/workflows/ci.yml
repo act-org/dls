@@ -3,11 +3,7 @@ on:
   push:
     branches:
       - next
-  pull_request:
-    types:
-      - opened
-    branches:
-      - next
+      - main
 jobs:
   test:
     name: Test
