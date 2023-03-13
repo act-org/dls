@@ -21,13 +21,6 @@ module.exports = {
         'storybook/story-exports': 'off',
       },
     },
-    {
-      files: ['./**/*.test.tsx', './**/*.spec.tsx'],
-      rules: {
-        'react/no-array-index-key': 'off',
-        'sort-keys': 'off',
-      },
-    },
   ],
   rules: {
     'import/no-extraneous-dependencies': 'off',
