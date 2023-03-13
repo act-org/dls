@@ -13,12 +13,12 @@ import { Meta, StoryObj } from '@storybook/react';
 import { Link } from './internal';
 
 export default {
-  component: Link,
-  title: 'Material UI / Link',
   args: {
     children: <Typography>Click Me</Typography>,
   },
+  component: Link,
   tags: ['autodocs'],
+  title: 'Material UI / Link',
 } as Meta<Link>;
 
 export const Primary: StoryObj<Link> = { args: { color: 'primary' } };

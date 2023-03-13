@@ -14,8 +14,8 @@ import { Slider } from './internal';
 export default {
   args: {
     defaultValue: 0,
-    min: 0,
     max: 100,
+    min: 0,
   },
   argTypes: {},
   component: Slider,

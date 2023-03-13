@@ -22,6 +22,7 @@ export const Template: Story<FormInputProps> = args => {
   };
   return <FormInput onChange={onChange} value={state} {...args} />;
 };
+
 export const argTypes = Playground(
   {
     autoFocus: {},
@@ -33,9 +34,9 @@ export const argTypes = Playground(
     id: {},
     inputMode: {},
     label: { type: 'string' },
-    onChange: { action: 'change' },
     margin: {},
     multiline: {},
+    onChange: { action: 'change' },
     placeholder: {},
     required: {},
     type: {},

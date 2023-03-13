@@ -18,9 +18,9 @@ export const Template: Story<EmptyStateProps> = args => (
 );
 export const argTypes = Playground(
   {
-    title: { type: 'string' },
     description: { type: 'string' },
     style: {},
+    title: { type: 'string' },
   },
   EmptyState,
 );

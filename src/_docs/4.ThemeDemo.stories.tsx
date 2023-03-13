@@ -67,42 +67,41 @@ type Demo<ComponentProps> = {
 
 const demos = [
   {
-    title: 'Buttons',
     props: [
-      { variant: 'text', color: 'primary' },
-      { variant: 'contained', color: 'primary' },
-      { variant: 'outlined', color: 'primary' },
-      { variant: 'text', color: 'secondary' },
-      { variant: 'contained', color: 'secondary' },
-      { variant: 'outlined', color: 'secondary' },
-      { variant: 'text', color: 'success' },
-      { variant: 'contained', color: 'success' },
-      { variant: 'outlined', color: 'success' },
-      { variant: 'text', color: 'error' },
-      { variant: 'contained', color: 'error' },
-      { variant: 'outlined', color: 'error' },
-      { variant: 'text', color: 'info' },
-      { variant: 'contained', color: 'info' },
-      { variant: 'outlined', color: 'info' },
-      { variant: 'text', color: 'warning' },
-      { variant: 'contained', color: 'warning' },
-      { variant: 'outlined', color: 'warning' },
+      { color: 'primary', variant: 'text' },
+      { color: 'primary', variant: 'contained' },
+      { color: 'primary', variant: 'outlined' },
+      { color: 'secondary', variant: 'text' },
+      { color: 'secondary', variant: 'contained' },
+      { color: 'secondary', variant: 'outlined' },
+      { color: 'success', variant: 'text' },
+      { color: 'success', variant: 'contained' },
+      { color: 'success', variant: 'outlined' },
+      { color: 'error', variant: 'text' },
+      { color: 'error', variant: 'contained' },
+      { color: 'error', variant: 'outlined' },
+      { color: 'info', variant: 'text' },
+      { color: 'info', variant: 'contained' },
+      { color: 'info', variant: 'outlined' },
+      { color: 'warning', variant: 'text' },
+      { color: 'warning', variant: 'contained' },
+      { color: 'warning', variant: 'outlined' },
     ],
     render: props => (
       <Button sx={{ mx: '.5em' }} {...props}>
         Label
       </Button>
     ),
+    title: 'Buttons',
   } as Demo<ButtonProps>,
   {
-    title: 'Button Groups',
     props: [
-      { variant: 'text', color: 'primary' },
-      { variant: 'contained', color: 'primary' },
-      { variant: 'outlined', color: 'primary' },
-      { variant: 'text', color: 'secondary' },
-      { variant: 'contained', color: 'secondary' },
-      { variant: 'outlined', color: 'secondary' },
+      { color: 'primary', variant: 'text' },
+      { color: 'primary', variant: 'contained' },
+      { color: 'primary', variant: 'outlined' },
+      { color: 'secondary', variant: 'text' },
+      { color: 'secondary', variant: 'contained' },
+      { color: 'secondary', variant: 'outlined' },
     ],
     render: props => (
       <ButtonGroup sx={{ mx: '.5em' }} {...props}>
@@ -111,96 +110,96 @@ const demos = [
         <Button>Three</Button>
       </ButtonGroup>
     ),
+    title: 'Button Groups',
   } as Demo<ButtonGroupProps>,
   {
-    title: 'Checkboxes',
     props: [
       { color: 'primary', defaultChecked: true },
       { color: 'primary' },
       { color: 'primary', disabled: true },
-      { color: 'primary', disabled: true, checked: true },
+      { checked: true, color: 'primary', disabled: true },
       { color: 'secondary', defaultChecked: true },
       { color: 'secondary' },
       { color: 'secondary', disabled: true },
-      { color: 'secondary', disabled: true, checked: true },
+      { checked: true, color: 'secondary', disabled: true },
       { color: 'default', defaultChecked: true },
       { color: 'default' },
       { color: 'default', disabled: true },
-      { color: 'default', disabled: true, checked: true },
+      { checked: true, color: 'default', disabled: true },
     ],
     render: props => (
       <FormControlLabel control={<Checkbox {...props} />} label="Label" />
     ),
+    title: 'Checkboxes',
   } as Demo<CheckboxProps>,
   {
-    title: 'Radios',
     props: [
       { color: 'primary', defaultChecked: true },
       { color: 'primary' },
       { color: 'primary', disabled: true },
-      { color: 'primary', disabled: true, checked: true },
+      { checked: true, color: 'primary', disabled: true },
       { color: 'secondary', defaultChecked: true },
       { color: 'secondary' },
       { color: 'secondary', disabled: true },
-      { color: 'secondary', disabled: true, checked: true },
+      { checked: true, color: 'secondary', disabled: true },
       { color: 'default', defaultChecked: true },
       { color: 'default' },
       { color: 'default', disabled: true },
-      { color: 'default', disabled: true, checked: true },
+      { checked: true, color: 'default', disabled: true },
     ],
     render: props => (
       <FormControlLabel control={<Radio {...props} />} label="Label" />
     ),
+    title: 'Radios',
   } as Demo<RadioProps>,
   {
-    title: 'Autocomplete',
     flex: 1,
     props: [
       {
-        multiple: false,
-        options: topFilms,
         disablePortal: true,
         fullWidth: true,
+        multiple: false,
+        options: topFilms,
         renderInput: (params): ReactElement<any> => (
           <TextField {...params} label="Movie" />
         ),
       },
     ],
     render: props => <Autocomplete sx={{ mx: '.5em' }} {...props} />,
+    title: 'Autocomplete',
   } as Demo<AutocompleteProps<FilmType, false, false, false>>,
   {
-    title: 'Rating',
     props: [
       {
         name: 'test',
+        readOnly: true,
         value: 1,
-        readOnly: true,
       },
       {
         name: 'test',
+        readOnly: true,
         value: 2,
-        readOnly: true,
       },
       {
         name: 'test',
+        readOnly: true,
         value: 3,
-        readOnly: true,
       },
       {
         name: 'test',
+        readOnly: true,
         value: 4,
-        readOnly: true,
       },
       {
         name: 'test',
-        value: 5,
         readOnly: true,
+        value: 5,
       },
     ],
     render: props => <Rating sx={{ mx: '.5em' }} {...props} />,
+    title: 'Rating',
   } as Demo<RatingProps>,
   {
-    title: 'Floating Action Buttons',
     props: [
       { color: 'primary', size: 'small' },
       { color: 'primary', size: 'medium' },
@@ -214,57 +213,57 @@ const demos = [
         <AddIcon />
       </Fab>
     ),
+    title: 'Floating Action Buttons',
   } as Demo<FabProps>,
   {
-    title: 'Badges',
     props: [
-      { color: 'primary', badgeContent: 5 },
-      { color: 'secondary', badgeContent: 5 },
-      { color: 'default', badgeContent: 5 },
-      { color: 'error', badgeContent: 5 },
-      { color: 'info', badgeContent: 5 },
-      { color: 'success', badgeContent: 5 },
-      { color: 'warning', badgeContent: 5 },
+      { badgeContent: 5, color: 'primary' },
+      { badgeContent: 5, color: 'secondary' },
+      { badgeContent: 5, color: 'default' },
+      { badgeContent: 5, color: 'error' },
+      { badgeContent: 5, color: 'info' },
+      { badgeContent: 5, color: 'success' },
+      { badgeContent: 5, color: 'warning' },
     ],
     render: props => (
       <Badge {...props}>
         <MailIcon />
       </Badge>
     ),
+    title: 'Badges',
   } as Demo<BadgeProps>,
   {
-    title: 'Chips',
     props: [
-      { label: 'Chip', color: 'primary' },
-      { label: 'Chip', color: 'secondary' },
-      { label: 'Chip', color: 'success' },
-      { label: 'Chip', color: 'error' },
-      { label: 'Chip', color: 'info' },
-      { label: 'Chip', color: 'warning' },
+      { color: 'primary', label: 'Chip' },
+      { color: 'secondary', label: 'Chip' },
+      { color: 'success', label: 'Chip' },
+      { color: 'error', label: 'Chip' },
+      { color: 'info', label: 'Chip' },
+      { color: 'warning', label: 'Chip' },
     ],
     render: props => <Chip {...props} />,
+    title: 'Chips',
   } as Demo<ChipProps>,
   {
-    title: 'TextField',
     flex: 1,
     props: [
       {
-        label: 'TextField Label',
         color: 'primary',
         fullWidth: true,
+        label: 'TextField Label',
         placeholder: 'Placeholder text',
       },
     ],
     render: props => <TextField {...props} />,
+    title: 'TextField',
   } as Demo<TextFieldProps>,
   {
-    title: 'Select',
     flex: 1,
     props: [
       {
-        label: 'Select Label',
         color: 'primary',
         fullWidth: true,
+        label: 'Select Label',
         placeholder: 'Placeholder text',
         select: true,
       },
@@ -276,9 +275,9 @@ const demos = [
         <MenuItem value="1">Option 3</MenuItem>
       </TextField>
     ),
+    title: 'Select',
   } as Demo<TextFieldProps>,
   {
-    title: 'App Bar',
     flex: 1,
     props: [{}],
     render: props => (
@@ -299,21 +298,21 @@ const demos = [
         </Toolbar>
       </AppBar>
     ),
+    title: 'App Bar',
   } as Demo<AppBarProps>,
   {
-    title: 'Switch',
     props: [
       { color: 'primary' },
-      { color: 'primary', checked: true },
+      { checked: true, color: 'primary' },
       { color: 'secondary' },
-      { color: 'secondary', checked: true },
+      { checked: true, color: 'secondary' },
       { color: 'default' },
-      { color: 'default', checked: true },
+      { checked: true, color: 'default' },
     ],
     render: props => <Switch {...props} />,
+    title: 'Switch',
   } as Demo<SwitchProps>,
   {
-    title: 'Typography',
     flex: 10,
     props: [
       { variant: 'h1' },
@@ -331,12 +330,13 @@ const demos = [
       { variant: 'subtitle2' },
     ],
     render: props => <Typography {...props}>lorem ipsum</Typography>,
+    title: 'Typography',
   } as Demo<TypographyProps>,
 ];
 
 const meta = {
-  component: Box,
   argTypes: {},
+  component: Box,
   title: 'DLS / Theme Demo',
 } as Meta<typeof Box>;
 

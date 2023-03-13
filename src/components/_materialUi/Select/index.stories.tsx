@@ -20,6 +20,7 @@ import { Select } from './internal';
 export default {
   args: {
     children: Array(...Array(10)).map((_, i): any => (
+      // eslint-disable-next-line react/no-array-index-key
       <MenuItem key={i} value={i}>
         {i + 1}
       </MenuItem>

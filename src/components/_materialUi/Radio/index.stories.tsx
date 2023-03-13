@@ -14,8 +14,8 @@ import { Radio } from './internal';
 export default {
   args: {},
   argTypes: {
-    onClick: { action: 'onClick' },
     onChange: { action: 'onChange' },
+    onClick: { action: 'onClick' },
   },
   component: Radio,
   parameters: {},

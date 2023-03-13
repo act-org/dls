@@ -18,15 +18,12 @@ module.exports = {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
         'react-hooks/rules-of-hooks': 'off',
-        'react/no-array-index-key': 'off',
-        'sort-keys': 'off',
         'storybook/story-exports': 'off',
       },
     },
     {
       files: ['./**/*.test.tsx', './**/*.spec.tsx'],
       rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
         'react/no-array-index-key': 'off',
         'sort-keys': 'off',
       },

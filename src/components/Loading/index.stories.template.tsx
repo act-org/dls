@@ -22,8 +22,8 @@ export const argTypes = Playground(
       size: {},
       thickness: {},
     },
-    title: {},
     style: {},
+    title: {},
   },
   Loading,
 );

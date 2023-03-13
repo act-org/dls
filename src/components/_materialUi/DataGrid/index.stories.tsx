@@ -146,19 +146,13 @@ const rows: StoryGridRow[] = [
   },
 ];
 export default {
-  component: DataGrid,
-  title: 'Material UI / DataGrid',
-  parameters: {
-    layout: 'padded',
-  },
-  render: (args: DataGridProps) => {
-    return (
-      <div style={{ display: 'flex', height: 'auto', width: '100%' }}>
-        <div style={{ flexGrow: 1 }}>
-          <DataGrid {...args} />
-        </div>
-      </div>
-    );
+  args: {
+    autoHeight: true,
+    columns,
+    filterMode: 'client',
+    paginationMode: 'client',
+    rows,
+    sortingMode: 'client',
   },
   argTypes: {
     onCellClick: { action: 'onCellClick' },
@@ -175,15 +169,21 @@ export default {
     onSelectionModelChange: { action: 'onSelectionModelChange' },
     onSortModelChange: { action: 'onSortModelChange' },
   },
-  args: {
-    columns,
-    rows,
-    autoHeight: true,
-    sortingMode: 'client',
-    paginationMode: 'client',
-    filterMode: 'client',
+  component: DataGrid,
+  parameters: {
+    layout: 'padded',
+  },
+  render: (args: DataGridProps) => {
+    return (
+      <div style={{ display: 'flex', height: 'auto', width: '100%' }}>
+        <div style={{ flexGrow: 1 }}>
+          <DataGrid {...args} />
+        </div>
+      </div>
+    );
   },
   tags: ['autodocs'],
+  title: 'Material UI / DataGrid',
 } as Meta<DataGridProps>;
 
 type Story = StoryObj<DataGridProps>;

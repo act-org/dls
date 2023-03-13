@@ -45,14 +45,14 @@ export const Template: Story<ConfirmDialogProps> = (
 
 export const argTypes = Playground(
   {
-    title: {
-      type: 'string',
-    },
+    allowClose: {},
     description: {
       type: 'string',
     },
     isOpen: {},
-    allowClose: {},
+    title: {
+      type: 'string',
+    },
   },
   ConfirmDialog,
 );

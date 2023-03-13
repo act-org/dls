@@ -42,15 +42,15 @@ export const Template: Story<DataTableProps<Item>> = ({
   });
 
   let items: Item[] = [...Array(totalCount || 0)].map((_, i): any => ({
-    updatedAt: moment()
-      .subtract(2, 'year')
-      .subtract(i + 1, 'day')
-      .toDate(),
     fieldA: `Field A${i + 1}`,
     fieldB: `Field B${i + 1}`,
     fieldC: `Field C${i + 1}`,
     id: i + 1,
     name: `Item ${i + 1}`,
+    updatedAt: moment()
+      .subtract(2, 'year')
+      .subtract(i + 1, 'day')
+      .toDate(),
   }));
 
   if (isNumber(limit) && isNumber(offset)) {

@@ -35,14 +35,16 @@ const ButtonChildren = (): ReactElement<any> => {
     </>
   );
 };
+
 const buttonChildren = <ButtonChildren />;
+
 export default {
-  component: ButtonGroup,
-  title: 'Material UI / ButtonGroup',
   args: {
     children: buttonChildren,
   },
+  component: ButtonGroup,
   tags: ['autodocs'],
+  title: 'Material UI / ButtonGroup',
 } as StoryObj<ButtonGroup>;
 
 export const Primary: StoryObj<ButtonGroup> = { args: { color: 'primary' } };

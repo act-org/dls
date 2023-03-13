@@ -14,13 +14,13 @@ import { Tooltip } from './internal';
 
 export default {
   args: {
-    title: 'Tooltip title goes here',
-    placement: 'right',
     children: <HelpCircleOutline />,
+    placement: 'right',
+    title: 'Tooltip title goes here',
   },
   argTypes: {
-    onOpen: { action: 'onOpen' },
     onClose: { action: 'onClose' },
+    onOpen: { action: 'onOpen' },
   },
   component: Tooltip,
   parameters: {},
@@ -33,12 +33,15 @@ export const Primary: StoryObj<Tooltip> = { args: {} };
 export const Left: StoryObj<Tooltip> = {
   args: { color: 'primary', placement: 'left' },
 };
+
 export const Top: StoryObj<Tooltip> = {
   args: { color: 'primary', placement: 'top' },
 };
+
 export const Bottom: StoryObj<Tooltip> = {
   args: { color: 'primary', placement: 'bottom' },
 };
+
 export const Open: StoryObj<Tooltip> = {
-  args: { color: 'primary', placement: 'right', open: true },
+  args: { color: 'primary', open: true, placement: 'right' },
 };

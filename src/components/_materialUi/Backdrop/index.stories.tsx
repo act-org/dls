@@ -18,24 +18,24 @@ import { Backdrop } from './internal';
  * chosen theme parameters
  */
 export default {
-  component: Backdrop,
-  title: 'Material UI / Backdrop',
   args: {
     children: <CircularProgress />,
   },
   argTypes: {
     onClick: { action: 'onClick' },
   },
+  component: Backdrop,
   parameters: {
-    layout: 'padded',
     docs: {
       story: {
         inline: false,
       },
     },
+    layout: 'padded',
   },
   render: args => {
     const [open, setOpen] = useState(false);
+
     return (
       <>
         <Button
@@ -50,6 +50,7 @@ export default {
     );
   },
   tags: ['autodocs'],
+  title: 'Material UI / Backdrop',
 } as Meta<Backdrop>;
 
 /**

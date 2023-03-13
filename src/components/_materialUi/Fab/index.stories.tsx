@@ -17,8 +17,6 @@ import { Fab } from './internal';
  * chosen theme parameters
  */
 export default {
-  component: Fab,
-  title: 'Material UI / Fab',
   args: {
     'aria-label': 'Floating Icon Button',
     children: <AddIcon />,
@@ -27,7 +25,9 @@ export default {
   argTypes: {
     onClick: { action: 'onClick' },
   },
+  component: Fab,
   tags: ['autodocs'],
+  title: 'Material UI / Fab',
 } as Meta<Fab>;
 
 /**

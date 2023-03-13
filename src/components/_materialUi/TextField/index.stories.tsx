@@ -20,9 +20,9 @@ export default {
     placeholder: 'Placeholder',
   },
   argTypes: {
+    onBlur: { action: 'onBlur' },
     onChange: { action: 'onChange' },
     onFocus: { action: 'onFocus' },
-    onBlur: { action: 'onBlur' },
   },
   component: TextField,
   parameters: {
@@ -69,12 +69,13 @@ export const ToolTipLabel: Story = {
  */
 export const Select: Story = {
   args: {
-    select: true,
     children: Array(...Array(10)).map((_, i): any => (
+      // eslint-disable-next-line react/no-array-index-key
       <MenuItem key={i} value={i}>
         {i + 1}
       </MenuItem>
     )),
+    select: true,
   },
 };
 
@@ -92,6 +93,7 @@ export const SelectMultiple: Story = {
         value={value}
       >
         {Array(...Array(10)).map((_, i): any => (
+          // eslint-disable-next-line react/no-array-index-key
           <MenuItem key={i} value={i}>
             {i + 1}
           </MenuItem>
