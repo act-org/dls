@@ -387,6 +387,6 @@ Here are some of the more important ones:
 
 Some npm packages are pinned to non-current versions for a specific reason:
 
-| Package      | Version | Reason                                                                                                  |
-|:------------ |:------- |:------------------------------------------------------------------------------------------------------- |
-| `color`      | `3.2.1` | Version `4.x` cannot be run in Storybook due to [this issue](https://github.com/Qix-/color/issues/206). |
+| Package               | Version | Reason                                                      |
+|:--------------------- |:------- |:----------------------------------------------------------- |
+| `@storybook/mdx2-csf` | `0.0.3` | `0.0.4` is not yet compatible with `@storybook/addon-docs`. |
