@@ -124,13 +124,13 @@ SyntaxError: Unexpected token 'export'
 ```
 
 This is due to the DLS being built using ES Modules as opposed to CommonJS.
-To fix this issue in your project, try adding...
+To fix this issue in your project, try adding the DLS to the
+[`transpilePackages`](https://beta.nextjs.org/docs/api-reference/next.config.js#transpilepackages)
+option in your `next.config.js` file.
 
 ```js
 transpilePackages: ['@actinc/dls'],
 ```
-
-... to your `next.config.js` file.
 
 ### Load Fonts
 
