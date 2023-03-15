@@ -114,6 +114,24 @@ const StyledTypography = styled(TableCell)(({ theme}) => ({
 }))
 ```
 
+### Next.js >= 13
+
+If your project is using Next.js > 13, you may see the following error
+on startup:
+
+```sh
+SyntaxError: Unexpected token 'export'
+```
+
+This is due to the DLS being built using ES Modules as opposed to CommonJS.
+To fix this issue in your project, try adding...
+
+```js
+transpilePackages: ['@actinc/dls'],
+```
+
+... to your `next.config.js` file.
+
 ### Load Fonts
 
 #### Montserrat
