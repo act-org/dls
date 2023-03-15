@@ -24,7 +24,7 @@ import spacing, { SPACING_PX } from './spacing';
 import typography from './typography';
 import zIndex from './zIndex';
 
-type ThemeCustomizations = ICustomDims & {
+export type ThemeCustomizations = ICustomDims & {
   breakpoints: BreakpointsOptions & {
     values: BreakpointsOptions['values'] & { mobile: number };
   };
