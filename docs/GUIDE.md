@@ -108,7 +108,7 @@ think of a theme as a CSS stylesheet that gets injected into the browser
 and dictates how the Material UI components that we use will look and feel.
 
 The DLS currently supports
-[3 different themes](https://github.com/act-org/dls/tree/master/src/styles):
+[several different themes](https://github.com/act-org/dls/tree/master/src/styles):
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel

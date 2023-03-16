@@ -24,8 +24,8 @@ npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @e
 ### Choosing a Theme
 
 This DLS is built on top of the
-[theming engine](https://mui.com/material-ui/customization/theming/) from
-Material UI, and ships with two themes out of the box:
+[theme engine](https://mui.com/material-ui/customization/theming/) from
+Material UI, and ships with several themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
@@ -296,9 +296,10 @@ the DLS.
 
 In version >= 7 of the DLS, we are now building and exporting the library as
 [ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
-This allows your project bundler to much more easily read and
+This allows your project's bundler to much more easily read and
 [tree-shake](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
-the DLS right out of the box.
+the DLS right out of the box. (No more need for
+[`babel-plugin-transform-imports`](https://www.npmjs.com/package/babel-plugin-transform-imports)!)
 
 Furthermore, the DLS's `package.json` is also setting:
 
