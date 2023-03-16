@@ -69,7 +69,8 @@ In version >= 7 of the DLS, we are now building and exporting the library as
 [ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
 This allows your project's bundler to much more easily read and
 [tree-shake](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
-the DLS right out of the box.
+the DLS right out of the box. (No more need for
+[`babel-plugin-transform-imports`](https://www.npmjs.com/package/babel-plugin-transform-imports)!)
 
 Furthermore, the DLS's `package.json` is also setting:
 
