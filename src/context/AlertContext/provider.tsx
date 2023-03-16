@@ -9,22 +9,22 @@
 
 /* eslint-disable filenames/match-exported */
 
-import { flow, get } from 'lodash';
+import { get } from 'lodash';
 import {
+  enqueueSnackbar,
   OptionsObject,
+  ProviderContext,
   SnackbarProvider,
-  withSnackbar,
-  WithSnackbarProps,
 } from 'notistack';
 import { Component, ReactElement, ReactNode } from 'react';
 
-import SnackbarAlert from '~/components/SnackbarAlert';
-import getErrorMessage from '~/helpers/getErrorMessage';
-import { ServerError } from '~/types';
+import SnackbarAlert from '@actinc/dls/components/SnackbarAlert';
+import getErrorMessage from '@actinc/dls/helpers/getErrorMessage';
+import { ServerError } from '@actinc/dls/types';
 
 import AlertContext from '.';
 
-interface Props extends Partial<WithSnackbarProps> {
+interface Props extends Partial<ProviderContext> {
   anchorOriginHorizontal?: 'left' | 'right' | 'center';
   anchorOriginVertical?: 'bottom' | 'top';
   children: ReactNode;
@@ -39,6 +39,7 @@ class Provider extends Component<Props> {
     this._addError = this._addError.bind(this);
   }
 
+  // eslint-disable-next-line class-methods-use-this
   async _addAlert({
     message,
     options,
@@ -46,8 +47,6 @@ class Provider extends Component<Props> {
     message: ReactNode;
     options?: OptionsObject;
   }): Promise<void> {
-    const { enqueueSnackbar } = this.props;
-
     const key = new Date().getTime();
     if (enqueueSnackbar) {
       enqueueSnackbar(message, {
@@ -92,8 +91,6 @@ class Provider extends Component<Props> {
   }
 }
 
-const EnhancedProvider = flow(withSnackbar)(Provider);
-
 export const AlertContextProvider = ({
   anchorOriginHorizontal,
   anchorOriginVertical,
@@ -110,7 +107,7 @@ export const AlertContextProvider = ({
     }}
     maxSnack={maxSnack || 3}
   >
-    <EnhancedProvider {...otherProps} />
+    <Provider {...otherProps} />
   </SnackbarProvider>
 );
 

@@ -9,7 +9,7 @@
 
 import { Button, DialogActions } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('DialogActions', () => {
   const Component = (

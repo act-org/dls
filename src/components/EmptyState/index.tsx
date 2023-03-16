@@ -7,10 +7,19 @@
  * @prettier
  */
 
-import { Button, ButtonProps, IconProps, TypographyProps } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import Button, { ButtonProps } from '@mui/material/Button';
+import { IconProps } from '@mui/material/Icon';
+import { TypographyProps } from '@mui/material/Typography';
 import { isString } from 'lodash';
-import { ComponentClass, CSSProperties, FC, ReactElement } from 'react';
+import {
+  ComponentClass,
+  CSSProperties,
+  FC,
+  ReactElement,
+  ReactNode,
+} from 'react';
+
+import { styled } from '@actinc/dls/helpers/styled';
 
 import {
   StyledContainer,
@@ -22,9 +31,9 @@ import {
 
 export interface EmptyStateProps {
   buttonProps?: ButtonProps;
-  description?: any;
+  description?: string | ReactNode;
   descriptionTypographyProps?: TypographyProps;
-  Icon?: FC<any> | ComponentClass<any>;
+  Icon?: FC<unknown> | ComponentClass<unknown>;
   iconProps?: IconProps;
   style?: CSSProperties;
   title?: string | ReactElement<unknown>;
@@ -85,10 +94,10 @@ export const EmptyState: FC<EmptyStateProps> = ({
 
       {description && (
         <StyledTypographyDescription
+          $withoutTitle={!title}
           align="center"
           color="textSecondary"
           variant="body1"
-          withoutTitle={!title}
           {...descriptionTypographyProps}
         >
           {description}

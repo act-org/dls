@@ -9,7 +9,7 @@
 
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SearchBar, SearchBarProps } from '.';
 
@@ -20,8 +20,8 @@ export const argTypes = Playground(
     autoFocus: {},
     disabled: {},
     error: {},
-    placeholder: {},
     onChange: { action: 'onChange' },
+    placeholder: {},
     value: { type: 'string' },
   },
   SearchBar,

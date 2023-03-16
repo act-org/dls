@@ -3,7 +3,7 @@
 exports[`AppBar ACT theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1rgncm6-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-n50rvp-MuiPaper-root-MuiAppBar-root"
   />
 </div>
 `;
@@ -11,15 +11,23 @@ exports[`AppBar ACT theme matches the snapshot 1`] = `
 exports[`AppBar ACT_ET theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1p3d7ft-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-a4phuo-MuiPaper-root-MuiAppBar-root"
   />
 </div>
 `;
 
-exports[`AppBar ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`AppBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-pofmwd-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-8dz36x-MuiPaper-root-MuiAppBar-root"
+  />
+</div>
+`;
+
+exports[`AppBar ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-1raszdx-MuiPaper-root-MuiAppBar-root"
   />
 </div>
 `;

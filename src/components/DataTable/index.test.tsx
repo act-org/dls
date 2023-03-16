@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import { noop } from 'lodash';
+import { noop, range } from 'lodash';
 
-import { snapshot } from '~/helpers/test';
+import { snapshot } from '@actinc/dls/helpers/test';
 
 import DataTable from '.';
 
@@ -70,7 +70,7 @@ describe('DataTable', () => {
         sortBy: 'id',
         sortDirection: 'ASCENDING',
       }}
-      items={Array(...Array(5)).map((_, i): any => ({
+      items={range(5).map((i): any => ({
         fieldA: `Field A${i + 1}`,
         fieldB: `Field B${i + 1}`,
         fieldC: `Field C${i + 1}`,

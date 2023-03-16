@@ -9,7 +9,7 @@
 
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { InputLabel, InputLabelProps } from '.';
 
@@ -26,14 +26,14 @@ export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
 
 export const argTypes: Record<string, any> = Playground(
   {
-    text: {},
     color: {},
     disabled: {},
     error: {},
-    helpText: { type: 'string' },
     helpPlacement: {},
+    helpText: { type: 'string' },
     margin: {},
     required: {},
+    text: {},
   },
   InputLabel,
 );

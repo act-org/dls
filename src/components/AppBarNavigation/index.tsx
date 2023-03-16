@@ -7,7 +7,8 @@
  * @prettier
  */
 
-import { AppBarProps, Grid } from '@mui/material';
+import { AppBarProps } from '@mui/material/AppBar';
+import Grid from '@mui/material/Grid';
 import { FC, ReactElement } from 'react';
 
 import RenderLogo, { RenderLogoProps } from './RenderLogo';
@@ -39,7 +40,7 @@ export const AppBarNavigation: FC<AppBarNavigationProps> = ({
   navigationItems,
 }: AppBarNavigationProps): ReactElement<AppBarNavigationProps> => (
   <StyledAppBar
-    appBarHeight={appBarHeight || 72}
+    $appBarHeight={appBarHeight || 72}
     color="transparent"
     {...appBarProps}
   >

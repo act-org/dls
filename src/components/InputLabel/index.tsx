@@ -7,10 +7,9 @@
  * @prettier
  */
 
+import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
 import { InputLabelProps as MuiInputLabelProps, Tooltip } from '@mui/material';
 import { FC, ReactElement } from 'react';
-
-import HelpCircleOutline from '~/icons/HelpCircleOutline';
 
 import { StyledInputLabel } from './styles';
 

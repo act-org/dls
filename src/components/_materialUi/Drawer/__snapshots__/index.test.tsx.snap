@@ -21,7 +21,13 @@ exports[`Drawer ACT_ET theme matches the snapshot 1`] = `
 />
 `;
 
-exports[`Drawer ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Drawer ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`Drawer ENCOURAGE theme matches the snapshot 1`] = `
 <div
   aria-hidden="true"
 />

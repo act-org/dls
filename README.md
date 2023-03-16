@@ -14,10 +14,10 @@ The Design Language System for ACT & Encoura front-end projects. View the UI com
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://mui.com/) and
+[Material UI](https://mui.com/) version `5.x` and
 [React](https://reactjs.org/) version `17.x` or `18.x`.
 
-```shell
+```sh
 npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
 ```
 
@@ -29,7 +29,8 @@ Material UI, and ships with two themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA_DATALAB"`: for Encoura's "Datalab" look and feel
+3. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
+4. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -49,17 +50,17 @@ const MyApp = () => (
 
 #### Extending Themes
 
-You can exend the core DLS themes using the
+You can exend the core DLS themes using using our variation on the
 [`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
 generator from Material UI:
 
 ```jsx
-import { createTheme } from '@mui/material/styles';
 import deepMerge from 'deepmerge';
+import { createTheme } from '@actinc/dls/styles/createTheme';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components';
 
-const myExtendedTheme = createTheme(deepMerge(THEME_ACT_ET, {
+const myExtendedTheme = createTheme(deepMerge(THEME_ACT, {
   // theme customizations go here!
 }));
 
@@ -72,13 +73,15 @@ const MyApp = () => (
 
 #### Custom Themes
 
-Alternatively, you can build your own theme from scratch using the
+Alternatively, you can build your own theme from scratch using our variation on the
 [`createTheme`](https://mui.com/material-ui/customization/theming/#createtheme-options-args-theme)
-generator from Material UI:
+generator from Material UI. Our version takes the same parameters, but will
+return a strongly typed version of the theme with any customizations you may
+have added.
 
 ```jsx
-import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@actinc/dls/components';
+import { createTheme } from '@actinc/dls/styles/createTheme';
 
 const myCustomTheme = createTheme({
   // build your theme here!
@@ -89,6 +92,25 @@ const MyApp = () => (
     <App />
   </ThemeProvider>
 );
+```
+
+#### Custom Themes And Styled Components
+
+Within your styled components, if you need to access custom a theme variable
+that is not present in the default MUI `Theme` type, we provide a helper
+function to generate a `styled` function that is strongly typed to your theme:
+
+```jsx
+import { createThemeStyled } from '@actinc/dls/helpers/styled';
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import TableCell from '@mui/material/TableCell';
+
+const styled = createThemeStyled(THEME_ACT);
+
+const StyledTypography = styled(TableCell)(({ theme }) => ({
+   // `customDims` is not available on the default theme
+  height: theme.customDims.heights.tableHeader,
+}))
 ```
 
 ### Load Fonts
@@ -109,7 +131,7 @@ reference in the `head` of your React app:
 
 #### Museo
 
-The `ENCOURA_DATALAB` theme assumes that the
+The `ENCOURA_CLASSIC` theme assumes that the
 [Museo](https://github.com/act-org/dls/tree/master/public/fonts/Museo) font
 is available in the browser. Therefore, it is recommended that you include the
 following font reference in the `head` of your React app:
@@ -135,6 +157,33 @@ following font reference in the `head` of your React app:
     font-weight: 700;
   }
 </style>
+```
+
+The Museo font files can be downloaded
+[here](https://github.com/act-org/dls/tree/main/public/fonts/Museo).
+
+#### Work Sans, Roboto, Roboto Mono
+
+The `ENCOURAGE` theme assumes that the
+[Work Sans](https://fonts.google.com/specimen/Work+Sans),
+[Roboto](https://fonts.google.com/specimen/Roboto), and the
+[Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) fonts are available
+in the browser. Therefore, it is recommended that you include the following font
+reference in the `head` of your React app:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Roboto:wght@300;400;500;700"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono:wght@200..700"
+  rel="stylesheet"
+/>
 ```
 
 ### CSS Baseline
@@ -182,77 +231,16 @@ const MyComponent = () => (
 );
 ```
 
-### Minimizing Bundle Size
-
-If you import modules from the ACT DLS using named imports, more code may be
-loaded into memory than you need. In order to use named imports while keeping
-your bundle size as small as possible, we recommend configuring the
-[babel-plugin-transform-imports](https://bitbucket.org/amctheatres/babel-transform-imports/src/master/)
-plugin for [Babel](https://babeljs.io/).
-
-```shell
-npm install --save-dev babel-plugin-transform-imports
-```
-
-Then add the following to your Babel config file (e.g. `.babelrc.js`):
-
-```js
-module.exports = {
-  plugins: [
-    ...
-    [
-      'babel-plugin-transform-imports',
-      {
-        '@mui/material': {
-          preventFullImport: true,
-          transform: '@mui/material/${member}',
-        },
-        '@actinc/dls/components': {
-          transform: '@actinc/dls/components/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/constants': {
-          transform: '@actinc/dls/constants/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/context': {
-          transform: '@actinc/dls/context/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/helpers': {
-          transform: '@actinc/dls/helpers/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/hooks': {
-          transform: '@actinc/dls/hooks/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/icons': {
-          transform: '@actinc/dls/icons/${member}',
-          preventFullImport: true,
-        },
-        '@actinc/dls/styles': {
-          transform: '@actinc/dls/styles/${member}',
-          preventFullImport: true,
-        },
-      },
-    ],
-    ...
-  ],
-  presets: [...],
-}
-```
-
 ### Import Stuff
 
-That's it! You're ready to use the DLS. Simply import the colors, components,
-constants, helpers, icons, styles, and types that you need:
+That's it! You're ready to use the DLS. Simply import the components,
+constants, context, helpers, hooks, icons, styles, and types that you need:
 
 ```jsx
 // components
 import { Alert } from '@actinc/dls/components';
 // constants
-import { sortDirectionTypes as SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
+import { SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
 // context
 import { AlertContext } from '@actinc/dls/context';
 // helpers
@@ -265,6 +253,98 @@ import { ChevronDown } from '@actinc/dls/icons';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 // types
 import { SortObject } from '@actinc/dls/types';
+```
+
+### Transient Props and Styled Components
+
+The DLS provides a customized styled helper which omits transient props
+(those starting with $) from the rendered HTML, while still being able to use
+those parameters in styled components. Use as a drop in replacement of the
+`styled` function that exists in `@mui/material/styles`:
+
+```jsx
+import { styled } from '@actinc/dls/helpers/styled';
+import Button, { ButtonProps } from '@mui/material/Button';
+import * as React from 'react';
+
+const StyledButton = styled(Button)<ButtonProps & { $ultraWide: boolean }>(
+  ({ $ultraWide, theme }) => ({
+    paddingLeft: $ultraWide ? theme.spacing(8) : theme.spacing(4),
+    paddingRight: $ultraWide ? theme.spacing(8) : theme.spacing(4),
+  }),
+);
+
+const MyComponent: React.FC = () => {
+  return <StyledButton $ultraWide />;
+};
+```
+
+* This implementation is how Styled Components does it: <https://styled-components.com/docs/api#transient-props>
+* Unfortunately emotion (the default styling engine in React) doesn't seem to
+care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
+
+## ES Modules & Tree Shaking
+
+Version <= 6 of the DLS were built and exported as
+[CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules).
+While this allowed the simplest integration of the DLS into any
+project, it also resulted in project bundles being
+[larger than desired](https://web.dev/commonjs-larger-bundles/) due to
+the inability of bundlers to
+[tree-shake](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
+the DLS.
+
+In version >= 7 of the DLS, we are now building and exporting the library as
+[ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
+This allows your project bundler to much more easily read and
+[tree-shake](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
+the DLS right out of the box.
+
+Furthermore, the DLS's `package.json` is also setting:
+
+```json
+"sideEffects": false,
+```
+
+to instruct builders to enable even deeper tree-shaking. This should make
+bundle sizes significantly smaller with less effort. However, the tradeoff
+is that in certain scenarios, like
+[Lazy Loading](https://nextjs.org/docs/advanced-features/dynamic-import),
+if you are expecting a dependency to be there that is now removed from
+tree-shaking, things will break and you may need to import that dependency
+directly in a parent bundle.
+
+### SyntaxError: Unexpected token 'export'
+
+One downside of exporting the DLS as ECMAScript modules is that the `import` and
+`export` keywords are preserved, which may cause your packager/runner to throw:
+
+```sh
+SyntaxError: Unexpected token 'export'
+```
+
+If you see this error, you'll need to instruct your packager/runner to transpile
+the DLS on-the-fly.
+
+#### Next.js
+
+You can do this in a [Next.js](https://nextjs.org/) app by adding the DLS to the
+[`transpilePackages`](https://beta.nextjs.org/docs/api-reference/next.config.js#transpilepackages)
+option in your `next.config.js` file.
+
+```js
+transpilePackages: ['@actinc/dls'],
+```
+
+#### Jest
+
+You can do this in the [Jest](https://jestjs.io/) test runner by omitting the
+DLS from the
+[`transformIgnorePatterns`](https://jestjs.io/docs/tutorial-react-native#transformignorepatterns-customization)
+option in your `jest.config.js` file.
+
+```js
+transformIgnorePatterns: ['/node_modules/(?!(@actinc/dls)/)'],
 ```
 
 ## Local Development
@@ -295,6 +375,6 @@ Here are some of the more important ones:
 
 Some npm packages are pinned to non-current versions for a specific reason:
 
-| Package      | Version | Reason                                                                                                  |
-|:------------ |:------- |:------------------------------------------------------------------------------------------------------- |
-| `color`      | `3.2.1` | Version `4.x` cannot be run in Storybook due to [this issue](https://github.com/Qix-/color/issues/206). |
+| Package               | Version | Reason                                                      |
+|:--------------------- |:------- |:----------------------------------------------------------- |
+| `@storybook/mdx2-csf` | `0.0.3` | `0.0.4` is not yet compatible with `@storybook/addon-docs`. |

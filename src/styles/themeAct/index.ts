@@ -7,25 +7,28 @@
  * @prettier
  */
 
-/* eslint-disable @typescript-eslint/no-empty-interface */
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from '@actinc/dls/styles/createTheme';
+import { CustomThemeOptions, ICustomDims } from '@actinc/dls/types';
 
-import { CustomThemeOptions } from '~/types';
-
-import COLORS from './colors';
-import DIMS from './dims';
 import COMPONENTS from './components';
-import PALETTE from './palette';
+import CUSTOM_DIMS from './customDims';
+import PALETTE, { CustomPaletteOptions } from './palette';
 import SHAPE from './shape';
+import spacing, { SPACING_PX } from './spacing';
 import TYPOGRAPHY from './typography';
 
-export const THEME_ACT: CustomThemeOptions = {
+export type ThemeCustomizations = ICustomDims & {
+  palette: CustomPaletteOptions;
+  spacingPx: number;
+};
+
+export const THEME_ACT: CustomThemeOptions<ThemeCustomizations> = {
   components: COMPONENTS,
-  customColors: COLORS.CUSTOM,
-  customDims: DIMS.CUSTOM,
+  customDims: CUSTOM_DIMS,
   palette: PALETTE,
   shape: SHAPE,
-  spacing: DIMS.SPACING,
+  spacing,
+  spacingPx: SPACING_PX,
   typography: TYPOGRAPHY,
 };
 

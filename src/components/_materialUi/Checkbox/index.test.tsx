@@ -9,7 +9,7 @@
 
 import { Checkbox } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Checkbox', () => {
   const Component = <Checkbox checked color="primary" />;

@@ -56,13 +56,41 @@ exports[`OutlinedInput ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`OutlinedInput ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`OutlinedInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-ui3i5x-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
       class="MuiInputBase-input MuiOutlinedInput-input css-1x6jcq1-MuiInputBase-input-MuiOutlinedInput-input"
+      type="text"
+      value="Value"
+    />
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-ihdtdm"
+      >
+        <span
+          class="notranslate"
+        >
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`OutlinedInput ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1ydy6d4-MuiInputBase-root-MuiOutlinedInput-root"
+  >
+    <input
+      class="MuiInputBase-input MuiOutlinedInput-input css-jaerwt-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />

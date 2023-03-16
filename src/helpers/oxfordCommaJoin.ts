@@ -7,7 +7,7 @@
  * @prettier
  */
 
-const oxfordCommaJoin = (input: string[]): string => {
+export const oxfordCommaJoin = (input: string[]): string => {
   const clone = [...input];
 
   if (input.length <= 2) {

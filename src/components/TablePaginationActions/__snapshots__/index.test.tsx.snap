@@ -342,7 +342,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="css-l1f5px"
@@ -492,6 +492,173 @@ exports[`TablePaginationActions ENCOURA_DATALAB theme matches the snapshot 1`] =
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          data-testid="PageLastIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-l1f5px"
+  >
+    <span
+      aria-label="First Page"
+      class=""
+      data-mui-internal-clone-element="true"
+    >
+      <button
+        aria-label="First Page"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1hv8qdn-MuiButtonBase-root-MuiIconButton-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          data-testid="PageFirstIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18.41,16.59L13.82,12L18.41,7.41L17,6L11,12L17,18L18.41,16.59M6,6H8V18H6V6Z"
+          />
+        </svg>
+      </button>
+    </span>
+    <span
+      aria-label="Previous Page"
+      class=""
+      data-mui-internal-clone-element="true"
+    >
+      <button
+        aria-label="Previous Page"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1hv8qdn-MuiButtonBase-root-MuiIconButton-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          data-testid="ChevronLeftIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+          />
+        </svg>
+      </button>
+    </span>
+    <div>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-v62dum-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1ydy6d4-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-labelledby=":rh:"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1b2x8gk-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id=":rh:"
+            role="button"
+            tabindex="0"
+          >
+            <span>
+              Page 1
+            </span>
+          </div>
+          <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            tabindex="-1"
+            value="0"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-m9jro4-MuiSvgIcon-root-MuiSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-ihdtdm"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <span
+      aria-label="Next Page"
+      class=""
+      data-mui-internal-clone-element="true"
+    >
+      <button
+        aria-label="Next Page"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1hv8qdn-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          data-testid="ChevronRightIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </span>
+    <span
+      aria-label="Last Page"
+      class=""
+      data-mui-internal-clone-element="true"
+    >
+      <button
+        aria-label="Last Page"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1hv8qdn-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
           data-testid="PageLastIcon"
           focusable="false"
           viewBox="0 0 24 24"

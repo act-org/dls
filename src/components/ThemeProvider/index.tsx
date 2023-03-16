@@ -14,13 +14,13 @@ import {
   Theme,
   ThemeProvider as MuiThemeProvider,
 } from '@mui/material/styles';
-
 import { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider';
 import { FC, ReactElement } from 'react';
 
-import { THEME_ACT } from '~/styles/themeAct';
-import { THEME_ACT_ET } from '~/styles/themeActEt';
-import { THEME_ENCOURA_DATALAB } from '~/styles/themeEncouraDatalab';
+import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import { THEME_ACT_ET } from '@actinc/dls/styles/themeActEt';
+import { THEME_ENCOURA_CLASSIC } from '@actinc/dls/styles/themeEncouraClassic';
+import { THEME_ENCOURAGE } from '@actinc/dls/styles/themeEncourage';
 
 /**
  * # Theme configuration.
@@ -32,7 +32,7 @@ import { THEME_ENCOURA_DATALAB } from '~/styles/themeEncouraDatalab';
  */
 
 export interface ThemeProviderProps extends MuiThemeProviderProps {
-  theme: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme;
+  theme: 'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | Theme;
   locale?:
     | 'azAZ'
     | 'bgBG'
@@ -94,9 +94,15 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
         locale ? locales[locale] : locales.enUS,
       );
       break;
-    case 'ENCOURA_DATALAB':
+    case 'ENCOURA_CLASSIC':
       themeImpl = createTheme(
-        THEME_ENCOURA_DATALAB,
+        THEME_ENCOURA_CLASSIC,
+        locale ? locales[locale] : locales.enUS,
+      );
+      break;
+    case 'ENCOURAGE':
+      themeImpl = createTheme(
+        THEME_ENCOURAGE,
         locale ? locales[locale] : locales.enUS,
       );
       break;

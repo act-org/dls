@@ -9,9 +9,9 @@
 
 import { get } from 'lodash';
 
-import { ServerError } from '~/types';
+import { ServerError } from '@actinc/dls/types';
 
-const getErrorMessage = (err: Error | ServerError | unknown): string => {
+export const getErrorMessage = (err: Error | ServerError | unknown): string => {
   let errorMessage = '';
   const graphQlErrorMessage = get(err, 'networkError.result.errors[0].message');
   const standardErrorMessage = get(err, 'message');

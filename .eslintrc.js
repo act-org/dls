@@ -8,18 +8,56 @@
  */
 
 module.exports = {
-  extends: ['@actinc/eslint-config', 'plugin:mdx/recommended'],
+  extends: [
+    '@actinc/eslint-config',
+    'plugin:mdx/recommended',
+    'plugin:storybook/recommended',
+  ],
   overrides: [
     {
       files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
       rules: {
-        'sort-keys': 'off',
+        'react-hooks/rules-of-hooks': 'off',
+        'storybook/story-exports': 'off',
       },
     },
   ],
   rules: {
-    'react/function-component-definition': 'off', // Allows const defined components,
-    'react/jsx-uses-react': 'off',
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+        },
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            group: 'internal',
+            pattern: '@actinc/dls/**',
+          },
+          {
+            group: 'internal',
+            pattern: '@actinc/dls/icons/**',
+          },
+          {
+            group: 'external',
+            pattern: '@**',
+          },
+        ],
+        warnOnUnassignedImports: true,
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
   },
   settings: {

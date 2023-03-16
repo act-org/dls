@@ -6,8 +6,8 @@
  *
  * @prettier
  */
-export { default as render } from './render';
-export { default as THEMES } from './themes';
-export { default as snapshot } from './snapshot';
-export { default as accessibility } from './accessibility';
-export { default as standard } from './standard';
+
+export * from './accessibility';
+export * from './render';
+export * from './snapshot';
+export * from './standard';

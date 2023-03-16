@@ -46,10 +46,33 @@ exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`InputLabel ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`InputLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <label
     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-z5mzf4-MuiFormLabel-root-MuiInputLabel-root"
+  >
+    <div
+      class="label-split"
+    >
+      <span
+        class="label-help"
+      >
+        InputLabel
+      </span>
+      <span
+        class="required"
+      >
+        Required
+      </span>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <label
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-6r4psl-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"

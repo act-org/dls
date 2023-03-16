@@ -5,93 +5,103 @@
     "url": "https://github.com/act-org/dls/issues"
   },
   "contributors": [
-    "Jon Cursi <jon.cursi@act-et.org>"
+    "Jon Cursi <jon.cursi@act-et.org>",
+    "Adam Weeden <adam.weeden@encoura.org",
+    "Justin Watkins <justin.watkins@act.org>"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.20.6",
+    "@babel/runtime": "^7.20.13",
     "clsx": "^1.2.1",
-    "color": "^3.2.1",
+    "color": "^4.2.3",
+    "deepmerge": "^4.3.0",
     "json-parse-safe": "^2.0.0",
     "lodash": "^4.17.21",
     "mdi-material-ui": "^7.6.0",
     "moment": "^2.29.4",
-    "notistack": "^2.0.8",
+    "notistack": "^3.0.1",
     "pluralize": "^8.0.0",
-    "react-idle-timer": "^5.4.2",
+    "react-idle-timer": "^5.5.2",
     "react-window": "^1.8.8",
-    "validator": "^13.7.0"
+    "validator": "^13.9.0"
   },
-  "description": "Design Language System (DLS) for ACT front-end projects.",
+  "description": "Design Language System (DLS) for ACT & Encoura front-end projects.",
   "devDependencies": {
     "@actinc/eslint-config": "3.4.2",
-    "@babel/cli": "7.19.3",
-    "@babel/core": "7.20.5",
-    "@babel/plugin-transform-runtime": "7.19.6",
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.0",
+    "@babel/plugin-transform-runtime": "7.21.0",
     "@babel/preset-env": "7.20.2",
     "@babel/preset-react": "7.18.6",
-    "@babel/preset-typescript": "7.18.6",
-    "@emotion/react": "11.10.5",
-    "@emotion/styled": "11.10.5",
-    "@mdx-js/react": "2.1.5",
-    "@mui/lab": "5.0.0-alpha.110",
-    "@mui/material": "5.10.16",
-    "@mui/x-data-grid": "5.17.14",
-    "@storybook/addon-a11y": "6.5.14",
-    "@storybook/addon-actions": "6.5.14",
-    "@storybook/addon-controls": "6.5.14",
-    "@storybook/addon-essentials": "6.5.14",
-    "@storybook/addon-links": "6.5.14",
-    "@storybook/addons": "6.5.14",
-    "@storybook/builder-webpack5": "6.5.14",
-    "@storybook/cli": "6.5.14",
-    "@storybook/manager-webpack5": "6.5.14",
+    "@babel/preset-typescript": "7.21.0",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@mdx-js/react": "2.3.0",
+    "@mui/lab": "5.0.0-alpha.122",
+    "@mui/material": "5.11.12",
+    "@mui/x-data-grid": "6.0.1",
+    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@storybook/addon-a11y": "6.5.16",
+    "@storybook/addon-actions": "6.5.16",
+    "@storybook/addon-controls": "6.5.16",
+    "@storybook/addon-docs": "6.5.16",
+    "@storybook/addon-essentials": "6.5.16",
+    "@storybook/addon-links": "6.5.16",
+    "@storybook/addons": "6.5.16",
+    "@storybook/builder-webpack5": "6.5.16",
+    "@storybook/cli": "6.5.16",
+    "@storybook/manager-webpack5": "6.5.16",
     "@storybook/mdx2-csf": "0.0.3",
-    "@storybook/react": "6.5.14",
+    "@storybook/react": "6.5.16",
     "@storybook/storybook-deployer": "2.8.16",
-    "@storybook/theming": "6.5.14",
+    "@storybook/theming": "6.5.16",
     "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
     "@types/axe-core": "2.0.7",
     "@types/color": "3.0.3",
-    "@types/jest": "29.2.3",
+    "@types/jest": "29.4.0",
     "@types/jest-axe": "3.5.5",
     "@types/lodash": "4.14.191",
     "@types/pluralize": "0.0.29",
-    "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.9",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
     "@types/react-window": "1.8.5",
     "@types/shelljs": "0.8.11",
-    "@types/validator": "13.7.10",
-    "axe-core": "4.5.2",
-    "babel-jest": "29.3.1",
-    "babel-loader": "9.1.0",
+    "@types/validator": "13.7.13",
+    "axe-core": "4.6.3",
+    "babel-jest": "29.5.0",
+    "babel-loader": "9.1.2",
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-transform-imports": "2.0.0",
-    "clean-publish": "4.0.1",
+    "clean-publish": "4.1.1",
     "cross-env": "7.0.3",
-    "eslint-import-resolver-typescript": "3.5.2",
+    "eslint": "8.36.0",
+    "eslint-import-resolver-typescript": "3.5.3",
     "eslint-plugin-mdx": "2.0.5",
-    "husky": "8.0.2",
-    "jest": "29.3.1",
+    "eslint-plugin-storybook": "0.6.11",
+    "husky": "8.0.3",
+    "jest": "29.5.0",
     "jest-axe": "7.0.0",
-    "jest-environment-jsdom": "29.3.1",
-    "lint-staged": "13.0.4",
-    "np": "7.6.2",
+    "jest-environment-jsdom": "29.5.0",
+    "lint-staged": "13.2.0",
+    "np": "7.6.3",
     "npm-run-all": "4.1.5",
-    "prettier": "2.8.0",
+    "prettier": "2.8.4",
     "react": "18.2.0",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
-    "semantic-release": "19.0.5",
+    "semantic-release": "20.1.1",
     "shelljs": "0.8.5",
     "standard-version": "9.5.0",
-    "ts-jest": "29.0.3",
+    "ts-jest": "29.0.5",
     "ts-loader": "9.4.2",
     "ts-node": "10.9.1",
-    "typescript": "4.9.3",
-    "webpack": "5.75.0"
+    "tsconfig-paths-webpack-plugin": "4.0.1",
+    "typescript": "4.9.5",
+    "webpack": "5.76.1"
   },
   "homepage": "https://act-org.github.io/dls",
   "keywords": [
@@ -104,11 +114,8 @@
   ],
   "license": "MIT",
   "lint-staged": {
-    "*.{js}": "npm run test:lint:js",
-    "*.{js,json,md,mdx,ts,tsx}": [
-      "prettier --write",
-      "git add"
-    ],
+    "*.js": "npm run test:lint:js",
+    "*.{js,json,md,mdx,ts,tsx}": "prettier --write",
     "*.{ts,tsx}": "npm run test:lint:ts",
     "*.md": "npm run test:lint:md"
   },
@@ -119,41 +126,81 @@
     "@emotion/styled": "11.x",
     "@mui/lab": "^5.0.0-alpha.82",
     "@mui/material": "5.x",
-    "@mui/x-data-grid": "5.x",
+    "@mui/system": "5.x",
+    "@mui/x-data-grid": "5.x || 6.x",
     "react": "17.x || 18.x",
     "react-dom": "17.x || 18.x"
   },
   "publishConfig": {
     "access": "public"
   },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md",
+          "changeLogTitle": "# Changelog"
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "npm run copy && npm version ${nextRelease.version} --no-commit-hooks --no-git-tag-version"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "./dist"
+        }
+      ],
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ],
+    "repositoryUrl": "git@github.com:act-org/dls.git",
+    "branches": [
+      {
+        "name": "main",
+        "prerelease": false
+      },
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/act-org/dls.git"
   },
+  "sideEffects": false,
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
-    "build:components": "cross-env NODE_ENV=production babel src --extensions \".ts,.tsx\" --out-dir dist --config-file ./.babelrc.build.js",
+    "build:components": "tsc --project tsconfig.build.json",
     "build:icons": "bin/buildIcons",
-    "build:declarations": "tsc --project tsconfig.build.json --emitDeclarationOnly",
-    "build:copy": "npm run copy",
+    "build:package_json": "clear-package-json package.json -o dist/package.json",
     "build-storybook": "build-storybook -o ./storybook-static/www",
-    "build-storybook:dockerprep": "build-storybook -o ./storybook-static/www && cp Dockerfile ./storybook-static/Dockerfile",
-    "build-storybook:docker": "cd storybook-static && docker build . -t dls-storybook",
     "copy": "npm-run-all copy:*",
     "copy:changelog": "cp -rf CHANGELOG.md dist",
     "copy:license": "cp -rf LICENSE dist",
-    "copy:package": "cp -rf package.json dist",
-    "copy:packageclean": "clear-package-json dist/package.json -o dist/package.json",
     "copy:readme": "cp -rf README.md dist",
-    "postversion": "npm run copy",
     "prepare": "husky install",
-    "release": "npm-run-all release:**",
-    "release:version": "standard-version",
-    "release:commit": "git push --follow-tags origin main",
-    "release:npm": "npm run build && cd dist && npm publish",
     "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
-    "start": "start-storybook -p 6006 --no-manager-cache",
+    "start": "start-storybook -p 6006",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
@@ -162,5 +209,5 @@
     "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
-  "version": "6.3.0"
+  "version": "7.0.0-next.4"
 }

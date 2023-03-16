@@ -9,7 +9,7 @@
 
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { EmptyState, EmptyStateProps } from '.';
 
@@ -18,9 +18,9 @@ export const Template: Story<EmptyStateProps> = args => (
 );
 export const argTypes = Playground(
   {
-    title: { type: 'string' },
     description: { type: 'string' },
     style: {},
+    title: { type: 'string' },
   },
   EmptyState,
 );

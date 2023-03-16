@@ -9,7 +9,7 @@
 
 import { Story } from '@storybook/react/types-6-0';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { Loading, LoadingProps } from '.';
 
@@ -22,8 +22,8 @@ export const argTypes = Playground(
       size: {},
       thickness: {},
     },
-    title: {},
     style: {},
+    title: {},
   },
   Loading,
 );

@@ -9,7 +9,7 @@
 
 import { DialogContent } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('DialogContent', () => {
   const Component = <DialogContent>Hey</DialogContent>;

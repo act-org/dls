@@ -17,7 +17,15 @@ exports[`Toolbar ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`Toolbar ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Toolbar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"
+  />
+</div>
+`;
+
+exports[`Toolbar ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"

@@ -12,7 +12,13 @@ exports[`Dialog ACT_ET theme matches the snapshot 1`] = `
 />
 `;
 
-exports[`Dialog ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`Dialog ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`Dialog ENCOURAGE theme matches the snapshot 1`] = `
 <div
   aria-hidden="true"
 />

@@ -7,19 +7,22 @@
  * @prettier
  */
 
+/* eslint-disable jest/no-export */
+
 import { configure, RenderOptions } from '@testing-library/react';
 import { axe, JestAxeConfigureOptions, toHaveNoViolations } from 'jest-axe';
-import React from 'react';
+import { ReactElement } from 'react';
+
 import render from './render';
 import THEMES from './themes';
 
 expect.extend(toHaveNoViolations);
-// eslint-disable-next-line jest/no-export
-export default function accessibility(
-  Component: React.ReactElement,
+
+export const accessibility = (
+  Component: ReactElement,
   renderOptions?: RenderOptions,
   axeOptions?: JestAxeConfigureOptions,
-): void {
+): void => {
   configure({
     computedStyleSupportsPseudoElements: false,
   });
@@ -30,4 +33,6 @@ export default function accessibility(
       expect(await axe(container, axeOptions)).toHaveNoViolations();
     },
   );
-}
+};
+
+export default accessibility;

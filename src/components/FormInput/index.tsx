@@ -7,6 +7,7 @@
  * @prettier
  */
 
+import AlertOutline from '@actinc/dls/icons/AlertOutline';
 import {
   FormControl,
   FormControlProps,
@@ -16,8 +17,7 @@ import {
 } from '@mui/material';
 import { ReactElement } from 'react';
 
-import { InputLabel, InputLabelProps } from '~/components/InputLabel';
-import AlertOutline from '~/icons/AlertOutline';
+import { InputLabel, InputLabelProps } from '@actinc/dls/components/InputLabel';
 
 export type FormInputProps = InputProps & {
   label?: string | ReactElement;

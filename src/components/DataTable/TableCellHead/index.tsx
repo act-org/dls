@@ -11,8 +11,8 @@ import { TableCellProps } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { CSSProperties, FC, ReactElement } from 'react';
 
-import SORT_DIRECTION_TYPES from '~/constants/sortDirectionTypes';
-import { SortDirection, SortObject } from '~/types';
+import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
+import { SortDirection, SortObject } from '@actinc/dls/types';
 
 import {
   StyledChevronDown,
@@ -75,23 +75,23 @@ export const TableCellHead: FC<TableCellHeadProps> = ({
 
   return (
     <StyledTableCell
+      $sortBy={sortBy}
+      $sortIsApplied={sortIsApplied}
       classes={classesProp}
       color={color}
       component="td"
       onClick={sortBy ? toggleSort : undefined}
-      sortBy={sortBy}
-      sortIsApplied={sortIsApplied}
       style={style}
       {...props}
     >
-      <StyledTypography colorProp={color} variant="body1">
+      <StyledTypography $colorProp={color} variant="body1">
         {children}
       </StyledTypography>
 
       {sortBy && (
         <StyledGrid container>
           <StyledChevronUp
-            colorProp={color}
+            $colorProp={color}
             onClick={(): void => {
               onChangeSort({
                 sortBy,
@@ -104,7 +104,7 @@ export const TableCellHead: FC<TableCellHeadProps> = ({
           />
 
           <StyledChevronDown
-            colorProp={color}
+            $colorProp={color}
             onClick={(): void => {
               onChangeSort({
                 sortBy,

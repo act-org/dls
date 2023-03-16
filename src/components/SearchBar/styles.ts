@@ -9,17 +9,20 @@
 
 /* eslint-disable import/prefer-default-export */
 
-import { styled } from '@mui/material/styles';
-import { IconButton, IconButtonProps } from '@mui/material';
-import { iconButtonClasses } from '@mui/material/IconButton';
+import IconButton, {
+  IconButtonProps,
+  iconButtonClasses,
+} from '@mui/material/IconButton';
+
+import { styled } from '@actinc/dls/helpers/styled';
 
 export const StyledIconButton = styled(IconButton)<
   IconButtonProps & {
-    isHidden: boolean;
+    $isHidden: boolean;
   }
->(({ isHidden }) => ({
+>(({ $isHidden }) => ({
   [`&.${iconButtonClasses.root}`]: {
-    opacity: isHidden ? 0 : undefined,
-    pointerEvents: isHidden ? 'none' : undefined,
+    opacity: $isHidden ? 0 : undefined,
+    pointerEvents: $isHidden ? 'none' : undefined,
   },
 }));

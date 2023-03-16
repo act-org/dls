@@ -9,9 +9,10 @@
 
 /* eslint-disable import/prefer-default-export */
 
-import { styled } from '@mui/material/styles';
 import { Paper } from '@mui/material';
 import { paperClasses } from '@mui/material/Paper';
+
+import { styled } from '@actinc/dls/helpers/styled';
 
 export const StyledPaper = styled(Paper)(({ theme }) => ({
   [`&.${paperClasses.root}`]: {

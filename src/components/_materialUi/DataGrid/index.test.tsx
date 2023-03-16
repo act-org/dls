@@ -9,7 +9,7 @@
 
 import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 jest.mock('@mui/material/utils', () => {
   let initialId = 12345;
@@ -29,6 +29,7 @@ describe.skip('DataGrid', () => {
   const Component = (
     <DataGrid
       autoHeight
+      autoPageSize
       checkboxSelection
       columnBuffer={4}
       columns={[
@@ -60,12 +61,9 @@ describe.skip('DataGrid', () => {
           headerName: 'Full name',
           sortable: false,
           valueGetter: (params: GridValueGetterParams): string =>
-            `${params.getValue(params.id, 'firstName') || ''} ${
-              params.getValue(params.id, 'lastName') || ''
-            }`,
+            `${params.row.firstName || ''} ${params.row.lastName || ''}`,
         },
       ]}
-      pageSize={5}
       rows={[
         {
           age: 35,

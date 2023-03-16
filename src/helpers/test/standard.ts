@@ -6,17 +6,21 @@
  *
  * @prettier
  */
-import React from 'react';
-import snapshot from './snapshot';
-import accessibility from './accessibility';
+
 import { RenderOptions } from '@testing-library/react';
 import { JestAxeConfigureOptions } from 'jest-axe';
+import { ReactElement } from 'react';
 
-export default function standard(
-  Component: React.ReactElement,
+import accessibility from './accessibility';
+import snapshot from './snapshot';
+
+export const standard = (
+  Component: ReactElement,
   renderOptions?: RenderOptions,
   runOptions?: JestAxeConfigureOptions,
-): void {
+): void => {
   snapshot(Component, renderOptions);
   accessibility(Component, renderOptions, runOptions);
-}
+};
+
+export default standard;

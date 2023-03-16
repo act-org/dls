@@ -7,84 +7,81 @@
  * @prettier
  */
 
+import ChevronDown from '@actinc/dls/icons/ChevronDown';
+import ChevronUp from '@actinc/dls/icons/ChevronUp';
+import { grey } from '@mui/material/colors';
+import Grid from '@mui/material/Grid';
+import { Theme } from '@mui/material/styles';
+import { SvgIconProps } from '@mui/material/SvgIcon';
+import TableCell, { TableCellProps } from '@mui/material/TableCell';
+import Typography, { TypographyProps } from '@mui/material/Typography';
 import clsx from 'clsx';
 import Color from 'color';
-import { grey } from '@mui/material/colors';
-import {
-  Grid,
-  GridProps,
-  SvgIconProps,
-  TableCell,
-  TableCellProps,
-  Typography,
-  TypographyProps,
-} from '@mui/material';
-import { styled } from '@mui/material/styles';
 
-import ChevronDown from '~/icons/ChevronDown';
-import ChevronUp from '~/icons/ChevronUp';
-import { StyledComponent } from '@emotion/styled';
+import { createThemeStyled } from '@actinc/dls/helpers/styled';
+import { typeOk } from '@actinc/dls/helpers/types';
+import { ICustomDims } from '@actinc/dls/types';
 
 const ICON_SIZE = 14;
 
-export const StyledChevronUp = styled(ChevronUp)<
-  SvgIconProps & {
-    colorProp?: string;
-  }
->(({ colorProp, theme }): any => ({
-  color: clsx(
-    colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
-    colorProp === 'primary' &&
-      Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
-    colorProp === 'secondary' &&
-      Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
-  ),
-  cursor: 'pointer',
-  fontSize: theme.typography.fontSize,
-  height: ICON_SIZE,
-  userSelect: 'auto',
-  width: ICON_SIZE,
-}));
+interface IColorProp {
+  $colorProp?: string;
+}
 
-export const StyledChevronDown = styled(ChevronDown)<
-  SvgIconProps & {
-    colorProp?: string;
-  }
->(({ colorProp, theme }): any => ({
-  color: clsx(
-    colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
-    colorProp === 'primary' &&
-      Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
-    colorProp === 'secondary' &&
-      Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
-  ),
-  cursor: 'pointer',
-  fontSize: theme.typography.fontSize,
-  height: ICON_SIZE,
-  userSelect: 'auto',
-  width: ICON_SIZE,
-}));
+const styled = createThemeStyled<Theme & ICustomDims>();
 
-export const StyledGrid: StyledComponent<GridProps> = styled(Grid)(
-  ({ theme }) => ({
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'absolute',
-    right: theme.spacing(1),
-    top: `calc(50% - ${ICON_SIZE}px)`,
+export const StyledChevronUp = styled(ChevronUp)<SvgIconProps & IColorProp>(
+  ({ $colorProp, theme }) => ({
+    color: clsx(
+      $colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
+      $colorProp === 'primary' &&
+        Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+      $colorProp === 'secondary' &&
+        Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+    ),
+    cursor: 'pointer',
+    fontSize: theme.typography.fontSize,
+    height: ICON_SIZE,
+    userSelect: 'auto',
     width: ICON_SIZE,
   }),
 );
 
+export const StyledChevronDown = styled(ChevronDown)<SvgIconProps & IColorProp>(
+  ({ $colorProp, theme }) => ({
+    color: clsx(
+      $colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
+      $colorProp === 'primary' &&
+        Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+      $colorProp === 'secondary' &&
+        Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+    ),
+    cursor: 'pointer',
+    fontSize: theme.typography.fontSize,
+    height: ICON_SIZE,
+    userSelect: 'auto',
+    width: ICON_SIZE,
+  }),
+);
+
+export const StyledGrid = styled(Grid)(({ theme }) => ({
+  alignItems: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'absolute',
+  right: theme.spacing(1),
+  top: `calc(50% - ${ICON_SIZE}px)`,
+  width: ICON_SIZE,
+}));
+
 export const StyledTableCell = styled(TableCell)<
   TableCellProps & {
+    $sortBy?: string;
+    $sortIsApplied?: boolean;
     color?: string;
-    sortBy?: string;
-    sortIsApplied?: boolean;
   }
->(({ color, sortBy, sortIsApplied, theme }): any => {
-  let cssProperties = {
+>(({ $sortBy, $sortIsApplied, color, theme }) => {
+  let cssProperties = typeOk<React.CSSProperties>()({
     backgroundColor: clsx(
       color === 'default' && grey[200],
       color === 'primary' && theme.palette.primary.main,
@@ -92,13 +89,12 @@ export const StyledTableCell = styled(TableCell)<
     ),
     border: 'none',
     boxSizing: 'border-box',
-    // FIXME:
-    height: (theme as any).customDims.heights.tableHeader,
+    height: theme.customDims.heights.tableHeader,
     position: 'relative',
-  } as React.CSSProperties;
+  });
 
-  if (sortIsApplied) {
-    cssProperties = {
+  if ($sortIsApplied) {
+    cssProperties = typeOk<React.CSSProperties>()({
       ...cssProperties,
       backgroundColor: clsx(
         color === 'default' && grey[300],
@@ -107,29 +103,27 @@ export const StyledTableCell = styled(TableCell)<
         color === 'secondary' &&
           Color(theme.palette.secondary.main).darken(0.15).hex(),
       ),
-    } as React.CSSProperties;
+    });
   }
 
-  if (sortBy) {
-    cssProperties = {
+  if ($sortBy) {
+    cssProperties = typeOk<React.CSSProperties>()({
       ...cssProperties,
       cursor: 'pointer',
       paddingRight: theme.spacing(4),
-    } as React.CSSProperties;
+    });
   }
 
   return cssProperties;
 });
 
 export const StyledTypography = styled(Typography)<
-  TypographyProps & {
-    colorProp?: string;
-  }
->(({ colorProp, theme }) => ({
+  TypographyProps & IColorProp
+>(({ $colorProp, theme }) => ({
   color: clsx(
-    colorProp === 'default' && theme.palette.text.primary,
-    colorProp === 'primary' && theme.palette.primary.contrastText,
-    colorProp === 'secondary' && theme.palette.secondary.contrastText,
+    $colorProp === 'default' && theme.palette.text.primary,
+    $colorProp === 'primary' && theme.palette.primary.contrastText,
+    $colorProp === 'secondary' && theme.palette.secondary.contrastText,
   ),
   fontSize: theme.typography.body1.fontSize,
   fontWeight: Number(theme.typography.fontWeightMedium),

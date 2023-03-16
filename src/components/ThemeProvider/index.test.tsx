@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('ThemeProvider', () => {
   const Component = <p>This is a test</p>;

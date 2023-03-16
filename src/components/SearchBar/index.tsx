@@ -7,15 +7,14 @@
  * @prettier
  */
 
+import CloseCircle from '@actinc/dls/icons/CloseCircle';
+import Magnify from '@actinc/dls/icons/Magnify';
 import {
   InputAdornment,
   OutlinedInput,
   OutlinedInputProps,
 } from '@mui/material';
 import { ReactElement, useState } from 'react';
-
-import CloseCircle from '~/icons/CloseCircle';
-import Magnify from '~/icons/Magnify';
 
 import { StyledIconButton } from './styles';
 
@@ -40,8 +39,8 @@ export function SearchBar({
       endAdornment={
         <InputAdornment position="end">
           <StyledIconButton
+            $isHidden={!(internalValue && internalValue.length)}
             aria-label="Clears the search"
-            isHidden={!(internalValue && internalValue.length)}
             // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
             onClick={(e: any) => {
               setValue('');

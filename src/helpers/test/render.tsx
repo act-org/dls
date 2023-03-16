@@ -6,8 +6,10 @@
  *
  * @prettier
  */
+
 /* eslint-disable react/prop-types */
 /* eslint-disable react/display-name */
+
 import { Theme } from '@mui/material';
 import { StyledEngineProvider } from '@mui/material/styles';
 import {
@@ -17,11 +19,11 @@ import {
 } from '@testing-library/react';
 import { ReactElement } from 'react';
 
-import ThemeProvider from '../../components/ThemeProvider';
+import ThemeProvider from '@actinc/dls/components/ThemeProvider';
 
 export const render = (
   Component: ReactElement,
-  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_DATALAB' | Theme,
+  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | Theme,
   options?: RenderOptions,
 ): RenderResult =>
   originalRender(Component, {
@@ -32,4 +34,5 @@ export const render = (
     ),
     ...options,
   });
+
 export default render;

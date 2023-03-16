@@ -11,13 +11,14 @@ import { action } from '@storybook/addon-actions';
 import { Story } from '@storybook/react/types-6-0';
 import { useState } from 'react';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
 
 import { FormRadioGroup, FormRadioGroupProps } from '.';
 
 export const Template: Story<FormRadioGroupProps> = args => {
   const [state, setState] = useState<string>('one');
   const clickAction = action('click');
+
   return (
     <FormRadioGroup
       onChange={(event, value): void => {
@@ -29,13 +30,14 @@ export const Template: Story<FormRadioGroupProps> = args => {
     />
   );
 };
+
 export const argTypes = Playground(
   {
+    helpText: {},
     label: { type: 'string' },
     name: {},
     options: {},
     row: {},
-    helpText: {},
   },
   FormRadioGroup,
 );

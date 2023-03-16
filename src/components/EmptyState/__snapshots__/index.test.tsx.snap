@@ -75,7 +75,7 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`EmptyState ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`EmptyState ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     class="css-2rfp0i"
@@ -100,6 +100,43 @@ exports[`EmptyState ENCOURA_DATALAB theme matches the snapshot 1`] = `
     </p>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation css-1m9ygoa-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Button Title
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`EmptyState ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-2rfp0i"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-fafcxn-MuiTypography-root"
+        >
+          Title
+        </h6>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-nl94jt-MuiTypography-root"
+    >
+      Description
+    </p>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-1ohtedi-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >

@@ -7,17 +7,17 @@
  * @prettier
  */
 
-import { Link, LinkProps } from '@mui/material';
-import { linkClasses } from '@mui/material/Link';
-import { styled } from '@mui/material/styles';
+import Link, { LinkProps, linkClasses } from '@mui/material/Link';
 import { ComponentType, FC, ReactElement } from 'react';
+
+import { styled } from '@actinc/dls/helpers/styled';
 
 import { StyledTypography } from './styles';
 
 export interface RenderNavigationItemProps {
   isActive?: boolean;
   LinkComponent?: ComponentType;
-  LinkProps: any;
+  LinkProps: { to: string };
   title: string;
 }
 
@@ -39,7 +39,7 @@ const RenderNavigationItem: FC<RenderNavigationItemProps> = ({
 
   return (
     <StyledLink {...linkProps}>
-      <StyledTypography color="primary" isActive={isActive}>
+      <StyledTypography $isActive={isActive} color="primary">
         {title}
       </StyledTypography>
     </StyledLink>

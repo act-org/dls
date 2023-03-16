@@ -8,7 +8,8 @@
  */
 
 import { createContext } from 'react';
-import { ConfirmDialogProps } from '../../components/ConfirmDialog';
+
+import { ConfirmDialogProps } from '@actinc/dls/components/ConfirmDialog';
 
 type ConfirmContextType = (options?: ConfirmDialogProps) => Promise<boolean>;
 /**

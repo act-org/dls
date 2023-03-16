@@ -9,9 +9,9 @@
 
 /* eslint-disable import/prefer-default-export */
 
-import { styled } from '@mui/material/styles';
-import { InputLabel } from '@mui/material';
-import { inputLabelClasses } from '@mui/material/InputLabel';
+import InputLabel, { inputLabelClasses } from '@mui/material/InputLabel';
+
+import { styled } from '@actinc/dls/helpers/styled';
 
 export const StyledInputLabel = styled(InputLabel)({
   [`&.${inputLabelClasses.root}`]: {

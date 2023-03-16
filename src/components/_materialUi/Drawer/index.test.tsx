@@ -9,7 +9,7 @@
 
 import { Drawer } from '@mui/material';
 
-import { standard } from '~/helpers/test';
+import { standard } from '@actinc/dls/helpers/test';
 
 describe('Drawer', () => {
   const Component = <Drawer open>Hey</Drawer>;

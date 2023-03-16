@@ -7,16 +7,17 @@
  * @prettier
  */
 
-import { Link, LinkProps } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import Link, { LinkProps } from '@mui/material/Link';
 import { ComponentType, FC, ReactElement } from 'react';
+
+import { styled } from '@actinc/dls/helpers/styled';
 
 import { StyledImg } from './styles';
 
 export interface RenderLogoProps {
   alt: string;
   LinkComponent?: ComponentType;
-  LinkProps?: any;
+  LinkProps?: { to: string };
   src: string;
 }
 
@@ -32,9 +33,9 @@ const RenderLogo: FC<RenderLogoProps> = ({
 
   const children = (
     <StyledImg
+      $isWrapped={!!linkProps}
       alt={alt || 'Logo'}
       aria-label={alt || 'Logo'}
-      isWrapped={!!linkProps}
       src={src}
     />
   );

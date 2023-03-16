@@ -12,9 +12,11 @@ import '@testing-library/jest-dom';
 import UserEvent from '@testing-library/user-event';
 import { noop } from 'lodash';
 import { ReactElement } from 'react';
-import { ConfirmProvider } from '~/context';
-import { render, standard } from '~/helpers/test';
-import { useConfirm } from '~/hooks';
+
+import { ConfirmProvider } from '@actinc/dls/context';
+import { render, standard } from '@actinc/dls/helpers/test';
+import { useConfirm } from '@actinc/dls/hooks';
+
 import { ConfirmDialog, ConfirmDialogProps } from '.';
 
 describe('ConfirmationDialog', () => {

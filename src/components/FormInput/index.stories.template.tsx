@@ -10,7 +10,8 @@
 import { Story } from '@storybook/react/types-6-0';
 import { ChangeEvent, useState } from 'react';
 
-import { Playground } from '~/helpers/playground';
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import { FormInput, FormInputProps } from '.';
 
 export const Template: Story<FormInputProps> = args => {
@@ -21,6 +22,7 @@ export const Template: Story<FormInputProps> = args => {
   };
   return <FormInput onChange={onChange} value={state} {...args} />;
 };
+
 export const argTypes = Playground(
   {
     autoFocus: {},
@@ -32,9 +34,9 @@ export const argTypes = Playground(
     id: {},
     inputMode: {},
     label: { type: 'string' },
-    onChange: { action: 'change' },
     margin: {},
     multiline: {},
+    onChange: { action: 'change' },
     placeholder: {},
     required: {},
     type: {},

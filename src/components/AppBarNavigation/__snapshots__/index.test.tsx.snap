@@ -3,8 +3,7 @@
 exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
 <div>
   <header
-    appbarheight="72"
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-66q6c6-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-w1wlne-MuiPaper-root-MuiAppBar-root"
   >
     <a
       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ayvi6a-MuiTypography-root-MuiLink-root"
@@ -56,8 +55,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 <div>
   <header
-    appbarheight="72"
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-4xn2ud-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-1u8t8ph-MuiPaper-root-MuiAppBar-root"
   >
     <a
       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1xgtpuh-MuiTypography-root-MuiLink-root"
@@ -106,11 +104,10 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
-exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
+exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <header
-    appbarheight="72"
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-4xn2ud-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-47bsdv-MuiPaper-root-MuiAppBar-root"
   >
     <a
       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-y3fypi-MuiTypography-root-MuiLink-root"
@@ -149,6 +146,58 @@ exports[`AppBarNavigation ENCOURA_DATALAB theme matches the snapshot 1`] = `
         >
           <p
             class="MuiTypography-root MuiTypography-body1 css-1s8y3wl-MuiTypography-root"
+          >
+            Other Page
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-16h2o09-MuiPaper-root-MuiAppBar-root"
+  >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ekag8k-MuiTypography-root-MuiLink-root"
+      to="https://act-et.org"
+    >
+      <img
+        alt="ACT"
+        aria-label="ACT"
+        class="css-10klw3m"
+        src="https://i.imgur.com/P0gtzO0.png"
+      />
+    </a>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+      >
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1t1hzsg-MuiTypography-root-MuiLink-root"
+          to="#"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-nisqju-MuiTypography-root"
+          >
+            Home
+          </p>
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+      >
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1t1hzsg-MuiTypography-root-MuiLink-root"
+          to="#"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-bkgv8l-MuiTypography-root"
           >
             Other Page
           </p>

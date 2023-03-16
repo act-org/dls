@@ -7,18 +7,21 @@
  * @prettier
  */
 
-import { ThemeOptions } from '@mui/material/styles';
+import { Theme, ThemeOptions } from '@mui/material/styles';
 
-export type CustomThemeOptions = ThemeOptions & {
-  customColors: {
-    tertiary: {
-      main: string;
-    };
-  };
+export type CustomTheme<T extends object> = Theme & T;
+
+export type CustomThemeOptions<T extends object = Record<string, never>> =
+  ThemeOptions & T;
+
+export interface ICustomDims {
   customDims: {
     heights: Record<string, number>;
+    widths: Record<string, number>;
   };
-};
+}
+
+export type Px = `${number}px` | '';
 
 export type Size = 'default' | 'large';
 
@@ -49,7 +52,7 @@ export interface ServerError {
   message: string;
   networkError: {
     name: string;
-    response: any;
+    response: unknown;
     result: {
       errors: GraphQLError[];
     };
