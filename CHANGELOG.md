@@ -1,3 +1,11 @@
+# [7.0.0-next.4](https://github.com/act-org/dls/compare/v7.0.0-next.3...v7.0.0-next.4) (2023-03-16)
+
+
+### Bug Fixes
+
+* Export ThemeCustomizations type from each theme file ([285c9ca](https://github.com/act-org/dls/commit/285c9ca34b9401cb147e993a371e348c2d39daf4))
+* Fix missing exports ([1338315](https://github.com/act-org/dls/commit/1338315697c6a4a51e92c9cc29484fb6cd5510b4))
+
 # [7.0.0-next.3](https://github.com/act-org/dls/compare/v7.0.0-next.2...v7.0.0-next.3) (2023-03-13)
 
 
