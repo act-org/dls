@@ -7,6 +7,7 @@
  * @prettier
  */
 
+export * from './cssRadius';
 export * from './getErrorMessage';
 export * from './makeShadow';
 export * from './mergeClasses';
@@ -15,4 +16,6 @@ export * from './px';
 export * from './pxToNumber';
 export * from './search';
 export * from './sort';
+export * from './styled';
+export * from './test';
 export * from './types';

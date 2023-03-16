@@ -26,7 +26,6 @@ export * from './GridGenerator';
 export * from './IdleTimer';
 export * from './InputLabel';
 export * from './Loading';
-// WIP COMPONENTS --------------------------------------------------------------
 export * from './RenderMetaTags';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
@@ -34,3 +33,5 @@ export * from './SessionTimer';
 export * from './SnackbarAlert';
 export * from './TablePaginationActions';
 export * from './ThemeProvider';
+
+// WIP COMPONENTS --------------------------------------------------------------

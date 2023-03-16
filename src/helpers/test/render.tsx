@@ -34,4 +34,5 @@ export const render = (
     ),
     ...options,
   });
+
 export default render;

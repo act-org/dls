@@ -10,7 +10,7 @@
 import { isFunction } from 'lodash';
 import { useEffect, useState } from 'react';
 
-const useLocalStorage = (
+export const useLocalStorage = (
   key: string,
   initValue = '',
 ): [string, (v: string) => void] => {

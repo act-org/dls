@@ -17,7 +17,7 @@ import SHAPE from './shape';
 import spacing, { SPACING_PX } from './spacing';
 import TYPOGRAPHY from './typography';
 
-type ThemeCustomizations = ICustomDims & {
+export type ThemeCustomizations = ICustomDims & {
   palette: CustomPaletteOptions;
   spacingPx: number;
 };

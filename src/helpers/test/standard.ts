@@ -14,11 +14,13 @@ import { ReactElement } from 'react';
 import accessibility from './accessibility';
 import snapshot from './snapshot';
 
-export default function standard(
+export const standard = (
   Component: ReactElement,
   renderOptions?: RenderOptions,
   runOptions?: JestAxeConfigureOptions,
-): void {
+): void => {
   snapshot(Component, renderOptions);
   accessibility(Component, renderOptions, runOptions);
-}
+};
+
+export default standard;
