@@ -24,8 +24,8 @@ npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @e
 ### Choosing a Theme
 
 This DLS is built on top of the
-[theming engine](https://mui.com/material-ui/customization/theming/) from
-Material UI, and ships with two themes out of the box:
+[theme engine](https://mui.com/material-ui/customization/theming/) from
+Material UI, and ships with several themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
