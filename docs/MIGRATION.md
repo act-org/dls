@@ -15,6 +15,10 @@ to
 ## New Features
 
 * Faster load times due to significantly reduced bundle sizes (see below!)
+* Eliminated the need to use
+[`babel-plugin-transform-imports`](https://www.npmjs.com/package/babel-plugin-transform-imports)
+in your Babel config to manually reduce the DLS's impact on your bundle size
+(see below!)
 * Added support for [MUI X v6 packages](https://mui.com/blog/mui-x-v6/)
 * Added a new
 [`ENCOURAGE`](https://github.com/act-org/dls/tree/main/src/styles/themeEncourage)
