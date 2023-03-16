@@ -7,19 +7,22 @@
  * @prettier
  */
 
+/* eslint-disable jest/no-export */
+
 import { RenderOptions } from '@testing-library/react';
 import { ReactElement } from 'react';
 
 import render from './render';
 import THEMES from './themes';
 
-// eslint-disable-next-line jest/no-export
-export default function snapshot(
+export const snapshot = (
   Component: ReactElement,
   renderOptions?: RenderOptions,
-): void {
+): void => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(Component, theme, renderOptions);
     expect(container).toMatchSnapshot();
   });
-}
+};
+
+export default snapshot;

@@ -10,4 +10,4 @@
 /* eslint-disable import/prefer-default-export */
 
 export * from './useConfirm';
-export { default as useLocalStorage } from './useLocalStorage';
+export * from './useLocalStorage';
