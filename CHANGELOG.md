@@ -1,3 +1,29 @@
+# [7.0.0](https://github.com/act-org/dls/compare/v6.3.0...v7.0.0) (2023-03-16)
+
+
+### Bug Fixes
+
+* Export ThemeCustomizations type from each theme file ([285c9ca](https://github.com/act-org/dls/commit/285c9ca34b9401cb147e993a371e348c2d39daf4))
+* Fix missing exports ([1338315](https://github.com/act-org/dls/commit/1338315697c6a4a51e92c9cc29484fb6cd5510b4))
+* Update to current MDX extension ([d127977](https://github.com/act-org/dls/commit/d1279776437ab14fd1396b4913ab1746cf30d54d))
+
+
+### Features
+
+* Add Encourage E4S theme (work in progress) ([1a57c41](https://github.com/act-org/dls/commit/1a57c41d2c0444c59a351b3726b10323eafd6760))
+* Add spacingPx to all themes ([0039309](https://github.com/act-org/dls/commit/003930931dddaefba7d335070a112960fe5d4353))
+* Better tree shaking support ([0697936](https://github.com/act-org/dls/commit/06979363f4d29e6a23230c8c82b7274673692bd5))
+* Enable github actions and standard-release ([81238fb](https://github.com/act-org/dls/commit/81238fbf6b0124eab164146d9fd6a19d1e13a6c1))
+* Encourage theme tweaks based on latest E4S ([96a5346](https://github.com/act-org/dls/commit/96a53465404ebf02cccdd3c97f190b59a7f034b9))
+* Migrate from babel build to es6 build for better tree shaking ([6660657](https://github.com/act-org/dls/commit/6660657ac9bf85460370f89a2c3997ea7dc59e83))
+* Migrate MUI stories to CSF V3 format ([257c9d6](https://github.com/act-org/dls/commit/257c9d61fe8d07aa99383a46605e5fbb2eea1194))
+* Remove custom colors from themes and move into palette on existing themes ([f5a2d55](https://github.com/act-org/dls/commit/f5a2d559d0665333234a7c03133c60c1c3c097af))
+
+
+### BREAKING CHANGES
+
+* Breaking changes to the theme creation format and the module output
+
 # [7.0.0-next.4](https://github.com/act-org/dls/compare/v7.0.0-next.3...v7.0.0-next.4) (2023-03-16)
 
 
