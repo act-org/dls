@@ -190,7 +190,7 @@
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
     "build:components": "tsc --project tsconfig.build.json",
-    "build:icons": "bin/buildIcons",
+    "build:icons": "bin/buildIcons.js",
     "build:package_json": "clear-package-json package.json -o dist/package.json",
     "build-storybook": "build-storybook -o ./storybook-static/www",
     "copy": "npm-run-all copy:*",
@@ -207,6 +207,7 @@
     "test:types": "tsc --project tsconfig.build.json --noEmit",
     "test:unit": "jest --maxWorkers=2 --verbose"
   },
+  "type": "module",
   "types": "index.d.ts",
   "version": "7.0.1"
 }
