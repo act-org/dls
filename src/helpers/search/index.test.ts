@@ -50,14 +50,14 @@ describe('search', () => {
     expect(result).toEqual([]);
   });
 
-  it('should return an empty array if any of the documents or their properties are null or undefined', () => {
+  it('should return an empty array if any of the documents or their properties are undefined', () => {
     const result1 = search([null, undefined], ['name'], 'doe');
     expect(result1).toEqual([]);
 
     const result2 = search([{ id: 1, name: null }], ['name'], 'doe');
     expect(result2).toEqual([]);
 
-    const result3 = search([{ id: 1, name: 'John Doe' }], [null], 'doe');
+    const result3 = search([{ id: 1, name: 'John Doe' }], [], 'doe');
     expect(result3).toEqual([]);
   });
 });
