@@ -8,11 +8,6 @@
  *
  * @prettier
  */
-
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-// eslint-disable-next-line import/no-extraneous-dependencies
-// const shelljs = require('shelljs');
 import shelljs from 'shelljs';
 
 shelljs.mkdir('-p', './dist/icons');
