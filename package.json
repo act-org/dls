@@ -92,7 +92,7 @@
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
-    "semantic-release": "20.1.1",
+    "semantic-release": "21.0.0",
     "shelljs": "0.8.5",
     "standard-version": "9.5.0",
     "ts-jest": "29.0.5",
