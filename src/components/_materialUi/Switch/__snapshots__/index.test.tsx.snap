@@ -96,7 +96,7 @@ exports[`Switch ENCOURAGE theme matches the snapshot 1`] = `
         type="checkbox"
       />
       <span
-        class="MuiSwitch-thumb css-1ktqu6e-MuiSwitch-thumb"
+        class="MuiSwitch-thumb css-3vprfh-MuiSwitch-thumb"
       />
       <span
         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"

@@ -7,6 +7,8 @@
  * @prettier
  */
 
+import isNumber from 'lodash/isNumber';
+
 import px from '@actinc/dls/helpers/px';
 
 export const makeShadow = (
@@ -17,9 +19,33 @@ export const makeShadow = (
   color: string,
   inset = false,
 ): string => {
-  return `${inset ? 'inset ' : ''}${px(xOffset)} ${px(yOffset)} ${`${px(
-    blurRadius,
-  )} `}${`${px(spreadRadius)} `}${color}`;
+  let str = '';
+
+  if (inset) {
+    str = `${str} inset`;
+  }
+
+  if (isNumber(xOffset)) {
+    str = `${str} ${px(xOffset)}`;
+  }
+
+  if (isNumber(yOffset)) {
+    str = `${str} ${px(yOffset)}`;
+  }
+
+  if (isNumber(blurRadius)) {
+    str = `${str} ${px(blurRadius)}`;
+  }
+
+  if (isNumber(spreadRadius)) {
+    str = `${str} ${px(spreadRadius)}`;
+  }
+
+  if (color) {
+    str = `${str} ${color}`;
+  }
+
+  return str.trim();
 };
 
 export default makeShadow;
