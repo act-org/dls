@@ -43,7 +43,7 @@ const Story = (): React.ReactElement => {
         <StyledGridItem item>
           <Typography>
             <code>
-              border-radius: theme.shape.borderRadius * {multiplier}&nbsp;
+              border-radius: shape.borderRadius * {multiplier}&nbsp;
               <StyledComment>// {borderRadius}px</StyledComment>
             </code>
           </Typography>

@@ -43,7 +43,7 @@ const Story = (): React.ReactElement => {
         <StyledGridItem item>
           <Typography>
             <code>
-              padding: theme.spacing({sp})&nbsp;
+              padding: spacing({sp})&nbsp;
               <StyledComment>// {padding}</StyledComment>
             </code>
           </Typography>
