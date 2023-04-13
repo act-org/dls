@@ -7,22 +7,16 @@
  * @prettier
  */
 
-import {
-  Avatar,
-  Grid,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from '@mui/material';
+import { Grid, ListItem, ListItemText } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import flatten from 'flat';
 import { isFunction, isString } from 'lodash';
 import React from 'react';
 
-const AVATAR_SIZE = 50;
+import { StyledAvatar, StyledListItemIcon } from './styles';
 
-const Palette = (): React.ReactElement => {
+const Story = (): React.ReactElement => {
   const { palette } = useTheme();
 
   const paletteFlat: Record<string, unknown> = Object.fromEntries(
@@ -48,21 +42,17 @@ const Palette = (): React.ReactElement => {
             xs={12}
           >
             <ListItem>
-              <ListItemIcon sx={{ width: AVATAR_SIZE * 1.25 }}>
-                <Avatar
+              <StyledListItemIcon>
+                <StyledAvatar
                   sx={{
                     bgcolor: isString(value) ? value : undefined,
-                    border: `1px ${isString(value) ? 'solid' : 'dashed'} ${
-                      palette.divider
-                    }`,
-                    height: AVATAR_SIZE,
-                    width: AVATAR_SIZE,
+                    borderStyle: isString(value) ? 'solid' : 'dashed',
                   }}
                   variant="rounded"
                 >
                   &nbsp;
-                </Avatar>
-              </ListItemIcon>
+                </StyledAvatar>
+              </StyledListItemIcon>
 
               <ListItemText primary={key} secondary={String(value)} />
             </ListItem>
@@ -75,7 +65,7 @@ const Palette = (): React.ReactElement => {
 
 export default {
   args: {},
-  component: Palette,
+  component: Story,
   parameters: {
     layout: 'padded',
   },
