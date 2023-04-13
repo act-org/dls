@@ -15,10 +15,10 @@ import React from 'react';
 import { StyledComment, StyledGridItem, StyledPaper } from './styles';
 
 const Story = (): React.ReactElement => {
-  const { spacing } = useTheme();
-  const [sp, setSp] = React.useState(1);
+  const { shape } = useTheme();
+  const [multiplier, setMultiplier] = React.useState(1);
 
-  const padding = spacing(sp);
+  const borderRadius = shape.borderRadius * multiplier;
 
   return (
     <>
@@ -30,12 +30,12 @@ const Story = (): React.ReactElement => {
                 min: 0,
               },
             }}
-            label="Spacing"
+            label="Border Radius Multiplier"
             onChange={(e): void => {
-              setSp(Number(e.target.value || 0));
+              setMultiplier(Number(e.target.value || 0));
             }}
             type="number"
-            value={sp}
+            value={multiplier}
             variant="outlined"
           />
         </Grid>
@@ -43,8 +43,8 @@ const Story = (): React.ReactElement => {
         <StyledGridItem item>
           <Typography>
             <code>
-              padding: theme.spacing({sp})&nbsp;
-              <StyledComment>// {padding}</StyledComment>
+              border-radius: theme.shape.borderRadius * {multiplier}&nbsp;
+              <StyledComment>// {borderRadius}px</StyledComment>
             </code>
           </Typography>
         </StyledGridItem>
@@ -52,7 +52,7 @@ const Story = (): React.ReactElement => {
 
       <StyledPaper
         sx={{
-          p: padding,
+          borderRadius,
         }}
         variant="outlined"
       >
@@ -75,7 +75,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Foundations / Spacing',
+  title: 'Foundations / Shape',
 } as Meta;
 
 type Story = StoryObj;

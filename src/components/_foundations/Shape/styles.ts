@@ -28,6 +28,8 @@ export const StyledGridItem = styled(Grid)(({ theme }) => ({
 export const StyledPaper = styled(Paper)(({ theme }) => ({
   [`&.${paperClasses.root}`]: {
     marginTop: theme.spacing(3),
+    overflow: 'hidden',
+    padding: theme.spacing(4),
     width: 500,
   },
 }));
