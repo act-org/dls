@@ -14,7 +14,7 @@ import flatten from 'flat';
 import { isFunction, isString } from 'lodash';
 import React from 'react';
 
-import { StyledAvatar, StyledListItemIcon } from './styles';
+import { StyledAvatar, StyledGrid, StyledListItemIcon } from './styles';
 
 const Story = (): React.ReactElement => {
   const { palette } = useTheme();
@@ -33,14 +33,7 @@ const Story = (): React.ReactElement => {
         }
 
         return (
-          <Grid
-            item
-            key={key}
-            md={3}
-            sm={6}
-            sx={{ border: `1px solid ${palette.divider}` }}
-            xs={12}
-          >
+          <StyledGrid item key={key} md={3} sm={6} xs={12}>
             <ListItem>
               <StyledListItemIcon>
                 <StyledAvatar
@@ -56,7 +49,7 @@ const Story = (): React.ReactElement => {
 
               <ListItemText primary={key} secondary={String(value)} />
             </ListItem>
-          </Grid>
+          </StyledGrid>
         );
       })}
     </Grid>

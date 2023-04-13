@@ -8,13 +8,21 @@
  */
 
 import InformationOutline from '@actinc/dls/icons/InformationOutline';
-import { Divider, Grid, IconButton, Tooltip, Typography } from '@mui/material';
+import { Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import { compact, isPlainObject, isString, sortBy } from 'lodash';
 import React from 'react';
 
 import pxToNumber from '@actinc/dls/helpers/pxToNumber';
+
+import {
+  StyledCode,
+  StyledDivider,
+  StyledGridItem,
+  StyledGridItemTypography,
+  StyledGridContainerInfo,
+} from './styles';
 
 const properties = {
   color: 'color',
@@ -26,7 +34,7 @@ const properties = {
 };
 
 const Story = (): React.ReactElement => {
-  const { palette, typography } = useTheme();
+  const { typography } = useTheme();
 
   const variants = compact(
     Object.keys(typography).map(key => {
@@ -50,25 +58,8 @@ const Story = (): React.ReactElement => {
         return (
           <React.Fragment key={variant}>
             <Grid container>
-              <Grid
-                item
-                sx={{
-                  alignItems: 'center',
-                  border: `1px solid ${palette.divider}`,
-                  display: 'flex',
-                  justifyContent: 'center',
-                  p: 2,
-                }}
-                xs={2}
-              >
-                <Grid
-                  container
-                  sx={{
-                    alignItems: 'center',
-                    display: 'flex',
-                    justifyContent: 'center',
-                  }}
-                >
+              <StyledGridItem item xs={2}>
+                <StyledGridContainerInfo container>
                   <Grid item>
                     <Typography variant="body1">{variant}</Typography>
                   </Grid>
@@ -76,7 +67,6 @@ const Story = (): React.ReactElement => {
                   <Grid item>
                     <Tooltip
                       arrow
-                      placement="right"
                       title={
                         <>
                           {Object.keys(properties).map(
@@ -86,16 +76,11 @@ const Story = (): React.ReactElement => {
 
                               return (
                                 <>
-                                  <span
-                                    key={cssStyle}
-                                    style={{ display: 'block' }}
-                                  >
-                                    <code>
-                                      {cssStyle}: {value}
-                                    </code>
-                                  </span>
+                                  <StyledCode key={cssStyle}>
+                                    {cssStyle}: {value}
+                                  </StyledCode>
 
-                                  <Divider sx={{ mt: 1, mb: 1 }} />
+                                  <StyledDivider />
                                 </>
                               );
                             },
@@ -108,23 +93,14 @@ const Story = (): React.ReactElement => {
                       </IconButton>
                     </Tooltip>
                   </Grid>
-                </Grid>
-              </Grid>
+                </StyledGridContainerInfo>
+              </StyledGridItem>
 
-              <Grid
-                item
-                sx={{
-                  alignItems: 'center',
-                  border: `1px solid ${palette.divider}`,
-                  display: 'flex',
-                  p: 2,
-                }}
-                xs={10}
-              >
+              <StyledGridItemTypography item xs={10}>
                 <Typography variant={variant}>
                   The quick brown fox jumps over the lazy dog.
                 </Typography>
-              </Grid>
+              </StyledGridItemTypography>
             </Grid>
           </React.Fragment>
         );

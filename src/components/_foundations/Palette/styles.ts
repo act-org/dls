@@ -7,9 +7,8 @@
  * @prettier
  */
 
-/* eslint-disable import/prefer-default-export */
-
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
+import Grid, { gridClasses } from '@mui/material/Grid';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 
 import { styled } from '@actinc/dls/helpers/styled';
@@ -30,3 +29,9 @@ export const StyledListItemIcon = styled(ListItemIcon)({
     width: AVATAR_SIZE * 1.25,
   },
 });
+
+export const StyledGrid = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.root}`]: {
+    border: `1px solid ${theme.palette.divider}`,
+  },
+}));
