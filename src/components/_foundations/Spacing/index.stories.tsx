@@ -44,6 +44,7 @@ const Story = (): React.ReactElement => {
           <Typography>
             <code>
               padding: spacing({sp})&nbsp;
+              {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
               <StyledComment>// {padding}</StyledComment>
             </code>
           </Typography>

@@ -44,6 +44,7 @@ const Story = (): React.ReactElement => {
           <Typography>
             <code>
               border-radius: shape.borderRadius * {multiplier}&nbsp;
+              {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
               <StyledComment>// {borderRadius}px</StyledComment>
             </code>
           </Typography>
