@@ -8,6 +8,7 @@
  */
 
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
+import Divider, { dividerClasses } from '@mui/material/Divider';
 import Grid, { gridClasses } from '@mui/material/Grid';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 
@@ -24,6 +25,13 @@ export const StyledAvatar = styled(Avatar)(({ theme }) => ({
   },
 }));
 
+export const StyledDivider = styled(Divider)(({ theme }) => ({
+  [`&.${dividerClasses.root}`]: {
+    marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(2),
+  },
+}));
+
 export const StyledListItemIcon = styled(ListItemIcon)({
   [`&.${listItemIconClasses.root}`]: {
     width: AVATAR_SIZE * 1.25,
@@ -33,5 +41,11 @@ export const StyledListItemIcon = styled(ListItemIcon)({
 export const StyledGrid = styled(Grid)(({ theme }) => ({
   [`&.${gridClasses.root}`]: {
     border: `1px solid ${theme.palette.divider}`,
+  },
+}));
+
+export const StyledGridContainer = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.root}`]: {
+    marginBottom: theme.spacing(2),
   },
 }));
