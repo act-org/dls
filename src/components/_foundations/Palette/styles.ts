@@ -10,6 +10,7 @@
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
 import Divider, { dividerClasses } from '@mui/material/Divider';
 import Grid, { gridClasses } from '@mui/material/Grid';
+import ListItem, { listItemClasses } from '@mui/material/ListItem';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 
 import { styled } from '@actinc/dls/helpers/styled';
@@ -32,17 +33,17 @@ export const StyledDivider = styled(Divider)(({ theme }) => ({
   },
 }));
 
+export const StyledListItem = styled(ListItem)(({ theme }) => ({
+  [`&.${listItemClasses.root}`]: {
+    border: `1px solid ${theme.palette.divider}`,
+  },
+}));
+
 export const StyledListItemIcon = styled(ListItemIcon)({
   [`&.${listItemIconClasses.root}`]: {
     width: AVATAR_SIZE * 1.25,
   },
 });
-
-export const StyledGrid = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.root}`]: {
-    border: `1px solid ${theme.palette.divider}`,
-  },
-}));
 
 export const StyledGridContainer = styled(Grid)(({ theme }) => ({
   [`&.${gridClasses.root}`]: {

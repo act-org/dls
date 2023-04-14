@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { ListItem, ListItemText, Typography } from '@mui/material';
+import { Grid, ListItemText, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import flatten from 'flat';
@@ -17,8 +17,8 @@ import React from 'react';
 import {
   StyledAvatar,
   StyledDivider,
-  StyledGrid,
   StyledGridContainer,
+  StyledListItem,
   StyledListItemIcon,
 } from './styles';
 
@@ -48,7 +48,7 @@ const Story = (): React.ReactElement => {
 
             <StyledDivider />
 
-            <StyledGridContainer container>
+            <StyledGridContainer container spacing={2}>
               {Object.keys(paletteFlat).map(key => {
                 if (!key.startsWith(group)) {
                   return null;
@@ -61,8 +61,8 @@ const Story = (): React.ReactElement => {
                 }
 
                 return (
-                  <StyledGrid item key={key} md={3} sm={6} xs={12}>
-                    <ListItem>
+                  <Grid item key={key} md={3} sm={6} xs={12}>
+                    <StyledListItem>
                       <StyledListItemIcon>
                         <StyledAvatar
                           sx={{
@@ -76,8 +76,8 @@ const Story = (): React.ReactElement => {
                       </StyledListItemIcon>
 
                       <ListItemText primary={key} secondary={String(value)} />
-                    </ListItem>
-                  </StyledGrid>
+                    </StyledListItem>
+                  </Grid>
                 );
               })}
             </StyledGridContainer>
