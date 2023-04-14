@@ -56,7 +56,7 @@ import { ReactElement } from 'react';
 import {
   FilmType,
   topFilms,
-} from '@actinc/dls/components/_materialUi/Autocomplete/internal';
+} from '@actinc/dls/components/_muiCore/Autocomplete/internal';
 
 type Demo<ComponentProps> = {
   flex?: number;
