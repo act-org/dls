@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { isNumber } from 'lodash';
 import moment from 'moment';
 import { useState } from 'react';
@@ -28,7 +28,7 @@ interface Item {
   fieldC: string;
 }
 
-export const Template: Story<DataTableProps<Item>> = ({
+export const Template: StoryFn<DataTableProps<Item>> = ({
   limit: limitProps,
   offset: offsetProps,
   totalCount,

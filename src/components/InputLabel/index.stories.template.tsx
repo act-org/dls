@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
@@ -20,9 +20,10 @@ interface StoryProps extends InputLabelProps {
   text: string;
 }
 
-export const Template: Story<StoryProps> = ({ text, ...args }: StoryProps) => (
-  <InputLabel {...args}>{text}</InputLabel>
-);
+export const Template: StoryFn<StoryProps> = ({
+  text,
+  ...args
+}: StoryProps) => <InputLabel {...args}>{text}</InputLabel>;
 
 export const argTypes: Record<string, any> = Playground(
   {

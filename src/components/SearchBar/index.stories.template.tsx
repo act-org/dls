@@ -7,13 +7,15 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SearchBar, SearchBarProps } from '.';
 
-export const Template: Story<SearchBarProps> = args => <SearchBar {...args} />;
+export const Template: StoryFn<SearchBarProps> = args => (
+  <SearchBar {...args} />
+);
 
 export const argTypes = Playground(
   {

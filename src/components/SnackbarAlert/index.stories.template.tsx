@@ -8,7 +8,7 @@
  */
 
 import { Button, Grid } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { startCase } from 'lodash';
 import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';
@@ -29,7 +29,7 @@ type DefaultProps = {
   defaultProps: Record<string, unknown>;
 };
 
-export const Template: Story<StoryProps> & DefaultProps = ({
+export const Template: StoryFn<StoryProps> & DefaultProps = ({
   anchorOriginHorizontal,
   anchorOriginVertical,
   maxSnack,

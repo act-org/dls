@@ -8,14 +8,14 @@
  */
 
 import { Box, Button } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { ConfirmDialog, ConfirmDialogProps } from '.';
 
-export const Template: Story<ConfirmDialogProps> = (
+export const Template: StoryFn<ConfirmDialogProps> = (
   props: ConfirmDialogProps,
 ) => {
   const [isOpen, setIsOpen] = useState(false);

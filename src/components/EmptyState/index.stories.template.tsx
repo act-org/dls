@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { EmptyState, EmptyStateProps } from '.';
 
-export const Template: Story<EmptyStateProps> = args => (
+export const Template: StoryFn<EmptyStateProps> = args => (
   <EmptyState {...args} />
 );
 export const argTypes = Playground(

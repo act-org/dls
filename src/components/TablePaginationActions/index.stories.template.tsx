@@ -7,14 +7,14 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { TablePaginationActions, TablePaginationActionsProps } from '.';
 
-export const Template: Story<TablePaginationActionsProps> = args => {
+export const Template: StoryFn<TablePaginationActionsProps> = args => {
   const [page, setPage] = useState(0);
 
   return (

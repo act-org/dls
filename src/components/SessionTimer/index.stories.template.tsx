@@ -17,7 +17,7 @@ import {
   Typography,
 } from '@mui/material';
 import { action } from '@storybook/addon-actions';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { round } from 'lodash';
 import moment from 'moment';
 import pluralize from 'pluralize';
@@ -27,7 +27,7 @@ import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SessionTimer, SessionTimerProps } from '.';
 
-export const Template: Story<SessionTimerProps> = ({
+export const Template: StoryFn<SessionTimerProps> = ({
   promptWithMsRemaining,
   tokenMaxAgeMs,
   ...otherProps

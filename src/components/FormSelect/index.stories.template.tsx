@@ -8,14 +8,14 @@
  */
 
 import { SelectChangeEvent } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { FormSelect, FormSelectProps } from '.';
 
-export const Template: Story<FormSelectProps> = args => {
+export const Template: StoryFn<FormSelectProps> = args => {
   const { value } = args;
   const [state, setState] = useState<string>((value as string) || '');
   const onChange = (e: SelectChangeEvent<unknown>): void => {

@@ -8,14 +8,14 @@
  */
 
 import { MenuItem, TextField } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { GridGenerator, GridGeneratorProps } from '.';
 
-export const Template: Story<GridGeneratorProps> = (
+export const Template: StoryFn<GridGeneratorProps> = (
   props: GridGeneratorProps,
 ) => {
   const [value1, setValue1] = useState('Value 1');

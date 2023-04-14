@@ -9,14 +9,14 @@
 
 import { Button } from '@mui/material';
 import { action } from '@storybook/addon-actions';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { DialogContinueSession, DialogContinueSessionProps } from '.';
 
-export const Template: Story<DialogContinueSessionProps> = args => {
+export const Template: StoryFn<DialogContinueSessionProps> = args => {
   const [open, setOpen] = useState(false);
 
   const onContinue = action('onContinue');

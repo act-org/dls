@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { FormSwitch, FormSwitchProps } from '.';
 
-export const Template: Story<FormSwitchProps> = args => (
+export const Template: StoryFn<FormSwitchProps> = args => (
   <FormSwitch {...args} />
 );
 export const argTypes = Playground(

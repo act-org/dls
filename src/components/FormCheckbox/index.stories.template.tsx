@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { FormCheckbox, FormCheckboxProps } from '.';
 
-export const Template: Story<FormCheckboxProps> = args => (
+export const Template: StoryFn<FormCheckboxProps> = args => (
   <FormCheckbox {...args} />
 );
 export const argTypes = Playground(

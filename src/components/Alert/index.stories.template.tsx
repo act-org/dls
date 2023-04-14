@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { Alert, AlertProps } from '.';
 
-export const Template: Story<AlertProps> = (props: AlertProps) => (
+export const Template: StoryFn<AlertProps> = (props: AlertProps) => (
   <Alert {...props} />
 );
 

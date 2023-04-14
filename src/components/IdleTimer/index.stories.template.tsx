@@ -8,7 +8,7 @@
  */
 
 import { action } from '@storybook/addon-actions';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { round } from 'lodash';
 import pluralize from 'pluralize';
 import { ReactElement } from 'react';
@@ -17,7 +17,7 @@ import { Playground } from '@actinc/dls/helpers/playground';
 
 import { IdleTimer, IdleTimerProps } from '.';
 
-export const Template: Story<IdleTimerProps> = ({
+export const Template: StoryFn<IdleTimerProps> = ({
   timeoutMs,
   ...otherProps
 }: IdleTimerProps) => {

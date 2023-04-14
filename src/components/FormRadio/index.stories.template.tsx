@@ -7,13 +7,15 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { FormRadio, FormRadioProps } from '.';
 
-export const Template: Story<FormRadioProps> = args => <FormRadio {...args} />;
+export const Template: StoryFn<FormRadioProps> = args => (
+  <FormRadio {...args} />
+);
 export const argTypes = Playground(
   {
     checked: {},

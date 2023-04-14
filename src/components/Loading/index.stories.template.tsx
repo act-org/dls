@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { Loading, LoadingProps } from '.';
 
-export const Template: Story<LoadingProps> = args => <Loading {...args} />;
+export const Template: StoryFn<LoadingProps> = args => <Loading {...args} />;
 Template.args = {};
 
 export const argTypes = Playground(

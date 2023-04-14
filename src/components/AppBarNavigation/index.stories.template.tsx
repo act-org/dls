@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { AppBarNavigation, AppBarNavigationProps } from '.';
 
-export const Template: Story<AppBarNavigationProps> = (
+export const Template: StoryFn<AppBarNavigationProps> = (
   props: AppBarNavigationProps,
 ) => <AppBarNavigation {...props} />;
 

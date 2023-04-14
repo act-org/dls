@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { ThemeProvider, ThemeProviderProps } from '.';
 
-export const Preview: Story<ThemeProviderProps> = args => (
+export const Preview: StoryFn<ThemeProviderProps> = args => (
   <ThemeProvider {...args}>ThemeProvider</ThemeProvider>
 );
 

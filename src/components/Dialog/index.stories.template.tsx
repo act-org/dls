@@ -8,7 +8,7 @@
  */
 
 import { Button, DialogActions, DialogContent } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
@@ -20,7 +20,7 @@ interface StoryProps extends DialogProps {
 }
 
 // eslint-disable-next-line react/prop-types
-export const Template: Story<StoryProps> = ({ text, ...args }) => {
+export const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <>

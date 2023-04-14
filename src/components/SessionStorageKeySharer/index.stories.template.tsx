@@ -18,7 +18,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import JSONParseSafe from 'json-parse-safe';
 import { useEffect, useState } from 'react';
 
@@ -26,7 +26,7 @@ import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 
-export const Template: Story<SessionStorageKeySharerProps> = ({
+export const Template: StoryFn<SessionStorageKeySharerProps> = ({
   keyName,
 }: SessionStorageKeySharerProps) => {
   const [keyValueRaw, setKeyValue] = useState(
