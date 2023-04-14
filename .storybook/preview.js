@@ -49,7 +49,9 @@ export const parameters = {
     storySort: {
       order: [
         'DLS',
-        'Material UI',
+        'Foundations',
+        'MUI Core',
+        'MUI X',
         'Atoms',
         'Molecules',
         'Organisms',
