@@ -6,8 +6,11 @@
  *
  * @prettier
  */
+
 import type { StorybookConfig } from '@storybook/core-common';
+
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
 const config: StorybookConfig = {
   addons: [
     '@storybook/addon-a11y',
@@ -68,4 +71,5 @@ const config: StorybookConfig = {
     autodocs: true,
   },
 };
+
 export default config;
