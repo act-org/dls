@@ -10,11 +10,13 @@
 import InformationOutline from '@actinc/dls/icons/InformationOutline';
 import { Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { Variant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react';
 import { compact, isPlainObject, isString, sortBy } from 'lodash';
 import React from 'react';
 
 import pxToNumber from '@actinc/dls/helpers/pxToNumber';
+import { Px } from '@actinc/dls/types';
 
 import {
   StyledCode,
@@ -37,20 +39,22 @@ const Story = (): React.ReactElement => {
   const { typography } = useTheme();
 
   const variants = compact(
-    Object.keys(typography).map(key => {
-      if (isPlainObject(typography[key])) {
-        return key;
+    Object.keys(typography).map((key: string) => {
+      if (isPlainObject((typography as any)[key])) {
+        return key as Variant;
       }
 
       return null;
     }),
   ).filter((v: string): boolean => v !== 'allVariants');
 
-  const sortedVariants = sortBy(variants, v =>
-    isString(typography[v].fontSize)
-      ? pxToNumber(typography[v].fontSize)
-      : typography[v].fontSize,
-  ).reverse();
+  const sortedVariants = sortBy(variants, v => {
+    const fontSize = typography[v].fontSize;
+
+    return fontSize && isString(fontSize)
+      ? pxToNumber(fontSize as Px)
+      : fontSize;
+  }).reverse();
 
   return (
     <>
@@ -71,7 +75,7 @@ const Story = (): React.ReactElement => {
                         <>
                           {Object.keys(properties).map(
                             (key): React.ReactElement => {
-                              const cssStyle = properties[key];
+                              const cssStyle = (properties as any)[key];
                               const value = typography[variant][key];
 
                               return (

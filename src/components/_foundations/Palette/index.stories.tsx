@@ -35,9 +35,7 @@ const Story = (): React.ReactElement => {
     )
     .sort();
 
-  const paletteFlat: Record<string, unknown> = Object.fromEntries(
-    Object.entries(flatten(palette)).sort(),
-  );
+  const paletteFlat: Record<string, unknown> = flatten(palette);
 
   return (
     <>
@@ -49,37 +47,39 @@ const Story = (): React.ReactElement => {
             <StyledDivider />
 
             <StyledGridContainer container spacing={2}>
-              {Object.keys(paletteFlat).map(key => {
-                if (!key.startsWith(group)) {
-                  return null;
-                }
+              {Object.keys(paletteFlat)
+                .sort()
+                .map(key => {
+                  if (!key.startsWith(group)) {
+                    return null;
+                  }
 
-                const value = paletteFlat[key];
+                  const value = paletteFlat[key];
 
-                if (isFunction(value)) {
-                  return null;
-                }
+                  if (isFunction(value)) {
+                    return null;
+                  }
 
-                return (
-                  <Grid item key={key} md={3} sm={6} xs={12}>
-                    <StyledListItem>
-                      <StyledListItemIcon>
-                        <StyledAvatar
-                          sx={{
-                            bgcolor: isString(value) ? value : undefined,
-                            borderStyle: isString(value) ? 'solid' : 'dashed',
-                          }}
-                          variant="rounded"
-                        >
-                          &nbsp;
-                        </StyledAvatar>
-                      </StyledListItemIcon>
+                  return (
+                    <Grid item key={key} md={3} sm={6} xs={12}>
+                      <StyledListItem>
+                        <StyledListItemIcon>
+                          <StyledAvatar
+                            sx={{
+                              bgcolor: isString(value) ? value : undefined,
+                              borderStyle: isString(value) ? 'solid' : 'dashed',
+                            }}
+                            variant="rounded"
+                          >
+                            &nbsp;
+                          </StyledAvatar>
+                        </StyledListItemIcon>
 
-                      <ListItemText primary={key} secondary={String(value)} />
-                    </StyledListItem>
-                  </Grid>
-                );
-              })}
+                        <ListItemText primary={key} secondary={String(value)} />
+                      </StyledListItem>
+                    </Grid>
+                  );
+                })}
             </StyledGridContainer>
           </>
         );
