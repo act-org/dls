@@ -1,3 +1,22 @@
+# [7.1.0](https://github.com/act-org/dls/compare/v7.0.1...v7.1.0) (2023-04-14)
+
+
+### Bug Fixes
+
+* Fix storybook exception on startup ([b69c24e](https://github.com/act-org/dls/commit/b69c24e552cdae69a2311e3c05e6c6ba19b28ee7))
+* Revert TS to 4.9.5 per https://github.com/styleguidist/react-docgen-typescript/issues/474 ([814f007](https://github.com/act-org/dls/commit/814f0078ec0fc488b56148d21e4871e31cfffb9c))
+* Storybook typescript fixes ([ec0b470](https://github.com/act-org/dls/commit/ec0b470c3c01cde9697350f25da1bdb953a68351))
+
+
+### Features
+
+* Added palette visualizer ([7c040e8](https://github.com/act-org/dls/commit/7c040e8dedd5f92e16f8182eb80fcacd9d2683f8))
+* Added shadows visualizer ([9ca13bb](https://github.com/act-org/dls/commit/9ca13bb28380651a1ef2e78a808a6d60cb858d55))
+* Added shape visualizer ([891588b](https://github.com/act-org/dls/commit/891588b326c4faf9bf9b1e1911f9898a952dc083))
+* Added spacing visualizer ([97a34b9](https://github.com/act-org/dls/commit/97a34b950b08247767d6e5b745b37ae33181a410))
+* Added typography visualizer ([39d870f](https://github.com/act-org/dls/commit/39d870f11e3e5893b201a42e861f36f45f9a141a))
+* Render palette options in smaller groups for improved readability ([4039d0b](https://github.com/act-org/dls/commit/4039d0b9a4f87585fcd4c493fc371400f92821c8))
+
 ## [7.0.1](https://github.com/act-org/dls/compare/v7.0.0...v7.0.1) (2023-03-16)
 
 
