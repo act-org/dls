@@ -33,7 +33,7 @@ export interface EmptyStateProps {
   buttonProps?: ButtonProps;
   description?: string | ReactNode;
   descriptionTypographyProps?: TypographyProps;
-  Icon?: FC<unknown> | ComponentClass<unknown>;
+  Icon?: FC<any> | ComponentClass<any>;
   iconProps?: IconProps;
   style?: CSSProperties;
   title?: string | ReactElement<unknown>;
