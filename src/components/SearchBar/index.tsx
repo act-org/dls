@@ -20,13 +20,6 @@ import { StyledIconButton } from './styles';
 
 export type SearchBarProps = OutlinedInputProps;
 
-/**
- * # SearchBar
- *
- * This component wraps a nice visual for a search bar component the the ability to set the initial value
- * and listen for changes to the search value
- * @param SearchBarProps
- */
 export function SearchBar({
   value,
   onChange,
