@@ -8,14 +8,12 @@
  */
 
 import { Box, Button } from '@mui/material';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { useState } from 'react';
-
-import { Playground } from '@actinc/dls/helpers/playground';
 
 import { ConfirmDialog, ConfirmDialogProps } from '.';
 
-export const Template: StoryFn<ConfirmDialogProps> = (
+export const Preview: StoryFn<ConfirmDialogProps> = (
   props: ConfirmDialogProps,
 ) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,16 +40,9 @@ export const Template: StoryFn<ConfirmDialogProps> = (
   );
 };
 
-export const argTypes = Playground(
-  {
-    allowClose: {},
-    description: {
-      type: 'string',
-    },
-    isOpen: {},
-    title: {
-      type: 'string',
-    },
-  },
-  ConfirmDialog,
-);
+export default {
+  args: {},
+  argTypes: {},
+  component: Preview,
+  title: 'Organisms / ConfirmDialog / Component',
+} as Meta<ConfirmDialogProps>;
