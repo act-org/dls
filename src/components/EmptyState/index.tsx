@@ -109,4 +109,15 @@ export const EmptyState: FC<EmptyStateProps> = ({
   );
 };
 
+EmptyState.defaultProps = {
+  buttonProps: undefined,
+  description: undefined,
+  descriptionTypographyProps: undefined,
+  Icon: undefined,
+  iconProps: undefined,
+  style: undefined,
+  title: undefined,
+  titleTypographyProps: undefined,
+};
+
 export default EmptyState;

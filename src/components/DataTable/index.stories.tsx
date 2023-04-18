@@ -21,6 +21,7 @@ import { SortObject } from '@actinc/dls/types';
 
 import { DataTable, DataTableProps } from '.';
 
+/* eslint-disable react/no-unused-prop-types */
 interface Item {
   id: string;
   name: string;
@@ -29,6 +30,7 @@ interface Item {
   fieldB: string;
   fieldC: string;
 }
+/* eslint-enable react/no-unused-prop-types */
 
 const Template: StoryFn<DataTableProps<Item>> = ({
   limit: limitProps,
@@ -161,9 +163,9 @@ export const ColorSecondary: StoryObj<DataTableProps<Item>> = {
 
 export const LinkedRows: StoryObj<DataTableProps<Item>> = {
   args: {
-    RowWrapper: (item, children) => (
+    RowWrapper: ({ name }: Item, children) => (
       <Link
-        href={`https://www.google.com/search?q=${item.name}`}
+        href={`https://www.google.com/search?q=${name}`}
         style={{
           display: 'contents',
         }}

@@ -51,4 +51,10 @@ export function FormRadioGroup({
   );
 }
 
+FormRadioGroup.defaultProps = {
+  formControlProps: undefined,
+  helpText: undefined,
+  inputLabelProps: undefined,
+};
+
 export default FormRadioGroup;

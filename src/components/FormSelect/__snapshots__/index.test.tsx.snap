@@ -25,7 +25,7 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-9t6dra-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1h47dn3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
@@ -33,6 +33,7 @@ exports[`FormSelect ACT theme matches the snapshot 1`] = `
       </div>
       <input
         aria-hidden="true"
+        aria-invalid="false"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value="ONE"
@@ -92,7 +93,7 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1jfpuyl-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1bvxsl2-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
@@ -100,6 +101,7 @@ exports[`FormSelect ACT_ET theme matches the snapshot 1`] = `
       </div>
       <input
         aria-hidden="true"
+        aria-invalid="false"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value="ONE"
@@ -159,7 +161,7 @@ exports[`FormSelect ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-p8sous-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1rcrhf7-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
@@ -167,6 +169,7 @@ exports[`FormSelect ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       </div>
       <input
         aria-hidden="true"
+        aria-invalid="false"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value="ONE"
@@ -226,7 +229,7 @@ exports[`FormSelect ENCOURAGE theme matches the snapshot 1`] = `
       <div
         aria-expanded="false"
         aria-haspopup="listbox"
-        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1b2x8gk-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
         role="button"
         tabindex="0"
       >
@@ -234,6 +237,7 @@ exports[`FormSelect ENCOURAGE theme matches the snapshot 1`] = `
       </div>
       <input
         aria-hidden="true"
+        aria-invalid="false"
         class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
         tabindex="-1"
         value="ONE"

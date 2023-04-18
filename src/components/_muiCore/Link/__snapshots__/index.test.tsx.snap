@@ -3,7 +3,7 @@
 exports[`Link ACT theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-14f5v1x-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-11gar8a-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -17,7 +17,7 @@ exports[`Link ACT theme matches the snapshot 1`] = `
 exports[`Link ACT_ET theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1mvlmp5-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1qczf8k-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -31,7 +31,7 @@ exports[`Link ACT_ET theme matches the snapshot 1`] = `
 exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-grzwhc-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-qbgmr6-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -45,7 +45,7 @@ exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Link ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1rjygfk-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kh66x2-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >

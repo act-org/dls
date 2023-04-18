@@ -3,7 +3,7 @@
 exports[`DataTable ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-9zlc7d-MuiPaper-root-MuiTableContainer-root"
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
     <table
       class="MuiTable-root css-1mtkklo-MuiTable-root"
@@ -394,7 +394,7 @@ exports[`DataTable ACT theme matches the snapshot 1`] = `
 exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-mqfy54-MuiPaper-root-MuiTableContainer-root"
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
     <table
       class="MuiTable-root css-qzh3ti-MuiTable-root"
@@ -785,7 +785,7 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
 exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-3ptbbs-MuiPaper-root-MuiTableContainer-root"
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
     <table
       class="MuiTable-root css-1r654f9-MuiTable-root"
@@ -1176,7 +1176,7 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DataTable ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiTableContainer-root css-n91l8h-MuiPaper-root-MuiTableContainer-root"
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
     <table
       class="MuiTable-root css-s28p6d-MuiTable-root"

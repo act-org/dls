@@ -20,11 +20,11 @@ import { ReactElement } from 'react';
 import { InputLabel, InputLabelProps } from '@actinc/dls/components/InputLabel';
 
 export type FormInputProps = InputProps & {
-  label?: string | ReactElement;
-  helpText?: string | ReactElement;
   errorMessage?: string;
-  labelProps?: InputLabelProps;
   formControlProps?: FormControlProps;
+  helpText?: string | ReactElement;
+  label?: string | ReactElement;
+  labelProps?: InputLabelProps;
 };
 
 export function FormInput({
@@ -68,5 +68,13 @@ export function FormInput({
     </FormControl>
   );
 }
+
+FormInput.defaultProps = {
+  errorMessage: undefined,
+  formControlProps: undefined,
+  helpText: undefined,
+  label: undefined,
+  labelProps: undefined,
+};
 
 export default FormInput;

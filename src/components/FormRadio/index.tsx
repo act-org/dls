@@ -42,4 +42,8 @@ export function FormRadio({
   );
 }
 
+FormRadio.defaultProps = {
+  labelProps: undefined,
+};
+
 export default FormRadio;

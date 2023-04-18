@@ -23,7 +23,9 @@ export type FormCheckboxProps = CheckboxProps & {
    */
   id: string;
   label: string;
+  // eslint-disable-next-line  react/boolean-prop-naming
   value?: boolean;
+  // eslint-disable-next-line  react/boolean-prop-naming
   fullWidth?: boolean;
   formControlProps?: FormControlProps;
   labelProps?: FormControlLabelProps;
@@ -50,5 +52,12 @@ export function FormCheckbox({
     </FormControl>
   );
 }
+
+FormCheckbox.defaultProps = {
+  formControlProps: undefined,
+  fullWidth: undefined,
+  labelProps: undefined,
+  value: undefined,
+};
 
 export default FormCheckbox;
