@@ -23,19 +23,14 @@ export type FormCheckboxProps = CheckboxProps & {
    */
   id: string;
   label: string;
+  // eslint-disable-next-line  react/boolean-prop-naming
   value?: boolean;
+  // eslint-disable-next-line  react/boolean-prop-naming
   fullWidth?: boolean;
   formControlProps?: FormControlProps;
   labelProps?: FormControlLabelProps;
 };
 
-/**
- * # FormCheckbox
- *
- * This molecule takes the basic switch and adds a label and various label capabilities
- *
- * @param formSwitchProps
- */
 export function FormCheckbox({
   labelProps,
   id,
@@ -57,5 +52,12 @@ export function FormCheckbox({
     </FormControl>
   );
 }
+
+FormCheckbox.defaultProps = {
+  formControlProps: undefined,
+  fullWidth: undefined,
+  labelProps: undefined,
+  value: undefined,
+};
 
 export default FormCheckbox;

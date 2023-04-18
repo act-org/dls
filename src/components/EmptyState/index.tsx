@@ -33,7 +33,7 @@ export interface EmptyStateProps {
   buttonProps?: ButtonProps;
   description?: string | ReactNode;
   descriptionTypographyProps?: TypographyProps;
-  Icon?: FC<unknown> | ComponentClass<unknown>;
+  Icon?: FC<any> | ComponentClass<any>;
   iconProps?: IconProps;
   style?: CSSProperties;
   title?: string | ReactElement<unknown>;
@@ -107,6 +107,17 @@ export const EmptyState: FC<EmptyStateProps> = ({
       {buttonProps && <Button {...buttonProps} />}
     </StyledContainer>
   );
+};
+
+EmptyState.defaultProps = {
+  buttonProps: undefined,
+  description: undefined,
+  descriptionTypographyProps: undefined,
+  Icon: undefined,
+  iconProps: undefined,
+  style: undefined,
+  title: undefined,
+  titleTypographyProps: undefined,
 };
 
 export default EmptyState;

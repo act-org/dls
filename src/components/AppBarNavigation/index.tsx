@@ -25,13 +25,6 @@ export interface AppBarNavigationProps {
   navigationItems: RenderNavigationItemProps[];
 }
 
-/**
- * # App Bar Navigation
- *
- * This component uses App Bar to create a top-level navigation header.
- *
- * @param props
- */
 export const AppBarNavigation: FC<AppBarNavigationProps> = ({
   appBarHeight,
   AppBarProps: appBarProps,

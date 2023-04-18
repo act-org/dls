@@ -77,4 +77,12 @@ export const IdleTimer: FC<IdleTimerProps> = ({
   return null;
 };
 
+IdleTimer.defaultProps = {
+  children: undefined,
+  onAction: undefined,
+  onActive: undefined,
+  onIdle: undefined,
+  stopOnIdle: undefined,
+};
+
 export default IdleTimer;

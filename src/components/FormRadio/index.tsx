@@ -24,13 +24,6 @@ export type FormRadioProps = RadioProps & {
   labelProps?: FormControlLabelProps;
 };
 
-/**
- * # FormRadio
- *
- * This molecule takes the basic switch and adds a label and various label capabilities
- *
- * @param formSwitchProps
- */
 export function FormRadio({
   labelProps,
   id,
@@ -48,5 +41,9 @@ export function FormRadio({
     />
   );
 }
+
+FormRadio.defaultProps = {
+  labelProps: undefined,
+};
 
 export default FormRadio;

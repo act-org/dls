@@ -7,20 +7,26 @@
  * @prettier
  */
 
-import { Meta, Story } from '@storybook/react/types-6-0';
+import { StoryObj, Meta } from '@storybook/react';
 
-import { ThemeProvider, ThemeProviderProps } from '.';
+import { Playground } from '@actinc/dls/helpers/playground';
 
-export const Preview: Story<ThemeProviderProps> = args => (
-  <ThemeProvider {...args}>ThemeProvider</ThemeProvider>
-);
+import ThemeProvider, { ThemeProviderProps } from '.';
 
+/**
+ * There are a few supported themes of the DLS. These themes have the applied
+ * styling for the variants. If neither of these completely solve your needs,
+ * you can implement a custom Material UI theme. This should be the last resort
+ * as expanding the theme to support all use cases would be the preference.
+ */
 export default {
-  component: ThemeProvider,
-  parameters: {
-    info: {
-      text: 'This is the primary variant of the ThemeProvider component.',
-    },
+  args: {
+    theme: 'ACT_ET',
   },
+  argTypes: Playground({}, ThemeProvider),
+  component: ThemeProvider,
+  tags: ['autodocs'],
   title: 'Utilities/ThemeProvider',
 } as Meta<ThemeProviderProps>;
+
+export const Preview: StoryObj<ThemeProviderProps> = {};

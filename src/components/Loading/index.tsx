@@ -40,6 +40,7 @@ Loading.defaultProps = {
     size: 24,
     thickness: 4.5,
   },
+  style: undefined,
   title: undefined,
 };
 

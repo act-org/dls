@@ -25,4 +25,8 @@ const TableContainer: FC<TableContainerProps> = (
   <MuiTableContainer component={Component} {...props} />
 );
 
+TableContainer.defaultProps = {
+  component: undefined,
+};
+
 export default TableContainer;

@@ -146,6 +146,7 @@ export const DataTable = <T,>({
 
 DataTable.defaultProps = {
   color: 'default',
+  emptyStateProps: undefined,
   limit: undefined,
   offset: undefined,
   onChangeLimit: undefined,

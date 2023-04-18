@@ -23,19 +23,14 @@ export type FormSwitchProps = SwitchProps & {
    */
   id: string;
   label: string;
+  // eslint-disable-next-line react/boolean-prop-naming
   value?: boolean;
+  // eslint-disable-next-line react/boolean-prop-naming
   fullWidth?: boolean;
   formControlProps?: FormControlProps;
   labelProps?: FormControlLabelProps;
 };
 
-/**
- * # FormSwitch
- *
- * This molecule takes the basic switch and adds a label and various label capabilities
- *
- * @param formSwitchProps
- */
 export function FormSwitch({
   labelProps,
   id,
@@ -57,5 +52,12 @@ export function FormSwitch({
     </FormControl>
   );
 }
+
+FormSwitch.defaultProps = {
+  formControlProps: undefined,
+  fullWidth: undefined,
+  labelProps: undefined,
+  value: undefined,
+};
 
 export default FormSwitch;
