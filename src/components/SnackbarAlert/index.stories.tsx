@@ -77,10 +77,7 @@ const Template: StoryFn<StoryProps> = ({
  * on and off the screen.
  */
 export default {
-  args: {
-    promptWithMsRemaining: 5000,
-    tokenMaxAgeMs: 15 * 1000,
-  },
+  args: {},
   argTypes: Playground(
     {
       anchorOriginHorizontal: { type: 'string' },
