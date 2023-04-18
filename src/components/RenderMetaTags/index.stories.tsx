@@ -9,16 +9,25 @@
 
 import { StoryObj, Meta } from '@storybook/react';
 
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import RenderMetaTags, { RenderMetaTagsProps } from '.';
 
-export const Base: StoryObj<RenderMetaTagsProps> = {};
-
 export default {
-  component: RenderMetaTags,
-  parameters: {
-    info: {
-      text: 'This is the base variant of the RenderMetaTags component.',
+  args: {},
+  argTypes: Playground(
+    {
+      description: {},
+      imageUrl: {},
+      keywords: {},
+      noIndex: {},
+      title: {},
     },
-  },
+    RenderMetaTags,
+  ),
+  component: RenderMetaTags,
+  tags: ['autodocs'],
   title: 'Utilities/RenderMetaTags',
 } as Meta<RenderMetaTagsProps>;
+
+export const Preview: StoryObj<RenderMetaTagsProps> = {};
