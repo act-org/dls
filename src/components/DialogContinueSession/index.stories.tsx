@@ -19,7 +19,7 @@ interface StoryProps extends DialogContinueSessionProps {
   text?: string;
 }
 
-const Template: StoryFn<DialogContinueSessionProps> = args => {
+const Template: StoryFn<StoryProps> = args => {
   const [open, setOpen] = useState(false);
 
   const onContinue = action('onContinue');
