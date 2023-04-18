@@ -337,12 +337,12 @@ const demos = [
 const meta = {
   argTypes: {},
   component: Box,
-  title: 'DLS / Theme Demo',
+  title: 'Foundations / Theme Demo',
 } as Meta<typeof Box>;
 
 export default meta;
 
-export const Demo: StoryFn = () => {
+export const Preview: StoryFn = () => {
   return (
     <Box>
       <Typography variant="h2">Theme Preview</Typography>
