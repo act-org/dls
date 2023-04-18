@@ -9,14 +9,17 @@
 
 import { Button } from '@mui/material';
 import { action } from '@storybook/addon-actions';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import moment from 'moment';
 import { useState } from 'react';
-
-import { Playground } from '@actinc/dls/helpers/playground';
 
 import { DialogContinueSession, DialogContinueSessionProps } from '.';
 
-export const Template: StoryFn<DialogContinueSessionProps> = args => {
+interface StoryProps extends DialogContinueSessionProps {
+  text?: string;
+}
+
+const Template: StoryFn<DialogContinueSessionProps> = args => {
   const [open, setOpen] = useState(false);
 
   const onContinue = action('onContinue');
@@ -50,9 +53,21 @@ export const Template: StoryFn<DialogContinueSessionProps> = args => {
   );
 };
 
-export const argTypes = Playground(
-  {
-    expiresAt: { type: 'Date' },
+/*
+ * The `<DialogContinueSession />` component is used to prompt the user to continue
+ * their current session. If the user does not choose to continue their session by
+ * the provided date, the user's session will expire.
+ */
+export default {
+  args: {
+    expiresAt: moment().add(30, 'minutes').toDate(),
   },
-  DialogContinueSession,
-);
+  argTypes: {},
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Molecules / DialogContinueSession',
+} as Meta<DialogContinueSessionProps>;
+
+export const Preview: StoryObj<DialogContinueSessionProps> = {
+  args: {},
+};
