@@ -7,8 +7,10 @@
  * @prettier
  */
 
+/* eslint-disable react/require-default-props */
+
 import { Button, Grid } from '@mui/material';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { startCase } from 'lodash';
 import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';
@@ -25,11 +27,7 @@ interface StoryProps {
   maxSnack?: number;
 }
 
-type DefaultProps = {
-  defaultProps: Record<string, unknown>;
-};
-
-export const Template: StoryFn<StoryProps> & DefaultProps = ({
+const Template: StoryFn<StoryProps> = ({
   anchorOriginHorizontal,
   anchorOriginVertical,
   maxSnack,
@@ -74,17 +72,49 @@ export const Template: StoryFn<StoryProps> & DefaultProps = ({
   );
 };
 
-Template.defaultProps = {
-  anchorOriginHorizontal: undefined,
-  anchorOriginVertical: undefined,
-  maxSnack: undefined,
+/**
+ * The `<SnackbarAlert />` component is used to animate the `<Alert />` component
+ * on and off the screen.
+ */
+export default {
+  args: {
+    promptWithMsRemaining: 5000,
+    tokenMaxAgeMs: 15 * 1000,
+  },
+  argTypes: Playground(
+    {
+      anchorOriginHorizontal: { type: 'string' },
+      anchorOriginVertical: { type: 'string' },
+      maxSnack: { type: 'number' },
+    },
+    SnackbarAlert,
+  ),
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Molecules / SnackbarAlert',
+} as Meta<StoryProps>;
+
+export const Preview: StoryObj<StoryProps> = {
+  args: {},
 };
 
-export const argTypes = Playground(
-  {
-    anchorOriginHorizontal: { type: 'string' },
-    anchorOriginVertical: { type: 'string' },
-    maxSnack: { type: 'number' },
+/**
+ * Show up to `5` different `<SnackbarAlert />`s on the screen, rather than the
+ * default (`3`).
+ */
+export const CustomMaxSnack: StoryObj<StoryProps> = {
+  args: {
+    maxSnack: 5,
   },
-  SnackbarAlert,
-);
+};
+
+/**
+ * By default, the `<SnackbarAlert />` is anchored to the bottom center of the
+ * screen. Both the horizontal and vertical anchor origins can be changed.
+ */
+export const CustomAnchorOrigin: StoryObj<StoryProps> = {
+  args: {
+    anchorOriginHorizontal: 'right',
+    anchorOriginVertical: 'top',
+  },
+};
