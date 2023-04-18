@@ -17,7 +17,7 @@ import {
   Typography,
 } from '@mui/material';
 import { action } from '@storybook/addon-actions';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { round } from 'lodash';
 import moment from 'moment';
 import pluralize from 'pluralize';
@@ -27,7 +27,7 @@ import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SessionTimer, SessionTimerProps } from '.';
 
-export const Template: StoryFn<SessionTimerProps> = ({
+const Template: StoryFn<SessionTimerProps> = ({
   promptWithMsRemaining,
   tokenMaxAgeMs,
   ...otherProps
@@ -148,11 +148,29 @@ export const Template: StoryFn<SessionTimerProps> = ({
   );
 };
 
-export const argTypes = Playground(
-  {
-    expiresAt: { type: 'date' },
-    promptWithMsRemaining: { type: 'number' },
-    tokenMaxAgeMs: { type: 'number' },
+/**
+ * The `<SessionTimer />` component combines two `IdleTimer`s with the
+ * `DialogContinueSession` component in order to fully and effectively manage
+ * the user's session.
+ */
+export default {
+  args: {
+    promptWithMsRemaining: 5000,
+    tokenMaxAgeMs: 15 * 1000,
   },
-  SessionTimer,
-);
+  argTypes: Playground(
+    {
+      expiresAt: { type: 'date' },
+      promptWithMsRemaining: { type: 'number' },
+      tokenMaxAgeMs: { type: 'number' },
+    },
+    SessionTimer,
+  ),
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Organisms / SessionTimer',
+} as Meta<SessionTimerProps>;
+
+export const Preview: StoryObj<SessionTimerProps> = {
+  args: {},
+};
