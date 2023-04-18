@@ -7,13 +7,11 @@
  * @prettier
  */
 
-import { Meta, StoryFn } from '@storybook/react';
+import { StoryObj, Meta } from '@storybook/react';
 
 import RenderMetaTags, { RenderMetaTagsProps } from '.';
 
-export const Base: StoryFn<RenderMetaTagsProps> = args => (
-  <RenderMetaTags {...args} />
-);
+export const Base: StoryObj<RenderMetaTagsProps> = {};
 
 export default {
   component: RenderMetaTags,

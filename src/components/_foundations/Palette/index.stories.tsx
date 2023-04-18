@@ -94,7 +94,6 @@ export default {
   parameters: {
     layout: 'padded',
   },
-  tags: ['autodocs'],
   title: 'Foundations / Palette',
 } as Meta;
 

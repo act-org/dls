@@ -36,22 +36,24 @@ export default {
 
 export const Primary: StoryObj<Autocomplete> = { args: { color: 'primary' } };
 
-export const Multiple = (
-  args: AutocompleteProps<FilmType, true, false, false, typeof Chip>,
-): ReactElement<unknown> => (
-  <Autocomplete
-    {...args}
-    getOptionLabel={(option): string => option.label}
-    multiple
-    renderTags={(value: FilmType[], getTagProps): ReactElement<unknown>[] =>
-      value.map((option: FilmType, index: number) => (
-        // eslint-disable-next-line react/jsx-key
-        <Chip
-          label={option.label}
-          variant="outlined"
-          {...getTagProps({ index })}
-        />
-      ))
-    }
-  />
-);
+export const Multiple = {
+  render: (
+    args: AutocompleteProps<FilmType, true, false, false, typeof Chip>,
+  ): ReactElement<unknown> => (
+    <Autocomplete
+      {...args}
+      getOptionLabel={(option): string => option.label}
+      multiple
+      renderTags={(value: FilmType[], getTagProps): ReactElement<unknown>[] =>
+        value.map((option: FilmType, index: number) => (
+          // eslint-disable-next-line react/jsx-key
+          <Chip
+            label={option.label}
+            variant="outlined"
+            {...getTagProps({ index })}
+          />
+        ))
+      }
+    />
+  ),
+};

@@ -75,7 +75,6 @@ export default {
   parameters: {
     layout: 'padded',
   },
-  tags: ['autodocs'],
   title: 'Foundations / Shape',
 } as Meta;
 
