@@ -8,10 +8,8 @@
  */
 
 import { Button, DialogActions, DialogContent } from '@mui/material';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { useState } from 'react';
-
-import { Playground } from '@actinc/dls/helpers/playground';
 
 import { Dialog, DialogProps } from '.';
 
@@ -20,7 +18,7 @@ interface StoryProps extends DialogProps {
 }
 
 // eslint-disable-next-line react/prop-types
-export const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
+const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
   const [open, setOpen] = useState<boolean>(false);
   return (
     <>
@@ -31,6 +29,7 @@ export const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
       >
         open
       </Button>
+
       <Dialog
         {...args}
         onClose={(): void => {
@@ -52,15 +51,18 @@ export const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
     </>
   );
 };
-export const argTypes = Playground(
-  {
-    draggable: { type: 'boolean' },
-    fullScreen: {},
-    fullWidth: {},
-    maxWidth: {},
-    scroll: {},
-    text: {},
-    title: {},
+
+export default {
+  args: {
+    text: 'Some sample dialog text',
+    title: 'Dialog Title',
   },
-  Dialog,
-);
+  argTypes: {},
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Molecules / Dialog',
+} as Meta<DialogProps>;
+
+export const Preview: StoryObj<DialogProps> = {
+  args: {},
+};

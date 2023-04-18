@@ -11,7 +11,6 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.20.13",
-    "@storybook/blocks": "7.0.5",
     "clsx": "^1.2.1",
     "color": "^4.2.3",
     "deepmerge": "^4.3.0",
@@ -54,6 +53,7 @@
     "@storybook/addon-links": "7.0.5",
     "@storybook/addon-mdx-gfm": "7.0.5",
     "@storybook/addons": "7.0.5",
+    "@storybook/blocks": "7.0.5",
     "@storybook/mdx2-csf": "1.0.0",
     "@storybook/react": "7.0.5",
     "@storybook/react-webpack5": "7.0.5",
