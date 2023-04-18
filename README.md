@@ -1,10 +1,18 @@
 # Design Language System (DLS)
 
-<!-- markdownlint-disable line-length -->
+<!-- markdownlint-disable no-inline-html -->
 
-[![Version](https://img.shields.io/npm/v/@actinc/dls)](https://www.npmjs.com/package/@actinc/dls) [![build](https://github.com/act-org/dls/actions/workflows/ci.yml/badge.svg)](https://github.com/act-org/dls/actions/workflows/ci.yml) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/dls/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/dls?color=orange)](https://www.npmjs.com/package/@actinc/dls)
+<a href="https://www.npmjs.com/package/@actinc/dls">
+  <img alt="Version" src="https://img.shields.io/npm/v/@actinc/dls"/>
+</a>&nbsp;<a href="https://github.com/act-org/dls/actions/workflows/ci.yml">
+  <img alt="Build" src="https://github.com/act-org/dls/actions/workflows/ci.yml/badge.svg"/>
+</a>&nbsp;<a href="https://github.com/act-org/dls/blob/master/LICENSE">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-green"/>
+</a>&nbsp;<a href="https://www.npmjs.com/package/@actinc/dls">
+  <img alt="Downloads" src="https://img.shields.io/npm/dw/@actinc/dls?color=orange"/>
+</a>
 
-<!-- markdownlint-enable line-length -->
+<!-- markdownlint-enable no-inline-html -->
 
 The Design Language System for ACT & Encoura front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
