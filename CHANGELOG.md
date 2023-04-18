@@ -1,3 +1,11 @@
+## [7.1.1](https://github.com/act-org/dls/compare/v7.1.0...v7.1.1) (2023-04-18)
+
+
+### Bug Fixes
+
+* Fix type issue with SvgIcon on EmptyState component ([8a9004a](https://github.com/act-org/dls/commit/8a9004a974c4126f5bb1c0540468a9060a4e13b2))
+* Migrate Storybook 6 code to Storybook 7 ([326f34b](https://github.com/act-org/dls/commit/326f34ba28ed8d2a4fb1a4778130bf64e6d77966))
+
 # [7.1.0](https://github.com/act-org/dls/compare/v7.0.1...v7.1.0) (2023-04-14)
 
 
