@@ -8,16 +8,14 @@
  */
 
 import { MenuItem, TextField } from '@mui/material';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { GridGenerator, GridGeneratorProps } from '.';
 
-export const Template: StoryFn<GridGeneratorProps> = (
-  props: GridGeneratorProps,
-) => {
+const Template: StoryFn<GridGeneratorProps> = (props: GridGeneratorProps) => {
   const [value1, setValue1] = useState('Value 1');
   const [value2, setValue2] = useState('Value 2');
   const [value3, setValue3] = useState('undefined');
@@ -129,4 +127,14 @@ export const Template: StoryFn<GridGeneratorProps> = (
   );
 };
 
-export const argTypes = Playground({}, GridGenerator);
+export default {
+  args: {},
+  argTypes: Playground({}, GridGenerator),
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Organisms / GridGenerator',
+} as Meta<GridGeneratorProps>;
+
+export const Preview: StoryObj<GridGeneratorProps> = {
+  args: {},
+};
