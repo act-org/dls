@@ -39,14 +39,6 @@ export interface InputLabelProps extends MuiInputLabelProps {
     | 'top-start';
 }
 
-/**
- * #Input Label
- *
- * This component is the primary label for various form fields.  In general, when applicable, you should use
- * a molecule or organism that already contains this component to make it easier.  This would be used in a scenario where
- * a molecule does not exist for your use case.
- * @param InputProps
- */
 export const InputLabel: FC<InputLabelProps> = ({
   classes: classesProp,
   children,
