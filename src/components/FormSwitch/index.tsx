@@ -29,13 +29,6 @@ export type FormSwitchProps = SwitchProps & {
   labelProps?: FormControlLabelProps;
 };
 
-/**
- * # FormSwitch
- *
- * This molecule takes the basic switch and adds a label and various label capabilities
- *
- * @param formSwitchProps
- */
 export function FormSwitch({
   labelProps,
   id,
