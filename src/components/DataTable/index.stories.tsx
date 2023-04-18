@@ -7,13 +7,14 @@
  * @prettier
  */
 
-import { StoryFn } from '@storybook/react';
+import PackageVariant from '@actinc/dls/icons/PackageVariant';
+import { Link } from '@mui/material';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { isNumber } from 'lodash';
 import moment from 'moment';
 import { useState } from 'react';
 
 import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
-import { Playground } from '@actinc/dls/helpers/playground';
 import sort from '@actinc/dls/helpers/sort';
 import { SortObject } from '@actinc/dls/types';
 
@@ -28,7 +29,7 @@ interface Item {
   fieldC: string;
 }
 
-export const Template: StoryFn<DataTableProps<Item>> = ({
+const Template: StoryFn<DataTableProps<Item>> = ({
   limit: limitProps,
   offset: offsetProps,
   totalCount,
@@ -126,9 +127,64 @@ export const Template: StoryFn<DataTableProps<Item>> = ({
   );
 };
 
-export const argTypes = Playground(
-  {
-    color: { type: 'string' },
+/**
+ * The `<DataTable />` component is a lightweight alternative to the
+ * `<DataGrid />` component from Material UI.
+ */
+export default {
+  args: {
+    totalCount: 10,
   },
-  DataTable,
-);
+  argTypes: {},
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Organisms / DataTable',
+} as Meta<DataTableProps<Item>>;
+
+export const ColorDefault: StoryObj<DataTableProps<Item>> = {
+  args: { color: 'default' },
+};
+
+export const ColorPrimary: StoryObj<DataTableProps<Item>> = {
+  args: { color: 'primary' },
+};
+
+export const ColorSecondary: StoryObj<DataTableProps<Item>> = {
+  args: { color: 'secondary' },
+};
+
+export const LinkedRows: StoryObj<DataTableProps<Item>> = {
+  args: {
+    RowWrapper: (item, children) => (
+      <Link
+        href={`https://www.google.com/search?q=${item.name}`}
+        style={{
+          display: 'contents',
+        }}
+        target="_blank"
+        underline="none"
+      >
+        {children}
+      </Link>
+    ),
+  },
+};
+
+export const EmptyState: StoryObj<DataTableProps<Item>> = {
+  args: {
+    emptyStateProps: {
+      description: 'No Items Found',
+      Icon: PackageVariant,
+    },
+    totalCount: 0,
+  },
+};
+
+export const Paginated: StoryObj<DataTableProps<Item>> = {
+  args: {
+    limit: 10,
+    offset: 0,
+    rowsPerPageOptions: [10, 25, 50],
+    totalCount: 100,
+  },
+};
