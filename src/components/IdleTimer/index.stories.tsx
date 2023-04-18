@@ -8,7 +8,7 @@
  */
 
 import { action } from '@storybook/addon-actions';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { round } from 'lodash';
 import pluralize from 'pluralize';
 import { ReactElement } from 'react';
@@ -17,7 +17,7 @@ import { Playground } from '@actinc/dls/helpers/playground';
 
 import { IdleTimer, IdleTimerProps } from '.';
 
-export const Template: StoryFn<IdleTimerProps> = ({
+const Template: StoryFn<IdleTimerProps> = ({
   timeoutMs,
   ...otherProps
 }: IdleTimerProps) => {
@@ -62,10 +62,36 @@ export const Template: StoryFn<IdleTimerProps> = ({
   );
 };
 
-export const argTypes = Playground(
-  {
-    stopOnIdle: { type: 'boolean' },
-    timeoutMs: { type: 'number' },
+/*
+ * The `<IdleTimer />` component monitors keyboard and mouse activity to determine
+ * when the user has gone idle.
+ */
+export default {
+  args: {
+    timeoutMs: 10000,
   },
-  IdleTimer,
-);
+  argTypes: Playground(
+    {
+      stopOnIdle: { type: 'boolean' },
+      timeoutMs: { type: 'number' },
+    },
+    IdleTimer,
+  ),
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Utilities / IdleTimer',
+} as Meta<IdleTimerProps>;
+
+export const Preview: StoryObj<IdleTimerProps> = {
+  args: {},
+};
+
+/*
+ * Use `stopOnIdle: true` to prevent the timer from resetting itself when the
+ * user comes back after having been idle.
+ */
+export const StopOnIdle: StoryObj<IdleTimerProps> = {
+  args: {
+    stopOnIdle: true,
+  },
+};
