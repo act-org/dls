@@ -10,6 +10,8 @@
 import Account from '@actinc/dls/icons/Account';
 import { Meta, StoryObj } from '@storybook/react';
 
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import { EmptyState, EmptyStateProps } from '.';
 
 export default {
@@ -18,7 +20,14 @@ export default {
     Icon: Account,
     title: 'No users yet.',
   },
-  argTypes: {},
+  argTypes: Playground(
+    {
+      description: { type: 'string' },
+      style: {},
+      title: { type: 'string' },
+    },
+    EmptyState,
+  ),
   component: EmptyState,
   tags: ['autodocs'],
   title: 'Molecules / EmptyState',

@@ -9,6 +9,8 @@
 
 import { Meta, StoryObj } from '@storybook/react';
 
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import { AppBarNavigation, AppBarNavigationProps } from '.';
 
 /**
@@ -27,7 +29,15 @@ export default {
       src: 'https://i.imgur.com/P0gtzO0.png',
     },
   },
-  argTypes: {},
+  argTypes: Playground(
+    {
+      AppBarProps: {},
+      headerRightElement: {},
+      navigationItems: [],
+      RenderLogoProps: {},
+    },
+    AppBarNavigation,
+  ),
   component: AppBarNavigation,
   tags: ['autodocs'],
   title: 'Organisms / AppBarNavigation',

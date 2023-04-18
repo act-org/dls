@@ -9,6 +9,8 @@
 
 import { Meta, StoryObj } from '@storybook/react';
 
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import { Alert, AlertProps } from '.';
 
 /**
@@ -21,9 +23,17 @@ export default {
   args: {
     children: 'Some alert description goes here.',
   },
-  argTypes: {
-    onClose: { action: 'close' },
-  },
+  argTypes: Playground(
+    {
+      children: { type: 'string' },
+      closeText: {},
+      onClose: { action: 'close' },
+      severity: {},
+      title: { type: 'string' },
+      variant: {},
+    },
+    Alert,
+  ),
   component: Alert,
   tags: ['autodocs'],
   title: 'Atoms / Alert',

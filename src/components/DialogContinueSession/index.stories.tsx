@@ -13,6 +13,8 @@ import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import moment from 'moment';
 import { useState } from 'react';
 
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import { DialogContinueSession, DialogContinueSessionProps } from '.';
 
 interface StoryProps extends DialogContinueSessionProps {
@@ -62,7 +64,12 @@ export default {
   args: {
     expiresAt: moment().add(30, 'minutes').toDate(),
   },
-  argTypes: {},
+  argTypes: Playground(
+    {
+      expiresAt: { type: 'Date' },
+    },
+    DialogContinueSession,
+  ),
   component: Template,
   tags: ['autodocs'],
   title: 'Molecules / DialogContinueSession',

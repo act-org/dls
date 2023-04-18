@@ -11,6 +11,8 @@ import { Button, DialogActions, DialogContent } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
+import { Playground } from '@actinc/dls/helpers/playground';
+
 import { Dialog, DialogProps } from '.';
 
 interface StoryProps extends DialogProps {
@@ -20,6 +22,7 @@ interface StoryProps extends DialogProps {
 // eslint-disable-next-line react/prop-types
 const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
   const [open, setOpen] = useState<boolean>(false);
+
   return (
     <>
       <Button
@@ -57,7 +60,18 @@ export default {
     text: 'Some sample dialog text',
     title: 'Dialog Title',
   },
-  argTypes: {},
+  argTypes: Playground(
+    {
+      draggable: { type: 'boolean' },
+      fullScreen: {},
+      fullWidth: {},
+      maxWidth: {},
+      scroll: {},
+      text: {},
+      title: {},
+    },
+    Dialog,
+  ),
   component: Template,
   tags: ['autodocs'],
   title: 'Molecules / Dialog',

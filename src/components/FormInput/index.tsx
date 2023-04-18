@@ -27,14 +27,6 @@ export type FormInputProps = InputProps & {
   formControlProps?: FormControlProps;
 };
 
-/**
- * # Form Input
- *
- * This molecule wraps a standard label and text input to make for a quick form field setup
- * This component also has a mechanism for setting help and error messages when the field is not valid
- *
- * @param param0
- */
 export function FormInput({
   disabled,
   error,

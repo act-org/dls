@@ -15,6 +15,7 @@ import moment from 'moment';
 import { useState } from 'react';
 
 import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
+import { Playground } from '@actinc/dls/helpers/playground';
 import sort from '@actinc/dls/helpers/sort';
 import { SortObject } from '@actinc/dls/types';
 
@@ -135,7 +136,12 @@ export default {
   args: {
     totalCount: 10,
   },
-  argTypes: {},
+  argTypes: Playground(
+    {
+      color: { type: 'string' },
+    },
+    DataTable,
+  ),
   component: Template,
   tags: ['autodocs'],
   title: 'Organisms / DataTable',
