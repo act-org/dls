@@ -26,14 +26,6 @@ export type FormRadioGroupProps = RadioGroupProps & {
   label: string;
 };
 
-/**
- * # FormRadioGroup
- *
- * This moleculs wraps several controls together to bring a radio group
- * along with a label and options to display
- *
- * @param formSwitchProps
- */
 export function FormRadioGroup({
   options,
   label,
