@@ -18,15 +18,29 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import { StoryFn } from '@storybook/react';
+import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import JSONParseSafe from 'json-parse-safe';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
 import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 
-export const Template: StoryFn<SessionStorageKeySharerProps> = ({
+/**
+ * The `<SessionStorageKeySharer />` component allows a newly-opened tab to obtain
+ * a key/value pair from the Session Storage of another tab. This is useful if you
+ * are storing your application's auth token in Session Storage and want to allow
+ * your users to open your app in another tab without having to re-authenticate.
+ *
+ * The implementation was inspired by
+ * [this blog post](https://medium.com/@marciomariani/sharing-sessionstorage-between-tabs-5b6f42c6348c).
+ *
+ * Note: Since this component makes use of Session Storage and Local Storage, this
+ * component is only meant to be rendered in the browser context. SSR apps should
+ * not use Session Storage for key/value pairs that are critical to the render
+ * (such as the user's auth token).
+ */
+const Template: StoryFn<SessionStorageKeySharerProps> = ({
   keyName,
 }: SessionStorageKeySharerProps) => {
   const [keyValueRaw, setKeyValue] = useState(
@@ -103,9 +117,21 @@ export const Template: StoryFn<SessionStorageKeySharerProps> = ({
   );
 };
 
-export const argTypes = Playground(
-  {
-    keyName: { type: 'string' },
+export default {
+  args: {
+    keyName: 'mySessionKey',
   },
-  SessionStorageKeySharer,
-);
+  argTypes: Playground(
+    {
+      keyName: { type: 'string' },
+    },
+    SessionStorageKeySharer,
+  ),
+  component: Template,
+  tags: ['autodocs'],
+  title: 'Utilities / SessionStorageKeySharer',
+} as Meta<SessionStorageKeySharerProps>;
+
+export const Preview: StoryObj<SessionStorageKeySharerProps> = {
+  args: {},
+};
