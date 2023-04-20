@@ -57,3 +57,39 @@ export const Multiple = {
     />
   ),
 };
+
+export const WithAutocomplete: StoryObj<Autocomplete> = {
+  args: { autoComplete: true },
+};
+
+export const WithoutAutocomplete: StoryObj<Autocomplete> = {
+  args: { autoComplete: false },
+};
+
+export const WithAutohighlight: StoryObj<Autocomplete> = {
+  args: { autoHighlight: true },
+};
+
+export const WithAutoselect: StoryObj<Autocomplete> = {
+  args: { autoSelect: true },
+};
+
+export const WithAutohighlightAndAutoSelect: StoryObj<Autocomplete> = {
+  args: { autoHighlight: true, autoSelect: true },
+};
+
+export const FreeSolo: StoryObj<Autocomplete> = {
+  args: { freeSolo: true },
+};
+
+export const IncludeInputInList: StoryObj<Autocomplete> = {
+  args: { includeInputInList: true },
+};
+
+export const OpenOnFocus: StoryObj<Autocomplete> = {
+  args: { openOnFocus: true },
+};
+
+export const SelectOnFocus: StoryObj<Autocomplete> = {
+  args: { selectOnFocus: true },
+};
