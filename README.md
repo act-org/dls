@@ -379,6 +379,23 @@ Here are some of the more important ones:
 | npm start               | Start the [Storybook](https://storybook.js.org) component visualizer. |
 | npm test                | Run all tests.                                                        |
 | npm run release         | Publish a new release of the DLS.                                     |
+| npm run release:storybook| Publish a new release of Storybook (make sure to pull latest main)   |
+
+### Committing Code
+
+semantic-release scans commits to manage package.json versions and `CHANGELOG.MD`
+
+It is important that we accurately capture what type of development we are doing.
+
+- For changes to storybook (i.e. no change to components), use the `docs` tag:
+```
+git commit -m "docs: Added stories for Alert"
+```
+- For changes to components, use `fix` or `feat`:
+```
+git commit -m "fix: Fixed Snackbar not appear in center of screen"
+git commit -m "feat: Added Carousel component"
+```
 
 ## Pinned Packages
 
