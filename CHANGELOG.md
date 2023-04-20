@@ -1,3 +1,10 @@
+# [7.2.0](https://github.com/act-org/dls/compare/v7.1.1...v7.2.0) (2023-04-20)
+
+
+### Features
+
+* Adding more Autocomplete stories ([32180bc](https://github.com/act-org/dls/commit/32180bce3aa46f543efe20130df608ad12a90287))
+
 ## [7.1.1](https://github.com/act-org/dls/compare/v7.1.0...v7.1.1) (2023-04-18)
 
 
