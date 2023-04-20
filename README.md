@@ -387,12 +387,15 @@ semantic-release scans commits to manage package.json versions and `CHANGELOG.MD
 
 It is important that we accurately capture what type of development we are doing.
 
-- For changes to storybook (i.e. no change to components), use the `docs` tag:
-```
+* For changes to storybook (i.e. no change to components), use the `docs` tag:
+
+```bash
 git commit -m "docs: Added stories for Alert"
 ```
-- For changes to components, use `fix` or `feat`:
-```
+
+* For changes to components, use `fix` or `feat`:
+
+```bash
 git commit -m "fix: Fixed Snackbar not appear in center of screen"
 git commit -m "feat: Added Carousel component"
 ```
