@@ -6,7 +6,9 @@
  *
  * @prettier
  */
-import type { StorybookConfig } from '@storybook/core-common';
+
+import type { StorybookConfig } from '@storybook/react-webpack5';
+
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const config: StorybookConfig = {
@@ -16,11 +18,17 @@ const config: StorybookConfig = {
     '@storybook/addon-docs',
     '@storybook/addon-essentials',
     '@storybook/addon-links',
+    '@storybook/addon-mdx-gfm',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: 'webpack5',
+  docs: {
+    autodocs: 'tag',
+    defaultName: 'Documentation',
   },
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+  core: {},
   features: {
     previewMdx2: true,
     storyStoreV7: true,
@@ -39,7 +47,7 @@ const config: StorybookConfig = {
   //   ]);
   //   return options;
   // },
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../src/**/*.mdx'],
   staticDirs: ['../public'],
   typescript: {
     check: true,
@@ -61,7 +69,6 @@ const config: StorybookConfig = {
         }),
       ];
     }
-
     return config;
   },
 };

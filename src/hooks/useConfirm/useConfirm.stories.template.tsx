@@ -8,7 +8,7 @@
  */
 
 import { Button } from '@mui/material';
-import { Story } from '@storybook/react/types-6-0';
+import { StoryFn } from '@storybook/react';
 import { ReactElement } from 'react';
 
 import { ConfirmDialog, ConfirmDialogProps } from '@actinc/dls/components';
@@ -33,7 +33,7 @@ const ConfirmHook = (props: ConfirmDialogProps): ReactElement => {
   );
 };
 
-export const Template: Story<ConfirmDialogProps> = (
+export const Template: StoryFn<ConfirmDialogProps> = (
   props: ConfirmDialogProps,
 ) => {
   return (

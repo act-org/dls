@@ -22,15 +22,6 @@ import { THEME_ACT_ET } from '@actinc/dls/styles/themeActEt';
 import { THEME_ENCOURA_CLASSIC } from '@actinc/dls/styles/themeEncouraClassic';
 import { THEME_ENCOURAGE } from '@actinc/dls/styles/themeEncourage';
 
-/**
- * # Theme configuration.
- *
- * There are a few supported themes of the DLS. These themes have the applied
- * styling for the variants. If neither of these completely solve your needs,
- * you can implement a custom Material UI theme.  This should be the last resort
- * as expanding the theme to support all use cases would be the preference.
- */
-
 export interface ThemeProviderProps extends MuiThemeProviderProps {
   theme: 'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | Theme;
   locale?:
@@ -68,13 +59,6 @@ export interface ThemeProviderProps extends MuiThemeProviderProps {
     | 'zhCN';
 }
 
-/**
- * # Theme Provider
- *
- * description
- *
- * @param themeProps
- */
 export const ThemeProvider: FC<ThemeProviderProps> = ({
   theme,
   locale,
@@ -115,6 +99,10 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
       <MuiThemeProvider {...themeProps} theme={themeImpl} />
     </StyledEngineProvider>
   );
+};
+
+ThemeProvider.defaultProps = {
+  locale: undefined,
 };
 
 export default ThemeProvider;

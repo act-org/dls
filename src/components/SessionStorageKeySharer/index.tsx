@@ -72,4 +72,8 @@ export const SessionStorageKeySharer: FC<SessionStorageKeySharerProps> = ({
   return null;
 };
 
+SessionStorageKeySharer.defaultProps = {
+  onSetKeyValue: undefined,
+};
+
 export default SessionStorageKeySharer;

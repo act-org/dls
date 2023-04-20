@@ -70,7 +70,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby=":r2:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-ti0aj3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1e1hyzm-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":r2:"
             role="button"
             tabindex="0"
@@ -81,6 +81,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           </div>
           <input
             aria-hidden="true"
+            aria-invalid="false"
             class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
@@ -241,7 +242,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby=":r7:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-yx7z46-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-6qifd1-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":r7:"
             role="button"
             tabindex="0"
@@ -252,6 +253,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           </div>
           <input
             aria-hidden="true"
+            aria-invalid="false"
             class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
@@ -408,7 +410,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby=":rc:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1417ihe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-b2hql5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":rc:"
             role="button"
             tabindex="0"
@@ -419,6 +421,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
           </div>
           <input
             aria-hidden="true"
+            aria-invalid="false"
             class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
@@ -575,7 +578,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby=":rh:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1b2x8gk-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":rh:"
             role="button"
             tabindex="0"
@@ -586,6 +589,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
           </div>
           <input
             aria-hidden="true"
+            aria-invalid="false"
             class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"

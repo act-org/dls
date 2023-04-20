@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link ACT theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-11gar8a-MuiTypography-root-MuiLink-root"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Link ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1qczf8k-MuiTypography-root-MuiLink-root"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-qbgmr6-MuiTypography-root-MuiLink-root"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Link ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kh66x2-MuiTypography-root-MuiLink-root"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;

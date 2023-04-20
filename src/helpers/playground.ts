@@ -43,7 +43,7 @@ interface DocGenType {
 //   }
 // };
 
-const playgroundGroup = 'Playground';
+const playgroundGroup = 'Common';
 const eventsGroup = 'Events';
 const ariaGroup = 'Aria';
 const elseGroup = 'Everything Else';

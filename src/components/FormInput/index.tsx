@@ -20,21 +20,13 @@ import { ReactElement } from 'react';
 import { InputLabel, InputLabelProps } from '@actinc/dls/components/InputLabel';
 
 export type FormInputProps = InputProps & {
-  label?: string | ReactElement;
-  helpText?: string | ReactElement;
   errorMessage?: string;
-  labelProps?: InputLabelProps;
   formControlProps?: FormControlProps;
+  helpText?: string | ReactElement;
+  label?: string | ReactElement;
+  labelProps?: InputLabelProps;
 };
 
-/**
- * # Form Input
- *
- * This molecule wraps a standard label and text input to make for a quick form field setup
- * This component also has a mechanism for setting help and error messages when the field is not valid
- *
- * @param param0
- */
 export function FormInput({
   disabled,
   error,
@@ -76,5 +68,13 @@ export function FormInput({
     </FormControl>
   );
 }
+
+FormInput.defaultProps = {
+  errorMessage: undefined,
+  formControlProps: undefined,
+  helpText: undefined,
+  label: undefined,
+  labelProps: undefined,
+};
 
 export default FormInput;

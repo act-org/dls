@@ -6,7 +6,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-w1wlne-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ayvi6a-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1cr36wb-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -23,7 +23,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1p6l37g-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1umnkx6-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -37,7 +37,7 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1p6l37g-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1umnkx6-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -58,7 +58,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-1u8t8ph-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1xgtpuh-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-lsy7wf-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -75,7 +75,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-7f0x13-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-xyqk4b-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -89,7 +89,7 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-7f0x13-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-xyqk4b-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -110,7 +110,7 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-47bsdv-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-y3fypi-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-6dq4ou-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -127,7 +127,7 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-tmq4yf-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-wgh63s-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -141,7 +141,7 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-tmq4yf-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-wgh63s-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -162,7 +162,7 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-16h2o09-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ekag8k-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1vu6lci-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -179,7 +179,7 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1t1hzsg-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ox10af-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
@@ -193,7 +193,7 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1t1hzsg-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ox10af-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p

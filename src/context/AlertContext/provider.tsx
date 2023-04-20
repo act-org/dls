@@ -24,15 +24,12 @@ import { ServerError } from '@actinc/dls/types';
 
 import AlertContext from '.';
 
-interface Props extends Partial<ProviderContext> {
-  anchorOriginHorizontal?: 'left' | 'right' | 'center';
-  anchorOriginVertical?: 'bottom' | 'top';
+interface ProviderProps {
   children: ReactNode;
-  maxSnack?: number;
 }
 
-class Provider extends Component<Props> {
-  constructor(props: Props) {
+class Provider extends Component<ProviderProps> {
+  constructor(props: ProviderProps) {
     super(props);
 
     this._addAlert = this._addAlert.bind(this);
@@ -91,12 +88,19 @@ class Provider extends Component<Props> {
   }
 }
 
+interface AlertContextProviderProps extends Partial<ProviderContext> {
+  anchorOriginHorizontal?: 'left' | 'right' | 'center';
+  anchorOriginVertical?: 'bottom' | 'top';
+  children: ReactNode;
+  maxSnack?: number;
+}
+
 export const AlertContextProvider = ({
   anchorOriginHorizontal,
   anchorOriginVertical,
   maxSnack,
   ...otherProps
-}: Props): ReactElement<unknown> => (
+}: AlertContextProviderProps): ReactElement<unknown> => (
   <SnackbarProvider
     anchorOrigin={{
       horizontal: anchorOriginHorizontal || 'center',

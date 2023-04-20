@@ -18,12 +18,12 @@ import {
 import { ReactElement } from 'react';
 
 export type DialogProps = MuiDialogProps & {
-  title?: string;
   onClose?: (
     // eslint-disable-next-line @typescript-eslint/ban-types
     event: {},
     reason: 'backdropClick' | 'escapeKeyDown' | 'closeIconClick',
   ) => void;
+  title?: string;
 };
 
 /**
@@ -33,9 +33,9 @@ export type DialogProps = MuiDialogProps & {
  * @param formSwitchProps
  */
 export function Dialog({
-  title,
-  onClose,
   children,
+  onClose,
+  title,
   ...dialogProps
 }: DialogProps): ReactElement<DialogProps> {
   return (
@@ -64,5 +64,10 @@ export function Dialog({
     </MuiDialog>
   );
 }
+
+Dialog.defaultProps = {
+  onClose: undefined,
+  title: undefined,
+};
 
 export default Dialog;

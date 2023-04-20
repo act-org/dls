@@ -17,16 +17,6 @@ export type AlertProps = MuiAlertProps & {
   title?: string | ReactElement;
 };
 
-/**
- * # Alert
- *
- * The Alert component is used to notify the user of something. Our
- * implementation is based on the
- * <a href="https://material-ui.com/components/alert" target="_blank">Alert</a>
- * &nbsp;component from Material UI.
- *
- * @param props
- */
 export const Alert: FC<AlertProps> = forwardRef(
   (
     { children, title, ...props }: AlertProps,
@@ -41,5 +31,9 @@ export const Alert: FC<AlertProps> = forwardRef(
     );
   },
 );
+
+Alert.defaultProps = {
+  title: undefined,
+};
 
 export default Alert;
