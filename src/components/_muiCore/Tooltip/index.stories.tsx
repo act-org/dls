@@ -8,13 +8,12 @@
  */
 
 import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
+import { ClickAwayListener } from '@mui/base';
+import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react';
+import { ReactElement, useState } from 'react';
 
 import { Tooltip, TooltipProps } from './internal';
-import { ReactElement, useState } from 'react';
-import Box from '@mui/material/Box';
-import { ClickAwayListener } from '@mui/base';
-import Button from '@mui/material/Button';
 
 export default {
   args: {
@@ -51,7 +50,7 @@ export const Open: StoryObj<Tooltip> = {
 };
 
 export const Arrowless: StoryObj<Tooltip> = {
-  args: { color: 'primary', arrow: false },
+  args: { arrow: false, color: 'primary' },
 };
 
 export const EnterDelay: StoryObj<Tooltip> = {
@@ -63,17 +62,17 @@ export const EnterNextDelay: StoryObj<Tooltip> = {
 };
 
 export const EnterTouchDelay: StoryObj<Tooltip> = {
-  args: { color: 'primary', enterTouchDelay: 100, disableHoverListener: true },
+  args: { color: 'primary', disableHoverListener: true, enterTouchDelay: 100 },
 };
 
 export const ClickOnly = {
   render: (args: TooltipProps): ReactElement<unknown> => {
     const [open, setOpen] = useState(false);
-    const handleTooltipClose = () => {
+    const handleTooltipClose = (): void => {
       setOpen(false);
     };
 
-    const handleTooltipOpen = () => {
+    const handleTooltipOpen = (): void => {
       setOpen(true);
     };
     return (

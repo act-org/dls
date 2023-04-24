@@ -7,11 +7,11 @@
  * @prettier
  */
 
+import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react';
 import { ReactElement, useState } from 'react';
 
 import { Rating, RatingProps } from './internal';
-import Box from '@mui/material/Box';
 
 /**
  * Renders a standard Material UI Button using the
@@ -48,9 +48,9 @@ const labels: { [index: string]: string } = {
   5: 'Positive',
   6: 'Very Positive',
 };
-function getLabelText(value: number) {
+const getLabelText = (value: number): string => {
   return `${labels[value]}`;
-}
+};
 
 export const HoverLabel = {
   render: (args: RatingProps): ReactElement<unknown> => {
@@ -62,10 +62,10 @@ export const HoverLabel = {
           {...args}
           getLabelText={getLabelText}
           max={6}
-          onChange={(event, newValue) => {
+          onChange={(event, newValue): void => {
             setValue(newValue);
           }}
-          onChangeActive={(event, newHover) => {
+          onChangeActive={(event, newHover): void => {
             setHover(newHover);
           }}
           value={value}

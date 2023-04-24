@@ -7,12 +7,12 @@
  * @prettier
  */
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Radio } from '@mui/material';
 import Box from '@mui/material/Box';
+import { Meta, StoryObj } from '@storybook/react';
+import { ReactElement, useState } from 'react';
 
 import { Slider, SliderProps } from './internal';
-import { ReactElement, useState } from 'react';
-import { Radio } from '@mui/material';
 
 export default {
   args: {
@@ -36,18 +36,18 @@ export const DefaultValue: StoryObj<Slider> = {
 };
 
 export const MinMax: StoryObj<Slider> = {
-  args: { min: 17, max: 19 },
+  args: { max: 19, min: 17 },
 };
 
 export const Marks: StoryObj<Slider> = {
-  args: { min: 17, max: 28, marks: true },
+  args: { marks: true, max: 28, min: 17 },
 };
 
 export const Vertical = {
   render: (args: SliderProps): ReactElement<unknown> => {
     return (
       <Box sx={{ height: '100px' }}>
-        <Slider {...args} min={17} max={28} orientation="vertical"></Slider>
+        <Slider {...args} max={28} min={17} orientation="vertical" />
       </Box>
     );
   },
@@ -56,19 +56,19 @@ export const Vertical = {
 export const Scale = {
   render: (args: SliderProps): ReactElement<unknown> => {
     const [value, setValue] = useState<number | number[]>(5);
-    const scale = (number: number) => 2 ** number;
+    const scale = (number: number): number => 2 ** number;
     return (
       <Box>
         <Slider
           {...args}
-          min={3}
           max={17}
-          onChange={(event: Event, newValue: number | number[]) =>
+          min={3}
+          onChange={(event: Event, newValue: number | number[]): void =>
             setValue(newValue)
           }
           scale={scale}
           value={value}
-        ></Slider>
+        />
         <Box>{Array.isArray(value) ? value : scale(value)}</Box>
       </Box>
     );
@@ -95,7 +95,7 @@ export const ValueLabelDisplay = {
         }}
       >
         <Box sx={{ width: '60%' }}>
-          <Slider {...args} min={17} max={28} valueLabelDisplay="on"></Slider>
+          <Slider {...args} max={28} min={17} valueLabelDisplay="on" />
         </Box>
       </Box>
     );
@@ -116,11 +116,13 @@ export const ValueLabelFormat = {
         <Box sx={{ width: '60%' }}>
           <Slider
             {...args}
-            min={17}
             max={28}
+            min={17}
             valueLabelDisplay="on"
-            valueLabelFormat={(number: number) => number + ' alligators'}
-          ></Slider>
+            valueLabelFormat={(number: number): string =>
+              `${number} alligators`
+            }
+          />
         </Box>
       </Box>
     );
