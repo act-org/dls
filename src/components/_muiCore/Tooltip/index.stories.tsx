@@ -8,9 +8,12 @@
  */
 
 import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
+import { ClickAwayListener } from '@mui/base';
+import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react';
+import { ReactElement, useState } from 'react';
 
-import { Tooltip } from './internal';
+import { Tooltip, TooltipProps } from './internal';
 
 export default {
   args: {
@@ -44,4 +47,51 @@ export const Bottom: StoryObj<Tooltip> = {
 
 export const Open: StoryObj<Tooltip> = {
   args: { color: 'primary', open: true, placement: 'right' },
+};
+
+export const Arrowless: StoryObj<Tooltip> = {
+  args: { arrow: false, color: 'primary' },
+};
+
+export const EnterDelay: StoryObj<Tooltip> = {
+  args: { color: 'primary', enterDelay: 1000 },
+};
+
+export const EnterNextDelay: StoryObj<Tooltip> = {
+  args: { color: 'primary', enterNextDelay: 1500 },
+};
+
+export const EnterTouchDelay: StoryObj<Tooltip> = {
+  args: { color: 'primary', disableHoverListener: true, enterTouchDelay: 100 },
+};
+
+export const ClickOnly = {
+  render: (args: TooltipProps): ReactElement<unknown> => {
+    const [open, setOpen] = useState(false);
+    const handleTooltipClose = (): void => {
+      setOpen(false);
+    };
+
+    const handleTooltipOpen = (): void => {
+      setOpen(true);
+    };
+    return (
+      <Box>
+        <ClickAwayListener onClickAway={handleTooltipClose}>
+          <Tooltip
+            {...args}
+            disableFocusListener
+            disableHoverListener
+            disableTouchListener
+            onClose={handleTooltipClose}
+            open={open}
+            placement="right"
+            title="Tooltip title goes here"
+          >
+            <HelpCircleOutline onClick={handleTooltipOpen} />
+          </Tooltip>
+        </ClickAwayListener>
+      </Box>
+    );
+  },
 };
