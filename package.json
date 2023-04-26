@@ -97,6 +97,7 @@
     "react": "18.2.0",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "18.2.0",
+    "react-draggable": "*",
     "react-test-renderer": "18.2.0",
     "semantic-release": "21.0.1",
     "shelljs": "0.8.5",
@@ -135,7 +136,8 @@
     "@mui/system": "5.x",
     "@mui/x-data-grid": "5.x || 6.x",
     "react": "17.x || 18.x",
-    "react-dom": "17.x || 18.x"
+    "react-dom": "17.x || 18.x",
+    "react-draggable": "^4.4.5"
   },
   "publishConfig": {
     "access": "public"
