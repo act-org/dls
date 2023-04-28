@@ -15,9 +15,9 @@ import {
   Paper,
   PaperProps,
 } from '@mui/material';
-import Draggable from 'react-draggable';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { ReactElement, useState } from 'react';
+import Draggable from 'react-draggable';
 
 import { Playground } from '@actinc/dls/helpers/playground';
 
@@ -91,48 +91,16 @@ export const Preview: StoryObj<DialogProps> = {
   args: {},
 };
 
-const DraggablePaperComponent = (paperProps: PaperProps) => {
-  return (
-    <Draggable
-      cancel={'[class*="MuiDialogContent-root"]'}
-      handle=".MuiPaper-root"
-    >
-      <Paper {...paperProps}></Paper>
-    </Draggable>
-  );
-};
-
-export const DraggableDialog = {
-  render: (args: DialogProps): ReactElement<unknown> => {
-    const [open, setOpen] = useState(false);
-    console.log(args);
-    return (
-      <>
-        <Box>
-          <Button
-            onClick={(): void => {
-              setOpen(true);
-            }}
-          >
-            open
-          </Button>
-        </Box>
-
-        <Dialog
-          {...args}
-          draggable={true}
-          fullScreen={false}
-          onClose={(): void => {
-            setOpen(false);
-          }}
-          open={open}
-          PaperComponent={DraggablePaperComponent}
-          style={{ cursor: 'move' }}
-        >
-          <DialogContent>Something wicked this way comes.</DialogContent>
-        </Dialog>
-      </>
-    );
+export const DraggableDialog: StoryObj<DialogProps> = {
+  args: {
+    PaperComponent: (paperProps: PaperProps) => (
+      <Draggable
+        cancel={'[class*="MuiDialogContent-root"]'}
+        handle=".MuiPaper-root"
+      >
+        <Paper {...paperProps} />
+      </Draggable>
+    ),
   },
 };
 
