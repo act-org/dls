@@ -101,6 +101,9 @@ export const DraggableDialog: StoryObj<DialogProps> = {
         <Paper {...paperProps} />
       </Draggable>
     ),
+    style: {
+      cursor: 'move',
+    },
   },
 };
 
