@@ -29,6 +29,12 @@ In order to use the DLS, you must install it along with
 npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
 ```
 
+If you would like to use the RichTextEditor component, you will need to install two additional packages from [TinyMCE](https://www.tiny.cloud/docs/tinymce/6/)
+
+```sh
+npm install --save @tinymce/tinymce-react tinymce
+```
+
 ### Choosing a Theme
 
 This DLS is built on top of the

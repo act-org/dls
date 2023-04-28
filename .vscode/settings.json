@@ -35,6 +35,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.words": [
-    "actinc"
+    "actinc",
+    "tinymce"
   ]
 }

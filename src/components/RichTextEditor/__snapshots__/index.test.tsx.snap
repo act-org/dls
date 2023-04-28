@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading ACT theme matches the snapshot 1`] = `
+<div>
+  <textarea
+    id="tiny-react-test-identifier"
+    style="visibility: hidden;"
+  />
+</div>
+`;
+
+exports[`Loading ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <textarea
+    id="tiny-react-test-identifier"
+    style="visibility: hidden;"
+  />
+</div>
+`;
+
+exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <textarea
+    id="tiny-react-test-identifier"
+    style="visibility: hidden;"
+  />
+</div>
+`;
+
+exports[`Loading ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <textarea
+    id="tiny-react-test-identifier"
+    style="visibility: hidden;"
+  />
+</div>
+`;

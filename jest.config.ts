@@ -29,7 +29,10 @@ collectCoverage: true,
     'internal.tsx',
   ],
   coverageReporters: ['text', 'html'],
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' }),
+  moduleNameMapper: {
+    "^.+\\.(css|less|sass|scss)$": "<rootDir>/src/helpers/test/mocks/styleMock.tsx",
+    ...pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' })
+  },
   preset: 'ts-jest',
   roots: ['<rootDir>/src'],
   testEnvironment: 'jsdom',

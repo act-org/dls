@@ -27,6 +27,7 @@ export * from './IdleTimer';
 export * from './InputLabel';
 export * from './Loading';
 export * from './RenderMetaTags';
+export * from './RichTextEditor';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
 export * from './SessionTimer';
