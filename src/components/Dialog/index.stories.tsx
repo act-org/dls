@@ -72,8 +72,8 @@ export default {
       fullScreen: { type: 'boolean' },
       fullWidth: { type: 'boolean' },
       maxWidth: {
-        options: ['xs', 'sm', 'md', 'lg', 'xl', false],
         control: { type: 'radio' },
+        options: ['xs', 'sm', 'md', 'lg', 'xl', false],
       },
       scroll: {},
       text: {},
@@ -116,6 +116,7 @@ export const FullWidth: StoryObj<DialogProps> = {
 
 export const ScrollBody = {
   args: {
+    scroll: 'body',
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
 et ex efficitur, fringilla magna a, accumsan mi. Nunc tincidunt
 pretium dolor non fermentum. Sed non facilisis erat. Sed dictum erat
@@ -164,12 +165,12 @@ bibendum tellus ultricies. Curabitur vel tellus vel mauris rhoncus
 elementum quis vestibulum ex. Sed porta dapibus tincidunt.
 Vestibulum vitae purus mauris. Pellentesque congue enim eget cursus
 laoreet.`,
-    scroll: 'body',
   },
 };
 
 export const ScrollPaper = {
   args: {
+    scroll: 'paper',
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
 et ex efficitur, fringilla magna a, accumsan mi. Nunc tincidunt
 pretium dolor non fermentum. Sed non facilisis erat. Sed dictum erat
@@ -218,7 +219,6 @@ bibendum tellus ultricies. Curabitur vel tellus vel mauris rhoncus
 elementum quis vestibulum ex. Sed porta dapibus tincidunt.
 Vestibulum vitae purus mauris. Pellentesque congue enim eget cursus
 laoreet.`,
-    scroll: 'paper',
   },
 };
 
