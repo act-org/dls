@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import { Radio } from '@mui/material';
 import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react';
 import { ReactElement, useState } from 'react';
@@ -63,7 +62,7 @@ export const Scale = {
           {...args}
           max={17}
           min={3}
-          onChange={(event: Event, newValue: number | number[]): void =>
+          onChange={(_, newValue: number | number[]): void =>
             setValue(newValue)
           }
           scale={scale}
