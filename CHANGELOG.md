@@ -1,3 +1,10 @@
+## [7.2.1](https://github.com/act-org/dls/compare/v7.2.0...v7.2.1) (2023-05-02)
+
+
+### Bug Fixes
+
+* Upgraded npm deps to their latest compatible releases ([233df06](https://github.com/act-org/dls/commit/233df06eb476694bcee8dfad4cc7867933fe029b))
+
 # [7.2.0](https://github.com/act-org/dls/compare/v7.1.1...v7.2.0) (2023-04-20)
 
 

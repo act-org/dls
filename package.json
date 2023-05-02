@@ -217,5 +217,5 @@
     "test:unit": "jest --maxWorkers=2 --verbose"
   },
   "types": "index.d.ts",
-  "version": "7.2.0"
+  "version": "7.2.1"
 }
