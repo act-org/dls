@@ -62,10 +62,10 @@ export const HoverLabel = {
           {...args}
           getLabelText={getLabelText}
           max={6}
-          onChange={(event, newValue): void => {
+          onChange={(_, newValue): void => {
             setValue(newValue);
           }}
-          onChangeActive={(event, newHover): void => {
+          onChangeActive={(_, newHover): void => {
             setHover(newHover);
           }}
           value={value}
