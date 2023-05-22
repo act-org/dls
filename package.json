@@ -48,7 +48,7 @@
     "@semantic-release/git": "10.0.1",
     "@storybook/addon-a11y": "7.0.7",
     "@storybook/addon-actions": "7.0.7",
-    "@storybook/addon-controls": "7.0.7",
+    "@storybook/addon-controls": "7.0.13",
     "@storybook/addon-docs": "7.0.7",
     "@storybook/addon-essentials": "7.0.7",
     "@storybook/addon-links": "7.0.7",
