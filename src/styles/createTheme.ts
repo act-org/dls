@@ -9,11 +9,19 @@
 
 import { createTheme as muiCreateTheme } from '@mui/material/styles';
 
-import { CustomTheme, CustomThemeOptions } from '@actinc/dls/types';
+import { CustomTheme, CustomThemeOptions } from '../types';
+
+import CustomColorsDictionary from './colors/customColorsDictionary';
 
 export const createTheme = <T extends object>(
   options: CustomThemeOptions<T>,
   ...args: object[]
-): CustomTheme<T> => muiCreateTheme(options, ...args) as CustomTheme<T>;
+): CustomTheme<T> => {
+  const theme = muiCreateTheme(options, ...args) as CustomTheme<T>;
+  if (!options.palette?.customColors) {
+    theme.palette.customColors = new CustomColorsDictionary();
+  }
+  return theme;
+};
 
 export default createTheme;
