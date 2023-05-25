@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import CustomColorsDictionary from './customColorsDictionary';
+import CustomColorsDictionary from './colors/customColorsDictionary';
 
 declare module '@mui/material/styles' {
   interface Palette {
