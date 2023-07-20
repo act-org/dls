@@ -8,13 +8,9 @@
     "noEmit": false,
     "outDir": "./.storybook",
     "paths": {
-      "@actinc/dls/*": [
-        "./src/*"
-      ]
+      "@actinc/dls/*": ["./src/*"]
     },
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+    "typeRoots": ["./node_modules/@types"]
   },
   "exclude": [
     "./.storybook/*",
@@ -25,8 +21,5 @@
     "**/icons/*"
   ],
   "extends": "./node_modules/@actinc/eslint-config/tsconfig.json",
-  "include": [
-    "./index.d.ts",
-    "./src/**/*"
-  ]
+  "include": ["./index.d.ts", "./src/**/*"]
 }

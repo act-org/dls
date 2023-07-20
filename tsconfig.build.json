@@ -22,5 +22,5 @@
     "./storybook-static/*",
     "**/test/*",
     "**/icons/*"
-  ],
+  ]
 }

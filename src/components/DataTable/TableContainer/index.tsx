@@ -15,9 +15,7 @@ import { FC, ReactElement } from 'react';
 
 import Component from './Component';
 
-export interface TableContainerProps extends MuiTableContainerProps {
-  component?: ReactElement<unknown>;
-}
+export type TableContainerProps = MuiTableContainerProps;
 
 const TableContainer: FC<TableContainerProps> = (
   props: TableContainerProps,

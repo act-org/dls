@@ -34,7 +34,5 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": [
-    "actinc"
-  ]
+  "cSpell.words": ["actinc"]
 }
