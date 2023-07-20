@@ -1,3 +1,10 @@
+## [7.2.2](https://github.com/act-org/dls/compare/v7.2.1...v7.2.2) (2023-07-20)
+
+
+### Bug Fixes
+
+* Trigger a new build ([1f825a8](https://github.com/act-org/dls/commit/1f825a8fc53f65c6ea406496bbcac9f9169db116))
+
 ## [7.2.1](https://github.com/act-org/dls/compare/v7.2.0...v7.2.1) (2023-05-02)
 
 
