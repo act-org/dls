@@ -404,6 +404,5 @@ git commit -m "feat: Added Carousel component"
 
 Some npm packages are pinned to non-current versions for a specific reason:
 
-| Package      | Version | Reason                                                                                                                            |
-|:------------ |:------- |:--------------------------------------------------------------------------------------------------------------------------------- |
-| `typescript` | `4.9.5` | `5.x` is [not yet compatible](https://github.com/styleguidist/react-docgen-typescript/issues/474) with `react-docgen-typescript`. |
+| Package      | Version | Reason |
+|:------------ |:------- |:-------|
