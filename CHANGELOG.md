@@ -1,3 +1,10 @@
+## [7.2.3](https://github.com/act-org/dls/compare/v7.2.2...v7.2.3) (2023-07-24)
+
+
+### Bug Fixes
+
+* Adjust MUI peer deps to proper versions ([a2eca17](https://github.com/act-org/dls/commit/a2eca174f7ff32f91293d3223320604b5494fb02))
+
 ## [7.2.2](https://github.com/act-org/dls/compare/v7.2.1...v7.2.2) (2023-07-20)
 
 
