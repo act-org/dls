@@ -1,3 +1,10 @@
+# [7.3.0](https://github.com/act-org/dls/compare/v7.2.3...v7.3.0) (2023-07-28)
+
+
+### Features
+
+* Added support for HTML content in snackbar alerts ([f7af0fa](https://github.com/act-org/dls/commit/f7af0fa21f6ca6925cfc37d4ba0870f0d0acb6b9))
+
 ## [7.2.3](https://github.com/act-org/dls/compare/v7.2.2...v7.2.3) (2023-07-24)
 
 
