@@ -41,7 +41,7 @@ class Provider extends Component<ProviderProps> {
     message,
     options,
   }: {
-    message: ReactNode;
+    message: string | ReactNode;
     options?: OptionsObject;
   }): Promise<void> {
     const key = new Date().getTime();
@@ -50,7 +50,7 @@ class Provider extends Component<ProviderProps> {
         content: (
           <SnackbarAlert
             id={key}
-            message={String(message)}
+            message={message}
             variant={get(options, 'variant')}
           />
         ),

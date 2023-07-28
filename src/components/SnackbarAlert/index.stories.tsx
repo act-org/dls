@@ -53,7 +53,17 @@ const Template: StoryFn<StoryProps> = ({
                       setCounter(newCounter);
 
                       await actions.addAlert({
-                        message: `Alert number ${newCounter}`,
+                        message: (
+                          <span>
+                            Alert number {newCounter} with&nbsp;
+                            <b>
+                              <i>
+                                <u>html content</u>
+                              </i>
+                            </b>
+                            .
+                          </span>
+                        ),
                         options: {
                           variant,
                         },
