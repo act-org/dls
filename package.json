@@ -84,7 +84,7 @@
     "babel-plugin-root-import": "6.6.0",
     "babel-plugin-transform-imports": "2.0.0",
     "clean-publish": "4.2.0",
-    "core-js": "3.31.1",
+    "core-js": "3.32.1",
     "cross-env": "7.0.3",
     "eslint": "8.45.0",
     "eslint-import-resolver-typescript": "3.5.5",
