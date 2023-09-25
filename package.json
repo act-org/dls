@@ -60,7 +60,7 @@
     "@storybook/blocks": "7.1.0",
     "@storybook/mdx2-csf": "1.1.0",
     "@storybook/react": "7.1.0",
-    "@storybook/react-webpack5": "7.1.0",
+    "@storybook/react-webpack5": "7.4.5",
     "@storybook/storybook-deployer": "2.8.16",
     "@storybook/theming": "7.1.0",
     "@testing-library/jest-dom": "5.17.0",
