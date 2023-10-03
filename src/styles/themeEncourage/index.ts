@@ -17,7 +17,7 @@ import { CustomThemeOptions, ICustomDims } from '@actinc/dls/types';
 import baseTheme from './baseTheme';
 import components from './components';
 import customDims from './customDims';
-import palette, { CustomPaletteOptions } from './palette';
+import palette, { CustomPaletteOptions, customPalette } from './palette';
 import props from './props';
 import shadows from './shadows';
 import spacing, { SPACING_PX } from './spacing';
@@ -32,6 +32,7 @@ export type ThemeCustomizations = ICustomDims & {
   spacingPx: number;
 };
 
+/** @deprecated Use `THEME_ENCOURAGE_V2` instead. `THEME_ENCOURAGE` has planned obsolescence. */
 export const THEME_ENCOURAGE: CustomThemeOptions<ThemeCustomizations> =
   deepMerge(
     baseTheme,
@@ -48,7 +49,7 @@ export const THEME_ENCOURAGE: CustomThemeOptions<ThemeCustomizations> =
       },
       components,
       customDims,
-      palette,
+      palette: deepMerge(palette, customPalette),
       props,
       shadows,
       spacing,
@@ -59,5 +60,34 @@ export const THEME_ENCOURAGE: CustomThemeOptions<ThemeCustomizations> =
     // Replace arrays instead of merging them together
     { arrayMerge: (_: unknown[], source: unknown[]) => source },
   );
+
+export const THEME_ENCOURAGE_V2: CustomThemeOptions<
+  Omit<ThemeCustomizations, 'palette'>
+> = deepMerge(
+  baseTheme,
+  typeOk<CustomThemeOptions<Omit<ThemeCustomizations, 'palette'>>>()({
+    breakpoints: {
+      values: {
+        lg: 1280,
+        md: 960,
+        mobile: 720,
+        sm: 720,
+        xl: 1280,
+        xs: 375,
+      },
+    },
+    components,
+    customDims,
+    palette,
+    props,
+    shadows,
+    spacing,
+    spacingPx: SPACING_PX,
+    typography,
+    zIndex,
+  }),
+  // Replace arrays instead of merging them together
+  { arrayMerge: (_: unknown[], source: unknown[]) => source },
+);
 
 export default createTheme(THEME_ENCOURAGE);
