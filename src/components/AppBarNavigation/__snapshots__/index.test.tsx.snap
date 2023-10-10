@@ -162,7 +162,7 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-16h2o09-MuiPaper-root-MuiAppBar-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1vu6lci-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-p0r7j9-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -179,11 +179,11 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ox10af-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-qox753-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-nisqju-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-juuzfu-MuiTypography-root"
           >
             Home
           </p>
@@ -193,11 +193,11 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ox10af-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-qox753-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-bkgv8l-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1j7rahv-MuiTypography-root"
           >
             Other Page
           </p>

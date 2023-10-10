@@ -238,7 +238,7 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
       class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-jbymjm-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1wk3jh3-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1j4urzt-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -246,7 +246,7 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
         Movie
       </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-10vqohj-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1gl4g8u-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
           aria-autocomplete="list"
@@ -266,7 +266,7 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-152w9m0-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-12k4kxi-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"

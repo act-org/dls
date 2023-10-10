@@ -82,7 +82,7 @@ exports[`IconButton ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`IconButton ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1hv8qdn-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ztww2v-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
