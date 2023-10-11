@@ -16,16 +16,9 @@ import cssRadius from '@actinc/dls/helpers/cssRadius';
 import px from '@actinc/dls/helpers/px';
 import pxToNumber from '@actinc/dls/helpers/pxToNumber';
 
+import { navy, seafoam, mist, surface, teal } from './colors';
 import customDims from './customDims';
-import palette, {
-  black60,
-  mist30,
-  navy15,
-  navy30,
-  navyHover,
-  seafoam,
-  seafoam30,
-} from './palette';
+import palette, { customPalette, navyHover } from './palette';
 import shadows from './shadows';
 import spacing, { SPACING_PX } from './spacing';
 import typography, {
@@ -93,8 +86,8 @@ export const components: ThemeOptions['components'] = {
       }),
       root: ({ ownerState }) => ({
         ...cssRadius(12),
-        background: navy15,
-        border: `1px solid ${navy30}`,
+        background: navy[15],
+        border: `1px solid ${navy[30]}`,
         padding: `${spacing(2)} ${spacing(3)}`,
 
         ...(!ownerState.disableGutters && {
@@ -170,7 +163,7 @@ export const components: ThemeOptions['components'] = {
   MuiBackdrop: {
     styleOverrides: {
       root: {
-        background: palette.background.overlay,
+        background: customPalette.background.overlay,
       },
     },
   },
@@ -178,7 +171,7 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       separator: {
         ...typography.body1,
-        color: palette.text.over.light.medium,
+        color: customPalette.text.over.light.medium,
       },
     },
   },
@@ -193,7 +186,7 @@ export const components: ThemeOptions['components'] = {
       },
       containedPrimary: {
         '&:disabled': {
-          backgroundColor: palette.background.disabled,
+          backgroundColor: customPalette.background.disabled,
           color: palette.primary.contrastText,
         },
         '&:hover': {
@@ -206,7 +199,7 @@ export const components: ThemeOptions['components'] = {
       outlinedPrimary: {
         '&:disabled': {
           backgroundColor: palette.primary.contrastText,
-          color: palette.background.disabled,
+          color: customPalette.background.disabled,
         },
         '&:hover': {
           backgroundColor: palette.action.hover,
@@ -288,8 +281,8 @@ export const components: ThemeOptions['components'] = {
   MuiChip: {
     styleOverrides: {
       filled: {
-        background: seafoam30,
-        border: `1px solid ${seafoam}`,
+        background: seafoam[30],
+        border: `1px solid ${seafoam[100]}`,
       },
       label: {
         paddingBottom: 0,
@@ -337,7 +330,7 @@ export const components: ThemeOptions['components'] = {
         width: '100%',
       },
       root: {
-        border: `1px solid ${palette.branding.mist}`,
+        border: `1px solid ${mist[100]}`,
         borderWidth: 1,
       },
     },
@@ -381,7 +374,7 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       root: {
         '&.Mui-disabled': {
-          background: mist30,
+          background: mist[30],
         },
         padding: spacing(1),
       },
@@ -405,7 +398,7 @@ export const components: ThemeOptions['components'] = {
         transformOrigin: undefined,
       },
       root: {
-        color: black60,
+        color: surface.black[60],
         fontFamily: secondaryFontFamily,
         fontSize: 14,
         fontWeight: typography.fontWeightMedium,
@@ -417,7 +410,7 @@ export const components: ThemeOptions['components'] = {
   MuiLinearProgress: {
     styleOverrides: {
       bar: {
-        background: palette.progress.ongoing,
+        background: customPalette.progress.ongoing,
       },
       root: {
         ...cssRadius(6),
@@ -519,14 +512,14 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       root: {
         ...cssRadius(0),
-        color: palette.branding.navy,
+        color: navy[100],
       },
     },
   },
   MuiTabs: {
     styleOverrides: {
       indicator: {
-        background: palette.branding.teal,
+        background: teal[100],
       },
     },
   },

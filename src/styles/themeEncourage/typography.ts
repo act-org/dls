@@ -12,7 +12,7 @@ import { TypographyVariantsOptions } from '@mui/material/styles';
 import px from '@actinc/dls/helpers/px';
 import { Px } from '@actinc/dls/types';
 
-import palette from './palette';
+import { customPalette } from './palette';
 
 export const primaryFontFamily = [
   '"Work Sans"',
@@ -76,7 +76,7 @@ export const INPUT_FONT_SIZE: IFontSize = {
 const typography: TypographyVariantsOptions = {
   allVariants: {
     ...BASE_FONT_SIZE,
-    color: palette.text.over.light.high,
+    color: customPalette.text.over.light.high,
     fontFamily: primaryFontFamily,
   },
   body1: {

@@ -116,7 +116,7 @@ exports[`Loading ENCOURAGE theme matches the snapshot 1`] = `
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1elcm4w-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1u4ue4w-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."

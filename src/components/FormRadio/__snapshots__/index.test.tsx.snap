@@ -167,7 +167,7 @@ exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
     id="primaryswitch"
   >
     <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-18b3vsy-MuiButtonBase-root-MuiRadio-root"
+      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-fv5a5f-MuiButtonBase-root-MuiRadio-root"
     >
       <input
         class="PrivateSwitchBase-input css-1m9pwf3"

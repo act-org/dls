@@ -1,0 +1,43 @@
+
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+import colors from 'src/styles/themeEncourage/colors'
+
+<Meta title="Foundations / Colors / ENCOURAGE" />
+
+<h1>ENCOURAGE</h1>
+<p>Encourage Colors as defined in the Encourage Design System</p>
+<p>`import colors from '@actinc/dls/styles/themeEncourage/colors'`</p>
+<ColorPalette>
+{
+  Object.keys(colors).map((colorCategory) => {
+    switch (colorCategory) {
+      case 'surface':
+        return Object.keys(colors[colorCategory]).map((surfaceColor) => <ColorItem
+          title={`surface.${surfaceColor}`}
+          subtitle="Surface"
+          colors={Object.keys(colors[colorCategory][surfaceColor]).reduce((a, b) => ({
+            ...a,
+            [b]: colors[colorCategory][surfaceColor][b],
+          }), {})}
+        />)
+      case 'utility':
+        return Object.keys(colors[colorCategory]).map((utilityColor) => <ColorItem
+          title={`utility.${utilityColor}`}
+          subtitle="Utility"
+          colors={{[utilityColor]: colors[colorCategory][utilityColor]}}
+        />)
+      default:
+        return <ColorItem
+          title={colorCategory}
+          subtitle="Brand"
+          colors={Object.keys(colors[colorCategory]).reduce((a, b) => ({
+            ...a,
+            [b]: colors[colorCategory][b],
+          }), {})}
+        />
+      }
+  })
+}
+
+</ColorPalette>

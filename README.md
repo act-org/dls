@@ -393,10 +393,15 @@ It is important that we accurately capture what type of development we are doing
 git commit -m "docs: Added stories for Alert"
 ```
 
-* For changes to components, use `fix` or `feat`:
+* For patches to existing components, use `fix`:
 
 ```bash
 git commit -m "fix: Fixed Snackbar not appear in center of screen"
+```
+
+* For new functionality, use `feat`:
+
+```bash
 git commit -m "feat: Added Carousel component"
 ```
 

@@ -45,7 +45,7 @@ exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Link ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1kh66x2-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1cb3y7q-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 /**
  * Copyright (c) ACT, Inc. and its affiliates.
  *
@@ -16,25 +17,41 @@ import {
   recomposeColor,
 } from '@mui/material/styles';
 
-import { typeOk } from '@actinc/dls/helpers/types';
+import colors from './colors';
 
+/** @deprecated Not a part of the design system */
 export const beige = '#fffbe0';
-export const black60 = '#666666';
-export const fuschia = '#d66bbd';
-export const mist = '#c9d1d6';
-// Tints, or lighter values, of each color are defined at 70%, 50%, and 30% of each base color.
-export const mist30 = lighten(mist, 0.3);
-export const navy = '#002d61';
-export const navy15 = '#D9E0E7';
-export const navy30 = '#B3C0D0';
+/** @deprecated Use `import { surface } from 'dls/../colors` - surface.black[60] */
+export const black60 = colors.surface.black[60];
+/** @deprecated Use `import { fuchsia } from 'dls/../colors` - fuchsia[100] */
+export const fuschia = colors.fuchsia[100];
+/** @deprecated Use `import { mist } from 'dls/../colors` - mist[100] */
+export const mist = colors.mist[100];
+/** @deprecated Use `import { mist } from 'dls/../colors` - mist[30] */
+export const mist30 = colors.mist[30];
+/** @deprecated Use `import { navy } from 'dls/../colors` - navy[100] */
+export const navy = colors.navy[100];
+/** @deprecated Use `import { navy } from 'dls/../colors` - navy[15] */
+export const navy15 = colors.navy[15];
+/** @deprecated Use `import { navy } from 'dls/../colors` - navy[100] */
+export const navy30 = colors.navy[30];
+/** @deprecated Not a part of the design system */
 export const navyHover = ' #566C8E';
-export const neon = '#fbe232';
-export const orange = '#eb6645';
+/** @deprecated Use `import { neon } from 'dls/../colors` - neon[100] */
+export const neon = colors.neon[100];
+/** @deprecated Use `import { orange } from 'dls/../colors` - orange[100] */
+export const orange = colors.orange[100];
+/** @deprecated Not a part of the design system */
 export const paleBrown = '#d6dce0';
-export const seafoam = '#added1';
-export const seafoam30 = lighten(seafoam, 0.3);
-export const teal = '#00ada7';
-export const watermelon = '#f94868';
+/** @deprecated Use `import { seafoam } from 'dls/../colors` - seafoam[100] */
+export const seafoam = colors.seafoam[100];
+/** @deprecated Use `import { seafoam } from 'dls/../colors` - seafoam[30] */
+export const seafoam30 = colors.seafoam[30];
+/** @deprecated Use `import { teal } from 'dls/../colors` - teal[100] */
+export const teal = colors.teal[100];
+/** @deprecated Renamed to `utility.savedCollegeHeartFill` https://www.figma.com/file/4JazmqwcfRVZyRq6vRkf05/E4S-Web---Design-System?type=design&node-id=1042-11958&mode=design&t=r8TW3rOvC7CAcP07-4 */
+export const watermelon = colors.utility.savedCollegeHeartFill;
+/** @deprecated Use `neon` not `yellow` */
 export const yellow = neon;
 
 export type CustomPaletteOptions = PaletteOptions & {
@@ -68,7 +85,7 @@ export type CustomPaletteOptions = PaletteOptions & {
     ongoing: string;
     success: string;
   };
-  text: TypeText & {
+  text: Partial<TypeText> & {
     over: {
       dark: {
         medium: string;
@@ -82,19 +99,17 @@ export type CustomPaletteOptions = PaletteOptions & {
   };
 };
 
-const palette = typeOk<CustomPaletteOptions>()({
+/** @deprecated Do not extend the base MUI palette */
+export const customPalette = {
   action: {
-    active: navy,
     activeHover: navyHover,
-    hover: navy15,
   },
   background: {
-    default: recomposeColor({ type: 'rgba', values: [193, 200, 212, 0.2] }),
     disabled: '#828282',
     inset: grey[200],
     overlay: alpha(common.black, 0.38),
-    paper: common.white,
   },
+  /** @deprecated Use colors from `@actinc/dls/styles/themeEncourage/colors` */
   branding: {
     fuschia,
     mist,
@@ -106,20 +121,9 @@ const palette = typeOk<CustomPaletteOptions>()({
     watermelon,
     yellow,
   },
-  error: {
-    main: red[700],
-  },
-  info: {
-    main: common.white,
-  },
   maintenance: {
     background: beige,
     border: paleBrown,
-  },
-  primary: {
-    contrastText: common.white,
-    light: '#4D6C90',
-    main: navy,
   },
   progress: {
     failure: red[700],
@@ -128,16 +132,8 @@ const palette = typeOk<CustomPaletteOptions>()({
     ongoing: fuschia,
     success: green[400],
   },
-  secondary: {
-    contrastText: navy,
-    main: common.white,
-  },
-  success: {
-    contrastText: '#2E7D32',
-    main: '#e1e9e2',
-  },
   text: {
-    disabled: lighten(common.black, 0.25),
+    /** @deprecated Use `text.primary`, `text.secondary` and `text.disabled` instead */
     over: {
       dark: {
         high: 'rgba(0, 0, 0, 0.87)',
@@ -148,12 +144,45 @@ const palette = typeOk<CustomPaletteOptions>()({
         medium: '#666666',
       },
     },
+  },
+} satisfies CustomPaletteOptions;
+
+const palette = {
+  action: {
+    active: colors.navy[100],
+    hover: colors.navy[15],
+  },
+  background: {
+    default: recomposeColor({ type: 'rgba', values: [193, 200, 212, 0.2] }),
+    paper: common.white,
+  },
+  error: {
+    main: red[700],
+  },
+  info: {
+    main: common.white,
+  },
+  primary: {
+    contrastText: common.white,
+    light: '#4D6C90',
+    main: navy,
+  },
+  secondary: {
+    contrastText: colors.navy[100],
+    main: common.white,
+  },
+  success: {
+    contrastText: '#2E7D32',
+    main: '#e1e9e2',
+  },
+  text: {
+    disabled: lighten(common.black, 0.25),
     primary: lighten(common.black, 0.13),
     secondary: grey[400],
   },
   warning: {
     main: red[700],
   },
-});
+} satisfies PaletteOptions;
 
 export default palette;
