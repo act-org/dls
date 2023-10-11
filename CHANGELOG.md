@@ -1,3 +1,10 @@
+# [7.4.0](https://github.com/act-org/dls/compare/v7.3.0...v7.4.0) (2023-10-11)
+
+
+### Features
+
+* Add colors to Encourage for more flexability ([293597d](https://github.com/act-org/dls/commit/293597d47b24b6bb41afe487fc889704ff7ffd80))
+
 # [7.3.0](https://github.com/act-org/dls/compare/v7.2.3...v7.3.0) (2023-07-28)
 
 
