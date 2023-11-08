@@ -7,12 +7,17 @@
  * @prettier
  */
 
-import { TypographyVariantsOptions } from '@mui/material/styles';
+import {
+  TypographyVariantsOptions,
+  createTheme as muiCreateTheme,
+} from '@mui/material/styles';
 
 import px from '@actinc/dls/helpers/px';
 import { Px } from '@actinc/dls/types';
 
 import { customPalette } from './palette';
+
+const theme = muiCreateTheme();
 
 export const primaryFontFamily = [
   '"Work Sans"',
@@ -85,22 +90,56 @@ const typography: TypographyVariantsOptions = {
     },
     ...BASE_FONT_SIZE,
     fontFamily: secondaryFontFamily,
+    fontSize: '16px',
     fontWeight: 400,
+    lineHeight: '24px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
   },
   body2: {
     '& > strong': {
       fontWeight: 700,
     },
     fontFamily: secondaryFontFamily,
-    fontSize: 14,
+    fontSize: '14px',
     fontWeight: 400,
     letterSpacing: px(0),
-    lineHeight: px(20),
+    lineHeight: '20px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '14px',
+      fontWeight: 400,
+      lineHeight: '20px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '14px',
+      fontWeight: 400,
+      lineHeight: '20px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '14px',
+      fontWeight: 400,
+      lineHeight: '20px',
+    },
   },
   button: {
     ...INPUT_FONT_SIZE,
     fontFamily: primaryFontFamily,
+    fontSize: '16px',
     fontWeight: 600,
+    lineHeight: '20px',
   },
   caption: {
     fontFamily: secondaryFontFamily,
@@ -111,50 +150,127 @@ const typography: TypographyVariantsOptions = {
   },
   fontFamily: primaryFontFamily,
   fontWeightBold: 800,
-  fontWeightLight: 200,
+  fontWeightLight: 500,
   fontWeightMedium: 600,
   fontWeightRegular: 400,
   h1: {
     fontFamily: primaryFontFamily,
-    fontSize: 48,
-    fontWeight: 600,
-    letterSpacing: px(-1),
-    lineHeight: px(64),
-  },
-  h2: {
-    fontFamily: primaryFontFamily,
-    fontSize: 40,
-    fontWeight: 600,
-    letterSpacing: px(-1),
-    lineHeight: px(48),
-  },
-  h3: {
-    fontFamily: primaryFontFamily,
     fontSize: 32,
     fontWeight: 600,
     letterSpacing: px(-1),
-    lineHeight: px(40),
+    lineHeight: px(38),
+    [theme.breakpoints.up('sm')]: {
+      fontSize: 32,
+      lineHeight: px(38),
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 48,
+      lineHeight: px(64),
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: 48,
+      lineHeight: px(64),
+    },
+  },
+  h2: {
+    fontFamily: primaryFontFamily,
+    fontSize: '28px',
+    fontWeight: 500,
+    letterSpacing: px(-1),
+    lineHeight: '32px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '28px',
+      fontWeight: 500,
+      lineHeight: '32px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '40px',
+      fontWeight: 600,
+      lineHeight: '48px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '40px',
+      fontWeight: 600,
+      lineHeight: '48px',
+    },
+  },
+  h3: {
+    fontFamily: primaryFontFamily,
+    fontSize: '24px',
+    fontWeight: 600,
+    letterSpacing: px(-1),
+    lineHeight: '32px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '24px',
+      fontWeight: 600,
+      lineHeight: '32px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '32px',
+      fontWeight: 600,
+      lineHeight: '40px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '32px',
+      fontWeight: 600,
+      lineHeight: '40px',
+    },
   },
   h4: {
     fontFamily: primaryFontFamily,
-    fontSize: 28,
+    fontSize: '20px',
     fontWeight: 600,
     letterSpacing: px(-0.5),
-    lineHeight: px(40),
+    lineHeight: '24px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '20px',
+      fontWeight: 600,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '28px',
+      fontWeight: 600,
+      lineHeight: '40px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '28px',
+      fontWeight: 600,
+      lineHeight: '40px',
+    },
   },
   h5: {
     fontFamily: primaryFontFamily,
-    fontSize: 24,
+    fontSize: '18px',
     fontWeight: 600,
     letterSpacing: px(-0.75),
-    lineHeight: px(40),
+    lineHeight: '24px',
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '24px',
+      fontWeight: 600,
+      lineHeight: '32px',
+    },
   },
   h6: {
     fontFamily: primaryFontFamily,
-    fontSize: 18,
-    fontWeight: 600,
+    fontSize: '18px',
+    fontWeight: 500,
     letterSpacing: px(-0.5),
-    lineHeight: px(24),
+    lineHeight: '24px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '18px',
+      fontWeight: 500,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '18px',
+      fontWeight: 600,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '18px',
+      fontWeight: 600,
+      lineHeight: '24px',
+    },
   },
   overline: {
     fontFamily: tertiaryFontFamily,
@@ -165,17 +281,48 @@ const typography: TypographyVariantsOptions = {
   },
   subtitle1: {
     fontFamily: secondaryFontFamily,
-    fontSize: 18,
+    fontSize: '18px',
     fontWeight: 400,
     letterSpacing: px(0),
     lineHeight: px(24),
     textTransform: undefined, // Clear the base theme's transform
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '18px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '18px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '18px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
   },
   subtitle2: {
     fontFamily: secondaryFontFamily,
     fontSize: 16,
+    fontWeight: 400,
     letterSpacing: px(0),
     lineHeight: px(24),
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
   },
 };
 

@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import { BreakpointsOptions } from '@mui/material/styles';
 import deepMerge from 'deepmerge';
 
 import { typeOk } from '@actinc/dls/helpers/types';
@@ -25,9 +24,6 @@ import typography from './typography';
 import zIndex from './zIndex';
 
 export type ThemeCustomizations = ICustomDims & {
-  breakpoints: BreakpointsOptions & {
-    values: BreakpointsOptions['values'] & { mobile: number };
-  };
   palette: CustomPaletteOptions;
   spacingPx: number;
 };
@@ -66,16 +62,6 @@ export const THEME_ENCOURAGE_V2: CustomThemeOptions<
 > = deepMerge(
   baseTheme,
   typeOk<CustomThemeOptions<Omit<ThemeCustomizations, 'palette'>>>()({
-    breakpoints: {
-      values: {
-        lg: 1280,
-        md: 960,
-        mobile: 720,
-        sm: 720,
-        xl: 1280,
-        xs: 375,
-      },
-    },
     components,
     customDims,
     palette,
