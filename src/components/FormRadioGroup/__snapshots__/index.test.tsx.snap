@@ -392,7 +392,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-jayakb-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-1vfm0do-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-1y8i3v8-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -455,7 +455,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1hg1gry-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-s6twv8-MuiTypography-root"
         >
           one
         </span>
@@ -504,7 +504,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1hg1gry-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-s6twv8-MuiTypography-root"
         >
           two
         </span>

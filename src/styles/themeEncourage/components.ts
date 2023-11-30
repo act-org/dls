@@ -169,10 +169,10 @@ export const components: ThemeOptions['components'] = {
   },
   MuiBreadcrumbs: {
     styleOverrides: {
-      separator: () => ({
+      separator: {
         ...typography.body1,
         color: customPalette.text.over.light.medium,
-      }),
+      },
     },
   },
   MuiButton: {

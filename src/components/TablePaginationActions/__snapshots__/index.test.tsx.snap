@@ -572,7 +572,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiFormControl-root MuiTextField-root css-v62dum-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1yadmib-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-14yq8mk-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-expanded="false"

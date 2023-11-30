@@ -33,7 +33,7 @@ exports[`Typography ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Typography ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-1wjddl7-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-1swi5ji-MuiTypography-root"
   >
     Heading Title
   </h1>

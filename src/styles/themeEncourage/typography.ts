@@ -93,17 +93,17 @@ const typography: TypographyVariantsOptions = {
     fontSize: '16px',
     fontWeight: 400,
     lineHeight: '24px',
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
     [theme.breakpoints.up('sm')]: {
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '24px',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '16px',
-      fontWeight: 400,
-      lineHeight: '24px',
-    },
-    [theme.breakpoints.up('xl')]: {
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '24px',
@@ -118,17 +118,17 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 400,
     letterSpacing: px(0),
     lineHeight: '20px',
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '14px',
+      fontWeight: 400,
+      lineHeight: '20px',
+    },
     [theme.breakpoints.up('sm')]: {
       fontSize: '14px',
       fontWeight: 400,
       lineHeight: '20px',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '14px',
-      fontWeight: 400,
-      lineHeight: '20px',
-    },
-    [theme.breakpoints.up('xl')]: {
       fontSize: '14px',
       fontWeight: 400,
       lineHeight: '20px',
@@ -159,15 +159,15 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 600,
     letterSpacing: px(-1),
     lineHeight: px(38),
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('xs')]: {
       fontSize: 32,
       lineHeight: px(38),
     },
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: 48,
       lineHeight: px(64),
     },
-    [theme.breakpoints.up('xl')]: {
+    [theme.breakpoints.up('lg')]: {
       fontSize: 48,
       lineHeight: px(64),
     },
@@ -178,17 +178,17 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 500,
     letterSpacing: px(-1),
     lineHeight: '32px',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('xs')]: {
       fontSize: '28px',
       fontWeight: 500,
       lineHeight: '32px',
     },
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '40px',
       fontWeight: 600,
       lineHeight: '48px',
     },
-    [theme.breakpoints.up('xl')]: {
+    [theme.breakpoints.up('lg')]: {
       fontSize: '40px',
       fontWeight: 600,
       lineHeight: '48px',
@@ -200,17 +200,17 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 600,
     letterSpacing: px(-1),
     lineHeight: '32px',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('xs')]: {
       fontSize: '24px',
       fontWeight: 600,
       lineHeight: '32px',
     },
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '32px',
       fontWeight: 600,
       lineHeight: '40px',
     },
-    [theme.breakpoints.up('xl')]: {
+    [theme.breakpoints.up('lg')]: {
       fontSize: '32px',
       fontWeight: 600,
       lineHeight: '40px',
@@ -222,17 +222,17 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 600,
     letterSpacing: px(-0.5),
     lineHeight: '24px',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('xs')]: {
       fontSize: '20px',
       fontWeight: 600,
       lineHeight: '24px',
     },
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '28px',
       fontWeight: 600,
       lineHeight: '40px',
     },
-    [theme.breakpoints.up('xl')]: {
+    [theme.breakpoints.up('lg')]: {
       fontSize: '28px',
       fontWeight: 600,
       lineHeight: '40px',
@@ -256,17 +256,17 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 500,
     letterSpacing: px(-0.5),
     lineHeight: '24px',
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up('xs')]: {
       fontSize: '18px',
       fontWeight: 500,
       lineHeight: '24px',
     },
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '18px',
       fontWeight: 600,
       lineHeight: '24px',
     },
-    [theme.breakpoints.up('xl')]: {
+    [theme.breakpoints.up('lg')]: {
       fontSize: '18px',
       fontWeight: 600,
       lineHeight: '24px',
@@ -286,17 +286,17 @@ const typography: TypographyVariantsOptions = {
     letterSpacing: px(0),
     lineHeight: px(24),
     textTransform: undefined, // Clear the base theme's transform
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '18px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
     [theme.breakpoints.up('sm')]: {
       fontSize: '18px',
       fontWeight: 400,
       lineHeight: '24px',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '18px',
-      fontWeight: 400,
-      lineHeight: '24px',
-    },
-    [theme.breakpoints.up('xl')]: {
       fontSize: '18px',
       fontWeight: 400,
       lineHeight: '24px',
@@ -308,17 +308,17 @@ const typography: TypographyVariantsOptions = {
     fontWeight: 400,
     letterSpacing: px(0),
     lineHeight: px(24),
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '24px',
+    },
     [theme.breakpoints.up('sm')]: {
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '24px',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '16px',
-      fontWeight: 400,
-      lineHeight: '24px',
-    },
-    [theme.breakpoints.up('xl')]: {
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '24px',

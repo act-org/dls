@@ -72,7 +72,7 @@ exports[`InputLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1p3qetk-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1vg3f21-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
