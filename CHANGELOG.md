@@ -1,3 +1,15 @@
+# [7.5.0](https://github.com/act-org/dls/compare/v7.4.0...v7.5.0) (2023-11-30)
+
+
+### Bug Fixes
+
+* ENCS-4466 Fixed breakpoints and addressed comments ([c48a197](https://github.com/act-org/dls/commit/c48a197d4a8105a14c1370755550cea37fe65a99))
+
+
+### Features
+
+* Encourage response font sizes ([cb84f03](https://github.com/act-org/dls/commit/cb84f03aa597b0ee593bff4ad94b2d8856af61f9))
+
 # [7.4.0](https://github.com/act-org/dls/compare/v7.3.0...v7.4.0) (2023-10-11)
 
 
