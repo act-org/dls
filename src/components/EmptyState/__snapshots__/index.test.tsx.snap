@@ -124,14 +124,14 @@ exports[`EmptyState ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-fafcxn-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-ii47vv-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-nl94jt-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1q1dllr-MuiTypography-root"
     >
       Description
     </p>

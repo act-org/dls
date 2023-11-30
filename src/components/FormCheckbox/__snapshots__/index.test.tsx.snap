@@ -160,7 +160,7 @@ exports[`FormCheckbox ENCOURAGE theme matches the snapshot 1`] = `
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1hg1gry-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-s6twv8-MuiTypography-root"
       >
         The label
       </span>
