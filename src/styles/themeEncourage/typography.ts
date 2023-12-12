@@ -178,10 +178,12 @@ const typography: TypographyVariantsOptions = {
     },
     [theme.breakpoints.up('sm')]: {
       fontSize: '40px',
+      fontWeight: 600,
       lineHeight: '48px',
     },
     [theme.breakpoints.up('lg')]: {
       fontSize: '40px',
+      fontWeight: 600,
       lineHeight: '48px',
     },
   },
@@ -246,10 +248,12 @@ const typography: TypographyVariantsOptions = {
     },
     [theme.breakpoints.up('sm')]: {
       fontSize: '18px',
+      fontWeight: 600,
       lineHeight: '24px',
     },
     [theme.breakpoints.up('lg')]: {
       fontSize: '18px',
+      fontWeight: 600,
       lineHeight: '24px',
     },
   },
