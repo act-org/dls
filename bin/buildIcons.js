@@ -8,11 +8,7 @@
  *
  * @prettier
  */
-
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-// eslint-disable-next-line import/no-extraneous-dependencies
-const shelljs = require('shelljs');
+import shelljs from 'shelljs';
 
 shelljs.mkdir('-p', './dist/icons');
 shelljs.cp('-R', './node_modules/mdi-material-ui/*', './dist/icons');
