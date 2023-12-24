@@ -9,6 +9,7 @@
 
 /* eslint-disable filenames/match-exported */
 
+import isChromatic from 'chromatic/isChromatic';
 import { get } from 'lodash';
 import {
   enqueueSnackbar,
@@ -56,6 +57,12 @@ class Provider extends Component<ProviderProps> {
         ),
         key,
         ...options,
+        ...(isChromatic() && {
+          transitionDuration: {
+            enter: 0,
+            exit: 1e20,
+          },
+        }),
       });
     }
   }
@@ -65,6 +72,12 @@ class Provider extends Component<ProviderProps> {
       message: getErrorMessage(error),
       options: {
         variant: 'error',
+        ...(isChromatic() && {
+          transitionDuration: {
+            enter: 0,
+            exit: 1e20,
+          },
+        }),
       },
     });
   }

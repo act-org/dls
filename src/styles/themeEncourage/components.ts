@@ -11,6 +11,7 @@ import { accordionClasses } from '@mui/material/Accordion';
 import { accordionSummaryClasses } from '@mui/material/AccordionSummary';
 import { common } from '@mui/material/colors';
 import { ThemeOptions } from '@mui/material/styles';
+import isChromatic from 'chromatic/isChromatic';
 
 import cssRadius from '@actinc/dls/helpers/cssRadius';
 import px from '@actinc/dls/helpers/px';
@@ -264,6 +265,9 @@ export const components: ThemeOptions['components'] = {
     },
   },
   MuiButtonBase: {
+    defaultProps: {
+      ...(isChromatic() && { disableRipple: true }),
+    },
     styleOverrides: {
       root: {
         ...INPUT_FONT_SIZE,
@@ -315,6 +319,16 @@ export const components: ThemeOptions['components'] = {
   MuiContainer: {
     defaultProps: {
       maxWidth: 'lg',
+    },
+  },
+  MuiCssBaseline: {
+    styleOverrides: {
+      ...(isChromatic() && {
+        '*, *::before, *::after': {
+          animation: 'none !important',
+          transition: 'none !important',
+        },
+      }),
     },
   },
   MuiDialogActions: {

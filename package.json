@@ -11,6 +11,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.22.6",
+    "chromatic": "^10.2.0",
     "clsx": "^2.0.0",
     "color": "^4.2.3",
     "deepmerge": "^4.3.0",

@@ -7,6 +7,7 @@
  * @prettier
  */
 
+import isChromatic from 'chromatic/isChromatic';
 import deepMerge from 'deepmerge';
 
 import { typeOk } from '@actinc/dls/helpers/types';
@@ -69,6 +70,10 @@ export const THEME_ENCOURAGE_V2: CustomThemeOptions<
     shadows,
     spacing,
     spacingPx: SPACING_PX,
+    transitions: {
+      // eslint-disable-next-line lodash/prefer-constant
+      ...(isChromatic() && { create: () => 'none' }),
+    },
     typography,
     zIndex,
   }),
