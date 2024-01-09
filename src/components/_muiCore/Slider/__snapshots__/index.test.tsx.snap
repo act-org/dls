@@ -144,7 +144,7 @@ exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-jayakb-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-iyee2q-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1nxp2hz-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
