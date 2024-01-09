@@ -183,7 +183,7 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1s8n9o2-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-cfa2e9-MuiTypography-root"
           >
             Home
           </p>
@@ -197,7 +197,7 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-44715f-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-15amwzl-MuiTypography-root"
           >
             Other Page
           </p>

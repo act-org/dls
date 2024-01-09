@@ -153,7 +153,7 @@ exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Select ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-tocvox-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-1ony3wj-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"
