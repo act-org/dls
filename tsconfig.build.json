@@ -1,20 +1,23 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "ES5",
-    "module": "ESNext",
     "allowJs": true,
     "declaration": true,
-    "declarationMap": false,
+    "declarationMap": true,
     "inlineSources": true,
-    "inlineSourceMap": false,
+    "module": "ESNext",
     "outDir": "./dist",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["src/*"]
     },
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ],
     "rootDir": "./src",
     "sourceRoot": "https://github.com/act-org/dls/tree/main/src",
-    "sourceMap": true
+    "sourceMap": true,
+    "target": "ES5"
   },
   "exclude": [
     "./.storybook/*",
