@@ -109,9 +109,10 @@
     "ts-jest": "29.1.1",
     "ts-loader": "9.4.4",
     "ts-node": "10.9.1",
+    "ts-patch": "3.1.2",
     "tsconfig-paths-webpack-plugin": "4.1.0",
-    "tsconfig-replace-paths": "0.0.14",
     "typescript": "5.1.6",
+    "typescript-transform-paths": "3.4.6",
     "webpack": "5.88.2"
   },
   "homepage": "https://act-org.github.io/dls",
@@ -202,7 +203,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
-    "build:components": "tsc --project tsconfig.build.json && tsconfig-replace-paths --project tsconfig.build.json",
+    "build:components": "tspc --project tsconfig.build.json",
     "build:icons": "bin/buildIcons",
     "build:package_json": "clear-package-json package.json -o dist/package.json",
     "build-storybook": "storybook build -o ./storybook-static/www",
@@ -217,8 +218,9 @@
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
-    "test:types": "tsc --project tsconfig.json --noEmit",
-    "test:unit": "jest --maxWorkers=2 --verbose"
+    "test:types": "tspc --project tsconfig.json --noEmit",
+    "test:unit": "jest --maxWorkers=2 --verbose",
+    "watch": "npm run build && npm run copy && npm run build:components -- --watch"
   },
   "types": "index.d.ts",
   "version": "7.5.1"
