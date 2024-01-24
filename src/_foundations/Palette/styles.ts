@@ -13,7 +13,7 @@ import Grid, { gridClasses } from '@mui/material/Grid';
 import ListItem, { listItemClasses } from '@mui/material/ListItem';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 const AVATAR_SIZE = 50;
 

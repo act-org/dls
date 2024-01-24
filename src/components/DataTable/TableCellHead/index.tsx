@@ -11,8 +11,8 @@ import { TableCellProps } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { CSSProperties, FC, ReactElement } from 'react';
 
-import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
-import { SortDirection, SortObject } from '@actinc/dls/types';
+import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
+import { SortDirection, SortObject } from '~/types';
 
 import {
   StyledChevronDown,

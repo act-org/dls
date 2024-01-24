@@ -9,7 +9,7 @@
 
 import { StoryObj, Meta } from '@storybook/react';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import RenderMetaTags, { RenderMetaTagsProps } from '.';
 

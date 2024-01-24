@@ -17,10 +17,10 @@ import {
 import { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider';
 import { FC, ReactElement } from 'react';
 
-import { THEME_ACT } from '@actinc/dls/styles/themeAct';
-import { THEME_ACT_ET } from '@actinc/dls/styles/themeActEt';
-import { THEME_ENCOURA_CLASSIC } from '@actinc/dls/styles/themeEncouraClassic';
-import { THEME_ENCOURAGE } from '@actinc/dls/styles/themeEncourage';
+import { THEME_ACT } from '~/styles/themeAct';
+import { THEME_ACT_ET } from '~/styles/themeActEt';
+import { THEME_ENCOURA_CLASSIC } from '~/styles/themeEncouraClassic';
+import { THEME_ENCOURAGE } from '~/styles/themeEncourage';
 
 export interface ThemeProviderProps extends MuiThemeProviderProps {
   theme: 'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | Theme;

@@ -9,7 +9,7 @@
 
 import { Shadows } from '@mui/material/styles';
 
-import makeShadow from '@actinc/dls/helpers/makeShadow';
+import makeShadow from '~/helpers/makeShadow';
 
 import baseTheme from './baseTheme';
 

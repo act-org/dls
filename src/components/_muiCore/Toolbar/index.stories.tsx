@@ -7,9 +7,9 @@
  * @prettier
  */
 
-import Menu from '@actinc/dls/icons/Menu';
 import { IconButton, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
+import Menu from '~/icons/Menu';
 
 import { Toolbar } from './internal';
 

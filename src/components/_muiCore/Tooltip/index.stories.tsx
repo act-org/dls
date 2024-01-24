@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import HelpCircleOutline from '@actinc/dls/icons/HelpCircleOutline';
 import { ClickAwayListener } from '@mui/base';
 import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react';
 import { ReactElement, useState } from 'react';
+import HelpCircleOutline from '~/icons/HelpCircleOutline';
 
 import { Tooltip, TooltipProps } from './internal';
 

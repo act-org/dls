@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import PencilCircle from '@actinc/dls/icons/PencilCircle';
 import { Meta, StoryObj } from '@storybook/react';
+import PencilCircle from '~/icons/PencilCircle';
 
 import { IconButton } from './internal';
 

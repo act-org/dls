@@ -9,6 +9,10 @@
     "inlineSources": true,
     "inlineSourceMap": false,
     "outDir": "./dist",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "rootDir": "./src",
     "sourceRoot": "https://github.com/act-org/dls/tree/main/src",
     "sourceMap": true
   },

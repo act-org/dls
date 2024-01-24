@@ -9,7 +9,7 @@
 
 /* eslint-disable filenames/match-exported */
 
-import { SortDirection } from '@actinc/dls/types';
+import { SortDirection } from '~/types';
 
 export const SORT_DIRECTION_TYPES: Record<SortDirection, SortDirection> = {
   ASCENDING: 'ASCENDING' as SortDirection,

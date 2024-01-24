@@ -14,7 +14,7 @@ import MenuItem, {
 } from '@mui/material/MenuItem';
 import TextField, { textFieldClasses } from '@mui/material/TextField';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',

@@ -12,8 +12,8 @@ import {
   createTheme as muiCreateTheme,
 } from '@mui/material/styles';
 
-import px from '@actinc/dls/helpers/px';
-import { Px } from '@actinc/dls/types';
+import px from '~/helpers/px';
+import { Px } from '~/types';
 
 import { customPalette } from './palette';
 

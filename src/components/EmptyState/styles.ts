@@ -14,7 +14,7 @@ import Typography, {
   typographyClasses,
 } from '@mui/material/Typography';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledContainer = styled('div')({
   alignItems: 'center',

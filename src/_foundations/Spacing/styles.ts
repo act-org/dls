@@ -10,7 +10,7 @@
 import Grid, { gridClasses } from '@mui/material/Grid';
 import Paper, { paperClasses } from '@mui/material/Paper';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledComment = styled('span')(({ theme }) => ({
   color: theme.palette.grey[500],

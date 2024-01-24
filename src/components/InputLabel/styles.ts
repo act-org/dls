@@ -11,7 +11,7 @@
 
 import InputLabel, { inputLabelClasses } from '@mui/material/InputLabel';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledInputLabel = styled(InputLabel)({
   [`&.${inputLabelClasses.root}`]: {

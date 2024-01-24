@@ -9,7 +9,7 @@
 
 import { Typography } from '@mui/material';
 
-import { standard } from '@actinc/dls/helpers/test';
+import { standard } from '~/helpers/test';
 
 describe('Typography', () => {
   const Component = <Typography variant="h1">Heading Title</Typography>;

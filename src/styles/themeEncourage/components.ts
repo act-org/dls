@@ -12,9 +12,9 @@ import { accordionSummaryClasses } from '@mui/material/AccordionSummary';
 import { common } from '@mui/material/colors';
 import { ThemeOptions } from '@mui/material/styles';
 
-import cssRadius from '@actinc/dls/helpers/cssRadius';
-import px from '@actinc/dls/helpers/px';
-import pxToNumber from '@actinc/dls/helpers/pxToNumber';
+import cssRadius from '~/helpers/cssRadius';
+import px from '~/helpers/px';
+import pxToNumber from '~/helpers/pxToNumber';
 
 import { navy, seafoam, mist, surface, teal } from './colors';
 import customDims from './customDims';

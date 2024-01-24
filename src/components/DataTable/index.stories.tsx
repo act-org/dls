@@ -7,17 +7,17 @@
  * @prettier
  */
 
-import PackageVariant from '@actinc/dls/icons/PackageVariant';
 import { Link } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { isNumber } from 'lodash';
 import moment from 'moment';
 import { useState } from 'react';
+import PackageVariant from '~/icons/PackageVariant';
 
-import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
-import { Playground } from '@actinc/dls/helpers/playground';
-import sort from '@actinc/dls/helpers/sort';
-import { SortObject } from '@actinc/dls/types';
+import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
+import { Playground } from '~/helpers/playground';
+import sort from '~/helpers/sort';
+import { SortObject } from '~/types';
 
 import { DataTable, DataTableProps } from '.';
 

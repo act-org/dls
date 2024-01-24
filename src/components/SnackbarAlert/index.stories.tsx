@@ -15,9 +15,9 @@ import { startCase } from 'lodash';
 import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';
 
-import AlertContext from '@actinc/dls/context/AlertContext';
-import AlertContextProvider from '@actinc/dls/context/AlertContext/provider';
-import { Playground } from '@actinc/dls/helpers/playground';
+import AlertContext from '~/context/AlertContext';
+import AlertContextProvider from '~/context/AlertContext/provider';
+import { Playground } from '~/helpers/playground';
 
 import { SnackbarAlert } from '.';
 

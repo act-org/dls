@@ -18,9 +18,9 @@ import {
 } from 'notistack';
 import { Component, ReactElement, ReactNode } from 'react';
 
-import SnackbarAlert from '@actinc/dls/components/SnackbarAlert';
-import getErrorMessage from '@actinc/dls/helpers/getErrorMessage';
-import { ServerError } from '@actinc/dls/types';
+import SnackbarAlert from '~/components/SnackbarAlert';
+import getErrorMessage from '~/helpers/getErrorMessage';
+import { ServerError } from '~/types';
 
 import AlertContext from '.';
 

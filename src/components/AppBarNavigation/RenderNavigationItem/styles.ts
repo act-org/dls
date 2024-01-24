@@ -12,7 +12,7 @@
 import { Typography, TypographyProps } from '@mui/material';
 import { typographyClasses } from '@mui/material/Typography';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledTypography = styled(Typography)<
   TypographyProps & {

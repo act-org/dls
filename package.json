@@ -110,6 +110,7 @@
     "ts-loader": "9.4.4",
     "ts-node": "10.9.1",
     "tsconfig-paths-webpack-plugin": "4.1.0",
+    "tsconfig-replace-paths": "0.0.14",
     "typescript": "5.1.6",
     "webpack": "5.88.2"
   },
@@ -201,7 +202,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
-    "build:components": "tsc --project tsconfig.build.json",
+    "build:components": "tsc --project tsconfig.build.json && tsconfig-replace-paths --project tsconfig.build.json",
     "build:icons": "bin/buildIcons",
     "build:package_json": "clear-package-json package.json -o dist/package.json",
     "build-storybook": "storybook build -o ./storybook-static/www",

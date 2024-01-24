@@ -13,7 +13,7 @@ import { round } from 'lodash';
 import pluralize from 'pluralize';
 import { ReactElement } from 'react';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { IdleTimer, IdleTimerProps } from '.';
 

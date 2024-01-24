@@ -10,7 +10,7 @@
 import { Autocomplete, TextField } from '@mui/material';
 import { ReactElement } from 'react';
 
-import { standard } from '@actinc/dls/helpers/test';
+import { standard } from '~/helpers/test';
 
 import { topFilms } from './internal';
 

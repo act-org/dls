@@ -10,7 +10,7 @@
 import { SnackbarContent, useSnackbar } from 'notistack';
 import { FC, forwardRef, ReactElement, ReactNode, useCallback } from 'react';
 
-import Alert from '@actinc/dls/components/Alert';
+import Alert from '~/components/Alert';
 
 export interface SnackbarAlertProps {
   id: number;

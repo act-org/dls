@@ -9,7 +9,7 @@
 
 import { StandardCSSProperties } from '@mui/system';
 
-import px from '@actinc/dls/helpers/px';
+import px from '~/helpers/px';
 
 type BorderRadius = Pick<
   StandardCSSProperties,

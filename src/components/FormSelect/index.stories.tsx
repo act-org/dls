@@ -11,7 +11,7 @@ import { SelectChangeEvent } from '@mui/material';
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { FormSelect, FormSelectProps } from '.';
 

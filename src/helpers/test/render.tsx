@@ -19,7 +19,7 @@ import {
 } from '@testing-library/react';
 import { ReactElement } from 'react';
 
-import ThemeProvider from '@actinc/dls/components/ThemeProvider';
+import ThemeProvider from '~/components/ThemeProvider';
 
 export const render = (
   Component: ReactElement,

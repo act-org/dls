@@ -11,7 +11,7 @@ import { Box, Button } from '@mui/material';
 import { Meta, StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { ConfirmDialog, ConfirmDialogProps } from '.';
 

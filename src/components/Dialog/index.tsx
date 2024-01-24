@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import CloseCircle from '@actinc/dls/icons/CloseCircle';
 import {
   Box,
   Dialog as MuiDialog,
@@ -16,6 +15,7 @@ import {
   IconButton,
 } from '@mui/material';
 import { ReactElement } from 'react';
+import CloseCircle from '~/icons/CloseCircle';
 
 export type DialogProps = MuiDialogProps & {
   onClose?: (

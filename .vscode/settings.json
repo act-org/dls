@@ -34,5 +34,12 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["actinc"]
+  "cSpell.words": ["actinc"],
+  "[javascript][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
+    }
+  }
 }

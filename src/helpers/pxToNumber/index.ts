@@ -9,7 +9,7 @@
 
 import { isNumber } from 'lodash';
 
-import { Px } from '@actinc/dls/types';
+import { Px } from '~/types';
 
 export const pxToNumber = (value: Px | number): number => {
   return isNumber(value) ? value : Number(value.replace('px', ''));

@@ -9,7 +9,7 @@
 
 import isNumber from 'lodash/isNumber';
 
-import px from '@actinc/dls/helpers/px';
+import px from '~/helpers/px';
 
 export const makeShadow = (
   xOffset: number,

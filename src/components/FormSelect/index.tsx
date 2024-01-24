@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import AlertOutline from '@actinc/dls/icons/AlertOutline';
 import {
   FormControl,
   FormControlProps,
@@ -17,8 +16,9 @@ import {
   Tooltip,
 } from '@mui/material';
 import { ReactElement } from 'react';
+import AlertOutline from '~/icons/AlertOutline';
 
-import { InputLabel, InputLabelProps } from '@actinc/dls/components/InputLabel';
+import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 
 export interface SelectOption {
   disabled?: boolean;
