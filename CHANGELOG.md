@@ -1,3 +1,11 @@
+## [7.5.1](https://github.com/act-org/dls/compare/v7.5.0...v7.5.1) (2024-01-09)
+
+
+### Bug Fixes
+
+* Adds back fontWeight to some breakpoints ([ffea563](https://github.com/act-org/dls/commit/ffea563c96cfbb6d601d33d6cc981fe50a879eb2))
+* Fixes font weight overriding preexisting font weights ([06b9146](https://github.com/act-org/dls/commit/06b91460443e718656257ea136da6c3a84b36cc9))
+
 # [7.5.0](https://github.com/act-org/dls/compare/v7.4.0...v7.5.0) (2023-11-30)
 
 

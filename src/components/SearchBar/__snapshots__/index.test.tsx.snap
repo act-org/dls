@@ -229,7 +229,7 @@ exports[`SearchBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`SearchBar ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-cvhxg6-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-dqgb29-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1mdz9fv-MuiInputAdornment-root"

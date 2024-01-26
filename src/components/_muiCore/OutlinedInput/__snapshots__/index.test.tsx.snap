@@ -87,7 +87,7 @@ exports[`OutlinedInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`OutlinedInput ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-14yq8mk-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1ud848n-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
       class="MuiInputBase-input MuiOutlinedInput-input css-jaerwt-MuiInputBase-input-MuiOutlinedInput-input"
