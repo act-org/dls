@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { standard } from '@actinc/dls/helpers/test';
+import { standard } from '~/helpers/test';
 
 import { FormCheckbox } from '.';
 

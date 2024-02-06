@@ -9,9 +9,6 @@
 
 /* eslint-disable filenames/match-exported */
 
-import MailIcon from '@actinc/dls/icons/Mailbox';
-import Menu from '@actinc/dls/icons/Menu';
-import AddIcon from '@actinc/dls/icons/Plus';
 import {
   AppBar,
   AppBarProps,
@@ -52,11 +49,14 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { Meta, StoryFn } from '@storybook/react';
 import { sortBy } from 'lodash';
 import { ReactElement } from 'react';
+import MailIcon from '~/icons/Mailbox';
+import Menu from '~/icons/Menu';
+import AddIcon from '~/icons/Plus';
 
 import {
   FilmType,
   topFilms,
-} from '@actinc/dls/components/_muiCore/Autocomplete/internal';
+} from '~/components/_muiCore/Autocomplete/internal';
 
 type Demo<ComponentProps> = {
   flex?: number;

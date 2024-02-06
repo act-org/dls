@@ -11,7 +11,7 @@ import { Button, DialogActions, DialogContent } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { Dialog, DialogProps } from '.';
 

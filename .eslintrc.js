@@ -44,11 +44,11 @@ module.exports = {
         pathGroups: [
           {
             group: 'internal',
-            pattern: '@actinc/dls/**',
+            pattern: '~/**',
           },
           {
             group: 'internal',
-            pattern: '@actinc/dls/icons/**',
+            pattern: '~/icons/**',
           },
           {
             group: 'external',

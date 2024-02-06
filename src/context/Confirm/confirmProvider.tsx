@@ -9,10 +9,7 @@
 
 import { useCallback, useState } from 'react';
 
-import {
-  ConfirmDialog,
-  ConfirmDialogProps,
-} from '@actinc/dls/components/ConfirmDialog';
+import { ConfirmDialog, ConfirmDialogProps } from '~/components/ConfirmDialog';
 
 import { ConfirmContext } from './confirmContext';
 

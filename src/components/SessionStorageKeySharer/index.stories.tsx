@@ -22,7 +22,7 @@ import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import JSONParseSafe from 'json-parse-safe';
 import { useState, useEffect } from 'react';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 

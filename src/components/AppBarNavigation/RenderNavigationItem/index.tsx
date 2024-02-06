@@ -10,7 +10,7 @@
 import Link, { LinkProps, linkClasses } from '@mui/material/Link';
 import { ComponentType, FC, ReactElement } from 'react';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 import { StyledTypography } from './styles';
 

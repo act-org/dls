@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import { createTheme } from '@actinc/dls/styles/createTheme';
-import { CustomThemeOptions, ICustomDims } from '@actinc/dls/types';
+import { createTheme } from '~/styles/createTheme';
+import { CustomThemeOptions, ICustomDims } from '~/types';
 
 import COMPONENTS from './components';
 import CUSTOM_DIMS from './customDims';

@@ -10,7 +10,7 @@
 import JSONParseSafe from 'json-parse-safe';
 import { FC, useEffect } from 'react';
 
-import useLocalStorage from '@actinc/dls/hooks/useLocalStorage';
+import useLocalStorage from '~/hooks/useLocalStorage';
 
 export interface SessionStorageKeySharerProps {
   keyName: string;

@@ -367,6 +367,27 @@ To run the DLS locally:
 2. Start the [Storybook](https://storybook.js.org) component visualizer:
 `npm start`
 
+### How to Iterate Locally
+
+For rapid iteration, you can run a local build of this library in your
+downstream project:
+
+1. In this library, run the watch script: `npm run watch`
+
+2. In your project, install a local build of this library: `npm install <path-to-this-repo>/dist`
+
+Under the hood, this creates a symlink between the local build and your project.
+When changes are detected under the `src` folder, a new build will be output
+into the `dist` folder and picked up by your project.
+
+Once you are happy with the changes, you'll want to destroy this symlink
+and replace the local build with a formal/hosted version of this library.
+You can do that by running the following commands in your project:
+
+1. `npm uninstall @actinc/dls`
+
+2. `npm install @actinc/dls@<pick-your-version> --save --save-exact`
+
 ### npm Scripts
 
 There are lots of npm scripts at your disposal during local development.
@@ -380,6 +401,7 @@ Here are some of the more important ones:
 | npm test                  | Runs all tests.                                                         |
 | npm run release           | Publishes a new release of the DLS.                                     |
 | npm run release:storybook | Publishes a new release of Storybook (make sure to pull latest `main`). |
+| npm run watch             | Watch the `src` folder for changes and transpile on-the-fly to `dist`.  |
 
 ### Committing Code
 

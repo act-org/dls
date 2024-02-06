@@ -12,7 +12,7 @@
 import { TableCell } from '@mui/material';
 import { tableCellClasses } from '@mui/material/TableCell';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.root}`]: {

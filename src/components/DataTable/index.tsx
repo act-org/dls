@@ -11,9 +11,9 @@ import { Table, TableBody, TableHead, TableRow } from '@mui/material';
 import { constant, isNumber, round } from 'lodash';
 import { CSSProperties, ReactElement } from 'react';
 
-import { EmptyState, EmptyStateProps } from '@actinc/dls/components/EmptyState';
-import TablePaginationActions from '@actinc/dls/components/TablePaginationActions';
-import { SortObject } from '@actinc/dls/types';
+import { EmptyState, EmptyStateProps } from '~/components/EmptyState';
+import TablePaginationActions from '~/components/TablePaginationActions';
+import { SortObject } from '~/types';
 
 import { StyledEmptyStateContainer, StyledTablePagination } from './styles';
 import TableCellBody from './TableCellBody';

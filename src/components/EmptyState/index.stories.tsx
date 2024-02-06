@@ -7,10 +7,10 @@
  * @prettier
  */
 
-import Account from '@actinc/dls/icons/Account';
 import { Meta, StoryObj } from '@storybook/react';
+import Account from '~/icons/Account';
 
-import { Playground } from '@actinc/dls/helpers/playground';
+import { Playground } from '~/helpers/playground';
 
 import { EmptyState, EmptyStateProps } from '.';
 

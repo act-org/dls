@@ -9,7 +9,7 @@
 
 import { Toolbar } from '@mui/material';
 
-import { standard } from '@actinc/dls/helpers/test';
+import { standard } from '~/helpers/test';
 
 describe('Toolbar', () => {
   const Component = <Toolbar variant="dense" />;

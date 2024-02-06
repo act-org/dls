@@ -10,7 +10,7 @@
 import AppBar, { AppBarProps, appBarClasses } from '@mui/material/AppBar';
 import Grid, { gridClasses } from '@mui/material/Grid';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledAppBar = styled(AppBar)<
   AppBarProps & {

@@ -9,9 +9,9 @@
 
 import deepMerge from 'deepmerge';
 
-import { typeOk } from '@actinc/dls/helpers/types';
-import { createTheme } from '@actinc/dls/styles/createTheme';
-import { CustomThemeOptions, ICustomDims } from '@actinc/dls/types';
+import { typeOk } from '~/helpers/types';
+import { createTheme } from '~/styles/createTheme';
+import { CustomThemeOptions, ICustomDims } from '~/types';
 
 import baseTheme from './baseTheme';
 import components from './components';

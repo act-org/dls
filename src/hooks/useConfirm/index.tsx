@@ -9,8 +9,8 @@
 
 import { useContext } from 'react';
 
-import { ConfirmDialogProps } from '@actinc/dls/components/ConfirmDialog';
-import { ConfirmContext } from '@actinc/dls/context/Confirm';
+import { ConfirmDialogProps } from '~/components/ConfirmDialog';
+import { ConfirmContext } from '~/context/Confirm';
 
 /**
  * Hook to facilitate an easy api for opening a confirmation dialog.  This requires

@@ -7,13 +7,13 @@
  * @prettier
  */
 
-import InformationOutline from '@actinc/dls/icons/InformationOutline';
 import { Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Variant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react';
 import { compact, isPlainObject } from 'lodash';
 import React from 'react';
+import InformationOutline from '~/icons/InformationOutline';
 
 import {
   StyledCode,

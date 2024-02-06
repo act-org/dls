@@ -9,8 +9,8 @@
 
 import { isString } from 'lodash';
 
-import SORT_DIRECTION_TYPES from '@actinc/dls/constants/SORT_DIRECTION_TYPES';
-import { SortObject } from '@actinc/dls/types';
+import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
+import { SortObject } from '~/types';
 
 type SortFunction<T> = (itemA: T, itemB: T) => number;
 

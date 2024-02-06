@@ -10,7 +10,7 @@
 import Divider, { dividerClasses } from '@mui/material/Divider';
 import Grid, { gridClasses } from '@mui/material/Grid';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledCode = styled('code')({
   display: 'block',

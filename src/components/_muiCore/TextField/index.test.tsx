@@ -9,7 +9,7 @@
 
 import { TextField } from '@mui/material';
 
-import { standard } from '@actinc/dls/helpers/test';
+import { standard } from '~/helpers/test';
 
 describe('TextField', () => {
   const Component = (

@@ -12,7 +12,7 @@ import TablePagination, {
   tablePaginationClasses,
 } from '@mui/material/TablePagination';
 
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '~/helpers/styled';
 
 export const StyledEmptyStateContainer = styled('div')(({ theme }) => ({
   paddingBottom: theme.spacing(1),

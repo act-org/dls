@@ -11,7 +11,7 @@ import { noop } from 'lodash';
 import { OptionsObject } from 'notistack';
 import { createContext, ReactNode } from 'react';
 
-import { ServerError } from '@actinc/dls/types';
+import { ServerError } from '~/types';
 
 export const AlertContext = createContext({
   actions: {

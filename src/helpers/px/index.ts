@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Px } from '@actinc/dls/types';
+import { Px } from '~/types';
 
 export const px = (value?: number): Px => {
   return value !== undefined ? `${value}px` : '';

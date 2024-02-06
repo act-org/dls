@@ -7,8 +7,8 @@
  * @prettier
  */
 
-import AddIcon from '@actinc/dls/icons/Plus';
 import { Meta, StoryObj } from '@storybook/react';
+import AddIcon from '~/icons/Plus';
 
 import { Fab } from './internal';
 

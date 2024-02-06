@@ -11,9 +11,9 @@ import { Button } from '@mui/material';
 import { StoryFn } from '@storybook/react';
 import { ReactElement } from 'react';
 
-import { ConfirmDialog, ConfirmDialogProps } from '@actinc/dls/components';
-import { ConfirmProvider } from '@actinc/dls/context';
-import { Playground } from '@actinc/dls/helpers/playground';
+import { ConfirmDialog, ConfirmDialogProps } from '~/components';
+import { ConfirmProvider } from '~/context';
+import { Playground } from '~/helpers/playground';
 
 import { useConfirm } from '.';
 

@@ -7,11 +7,11 @@
  * @prettier
  */
 
-import ChevronDown from '@actinc/dls/icons/ChevronDown';
-import FilterVariant from '@actinc/dls/icons/FilterVariant';
 import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
+import ChevronDown from '~/icons/ChevronDown';
+import FilterVariant from '~/icons/FilterVariant';
 
 import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
