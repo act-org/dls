@@ -229,10 +229,10 @@ const typography: TypographyVariantsOptions = {
     fontFamily: primaryFontFamily,
     fontSize: '18px',
     fontWeight: 600,
-    lineHeight: '22px',
-    [theme.breakpoints.up('sm')]: {
+    letterSpacing: px(-0.75),
+    lineHeight: '24px',
+    [theme.breakpoints.up('lg')]: {
       fontSize: '24px',
-      letterSpacing: px(-0.75),
       lineHeight: '32px',
     },
   },
