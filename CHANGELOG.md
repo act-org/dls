@@ -1,3 +1,17 @@
+## [7.6.2](https://github.com/act-org/dls/compare/v7.6.1...v7.6.2) (2024-02-06)
+
+
+### Bug Fixes
+
+* Change H5 font size for small screen sizes ([95586f0](https://github.com/act-org/dls/commit/95586f0ba5ba1843ed42f9af3ebe0f170d655411))
+
+# [7.6.0](https://github.com/act-org/dls/compare/v7.5.1...v7.6.0) (2024-01-26)
+
+
+### Features
+
+* Adds theme custom shadows ([12a9be1](https://github.com/act-org/dls/commit/12a9be19a3a4efc2f222d49ccf735464008d35fe))
+
 ## [7.5.1](https://github.com/act-org/dls/compare/v7.5.0...v7.5.1) (2024-01-09)
 
 

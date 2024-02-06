@@ -33,7 +33,7 @@ exports[`Paper ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Paper ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-121s93k-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-ln3o9n-MuiPaper-root"
   >
     Paper
   </div>
