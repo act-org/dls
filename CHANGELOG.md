@@ -1,3 +1,12 @@
+## [7.6.3](https://github.com/act-org/dls/compare/v7.6.2...v7.6.3) (2024-02-06)
+
+
+### Bug Fixes
+
+* Fix duplicate import ([7ac17bd](https://github.com/act-org/dls/commit/7ac17bd153e38b141cda898851a82aef388a8220))
+* Minor config fixes ([d869537](https://github.com/act-org/dls/commit/d869537b398c98705366876eb9b05403f9ab130a))
+* Update the build process to allow for local installs ([c78baa9](https://github.com/act-org/dls/commit/c78baa9053d36d0e69f8d72ddbe86fe91e1815af))
+
 ## [7.6.2](https://github.com/act-org/dls/compare/v7.6.1...v7.6.2) (2024-02-06)
 
 
