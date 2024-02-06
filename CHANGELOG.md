@@ -1,3 +1,10 @@
+## [7.6.2](https://github.com/act-org/dls/compare/v7.6.1...v7.6.2) (2024-02-06)
+
+
+### Bug Fixes
+
+* Change H5 font size for small screen sizes ([95586f0](https://github.com/act-org/dls/commit/95586f0ba5ba1843ed42f9af3ebe0f170d655411))
+
 # [7.6.0](https://github.com/act-org/dls/compare/v7.5.1...v7.6.0) (2024-01-26)
 
 
