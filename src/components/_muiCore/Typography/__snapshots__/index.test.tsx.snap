@@ -23,7 +23,7 @@ exports[`Typography ACT_ET theme matches the snapshot 1`] = `
 exports[`Typography ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-1csc89d-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-v93bsa-MuiTypography-root"
   >
     Heading Title
   </h1>

@@ -87,19 +87,19 @@ exports[`EmptyState ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-lvvnln-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1k1fg1d-MuiTypography-root"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1q7qib5-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1mgpdqh-MuiTypography-root"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation css-1m9ygoa-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation css-szhb3h-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >

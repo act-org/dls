@@ -98,7 +98,7 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-17h563u-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1ni6cby-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label

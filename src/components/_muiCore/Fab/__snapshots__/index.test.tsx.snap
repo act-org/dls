@@ -57,7 +57,7 @@ exports[`Fab ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-u29tse-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-ox7th4-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
