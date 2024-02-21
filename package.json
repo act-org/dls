@@ -101,6 +101,7 @@
     "react": "18.2.0",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "18.2.0",
+    "react-draggable": "*",
     "react-test-renderer": "18.2.0",
     "semantic-release": "21.0.7",
     "shelljs": "0.8.5",
