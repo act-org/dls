@@ -43,7 +43,7 @@ const TYPOGRAPHY: TypographyVariantsOptions = {
     letterSpacing: 0,
     lineHeight: 12 / 10,
   },
-  fontFamily: ['Museo', 'Helvetica', 'sans-serif'].join(','),
+  fontFamily: ['museo-sans', 'Helvetica', 'sans-serif'].join(','),
   fontSize: 18,
   fontWeightBold: 700,
   fontWeightLight: 300,

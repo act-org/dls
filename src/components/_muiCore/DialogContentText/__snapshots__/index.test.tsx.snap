@@ -23,7 +23,7 @@ exports[`DialogContentText ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogContentText ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-4bubc8-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1d4gokr-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>

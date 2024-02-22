@@ -103,7 +103,7 @@ exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-overline css-13ko9gs-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-overline css-1ad4xqn-MuiTypography-root"
     >
       Loading...
     </span>
