@@ -1,3 +1,21 @@
+# [7.7.0](https://github.com/act-org/dls/compare/v7.6.3...v7.7.0) (2024-02-22)
+
+
+### Bug Fixes
+
+* Remove unnecessary vscode/settings.json change ([5918d43](https://github.com/act-org/dls/commit/5918d43adb61a4a57d8c5091f18c4bf37baecc3e))
+* Update Readme with instructions on how to implement museo sans downstream ([4b1f3d0](https://github.com/act-org/dls/commit/4b1f3d045f1bc81f92fb7d61c0038bcfbe8d723e))
+* Update Readme with Museo Sans font information ([2a55682](https://github.com/act-org/dls/commit/2a55682edfeace4fe0575252dcd5d84b8028109b))
+* Update snapshot tests ([3be8179](https://github.com/act-org/dls/commit/3be8179e0fe833f505e45f9b6416f41388a646e9))
+* Update snapshot tests ([2c70631](https://github.com/act-org/dls/commit/2c70631b62e34b2829f2b1f22e5470b9401d8285))
+* Update themeEncouraClassics font family reference to Museo Sans to match the documentation ([39de919](https://github.com/act-org/dls/commit/39de919b5008e0f4954e3ae92fbdbb837eeef3d9))
+
+
+### Features
+
+* Delete fonts folder ([c04dcd5](https://github.com/act-org/dls/commit/c04dcd5544d3931a51a4942205259a04bebc4543))
+* Upload Museo Sans fonts ([7d22ca4](https://github.com/act-org/dls/commit/7d22ca4d603631c4f3c088c6db60f81aec499eee))
+
 ## [7.6.3](https://github.com/act-org/dls/compare/v7.6.2...v7.6.3) (2024-02-06)
 
 
