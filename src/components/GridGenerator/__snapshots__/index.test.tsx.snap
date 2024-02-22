@@ -252,7 +252,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-2a2yhz-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-mltlwt-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -269,7 +269,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-18eyudk-MuiInputBase-root-MuiInput-root"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-169wxyu-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
@@ -290,7 +290,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-2a2yhz-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-mltlwt-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -307,7 +307,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-18eyudk-MuiInputBase-root-MuiInput-root"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-169wxyu-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
@@ -332,7 +332,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-2a2yhz-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-mltlwt-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -344,7 +344,7 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-18eyudk-MuiInputBase-root-MuiInput-root"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-169wxyu-MuiInputBase-root-MuiInput-root"
         >
           <input
             aria-invalid="false"

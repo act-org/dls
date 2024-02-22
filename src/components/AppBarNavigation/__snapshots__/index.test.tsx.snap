@@ -131,7 +131,7 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1ei5ah-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1moh6tp-MuiTypography-root"
           >
             Home
           </p>
@@ -145,7 +145,7 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1mna6v7-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1oevd2i-MuiTypography-root"
           >
             Other Page
           </p>

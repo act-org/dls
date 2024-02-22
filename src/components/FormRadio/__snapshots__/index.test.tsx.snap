@@ -152,7 +152,7 @@ exports[`FormRadio ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       />
     </span>
     <span
-      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1rikmq0-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
     >
       The label
     </span>

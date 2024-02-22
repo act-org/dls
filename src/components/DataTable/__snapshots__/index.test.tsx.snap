@@ -788,7 +788,7 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root css-1b7jvpz-MuiTable-root"
+      class="MuiTable-root css-1spjxp3-MuiTable-root"
     >
       <thead
         class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
@@ -797,12 +797,12 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-head css-1fmkmr6-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1359mgv-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-14gr31a-MuiTableCell-root"
             color="default"
             style="width: 50px;"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1 css-1oko8iw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-et17tq-MuiTypography-root"
             >
               ID
             </p>
@@ -837,12 +837,12 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8h1i8w-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-7hfuf0-MuiTableCell-root"
             color="default"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1 css-1oko8iw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-et17tq-MuiTypography-root"
             >
               Name
             </p>
@@ -876,12 +876,12 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8h1i8w-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-7hfuf0-MuiTableCell-root"
             color="default"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1 css-1oko8iw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-et17tq-MuiTypography-root"
             >
               Field A
             </p>
@@ -915,12 +915,12 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8h1i8w-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-7hfuf0-MuiTableCell-root"
             color="default"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1 css-1oko8iw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-et17tq-MuiTypography-root"
             >
               Field B
             </p>
@@ -954,12 +954,12 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             </div>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8h1i8w-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-7hfuf0-MuiTableCell-root"
             color="default"
             style="width: 100px;"
           >
             <p
-              class="MuiTypography-root MuiTypography-body1 css-1oko8iw-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-et17tq-MuiTypography-root"
             >
               Field C
             </p>
@@ -1001,31 +1001,31 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-1fmkmr6-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 50px;"
           >
             1
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 1
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A1
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B1
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C1
@@ -1035,31 +1035,31 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-1fmkmr6-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 50px;"
           >
             2
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 2
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A2
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B2
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C2
@@ -1069,31 +1069,31 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-1fmkmr6-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 50px;"
           >
             3
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 3
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A3
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B3
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C3
@@ -1103,31 +1103,31 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-1fmkmr6-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 50px;"
           >
             4
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 4
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A4
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B4
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C4
@@ -1137,31 +1137,31 @@ exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           class="MuiTableRow-root MuiTableRow-hover css-1fmkmr6-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 50px;"
           >
             5
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Item 5
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field A5
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field B5
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1nldggs-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-m8xboz-MuiTableCell-root"
             style="width: 100px;"
           >
             Field C5

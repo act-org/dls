@@ -73,7 +73,7 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 exports[`Alert ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-13l8epf-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-standardInfo MuiAlert-standard css-8j40ql-MuiPaper-root-MuiAlert-root"
     role="alert"
   >
     <div
@@ -95,7 +95,7 @@ exports[`Alert ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1ayuu8f-MuiTypography-root-MuiAlertTitle-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-umsef6-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
