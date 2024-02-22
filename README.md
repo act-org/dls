@@ -140,35 +140,16 @@ reference in the `head` of your React app:
 #### Museo Sans
 
 The `ENCOURA_CLASSIC` theme assumes that the
-[Museo Sans](https://github.com/act-org/dls/tree/master/public/fonts/MuseoSans) font
-is available in the browser. Therefore, it is recommended that you include the
-following font reference in the `head` of your React app:
+[Museo Sans](https://fonts.adobe.com/fonts/museo-sans) font
+is available in the browser.  Include this embed code in the `head`
+of your React app after obtaining the licensed font URL from Marketing:
 
 ```html
-<style type="text/css">
-  @font-face {
-    font-family: 'Museo Sans';
-    src: url('path/to/MuseoSans300.otf');
-    font-style: normal;
-    font-weight: 300;
-  }
-  @font-face {
-    font-family: 'Museo Sans';
-    src: url('path/to/MuseoSans500.otf');
-    font-style: normal;
-    font-weight: 500;
-  }
-  @font-face {
-    font-family: 'Museo Sans';
-    src: url('path/to/MuseoSans700.otf');
-    font-style: normal;
-    font-weight: 700;
-  }
+<style>
+  @import url("licensed-font-url");
 </style>
-```
 
-The Museo Sans font files can be downloaded
-[here](https://github.com/act-org/dls/tree/main/public/fonts/MuseoSans).
+```
 
 #### Work Sans, Roboto, Roboto Mono
 
