@@ -15,34 +15,22 @@ import { CustomThemeOptions } from '~/types';
 
 import COMPONENTS from './components';
 import COLORS, { CustomColorOptions } from './colors';
-// import CUSTOM_DIMS from './customDims';
+import CUSTOM_DIMS from './customDims';
 import PALETTE from './palette';
-// import SHAPE from './shape';
-// import spacing, { SPACING_PX } from './spacing';
-// import TYPOGRAPHY from './typography';
+import TYPOGRAPHY from './typography';
 
-export type MyEncouraTheme = CustomThemeOptions<CustomColorOptions>;
+export type MyEncouraCustomTheme = CustomThemeOptions<CustomColorOptions>;
 
-export const THEME_MY_ENCOURA: MyEncouraTheme = deepMerge(
+export const THEME_MY_ENCOURA: MyEncouraCustomTheme = deepMerge(
   THEME_ENCOURA_CLASSIC,
   {
     // Theme customizations to distinguish MyEncoura from
-    // the other app modules.
+    // the the Encoura Classic theme.
     components: COMPONENTS,
     customColors: COLORS.CUSTOM,
-    customDims: {
-      heights: {
-        header: 60,
-      },
-      widths: {
-        listItemIcon: 40,
-      },
-    },
+    customDims: CUSTOM_DIMS,
     palette: PALETTE,
-    typography: {
-      fontWeightMedium: 600,
-      fontWeightRegular: 500,
-    },
+    typography: TYPOGRAPHY,
   },
 );
 
