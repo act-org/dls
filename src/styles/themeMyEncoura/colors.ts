@@ -8,9 +8,8 @@
  */
 
 import { grey } from '@mui/material/colors';
-import { PaletteColorOptions, PaletteOptions } from '@mui/material/styles';
 
-export const accentBlue = '#00A8D6'; // 2nd MI chart color and icon accent color
+export const accentBlue = '#00A8D6'; // 2nd Market Insights chart color and icon accent color
 export const secondaryDark = '#003359';
 export const secondaryMain = '#0080A3';
 export const slateBlue = '#80ACC4'; // grey blue
@@ -22,7 +21,67 @@ export const darkOrange = '#D54215';
 
 export const slateGrey = '#64829A';
 
-const COLORS = {
+export type CustomColorOptions = {
+  customColors: {
+    accent: {
+      primary: string;
+      secondary: string;
+      tertiary: string;
+    };
+    chart: {
+      primary: {
+        fifth: string;
+        first: string;
+        fourth: string;
+        second: string;
+        sixth: string;
+        third: string;
+      };
+      quaternary: {
+        fifth: string;
+        first: string;
+        fourth: string;
+        second: string;
+        sixth: string;
+        third: string;
+      };
+      secondary: {
+        fifth: string;
+        first: string;
+        fourth: string;
+        second: string;
+        sixth: string;
+        third: string;
+      };
+      tertiary: {
+        fifth: string;
+        first: string;
+        fourth: string;
+        second: string;
+        sixth: string;
+        third: string;
+      };
+    };
+    evi: {
+      icon: string;
+    };
+    homePage: {
+      headerPrimary: string;
+      headerPrimaryIcon: string;
+      headerSecondary: string;
+      headerSecondaryIcon: string;
+    };
+    table: {
+      accentBackgroundColor: string;
+    };
+    tertiary: {
+      dark: string;
+      light: string;
+    };
+  };
+};
+
+export const COLORS = {
   CUSTOM: {
     accent: {
       primary: accentBlue,

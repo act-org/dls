@@ -12,66 +12,6 @@ import { PaletteOptions } from '@mui/material/styles';
 
 import COLORS from './colors';
 
-export type CustomPaletteOptions = PaletteOptions & {
-  customColors: {
-    accent: {
-      primary: string;
-      secondary: string;
-      tertiary: string;
-    };
-    chart: {
-      primary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-      quaternary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-      secondary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-      tertiary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-    };
-    evi: {
-      icon: string;
-    };
-    homePage: {
-      headerPrimary: string;
-      headerPrimaryIcon: string;
-      headerSecondary: string;
-      headerSecondaryIcon: string;
-    };
-    table: {
-      accentBackgroundColor: string;
-    };
-    tertiary: {
-      dark: string;
-      light: string;
-    };
-  };
-};
-
 const PALETTE: PaletteOptions = {
   primary: {
     main: COLORS.PRIMARY,
