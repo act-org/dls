@@ -12,4 +12,5 @@ export { default as THEME_ACT } from './themeAct';
 export { default as THEME_ACT_ET } from './themeActEt';
 export { default as THEME_ENCOURA_CLASSIC } from './themeEncouraClassic';
 export { default as THEME_ENCOURAGE } from './themeEncourage';
+export { default as THEME_MY_ENCOURA } from './themeMyEncoura';
 export * from './themes';
