@@ -1,3 +1,12 @@
+# [7.8.0-next.1](https://github.com/act-org/dls/compare/v7.7.0...v7.8.0-next.1) (2024-03-04)
+
+
+### Features
+
+* Add themeMyEncoura and related files to styles dir ([f5d8c28](https://github.com/act-org/dls/commit/f5d8c28cbe5f62cf0c72e55fd8806f1d2378b1b0))
+* Create customDims and Typography file and update ReadMe with new theme information ([e78ec37](https://github.com/act-org/dls/commit/e78ec37138b775039ae2ecb69069b724e3468d0e))
+* Fix typescript issues for new theme addition ([f4c426f](https://github.com/act-org/dls/commit/f4c426fa11fa9ea9d6ca81bce66f9d223f368dd9))
+
 # [7.7.0](https://github.com/act-org/dls/compare/v7.6.3...v7.7.0) (2024-02-22)
 
 
