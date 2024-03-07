@@ -37,6 +37,7 @@ export * from './SearchBar';
 export * from './SessionStorageKeySharer';
 export * from './SessionTimer';
 export * from './SnackbarAlert';
+export * from './StackedBarChart';
 export * from './TablePaginationActions';
 export * from './ThemeProvider';
 
