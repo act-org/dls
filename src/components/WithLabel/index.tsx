@@ -13,7 +13,7 @@ export interface IWithLabelProps {
 }
 
 export const LabelComponent: React.FC<IWithLabelLabelProps> = ({ children, required, removeColon, ...rest }) => (
-  <Typography sx={{ fontSize: 'body2.fontSize', fontWeight: 'fontWeightMedium', zIndex: 2 }} {...rest}>{`${children || ''}${removeColon ? '' : ':'} ${
+  <Typography sx={{ fontSize: 'body2.fontSize', zIndex: 2 }} {...rest}>{`${children || ''}${removeColon ? '' : ':'} ${
     required ? '*' : ''
   }`}</Typography>
 );

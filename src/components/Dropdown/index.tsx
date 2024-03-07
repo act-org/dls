@@ -1,4 +1,4 @@
-import { ListItemProps, ListItemTextProps, ListProps, PopperProps } from '@mui/material';
+import { ListItemProps, ListItemText, ListItemTextProps, ListProps, PopperProps } from '@mui/material';
 import { GridProps } from '@mui/system';
 import * as React from 'react';
 
@@ -8,7 +8,7 @@ import WithLabel, { IWithLabelLabelProps } from '~/components/WithLabel';
 import KEYBOARD_KEYS from '~/constants/KEYBOARD_KEYS';
 
 
-import { StyledList, StyledListItem, StyledListItemText } from './styles';
+import { StyledList, StyledListItem } from './styles';
 
 export interface IDropdownOption {
   label: string;
@@ -16,26 +16,28 @@ export interface IDropdownOption {
 }
 
 export interface DropdownProps {
-  dropdownButtonBaseProps?: DropdownButtonBaseProps;
-  containerProps?: GridProps;
+  dropdownButtonBaseProps?: Partial<DropdownButtonBaseProps>;
+  containerProps?: Partial<GridProps>;
   disabled?: boolean;
+  id: string;
   error?: boolean;
   label?: string;
-  labelProps?: IWithLabelLabelProps;
-  listItemProps?: ListItemProps;
-  listItemTextProps?: ListItemTextProps;
-  listProps?: ListProps;
-  onChange: (newValue: IDropdownOption | undefined) => void;
+  labelProps?: Partial<IWithLabelLabelProps>;
+  listItemProps?: Partial<ListItemProps>;
+  listItemTextProps?: Partial<ListItemTextProps>;
+  listProps?: Partial<ListProps>;
   onClose?: () => void;
-  options: IDropdownOption[];
   required?: boolean;
   popperProps?: PopperProps;
   placeholder?: string;
+  onChange: (newValue: IDropdownOption | undefined) => void;
+  options: IDropdownOption[];
+  title: string;
   value: IDropdownOption | undefined | null;
 }
 
 export const Dropdown: React.FC<DropdownProps> = props => {
-  const { required, options, error, label, labelProps, value, onChange, onClose, disabled, idSubstring } = props;
+  const { required, options, error, id, label, labelProps, value, onChange, onClose, disabled, title } = props;
   // Prop propagation
   const { dropdownButtonBaseProps, containerProps, listItemProps, listItemTextProps, listProps, placeholder = 'Select value...', popperProps } = props;
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -69,15 +71,15 @@ export const Dropdown: React.FC<DropdownProps> = props => {
       <WithLabel containerProps={containerProps} label={label} labelProps={labelProps} required={required}>
         <DropdownButtonBase
           disabled={disabled}
-          idSubstring={idSubstring}
-          isFixed
+          id={id}
           onClick={(event: React.MouseEvent<HTMLElement>): void => {
             const { currentTarget } = event;
             setAnchorEl(currentTarget);
             setPopperWidth(currentTarget.clientWidth - 7);
-            setPopperYTranslate(-currentTarget.clientHeight - 2);
+            setPopperYTranslate(-currentTarget.clientHeight - 4);
           }}
           shouldRenderErrorState={error || (!value && required)}
+          title={title}
           value={value?.label || placeholder}
           {...dropdownButtonBaseProps}
         />
@@ -87,7 +89,7 @@ export const Dropdown: React.FC<DropdownProps> = props => {
         anchorElement={anchorEl}
         bodyElement={
           <StyledList disablePadding {...listProps}>
-            {options.map(opt => (
+            {(options || []).map(opt => (
               <StyledListItem
                 id={opt.value}
                 key={opt.value}
@@ -96,17 +98,17 @@ export const Dropdown: React.FC<DropdownProps> = props => {
                 tabIndex={0}
                 {...listItemProps}
               >
-                <StyledListItemText
+                <ListItemText
                   primaryTypographyProps={{
                     style: {
+                      fontWeight: 400,
                       maxWidth: '85%',
                     },
-                    variant: 'h4',
                   }}
                   {...listItemTextProps}
                 >
                   {opt.label}
-                </StyledListItemText>
+                </ListItemText>
               </StyledListItem>
             ))}
           </StyledList>
@@ -120,5 +122,21 @@ export const Dropdown: React.FC<DropdownProps> = props => {
     </>
   );
 };
+
+Dropdown.defaultProps = {
+  containerProps: undefined,
+  disabled: undefined,
+  dropdownButtonBaseProps: undefined,
+  error: undefined,
+  label: undefined,
+  labelProps: undefined,
+  listItemProps: undefined,
+  listItemTextProps: undefined,
+  listProps: undefined,
+  onClose: undefined,
+  placeholder: undefined,
+  popperProps: undefined,
+  required: undefined,
+}
 
 export default Dropdown;

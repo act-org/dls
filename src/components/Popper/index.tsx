@@ -3,7 +3,16 @@ import * as React from 'react';
 
 import { StyledPopper, StyledPaper, StyledDivider } from './styles';
 
-export interface PopperProps {
+export interface PopperComponentProps {
+  bodyElement: React.ReactNode;
+  footerElement?: React.ReactNode;
+  headerElement?: React.ReactNode;
+  paperProps?: Partial<PaperProps>;
+  shouldRenderFooterDivider?: boolean;
+  shouldRenderHeaderDivider?: boolean;
+}
+
+export interface PopperProps extends PopperComponentProps {
   anchorElement: null | HTMLElement;
   bodyElement: React.ReactNode;
   footerElement?: React.ReactNode;
@@ -20,22 +29,38 @@ export interface PopperProps {
   zIndex?: number;
 }
 
-export const Popper: React.FC<PopperProps> = ({
-  anchorElement,
+// PopperComponent is separted from Popper for isolated testing purposes
+export const PopperComponent = React.forwardRef<HTMLDivElement, PopperComponentProps>(({
   bodyElement,
   footerElement,
   headerElement,
-  maxHeight,
-  minWidth,
-  onClose,
   paperProps,
-  popperProps,
-  popperWidth,
-  popperYTranslate,
-  shouldRenderFooterDivider = false,
-  shouldRenderHeaderDivider = false,
-  zIndex,
-}: PopperProps): React.ReactElement<PopperProps> => {
+  shouldRenderFooterDivider,
+  shouldRenderHeaderDivider,
+}, ref) => (<StyledPaper elevation={3} ref={ref} {...paperProps}>
+  {headerElement}
+
+  {shouldRenderHeaderDivider && <StyledDivider dividerType="header" />}
+
+  {bodyElement}
+
+  {shouldRenderFooterDivider && <StyledDivider dividerType="footer" />}
+
+  {footerElement}
+</StyledPaper>))
+PopperComponent.displayName = 'PopperComponent'
+
+export const Popper: React.FC<PopperProps> = (props: PopperProps): React.ReactElement<PopperProps> => {
+  const {
+    anchorElement,
+    maxHeight,
+    minWidth,
+    onClose,
+    popperProps,
+    popperWidth,
+    popperYTranslate,
+    zIndex,
+  } = props;
   const isOpen = Boolean(anchorElement);
 
   return (
@@ -66,21 +91,19 @@ export const Popper: React.FC<PopperProps> = ({
           }
         }}
       >
-        <StyledPaper elevation={3} {...paperProps}>
-          {headerElement}
-
-          {shouldRenderHeaderDivider && <StyledDivider dividerType="header" />}
-
-          {bodyElement}
-
-          {shouldRenderFooterDivider && <StyledDivider dividerType="footer" />}
-
-          {footerElement}
-        </StyledPaper>
+        <PopperComponent {...props} />
       </ClickAwayListener>
     </StyledPopper>
   );
 };
+
+PopperComponent.defaultProps = {
+  footerElement: undefined,
+  headerElement: undefined,
+  paperProps: undefined,
+  shouldRenderFooterDivider: undefined,
+  shouldRenderHeaderDivider: undefined,
+}
 
 Popper.defaultProps = {
   footerElement: undefined,

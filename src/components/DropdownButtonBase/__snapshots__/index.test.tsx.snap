@@ -1,0 +1,561 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownButtonBase disabled ACT theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-aufveu-MuiButtonBase-root-MuiButton-root"
+    color="primary"
+    disabled=""
+    id="my-button"
+    tabindex="-1"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1o11447-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase disabled ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-126qvt5-MuiButtonBase-root-MuiButton-root"
+    disabled=""
+    id="my-button"
+    tabindex="-1"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1h905pq-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase disabled ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-1jhx2e5-MuiButtonBase-root-MuiButton-root"
+    disabled=""
+    id="my-button"
+    tabindex="-1"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-3ro08b-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase disabled ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-103k8vm-MuiButtonBase-root-MuiButton-root"
+    disabled=""
+    id="my-button"
+    tabindex="-1"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-p3dawv-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase empty ACT theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-aufveu-MuiButtonBase-root-MuiButton-root"
+    color="primary"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1o11447-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    />
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase empty ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-126qvt5-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1h905pq-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    />
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase empty ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-1jhx2e5-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-3ro08b-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    />
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase empty ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-103k8vm-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-p3dawv-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    />
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with error ACT theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-1pbeb70-MuiButtonBase-root-MuiButton-root"
+    color="primary"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1o11447-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with error ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-5fabr7-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1h905pq-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with error ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-xh5csx-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-3ro08b-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with error ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-7sq9y3-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-p3dawv-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with value ACT theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-aufveu-MuiButtonBase-root-MuiButton-root"
+    color="primary"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1o11447-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with value ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-126qvt5-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1h905pq-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with value ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-disableElevation css-1jhx2e5-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-3ro08b-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`DropdownButtonBase with value ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-103k8vm-MuiButtonBase-root-MuiButton-root"
+    id="my-button"
+    tabindex="0"
+    title="My Button"
+    type="button"
+  >
+    <p
+      aria-label=""
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-p3dawv-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Filled value
+    </p>
+    <span
+      class="MuiButton-endIcon MuiButton-iconSizeSmall css-jcxoq4-MuiButton-endIcon"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+        data-testid="ChevronDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+        />
+      </svg>
+    </span>
+  </button>
+</div>
+`;

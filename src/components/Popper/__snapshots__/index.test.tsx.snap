@@ -1,0 +1,409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popper (inner Component) with All Divider ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1iuxyo4-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with All Divider ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with All Divider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-6oqbjq-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with All Divider ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1wy5web-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Body ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1iuxyo4-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Body ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Body ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-6oqbjq-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Body ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1wy5web-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1iuxyo4-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer Divider ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1iuxyo4-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer Divider ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer Divider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-6oqbjq-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer Divider ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1wy5web-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-6oqbjq-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1wy5web-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1iuxyo4-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header Divider ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1iuxyo4-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header Divider ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header Divider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-6oqbjq-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header Divider ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1wy5web-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-6oqbjq-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1wy5web-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;

@@ -1,7 +1,6 @@
-import { List, ListItem, ListItemText } from '@mui/material';
+import { List, ListItem } from '@mui/material';
 import { listClasses } from '@mui/material/List';
 import { listItemClasses } from '@mui/material/ListItem';
-import { listItemTextClasses } from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 
 export const StyledList = styled(List)({
@@ -22,12 +21,5 @@ export const StyledListItem = styled(ListItem)(({ theme }) => ({
       cursor: 'pointer',
     },
     overflowY: 'hidden',
-  },
-}));
-
-export const StyledListItemText = styled(ListItemText)(({ theme }) => ({
-  [`&.${listItemTextClasses.root}`]: {
-    fontSize: theme.typography.h4.fontSize,
-    paddingRight: theme.spacing(1),
   },
 }));

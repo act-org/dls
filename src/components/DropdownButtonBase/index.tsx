@@ -8,19 +8,20 @@ import { StyledButton } from './styles';
 export interface DropdownButtonBaseProps {
   buttonProps?: ButtonProps;
   disabled?: boolean;
-  idSubstring: string;
-  isFixed?: boolean;
+  id: string;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   shouldRenderErrorState?: boolean;
+  title: string;
   value: string | React.ReactElement<unknown>;
 }
 
 export const DropdownButtonBase: React.FC<DropdownButtonBaseProps> = ({
   buttonProps,
   disabled,
-  isFixed,
+  id,
   onClick,
   shouldRenderErrorState = false,
+  title,
   value,
 }: DropdownButtonBaseProps): React.ReactElement<DropdownButtonBaseProps> => {
   const endIcon = <ChevronDown />;
@@ -32,17 +33,18 @@ export const DropdownButtonBase: React.FC<DropdownButtonBaseProps> = ({
       disabled={disabled}
       disableRipple
       endIcon={endIcon}
-      isFixed={isFixed}
+      id={id}
       onClick={onClick}
       shouldRenderErrorState={shouldRenderErrorState}
       size="small"
       sx={{ color: 'text.primary' }}
+      title={title}
       variant="outlined"
-      {...buttonProps}
+      {...buttonProps}  
     >
       {valueIsString ? (
         <Tooltip title={shouldTruncateValue ? value : ''}>
-          <Typography noWrap sx={{ fontWeight: 'fontWeightLight' }} variant="h4">
+          <Typography noWrap sx={{ fontWeight: 'fontWeightLight' }}>
             {value}
           </Typography>
         </Tooltip>
@@ -56,7 +58,6 @@ export const DropdownButtonBase: React.FC<DropdownButtonBaseProps> = ({
 DropdownButtonBase.defaultProps = {
   buttonProps: undefined,
   disabled: false,
-  isFixed: undefined,
   onClick: undefined,
   shouldRenderErrorState: false,
 };
