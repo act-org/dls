@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="plot-container"
+    style="position: relative; width: 100%;"
+  >
+    <div
+      class="recharts-responsive-container"
+      style="width: 100%; height: 400px; min-width: 0;"
+    />
+    <div
+      class="MuiBox-root css-495vbm"
+    >
+      <button
+        aria-label="open summary"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-jmfwz9-MuiButtonBase-root-MuiIconButton-root"
+        color="primary"
+        data-mui-internal-clone-element="true"
+        id="open-summary-"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+          data-testid="ChevronLeftIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="plot-container"
+    style="position: relative; width: 100%;"
+  >
+    <div
+      class="recharts-responsive-container"
+      style="width: 100%; height: 400px; min-width: 0;"
+    />
+    <div
+      class="MuiBox-root css-495vbm"
+    >
+      <button
+        aria-label="open summary"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-yfogrb-MuiButtonBase-root-MuiIconButton-root"
+        data-mui-internal-clone-element="true"
+        id="open-summary-"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+          data-testid="ChevronLeftIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="plot-container"
+    style="position: relative; width: 100%;"
+  >
+    <div
+      class="recharts-responsive-container"
+      style="width: 100%; height: 400px; min-width: 0;"
+    />
+    <div
+      class="MuiBox-root css-495vbm"
+    >
+      <button
+        aria-label="open summary"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1ip8578-MuiButtonBase-root-MuiIconButton-root"
+        data-mui-internal-clone-element="true"
+        id="open-summary-"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+          data-testid="ChevronLeftIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="plot-container"
+    style="position: relative; width: 100%;"
+  >
+    <div
+      class="recharts-responsive-container"
+      style="width: 100%; height: 400px; min-width: 0;"
+    />
+    <div
+      class="MuiBox-root css-495vbm"
+    >
+      <button
+        aria-label="open summary"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-asbg7j-MuiButtonBase-root-MuiIconButton-root"
+        data-mui-internal-clone-element="true"
+        id="open-summary-"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+          data-testid="ChevronLeftIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="plot-container"
+    style="position: relative; width: 100%;"
+  >
+    <div
+      class="recharts-responsive-container"
+      style="width: 100%; height: 400px; min-width: 0;"
+    />
+    <div
+      class="MuiBox-root css-495vbm"
+    >
+      <button
+        aria-label="open summary"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-py7ps9-MuiButtonBase-root-MuiIconButton-root"
+        data-mui-internal-clone-element="true"
+        id="open-summary-"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+          data-testid="ChevronLeftIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+          />
+        </svg>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
