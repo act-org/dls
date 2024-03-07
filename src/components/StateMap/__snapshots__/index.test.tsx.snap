@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StateMap ACT theme matches the snapshot 1`] = `<div />`;
+
+exports[`StateMap ACT_ET theme matches the snapshot 1`] = `<div />`;
+
+exports[`StateMap ENCOURA theme matches the snapshot 1`] = `<div />`;
+
+exports[`StateMap ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;
+
+exports[`StateMap ENCOURAGE theme matches the snapshot 1`] = `<div />`;

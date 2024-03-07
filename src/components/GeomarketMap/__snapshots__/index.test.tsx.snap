@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeomarketMap ACT theme matches the snapshot 1`] = `<div />`;
+
+exports[`GeomarketMap ACT_ET theme matches the snapshot 1`] = `<div />`;
+
+exports[`GeomarketMap ENCOURA theme matches the snapshot 1`] = `<div />`;
+
+exports[`GeomarketMap ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;
+
+exports[`GeomarketMap ENCOURAGE theme matches the snapshot 1`] = `<div />`;

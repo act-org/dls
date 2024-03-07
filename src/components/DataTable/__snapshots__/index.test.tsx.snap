@@ -782,6 +782,397 @@ exports[`DataTable ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`DataTable ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiTableContainer-root css-50vuzf-MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root css-rgs49l-MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head css-1oesa2-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-t58f06-MuiTableCell-root"
+            color="default"
+            style="width: 50px;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-wwtclb-MuiTypography-root"
+            >
+              ID
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
+                focusable="false"
+                role="button"
+                style="color: rgb(85, 85, 85);"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1wg0rkd-MuiTableCell-root"
+            color="default"
+            style="width: 100px;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-wwtclb-MuiTypography-root"
+            >
+              Name
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1wg0rkd-MuiTableCell-root"
+            color="default"
+            style="width: 100px;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-wwtclb-MuiTypography-root"
+            >
+              Field A
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1wg0rkd-MuiTableCell-root"
+            color="default"
+            style="width: 100px;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-wwtclb-MuiTypography-root"
+            >
+              Field B
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1wg0rkd-MuiTableCell-root"
+            color="default"
+            style="width: 100px;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-wwtclb-MuiTypography-root"
+            >
+              Field C
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container css-1onl85s-MuiGrid-root"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronUpIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 3 5 15"
+              >
+                <path
+                  d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lesc6m-MuiSvgIcon-root"
+                data-testid="ChevronDownIcon"
+                focusable="false"
+                role="button"
+                viewBox="9 7 5 15"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                />
+              </svg>
+            </div>
+          </td>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root css-s46lqp-MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-hover css-1tt7b54-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 50px;"
+          >
+            1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Item 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field A1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field B1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field C1
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root MuiTableRow-hover css-1tt7b54-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 50px;"
+          >
+            2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Item 2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field A2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field B2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field C2
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root MuiTableRow-hover css-1tt7b54-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 50px;"
+          >
+            3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Item 3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field A3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field B3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field C3
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root MuiTableRow-hover css-1tt7b54-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 50px;"
+          >
+            4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Item 4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field A4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field B4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field C4
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root MuiTableRow-hover css-1tt7b54-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 50px;"
+          >
+            5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Item 5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field A5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field B5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-paddingNone MuiTableCell-sizeMedium css-1hs9xma-MuiTableCell-root"
+            style="width: 100px;"
+          >
+            Field C5
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`DataTable ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div

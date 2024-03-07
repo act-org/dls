@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SCFMap ACT theme matches the snapshot 1`] = `<div />`;
+
+exports[`SCFMap ACT_ET theme matches the snapshot 1`] = `<div />`;
+
+exports[`SCFMap ENCOURA theme matches the snapshot 1`] = `<div />`;
+
+exports[`SCFMap ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;
+
+exports[`SCFMap ENCOURAGE theme matches the snapshot 1`] = `<div />`;

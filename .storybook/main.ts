@@ -30,28 +30,17 @@ const config: StorybookConfig = {
   },
   core: {},
   features: {
-    previewMdx2: true,
     storyStoreV7: true,
-    babelModeV7: true,
-    emotionAlias: false,
-    previewCsfV3: true,
-    modernInlineRender: true,
   },
-  // babel: async options => {
-  //   options.plugins.push([
-  //     'babel-plugin-root-import',
-  //     {
-  //       rootPathPrefix: '@actinc/dls',
-  //       rootPathSuffix: './src',
-  //     },
-  //   ]);
-  //   return options;
-  // },
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../src/**/*.mdx'],
   staticDirs: ['../public'],
   typescript: {
     check: true,
-    checkOptions: {},
+    checkOptions: {
+      typescript: {
+        memoryLimit: 8192,
+      },
+    },
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,

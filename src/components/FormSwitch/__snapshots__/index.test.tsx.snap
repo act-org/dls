@@ -81,6 +81,46 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`FormSwitch ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
+      id="uniqueId"
+    >
+      <span
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-1k2xxwg-MuiSwitch-root"
+      >
+        <span
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1i4tsey-MuiButtonBase-root-MuiSwitch-switchBase"
+        >
+          <input
+            class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
+            type="checkbox"
+          />
+          <span
+            class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
+          />
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </span>
+        <span
+          class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
+        />
+      </span>
+      <span
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+      >
+        Form Switch Label
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
 exports[`FormSwitch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div

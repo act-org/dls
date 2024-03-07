@@ -12,25 +12,25 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": false,
-      "source.fixAll.eslint": true,
-      "source.organizeImports": false
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": false,
-      "source.fixAll.eslint": true,
-      "source.organizeImports": false
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": false,
-      "source.fixAll.eslint": true,
-      "source.organizeImports": false
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

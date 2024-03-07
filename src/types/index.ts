@@ -8,6 +8,7 @@
  */
 
 import { Theme, ThemeOptions } from '@mui/material/styles';
+import { ViewBox } from 'recharts/types/util/types';
 
 export type CustomTheme<T extends object> = Theme & T;
 
@@ -19,6 +20,16 @@ export interface ICustomDims {
     heights: Record<string, number>;
     widths: Record<string, number>;
   };
+}
+
+export interface ILabelListData {
+  value?: number | string | Array<number | string>;
+  payload?: unknown;
+  parentViewBox?: ViewBox;
+}
+
+export interface IMapDataProps {
+  [key: string]: unknown;
 }
 
 export type Px = `${number}px` | '';
@@ -46,6 +57,12 @@ export interface GraphQLError {
   path: string[];
 }
 
+export interface ScatterPlotData {
+  label: string;
+  x: number;
+  y: number;
+}
+
 export interface ServerError {
   extraInfo?: undefined | string;
   graphQLErrors?: [] | string[];
@@ -58,3 +75,10 @@ export interface ServerError {
     };
   };
 }
+
+export interface TooltipPayloadProps {
+  name: string;
+  value: string | number;
+}
+
+export type VariantType = 'SMALL' | 'X_SMALL';

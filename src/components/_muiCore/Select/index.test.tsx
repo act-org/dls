@@ -14,7 +14,15 @@ import { standard } from '~/helpers/test';
 
 describe('Select', () => {
   const Component = (
-    <Select defaultValue="" onChange={noop} value="ONE">
+    <Select
+      aria-label="Select"
+      defaultValue=""
+      onChange={noop}
+      SelectDisplayProps={{
+        'aria-label': 'Select',
+      }}
+      value="ONE"
+    >
       <MenuItem value="ONE">One</MenuItem>
     </Select>
   );

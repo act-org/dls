@@ -3,13 +3,16 @@
 exports[`Select ACT theme matches the snapshot 1`] = `
 <div>
   <div
+    aria-label="Select"
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-prxojz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r0:"
       aria-expanded="false"
       aria-haspopup="listbox"
+      aria-label="Select"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1h47dn3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -53,13 +56,16 @@ exports[`Select ACT theme matches the snapshot 1`] = `
 exports[`Select ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
+    aria-label="Select"
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-11956l7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r1:"
       aria-expanded="false"
       aria-haspopup="listbox"
+      aria-label="Select"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1bvxsl2-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -100,16 +106,72 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`Select ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    aria-label="Select"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-18s40xn-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+  >
+    <div
+      aria-controls=":r2:"
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-label="Select"
+      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-kgxtcv-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      role="combobox"
+      tabindex="0"
+    >
+      One
+    </div>
+    <input
+      aria-hidden="true"
+      aria-invalid="false"
+      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      tabindex="-1"
+      value="ONE"
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1mj2bmf-MuiSvgIcon-root-MuiSelect-icon"
+      data-testid="ChevronDownIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-ihdtdm"
+      >
+        <span
+          class="notranslate"
+        >
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
 exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
+    aria-label="Select"
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-16tk06o-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r3:"
       aria-expanded="false"
       aria-haspopup="listbox"
+      aria-label="Select"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1rcrhf7-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -153,13 +215,16 @@ exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Select ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
+    aria-label="Select"
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-1ony3wj-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r4:"
       aria-expanded="false"
       aria-haspopup="listbox"
+      aria-label="Select"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One

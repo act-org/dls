@@ -31,6 +31,7 @@ describe('FormSelect', () => {
       ]}
       placeholder="Placeholder"
       value="ONE"
+      variant="outlined"
     />
   );
   standard(Component);
