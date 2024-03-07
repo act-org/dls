@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomizedAxisTick ACT theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="670"
+    orientation="bottom"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="80"
+    y="157"
+  >
+    <h3
+      aria-label="Latino/Hispanic/Chicano"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-950bch-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Latino/Hispanic/Chicano
+    </h3>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedAxisTick ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="670"
+    orientation="bottom"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="80"
+    y="157"
+  >
+    <h3
+      aria-label="Latino/Hispanic/Chicano"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-t015wh-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Latino/Hispanic/Chicano
+    </h3>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedAxisTick ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="670"
+    orientation="bottom"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="80"
+    y="157"
+  >
+    <h3
+      aria-label="Latino/Hispanic/Chicano"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-1n4e5ta-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Latino/Hispanic/Chicano
+    </h3>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedAxisTick ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="670"
+    orientation="bottom"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="80"
+    y="157"
+  >
+    <h3
+      aria-label="Latino/Hispanic/Chicano"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-1n4e5ta-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Latino/Hispanic/Chicano
+    </h3>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedAxisTick ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="670"
+    orientation="bottom"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="80"
+    y="157"
+  >
+    <h3
+      aria-label="Latino/Hispanic/Chicano"
+      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-zwskne-MuiTypography-root"
+      data-mui-internal-clone-element="true"
+    >
+      Latino/Hispanic/Chicano
+    </h3>
+  </foreignobject>
+</div>
+`;
