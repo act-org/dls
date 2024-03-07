@@ -1,4 +1,14 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
 /* eslint-disable react/no-array-index-key */
+
 import { Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import clsx from 'clsx';
@@ -22,7 +32,10 @@ import {
   LabelProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
-import { ValueType, NameType } from 'recharts/types/component/DefaultTooltipContent';
+import {
+  ValueType,
+  NameType,
+} from 'recharts/types/component/DefaultTooltipContent';
 
 import { ICustomThemeOptions } from '~/types';
 
@@ -82,11 +95,17 @@ export const AreaChart: React.FC<AreaChartProps> = ({
   yLabelProps,
   yReferenceValue,
 }: AreaChartProps): React.ReactElement => {
-  const { customColors, palette, spacing, typography }: ICustomThemeOptions = useTheme();
+  const { customColors, palette, spacing, typography }: ICustomThemeOptions =
+    useTheme();
 
   return (
     <Grid container direction="column" item spacing={2} xs={12}>
-      <ResponsiveContainer debounce={50} height={height || 400} width={width || '100%'} {...responsiveContainerProps}>
+      <ResponsiveContainer
+        debounce={50}
+        height={height || 400}
+        width={width || '100%'}
+        {...responsiveContainerProps}
+      >
         <RechartsAreaChart
           data={data}
           margin={{
@@ -115,7 +134,12 @@ export const AreaChart: React.FC<AreaChartProps> = ({
             {xLabel && (
               <Label
                 position="insideBottom"
-                style={{ fill: palette.secondary.dark, fontSize: typography.h4.fontSize, paddingTop: '10px', userSelect: 'none' }}
+                style={{
+                  fill: palette.secondary.dark,
+                  fontSize: typography.h4.fontSize,
+                  paddingTop: '10px',
+                  userSelect: 'none',
+                }}
                 {...xLabelProps}
               >
                 {xLabel}
@@ -141,14 +165,20 @@ export const AreaChart: React.FC<AreaChartProps> = ({
                 angle={-90}
                 offset={15}
                 position="insideLeft"
-                style={{ fill: palette.secondary.dark, fontSize: typography.h4.fontSize, userSelect: 'none' }}
+                style={{
+                  fill: palette.secondary.dark,
+                  fontSize: typography.h4.fontSize,
+                  userSelect: 'none',
+                }}
                 {...yLabelProps}
               >
                 {yLabel}
               </Label>
             )}
           </YAxis>
-          {(yReferenceValue || yReferenceValue === 0) && <ReferenceLine stroke={palette.grey[400]} y={yReferenceValue} />}
+          {(yReferenceValue || yReferenceValue === 0) && (
+            <ReferenceLine stroke={palette.grey[400]} y={yReferenceValue} />
+          )}
           {areaKeys.map((key, i) => (
             <Area
               dataKey={key}
@@ -164,7 +194,11 @@ export const AreaChart: React.FC<AreaChartProps> = ({
               fillOpacity={1}
               key={`${key}-area`}
               stroke="none"
-              style={colors?.[key] ? { ...areaProps?.style, fill: colors[key] } : areaProps?.style}
+              style={
+                colors?.[key]
+                  ? { ...areaProps?.style, fill: colors[key] }
+                  : areaProps?.style
+              }
               {...(areaProps as Omit<AreaProps, 'dataKey' | 'ref'>)}
             />
           ))}
