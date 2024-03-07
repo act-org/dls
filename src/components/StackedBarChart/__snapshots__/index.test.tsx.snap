@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StackedBarChart ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-7vdyve"
+    height="254"
+    tabindex="0"
+    width="100%"
+  >
+    <div
+      class="recharts-responsive-container css-xi8oub"
+      style="width: 100%; height: 254px; min-width: 0;"
+    />
+  </div>
+</div>
+`;
+
+exports[`StackedBarChart ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-7vdyve"
+    height="254"
+    tabindex="0"
+    width="100%"
+  >
+    <div
+      class="recharts-responsive-container css-xi8oub"
+      style="width: 100%; height: 254px; min-width: 0;"
+    />
+  </div>
+</div>
+`;
+
+exports[`StackedBarChart ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-7vdyve"
+    height="254"
+    tabindex="0"
+    width="100%"
+  >
+    <div
+      class="recharts-responsive-container css-xi8oub"
+      style="width: 100%; height: 254px; min-width: 0;"
+    />
+  </div>
+</div>
+`;
+
+exports[`StackedBarChart ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-7vdyve"
+    height="254"
+    tabindex="0"
+    width="100%"
+  >
+    <div
+      class="recharts-responsive-container css-xi8oub"
+      style="width: 100%; height: 254px; min-width: 0;"
+    />
+  </div>
+</div>
+`;
+
+exports[`StackedBarChart ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-7vdyve"
+    height="254"
+    tabindex="0"
+    width="100%"
+  >
+    <div
+      class="recharts-responsive-container css-xi8oub"
+      style="width: 100%; height: 254px; min-width: 0;"
+    />
+  </div>
+</div>
+`;
