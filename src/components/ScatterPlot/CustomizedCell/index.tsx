@@ -57,7 +57,7 @@ const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
       <circle
         cx={cx}
         cy={cy}
-        fill={customColors.chart?.secondary?.second}
+        fill={customColors?.chart?.secondary?.second}
         height={height}
         r={calculateRadius(groupSize)}
         stroke={palette.common.black}

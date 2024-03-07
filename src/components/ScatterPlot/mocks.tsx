@@ -7,7 +7,6 @@
  * @prettier
  */
 
-// eslint-disable-next-line import/prefer-default-export
 export const LARGE_DATA = [
   {
     label: 'Texas',
@@ -259,4 +258,18 @@ export const LARGE_DATA = [
     x: 74,
     y: 15,
   },
+];
+
+export const defaultData = [
+  { label: 'FAFSA', x: 0.9, y: 32 },
+  { label: 'SAT Scores', x: 0.85, y: 27 },
+  { label: 'Website Inquiry', x: 1.8, y: 23 },
+  { label: 'HS Visit/Counselor', x: 2.4, y: 20 },
+  { label: 'Online Application', x: 3.9, y: 45 },
+  { label: 'Purchased x', x: 5.8, y: 4 },
+  { label: 'CAPEX INQs', x: 6.4, y: 6 },
+  { label: 'Pro_Plus', x: 9.1, y: 3 },
+  { label: 'Something Else', x: 9.1, y: 3 },
+  { label: 'More Stuff', x: 9.3, y: 2.9 },
+  { label: 'Private Colleges & Universities', x: 19.9, y: 40 },
 ];
