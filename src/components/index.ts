@@ -38,6 +38,7 @@ export * from './OverlappedBarChart';
 export * from './PieChart';
 export * from './RenderMetaTags';
 export * from './ScatterPlot';
+export * from './SCFMap';
 export * from './SearchBar';
 export * from './SessionStorageKeySharer';
 export * from './SessionTimer';
