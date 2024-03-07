@@ -12,6 +12,12 @@ exports[`Dialog ACT_ET theme matches the snapshot 1`] = `
 />
 `;
 
+exports[`Dialog ENCOURA theme matches the snapshot 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
 exports[`Dialog ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div
   aria-hidden="true"

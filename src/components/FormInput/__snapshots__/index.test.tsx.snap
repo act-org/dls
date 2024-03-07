@@ -68,6 +68,40 @@ exports[`FormInput ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`FormInput ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-vm0961-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+    >
+      <div
+        class="label-split"
+      >
+        <span
+          class="label-help"
+        >
+          Label
+        </span>
+      </div>
+    </label>
+    <div
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1a3pfpz-MuiInputBase-root-MuiInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiInput-input css-m09luf-MuiInputBase-input-MuiInput-input"
+        placeholder="Placeholder"
+        type="text"
+        value="test"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`FormInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div

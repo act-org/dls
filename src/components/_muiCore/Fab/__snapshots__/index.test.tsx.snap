@@ -53,6 +53,32 @@ exports[`Fab ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`Fab ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <button
+    aria-label="Floating Icon Button"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-12f56zy-MuiButtonBase-root-MuiFab-root"
+    tabindex="0"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+      data-testid="PlusIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+      />
+    </svg>
+    <span
+      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
 exports[`Fab ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <button

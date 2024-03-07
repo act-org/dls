@@ -28,6 +28,20 @@ exports[`Link ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`Link ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1h11one-MuiTypography-root-MuiLink-root"
+    href="https://www.act.org"
+    target="_blank"
+  >
+    <div>
+      children
+    </div>
+  </a>
+</div>
+`;
+
 exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <a

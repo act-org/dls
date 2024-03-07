@@ -104,6 +104,58 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`AppBarNavigation ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-4n8761-MuiPaper-root-MuiAppBar-root"
+  >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-nhqdm2-MuiTypography-root-MuiLink-root"
+      to="https://act-et.org"
+    >
+      <img
+        alt="ACT"
+        aria-label="ACT"
+        class="css-10klw3m"
+        src="https://i.imgur.com/P0gtzO0.png"
+      />
+    </a>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+      >
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-5od6qf-MuiTypography-root-MuiLink-root"
+          to="#"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-41gj26-MuiTypography-root"
+          >
+            Home
+          </p>
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+      >
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-5od6qf-MuiTypography-root-MuiLink-root"
+          to="#"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-y1s3p6-MuiTypography-root"
+          >
+            Other Page
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
 exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <header
