@@ -43,7 +43,9 @@ export interface CustomToolTipProps extends TooltipProps<ValueType, NameType> {
   ) => JSX.Element | string | null;
   renderAdditionalInfo?: (
     barId: string | undefined,
-    ...rest: unknown[]
+    payload: Payload<ValueType, NameType>[],
+    data?: DataProps[],
+    tooltipLabel?: unknown,
   ) => JSX.Element | JSX.Element[] | null;
   showValue?: boolean;
   tooltipColor?: string;

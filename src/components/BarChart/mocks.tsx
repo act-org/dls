@@ -1,3 +1,16 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
+import clsx from 'clsx';
+
+import { THEME_ENCOURA } from '~/styles/themeEncoura';
+
 export const defaultData = [
   {
     '2019': 138598,
@@ -55,7 +68,11 @@ export const defaultData = [
   },
 ];
 
-export const defaultDataFourLines = defaultData.map(d => ({ ...d, '2022': 7000, '2022scatter': 3500 }));
+export const defaultDataFourLines = defaultData.map(d => ({
+  ...d,
+  '2022': 7000,
+  '2022scatter': 3500,
+}));
 
 export const longLabelData = [
   {
@@ -103,4 +120,20 @@ export const defaultBarKeys = ['2019', '2020', '2021'];
 
 export const defaultBarKeysFourLines = [...defaultBarKeys, '2022'];
 
-export const longBarKeys = ['2019 with long sublabel', '2020 with long sublabel', '2021 with long sublabel'];
+export const longBarKeys = [
+  '2019 with long sublabel',
+  '2020 with long sublabel',
+  '2021 with long sublabel',
+];
+
+export const useEnrollmentLensBarColors = (i: number): string | undefined => {
+  return clsx(
+    i === 0 && THEME_ENCOURA.customColors?.chart?.secondary?.first,
+    i === 1 && THEME_ENCOURA.customColors?.chart?.secondary?.second,
+    i === 2 && THEME_ENCOURA.customColors?.chart?.secondary?.third,
+    i === 3 && THEME_ENCOURA.customColors?.chart?.secondary?.fourth,
+    i === 4 && THEME_ENCOURA.customColors?.chart?.secondary?.fifth,
+    i === 5 && THEME_ENCOURA.customColors?.chart?.secondary?.sixth,
+    i > 5 && THEME_ENCOURA.palette?.grey?.[700],
+  );
+};
