@@ -20,10 +20,12 @@ export const Template: StoryFn = args => {
 
   return (
     <Dropdown
+      id="dropdown"
       onChange={(newValue): void => {
         setValue(newValue);
       }}
       options={OPTIONS}
+      title="Dropdown"
       value={value}
       {...args}
     />

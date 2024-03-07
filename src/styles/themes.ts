@@ -16,6 +16,7 @@ export enum THEMES {
   ACT_ET = 'ACT_ET',
   ENCOURA_CLASSIC = 'ENCOURA_CLASSIC',
   ENCOURAGE = 'ENCOURAGE',
+  MY_ENCOURA = 'MY_ENCOURA',
 }
 
 export type Themes = keyof typeof THEMES;
