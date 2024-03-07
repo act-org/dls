@@ -28,6 +28,15 @@ export default {
   title: 'Molecules / Maps / CountyMap',
 } as Meta<CountyMapProps>;
 
+export const Default: StoryObj<CountyMapProps> = {
+  args: {
+    data: defaultData,
+    geoJSONPath: '/maps/counties.json',
+    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    processDataFn: defaultProcessDataFn,
+  },
+};
+
 export const SelectedCounty: StoryObj<CountyMapProps> = {
   args: {
     data: defaultData,
