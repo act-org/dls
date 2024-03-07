@@ -23,7 +23,13 @@ import ThemeProvider from '~/components/ThemeProvider';
 
 export const render = (
   Component: ReactElement,
-  theme?: 'ACT' | 'ACT_ET' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | Theme,
+  theme?:
+    | 'ACT'
+    | 'ACT_ET'
+    | 'ENCOURA'
+    | 'ENCOURA_CLASSIC'
+    | 'ENCOURAGE'
+    | Theme,
   options?: RenderOptions,
 ): RenderResult =>
   originalRender(Component, {

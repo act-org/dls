@@ -11,29 +11,26 @@
 
 import { AlertProps as MuiAlertProps } from '@mui/lab';
 import { Alert as MuiAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
-import { FC, forwardRef, ReactElement } from 'react';
+import { forwardRef, ForwardRefRenderFunction, ReactElement } from 'react';
 
 export type AlertProps = MuiAlertProps & {
+  // eslint-disable-next-line react/require-default-props
   title?: string | ReactElement;
 };
 
-export const Alert: FC<AlertProps> = forwardRef(
-  (
-    { children, title, ...props }: AlertProps,
-    ref,
-  ): ReactElement<AlertProps> => {
-    return (
-      <MuiAlert ref={ref} {...props}>
-        {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
+const AlertComponent: ForwardRefRenderFunction<HTMLDivElement, AlertProps> = (
+  { children, title, ...props }: AlertProps,
+  ref,
+): ReactElement<AlertProps> => {
+  return (
+    <MuiAlert ref={ref} {...props}>
+      {title && <MuiAlertTitle>{title}</MuiAlertTitle>}
 
-        {children}
-      </MuiAlert>
-    );
-  },
-);
-
-Alert.defaultProps = {
-  title: undefined,
+      {children}
+    </MuiAlert>
+  );
 };
+
+export const Alert = forwardRef(AlertComponent);
 
 export default Alert;
