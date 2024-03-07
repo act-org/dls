@@ -24,6 +24,18 @@ exports[`WithLabel ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`WithLabel ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-1frj002-MuiGrid-root"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</div>
+`;
+
 exports[`WithLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
@@ -72,6 +84,18 @@ exports[`WithLabel no Colon ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`WithLabel no Colon ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-1frj002-MuiGrid-root"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</div>
+`;
+
 exports[`WithLabel no Colon ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
@@ -109,6 +133,18 @@ exports[`WithLabel required ACT theme matches the snapshot 1`] = `
 `;
 
 exports[`WithLabel required ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-1frj002-MuiGrid-root"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WithLabel required ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-1frj002-MuiGrid-root"

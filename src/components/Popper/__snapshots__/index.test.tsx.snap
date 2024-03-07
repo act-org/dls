@@ -48,6 +48,30 @@ exports[`Popper (inner Component) with All Divider ACT_ET theme matches the snap
 </div>
 `;
 
+exports[`Popper (inner Component) with All Divider ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-viv7be-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Popper (inner Component) with All Divider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
@@ -112,6 +136,18 @@ exports[`Popper (inner Component) with Body ACT_ET theme matches the snapshot 1`
 <div>
   <div
     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-1rytrjb-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Body ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-viv7be-MuiPaper-root"
   >
     <div>
       Body
@@ -210,6 +246,24 @@ exports[`Popper (inner Component) with Footer Divider ACT_ET theme matches the s
 </div>
 `;
 
+exports[`Popper (inner Component) with Footer Divider ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-viv7be-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
+    <div
+      class="css-1wwcwj4"
+    />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Popper (inner Component) with Footer Divider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
@@ -239,6 +293,21 @@ exports[`Popper (inner Component) with Footer Divider ENCOURAGE theme matches th
     <div
       class="css-1wwcwj4"
     />
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Footer ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-viv7be-MuiPaper-root"
+  >
+    <div>
+      Body
+    </div>
     <div>
       Footer
     </div>
@@ -342,6 +411,24 @@ exports[`Popper (inner Component) with Header Divider ACT_ET theme matches the s
 </div>
 `;
 
+exports[`Popper (inner Component) with Header Divider ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-viv7be-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
+    <div
+      class="css-1re4y8t"
+    />
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Popper (inner Component) with Header Divider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
@@ -371,6 +458,21 @@ exports[`Popper (inner Component) with Header Divider ENCOURAGE theme matches th
     <div
       class="css-1re4y8t"
     />
+    <div>
+      Body
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popper (inner Component) with Header ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-viv7be-MuiPaper-root"
+  >
+    <div>
+      Header
+    </div>
     <div>
       Body
     </div>
