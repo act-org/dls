@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeatMap ACT theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1xmgghu"
+    style="height: 388px; width: 100%;"
+  >
+    <div
+      style="position: relative; width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`HeatMap ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1xmgghu"
+    style="height: 388px; width: 100%;"
+  >
+    <div
+      style="position: relative; width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`HeatMap ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1xmgghu"
+    style="height: 388px; width: 100%;"
+  >
+    <div
+      style="position: relative; width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`HeatMap ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1xmgghu"
+    style="height: 388px; width: 100%;"
+  >
+    <div
+      style="position: relative; width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`HeatMap ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1xmgghu"
+    style="height: 388px; width: 100%;"
+  >
+    <div
+      style="position: relative; width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;

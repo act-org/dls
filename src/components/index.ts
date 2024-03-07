@@ -27,6 +27,7 @@ export * from './FormSelect';
 export * from './FormSwitch';
 export * from './GeomarketMap';
 export * from './GridGenerator';
+export * from './HeatMap';
 export * from './IdleTimer';
 export * from './InputLabel';
 export * from './LineChart';
