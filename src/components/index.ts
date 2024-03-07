@@ -25,6 +25,7 @@ export * from './FormRadio';
 export * from './FormRadioGroup';
 export * from './FormSelect';
 export * from './FormSwitch';
+export * from './GeomarketMap';
 export * from './GridGenerator';
 export * from './IdleTimer';
 export * from './InputLabel';
