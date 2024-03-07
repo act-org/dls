@@ -22,6 +22,7 @@
     "pluralize": "^8.0.0",
     "react-idle-timer": "^5.7.2",
     "react-window": "^1.8.9",
+    "recharts": "^2.11.0",
     "validator": "^13.9.0"
   },
   "description": "Design Language System (DLS) for ACT & Encoura front-end projects.",
@@ -76,6 +77,7 @@
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
     "@types/react-window": "1.8.5",
+    "@types/recharts": "1.8.26",
     "@types/shelljs": "0.8.12",
     "@types/validator": "13.7.17",
     "axe-core": "4.7.2",
