@@ -7,8 +7,6 @@
  * @prettier
  */
 
-/* eslint-disable react/no-array-index-key */
-
 import { Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import clsx from 'clsx';
@@ -68,10 +66,6 @@ export interface AreaChartProps {
   yReferenceValue?: number;
 }
 
-/**
- * # AreaChart
- *
- */
 export const AreaChart: React.FC<AreaChartProps> = ({
   children,
   colors,
