@@ -11,7 +11,7 @@
 
 export * from './Alert';
 export * from './AppBarNavigation';
-// export * from './AreaChart';
+export * from './AreaChart';
 export * from './ConfirmDialog';
 export * from './DataTable';
 export * from './Dialog';

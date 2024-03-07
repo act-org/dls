@@ -210,7 +210,7 @@
     "build:components": "tspc --project tsconfig.build.json",
     "build:icons": "bin/buildIcons",
     "build:package_json": "clear-package-json package.json -o dist/package.json",
-    "build-storybook": "storybook build -o ./storybook-static/www",
+    "build-storybook": "NODE_OPTIONS=--max_old_space_size=8192 storybook build -o ./storybook-static/www",
     "copy": "npm-run-all copy:*",
     "copy:changelog": "cp -rf CHANGELOG.md dist",
     "copy:license": "cp -rf LICENSE dist",

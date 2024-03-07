@@ -30,12 +30,7 @@ const config: StorybookConfig = {
   },
   core: {},
   features: {
-    previewMdx2: true,
     storyStoreV7: true,
-    babelModeV7: true,
-    emotionAlias: false,
-    previewCsfV3: true,
-    modernInlineRender: true,
   },
   // babel: async options => {
   //   options.plugins.push([
@@ -51,7 +46,11 @@ const config: StorybookConfig = {
   staticDirs: ['../public'],
   typescript: {
     check: true,
-    checkOptions: {},
+    checkOptions: {
+      typescript: {
+        memoryLimit: 8192,
+      },
+    },
     reactDocgen: 'react-docgen-typescript',
     reactDocgenTypescriptOptions: {
       shouldExtractLiteralValuesFromEnum: true,
