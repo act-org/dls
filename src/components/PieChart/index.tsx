@@ -56,7 +56,7 @@ export interface PieChartProps {
   height?: number;
   legendProps?: LegendProps;
   pieChartProps?: CategoricalChartProps;
-  pieProps?: PieProps;
+  pieProps?: Partial<PieProps>;
   responsiveContainerProps?: ResponsiveContainerProps;
   titleProps?: Partial<TitleProps>;
   tooltipProps?: TooltipProps<ValueType, NameType>;
