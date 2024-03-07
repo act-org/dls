@@ -29,6 +29,7 @@ export * from './IdleTimer';
 export * from './InputLabel';
 export * from './LineChart';
 export * from './Loading';
+export * from './OverlappedBarChart';
 export * from './PieChart';
 export * from './RenderMetaTags';
 export * from './SearchBar';
