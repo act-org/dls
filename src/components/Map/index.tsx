@@ -300,8 +300,8 @@ export const Map: React.FC<MapProps> = ({
         />
         {data && (
           <Source data={data} type="geojson" {...sourceProps} id={sourceId}>
-            {/* fix for TS complaings about the incompatibility of layerProps and dataLayer, even though
-            dataLayer is one of the multiple types accepted by layerProps */}
+            {/* Fix for TS complaining about the incompatibility of layerProps and dataLayer, even though
+            dataLayer is one of the multiple types accepted by layerProps. */}
             {layerProps ? <Layer {...layerProps} /> : <Layer {...dataLayer} />}
             {layers}
           </Source>
