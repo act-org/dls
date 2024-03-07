@@ -13,44 +13,44 @@ import { Playground } from '~/helpers/playground';
 
 import { defaultData, defaultProcessDataFn } from './mocks';
 
-import { GeomarketMap, GeomarketMapProps } from '.';
+import { StateMap, StateMapProps } from '.';
 
 export default {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: '/maps/states.json',
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     processDataFn: defaultProcessDataFn,
   },
-  argTypes: Playground({}, GeomarketMap),
-  component: GeomarketMap,
+  argTypes: Playground({}, StateMap),
+  component: StateMap,
   tags: ['autodocs'],
-  title: 'Molecules / Maps / GeomarketMap',
-} as Meta<GeomarketMapProps>;
+  title: 'Molecules / Maps / StateMap',
+} as Meta<StateMapProps>;
 
-export const Default: StoryObj<GeomarketMapProps> = {
+export const Default: StoryObj<StateMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: '/maps/states.json',
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     processDataFn: defaultProcessDataFn,
   },
 };
 
-export const SelectedGeomarket: StoryObj<GeomarketMapProps> = {
+export const SelectedState: StoryObj<StateMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: '/maps/states.json',
     processDataFn: defaultProcessDataFn,
-    selectedGeomarket: ['MS-01'],
+    selectedState: ['48'],
   },
 };
 
-export const MultipleSelectedGeomarkets: StoryObj<GeomarketMapProps> = {
+export const MultipleSelectedStates: StoryObj<StateMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: '/maps/states.json',
     processDataFn: defaultProcessDataFn,
-    selectedGeomarket: ['MS-01', 'MS-02'],
+    selectedState: ['48', '40'],
   },
 };
