@@ -53,6 +53,12 @@ export interface GraphQLError {
   path: string[];
 }
 
+export interface ScatterPlotData {
+  label: string;
+  x: number;
+  y: number;
+}
+
 export interface ServerError {
   extraInfo?: undefined | string;
   graphQLErrors?: [] | string[];
