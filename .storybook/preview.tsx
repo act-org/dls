@@ -21,12 +21,6 @@ configureActions({
 });
 
 export const parameters = {
-  controls: { expanded: false },
-  docs: {
-    container: DocsContainer,
-    page: DocsPage,
-    inlineStories: true,
-  },
   backgrounds: {
     default: 'White',
     values: [
@@ -44,7 +38,15 @@ export const parameters = {
       },
     ],
   },
-  layout: 'centered',
+  controls: { expanded: false },
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+    story: {
+      inline: true,
+    },
+  },
+  layout: 'padded',
   options: {
     storySort: {
       order: [

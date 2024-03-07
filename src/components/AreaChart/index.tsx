@@ -49,7 +49,7 @@ export interface AreaColorProps {
 export interface AreaChartProps {
   areaChartProps?: CategoricalChartProps;
   areaKeys: string[];
-  areaProps?: AreaProps;
+  areaProps?: Partial<AreaProps>;
   children?: React.ReactNode;
   colors?: AreaColorProps;
   data: AreaDataProps[];

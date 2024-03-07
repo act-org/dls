@@ -32,16 +32,6 @@ const config: StorybookConfig = {
   features: {
     storyStoreV7: true,
   },
-  // babel: async options => {
-  //   options.plugins.push([
-  //     'babel-plugin-root-import',
-  //     {
-  //       rootPathPrefix: '@actinc/dls',
-  //       rootPathSuffix: './src',
-  //     },
-  //   ]);
-  //   return options;
-  // },
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../src/**/*.mdx'],
   staticDirs: ['../public'],
   typescript: {
