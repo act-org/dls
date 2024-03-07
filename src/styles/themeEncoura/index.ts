@@ -9,19 +9,19 @@
 
 import deepMerge from 'deepmerge';
 
-import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import { createTheme } from '~/styles/createTheme';
+import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import { CustomThemeOptions } from '~/types';
 
-import COMPONENTS from './components';
 import COLORS, { CustomColorOptions } from './colors';
+import COMPONENTS from './components';
 import CUSTOM_DIMS from './customDims';
 import PALETTE from './palette';
 import TYPOGRAPHY from './typography';
 
 export type MyEncouraCustomTheme = CustomThemeOptions<CustomColorOptions>;
 
-export const THEME_MY_ENCOURA: MyEncouraCustomTheme = deepMerge(
+export const THEME_ENCOURA: MyEncouraCustomTheme = deepMerge(
   THEME_ENCOURA_CLASSIC,
   {
     // Theme customizations to distinguish MyEncoura from
@@ -34,4 +34,4 @@ export const THEME_MY_ENCOURA: MyEncouraCustomTheme = deepMerge(
   },
 );
 
-export default createTheme(THEME_MY_ENCOURA);
+export default createTheme(THEME_ENCOURA);
