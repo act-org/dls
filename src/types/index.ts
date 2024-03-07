@@ -28,6 +28,10 @@ export interface ILabelListData {
   parentViewBox?: ViewBox;
 }
 
+export interface IMapDataProps {
+  [key: string]: unknown;
+}
+
 export type Px = `${number}px` | '';
 
 export type Size = 'default' | 'large';
