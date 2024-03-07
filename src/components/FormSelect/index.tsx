@@ -67,6 +67,9 @@ export function FormSelect({
         {label}
       </InputLabel>
       <Select
+        SelectDisplayProps={{
+          'aria-label': 'Select',
+        }}
         {...selectProps}
         disabled={disabled}
         error={error}

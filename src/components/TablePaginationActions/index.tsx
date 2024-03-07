@@ -141,6 +141,9 @@ export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
             renderValue: (value): ReactElement<unknown> => (
               <span>{`${noun} ${Number(value) + 1}`}</span>
             ),
+            SelectDisplayProps: {
+              'aria-label': 'Select',
+            },
           }}
           value={zeroBasedPage}
         >
