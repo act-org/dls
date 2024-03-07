@@ -55,7 +55,7 @@ export default {
   ),
   component: BarChart,
   tags: ['autodocs'],
-  title: 'Molecules / BarChart',
+  title: 'Molecules / Charts / BarChart',
 } as Meta<BarChartProps>;
 
 export const WithCustomBarColors: StoryObj<BarChartProps> = {

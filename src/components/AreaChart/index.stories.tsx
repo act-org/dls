@@ -46,7 +46,7 @@ export default {
   ),
   component: AreaChart,
   tags: ['autodocs'],
-  title: 'Molecules / AreaChart',
+  title: 'Molecules / Charts / AreaChart',
 } as Meta<AreaChartProps>;
 
 export const WithMoreThanOneArea: StoryObj<AreaChartProps> = {

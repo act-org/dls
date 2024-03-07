@@ -27,6 +27,7 @@ export * from './FormSwitch';
 export * from './GridGenerator';
 export * from './IdleTimer';
 export * from './InputLabel';
+export * from './LineChart';
 export * from './Loading';
 export * from './RenderMetaTags';
 export * from './SearchBar';
