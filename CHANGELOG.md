@@ -1,3 +1,31 @@
+# [7.8.0-next.2](https://github.com/act-org/dls/compare/v7.8.0-next.1...v7.8.0-next.2) (2024-03-07)
+
+
+### Bug Fixes
+
+* Fix loading of museo-sans font in storybook ([88927c3](https://github.com/act-org/dls/commit/88927c3682ed046e162df340bb8abbdddb24d82e))
+* Load mapbox css ([36f0d71](https://github.com/act-org/dls/commit/36f0d71b9aeae03494581a938e3f69337e0da93c))
+
+
+### Features
+
+* Add support for ENCOURA theme in ThemeProvider ([8374971](https://github.com/act-org/dls/commit/8374971fba0c4855a24a2e0ad5a6fb5c731dbc55))
+* Add support for storybook env vars, mapbox token ([d01c0c7](https://github.com/act-org/dls/commit/d01c0c7e6e9b4a86060b4dd76936963274b30d65))
+* Added AreaChart component and recharts dependency ([1e8869a](https://github.com/act-org/dls/commit/1e8869a2b7c592c8d08f8f8628bca3fb3b904e6c))
+* Added BarChart component ([329899e](https://github.com/act-org/dls/commit/329899e2efedebbd6fea72d6dd6b940bb1e73079))
+* Added CountyMap, MapPopup components ([808153d](https://github.com/act-org/dls/commit/808153d70e633a996f1883e5de289edc5e936e56))
+* Added GeomarketMap component ([643781c](https://github.com/act-org/dls/commit/643781cb3e069b3990eafac0b82dd13634e159fe))
+* Added HeatMap component ([28fe7ed](https://github.com/act-org/dls/commit/28fe7eda002f681657c23a0c038e7c2beda7d661))
+* Added LineChart component ([d3fdf6d](https://github.com/act-org/dls/commit/d3fdf6dd65358f15f1dd99c3e7f19d9e28a3c117))
+* Added Map component ([7be6371](https://github.com/act-org/dls/commit/7be637165b41bfa2ca527e78ce550d7654c363d7))
+* Added OverlappedBarChart component ([92d1ac1](https://github.com/act-org/dls/commit/92d1ac14db3c2e052477c19807abc8f1fa013b04))
+* Added PieChart component ([8ab6ca3](https://github.com/act-org/dls/commit/8ab6ca3c4c88145b710dfe4ddd4b13e156c332fe))
+* Added ScatterPlot component ([4d5b596](https://github.com/act-org/dls/commit/4d5b596526b3a49d8df81d33e6d7d104dee5860e))
+* Added SCFMap component ([d5f4686](https://github.com/act-org/dls/commit/d5f4686c696eeab871654b5112f1d2e7d3334677))
+* Added StackedBarChart component ([0a11422](https://github.com/act-org/dls/commit/0a114221540568951c725e984409004397b6414a))
+* Added StateMap component ([5b71f01](https://github.com/act-org/dls/commit/5b71f014c8c888230ee59886524325511314b69a))
+* Bump deps and devDeps to their latest compatible releases ([358bbfb](https://github.com/act-org/dls/commit/358bbfb934a1fcab0cf8cd4fda58ebdffd3131de))
+
 # [7.8.0-next.1](https://github.com/act-org/dls/compare/v7.7.0...v7.8.0-next.1) (2024-03-04)
 
 
