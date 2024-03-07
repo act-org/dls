@@ -3,7 +3,7 @@
 exports[`Checkbox ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary css-10m3sgg-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-p8undo-MuiButtonBase-root-MuiCheckbox-root"
     color="primary"
   >
     <input
@@ -33,7 +33,7 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
 exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary css-1e3aweb-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-10ho93d-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -62,7 +62,7 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary css-2k8t5s-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-iljhdt-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -91,7 +91,7 @@ exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary css-wakehq-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1dyx9jf-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -120,7 +120,7 @@ exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary css-bwsz36-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-18h1och-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""

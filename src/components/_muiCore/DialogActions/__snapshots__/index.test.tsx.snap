@@ -3,10 +3,10 @@
 exports[`DialogActions ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing css-1c059f0-MuiDialogActions-root"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-1wwn0ee-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation css-gq5jh7-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-gq5jh7-MuiButtonBase-root-MuiButton-root"
       color="primary"
       tabindex="0"
       type="button"
@@ -23,10 +23,10 @@ exports[`DialogActions ACT theme matches the snapshot 1`] = `
 exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-cidsuv-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-q8ru1j-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-q8ru1j-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
@@ -42,10 +42,10 @@ exports[`DialogActions ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogActions ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-cidsuv-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation css-j0euii-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-j0euii-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
@@ -61,10 +61,10 @@ exports[`DialogActions ENCOURA theme matches the snapshot 1`] = `
 exports[`DialogActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing css-jas4ct-MuiDialogActions-root"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-cidsuv-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation css-1p2tnph-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-1p2tnph-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
@@ -80,10 +80,10 @@ exports[`DialogActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogActions ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogActions-root MuiDialogActions-spacing css-u1w580-MuiDialogActions-root"
+    class="MuiDialogActions-root MuiDialogActions-spacing css-1n5jw9u-MuiDialogActions-root"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-yifhv8-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-yifhv8-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >

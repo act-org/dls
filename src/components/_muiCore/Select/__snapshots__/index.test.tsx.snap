@@ -6,10 +6,11 @@ exports[`Select ACT theme matches the snapshot 1`] = `
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-prxojz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r0:"
       aria-expanded="false"
       aria-haspopup="listbox"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1h47dn3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -56,10 +57,11 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-11956l7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r1:"
       aria-expanded="false"
       aria-haspopup="listbox"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1bvxsl2-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -106,10 +108,11 @@ exports[`Select ENCOURA theme matches the snapshot 1`] = `
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-18s40xn-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r2:"
       aria-expanded="false"
       aria-haspopup="listbox"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-kgxtcv-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -156,10 +159,11 @@ exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-16tk06o-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r3:"
       aria-expanded="false"
       aria-haspopup="listbox"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1rcrhf7-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One
@@ -206,10 +210,11 @@ exports[`Select ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-1ony3wj-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
+      aria-controls=":r4:"
       aria-expanded="false"
       aria-haspopup="listbox"
       class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-      role="button"
+      role="combobox"
       tabindex="0"
     >
       One

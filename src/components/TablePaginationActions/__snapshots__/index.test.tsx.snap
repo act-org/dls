@@ -67,12 +67,13 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
+            aria-controls=":r3:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-labelledby=":r2:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1e1hyzm-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":r2:"
-            role="button"
+            role="combobox"
             tabindex="0"
           >
             <span>
@@ -239,12 +240,13 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1a4gudp-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
+            aria-controls=":r9:"
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby=":r7:"
+            aria-labelledby=":r8:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-6qifd1-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r7:"
-            role="button"
+            id=":r8:"
+            role="combobox"
             tabindex="0"
           >
             <span>
@@ -407,12 +409,13 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-97d1lu-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
+            aria-controls=":rf:"
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby=":rc:"
+            aria-labelledby=":re:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1xypkvb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rc:"
-            role="button"
+            id=":re:"
+            role="combobox"
             tabindex="0"
           >
             <span>
@@ -575,12 +578,13 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-1eb5ks1-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
+            aria-controls=":rl:"
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby=":rh:"
+            aria-labelledby=":rk:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-b2hql5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rh:"
-            role="button"
+            id=":rk:"
+            role="combobox"
             tabindex="0"
           >
             <span>
@@ -743,12 +747,13 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1ud848n-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
+            aria-controls=":rr:"
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby=":rm:"
+            aria-labelledby=":rq:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rm:"
-            role="button"
+            id=":rq:"
+            role="combobox"
             tabindex="0"
           >
             <span>
