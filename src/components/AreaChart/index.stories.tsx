@@ -16,8 +16,8 @@ import { THEME_ENCOURA } from '~/styles';
 import {
   defaultData,
   largerDataset,
-  percentageData,
   largerDatasetWith18Keys,
+  percentageData,
 } from './mocks';
 
 import { AreaChart, AreaChartProps } from '.';
