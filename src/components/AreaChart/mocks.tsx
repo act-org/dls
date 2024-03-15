@@ -105,3 +105,12 @@ export const largerDataset = [
     name: 'Day 6',
   },
 ];
+
+export const largerDatasetWith18Keys: { [key: string]: number | string }[] =
+  largerDataset.map(item => {
+    const newItem: { [key: string]: number | string } = { name: item.name };
+    for (let i = 0; i < 18; i++) {
+      newItem[String.fromCharCode(65 + i)] = Math.floor(Math.random() * 100);
+    }
+    return newItem;
+  });

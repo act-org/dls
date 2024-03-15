@@ -11,8 +11,14 @@ import { Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Playground } from '~/helpers/playground';
+import { THEME_ENCOURA } from '~/styles';
 
-import { defaultData, largerDataset, percentageData } from './mocks';
+import {
+  defaultData,
+  largerDataset,
+  percentageData,
+  largerDatasetWith18Keys,
+} from './mocks';
 
 import { AreaChart, AreaChartProps } from '.';
 
@@ -53,7 +59,15 @@ export const WithMoreThanOneArea: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
     areaProps: { fillOpacity: 0.6 },
-    data: largerDataset,
+    data: largerDatasetWith18Keys,
+  },
+};
+
+export const WithLargeDataSet: StoryObj<AreaChartProps> = {
+  args: {
+    areaKeys: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'],
+    areaProps: { fillOpacity: 0.6 },
+    data: largerDatasetWith18Keys,
   },
 };
 
@@ -61,7 +75,10 @@ export const CustomColors: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
     areaProps: { fillOpacity: 0.6 },
-    colors: { A: 'red', B: 'pink' },
+    colors: {
+      A: THEME_ENCOURA.customColors.chart.secondary.first,
+      B: THEME_ENCOURA.customColors.chart.secondary.second,
+    },
     data: largerDataset,
   },
 };
