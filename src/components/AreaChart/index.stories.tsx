@@ -75,10 +75,10 @@ export const CustomColors: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
     areaProps: { fillOpacity: 0.6 },
-    colors: {
-      A: THEME_ENCOURA.customColors.chart.secondary.first,
-      B: THEME_ENCOURA.customColors.chart.secondary.second,
-    },
+    colors: [
+      THEME_ENCOURA.customColors.chart.secondary.first,
+      THEME_ENCOURA.customColors.chart.secondary.second,
+    ],
     data: largerDataset,
   },
 };
@@ -188,7 +188,7 @@ export const WithFixedHeightAndWidth: StoryObj<AreaChartProps> = {
 export const MoreRealisticExample: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A'],
-    colors: { A: '#225479' },
+    colors: ['#225479'],
     data: percentageData,
     xLabel: 'Percentage Graph',
     yAxisProps: { tickFormatter: v => `${v * 100}%` },

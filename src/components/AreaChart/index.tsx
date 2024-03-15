@@ -44,13 +44,12 @@ export interface AreaColorProps {
   [key: string]: string;
 }
 
-// FIX ME: Figure out a better way to distinguish the colors prop from the
 export interface AreaChartProps {
   areaChartProps?: CategoricalChartProps;
   areaKeys: string[];
   areaProps?: Partial<AreaProps>;
   children?: React.ReactNode;
-  colors?: AreaColorProps;
+  colors?: string[];
   data: AreaDataProps[];
   height?: number;
   legendProps?: LegendProps;
@@ -185,7 +184,7 @@ export const AreaChart: React.FC<AreaChartProps> = ({
             return (
               <Area
                 dataKey={key}
-                fill={colors?.[key] ? colors[key] : getDefaultChartColors(i)}
+                fill={colors?.[i] ? colors[i] : getDefaultChartColors(i)}
                 fillOpacity={1}
                 key={`${key}-area`}
                 stroke="none"
