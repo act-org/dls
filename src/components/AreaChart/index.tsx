@@ -8,8 +8,8 @@
  */
 
 import { Grid } from '@mui/material';
+import { blue, green } from '@mui/material/colors';
 import { useTheme } from '@mui/material/styles';
-import clsx from 'clsx';
 import React from 'react';
 import {
   Area,
@@ -51,7 +51,6 @@ export interface AreaChartProps {
   areaProps?: Partial<AreaProps>;
   children?: React.ReactNode;
   colors?: AreaColorProps;
-  customizeFillColor?: (index: number, key: string) => string | undefined;
   data: AreaDataProps[];
   height?: number;
   legendProps?: LegendProps;
@@ -71,7 +70,6 @@ export interface AreaChartProps {
 export const AreaChart: React.FC<AreaChartProps> = ({
   children,
   colors,
-  customizeFillColor,
   areaProps,
   areaChartProps,
   responsiveContainerProps,
@@ -90,8 +88,18 @@ export const AreaChart: React.FC<AreaChartProps> = ({
   yLabelProps,
   yReferenceValue,
 }: AreaChartProps): React.ReactElement => {
-  const { customColors, palette, spacing, typography }: any = useTheme();
+  const { palette, spacing, typography }: any = useTheme();
 
+  // Supplies up to 18 default colors
+  const getDefaultChartColors = (index: number): string => {
+    const colorPalettes = [blue, green];
+    const paletteIndex = Math.floor(index / 9);
+    const colorIndex = (index % 9) * 100 + 100; // Color index will be between 100 - 900
+    const currentPalette = colorPalettes[paletteIndex % colorPalettes.length];
+    return (
+      currentPalette[colorIndex as keyof typeof blue] || palette.common.black
+    );
+  };
   return (
     <Grid container direction="column" item spacing={2} xs={12}>
       <ResponsiveContainer
@@ -173,33 +181,19 @@ export const AreaChart: React.FC<AreaChartProps> = ({
           {(yReferenceValue || yReferenceValue === 0) && (
             <ReferenceLine stroke={palette.grey[400]} y={yReferenceValue} />
           )}
-          {areaKeys.map((key, i) => (
-            <Area
-              dataKey={key}
-              fill={
-                customizeFillColor
-                  ? customizeFillColor(i, key)
-                  : clsx(
-                      i === 0 && customColors?.chart?.primary?.first,
-                      i === 1 && customColors?.chart?.primary?.second,
-                      i === 2 && customColors?.chart?.primary?.third,
-                      i === 3 && customColors?.chart?.primary?.fourth,
-                      i === 4 && customColors?.chart?.primary?.fifth,
-                      i === 5 && customColors?.chart?.primary?.sixth,
-                      i > 5 && palette.grey[700],
-                    )
-              }
-              fillOpacity={1}
-              key={`${key}-area`}
-              stroke="none"
-              style={
-                colors?.[key]
-                  ? { ...areaProps?.style, fill: colors[key] }
-                  : areaProps?.style
-              }
-              {...(areaProps as Omit<AreaProps, 'dataKey' | 'ref'>)}
-            />
-          ))}
+          {areaKeys.map((key, i) => {
+            return (
+              <Area
+                dataKey={key}
+                fill={colors?.[key] ? colors[key] : getDefaultChartColors(i)}
+                fillOpacity={1}
+                key={`${key}-area`}
+                stroke="none"
+                style={areaProps?.style || {}}
+                {...(areaProps as Omit<AreaProps, 'dataKey' | 'ref'>)}
+              />
+            );
+          })}
 
           {showLegend && (
             <Legend
