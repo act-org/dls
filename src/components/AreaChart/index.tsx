@@ -44,12 +44,14 @@ export interface AreaColorProps {
   [key: string]: string;
 }
 
+// FIX ME: Figure out a better way to distinguish the colors prop from the
 export interface AreaChartProps {
   areaChartProps?: CategoricalChartProps;
   areaKeys: string[];
   areaProps?: Partial<AreaProps>;
   children?: React.ReactNode;
   colors?: AreaColorProps;
+  customizeFillColor?: (index: number, key: string) => string | undefined;
   data: AreaDataProps[];
   height?: number;
   legendProps?: LegendProps;
@@ -69,6 +71,7 @@ export interface AreaChartProps {
 export const AreaChart: React.FC<AreaChartProps> = ({
   children,
   colors,
+  customizeFillColor,
   areaProps,
   areaChartProps,
   responsiveContainerProps,
@@ -173,15 +176,19 @@ export const AreaChart: React.FC<AreaChartProps> = ({
           {areaKeys.map((key, i) => (
             <Area
               dataKey={key}
-              fill={clsx(
-                i === 0 && customColors?.chart?.primary?.first,
-                i === 1 && customColors?.chart?.primary?.second,
-                i === 2 && customColors?.chart?.primary?.third,
-                i === 3 && customColors?.chart?.primary?.fourth,
-                i === 4 && customColors?.chart?.primary?.fifth,
-                i === 5 && customColors?.chart?.primary?.sixth,
-                i > 5 && palette.grey[700],
-              )}
+              fill={
+                customizeFillColor
+                  ? customizeFillColor(i, key)
+                  : clsx(
+                      i === 0 && customColors?.chart?.primary?.first,
+                      i === 1 && customColors?.chart?.primary?.second,
+                      i === 2 && customColors?.chart?.primary?.third,
+                      i === 3 && customColors?.chart?.primary?.fourth,
+                      i === 4 && customColors?.chart?.primary?.fifth,
+                      i === 5 && customColors?.chart?.primary?.sixth,
+                      i > 5 && palette.grey[700],
+                    )
+              }
               fillOpacity={1}
               key={`${key}-area`}
               stroke="none"
