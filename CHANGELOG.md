@@ -1,3 +1,15 @@
+# [7.8.0-next.5](https://github.com/act-org/dls/compare/v7.8.0-next.4...v7.8.0-next.5) (2024-03-21)
+
+
+### Features
+
+* Register DlsBarChart as a themeable component in the design system ([fc84e87](https://github.com/act-org/dls/commit/fc84e876a39a8548baa11ff6512adae095af16f5))
+* Register DlsLineChart as a themeable component in the design system ([57db845](https://github.com/act-org/dls/commit/57db8457e4adf9eec3c6dbacdd5d55be19b64857))
+* Register DlsOverlappedBarChart as a themeable component in the design system ([8789352](https://github.com/act-org/dls/commit/8789352585fe7553c68c6d5d2d156077d8fda67e))
+* Register DlsPieChart as a themeable component in the design system ([0372d81](https://github.com/act-org/dls/commit/0372d81af1e8c514bb12f1ade9b62759ce8def2b))
+* Register DlsScatterPlot as a themeable component in the design system ([69ba843](https://github.com/act-org/dls/commit/69ba843f378454595a903de963cff8b8977567d5))
+* Register DlsStackedBarChart as a themeable component in the design system ([78b9b83](https://github.com/act-org/dls/commit/78b9b8386bdb22f4bfb0235639d51ec55d5e540d))
+
 # [7.8.0-next.4](https://github.com/act-org/dls/compare/v7.8.0-next.3...v7.8.0-next.4) (2024-03-21)
 
 
