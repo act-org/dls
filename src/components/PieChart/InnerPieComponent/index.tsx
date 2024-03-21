@@ -14,16 +14,16 @@ import { PolarViewBox } from 'recharts/types/util/types';
 import { HighlightComponentType, PieDataProps } from '../types';
 
 interface InnerPieComponentProps extends LabelProps {
+  HighlightComponent: HighlightComponentType;
   payload: PieDataProps;
   pieTotalValue: number;
-  HighlightComponent: HighlightComponentType;
 }
 
 const InnerPieComponent: React.FC<InnerPieComponentProps> = ({
-  viewBox: wrongTypeViewBox,
+  HighlightComponent,
   payload,
   pieTotalValue,
-  HighlightComponent,
+  viewBox: wrongTypeViewBox,
 }) => {
   if (!wrongTypeViewBox) {
     return null;

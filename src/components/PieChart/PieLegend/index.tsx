@@ -52,11 +52,11 @@ export const PieLegend: React.FC<PieLegendProps> = (
     chartHeight,
     chartWidth,
     formatValue,
+    onMouseEnter,
+    onMouseLeave,
     payload,
     pieTotalValue,
     showAsSquare,
-    onMouseEnter,
-    onMouseLeave,
   } = props;
 
   const handleMouseEnter = (
