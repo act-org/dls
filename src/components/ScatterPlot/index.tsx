@@ -81,7 +81,7 @@ export interface ScatterPlotProps {
   idSubstring?: string;
   responsiveContainerProps?: ResponsiveContainerProps;
   scatterProps?: ScatterProps;
-  showAvarageLine?: boolean;
+  showAverageLine?: boolean;
   tooltipProps?: TooltipProps<ValueType, NameType>;
   xAverageLineProps?: ReferenceLineProps;
   xAxisProps?: CustomXAxisProps;
@@ -114,7 +114,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     idSubstring,
     responsiveContainerProps,
     scatterProps,
-    showAvarageLine = true,
+    showAverageLine = true,
     tooltipProps,
     xAverageLineProps,
     xAxisProps,
@@ -506,7 +506,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
               <ReferenceLine strokeDasharray="3 3" y={selectedPoint.y} />
             </>
           )}
-          {showAvarageLine && (
+          {showAverageLine && (
             <>
               <ReferenceLine
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
@@ -601,7 +601,7 @@ ScatterPlot.defaultProps = {
   idSubstring: undefined,
   responsiveContainerProps: undefined,
   scatterProps: undefined,
-  showAvarageLine: undefined,
+  showAverageLine: undefined,
   tooltipProps: undefined,
   xAverageLineProps: undefined,
   xAxisProps: undefined,
