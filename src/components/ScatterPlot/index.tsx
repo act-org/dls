@@ -69,10 +69,12 @@ import {
 } from './types';
 
 export interface ScatterPlotProps {
+  buildDataOptions?: IBuildDataOptions;
   cartesianGridProps?: CartesianGridProps;
   chartProps?: CategoricalChartProps;
   children?: React.ReactElement<unknown>;
   color?: string;
+  CustomTooltipContent?: React.ElementType;
   data: Array<ScatterPlotData>;
   height?: number;
   hideSummary?: boolean;
@@ -90,8 +92,6 @@ export interface ScatterPlotProps {
   yLabelProps?: LabelProps;
   yLabelValue?: string;
   zAxisProps?: ZAxisProps;
-  buildDataOptions?: IBuildDataOptions;
-  CustomTooltipContent?: React.ElementType;
   zoomOptions?: IZoomOptions;
 }
 
@@ -107,6 +107,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     chartProps,
     children,
     color,
+    CustomTooltipContent,
     data,
     height,
     hideSummary,
@@ -124,7 +125,6 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     yLabelProps,
     yLabelValue,
     zAxisProps,
-    CustomTooltipContent,
     zoomOptions = {},
   } = useThemeProps({ name: DLS_COMPONENT_NAMES.SCATTER_PLOT, props: inProps });
 
@@ -136,8 +136,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
   const [selectedPoint, setSelectedPoint] = React.useState<
     ScatterPlotData | undefined
   >();
-  const [xLineCoordenates, setXLineCoordenates] = React.useState<number>();
-  const [yLineCoordenates, setYLineCoordenates] = React.useState<number>();
+  const [xLineCoordinates, setXLineCoordinates] = React.useState<number>();
+  const [yLineCoordinates, setYLineCoordinates] = React.useState<number>();
   const [dragAnchor, setDragAnchor] = React.useState<ICoordinate | undefined>(
     undefined,
   );
@@ -302,7 +302,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 
   const isZoomed = compareDomainToInitial();
 
-  const findAverageLinesCoordenates = (
+  const findAverageLinesCoordinates = (
     array: number[],
     lenght: number,
   ): number => {
@@ -314,8 +314,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     const xArray = data.map(d => d.x);
     const yArray = data.map(d => d.y);
 
-    setXLineCoordenates(findAverageLinesCoordenates(xArray, length));
-    setYLineCoordenates(findAverageLinesCoordenates(yArray, length));
+    setXLineCoordinates(findAverageLinesCoordinates(xArray, length));
+    setYLineCoordinates(findAverageLinesCoordinates(yArray, length));
     setFilteredData(data);
     resetDomain(true);
   }, [data]);
@@ -512,7 +512,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
                 stroke={palette.grey[800]}
                 strokeDasharray="3 3"
-                x={xLineCoordenates}
+                x={xLineCoordinates}
                 {...xAverageLineProps}
               >
                 <Label
@@ -529,7 +529,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
                 stroke={palette.grey[800]}
                 strokeDasharray="3 3"
-                y={yLineCoordenates}
+                y={yLineCoordinates}
                 {...yAverageLineProps}
               >
                 <Label
