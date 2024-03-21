@@ -41,6 +41,14 @@ export default {
   title: 'Molecules / Charts / PieChart',
 } as Meta<PieChartProps>;
 
+export const Default: StoryObj<PieChartProps> = {};
+
+export const CustomColors: StoryObj<PieChartProps> = {
+  args: {
+    colors: ['#FF0000', '#00FF00', '#0000FF', '#FFFF00'],
+  },
+};
+
 export const WithTitle: StoryObj<PieChartProps> = {
   args: {
     data: defaultData,

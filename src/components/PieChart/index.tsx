@@ -10,7 +10,7 @@
 /* eslint-disable react/no-array-index-key */
 
 import { Grid, TypographyProps } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import clsx from 'clsx';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
@@ -33,6 +33,8 @@ import {
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { VariantType } from '~/types';
 
 import InnerPieComponent from './InnerPieComponent';
@@ -41,18 +43,19 @@ import { StyledGridTitle, StyledGridBody, StyledTypography } from './styles';
 import {
   CustomLegendComponentType,
   HighlightComponentType,
-  PieDataProps as TypesPieDatProps,
+  PieDataProps as TypesPieDataProps,
 } from './types';
 
 type TitleProps = TypographyProps & {
   title: string;
 };
-export type PieDataProps = TypesPieDatProps;
+export type PieDataProps = TypesPieDataProps;
 
 export interface PieChartProps {
   children?: React.ReactElement<unknown>;
+  colors?: string[];
   CustomLegendIcon?: CustomLegendComponentType;
-  data: Array<TypesPieDatProps>;
+  data: Array<TypesPieDataProps>;
   height?: number;
   legendProps?: LegendProps;
   pieChartProps?: CategoricalChartProps;
@@ -69,26 +72,32 @@ export const DEFAULT_PIE_GAP_ANGLE = 1;
 export const DEFAULT_PIE_MIN_ANGLE = 1;
 
 /**
- * # PieChart
  * The existence of HighlightComponent will automatically push the Legend from inside the PieChart
  */
-export const PieChart: React.FC<PieChartProps> = ({
-  children,
-  data,
-  height,
-  legendProps,
-  pieChartProps,
-  pieProps,
-  responsiveContainerProps,
-  titleProps,
-  tooltipProps,
-  variant,
-  width,
-  HighlightComponent,
-  CustomLegendIcon,
-}: PieChartProps): React.ReactElement<PieChartProps> => {
-  const { customColors, palette, spacing, typography }: any = useTheme();
+export const PieChart: React.FC<PieChartProps> = (
+  inProps: PieChartProps,
+): React.ReactElement<PieChartProps> => {
+  const {
+    children,
+    colors = [],
+    CustomLegendIcon,
+    data,
+    height,
+    legendProps,
+    pieChartProps,
+    pieProps,
+    responsiveContainerProps,
+    titleProps,
+    tooltipProps,
+    variant,
+    width,
+    HighlightComponent,
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.PIE_CHART, props: inProps });
+
+  const { palette, spacing, typography } = useTheme();
+
   const [activeIndex, setActiveIndex] = React.useState<number | null>(null);
+
   const pieTotalValue = useMemo(
     () => data.reduce((acc, { value }) => acc + value, 0),
     [data],
@@ -153,15 +162,9 @@ export const PieChart: React.FC<PieChartProps> = ({
                 <Cell
                   fill={
                     color ||
-                    clsx(
-                      i === 0 && customColors?.chart?.tertiary?.first,
-                      i === 1 && customColors?.chart?.tertiary?.second,
-                      i === 2 && customColors?.chart?.tertiary?.third,
-                      i === 3 && customColors?.chart?.tertiary?.fourth,
-                      i === 4 && customColors?.chart?.tertiary?.fifth,
-                      i === 5 && customColors?.chart?.tertiary?.sixth,
-                      i > 5 && palette.grey[700],
-                    )
+                    colors[i] ||
+                    DEFAULT_CHART_COLORS[i] ||
+                    palette.grey[700]
                   }
                   fillOpacity={
                     activeIndex === null || activeIndex === i ? 1 : 0.4
@@ -219,6 +222,7 @@ export const PieChart: React.FC<PieChartProps> = ({
 
 PieChart.defaultProps = {
   children: undefined,
+  colors: undefined,
   CustomLegendIcon: undefined,
   height: undefined,
   HighlightComponent: undefined,

@@ -8,7 +8,7 @@
  */
 
 import { Button } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import { debounce } from 'lodash';
 import React, { MouseEventHandler } from 'react';
 import {
@@ -39,6 +39,7 @@ import {
 } from 'recharts/types/component/DefaultTooltipContent';
 import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ScatterPlotData } from '~/types';
 
 import CustomizedCell from './CustomizedCell';
@@ -71,6 +72,7 @@ export interface ScatterPlotProps {
   cartesianGridProps?: CartesianGridProps;
   chartProps?: CategoricalChartProps;
   children?: React.ReactElement<unknown>;
+  color?: string;
   data: Array<ScatterPlotData>;
   height?: number;
   hideSummary?: boolean;
@@ -97,31 +99,37 @@ const OPACITY_NOT_HIGHLIGHTED = 0.2;
 const DOUBLE_CLICK_ZOOM_AMOUNT = 0.4;
 const WHEEL_ZOOM_AMOUNT = 0.15;
 
-export const ScatterPlot: React.FC<ScatterPlotProps> = ({
-  cartesianGridProps,
-  chartProps,
-  children,
-  data,
-  height,
-  hideSummary,
-  idSubstring,
-  responsiveContainerProps,
-  scatterProps,
-  showAvarageLine = true,
-  tooltipProps,
-  xAverageLineProps,
-  xAxisProps,
-  xLabelProps,
-  xLabelValue,
-  yAverageLineProps,
-  yAxisProps,
-  yLabelProps,
-  yLabelValue,
-  zAxisProps,
-  CustomTooltipContent,
-  zoomOptions = {},
-}: ScatterPlotProps) => {
+export const ScatterPlot: React.FC<ScatterPlotProps> = (
+  inProps: ScatterPlotProps,
+) => {
+  const {
+    cartesianGridProps,
+    chartProps,
+    children,
+    color,
+    data,
+    height,
+    hideSummary,
+    idSubstring,
+    responsiveContainerProps,
+    scatterProps,
+    showAvarageLine = true,
+    tooltipProps,
+    xAverageLineProps,
+    xAxisProps,
+    xLabelProps,
+    xLabelValue,
+    yAverageLineProps,
+    yAxisProps,
+    yLabelProps,
+    yLabelValue,
+    zAxisProps,
+    CustomTooltipContent,
+    zoomOptions = {},
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.SCATTER_PLOT, props: inProps });
+
   const { palette, spacing, typography } = useTheme();
+
   const [filteredData, setFilteredData] = React.useState(data);
   const [isMouseOverScatter, setIsMouseOverScatter] =
     React.useState<boolean>(false);
@@ -544,7 +552,9 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = ({
             }}
             onMouseEnter={(): void => setIsMouseOverScatter(true)}
             onMouseLeave={(): void => setIsMouseOverScatter(false)}
-            shape={<CustomizedCell selectedPoint={selectedPoint} />}
+            shape={
+              <CustomizedCell color={color} selectedPoint={selectedPoint} />
+            }
             {...(scatterProps as Scatter)}
           >
             <LabelList
@@ -584,6 +594,7 @@ ScatterPlot.defaultProps = {
   cartesianGridProps: undefined,
   chartProps: undefined,
   children: undefined,
+  color: undefined,
   CustomTooltipContent: undefined,
   height: undefined,
   hideSummary: undefined,

@@ -11,12 +11,78 @@ import { grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 
 import COLORS from './colors';
 
 const COMPONENTS: Components = {
-  DlsAreaChart: {
+  [DLS_COMPONENT_NAMES.AREA_CHART]: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.primary.first,
+        COLORS.CUSTOM.chart.primary.second,
+        COLORS.CUSTOM.chart.primary.third,
+        COLORS.CUSTOM.chart.primary.fourth,
+        COLORS.CUSTOM.chart.primary.fifth,
+        COLORS.CUSTOM.chart.primary.sixth,
+      ],
+    },
+  },
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.primary.first,
+        COLORS.CUSTOM.chart.primary.second,
+        COLORS.CUSTOM.chart.primary.third,
+        COLORS.CUSTOM.chart.primary.fourth,
+        COLORS.CUSTOM.chart.primary.fifth,
+        COLORS.CUSTOM.chart.primary.sixth,
+      ],
+    },
+  },
+  [DLS_COMPONENT_NAMES.LINE_CHART]: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.primary.first,
+        COLORS.CUSTOM.chart.primary.second,
+        COLORS.CUSTOM.chart.primary.third,
+        COLORS.CUSTOM.chart.primary.fourth,
+        COLORS.CUSTOM.chart.primary.fifth,
+        COLORS.CUSTOM.chart.primary.sixth,
+      ],
+    },
+  },
+  [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.quaternary.first,
+        COLORS.CUSTOM.chart.quaternary.second,
+        COLORS.CUSTOM.chart.quaternary.third,
+        COLORS.CUSTOM.chart.quaternary.fourth,
+        COLORS.CUSTOM.chart.quaternary.fifth,
+        COLORS.CUSTOM.chart.quaternary.sixth,
+      ],
+    },
+  },
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.tertiary.first,
+        COLORS.CUSTOM.chart.tertiary.second,
+        COLORS.CUSTOM.chart.tertiary.third,
+        COLORS.CUSTOM.chart.tertiary.fourth,
+        COLORS.CUSTOM.chart.tertiary.fifth,
+        COLORS.CUSTOM.chart.tertiary.sixth,
+      ],
+    },
+  },
+  [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
+    defaultProps: {
+      color: COLORS.CUSTOM.chart.secondary.second,
+    },
+  },
+  [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
     defaultProps: {
       colors: [
         COLORS.CUSTOM.chart.primary.first,

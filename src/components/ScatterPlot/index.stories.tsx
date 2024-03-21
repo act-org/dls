@@ -52,6 +52,14 @@ export default {
   title: 'Molecules / Charts / ScatterPlot',
 } as Meta<ScatterPlotProps>;
 
+export const Default: StoryObj<ScatterPlotProps> = {};
+
+export const CustomColor: StoryObj<ScatterPlotProps> = {
+  args: {
+    color: 'red',
+  },
+};
+
 export const LargeDataset: StoryObj<ScatterPlotProps> = {
   args: {
     data: LARGE_DATA,

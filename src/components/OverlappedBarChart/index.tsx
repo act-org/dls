@@ -9,8 +9,7 @@
 
 /* eslint-disable react/no-array-index-key */
 
-import { useTheme } from '@mui/material/styles';
-import clsx from 'clsx';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import * as React from 'react';
 import {
   Bar,
@@ -23,6 +22,8 @@ import {
 } from 'recharts';
 
 import { BarChart, BarChartProps } from '~/components/BarChart';
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ILabelListData } from '~/types';
 
 import OverlappedLabel from './OverlappedLabel';
@@ -38,23 +39,32 @@ export interface OverlappedBarChartProps {
   barProps?: Omit<BarProps, 'dataKey' | 'ref'>;
   barChartProps?: Omit<BarChartProps, 'data'>;
   children?: React.ReactElement<unknown>;
+  colors?: string[];
   data: Array<OverlappedBarDataProps>;
   initialBarSize?: number;
   labelProps?: LabelListProps<ILabelListData>;
   xAxisProps?: XAxisProps;
 }
 
-export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = ({
-  barKeys,
-  barProps,
-  barChartProps,
-  children,
-  data,
-  initialBarSize = 320,
-  labelProps,
-  xAxisProps,
-}: OverlappedBarChartProps): React.ReactElement<OverlappedBarChartProps> => {
-  const { customColors, palette, spacing }: any = useTheme();
+export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
+  inProps: OverlappedBarChartProps,
+): React.ReactElement<OverlappedBarChartProps> => {
+  const {
+    barKeys,
+    barProps,
+    barChartProps,
+    children,
+    colors = [],
+    data,
+    initialBarSize = 320,
+    labelProps,
+    xAxisProps,
+  } = useThemeProps({
+    name: DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART,
+    props: inProps,
+  });
+
+  const { palette, spacing } = useTheme();
 
   return (
     <BarChart
@@ -95,15 +105,9 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = ({
                   <Cell
                     fill={
                       color ||
-                      clsx(
-                        i === 0 && customColors?.chart?.quaternary?.first,
-                        i === 1 && customColors?.chart?.quaternary?.second,
-                        i === 2 && customColors?.chart?.quaternary?.third,
-                        i === 3 && customColors?.chart?.quaternary?.fourth,
-                        i === 4 && customColors?.chart?.quaternary?.fifth,
-                        i === 5 && customColors?.chart?.quaternary?.sixth,
-                        i > 5 && palette.grey[800],
-                      )
+                      colors[i] ||
+                      DEFAULT_CHART_COLORS[i] ||
+                      palette.grey[800]
                     }
                     key={`cell-${i}`}
                   />
@@ -161,6 +165,7 @@ OverlappedBarChart.defaultProps = {
   barChartProps: undefined,
   barProps: undefined,
   children: undefined,
+  colors: undefined,
   initialBarSize: undefined,
   labelProps: undefined,
   xAxisProps: undefined,

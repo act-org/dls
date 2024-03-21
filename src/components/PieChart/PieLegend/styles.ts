@@ -18,7 +18,6 @@ import {
 } from '@mui/material';
 import { listItemTextClasses } from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
-import clsx from 'clsx';
 
 interface StyledListItemProps extends ListItemProps {
   chartWidth?: number | string;
@@ -63,16 +62,7 @@ export const StyledListItemIcon = styled(ListItemIcon)(({ theme }) => ({
 }));
 
 export const StyledPaper = styled(Paper)<StyledPaperProps>(
-  ({ chartWidth, index, optionsLength, showAsSquare, theme }) => ({
-    backgroundColor: clsx(
-      index === 0 && theme.customColors?.chart?.tertiary?.first,
-      index === 1 && theme.customColors?.chart?.tertiary?.second,
-      index === 2 && theme.customColors?.chart?.tertiary?.third,
-      index === 3 && theme.customColors?.chart?.tertiary?.fourth,
-      index === 4 && theme.customColors?.chart?.tertiary?.fifth,
-      index === 5 && theme.customColors?.chart?.tertiary?.sixth,
-      index > 5 && theme.palette.grey[700],
-    ),
+  ({ chartWidth, optionsLength, showAsSquare, theme }) => ({
     // eslint-disable-next-line no-nested-ternary
     borderRadius: showAsSquare
       ? theme.shape.borderRadius

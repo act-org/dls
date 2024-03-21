@@ -7,10 +7,6 @@
  * @prettier
  */
 
-import clsx from 'clsx';
-
-import { THEME_ENCOURA } from '~/styles/themeEncoura';
-
 export const defaultData = [
   {
     '2019': 138598,
@@ -125,15 +121,3 @@ export const longBarKeys = [
   '2020 with long sublabel',
   '2021 with long sublabel',
 ];
-
-export const useEnrollmentLensBarColors = (i: number): string | undefined => {
-  return clsx(
-    i === 0 && THEME_ENCOURA.customColors?.chart?.secondary?.first,
-    i === 1 && THEME_ENCOURA.customColors?.chart?.secondary?.second,
-    i === 2 && THEME_ENCOURA.customColors?.chart?.secondary?.third,
-    i === 3 && THEME_ENCOURA.customColors?.chart?.secondary?.fourth,
-    i === 4 && THEME_ENCOURA.customColors?.chart?.secondary?.fifth,
-    i === 5 && THEME_ENCOURA.customColors?.chart?.secondary?.sixth,
-    i > 5 && THEME_ENCOURA.palette?.grey?.[700],
-  );
-};

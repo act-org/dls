@@ -93,7 +93,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
     yReferenceValue,
   } = useThemeProps({ name: DLS_COMPONENT_NAMES.AREA_CHART, props: inProps });
 
-  const { palette, spacing, typography }: any = useTheme();
+  const { palette, spacing, typography } = useTheme();
 
   return (
     <Grid container direction="column" item spacing={2} xs={12}>
