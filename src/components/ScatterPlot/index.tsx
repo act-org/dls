@@ -10,6 +10,7 @@
 import { Button } from '@mui/material';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { debounce } from 'lodash';
+import numeral from 'numeral';
 import React, { MouseEventHandler } from 'react';
 import {
   ReferenceLine,
@@ -37,9 +38,9 @@ import {
   ValueType,
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
-import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 import { ScatterPlotData } from '~/types';
 
 import CustomizedCell from './CustomizedCell';
@@ -69,17 +70,19 @@ import {
 } from './types';
 
 export interface ScatterPlotProps {
+  buildDataOptions?: IBuildDataOptions;
   cartesianGridProps?: CartesianGridProps;
   chartProps?: CategoricalChartProps;
   children?: React.ReactElement<unknown>;
   color?: string;
+  CustomTooltipContent?: React.ElementType;
   data: Array<ScatterPlotData>;
   height?: number;
   hideSummary?: boolean;
   idSubstring?: string;
   responsiveContainerProps?: ResponsiveContainerProps;
   scatterProps?: ScatterProps;
-  showAvarageLine?: boolean;
+  showAverageLine?: boolean;
   tooltipProps?: TooltipProps<ValueType, NameType>;
   xAverageLineProps?: ReferenceLineProps;
   xAxisProps?: CustomXAxisProps;
@@ -90,8 +93,6 @@ export interface ScatterPlotProps {
   yLabelProps?: LabelProps;
   yLabelValue?: string;
   zAxisProps?: ZAxisProps;
-  buildDataOptions?: IBuildDataOptions;
-  CustomTooltipContent?: React.ElementType;
   zoomOptions?: IZoomOptions;
 }
 
@@ -107,13 +108,14 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     chartProps,
     children,
     color,
+    CustomTooltipContent,
     data,
     height,
     hideSummary,
     idSubstring,
     responsiveContainerProps,
     scatterProps,
-    showAvarageLine = true,
+    showAverageLine = true,
     tooltipProps,
     xAverageLineProps,
     xAxisProps,
@@ -124,7 +126,6 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     yLabelProps,
     yLabelValue,
     zAxisProps,
-    CustomTooltipContent,
     zoomOptions = {},
   } = useThemeProps({ name: DLS_COMPONENT_NAMES.SCATTER_PLOT, props: inProps });
 
@@ -136,8 +137,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
   const [selectedPoint, setSelectedPoint] = React.useState<
     ScatterPlotData | undefined
   >();
-  const [xLineCoordenates, setXLineCoordenates] = React.useState<number>();
-  const [yLineCoordenates, setYLineCoordenates] = React.useState<number>();
+  const [xLineCoordinates, setXLineCoordinates] = React.useState<number>();
+  const [yLineCoordinates, setYLineCoordinates] = React.useState<number>();
   const [dragAnchor, setDragAnchor] = React.useState<ICoordinate | undefined>(
     undefined,
   );
@@ -302,7 +303,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 
   const isZoomed = compareDomainToInitial();
 
-  const findAverageLinesCoordenates = (
+  const findAverageLinesCoordinates = (
     array: number[],
     lenght: number,
   ): number => {
@@ -314,8 +315,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     const xArray = data.map(d => d.x);
     const yArray = data.map(d => d.y);
 
-    setXLineCoordenates(findAverageLinesCoordenates(xArray, length));
-    setYLineCoordenates(findAverageLinesCoordenates(yArray, length));
+    setXLineCoordinates(findAverageLinesCoordinates(xArray, length));
+    setYLineCoordinates(findAverageLinesCoordinates(yArray, length));
     setFilteredData(data);
     resetDomain(true);
   }, [data]);
@@ -383,6 +384,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 
   const ResetButtonEndIcon = <MagnifyMinusOutline />;
 
+  const formatAverageLineLabel = (value: number): string =>
+    numeral(value).format('0,0[.]00');
   return (
     <div
       className="plot-container"
@@ -506,13 +509,13 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
               <ReferenceLine strokeDasharray="3 3" y={selectedPoint.y} />
             </>
           )}
-          {showAvarageLine && (
+          {showAverageLine && (
             <>
               <ReferenceLine
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
                 stroke={palette.grey[800]}
                 strokeDasharray="3 3"
-                x={xLineCoordenates}
+                x={xLineCoordinates}
                 {...xAverageLineProps}
               >
                 <Label
@@ -522,14 +525,14 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
                     fontWeight: Number(typography.fontWeightRegular),
                     userSelect: 'none',
                   }}
-                  value="Top N Average"
+                  value={`Top N Average: ${formatAverageLineLabel(Number(xLineCoordinates))}`}
                 />
               </ReferenceLine>
               <ReferenceLine
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
                 stroke={palette.grey[800]}
                 strokeDasharray="3 3"
-                y={yLineCoordenates}
+                y={yLineCoordinates}
                 {...yAverageLineProps}
               >
                 <Label
@@ -539,7 +542,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
                     fontWeight: Number(typography.fontWeightRegular),
                     userSelect: 'none',
                   }}
-                  value="Top N Average"
+                  value={`Top N Average: ${formatAverageLineLabel(Number(yLineCoordinates))}%`}
                 />
               </ReferenceLine>
             </>
@@ -601,7 +604,7 @@ ScatterPlot.defaultProps = {
   idSubstring: undefined,
   responsiveContainerProps: undefined,
   scatterProps: undefined,
-  showAvarageLine: undefined,
+  showAverageLine: undefined,
   tooltipProps: undefined,
   xAverageLineProps: undefined,
   xAxisProps: undefined,

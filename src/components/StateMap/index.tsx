@@ -29,11 +29,11 @@ export interface StateMapProps {
   mapboxAccessToken: string;
   mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
+  onHoverInfo?: FeatureHoverProps;
   processDataFn?: (
     featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
     data: Array<IMapDataProps>,
   ) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
-  onHoverInfo?: FeatureHoverProps;
   selectedState?: Array<string>;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   tooltipElement?: React.ReactElement;
@@ -47,10 +47,10 @@ export interface StateMapProps {
 export const StateMap: React.FC<StateMapProps> = ({
   data,
   geoJSONPath,
-  onHoverInfo,
   mapboxAccessToken,
-  mapProps,
   mapPopupProps,
+  mapProps,
+  onHoverInfo,
   processDataFn,
   selectedState,
   setOnHoverInfo,

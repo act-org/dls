@@ -23,14 +23,14 @@ import {
 import { IGroupDataPoint } from '../types';
 
 type ICustomTooltipProps = {
-  isBlockingOnHovers: boolean;
   CustomTooltipContent?: React.ElementType;
+  isBlockingOnHovers: boolean;
 } & TooltipProps<ValueType, NameType>;
 
 export const CustomTooltip: React.FC<ICustomTooltipProps> = ({
-  payload,
-  isBlockingOnHovers,
   CustomTooltipContent,
+  isBlockingOnHovers,
+  payload,
 }): React.ReactElement<TooltipProps<ValueType, NameType>> | null => {
   const data = payload && (get(payload[0], 'payload') as IGroupDataPoint);
   const members = data?.members;

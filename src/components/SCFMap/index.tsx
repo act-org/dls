@@ -31,11 +31,11 @@ export interface SCFMapProps {
   mapboxAccessToken: string;
   mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
+  onHoverInfo?: FeatureHoverProps;
   processDataFn?: (
     featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
     data: Array<IMapDataProps>,
   ) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
-  onHoverInfo?: FeatureHoverProps;
   selectedSCF?: Array<string>;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   tooltipElement?: React.ReactElement;
@@ -49,10 +49,10 @@ export interface SCFMapProps {
 export const SCFMap: React.FC<SCFMapProps> = ({
   data,
   geoJSONPath,
-  onHoverInfo,
   mapboxAccessToken,
-  mapProps,
   mapPopupProps,
+  mapProps,
+  onHoverInfo,
   processDataFn,
   selectedSCF,
   setOnHoverInfo,

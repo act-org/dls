@@ -35,9 +35,9 @@ export interface OverlappedBarDataProps {
 }
 
 export interface OverlappedBarChartProps {
+  barChartProps?: Omit<BarChartProps, 'data'>;
   barKeys: string[];
   barProps?: Omit<BarProps, 'dataKey' | 'ref'>;
-  barChartProps?: Omit<BarChartProps, 'data'>;
   children?: React.ReactElement<unknown>;
   colors?: string[];
   data: Array<OverlappedBarDataProps>;
@@ -50,9 +50,9 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
   inProps: OverlappedBarChartProps,
 ): React.ReactElement<OverlappedBarChartProps> => {
   const {
+    barChartProps,
     barKeys,
     barProps,
-    barChartProps,
     children,
     colors = [],
     data,

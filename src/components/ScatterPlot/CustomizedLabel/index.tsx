@@ -16,9 +16,9 @@ import { ScatterPlotData } from '~/types';
 export type CustomizedLabelProps = LabelProps & {
   fontSize?: number;
   fontWeight?: number;
+  isBlockingOnHovers?: boolean;
   selectedPoint?: ScatterPlotData;
   shouldHideLabel?: Record<string, boolean>;
-  isBlockingOnHovers?: boolean;
 };
 
 export function calculateLabelWidth(label: string): number {
@@ -32,12 +32,12 @@ export const CustomizedLabel: React.FC<CustomizedLabelProps> = ({
   fill,
   fontSize,
   fontWeight,
+  isBlockingOnHovers,
+  selectedPoint,
+  shouldHideLabel = {},
   value,
   x,
   y,
-  selectedPoint,
-  shouldHideLabel = {},
-  isBlockingOnHovers,
 }): React.ReactElement<CustomizedLabelProps> | null => {
   let opacity = 1;
   const isThisSelectedPoint =
