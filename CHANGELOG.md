@@ -1,3 +1,25 @@
+# [8.0.0-next.2](https://github.com/act-org/dls/compare/v8.0.0-next.1...v8.0.0-next.2) (2024-03-21)
+
+
+### Bug Fixes
+
+* Alphabetize AreChart props ([5eb5020](https://github.com/act-org/dls/commit/5eb502036a8219e6709d66698005846ce1ae598d))
+* Alphabetize inner components for Scatterplot ([49837af](https://github.com/act-org/dls/commit/49837af6e3da8223a2d8bd0913252ed150163359))
+* Alphabetize MapProps ([ca85f51](https://github.com/act-org/dls/commit/ca85f519790269f13fbbb24533b718d8808a66c3))
+* Alphabetize OverlappedBarChart props ([f26182b](https://github.com/act-org/dls/commit/f26182bb495084c5fca2b400a91b97b89db85374))
+* Alphabetize OverlappedLabel inner component props ([019d5a0](https://github.com/act-org/dls/commit/019d5a00061da528698577e4cfb90629b5424e47))
+* Alphabetize PieChart inner components props ([ff8bf9c](https://github.com/act-org/dls/commit/ff8bf9c06e30228bbab19748a7f7f8433c49cc51))
+* Alphabetize PieChart props ([5777ad6](https://github.com/act-org/dls/commit/5777ad608dc5129da61ec168232e71e3adadca71))
+* Alphabetize ScatterPlot props and fix coordenates typo ([d9bb9d6](https://github.com/act-org/dls/commit/d9bb9d62fbe8e2ed7a7cc81d86e72d45902d1b29))
+* Alphabetize SCFMap props ([8d705aa](https://github.com/act-org/dls/commit/8d705aa8349c23f392648d1f15bd22e28d18bbe6))
+* Alphabetize StateMap props ([08a2fb6](https://github.com/act-org/dls/commit/08a2fb62effb1350a0773b161c94d8deffb2bfc0))
+* Handle showAvarageLine prop typo in Scatterplot ([724cf9a](https://github.com/act-org/dls/commit/724cf9af36d2efa3b2877657dcf4551285133d12))
+
+
+### Features
+
+* Add Top N Average values to referenceLine label value in Scatterplot ([1e03cc5](https://github.com/act-org/dls/commit/1e03cc5ddc9ffcefc8a2dedb8ccb2c29a542e58d))
+
 # [8.0.0-next.1](https://github.com/act-org/dls/compare/v7.8.0-next.6...v8.0.0-next.1) (2024-03-21)
 
 
