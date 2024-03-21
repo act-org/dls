@@ -11,12 +11,13 @@ import { grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 
 import COLORS from './colors';
 
 const COMPONENTS: Components = {
-  DlsAreaChart: {
+  [DLS_COMPONENT_NAMES.AREA_CHART]: {
     defaultProps: {
       colors: [
         COLORS.CUSTOM.chart.primary.first,
@@ -28,7 +29,7 @@ const COMPONENTS: Components = {
       ],
     },
   },
-  DlsBarChart: {
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
     defaultProps: {
       colors: [
         COLORS.CUSTOM.chart.primary.first,
@@ -40,7 +41,7 @@ const COMPONENTS: Components = {
       ],
     },
   },
-  DlsLineChart: {
+  [DLS_COMPONENT_NAMES.LINE_CHART]: {
     defaultProps: {
       colors: [
         COLORS.CUSTOM.chart.primary.first,
@@ -52,7 +53,7 @@ const COMPONENTS: Components = {
       ],
     },
   },
-  DlsOverlappedBarChart: {
+  [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
     defaultProps: {
       colors: [
         COLORS.CUSTOM.chart.quaternary.first,
@@ -64,7 +65,7 @@ const COMPONENTS: Components = {
       ],
     },
   },
-  DlsPieChart: {
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
     defaultProps: {
       colors: [
         COLORS.CUSTOM.chart.tertiary.first,
@@ -76,7 +77,7 @@ const COMPONENTS: Components = {
       ],
     },
   },
-  DlsScatterPlot: {
+  [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
     defaultProps: {
       color: COLORS.CUSTOM.chart.secondary.second,
     },
