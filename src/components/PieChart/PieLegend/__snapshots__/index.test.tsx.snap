@@ -12,7 +12,7 @@ exports[`PieLegend ACT theme matches the snapshot 1`] = `
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1hv8f9w-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1qykrhm-MuiPaper-root"
           index="0"
           optionslength="1"
           style="background-color: rgb(127, 196, 225);"
@@ -49,7 +49,7 @@ exports[`PieLegend ACT_ET theme matches the snapshot 1`] = `
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1hotods-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1kd3b3o-MuiPaper-root"
           index="0"
           optionslength="1"
           style="background-color: rgb(127, 196, 225);"
@@ -86,7 +86,7 @@ exports[`PieLegend ENCOURA theme matches the snapshot 1`] = `
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-8s998t-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1nmhah-MuiPaper-root"
           index="0"
           optionslength="1"
           style="background-color: rgb(127, 196, 225);"
@@ -123,7 +123,7 @@ exports[`PieLegend ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1l6ge39-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-15srano-MuiPaper-root"
           index="0"
           optionslength="1"
           style="background-color: rgb(127, 196, 225);"
@@ -160,7 +160,7 @@ exports[`PieLegend ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiListItemIcon-root css-1le52mv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1ltvlsx-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1vifd6j-MuiPaper-root"
           index="0"
           optionslength="1"
           style="background-color: rgb(127, 196, 225);"
