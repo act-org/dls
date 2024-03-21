@@ -11,25 +11,26 @@ import deepMerge from 'deepmerge';
 
 import { createTheme } from '~/styles/createTheme';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
-import { CustomThemeOptions } from '~/types';
+import { CustomThemeOptions, ICustomDims } from '~/types';
 
-import COLORS, { CustomColorOptions } from './colors';
 import COMPONENTS from './components';
 import CUSTOM_DIMS from './customDims';
 import PALETTE from './palette';
+import spacing, { SPACING_PX } from './spacing';
 import TYPOGRAPHY from './typography';
 
-export type MyEncouraCustomTheme = CustomThemeOptions<CustomColorOptions>;
+export type ThemeCustomizations = ICustomDims & {
+  spacingPx: number;
+};
 
-export const THEME_ENCOURA: MyEncouraCustomTheme = deepMerge(
+export const THEME_ENCOURA: CustomThemeOptions<ThemeCustomizations> = deepMerge(
   THEME_ENCOURA_CLASSIC,
   {
-    // Theme customizations to distinguish MyEncoura from
-    // the the Encoura Classic theme.
     components: COMPONENTS,
-    customColors: COLORS.CUSTOM,
     customDims: CUSTOM_DIMS,
     palette: PALETTE,
+    spacing,
+    spacingPx: SPACING_PX,
     typography: TYPOGRAPHY,
   },
 );
