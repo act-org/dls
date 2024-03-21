@@ -32,6 +32,16 @@ export default {
   title: 'Molecules / Charts / OverlappedBarChart',
 } as Meta<OverlappedBarChartProps>;
 
+export const Default: StoryObj<OverlappedBarChartProps> = {
+  args: {},
+};
+
+export const CustomBarColors: StoryObj<OverlappedBarChartProps> = {
+  args: {
+    colors: ['#FF0000', '#00FF00', '#0000FF'],
+  },
+};
+
 export const WithThreeBars: StoryObj<OverlappedBarChartProps> = {
   args: {
     barKeys: ['inquiries', 'test', 'applicants'],

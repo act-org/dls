@@ -52,6 +52,18 @@ const COMPONENTS: Components = {
       ],
     },
   },
+  DlsOverlappedBarChart: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.quaternary.first,
+        COLORS.CUSTOM.chart.quaternary.second,
+        COLORS.CUSTOM.chart.quaternary.third,
+        COLORS.CUSTOM.chart.quaternary.fourth,
+        COLORS.CUSTOM.chart.quaternary.fifth,
+        COLORS.CUSTOM.chart.quaternary.sixth,
+      ],
+    },
+  },
   MuiAvatar: {
     styleOverrides: {
       root: {
