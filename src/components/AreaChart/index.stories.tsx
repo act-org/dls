@@ -11,7 +11,6 @@ import { Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { Playground } from '~/helpers/playground';
-import { THEME_ENCOURA } from '~/styles';
 
 import {
   defaultData,
@@ -75,10 +74,7 @@ export const CustomColors: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
     areaProps: { fillOpacity: 0.6 },
-    colors: [
-      THEME_ENCOURA.customColors.chart.secondary.first,
-      THEME_ENCOURA.customColors.chart.secondary.second,
-    ],
+    colors: ['#FF0000', '#00FF00'],
     data: largerDataset,
   },
 };
