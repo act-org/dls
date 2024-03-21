@@ -14,7 +14,7 @@ import Color from 'color';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 
-import COLORS from './colors';
+import COLORS, { secondaryMain } from './colors';
 
 const COMPONENTS: Components = {
   [DLS_COMPONENT_NAMES.AREA_CHART]: {
@@ -41,6 +41,11 @@ const COMPONENTS: Components = {
       ],
     },
   },
+  [DLS_COMPONENT_NAMES.HEAT_MAP]: {
+    defaultProps: {
+      color: secondaryMain,
+    },
+  },
   [DLS_COMPONENT_NAMES.LINE_CHART]: {
     defaultProps: {
       colors: [
@@ -51,6 +56,11 @@ const COMPONENTS: Components = {
         COLORS.CUSTOM.chart.primary.fifth,
         COLORS.CUSTOM.chart.primary.sixth,
       ],
+    },
+  },
+  [DLS_COMPONENT_NAMES.MAP]: {
+    defaultProps: {
+      color: secondaryMain,
     },
   },
   [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {

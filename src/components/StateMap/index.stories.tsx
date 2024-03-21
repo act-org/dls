@@ -28,12 +28,13 @@ export default {
   title: 'Molecules / Maps / StateMap',
 } as Meta<StateMapProps>;
 
-export const Default: StoryObj<StateMapProps> = {
+export const Default: StoryObj<StateMapProps> = {};
+
+export const CustomColor: StoryObj<StateMapProps> = {
   args: {
-    data: defaultData,
-    geoJSONPath: '/maps/states.json',
-    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
-    processDataFn: defaultProcessDataFn,
+    mapProps: {
+      color: '#FF0000',
+    },
   },
 };
 

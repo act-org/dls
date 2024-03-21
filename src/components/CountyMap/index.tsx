@@ -30,7 +30,7 @@ export interface CountyMapProps {
   geoJSONPath: string;
   mapboxAccessToken: string;
   mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
-  mapProps?: Omit<MapProps, 'mapboxAccessToken'>;
+  mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
   processDataFn?: (
     featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,

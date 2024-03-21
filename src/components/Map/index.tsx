@@ -9,7 +9,8 @@
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
-import { useTheme } from '@mui/material/styles';
+import { grey } from '@mui/material/colors';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import bbox from '@turf/bbox';
 import Color from 'color';
 import { isString } from 'lodash';
@@ -35,6 +36,8 @@ import {
   Terrain,
   ViewStateChangeEvent,
 } from 'react-map-gl/dist/es5';
+
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
 import { StyledAttibutionControlContainer } from './styles';
 
@@ -67,6 +70,7 @@ export interface FeatureHoverProps {
 export type MapProps = MapGLProps & {
   attributionControlProps?: AttributionControlProps;
   children?: React.ReactElement;
+  color?: string;
   data?:
     | GeoJSON.Feature<GeoJSON.Geometry>
     | GeoJSON.FeatureCollection<GeoJSON.Geometry>
@@ -94,24 +98,29 @@ export type MapProps = MapGLProps & {
  *
  * @note If sending the `data` prop it's also necessary to send the `sourceId` prop.
  */
-export const Map: React.FC<MapProps> = ({
-  attributionControlProps,
-  children,
-  data,
-  height = 450,
-  initialBoundsPosition,
-  layers,
-  layerProps,
-  mapboxAccessToken,
-  navigationControlProps,
-  onMapClick,
-  setHoverInfo,
-  preserveDrawingBuffer = false,
-  sourceId = 'areas',
-  sourceProps,
-  width = '100%',
-  ...mapProps
-}): React.ReactElement<MapProps> => {
+export const Map: React.FC<MapProps> = (
+  inProps: MapProps,
+): React.ReactElement<MapProps> => {
+  const {
+    attributionControlProps,
+    children,
+    color = grey[700],
+    data,
+    height = 450,
+    initialBoundsPosition,
+    layers,
+    layerProps,
+    mapboxAccessToken,
+    navigationControlProps,
+    onMapClick,
+    setHoverInfo,
+    preserveDrawingBuffer = false,
+    sourceId = 'areas',
+    sourceProps,
+    width = '100%',
+    ...mapProps
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.MAP, props: inProps });
+
   const { palette, spacing } = useTheme();
 
   const mapRef = React.useRef<MapRef | null>(null);
@@ -128,19 +137,19 @@ export const Map: React.FC<MapProps> = ({
       id: 'data',
       paint: {
         'fill-color': {
-          default: Color(palette.secondary.main).fade(1).rgb().string(),
+          default: Color(color).fade(1).rgb().string(),
           property: 'quantity',
           stops: [
-            [0, Color(palette.secondary.main).fade(0.9).rgb().string()],
-            [1, Color(palette.secondary.main).fade(0.8).rgb().string()],
-            [2, Color(palette.secondary.main).fade(0.7).rgb().string()],
-            [3, Color(palette.secondary.main).fade(0.6).rgb().string()],
-            [4, Color(palette.secondary.main).fade(0.5).rgb().string()],
-            [5, Color(palette.secondary.main).fade(0.4).rgb().string()],
-            [6, Color(palette.secondary.main).fade(0.3).rgb().string()],
-            [7, Color(palette.secondary.main).fade(0.2).rgb().string()],
-            [8, Color(palette.secondary.main).fade(0.1).rgb().string()],
-            [9, Color(palette.secondary.main).fade(0).rgb().string()],
+            [0, Color(color).fade(0.9).rgb().string()],
+            [1, Color(color).fade(0.8).rgb().string()],
+            [2, Color(color).fade(0.7).rgb().string()],
+            [3, Color(color).fade(0.6).rgb().string()],
+            [4, Color(color).fade(0.5).rgb().string()],
+            [5, Color(color).fade(0.4).rgb().string()],
+            [6, Color(color).fade(0.3).rgb().string()],
+            [7, Color(color).fade(0.2).rgb().string()],
+            [8, Color(color).fade(0.1).rgb().string()],
+            [9, Color(color).fade(0).rgb().string()],
           ],
         },
         'fill-opacity': 0.7,
@@ -154,7 +163,7 @@ export const Map: React.FC<MapProps> = ({
       source: sourceId,
       type: 'fill',
     };
-  }, [palette.secondary.main, palette.common.black, palette.grey, sourceId]);
+  }, [color, palette.common.black, palette.grey, sourceId]);
 
   const onHover = React.useCallback(
     (event: MapLayerMouseEvent) => {
@@ -316,6 +325,7 @@ export const Map: React.FC<MapProps> = ({
 Map.defaultProps = {
   attributionControlProps: undefined,
   children: undefined,
+  color: undefined,
   data: undefined,
   fog: undefined,
   initialBoundsPosition: undefined,

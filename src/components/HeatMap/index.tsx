@@ -7,7 +7,8 @@
  * @prettier
  */
 
-import { useTheme } from '@mui/material/styles';
+import { grey } from '@mui/material/colors';
+import { useThemeProps } from '@mui/material/styles';
 import Color from 'color';
 import React from 'react';
 import {
@@ -19,16 +20,18 @@ import {
 
 import Map, { FeatureHoverProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
 import type GeoJSON from 'geojson';
 
 const MIN_ZOOM = 12;
 
 export interface HeatMapProps {
+  color?: string;
   data?: GeoJSON.FeatureCollection<GeoJSON.Geometry>;
   mapboxAccessToken: string;
   mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
-  mapProps?: Omit<MapProps, 'mapboxAccessToken'>;
+  mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   sourceId?: string;
@@ -40,17 +43,23 @@ export interface HeatMapProps {
  * to add the link bellow in the head of your page: <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
  * For more information: https://visgl.github.io/react-map-gl/docs/get-started/get-started#styling
  */
-export const HeatMap: React.FC<HeatMapProps> = ({
-  data,
-  mapboxAccessToken,
-  mapPopupProps,
-  mapProps,
-  onHoverInfo,
-  setOnHoverInfo,
-  sourceId = 'heatmap',
-  tooltipElement,
-}): React.ReactElement<HeatMapProps> => {
-  const { palette } = useTheme();
+export const HeatMap: React.FC<HeatMapProps> = (
+  inProps,
+): React.ReactElement<HeatMapProps> => {
+  const {
+    color = grey[700],
+    data,
+    mapboxAccessToken,
+    mapPopupProps,
+    mapProps,
+    onHoverInfo,
+    setOnHoverInfo,
+    sourceId = 'heatmap',
+    tooltipElement,
+  } = useThemeProps({
+    name: DLS_COMPONENT_NAMES.HEAT_MAP,
+    props: inProps,
+  });
 
   const [hoverInfo, setHoverInfo] = React.useState<FeatureHoverProps>();
   const [lastZoom, setLastZoom] = React.useState<number>();
@@ -104,19 +113,82 @@ export const HeatMap: React.FC<HeatMapProps> = ({
       minzoom: MIN_ZOOM,
       paint: {
         'circle-color': {
-          default: Color(palette.secondary.main).fade(1).rgb().string(),
+          default: Color(mapProps?.color || color)
+            .fade(1)
+            .rgb()
+            .string(),
           property: 'quantity',
           stops: [
-            [0, Color(palette.secondary.main).fade(0.9).rgb().string()],
-            [1, Color(palette.secondary.main).fade(0.8).rgb().string()],
-            [2, Color(palette.secondary.main).fade(0.7).rgb().string()],
-            [3, Color(palette.secondary.main).fade(0.6).rgb().string()],
-            [4, Color(palette.secondary.main).fade(0.5).rgb().string()],
-            [5, Color(palette.secondary.main).fade(0.4).rgb().string()],
-            [6, Color(palette.secondary.main).fade(0.3).rgb().string()],
-            [7, Color(palette.secondary.main).fade(0.2).rgb().string()],
-            [8, Color(palette.secondary.main).fade(0.1).rgb().string()],
-            [9, Color(palette.secondary.main).fade(0).rgb().string()],
+            [
+              0,
+              Color(mapProps?.color || color)
+                .fade(0.9)
+                .rgb()
+                .string(),
+            ],
+            [
+              1,
+              Color(mapProps?.color || color)
+                .fade(0.8)
+                .rgb()
+                .string(),
+            ],
+            [
+              2,
+              Color(mapProps?.color || color)
+                .fade(0.7)
+                .rgb()
+                .string(),
+            ],
+            [
+              3,
+              Color(mapProps?.color || color)
+                .fade(0.6)
+                .rgb()
+                .string(),
+            ],
+            [
+              4,
+              Color(mapProps?.color || color)
+                .fade(0.5)
+                .rgb()
+                .string(),
+            ],
+            [
+              5,
+              Color(mapProps?.color || color)
+                .fade(0.4)
+                .rgb()
+                .string(),
+            ],
+            [
+              6,
+              Color(mapProps?.color || color)
+                .fade(0.3)
+                .rgb()
+                .string(),
+            ],
+            [
+              7,
+              Color(mapProps?.color || color)
+                .fade(0.2)
+                .rgb()
+                .string(),
+            ],
+            [
+              8,
+              Color(mapProps?.color || color)
+                .fade(0.1)
+                .rgb()
+                .string(),
+            ],
+            [
+              9,
+              Color(mapProps?.color || color)
+                .fade(0)
+                .rgb()
+                .string(),
+            ],
           ],
         },
         'circle-opacity': {
@@ -140,7 +212,7 @@ export const HeatMap: React.FC<HeatMapProps> = ({
       },
       type: 'circle',
     };
-  }, [palette.secondary.main]);
+  }, [color, mapProps]);
 
   const onZoom = (event: ViewStateChangeEvent): void => {
     setLastZoom(event.viewState.zoom);
@@ -191,6 +263,7 @@ export const HeatMap: React.FC<HeatMapProps> = ({
 };
 
 HeatMap.defaultProps = {
+  color: undefined,
   data: undefined,
   mapPopupProps: undefined,
   mapProps: undefined,
