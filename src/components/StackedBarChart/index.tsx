@@ -8,8 +8,7 @@
  */
 
 import { Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import clsx from 'clsx';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
 import { Bar, BarProps, LabelList, LabelListProps } from 'recharts';
@@ -18,10 +17,11 @@ import {
   BarChart,
   BarChartProps,
   BarLabelProps,
-  ColorProps,
   measureText,
 } from '~/components/BarChart';
 import { DataProps } from '~/components/BarChart/types';
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ILabelListData } from '~/types';
 
 export interface StackedBarChartProps {
@@ -29,7 +29,7 @@ export interface StackedBarChartProps {
   barKeys?: Array<Array<string>>;
   barProps?: BarProps;
   children?: React.ReactElement<unknown>;
-  colors?: ColorProps;
+  colors?: string[];
   data: Array<DataProps>;
   labelListProps?: LabelListProps<ILabelListData>;
   setTooltipBarId?: (value: string | undefined) => void;
@@ -38,20 +38,28 @@ export interface StackedBarChartProps {
   tooltipBarId?: string;
 }
 
-export const StackedBarChart: React.FC<StackedBarChartProps> = ({
-  barChartProps,
-  barKeys = [],
-  barProps,
-  children,
-  colors = {},
-  data,
-  labelListProps,
-  setTooltipBarId,
-  subLabelProps,
-  subLabels,
-  tooltipBarId,
-}: StackedBarChartProps): React.ReactElement<StackedBarChartProps> => {
-  const { customColors, palette, typography }: any = useTheme();
+export const StackedBarChart: React.FC<StackedBarChartProps> = (
+  inProps: StackedBarChartProps,
+): React.ReactElement<StackedBarChartProps> => {
+  const {
+    barChartProps,
+    barKeys = [],
+    barProps,
+    children,
+    colors = [],
+    data,
+    labelListProps,
+    setTooltipBarId,
+    subLabelProps,
+    subLabels,
+    tooltipBarId,
+  } = useThemeProps({
+    name: DLS_COMPONENT_NAMES.STACKED_BAR_CHART,
+    props: inProps,
+  });
+
+  const { palette, typography } = useTheme();
+
   const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(
     tooltipBarId,
   );
@@ -130,13 +138,10 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = ({
               <Bar
                 dataKey={key}
                 fill={
-                  barChartProps?.customizeBarFillColor
-                    ? barChartProps?.customizeBarFillColor(i, key)
-                    : clsx(
-                        i === 0 && customColors?.chart?.primary?.first,
-                        i === 1 && customColors?.chart?.primary?.second,
-                        i === 2 && customColors?.chart?.primary?.third,
-                      )
+                  barChartProps?.customizeBarFillColor?.(i, key) ||
+                  colors[i] ||
+                  DEFAULT_CHART_COLORS[i] ||
+                  palette.grey[700]
                 }
                 isAnimationActive={animate}
                 key={`${key}-bar`}
@@ -152,9 +157,6 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = ({
                   }
                 }}
                 stackId={index}
-                style={
-                  colors[key] ? { backgroundColor: colors[key] } : undefined
-                }
                 {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
               >
                 <LabelList

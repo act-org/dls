@@ -50,10 +50,6 @@ export interface BarLabelProps {
   width: number;
 }
 
-export interface ColorProps {
-  [key: string]: string;
-}
-
 export interface BarChartProps {
   barKeys?: Array<string>;
   barProps?: Omit<BarProps, 'dataKey' | 'ref'>;

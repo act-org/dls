@@ -44,6 +44,14 @@ export default {
   title: 'Molecules / Charts / StackedBarChart',
 } as Meta<StackedBarChartProps>;
 
+export const Default: StoryObj<StackedBarChartProps> = {};
+
+export const CustomColors: StoryObj<StackedBarChartProps> = {
+  args: {
+    colors: ['#FF0000', '#00FF00', '#0000FF'],
+  },
+};
+
 export const CustomSublabels: StoryObj<StackedBarChartProps> = {
   args: {
     barKeys: defaultBarKeys,
