@@ -26,18 +26,18 @@ export type OverlappedLabelProps = LabelProps & {
 
 export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
   color,
+  data,
+  height,
+  index,
+  isOutsideBar,
   label,
-  outsideBarDataKey,
   labelColor,
+  outsideBarDataKey,
   value,
   valueColor,
   width,
   x,
   y,
-  data,
-  isOutsideBar,
-  height,
-  index,
 }: OverlappedLabelProps): React.ReactElement<OverlappedLabelProps> => {
   const { palette, spacing } = useTheme();
 
