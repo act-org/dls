@@ -10,6 +10,7 @@
 import { Button } from '@mui/material';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { debounce } from 'lodash';
+import numeral from 'numeral';
 import React, { MouseEventHandler } from 'react';
 import {
   ReferenceLine,
@@ -37,9 +38,9 @@ import {
   ValueType,
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
-import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 import { ScatterPlotData } from '~/types';
 
 import CustomizedCell from './CustomizedCell';
@@ -383,6 +384,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 
   const ResetButtonEndIcon = <MagnifyMinusOutline />;
 
+  const formatAverageLineLabel = (value: number): string =>
+    numeral(value).format('0,0[.]00');
   return (
     <div
       className="plot-container"
@@ -522,7 +525,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
                     fontWeight: Number(typography.fontWeightRegular),
                     userSelect: 'none',
                   }}
-                  value="Top N Average"
+                  value={`Top N Average: ${formatAverageLineLabel(Number(xLineCoordinates))}`}
                 />
               </ReferenceLine>
               <ReferenceLine
@@ -539,7 +542,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
                     fontWeight: Number(typography.fontWeightRegular),
                     userSelect: 'none',
                   }}
-                  value="Top N Average"
+                  value={`Top N Average: ${formatAverageLineLabel(Number(yLineCoordinates))}%`}
                 />
               </ReferenceLine>
             </>
