@@ -21,133 +21,64 @@ export const darkOrange = '#D54215';
 
 export const slateGrey = '#64829A';
 
-export type CustomColorOptions = {
-  customColors: {
-    accent: {
-      primary: string;
-      secondary: string;
-      tertiary: string;
-    };
-    chart: {
-      primary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-      quaternary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-      secondary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-      tertiary: {
-        fifth: string;
-        first: string;
-        fourth: string;
-        second: string;
-        sixth: string;
-        third: string;
-      };
-    };
-    evi: {
-      icon: string;
-    };
-    homePage: {
-      headerPrimary: string;
-      headerPrimaryIcon: string;
-      headerSecondary: string;
-      headerSecondaryIcon: string;
-    };
-    table: {
-      accentBackgroundColor: string;
-    };
-    tertiary: {
-      dark: string;
-      light: string;
-    };
-  };
-};
-
 export const COLORS = {
-  CUSTOM: {
-    accent: {
-      primary: accentBlue,
-      secondary: brightOrange,
-      tertiary: darkOrange,
-    },
-    chart: {
-      // Market Insights charts
-      primary: {
-        fifth: slateBlue,
-        first: '#7FC4E1',
-        fourth: secondaryDark,
-        second: accentBlue,
-        sixth: slateGrey,
-        third: '#0D47A1',
-      },
-      // Dark Enrollment Lens charts
-      quaternary: {
-        fifth: slateGrey,
-        first: '#00838F',
-        fourth: slateBlue,
-        second: secondaryMain,
-        sixth: grey[700],
-        third: secondaryDark,
-      },
-      // Enrollment Lens charts
-      secondary: {
-        fifth: slateBlue,
-        first: teal,
-        fourth: secondaryDark,
-        second: '#1594A3',
-        sixth: slateGrey,
-        third: '#225479',
-      },
-      // Vivid charts
-      tertiary: {
-        fifth: '#E91E63',
-        first: teal,
-        fourth: '#2196F3',
-        second: brightOrange,
-        sixth: '#CE93D8',
-        third: '#8E24AA',
-      },
-    },
-    evi: {
-      icon: '#1E9D8B',
-    },
-    homePage: {
-      headerPrimary: darkOrange, // Orange header
-      headerPrimaryIcon: '#FF9A3F', //
-      headerSecondary: '#420059', // Purple header
-      headerSecondaryIcon: '#B165CC',
-    },
-    table: {
-      accentBackgroundColor: '#f2f9fc',
-    },
-    // Teals of Enrollment Lens reports
-    tertiary: {
-      dark: '#125F6D', // Dark teal Enrollment Lens header for charts & dialogs
-      light: teal,
-    },
+  ACCENT: {
+    primary: accentBlue,
+    secondary: brightOrange,
+    tertiary: darkOrange,
+  },
+  CHART: {
+    // Market insights chart colors
+    primary: [
+      '#7FC4E1',
+      accentBlue,
+      '#0D47A1',
+      secondaryDark,
+      slateBlue,
+      slateGrey,
+    ],
+    // Dark enrollment lens charts
+    quaternary: [
+      '#00838F',
+      secondaryMain,
+      secondaryDark,
+      slateBlue,
+      slateGrey,
+      grey[700],
+    ],
+    // Enrollment lens chart colors
+    secondary: [
+      teal,
+      '#1594A3',
+      '#225479',
+      secondaryDark,
+      slateBlue,
+      slateGrey,
+    ],
+    // Vivid chart colors
+    tertiary: [teal, brightOrange, '#8E24AA', '#2196F3', '#E91E63', '#CE93D8'],
+  },
+  EVI: {
+    icon: '#1E9D8B',
+  },
+  HOMEPAGE: {
+    headerPrimary: darkOrange, // Orange header
+    headerPrimaryIcon: '#FF9A3F', //
+    headerSecondary: '#420059', // Purple header
+    headerSecondaryIcon: '#B165CC',
   },
   PRIMARY: '#008531',
   SECONDARY: secondaryMain,
   SECONDARY_DARK: secondaryDark,
   SECONDARY_LIGHT: '#E6F5F9',
+  TABLE: {
+    accentBackgroundColor: '#f2f9fc',
+  },
+  // Teals of Enrollment Lens reports
+  TERTIARY: {
+    dark: '#125F6D', // Dark teal Enrollment Lens header for charts & dialogs
+    light: teal,
+  },
   TEXT_DISABLED: '#CCCCCC',
   TEXT_PRIMARY: '#555555',
   TEXT_SECONDARY: '#00789A', // Dark blue used for hover states

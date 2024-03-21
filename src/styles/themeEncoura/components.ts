@@ -19,26 +19,12 @@ import COLORS, { secondaryMain } from './colors';
 const COMPONENTS: Components = {
   [DLS_COMPONENT_NAMES.AREA_CHART]: {
     defaultProps: {
-      colors: [
-        COLORS.CUSTOM.chart.primary.first,
-        COLORS.CUSTOM.chart.primary.second,
-        COLORS.CUSTOM.chart.primary.third,
-        COLORS.CUSTOM.chart.primary.fourth,
-        COLORS.CUSTOM.chart.primary.fifth,
-        COLORS.CUSTOM.chart.primary.sixth,
-      ],
+      colors: COLORS.CHART.primary,
     },
   },
   [DLS_COMPONENT_NAMES.BAR_CHART]: {
     defaultProps: {
-      colors: [
-        COLORS.CUSTOM.chart.primary.first,
-        COLORS.CUSTOM.chart.primary.second,
-        COLORS.CUSTOM.chart.primary.third,
-        COLORS.CUSTOM.chart.primary.fourth,
-        COLORS.CUSTOM.chart.primary.fifth,
-        COLORS.CUSTOM.chart.primary.sixth,
-      ],
+      colors: COLORS.CHART.primary,
     },
   },
   [DLS_COMPONENT_NAMES.HEAT_MAP]: {
@@ -48,14 +34,7 @@ const COMPONENTS: Components = {
   },
   [DLS_COMPONENT_NAMES.LINE_CHART]: {
     defaultProps: {
-      colors: [
-        COLORS.CUSTOM.chart.primary.first,
-        COLORS.CUSTOM.chart.primary.second,
-        COLORS.CUSTOM.chart.primary.third,
-        COLORS.CUSTOM.chart.primary.fourth,
-        COLORS.CUSTOM.chart.primary.fifth,
-        COLORS.CUSTOM.chart.primary.sixth,
-      ],
+      colors: COLORS.CHART.primary,
     },
   },
   [DLS_COMPONENT_NAMES.MAP]: {
@@ -65,43 +44,22 @@ const COMPONENTS: Components = {
   },
   [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
     defaultProps: {
-      colors: [
-        COLORS.CUSTOM.chart.quaternary.first,
-        COLORS.CUSTOM.chart.quaternary.second,
-        COLORS.CUSTOM.chart.quaternary.third,
-        COLORS.CUSTOM.chart.quaternary.fourth,
-        COLORS.CUSTOM.chart.quaternary.fifth,
-        COLORS.CUSTOM.chart.quaternary.sixth,
-      ],
+      colors: COLORS.CHART.quaternary,
     },
   },
   [DLS_COMPONENT_NAMES.PIE_CHART]: {
     defaultProps: {
-      colors: [
-        COLORS.CUSTOM.chart.tertiary.first,
-        COLORS.CUSTOM.chart.tertiary.second,
-        COLORS.CUSTOM.chart.tertiary.third,
-        COLORS.CUSTOM.chart.tertiary.fourth,
-        COLORS.CUSTOM.chart.tertiary.fifth,
-        COLORS.CUSTOM.chart.tertiary.sixth,
-      ],
+      colors: COLORS.CHART.tertiary,
     },
   },
   [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
     defaultProps: {
-      color: COLORS.CUSTOM.chart.secondary.second,
+      color: COLORS.CHART.secondary[1],
     },
   },
   [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
     defaultProps: {
-      colors: [
-        COLORS.CUSTOM.chart.primary.first,
-        COLORS.CUSTOM.chart.primary.second,
-        COLORS.CUSTOM.chart.primary.third,
-        COLORS.CUSTOM.chart.primary.fourth,
-        COLORS.CUSTOM.chart.primary.fifth,
-        COLORS.CUSTOM.chart.primary.sixth,
-      ],
+      colors: COLORS.CHART.primary,
     },
   },
   MuiAvatar: {
@@ -203,10 +161,10 @@ const COMPONENTS: Components = {
           backgroundColor: THEME_ENCOURA_CLASSIC.palette.common.white,
         },
         '& a:nth-child(odd)': {
-          backgroundColor: COLORS.CUSTOM.table.accentBackgroundColor,
+          backgroundColor: COLORS.TABLE.accentBackgroundColor,
         },
         '& a:nth-child(odd):hover': {
-          backgroundColor: COLORS.CUSTOM.table.accentBackgroundColor,
+          backgroundColor: COLORS.TABLE.accentBackgroundColor,
         },
       },
     },
@@ -257,10 +215,10 @@ const COMPONENTS: Components = {
           backgroundColor: THEME_ENCOURA_CLASSIC.palette.common.white,
         },
         '&:not(.MuiTableRow-head):nth-child(odd)': {
-          backgroundColor: COLORS.CUSTOM.table.accentBackgroundColor,
+          backgroundColor: COLORS.TABLE.accentBackgroundColor,
         },
         '&:not(.MuiTableRow-head):nth-child(odd):hover': {
-          backgroundColor: COLORS.CUSTOM.table.accentBackgroundColor,
+          backgroundColor: COLORS.TABLE.accentBackgroundColor,
         },
       },
     },
