@@ -1,3 +1,10 @@
+# [7.8.0-next.4](https://github.com/act-org/dls/compare/v7.8.0-next.3...v7.8.0-next.4) (2024-03-21)
+
+
+### Features
+
+* Bump MUI to 5.15.14 ([1829160](https://github.com/act-org/dls/commit/1829160a3045167e511ecd674ef58a278b10aa8e))
+
 # [7.8.0-next.3](https://github.com/act-org/dls/compare/v7.8.0-next.2...v7.8.0-next.3) (2024-03-21)
 
 
