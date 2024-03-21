@@ -76,19 +76,19 @@ export type MapProps = MapGLProps & {
     | GeoJSON.FeatureCollection<GeoJSON.Geometry>
     | string
     | undefined;
+  height: number | string;
   initialBoundsPosition?: InitialBoundsPositionProps;
   layers?: Array<React.ReactElement<LayerProps>>;
   layerProps?: LayerProps;
   mapboxAccessToken: string;
   navigationControlProps?: NavigationControlProps;
   onMapClick?: (event: MapLayerMouseEvent, mapRef: MapRef | null) => void;
-  height: number | string;
-  width: number | string;
   // eslint-disable-next-line react/boolean-prop-naming
   preserveDrawingBuffer?: boolean;
   setHoverInfo?: (value: FeatureHoverProps | undefined) => void;
   sourceId?: string;
   sourceProps?: SourceProps;
+  width: number | string;
 };
 
 /**
