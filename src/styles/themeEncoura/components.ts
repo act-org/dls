@@ -64,6 +64,18 @@ const COMPONENTS: Components = {
       ],
     },
   },
+  DlsPieChart: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.tertiary.first,
+        COLORS.CUSTOM.chart.tertiary.second,
+        COLORS.CUSTOM.chart.tertiary.third,
+        COLORS.CUSTOM.chart.tertiary.fourth,
+        COLORS.CUSTOM.chart.tertiary.fifth,
+        COLORS.CUSTOM.chart.tertiary.sixth,
+      ],
+    },
+  },
   MuiAvatar: {
     styleOverrides: {
       root: {
