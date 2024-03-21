@@ -28,7 +28,7 @@ export interface StateMapProps {
   geoJSONPath: string;
   mapboxAccessToken: string;
   mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
-  mapProps?: Omit<MapProps, 'mapboxAccessToken'>;
+  mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   processDataFn?: (
     featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
     data: Array<IMapDataProps>,

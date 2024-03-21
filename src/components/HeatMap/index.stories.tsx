@@ -28,9 +28,4 @@ export default {
   title: 'Molecules / Maps / HeatMap',
 } as Meta<HeatMapProps>;
 
-export const Default: StoryObj<HeatMapProps> = {
-  args: {
-    data: finalData,
-    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
-  },
-};
+export const Default: StoryObj<HeatMapProps> = {};

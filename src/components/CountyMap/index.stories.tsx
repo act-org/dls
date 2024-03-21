@@ -28,12 +28,13 @@ export default {
   title: 'Molecules / Maps / CountyMap',
 } as Meta<CountyMapProps>;
 
-export const Default: StoryObj<CountyMapProps> = {
+export const Default: StoryObj<CountyMapProps> = {};
+
+export const CustomColor: StoryObj<CountyMapProps> = {
   args: {
-    data: defaultData,
-    geoJSONPath: '/maps/counties.json',
-    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
-    processDataFn: defaultProcessDataFn,
+    mapProps: {
+      color: '#FF0000',
+    },
   },
 };
 

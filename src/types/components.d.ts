@@ -16,6 +16,7 @@ import {
 import { AreaChartProps } from '~/components/AreaChart';
 import { BarChartProps } from '~/components/BarChart';
 import { LineChartProps } from '~/components/LineChart';
+import { MapProps } from '~/components/Map';
 import { OverlappedBarChartProps } from '~/components/OverlappedBarChart';
 import { PieChartProps } from '~/components/PieChart';
 import { ScatterPlotProps } from '~/components/ScatterPlot';
@@ -31,6 +32,7 @@ declare module '@mui/material/styles' {
     [DLS_COMPONENT_NAMES.AREA_CHART]: Partial<AreaChartProps>;
     [DLS_COMPONENT_NAMES.BAR_CHART]: Partial<BarChartProps>;
     [DLS_COMPONENT_NAMES.LINE_CHART]: Partial<LineChartProps>;
+    [DLS_COMPONENT_NAMES.MAP]: Partial<MapProps>;
     [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: Partial<OverlappedBarChartProps>;
     [DLS_COMPONENT_NAMES.PIE_CHART]: Partial<PieChartProps>;
     [DLS_COMPONENT_NAMES.SCATTER_PLOT]: Partial<ScatterPlotProps>;
@@ -52,6 +54,11 @@ declare module '@mui/material/styles' {
       defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.LINE_CHART];
       styleOverrides?: ComponentsOverrides<Theme>[typeof DLS_COMPONENT_NAMES.LINE_CHART];
       variants?: ComponentsVariants[typeof DLS_COMPONENT_NAMES.LINE_CHART];
+    };
+    [DLS_COMPONENT_NAMES.MAP]?: {
+      defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.MAP];
+      styleOverrides?: ComponentsOverrides<Theme>[typeof DLS_COMPONENT_NAMES.MAP];
+      variants?: ComponentsVariants[typeof DLS_COMPONENT_NAMES.MAP];
     };
     [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]?: {
       defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART];

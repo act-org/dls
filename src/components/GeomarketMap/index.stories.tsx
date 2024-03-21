@@ -28,12 +28,13 @@ export default {
   title: 'Molecules / Maps / GeomarketMap',
 } as Meta<GeomarketMapProps>;
 
-export const Default: StoryObj<GeomarketMapProps> = {
+export const Default: StoryObj<GeomarketMapProps> = {};
+
+export const CustomColor: StoryObj<GeomarketMapProps> = {
   args: {
-    data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
-    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
-    processDataFn: defaultProcessDataFn,
+    mapProps: {
+      color: '#FF0000',
+    },
   },
 };
 

@@ -28,12 +28,13 @@ export default {
   title: 'Molecules / Maps / SCFMap',
 } as Meta<SCFMapProps>;
 
-export const Default: StoryObj<SCFMapProps> = {
+export const Default: StoryObj<SCFMapProps> = {};
+
+export const CustomColor: StoryObj<SCFMapProps> = {
   args: {
-    data: defaultData,
-    geoJSONPath: '/maps/scf.json',
-    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
-    processDataFn: defaultProcessDataFn,
+    mapProps: {
+      color: '#FF0000',
+    },
   },
 };
 
