@@ -1,3 +1,15 @@
+# [8.0.0-next.1](https://github.com/act-org/dls/compare/v7.8.0-next.6...v8.0.0-next.1) (2024-03-21)
+
+
+### Features
+
+* Added DLS v7 to v8 migration guide ([a92b5b1](https://github.com/act-org/dls/commit/a92b5b1ea0af0f874f807d6a6a6b4f44e21d72a5))
+
+
+### BREAKING CHANGES
+
+* Out of an abundance of caution, we are shipping DLS8 as a new major release since it contains lots of new components (and therefore, new dependencies)
+
 # [7.8.0-next.6](https://github.com/act-org/dls/compare/v7.8.0-next.5...v7.8.0-next.6) (2024-03-21)
 
 
