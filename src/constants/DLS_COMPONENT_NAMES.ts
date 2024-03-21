@@ -7,8 +7,10 @@
  * @prettier
  */
 
-/* eslint-disable import/prefer-default-export */
+/* eslint-disable filenames/match-exported */
 
-export * from './DEFAULT_CHART_COLORS';
-export * from './DLS_COMPONENT_NAMES';
-export * from './SORT_DIRECTION_TYPES';
+export const DLS_COMPONENT_NAMES = {
+  AREA_CHART: 'DlsAreaChart',
+} as const;
+
+export default DLS_COMPONENT_NAMES;

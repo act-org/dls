@@ -83,6 +83,7 @@
     "@types/d3-scale": "4.0.8",
     "@types/jest": "29.5.12",
     "@types/jest-axe": "3.5.9",
+    "@types/json-parse-safe": "2.0.3",
     "@types/lodash": "4.14.202",
     "@types/numeral": "2.0.5",
     "@types/pluralize": "0.0.33",

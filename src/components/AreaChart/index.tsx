@@ -8,7 +8,7 @@
  */
 
 import { Grid } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import React from 'react';
 import {
   Area,
@@ -35,6 +35,7 @@ import {
 } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
 export interface AreaDataProps {
   name?: string;
@@ -67,27 +68,31 @@ export interface AreaChartProps {
   yReferenceValue?: number;
 }
 
-export const AreaChart: React.FC<AreaChartProps> = ({
-  children,
-  colors,
-  areaProps,
-  areaChartProps,
-  responsiveContainerProps,
-  tooltipProps,
-  data,
-  height,
-  legendProps,
-  width,
-  showLegend = false,
-  areaKeys,
-  xAxisProps,
-  yAxisProps,
-  xLabel,
-  xLabelProps,
-  yLabel,
-  yLabelProps,
-  yReferenceValue,
-}: AreaChartProps): React.ReactElement => {
+export const AreaChart: React.FC<AreaChartProps> = (
+  inProps: AreaChartProps,
+): React.ReactElement<AreaChartProps> => {
+  const {
+    children,
+    colors = [],
+    areaProps,
+    areaChartProps,
+    responsiveContainerProps,
+    tooltipProps,
+    data,
+    height,
+    legendProps,
+    width,
+    showLegend = false,
+    areaKeys,
+    xAxisProps,
+    yAxisProps,
+    xLabel,
+    xLabelProps,
+    yLabel,
+    yLabelProps,
+    yReferenceValue,
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.AREA_CHART, props: inProps });
+
   const { palette, spacing, typography }: any = useTheme();
 
   return (
@@ -175,7 +180,7 @@ export const AreaChart: React.FC<AreaChartProps> = ({
             return (
               <Area
                 dataKey={key}
-                fill={colors?.[i] ? colors[i] : DEFAULT_CHART_COLORS[i]}
+                fill={colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
                 fillOpacity={1}
                 key={`${key}-area`}
                 stroke="none"
