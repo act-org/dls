@@ -8,8 +8,7 @@
  */
 
 import { Grid } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-import clsx from 'clsx';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import React from 'react';
 import {
   Area,
@@ -35,6 +34,9 @@ import {
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+
 export interface AreaDataProps {
   name?: string;
   [key: string]: unknown;
@@ -49,7 +51,7 @@ export interface AreaChartProps {
   areaKeys: string[];
   areaProps?: Partial<AreaProps>;
   children?: React.ReactNode;
-  colors?: AreaColorProps;
+  colors?: string[];
   data: AreaDataProps[];
   height?: number;
   legendProps?: LegendProps;
@@ -66,28 +68,32 @@ export interface AreaChartProps {
   yReferenceValue?: number;
 }
 
-export const AreaChart: React.FC<AreaChartProps> = ({
-  children,
-  colors,
-  areaProps,
-  areaChartProps,
-  responsiveContainerProps,
-  tooltipProps,
-  data,
-  height,
-  legendProps,
-  width,
-  showLegend = false,
-  areaKeys,
-  xAxisProps,
-  yAxisProps,
-  xLabel,
-  xLabelProps,
-  yLabel,
-  yLabelProps,
-  yReferenceValue,
-}: AreaChartProps): React.ReactElement => {
-  const { customColors, palette, spacing, typography }: any = useTheme();
+export const AreaChart: React.FC<AreaChartProps> = (
+  inProps: AreaChartProps,
+): React.ReactElement<AreaChartProps> => {
+  const {
+    children,
+    colors = [],
+    areaProps,
+    areaChartProps,
+    responsiveContainerProps,
+    tooltipProps,
+    data,
+    height,
+    legendProps,
+    width,
+    showLegend = false,
+    areaKeys,
+    xAxisProps,
+    yAxisProps,
+    xLabel,
+    xLabelProps,
+    yLabel,
+    yLabelProps,
+    yReferenceValue,
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.AREA_CHART, props: inProps });
+
+  const { palette, spacing, typography }: any = useTheme();
 
   return (
     <Grid container direction="column" item spacing={2} xs={12}>
@@ -170,29 +176,19 @@ export const AreaChart: React.FC<AreaChartProps> = ({
           {(yReferenceValue || yReferenceValue === 0) && (
             <ReferenceLine stroke={palette.grey[400]} y={yReferenceValue} />
           )}
-          {areaKeys.map((key, i) => (
-            <Area
-              dataKey={key}
-              fill={clsx(
-                i === 0 && customColors?.chart?.primary?.first,
-                i === 1 && customColors?.chart?.primary?.second,
-                i === 2 && customColors?.chart?.primary?.third,
-                i === 3 && customColors?.chart?.primary?.fourth,
-                i === 4 && customColors?.chart?.primary?.fifth,
-                i === 5 && customColors?.chart?.primary?.sixth,
-                i > 5 && palette.grey[700],
-              )}
-              fillOpacity={1}
-              key={`${key}-area`}
-              stroke="none"
-              style={
-                colors?.[key]
-                  ? { ...areaProps?.style, fill: colors[key] }
-                  : areaProps?.style
-              }
-              {...(areaProps as Omit<AreaProps, 'dataKey' | 'ref'>)}
-            />
-          ))}
+          {areaKeys.map((key, i) => {
+            return (
+              <Area
+                dataKey={key}
+                fill={colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
+                fillOpacity={1}
+                key={`${key}-area`}
+                stroke="none"
+                style={areaProps?.style || {}}
+                {...(areaProps as Omit<AreaProps, 'dataKey' | 'ref'>)}
+              />
+            );
+          })}
 
           {showLegend && (
             <Legend

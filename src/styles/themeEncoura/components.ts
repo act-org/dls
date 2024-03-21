@@ -16,6 +16,18 @@ import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import COLORS from './colors';
 
 const COMPONENTS: Components = {
+  DlsAreaChart: {
+    defaultProps: {
+      colors: [
+        COLORS.CUSTOM.chart.primary.first,
+        COLORS.CUSTOM.chart.primary.second,
+        COLORS.CUSTOM.chart.primary.third,
+        COLORS.CUSTOM.chart.primary.fourth,
+        COLORS.CUSTOM.chart.primary.fifth,
+        COLORS.CUSTOM.chart.primary.sixth,
+      ],
+    },
+  },
   MuiAvatar: {
     styleOverrides: {
       root: {

@@ -12,7 +12,12 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import { Playground } from '~/helpers/playground';
 
-import { defaultData, largerDataset, percentageData } from './mocks';
+import {
+  defaultData,
+  largerDataset,
+  largerDatasetWith18Keys,
+  percentageData,
+} from './mocks';
 
 import { AreaChart, AreaChartProps } from '.';
 
@@ -53,7 +58,15 @@ export const WithMoreThanOneArea: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
     areaProps: { fillOpacity: 0.6 },
-    data: largerDataset,
+    data: largerDatasetWith18Keys,
+  },
+};
+
+export const WithLargeDataSet: StoryObj<AreaChartProps> = {
+  args: {
+    areaKeys: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'],
+    areaProps: { fillOpacity: 0.6 },
+    data: largerDatasetWith18Keys,
   },
 };
 
@@ -61,7 +74,7 @@ export const CustomColors: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
     areaProps: { fillOpacity: 0.6 },
-    colors: { A: 'red', B: 'pink' },
+    colors: ['#FF0000', '#00FF00'],
     data: largerDataset,
   },
 };
@@ -171,7 +184,7 @@ export const WithFixedHeightAndWidth: StoryObj<AreaChartProps> = {
 export const MoreRealisticExample: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A'],
-    colors: { A: '#225479' },
+    colors: ['#225479'],
     data: percentageData,
     xLabel: 'Percentage Graph',
     yAxisProps: { tickFormatter: v => `${v * 100}%` },
