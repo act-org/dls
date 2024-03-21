@@ -8,7 +8,6 @@
  */
 
 import { Grid } from '@mui/material';
-import { blue, green } from '@mui/material/colors';
 import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import {
@@ -34,6 +33,8 @@ import {
   ValueType,
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
+
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 
 export interface AreaDataProps {
   name?: string;
@@ -89,16 +90,6 @@ export const AreaChart: React.FC<AreaChartProps> = ({
 }: AreaChartProps): React.ReactElement => {
   const { palette, spacing, typography }: any = useTheme();
 
-  // Supplies up to 18 default colors
-  const getDefaultChartColors = (index: number): string => {
-    const colorPalettes = [blue, green];
-    const paletteIndex = Math.floor(index / 9);
-    const colorIndex = (index % 9) * 100 + 100; // Color index will be between 100 - 900
-    const currentPalette = colorPalettes[paletteIndex % colorPalettes.length];
-    return (
-      currentPalette[colorIndex as keyof typeof blue] || palette.common.black
-    );
-  };
   return (
     <Grid container direction="column" item spacing={2} xs={12}>
       <ResponsiveContainer
@@ -184,7 +175,7 @@ export const AreaChart: React.FC<AreaChartProps> = ({
             return (
               <Area
                 dataKey={key}
-                fill={colors?.[i] ? colors[i] : getDefaultChartColors(i)}
+                fill={colors?.[i] ? colors[i] : DEFAULT_CHART_COLORS[i]}
                 fillOpacity={1}
                 key={`${key}-area`}
                 stroke="none"

@@ -9,4 +9,5 @@
 
 /* eslint-disable import/prefer-default-export */
 
+export * from './DEFAULT_CHART_COLORS';
 export * from './SORT_DIRECTION_TYPES';
