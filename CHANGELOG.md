@@ -1,3 +1,21 @@
+# [7.8.0-next.3](https://github.com/act-org/dls/compare/v7.8.0-next.2...v7.8.0-next.3) (2024-03-21)
+
+
+### Bug Fixes
+
+* Alphabetize imports ([b5de86f](https://github.com/act-org/dls/commit/b5de86f09cd890ac65a39f0808530fd857205780))
+* Remove reference to customColors on ENCOURA theme ([c06f647](https://github.com/act-org/dls/commit/c06f64746e6dfd1a7e57ef0a17fce354d6427f22))
+* Start to add customizeFillColor prop to AreaChart ([27ac4d3](https://github.com/act-org/dls/commit/27ac4d33866ebb04386a9cafc9246ddafd881f0a))
+
+
+### Features
+
+* Add in AreaChart storybook entry for large data sets ([068dd91](https://github.com/act-org/dls/commit/068dd91f3b5bacb8da3f7b5542b1bb20e21994e1))
+* Added DEFAULT_CHART_COLORS constant as a fallback for charts ([868d073](https://github.com/act-org/dls/commit/868d0734e9fa859d8eb21c108358a3bf0bab729f))
+* Convert colors prop from object type to array so user doesnt need to specify keys ([d997382](https://github.com/act-org/dls/commit/d997382e7e7a5ce1fde25b310295e513c137c6d4))
+* Register DlsAreaChart as a themeable component in the design system ([0cc2a03](https://github.com/act-org/dls/commit/0cc2a034e5ad0dbe8146cf2d63ca549bd6740180))
+* Remove customFillColor prop and use colors prop to customize chart colors ([89b5247](https://github.com/act-org/dls/commit/89b52472d94d8ca04ee54e31d244e73dbed260cd))
+
 # [7.8.0-next.2](https://github.com/act-org/dls/compare/v7.8.0-next.1...v7.8.0-next.2) (2024-03-07)
 
 
