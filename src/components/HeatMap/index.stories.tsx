@@ -29,3 +29,9 @@ export default {
 } as Meta<HeatMapProps>;
 
 export const Default: StoryObj<HeatMapProps> = {};
+
+export const CustomColor: StoryObj<HeatMapProps> = {
+  args: {
+    color: '#FF0000',
+  },
+};

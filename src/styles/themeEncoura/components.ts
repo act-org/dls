@@ -41,6 +41,11 @@ const COMPONENTS: Components = {
       ],
     },
   },
+  [DLS_COMPONENT_NAMES.HEAT_MAP]: {
+    defaultProps: {
+      color: secondaryMain,
+    },
+  },
   [DLS_COMPONENT_NAMES.LINE_CHART]: {
     defaultProps: {
       colors: [

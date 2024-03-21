@@ -12,6 +12,7 @@
 export const DLS_COMPONENT_NAMES = {
   AREA_CHART: 'DlsAreaChart',
   BAR_CHART: 'DlsBarChart',
+  HEAT_MAP: 'DlsHeatMap',
   LINE_CHART: 'DlsLineChart',
   MAP: 'DlsMap',
   OVERLAPPED_BAR_CHART: 'DlsOverlappedBarChart',
