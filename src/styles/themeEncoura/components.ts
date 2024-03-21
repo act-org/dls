@@ -76,6 +76,11 @@ const COMPONENTS: Components = {
       ],
     },
   },
+  DlsScatterPlot: {
+    defaultProps: {
+      color: COLORS.CUSTOM.chart.secondary.second,
+    },
+  },
   MuiAvatar: {
     styleOverrides: {
       root: {

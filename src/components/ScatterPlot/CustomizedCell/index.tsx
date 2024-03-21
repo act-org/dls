@@ -19,6 +19,7 @@ import { IGroupDataPoint } from '../types';
 const OPACITY_NOT_HIGHLIGHTED = 0.2;
 
 export type CustomizedScatterCellProps = CellProps & {
+  color?: string;
   selectedPoint?: ScatterPlotData;
   groupSize?: number;
   members?: IGroupDataPoint[];
@@ -26,6 +27,7 @@ export type CustomizedScatterCellProps = CellProps & {
 };
 
 const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
+  color,
   cx,
   cy,
   height,
@@ -35,7 +37,7 @@ const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
   groupSize,
   members,
 }) => {
-  const { customColors, palette }: any = useTheme();
+  const { palette } = useTheme();
 
   function getIsSelected(): boolean {
     if (selectedPoint) {
@@ -57,7 +59,7 @@ const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
       <circle
         cx={cx}
         cy={cy}
-        fill={customColors?.chart?.secondary?.second}
+        fill={color || palette.grey[500]}
         height={height}
         r={calculateRadius(groupSize)}
         stroke={palette.common.black}
@@ -78,6 +80,7 @@ const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
 };
 
 CustomizedCell.defaultProps = {
+  color: undefined,
   groupSize: undefined,
   label: undefined,
   members: undefined,

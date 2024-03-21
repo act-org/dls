@@ -15,6 +15,7 @@ export const DLS_COMPONENT_NAMES = {
   LINE_CHART: 'DlsLineChart',
   OVERLAPPED_BAR_CHART: 'DlsOverlappedBarChart',
   PIE_CHART: 'DlsPieChart',
+  SCATTER_PLOT: 'DlsScatterPlot',
 } as const;
 
 export default DLS_COMPONENT_NAMES;

@@ -18,6 +18,7 @@ import { BarChartProps } from '~/components/BarChart';
 import { LineChartProps } from '~/components/LineChart';
 import { OverlappedBarChartProps } from '~/components/OverlappedBarChart';
 import { PieChartProps } from '~/components/PieChart';
+import { ScatterPlotProps } from '~/components/ScatterPlot';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
 type Theme = Omit<MuiTheme, 'components'>;
@@ -31,6 +32,7 @@ declare module '@mui/material/styles' {
     [DLS_COMPONENT_NAMES.LINE_CHART]: Partial<LineChartProps>;
     [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: Partial<OverlappedBarChartProps>;
     [DLS_COMPONENT_NAMES.PIE_CHART]: Partial<PieChartProps>;
+    [DLS_COMPONENT_NAMES.SCATTER_PLOT]: Partial<ScatterPlotProps>;
   }
 
   interface Components {
@@ -58,6 +60,11 @@ declare module '@mui/material/styles' {
       defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.PIE_CHART];
       styleOverrides?: ComponentsOverrides<Theme>[typeof DLS_COMPONENT_NAMES.PIE_CHART];
       variants?: ComponentsVariants[typeof DLS_COMPONENT_NAMES.PIE_CHART];
+    };
+    [DLS_COMPONENT_NAMES.SCATTER_PLOT]?: {
+      defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.SCATTER_PLOT];
+      styleOverrides?: ComponentsOverrides<Theme>[typeof DLS_COMPONENT_NAMES.SCATTER_PLOT];
+      variants?: ComponentsVariants[typeof DLS_COMPONENT_NAMES.SCATTER_PLOT];
     };
   }
 }
