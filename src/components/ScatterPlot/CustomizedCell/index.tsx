@@ -20,22 +20,22 @@ const OPACITY_NOT_HIGHLIGHTED = 0.2;
 
 export type CustomizedScatterCellProps = CellProps & {
   color?: string;
-  selectedPoint?: ScatterPlotData;
   groupSize?: number;
-  members?: IGroupDataPoint[];
   label?: string;
+  members?: IGroupDataPoint[];
+  selectedPoint?: ScatterPlotData;
 };
 
 const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
   color,
   cx,
   cy,
-  height,
-  width,
-  selectedPoint,
-  label,
   groupSize,
+  height,
+  label,
   members,
+  selectedPoint,
+  width,
 }) => {
   const { palette } = useTheme();
 

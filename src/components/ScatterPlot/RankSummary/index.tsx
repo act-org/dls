@@ -39,8 +39,8 @@ export interface RankSummaryProps {
   idSubstring?: string;
   selectedPoint?: ScatterPlotData;
   setSelectedPoint?: (data: ScatterPlotData | undefined) => void;
-  showSummary?: boolean;
   setShowSummary?: (value: boolean) => void;
+  showSummary?: boolean;
   tableContainerProps?: TableContainerProps;
 }
 
@@ -50,8 +50,8 @@ export const RankSummary: React.FC<RankSummaryProps> = ({
   idSubstring,
   selectedPoint,
   setSelectedPoint,
-  showSummary = true,
   setShowSummary,
+  showSummary = true,
   tableContainerProps,
 }: RankSummaryProps): JSX.Element => {
   const ref = React.useRef<HTMLDivElement>(null);
