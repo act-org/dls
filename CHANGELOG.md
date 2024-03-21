@@ -1,3 +1,11 @@
+# [7.8.0-next.6](https://github.com/act-org/dls/compare/v7.8.0-next.5...v7.8.0-next.6) (2024-03-21)
+
+
+### Features
+
+* Register DlsHeatMap as a themeable component in the design system ([cc6f477](https://github.com/act-org/dls/commit/cc6f477d3ba5563b73f713576643cb07155839d5))
+* Register DlsMap as a themeable component in the design system ([9c32c4a](https://github.com/act-org/dls/commit/9c32c4ae2e0103af886738566dca0d47eb82b6c8))
+
 # [7.8.0-next.5](https://github.com/act-org/dls/compare/v7.8.0-next.4...v7.8.0-next.5) (2024-03-21)
 
 
