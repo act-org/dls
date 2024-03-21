@@ -57,6 +57,7 @@ export interface PieChartProps {
   CustomLegendIcon?: CustomLegendComponentType;
   data: Array<TypesPieDataProps>;
   height?: number;
+  HighlightComponent?: HighlightComponentType;
   legendProps?: LegendProps;
   pieChartProps?: CategoricalChartProps;
   pieProps?: Partial<PieProps>;
@@ -65,7 +66,6 @@ export interface PieChartProps {
   tooltipProps?: TooltipProps<ValueType, NameType>;
   variant?: VariantType;
   width?: number | string;
-  HighlightComponent?: HighlightComponentType;
 }
 
 export const DEFAULT_PIE_GAP_ANGLE = 1;
@@ -83,6 +83,7 @@ export const PieChart: React.FC<PieChartProps> = (
     CustomLegendIcon,
     data,
     height,
+    HighlightComponent,
     legendProps,
     pieChartProps,
     pieProps,
@@ -91,7 +92,6 @@ export const PieChart: React.FC<PieChartProps> = (
     tooltipProps,
     variant,
     width,
-    HighlightComponent,
   } = useThemeProps({ name: DLS_COMPONENT_NAMES.PIE_CHART, props: inProps });
 
   const { palette, spacing, typography } = useTheme();
