@@ -15,6 +15,7 @@ import {
 
 import { AreaChartProps } from '~/components/AreaChart';
 import { BarChartProps } from '~/components/BarChart';
+import { LineChartProps } from '~/components/LineChart';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
 type Theme = Omit<MuiTheme, 'components'>;
@@ -25,6 +26,7 @@ declare module '@mui/material/styles' {
   interface ComponentsPropsList {
     [DLS_COMPONENT_NAMES.AREA_CHART]: Partial<AreaChartProps>;
     [DLS_COMPONENT_NAMES.BAR_CHART]: Partial<BarChartProps>;
+    [DLS_COMPONENT_NAMES.LINE_CHART]: Partial<LineChartProps>;
   }
 
   interface Components {
@@ -37,6 +39,11 @@ declare module '@mui/material/styles' {
       defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.BAR_CHART];
       styleOverrides?: ComponentsOverrides<Theme>[typeof DLS_COMPONENT_NAMES.BAR_CHART];
       variants?: ComponentsVariants[typeof DLS_COMPONENT_NAMES.BAR_CHART];
+    };
+    [DLS_COMPONENT_NAMES.LINE_CHART]?: {
+      defaultProps?: ComponentsPropsList[typeof DLS_COMPONENT_NAMES.LINE_CHART];
+      styleOverrides?: ComponentsOverrides<Theme>[typeof DLS_COMPONENT_NAMES.LINE_CHART];
+      variants?: ComponentsVariants[typeof DLS_COMPONENT_NAMES.LINE_CHART];
     };
   }
 }

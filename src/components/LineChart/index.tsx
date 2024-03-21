@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import { useTheme } from '@mui/material/styles';
-import clsx from 'clsx';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import numeral from 'numeral';
 import React from 'react';
 import {
@@ -31,6 +30,9 @@ import {
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+
 import { StyledContainer, StyledResponsiveContainer } from './styles';
 
 export interface LineRawDataProps {
@@ -42,6 +44,7 @@ export interface LineChartProps {
   cartesianGridProps?: CartesianGridProps;
   chartProps?: CategoricalChartProps;
   children?: React.ReactElement<unknown>;
+  colors?: string[];
   containerStyles?: React.CSSProperties;
   data: Array<LineRawDataProps>;
   height?: number | string;
@@ -55,23 +58,28 @@ export interface LineChartProps {
   yAxisProps?: YAxisProps;
 }
 
-export const LineChart: React.FC<LineChartProps> = ({
-  cartesianGridProps,
-  chartProps,
-  children,
-  containerStyles,
-  data,
-  height,
-  lineKeys = [],
-  lineProps,
-  maxHeight,
-  responsiveContainerProps,
-  tooltipProps,
-  width,
-  xAxisProps,
-  yAxisProps,
-}: LineChartProps): React.ReactElement<LineChartProps> => {
-  const { customColors, palette, spacing, typography }: any = useTheme();
+export const LineChart: React.FC<LineChartProps> = (
+  inProps: LineChartProps,
+): React.ReactElement<LineChartProps> => {
+  const {
+    cartesianGridProps,
+    chartProps,
+    children,
+    colors = [],
+    containerStyles,
+    data,
+    height,
+    lineKeys = [],
+    lineProps,
+    maxHeight,
+    responsiveContainerProps,
+    tooltipProps,
+    width,
+    xAxisProps,
+    yAxisProps,
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.LINE_CHART, props: inProps });
+
+  const { palette, spacing, typography } = useTheme();
 
   return (
     <StyledContainer
@@ -128,15 +136,9 @@ export const LineChart: React.FC<LineChartProps> = ({
                 dataKey={key}
                 dot={false}
                 key={`${key}-line`}
-                stroke={clsx(
-                  i === 0 && customColors?.chart?.tertiary?.first,
-                  i === 1 && customColors?.chart?.tertiary?.second,
-                  i === 2 && customColors?.chart?.tertiary?.third,
-                  i === 3 && customColors?.chart?.tertiary?.fourth,
-                  i === 4 && customColors?.chart?.tertiary?.fifth,
-                  i === 5 && customColors?.chart?.tertiary?.sixth,
-                  i > 5 && palette.grey[700],
-                )}
+                stroke={
+                  colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]
+                }
                 type="natural"
                 {...lineProps}
               />
@@ -162,6 +164,7 @@ LineChart.defaultProps = {
   cartesianGridProps: undefined,
   chartProps: undefined,
   children: undefined,
+  colors: undefined,
   containerStyles: undefined,
   height: undefined,
   lineKeys: undefined,

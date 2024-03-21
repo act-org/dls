@@ -51,15 +51,11 @@ export default {
 } as Meta<LineChartProps>;
 
 export const Default: StoryObj<LineChartProps> = {
+  args: {},
+};
+
+export const WithCustomLineColors: StoryObj<LineChartProps> = {
   args: {
-    data: processDataFn(DATA),
-    height: 450,
-    lineKeys: defaultLineKeys,
-    maxHeight: 450,
-    width: 65 + 56 * DATA.length,
-    yAxisProps: {
-      dataKey: yAxisDataKey(),
-      label: { angle: -90, position: 'insideLeft', value: 'Student Count' },
-    },
+    colors: ['#FF0000', '#00FF00', '#0000FF'],
   },
 };
