@@ -7,8 +7,7 @@
  * @prettier
  */
 
-import { useTheme } from '@mui/material/styles';
-import clsx from 'clsx';
+import { useTheme, useThemeProps } from '@mui/material/styles';
 import { isFunction } from 'lodash';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
@@ -29,6 +28,8 @@ import {
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 
+import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ILabelListData, TooltipPayloadProps, VariantType } from '~/types';
 
 import {
@@ -59,7 +60,7 @@ export interface BarChartProps {
   cartesianGridProps?: CartesianGridProps;
   chartProps?: CategoricalChartProps;
   children?: React.ReactElement<unknown>;
-  colors?: ColorProps;
+  colors?: string[];
   containerRef?: React.Ref<HTMLDivElement>;
   containerStyles?: React.CSSProperties;
   customizeBarFillColor?: (index: number, key: string) => string | undefined;
@@ -99,34 +100,38 @@ export const measureText = (font: string, text?: string): number => {
 export const DEFAULT_BAR_CATEGORY_GAP = 8;
 export const DEFAULT_BAR_GAP = 4;
 
-export const BarChart: React.FC<BarChartProps> = ({
-  barKeys = [],
-  barProps,
-  cartesianGridProps,
-  chartProps,
-  children,
-  colors = {},
-  containerRef,
-  containerStyles,
-  customizeBarFillColor,
-  customizedAxisTickProps,
-  data,
-  height,
-  labelListProps,
-  maxHeight,
-  responsiveContainerProps,
-  setTooltipBarId,
-  subLabelProps,
-  subLabelWidth,
-  subLabels,
-  tooltipBarId,
-  tooltipProps,
-  variant,
-  width,
-  xAxisProps,
-  yAxisProps,
-}: BarChartProps): React.ReactElement<BarChartProps> => {
-  const { palette, typography, spacing, customColors }: any = useTheme();
+export const BarChart: React.FC<BarChartProps> = (
+  inProps: BarChartProps,
+): React.ReactElement<BarChartProps> => {
+  const {
+    barKeys = [],
+    barProps,
+    cartesianGridProps,
+    chartProps,
+    children,
+    colors = [],
+    containerRef,
+    containerStyles,
+    customizeBarFillColor,
+    customizedAxisTickProps,
+    data,
+    height,
+    labelListProps,
+    maxHeight,
+    responsiveContainerProps,
+    setTooltipBarId,
+    subLabelProps,
+    subLabelWidth,
+    subLabels,
+    tooltipBarId,
+    tooltipProps,
+    variant,
+    width,
+    xAxisProps,
+    yAxisProps,
+  } = useThemeProps({ name: DLS_COMPONENT_NAMES.BAR_CHART, props: inProps });
+
+  const { palette, typography, spacing } = useTheme();
 
   const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(
     tooltipBarId,
@@ -282,17 +287,10 @@ export const BarChart: React.FC<BarChartProps> = ({
               <Bar
                 dataKey={key}
                 fill={
-                  customizeBarFillColor
-                    ? customizeBarFillColor(i, key)
-                    : clsx(
-                        i === 0 && customColors?.chart?.primary?.first,
-                        i === 1 && customColors?.chart?.primary?.second,
-                        i === 2 && customColors?.chart?.primary?.third,
-                        i === 3 && customColors?.chart?.primary?.fourth,
-                        i === 4 && customColors?.chart?.primary?.fifth,
-                        i === 5 && customColors?.chart?.primary?.sixth,
-                        i > 5 && palette.grey[700],
-                      )
+                  customizeBarFillColor?.(i, key) ||
+                  colors[i] ||
+                  DEFAULT_CHART_COLORS[i] ||
+                  palette.grey[700]
                 }
                 id={key}
                 isAnimationActive={animate}
@@ -308,9 +306,6 @@ export const BarChart: React.FC<BarChartProps> = ({
                     setBarIdHovered(key);
                   }
                 }}
-                style={
-                  colors[key] ? { backgroundColor: colors[key] } : undefined
-                }
                 {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
               >
                 <LabelList

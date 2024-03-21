@@ -28,17 +28,9 @@ const DATA = [
   },
 ];
 
-const defaultColors = {
-  '2019': '#03BBBB',
-  '2020': '#1594A3',
-  '2021': '#225479',
-};
-
 mockResizeObserver();
 
 describe('BarChart', () => {
-  const Component = (
-    <BarChart barKeys={defaultBarKeys} colors={defaultColors} data={DATA} />
-  );
+  const Component = <BarChart barKeys={defaultBarKeys} data={DATA} />;
   standard(Component);
 });

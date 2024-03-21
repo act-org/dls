@@ -22,7 +22,6 @@ import {
   longBarKeys,
   longLabelData,
   longSubLabelData,
-  useEnrollmentLensBarColors,
 } from './mocks';
 
 import { BarChart, BarChartProps } from '.';
@@ -61,7 +60,16 @@ export default {
 export const WithCustomBarColors: StoryObj<BarChartProps> = {
   args: {
     barKeys: defaultBarKeys,
-    customizeBarFillColor: useEnrollmentLensBarColors,
+    colors: ['red', 'green', 'blue'],
+    data: defaultData,
+  },
+};
+
+export const CustomizeBarColorByKey: StoryObj<BarChartProps> = {
+  args: {
+    barKeys: defaultBarKeys,
+    customizeBarFillColor: (_, barKey) =>
+      barKey === '2020' ? 'red' : undefined,
     data: defaultData,
   },
 };

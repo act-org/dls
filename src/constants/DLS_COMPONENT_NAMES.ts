@@ -11,6 +11,7 @@
 
 export const DLS_COMPONENT_NAMES = {
   AREA_CHART: 'DlsAreaChart',
+  BAR_CHART: 'DlsBarChart',
 } as const;
 
 export default DLS_COMPONENT_NAMES;
