@@ -2,11 +2,18 @@
 
 ## Breaking Changes
 
-**None!** Technically, there are no breaking changes in this release. However,
-out of an abundance of caution, we are shipping DLS8 as a new major release
-since it contains lots of new components (and therefore, new dependencies)!
+This release contains a lot of version bumps. Notably, you will need to
+make the following updates in your project's `package.json` file:
 
-DLS8 should not increase your bundle size until you import / use the new
+* Bumped the minimum required `@mui/base` version to `5.0.0-beta.40`
+* Bumped the minimum required `@mui/lab` version to `5.0.0-alpha.169`
+
+Aside from that, there are technically no breaking changes in this release.
+However, out of an abundance of caution, we are shipping DLS8 as a new major
+release since it contains a lot of new components (and therefore,
+new dependencies)!
+
+DLS8 should not increase your bundle size until you import / use these new
 components. But if your bundle analyzer is telling you otherwise, please reach
 out!
 
