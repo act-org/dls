@@ -13,7 +13,7 @@ exports[`FormSwitch ACT theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-tnsvld-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-m489x8-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-ji5jgh-MuiButtonBase-root-MuiSwitch-switchBase"
           color="primary"
         >
           <input
@@ -54,7 +54,7 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-143zrxq-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1l2mt3y-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
@@ -94,7 +94,7 @@ exports[`FormSwitch ENCOURA theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1k2xxwg-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1i4tsey-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1rw1rsn-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
@@ -134,7 +134,7 @@ exports[`FormSwitch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-46j86-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1jxsdxa-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
@@ -174,7 +174,7 @@ exports[`FormSwitch ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiSwitch-root MuiSwitch-sizeMedium css-1nyoakt-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-29tbe1-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-19n5gi9-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"
