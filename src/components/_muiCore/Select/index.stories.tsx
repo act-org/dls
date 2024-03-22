@@ -44,7 +44,7 @@ export const Secondary: StoryObj<SelectProps> = {
 export const Disabled: StoryObj<SelectProps> = { args: { disabled: true } };
 
 export const Multiple: StoryObj<SelectProps> = {
-  render: args => {
+  render: (args: Partial<SelectProps>) => {
     const { children } = args;
     const [value, setValue] = useState<string[]>([]);
     return (

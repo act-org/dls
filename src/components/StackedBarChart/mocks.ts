@@ -1,0 +1,173 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @prettier
+ */
+
+export const defaultData = [
+  {
+    '2019': 600,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 250,
+    '2020a': 300,
+    '2020b': 600,
+    '2021': 600,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'California',
+  },
+  {
+    '2019': 575,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 565,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 580,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'Nevada',
+  },
+  {
+    '2019': 448,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 438,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 450,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'New York',
+  },
+  {
+    '2019': 130,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 150,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 140,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'Texas',
+  },
+  {
+    '2019': 120,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 155,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 150,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'Washington',
+  },
+  {
+    '2019': 800,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 980,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 125,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'Oregon',
+  },
+];
+
+export const longLabelData = [
+  {
+    '2019': 900,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 823,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 925,
+    '2021a': 300,
+    '2021b': 250,
+    name: ' Los Angeles - California, United States',
+  },
+  {
+    '2019': 575,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 565,
+    '2020a': 300,
+    '2020b': 250,
+    '2021': 580,
+    '2021a': 300,
+    '2021b': 250,
+    name: 'Carson City - Nevada, United States',
+  },
+  {
+    '2019': 448,
+    '2019a': 250,
+    '2019b': 250,
+    '2020': 438,
+    '2020a': 300,
+    '2020b': 300,
+    '2021': 450,
+    '2021a': 350,
+    '2021b': 250,
+    name: 'New York - New York, United States',
+  },
+];
+
+export const longSubLabelData = [
+  {
+    '2019 with long sublabel': 900,
+    '2019a': 250,
+    '2019b': 250,
+    '2020 with long sublabel': 823,
+    '2020a': 300,
+    '2020b': 300,
+    '2021 with long sublabel': 925,
+    '2021a': 350,
+    '2021b': 250,
+    name: ' California',
+  },
+  {
+    '2019 with long sublabel': 575,
+    '2019a': 250,
+    '2019b': 250,
+    '2020 with long sublabel': 565,
+    '2020a': 300,
+    '2020b': 300,
+    '2021 with long sublabel': 580,
+    '2021a': 350,
+    '2021b': 250,
+    name: ' Nevada',
+  },
+  {
+    '2019 with long sublabel': 448,
+    '2019a': 250,
+    '2019b': 250,
+    '2020 with long sublabel': 438,
+    '2020a': 300,
+    '2020b': 300,
+    '2021 with long sublabel': 450,
+    '2021a': 350,
+    '2021b': 250,
+    name: 'New York',
+  },
+];
+
+export const defaultBarKeys = [
+  ['2019', '2019a', '2019b'],
+  ['2020', '2020a', '2020b'],
+  ['2021', '2021a', '2021b'],
+];
+
+export const longBarKeys = [
+  ['2019 with long sublabel', '2019a', '2019b'],
+  ['2020 with long sublabel', '2020a', '2020b'],
+  ['2021 with long sublabel', '2021a', '2021b'],
+];

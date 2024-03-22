@@ -8,6 +8,7 @@
  */
 
 export * from './accessibility';
+export * from './mockResizeObserver';
 export * from './render';
 export * from './snapshot';
 export * from './standard';

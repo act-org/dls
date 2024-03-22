@@ -37,8 +37,9 @@ Material UI, and ships with several themes out of the box:
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-4. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
+3. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
+4. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
+5. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -139,7 +140,7 @@ reference in the `head` of your React app:
 
 #### Museo Sans
 
-The `ENCOURA_CLASSIC` theme assumes that the
+The `ENCOURA` and `ENCOURA_CLASSIC` themes assume that the
 [Museo Sans](https://fonts.adobe.com/fonts/museo-sans) font
 is available in the browser.  Include this embed code in the `head`
 of your React app after obtaining the licensed font URL from Marketing:
@@ -148,7 +149,6 @@ of your React app after obtaining the licensed font URL from Marketing:
 <style>
   @import url("licensed-font-url");
 </style>
-
 ```
 
 #### Work Sans, Roboto, Roboto Mono

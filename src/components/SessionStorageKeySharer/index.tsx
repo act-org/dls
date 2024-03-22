@@ -8,6 +8,7 @@
  */
 
 import JSONParseSafe from 'json-parse-safe';
+import { get } from 'lodash';
 import { FC, useEffect } from 'react';
 
 import useLocalStorage from '~/hooks/useLocalStorage';
@@ -32,11 +33,13 @@ export const SessionStorageKeySharer: FC<SessionStorageKeySharerProps> = ({
   );
 
   const sessionStorageKeyValueParsed =
-    JSONParseSafe(sessionStorageKeyValue).value || sessionStorageKeyValue;
+    get(JSONParseSafe(sessionStorageKeyValue), 'value') ||
+    sessionStorageKeyValue;
   const localStorageKeyValueParsed =
-    JSONParseSafe(localStorageKeyValue).value || localStorageKeyValue;
+    get(JSONParseSafe(localStorageKeyValue), 'value') || localStorageKeyValue;
   const localStorageKeyRequestParsed =
-    JSONParseSafe(localStorageKeyRequest).value || localStorageKeyRequest;
+    get(JSONParseSafe(localStorageKeyRequest), 'value') ||
+    localStorageKeyRequest;
 
   // If we don't have the session key, request it from other tab(s) that
   // may have it in their Session Storage.

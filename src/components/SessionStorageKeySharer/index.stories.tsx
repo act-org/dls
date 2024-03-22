@@ -20,6 +20,7 @@ import {
 } from '@mui/material';
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import JSONParseSafe from 'json-parse-safe';
+import { get } from 'lodash';
 import { useState, useEffect } from 'react';
 
 import { Playground } from '~/helpers/playground';
@@ -33,7 +34,7 @@ const Template: StoryFn<SessionStorageKeySharerProps> = ({
     sessionStorage.getItem(keyName) || '',
   );
 
-  const keyValue = JSONParseSafe(keyValueRaw).value || keyValueRaw;
+  const keyValue = get(JSONParseSafe(keyValueRaw), 'value') || keyValueRaw;
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleSetKeyValue = (kv: string): void => {

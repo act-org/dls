@@ -16,6 +16,14 @@ exports[`AppBar ACT_ET theme matches the snapshot 1`] = `
 </div>
 `;
 
+exports[`AppBar ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-10bwbi4-MuiPaper-root-MuiAppBar-root"
+  />
+</div>
+`;
+
 exports[`AppBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <header

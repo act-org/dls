@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PieLegend ACT theme matches the snapshot 1`] = `
+<div>
+  <ul
+    class="css-xzgors"
+  >
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-j6qn9k-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1qykrhm-MuiPaper-root"
+          index="0"
+          optionslength="1"
+          style="background-color: rgb(127, 196, 225);"
+        />
+      </div>
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-afp7q8-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1n3v36-MuiTypography-root"
+        >
+          120
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-wg73x1-MuiTypography-root"
+        >
+          120 [240.0%]
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`PieLegend ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <ul
+    class="css-xzgors"
+  >
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-j6qn9k-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1kd3b3o-MuiPaper-root"
+          index="0"
+          optionslength="1"
+          style="background-color: rgb(127, 196, 225);"
+        />
+      </div>
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-zzkbu5-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1huj8uh-MuiTypography-root"
+        >
+          120
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1pa6xrx-MuiTypography-root"
+        >
+          120 [240.0%]
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`PieLegend ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <ul
+    class="css-xzgors"
+  >
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-dfge7q-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1nmhah-MuiPaper-root"
+          index="0"
+          optionslength="1"
+          style="background-color: rgb(127, 196, 225);"
+        />
+      </div>
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-1hfit64-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1m3mbie-MuiTypography-root"
+        >
+          120
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ohjax1-MuiTypography-root"
+        >
+          120 [240.0%]
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`PieLegend ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <ul
+    class="css-xzgors"
+  >
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-5d1lmz-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-15srano-MuiPaper-root"
+          index="0"
+          optionslength="1"
+          style="background-color: rgb(127, 196, 225);"
+        />
+      </div>
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-18x9qc9-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1m3mbie-MuiTypography-root"
+        >
+          120
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-32ky61-MuiTypography-root"
+        >
+          120 [240.0%]
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`PieLegend ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <ul
+    class="css-xzgors"
+  >
+    <li
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ympf37-MuiListItem-root"
+    >
+      <div
+        class="MuiListItemIcon-root css-1le52mv-MuiListItemIcon-root"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1vifd6j-MuiPaper-root"
+          index="0"
+          optionslength="1"
+          style="background-color: rgb(127, 196, 225);"
+        />
+      </div>
+      <div
+        class="MuiListItemText-root MuiListItemText-multiline css-prukgh-MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1sjf7d0-MuiTypography-root"
+        >
+          120
+        </span>
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1td13wy-MuiTypography-root"
+        >
+          120 [240.0%]
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomizedLabel ACT theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="30"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="36"
+    x="152"
+    y="147"
+  >
+    <div
+      aria-label="Test"
+      class=""
+      color="primary"
+      data-mui-internal-clone-element="true"
+      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
+      sx="[object Object]"
+    >
+      Test
+    </div>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedLabel ACT_ET theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="30"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="36"
+    x="152"
+    y="147"
+  >
+    <div
+      aria-label="Test"
+      class=""
+      data-mui-internal-clone-element="true"
+      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
+      sx="[object Object]"
+    >
+      Test
+    </div>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedLabel ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="30"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="36"
+    x="152"
+    y="147"
+  >
+    <div
+      aria-label="Test"
+      class=""
+      data-mui-internal-clone-element="true"
+      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
+      sx="[object Object]"
+    >
+      Test
+    </div>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="30"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="36"
+    x="152"
+    y="147"
+  >
+    <div
+      aria-label="Test"
+      class=""
+      data-mui-internal-clone-element="true"
+      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
+      sx="[object Object]"
+    >
+      Test
+    </div>
+  </foreignobject>
+</div>
+`;
+
+exports[`CustomizedLabel ENCOURAGE theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="30"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="36"
+    x="152"
+    y="147"
+  >
+    <div
+      aria-label="Test"
+      class=""
+      data-mui-internal-clone-element="true"
+      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
+      sx="[object Object]"
+    >
+      Test
+    </div>
+  </foreignobject>
+</div>
+`;

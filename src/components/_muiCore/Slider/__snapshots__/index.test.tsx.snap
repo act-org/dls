@@ -12,17 +12,17 @@ exports[`Slider ACT theme matches the snapshot 1`] = `
       Slider Label
     </label>
     <span
-      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-15ip2pn-MuiSlider-root"
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-l8mkx-MuiSlider-root"
     >
       <span
-        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+        class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
       />
       <span
-        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        class="MuiSlider-track css-ttgsjq-MuiSlider-track"
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1cr5r17-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -58,17 +58,63 @@ exports[`Slider ACT_ET theme matches the snapshot 1`] = `
       Slider Label
     </label>
     <span
-      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-15ip2pn-MuiSlider-root"
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-l8mkx-MuiSlider-root"
     >
       <span
-        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+        class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
       />
       <span
-        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        class="MuiSlider-track css-ttgsjq-MuiSlider-track"
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1v00x8c-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1cr5r17-MuiSlider-thumb"
+        data-index="0"
+        style="left: 0%;"
+      >
+        <input
+          aria-labelledby="slider-label"
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          data-index="0"
+          max="100"
+          min="0"
+          step="1"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          type="range"
+          value="0"
+        />
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Slider ENCOURA theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-7iigex-MuiFormLabel-root"
+      id="slider-label"
+    >
+      Slider Label
+    </label>
+    <span
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-u8k93u-MuiSlider-root"
+    >
+      <span
+        class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
+      />
+      <span
+        class="MuiSlider-track css-ttgsjq-MuiSlider-track"
+        style="left: 0%; width: 0%;"
+      />
+      <span
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-15l7jdb-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -104,17 +150,17 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       Slider Label
     </label>
     <span
-      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1bwgw5o-MuiSlider-root"
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-u1w4su-MuiSlider-root"
     >
       <span
-        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+        class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
       />
       <span
-        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        class="MuiSlider-track css-ttgsjq-MuiSlider-track"
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-2kpwjl-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-bj9nge-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -150,17 +196,17 @@ exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
       Slider Label
     </label>
     <span
-      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1gwo3xa-MuiSlider-root"
+      class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-oinj7e-MuiSlider-root"
     >
       <span
-        class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+        class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
       />
       <span
-        class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+        class="MuiSlider-track css-ttgsjq-MuiSlider-track"
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-5frz4x-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-gxzhp5-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >

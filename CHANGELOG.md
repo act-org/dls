@@ -1,3 +1,126 @@
+# [8.0.0-next.3](https://github.com/act-org/dls/compare/v8.0.0-next.2...v8.0.0-next.3) (2024-03-22)
+
+
+### Bug Fixes
+
+* Fix import issue with icons in RankSummary component ([d061222](https://github.com/act-org/dls/commit/d061222a519fdb9ddd98e7384b6e61b7a0403687))
+
+# [8.0.0-next.2](https://github.com/act-org/dls/compare/v8.0.0-next.1...v8.0.0-next.2) (2024-03-21)
+
+
+### Bug Fixes
+
+* Alphabetize AreChart props ([5eb5020](https://github.com/act-org/dls/commit/5eb502036a8219e6709d66698005846ce1ae598d))
+* Alphabetize inner components for Scatterplot ([49837af](https://github.com/act-org/dls/commit/49837af6e3da8223a2d8bd0913252ed150163359))
+* Alphabetize MapProps ([ca85f51](https://github.com/act-org/dls/commit/ca85f519790269f13fbbb24533b718d8808a66c3))
+* Alphabetize OverlappedBarChart props ([f26182b](https://github.com/act-org/dls/commit/f26182bb495084c5fca2b400a91b97b89db85374))
+* Alphabetize OverlappedLabel inner component props ([019d5a0](https://github.com/act-org/dls/commit/019d5a00061da528698577e4cfb90629b5424e47))
+* Alphabetize PieChart inner components props ([ff8bf9c](https://github.com/act-org/dls/commit/ff8bf9c06e30228bbab19748a7f7f8433c49cc51))
+* Alphabetize PieChart props ([5777ad6](https://github.com/act-org/dls/commit/5777ad608dc5129da61ec168232e71e3adadca71))
+* Alphabetize ScatterPlot props and fix coordenates typo ([d9bb9d6](https://github.com/act-org/dls/commit/d9bb9d62fbe8e2ed7a7cc81d86e72d45902d1b29))
+* Alphabetize SCFMap props ([8d705aa](https://github.com/act-org/dls/commit/8d705aa8349c23f392648d1f15bd22e28d18bbe6))
+* Alphabetize StateMap props ([08a2fb6](https://github.com/act-org/dls/commit/08a2fb62effb1350a0773b161c94d8deffb2bfc0))
+* Handle showAvarageLine prop typo in Scatterplot ([724cf9a](https://github.com/act-org/dls/commit/724cf9af36d2efa3b2877657dcf4551285133d12))
+
+
+### Features
+
+* Add Top N Average values to referenceLine label value in Scatterplot ([1e03cc5](https://github.com/act-org/dls/commit/1e03cc5ddc9ffcefc8a2dedb8ccb2c29a542e58d))
+
+# [8.0.0-next.1](https://github.com/act-org/dls/compare/v7.8.0-next.6...v8.0.0-next.1) (2024-03-21)
+
+
+### Features
+
+* Added DLS v7 to v8 migration guide ([a92b5b1](https://github.com/act-org/dls/commit/a92b5b1ea0af0f874f807d6a6a6b4f44e21d72a5))
+
+
+### BREAKING CHANGES
+
+* Out of an abundance of caution, we are shipping DLS8 as a new major release since it contains lots of new components (and therefore, new dependencies)
+
+# [7.8.0-next.6](https://github.com/act-org/dls/compare/v7.8.0-next.5...v7.8.0-next.6) (2024-03-21)
+
+
+### Features
+
+* Register DlsHeatMap as a themeable component in the design system ([cc6f477](https://github.com/act-org/dls/commit/cc6f477d3ba5563b73f713576643cb07155839d5))
+* Register DlsMap as a themeable component in the design system ([9c32c4a](https://github.com/act-org/dls/commit/9c32c4ae2e0103af886738566dca0d47eb82b6c8))
+
+# [7.8.0-next.5](https://github.com/act-org/dls/compare/v7.8.0-next.4...v7.8.0-next.5) (2024-03-21)
+
+
+### Features
+
+* Register DlsBarChart as a themeable component in the design system ([fc84e87](https://github.com/act-org/dls/commit/fc84e876a39a8548baa11ff6512adae095af16f5))
+* Register DlsLineChart as a themeable component in the design system ([57db845](https://github.com/act-org/dls/commit/57db8457e4adf9eec3c6dbacdd5d55be19b64857))
+* Register DlsOverlappedBarChart as a themeable component in the design system ([8789352](https://github.com/act-org/dls/commit/8789352585fe7553c68c6d5d2d156077d8fda67e))
+* Register DlsPieChart as a themeable component in the design system ([0372d81](https://github.com/act-org/dls/commit/0372d81af1e8c514bb12f1ade9b62759ce8def2b))
+* Register DlsScatterPlot as a themeable component in the design system ([69ba843](https://github.com/act-org/dls/commit/69ba843f378454595a903de963cff8b8977567d5))
+* Register DlsStackedBarChart as a themeable component in the design system ([78b9b83](https://github.com/act-org/dls/commit/78b9b8386bdb22f4bfb0235639d51ec55d5e540d))
+
+# [7.8.0-next.4](https://github.com/act-org/dls/compare/v7.8.0-next.3...v7.8.0-next.4) (2024-03-21)
+
+
+### Features
+
+* Bump MUI to 5.15.14 ([1829160](https://github.com/act-org/dls/commit/1829160a3045167e511ecd674ef58a278b10aa8e))
+
+# [7.8.0-next.3](https://github.com/act-org/dls/compare/v7.8.0-next.2...v7.8.0-next.3) (2024-03-21)
+
+
+### Bug Fixes
+
+* Alphabetize imports ([b5de86f](https://github.com/act-org/dls/commit/b5de86f09cd890ac65a39f0808530fd857205780))
+* Remove reference to customColors on ENCOURA theme ([c06f647](https://github.com/act-org/dls/commit/c06f64746e6dfd1a7e57ef0a17fce354d6427f22))
+* Start to add customizeFillColor prop to AreaChart ([27ac4d3](https://github.com/act-org/dls/commit/27ac4d33866ebb04386a9cafc9246ddafd881f0a))
+
+
+### Features
+
+* Add in AreaChart storybook entry for large data sets ([068dd91](https://github.com/act-org/dls/commit/068dd91f3b5bacb8da3f7b5542b1bb20e21994e1))
+* Added DEFAULT_CHART_COLORS constant as a fallback for charts ([868d073](https://github.com/act-org/dls/commit/868d0734e9fa859d8eb21c108358a3bf0bab729f))
+* Convert colors prop from object type to array so user doesnt need to specify keys ([d997382](https://github.com/act-org/dls/commit/d997382e7e7a5ce1fde25b310295e513c137c6d4))
+* Register DlsAreaChart as a themeable component in the design system ([0cc2a03](https://github.com/act-org/dls/commit/0cc2a034e5ad0dbe8146cf2d63ca549bd6740180))
+* Remove customFillColor prop and use colors prop to customize chart colors ([89b5247](https://github.com/act-org/dls/commit/89b52472d94d8ca04ee54e31d244e73dbed260cd))
+
+# [7.8.0-next.2](https://github.com/act-org/dls/compare/v7.8.0-next.1...v7.8.0-next.2) (2024-03-07)
+
+
+### Bug Fixes
+
+* Fix loading of museo-sans font in storybook ([88927c3](https://github.com/act-org/dls/commit/88927c3682ed046e162df340bb8abbdddb24d82e))
+* Load mapbox css ([36f0d71](https://github.com/act-org/dls/commit/36f0d71b9aeae03494581a938e3f69337e0da93c))
+
+
+### Features
+
+* Add support for ENCOURA theme in ThemeProvider ([8374971](https://github.com/act-org/dls/commit/8374971fba0c4855a24a2e0ad5a6fb5c731dbc55))
+* Add support for storybook env vars, mapbox token ([d01c0c7](https://github.com/act-org/dls/commit/d01c0c7e6e9b4a86060b4dd76936963274b30d65))
+* Added AreaChart component and recharts dependency ([1e8869a](https://github.com/act-org/dls/commit/1e8869a2b7c592c8d08f8f8628bca3fb3b904e6c))
+* Added BarChart component ([329899e](https://github.com/act-org/dls/commit/329899e2efedebbd6fea72d6dd6b940bb1e73079))
+* Added CountyMap, MapPopup components ([808153d](https://github.com/act-org/dls/commit/808153d70e633a996f1883e5de289edc5e936e56))
+* Added GeomarketMap component ([643781c](https://github.com/act-org/dls/commit/643781cb3e069b3990eafac0b82dd13634e159fe))
+* Added HeatMap component ([28fe7ed](https://github.com/act-org/dls/commit/28fe7eda002f681657c23a0c038e7c2beda7d661))
+* Added LineChart component ([d3fdf6d](https://github.com/act-org/dls/commit/d3fdf6dd65358f15f1dd99c3e7f19d9e28a3c117))
+* Added Map component ([7be6371](https://github.com/act-org/dls/commit/7be637165b41bfa2ca527e78ce550d7654c363d7))
+* Added OverlappedBarChart component ([92d1ac1](https://github.com/act-org/dls/commit/92d1ac14db3c2e052477c19807abc8f1fa013b04))
+* Added PieChart component ([8ab6ca3](https://github.com/act-org/dls/commit/8ab6ca3c4c88145b710dfe4ddd4b13e156c332fe))
+* Added ScatterPlot component ([4d5b596](https://github.com/act-org/dls/commit/4d5b596526b3a49d8df81d33e6d7d104dee5860e))
+* Added SCFMap component ([d5f4686](https://github.com/act-org/dls/commit/d5f4686c696eeab871654b5112f1d2e7d3334677))
+* Added StackedBarChart component ([0a11422](https://github.com/act-org/dls/commit/0a114221540568951c725e984409004397b6414a))
+* Added StateMap component ([5b71f01](https://github.com/act-org/dls/commit/5b71f014c8c888230ee59886524325511314b69a))
+* Bump deps and devDeps to their latest compatible releases ([358bbfb](https://github.com/act-org/dls/commit/358bbfb934a1fcab0cf8cd4fda58ebdffd3131de))
+
+# [7.8.0-next.1](https://github.com/act-org/dls/compare/v7.7.0...v7.8.0-next.1) (2024-03-04)
+
+
+### Features
+
+* Add themeMyEncoura and related files to styles dir ([f5d8c28](https://github.com/act-org/dls/commit/f5d8c28cbe5f62cf0c72e55fd8806f1d2378b1b0))
+* Create customDims and Typography file and update ReadMe with new theme information ([e78ec37](https://github.com/act-org/dls/commit/e78ec37138b775039ae2ecb69069b724e3468d0e))
+* Fix typescript issues for new theme addition ([f4c426f](https://github.com/act-org/dls/commit/f4c426fa11fa9ea9d6ca81bce66f9d223f368dd9))
+
 # [7.7.0](https://github.com/act-org/dls/compare/v7.6.3...v7.7.0) (2024-02-22)
 
 

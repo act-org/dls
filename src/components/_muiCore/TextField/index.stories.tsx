@@ -28,7 +28,9 @@ export default {
   component: TextField,
   parameters: {
     docs: {
-      inlineStories: false,
+      story: {
+        inline: true,
+      },
     },
   },
   tags: ['autodocs'],
