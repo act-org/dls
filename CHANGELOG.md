@@ -1,3 +1,10 @@
+# [8.0.0-next.3](https://github.com/act-org/dls/compare/v8.0.0-next.2...v8.0.0-next.3) (2024-03-22)
+
+
+### Bug Fixes
+
+* Fix import issue with icons in RankSummary component ([d061222](https://github.com/act-org/dls/commit/d061222a519fdb9ddd98e7384b6e61b7a0403687))
+
 # [8.0.0-next.2](https://github.com/act-org/dls/compare/v8.0.0-next.1...v8.0.0-next.2) (2024-03-21)
 
 
