@@ -78,7 +78,7 @@ export const decorators = [
 
 export const globalTypes = {
   theme: {
-    defaultValue: 'ACT_ET',
+    defaultValue: 'ENCOURA',
     description: 'Global theme for components',
     name: 'Theme',
     toolbar: {

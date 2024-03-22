@@ -57,6 +57,8 @@ export default {
   title: 'Molecules / Charts / BarChart',
 } as Meta<BarChartProps>;
 
+export const Default: StoryObj<BarChartProps> = {};
+
 export const WithCustomBarColors: StoryObj<BarChartProps> = {
   args: {
     barKeys: defaultBarKeys,

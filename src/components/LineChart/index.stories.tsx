@@ -50,9 +50,7 @@ export default {
   title: 'Molecules / Charts / LineChart',
 } as Meta<LineChartProps>;
 
-export const Default: StoryObj<LineChartProps> = {
-  args: {},
-};
+export const Default: StoryObj<LineChartProps> = {};
 
 export const WithCustomLineColors: StoryObj<LineChartProps> = {
   args: {

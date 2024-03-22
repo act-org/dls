@@ -54,6 +54,8 @@ export default {
   title: 'Molecules / Charts / AreaChart',
 } as Meta<AreaChartProps>;
 
+export const Default: StoryObj<AreaChartProps> = {};
+
 export const WithMoreThanOneArea: StoryObj<AreaChartProps> = {
   args: {
     areaKeys: ['A', 'B'],
