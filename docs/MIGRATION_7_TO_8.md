@@ -23,24 +23,24 @@ out!
 * Added a new `ENCOURA` theme, which represents Encoura's primary look and feel
 * Added new chart molecules, which are built using
 [Recharts](https://recharts.org/):
-  * `AreaChart`
-  * `BarChart`
-  * `LineChart`
-  * `PieChart`
-  * `OverlappedBarChart`
-  * `ScatterPlot`
-  * `StackedBarChart`
+  * [AreaChart](/docs/molecules-charts-areachart--documentation)
+  * [BarChart](/docs/molecules-charts-barchart--documentation)
+  * [LineChart](/docs/molecules-charts-linechart--documentation)
+  * [PieChart](/docs/molecules-charts-piechart--documentation)
+  * [OverlappedBarChart](/docs/molecules-charts-overlappedbarchart--documentation)
+  * [ScatterPlot](/docs/molecules-charts-scatterplot--documentation)
+  * [StackedBarChart](/docs/molecules-charts-stackedbarchart--documentation)
 * Added a new `DEFAULT_CHART_COLORS` constant, which contains fallback chart
 colors that are used when a chart component is not provided with sufficient
 color information (either through the theme or through props)
 * Added new map molecules, which are built using
 [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/guides):
-  * `Map`
-  * `CountyMap`
-  * `GeomarketMap`
-  * `HeatMap`
-  * `SCFMap`
-  * `StateMap`
+  * [Map](/docs/molecules-maps-map--documentation)
+  * [CountyMap](/docs/molecules-maps-countymap--documentation)
+  * [GeomarketMap](/docs/molecules-maps-geomarketmap--documentation)
+  * [HeatMap](/docs/molecules-maps-heatmap--documentation)
+  * [SCFMap](/docs/molecules-maps-scfmap--documentation)
+  * [StateMap](/docs/molecules-maps-statemap--documentation)
 * Bumped all dependencies to their latest releases, including MUI to `v5.15.14`
 * Bumped the DLS's Node version to `v20`
 
