@@ -18,7 +18,7 @@ import { GeomarketMap, GeomarketMapProps } from '.';
 export default {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: 'maps/geomarkets.json',
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     processDataFn: defaultProcessDataFn,
   },
@@ -41,7 +41,7 @@ export const CustomColor: StoryObj<GeomarketMapProps> = {
 export const SelectedGeomarket: StoryObj<GeomarketMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: 'maps/geomarkets.json',
     processDataFn: defaultProcessDataFn,
     selectedGeomarket: ['MS-01'],
   },
@@ -50,7 +50,7 @@ export const SelectedGeomarket: StoryObj<GeomarketMapProps> = {
 export const MultipleSelectedGeomarkets: StoryObj<GeomarketMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/geomarkets.json',
+    geoJSONPath: 'maps/geomarkets.json',
     processDataFn: defaultProcessDataFn,
     selectedGeomarket: ['MS-01', 'MS-02'],
   },

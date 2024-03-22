@@ -18,7 +18,7 @@ import { StateMap, StateMapProps } from '.';
 export default {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/states.json',
+    geoJSONPath: 'maps/states.json',
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     processDataFn: defaultProcessDataFn,
   },
@@ -41,7 +41,7 @@ export const CustomColor: StoryObj<StateMapProps> = {
 export const SelectedState: StoryObj<StateMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/states.json',
+    geoJSONPath: 'maps/states.json',
     processDataFn: defaultProcessDataFn,
     selectedState: ['48'],
   },
@@ -50,7 +50,7 @@ export const SelectedState: StoryObj<StateMapProps> = {
 export const MultipleSelectedStates: StoryObj<StateMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/states.json',
+    geoJSONPath: 'maps/states.json',
     processDataFn: defaultProcessDataFn,
     selectedState: ['48', '40'],
   },

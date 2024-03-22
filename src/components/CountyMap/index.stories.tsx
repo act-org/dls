@@ -18,7 +18,7 @@ import { CountyMap, CountyMapProps } from '.';
 export default {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/counties.json',
+    geoJSONPath: 'maps/counties.json',
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     processDataFn: defaultProcessDataFn,
   },
@@ -41,7 +41,7 @@ export const CustomColor: StoryObj<CountyMapProps> = {
 export const SelectedCounty: StoryObj<CountyMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/counties.json',
+    geoJSONPath: 'maps/counties.json',
     processDataFn: defaultProcessDataFn,
     selectedCounty: ['36103'],
   },
@@ -50,7 +50,7 @@ export const SelectedCounty: StoryObj<CountyMapProps> = {
 export const MultipleSelectedCounties: StoryObj<CountyMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/counties.json',
+    geoJSONPath: 'maps/counties.json',
     processDataFn: defaultProcessDataFn,
     selectedCounty: ['36103', '09001', '36027', '25025'],
   },

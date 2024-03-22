@@ -17,7 +17,7 @@ describe('StateMap', () => {
   const Component = (
     <StateMap
       data={defaultData}
-      geoJSONPath="/maps/states.json"
+      geoJSONPath="maps/states.json"
       mapboxAccessToken=""
       processDataFn={defaultProcessDataFn}
     />

@@ -17,7 +17,7 @@ describe('SCFMap', () => {
   const Component = (
     <SCFMap
       data={defaultData}
-      geoJSONPath="/maps/scf.json"
+      geoJSONPath="maps/scf.json"
       mapboxAccessToken=""
     />
   );

@@ -18,7 +18,7 @@ import { SCFMap, SCFMapProps } from '.';
 export default {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/scf.json',
+    geoJSONPath: 'maps/scf.json',
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     processDataFn: defaultProcessDataFn,
   },
@@ -41,7 +41,7 @@ export const CustomColor: StoryObj<SCFMapProps> = {
 export const SelectedSCF: StoryObj<SCFMapProps> = {
   args: {
     data: defaultData,
-    geoJSONPath: '/maps/scf.json',
+    geoJSONPath: 'maps/scf.json',
     processDataFn: defaultProcessDataFn,
     selectedSCF: ['157'],
   },
