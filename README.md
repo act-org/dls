@@ -45,7 +45,7 @@ To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
 
 ```jsx
-import { ThemeProvider } from '@actinc/dls/components';
+import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
 
 ...
 
@@ -67,7 +67,7 @@ generator from Material UI:
 import deepMerge from 'deepmerge';
 import { createTheme } from '@actinc/dls/styles/createTheme';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
-import { ThemeProvider } from '@actinc/dls/components';
+import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
 
 const myExtendedTheme = createTheme(deepMerge(THEME_ACT, {
   // theme customizations go here!
@@ -89,7 +89,7 @@ return a strongly typed version of the theme with any customizations you may
 have added.
 
 ```jsx
-import { ThemeProvider } from '@actinc/dls/components';
+import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
 import { createTheme } from '@actinc/dls/styles/createTheme';
 
 const myCustomTheme = createTheme({
@@ -227,7 +227,7 @@ constants, context, helpers, hooks, icons, styles, and types that you need:
 
 ```jsx
 // components
-import { Alert } from '@actinc/dls/components';
+import { Alert } from '@actinc/dls/components/Alert';
 // constants
 import { SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
 // context

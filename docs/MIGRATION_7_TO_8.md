@@ -82,3 +82,33 @@ order to handle one-off scenarios:
   ...
 />
 ```
+
+## Jest: ReferenceError: TextDecoder is not defined
+
+If you are seeing the following error while running your Jest unit tests,
+it means that Jest is loading one of the map components from the DLS and
+needs TextDecoder to be polyfilled.
+
+If your project is not using a map component, then you may want to increase the
+specificity of your DLS import statements to prevent unwanted code from being
+loaded into scope:
+
+```tsx
+// Before:
+import { Alert } from '@actinc/dls';                  // this import statement may load all DLS code into scope
+import { Alert } from '@actinc/dls/components';       // this import statement may load all DLS components into scope
+
+// After:
+import { Alert } from '@actinc/dls/components/Alert'; // this import statement only loads the Alert component into scope
+```
+
+If your project is using a map component, then you can pollyfill TextDecoder
+in your Jest setup file:
+
+```ts
+// jest.setup.ts
+
+import { TextDecoder } from 'text-encoding';
+
+global.TextDecoder = TextDecoder;
+```
