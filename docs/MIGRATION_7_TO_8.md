@@ -15,8 +15,8 @@ release since it contains a lot of new components (and therefore,
 new dependencies)!
 
 DLS8 should not increase your bundle size until you import / use these new
-components. But if your bundle analyzer is telling you otherwise, please reach
-out!
+components. But if your bundle analyzer is telling you otherwise, please see
+below about revising your import statements or feel free to reach out!
 
 ## New Features
 
@@ -86,7 +86,7 @@ order to handle one-off scenarios:
 ## Jest: ReferenceError: TextDecoder is not defined
 
 If you are seeing the following error while running your Jest unit tests,
-it means that Jest is loading one of the map components from the DLS and
+it means that Jest is loading one of the map components into scope and
 needs TextDecoder to be polyfilled.
 
 If your project is not using a map component, then you may want to increase the
