@@ -6,6 +6,7 @@ This release contains a lot of version bumps. Notably, you will need to
 make the following updates in your project's `package.json` file:
 
 * Bumped the minimum required `@mui/base` version to `5.0.0-beta.40`
+  * Requires `@mui/material` version `5.15.0` or above
 * Bumped the minimum required `@mui/lab` version to `5.0.0-alpha.169`
 
 Aside from that, there are technically no breaking changes in this release.

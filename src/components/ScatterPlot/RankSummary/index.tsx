@@ -20,7 +20,8 @@ import {
 } from '@mui/material';
 import { includes, kebabCase } from 'lodash';
 import React, { ElementType } from 'react';
-import { ChevronLeft, CloseCircleOutline } from '~/icons';
+import ChevronLeft from '~/icons/ChevronLeft';
+import CloseCircleOutline from '~/icons/CloseCircleOutline';
 
 import { ScatterPlotData } from '~/types';
 

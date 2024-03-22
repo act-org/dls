@@ -38,9 +38,9 @@ import {
   ValueType,
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
+import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
-import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 import { ScatterPlotData } from '~/types';
 
 import CustomizedCell from './CustomizedCell';
