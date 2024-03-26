@@ -12,6 +12,7 @@ import { accordionSummaryClasses } from '@mui/material/AccordionSummary';
 import { common } from '@mui/material/colors';
 import { ThemeOptions } from '@mui/material/styles';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import cssRadius from '~/helpers/cssRadius';
 import px from '~/helpers/px';
 import pxToNumber from '~/helpers/pxToNumber';
@@ -39,6 +40,13 @@ export const LARGE_RADIUS = cssRadius(LARGE_RADIUS_VALUE);
 // Base values found here:
 // https://github.com/act-org/dls/blob/main/src/styles/themeActEt/components.ts
 export const components: ThemeOptions['components'] = {
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    defaultProps: {
+      yAxisProps: {
+        width: 76,
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {
       square: true,

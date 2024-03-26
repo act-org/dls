@@ -13,15 +13,26 @@ import Color from 'color';
 import ChevronDown from '~/icons/ChevronDown';
 import FilterVariant from '~/icons/FilterVariant';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
+
 import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
 import SHAPE from './shape';
 import spacing from './spacing';
+import TYPOGRAPHY from './typography';
 
 import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.BAR_CHART].Y_AXIS_LABEL]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},
