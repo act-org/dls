@@ -265,11 +265,6 @@ export const BarChart: React.FC<BarChartProps> = (
           <YAxis
             dataKey="name"
             padding={{ bottom: 10, top: 10 }}
-            // style={{
-            //   fill: palette.secondary.dark,
-            //   fontSize: typography.h4.fontSize,
-            //   fontWeight: Number(typography.fontWeightRegular),
-            // }}
             tick={
               <CustomizedAxisTick
                 variant={variant}

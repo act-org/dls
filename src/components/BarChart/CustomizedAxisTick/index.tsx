@@ -9,7 +9,7 @@
 
 /* eslint-disable security/detect-non-literal-regexp */
 
-import { Typography, TypographyProps, Tooltip } from '@mui/material';
+import { TypographyProps, Tooltip } from '@mui/material';
 import React from 'react';
 import { XAxisProps } from 'recharts';
 

@@ -12,6 +12,7 @@ import { Components } from '@mui/material/styles';
 import Color from 'color';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 
 import COLORS, { secondaryMain } from './colors';
@@ -25,6 +26,11 @@ const COMPONENTS: Components = {
   [DLS_COMPONENT_NAMES.BAR_CHART]: {
     defaultProps: {
       colors: COLORS.CHART.primary,
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.BAR_CHART].Y_AXIS_LABEL]: {
+        fontSize: THEME_ENCOURA_CLASSIC.typography.h3.fontSize,
+      },
     },
   },
   [DLS_COMPONENT_NAMES.HEAT_MAP]: {
