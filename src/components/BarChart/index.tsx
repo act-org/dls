@@ -384,6 +384,7 @@ BarChart.defaultProps = {
   variant: undefined,
   width: undefined,
   xAxisProps: undefined,
+  yAxisLabelTypographyProps: undefined,
   yAxisProps: undefined,
 };
 

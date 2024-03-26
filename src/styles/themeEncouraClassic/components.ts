@@ -7,22 +7,23 @@
  * @prettier
  */
 
-import type {} from '@mui/lab/themeAugmentation';
 import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
-import type {} from '@mui/x-data-grid/themeAugmentation';
 import Color from 'color';
+import ChevronDown from '~/icons/ChevronDown';
+import FilterVariant from '~/icons/FilterVariant';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
-import ChevronDown from '~/icons/ChevronDown';
-import FilterVariant from '~/icons/FilterVariant';
 
 import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
 import SHAPE from './shape';
 import spacing from './spacing';
 import TYPOGRAPHY from './typography';
+
+import type {} from '@mui/lab/themeAugmentation';
+import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
   [DLS_COMPONENT_NAMES.BAR_CHART]: {

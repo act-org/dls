@@ -75,6 +75,7 @@ CustomizedAxisTick.defaultProps = {
   payload: undefined,
   textWidth: undefined,
   variant: undefined,
+  yAxisLabelTypographyProps: undefined,
 };
 
 export default CustomizedAxisTick;
