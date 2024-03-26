@@ -7,9 +7,14 @@
  * @prettier
  */
 
+import type {} from '@mui/lab/themeAugmentation';
 import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
+import type {} from '@mui/x-data-grid/themeAugmentation';
 import Color from 'color';
+
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 import ChevronDown from '~/icons/ChevronDown';
 import FilterVariant from '~/icons/FilterVariant';
 
@@ -17,11 +22,16 @@ import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
 import SHAPE from './shape';
 import spacing from './spacing';
-
-import type {} from '@mui/lab/themeAugmentation';
-import type {} from '@mui/x-data-grid/themeAugmentation';
+import TYPOGRAPHY from './typography';
 
 export const components: Components = {
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.BAR_CHART].Y_AXIS_LABEL]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},
