@@ -26,6 +26,17 @@ import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
+  [DLS_COMPONENT_NAMES.AREA_CHART]: {
+    defaultProps: {
+      yAxisProps: {
+        style: {
+          fill: COLORS.SECONDARY_DARK,
+          fontSize: TYPOGRAPHY?.h4?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+        },
+      },
+    },
+  },
   [DLS_COMPONENT_NAMES.BAR_CHART]: {
     styleOverrides: {
       [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.BAR_CHART].Y_AXIS_LABEL]: {

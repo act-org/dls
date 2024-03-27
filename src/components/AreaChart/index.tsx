@@ -146,11 +146,6 @@ export const AreaChart: React.FC<AreaChartProps> = (
           <YAxis
             axisLine={false}
             padding={{ bottom: 20, top: 20 }}
-            style={{
-              fill: palette.secondary.dark,
-              fontSize: typography.h4.fontSize,
-              fontWeight: Number(typography.fontWeightRegular),
-            }}
             tickCount={5}
             tickLine={false}
             type="number"
