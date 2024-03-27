@@ -28,6 +28,12 @@ import type {} from '@mui/x-data-grid/themeAugmentation';
 export const components: Components = {
   [DLS_COMPONENT_NAMES.AREA_CHART]: {
     defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: COLORS.SECONDARY_DARK,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
       yAxisProps: {
         style: {
           fill: COLORS.SECONDARY_DARK,

@@ -120,10 +120,6 @@ export const AreaChart: React.FC<AreaChartProps> = (
             height={50}
             orientation="bottom"
             padding={{ left: 40, right: 30 }}
-            style={{
-              fill: palette.secondary.dark,
-              fontSize: typography.caption.fontSize,
-            }}
             tickLine={false}
             xAxisId={0}
             {...xAxisProps}
