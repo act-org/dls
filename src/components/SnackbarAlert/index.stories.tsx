@@ -16,30 +16,20 @@ import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';
 
 import AlertContext from '~/context/AlertContext';
-import AlertContextProvider from '~/context/AlertContext/provider';
+import AlertContextProvider, {
+  AlertContextProviderProps,
+} from '~/context/AlertContext/provider';
 import { Playground } from '~/helpers/playground';
 
 import { SnackbarAlert } from '.';
 
-interface StoryProps {
-  anchorOriginHorizontal?: 'left' | 'right' | 'center';
-  anchorOriginVertical?: 'bottom' | 'top';
-  maxSnack?: number;
-}
-
-const Template: StoryFn<StoryProps> = ({
-  anchorOriginHorizontal,
-  anchorOriginVertical,
-  maxSnack,
-}: StoryProps) => {
+const Template: StoryFn<AlertContextProviderProps> = (
+  props: AlertContextProviderProps,
+) => {
   const [counter, setCounter] = useState(0);
 
   return (
-    <AlertContextProvider
-      anchorOriginHorizontal={anchorOriginHorizontal}
-      anchorOriginVertical={anchorOriginVertical}
-      maxSnack={maxSnack}
-    >
+    <AlertContextProvider {...props}>
       <AlertContext.Consumer>
         {({ actions }): ReactElement<unknown> => (
           <Grid container spacing={2}>
@@ -99,9 +89,9 @@ export default {
   component: Template,
   tags: ['autodocs'],
   title: 'Molecules / SnackbarAlert',
-} as Meta<StoryProps>;
+} as Meta<AlertContextProviderProps>;
 
-export const Preview: StoryObj<StoryProps> = {
+export const Preview: StoryObj<AlertContextProviderProps> = {
   args: {},
 };
 
@@ -109,7 +99,7 @@ export const Preview: StoryObj<StoryProps> = {
  * Show up to `5` different `<SnackbarAlert />`s on the screen, rather than the
  * default (`3`).
  */
-export const CustomMaxSnack: StoryObj<StoryProps> = {
+export const CustomMaxSnack: StoryObj<AlertContextProviderProps> = {
   args: {
     maxSnack: 5,
   },
@@ -119,9 +109,23 @@ export const CustomMaxSnack: StoryObj<StoryProps> = {
  * By default, the `<SnackbarAlert />` is anchored to the bottom center of the
  * screen. Both the horizontal and vertical anchor origins can be changed.
  */
-export const CustomAnchorOrigin: StoryObj<StoryProps> = {
+export const CustomAnchorOrigin: StoryObj<AlertContextProviderProps> = {
   args: {
     anchorOriginHorizontal: 'right',
     anchorOriginVertical: 'top',
+  },
+};
+
+/**
+ * This component also accepts and passes through `SnackbarProviderProps` to the
+ * underlying library. For reference, see the official documentation here:
+ * https://notistack.com/api-reference#snackbarprovider-props
+ */
+export const CustomSnackbarProps: StoryObj<AlertContextProviderProps> = {
+  args: {
+    autoHideDuration: 10_000,
+    classes: {
+      containerRoot: 'notistackContainerClass',
+    },
   },
 };
