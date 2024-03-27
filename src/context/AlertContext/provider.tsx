@@ -22,6 +22,9 @@ import SnackbarAlert from '~/components/SnackbarAlert';
 import getErrorMessage from '~/helpers/getErrorMessage';
 import { ServerError } from '~/types';
 
+import styled from '@emotion/styled';
+import { createTheme as muiCreateTheme } from '@mui/material/styles';
+import Box, { BoxProps } from '@mui/system/Box';
 import AlertContext from '.';
 
 interface ProviderProps {
@@ -70,20 +73,30 @@ class Provider extends Component<ProviderProps> {
   }
 
   render(): ReactNode {
+    const theme = muiCreateTheme();
+
+    const StyledBox = styled(Box)<BoxProps>(() => ({
+      [theme.breakpoints.down('xs')]: {
+        paddingBottom: theme.spacing(9),
+      },
+    }));
+
     const { children } = this.props;
 
     return (
-      <AlertContext.Provider
-        // eslint-disable-next-line react/jsx-no-constructed-context-values
-        value={{
-          actions: {
-            addAlert: this._addAlert,
-            addError: this._addError,
-          },
-        }}
-      >
-        {children}
-      </AlertContext.Provider>
+      <StyledBox>
+        <AlertContext.Provider
+          // eslint-disable-next-line react/jsx-no-constructed-context-values
+          value={{
+            actions: {
+              addAlert: this._addAlert,
+              addError: this._addError,
+            },
+          }}
+        >
+          {children}
+        </AlertContext.Provider>
+      </StyledBox>
     );
   }
 }
