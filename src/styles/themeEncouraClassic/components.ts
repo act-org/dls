@@ -44,6 +44,14 @@ export const components: Components = {
     },
   },
   [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+    },
     styleOverrides: {
       [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.BAR_CHART].Y_AXIS_LABEL]: {
         fontSize: TYPOGRAPHY?.h3?.fontSize,

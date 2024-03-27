@@ -253,10 +253,6 @@ export const BarChart: React.FC<BarChartProps> = (
           <XAxis
             axisLine={false}
             orientation="top"
-            style={{
-              fill: palette.grey[700],
-              fontSize: typography.caption.fontSize,
-            }}
             tickFormatter={(v: number): string => numeral(v).format('0,0')}
             type="number"
             xAxisId={0}
