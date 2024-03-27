@@ -13,8 +13,8 @@ import { get } from 'lodash';
 import {
   enqueueSnackbar,
   OptionsObject,
-  ProviderContext,
   SnackbarProvider,
+  SnackbarProviderProps,
 } from 'notistack';
 import { Component, ReactElement, ReactNode } from 'react';
 
@@ -88,7 +88,8 @@ class Provider extends Component<ProviderProps> {
   }
 }
 
-interface AlertContextProviderProps extends Partial<ProviderContext> {
+export interface AlertContextProviderProps
+  extends Partial<SnackbarProviderProps> {
   anchorOriginHorizontal?: 'left' | 'right' | 'center';
   anchorOriginVertical?: 'bottom' | 'top';
   children: ReactNode;
@@ -98,8 +99,9 @@ interface AlertContextProviderProps extends Partial<ProviderContext> {
 export const AlertContextProvider = ({
   anchorOriginHorizontal,
   anchorOriginVertical,
+  children,
   maxSnack,
-  ...otherProps
+  ...otherSnackbarProps
 }: AlertContextProviderProps): ReactElement<unknown> => (
   <SnackbarProvider
     anchorOrigin={{
@@ -110,8 +112,9 @@ export const AlertContextProvider = ({
       containerAnchorOriginBottomRight: 'notistackContainer',
     }}
     maxSnack={maxSnack || 3}
+    {...otherSnackbarProps}
   >
-    <Provider {...otherProps} />
+    <Provider>{children}</Provider>
   </SnackbarProvider>
 );
 
