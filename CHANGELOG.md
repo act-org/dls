@@ -1,3 +1,10 @@
+# [8.1.0](https://github.com/act-org/dls/compare/v8.0.0...v8.1.0) (2024-03-27)
+
+
+### Features
+
+* Expose more props on AlertContextProvider to better control snackbar alerts ([7d2aa17](https://github.com/act-org/dls/commit/7d2aa174a4175a4d857d4438b2b3462dc07e8dcc))
+
 # [8.0.0](https://github.com/act-org/dls/compare/v7.7.0...v8.0.0) (2024-03-22)
 
 
