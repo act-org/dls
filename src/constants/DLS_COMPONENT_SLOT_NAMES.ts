@@ -15,6 +15,9 @@ export const DLS_COMPONENT_SLOT_NAMES = {
   [DLS_COMPONENT_NAMES.BAR_CHART]: {
     Y_AXIS_LABEL: 'yAxisLabel',
   },
+  [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
+    BAR_LABELS: 'barLabels',
+  },
 } as const;
 
 export default DLS_COMPONENT_SLOT_NAMES;

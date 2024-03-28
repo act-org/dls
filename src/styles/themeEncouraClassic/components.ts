@@ -75,6 +75,14 @@ export const components: Components = {
       },
     },
   },
+  [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]
+        .BAR_LABELS]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},
