@@ -58,6 +58,23 @@ export const components: Components = {
       },
     },
   },
+  [DLS_COMPONENT_NAMES.LINE_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+      yAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+        },
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},
