@@ -8,6 +8,7 @@
  */
 
 import { Button } from '@mui/material';
+import { common } from '@mui/material/colors';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { debounce } from 'lodash';
 import numeral from 'numeral';
@@ -81,13 +82,16 @@ export interface ScatterPlotProps {
   hideSummary?: boolean;
   idSubstring?: string;
   responsiveContainerProps?: ResponsiveContainerProps;
+  scatterLabelColor?: string;
   scatterProps?: ScatterProps;
   showAverageLine?: boolean;
   tooltipProps?: TooltipProps<ValueType, NameType>;
+  xAverageLineLabelProps?: LabelProps;
   xAverageLineProps?: ReferenceLineProps;
   xAxisProps?: CustomXAxisProps;
   xLabelProps?: LabelProps;
   xLabelValue?: string;
+  yAverageLineLabelProps?: LabelProps;
   yAverageLineProps?: ReferenceLineProps;
   yAxisProps?: CustomYAxisProps;
   yLabelProps?: LabelProps;
@@ -114,13 +118,16 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
     hideSummary,
     idSubstring,
     responsiveContainerProps,
+    scatterLabelColor,
     scatterProps,
     showAverageLine = true,
     tooltipProps,
+    xAverageLineLabelProps,
     xAverageLineProps,
     xAxisProps,
     xLabelProps,
     xLabelValue,
+    yAverageLineLabelProps,
     yAverageLineProps,
     yAxisProps,
     yLabelProps,
@@ -440,12 +447,6 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
             allowDecimals={false}
             dataKey="x"
             interval={0}
-            style={{
-              fill: palette.common.black,
-              fontSize: typography.caption.fontSize,
-              fontWeight: Number(typography.fontWeightRegular),
-              userSelect: 'none',
-            }}
             tickLine={false}
             type="number"
             {...xAxisProps}
@@ -465,12 +466,6 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
             axisLine={{ stroke: palette.grey[400] }}
             dataKey="y"
             interval={0}
-            style={{
-              fill: palette.common.black,
-              fontSize: typography.caption.fontSize,
-              fontWeight: Number(typography.fontWeightRegular),
-              userSelect: 'none',
-            }}
             tickLine={false}
             type="number"
             unit="%"
@@ -497,8 +492,6 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
               />
             }
             cursor={{ strokeDasharray: '3 3' }}
-            itemStyle={{ color: palette.secondary.dark }}
-            labelStyle={{ color: palette.secondary.dark }}
             wrapperStyle={{ outline: 'none' }}
             {...tooltipProps}
           />
@@ -513,36 +506,26 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
             <>
               <ReferenceLine
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
-                stroke={palette.grey[800]}
                 strokeDasharray="3 3"
                 x={xLineCoordinates}
                 {...xAverageLineProps}
               >
                 <Label
                   position="insideBottom"
-                  style={{
-                    fontSize: typography.h5.fontSize,
-                    fontWeight: Number(typography.fontWeightRegular),
-                    userSelect: 'none',
-                  }}
                   value={`Top N Average: ${formatAverageLineLabel(Number(xLineCoordinates))}`}
+                  {...xAverageLineLabelProps}
                 />
               </ReferenceLine>
               <ReferenceLine
                 opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
-                stroke={palette.grey[800]}
                 strokeDasharray="3 3"
                 y={yLineCoordinates}
                 {...yAverageLineProps}
               >
                 <Label
                   position="insideTopLeft"
-                  style={{
-                    fontSize: typography.h5.fontSize,
-                    fontWeight: Number(typography.fontWeightRegular),
-                    userSelect: 'none',
-                  }}
                   value={`Top N Average: ${formatAverageLineLabel(Number(yLineCoordinates))}%`}
+                  {...yAverageLineLabelProps}
                 />
               </ReferenceLine>
             </>
@@ -563,15 +546,13 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
             <LabelList
               content={
                 <CustomizedLabel
-                  fontSize={typography?.h3?.fontSize as number | undefined}
-                  fontWeight={typography.h3.fontWeight as number | undefined}
                   isBlockingOnHovers={isBlockingOnHovers}
                   selectedPoint={selectedPoint}
                   shouldHideLabel={shouldHideLabel}
                 />
               }
               dataKey="label"
-              fill={palette.secondary.dark}
+              fill={scatterLabelColor || common.black}
               position="top"
             />
           </Scatter>
@@ -603,13 +584,16 @@ ScatterPlot.defaultProps = {
   hideSummary: undefined,
   idSubstring: undefined,
   responsiveContainerProps: undefined,
+  scatterLabelColor: undefined,
   scatterProps: undefined,
   showAverageLine: undefined,
   tooltipProps: undefined,
+  xAverageLineLabelProps: undefined,
   xAverageLineProps: undefined,
   xAxisProps: undefined,
   xLabelProps: undefined,
   xLabelValue: undefined,
+  yAverageLineLabelProps: undefined,
   yAverageLineProps: undefined,
   yAxisProps: undefined,
   yLabelProps: undefined,
