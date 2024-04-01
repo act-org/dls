@@ -54,6 +54,15 @@ export const CloseData: StoryObj<OverlappedBarChartProps> = {
   },
 };
 
+export const WithCustomizableInnerBarTextColor: StoryObj<OverlappedBarChartProps> =
+  {
+    args: {
+      barKeys: ['inquiries', 'applicants'],
+      data: edgeCaseCloseData,
+      innerBarTextColor: 'red',
+    },
+  };
+
 export const LowData: StoryObj<OverlappedBarChartProps> = {
   args: {
     barKeys: ['inquiries', 'applicants'],

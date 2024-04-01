@@ -17,7 +17,7 @@ import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 
 import CUSTOM_DIMS from './customDims';
-import { COLORS } from './palette';
+import PALETTE, { COLORS } from './palette';
 import SHAPE from './shape';
 import spacing from './spacing';
 import TYPOGRAPHY from './typography';
@@ -76,6 +76,9 @@ export const components: Components = {
     },
   },
   [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
+    defaultProps: {
+      barTextColors: [PALETTE.text.primary, common.white],
+    },
     styleOverrides: {
       [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]
         .BAR_LABELS]: {
