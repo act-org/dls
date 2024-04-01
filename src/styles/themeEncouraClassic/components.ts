@@ -86,6 +86,58 @@ export const components: Components = {
       },
     },
   },
+  [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
+    defaultProps: {
+      scatterLabelColor: COLORS.SECONDARY_DARK,
+      xAverageLineLabelProps: {
+        style: {
+          fontSize: TYPOGRAPHY?.h5?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+      xAverageLineProps: {
+        stroke: grey[800],
+      },
+      xAxisProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+      yAverageLineLabelProps: {
+        style: {
+          fontSize: TYPOGRAPHY?.h5?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+      yAverageLineProps: {
+        stroke: grey[800],
+      },
+      yAxisProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+        .SCATTER_LABELS]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+        fontWeight: TYPOGRAPHY?.h3?.fontWeight,
+      },
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+        .SCATTER_TOOLTIP_LABEL]: {
+        color: PALETTE.secondary.dark,
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},
