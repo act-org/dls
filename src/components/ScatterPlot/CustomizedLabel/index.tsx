@@ -13,6 +13,8 @@ import { LabelProps } from 'recharts';
 
 import { ScatterPlotData } from '~/types';
 
+import { StyledLabel } from './styles';
+
 export type CustomizedLabelProps = LabelProps & {
   fontSize?: number;
   fontWeight?: number;
@@ -30,8 +32,6 @@ export const MIN_LABEL_WIDTH = 40;
 
 export const CustomizedLabel: React.FC<CustomizedLabelProps> = ({
   fill,
-  fontSize,
-  fontWeight,
   isBlockingOnHovers,
   selectedPoint,
   shouldHideLabel = {},
@@ -54,7 +54,6 @@ export const CustomizedLabel: React.FC<CustomizedLabelProps> = ({
   if (shouldHideLabel[value as string] && !isThisSelectedPoint) {
     return null;
   }
-
   return (
     <foreignObject
       height={30}
@@ -65,38 +64,14 @@ export const CustomizedLabel: React.FC<CustomizedLabelProps> = ({
       y={(y as number) - Y_LABEL_MARGIN}
     >
       {isBlockingOnHovers ? (
-        <div
-          style={{
-            color: fill,
-            fill,
-            fontSize,
-            fontWeight,
-            opacity,
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            userSelect: 'none',
-            whiteSpace: 'nowrap',
-          }}
-        >
+        <StyledLabel fill={fill} opacity={opacity}>
           {value}
-        </div>
+        </StyledLabel>
       ) : (
         <Tooltip sx={{ userSelect: 'none' }} title={value || ''}>
-          <div
-            style={{
-              color: fill,
-              fill,
-              fontSize,
-              fontWeight,
-              opacity,
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              userSelect: 'none',
-              whiteSpace: 'nowrap',
-            }}
-          >
+          <StyledLabel fill={fill} opacity={opacity}>
             {value}
-          </div>
+          </StyledLabel>
         </Tooltip>
       )}
     </foreignObject>
