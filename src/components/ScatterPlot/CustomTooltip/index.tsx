@@ -10,7 +10,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 
-import { Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import { get } from 'lodash';
 import React from 'react';
@@ -19,6 +18,8 @@ import {
   ValueType,
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
+
+import { StyledDataLabelTypography, StyledDataValueTypography } from './styles';
 
 import { IGroupDataPoint } from '../types';
 
@@ -46,21 +47,21 @@ export const CustomTooltip: React.FC<ICustomTooltipProps> = ({
     if (members?.length) {
       return members.map(el => (
         <>
-          <Typography sx={{ color: 'secondary.dark' }}>
+          <StyledDataLabelTypography>
             {el?.label || ''}
-          </Typography>
-          <Typography>x: {el.x}</Typography>
-          <Typography>y: {el.y}</Typography>
+          </StyledDataLabelTypography>
+          <StyledDataValueTypography>x: {el.x}</StyledDataValueTypography>
+          <StyledDataValueTypography>y: {el.y}</StyledDataValueTypography>
         </>
       ));
     }
     return (
       <>
-        <Typography sx={{ color: 'secondary.dark' }}>
+        <StyledDataLabelTypography>
           {data?.label || ''}
-        </Typography>
-        <Typography>x: {data?.x}</Typography>
-        <Typography>y: {data?.y}</Typography>
+        </StyledDataLabelTypography>
+        <StyledDataValueTypography>x: {data?.x}</StyledDataValueTypography>
+        <StyledDataValueTypography>y: {data?.y}</StyledDataValueTypography>
       </>
     );
   }
