@@ -54,6 +54,12 @@ export const components: Components = {
       },
     },
   },
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    defaultProps: {
+      chartLegendTextFontSize: TYPOGRAPHY?.body2?.fontSize,
+      chartLegendTextFontSizeSmall: TYPOGRAPHY?.caption?.fontSize,
+    },
+  },
   [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
     defaultProps: {
       customizeBarText: i => ({

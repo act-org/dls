@@ -8,6 +8,7 @@
  */
 
 import { common, grey } from '@mui/material/colors';
+import { listItemTextClasses } from '@mui/material/ListItemText';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
 import ChevronDown from '~/icons/ChevronDown';
@@ -88,12 +89,24 @@ export const components: Components = {
   },
   [DLS_COMPONENT_NAMES.PIE_CHART]: {
     defaultProps: {
+      chartLegendTextFontSize: TYPOGRAPHY?.h4?.fontSize,
+      chartLegendTextFontSizeSmall: TYPOGRAPHY?.h5?.fontSize,
       tooltipProps: {
         itemStyle: { color: PALETTE.secondary.dark },
         labelStyle: { color: PALETTE.secondary.dark },
       },
     },
     styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
+        .PIE_LEGEND_LABEL]: {
+        [`& .${listItemTextClasses.primary}`]: {
+          color: PALETTE.secondary.dark,
+          fontWeight: TYPOGRAPHY?.fontWeightBold,
+        },
+        [`& .${listItemTextClasses.secondary}`]: {
+          color: grey[700],
+        },
+      },
       [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].TITLE_TEXT]: {
         color: PALETTE.secondary.dark,
         fontWeight: TYPOGRAPHY?.fontWeightBold,

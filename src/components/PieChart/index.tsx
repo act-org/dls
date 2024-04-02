@@ -52,6 +52,8 @@ type TitleProps = TypographyProps & {
 export type PieDataProps = TypesPieDataProps;
 
 export interface PieChartProps {
+  chartLegendTextFontSize?: number | string;
+  chartLegendTextFontSizeSmall?: number | string; // Used when the chartWidth & chartHeight is less than 350 px
   children?: React.ReactElement<unknown>;
   colors?: string[];
   CustomLegendIcon?: CustomLegendComponentType;
@@ -78,6 +80,8 @@ export const PieChart: React.FC<PieChartProps> = (
   inProps: PieChartProps,
 ): React.ReactElement<PieChartProps> => {
   const {
+    chartLegendTextFontSize,
+    chartLegendTextFontSizeSmall,
     children,
     colors = [],
     CustomLegendIcon,
@@ -189,6 +193,8 @@ export const PieChart: React.FC<PieChartProps> = (
               align={data.length > 4 || hasHighlight ? 'right' : 'center'}
               content={
                 <PieLegend
+                  chartLegendTextFontSize={chartLegendTextFontSize}
+                  chartLegendTextFontSizeSmall={chartLegendTextFontSizeSmall}
                   CustomLegendIcon={CustomLegendIcon}
                   pieTotalValue={pieTotalValue}
                   showAsSquare={
@@ -218,6 +224,8 @@ export const PieChart: React.FC<PieChartProps> = (
 };
 
 PieChart.defaultProps = {
+  chartLegendTextFontSize: undefined,
+  chartLegendTextFontSizeSmall: undefined,
   children: undefined,
   colors: undefined,
   CustomLegendIcon: undefined,

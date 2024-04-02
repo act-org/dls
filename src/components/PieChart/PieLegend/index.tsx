@@ -34,6 +34,8 @@ export interface PayloadProps {
 
 export interface PieLegendProps extends Partial<LegendProps> {
   chartHeight?: number;
+  chartLegendTextFontSize?: number | string;
+  chartLegendTextFontSizeSmall?: number | string; // Used when the chartWidth & chartHeight is less than 350 px
   chartWidth?: number;
   CustomLegendIcon?: CustomLegendComponentType;
   formatValue?: (
@@ -50,6 +52,8 @@ export const PieLegend: React.FC<PieLegendProps> = (
   const {
     CustomLegendIcon,
     chartHeight,
+    chartLegendTextFontSize,
+    chartLegendTextFontSizeSmall,
     chartWidth,
     formatValue,
     onMouseEnter,
@@ -66,7 +70,6 @@ export const PieLegend: React.FC<PieLegendProps> = (
   ): void => {
     onMouseEnter?.(element, index, e);
   };
-
   return (
     <StyledUl numberOfItems={payload?.length || 0}>
       {payload?.map((element, i) => {
@@ -110,6 +113,8 @@ export const PieLegend: React.FC<PieLegendProps> = (
             {entryPayload && (
               <StyledListItemText
                 chartHeight={chartHeight}
+                chartLegendTextFontSize={chartLegendTextFontSize}
+                chartLegendTextFontSizeSmall={chartLegendTextFontSizeSmall}
                 chartWidth={chartWidth}
                 primary={value}
                 secondary={
@@ -133,6 +138,8 @@ export const PieLegend: React.FC<PieLegendProps> = (
 
 PieLegend.defaultProps = {
   chartHeight: undefined,
+  chartLegendTextFontSize: undefined,
+  chartLegendTextFontSizeSmall: undefined,
   chartWidth: undefined,
   CustomLegendIcon: undefined,
   formatValue: undefined,

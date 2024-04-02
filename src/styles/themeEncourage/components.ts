@@ -9,10 +9,12 @@
 
 import { accordionClasses } from '@mui/material/Accordion';
 import { accordionSummaryClasses } from '@mui/material/AccordionSummary';
-import { common } from '@mui/material/colors';
+import { common, grey } from '@mui/material/colors';
+import { listItemTextClasses } from '@mui/material/ListItemText';
 import { ThemeOptions } from '@mui/material/styles';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 import cssRadius from '~/helpers/cssRadius';
 import px from '~/helpers/px';
 import pxToNumber from '~/helpers/pxToNumber';
@@ -44,6 +46,16 @@ export const components: ThemeOptions['components'] = {
     defaultProps: {
       yAxisProps: {
         width: 76,
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
+        .PIE_LEGEND_LABEL]: {
+        [`& .${listItemTextClasses.secondary}`]: {
+          color: grey[700],
+        },
       },
     },
   },

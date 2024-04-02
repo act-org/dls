@@ -19,6 +19,7 @@ export const DLS_COMPONENT_SLOT_NAMES = {
     BAR_LABELS: 'barLabels',
   },
   [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    PIE_LEGEND_LABEL: 'pieLegendLabel',
     TITLE_TEXT: 'titleText',
   },
   [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {

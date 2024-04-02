@@ -19,13 +19,18 @@ import {
 import { listItemTextClasses } from '@mui/material/ListItemText';
 import { styled } from '@mui/material/styles';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
+
 interface StyledListItemProps extends ListItemProps {
   chartWidth?: number | string;
 }
 
 interface StyledListItemTextProps extends ListItemTextProps {
-  chartWidth?: number | string;
   chartHeight?: number | string;
+  chartLegendTextFontSize?: number | string;
+  chartLegendTextFontSizeSmall?: number | string; // Used when the chartWidth & chartHeight is less than 350 px
+  chartWidth?: number | string;
 }
 
 interface StyledPaperProps extends PaperProps {
@@ -80,21 +85,28 @@ export const StyledPaper = styled(Paper)<StyledPaperProps>(
   }),
 );
 
-export const StyledListItemText = styled(ListItemText)<StyledListItemTextProps>(
-  ({ chartHeight, chartWidth, theme }) => ({
+export const StyledListItemText = styled(ListItemText, {
+  name: DLS_COMPONENT_NAMES.PIE_CHART,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
+    .PIE_LEGEND_LABEL,
+})<StyledListItemTextProps>(
+  ({
+    chartHeight,
+    chartLegendTextFontSize,
+    chartLegendTextFontSizeSmall,
+    chartWidth,
+    theme,
+  }) => ({
     [`& .${listItemTextClasses.primary}`]: {
-      color: theme.palette.secondary.dark,
       fontSize:
         chartWidth &&
         Number(chartWidth) > 350 &&
         chartHeight &&
         Number(chartHeight) >= 350
-          ? (theme.typography.h4.fontSize as number)
-          : (theme.typography.h5.fontSize as number),
-      fontWeight: theme.typography.fontWeightBold,
-    },
-    [`& .${listItemTextClasses.secondary}`]: {
-      color: theme.palette.grey[700],
+          ? Number(chartLegendTextFontSize) ||
+            (theme.typography.body1.fontSize as number)
+          : Number(chartLegendTextFontSizeSmall) ||
+            (theme.typography.body2.fontSize as number),
     },
   }),
 );
