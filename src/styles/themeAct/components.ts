@@ -7,16 +7,63 @@
  * @prettier
  */
 
-import { common } from '@mui/material/colors';
+import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
+
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
 import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
+import TYPOGRAPHY from './typography';
 
 import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.body2?.fontSize,
+        },
+      },
+      yAxisProps: {
+        width: 85,
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.LINE_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.body2?.fontSize,
+        },
+      },
+      yAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.body2?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+        },
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
+    defaultProps: {
+      customizeBarText: i => ({
+        fill: i === 2 ? common.white : common.black,
+        fontSize: TYPOGRAPHY?.body2?.fontSize,
+      }),
+      subLabelProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.body2?.fontSize,
+        },
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},

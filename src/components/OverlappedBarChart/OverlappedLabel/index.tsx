@@ -15,26 +15,28 @@ import { LabelProps } from 'recharts';
 import { StyledText } from './styles';
 
 export type OverlappedLabelProps = LabelProps & {
+  barTextColors?: string[];
   data: Record<string, number | string>[];
   index: number;
+  innerBarTextColor?: string;
   isOutsideBar?: boolean;
   label: string;
-  labelColor?: string;
+  textColor?: string;
   outsideBarDataKey: string;
-  valueColor?: string;
 };
 
 export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
+  barTextColors,
   color,
   data,
   height,
   index,
+  innerBarTextColor,
   isOutsideBar,
   label,
-  labelColor,
   outsideBarDataKey,
+  textColor,
   value,
-  valueColor,
   width,
   x,
   y,
@@ -82,15 +84,14 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
     baselineY = Number(y) + parseInt(spacing(6), 10);
   }
 
+  const textFill = isInsideInnerBar
+    ? innerBarTextColor || barTextColors?.[0] || palette.text.primary
+    : textColor || color || palette.text.primary;
   return (
     <g>
       <StyledText
         dominantBaseline="middle"
-        fill={
-          isOutsideBar || isInsideInnerBar
-            ? palette.text.primary
-            : labelColor || color
-        }
+        fill={textFill}
         textAnchor="middle"
         x={(x as number) + (width as number) / 2}
         y={baselineY - parseInt(spacing(2), 10)}
@@ -99,11 +100,7 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
       </StyledText>
       <StyledText
         dominantBaseline="middle"
-        fill={
-          isOutsideBar || isInsideInnerBar
-            ? palette.text.primary
-            : valueColor || color
-        }
+        fill={textFill}
         textAnchor="middle"
         x={(x as number) + (width as number) / 2}
         y={baselineY}
@@ -115,9 +112,10 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
 };
 
 OverlappedLabel.defaultProps = {
+  barTextColors: undefined,
+  innerBarTextColor: undefined,
   isOutsideBar: undefined,
-  labelColor: undefined,
-  valueColor: undefined,
+  textColor: undefined,
 };
 
 export default OverlappedLabel;

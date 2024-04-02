@@ -38,10 +38,12 @@ export interface OverlappedBarChartProps {
   barChartProps?: Omit<BarChartProps, 'data'>;
   barKeys: string[];
   barProps?: Omit<BarProps, 'dataKey' | 'ref'>;
+  barTextColors?: string[]; // From the most outter bar to the most inner bar
   children?: React.ReactElement<unknown>;
   colors?: string[];
   data: Array<OverlappedBarDataProps>;
   initialBarSize?: number;
+  innerBarTextColor?: string;
   labelProps?: LabelListProps<ILabelListData>;
   xAxisProps?: XAxisProps;
 }
@@ -53,10 +55,12 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
     barChartProps,
     barKeys,
     barProps,
+    barTextColors,
     children,
     colors = [],
     data,
     initialBarSize = 320,
+    innerBarTextColor,
     labelProps,
     xAxisProps,
   } = useThemeProps({
@@ -65,7 +69,6 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
   });
 
   const { palette, spacing } = useTheme();
-
   return (
     <BarChart
       cartesianGridProps={{ stroke: palette.common.white }}
@@ -74,7 +77,14 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
         margin: { top: parseInt(String(spacing(5)), 10) },
       }}
       data={data}
-      tooltipProps={{ contentStyle: { backgroundColor: palette.common.white } }}
+      tooltipProps={{
+        contentStyle: {
+          backgroundColor: palette.common.white,
+        },
+        wrapperStyle: {
+          textTransform: 'capitalize',
+        },
+      }}
       xAxisProps={{
         dataKey: 'name',
         hide: true,
@@ -116,8 +126,7 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
                   content={
                     <OverlappedLabel
                       isOutsideBar
-                      labelColor={palette.text.primary}
-                      valueColor={palette.secondary.dark}
+                      textColor={barTextColors?.[index]}
                       {...commonLabelProps}
                     />
                   }
@@ -142,8 +151,9 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
                 <LabelList
                   content={
                     <OverlappedLabel
-                      labelColor={palette.common.white}
-                      valueColor={palette.common.white}
+                      barTextColors={barTextColors}
+                      innerBarTextColor={innerBarTextColor}
+                      textColor={barTextColors?.[index]}
                       {...commonLabelProps}
                     />
                   }
@@ -164,9 +174,11 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
 OverlappedBarChart.defaultProps = {
   barChartProps: undefined,
   barProps: undefined,
+  barTextColors: undefined,
   children: undefined,
   colors: undefined,
   initialBarSize: undefined,
+  innerBarTextColor: undefined,
   labelProps: undefined,
   xAxisProps: undefined,
 };

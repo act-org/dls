@@ -10,13 +10,13 @@ exports[`CustomizedAxisTick ACT theme matches the snapshot 1`] = `
     width="80"
     y="157"
   >
-    <h3
+    <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-950bch-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-1w517f4-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
-    </h3>
+    </p>
   </foreignobject>
 </div>
 `;
@@ -31,13 +31,13 @@ exports[`CustomizedAxisTick ACT_ET theme matches the snapshot 1`] = `
     width="80"
     y="157"
   >
-    <h3
+    <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-t015wh-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-rnmgd8-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
-    </h3>
+    </p>
   </foreignobject>
 </div>
 `;
@@ -52,13 +52,13 @@ exports[`CustomizedAxisTick ENCOURA theme matches the snapshot 1`] = `
     width="80"
     y="157"
   >
-    <h3
+    <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-1n4e5ta-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-sh4ijp-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
-    </h3>
+    </p>
   </foreignobject>
 </div>
 `;
@@ -73,13 +73,13 @@ exports[`CustomizedAxisTick ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     width="80"
     y="157"
   >
-    <h3
+    <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-1n4e5ta-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-sh4ijp-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
-    </h3>
+    </p>
   </foreignobject>
 </div>
 `;
@@ -94,13 +94,13 @@ exports[`CustomizedAxisTick ENCOURAGE theme matches the snapshot 1`] = `
     width="80"
     y="157"
   >
-    <h3
+    <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-h3 MuiTypography-noWrap css-zwskne-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-6r7ufn-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
-    </h3>
+    </p>
   </foreignobject>
 </div>
 `;

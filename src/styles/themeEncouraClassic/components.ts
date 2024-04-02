@@ -8,20 +8,178 @@
  */
 
 import { common, grey } from '@mui/material/colors';
+import { listItemTextClasses } from '@mui/material/ListItemText';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
 import ChevronDown from '~/icons/ChevronDown';
 import FilterVariant from '~/icons/FilterVariant';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
+
 import CUSTOM_DIMS from './customDims';
-import { COLORS } from './palette';
+import PALETTE, { COLORS } from './palette';
 import SHAPE from './shape';
 import spacing from './spacing';
+import TYPOGRAPHY from './typography';
 
 import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
+  [DLS_COMPONENT_NAMES.AREA_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: COLORS.SECONDARY_DARK,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+      yAxisProps: {
+        style: {
+          fill: COLORS.SECONDARY_DARK,
+          fontSize: TYPOGRAPHY?.h4?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+        },
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.BAR_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.BAR_CHART].Y_AXIS_LABEL]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.LINE_CHART]: {
+    defaultProps: {
+      xAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+      yAxisProps: {
+        style: {
+          fill: grey[700],
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+        },
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
+    defaultProps: {
+      barTextColors: [PALETTE.text.primary, common.white],
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]
+        .BAR_LABELS]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    defaultProps: {
+      chartLegendTextFontSize: TYPOGRAPHY?.h4?.fontSize,
+      chartLegendTextFontSizeSmall: TYPOGRAPHY?.h5?.fontSize,
+      tooltipProps: {
+        itemStyle: { color: PALETTE.secondary.dark },
+        labelStyle: { color: PALETTE.secondary.dark },
+      },
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
+        .PIE_LEGEND_LABEL]: {
+        [`& .${listItemTextClasses.primary}`]: {
+          color: PALETTE.secondary.dark,
+          fontWeight: TYPOGRAPHY?.fontWeightBold,
+        },
+        [`& .${listItemTextClasses.secondary}`]: {
+          color: grey[700],
+        },
+      },
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].TITLE_TEXT]: {
+        color: PALETTE.secondary.dark,
+        fontSize: TYPOGRAPHY?.body2?.fontSize,
+        fontWeight: TYPOGRAPHY?.fontWeightBold,
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
+    defaultProps: {
+      scatterLabelColor: COLORS.SECONDARY_DARK,
+      xAverageLineLabelProps: {
+        style: {
+          fontSize: TYPOGRAPHY?.h5?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+      xAverageLineProps: {
+        stroke: grey[800],
+      },
+      xAxisProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+      yAverageLineLabelProps: {
+        style: {
+          fontSize: TYPOGRAPHY?.h5?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+      yAverageLineProps: {
+        stroke: grey[800],
+      },
+      yAxisProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+          fontWeight: TYPOGRAPHY?.fontWeightRegular,
+          userSelect: 'none',
+        },
+      },
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+        .SCATTER_LABELS]: {
+        fontSize: TYPOGRAPHY?.h3?.fontSize,
+        fontWeight: TYPOGRAPHY?.h3?.fontWeight,
+      },
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+        .SCATTER_TOOLTIP_LABEL]: {
+        color: PALETTE.secondary.dark,
+      },
+    },
+  },
+  [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
+    defaultProps: {
+      customizeBarText: i => ({
+        fill: i === 2 ? common.white : common.black,
+        fontSize: TYPOGRAPHY?.caption?.fontSize,
+      }),
+      subLabelProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},

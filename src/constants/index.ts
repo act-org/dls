@@ -11,4 +11,5 @@
 
 export * from './DEFAULT_CHART_COLORS';
 export * from './DLS_COMPONENT_NAMES';
+export * from './DLS_COMPONENT_SLOT_NAMES';
 export * from './SORT_DIRECTION_TYPES';

@@ -7,9 +7,15 @@
  * @prettier
  */
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryContext } from '@storybook/react';
+import { YAxisProps } from 'recharts';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';
+import THEME_ACT from '~/styles/themeAct';
+import THEME_ACT_ET from '~/styles/themeActEt';
+import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
+import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
 import { DATA, defaultLineKeys, processDataFn, yAxisDataKey } from './mocks';
 
@@ -50,10 +56,62 @@ export default {
   title: 'Molecules / Charts / LineChart',
 } as Meta<LineChartProps>;
 
-export const Default: StoryObj<LineChartProps> = {};
+const getMergedYAxisProps = (
+  args: LineChartProps,
+  globals: StoryContext['globals'],
+): YAxisProps => {
+  const { theme } = globals;
+  let yAxisStyle;
 
-export const WithCustomLineColors: StoryObj<LineChartProps> = {
-  args: {
-    colors: ['#FF0000', '#00FF00', '#0000FF'],
-  },
+  switch (theme) {
+    case 'ACT': {
+      yAxisStyle =
+        THEME_ACT?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]?.defaultProps
+          ?.yAxisProps;
+      break;
+    }
+    case 'ACT_ET': {
+      yAxisStyle =
+        THEME_ACT_ET?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]?.defaultProps
+          ?.yAxisProps;
+      break;
+    }
+    case 'ENCOURAGE': {
+      yAxisStyle =
+        THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]
+          ?.defaultProps?.yAxisProps;
+      break;
+    }
+    default: {
+      yAxisStyle =
+        THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]
+          ?.defaultProps?.yAxisProps;
+    }
+  }
+
+  return { ...args.yAxisProps, ...yAxisStyle };
+};
+
+export const Default = (
+  args: LineChartProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return <LineChart {...args} yAxisProps={mergedYAxisProps} />;
+};
+
+export const WithCustomLineColors = (
+  args: LineChartProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return (
+    <LineChart
+      {...args}
+      colors={['#FF0000', '#00FF00', '#0000FF']}
+      yAxisProps={mergedYAxisProps}
+    />
+  );
 };

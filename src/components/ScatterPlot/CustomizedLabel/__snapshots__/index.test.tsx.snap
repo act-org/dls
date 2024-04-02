@@ -12,11 +12,10 @@ exports[`CustomizedLabel ACT theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=""
+      class=" css-1ulfqjm-DlsScatterPlot-scatterLabels"
       color="primary"
       data-mui-internal-clone-element="true"
-      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
-      sx="[object Object]"
+      opacity="1"
     >
       Test
     </div>
@@ -36,10 +35,9 @@ exports[`CustomizedLabel ACT_ET theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=""
+      class=" css-1ulfqjm-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
-      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
-      sx="[object Object]"
+      opacity="1"
     >
       Test
     </div>
@@ -59,10 +57,9 @@ exports[`CustomizedLabel ENCOURA theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=""
+      class=" css-8j61u7-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
-      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
-      sx="[object Object]"
+      opacity="1"
     >
       Test
     </div>
@@ -82,10 +79,9 @@ exports[`CustomizedLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=""
+      class=" css-8j61u7-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
-      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
-      sx="[object Object]"
+      opacity="1"
     >
       Test
     </div>
@@ -105,10 +101,9 @@ exports[`CustomizedLabel ENCOURAGE theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=""
+      class=" css-1ulfqjm-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
-      style="opacity: 1; overflow: hidden; text-overflow: ellipsis; user-select: none; white-space: nowrap;"
-      sx="[object Object]"
+      opacity="1"
     >
       Test
     </div>

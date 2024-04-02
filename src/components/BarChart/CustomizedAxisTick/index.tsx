@@ -9,11 +9,13 @@
 
 /* eslint-disable security/detect-non-literal-regexp */
 
-import { Typography, Tooltip } from '@mui/material';
+import { TypographyProps, Tooltip } from '@mui/material';
 import React from 'react';
 import { XAxisProps } from 'recharts';
 
 import { VariantType } from '~/types';
+
+import { StyledTypography } from './styles';
 
 interface PayloadProps {
   value: string;
@@ -24,6 +26,7 @@ export type CustomizedAxisTickProps = XAxisProps & {
   payload?: PayloadProps;
   textWidth?: number;
   variant?: VariantType;
+  yAxisLabelTypographyProps?: TypographyProps;
 };
 
 export const CustomizedAxisTick: React.FC<CustomizedAxisTickProps> = ({
@@ -36,13 +39,13 @@ export const CustomizedAxisTick: React.FC<CustomizedAxisTickProps> = ({
   type,
   style,
   variant,
+  yAxisLabelTypographyProps,
 }): React.ReactElement<CustomizedAxisTickProps> => {
   const onClickHandler = (): void => {
     if (onClick && payload) {
       onClick(payload);
     }
   };
-
   return (
     <foreignObject
       height={height}
@@ -55,14 +58,13 @@ export const CustomizedAxisTick: React.FC<CustomizedAxisTickProps> = ({
       y={(y as number) - 20}
     >
       <Tooltip title={payload?.value || ''}>
-        <Typography
+        <StyledTypography
           noWrap
           onClick={onClickHandler}
-          sx={{ color: 'secondary.dark' }}
-          variant="h3"
+          {...yAxisLabelTypographyProps}
         >
           {payload?.value}
-        </Typography>
+        </StyledTypography>
       </Tooltip>
     </foreignObject>
   );
@@ -73,6 +75,7 @@ CustomizedAxisTick.defaultProps = {
   payload: undefined,
   textWidth: undefined,
   variant: undefined,
+  yAxisLabelTypographyProps: undefined,
 };
 
 export default CustomizedAxisTick;

@@ -8,6 +8,7 @@
  */
 
 import { useTheme, useThemeProps } from '@mui/material/styles';
+import { TypographyProps } from '@mui/material/Typography';
 import { isFunction } from 'lodash';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
@@ -77,6 +78,7 @@ export interface BarChartProps {
   variant?: VariantType;
   width?: number | string;
   xAxisProps?: XAxisProps;
+  yAxisLabelTypographyProps?: TypographyProps;
   yAxisProps?: YAxisProps;
 }
 
@@ -124,6 +126,7 @@ export const BarChart: React.FC<BarChartProps> = (
     variant,
     width,
     xAxisProps,
+    yAxisLabelTypographyProps,
     yAxisProps,
   } = useThemeProps({ name: DLS_COMPONENT_NAMES.BAR_CHART, props: inProps });
 
@@ -250,10 +253,6 @@ export const BarChart: React.FC<BarChartProps> = (
           <XAxis
             axisLine={false}
             orientation="top"
-            style={{
-              fill: palette.grey[700],
-              fontSize: typography.caption.fontSize,
-            }}
             tickFormatter={(v: number): string => numeral(v).format('0,0')}
             type="number"
             xAxisId={0}
@@ -262,14 +261,10 @@ export const BarChart: React.FC<BarChartProps> = (
           <YAxis
             dataKey="name"
             padding={{ bottom: 10, top: 10 }}
-            style={{
-              fill: palette.secondary.dark,
-              fontSize: typography.h4.fontSize,
-              fontWeight: Number(typography.fontWeightRegular),
-            }}
             tick={
               <CustomizedAxisTick
                 variant={variant}
+                yAxisLabelTypographyProps={yAxisLabelTypographyProps}
                 {...customizedAxisTickProps}
               />
             }
@@ -385,6 +380,7 @@ BarChart.defaultProps = {
   variant: undefined,
   width: undefined,
   xAxisProps: undefined,
+  yAxisLabelTypographyProps: undefined,
   yAxisProps: undefined,
 };
 

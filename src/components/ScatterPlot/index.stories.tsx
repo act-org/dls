@@ -7,11 +7,17 @@
  * @prettier
  */
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryContext } from '@storybook/react';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';
+import THEME_ACT from '~/styles/themeAct';
+import THEME_ACT_ET from '~/styles/themeActEt';
+import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
+import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
 import { defaultData, LARGE_DATA } from './mocks';
+import { CustomYAxisProps } from './types';
 
 import { ScatterPlot, ScatterPlotProps } from '.';
 
@@ -52,29 +58,93 @@ export default {
   title: 'Molecules / Charts / ScatterPlot',
 } as Meta<ScatterPlotProps>;
 
-export const Default: StoryObj<ScatterPlotProps> = {};
+const getMergedYAxisProps = (
+  args: ScatterPlotProps,
+  globals: StoryContext['globals'],
+): CustomYAxisProps => {
+  const { theme } = globals;
+  let yAxisStyle;
 
-export const CustomColor: StoryObj<ScatterPlotProps> = {
-  args: {
-    color: 'red',
-  },
+  switch (theme) {
+    case 'ACT': {
+      yAxisStyle =
+        THEME_ACT?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]?.defaultProps
+          ?.yAxisProps;
+      break;
+    }
+    case 'ACT_ET': {
+      yAxisStyle =
+        THEME_ACT_ET?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+          ?.defaultProps?.yAxisProps;
+      break;
+    }
+    case 'ENCOURAGE': {
+      yAxisStyle =
+        THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+          ?.defaultProps?.yAxisProps;
+      break;
+    }
+    default: {
+      yAxisStyle =
+        THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+          ?.defaultProps?.yAxisProps;
+    }
+  }
+
+  return { ...args.yAxisProps, ...yAxisStyle } as CustomYAxisProps;
 };
 
-export const LargeDataset: StoryObj<ScatterPlotProps> = {
-  args: {
-    data: LARGE_DATA,
-    height: 600,
-    xLabelValue: 'X Value',
-    yLabelValue: 'Y Value',
-  },
+export const Default = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return <ScatterPlot {...args} yAxisProps={mergedYAxisProps} />;
 };
 
-export const WithoutRankSummary: StoryObj<ScatterPlotProps> = {
-  args: {
-    data: LARGE_DATA,
-    height: 600,
-    hideSummary: true,
-    xLabelValue: 'Inquiries to Applicants',
-    yLabelValue: 'Inquiries',
-  },
+export const CustomColor = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return <ScatterPlot {...args} color="red" yAxisProps={mergedYAxisProps} />;
+};
+
+export const LargeDataset = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return (
+    <ScatterPlot
+      {...args}
+      data={LARGE_DATA}
+      height={600}
+      xLabelValue="X Value"
+      yAxisProps={mergedYAxisProps}
+      yLabelValue="Y Value"
+    />
+  );
+};
+
+export const WithoutRankSummary = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return (
+    <ScatterPlot
+      {...args}
+      data={LARGE_DATA}
+      height={600}
+      hideSummary
+      xLabelValue="Inquiries to Applicants"
+      yAxisProps={mergedYAxisProps}
+      yLabelValue="Inquiries"
+    />
+  );
 };

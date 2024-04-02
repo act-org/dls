@@ -94,7 +94,7 @@ exports[`PieChart with title ACT theme matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter  css-6zomj9-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-1oy616q-MuiTypography-root-DlsPieChart-titleText"
         title="Test Title"
       >
         Test Title
@@ -121,7 +121,7 @@ exports[`PieChart with title ACT_ET theme matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter  css-wcma3b-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-1ktxr0x-MuiTypography-root-DlsPieChart-titleText"
         title="Test Title"
       >
         Test Title
@@ -148,7 +148,7 @@ exports[`PieChart with title ENCOURA theme matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter  css-xitg2l-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-lnvz74-MuiTypography-root-DlsPieChart-titleText"
         title="Test Title"
       >
         Test Title
@@ -175,7 +175,7 @@ exports[`PieChart with title ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter  css-xitg2l-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-lnvz74-MuiTypography-root-DlsPieChart-titleText"
         title="Test Title"
       >
         Test Title
@@ -202,7 +202,7 @@ exports[`PieChart with title ENCOURAGE theme matches the snapshot 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-7w0t0-MuiGrid-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter  css-mej2r4-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-1d8wpyf-MuiTypography-root-DlsPieChart-titleText"
         title="Test Title"
       >
         Test Title

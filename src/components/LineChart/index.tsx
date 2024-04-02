@@ -80,7 +80,6 @@ export const LineChart: React.FC<LineChartProps> = (
   } = useThemeProps({ name: DLS_COMPONENT_NAMES.LINE_CHART, props: inProps });
 
   const { palette, spacing, typography } = useTheme();
-
   return (
     <StyledContainer
       height={height}
@@ -108,10 +107,6 @@ export const LineChart: React.FC<LineChartProps> = (
           <XAxis
             dataKey="label"
             orientation="bottom"
-            style={{
-              fill: palette.grey[700],
-              fontSize: typography.caption.fontSize,
-            }}
             tickCount={data.length}
             xAxisId={0}
             {...xAxisProps}
@@ -119,11 +114,6 @@ export const LineChart: React.FC<LineChartProps> = (
           <YAxis
             orientation="left"
             padding={{ bottom: 10, top: 10 }}
-            style={{
-              fill: palette.grey[700],
-              fontSize: typography.caption.fontSize,
-              fontWeight: Number(typography.fontWeightRegular),
-            }}
             tickFormatter={(v: number): string => numeral(v).format('0,0')}
             tickLine={false}
             yAxisId={0}

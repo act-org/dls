@@ -354,6 +354,18 @@ export const WithYAxisProps: StoryObj<BarChartProps> = {
   },
 };
 
+export const WithyAxisLabelTypographyProps: StoryObj<BarChartProps> = {
+  args: {
+    barKeys: defaultBarKeys,
+    data: defaultData,
+    yAxisLabelTypographyProps: {
+      sx: {
+        color: 'error.main',
+      },
+    },
+  },
+};
+
 export const WithCustomLabel: StoryObj<BarChartProps> = {
   args: {
     barKeys: defaultBarKeys,

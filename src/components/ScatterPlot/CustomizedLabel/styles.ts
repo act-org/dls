@@ -14,11 +14,21 @@ import { styled } from '@mui/material/styles';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 
-export const StyledText = styled('text', {
-  name: DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART,
-  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]
-    .BAR_LABELS,
-})(({ theme }) => ({
-  fontSize: theme.typography.caption.fontSize,
-  fontWeight: Number(theme.typography.fontWeightBold),
+interface CustomizedLabelProps {
+  fill?: string;
+  opacity?: number;
+}
+
+export const StyledLabel = styled('div', {
+  name: DLS_COMPONENT_NAMES.SCATTER_PLOT,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
+    .SCATTER_LABELS,
+})<CustomizedLabelProps>(({ fill, opacity }) => ({
+  color: fill,
+  fill,
+  opacity,
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  userSelect: 'none',
+  whiteSpace: 'nowrap',
 }));
