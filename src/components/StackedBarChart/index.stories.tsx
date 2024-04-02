@@ -7,9 +7,14 @@
  * @prettier
  */
 
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryContext, StoryObj } from '@storybook/react';
 
+import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';
+import THEME_ACT from '~/styles/themeAct';
+import THEME_ACT_ET from '~/styles/themeActEt';
+import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
+import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
 import {
   defaultBarKeys,
@@ -88,40 +93,90 @@ export const UngroupedStackedBarChart: StoryObj<StackedBarChartProps> = {
   },
 };
 
-export const VerticalBarChart: StoryObj<StackedBarChartProps> = {
-  args: {
-    barChartProps: {
-      chartProps: { layout: 'horizontal', margin: { left: 0 } },
-      maxHeight: 'auto',
-      xAxisProps: {
-        axisLine: true,
-        dataKey: 'name',
-        dy: 10,
-        orientation: 'bottom',
-        style: {
-          fill: '#003359',
-          fontSize: '14px',
-          fontWeight: 500,
+const getMergedSubLabelProps = (
+  subLabelProps: StackedBarChartProps['subLabelProps'],
+  globals: StoryContext['globals'],
+) => {
+  const theme = globals.theme;
+  let newSubLabelProps;
+
+  switch (theme) {
+    case 'ACT': {
+      newSubLabelProps =
+        THEME_ACT?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
+          ?.defaultProps?.subLabelProps;
+      break;
+    }
+    case 'ACT_ET': {
+      newSubLabelProps =
+        THEME_ACT_ET?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
+          ?.defaultProps?.subLabelProps;
+      break;
+    }
+    case 'ENCOURAGE': {
+      newSubLabelProps =
+        THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
+          ?.defaultProps?.subLabelProps;
+      break;
+    }
+    default: {
+      newSubLabelProps =
+        THEME_ENCOURA_CLASSIC?.components?.[
+          DLS_COMPONENT_NAMES.STACKED_BAR_CHART
+        ]?.defaultProps?.subLabelProps;
+    }
+  }
+
+  return { ...subLabelProps, ...newSubLabelProps };
+};
+
+export const VerticalBarChart = (
+  args: StackedBarChartProps,
+  context: StoryContext,
+) => {
+  const subLabelProps = {
+    position: 'bottom',
+  } as StackedBarChartProps['subLabelProps'];
+  const mergedSubLabelProps = getMergedSubLabelProps(
+    subLabelProps,
+    context.globals,
+  );
+  return (
+    <StackedBarChart
+      {...args}
+      barChartProps={{
+        chartProps: { layout: 'horizontal', margin: { left: 0 } },
+        maxHeight: 'auto',
+        xAxisProps: {
+          axisLine: true,
+          dataKey: 'name',
+          dy: 10,
+          orientation: 'bottom',
+          style: {
+            fill: '#003359',
+            fontSize: '14px',
+            fontWeight: 500,
+          },
+          tickLine: false,
+          type: 'category',
         },
-        tickLine: false,
-        type: 'category',
-      },
-      yAxisProps: {
-        dataKey: undefined,
-        dx: 0,
-        padding: { bottom: 0, top: 0 },
-        style: {
-          fill: '#555',
-          fontSize: '10px',
+        yAxisProps: {
+          dataKey: undefined,
+          dx: 0,
+          padding: { bottom: 0, top: 0 },
+          style: {
+            fill: '#555',
+            fontSize: '10px',
+          },
+          type: 'number',
         },
-        type: 'number',
-      },
-    },
-    barKeys: defaultBarKeys,
-    data: defaultData,
-    labelListProps: { position: 'insideTop' },
-    subLabelProps: { position: 'bottom' },
-  },
+      }}
+      barKeys={defaultBarKeys}
+      data={defaultData}
+      labelListProps={{ position: 'insideTop' }}
+      subLabelProps={mergedSubLabelProps}
+    />
+  );
 };
 
 export const LongLabel: StoryObj<StackedBarChartProps> = {

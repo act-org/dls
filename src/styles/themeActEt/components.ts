@@ -54,6 +54,20 @@ export const components: Components = {
       },
     },
   },
+  [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
+    defaultProps: {
+      customizeBarText: i => ({
+        fill: i === 2 ? common.white : common.black,
+        fontSize: TYPOGRAPHY?.caption?.fontSize,
+      }),
+      subLabelProps: {
+        style: {
+          fill: common.black,
+          fontSize: TYPOGRAPHY?.caption?.fontSize,
+        },
+      },
+    },
+  },
   MuiAccordion: {
     defaultProps: {},
     styleOverrides: {},
