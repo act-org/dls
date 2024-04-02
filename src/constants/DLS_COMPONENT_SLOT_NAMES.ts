@@ -23,6 +23,9 @@ export const DLS_COMPONENT_SLOT_NAMES = {
     SCATTER_TOOLTIP_LABEL: 'scatterToolTipLabel',
     SCATTER_TOOLTIP_TEXT: 'scatterToolTipText',
   },
+  [DLS_COMPONENT_NAMES.STACKED_BAR_CHART]: {
+    TOOLTIP_TEXT: 'tooltipText',
+  },
 } as const;
 
 export default DLS_COMPONENT_SLOT_NAMES;
