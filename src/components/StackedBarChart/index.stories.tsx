@@ -96,8 +96,8 @@ export const UngroupedStackedBarChart: StoryObj<StackedBarChartProps> = {
 const getMergedSubLabelProps = (
   subLabelProps: StackedBarChartProps['subLabelProps'],
   globals: StoryContext['globals'],
-) => {
-  const theme = globals.theme;
+): StackedBarChartProps['subLabelProps'] => {
+  const { theme } = globals;
   let newSubLabelProps;
 
   switch (theme) {
@@ -133,14 +133,12 @@ const getMergedSubLabelProps = (
 export const VerticalBarChart = (
   args: StackedBarChartProps,
   context: StoryContext,
-) => {
+): JSX.Element => {
+  const { globals } = context;
   const subLabelProps = {
     position: 'bottom',
   } as StackedBarChartProps['subLabelProps'];
-  const mergedSubLabelProps = getMergedSubLabelProps(
-    subLabelProps,
-    context.globals,
-  );
+  const mergedSubLabelProps = getMergedSubLabelProps(subLabelProps, globals);
   return (
     <StackedBarChart
       {...args}

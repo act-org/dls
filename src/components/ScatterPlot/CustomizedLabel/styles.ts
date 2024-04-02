@@ -25,8 +25,8 @@ export const StyledLabel = styled('div', {
     .SCATTER_LABELS,
 })<CustomizedLabelProps>(({ fill, opacity }) => ({
   color: fill,
-  fill: fill,
-  opacity: opacity,
+  fill,
+  opacity,
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   userSelect: 'none',

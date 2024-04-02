@@ -19,7 +19,7 @@ exports[`PieLegend ACT theme matches the snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-afp7q8-MuiListItemText-root"
+        class="MuiListItemText-root MuiListItemText-multiline css-1unzhjx-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
           class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1n3v36-MuiTypography-root"
@@ -56,7 +56,7 @@ exports[`PieLegend ACT_ET theme matches the snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-zzkbu5-MuiListItemText-root"
+        class="MuiListItemText-root MuiListItemText-multiline css-14l206w-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
           class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1huj8uh-MuiTypography-root"
@@ -93,7 +93,7 @@ exports[`PieLegend ENCOURA theme matches the snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-1hfit64-MuiListItemText-root"
+        class="MuiListItemText-root MuiListItemText-multiline css-1niii2h-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
           class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1m3mbie-MuiTypography-root"
@@ -130,7 +130,7 @@ exports[`PieLegend ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-18x9qc9-MuiListItemText-root"
+        class="MuiListItemText-root MuiListItemText-multiline css-vysnbr-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
           class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1m3mbie-MuiTypography-root"
@@ -167,7 +167,7 @@ exports[`PieLegend ENCOURAGE theme matches the snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-prukgh-MuiListItemText-root"
+        class="MuiListItemText-root MuiListItemText-multiline css-i17rnf-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
           class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1sjf7d0-MuiTypography-root"

@@ -8,6 +8,7 @@
  */
 
 import { Meta, StoryContext } from '@storybook/react';
+import { YAxisProps } from 'recharts';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';
@@ -58,8 +59,8 @@ export default {
 const getMergedYAxisProps = (
   args: LineChartProps,
   globals: StoryContext['globals'],
-) => {
-  const theme = globals.theme;
+): YAxisProps => {
+  const { theme } = globals;
   let yAxisStyle;
 
   switch (theme) {
@@ -91,16 +92,21 @@ const getMergedYAxisProps = (
   return { ...args.yAxisProps, ...yAxisStyle };
 };
 
-export const Default = (args: LineChartProps, context: StoryContext) => {
-  const mergedYAxisProps = getMergedYAxisProps(args, context.globals);
+export const Default = (
+  args: LineChartProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <LineChart {...args} yAxisProps={mergedYAxisProps} />;
 };
 
 export const WithCustomLineColors = (
   args: LineChartProps,
   context: StoryContext,
-) => {
-  const mergedYAxisProps = getMergedYAxisProps(args, context.globals);
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (
     <LineChart
       {...args}

@@ -19,9 +19,9 @@ import {
   NameType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
-import { StyledDataLabelTypography, StyledDataValueTypography } from './styles';
-
 import { IGroupDataPoint } from '../types';
+
+import { StyledDataLabelTypography, StyledDataValueTypography } from './styles';
 
 type ICustomTooltipProps = {
   CustomTooltipContent?: React.ElementType;

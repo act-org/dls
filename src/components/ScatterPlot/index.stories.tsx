@@ -17,9 +17,9 @@ import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
 import { defaultData, LARGE_DATA } from './mocks';
+import { CustomYAxisProps } from './types';
 
 import { ScatterPlot, ScatterPlotProps } from '.';
-import { CustomYAxisProps } from './types';
 
 export default {
   args: {
@@ -61,8 +61,8 @@ export default {
 const getMergedYAxisProps = (
   args: ScatterPlotProps,
   globals: StoryContext['globals'],
-) => {
-  const theme = globals.theme;
+): CustomYAxisProps => {
+  const { theme } = globals;
   let yAxisStyle;
 
   switch (theme) {
@@ -94,26 +94,38 @@ const getMergedYAxisProps = (
   return { ...args.yAxisProps, ...yAxisStyle } as CustomYAxisProps;
 };
 
-export const Default = (args: ScatterPlotProps, context: StoryContext) => {
-  const mergedYAxisProps = getMergedYAxisProps(args, context.globals);
+export const Default = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <ScatterPlot {...args} yAxisProps={mergedYAxisProps} />;
 };
 
-export const CustomColor = (args: ScatterPlotProps, context: StoryContext) => {
-  const mergedYAxisProps = getMergedYAxisProps(args, context.globals);
-  return <ScatterPlot {...args} color={'red'} yAxisProps={mergedYAxisProps} />;
+export const CustomColor = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
+  return <ScatterPlot {...args} color="red" yAxisProps={mergedYAxisProps} />;
 };
 
-export const LargeDataset = (args: ScatterPlotProps, context: StoryContext) => {
-  const mergedYAxisProps = getMergedYAxisProps(args, context.globals);
+export const LargeDataset = (
+  args: ScatterPlotProps,
+  context: StoryContext,
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (
     <ScatterPlot
       {...args}
       data={LARGE_DATA}
       height={600}
       xLabelValue="X Value"
-      yLabelValue="Y Value"
       yAxisProps={mergedYAxisProps}
+      yLabelValue="Y Value"
     />
   );
 };
@@ -121,8 +133,9 @@ export const LargeDataset = (args: ScatterPlotProps, context: StoryContext) => {
 export const WithoutRankSummary = (
   args: ScatterPlotProps,
   context: StoryContext,
-) => {
-  const mergedYAxisProps = getMergedYAxisProps(args, context.globals);
+): JSX.Element => {
+  const { globals } = context;
+  const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (
     <ScatterPlot
       {...args}
@@ -130,8 +143,8 @@ export const WithoutRankSummary = (
       height={600}
       hideSummary
       xLabelValue="Inquiries to Applicants"
-      yLabelValue="Inquiries"
       yAxisProps={mergedYAxisProps}
+      yLabelValue="Inquiries"
     />
   );
 };

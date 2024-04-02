@@ -16,8 +16,6 @@ import { ScatterPlotData } from '~/types';
 import { StyledLabel } from './styles';
 
 export type CustomizedLabelProps = LabelProps & {
-  fontSize?: number;
-  fontWeight?: number;
   isBlockingOnHovers?: boolean;
   selectedPoint?: ScatterPlotData;
   shouldHideLabel?: Record<string, boolean>;
@@ -79,8 +77,6 @@ export const CustomizedLabel: React.FC<CustomizedLabelProps> = ({
 };
 
 CustomizedLabel.defaultProps = {
-  fontSize: undefined,
-  fontWeight: undefined,
   isBlockingOnHovers: undefined,
   selectedPoint: undefined,
   shouldHideLabel: undefined,

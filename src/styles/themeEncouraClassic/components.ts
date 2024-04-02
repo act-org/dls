@@ -109,8 +109,8 @@ export const components: Components = {
       },
       [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].TITLE_TEXT]: {
         color: PALETTE.secondary.dark,
-        fontWeight: TYPOGRAPHY?.fontWeightBold,
         fontSize: TYPOGRAPHY?.body2?.fontSize,
+        fontWeight: TYPOGRAPHY?.fontWeightBold,
       },
     },
   },
