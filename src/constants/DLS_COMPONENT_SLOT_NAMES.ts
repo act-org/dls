@@ -18,6 +18,9 @@ export const DLS_COMPONENT_SLOT_NAMES = {
   [DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]: {
     BAR_LABELS: 'barLabels',
   },
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    TITLE_TEXT: 'titleText',
+  },
   [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
     SCATTER_LABELS: 'scatterLabels',
     SCATTER_TOOLTIP_LABEL: 'scatterToolTipLabel',

@@ -120,7 +120,6 @@ export const PieChart: React.FC<PieChartProps> = (
           <StyledTypography
             align="center"
             hasHighlight={hasHighlight}
-            variant="body2"
             variantSize={variant}
             {...titleProps}
             className={clsx(titleProps.className && titleProps.className)}
@@ -206,8 +205,6 @@ export const PieChart: React.FC<PieChartProps> = (
 
             <Tooltip
               formatter={(v: ValueType): string => numeral(v).format('0,0')}
-              itemStyle={{ color: palette.secondary.dark }}
-              labelStyle={{ color: palette.secondary.dark }}
               wrapperStyle={{ outline: 'none' }}
               {...tooltipProps}
             />

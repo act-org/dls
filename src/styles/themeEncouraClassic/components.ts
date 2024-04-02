@@ -86,6 +86,21 @@ export const components: Components = {
       },
     },
   },
+  [DLS_COMPONENT_NAMES.PIE_CHART]: {
+    defaultProps: {
+      tooltipProps: {
+        itemStyle: { color: PALETTE.secondary.dark },
+        labelStyle: { color: PALETTE.secondary.dark },
+      },
+    },
+    styleOverrides: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].TITLE_TEXT]: {
+        color: PALETTE.secondary.dark,
+        fontWeight: TYPOGRAPHY?.fontWeightBold,
+        fontSize: TYPOGRAPHY?.body2?.fontSize,
+      },
+    },
+  },
   [DLS_COMPONENT_NAMES.SCATTER_PLOT]: {
     defaultProps: {
       scatterLabelColor: COLORS.SECONDARY_DARK,
