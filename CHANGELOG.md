@@ -1,3 +1,36 @@
+# [8.2.0](https://github.com/act-org/dls/compare/v8.1.0...v8.2.0) (2024-04-02)
+
+
+### Bug Fixes
+
+* Add storybook entry for yAxisLabelTypographyProps ([074e747](https://github.com/act-org/dls/commit/074e747a54a666600f4119f2a07838b2073c32ff))
+* Export DLS_COMPONENT_SLOT_NAMES constant ([cd1870c](https://github.com/act-org/dls/commit/cd1870ce3084989aa395af8da6e2365677e336f2))
+* Update snapshot tests ([94f12f6](https://github.com/act-org/dls/commit/94f12f69186d2b1fcbd5d34562fea18dced4602c))
+* Update snapshot tests ([d0a86ac](https://github.com/act-org/dls/commit/d0a86ac064d8fb4d896f03c3de517cff0d58268e))
+* Update themeAct and themeEncourage  with defaultProps for the BarChart component ([6f71b13](https://github.com/act-org/dls/commit/6f71b1354e950332287c6c054204e0b6dcbe7c5a))
+
+
+### Features
+
+* Add barTextColors + innerBarTextColor optional props to OverlappedBarChart ([62c10e0](https://github.com/act-org/dls/commit/62c10e03174d9324077b0d9c1f319650ce116f32))
+* Add scatterLabelColor and label props for average line labels as optional props in ScatterPlot ([0ea3795](https://github.com/act-org/dls/commit/0ea37952c6af674f1693d4d5f31a33e8296693d5))
+* Add titleText slot to PieChart ([3ef496f](https://github.com/act-org/dls/commit/3ef496f5900e3d3912f119fba93035775645c3f6))
+* Add tooltipText slot for StackedBarChart ([3225993](https://github.com/act-org/dls/commit/322599358ad726f1b5d8329e5044212eb7d8b43c))
+* Capitalize OverlappedBarChart tooltips ([39b4416](https://github.com/act-org/dls/commit/39b4416fa3bbe013b7df0106c4cc803db8b5b3e5))
+* Create a barLabels slot for OverlappedBarChart component and apply to EncouraClassic theme ([a9faa66](https://github.com/act-org/dls/commit/a9faa66cfd7f227276440713bbfa3d06685b3e47))
+* Create Bar Chart slot for yAxisLabel and update Encoura theme with appropriate styleOverride ([af8cf6a](https://github.com/act-org/dls/commit/af8cf6a657e06e4348cb5adc8d01aee9d338a091))
+* Create DLS_COMPONENT_SLOT_NAMES constant ([7a54e84](https://github.com/act-org/dls/commit/7a54e8494ccca3e616cdf92bae1d6dbf9b8975d7))
+* Create pieLegendLabel slot and chartLegendTextFontSize optional prop for PieChart ([ea20a3b](https://github.com/act-org/dls/commit/ea20a3be9ae8b35061c0761bffa0e5c55931ce2a))
+* Create scatterLabels slot for ScatterPlot ([700edf8](https://github.com/act-org/dls/commit/700edf8b34cabb6fedd1c96e7fabe1eb1fa9e383))
+* Create scatterToolTipLabel and scatterToolTipText sclots for ScatterPlot ([53ee14c](https://github.com/act-org/dls/commit/53ee14cbb89563249afefb1ac9ed6aca570f6f96))
+* Create yAxisLabelTypographyProps prop for BarChart ([7bebb0a](https://github.com/act-org/dls/commit/7bebb0a3a45691bb4812672dba7b23b0815ff7c2))
+* Remove hardcoded styling from AreaChart and update Encoura Classic default props for AreaChart ([8242cce](https://github.com/act-org/dls/commit/8242ccee158cd1f4a6d1a7baa3bc2897508d18f1))
+* Remove hardcoded styling in LineChart and update other themes default props ([86acc9b](https://github.com/act-org/dls/commit/86acc9b98f6e2c991d5c8ff2f5a13f884b0e238c))
+* Remove hardcoded styling in StackedBarChart and update themes with defaultProps ([2512f7a](https://github.com/act-org/dls/commit/2512f7a4574aaad4e02c5fa98d60ba6d32f86fef))
+* Remove hardcoded XAxis styling in AreaChart and update Encoura Classic themes default props ([84a34af](https://github.com/act-org/dls/commit/84a34af1c5d05b71a0c708cd1c0d5e2f33255297))
+* Remove hardcoded XAxis styling in BarChart and update other themes with defaultProps ([e899d5c](https://github.com/act-org/dls/commit/e899d5cf4c2bf4a9fc73e01aa288b2d5e1630922))
+* Update themeEncouraClassic with ScatterPlot default props and style overrides ([04909a5](https://github.com/act-org/dls/commit/04909a5fd4b6f7ed1698630c20b9289d311ad4b5))
+
 # [8.1.0](https://github.com/act-org/dls/compare/v8.0.0...v8.1.0) (2024-03-27)
 
 
