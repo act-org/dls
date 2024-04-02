@@ -77,7 +77,14 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
         margin: { top: parseInt(String(spacing(5)), 10) },
       }}
       data={data}
-      tooltipProps={{ contentStyle: { backgroundColor: palette.common.white } }}
+      tooltipProps={{
+        contentStyle: {
+          backgroundColor: palette.common.white,
+        },
+        wrapperStyle: {
+          textTransform: 'capitalize',
+        },
+      }}
       xAxisProps={{
         dataKey: 'name',
         hide: true,
