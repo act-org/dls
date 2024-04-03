@@ -1,3 +1,11 @@
+# [8.3.0](https://github.com/act-org/dls/compare/v8.2.0...v8.3.0) (2024-04-03)
+
+
+### Features
+
+* Add averageLineXLabelUnit optional prop to ScatterPlot ([068cf50](https://github.com/act-org/dls/commit/068cf506d27d6cecd6ff6943cfa24949f230c4de))
+* Add in defaultProp for averageLineXLabelUnit ([3ec496c](https://github.com/act-org/dls/commit/3ec496c3d1f796b2e4b4cc2d8f5e4950f4438d79))
+
 # [8.2.0](https://github.com/act-org/dls/compare/v8.1.0...v8.2.0) (2024-04-02)
 
 
