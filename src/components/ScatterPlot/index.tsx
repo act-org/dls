@@ -71,6 +71,7 @@ import {
 } from './types';
 
 export interface ScatterPlotProps {
+  averageLineXLabelUnit?: string;
   buildDataOptions?: IBuildDataOptions;
   cartesianGridProps?: CartesianGridProps;
   chartProps?: CategoricalChartProps;
@@ -108,6 +109,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
   inProps: ScatterPlotProps,
 ) => {
   const {
+    averageLineXLabelUnit,
     cartesianGridProps,
     chartProps,
     children,
@@ -512,7 +514,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
               >
                 <Label
                   position="insideBottom"
-                  value={`Top N Average: ${formatAverageLineLabel(Number(xLineCoordinates))}`}
+                  value={`Top N Average: ${formatAverageLineLabel(Number(xLineCoordinates))}${averageLineXLabelUnit || ''}`}
                   {...xAverageLineLabelProps}
                 />
               </ReferenceLine>
@@ -574,6 +576,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 };
 
 ScatterPlot.defaultProps = {
+  averageLineXLabelUnit: undefined,
   buildDataOptions: undefined,
   cartesianGridProps: undefined,
   chartProps: undefined,
