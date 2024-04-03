@@ -576,6 +576,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 };
 
 ScatterPlot.defaultProps = {
+  averageLineXLabelUnit: undefined,
   buildDataOptions: undefined,
   cartesianGridProps: undefined,
   chartProps: undefined,
