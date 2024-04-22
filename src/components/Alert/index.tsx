@@ -9,8 +9,11 @@
 
 /* eslint-disable react/display-name */
 
-import { AlertProps as MuiAlertProps } from '@mui/lab';
-import { Alert as MuiAlert, AlertTitle as MuiAlertTitle } from '@mui/material';
+import {
+  Alert as MuiAlert,
+  AlertProps as MuiAlertProps,
+  AlertTitle as MuiAlertTitle,
+} from '@mui/material';
 import { forwardRef, ForwardRefRenderFunction, ReactElement } from 'react';
 
 export type AlertProps = MuiAlertProps & {

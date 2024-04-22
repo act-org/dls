@@ -10,9 +10,9 @@
 import { common, grey } from '@mui/material/colors';
 import { Components } from '@mui/material/styles';
 import Color from 'color';
+import FilterVariant from '~/icons/FilterVariant';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
-import FilterVariant from '~/icons/FilterVariant';
 
 import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
