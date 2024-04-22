@@ -1,3 +1,10 @@
+## [8.3.1](https://github.com/act-org/dls/compare/v8.3.0...v8.3.1) (2024-04-22)
+
+
+### Bug Fixes
+
+* Loosen peer dependency requirements for MUI 5 ([a8456d6](https://github.com/act-org/dls/commit/a8456d600d87f2795295995d002fe2d8e67987e6))
+
 # [8.3.0](https://github.com/act-org/dls/compare/v8.2.0...v8.3.0) (2024-04-03)
 
 
