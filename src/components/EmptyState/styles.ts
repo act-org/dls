@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import { StyledComponent } from '@emotion/styled';
 import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
 import Typography, {
   TypographyProps,
@@ -35,26 +34,26 @@ export const StyledTypographyDescription = styled(Typography)<
   },
 }));
 
-export const StyledTypographyTitle = styled(Typography)(({ theme }) => ({
-  [`&.${typographyClasses.root}`]: {
-    // Use one font weight higher than `body1` (varies from theme to theme)
-    fontWeight: Number(theme.typography.body1.fontWeight) + 100,
-    // Scale the font to be 20% larger than `body1` (also varies from theme to theme)
-    transform: 'scale(1.2)',
-  },
-}));
-
-export const StyledGridContainer: StyledComponent<GridProps> = styled(Grid)(
+export const StyledTypographyTitle = styled(Typography)<TypographyProps>(
   ({ theme }) => ({
-    [`&.${gridClasses.container}`]: {
-      marginBottom: theme.spacing(1),
-      marginTop: theme.spacing(1),
-      maxWidth: 300,
+    [`&.${typographyClasses.root}`]: {
+      // Use one font weight higher than `body1` (varies from theme to theme)
+      fontWeight: Number(theme.typography.body1.fontWeight) + 100,
+      // Scale the font to be 20% larger than `body1` (also varies from theme to theme)
+      transform: 'scale(1.2)',
     },
   }),
 );
 
-export const StyledGridItem: StyledComponent<GridProps> = styled(Grid)({
+export const StyledGridContainer = styled(Grid)<GridProps>(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
+    marginBottom: theme.spacing(1),
+    marginTop: theme.spacing(1),
+    maxWidth: 300,
+  },
+}));
+
+export const StyledGridItem = styled(Grid)<GridProps>({
   [`&.${gridClasses.item}`]: {
     display: 'flex',
   },

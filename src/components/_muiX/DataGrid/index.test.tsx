@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { DataGrid, GridValueGetterParams } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 
 import { standard } from '~/helpers/test';
 
@@ -31,7 +31,7 @@ describe.skip('DataGrid', () => {
       autoHeight
       autoPageSize
       checkboxSelection
-      columnBuffer={4}
+      columnBufferPx={4}
       columns={[
         {
           field: 'id',
@@ -60,8 +60,8 @@ describe.skip('DataGrid', () => {
           flex: 1,
           headerName: 'Full name',
           sortable: false,
-          valueGetter: (params: GridValueGetterParams): string =>
-            `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+          valueGetter: (_, row) =>
+            `${row.firstName || ''} ${row.lastName || ''}`,
         },
       ]}
       rows={[

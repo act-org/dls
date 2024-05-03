@@ -7,20 +7,17 @@
  * @prettier
  */
 
-import { StyledComponent } from '@emotion/styled';
 import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
 
 import { styled } from '~/helpers/styled';
 
-export const StyledGridContainer: StyledComponent<GridProps> = styled(Grid)(
-  ({ theme }) => ({
-    [`&.${gridClasses.container}`]: {
-      marginBottom: theme.spacing(0.5),
-    },
-  }),
-);
+export const StyledGridContainer = styled(Grid)<GridProps>(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
+    marginBottom: theme.spacing(0.5),
+  },
+}));
 
-export const StyledGridItem: StyledComponent<GridProps> = styled(Grid)({
+export const StyledGridItem = styled(Grid)<GridProps>({
   [`&.${gridClasses.item}`]: {
     flex: 1,
   },
