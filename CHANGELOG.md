@@ -1,3 +1,11 @@
+# [8.4.0](https://github.com/act-org/dls/compare/v8.3.1...v8.4.0) (2024-05-03)
+
+
+### Features
+
+* Bumped deps and dev-deps to their latest compatible releases ([4c8040a](https://github.com/act-org/dls/commit/4c8040ae0838d5d090a9dd7a42530210092208a5))
+* Raise minimum required @mui/x-data-grid to v6, remove some peer deps ([44e2605](https://github.com/act-org/dls/commit/44e26050dcf9bfd66f1ae0e4a531e95bb762bf8c))
+
 ## [8.3.1](https://github.com/act-org/dls/compare/v8.3.0...v8.3.1) (2024-04-22)
 
 
