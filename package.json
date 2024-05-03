@@ -231,7 +231,7 @@
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:types": "tspc --project tsconfig.json --noEmit",
-    "test:unit": "jest --maxWorkers=2 --verbose",
+    "test:unit": "jest --maxWorkers=2 --silent",
     "watch": "npm run build && npm run copy && npm run build:components -- --watch"
   },
   "types": "index.d.ts",
