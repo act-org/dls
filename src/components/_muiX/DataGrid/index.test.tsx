@@ -60,7 +60,7 @@ describe.skip('DataGrid', () => {
           flex: 1,
           headerName: 'Full name',
           sortable: false,
-          valueGetter: (_, row) =>
+          valueGetter: (_, row): string =>
             `${row.firstName || ''} ${row.lastName || ''}`,
         },
       ]}
