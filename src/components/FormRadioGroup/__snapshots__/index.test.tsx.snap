@@ -21,7 +21,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root css-19fxcl9-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-19fxcl9-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
@@ -151,7 +151,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
@@ -279,7 +279,7 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
@@ -407,7 +407,7 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
@@ -535,7 +535,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >

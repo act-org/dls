@@ -59,6 +59,7 @@ module.exports = {
         warnOnUnassignedImports: true,
       },
     ],
+    'react/boolean-prop-naming': 'off',
     'react/react-in-jsx-scope': 'off',
   },
   settings: {

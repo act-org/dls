@@ -23,7 +23,6 @@ import SHAPE from './shape';
 import spacing from './spacing';
 import TYPOGRAPHY from './typography';
 
-import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
@@ -350,10 +349,10 @@ export const components: Components = {
   },
   MuiDataGrid: {
     defaultProps: {
-      components: {
-        ColumnFilteredIcon: FilterVariant,
-      },
       disableRowSelectionOnClick: true,
+      slots: {
+        columnFilteredIcon: FilterVariant,
+      },
     },
     styleOverrides: {
       root: {

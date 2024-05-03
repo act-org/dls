@@ -16,7 +16,6 @@ import CUSTOM_DIMS from './customDims';
 import { COLORS } from './palette';
 import TYPOGRAPHY from './typography';
 
-import type {} from '@mui/lab/themeAugmentation';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {

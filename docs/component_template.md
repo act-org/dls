@@ -1,7 +1,5 @@
 ```typescript
 import { Components } from '@mui/material/styles';
-import type { } from '@mui/lab/themeAugmentation';
-import type { } from '@mui/x-data-grid/themeAugmentation';
 
 export const components: Components = {
   MuiAccordion: {

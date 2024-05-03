@@ -7,12 +7,7 @@
  * @prettier
  */
 
-import {
-  DataGridProps,
-  GridColDef,
-  GridToolbar,
-  GridValueGetterParams,
-} from '@mui/x-data-grid';
+import { DataGridProps, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { DataGrid } from './internal';
@@ -72,8 +67,7 @@ const columns: GridColDef[] = [
     headerName: 'Full name',
     sortable: true,
     type: 'string',
-    valueGetter: (params: GridValueGetterParams): string =>
-      `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+    valueGetter: (_, row) => `${row.firstName || ''} ${row.lastName || ''}`,
   },
   {
     align: 'right',
@@ -190,5 +184,5 @@ type Story = StoryObj<DataGridProps>;
 
 export const Primary: Story = {};
 export const Toolbar: Story = {
-  args: { components: { Toolbar: GridToolbar } },
+  args: { slots: { toolbar: GridToolbar } },
 };

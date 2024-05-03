@@ -26,7 +26,7 @@ In order to use the DLS, you must install it along with
 [React](https://reactjs.org/) version `17.x` or `18.x`.
 
 ```sh
-npm install --save @actinc/dls@latest @mui/material @mui/lab @mui/x-data-grid @emotion/styled @emotion/react react react-dom
+npm install --save @actinc/dls@latest @mui/material @mui/system @mui/x-data-grid react react-dom
 ```
 
 ### Choosing a Theme
