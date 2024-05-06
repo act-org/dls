@@ -119,7 +119,7 @@
     "semantic-release": "23.0.8",
     "shelljs": "0.8.5",
     "standard-version": "9.5.0",
-    "storybook": "7.6.19",
+    "storybook": "8.0.10",
     "text-encoding": "0.7.0",
     "ts-jest": "29.1.2",
     "ts-loader": "9.5.1",
