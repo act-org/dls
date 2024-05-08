@@ -29,7 +29,7 @@ export interface SCFMapProps {
   data: Array<IMapDataProps>;
   geoJSONPath: string;
   mapboxAccessToken: string;
-  mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
+  mapPopupProps?: Partial<MapPopupProps>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
   processDataFn?: (
