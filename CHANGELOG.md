@@ -1,3 +1,10 @@
+## [8.4.1](https://github.com/act-org/dls/compare/v8.4.0...v8.4.1) (2024-05-08)
+
+
+### Bug Fixes
+
+* Change mapPopupProps to be Partial ([3155f79](https://github.com/act-org/dls/commit/3155f79dcb4baf92d947b5eebe9c65b65c490210))
+
 # [8.4.0](https://github.com/act-org/dls/compare/v8.3.1...v8.4.0) (2024-05-03)
 
 
