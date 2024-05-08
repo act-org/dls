@@ -30,7 +30,7 @@ export interface HeatMapProps {
   color?: string;
   data?: GeoJSON.FeatureCollection<GeoJSON.Geometry>;
   mapboxAccessToken: string;
-  mapPopupProps?: Omit<MapPopupProps, 'popupProps'>;
+  mapPopupProps?: Partial<MapPopupProps>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
