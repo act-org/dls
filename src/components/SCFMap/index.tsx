@@ -127,10 +127,8 @@ export const SCFMap: React.FC<SCFMapProps> = ({
         (isString(parentWidth) ||
           parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
           <MapPopup
-            popupProps={{
-              latitude: finalHoverInfo.lat,
-              longitude: finalHoverInfo.lng,
-            }}
+            latitude={finalHoverInfo.lat}
+            longitude={finalHoverInfo.lng}
             rows={[
               {
                 title: 'SCF Code',

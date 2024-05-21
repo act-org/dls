@@ -14,7 +14,8 @@ import { MapPopup } from '.';
 describe.skip('MapPopup', () => {
   const Component = (
     <MapPopup
-      popupProps={{ latitude: 40, longitude: -100 }}
+      latitude={40}
+      longitude={100}
       rows={[
         {
           title: 'Test',

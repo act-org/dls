@@ -241,10 +241,8 @@ export const HeatMap: React.FC<HeatMapProps> = (
       {tooltipElement ||
         (finalHoverInfo && lastZoom && lastZoom >= MIN_ZOOM ? (
           <MapPopup
-            popupProps={{
-              latitude: finalHoverInfo.lat,
-              longitude: finalHoverInfo.lng,
-            }}
+            latitude={finalHoverInfo.lat}
+            longitude={finalHoverInfo.lng}
             rows={[
               {
                 title: 'ZIP Code',

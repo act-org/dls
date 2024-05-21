@@ -17,17 +17,16 @@ export interface RowsDataProps {
   value: string | number | undefined;
 }
 
-export interface MapPopupProps {
-  popupProps: PopupProps;
+export interface MapPopupProps extends PopupProps {
   rows?: Array<RowsDataProps>;
 }
 
 export const MapPopup: React.FC<MapPopupProps> = ({
-  popupProps,
   rows,
+  ...props
 }: MapPopupProps): React.ReactElement<unknown> | null => {
   return rows ? (
-    <StyledPopup closeButton={false} closeOnClick={false} {...popupProps}>
+    <StyledPopup closeButton={false} closeOnClick={false} {...props}>
       {rows.map(row => (
         <StyledTypography key={row.title} variant="body2">
           {row.title}:<StyledSpan>{row.value}</StyledSpan>
