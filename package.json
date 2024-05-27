@@ -47,7 +47,7 @@
     "@babel/plugin-transform-runtime": "7.24.3",
     "@babel/preset-env": "7.24.5",
     "@babel/preset-react": "7.24.1",
-    "@babel/preset-typescript": "7.24.1",
+    "@babel/preset-typescript": "7.24.6",
     "@babel/runtime-corejs3": "7.24.5",
     "@emotion/react": "11.11.4",
     "@emotion/styled": "11.11.5",
