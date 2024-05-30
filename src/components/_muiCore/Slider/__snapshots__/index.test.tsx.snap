@@ -22,7 +22,7 @@ exports[`Slider ACT theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1cr5r17-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1umila-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -68,7 +68,7 @@ exports[`Slider ACT_ET theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1cr5r17-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1umila-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -114,7 +114,7 @@ exports[`Slider ENCOURA theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-15l7jdb-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-bsrsrh-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -160,7 +160,7 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-bj9nge-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-7hmojs-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
@@ -206,7 +206,7 @@ exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
         style="left: 0%; width: 0%;"
       />
       <span
-        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-gxzhp5-MuiSlider-thumb"
+        class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-rrb82u-MuiSlider-thumb"
         data-index="0"
         style="left: 0%;"
       >
