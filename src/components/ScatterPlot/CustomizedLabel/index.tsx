@@ -76,10 +76,4 @@ export const CustomizedLabel: React.FC<CustomizedLabelProps> = ({
   );
 };
 
-CustomizedLabel.defaultProps = {
-  isBlockingOnHovers: undefined,
-  selectedPoint: undefined,
-  shouldHideLabel: undefined,
-};
-
 export default CustomizedLabel;

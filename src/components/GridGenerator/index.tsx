@@ -54,9 +54,4 @@ export const GridGenerator: FC<GridGeneratorProps> = ({
   </>
 );
 
-GridGenerator.defaultProps = {
-  gridContainerProps: undefined,
-  gridItemProps: undefined,
-};
-
 export default GridGenerator;

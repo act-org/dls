@@ -153,14 +153,4 @@ export const GeomarketMap: React.FC<GeomarketMapProps> = ({
   );
 };
 
-GeomarketMap.defaultProps = {
-  mapPopupProps: undefined,
-  mapProps: undefined,
-  onHoverInfo: undefined,
-  processDataFn: undefined,
-  selectedGeomarket: undefined,
-  setOnHoverInfo: undefined,
-  tooltipElement: undefined,
-};
-
 export default GeomarketMap;

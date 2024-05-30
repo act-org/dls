@@ -104,11 +104,11 @@ export const ConfirmDialog = (props: ConfirmDialogProps): ReactElement => {
     onCancel,
     onConfirm,
     onClose,
-    title,
+    title = 'Confirmation',
     description,
     content,
-    confirmationText,
-    cancellationText,
+    confirmationText = 'Ok',
+    cancellationText = 'Cancel',
     dialogProps,
     confirmationButtonProps,
     cancellationButtonProps,
@@ -155,13 +155,5 @@ export const ConfirmDialog = (props: ConfirmDialogProps): ReactElement => {
     </Dialog>
   );
 };
-
-ConfirmDialog.defaultProps = {
-  allowClose: true,
-  cancellationText: 'Cancel',
-  confirmationText: 'Ok',
-  isOpen: false,
-  title: 'Confirmation',
-} as ConfirmDialogProps;
 
 export default ConfirmDialog;

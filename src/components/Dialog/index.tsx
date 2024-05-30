@@ -65,9 +65,4 @@ export function Dialog({
   );
 }
 
-Dialog.defaultProps = {
-  onClose: undefined,
-  title: undefined,
-};
-
 export default Dialog;

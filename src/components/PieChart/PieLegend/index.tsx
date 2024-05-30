@@ -136,14 +136,4 @@ export const PieLegend: React.FC<PieLegendProps> = (
   );
 };
 
-PieLegend.defaultProps = {
-  chartHeight: undefined,
-  chartLegendTextFontSize: undefined,
-  chartLegendTextFontSizeSmall: undefined,
-  chartWidth: undefined,
-  CustomLegendIcon: undefined,
-  formatValue: undefined,
-  showAsSquare: undefined,
-};
-
 export default PieLegend;

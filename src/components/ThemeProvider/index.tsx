@@ -108,8 +108,4 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
   );
 };
 
-ThemeProvider.defaultProps = {
-  locale: undefined,
-};
-
 export default ThemeProvider;

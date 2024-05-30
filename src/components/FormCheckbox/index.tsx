@@ -53,11 +53,4 @@ export function FormCheckbox({
   );
 }
 
-FormCheckbox.defaultProps = {
-  formControlProps: undefined,
-  fullWidth: undefined,
-  labelProps: undefined,
-  value: undefined,
-};
-
 export default FormCheckbox;

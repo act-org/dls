@@ -575,34 +575,4 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
   );
 };
 
-ScatterPlot.defaultProps = {
-  averageLineXLabelUnit: undefined,
-  buildDataOptions: undefined,
-  cartesianGridProps: undefined,
-  chartProps: undefined,
-  children: undefined,
-  color: undefined,
-  CustomTooltipContent: undefined,
-  height: undefined,
-  hideSummary: undefined,
-  idSubstring: undefined,
-  responsiveContainerProps: undefined,
-  scatterLabelColor: undefined,
-  scatterProps: undefined,
-  showAverageLine: undefined,
-  tooltipProps: undefined,
-  xAverageLineLabelProps: undefined,
-  xAverageLineProps: undefined,
-  xAxisProps: undefined,
-  xLabelProps: undefined,
-  xLabelValue: undefined,
-  yAverageLineLabelProps: undefined,
-  yAverageLineProps: undefined,
-  yAxisProps: undefined,
-  yLabelProps: undefined,
-  yLabelValue: undefined,
-  zAxisProps: undefined,
-  zoomOptions: undefined,
-};
-
 export default ScatterPlot;

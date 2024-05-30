@@ -46,8 +46,8 @@ export interface TablePaginationActionsProps {
 
 export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
   count,
-  disabled,
-  noun,
+  disabled = false,
+  noun = 'Page',
   onPageChange,
   page: zeroBasedPage,
   PopperProps: PP,
@@ -221,15 +221,6 @@ export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
       </Tooltip>
     </StyledContainer>
   );
-};
-
-TablePaginationActions.defaultProps = {
-  disabled: false,
-  noun: 'Page',
-  PopperProps: undefined,
-  style: undefined,
-  tooltipPlacement: undefined,
-  variant: undefined,
 };
 
 export default TablePaginationActions;

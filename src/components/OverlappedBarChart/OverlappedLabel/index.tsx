@@ -111,11 +111,4 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
   );
 };
 
-OverlappedLabel.defaultProps = {
-  barTextColors: undefined,
-  innerBarTextColor: undefined,
-  isOutsideBar: undefined,
-  textColor: undefined,
-};
-
 export default OverlappedLabel;

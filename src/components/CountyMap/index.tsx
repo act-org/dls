@@ -166,14 +166,4 @@ export const CountyMap: React.FC<CountyMapProps> = ({
   );
 };
 
-CountyMap.defaultProps = {
-  mapPopupProps: undefined,
-  mapProps: undefined,
-  onHoverInfo: undefined,
-  processDataFn: undefined,
-  selectedCounty: undefined,
-  setOnHoverInfo: undefined,
-  tooltipElement: undefined,
-};
-
 export default CountyMap;

@@ -150,14 +150,4 @@ export const SCFMap: React.FC<SCFMapProps> = ({
   );
 };
 
-SCFMap.defaultProps = {
-  mapPopupProps: undefined,
-  mapProps: undefined,
-  onHoverInfo: undefined,
-  processDataFn: undefined,
-  selectedSCF: undefined,
-  setOnHoverInfo: undefined,
-  tooltipElement: undefined,
-};
-
 export default SCFMap;

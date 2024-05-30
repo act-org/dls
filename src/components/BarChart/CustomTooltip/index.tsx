@@ -122,16 +122,4 @@ export const CustomTooltip: React.FC<CustomToolTipProps> = (
   return null;
 };
 
-CustomTooltip.defaultProps = {
-  barId: undefined,
-  data: undefined,
-  formatLabel: undefined,
-  formatValue: undefined,
-  formatValueLabel: undefined,
-  renderAdditionalInfo: undefined,
-  showValue: undefined,
-  tooltipColor: undefined,
-  valueLabel: undefined,
-};
-
 export default CustomTooltip;

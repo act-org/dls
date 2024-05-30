@@ -37,8 +37,4 @@ export const MapPopup: React.FC<MapPopupProps> = ({
   ) : null;
 };
 
-MapPopup.defaultProps = {
-  rows: undefined,
-};
-
 export default MapPopup;

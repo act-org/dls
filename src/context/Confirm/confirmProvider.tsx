@@ -82,8 +82,4 @@ export const ConfirmProvider: React.ComponentType<ConfirmProviderProps> = (
   );
 };
 
-ConfirmProvider.defaultProps = {
-  defaultOptions: {},
-};
-
 export default ConfirmProvider;

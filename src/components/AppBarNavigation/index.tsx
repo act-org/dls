@@ -55,10 +55,4 @@ export const AppBarNavigation: FC<AppBarNavigationProps> = ({
   </StyledAppBar>
 );
 
-AppBarNavigation.defaultProps = {
-  appBarHeight: undefined,
-  AppBarProps: undefined,
-  headerRightElement: undefined,
-};
-
 export default AppBarNavigation;

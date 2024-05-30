@@ -98,14 +98,4 @@ export function FormSelect({
   );
 }
 
-FormSelect.defaultProps = {
-  errorMessage: undefined,
-  formControlProps: undefined,
-  helpText: undefined,
-  labelProps: undefined,
-  options: [],
-  placeholder: undefined,
-  placeholderIsDisabled: undefined,
-};
-
 export default FormSelect;

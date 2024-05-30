@@ -354,34 +354,4 @@ export const BarChart: React.FC<BarChartProps> = (
   );
 };
 
-BarChart.defaultProps = {
-  barKeys: undefined,
-  barProps: undefined,
-  cartesianGridProps: undefined,
-  chartProps: undefined,
-  children: undefined,
-  colors: undefined,
-  containerRef: undefined,
-  containerStyles: undefined,
-  customizeBarFillColor: undefined,
-  customizedAxisTickProps: undefined,
-  height: undefined,
-  labelListProps: undefined,
-  maxHeight: undefined,
-  parentHeight: undefined,
-  responsiveContainerProps: undefined,
-  setTooltipBarId: undefined,
-  subLabelProps: undefined,
-  subLabels: undefined,
-  subLabelWidth: undefined,
-  tooltipBarId: undefined,
-  tooltipProps: undefined,
-  UnhoveredTooltipComponent: undefined,
-  variant: undefined,
-  width: undefined,
-  xAxisProps: undefined,
-  yAxisLabelTypographyProps: undefined,
-  yAxisProps: undefined,
-};
-
 export default BarChart;

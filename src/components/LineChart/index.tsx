@@ -150,21 +150,4 @@ export const LineChart: React.FC<LineChartProps> = (
   );
 };
 
-LineChart.defaultProps = {
-  cartesianGridProps: undefined,
-  chartProps: undefined,
-  children: undefined,
-  colors: undefined,
-  containerStyles: undefined,
-  height: undefined,
-  lineKeys: undefined,
-  lineProps: undefined,
-  maxHeight: undefined,
-  responsiveContainerProps: undefined,
-  tooltipProps: undefined,
-  width: undefined,
-  xAxisProps: undefined,
-  yAxisProps: undefined,
-};
-
 export default LineChart;
