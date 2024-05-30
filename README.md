@@ -228,9 +228,9 @@ const MyComponent = () => (
 If the DLS doesn't provide the icon you're looking for, as a second line of
 defense, you can search for icons in the
 [`@mui/icons-material`](https://www.npmjs.com/package/@mui/icons-material)
-library. While most of these icons can be found directly in the DLS, there is
-some unique selection within this library that could be useful to you. You can
-search for a specific icon to use on
+library. While most of these icons can be found directly in the DLS via
+`mdi-material-ui`, there is some unique selection within this library that could
+be useful to you. You can search for a specific icon to use on
 [mui.com](https://mui.com/material-ui/material-icons/). Once you've found
 the perfect icon, you can use it in your project like so:
 
@@ -250,7 +250,7 @@ const MyComponent = () => (
 #### Option 3: Create a custom icon
 
 When all else fails, you can create a custom icon using the `SvgIcon` component
-from Material UI!
+from Material UI. Here's an example:
 
 ```jsx
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
