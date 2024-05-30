@@ -282,7 +282,7 @@ import { search } from '@actinc/dls/helpers';
 // hooks
 import { useLocalStorage } from '@actinc/dls/hooks';
 // icons
-import { ChevronDown } from '@actinc/dls/icons';
+import ChevronDown from '@actinc/dls/icons/ChevronDown';
 // styles & themes
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 // types
