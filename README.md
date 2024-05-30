@@ -201,15 +201,18 @@ components for server-side rendering. See the official Next.js example
 
 ### Icons
 
-The DLS re-exports all icons that are provided by the
-[`mdi-material-ui`](https://www.npmjs.com/package/mdi-material-ui) package.
+#### Option 1: Find and import from the DLS
 
-You can search for a specific icon to use on
+The DLS re-exports all icons that are provided by the
+[`mdi-material-ui`](https://www.npmjs.com/package/mdi-material-ui) package. This
+is an expansive list of icons that are managed by the material community. You
+can search for a specific icon to use on
 [materialdesignicons.com](https://materialdesignicons.com). Once you've found
 the perfect icon, you can use it in your project like so:
 
 ```jsx
-import { PollBox } from '@actinc/dls/icons';
+// Import the needed icon(s) directly, to avoid bundle size bloat.
+import PollBox from '@actinc/dls/icons/PollBox';
 
 ...
 
@@ -218,6 +221,48 @@ const MyComponent = () => (
   <PollBox />
   ...
 );
+```
+
+#### Option 2: Find and import from `@mui/icons-material`
+
+If the DLS doesn't provide the icon you're looking for, as a second line of
+defense, you can search for icons in the
+[`@mui/icons-material`](https://www.npmjs.com/package/@mui/icons-material)
+library. While most of these icons can be found directly in the DLS, there is
+some unique selection within this library that could be useful to you. You can
+search for a specific icon to use on
+[mui.com](https://mui.com/material-ui/material-icons/). Once you've found
+the perfect icon, you can use it in your project like so:
+
+```jsx
+// Import the needed icon(s) directly, to avoid bundle size bloat.
+import PollIcon from '@mui/icons-material/Poll';
+
+...
+
+const MyComponent = () => (
+  ...
+  <PollIcon />
+  ...
+);
+```
+
+#### Create a custom icon
+
+When all else fails, you can create a custom icon using the `SvgIcon` component
+from Material UI!
+
+```jsx
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import React from 'react';
+
+export const CustomIcon: React.FC<SvgIconProps> = (props: SvgIconProps): React.ReactElement<SvgIconProps> => (
+  <SvgIcon style={{ fill: 'none' }} viewBox="0 0 24 24" {...props}>
+    <path d="<insert-svg-data-here>" />
+  </SvgIcon>
+);
+
+export default CustomIcon;
 ```
 
 ### Import Stuff
