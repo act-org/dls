@@ -49,7 +49,7 @@ class Provider extends Component<ProviderProps> {
     const { Components } = this.props;
 
     const variant = get(options, 'variant');
-    const CustomComponent = get(
+    const CustomAlert = get(
       Components,
       variant || 'default',
     ) as React.FC<AlertProps>;
@@ -59,7 +59,7 @@ class Provider extends Component<ProviderProps> {
       enqueueSnackbar(message, {
         content: (
           <SnackbarAlert
-            CustomComponent={CustomComponent}
+            CustomAlert={CustomAlert}
             id={key}
             message={message}
             variant={variant}

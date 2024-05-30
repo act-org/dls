@@ -13,7 +13,7 @@ import { FC, forwardRef, ReactElement, ReactNode, useCallback } from 'react';
 import Alert, { AlertProps } from '~/components/Alert';
 
 export interface SnackbarAlertProps {
-  CustomComponent?: React.FC<AlertProps>;
+  CustomAlert?: React.FC<AlertProps>;
   id: number;
   message: string | ReactNode;
   variant: any;
@@ -22,7 +22,7 @@ export interface SnackbarAlertProps {
 // eslint-disable-next-line react/display-name
 export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
   (
-    { CustomComponent, id, message, variant }: SnackbarAlertProps,
+    { CustomAlert, id, message, variant }: SnackbarAlertProps,
     ref,
   ): ReactElement<unknown> => {
     const { closeSnackbar } = useSnackbar();
@@ -31,7 +31,7 @@ export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
       closeSnackbar(id);
     }, [id, closeSnackbar]);
 
-    const Component = CustomComponent || Alert;
+    const Component = CustomAlert || Alert;
 
     return (
       <SnackbarContent ref={ref as any}>
