@@ -247,7 +247,7 @@ const MyComponent = () => (
 );
 ```
 
-#### Create a custom icon
+#### Option 3: Create a custom icon
 
 When all else fails, you can create a custom icon using the `SvgIcon` component
 from Material UI!
