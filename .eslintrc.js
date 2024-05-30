@@ -61,6 +61,7 @@ module.exports = {
     ],
     'react/boolean-prop-naming': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/require-default-props': 'off',
   },
   settings: {
     'import/resolver': {

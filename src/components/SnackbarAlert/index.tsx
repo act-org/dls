@@ -10,9 +10,10 @@
 import { SnackbarContent, useSnackbar } from 'notistack';
 import { FC, forwardRef, ReactElement, ReactNode, useCallback } from 'react';
 
-import Alert from '~/components/Alert';
+import Alert, { AlertProps } from '~/components/Alert';
 
 export interface SnackbarAlertProps {
+  CustomComponent?: React.FC<AlertProps>;
   id: number;
   message: string | ReactNode;
   variant: any;
@@ -21,7 +22,7 @@ export interface SnackbarAlertProps {
 // eslint-disable-next-line react/display-name
 export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
   (
-    { id, message, variant }: SnackbarAlertProps,
+    { CustomComponent, id, message, variant }: SnackbarAlertProps,
     ref,
   ): ReactElement<unknown> => {
     const { closeSnackbar } = useSnackbar();
@@ -30,9 +31,11 @@ export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
       closeSnackbar(id);
     }, [id, closeSnackbar]);
 
+    const Component = CustomComponent || Alert;
+
     return (
       <SnackbarContent ref={ref as any}>
-        <Alert
+        <Component
           onClose={handleDismiss}
           severity={variant}
           style={{
@@ -41,7 +44,7 @@ export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
           variant="filled"
         >
           {message}
-        </Alert>
+        </Component>
       </SnackbarContent>
     );
   },

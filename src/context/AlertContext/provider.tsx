@@ -18,6 +18,7 @@ import {
 } from 'notistack';
 import { Component, ReactElement, ReactNode } from 'react';
 
+import { AlertProps } from '~/components';
 import SnackbarAlert from '~/components/SnackbarAlert';
 import getErrorMessage from '~/helpers/getErrorMessage';
 import { ServerError } from '~/types';
@@ -26,6 +27,7 @@ import AlertContext from '.';
 
 interface ProviderProps {
   children: ReactNode;
+  Components?: SnackbarProviderProps['Components'];
 }
 
 class Provider extends Component<ProviderProps> {
@@ -44,14 +46,23 @@ class Provider extends Component<ProviderProps> {
     message: string | ReactNode;
     options?: OptionsObject;
   }): Promise<void> {
+    const { Components } = this.props;
+
+    const variant = get(options, 'variant');
+    const CustomComponent = get(
+      Components,
+      variant || 'default',
+    ) as React.FC<AlertProps>;
+
     const key = new Date().getTime();
     if (enqueueSnackbar) {
       enqueueSnackbar(message, {
         content: (
           <SnackbarAlert
+            CustomComponent={CustomComponent}
             id={key}
             message={message}
-            variant={get(options, 'variant')}
+            variant={variant}
           />
         ),
         key,
@@ -114,14 +125,8 @@ export const AlertContextProvider = ({
     maxSnack={maxSnack || 3}
     {...otherSnackbarProps}
   >
-    <Provider>{children}</Provider>
+    <Provider Components={otherSnackbarProps?.Components}>{children}</Provider>
   </SnackbarProvider>
 );
-
-AlertContextProvider.defaultProps = {
-  anchorOriginHorizontal: undefined,
-  anchorOriginVertical: undefined,
-  maxSnack: undefined,
-};
 
 export default AlertContextProvider;
