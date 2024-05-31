@@ -47,7 +47,7 @@ export interface DataTableProps<T> {
 }
 
 export const DataTable = <T,>({
-  color,
+  color = 'default',
   columns,
   currentSortObject,
   emptyStateProps,
@@ -143,17 +143,5 @@ export const DataTable = <T,>({
     )}
   </TableContainer>
 );
-
-DataTable.defaultProps = {
-  color: 'default',
-  emptyStateProps: undefined,
-  limit: undefined,
-  offset: undefined,
-  onChangeLimit: undefined,
-  onChangeOffset: undefined,
-  rowsPerPageOptions: undefined,
-  RowWrapper: undefined,
-  totalCount: undefined,
-};
 
 export default DataTable;

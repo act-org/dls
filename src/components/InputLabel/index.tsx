@@ -44,7 +44,7 @@ export const InputLabel: FC<InputLabelProps> = ({
   children,
   required,
   helpText,
-  helpPlacement,
+  helpPlacement = 'right',
   ...otherProps
 }: InputLabelProps): ReactElement<InputLabelProps> => (
   <StyledInputLabel classes={classesProp} {...otherProps}>
@@ -61,9 +61,5 @@ export const InputLabel: FC<InputLabelProps> = ({
     </div>
   </StyledInputLabel>
 );
-
-InputLabel.defaultProps = {
-  helpPlacement: 'right',
-} as InputLabelProps;
 
 export default InputLabel;

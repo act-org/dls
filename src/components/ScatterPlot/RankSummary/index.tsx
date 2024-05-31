@@ -141,14 +141,4 @@ export const RankSummary: React.FC<RankSummaryProps> = ({
   );
 };
 
-RankSummary.defaultProps = {
-  boxContainerProps: undefined,
-  idSubstring: undefined,
-  selectedPoint: undefined,
-  setSelectedPoint: undefined,
-  setShowSummary: undefined,
-  showSummary: undefined,
-  tableContainerProps: undefined,
-};
-
 export default RankSummary;

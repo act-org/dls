@@ -322,22 +322,4 @@ export const Map: React.FC<MapProps> = (
   );
 };
 
-Map.defaultProps = {
-  attributionControlProps: undefined,
-  children: undefined,
-  color: undefined,
-  data: undefined,
-  fog: undefined,
-  initialBoundsPosition: undefined,
-  layerProps: undefined,
-  layers: undefined,
-  navigationControlProps: undefined,
-  onMapClick: undefined,
-  preserveDrawingBuffer: undefined,
-  setHoverInfo: undefined,
-  sourceId: undefined,
-  sourceProps: undefined,
-  terrain: undefined,
-};
-
 export default Map;

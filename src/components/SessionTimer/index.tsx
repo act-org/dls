@@ -150,8 +150,4 @@ export const SessionTimer: FC<SessionTimerProps> = ({
   );
 };
 
-SessionTimer.defaultProps = {
-  children: undefined,
-};
-
 export default SessionTimer;

@@ -152,14 +152,4 @@ export const StateMap: React.FC<StateMapProps> = ({
   );
 };
 
-StateMap.defaultProps = {
-  mapPopupProps: undefined,
-  mapProps: undefined,
-  onHoverInfo: undefined,
-  processDataFn: undefined,
-  selectedState: undefined,
-  setOnHoverInfo: undefined,
-  tooltipElement: undefined,
-};
-
 export default StateMap;

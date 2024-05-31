@@ -79,12 +79,4 @@ const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
   );
 };
 
-CustomizedCell.defaultProps = {
-  color: undefined,
-  groupSize: undefined,
-  label: undefined,
-  members: undefined,
-  selectedPoint: undefined,
-};
-
 export default CustomizedCell;

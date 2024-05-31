@@ -223,22 +223,4 @@ export const PieChart: React.FC<PieChartProps> = (
   );
 };
 
-PieChart.defaultProps = {
-  chartLegendTextFontSize: undefined,
-  chartLegendTextFontSizeSmall: undefined,
-  children: undefined,
-  colors: undefined,
-  CustomLegendIcon: undefined,
-  height: undefined,
-  HighlightComponent: undefined,
-  legendProps: undefined,
-  pieChartProps: undefined,
-  pieProps: undefined,
-  responsiveContainerProps: undefined,
-  titleProps: undefined,
-  tooltipProps: undefined,
-  variant: undefined,
-  width: undefined,
-};
-
 export default PieChart;

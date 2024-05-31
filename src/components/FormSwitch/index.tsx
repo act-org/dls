@@ -53,11 +53,4 @@ export function FormSwitch({
   );
 }
 
-FormSwitch.defaultProps = {
-  formControlProps: undefined,
-  fullWidth: undefined,
-  labelProps: undefined,
-  value: undefined,
-};
-
 export default FormSwitch;

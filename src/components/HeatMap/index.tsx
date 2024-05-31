@@ -262,15 +262,4 @@ export const HeatMap: React.FC<HeatMapProps> = (
   );
 };
 
-HeatMap.defaultProps = {
-  color: undefined,
-  data: undefined,
-  mapPopupProps: undefined,
-  mapProps: undefined,
-  onHoverInfo: undefined,
-  setOnHoverInfo: undefined,
-  sourceId: undefined,
-  tooltipElement: undefined,
-};
-
 export default HeatMap;

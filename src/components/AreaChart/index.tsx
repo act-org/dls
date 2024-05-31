@@ -202,24 +202,4 @@ export const AreaChart: React.FC<AreaChartProps> = (
   );
 };
 
-AreaChart.defaultProps = {
-  areaChartProps: undefined,
-  areaProps: undefined,
-  children: undefined,
-  colors: undefined,
-  height: undefined,
-  legendProps: undefined,
-  responsiveContainerProps: undefined,
-  showLegend: undefined,
-  tooltipProps: undefined,
-  width: undefined,
-  xAxisProps: undefined,
-  xLabel: undefined,
-  xLabelProps: undefined,
-  yAxisProps: undefined,
-  yLabel: undefined,
-  yLabelProps: undefined,
-  yReferenceValue: undefined,
-};
-
 export default AreaChart;

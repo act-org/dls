@@ -34,7 +34,7 @@ export interface TableCellHeadProps extends TableCellProps {
 export const TableCellHead: FC<TableCellHeadProps> = ({
   classes: classesProp,
   children,
-  color,
+  color = 'default',
   currentSortObject,
   onChangeSort,
   sortBy,
@@ -119,12 +119,6 @@ export const TableCellHead: FC<TableCellHeadProps> = ({
       )}
     </StyledTableCell>
   );
-};
-
-TableCellHead.defaultProps = {
-  color: 'default',
-  sortBy: undefined,
-  style: undefined,
 };
 
 export default TableCellHead;

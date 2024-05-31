@@ -203,18 +203,4 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
   );
 };
 
-StackedBarChart.defaultProps = {
-  barChartProps: undefined,
-  barKeys: undefined,
-  barProps: undefined,
-  children: undefined,
-  colors: undefined,
-  customizeBarText: undefined,
-  labelListProps: undefined,
-  setTooltipBarId: undefined,
-  subLabelProps: undefined,
-  subLabels: undefined,
-  tooltipBarId: undefined,
-};
-
 export default StackedBarChart;

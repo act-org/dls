@@ -47,9 +47,4 @@ const RenderLogo: FC<RenderLogoProps> = ({
   return children;
 };
 
-RenderLogo.defaultProps = {
-  LinkComponent: undefined,
-  LinkProps: undefined,
-};
-
 export default RenderLogo;

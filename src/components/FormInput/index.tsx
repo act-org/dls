@@ -69,12 +69,4 @@ export function FormInput({
   );
 }
 
-FormInput.defaultProps = {
-  errorMessage: undefined,
-  formControlProps: undefined,
-  helpText: undefined,
-  label: undefined,
-  labelProps: undefined,
-};
-
 export default FormInput;

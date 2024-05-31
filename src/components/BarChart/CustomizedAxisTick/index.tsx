@@ -70,12 +70,4 @@ export const CustomizedAxisTick: React.FC<CustomizedAxisTickProps> = ({
   );
 };
 
-CustomizedAxisTick.defaultProps = {
-  onClick: undefined,
-  payload: undefined,
-  textWidth: undefined,
-  variant: undefined,
-  yAxisLabelTypographyProps: undefined,
-};
-
 export default CustomizedAxisTick;

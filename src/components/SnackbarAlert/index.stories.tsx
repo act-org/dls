@@ -15,6 +15,7 @@ import { startCase } from 'lodash';
 import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';
 
+import Alert from '~/components/Alert';
 import AlertContext from '~/context/AlertContext';
 import AlertContextProvider, {
   AlertContextProviderProps,
@@ -126,6 +127,48 @@ export const CustomSnackbarProps: StoryObj<AlertContextProviderProps> = {
     autoHideDuration: 10_000,
     classes: {
       containerRoot: 'notistackContainerClass',
+    },
+    Components: {
+      default: alertProps => (
+        <Alert
+          {...alertProps}
+          style={{
+            backgroundColor: 'purple',
+          }}
+        />
+      ),
+      error: alertProps => (
+        <Alert
+          {...alertProps}
+          style={{
+            backgroundColor: 'purple',
+          }}
+        />
+      ),
+      info: alertProps => (
+        <Alert
+          {...alertProps}
+          style={{
+            backgroundColor: 'purple',
+          }}
+        />
+      ),
+      success: alertProps => (
+        <Alert
+          {...alertProps}
+          style={{
+            backgroundColor: 'purple',
+          }}
+        />
+      ),
+      warning: alertProps => (
+        <Alert
+          {...alertProps}
+          style={{
+            backgroundColor: 'purple',
+          }}
+        />
+      ),
     },
   },
 };

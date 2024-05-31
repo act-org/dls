@@ -46,9 +46,4 @@ const RenderNavigationItem: FC<RenderNavigationItemProps> = ({
   );
 };
 
-RenderNavigationItem.defaultProps = {
-  isActive: undefined,
-  LinkComponent: undefined,
-};
-
 export default RenderNavigationItem;

@@ -171,16 +171,4 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
   );
 };
 
-OverlappedBarChart.defaultProps = {
-  barChartProps: undefined,
-  barProps: undefined,
-  barTextColors: undefined,
-  children: undefined,
-  colors: undefined,
-  initialBarSize: undefined,
-  innerBarTextColor: undefined,
-  labelProps: undefined,
-  xAxisProps: undefined,
-};
-
 export default OverlappedBarChart;

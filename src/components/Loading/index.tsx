@@ -19,7 +19,10 @@ export interface LoadingProps {
 }
 
 export const Loading: FC<LoadingProps> = ({
-  circularProgressProps,
+  circularProgressProps = {
+    size: 24,
+    thickness: 4.5,
+  },
   style,
   title,
 }: LoadingProps): ReactElement<LoadingProps> => (
@@ -39,14 +42,5 @@ export const Loading: FC<LoadingProps> = ({
     {title && <StyledTypography variant="overline">{title}</StyledTypography>}
   </StyledContainer>
 );
-
-Loading.defaultProps = {
-  circularProgressProps: {
-    size: 24,
-    thickness: 4.5,
-  },
-  style: undefined,
-  title: undefined,
-};
 
 export default Loading;

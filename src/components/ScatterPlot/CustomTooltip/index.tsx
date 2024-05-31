@@ -73,8 +73,4 @@ export const CustomTooltip: React.FC<ICustomTooltipProps> = ({
   );
 };
 
-CustomTooltip.defaultProps = {
-  CustomTooltipContent: undefined,
-};
-
 export default CustomTooltip;
