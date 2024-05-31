@@ -1,3 +1,16 @@
+# [8.5.0](https://github.com/act-org/dls/compare/v8.4.1...v8.5.0) (2024-05-31)
+
+
+### Bug Fixes
+
+* Replace default props with default function arguments, to prep for React 19 ([ea0832e](https://github.com/act-org/dls/commit/ea0832e25dbe90aaa0f1b30a57495548f27eb8d5))
+
+
+### Features
+
+* Bump mdi-material-ui (icons) to the latest release; bump dev-deps ([59d41c9](https://github.com/act-org/dls/commit/59d41c9bb526876e0cdeee7d5d9d41f3badf7dd1))
+* Enhanced the alerts system to accept custom alert components; added stories to demonstrate ([7fed2d1](https://github.com/act-org/dls/commit/7fed2d1efdd711db5380c8ffe8ded1bbee9c1fc0))
+
 ## [8.4.1](https://github.com/act-org/dls/compare/v8.4.0...v8.4.1) (2024-05-08)
 
 
