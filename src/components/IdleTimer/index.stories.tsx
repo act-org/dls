@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import { action } from '@storybook/addon-actions';
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { round } from 'lodash';
 import pluralize from 'pluralize';
@@ -23,24 +22,8 @@ const Template: StoryFn<IdleTimerProps> = ({
 }: IdleTimerProps) => {
   const timeoutSeconds = timeoutMs / 1000;
 
-  const onAction = action('onAction');
-  const onActive = action('onActive');
-  const onIdle = action('onIdle');
-
   return (
-    <IdleTimer
-      onAction={(event): void => {
-        onAction(event);
-      }}
-      onActive={(event): void => {
-        onActive(event);
-      }}
-      onIdle={(event): void => {
-        onIdle(event);
-      }}
-      timeoutMs={timeoutMs}
-      {...otherProps}
-    >
+    <IdleTimer timeoutMs={timeoutMs} {...otherProps}>
       {({ remainingTimeMs }): ReactElement<unknown> => {
         const remainingTimeSeconds = round(remainingTimeMs / 1000, 0);
 
@@ -72,6 +55,9 @@ export default {
   },
   argTypes: Playground(
     {
+      onAction: { action: 'onAction' },
+      onActive: { action: 'onActive' },
+      onIdle: { action: 'onIdle' },
       stopOnIdle: { type: 'boolean' },
       timeoutMs: { type: 'number' },
     },

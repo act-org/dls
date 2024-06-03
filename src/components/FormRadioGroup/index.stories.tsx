@@ -7,7 +7,6 @@
  * @prettier
  */
 
-import { action } from '@storybook/addon-actions';
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { useState } from 'react';
 
@@ -17,13 +16,11 @@ import { FormRadioGroup, FormRadioGroupProps } from '.';
 
 const Template: StoryFn<FormRadioGroupProps> = args => {
   const [state, setState] = useState<string>('one');
-  const clickAction = action('click');
 
   return (
     <FormRadioGroup
-      onChange={(event, value): void => {
+      onChange={(_, value): void => {
         setState(value);
-        clickAction(event, value);
       }}
       value={state}
       {...args}
@@ -50,6 +47,7 @@ export default {
       helpText: {},
       label: { type: 'string' },
       name: {},
+      onChange: { action: 'onChange' },
       options: {},
       row: {},
     },

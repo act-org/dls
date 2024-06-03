@@ -8,7 +8,6 @@
  */
 
 import { Button } from '@mui/material';
-import { action } from '@storybook/addon-actions';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import moment from 'moment';
 import { useState } from 'react';
@@ -24,21 +23,14 @@ interface StoryProps extends DialogContinueSessionProps {
 const Template: StoryFn<StoryProps> = args => {
   const [open, setOpen] = useState(false);
 
-  const onContinue = action('onContinue');
-  const onExpire = action('onExpire');
-
   if (open)
     return (
       <DialogContinueSession
         {...args}
         onContinue={(): void => {
-          onContinue();
-
           setOpen(false);
         }}
         onExpire={(): void => {
-          onExpire();
-
           window.location.reload();
         }}
       />
@@ -67,6 +59,8 @@ export default {
   argTypes: Playground(
     {
       expiresAt: { type: 'Date' },
+      onContinue: { action: 'onContinue' },
+      onExpire: { action: 'onExpire' },
     },
     DialogContinueSession,
   ),

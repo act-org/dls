@@ -14,24 +14,22 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const config: StorybookConfig = {
   addons: [
     '@storybook/addon-a11y',
-    '@storybook/addon-controls',
-    '@storybook/addon-docs',
     '@storybook/addon-essentials',
     '@storybook/addon-links',
     '@storybook/addon-mdx-gfm',
+    '@storybook/addon-webpack5-compiler-swc',
   ],
+  core: {
+    disableTelemetry: true,
+  },
   docs: {
     autodocs: 'tag',
     defaultName: 'Documentation',
   },
-  framework: {
-    name: '@storybook/react-webpack5',
-    options: {},
-  },
-  core: {},
   features: {
     storyStoreV7: true,
   },
+  framework: '@storybook/react-webpack5',
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../src/**/*.mdx'],
   staticDirs: ['../public'],
   typescript: {

@@ -9,90 +9,90 @@
 
 import * as locales from '@mui/material/locale';
 import { common, grey } from '@mui/material/colors';
-import { configureActions } from '@storybook/addon-actions';
+import { Preview } from '@storybook/react';
 import { CssBaseline } from '@mui/material';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs';
+import React from 'react';
 
 import { ThemeProvider } from '../src/components/ThemeProvider';
 
-configureActions({
-  depth: 3,
-  limit: 20,
-});
+global.React = React;
 
-export const parameters = {
-  backgrounds: {
-    default: 'White',
-    values: [
-      {
-        name: 'White',
-        value: common.white,
+const preview: Preview = {
+  decorators: [
+    (Story, ctx) => {
+      return (
+        <ThemeProvider locale={ctx.globals.language} theme={ctx.globals.theme}>
+          <CssBaseline />
+          <Story />
+        </ThemeProvider>
+      );
+    },
+  ],
+  globalTypes: {
+    theme: {
+      defaultValue: 'ENCOURA',
+      description: 'Global theme for components',
+      name: 'Theme',
+      toolbar: {
+        icon: 'paintbrush',
+        items: ['ACT', 'ACT_ET', 'ENCOURA', 'ENCOURA_CLASSIC', 'ENCOURAGE'],
       },
-      {
-        name: 'Grey',
-        value: grey[300],
+    },
+    language: {
+      name: 'Language',
+      description: 'Global language for components',
+      defaultValue: 'enUS',
+      toolbar: {
+        icon: 'book',
+        items: Object.keys(locales),
       },
-      {
-        name: 'Black',
-        value: common.black,
-      },
-    ],
-  },
-  controls: { expanded: false },
-  docs: {
-    container: DocsContainer,
-    page: DocsPage,
-    story: {
-      inline: true,
     },
   },
-  layout: 'padded',
-  options: {
-    storySort: {
-      order: [
-        'DLS',
-        'Foundations',
-        'MUI Core',
-        'MUI X',
-        'Atoms',
-        'Molecules',
-        'Organisms',
-        'Utilities',
-        'Forms (WIP)',
-        'Deprecated',
+  parameters: {
+    backgrounds: {
+      default: 'White',
+      values: [
+        {
+          name: 'White',
+          value: common.white,
+        },
+        {
+          name: 'Grey',
+          value: grey[300],
+        },
+        {
+          name: 'Black',
+          value: common.black,
+        },
       ],
     },
-  },
-};
-
-export const decorators = [
-  (Story, ctx) => {
-    return (
-      <ThemeProvider locale={ctx.globals.language} theme={ctx.globals.theme}>
-        <CssBaseline />
-        <Story />
-      </ThemeProvider>
-    );
-  },
-];
-
-export const globalTypes = {
-  theme: {
-    defaultValue: 'ENCOURA',
-    description: 'Global theme for components',
-    name: 'Theme',
-    toolbar: {
-      icon: 'paintbrush',
-      items: ['ACT', 'ACT_ET', 'ENCOURA', 'ENCOURA_CLASSIC', 'ENCOURAGE'],
+    controls: { expanded: false },
+    docs: {
+      container: DocsContainer,
+      page: DocsPage,
+      story: {
+        inline: true,
+      },
     },
-  },
-  language: {
-    name: 'Language',
-    description: 'Global language for components',
-    defaultValue: 'enUS',
-    toolbar: {
-      icon: 'book',
-      items: Object.keys(locales),
+    layout: 'padded',
+    options: {
+      storySort: {
+        order: [
+          'DLS',
+          'Foundations',
+          'MUI Core',
+          'MUI X',
+          'Atoms',
+          'Molecules',
+          'Organisms',
+          'Utilities',
+          'Forms (WIP)',
+          'Deprecated',
+        ],
+      },
     },
   },
 };
+
+export default preview;

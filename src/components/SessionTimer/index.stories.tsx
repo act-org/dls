@@ -16,7 +16,6 @@ import {
   TableRow,
   Typography,
 } from '@mui/material';
-import { action } from '@storybook/addon-actions';
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { round } from 'lodash';
 import moment from 'moment';
@@ -39,19 +38,11 @@ const Template: StoryFn<SessionTimerProps> = ({
   const stageOneTimeoutSeconds = promptWithMsRemaining / 1000;
   const stageTwoTimeoutSeconds = (tokenMaxAgeMs - promptWithMsRemaining) / 1000;
 
-  const onExpire = action('onExpire');
-  const onKeepAlive = action('onKeepAlive');
-
   return (
     <SessionTimer
       {...otherProps}
       expiresAt={expiresAt}
-      onExpire={(): void => {
-        onExpire();
-      }}
       onKeepAlive={(): void => {
-        onKeepAlive();
-
         setExpiresAt(moment().add(tokenMaxAgeMs, 'ms').toDate());
       }}
       promptWithMsRemaining={promptWithMsRemaining}
@@ -161,6 +152,8 @@ export default {
   argTypes: Playground(
     {
       expiresAt: { type: 'date' },
+      onExpire: { action: 'onExpire' },
+      onKeepAlive: { action: 'onKeepAlive' },
       promptWithMsRemaining: { type: 'number' },
       tokenMaxAgeMs: { type: 'number' },
     },
