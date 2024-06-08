@@ -1,3 +1,11 @@
+# [8.6.0](https://github.com/act-org/dls/compare/v8.5.0...v8.6.0) (2024-06-08)
+
+
+### Features
+
+* Add custom title container story ([48445a5](https://github.com/act-org/dls/commit/48445a52569af6983a3f66f4d1ca2c5001c61966))
+* Add titleGridContainerProps optional property to Empty State ([0a8c9a9](https://github.com/act-org/dls/commit/0a8c9a9b1fc02a208bab539462777d3783c54b42))
+
 # [8.5.0](https://github.com/act-org/dls/compare/v8.4.1...v8.5.0) (2024-05-31)
 
 
