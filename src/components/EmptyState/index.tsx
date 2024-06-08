@@ -10,6 +10,7 @@
 import Button, { ButtonProps } from '@mui/material/Button';
 import { IconProps } from '@mui/material/Icon';
 import { TypographyProps } from '@mui/material/Typography';
+import { GridProps, SizingProps } from '@mui/system';
 import { isString } from 'lodash';
 import {
   ComponentClass,
@@ -37,6 +38,7 @@ export interface EmptyStateProps {
   iconProps?: IconProps;
   style?: CSSProperties;
   title?: string | ReactElement<unknown>;
+  titleGridContainerProps?: GridProps & SizingProps;
   titleTypographyProps?: TypographyProps & {
     component?: string;
   };
@@ -50,6 +52,7 @@ export const EmptyState: FC<EmptyStateProps> = ({
   iconProps,
   style,
   title,
+  titleGridContainerProps,
   titleTypographyProps,
 }: EmptyStateProps): ReactElement<EmptyStateProps> => {
   const StyledIcon = Icon
@@ -78,6 +81,7 @@ export const EmptyState: FC<EmptyStateProps> = ({
           alignItems="center"
           container
           justifyContent="center"
+          {...titleGridContainerProps}
         >
           <StyledGridItem item>
             <StyledTypographyTitle

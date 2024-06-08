@@ -60,3 +60,13 @@ export const CustomIcon: StoryObj<EmptyStateProps> = {
     },
   },
 };
+
+export const CustomTitleContainer: StoryObj<EmptyStateProps> = {
+  args: {
+    title:
+      'This is a very long title to demonstrate that the title container will expand to fit the content.',
+    titleGridContainerProps: {
+      maxWidth: 'unset !important',
+    },
+  },
+};
