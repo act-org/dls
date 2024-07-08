@@ -53,7 +53,7 @@ export const defaultData = [
   {
     CONVERSION_QUANTITY: 281,
     COUNTY_NAME: 'Capitol',
-    FIPS: '09001',
+    FIPS: '09110',
     QUANTITY: 538,
     STATE_CODE: 'CT',
   },
