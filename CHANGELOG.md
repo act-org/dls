@@ -1,3 +1,16 @@
+# [8.7.0](https://github.com/act-org/dls/compare/v8.6.0...v8.7.0) (2024-07-08)
+
+
+### Bug Fixes
+
+* Update county map example data to include new CT planning region ([3d4890b](https://github.com/act-org/dls/commit/3d4890bc16faec8bedcde989e521e6e3751b856d))
+* Update FIPS for Capitol planning region in example data ([092dcc0](https://github.com/act-org/dls/commit/092dcc060e779a8a18617ce4f43b8e7a477eaa2f))
+
+
+### Features
+
+* Update public counties.json file with new Connecticut planning regions ([aecdca2](https://github.com/act-org/dls/commit/aecdca2ab562eb4c6a1279cee20ac01396b67d67))
+
 # [8.6.0](https://github.com/act-org/dls/compare/v8.5.0...v8.6.0) (2024-06-08)
 
 
