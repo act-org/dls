@@ -52,8 +52,8 @@ export const defaultData = [
   },
   {
     CONVERSION_QUANTITY: 281,
-    COUNTY_NAME: 'Fairfield',
-    FIPS: '09001',
+    COUNTY_NAME: 'Capitol',
+    FIPS: '09110',
     QUANTITY: 538,
     STATE_CODE: 'CT',
   },
