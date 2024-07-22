@@ -30,6 +30,9 @@ export default {
   args: {
     barKeys: defaultBarKeys,
     data: defaultData,
+    description:
+      'A bar chart displaying the volumns per US state in 2019, 2020, and 2021',
+    title: 'Volumes for US States',
   },
   argTypes: Playground(
     {

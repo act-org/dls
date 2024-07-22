@@ -215,7 +215,8 @@ export const BarChart: React.FC<BarChartProps> = (
     composedChartLeftMargin =
       (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(1)), 10);
   }
-  console.log('LabelListProps', labelListProps);
+
+  const lowerCaseTitle = toLower(title);
   return (
     <StyledContainer
       height={finalHeight}
@@ -238,7 +239,7 @@ export const BarChart: React.FC<BarChartProps> = (
           barGap={DEFAULT_BAR_GAP}
           data={data}
           desc={description}
-          id={`${title ? `${kebabCase(toLower(title))}-` : ''}bar-chart`}
+          id={`${title ? `${kebabCase(lowerCaseTitle)}-` : ''}bar-chart`}
           layout="vertical"
           margin={{
             bottom: parseInt(String(spacing(0.6)), 10),
@@ -247,7 +248,6 @@ export const BarChart: React.FC<BarChartProps> = (
             top: parseInt(String(spacing(2)), 10),
           }}
           maxBarSize={30}
-          role="group"
           style={{
             cursor: chartProps?.onClick ? 'pointer' : undefined,
             fontFamily: typography.fontFamily,
@@ -296,7 +296,8 @@ export const BarChart: React.FC<BarChartProps> = (
                 isAnimationActive={animate}
                 key={`${key}-bar`}
                 onAnimationStart={onAnimationStart}
-                onMouseLeave={(): void => {
+                onMouseMove={(): void => {
+                  console.log('🪇');
                   if (setTooltipBarId) setTooltipBarId(undefined);
                   setBarIdHovered(undefined);
                 }}
@@ -308,7 +309,6 @@ export const BarChart: React.FC<BarChartProps> = (
                 }}
                 {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
               >
-                {/* number at end of bar */}
                 <LabelList
                   dataKey={key}
                   formatter={(v: number): string => numeral(v).format('0,0')}
@@ -331,7 +331,6 @@ export const BarChart: React.FC<BarChartProps> = (
                   tabIndex={0}
                   {...labelListProps}
                 />
-                {/* year at the beginning of the bar */}
                 {barKeys.length > 1 && (
                   <LabelList
                     id={`${key}-label`}
@@ -351,6 +350,7 @@ export const BarChart: React.FC<BarChartProps> = (
           })}
 
           <Tooltip
+            accessibilityLayer
             content={
               <CustomTooltip barId={tooltipBarId || barIdHovered} data={data} />
             }

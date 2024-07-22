@@ -102,8 +102,9 @@ export const CustomTooltip: React.FC<CustomToolTipProps> = (
           : numeral(barInfo.value).format('0,0'),
       }));
     }
+
     return (
-      <Paper elevation={1} sx={{ p: 2 }}>
+      <Paper aria-live="assertive" elevation={1} sx={{ p: 2 }} role="status">
         <Typography sx={{ color: tooltipColor, mb: 0.5 }}>{label}</Typography>
 
         {showValue &&
