@@ -254,6 +254,7 @@ export const BarChart: React.FC<BarChartProps> = (
             axisLine={false}
             orientation="top"
             tickFormatter={(v: number): string => numeral(v).format('0,0')}
+            tabIndex={0}
             type="number"
             xAxisId={0}
             {...xAxisProps}
@@ -297,6 +298,7 @@ export const BarChart: React.FC<BarChartProps> = (
                     setBarIdHovered(key);
                   }
                 }}
+                tabIndex={0}
                 {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
               >
                 <LabelList
@@ -317,6 +319,7 @@ export const BarChart: React.FC<BarChartProps> = (
                     fill: palette.grey[700],
                     fontSize: typography.caption.fontSize,
                   }}
+                  tabIndex={0}
                   {...labelListProps}
                 />
                 {barKeys.length > 1 && (
@@ -326,6 +329,7 @@ export const BarChart: React.FC<BarChartProps> = (
                       fill: palette.grey[700],
                       fontSize: typography.caption.fontSize,
                     }}
+                    tabIndex={0}
                     valueAccessor={(bar: BarLabelProps): string =>
                       subLabels ? subLabels[i] : bar?.tooltipPayload[0]?.name
                     }
