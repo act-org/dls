@@ -9,7 +9,7 @@
 
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { TypographyProps } from '@mui/material/Typography';
-import { isFunction } from 'lodash';
+import { isFunction, kebabCase, toLower } from 'lodash';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
 import {
@@ -63,6 +63,7 @@ export interface BarChartProps {
   customizeBarFillColor?: (index: number, key: string) => string | undefined;
   customizedAxisTickProps?: CustomizedAxisTickProps;
   data: Array<DataProps>;
+  description?: string;
   height?: number | ((calculatedHeight: number) => number | undefined);
   labelListProps?: LabelListProps<ILabelListData>;
   maxHeight?: number | string;
@@ -72,6 +73,7 @@ export interface BarChartProps {
   subLabelProps?: LabelListProps<ILabelListData>;
   subLabelWidth?: number;
   subLabels?: Array<string>;
+  title?: string;
   tooltipBarId?: string;
   tooltipProps?: CustomToolTipProps;
   UnhoveredTooltipComponent?: React.JSX.Element;
@@ -113,6 +115,7 @@ export const BarChart: React.FC<BarChartProps> = (
     customizeBarFillColor,
     customizedAxisTickProps,
     data,
+    description,
     height,
     labelListProps,
     maxHeight,
@@ -121,6 +124,7 @@ export const BarChart: React.FC<BarChartProps> = (
     subLabelProps,
     subLabelWidth,
     subLabels,
+    title,
     tooltipBarId,
     tooltipProps,
     variant,
@@ -211,7 +215,7 @@ export const BarChart: React.FC<BarChartProps> = (
     composedChartLeftMargin =
       (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(1)), 10);
   }
-
+  console.log('LabelListProps', labelListProps);
   return (
     <StyledContainer
       height={finalHeight}
@@ -229,9 +233,12 @@ export const BarChart: React.FC<BarChartProps> = (
         {...responsiveContainerProps}
       >
         <ComposedChart
+          accessibilityLayer
           barCategoryGap={DEFAULT_BAR_CATEGORY_GAP}
           barGap={DEFAULT_BAR_GAP}
           data={data}
+          desc={description}
+          id={`${title ? `${kebabCase(toLower(title))}-` : ''}bar-chart`}
           layout="vertical"
           margin={{
             bottom: parseInt(String(spacing(0.6)), 10),
@@ -240,10 +247,12 @@ export const BarChart: React.FC<BarChartProps> = (
             top: parseInt(String(spacing(2)), 10),
           }}
           maxBarSize={30}
+          role="group"
           style={{
             cursor: chartProps?.onClick ? 'pointer' : undefined,
             fontFamily: typography.fontFamily,
           }}
+          title={title}
           {...chartProps}
         >
           <CartesianGrid
@@ -254,7 +263,6 @@ export const BarChart: React.FC<BarChartProps> = (
             axisLine={false}
             orientation="top"
             tickFormatter={(v: number): string => numeral(v).format('0,0')}
-            tabIndex={0}
             type="number"
             xAxisId={0}
             {...xAxisProps}
@@ -298,12 +306,13 @@ export const BarChart: React.FC<BarChartProps> = (
                     setBarIdHovered(key);
                   }
                 }}
-                tabIndex={0}
                 {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
               >
+                {/* number at end of bar */}
                 <LabelList
                   dataKey={key}
                   formatter={(v: number): string => numeral(v).format('0,0')}
+                  id={`${key}-bar-label`}
                   onMouseLeave={(): void => {
                     if (setTooltipBarId) setTooltipBarId(undefined);
                     setBarIdHovered(undefined);
@@ -322,14 +331,15 @@ export const BarChart: React.FC<BarChartProps> = (
                   tabIndex={0}
                   {...labelListProps}
                 />
+                {/* year at the beginning of the bar */}
                 {barKeys.length > 1 && (
                   <LabelList
+                    id={`${key}-label`}
                     position="left"
                     style={{
                       fill: palette.grey[700],
                       fontSize: typography.caption.fontSize,
                     }}
-                    tabIndex={0}
                     valueAccessor={(bar: BarLabelProps): string =>
                       subLabels ? subLabels[i] : bar?.tooltipPayload[0]?.name
                     }
