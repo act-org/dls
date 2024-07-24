@@ -9,7 +9,7 @@
 
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { TypographyProps } from '@mui/material/Typography';
-import { isFunction } from 'lodash';
+import { isFunction, kebabCase, toLower } from 'lodash';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
 import {
@@ -63,6 +63,7 @@ export interface BarChartProps {
   customizeBarFillColor?: (index: number, key: string) => string | undefined;
   customizedAxisTickProps?: CustomizedAxisTickProps;
   data: Array<DataProps>;
+  description?: string;
   height?: number | ((calculatedHeight: number) => number | undefined);
   labelListProps?: LabelListProps<ILabelListData>;
   maxHeight?: number | string;
@@ -72,6 +73,7 @@ export interface BarChartProps {
   subLabelProps?: LabelListProps<ILabelListData>;
   subLabelWidth?: number;
   subLabels?: Array<string>;
+  title?: string;
   tooltipBarId?: string;
   tooltipProps?: CustomToolTipProps;
   UnhoveredTooltipComponent?: React.JSX.Element;
@@ -113,6 +115,7 @@ export const BarChart: React.FC<BarChartProps> = (
     customizeBarFillColor,
     customizedAxisTickProps,
     data,
+    description,
     height,
     labelListProps,
     maxHeight,
@@ -121,6 +124,7 @@ export const BarChart: React.FC<BarChartProps> = (
     subLabelProps,
     subLabelWidth,
     subLabels,
+    title,
     tooltipBarId,
     tooltipProps,
     variant,
@@ -212,6 +216,7 @@ export const BarChart: React.FC<BarChartProps> = (
       (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(1)), 10);
   }
 
+  const lowerCaseTitle = toLower(title);
   return (
     <StyledContainer
       height={finalHeight}
@@ -229,9 +234,12 @@ export const BarChart: React.FC<BarChartProps> = (
         {...responsiveContainerProps}
       >
         <ComposedChart
+          accessibilityLayer
           barCategoryGap={DEFAULT_BAR_CATEGORY_GAP}
           barGap={DEFAULT_BAR_GAP}
           data={data}
+          desc={description}
+          id={`${title ? `${kebabCase(lowerCaseTitle)}-` : ''}bar-chart`}
           layout="vertical"
           margin={{
             bottom: parseInt(String(spacing(0.6)), 10),
@@ -244,6 +252,7 @@ export const BarChart: React.FC<BarChartProps> = (
             cursor: chartProps?.onClick ? 'pointer' : undefined,
             fontFamily: typography.fontFamily,
           }}
+          title={title}
           {...chartProps}
         >
           <CartesianGrid
@@ -287,7 +296,7 @@ export const BarChart: React.FC<BarChartProps> = (
                 isAnimationActive={animate}
                 key={`${key}-bar`}
                 onAnimationStart={onAnimationStart}
-                onMouseLeave={(): void => {
+                onMouseMove={(): void => {
                   if (setTooltipBarId) setTooltipBarId(undefined);
                   setBarIdHovered(undefined);
                 }}
@@ -302,6 +311,7 @@ export const BarChart: React.FC<BarChartProps> = (
                 <LabelList
                   dataKey={key}
                   formatter={(v: number): string => numeral(v).format('0,0')}
+                  id={`${key}-bar-label`}
                   onMouseLeave={(): void => {
                     if (setTooltipBarId) setTooltipBarId(undefined);
                     setBarIdHovered(undefined);
@@ -317,10 +327,12 @@ export const BarChart: React.FC<BarChartProps> = (
                     fill: palette.grey[700],
                     fontSize: typography.caption.fontSize,
                   }}
+                  tabIndex={0}
                   {...labelListProps}
                 />
                 {barKeys.length > 1 && (
                   <LabelList
+                    id={`${key}-label`}
                     position="left"
                     style={{
                       fill: palette.grey[700],
@@ -337,6 +349,7 @@ export const BarChart: React.FC<BarChartProps> = (
           })}
 
           <Tooltip
+            accessibilityLayer
             content={
               <CustomTooltip barId={tooltipBarId || barIdHovered} data={data} />
             }
