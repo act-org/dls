@@ -296,7 +296,7 @@ export const BarChart: React.FC<BarChartProps> = (
                 isAnimationActive={animate}
                 key={`${key}-bar`}
                 onAnimationStart={onAnimationStart}
-                onMouseMove={(): void => {
+                onMouseLeave={(): void => {
                   if (setTooltipBarId) setTooltipBarId(undefined);
                   setBarIdHovered(undefined);
                 }}
