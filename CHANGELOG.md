@@ -1,3 +1,19 @@
+# [8.8.0](https://github.com/act-org/dls/compare/v8.7.0...v8.8.0) (2024-07-24)
+
+
+### Bug Fixes
+
+* Handle merge conflicts ([7ef2ff3](https://github.com/act-org/dls/commit/7ef2ff3b72126e1cec8462ff4d9171756d39730e))
+* Remove unncessary newline ([49144c5](https://github.com/act-org/dls/commit/49144c537b4008fe864f3cd22c327553b6a3d62e))
+
+
+### Features
+
+* Adds correct role and status to BarChart/CustomTooltip for screen reader access ([f7ab341](https://github.com/act-org/dls/commit/f7ab3418c73fd6183995841dab2be88eec299d21))
+* Adds correct role and status to BarChart/CustomTooltip for screen reader access ([f420d4b](https://github.com/act-org/dls/commit/f420d4bda5472657a295f99d39b9d68d72642fbf))
+* Adds tabIndex to BarChart bar label ([893acbe](https://github.com/act-org/dls/commit/893acbe168457d2282f3710b0ec279b3fdceb768))
+* Applies accessibilityLayer prop to BarChart and adds title and description props ([d20fedb](https://github.com/act-org/dls/commit/d20fedb9f6dacfea74d00727335463ca79fc8ce1))
+
 # [8.7.0](https://github.com/act-org/dls/compare/v8.6.0...v8.7.0) (2024-07-08)
 
 
