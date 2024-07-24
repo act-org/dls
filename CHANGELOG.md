@@ -1,3 +1,10 @@
+## [8.8.1](https://github.com/act-org/dls/compare/v8.8.0...v8.8.1) (2024-07-24)
+
+
+### Bug Fixes
+
+* Remove unnecessary onMouseMove change in BarChart ([a2f9b9e](https://github.com/act-org/dls/commit/a2f9b9e8ad1ac7111712afff887c9729d893618c))
+
 # [8.8.0](https://github.com/act-org/dls/compare/v8.7.0...v8.8.0) (2024-07-24)
 
 
