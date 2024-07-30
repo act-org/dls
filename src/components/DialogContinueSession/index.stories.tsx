@@ -58,9 +58,12 @@ export default {
   },
   argTypes: Playground(
     {
+      cancellationText: { type: 'string' },
+      confirmationText: { type: 'string' },
       expiresAt: { type: 'Date' },
       onContinue: { action: 'onContinue' },
       onExpire: { action: 'onExpire' },
+      title: { type: 'string' },
     },
     DialogContinueSession,
   ),
