@@ -7,11 +7,18 @@
  * @prettier
  */
 
+import {
+  ButtonProps,
+  DialogContentProps,
+  DialogTitleProps,
+} from '@mui/material';
 import { noop } from 'lodash';
-import { FC, ReactElement, useEffect, useState } from 'react';
+import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
 
 import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
+
+import { DialogProps } from '../Dialog';
 
 export interface SessionTimerProps {
   children?: ({
@@ -21,6 +28,17 @@ export interface SessionTimerProps {
     remainingTimeStageOne: number;
     remainingTimeStageTwo: number;
   }) => ReactElement<unknown> | null;
+  dialogContinueSessionProps?: {
+    confirmationButtonProps?: ButtonProps;
+    confirmationText?: ReactNode;
+    cancellationButtonProps?: ButtonProps;
+    cancellationText?: ReactNode;
+    content?: ReactNode | null;
+    contentProps?: DialogContentProps;
+    dialogProps?: Omit<DialogProps, 'open'>;
+    title?: ReactNode;
+    titleProps?: DialogTitleProps;
+  };
   expiresAt: Date;
   onExpire: () => void;
   onKeepAlive: () => void;
@@ -30,6 +48,7 @@ export interface SessionTimerProps {
 
 export const SessionTimer: FC<SessionTimerProps> = ({
   children,
+  dialogContinueSessionProps,
   expiresAt,
   onExpire,
   onKeepAlive,
@@ -113,6 +132,7 @@ export const SessionTimer: FC<SessionTimerProps> = ({
                           reset();
                         }}
                         onExpire={onExpire}
+                        {...dialogContinueSessionProps}
                       />
 
                       {children &&

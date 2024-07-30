@@ -9,26 +9,49 @@
 
 import {
   Button,
+  ButtonProps,
   Dialog,
   DialogContent,
+  DialogContentProps,
   DialogTitle,
+  DialogTitleProps,
   Typography,
 } from '@mui/material';
 import moment from 'moment';
-import { FC, ReactElement, useEffect, useState } from 'react';
+import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
+
+import { DialogProps } from '../Dialog';
 
 import { StyledDialogActions } from './styles';
 
 export interface DialogContinueSessionProps {
+  confirmationButtonProps?: ButtonProps;
+  confirmationText?: ReactNode;
+  cancellationButtonProps?: ButtonProps;
+  cancellationText?: ReactNode;
+  content?: ReactNode | null;
+  contentProps?: DialogContentProps;
+  dialogProps?: Omit<DialogProps, 'open'>;
+  title?: ReactNode;
+  titleProps?: DialogTitleProps;
   expiresAt: Date;
   onContinue: () => void;
   onExpire: () => void;
 }
 
 export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
+  confirmationButtonProps,
+  confirmationText = 'Continue Session',
+  cancellationButtonProps,
+  cancellationText,
+  content,
+  contentProps,
+  dialogProps,
   expiresAt,
   onContinue,
   onExpire,
+  title = 'Do you want to continue your session?',
+  titleProps,
 }: DialogContinueSessionProps): ReactElement<unknown> | null => {
   const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(
     expiresAt.getTime() - Date.now(),
@@ -58,20 +81,37 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
         fullWidth
         maxWidth="xs"
         open
+        {...dialogProps}
       >
-        <DialogTitle id="dialog-continue-session-title">
-          Do you want to continue your session?
+        <DialogTitle id="dialog-continue-session-title" {...titleProps}>
+          {title}
         </DialogTitle>
 
-        <DialogContent>
-          <Typography variant="body1">
-            {`For security reasons, your session will timeout at ${moment(
-              expiresAt,
-            ).format('h:mm A')} unless you continue.`}
-          </Typography>
+        <DialogContent {...contentProps}>
+          {content || (
+            <Typography variant="body1">
+              {`For security reasons, your session will timeout at ${moment(
+                expiresAt,
+              ).format('h:mm A')} unless you continue.`}
+            </Typography>
+          )}
         </DialogContent>
 
         <StyledDialogActions>
+          {cancellationText && (
+            <Button
+              color="primary"
+              fullWidth
+              onClick={(): void => {
+                onExpire();
+              }}
+              variant="contained"
+              {...cancellationButtonProps}
+            >
+              {cancellationText}
+            </Button>
+          )}
+
           <Button
             color="primary"
             fullWidth
@@ -79,8 +119,9 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
               onContinue();
             }}
             variant="contained"
+            {...confirmationButtonProps}
           >
-            Continue Session
+            {confirmationText}
           </Button>
         </StyledDialogActions>
       </Dialog>
