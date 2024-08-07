@@ -1,3 +1,11 @@
+# [8.9.0](https://github.com/act-org/dls/compare/v8.8.1...v8.9.0) (2024-08-07)
+
+
+### Features
+
+* Add additional argument types in story ([8e55db9](https://github.com/act-org/dls/commit/8e55db9aab3a6bc63a10c4fbf96f1a6b27ae9c32))
+* Add custom props to DialogContinueSession component ([461a9b1](https://github.com/act-org/dls/commit/461a9b14535a6d569d30e9ccf1202a599febf168))
+
 ## [8.8.1](https://github.com/act-org/dls/compare/v8.8.0...v8.8.1) (2024-07-24)
 
 
