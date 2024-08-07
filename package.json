@@ -52,7 +52,7 @@
     "@emotion/react": "11.11.4",
     "@emotion/styled": "11.11.5",
     "@mdx-js/react": "3.0.1",
-    "@mui/base": "5.0.0-beta.43",
+    "@mui/base": "5.0.0-dev.20240529-082515-213b5e33ab",
     "@mui/material": "5.15.19",
     "@mui/system": "5.15.15",
     "@mui/x-data-grid": "7.6.0",
