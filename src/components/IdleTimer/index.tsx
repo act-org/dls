@@ -47,9 +47,9 @@ export const IdleTimer: FC<IdleTimerProps> = ({
         onActive(event);
       }
     },
-    onIdle: (): void => {
+    onIdle: (event): void => {
       if (onIdle) {
-        onIdle({});
+        onIdle(event);
       }
     },
     stopOnIdle,
