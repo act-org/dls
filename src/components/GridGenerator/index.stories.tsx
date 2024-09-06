@@ -30,6 +30,7 @@ const Template: StoryFn<GridGeneratorProps> = (props: GridGeneratorProps) => {
           {
             children: (
               <TextField
+                fullWidth
                 label="Input 1"
                 onChange={(e: any): void => {
                   setValue1(e.target.value);
@@ -45,6 +46,7 @@ const Template: StoryFn<GridGeneratorProps> = (props: GridGeneratorProps) => {
           {
             children: (
               <TextField
+                fullWidth
                 label="Input 2"
                 onChange={(e: any): void => {
                   setValue2(e.target.value);
@@ -95,6 +97,7 @@ const Template: StoryFn<GridGeneratorProps> = (props: GridGeneratorProps) => {
           {
             children: (
               <TextField
+                fullWidth
                 label="Input 4"
                 onChange={(e: any): void => {
                   setValue4(e.target.value);
@@ -110,6 +113,7 @@ const Template: StoryFn<GridGeneratorProps> = (props: GridGeneratorProps) => {
           {
             children: (
               <TextField
+                fullWidth
                 label="Input 5"
                 onChange={(e: any): void => {
                   setValue5(e.target.value);
