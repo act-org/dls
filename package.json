@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.25.6",
-    "@turf/bbox": "^6.5.0",
+    "@turf/bbox": "^7.1.0",
     "clsx": "^2.1.1",
     "color": "^4.2.3",
     "d3-array": "^3.2.4",
