@@ -125,7 +125,7 @@
     "tsconfig-paths-webpack-plugin": "4.1.0",
     "typescript": "5.4.5",
     "typescript-transform-paths": "3.4.7",
-    "webpack": "5.91.0"
+    "webpack": "5.94.0"
   },
   "homepage": "https://act-org.github.io/dls",
   "keywords": [
