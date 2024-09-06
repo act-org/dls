@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Grid, TextField, Typography } from '@mui/material';
+import { Grid2, TextField, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
@@ -22,8 +22,8 @@ const Story = (): React.ReactElement => {
 
   return (
     <>
-      <Grid container>
-        <Grid item>
+      <Grid2 container>
+        <Grid2>
           <TextField
             InputProps={{
               inputProps: {
@@ -38,9 +38,9 @@ const Story = (): React.ReactElement => {
             value={multiplier}
             variant="outlined"
           />
-        </Grid>
+        </Grid2>
 
-        <StyledGridItem item>
+        <StyledGridItem>
           <Typography>
             <code>
               border-radius: shape.borderRadius * {multiplier}&nbsp;
@@ -49,7 +49,7 @@ const Story = (): React.ReactElement => {
             </code>
           </Typography>
         </StyledGridItem>
-      </Grid>
+      </Grid2>
 
       <StyledPaper
         sx={{

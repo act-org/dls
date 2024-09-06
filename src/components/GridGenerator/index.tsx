@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { GridProps } from '@mui/material';
+import { Grid2Props } from '@mui/material/Grid2';
 import { FC, ReactElement } from 'react';
 
 import { StyledGridContainer, StyledGridItem } from './styles';
@@ -21,8 +21,8 @@ type GridContentGroup = IGridContent[];
 
 export interface GridGeneratorProps {
   groups: GridContentGroup[];
-  gridContainerProps?: GridProps;
-  gridItemProps?: GridProps;
+  gridContainerProps?: Grid2Props;
+  gridItemProps?: Grid2Props;
 }
 
 export const GridGenerator: FC<GridGeneratorProps> = ({
@@ -42,7 +42,7 @@ export const GridGenerator: FC<GridGeneratorProps> = ({
         >
           {group.map(
             (gridItem): ReactElement<unknown> => (
-              <StyledGridItem item key={gridItem.key} xs {...gridItemProps}>
+              <StyledGridItem key={gridItem.key} {...gridItemProps}>
                 {gridItem.children}
               </StyledGridItem>
             ),

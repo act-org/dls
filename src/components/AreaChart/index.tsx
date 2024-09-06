@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Grid } from '@mui/material';
+import { Grid2 } from '@mui/material';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import React from 'react';
 import {
@@ -96,7 +96,14 @@ export const AreaChart: React.FC<AreaChartProps> = (
   const { palette, spacing, typography } = useTheme();
 
   return (
-    <Grid container direction="column" item spacing={2} xs={12}>
+    <Grid2
+      container
+      direction="column"
+      size={{
+        xs: 12,
+      }}
+      spacing={2}
+    >
       <ResponsiveContainer
         debounce={50}
         height={height || 400}
@@ -198,7 +205,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
           {children}
         </RechartsAreaChart>
       </ResponsiveContainer>
-    </Grid>
+    </Grid2>
   );
 };
 

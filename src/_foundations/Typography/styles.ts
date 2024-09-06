@@ -8,7 +8,7 @@
  */
 
 import Divider, { dividerClasses } from '@mui/material/Divider';
-import Grid, { gridClasses } from '@mui/material/Grid';
+import Grid2, { grid2Classes } from '@mui/material/Grid2';
 
 import { styled } from '~/helpers/styled';
 
@@ -16,8 +16,8 @@ export const StyledCode = styled('code')({
   display: 'block',
 });
 
-export const StyledGridItem = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.item}`]: {
+export const StyledGridItem = styled(Grid2)(({ theme }) => ({
+  [`&.${grid2Classes.root}`]: {
     alignItems: 'center',
     border: `1px solid ${theme.palette.divider}`,
     display: 'flex',
@@ -26,8 +26,8 @@ export const StyledGridItem = styled(Grid)(({ theme }) => ({
   },
 }));
 
-export const StyledGridItemTypography = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.item}`]: {
+export const StyledGridItemTypography = styled(Grid2)(({ theme }) => ({
+  [`&.${grid2Classes.root}`]: {
     alignItems: 'center',
     border: `1px solid ${theme.palette.divider}`,
     display: 'flex',
@@ -35,8 +35,8 @@ export const StyledGridItemTypography = styled(Grid)(({ theme }) => ({
   },
 }));
 
-export const StyledGridContainerInfo = styled(Grid)({
-  [`&.${gridClasses.container}`]: {
+export const StyledGridContainerInfo = styled(Grid2)({
+  [`&.${grid2Classes.container}`]: {
     alignItems: 'center',
     display: 'flex',
   },

@@ -83,7 +83,7 @@ export const EmptyState: FC<EmptyStateProps> = ({
           justifyContent="center"
           {...titleGridContainerProps}
         >
-          <StyledGridItem item>
+          <StyledGridItem>
             <StyledTypographyTitle
               align="center"
               component="h6"
