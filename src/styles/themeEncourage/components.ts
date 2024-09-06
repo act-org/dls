@@ -357,15 +357,15 @@ export const components: ThemeOptions['components'] = {
   },
   MuiFilledInput: {
     styleOverrides: {
+      hiddenLabel: {
+        paddingBottom: spacing(1.5),
+        paddingTop: spacing(1.5),
+      },
       input: {
         '&:-webkit-autofill': {
           borderTopLeftRadius: 0,
           borderTopRightRadius: 0,
         },
-      },
-      inputHiddenLabel: {
-        paddingBottom: spacing(1.5),
-        paddingTop: spacing(1.5),
       },
     },
   },

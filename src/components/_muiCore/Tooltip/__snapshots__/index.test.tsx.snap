@@ -5,7 +5,7 @@ exports[`Tooltip ACT theme matches the snapshot 1`] = `
   <svg
     aria-hidden="true"
     aria-label="Title text here"
-    class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-9g0kwn-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeMedium css-1jqv5cb-MuiSvgIcon-root"
     data-mui-internal-clone-element="true"
     data-testid="HelpCircleOutlineIcon"
     focusable="false"
@@ -23,7 +23,7 @@ exports[`Tooltip ACT_ET theme matches the snapshot 1`] = `
   <svg
     aria-hidden="true"
     aria-label="Title text here"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
     data-mui-internal-clone-element="true"
     data-testid="HelpCircleOutlineIcon"
     focusable="false"
@@ -41,7 +41,7 @@ exports[`Tooltip ENCOURA theme matches the snapshot 1`] = `
   <svg
     aria-hidden="true"
     aria-label="Title text here"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
     data-mui-internal-clone-element="true"
     data-testid="HelpCircleOutlineIcon"
     focusable="false"
@@ -59,7 +59,7 @@ exports[`Tooltip ENCOURA_CLASSIC theme matches the snapshot 1`] = `
   <svg
     aria-hidden="true"
     aria-label="Title text here"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
     data-mui-internal-clone-element="true"
     data-testid="HelpCircleOutlineIcon"
     focusable="false"
@@ -77,7 +77,7 @@ exports[`Tooltip ENCOURAGE theme matches the snapshot 1`] = `
   <svg
     aria-hidden="true"
     aria-label="Title text here"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
     data-mui-internal-clone-element="true"
     data-testid="HelpCircleOutlineIcon"
     focusable="false"

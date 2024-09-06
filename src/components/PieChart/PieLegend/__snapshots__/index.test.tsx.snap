@@ -6,28 +6,28 @@ exports[`PieLegend ACT theme matches the snapshot 1`] = `
     class="css-xzgors"
   >
     <li
-      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-j6qn9k-MuiListItem-root"
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1yc7y0i-MuiListItem-root"
     >
       <div
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1qykrhm-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-2jbl4v-MuiPaper-root"
           index="0"
           optionslength="1"
-          style="background-color: rgb(127, 196, 225);"
+          style="--Paper-shadow: none; background-color: rgb(127, 196, 225);"
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-1unzhjx-MuiListItemText-root-DlsPieChart-pieLegendLabel"
+        class="MuiListItemText-root MuiListItemText-multiline css-1uuvgq8-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1n3v36-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-risc0p-MuiTypography-root"
         >
           120
         </span>
         <p
-          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-wg73x1-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-125av94-MuiTypography-root"
         >
           120 [240.0%]
         </p>
@@ -43,28 +43,28 @@ exports[`PieLegend ACT_ET theme matches the snapshot 1`] = `
     class="css-xzgors"
   >
     <li
-      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-j6qn9k-MuiListItem-root"
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1yc7y0i-MuiListItem-root"
     >
       <div
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1kd3b3o-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1fm1eg5-MuiPaper-root"
           index="0"
           optionslength="1"
-          style="background-color: rgb(127, 196, 225);"
+          style="--Paper-shadow: none; background-color: rgb(127, 196, 225);"
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-14l206w-MuiListItemText-root-DlsPieChart-pieLegendLabel"
+        class="MuiListItemText-root MuiListItemText-multiline css-fk6aq-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1huj8uh-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1b9k1hy-MuiTypography-root"
         >
           120
         </span>
         <p
-          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1pa6xrx-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1gk9leq-MuiTypography-root"
         >
           120 [240.0%]
         </p>
@@ -80,28 +80,28 @@ exports[`PieLegend ENCOURA theme matches the snapshot 1`] = `
     class="css-xzgors"
   >
     <li
-      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-dfge7q-MuiListItem-root"
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-5b0z96-MuiListItem-root"
     >
       <div
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1nmhah-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1u1ehqo-MuiPaper-root"
           index="0"
           optionslength="1"
-          style="background-color: rgb(127, 196, 225);"
+          style="--Paper-shadow: none; background-color: rgb(127, 196, 225);"
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-1niii2h-MuiListItemText-root-DlsPieChart-pieLegendLabel"
+        class="MuiListItemText-root MuiListItemText-multiline css-1asmlan-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1m3mbie-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-kiofek-MuiTypography-root"
         >
           120
         </span>
         <p
-          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ohjax1-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-182seih-MuiTypography-root"
         >
           120 [240.0%]
         </p>
@@ -117,28 +117,28 @@ exports[`PieLegend ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="css-xzgors"
   >
     <li
-      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-5d1lmz-MuiListItem-root"
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1yc7y0i-MuiListItem-root"
     >
       <div
         class="MuiListItemIcon-root css-217jv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-15srano-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-aswdnt-MuiPaper-root"
           index="0"
           optionslength="1"
-          style="background-color: rgb(127, 196, 225);"
+          style="--Paper-shadow: none; background-color: rgb(127, 196, 225);"
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-vysnbr-MuiListItemText-root-DlsPieChart-pieLegendLabel"
+        class="MuiListItemText-root MuiListItemText-multiline css-5iz9ta-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1m3mbie-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-kiofek-MuiTypography-root"
         >
           120
         </span>
         <p
-          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-32ky61-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-f6f16z-MuiTypography-root"
         >
           120 [240.0%]
         </p>
@@ -154,28 +154,28 @@ exports[`PieLegend ENCOURAGE theme matches the snapshot 1`] = `
     class="css-xzgors"
   >
     <li
-      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ympf37-MuiListItem-root"
+      class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1yc7y0i-MuiListItem-root"
     >
       <div
         class="MuiListItemIcon-root css-1le52mv-MuiListItemIcon-root"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1vifd6j-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 css-1227xva-MuiPaper-root"
           index="0"
           optionslength="1"
-          style="background-color: rgb(127, 196, 225);"
+          style="--Paper-shadow: none; background-color: rgb(127, 196, 225);"
         />
       </div>
       <div
-        class="MuiListItemText-root MuiListItemText-multiline css-i17rnf-MuiListItemText-root-DlsPieChart-pieLegendLabel"
+        class="MuiListItemText-root MuiListItemText-multiline css-q9b8uy-MuiListItemText-root-DlsPieChart-pieLegendLabel"
       >
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-1sjf7d0-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-evbvr7-MuiTypography-root"
         >
           120
         </span>
         <p
-          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1td13wy-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1uxewxs-MuiTypography-root"
         >
           120 [240.0%]
         </p>

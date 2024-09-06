@@ -3,10 +3,11 @@
 exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-w1wlne-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-5kykh0-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-10te1iq-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-k0qlsl-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -17,31 +18,31 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-18o469-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1yq78p-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1mph6fj-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-tq2kxj-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-13r9aol-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1yq78p-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1mph6fj-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1el2nyi-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1nt2zhd-MuiTypography-root"
           >
             Other Page
           </p>
@@ -55,10 +56,11 @@ exports[`AppBarNavigation ACT theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-1u8t8ph-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-1dhmv41-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1qsb5gi-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-kz9nu-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -69,31 +71,31 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-18o469-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-75hzqn-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-7stfk3-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1anzlxg-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-aq4s5q-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-75hzqn-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-7stfk3-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-14pv255-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-tyzc5j-MuiTypography-root"
           >
             Other Page
           </p>
@@ -107,10 +109,11 @@ exports[`AppBarNavigation ACT_ET theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ENCOURA theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-4n8761-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-1c7m8j8-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1leptwm-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-po5v0s-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -121,31 +124,31 @@ exports[`AppBarNavigation ENCOURA theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-18o469-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1iqr5xg-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ylgs2e-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-41gj26-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1erv096-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1iqr5xg-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-ylgs2e-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-y1s3p6-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-3qeath-MuiTypography-root"
           >
             Other Page
           </p>
@@ -159,10 +162,11 @@ exports[`AppBarNavigation ENCOURA theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-47bsdv-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-1xmk38r-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-uiyen3-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-zju2yc-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -173,31 +177,31 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-18o469-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1wbgo2g-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-13v0zlq-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1moh6tp-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-tn1g7d-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1wbgo2g-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-13v0zlq-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1oevd2i-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1t706vm-MuiTypography-root"
           >
             Other Page
           </p>
@@ -211,10 +215,11 @@ exports[`AppBarNavigation ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-16h2o09-MuiPaper-root-MuiAppBar-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorTransparent MuiAppBar-positionStatic css-4zcrud-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1tywnlj-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1ofa90d-MuiTypography-root-MuiLink-root"
       to="https://act-et.org"
     >
       <img
@@ -225,31 +230,31 @@ exports[`AppBarNavigation ENCOURAGE theme matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4 css-d22ea8-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-18o469-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-n9zc8x-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1mj4ywo-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-cfa2e9-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1fh3ihw-MuiTypography-root"
           >
             Home
           </p>
         </a>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item css-x7bhrq-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1fzlhpv-MuiGrid2-root"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-n9zc8x-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1mj4ywo-MuiTypography-root-MuiLink-root"
           to="#"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 css-15amwzl-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-1f2heqg-MuiTypography-root"
           >
             Other Page
           </p>

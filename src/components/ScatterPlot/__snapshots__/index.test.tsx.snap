@@ -15,7 +15,7 @@ exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-jmfwz9-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1hmmfte-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         data-mui-internal-clone-element="true"
         id="open-summary-"
@@ -24,7 +24,7 @@ exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1cfqvo3-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -33,9 +33,6 @@ exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
             d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </div>
   </div>
@@ -57,7 +54,7 @@ exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-yfogrb-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-8x0mx1-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -65,7 +62,7 @@ exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -74,9 +71,6 @@ exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
             d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </div>
   </div>
@@ -98,7 +92,7 @@ exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1ip8578-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1hf7ton-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -106,7 +100,7 @@ exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -115,9 +109,6 @@ exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
             d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </div>
   </div>
@@ -139,7 +130,7 @@ exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-asbg7j-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1tvz3b7-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -147,7 +138,7 @@ exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -156,9 +147,6 @@ exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </div>
   </div>
@@ -180,7 +168,7 @@ exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-py7ps9-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-17mypuv-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -188,7 +176,7 @@ exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -197,9 +185,6 @@ exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
             d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </div>
   </div>

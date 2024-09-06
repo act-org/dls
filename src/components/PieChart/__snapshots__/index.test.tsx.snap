@@ -3,10 +3,10 @@
 exports[`PieChart ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -20,10 +20,10 @@ exports[`PieChart ACT theme matches the snapshot 1`] = `
 exports[`PieChart ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -37,10 +37,10 @@ exports[`PieChart ACT_ET theme matches the snapshot 1`] = `
 exports[`PieChart ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -54,10 +54,10 @@ exports[`PieChart ENCOURA theme matches the snapshot 1`] = `
 exports[`PieChart ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -71,10 +71,10 @@ exports[`PieChart ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`PieChart ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-14d6eu1-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-pmbbs0-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -88,20 +88,21 @@ exports[`PieChart ENCOURAGE theme matches the snapshot 1`] = `
 exports[`PieChart with title ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-amvy17-MuiGrid2-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-1oy616q-MuiTypography-root-DlsPieChart-titleText"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-14lcx2t-MuiTypography-root-DlsPieChart-titleText"
+        style="--Typography-textAlign: center;"
         title="Test Title"
       >
         Test Title
       </p>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -115,20 +116,21 @@ exports[`PieChart with title ACT theme matches the snapshot 1`] = `
 exports[`PieChart with title ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-amvy17-MuiGrid2-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-1ktxr0x-MuiTypography-root-DlsPieChart-titleText"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-5ty0a-MuiTypography-root-DlsPieChart-titleText"
+        style="--Typography-textAlign: center;"
         title="Test Title"
       >
         Test Title
       </p>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -142,20 +144,21 @@ exports[`PieChart with title ACT_ET theme matches the snapshot 1`] = `
 exports[`PieChart with title ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-amvy17-MuiGrid2-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-lnvz74-MuiTypography-root-DlsPieChart-titleText"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-13tessn-MuiTypography-root-DlsPieChart-titleText"
+        style="--Typography-textAlign: center;"
         title="Test Title"
       >
         Test Title
       </p>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -169,20 +172,21 @@ exports[`PieChart with title ENCOURA theme matches the snapshot 1`] = `
 exports[`PieChart with title ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-1cv6hlt-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-amvy17-MuiGrid2-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-lnvz74-MuiTypography-root-DlsPieChart-titleText"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-13tessn-MuiTypography-root-DlsPieChart-titleText"
+        style="--Typography-textAlign: center;"
         title="Test Title"
       >
         Test Title
       </p>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-hnvdsm-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"
@@ -196,20 +200,21 @@ exports[`PieChart with title ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`PieChart with title ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-14d6eu1-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-7w0t0-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-amvy17-MuiGrid2-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-1d8wpyf-MuiTypography-root-DlsPieChart-titleText"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter  css-oli2n-MuiTypography-root-DlsPieChart-titleText"
+        style="--Typography-textAlign: center;"
         title="Test Title"
       >
         Test Title
       </p>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true css-pmbbs0-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-1gx6ceo-MuiGrid2-root"
     >
       <div
         class="recharts-responsive-container"

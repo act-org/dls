@@ -3,7 +3,7 @@
 exports[`Checkbox ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-p8undo-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-iabbpg-MuiButtonBase-root-MuiCheckbox-root"
     color="primary"
   >
     <input
@@ -14,7 +14,7 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1cfqvo3-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -23,9 +23,6 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </span>
 </div>
 `;
@@ -33,7 +30,7 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
 exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-10ho93d-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-qr11p3-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -43,7 +40,7 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -52,9 +49,6 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </span>
 </div>
 `;
@@ -62,7 +56,7 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-iljhdt-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1blma2t-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -72,7 +66,7 @@ exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -81,9 +75,6 @@ exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </span>
 </div>
 `;
@@ -91,7 +82,7 @@ exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1dyx9jf-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-5hyv08-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -101,7 +92,7 @@ exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -110,9 +101,6 @@ exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </span>
 </div>
 `;
@@ -120,7 +108,7 @@ exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-18h1och-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1mkwvtq-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -130,7 +118,7 @@ exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -139,9 +127,6 @@ exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </span>
 </div>
 `;

@@ -7,7 +7,7 @@
  * @prettier
  */
 
-import { Grid, ListItem, ListItemText, Paper } from '@mui/material';
+import { Grid2, ListItem, ListItemText, Paper } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
@@ -18,9 +18,14 @@ const Story = (): React.ReactElement => {
   const { shadows } = useTheme();
 
   return (
-    <Grid container>
+    <Grid2 container>
       {shadows.map((shadow, i) => (
-        <StyledGrid item key={shadow} xs={12}>
+        <StyledGrid
+          key={shadow}
+          size={{
+            xs: 12,
+          }}
+        >
           <Paper
             style={{
               boxShadow: shadow,
@@ -32,7 +37,7 @@ const Story = (): React.ReactElement => {
           </Paper>
         </StyledGrid>
       ))}
-    </Grid>
+    </Grid2>
   );
 };
 

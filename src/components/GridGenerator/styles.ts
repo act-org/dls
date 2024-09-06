@@ -7,18 +7,18 @@
  * @prettier
  */
 
-import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
+import Grid2, { grid2Classes, Grid2Props } from '@mui/material/Grid2';
 
 import { styled } from '~/helpers/styled';
 
-export const StyledGridContainer = styled(Grid)<GridProps>(({ theme }) => ({
-  [`&.${gridClasses.container}`]: {
+export const StyledGridContainer = styled(Grid2)<Grid2Props>(({ theme }) => ({
+  [`&.${grid2Classes.container}`]: {
     marginBottom: theme.spacing(0.5),
   },
 }));
 
-export const StyledGridItem = styled(Grid)<GridProps>({
-  [`&.${gridClasses.item}`]: {
+export const StyledGridItem = styled(Grid2)<Grid2Props>({
+  [`&.${grid2Classes.root}`]: {
     flex: 1,
   },
 });

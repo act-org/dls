@@ -9,7 +9,8 @@
 
 /* eslint-disable react/no-array-index-key */
 
-import { Grid, TypographyProps } from '@mui/material';
+import { TypographyProps } from '@mui/material';
+import Grid2 from '@mui/material/Grid2';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import clsx from 'clsx';
 import numeral from 'numeral';
@@ -118,9 +119,16 @@ export const PieChart: React.FC<PieChartProps> = (
   };
 
   return (
-    <Grid container direction="column" item spacing={2} xs={12}>
+    <Grid2
+      container
+      direction="column"
+      size={{
+        xs: 12,
+      }}
+      spacing={2}
+    >
       {titleProps && (
-        <StyledGridTitle item xs>
+        <StyledGridTitle>
           <StyledTypography
             align="center"
             hasHighlight={hasHighlight}
@@ -133,7 +141,7 @@ export const PieChart: React.FC<PieChartProps> = (
         </StyledGridTitle>
       )}
 
-      <StyledGridBody item xs>
+      <StyledGridBody>
         <ResponsiveContainer
           debounce={50}
           height={height || (variant ? 300 : 350)}
@@ -219,7 +227,7 @@ export const PieChart: React.FC<PieChartProps> = (
           </RechartsPieChart>
         </ResponsiveContainer>
       </StyledGridBody>
-    </Grid>
+    </Grid2>
   );
 };
 

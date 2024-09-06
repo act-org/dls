@@ -6,33 +6,32 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-oqlr0u-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1g7hsps-MuiGrid2-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1qw1a70-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-s4ngmg-MuiTypography-root"
+          style="--Typography-textAlign: center;"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-vyo9mr-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-juk7pb-MuiTypography-root"
+      style="--Typography-textAlign: center;"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-gq5jh7-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-dqssxn-MuiButtonBase-root-MuiButton-root"
       color="primary"
       tabindex="0"
       type="button"
     >
       Button Title
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
     </button>
   </div>
 </div>
@@ -44,32 +43,31 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-oqlr0u-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1g7hsps-MuiGrid2-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1tkcs05-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1wa2311-MuiTypography-root"
+          style="--Typography-textAlign: center;"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-nvg5ci-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-r7wjxg-MuiTypography-root"
+      style="--Typography-textAlign: center;"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-q8ru1j-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-vre4t7-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
       Button Title
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
     </button>
   </div>
 </div>
@@ -81,32 +79,31 @@ exports[`EmptyState ENCOURA theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-oqlr0u-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1g7hsps-MuiGrid2-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1jh192w-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-nn84a9-MuiTypography-root"
+          style="--Typography-textAlign: center;"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-o6fc6k-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-eh9tyy-MuiTypography-root"
+      style="--Typography-textAlign: center;"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-j0euii-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-1kamn6n-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
       Button Title
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
     </button>
   </div>
 </div>
@@ -118,32 +115,31 @@ exports[`EmptyState ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-oqlr0u-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1g7hsps-MuiGrid2-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1jh192w-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-nn84a9-MuiTypography-root"
+          style="--Typography-textAlign: center;"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1jc7zbu-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-7xr15e-MuiTypography-root"
+      style="--Typography-textAlign: center;"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-1p2tnph-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-6igxcm-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
       Button Title
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
     </button>
   </div>
 </div>
@@ -155,32 +151,31 @@ exports[`EmptyState ENCOURAGE theme matches the snapshot 1`] = `
     class="css-2rfp0i"
   >
     <div
-      class="MuiGrid-root MuiGrid-container css-as0m4e-MuiGrid-root"
+      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-oqlr0u-MuiGrid2-root"
     >
       <div
-        class="MuiGrid-root MuiGrid-item css-196vuex-MuiGrid-root"
+        class="MuiGrid2-root MuiGrid2-direction-xs-row css-1g7hsps-MuiGrid2-root"
       >
         <h6
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1j2m48k-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-nfwlmt-MuiTypography-root"
+          style="--Typography-textAlign: center;"
         >
           Title
         </h6>
       </div>
     </div>
     <p
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-x5qdqu-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1b475d1-MuiTypography-root"
+      style="--Typography-textAlign: center;"
     >
       Description
     </p>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-yifhv8-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-h9qa37-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
       Button Title
-      <span
-        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-      />
     </button>
   </div>
 </div>

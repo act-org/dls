@@ -23,16 +23,13 @@ exports[`FormSwitch ACT theme matches the snapshot 1`] = `
           <span
             class="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
           />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
           class="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-risc0p-MuiTypography-root"
       >
         Form Switch Label
       </span>
@@ -63,16 +60,13 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
           <span
             class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
           />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
           class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-q09moy-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1b9k1hy-MuiTypography-root"
       >
         Form Switch Label
       </span>
@@ -103,16 +97,13 @@ exports[`FormSwitch ENCOURA theme matches the snapshot 1`] = `
           <span
             class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
           />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
           class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-kiofek-MuiTypography-root"
       >
         Form Switch Label
       </span>
@@ -143,16 +134,13 @@ exports[`FormSwitch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           <span
             class="MuiSwitch-thumb css-1c2110m-MuiSwitch-thumb"
           />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
           class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-kiofek-MuiTypography-root"
       >
         Form Switch Label
       </span>
@@ -183,16 +171,13 @@ exports[`FormSwitch ENCOURAGE theme matches the snapshot 1`] = `
           <span
             class="MuiSwitch-thumb css-3vprfh-MuiSwitch-thumb"
           />
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
           class="MuiSwitch-track css-u4azo8-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1wb5j2c-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-evbvr7-MuiTypography-root"
       >
         Form Switch Label
       </span>

@@ -3,7 +3,7 @@
 exports[`DialogTitle ACT theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-m810tk-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-o52oqi-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -13,7 +13,7 @@ exports[`DialogTitle ACT theme matches the snapshot 1`] = `
 exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-14sp70i-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1mu4i29-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -23,7 +23,7 @@ exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURA theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1wzjbvo-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1u00vej-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -33,7 +33,7 @@ exports[`DialogTitle ENCOURA theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1wzjbvo-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1u00vej-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -43,7 +43,7 @@ exports[`DialogTitle ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-32tdz6-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-17g4d5b-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
