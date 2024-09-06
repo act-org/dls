@@ -1,3 +1,10 @@
+## [9.0.1](https://github.com/act-org/dls/compare/v9.0.0...v9.0.1) (2024-09-06)
+
+
+### Bug Fixes
+
+* Bumps mdi-material-ui to 7.9.2 for improved MUI 6 compatibility ([3508def](https://github.com/act-org/dls/commit/3508defa912fb49440d0dbb90cefb8a2bd00418d))
+
 # [9.0.0](https://github.com/act-org/dls/compare/v8.9.0...v9.0.0) (2024-09-06)
 
 
