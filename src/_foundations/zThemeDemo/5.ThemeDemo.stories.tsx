@@ -45,7 +45,7 @@ import {
   Typography,
   TypographyProps,
 } from '@mui/material';
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid2';
 import { Meta, StoryFn } from '@storybook/react';
 import { sortBy } from 'lodash';
 import { ReactElement } from 'react';
