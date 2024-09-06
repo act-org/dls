@@ -22,7 +22,7 @@ The Design Language System for ACT & Encoura front-end projects. View the UI com
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://mui.com/) version `5.x` and
+[Material UI](https://mui.com/) version `6.x` and
 [React](https://reactjs.org/) version `17.x` or `18.x`.
 
 ```sh
