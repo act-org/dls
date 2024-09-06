@@ -35,6 +35,7 @@ import {
   SourceProps as SourceGLProps,
   Terrain,
   ViewStateChangeEvent,
+  Projection,
 } from 'react-map-gl/dist/es5';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -85,6 +86,7 @@ export type MapProps = MapGLProps & {
   onMapClick?: (event: MapLayerMouseEvent, mapRef: MapRef | null) => void;
   // eslint-disable-next-line react/boolean-prop-naming
   preserveDrawingBuffer?: boolean;
+  projection?: Projection;
   setHoverInfo?: (value: FeatureHoverProps | undefined) => void;
   sourceId?: string;
   sourceProps?: SourceProps;
