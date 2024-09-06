@@ -8,9 +8,5 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: "monthly"
       day: "monday"
-    ignore:
-      - dependency-name: "color"
-        # For Express, ignore all updates for version 4 and 5
-        versions: ["4.x"]
