@@ -6,7 +6,7 @@ exports[`Slider ACT theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1seckti-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-eh7kgh-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -52,7 +52,7 @@ exports[`Slider ACT_ET theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-sgerws-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-xirtmo-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -98,7 +98,7 @@ exports[`Slider ENCOURA theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-7iigex-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-v6p007-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -144,7 +144,7 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1ejb87z-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-19mfh9c-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -190,7 +190,7 @@ exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-jayakb-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1nxp2hz-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1aa9uc6-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label

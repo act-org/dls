@@ -3,7 +3,7 @@
 exports[`AreaChart ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
       class="recharts-responsive-container"
@@ -16,7 +16,7 @@ exports[`AreaChart ACT theme matches the snapshot 1`] = `
 exports[`AreaChart ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
       class="recharts-responsive-container"
@@ -29,7 +29,7 @@ exports[`AreaChart ACT_ET theme matches the snapshot 1`] = `
 exports[`AreaChart ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
       class="recharts-responsive-container"
@@ -42,7 +42,7 @@ exports[`AreaChart ENCOURA theme matches the snapshot 1`] = `
 exports[`AreaChart ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-13ll9kh-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
       class="recharts-responsive-container"
@@ -55,7 +55,7 @@ exports[`AreaChart ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`AreaChart ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-2 MuiGrid-direction-xs-column MuiGrid-grid-xs-12 css-14d6eu1-MuiGrid-root"
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-k8fscd-MuiGrid2-root"
   >
     <div
       class="recharts-responsive-container"

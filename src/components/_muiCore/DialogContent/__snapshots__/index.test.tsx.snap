@@ -3,7 +3,7 @@
 exports[`DialogContent ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root css-1k1mhv3-MuiDialogContent-root"
+    class="MuiDialogContent-root css-1c3vmpg-MuiDialogContent-root"
   >
     Hey
   </div>
@@ -13,7 +13,7 @@ exports[`DialogContent ACT theme matches the snapshot 1`] = `
 exports[`DialogContent ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root css-1k1mhv3-MuiDialogContent-root"
+    class="MuiDialogContent-root css-1c3vmpg-MuiDialogContent-root"
   >
     Hey
   </div>
@@ -23,7 +23,7 @@ exports[`DialogContent ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogContent ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root css-1k1mhv3-MuiDialogContent-root"
+    class="MuiDialogContent-root css-1c3vmpg-MuiDialogContent-root"
   >
     Hey
   </div>
@@ -33,7 +33,7 @@ exports[`DialogContent ENCOURA theme matches the snapshot 1`] = `
 exports[`DialogContent ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root css-1k1mhv3-MuiDialogContent-root"
+    class="MuiDialogContent-root css-1c3vmpg-MuiDialogContent-root"
   >
     Hey
   </div>
@@ -43,7 +43,7 @@ exports[`DialogContent ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogContent ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDialogContent-root css-1k1mhv3-MuiDialogContent-root"
+    class="MuiDialogContent-root css-1c3vmpg-MuiDialogContent-root"
   >
     Hey
   </div>

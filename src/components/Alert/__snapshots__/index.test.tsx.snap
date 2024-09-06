@@ -3,15 +3,16 @@
 exports[`Alert ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-17yiy0c-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-1q3vit7-MuiPaper-root-MuiAlert-root"
     role="alert"
+    style="--Paper-shadow: none;"
   >
     <div
       class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-13ct9s2-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1r6m9iw-MuiSvgIcon-root"
         data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -25,7 +26,7 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
       class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1u1mytm-MuiTypography-root-MuiAlertTitle-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-5wys6r-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
@@ -38,15 +39,16 @@ exports[`Alert ACT theme matches the snapshot 1`] = `
 exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-13wnd4a-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-p04spw-MuiPaper-root-MuiAlert-root"
     role="alert"
+    style="--Paper-shadow: none;"
   >
     <div
       class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1r7sts2-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-4nam0y-MuiSvgIcon-root"
         data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -60,7 +62,7 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
       class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-28nnwk-MuiTypography-root-MuiAlertTitle-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-19ge6sv-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
@@ -73,15 +75,16 @@ exports[`Alert ACT_ET theme matches the snapshot 1`] = `
 exports[`Alert ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-h7f1jr-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-1wkup8p-MuiPaper-root-MuiAlert-root"
     role="alert"
+    style="--Paper-shadow: none;"
   >
     <div
       class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-ex4jjw-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-v92mko-MuiSvgIcon-root"
         data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -95,7 +98,7 @@ exports[`Alert ENCOURA theme matches the snapshot 1`] = `
       class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1m4n5pt-MuiTypography-root-MuiAlertTitle-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-2at1cu-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
@@ -108,15 +111,16 @@ exports[`Alert ENCOURA theme matches the snapshot 1`] = `
 exports[`Alert ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-1iji4vu-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-ip4g0m-MuiPaper-root-MuiAlert-root"
     role="alert"
+    style="--Paper-shadow: none;"
   >
     <div
       class="MuiAlert-icon css-1ytlwq5-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-ex4jjw-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-v92mko-MuiSvgIcon-root"
         data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -130,7 +134,7 @@ exports[`Alert ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-umsef6-MuiTypography-root-MuiAlertTitle-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-1qr90fk-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
@@ -143,15 +147,16 @@ exports[`Alert ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Alert ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-nkygp6-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorInfo MuiAlert-standardInfo MuiAlert-standard css-1qx1ohq-MuiPaper-root-MuiAlert-root"
     role="alert"
+    style="--Paper-shadow: none;"
   >
     <div
       class="MuiAlert-icon css-f1bxja-MuiAlert-icon"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1r7sts2-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-4nam0y-MuiSvgIcon-root"
         data-testid="InfoOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -165,7 +170,7 @@ exports[`Alert ENCOURAGE theme matches the snapshot 1`] = `
       class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-12c2kfp-MuiTypography-root-MuiAlertTitle-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root css-11izkhf-MuiTypography-root-MuiAlertTitle-root"
       >
         Title Here
       </div>
