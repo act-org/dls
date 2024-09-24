@@ -45,6 +45,10 @@ export const sapphire = {
   50: '#92ADDC',
   70: '#668CCF',
   100: '#255BBA',
+  600: '#2253A9',
+  700: '#1A4184',
+  800: '#143266',
+  900: '#10264E',
 };
 
 export const navy = {
@@ -53,6 +57,10 @@ export const navy = {
   50: '#8096B0',
   70: '#4D6C90',
   100: '#002D61',
+  600: '#002958',
+  700: '#002045',
+  800: '#001935',
+  900: '#001329',
 };
 
 export const seafoam = {
@@ -61,6 +69,10 @@ export const seafoam = {
   50: '#E6F5F1',
   70: '#C6E8DF',
   100: '#ADDED1',
+  600: '#9DCABE',
+  700: '#7B9E94',
+  800: '#5F7A73',
+  900: '#495D58',
 };
 
 export const neon = {
@@ -69,6 +81,10 @@ export const neon = {
   50: '#FDF098',
   70: '#FCEB70',
   100: '#FBE232',
+  600: '#E4CE2E',
+  700: '#B2A024',
+  800: '#8A7C1C',
+  900: '#695F15',
 };
 
 export const orange = {
@@ -77,6 +93,10 @@ export const orange = {
   50: '#F5B2A2',
   70: '#F1947D',
   100: '#EB6645',
+  600: '#D65D3F',
+  700: '#A74831',
+  800: '#813826',
+  900: '#632B1D',
 };
 
 export const fuchsia = {
@@ -85,6 +105,10 @@ export const fuchsia = {
   50: '#EAB5DE',
   70: '#E297D1',
   100: '#D66BBD',
+  600: '#984C86',
+  700: '#984C86',
+  800: '#763B68',
+  900: '#5A2D4F',
 };
 
 export const mist = {
@@ -93,6 +117,10 @@ export const mist = {
   50: '#E4E8EA',
   70: '#D9DFE2',
   100: '#C9D1D6',
+  600: '#B7BEC3',
+  700: '#8F9498',
+  800: '#6F7376',
+  900: '#54585A',
 };
 
 export const teal = {
@@ -101,6 +129,10 @@ export const teal = {
   50: '#80D6D3',
   70: '#4DC6C1',
   100: '#00ADA7',
+  600: '#009D98',
+  700: '#007B77',
+  800: '#005F5C',
+  900: '#004946',
 };
 
 export const utility = {
