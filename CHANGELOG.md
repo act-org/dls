@@ -1,3 +1,10 @@
+# [9.1.0](https://github.com/act-org/dls/compare/v9.0.1...v9.1.0) (2024-09-25)
+
+
+### Features
+
+* Add more color variations for Encourage Theme ([8a8caf1](https://github.com/act-org/dls/commit/8a8caf1dfa4b355e209a3a6ce2c8e4e935d46f1b))
+
 ## [9.0.1](https://github.com/act-org/dls/compare/v9.0.0...v9.0.1) (2024-09-06)
 
 
