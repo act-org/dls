@@ -1079,10 +1079,6 @@ Here's an example of how you can use `mergeClasses` to help create your own
 component variants that are based on Material UI:
 
 ```tsx
-/**
- * @prettier
- */
-
 import * as React from 'react';
 import { Button, ButtonProps } from '@material-ui/core';
 import { mergeClasses } from 'act-dls/lib/helpers';

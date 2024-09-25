@@ -2,21 +2,21 @@ module.exports = {
   plugins: [],
   presets: [
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
         targets: {
           chrome: 100,
-          node: "current"
-        }
-      }
+          node: 'current',
+        },
+      },
     ],
-    "@babel/preset-typescript",
+    '@babel/preset-typescript',
     [
-      "@babel/preset-react",
+      '@babel/preset-react',
       {
-        runtime: "automatic"
-      }
-    ]
+        runtime: 'automatic',
+      },
+    ],
   ],
-  sourceType: "unambiguous"
-}
+  sourceType: 'unambiguous',
+};
