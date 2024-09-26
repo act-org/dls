@@ -1,3 +1,10 @@
+# [9.2.0](https://github.com/act-org/dls/compare/v9.1.0...v9.2.0) (2024-09-26)
+
+
+### Features
+
+* Bump to @actinc/eslint-config@4.11.0 ([6a80d88](https://github.com/act-org/dls/commit/6a80d88c05de6158ef8fc457feb29d1001cf7d4d))
+
 # [9.1.0](https://github.com/act-org/dls/compare/v9.0.1...v9.1.0) (2024-09-25)
 
 
