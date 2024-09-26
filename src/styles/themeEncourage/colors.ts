@@ -5,13 +5,10 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 /** Colors from E4S Web Design System */
 // https://www.figma.com/file/4JazmqwcfRVZyRq6vRkf05/E4S-Web---Design-System?type=design&node-id=2946-25441&mode=design&t=5RBrs8ilrgqPDW2x-4
-
 
 export const grayscale = {
   white: '#FFFFFF',
@@ -36,7 +33,7 @@ export const black = {
 
 export const surface = {
   grayscale,
-  black
+  black,
 };
 
 export const sapphire = {
