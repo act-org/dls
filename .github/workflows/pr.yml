@@ -24,4 +24,3 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Test
         run: npm test
-  
