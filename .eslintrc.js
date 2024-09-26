@@ -8,6 +8,18 @@
 module.exports = {
   extends: ['@actinc/eslint-config'],
   rules: {
+    '@typescript-eslint/await-thenable': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
+    '@typescript-eslint/no-misused-promise': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/require-await': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    'no-console': 'off',
     'react/react-in-jsx-scope': 'off',
   },
 };

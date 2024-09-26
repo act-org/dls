@@ -49,9 +49,7 @@ export const Multiple: StoryObj<SelectProps> = {
       <Select
         {...args}
         multiple
-        onChange={(event): void =>
-          setValue(event.target.value as unknown as string[])
-        }
+        onChange={(event): void => setValue(event.target.value as string[])}
         value={value}
       >
         {children}
