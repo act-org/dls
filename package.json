@@ -34,7 +34,7 @@
   },
   "description": "Design Language System (DLS) for ACT & Encoura front-end projects.",
   "devDependencies": {
-    "@actinc/eslint-config": "4.15.0",
+    "@actinc/eslint-config": "4.16.0",
     "@babel/cli": "7.25.6",
     "@babel/core": "7.25.2",
     "@babel/plugin-proposal-decorators": "7.24.7",
