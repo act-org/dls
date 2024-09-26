@@ -10,13 +10,9 @@
 import { grey } from '@mui/material/colors';
 import { useThemeProps } from '@mui/material/styles';
 import Color from 'color';
+import { CircleLayerSpecification, HeatmapLayerSpecification } from 'mapbox-gl';
 import React from 'react';
-import {
-  CircleLayer,
-  HeatmapLayer,
-  Layer,
-  ViewStateChangeEvent,
-} from 'react-map-gl/dist/es5';
+import { Layer, ViewStateChangeEvent } from 'react-map-gl/dist/es5';
 
 import Map, { FeatureHoverProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
@@ -66,25 +62,40 @@ export const HeatMap: React.FC<HeatMapProps> = (
   const finalHoverInfo = onHoverInfo || hoverInfo;
   const setFinalOnHoverInfo = setOnHoverInfo || setHoverInfo;
 
-  const heatMapDataLayer = React.useMemo((): HeatmapLayer => {
+  const heatMapDataLayer = React.useMemo((): HeatmapLayerSpecification => {
     return {
       id: 'data',
       maxzoom: 16,
       paint: {
-        'heatmap-intensity': {
-          stops: [
-            [5, 1],
-            [10, 2],
-            [12, 3],
-          ],
-        },
-        'heatmap-opacity': {
-          default: 1,
-          stops: [
-            [12, 1],
-            [13, 0],
-          ],
-        },
+        // 'heatmap-intensity': {
+        // stops: [
+        //   [5, 1],
+        //   [10, 2],
+        //   [12, 3],
+        // ],
+        // },
+        'heatmap-intensity': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          [5, 1],
+          [10, 2],
+          [12, 3],
+        ],
+        // 'heatmap-opacity': {
+        //   default: 1,
+        //   stops: [
+        //     [12, 1],
+        //     [13, 0],
+        //   ],
+        // },
+        'heatmap-opacity': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          [12, 1],
+          [13, 0],
+        ],
         'heatmap-radius': {
           stops: [
             [5, 3.5],
@@ -103,11 +114,12 @@ export const HeatMap: React.FC<HeatMapProps> = (
           type: 'exponential',
         },
       },
+      source: sourceId,
       type: 'heatmap',
     };
   }, []);
 
-  const circleDataLayer = React.useMemo((): CircleLayer => {
+  const circleDataLayer = React.useMemo((): CircleLayerSpecification => {
     return {
       id: 'circle-data',
       minzoom: MIN_ZOOM,
@@ -210,6 +222,7 @@ export const HeatMap: React.FC<HeatMapProps> = (
         'circle-stroke-color': 'white',
         'circle-stroke-width': 1,
       },
+      source: sourceId,
       type: 'circle',
     };
   }, [color, mapProps]);

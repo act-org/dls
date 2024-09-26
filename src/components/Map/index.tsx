@@ -14,19 +14,22 @@ import { useTheme, useThemeProps } from '@mui/material/styles';
 import bbox from '@turf/bbox';
 import Color from 'color';
 import { isString } from 'lodash';
+import {
+  GeoJSONFeature,
+  LineLayerSpecification,
+  ProjectionSpecification,
+} from 'mapbox-gl';
 import { equals } from 'ramda';
 import React from 'react';
 import {
   AttributionControl,
   AttributionControlProps,
-  FillLayer,
   Fog,
   Layer,
   LayerProps,
   LngLatBoundsLike,
   Map as MapGL,
-  MapboxGeoJSONFeature,
-  MapLayerMouseEvent,
+  MapMouseEvent,
   MapRef,
   MapProps as ReactMapGLProps,
   NavigationControl,
@@ -35,7 +38,6 @@ import {
   SourceProps as SourceGLProps,
   Terrain,
   ViewStateChangeEvent,
-  Projection,
 } from 'react-map-gl/dist/es5';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -63,7 +65,7 @@ export interface InitialBoundsPositionProps {
 }
 
 export interface FeatureHoverProps {
-  feature: MapboxGeoJSONFeature;
+  feature: GeoJSONFeature;
   lat: number;
   lng: number;
 }
@@ -83,10 +85,10 @@ export type MapProps = MapGLProps & {
   layerProps?: LayerProps;
   mapboxAccessToken: string;
   navigationControlProps?: NavigationControlProps;
-  onMapClick?: (event: MapLayerMouseEvent, mapRef: MapRef | null) => void;
+  onMapClick?: (event: MapMouseEvent, mapRef: MapRef | null) => void;
   // eslint-disable-next-line react/boolean-prop-naming
   preserveDrawingBuffer?: boolean;
-  projection?: Projection;
+  projection?: ProjectionSpecification;
   setHoverInfo?: (value: FeatureHoverProps | undefined) => void;
   sourceId?: string;
   sourceProps?: SourceProps;
@@ -134,11 +136,17 @@ export const Map: React.FC<MapProps> = (
     number | string
   >();
 
-  const dataLayer = React.useMemo((): FillLayer => {
+  const dataLayer = React.useMemo((): LineLayerSpecification => {
     return {
       id: 'data',
       paint: {
-        'fill-color': {
+        'line-border-color': [
+          'case',
+          ['boolean', ['feature-state', 'clicked'], false],
+          Color(palette.common.black).fade(0).rgb().string(),
+          Color(palette.grey[500]).fade(0.3).rgb().string(),
+        ],
+        'line-color': {
           default: Color(color).fade(1).rgb().string(),
           property: 'quantity',
           stops: [
@@ -154,21 +162,15 @@ export const Map: React.FC<MapProps> = (
             [9, Color(color).fade(0).rgb().string()],
           ],
         },
-        'fill-opacity': 0.7,
-        'fill-outline-color': [
-          'case',
-          ['boolean', ['feature-state', 'clicked'], false],
-          Color(palette.common.black).fade(0).rgb().string(),
-          Color(palette.grey[500]).fade(0.3).rgb().string(),
-        ],
+        'line-opacity': 0.7,
       },
       source: sourceId,
-      type: 'fill',
+      type: 'line',
     };
   }, [color, palette.common.black, palette.grey, sourceId]);
 
   const onHover = React.useCallback(
-    (event: MapLayerMouseEvent) => {
+    (event: MapMouseEvent) => {
       if (setHoverInfo) {
         const {
           features,
@@ -215,7 +217,7 @@ export const Map: React.FC<MapProps> = (
     }
   }, [initialBoundsPosition, sourceId, sourceLoaded]);
 
-  const onClick = (event: MapLayerMouseEvent): void => {
+  const onClick = (event: MapMouseEvent): void => {
     const feature = event.features && event.features[0];
 
     if (feature && feature?.properties?.stateCode) {
@@ -224,7 +226,7 @@ export const Map: React.FC<MapProps> = (
       mapRef.current?.removeFeatureState({ source: sourceId });
 
       mapRef.current?.setFeatureState(
-        { id: feature.id, source: sourceId },
+        { id: feature.id || '', source: sourceId },
         { clicked: true },
       );
 
