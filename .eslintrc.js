@@ -3,73 +3,23 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 module.exports = {
-  extends: [
-    '@actinc/eslint-config',
-    'plugin:mdx/recommended',
-    'plugin:storybook/recommended',
-  ],
-  overrides: [
-    {
-      files: ['./**/*.stories.template.tsx', './**/*.stories.tsx'],
-      rules: {
-        'react-hooks/rules-of-hooks': 'off',
-        'storybook/story-exports': 'off',
-      },
-    },
-  ],
+  extends: ['@actinc/eslint-config'],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'warn',
-    'import/order': [
-      'error',
-      {
-        alphabetize: {
-          caseInsensitive: true,
-          order: 'asc',
-        },
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-          'type',
-        ],
-        'newlines-between': 'always',
-        pathGroups: [
-          {
-            group: 'internal',
-            pattern: '~/**',
-          },
-          {
-            group: 'internal',
-            pattern: '~/icons/**',
-          },
-          {
-            group: 'external',
-            pattern: '@**',
-          },
-        ],
-        warnOnUnassignedImports: true,
-      },
-    ],
-    'react/boolean-prop-naming': 'off',
+    '@typescript-eslint/await-thenable': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
+    '@typescript-eslint/no-misused-promise': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/no-redundant-type-constituents': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/require-await': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/unbound-method': 'off',
+    'no-console': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/require-default-props': 'off',
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {},
-    },
-    'mdx/code-blocks': true,
-    // optional, if you want to disable language mapper, set it to `false`
-    // if you want to override the default language mapper inside, you can provide your own
-    'mdx/language-mapper': {},
   },
 };

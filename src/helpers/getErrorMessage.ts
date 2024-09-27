@@ -3,15 +3,11 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import { get } from 'lodash';
 
-import { ServerError } from '~/types';
-
-export const getErrorMessage = (err: Error | ServerError | unknown): string => {
+export const getErrorMessage = (err: unknown): string => {
   let errorMessage = '';
   const graphQlErrorMessage = get(err, 'networkError.result.errors[0].message');
   const standardErrorMessage = get(err, 'message');

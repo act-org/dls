@@ -453,7 +453,7 @@ export const components: Components = {
   MuiUseMediaQuery: {
     defaultProps: {},
   },
-}
+};
 
 export default components;
 ```

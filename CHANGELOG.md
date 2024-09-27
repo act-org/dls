@@ -1,3 +1,24 @@
+# [9.2.0](https://github.com/act-org/dls/compare/v9.1.0...v9.2.0) (2024-09-26)
+
+
+### Features
+
+* Bump to @actinc/eslint-config@4.11.0 ([6a80d88](https://github.com/act-org/dls/commit/6a80d88c05de6158ef8fc457feb29d1001cf7d4d))
+
+# [9.1.0](https://github.com/act-org/dls/compare/v9.0.1...v9.1.0) (2024-09-25)
+
+
+### Features
+
+* Add more color variations for Encourage Theme ([8a8caf1](https://github.com/act-org/dls/commit/8a8caf1dfa4b355e209a3a6ce2c8e4e935d46f1b))
+
+## [9.0.1](https://github.com/act-org/dls/compare/v9.0.0...v9.0.1) (2024-09-06)
+
+
+### Bug Fixes
+
+* Bumps mdi-material-ui to 7.9.2 for improved MUI 6 compatibility ([3508def](https://github.com/act-org/dls/commit/3508defa912fb49440d0dbb90cefb8a2bd00418d))
+
 # [9.0.0](https://github.com/act-org/dls/compare/v8.9.0...v9.0.0) (2024-09-06)
 
 
@@ -1065,10 +1086,6 @@ Here's an example of how you can use `mergeClasses` to help create your own
 component variants that are based on Material UI:
 
 ```tsx
-/**
- * @prettier
- */
-
 import * as React from 'react';
 import { Button, ButtonProps } from '@material-ui/core';
 import { mergeClasses } from 'act-dls/lib/helpers';

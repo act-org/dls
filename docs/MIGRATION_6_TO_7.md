@@ -2,47 +2,47 @@
 
 ## Breaking Changes
 
-* Converted the DLS build from
-[CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules)
-to
-[ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
-(See below if you experience bundler issues!)
-* Renamed the `ENCOURA_DATALAB` theme to
-[`ENCOURA_CLASSIC`](https://github.com/act-org/dls/tree/main/src/styles/themeEncouraClassic)
-* Renamed `sortDirectionTypes` constant to
-[`SORT_DIRECTION_TYPES`](https://github.com/act-org/dls/blob/main/src/constants/SORT_DIRECTION_TYPES.ts)
+- Converted the DLS build from
+  [CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules)
+  to
+  [ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
+  (See below if you experience bundler issues!)
+- Renamed the `ENCOURA_DATALAB` theme to
+  [`ENCOURA_CLASSIC`](https://github.com/act-org/dls/tree/main/src/styles/themeEncouraClassic)
+- Renamed `sortDirectionTypes` constant to
+  [`SORT_DIRECTION_TYPES`](https://github.com/act-org/dls/blob/main/src/constants/SORT_DIRECTION_TYPES.ts)
 
 ## New Features
 
-* Faster load times due to significantly reduced bundle sizes (see below!)
-* Eliminated the need to use
-[`babel-plugin-transform-imports`](https://www.npmjs.com/package/babel-plugin-transform-imports)
-in your Babel config to manually reduce the DLS's impact on your bundle size
-(see below!)
-* Added support for [MUI X v6 packages](https://mui.com/blog/mui-x-v6/)
-* Added a new
-[`ENCOURAGE`](https://github.com/act-org/dls/tree/main/src/styles/themeEncourage)
-theme
-* Added `theme.spacingPx` as a convenience number that is accessible on all
-themes. If your theme uses an 8px layout, `theme.spacingPx = 8`.
-* Added new helper functions:
-  * [`cssRadius`](https://github.com/act-org/dls/blob/main/src/helpers/cssRadius.ts)
-  * [`makeShadow`](https://github.com/act-org/dls/blob/main/src/helpers/makeShadow.ts)
-  * [`px`](https://github.com/act-org/dls/blob/main/src/helpers/px.ts)
-  * [`pxToNumber`](https://github.com/act-org/dls/blob/main/src/helpers/pxToNumber.ts)
-  * [`styled`](https://github.com/act-org/dls/blob/main/src/helpers/styled.ts)
-  * [`types`](https://github.com/act-org/dls/blob/main/src/helpers/types.ts)
-* Added utilities to make it easier to customize your theme beyond the default
-MUI key/value pairs (check the `README` for more details)
+- Faster load times due to significantly reduced bundle sizes (see below!)
+- Eliminated the need to use
+  [`babel-plugin-transform-imports`](https://www.npmjs.com/package/babel-plugin-transform-imports)
+  in your Babel config to manually reduce the DLS's impact on your bundle size
+  (see below!)
+- Added support for [MUI X v6 packages](https://mui.com/blog/mui-x-v6/)
+- Added a new
+  [`ENCOURAGE`](https://github.com/act-org/dls/tree/main/src/styles/themeEncourage)
+  theme
+- Added `theme.spacingPx` as a convenience number that is accessible on all
+  themes. If your theme uses an 8px layout, `theme.spacingPx = 8`.
+- Added new helper functions:
+  - [`cssRadius`](https://github.com/act-org/dls/blob/main/src/helpers/cssRadius.ts)
+  - [`makeShadow`](https://github.com/act-org/dls/blob/main/src/helpers/makeShadow.ts)
+  - [`px`](https://github.com/act-org/dls/blob/main/src/helpers/px.ts)
+  - [`pxToNumber`](https://github.com/act-org/dls/blob/main/src/helpers/pxToNumber.ts)
+  - [`styled`](https://github.com/act-org/dls/blob/main/src/helpers/styled.ts)
+  - [`types`](https://github.com/act-org/dls/blob/main/src/helpers/types.ts)
+- Added utilities to make it easier to customize your theme beyond the default
+  MUI key/value pairs (check the `README` for more details)
 
 ## Refactoring
 
-* Bumped every NPM dependency to its latest release
-* Partial re-write of storybook stories to the simpler
-[Component Story Format 3](https://storybook.js.org/blog/storybook-csf3-is-here/)
-* The DLS release process is now automated via
-[Github Actions](https://github.com/act-org/dls/actions).
-* Slightly stricter ESLint rules when contributing to the DLS.
+- Bumped every NPM dependency to its latest release
+- Partial re-write of storybook stories to the simpler
+  [Component Story Format 3](https://storybook.js.org/blog/storybook-csf3-is-here/)
+- The DLS release process is now automated via
+  [Github Actions](https://github.com/act-org/dls/actions).
+- Slightly stricter ESLint rules when contributing to the DLS.
 
 ## Performance
 
