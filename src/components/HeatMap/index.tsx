@@ -21,6 +21,7 @@ import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import type GeoJSON from 'geojson';
 
 const MIN_ZOOM = 12;
+const MAX_ZOOM = 16;
 
 export interface HeatMapProps {
   color?: string;
@@ -64,55 +65,45 @@ export const HeatMap: React.FC<HeatMapProps> = (
 
   const heatMapDataLayer = React.useMemo((): HeatmapLayerSpecification => {
     return {
-      id: 'data',
-      maxzoom: 16,
+      id: 'heatmap',
+      maxzoom: MAX_ZOOM,
       paint: {
-        // 'heatmap-intensity': {
-        // stops: [
-        //   [5, 1],
-        //   [10, 2],
-        //   [12, 3],
-        // ],
-        // },
         'heatmap-intensity': [
           'interpolate',
           ['linear'],
           ['zoom'],
-          [5, 1],
-          [10, 2],
-          [12, 3],
+          5,
+          1,
+          10,
+          2,
+          12,
+          3,
         ],
-        // 'heatmap-opacity': {
-        //   default: 1,
-        //   stops: [
-        //     [12, 1],
-        //     [13, 0],
-        //   ],
-        // },
-        'heatmap-opacity': [
+        'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
+        'heatmap-radius': [
           'interpolate',
           ['linear'],
           ['zoom'],
-          [12, 1],
-          [13, 0],
+          5,
+          3.5,
+          7,
+          8,
+          9,
+          12,
+          12,
+          20,
         ],
-        'heatmap-radius': {
-          stops: [
-            [5, 3.5],
-            [7, 8],
-            [9, 12],
-            [12, 20],
-          ],
-        },
-        'heatmap-weight': {
-          property: 'value',
-          stops: [
-            [1, 0],
-            [50, 0.5],
-            [100, 1],
-          ],
-          type: 'exponential',
-        },
+        'heatmap-weight': [
+          'interpolate',
+          ['linear'],
+          ['get', 'value'],
+          1,
+          0,
+          50,
+          0.5,
+          100,
+          1,
+        ],
       },
       source: sourceId,
       type: 'heatmap',
@@ -203,22 +194,21 @@ export const HeatMap: React.FC<HeatMapProps> = (
             ],
           ],
         },
-        'circle-opacity': {
-          stops: [
-            [12, 0],
-            [13, 1],
-          ],
-        },
-        'circle-radius': {
-          property: 'quantity',
-          stops: [
-            [{ value: 1, zoom: 15 }, 5],
-            [{ value: 62, zoom: 15 }, 10],
-            [{ value: 1, zoom: 22 }, 20],
-            [{ value: 62, zoom: 22 }, 50],
-          ],
-          type: 'exponential',
-        },
+        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 0, 13, 1],
+        'circle-radius': [
+          'interpolate',
+          ['exponential'],
+          ['get', 'value'],
+          ['zoom'],
+          { value: 1, zoom: 15 },
+          5,
+          { value: 62, zoom: 15 },
+          10,
+          { value: 1, zoom: 22 },
+          20,
+          { value: 62, zoom: 22 },
+          50,
+        ],
         'circle-stroke-color': 'white',
         'circle-stroke-width': 1,
       },

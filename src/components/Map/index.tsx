@@ -15,6 +15,7 @@ import bbox from '@turf/bbox';
 import Color from 'color';
 import { isString } from 'lodash';
 import {
+  FillLayerSpecification,
   GeoJSONFeature,
   LineLayerSpecification,
   ProjectionSpecification,
@@ -169,6 +170,33 @@ export const Map: React.FC<MapProps> = (
     };
   }, [color, palette.common.black, palette.grey, sourceId]);
 
+  const fillLayer = React.useMemo((): FillLayerSpecification => {
+    return {
+      id: 'fillDataLayer',
+      paint: {
+        'fill-color': {
+          default: Color(color).fade(1).rgb().string(),
+          property: 'quantity',
+          stops: [
+            [0, Color(color).fade(0.9).rgb().string()],
+            [1, Color(color).fade(0.8).rgb().string()],
+            [2, Color(color).fade(0.7).rgb().string()],
+            [3, Color(color).fade(0.6).rgb().string()],
+            [4, Color(color).fade(0.5).rgb().string()],
+            [5, Color(color).fade(0.4).rgb().string()],
+            [6, Color(color).fade(0.3).rgb().string()],
+            [7, Color(color).fade(0.2).rgb().string()],
+            [8, Color(color).fade(0.1).rgb().string()],
+            [9, Color(color).fade(0).rgb().string()],
+          ],
+        },
+        'fill-opacity': 0.7,
+      },
+      source: sourceId,
+      type: 'fill',
+    };
+  }, [color, sourceId]);
+
   const onHover = React.useCallback(
     (event: MapMouseEvent) => {
       if (setHoverInfo) {
@@ -315,7 +343,14 @@ export const Map: React.FC<MapProps> = (
           <Source data={data} type="geojson" {...sourceProps} id={sourceId}>
             {/* Fix for TS complaining about the incompatibility of layerProps and dataLayer, even though
             dataLayer is one of the multiple types accepted by layerProps. */}
-            {layerProps ? <Layer {...layerProps} /> : <Layer {...dataLayer} />}
+            {layerProps ? (
+              <Layer {...layerProps} />
+            ) : (
+              <>
+                <Layer {...dataLayer} />
+                <Layer {...fillLayer} />
+              </>
+            )}
             {layers}
           </Source>
         )}
