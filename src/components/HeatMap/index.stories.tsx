@@ -19,6 +19,9 @@ export default {
   args: {
     data: finalData,
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    mapProps: {
+      color: 'red',
+    },
   },
   argTypes: Playground({}, HeatMap),
   component: HeatMap,
