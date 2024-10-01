@@ -1,3 +1,12 @@
+## [9.2.1](https://github.com/act-org/dls/compare/v9.2.0...v9.2.1) (2024-10-01)
+
+
+### Bug Fixes
+
+* Fix maps not highlinting states properly ([df85938](https://github.com/act-org/dls/commit/df859382654c5545e760cc37adcecd6da9f13a0c))
+* Fix package-lock error ([7870341](https://github.com/act-org/dls/commit/78703414d61cf592e6c062ee3f81ae815645cb86))
+* Fix ts erros on map and heatmap ([ef63983](https://github.com/act-org/dls/commit/ef6398375f0e6cf9af15f7270b2ddbc67484d926))
+
 # [9.2.0](https://github.com/act-org/dls/compare/v9.1.0...v9.2.0) (2024-09-26)
 
 
