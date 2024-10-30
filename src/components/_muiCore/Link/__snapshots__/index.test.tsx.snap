@@ -3,7 +3,7 @@
 exports[`Link ACT theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1xo9uj5-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-131sbnh-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -17,7 +17,7 @@ exports[`Link ACT theme matches the snapshot 1`] = `
 exports[`Link ACT_ET theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1glq49i-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1bsi4cs-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -31,7 +31,7 @@ exports[`Link ACT_ET theme matches the snapshot 1`] = `
 exports[`Link ENCOURA theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-czfi8w-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1d4br3u-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -45,7 +45,7 @@ exports[`Link ENCOURA theme matches the snapshot 1`] = `
 exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1s1nu1b-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-15w25fd-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >
@@ -59,7 +59,7 @@ exports[`Link ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Link ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1hnefrn-MuiTypography-root-MuiLink-root"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover css-1n69gy3-MuiTypography-root-MuiLink-root"
     href="https://www.act.org"
     target="_blank"
   >

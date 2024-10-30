@@ -3,7 +3,7 @@
 exports[`Typography ACT theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-1ccl0zc-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-1b93ly8-MuiTypography-root"
   >
     Heading Title
   </h1>
@@ -13,7 +13,7 @@ exports[`Typography ACT theme matches the snapshot 1`] = `
 exports[`Typography ACT_ET theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-ew6b5l-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-12eg8o5-MuiTypography-root"
   >
     Heading Title
   </h1>
@@ -23,7 +23,7 @@ exports[`Typography ACT_ET theme matches the snapshot 1`] = `
 exports[`Typography ENCOURA theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-101c2ee-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-1f28kiy-MuiTypography-root"
   >
     Heading Title
   </h1>
@@ -33,7 +33,7 @@ exports[`Typography ENCOURA theme matches the snapshot 1`] = `
 exports[`Typography ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-101c2ee-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-1f28kiy-MuiTypography-root"
   >
     Heading Title
   </h1>
@@ -43,7 +43,7 @@ exports[`Typography ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Typography ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-1oz906d-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-12tk7s5-MuiTypography-root"
   >
     Heading Title
   </h1>
