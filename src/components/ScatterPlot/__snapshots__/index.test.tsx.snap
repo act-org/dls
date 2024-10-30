@@ -15,7 +15,7 @@ exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1hmmfte-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-ew5p4v-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         data-mui-internal-clone-element="true"
         id="open-summary-"
@@ -24,7 +24,7 @@ exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1cfqvo3-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-z0t891-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-8x0mx1-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-14jb3fe-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -62,7 +62,7 @@ exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -92,7 +92,7 @@ exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1hf7ton-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1uhtrml-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -100,7 +100,7 @@ exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-10r9l3z-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -130,7 +130,7 @@ exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-1tvz3b7-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-ated1n-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -138,7 +138,7 @@ exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-10r9l3z-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -168,7 +168,7 @@ exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium  css-17mypuv-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-191070h-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -176,7 +176,7 @@ exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"

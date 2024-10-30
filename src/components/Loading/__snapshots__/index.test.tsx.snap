@@ -4,22 +4,22 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Loading..."
-    class="css-1hnxvz3"
+    class="css-dy6d14"
     data-chromatic="ignore"
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1ix3xsb-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-n0zba5-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
     >
       <svg
-        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+        class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-sfoaz6-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -29,7 +29,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-overline css-pgzer6-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-overline css-1njyh6i-MuiTypography-root"
     >
       Loading...
     </span>
@@ -41,22 +41,22 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Loading..."
-    class="css-1hnxvz3"
+    class="css-dy6d14"
     data-chromatic="ignore"
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1ix3xsb-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-n0zba5-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
     >
       <svg
-        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+        class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-sfoaz6-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -66,7 +66,7 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-overline css-18ych1d-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-overline css-ghzkcj-MuiTypography-root"
     >
       Loading...
     </span>
@@ -78,22 +78,22 @@ exports[`Loading ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Loading..."
-    class="css-1hnxvz3"
+    class="css-dy6d14"
     data-chromatic="ignore"
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrcd9-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-i7qam8-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
     >
       <svg
-        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+        class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-sfoaz6-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -103,7 +103,7 @@ exports[`Loading ENCOURA theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-overline css-g7prxd-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-overline css-148a12g-MuiTypography-root"
     >
       Loading...
     </span>
@@ -115,22 +115,22 @@ exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Loading..."
-    class="css-1hnxvz3"
+    class="css-dy6d14"
     data-chromatic="ignore"
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1i9y6vw-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1v5he1z-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
     >
       <svg
-        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+        class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-sfoaz6-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -140,7 +140,7 @@ exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-overline css-g7prxd-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-overline css-148a12g-MuiTypography-root"
     >
       Loading...
     </span>
@@ -152,22 +152,22 @@ exports[`Loading ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Loading..."
-    class="css-1hnxvz3"
+    class="css-dy6d14"
     data-chromatic="ignore"
     data-testid="loading"
   >
     <span
-      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-13jbgn8-MuiCircularProgress-root"
+      class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-lp2us5-MuiCircularProgress-root"
       role="progressbar"
       style="width: 24px; height: 24px;"
       title="Loading..."
     >
       <svg
-        class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+        class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-sfoaz6-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -177,7 +177,7 @@ exports[`Loading ENCOURAGE theme matches the snapshot 1`] = `
       </svg>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-overline css-1cqsile-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-overline css-9dmbqp-MuiTypography-root"
     >
       Loading...
     </span>

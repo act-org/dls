@@ -12,7 +12,7 @@ exports[`CustomizedLabel ACT theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=" css-1ulfqjm-DlsScatterPlot-scatterLabels"
+      class="css-1ulfqjm-DlsScatterPlot-scatterLabels"
       color="primary"
       data-mui-internal-clone-element="true"
       opacity="1"
@@ -35,7 +35,7 @@ exports[`CustomizedLabel ACT_ET theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=" css-1ulfqjm-DlsScatterPlot-scatterLabels"
+      class="css-1ulfqjm-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
       opacity="1"
     >
@@ -57,7 +57,7 @@ exports[`CustomizedLabel ENCOURA theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=" css-8j61u7-DlsScatterPlot-scatterLabels"
+      class="css-8j61u7-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
       opacity="1"
     >
@@ -79,7 +79,7 @@ exports[`CustomizedLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=" css-8j61u7-DlsScatterPlot-scatterLabels"
+      class="css-8j61u7-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
       opacity="1"
     >
@@ -101,7 +101,7 @@ exports[`CustomizedLabel ENCOURAGE theme matches the snapshot 1`] = `
   >
     <div
       aria-label="Test"
-      class=" css-1ulfqjm-DlsScatterPlot-scatterLabels"
+      class="css-1ulfqjm-DlsScatterPlot-scatterLabels"
       data-mui-internal-clone-element="true"
       opacity="1"
     >

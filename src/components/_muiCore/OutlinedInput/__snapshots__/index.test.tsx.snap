@@ -3,19 +3,19 @@
 exports[`OutlinedInput ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-x743zv-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-dpynhu-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
-      class="MuiInputBase-input MuiOutlinedInput-input css-12y93gm-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input css-1b2qlmb-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-gpjuor"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -31,19 +31,19 @@ exports[`OutlinedInput ACT theme matches the snapshot 1`] = `
 exports[`OutlinedInput ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-yjqrht-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-by28yo-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
-      class="MuiInputBase-input MuiOutlinedInput-input css-b3rrvb-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input css-66tsxs-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-gpjuor"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -59,19 +59,19 @@ exports[`OutlinedInput ACT_ET theme matches the snapshot 1`] = `
 exports[`OutlinedInput ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-8bgbv4-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-6nobrv-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
-      class="MuiInputBase-input MuiOutlinedInput-input css-wzataq-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input css-1onc1nr-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-gpjuor"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -87,19 +87,19 @@ exports[`OutlinedInput ENCOURA theme matches the snapshot 1`] = `
 exports[`OutlinedInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-16fd673-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-yqgmbl-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
-      class="MuiInputBase-input MuiOutlinedInput-input css-b3rrvb-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input css-66tsxs-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-gpjuor"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -115,19 +115,19 @@ exports[`OutlinedInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`OutlinedInput ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-14apx5g-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1v5jxjp-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
-      class="MuiInputBase-input MuiOutlinedInput-input css-1leomru-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiInputBase-input MuiOutlinedInput-input css-1phryni-MuiInputBase-input-MuiOutlinedInput-input"
       type="text"
       value="Value"
     />
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-gpjuor"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"

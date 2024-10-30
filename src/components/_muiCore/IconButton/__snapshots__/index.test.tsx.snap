@@ -3,7 +3,7 @@
 exports[`IconButton ACT theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-lm9eh5-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
     color="primary"
     tabindex="0"
     title="icon button"
@@ -11,7 +11,7 @@ exports[`IconButton ACT theme matches the snapshot 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1cfqvo3-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-z0t891-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -27,14 +27,14 @@ exports[`IconButton ACT theme matches the snapshot 1`] = `
 exports[`IconButton ACT_ET theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-zc26lt-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -50,14 +50,14 @@ exports[`IconButton ACT_ET theme matches the snapshot 1`] = `
 exports[`IconButton ENCOURA theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-zc26lt-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-10r9l3z-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -73,14 +73,14 @@ exports[`IconButton ENCOURA theme matches the snapshot 1`] = `
 exports[`IconButton ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-zc26lt-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y1ixh0-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-10r9l3z-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -96,14 +96,14 @@ exports[`IconButton ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`IconButton ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-l73gkc-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-71e8q4-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
       data-testid="PencilCircleIcon"
       focusable="false"
       viewBox="0 0 24 24"

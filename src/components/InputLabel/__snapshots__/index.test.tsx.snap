@@ -3,7 +3,7 @@
 exports[`InputLabel ACT theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-me5g8m-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1ss4zdm-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
@@ -26,7 +26,7 @@ exports[`InputLabel ACT theme matches the snapshot 1`] = `
 exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-s79y5h-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-5fsccc-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
@@ -49,7 +49,7 @@ exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURA theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1o1tdqx-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1taagzj-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
@@ -72,7 +72,7 @@ exports[`InputLabel ENCOURA theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1onnyk5-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-7o83er-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
@@ -95,7 +95,7 @@ exports[`InputLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-keyuqc-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1vyou53-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"
