@@ -10,3 +10,48 @@ updates:
     schedule:
       interval: 'monthly'
       day: 'monday'
+    groups:
+      patch:
+        patterns:
+          - '*'
+        update-types:
+          - 'patch'
+      eslint:
+        patterns:
+          - '@actinc/eslint-config'
+          - 'eslint'
+          - 'eslint-*'
+      jest:
+        patterns:
+          - 'jest'
+          - 'jest-*'
+          - '*-jest'
+      mui:
+        patterns:
+          - '@emotion*'
+          - '@mui*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+          - 'react-test-renderer'
+          - '@types/react'
+          - '@types/react-dom'
+          - '@types/react-test-renderer'
+      storybook:
+        patterns:
+          - '@storybook*'
+      testing-library:
+        patterns:
+          - '@testing-library/*'
+      types:
+        patterns:
+          - '@types/*'
+      typescript:
+        patterns:
+          - 'typescript'
+          - 'typescript-*'
+          - 'ts-*'
