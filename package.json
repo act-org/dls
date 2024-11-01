@@ -36,7 +36,7 @@
   "devDependencies": {
     "@actinc/eslint-config": "4.16.0",
     "@babel/cli": "7.25.9",
-    "@babel/core": "7.25.2",
+    "@babel/core": "7.26.0",
     "@babel/plugin-proposal-decorators": "7.24.7",
     "@babel/plugin-proposal-export-default-from": "7.24.7",
     "@babel/plugin-transform-class-properties": "7.25.9",
