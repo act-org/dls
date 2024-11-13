@@ -22,7 +22,7 @@ export const components: ThemeOptions['components'] = {
   MuiAccordion: {
     styleOverrides: {
       root: ({ ownerState }) => {
-        const disabledOverrides = ownerState.disabled
+        const disabledOverrides = ownerState?.disabled
           ? {
               '&.Mui-disabled': {
                 backgroundColor: palette.branding.surface[200],
@@ -32,7 +32,7 @@ export const components: ThemeOptions['components'] = {
             }
           : {};
 
-        const expandedOverrides = ownerState.expanded
+        const expandedOverrides = ownerState?.expanded
           ? {
               '*:has(.MuiAccordion-root.Mui-expanded) > *': {
                 margin: 0,
@@ -179,7 +179,7 @@ export const components: ThemeOptions['components'] = {
       inputRoot: ({ ownerState }) => {
         const autocompleteSize = ownerState?.size;
 
-        const readOnlyOverrides = ownerState.readOnly
+        const readOnlyOverrides = ownerState?.readOnly
           ? {
               '&>.MuiAutocomplete-input': {
                 padding: 0,
@@ -194,8 +194,8 @@ export const components: ThemeOptions['components'] = {
           '&.MuiInputBase-root.MuiOutlinedInput-root>input.MuiAutocomplete-input.MuiInputBase-input.MuiOutlinedInput-input':
             {
               borderRadius: 0,
-              marginTop: autocompleteSize === 'large' ? '0' : '-4.5px',
               padding: 0,
+              ...(autocompleteSize === 'large' && { marginTop: '0px !important' }),
             },
           '&>.MuiAutocomplete-input.Mui-disabled': {
             color: palette.text.overLight.high,
@@ -244,7 +244,7 @@ export const components: ThemeOptions['components'] = {
         const autocompleteSize = ownerState?.size;
         const isReadOnly = ownerState?.readOnly;
 
-        const readOnlyOverrides = ownerState.readOnly
+        const readOnlyOverrides = ownerState?.readOnly
           ? {
               '&:hover>div>div.MuiOutlinedInput-root>fieldset': {
                 backgroundColor: palette.branding.mist[100],
@@ -287,7 +287,7 @@ export const components: ThemeOptions['components'] = {
             },
           },
           pointerEvents: isReadOnly ? 'none' : 'unset',
-          width: ownerState.fullWidth ? 'unset' : '220px',
+          width: ownerState?.fullWidth ? 'unset' : '220px',
           ...readOnlyOverrides,
         };
       },
@@ -343,7 +343,7 @@ export const components: ThemeOptions['components'] = {
       },
       iconOutlined: {
         '&.MuiButton-sizeLarge': {
-          border: `2px solid ${palette.branding.sapphire[500]}`,
+          border: `2px solid ${palette.branding.sapphire[400]}`,
         },
         '&.MuiButton-sizeMedium': {
           borderColor: palette.branding.sapphire[400],
@@ -363,13 +363,13 @@ export const components: ThemeOptions['components'] = {
       },
       outlined: {
         '&.MuiButton-sizeLarge': {
-          border: `2px solid ${palette.utility.restingState}`,
+          border: `2px solid ${palette.branding.sapphire[400]}`,
         },
         '&.MuiButton-sizeMedium': {
-          borderColor: palette.utility.restingState,
+          borderColor: palette.branding.sapphire[400],
         },
         '&.MuiButton-sizeSmall': {
-          borderColor: palette.utility.restingState,
+          borderColor: palette.branding.sapphire[400],
         },
         '&:hover': {
           backgroundColor: palette.branding.sapphire[50],
@@ -386,6 +386,9 @@ export const components: ThemeOptions['components'] = {
         },
         '&.Mui-disabled.MuiButton-outlined': {
           borderColor: palette.branding.surface[400],
+        },
+        '.MuiButton-startIcon': {
+          margin: 0,
         },
         borderRadius: 8,
         fontFamily: primaryFontFamily,
@@ -407,6 +410,7 @@ export const components: ThemeOptions['components'] = {
           width: 16,
         },
         ...typography.buttonMedium,
+
         height: '40px',
         padding: `10px 24px`,
       },
@@ -420,13 +424,21 @@ export const components: ThemeOptions['components'] = {
         padding: `2px 16px`,
       },
       text: {
+        '&.MuiButton-sizeLarge': {
+          padding: '14px 16px',
+        },
+        '&.MuiButton-sizeMedium': {
+          padding: '10px 8px',
+        },
+        '&.MuiButton-sizeSmall': {
+          padding: '2px 8px',
+        },
         '&:hover': {
           backgroundColor: palette.branding.sapphire[50],
         },
         backgroundColor: 'unset',
         color: palette.branding.sapphire[500],
         fontWeight: 500,
-        padding: '14px 16px !important',
       },
       textSecondary: {
         '&:hover': {
@@ -464,7 +476,7 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       root: ({ ownerState }) => {
         const sizeSmallOverrides =
-          ownerState.size === 'small'
+          ownerState?.size === 'small'
             ? {
                 '& > svg': {
                   height: 20,
@@ -565,7 +577,6 @@ export const components: ThemeOptions['components'] = {
         fontSize: 14,
         fontWeight: 400,
         lineHeight: 20 / 14,
-        maxHeight: 'fit-content',
         maxWidth: 'fit-content',
         minWidth: spacing(7),
         opacity: 1,
@@ -604,12 +615,17 @@ export const components: ThemeOptions['components'] = {
   MuiDateCalendar: {
     styleOverrides: {
       root: {
+        '.MuiYearCalendar-root': {
+          maxWidth: 'fit-content',
+          overflowY: 'scroll',
+          padding: '0px 12px 12px 12px',
+          scrollbarWidth: 'none',
+        },
         '.MuiYearPicker-root': {
-          paddingLeft: '12px',
           width: '304px',
         },
         overflow: 'hidden',
-        width: 276,
+        width: 277,
       },
       viewTransitionContainer: {
         padding: '0 12px',
@@ -696,15 +712,15 @@ export const components: ThemeOptions['components'] = {
   },
   MuiFilledInput: {
     styleOverrides: {
+      hiddenLabel: {
+        paddingBottom: spacing(1.5),
+        paddingTop: spacing(1.5),
+      },
       input: {
         '&:-webkit-autofill': {
           borderTopLeftRadius: 0,
           borderTopRightRadius: 0,
         },
-      },
-      inputHiddenLabel: {
-        paddingBottom: spacing(1.5),
-        paddingTop: spacing(1.5),
       },
       root: {
         borderRadius: 32,
@@ -930,7 +946,7 @@ export const components: ThemeOptions['components'] = {
               '0px 5px 5px -3px rgba(0, 0, 0, 0.2),' +
               '0px 8px 10px 1px rgba(0, 0, 0, 0.14),' +
               '0px 3px 14px 2px rgba(0, 0, 0, 0.12)',
-            maxHeight: '336px',
+            maxHeight: '348px',
             minWidth: (ownerState?.anchorEl as HTMLElement)?.offsetWidth ?? 'inherit',
           },
         };
@@ -1114,6 +1130,10 @@ export const components: ThemeOptions['components'] = {
       root: {
         // This is necessary because MuiCalendarOrClockPicker injects a div without class or name to tag it
         '& > div': {
+          borderRadius: '8px',
+          boxShadow:
+            '0px 16px 32px rgba(79, 94, 113, 0.08), 0px 8px 16px rgba(79, 94, 113, 0.09),' +
+            '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);',
           width: 'auto',
         },
       },
@@ -1146,6 +1166,16 @@ export const components: ThemeOptions['components'] = {
   MuiPickersYear: {
     styleOverrides: {
       root: {
+        '&.Mui-selected': {
+          '&:focus': {
+            backgroundColor: palette.branding.sapphire[500],
+          },
+          '&:hover': {
+            backgroundColor: palette.branding.sapphire[700],
+          },
+          backgroundColor: palette.branding.sapphire[500],
+          color: palette.text.overDark.high,
+        },
         '&:last-of-type': {
           marginBottom: '8px',
         },
@@ -1154,13 +1184,20 @@ export const components: ThemeOptions['components'] = {
         },
         '&:nth-of-type(3n)': {
           marginLeft: '20px',
-          marginRight: '12px',
         },
         button: {
           '&.Mui-disabled': {
             background: palette.branding.surface[100],
             color: palette.text.overLight.disabled,
             pointerEvents: 'none',
+          },
+          '&.Mui-selected': {
+            color: `${palette.text.overDark.high}!important`,
+          },
+          ':focus': {
+            background: palette.utility.white,
+            border: `1px solid ${palette.branding.sapphire[500]}`,
+            color: palette.branding.sapphire[500],
           },
           ':hover': {
             background: palette.branding.sapphire[50],
@@ -1172,20 +1209,9 @@ export const components: ThemeOptions['components'] = {
           fontWeight: 500,
           height: '40px',
           lineHeight: '20px',
-          margin: '4px 0px',
           width: '71px',
         },
         fontFamily: primaryFontFamily,
-      },
-      selected: {
-        '&:focus': {
-          backgroundColor: palette.branding.sapphire[500],
-        },
-        '&:hover': {
-          backgroundColor: palette.branding.sapphire[700],
-        },
-        backgroundColor: palette.branding.sapphire[500],
-        color: palette.text.overDark.high,
       },
     },
   },
@@ -1194,7 +1220,7 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       root: ({ ownerState }) => {
         const sizeSmallOverrides =
-          ownerState.size === 'small'
+          ownerState?.size === 'small'
             ? {
                 '& > span': {
                   height: 20,
@@ -1445,7 +1471,7 @@ export const components: ThemeOptions['components'] = {
   MuiTextField: {
     styleOverrides: {
       root: ({ ownerState }) => {
-        const readOnlyOverrides = ownerState.InputProps?.readOnly
+        const readOnlyOverrides = ownerState?.InputProps?.readOnly
           ? {
               '& div.MuiInputBase-readOnly': {
                 '& input.MuiInputBase-input': {
@@ -1464,7 +1490,7 @@ export const components: ThemeOptions['components'] = {
               },
             }
           : {};
-        const disabledOverrides = ownerState.disabled
+        const disabledOverrides = ownerState?.disabled
           ? {
               '& div.MuiInputBase-root': {
                 '& input.MuiInputBase-input': {
@@ -1493,7 +1519,7 @@ export const components: ThemeOptions['components'] = {
               },
             }
           : {};
-        const errorOverrides = ownerState.error
+        const errorOverrides = ownerState?.error
           ? {
               '& div.MuiInputBase-root.Mui-error': {
                 '&:hover': {
@@ -1505,12 +1531,12 @@ export const components: ThemeOptions['components'] = {
               },
             }
           : {};
-        const hasValueOverrides = ownerState.value
+        const hasValueOverrides = ownerState?.value
           ? {
               '& div.MuiInputBase-root': {
                 '& fieldset.MuiOutlinedInput-notchedOutline': {
                   '& legend span': {
-                    padding: !ownerState.label || ownerState.label === '' ? 0 : '0px 4px',
+                    padding: !ownerState?.label || ownerState?.label === '' ? 0 : '0px 4px',
                   },
                 },
                 '& input.MuiInputBase-input': {
@@ -1524,7 +1550,7 @@ export const components: ThemeOptions['components'] = {
             }
           : {};
         const mediumSizeOverrides =
-          ownerState.size === 'medium'
+          ownerState?.size === 'medium'
             ? {
                 '& div.Mui-disabled > div.MuiInputAdornment-positionStart + input': {
                   paddingRight: '0px',
@@ -1626,7 +1652,7 @@ export const components: ThemeOptions['components'] = {
   MuiTooltip: {
     styleOverrides: {
       arrow: ({ ownerState }) => {
-        const tooltipPlacement = ownerState.placement;
+        const tooltipPlacement = ownerState?.placement;
 
         return {
           '&::before': {
@@ -1647,7 +1673,7 @@ export const components: ThemeOptions['components'] = {
         };
       },
       popper: ({ ownerState }) => {
-        const hasArrow = ownerState.arrow;
+        const hasArrow = ownerState?.arrow;
 
         return {
           ...(!hasArrow
