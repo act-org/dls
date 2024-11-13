@@ -397,7 +397,41 @@ To run the DLS locally:
 
 ### How to Iterate Locally
 
-For rapid iteration, you can run a local build of this library in your
+#### Option 1: Creating a Local Build
+
+When you're ready to pilot your changes to this library in your local project:
+
+1. Run the `npm run pack` command. When it finishes running, it will generate a
+   `.tgz` file in the `/dist` folder with the following name format
+   `actinc-dls-<version-number>.tgz`;
+2. Access the `package.json` file of your local project in which the
+   `@actinc/dls` package will be tested, and make the following edit:
+
+   ```json
+   "dependencies": {
+     // Before (pulling from NPM via version number):
+     "@actinc/dls": "9.2.1",
+     // After (pointing to the local .tgz file):
+     "@actinc/dls": "file:../path/to/@actinc/dls/dist/actinc-dls-<version-number>.tgz",
+     ...
+   }
+   ```
+
+3. Run `npm update @actinc/dls` to refresh your project's `node_modules` folder.
+
+4. You can now run your project with the local changes made to this library!
+
+5. If you want to make any further edits to this library, simply run
+   `npm run pack` to package up the changes, and then `npm update @actinc/dls`
+   in your local project to pull them in.
+
+6. When you're done piloting the changes, simply revert your project's
+   `package.json` file to pull this library from NPM, and run
+   `npm update @actinc/dls` to refresh your project's `node_modules` folder.
+
+#### Option 2: Real-time Previews
+
+For rapid iteration, you can run a live copy of this library in your
 downstream project:
 
 1. In this library, run the watch script: `npm run watch`
