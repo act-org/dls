@@ -409,20 +409,17 @@ When you're ready to pilot your changes to this library in your local project:
 
    ```json
    "dependencies": {
-     ...
      // Before (pulling from NPM via version number):
      "@actinc/dls": "9.2.1",
-     ...
      // After (pointing to the local .tgz file):
      "@actinc/dls": "file:../path/to/@actinc/dls/dist/actinc-dls-<version-number>.tgz",
      ...
    }
    ```
 
-3. Run `npm update @actinc/dls` to instruct NPM to unpack the `.tgz` package
-   into your project's `node_modules` folder (overwriting the NPM version).
+3. Run `npm update @actinc/dls` to refresh your project's `node_modules` folder.
 
-4. Run your project!
+4. You can now run your project with the local changes made to this library!
 
 5. If you want to make any further edits to this library, simply run
    `npm run pack` to package up the changes, and then `npm update @actinc/dls`
