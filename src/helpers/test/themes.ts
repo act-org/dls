@@ -6,7 +6,19 @@
  */
 
 export const THEMES: [
-  'ACT' | 'ACT_ET' | 'ENCOURA' | 'ENCOURA_CLASSIC' | 'ENCOURAGE',
-][] = [['ACT'], ['ACT_ET'], ['ENCOURA'], ['ENCOURA_CLASSIC'], ['ENCOURAGE']];
+  | 'ACT'
+  | 'ACT_ET'
+  | 'ENCOURA'
+  | 'ENCOURA_CLASSIC'
+  | 'ENCOURAGE'
+  | 'ENCOURAGE_E4E',
+][] = [
+  ['ACT'],
+  ['ACT_ET'],
+  ['ENCOURA'],
+  ['ENCOURA_CLASSIC'],
+  ['ENCOURAGE'],
+  ['ENCOURAGE_E4E'],
+];
 
 export default THEMES;

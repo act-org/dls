@@ -49,3 +49,13 @@ exports[`DialogContent ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`DialogContent ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiDialogContent-root css-kw13he-MuiDialogContent-root"
+  >
+    Hey
+  </div>
+</div>
+`;

@@ -195,3 +195,42 @@ exports[`FormCheckbox ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`FormCheckbox ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root css-41n6jb-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1hu42yv-MuiFormControlLabel-root"
+      id="primarycheckbox"
+    >
+      <span
+        class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-mhbvsj-MuiButtonBase-root-MuiCheckbox-root"
+      >
+        <input
+          class="PrivateSwitchBase-input css-j8yymo"
+          data-indeterminate="false"
+          type="checkbox"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-obgb5z-MuiSvgIcon-root"
+          data-testid="CheckBoxOutlineBlankIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+          />
+        </svg>
+      </span>
+      <span
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1hvcons-MuiTypography-root"
+      >
+        The label
+      </span>
+    </label>
+  </div>
+</div>
+`;

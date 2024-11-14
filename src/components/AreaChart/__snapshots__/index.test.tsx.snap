@@ -64,3 +64,16 @@ exports[`AreaChart ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`AreaChart ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-column MuiGrid2-grid-xs-12 MuiGrid2-spacing-xs-2 css-127wxc0-MuiGrid2-root"
+  >
+    <div
+      class="recharts-responsive-container"
+      style="width: 100%; height: 400px; min-width: 0;"
+    />
+  </div>
+</div>
+`;

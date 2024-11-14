@@ -214,3 +214,46 @@ exports[`RenderMetaTagsBase ENCOURAGE theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`RenderMetaTagsBase ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <meta
+    content="Some description."
+    name="description"
+  />
+  <meta
+    content="Some description."
+    property="og:description"
+  />
+  <meta
+    content="Some description."
+    name="twitter:text:description"
+  />
+  <meta
+    content="https://mawi.et-act.org"
+    property="og:image"
+  />
+  <meta
+    content="https://mawi.et-act.org"
+    name="twitter:image"
+  />
+  <meta
+    content="keyword1,keyword2,keyword3"
+    name="keywords"
+  />
+  <title
+    itemprop="name"
+    lang="en"
+  >
+    Some Title
+  </title>
+  <meta
+    content="Some Title"
+    property="og:title"
+  />
+  <meta
+    content="Some Title"
+    name="twitter:title"
+  />
+</div>
+`;

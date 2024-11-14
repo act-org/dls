@@ -199,3 +199,43 @@ exports[`TextField ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`TextField ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root css-1j7cryh-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-18pkozx-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="test-text-field"
+      id="test-text-field-label"
+    >
+      TextField Test Label
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-h5p9cq-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-p1pyuz-MuiInputBase-input-MuiOutlinedInput-input"
+        id="test-text-field"
+        type="text"
+        value="test"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-w1u3ce"
+        >
+          <span>
+            TextField Test Label
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;

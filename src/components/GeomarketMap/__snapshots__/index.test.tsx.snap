@@ -9,3 +9,5 @@ exports[`GeomarketMap ENCOURA theme matches the snapshot 1`] = `<div />`;
 exports[`GeomarketMap ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;
 
 exports[`GeomarketMap ENCOURAGE theme matches the snapshot 1`] = `<div />`;
+
+exports[`GeomarketMap ENCOURAGE_E4E theme matches the snapshot 1`] = `<div />`;

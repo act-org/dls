@@ -114,3 +114,26 @@ exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
   </label>
 </div>
 `;
+
+exports[`InputLabel ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <label
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-p9wi3e-MuiFormLabel-root-MuiInputLabel-root"
+  >
+    <div
+      class="label-split"
+    >
+      <span
+        class="label-help"
+      >
+        InputLabel
+      </span>
+      <span
+        class="required"
+      >
+        Required
+      </span>
+    </div>
+  </label>
+</div>
+`;

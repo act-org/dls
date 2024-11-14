@@ -39,3 +39,9 @@ exports[`Drawer ENCOURAGE theme matches the snapshot 1`] = `
   aria-hidden="true"
 />
 `;
+
+exports[`Drawer ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

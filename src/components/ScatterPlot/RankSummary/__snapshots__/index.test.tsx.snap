@@ -389,3 +389,81 @@ exports[`RankSummary ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`RankSummary ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1varnae"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-s33f9-MuiPaper-root-MuiTableContainer-root"
+      style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+    >
+      <table
+        class="MuiTable-root css-1eivqx4-MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head css-9ym1b0-MuiTableRow-root"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-ek0oni-MuiTableCell-root"
+              scope="col"
+            >
+              Rank Summary
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root css-6alk54-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-17jq0xb-MuiTableCell-root"
+            >
+              1
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1iiljby-MuiTableCell-root"
+            >
+              FAFSA
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-6alk54-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-17jq0xb-MuiTableCell-root"
+            >
+              2
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1iiljby-MuiTableCell-root"
+            >
+              SAT Scores
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-6alk54-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-17jq0xb-MuiTableCell-root"
+            >
+              3
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1iiljby-MuiTableCell-root"
+            >
+              Website Inquiry
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

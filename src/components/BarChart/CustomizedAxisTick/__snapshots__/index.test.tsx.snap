@@ -104,3 +104,24 @@ exports[`CustomizedAxisTick ENCOURAGE theme matches the snapshot 1`] = `
   </foreignobject>
 </div>
 `;
+
+exports[`CustomizedAxisTick ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <foreignobject
+    height="670"
+    orientation="bottom"
+    requiredfeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+    text-anchor="middle"
+    width="80"
+    y="157"
+  >
+    <p
+      aria-label="Latino/Hispanic/Chicano"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-n1if8q-MuiTypography-root-DlsBarChart-yAxisLabel"
+      data-mui-internal-clone-element="true"
+    >
+      Latino/Hispanic/Chicano
+    </p>
+  </foreignobject>
+</div>
+`;

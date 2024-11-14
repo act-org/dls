@@ -44,3 +44,12 @@ exports[`AppBar ENCOURAGE theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`AppBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-17q1czc-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+  />
+</div>
+`;

@@ -599,3 +599,123 @@ exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`GridGenerator ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-1tb17oo-MuiGrid2-root"
+  >
+    <div
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-u77hm4-MuiGrid2-root"
+    >
+      <div
+        class="MuiFormControl-root css-41n6jb-MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-yktf5g-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-19h4t8p-MuiInputBase-root-MuiInput-root"
+          required=""
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input css-60swwn-MuiInputBase-input-MuiInput-input"
+            placeholder="Input 1"
+            required=""
+            type="text"
+            value="value1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-u77hm4-MuiGrid2-root"
+    >
+      <div
+        class="MuiFormControl-root css-41n6jb-MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-yktf5g-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+            <span
+              class="required"
+            >
+              Required
+            </span>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-19h4t8p-MuiInputBase-root-MuiInput-root"
+          required=""
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input css-60swwn-MuiInputBase-input-MuiInput-input"
+            placeholder="Input 2"
+            required=""
+            type="password"
+            value="value2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-4 css-1tb17oo-MuiGrid2-root"
+  >
+    <div
+      class="MuiGrid2-root MuiGrid2-direction-xs-row css-u77hm4-MuiGrid2-root"
+    >
+      <div
+        class="MuiFormControl-root css-41n6jb-MuiFormControl-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-yktf5g-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+        >
+          <div
+            class="label-split"
+          >
+            <span
+              class="label-help"
+            />
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-19h4t8p-MuiInputBase-root-MuiInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input css-60swwn-MuiInputBase-input-MuiInput-input"
+            placeholder="Input 3"
+            type="text"
+            value="value3"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
