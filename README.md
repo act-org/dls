@@ -156,7 +156,7 @@ of your React app after obtaining the licensed font URL from Marketing:
 
 #### Work Sans, Roboto, Roboto Mono
 
-The `ENCOURAGE` theme assumes that the
+The `ENCOURAGE` and `ENCOURAGE_E4E` themes assume that the
 [Work Sans](https://fonts.google.com/specimen/Work+Sans),
 [Roboto](https://fonts.google.com/specimen/Roboto), and the
 [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) fonts are available
@@ -164,6 +164,7 @@ in the browser. Therefore, it is recommended that you include the following font
 reference in the `head` of your React app:
 
 ```html
+<!-- Fonts required for ENCOURAGE: -->
 <link
   href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
   rel="stylesheet"
@@ -174,6 +175,20 @@ reference in the `head` of your React app:
 />
 <link
   href="https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono:wght@200..700"
+  rel="stylesheet"
+/>
+
+<!-- Fonts required for ENCOURAGE_E4E: -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
   rel="stylesheet"
 />
 ```
