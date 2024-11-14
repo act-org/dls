@@ -1,10 +1,21 @@
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import { ThemeOptions } from '@mui/material/styles';
 
 import E4ECustomDimensions from './E4ECustomDimensions';
 import palette from './palette';
 import shadows from './shadows';
 import spacing from './spacing';
-import typography, { INPUT_FONT_SIZE, primaryFontFamily, secondaryFontFamily } from './typography';
+import typography, {
+  INPUT_FONT_SIZE,
+  primaryFontFamily,
+  secondaryFontFamily,
+} from './typography';
 
 import type {} from '@mui/x-date-pickers/themeAugmentation';
 
@@ -188,14 +199,17 @@ export const components: ThemeOptions['components'] = {
             }
           : {};
         return {
-          '&.MuiInputBase-root.MuiOutlinedInput-root>div.MuiAutocomplete-endAdornment': {
-            right: '12px',
-          },
+          '&.MuiInputBase-root.MuiOutlinedInput-root>div.MuiAutocomplete-endAdornment':
+            {
+              right: '12px',
+            },
           '&.MuiInputBase-root.MuiOutlinedInput-root>input.MuiAutocomplete-input.MuiInputBase-input.MuiOutlinedInput-input':
             {
               borderRadius: 0,
               padding: 0,
-              ...(autocompleteSize === 'large' && { marginTop: '0px !important' }),
+              ...(autocompleteSize === 'large' && {
+                marginTop: '0px !important',
+              }),
             },
           '&>.MuiAutocomplete-input.Mui-disabled': {
             color: palette.text.overLight.high,
@@ -251,9 +265,10 @@ export const components: ThemeOptions['components'] = {
                 borderColor: palette.branding.surface[500],
               },
               '&>div>div.MuiOutlinedInput-root.Mui-disabled>fieldset': {},
-              '&>div>div.MuiOutlinedInput-root>div.MuiAutocomplete-endAdornment': {
-                zIndex: 1,
-              },
+              '&>div>div.MuiOutlinedInput-root>div.MuiAutocomplete-endAdornment':
+                {
+                  zIndex: 1,
+                },
               '&>div>div.MuiOutlinedInput-root>fieldset': {
                 backgroundColor: palette.branding.mist[100],
                 borderColor: palette.branding.surface[500],
@@ -266,10 +281,11 @@ export const components: ThemeOptions['components'] = {
           '+ div.MuiInputBase-root div.MuiAutocomplete-endAdornment>button']: {
             padding: '2px',
           },
-          '&>div>div.MuiOutlinedInput-root.Mui-disabled>div.MuiAutocomplete-endAdornment>button.Mui-disabled': {
-            backgroundColor: 'rgba(0, 0, 0, 0)',
-            color: palette.text.overLight.medium,
-          },
+          '&>div>div.MuiOutlinedInput-root.Mui-disabled>div.MuiAutocomplete-endAdornment>button.Mui-disabled':
+            {
+              backgroundColor: 'rgba(0, 0, 0, 0)',
+              color: palette.text.overLight.medium,
+            },
           '&>div>div.MuiOutlinedInput-root.Mui-disabled>fieldset': {
             borderColor: palette.branding.surface[500],
           },
@@ -852,14 +868,16 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       root: {
         '&.MuiInputBase-readOnly': {
-          '&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            backgroundColor: palette.branding.mist[100],
-            borderColor: palette.branding.surface[500],
+          '&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
+            {
+              backgroundColor: palette.branding.mist[100],
+              borderColor: palette.branding.surface[500],
+            },
+        },
+        '&.MuiSelect-root. MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
+          {
+            borderColor: palette.branding.sapphire[500],
           },
-        },
-        '&.MuiSelect-root. MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-          borderColor: palette.branding.sapphire[500],
-        },
         height: 48,
       },
       sizeSmall: {
@@ -947,7 +965,8 @@ export const components: ThemeOptions['components'] = {
               '0px 8px 10px 1px rgba(0, 0, 0, 0.14),' +
               '0px 3px 14px 2px rgba(0, 0, 0, 0.12)',
             maxHeight: '348px',
-            minWidth: (ownerState?.anchorEl as HTMLElement)?.offsetWidth ?? 'inherit',
+            minWidth:
+              (ownerState?.anchorEl as HTMLElement)?.offsetWidth ?? 'inherit',
           },
         };
       },
@@ -1536,7 +1555,10 @@ export const components: ThemeOptions['components'] = {
               '& div.MuiInputBase-root': {
                 '& fieldset.MuiOutlinedInput-notchedOutline': {
                   '& legend span': {
-                    padding: !ownerState?.label || ownerState?.label === '' ? 0 : '0px 4px',
+                    padding:
+                      !ownerState?.label || ownerState?.label === ''
+                        ? 0
+                        : '0px 4px',
                   },
                 },
                 '& input.MuiInputBase-input': {
@@ -1552,9 +1574,10 @@ export const components: ThemeOptions['components'] = {
         const mediumSizeOverrides =
           ownerState?.size === 'medium'
             ? {
-                '& div.Mui-disabled > div.MuiInputAdornment-positionStart + input': {
-                  paddingRight: '0px',
-                },
+                '& div.Mui-disabled > div.MuiInputAdornment-positionStart + input':
+                  {
+                    paddingRight: '0px',
+                  },
                 '& div.MuiInputAdornment-root + input': {
                   borderRadius: '8px',
                   padding: '8px 12px 8px 8px',
@@ -1587,9 +1610,10 @@ export const components: ThemeOptions['components'] = {
                 '& label.MuiFormLabel-root[data-shrink="false"]': {
                   marginTop: '-3.5px',
                 },
-                '& label[data-shrink] + :not(& .MuiInputBase-adornedStart) input.MuiInputBase-input': {
-                  padding: '8px 0px 8px 12px',
-                },
+                '& label[data-shrink] + :not(& .MuiInputBase-adornedStart) input.MuiInputBase-input':
+                  {
+                    padding: '8px 0px 8px 12px',
+                  },
                 height: '40px',
               }
             : {};
@@ -1636,10 +1660,11 @@ export const components: ThemeOptions['components'] = {
           '& label[data-shrink="true"]': {
             marginLeft: '-1px',
           },
-          '& label[data-shrink="true"] + :not(& .MuiInputBase-adornedStart) input.MuiInputBase-input': {
-            borderRadius: '8px',
-            padding: '13px 0px 11px 12px',
-          },
+          '& label[data-shrink="true"] + :not(& .MuiInputBase-adornedStart) input.MuiInputBase-input':
+            {
+              borderRadius: '8px',
+              padding: '13px 0px 11px 12px',
+            },
           ...hasValueOverrides,
           ...disabledOverrides,
           ...readOnlyOverrides,
@@ -1659,16 +1684,19 @@ export const components: ThemeOptions['components'] = {
             backgroundColor: palette.branding.surface[900],
           },
           ...(tooltipPlacement === 'bottom' && {
-            transform: 'scale(1.091) translate3d(68.6667px, 0px, 0px) !important',
+            transform:
+              'scale(1.091) translate3d(68.6667px, 0px, 0px) !important',
           }),
           ...(tooltipPlacement === 'left' && {
-            transform: 'scale(1.091) translate3d(0px, 89.3333px, 0px) !important',
+            transform:
+              'scale(1.091) translate3d(0px, 89.3333px, 0px) !important',
           }),
           ...(tooltipPlacement === 'right' && {
             transform: 'scale(1.091) translate3d(0px, 60px, 0px) !important',
           }),
           ...(tooltipPlacement === 'top' && {
-            transform: 'scale(1.091) translate3d(68.6667px, 0px, 0px) !important',
+            transform:
+              'scale(1.091) translate3d(68.6667px, 0px, 0px) !important',
           }),
         };
       },

@@ -1,4 +1,22 @@
-export type ColorIndex = 50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | string;
+/**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+export type ColorIndex =
+  | 50
+  | 100
+  | 200
+  | 300
+  | 400
+  | 500
+  | 600
+  | 700
+  | 800
+  | 900
+  | string;
 
 interface IBrightnessMap {
   brightness: number;
@@ -57,7 +75,8 @@ export const hexToRGB = (color: string): number[] | undefined => {
   let g = '';
   let b = '';
 
-  if ((color.length !== 4 && color.length !== 7) || color[0] !== '#') return undefined;
+  if ((color.length !== 4 && color.length !== 7) || color[0] !== '#')
+    return undefined;
 
   if (color.length === 4) {
     r = `0x${color[1]}${color[1]}`;
@@ -84,7 +103,10 @@ export const RGBToHex = (r: number, g: number, b: number): string => {
   return `#${R.slice(0, 2)}${G.slice(0, 2)}${B.slice(0, 2)}`;
 };
 
-export const lightenRGB = (color: string, percentage: number): string | undefined => {
+export const lightenRGB = (
+  color: string,
+  percentage: number,
+): string | undefined => {
   const RGBColor = hexToRGB(color);
 
   if (!RGBColor) return undefined;
@@ -106,7 +128,9 @@ export const lightenRGB = (color: string, percentage: number): string | undefine
   );
 };
 
-export const figmaColorGenerator = (color: string): Record<ColorIndex, string> => {
+export const figmaColorGenerator = (
+  color: string,
+): Record<ColorIndex, string> => {
   const colorPalette = {} as unknown as Record<ColorIndex, string>;
   brightnessCoefficient.forEach(({ brightness, colorIndex }) => {
     const generatedColor = lightenRGB(color, brightness * 100);
@@ -115,7 +139,12 @@ export const figmaColorGenerator = (color: string): Record<ColorIndex, string> =
   return colorPalette;
 };
 
-export const generatePaletteColors = <T extends { colorName: U; colorHEX: string }, U extends string>(colors: T[]): Record<U, Record<ColorIndex, string>> => {
+export const generatePaletteColors = <
+  T extends { colorName: U; colorHEX: string },
+  U extends string,
+>(
+  colors: T[],
+): Record<U, Record<ColorIndex, string>> => {
   const colorPalette = {} as unknown as Record<U, Record<ColorIndex, string>>;
   colors.forEach(color => {
     colorPalette[color.colorName] = figmaColorGenerator(color.colorHEX);
