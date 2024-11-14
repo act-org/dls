@@ -228,7 +228,7 @@
     "test:prettier": "prettier . --check",
     "test:types": "tspc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent",
-    "test:build": "npm-run-all build build-storybook",
+    "test:build": "npm run build",
     "watch": "npm run build && npm run copy && npm run build:components -- --watch"
   },
   "types": "index.d.ts",
