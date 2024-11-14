@@ -79,3 +79,19 @@ exports[`BarChart ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`BarChart ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-7vdyve"
+    height="254"
+    tabindex="0"
+    width="100%"
+  >
+    <div
+      class="recharts-responsive-container css-qijoe9"
+      style="width: 100%; height: 254px; min-width: 0;"
+    />
+  </div>
+</div>
+`;

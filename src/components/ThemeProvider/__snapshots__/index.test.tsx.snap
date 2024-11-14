@@ -39,3 +39,11 @@ exports[`ThemeProvider ENCOURAGE theme matches the snapshot 1`] = `
   </p>
 </div>
 `;
+
+exports[`ThemeProvider ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <p>
+    This is a test
+  </p>
+</div>
+`;

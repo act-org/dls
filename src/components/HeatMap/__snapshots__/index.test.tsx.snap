@@ -64,3 +64,16 @@ exports[`HeatMap ENCOURAGE theme matches the snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`HeatMap ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1xmgghu"
+    style="height: 388px; width: 100%;"
+  >
+    <div
+      style="position: relative; width: 100%; height: 100%;"
+    />
+  </div>
+</div>
+`;

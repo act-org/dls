@@ -27,6 +27,7 @@ export const render = (
     | 'ENCOURA'
     | 'ENCOURA_CLASSIC'
     | 'ENCOURAGE'
+    | 'ENCOURAGE_E4E'
     | Theme,
   options?: RenderOptions,
 ): RenderResult =>

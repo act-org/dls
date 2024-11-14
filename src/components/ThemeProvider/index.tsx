@@ -20,9 +20,17 @@ import { THEME_ACT_ET } from '~/styles/themeActEt';
 import { THEME_ENCOURA } from '~/styles/themeEncoura';
 import { THEME_ENCOURA_CLASSIC } from '~/styles/themeEncouraClassic';
 import { THEME_ENCOURAGE } from '~/styles/themeEncourage';
+import { THEME_ENCOURAGE_E4E } from '~/styles/themeEncourageE4E';
 
 export interface ThemeProviderProps extends MuiThemeProviderProps {
-  theme: 'ACT' | 'ACT_ET' | 'ENCOURA' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | Theme;
+  theme:
+    | 'ACT'
+    | 'ACT_ET'
+    | 'ENCOURA'
+    | 'ENCOURA_CLASSIC'
+    | 'ENCOURAGE'
+    | 'ENCOURAGE_E4E'
+    | Theme;
   locale?:
     | 'azAZ'
     | 'bgBG'
@@ -92,6 +100,12 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
     case 'ENCOURAGE':
       themeImpl = createTheme(
         THEME_ENCOURAGE,
+        locale ? locales[locale] : locales.enUS,
+      );
+      break;
+    case 'ENCOURAGE_E4E':
+      themeImpl = createTheme(
+        THEME_ENCOURAGE_E4E,
         locale ? locales[locale] : locales.enUS,
       );
       break;

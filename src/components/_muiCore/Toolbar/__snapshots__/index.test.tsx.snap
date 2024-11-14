@@ -40,3 +40,11 @@ exports[`Toolbar ENCOURAGE theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`Toolbar ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-1y7tgle-MuiToolbar-root"
+  />
+</div>
+`;

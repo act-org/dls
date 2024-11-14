@@ -112,8 +112,10 @@ The DLS currently supports
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-4. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
+3. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
+4. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
+5. `"ENCOURAGE"`: for the Encoura's "Encourage for Students" look and feel
+6. `"ENCOURAGE_E4E"`: for the Encoura's "Encourage for Educators" look and feel
 
 #### Decouple Style from Functionality
 

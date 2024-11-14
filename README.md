@@ -39,7 +39,8 @@ Material UI, and ships with several themes out of the box:
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
 3. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
 4. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-5. `"ENCOURAGE"`: for the Encoura's "Encourage" look and feel
+5. `"ENCOURAGE"`: for the Encoura's "Encourage for Students" look and feel
+6. `"ENCOURAGE_E4E"`: for the Encoura's "Encourage for Educators" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -155,7 +156,7 @@ of your React app after obtaining the licensed font URL from Marketing:
 
 #### Work Sans, Roboto, Roboto Mono
 
-The `ENCOURAGE` theme assumes that the
+The `ENCOURAGE` and `ENCOURAGE_E4E` themes assume that the
 [Work Sans](https://fonts.google.com/specimen/Work+Sans),
 [Roboto](https://fonts.google.com/specimen/Roboto), and the
 [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) fonts are available
@@ -163,6 +164,7 @@ in the browser. Therefore, it is recommended that you include the following font
 reference in the `head` of your React app:
 
 ```html
+<!-- Fonts required for ENCOURAGE: -->
 <link
   href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
   rel="stylesheet"
@@ -173,6 +175,20 @@ reference in the `head` of your React app:
 />
 <link
   href="https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono:wght@200..700"
+  rel="stylesheet"
+/>
+
+<!-- Fonts required for ENCOURAGE_E4E: -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
   rel="stylesheet"
 />
 ```

@@ -9,3 +9,5 @@ exports[`StateMap ENCOURA theme matches the snapshot 1`] = `<div />`;
 exports[`StateMap ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;
 
 exports[`StateMap ENCOURAGE theme matches the snapshot 1`] = `<div />`;
+
+exports[`StateMap ENCOURAGE_E4E theme matches the snapshot 1`] = `<div />`;

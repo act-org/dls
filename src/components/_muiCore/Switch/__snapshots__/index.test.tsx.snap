@@ -120,3 +120,27 @@ exports[`Switch ENCOURAGE theme matches the snapshot 1`] = `
   </span>
 </div>
 `;
+
+exports[`Switch ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <span
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-1dscvb8-MuiSwitch-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-1pyp4rk-MuiButtonBase-root-MuiSwitch-switchBase"
+    >
+      <input
+        checked=""
+        class="PrivateSwitchBase-input MuiSwitch-input css-j8yymo"
+        type="checkbox"
+      />
+      <span
+        class="MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"
+      />
+    </span>
+    <span
+      class="MuiSwitch-track css-19iqpv6-MuiSwitch-track"
+    />
+  </span>
+</div>
+`;

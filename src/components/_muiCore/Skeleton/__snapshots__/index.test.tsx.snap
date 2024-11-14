@@ -44,3 +44,12 @@ exports[`Skeleton ENCOURAGE theme matches the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`Skeleton ENCOURAGE_E4E theme matches the snapshot 1`] = `
+<div>
+  <span
+    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-177q8j-MuiSkeleton-root"
+    style="width: 100px; height: 100px;"
+  />
+</div>
+`;
