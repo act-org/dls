@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import { accordionClasses } from '@mui/material/Accordion';
@@ -357,15 +355,15 @@ export const components: ThemeOptions['components'] = {
   },
   MuiFilledInput: {
     styleOverrides: {
+      hiddenLabel: {
+        paddingBottom: spacing(1.5),
+        paddingTop: spacing(1.5),
+      },
       input: {
         '&:-webkit-autofill': {
           borderTopLeftRadius: 0,
           borderTopRightRadius: 0,
         },
-      },
-      inputHiddenLabel: {
-        paddingBottom: spacing(1.5),
-        paddingTop: spacing(1.5),
       },
     },
   },

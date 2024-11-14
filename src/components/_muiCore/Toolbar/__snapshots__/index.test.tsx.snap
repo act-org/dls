@@ -3,7 +3,7 @@
 exports[`Toolbar ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-1f92022-MuiToolbar-root"
     color="primary"
   />
 </div>
@@ -12,7 +12,7 @@ exports[`Toolbar ACT theme matches the snapshot 1`] = `
 exports[`Toolbar ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-1f92022-MuiToolbar-root"
   />
 </div>
 `;
@@ -20,7 +20,7 @@ exports[`Toolbar ACT_ET theme matches the snapshot 1`] = `
 exports[`Toolbar ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-1f92022-MuiToolbar-root"
   />
 </div>
 `;
@@ -28,7 +28,7 @@ exports[`Toolbar ENCOURA theme matches the snapshot 1`] = `
 exports[`Toolbar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-1f92022-MuiToolbar-root"
   />
 </div>
 `;
@@ -36,7 +36,7 @@ exports[`Toolbar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Toolbar ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-18lhtms-MuiToolbar-root"
+    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-dense css-1f92022-MuiToolbar-root"
   />
 </div>
 `;

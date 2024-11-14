@@ -3,11 +3,9 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
-import { Grid, ListItemText, Typography } from '@mui/material';
+import { Grid2, ListItemText, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import { flatten } from 'flat';
@@ -61,7 +59,14 @@ const Story = (): React.ReactElement => {
                   }
 
                   return (
-                    <Grid item key={key} md={3} sm={6} xs={12}>
+                    <Grid2
+                      key={key}
+                      size={{
+                        md: 3,
+                        sm: 6,
+                        xs: 12,
+                      }}
+                    >
                       <StyledListItem>
                         <StyledListItemIcon>
                           <StyledAvatar
@@ -77,7 +82,7 @@ const Story = (): React.ReactElement => {
 
                         <ListItemText primary={key} secondary={String(value)} />
                       </StyledListItem>
-                    </Grid>
+                    </Grid2>
                   );
                 })}
             </StyledGridContainer>

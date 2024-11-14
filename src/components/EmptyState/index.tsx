@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import Button, { ButtonProps } from '@mui/material/Button';
@@ -83,7 +81,7 @@ export const EmptyState: FC<EmptyStateProps> = ({
           justifyContent="center"
           {...titleGridContainerProps}
         >
-          <StyledGridItem item>
+          <StyledGridItem>
             <StyledTypographyTitle
               align="center"
               component="h6"

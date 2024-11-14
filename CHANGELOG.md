@@ -1,3 +1,56 @@
+## [9.2.1](https://github.com/act-org/dls/compare/v9.2.0...v9.2.1) (2024-10-01)
+
+
+### Bug Fixes
+
+* Fix maps not highlinting states properly ([df85938](https://github.com/act-org/dls/commit/df859382654c5545e760cc37adcecd6da9f13a0c))
+* Fix package-lock error ([7870341](https://github.com/act-org/dls/commit/78703414d61cf592e6c062ee3f81ae815645cb86))
+* Fix ts erros on map and heatmap ([ef63983](https://github.com/act-org/dls/commit/ef6398375f0e6cf9af15f7270b2ddbc67484d926))
+
+# [9.2.0](https://github.com/act-org/dls/compare/v9.1.0...v9.2.0) (2024-09-26)
+
+
+### Features
+
+* Bump to @actinc/eslint-config@4.11.0 ([6a80d88](https://github.com/act-org/dls/commit/6a80d88c05de6158ef8fc457feb29d1001cf7d4d))
+
+# [9.1.0](https://github.com/act-org/dls/compare/v9.0.1...v9.1.0) (2024-09-25)
+
+
+### Features
+
+* Add more color variations for Encourage Theme ([8a8caf1](https://github.com/act-org/dls/commit/8a8caf1dfa4b355e209a3a6ce2c8e4e935d46f1b))
+
+## [9.0.1](https://github.com/act-org/dls/compare/v9.0.0...v9.0.1) (2024-09-06)
+
+
+### Bug Fixes
+
+* Bumps mdi-material-ui to 7.9.2 for improved MUI 6 compatibility ([3508def](https://github.com/act-org/dls/commit/3508defa912fb49440d0dbb90cefb8a2bd00418d))
+
+# [9.0.0](https://github.com/act-org/dls/compare/v8.9.0...v9.0.0) (2024-09-06)
+
+
+* Merge pull request [#459](https://github.com/act-org/dls/issues/459) from act-org/jc-mui-6 ([c5a95ae](https://github.com/act-org/dls/commit/c5a95ae1b3aa7160b019d0d4a3f32944bbe03adb))
+
+
+### Bug Fixes
+
+* Override mdi-material-ui to work with @mui/material v6 ([23ab7be](https://github.com/act-org/dls/commit/23ab7be587feeda838c47520bf978e501d38ad59))
+* Raise minimum [@mui](https://github.com/mui) version to v6, @mui/x to v7 ([46f256d](https://github.com/act-org/dls/commit/46f256dc2e4a2d4758890ef6ed66291358764d2c))
+* Replace all instances of Grid with Grid2 ([08bda7f](https://github.com/act-org/dls/commit/08bda7f4a2d08b78c7381d4ff0432199c33a7a9b))
+
+
+### Features
+
+* Bump MUI packages to v6 ([3a97062](https://github.com/act-org/dls/commit/3a97062c138b7e231425e755adbb1c5afcda6ca3))
+
+
+### BREAKING CHANGES
+
+* Upgrade MUI to Version 6
+* The DLS now utilizes Grid2 from '@mui/material/Grid2' (MUI v6)
+
 # [8.9.0](https://github.com/act-org/dls/compare/v8.8.1...v8.9.0) (2024-08-07)
 
 
@@ -1042,10 +1095,6 @@ Here's an example of how you can use `mergeClasses` to help create your own
 component variants that are based on Material UI:
 
 ```tsx
-/**
- * @prettier
- */
-
 import * as React from 'react';
 import { Button, ButtonProps } from '@material-ui/core';
 import { mergeClasses } from 'act-dls/lib/helpers';

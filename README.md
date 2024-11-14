@@ -22,7 +22,7 @@ The Design Language System for ACT & Encoura front-end projects. View the UI com
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://mui.com/) version `5.x` and
+[Material UI](https://mui.com/) version `6.x` and
 [React](https://reactjs.org/) version `17.x` or `18.x`.
 
 ```sh
@@ -69,9 +69,11 @@ import { createTheme } from '@actinc/dls/styles/createTheme';
 import { THEME_ACT } from '@actinc/dls/styles/themeAct';
 import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
 
-const myExtendedTheme = createTheme(deepMerge(THEME_ACT, {
-  // theme customizations go here!
-}));
+const myExtendedTheme = createTheme(
+  deepMerge(THEME_ACT, {
+    // theme customizations go here!
+  }),
+);
 
 const MyApp = () => (
   <ThemeProvider theme={myExtendedTheme}>
@@ -117,9 +119,9 @@ import TableCell from '@mui/material/TableCell';
 const styled = createThemeStyled(THEME_ACT);
 
 const StyledTypography = styled(TableCell)(({ theme }) => ({
-   // `customDims` is not available on the default theme
+  // `customDims` is not available on the default theme
   height: theme.customDims.heights.tableHeader,
-}))
+}));
 ```
 
 ### Load Fonts
@@ -142,12 +144,12 @@ reference in the `head` of your React app:
 
 The `ENCOURA` and `ENCOURA_CLASSIC` themes assume that the
 [Museo Sans](https://fonts.adobe.com/fonts/museo-sans) font
-is available in the browser.  Include this embed code in the `head`
+is available in the browser. Include this embed code in the `head`
 of your React app after obtaining the licensed font URL from Marketing:
 
 ```html
 <style>
-  @import url("licensed-font-url");
+  @import url('licensed-font-url');
 </style>
 ```
 
@@ -313,9 +315,9 @@ const MyComponent: React.FC = () => {
 };
 ```
 
-* This implementation is how Styled Components does it: <https://styled-components.com/docs/api#transient-props>
-* Unfortunately emotion (the default styling engine in React) doesn't seem to
-care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
+- This implementation is how Styled Components does it: <https://styled-components.com/docs/api#transient-props>
+- Unfortunately emotion (the default styling engine in React) doesn't seem to
+  care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
 
 ## ES Modules & Tree Shaking
 
@@ -391,11 +393,45 @@ To run the DLS locally:
 
 1. Install node modules: `npm install`
 2. Start the [Storybook](https://storybook.js.org) component visualizer:
-`npm start`
+   `npm start`
 
 ### How to Iterate Locally
 
-For rapid iteration, you can run a local build of this library in your
+#### Option 1: Creating a Local Build
+
+When you're ready to pilot your changes to this library in your local project:
+
+1. Run the `npm run pack` command. When it finishes running, it will generate a
+   `.tgz` file in the `/dist` folder with the following name format
+   `actinc-dls-<version-number>.tgz`;
+2. Access the `package.json` file of your local project in which the
+   `@actinc/dls` package will be tested, and make the following edit:
+
+   ```json
+   "dependencies": {
+     // Before (pulling from NPM via version number):
+     "@actinc/dls": "9.2.1",
+     // After (pointing to the local .tgz file):
+     "@actinc/dls": "file:../path/to/@actinc/dls/dist/actinc-dls-<version-number>.tgz",
+     ...
+   }
+   ```
+
+3. Run `npm update @actinc/dls` to refresh your project's `node_modules` folder.
+
+4. You can now run your project with the local changes made to this library!
+
+5. If you want to make any further edits to this library, simply run
+   `npm run pack` to package up the changes, and then `npm update @actinc/dls`
+   in your local project to pull them in.
+
+6. When you're done piloting the changes, simply revert your project's
+   `package.json` file to pull this library from NPM, and run
+   `npm update @actinc/dls` to refresh your project's `node_modules` folder.
+
+#### Option 2: Real-time Previews
+
+For rapid iteration, you can run a live copy of this library in your
 downstream project:
 
 1. In this library, run the watch script: `npm run watch`
@@ -420,7 +456,7 @@ There are lots of npm scripts at your disposal during local development.
 Here are some of the more important ones:
 
 | Script                    | Description                                                             |
-|:------------------------- |:----------------------------------------------------------------------- |
+| :------------------------ | :---------------------------------------------------------------------- |
 | npm run build             | Transpiles DLS from TypeScript (`./src`) into ES5 (`./dist`).           |
 | npm run build-storybook   | Creates a static website for deployment (`./storybook-static`).         |
 | npm start                 | Starts the [Storybook](https://storybook.js.org) component visualizer.  |
@@ -435,19 +471,19 @@ semantic-release scans commits to manage package.json versions and `CHANGELOG.MD
 
 It is important that we accurately capture what type of development we are doing.
 
-* For changes to storybook (i.e. no change to components), use the `docs` tag:
+- For changes to storybook (i.e. no change to components), use the `docs` tag:
 
 ```bash
 git commit -m "docs: Added stories for Alert"
 ```
 
-* For patches to existing components, use `fix`:
+- For patches to existing components, use `fix`:
 
 ```bash
 git commit -m "fix: Fixed Snackbar not appear in center of screen"
 ```
 
-* For new functionality, use `feat`:
+- For new functionality, use `feat`:
 
 ```bash
 git commit -m "feat: Added Carousel component"
@@ -457,5 +493,5 @@ git commit -m "feat: Added Carousel component"
 
 Some npm packages are pinned to non-current versions for a specific reason:
 
-| Package      | Version | Reason |
-|:------------ |:------- |:-------|
+| Package | Version | Reason |
+| :------ | :------ | :----- |

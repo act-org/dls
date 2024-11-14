@@ -3,11 +3,12 @@
 exports[`Drawer ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked css-192bjr1-MuiDrawer-docked"
+    class="MuiDrawer-root MuiDrawer-docked css-1ctgg13-MuiDrawer-docked"
     color="primary"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-1b831fp-MuiPaper-root-MuiDrawer-paper"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-luacne-MuiPaper-root-MuiDrawer-paper"
+      style="--Paper-shadow: none;"
     >
       Hey
     </div>

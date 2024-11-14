@@ -3,12 +3,10 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import { grey } from '@mui/material/colors';
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import { Theme } from '@mui/material/styles';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import TableCell, { TableCellProps } from '@mui/material/TableCell';
@@ -64,7 +62,7 @@ export const StyledChevronDown = styled(ChevronDown)<SvgIconProps & IColorProp>(
   }),
 );
 
-export const StyledGrid = styled(Grid)(({ theme }) => ({
+export const StyledGrid = styled(Grid2)(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',

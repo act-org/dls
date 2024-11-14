@@ -3,12 +3,10 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import { Typography, TypographyProps } from '@mui/material';
-import Grid, { gridClasses } from '@mui/material/Grid';
+import Grid2, { grid2Classes } from '@mui/material/Grid2';
 import { styled } from '@mui/material/styles';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -29,14 +27,14 @@ export const StyledTypography = styled(Typography, {
   paddingTop: hasHighlight ? theme.spacing(3) : 0,
 }));
 
-export const StyledGridTitle = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.root}`]: {
+export const StyledGridTitle = styled(Grid2)(({ theme }) => ({
+  [`&.${grid2Classes.root}`]: {
     paddingTop: theme.spacing(3),
   },
 }));
 
-export const StyledGridBody = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.root}`]: {
+export const StyledGridBody = styled(Grid2)(({ theme }) => ({
+  [`&.${grid2Classes.root}`]: {
     paddingTop: theme.spacing(2),
   },
 }));

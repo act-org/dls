@@ -3,7 +3,7 @@
 exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="css-l1f5px"
+    class="css-14q6vlk"
   >
     <span
       aria-label="First Page"
@@ -13,7 +13,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         disabled=""
         tabindex="-1"
@@ -21,7 +21,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ead8px-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-d1s5pq-MuiSvgIcon-root"
           data-testid="PageFirstIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -40,7 +40,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         disabled=""
         tabindex="-1"
@@ -48,7 +48,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ead8px-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-d1s5pq-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -61,10 +61,10 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-1goyl5l-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-oxolt7-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1c6qg5m-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-dpynhu-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-controls=":r3:"
@@ -72,7 +72,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
             aria-haspopup="listbox"
             aria-label="Select"
             aria-labelledby=":r2:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1e1hyzm-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-10ortyn-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":r2:"
             role="combobox"
             tabindex="0"
@@ -84,13 +84,13 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           <input
             aria-hidden="true"
             aria-invalid="false"
-            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-115bljm-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-9wviix-MuiSvgIcon-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -101,10 +101,10 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-ihdtdm"
+              class="css-w4cd9x"
             >
               <span
                 class="notranslate"
@@ -124,14 +124,14 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ead8px-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-d1s5pq-MuiSvgIcon-root"
           data-testid="ChevronRightIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -140,9 +140,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
             d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
     <span
@@ -153,14 +150,14 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-z4coyi-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ead8px-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-d1s5pq-MuiSvgIcon-root"
           data-testid="PageLastIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -169,9 +166,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
             d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
   </div>
@@ -181,7 +175,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
 exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="css-l1f5px"
+    class="css-14q6vlk"
   >
     <span
       aria-label="First Page"
@@ -190,14 +184,14 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1redh2f-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1tpud1o-MuiSvgIcon-root"
           data-testid="PageFirstIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -215,14 +209,14 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1redh2f-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1tpud1o-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -235,10 +229,10 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-s0qjqj-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-q2rbby-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-1a4gudp-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-by28yo-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-controls=":r9:"
@@ -246,7 +240,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
             aria-haspopup="listbox"
             aria-label="Select"
             aria-labelledby=":r8:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-6qifd1-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-8ntq6y-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":r8:"
             role="combobox"
             tabindex="0"
@@ -258,13 +252,13 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           <input
             aria-hidden="true"
             aria-invalid="false"
-            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-9q8pxw-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1iw9ayg-MuiSvgIcon-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -275,10 +269,10 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-ihdtdm"
+              class="css-w4cd9x"
             >
               <span
                 class="notranslate"
@@ -297,13 +291,13 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1redh2f-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1tpud1o-MuiSvgIcon-root"
           data-testid="ChevronRightIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -312,9 +306,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
             d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
     <span
@@ -324,13 +315,13 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1redh2f-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1tpud1o-MuiSvgIcon-root"
           data-testid="PageLastIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -339,9 +330,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
             d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
   </div>
@@ -351,7 +339,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
 exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="css-l1f5px"
+    class="css-14q6vlk"
   >
     <span
       aria-label="First Page"
@@ -360,14 +348,14 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="PageFirstIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -385,14 +373,14 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -405,10 +393,10 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-119z8ak-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-esfs78-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-97d1lu-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-s1ym9j-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-controls=":rf:"
@@ -416,7 +404,7 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
             aria-haspopup="listbox"
             aria-label="Select"
             aria-labelledby=":re:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1xypkvb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-qyjbs4-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":re:"
             role="combobox"
             tabindex="0"
@@ -428,13 +416,13 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
           <input
             aria-hidden="true"
             aria-invalid="false"
-            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1mj2bmf-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1p4sevb-MuiSvgIcon-root-MuiSelect-icon"
             data-testid="ChevronDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -445,10 +433,10 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-ihdtdm"
+              class="css-w4cd9x"
             >
               <span
                 class="notranslate"
@@ -467,13 +455,13 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="ChevronRightIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -482,9 +470,6 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
             d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
     <span
@@ -494,13 +479,13 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="PageLastIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -509,9 +494,6 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
             d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
   </div>
@@ -521,7 +503,7 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
 exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="css-l1f5px"
+    class="css-14q6vlk"
   >
     <span
       aria-label="First Page"
@@ -530,14 +512,14 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="PageFirstIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -555,14 +537,14 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -575,10 +557,10 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-s0qjqj-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-q2rbby-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-1eb5ks1-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-13mvw41-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-controls=":rl:"
@@ -586,7 +568,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
             aria-haspopup="listbox"
             aria-label="Select"
             aria-labelledby=":rk:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-b2hql5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-r853lg-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":rk:"
             role="combobox"
             tabindex="0"
@@ -598,13 +580,13 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
           <input
             aria-hidden="true"
             aria-invalid="false"
-            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1cg639m-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-19a9gm7-MuiSvgIcon-root-MuiSelect-icon"
             data-testid="ChevronDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -615,10 +597,10 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-ihdtdm"
+              class="css-w4cd9x"
             >
               <span
                 class="notranslate"
@@ -637,13 +619,13 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="ChevronRightIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -652,9 +634,6 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
             d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
     <span
@@ -664,13 +643,13 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-sf607i-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1bt3czl-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-75t6cl-MuiSvgIcon-root"
           data-testid="PageLastIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -679,9 +658,6 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
             d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
   </div>
@@ -691,7 +667,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
 exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="css-l1f5px"
+    class="css-14q6vlk"
   >
     <span
       aria-label="First Page"
@@ -700,14 +676,14 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-ztww2v-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1mue8dp-MuiSvgIcon-root"
           data-testid="PageFirstIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -725,14 +701,14 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-ztww2v-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1mue8dp-MuiSvgIcon-root"
           data-testid="ChevronLeftIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -745,10 +721,10 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-v62dum-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-hgyret-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1ud848n-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v5jxjp-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-controls=":rr:"
@@ -756,7 +732,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
             aria-haspopup="listbox"
             aria-label="Select"
             aria-labelledby=":rq:"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1momcb5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
             id=":rq:"
             role="combobox"
             tabindex="0"
@@ -768,13 +744,13 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
           <input
             aria-hidden="true"
             aria-invalid="false"
-            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
             tabindex="-1"
             value="0"
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-uqo2gb-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-wqvhpi-MuiSvgIcon-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -785,10 +761,10 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-ihdtdm"
+              class="css-w4cd9x"
             >
               <span
                 class="notranslate"
@@ -807,13 +783,13 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ztww2v-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1mue8dp-MuiSvgIcon-root"
           data-testid="ChevronRightIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -822,9 +798,6 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
             d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
     <span
@@ -834,13 +807,13 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ztww2v-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-uv4eq7-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1mue8dp-MuiSvgIcon-root"
           data-testid="PageLastIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -849,9 +822,6 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
             d="M5.59,7.41L10.18,12L5.59,16.59L7,18L13,12L7,6L5.59,7.41M16,6H18V18H16V6Z"
           />
         </svg>
-        <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-        />
       </button>
     </span>
   </div>

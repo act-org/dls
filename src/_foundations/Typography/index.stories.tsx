@@ -3,11 +3,9 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
-import { Grid, IconButton, Tooltip, Typography } from '@mui/material';
+import { Grid2, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Variant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react';
@@ -53,14 +51,18 @@ const Story = (): React.ReactElement => {
       {sortedVariants.map(variant => {
         return (
           <React.Fragment key={variant}>
-            <Grid container>
-              <StyledGridItem item xs={2}>
+            <Grid2 container>
+              <StyledGridItem
+                size={{
+                  xs: 2,
+                }}
+              >
                 <StyledGridContainerInfo container>
-                  <Grid item>
+                  <Grid2>
                     <Typography variant="body1">{variant}</Typography>
-                  </Grid>
+                  </Grid2>
 
-                  <Grid item>
+                  <Grid2>
                     <Tooltip
                       arrow
                       title={
@@ -89,16 +91,20 @@ const Story = (): React.ReactElement => {
                         <InformationOutline />
                       </IconButton>
                     </Tooltip>
-                  </Grid>
+                  </Grid2>
                 </StyledGridContainerInfo>
               </StyledGridItem>
 
-              <StyledGridItemTypography item xs={10}>
+              <StyledGridItemTypography
+                size={{
+                  xs: 10,
+                }}
+              >
                 <Typography variant={variant}>
                   The quick brown fox jumps over the lazy dog.
                 </Typography>
               </StyledGridItemTypography>
-            </Grid>
+            </Grid2>
           </React.Fragment>
         );
       })}

@@ -3,13 +3,11 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
 import Divider, { dividerClasses } from '@mui/material/Divider';
-import Grid, { gridClasses } from '@mui/material/Grid';
+import Grid2, { grid2Classes } from '@mui/material/Grid2';
 import ListItem, { listItemClasses } from '@mui/material/ListItem';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 
@@ -45,8 +43,8 @@ export const StyledListItemIcon = styled(ListItemIcon)({
   },
 });
 
-export const StyledGridContainer = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.root}`]: {
+export const StyledGridContainer = styled(Grid2)(({ theme }) => ({
+  [`&.${grid2Classes.root}`]: {
     marginBottom: theme.spacing(2),
   },
 }));

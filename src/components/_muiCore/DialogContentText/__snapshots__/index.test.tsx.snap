@@ -3,7 +3,7 @@
 exports[`DialogContentText ACT theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1rxhis5-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1vb67it-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>
@@ -13,7 +13,7 @@ exports[`DialogContentText ACT theme matches the snapshot 1`] = `
 exports[`DialogContentText ACT_ET theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1fivzk0-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1opki06-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>
@@ -23,7 +23,7 @@ exports[`DialogContentText ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogContentText ENCOURA theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-buloqi-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-41tkp0-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>
@@ -33,7 +33,7 @@ exports[`DialogContentText ENCOURA theme matches the snapshot 1`] = `
 exports[`DialogContentText ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1d4gokr-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-t1h31v-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>
@@ -43,7 +43,7 @@ exports[`DialogContentText ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogContentText ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-115t1wv-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-ipga86-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>

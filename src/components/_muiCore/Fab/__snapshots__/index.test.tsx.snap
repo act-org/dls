@@ -4,14 +4,14 @@ exports[`Fab ACT theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1iexbl5-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1gv1lp2-MuiButtonBase-root-MuiFab-root"
     color="primary"
     tabindex="0"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lv1wp3-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-z0t891-MuiSvgIcon-root"
       data-testid="PlusIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -20,9 +20,6 @@ exports[`Fab ACT theme matches the snapshot 1`] = `
         d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </button>
 </div>
 `;
@@ -31,13 +28,13 @@ exports[`Fab ACT_ET theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-v97hg4-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-zmkt8y-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
       data-testid="PlusIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -46,9 +43,6 @@ exports[`Fab ACT_ET theme matches the snapshot 1`] = `
         d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </button>
 </div>
 `;
@@ -57,13 +51,13 @@ exports[`Fab ENCOURA theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-12f56zy-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1b5rzbj-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-10r9l3z-MuiSvgIcon-root"
       data-testid="PlusIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -72,9 +66,6 @@ exports[`Fab ENCOURA theme matches the snapshot 1`] = `
         d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </button>
 </div>
 `;
@@ -83,13 +74,13 @@ exports[`Fab ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1smhg1d-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-106er0q-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-zcbcn5-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-10r9l3z-MuiSvgIcon-root"
       data-testid="PlusIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -98,9 +89,6 @@ exports[`Fab ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </button>
 </div>
 `;
@@ -109,13 +97,13 @@ exports[`Fab ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1jezcrs-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-5ssdzv-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-s5xjmm-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
       data-testid="PlusIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -124,9 +112,6 @@ exports[`Fab ENCOURAGE theme matches the snapshot 1`] = `
         d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
       />
     </svg>
-    <span
-      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-    />
   </button>
 </div>
 `;

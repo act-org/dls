@@ -83,16 +83,16 @@ we'll touch on these items later in the guide!)
 When writing components for the DLS, you should always prefer to use Material UI
 components over native DOM elements.
 
-* If you're building a list (`ul`, `ol`, `li`), use
-[`List`](https://mui.com/api/list/) and
-[`ListItem`](https://mui.com/api/list-item/).
+- If you're building a list (`ul`, `ol`, `li`), use
+  [`List`](https://mui.com/api/list/) and
+  [`ListItem`](https://mui.com/api/list-item/).
 
-* If you're writing text (`h1...h6`, `p`, `span`), use
-[`Typography`](https://mui.com/api/typography/#typography-api).
+- If you're writing text (`h1...h6`, `p`, `span`), use
+  [`Typography`](https://mui.com/api/typography/#typography-api).
 
-* If you need a button or input field (`button`, `input`, `textarea`), use
-[`Button`](https://mui.com/api/button/#button-api) and
-[`TextField`](https://mui.com/api/text-field/#textfield-api).
+- If you need a button or input field (`button`, `input`, `textarea`), use
+  [`Button`](https://mui.com/api/button/#button-api) and
+  [`TextField`](https://mui.com/api/text-field/#textfield-api).
 
 Whenever you find yourself writing a native DOM element, stop and ask yourself:
 "Is there a suitable alternative provided by the Material UI library?"
@@ -207,7 +207,8 @@ import { styled } from '@actinc/dls/helpers/material/styled';
 export const StyledDiv = styled('div')({
   backgroundColor: '#FFFFFF',
   borderRadius: 4,
-  boxShadow: "0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)",
+  boxShadow:
+    '0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12)',
   padding: 16,
 });
 

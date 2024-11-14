@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -14,19 +12,23 @@ import { useTheme, useThemeProps } from '@mui/material/styles';
 import bbox from '@turf/bbox';
 import Color from 'color';
 import { isString } from 'lodash';
+import {
+  FillLayerSpecification,
+  GeoJSONFeature,
+  LineLayerSpecification,
+  ProjectionSpecification,
+} from 'mapbox-gl';
 import { equals } from 'ramda';
 import React from 'react';
 import {
   AttributionControl,
   AttributionControlProps,
-  FillLayer,
   Fog,
   Layer,
   LayerProps,
   LngLatBoundsLike,
   Map as MapGL,
-  MapboxGeoJSONFeature,
-  MapLayerMouseEvent,
+  MapMouseEvent,
   MapRef,
   MapProps as ReactMapGLProps,
   NavigationControl,
@@ -62,7 +64,7 @@ export interface InitialBoundsPositionProps {
 }
 
 export interface FeatureHoverProps {
-  feature: MapboxGeoJSONFeature;
+  feature: GeoJSONFeature;
   lat: number;
   lng: number;
 }
@@ -82,9 +84,10 @@ export type MapProps = MapGLProps & {
   layerProps?: LayerProps;
   mapboxAccessToken: string;
   navigationControlProps?: NavigationControlProps;
-  onMapClick?: (event: MapLayerMouseEvent, mapRef: MapRef | null) => void;
+  onMapClick?: (event: MapMouseEvent, mapRef: MapRef | null) => void;
   // eslint-disable-next-line react/boolean-prop-naming
   preserveDrawingBuffer?: boolean;
+  projection?: ProjectionSpecification;
   setHoverInfo?: (value: FeatureHoverProps | undefined) => void;
   sourceId?: string;
   sourceProps?: SourceProps;
@@ -132,9 +135,42 @@ export const Map: React.FC<MapProps> = (
     number | string
   >();
 
-  const dataLayer = React.useMemo((): FillLayer => {
+  const dataLayer = React.useMemo((): LineLayerSpecification => {
     return {
       id: 'data',
+      paint: {
+        'line-border-color': [
+          'case',
+          ['boolean', ['feature-state', 'clicked'], false],
+          Color(palette.common.black).fade(0).rgb().string(),
+          Color(palette.grey[500]).fade(0.3).rgb().string(),
+        ],
+        'line-color': {
+          default: Color(color).fade(1).rgb().string(),
+          property: 'quantity',
+          stops: [
+            [0, Color(color).fade(0.9).rgb().string()],
+            [1, Color(color).fade(0.8).rgb().string()],
+            [2, Color(color).fade(0.7).rgb().string()],
+            [3, Color(color).fade(0.6).rgb().string()],
+            [4, Color(color).fade(0.5).rgb().string()],
+            [5, Color(color).fade(0.4).rgb().string()],
+            [6, Color(color).fade(0.3).rgb().string()],
+            [7, Color(color).fade(0.2).rgb().string()],
+            [8, Color(color).fade(0.1).rgb().string()],
+            [9, Color(color).fade(0).rgb().string()],
+          ],
+        },
+        'line-opacity': 0.7,
+      },
+      source: sourceId,
+      type: 'line',
+    };
+  }, [color, palette.common.black, palette.grey, sourceId]);
+
+  const fillLayer = React.useMemo((): FillLayerSpecification => {
+    return {
+      id: 'fillDataLayer',
       paint: {
         'fill-color': {
           default: Color(color).fade(1).rgb().string(),
@@ -153,20 +189,14 @@ export const Map: React.FC<MapProps> = (
           ],
         },
         'fill-opacity': 0.7,
-        'fill-outline-color': [
-          'case',
-          ['boolean', ['feature-state', 'clicked'], false],
-          Color(palette.common.black).fade(0).rgb().string(),
-          Color(palette.grey[500]).fade(0.3).rgb().string(),
-        ],
       },
       source: sourceId,
       type: 'fill',
     };
-  }, [color, palette.common.black, palette.grey, sourceId]);
+  }, [color, sourceId]);
 
   const onHover = React.useCallback(
-    (event: MapLayerMouseEvent) => {
+    (event: MapMouseEvent) => {
       if (setHoverInfo) {
         const {
           features,
@@ -213,7 +243,7 @@ export const Map: React.FC<MapProps> = (
     }
   }, [initialBoundsPosition, sourceId, sourceLoaded]);
 
-  const onClick = (event: MapLayerMouseEvent): void => {
+  const onClick = (event: MapMouseEvent): void => {
     const feature = event.features && event.features[0];
 
     if (feature && feature?.properties?.stateCode) {
@@ -222,7 +252,7 @@ export const Map: React.FC<MapProps> = (
       mapRef.current?.removeFeatureState({ source: sourceId });
 
       mapRef.current?.setFeatureState(
-        { id: feature.id, source: sourceId },
+        { id: feature.id || '', source: sourceId },
         { clicked: true },
       );
 
@@ -311,7 +341,14 @@ export const Map: React.FC<MapProps> = (
           <Source data={data} type="geojson" {...sourceProps} id={sourceId}>
             {/* Fix for TS complaining about the incompatibility of layerProps and dataLayer, even though
             dataLayer is one of the multiple types accepted by layerProps. */}
-            {layerProps ? <Layer {...layerProps} /> : <Layer {...dataLayer} />}
+            {layerProps ? (
+              <Layer {...layerProps} />
+            ) : (
+              <>
+                <Layer {...dataLayer} />
+                <Layer {...fillLayer} />
+              </>
+            )}
             {layers}
           </Source>
         )}

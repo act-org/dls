@@ -12,7 +12,7 @@ exports[`CustomizedAxisTick ACT theme matches the snapshot 1`] = `
   >
     <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-1w517f4-MuiTypography-root-DlsBarChart-yAxisLabel"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-7bksuk-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
@@ -33,7 +33,7 @@ exports[`CustomizedAxisTick ACT_ET theme matches the snapshot 1`] = `
   >
     <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-rnmgd8-MuiTypography-root-DlsBarChart-yAxisLabel"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-17ncq6q-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
@@ -54,7 +54,7 @@ exports[`CustomizedAxisTick ENCOURA theme matches the snapshot 1`] = `
   >
     <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-sh4ijp-MuiTypography-root-DlsBarChart-yAxisLabel"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1lgbm2b-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
@@ -75,7 +75,7 @@ exports[`CustomizedAxisTick ENCOURA_CLASSIC theme matches the snapshot 1`] = `
   >
     <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-sh4ijp-MuiTypography-root-DlsBarChart-yAxisLabel"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-1lgbm2b-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano
@@ -96,7 +96,7 @@ exports[`CustomizedAxisTick ENCOURAGE theme matches the snapshot 1`] = `
   >
     <p
       aria-label="Latino/Hispanic/Chicano"
-      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap  css-6r7ufn-MuiTypography-root-DlsBarChart-yAxisLabel"
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-198k5o1-MuiTypography-root-DlsBarChart-yAxisLabel"
       data-mui-internal-clone-element="true"
     >
       Latino/Hispanic/Chicano

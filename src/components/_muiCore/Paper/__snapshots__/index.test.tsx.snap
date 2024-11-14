@@ -3,7 +3,8 @@
 exports[`Paper ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-4wmgkb-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-jj7r55-MuiPaper-root"
+    style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
   >
     Paper
   </div>
@@ -13,7 +14,8 @@ exports[`Paper ACT theme matches the snapshot 1`] = `
 exports[`Paper ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-uw1sjj-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-ngmxvd-MuiPaper-root"
+    style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
   >
     Paper
   </div>
@@ -23,7 +25,8 @@ exports[`Paper ACT_ET theme matches the snapshot 1`] = `
 exports[`Paper ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-7i2tjt-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-1bqpgko-MuiPaper-root"
+    style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
   >
     Paper
   </div>
@@ -33,7 +36,8 @@ exports[`Paper ENCOURA theme matches the snapshot 1`] = `
 exports[`Paper ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-ooqq8c-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-h6ti22-MuiPaper-root"
+    style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
   >
     Paper
   </div>
@@ -43,7 +47,8 @@ exports[`Paper ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Paper ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-ln3o9n-MuiPaper-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 css-c4b0my-MuiPaper-root"
+    style="--Paper-shadow: 0px 0px 2px 0px rgba(79, 94, 113, 0.12), 0px 2px 4px 0px rgba(79, 94, 113, 0.11), 0px 4px 8px 0px rgba(79, 94, 113, 0.10);"
   >
     Paper
   </div>

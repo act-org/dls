@@ -3,13 +3,11 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 /* eslint-disable react/require-default-props */
 
-import { Button, Grid } from '@mui/material';
+import { Button, Grid2 } from '@mui/material';
 import { Meta, StoryObj, StoryFn } from '@storybook/react';
 import { startCase } from 'lodash';
 import { VariantType } from 'notistack';
@@ -33,10 +31,10 @@ const Template: StoryFn<AlertContextProviderProps> = (
     <AlertContextProvider {...props}>
       <AlertContext.Consumer>
         {({ actions }): ReactElement<unknown> => (
-          <Grid container spacing={2}>
+          <Grid2 container spacing={2}>
             {(['error', 'info', 'warning', 'success'] as VariantType[]).map(
               (variant): ReactElement<unknown> => (
-                <Grid item key={variant}>
+                <Grid2 key={variant}>
                   <Button
                     onClick={async (): Promise<void> => {
                       const newCounter = counter + 1;
@@ -63,10 +61,10 @@ const Template: StoryFn<AlertContextProviderProps> = (
                   >
                     {`Show ${startCase(variant)}`}
                   </Button>
-                </Grid>
+                </Grid2>
               ),
             )}
-          </Grid>
+          </Grid2>
         )}
       </AlertContext.Consumer>
     </AlertContextProvider>

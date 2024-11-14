@@ -3,20 +3,14 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import { grey } from '@mui/material/colors';
 import { useThemeProps } from '@mui/material/styles';
 import Color from 'color';
+import { CircleLayerSpecification, HeatmapLayerSpecification } from 'mapbox-gl';
 import React from 'react';
-import {
-  CircleLayer,
-  HeatmapLayer,
-  Layer,
-  ViewStateChangeEvent,
-} from 'react-map-gl/dist/es5';
+import { Layer, ViewStateChangeEvent } from 'react-map-gl/dist/es5';
 
 import Map, { FeatureHoverProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
@@ -25,6 +19,7 @@ import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import type GeoJSON from 'geojson';
 
 const MIN_ZOOM = 12;
+const MAX_ZOOM = 16;
 
 export interface HeatMapProps {
   color?: string;
@@ -66,48 +61,54 @@ export const HeatMap: React.FC<HeatMapProps> = (
   const finalHoverInfo = onHoverInfo || hoverInfo;
   const setFinalOnHoverInfo = setOnHoverInfo || setHoverInfo;
 
-  const heatMapDataLayer = React.useMemo((): HeatmapLayer => {
+  const heatMapDataLayer = React.useMemo((): HeatmapLayerSpecification => {
     return {
-      id: 'data',
-      maxzoom: 16,
+      id: 'heatmap',
+      maxzoom: MAX_ZOOM,
       paint: {
-        'heatmap-intensity': {
-          stops: [
-            [5, 1],
-            [10, 2],
-            [12, 3],
-          ],
-        },
-        'heatmap-opacity': {
-          default: 1,
-          stops: [
-            [12, 1],
-            [13, 0],
-          ],
-        },
-        'heatmap-radius': {
-          stops: [
-            [5, 3.5],
-            [7, 8],
-            [9, 12],
-            [12, 20],
-          ],
-        },
-        'heatmap-weight': {
-          property: 'value',
-          stops: [
-            [1, 0],
-            [50, 0.5],
-            [100, 1],
-          ],
-          type: 'exponential',
-        },
+        'heatmap-intensity': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          5,
+          1,
+          10,
+          2,
+          12,
+          3,
+        ],
+        'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
+        'heatmap-radius': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          5,
+          3.5,
+          7,
+          8,
+          9,
+          12,
+          12,
+          20,
+        ],
+        'heatmap-weight': [
+          'interpolate',
+          ['linear'],
+          ['get', 'value'],
+          1,
+          0,
+          50,
+          0.5,
+          100,
+          1,
+        ],
       },
+      source: sourceId,
       type: 'heatmap',
     };
   }, []);
 
-  const circleDataLayer = React.useMemo((): CircleLayer => {
+  const circleDataLayer = React.useMemo((): CircleLayerSpecification => {
     return {
       id: 'circle-data',
       minzoom: MIN_ZOOM,
@@ -191,25 +192,25 @@ export const HeatMap: React.FC<HeatMapProps> = (
             ],
           ],
         },
-        'circle-opacity': {
-          stops: [
-            [12, 0],
-            [13, 1],
-          ],
-        },
-        'circle-radius': {
-          property: 'quantity',
-          stops: [
-            [{ value: 1, zoom: 15 }, 5],
-            [{ value: 62, zoom: 15 }, 10],
-            [{ value: 1, zoom: 22 }, 20],
-            [{ value: 62, zoom: 22 }, 50],
-          ],
-          type: 'exponential',
-        },
+        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 0, 13, 1],
+        'circle-radius': [
+          'interpolate',
+          ['exponential'],
+          ['get', 'value'],
+          ['zoom'],
+          { value: 1, zoom: 15 },
+          5,
+          { value: 62, zoom: 15 },
+          10,
+          { value: 1, zoom: 22 },
+          20,
+          { value: 62, zoom: 22 },
+          50,
+        ],
         'circle-stroke-color': 'white',
         'circle-stroke-width': 1,
       },
+      source: sourceId,
       type: 'circle',
     };
   }, [color, mapProps]);

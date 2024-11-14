@@ -3,11 +3,9 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
-import Grid, { gridClasses } from '@mui/material/Grid';
+import Grid2, { grid2Classes } from '@mui/material/Grid2';
 import Paper, { paperClasses } from '@mui/material/Paper';
 
 import { styled } from '~/helpers/styled';
@@ -16,8 +14,8 @@ export const StyledComment = styled('span')(({ theme }) => ({
   color: theme.palette.grey[500],
 }));
 
-export const StyledGridItem = styled(Grid)(({ theme }) => ({
-  [`&.${gridClasses.item}`]: {
+export const StyledGridItem = styled(Grid2)(({ theme }) => ({
+  [`&.${grid2Classes.root}`]: {
     alignItems: 'center',
     display: 'flex',
     justifyContent: 'center',

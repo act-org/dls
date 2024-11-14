@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 /* eslint-disable filenames/match-exported */
@@ -45,7 +43,7 @@ import {
   Typography,
   TypographyProps,
 } from '@mui/material';
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid2 from '@mui/material/Grid2';
 import { Meta, StoryFn } from '@storybook/react';
 import { sortBy } from 'lodash';
 import { ReactElement } from 'react';
@@ -351,9 +349,14 @@ export const Preview: StoryFn = () => {
         This page is useful to get a feel for the look of the theme as well as
         for theme designers to use to quickly see the changes.
       </Typography>
-      <Grid container rowSpacing=".8em">
+      <Grid2 container rowSpacing=".8em">
         {sortBy(demos, 'title').map(demo => (
-          <Grid key={Math.random()} xs={12}>
+          <Grid2
+            key={Math.random()}
+            size={{
+              xs: 12,
+            }}
+          >
             <Card>
               <CardHeader title={demo.title} />
               <CardContent
@@ -366,9 +369,9 @@ export const Preview: StoryFn = () => {
                 ))}
               </CardContent>
             </Card>
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Box>
   );
 };

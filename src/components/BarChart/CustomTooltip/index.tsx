@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -103,7 +101,7 @@ export const CustomTooltip: React.FC<CustomToolTipProps> = (
       }));
     }
     return (
-      <Paper aria-live="assertive" elevation={1} sx={{ p: 2 }} role="status">
+      <Paper aria-live="assertive" elevation={1} role="status" sx={{ p: 2 }}>
         <Typography sx={{ color: tooltipColor, mb: 0.5 }}>{label}</Typography>
 
         {showValue &&

@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 import { Meta, StoryObj } from '@storybook/react';
@@ -21,6 +19,9 @@ export default {
   args: {
     data: finalData,
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    mapProps: {
+      color: 'red',
+    },
   },
   argTypes: Playground({}, HeatMap),
   component: HeatMap,

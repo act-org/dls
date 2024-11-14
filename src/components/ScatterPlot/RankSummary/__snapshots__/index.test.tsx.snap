@@ -6,19 +6,20 @@ exports[`RankSummary ACT theme matches the snapshot 1`] = `
     class="MuiBox-root css-1varnae"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1taekw1-MuiPaper-root-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-g15gxm-MuiPaper-root-MuiTableContainer-root"
+      style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <table
-        class="MuiTable-root css-12qj9wf-MuiTable-root"
+        class="MuiTable-root css-1dywioj-MuiTable-root"
       >
         <thead
-          class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+          class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
         >
           <tr
-            class="MuiTableRow-root MuiTableRow-head css-mjudad-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-head css-9hwto4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-bq0sug-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1qbzyc8-MuiTableCell-root"
               scope="col"
             >
               Rank Summary
@@ -26,46 +27,46 @@ exports[`RankSummary ACT theme matches the snapshot 1`] = `
           </tr>
         </thead>
         <tbody
-          class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+          class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-29diad-MuiTableRow-root"
+            class="MuiTableRow-root css-15cnprr-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-u73j2r-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1f47hqr-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1u3fssd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-enj0zh-MuiTableCell-root"
             >
               FAFSA
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-29diad-MuiTableRow-root"
+            class="MuiTableRow-root css-15cnprr-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-u73j2r-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1f47hqr-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1u3fssd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-enj0zh-MuiTableCell-root"
             >
               SAT Scores
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-29diad-MuiTableRow-root"
+            class="MuiTableRow-root css-15cnprr-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-u73j2r-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1f47hqr-MuiTableCell-root"
             >
               3
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1u3fssd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-enj0zh-MuiTableCell-root"
             >
               Website Inquiry
             </td>
@@ -83,19 +84,20 @@ exports[`RankSummary ACT_ET theme matches the snapshot 1`] = `
     class="MuiBox-root css-1varnae"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 MuiTableContainer-root css-1in8fko-MuiPaper-root-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 MuiTableContainer-root css-9nnq4z-MuiPaper-root-MuiTableContainer-root"
+      style="--Paper-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);"
     >
       <table
-        class="MuiTable-root css-hyky7i-MuiTable-root"
+        class="MuiTable-root css-rfn7an-MuiTable-root"
       >
         <thead
-          class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+          class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
         >
           <tr
-            class="MuiTableRow-root MuiTableRow-head css-mjudad-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-head css-9hwto4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1troq67-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-c9n7r2-MuiTableCell-root"
               scope="col"
             >
               Rank Summary
@@ -103,46 +105,46 @@ exports[`RankSummary ACT_ET theme matches the snapshot 1`] = `
           </tr>
         </thead>
         <tbody
-          class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+          class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-29diad-MuiTableRow-root"
+            class="MuiTableRow-root css-15cnprr-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-18bw1kn-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-a4mrge-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1kfd3qh-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1gzntzf-MuiTableCell-root"
             >
               FAFSA
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-29diad-MuiTableRow-root"
+            class="MuiTableRow-root css-15cnprr-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-18bw1kn-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-a4mrge-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1kfd3qh-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1gzntzf-MuiTableCell-root"
             >
               SAT Scores
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-29diad-MuiTableRow-root"
+            class="MuiTableRow-root css-15cnprr-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-18bw1kn-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-a4mrge-MuiTableCell-root"
             >
               3
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1kfd3qh-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1gzntzf-MuiTableCell-root"
             >
               Website Inquiry
             </td>
@@ -160,19 +162,20 @@ exports[`RankSummary ENCOURA theme matches the snapshot 1`] = `
     class="MuiBox-root css-1varnae"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-t87vfs-MuiPaper-root-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1jf92ft-MuiPaper-root-MuiTableContainer-root"
+      style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <table
-        class="MuiTable-root css-8gffjp-MuiTable-root"
+        class="MuiTable-root css-114y2c7-MuiTable-root"
       >
         <thead
-          class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+          class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
         >
           <tr
-            class="MuiTableRow-root MuiTableRow-head css-1oesa2-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-head css-w5nrrj-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-14upsjf-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-19nsumy-MuiTableCell-root"
               scope="col"
             >
               Rank Summary
@@ -180,46 +183,46 @@ exports[`RankSummary ENCOURA theme matches the snapshot 1`] = `
           </tr>
         </thead>
         <tbody
-          class="MuiTableBody-root css-s46lqp-MuiTableBody-root"
+          class="MuiTableBody-root css-72ojop-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-1nqk75i-MuiTableRow-root"
+            class="MuiTableRow-root css-9gv7df-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1iewrf7-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12k06vx-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1a09yu4-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1n5h70k-MuiTableCell-root"
             >
               FAFSA
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1nqk75i-MuiTableRow-root"
+            class="MuiTableRow-root css-9gv7df-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1iewrf7-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12k06vx-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1a09yu4-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1n5h70k-MuiTableCell-root"
             >
               SAT Scores
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1nqk75i-MuiTableRow-root"
+            class="MuiTableRow-root css-9gv7df-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1iewrf7-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12k06vx-MuiTableCell-root"
             >
               3
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1a09yu4-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1n5h70k-MuiTableCell-root"
             >
               Website Inquiry
             </td>
@@ -237,19 +240,20 @@ exports[`RankSummary ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiBox-root css-1varnae"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1020pp7-MuiPaper-root-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1xs1tso-MuiPaper-root-MuiTableContainer-root"
+      style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <table
-        class="MuiTable-root css-18d2ubk-MuiTable-root"
+        class="MuiTable-root css-k04ge3-MuiTable-root"
       >
         <thead
-          class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+          class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
         >
           <tr
-            class="MuiTableRow-root MuiTableRow-head css-1fmkmr6-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-head css-7o9wm2-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-10us33w-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1g1tq33-MuiTableCell-root"
               scope="col"
             >
               Rank Summary
@@ -257,46 +261,46 @@ exports[`RankSummary ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           </tr>
         </thead>
         <tbody
-          class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+          class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-12g4lsk-MuiTableRow-root"
+            class="MuiTableRow-root css-1g9wp8j-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1l6y48q-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1rru75m-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12e76jf-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-cqgu7o-MuiTableCell-root"
             >
               FAFSA
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-12g4lsk-MuiTableRow-root"
+            class="MuiTableRow-root css-1g9wp8j-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1l6y48q-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1rru75m-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12e76jf-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-cqgu7o-MuiTableCell-root"
             >
               SAT Scores
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-12g4lsk-MuiTableRow-root"
+            class="MuiTableRow-root css-1g9wp8j-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1l6y48q-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1rru75m-MuiTableCell-root"
             >
               3
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-12e76jf-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-cqgu7o-MuiTableCell-root"
             >
               Website Inquiry
             </td>
@@ -314,19 +318,20 @@ exports[`RankSummary ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiBox-root css-1varnae"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiTableContainer-root css-1koyhi3-MuiPaper-root-MuiTableContainer-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiTableContainer-root css-1yj65x8-MuiPaper-root-MuiTableContainer-root"
+      style="--Paper-shadow: 0px 0px 2px 0px rgba(79, 94, 113, 0.12), 0px 2px 4px 0px rgba(79, 94, 113, 0.11), 0px 4px 8px 0px rgba(79, 94, 113, 0.10);"
     >
       <table
-        class="MuiTable-root css-1i14dfv-MuiTable-root"
+        class="MuiTable-root css-1bccihj-MuiTable-root"
       >
         <thead
-          class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+          class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
         >
           <tr
-            class="MuiTableRow-root MuiTableRow-head css-1kuw6lo-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-head css-1rkz3hd-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1p40uv9-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-wfp7ec-MuiTableCell-root"
               scope="col"
             >
               Rank Summary
@@ -334,46 +339,46 @@ exports[`RankSummary ENCOURAGE theme matches the snapshot 1`] = `
           </tr>
         </thead>
         <tbody
-          class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+          class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root css-1pp25qg-MuiTableRow-root"
+            class="MuiTableRow-root css-1eyoehd-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1yn6dax-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-e7jda4-MuiTableCell-root"
             >
               1
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ek622e-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-194o6uf-MuiTableCell-root"
             >
               FAFSA
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1pp25qg-MuiTableRow-root"
+            class="MuiTableRow-root css-1eyoehd-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1yn6dax-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-e7jda4-MuiTableCell-root"
             >
               2
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ek622e-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-194o6uf-MuiTableCell-root"
             >
               SAT Scores
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root css-1pp25qg-MuiTableRow-root"
+            class="MuiTableRow-root css-1eyoehd-MuiTableRow-root"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1yn6dax-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-e7jda4-MuiTableCell-root"
             >
               3
             </td>
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ek622e-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-194o6uf-MuiTableCell-root"
             >
               Website Inquiry
             </td>

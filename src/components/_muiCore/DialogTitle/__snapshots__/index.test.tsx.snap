@@ -3,7 +3,7 @@
 exports[`DialogTitle ACT theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-m810tk-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-ad9osy-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -13,7 +13,7 @@ exports[`DialogTitle ACT theme matches the snapshot 1`] = `
 exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-14sp70i-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-fqnb28-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -23,7 +23,7 @@ exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURA theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1wzjbvo-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1i168ue-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -33,7 +33,7 @@ exports[`DialogTitle ENCOURA theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1wzjbvo-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1i168ue-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>
@@ -43,7 +43,7 @@ exports[`DialogTitle ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-32tdz6-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1lwovbq-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>

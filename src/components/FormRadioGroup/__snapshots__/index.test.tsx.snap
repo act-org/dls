@@ -3,10 +3,10 @@
 exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1o5dbxd-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1g4bqzq-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -21,30 +21,30 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root MuiRadioGroup-root css-19fxcl9-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-1v0j1qe-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
         id="one"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-96x4y7-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13qwt2c-MuiButtonBase-root-MuiRadio-root"
           color="primary"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r0:"
             type="radio"
             value="one"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-go9nqr-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-a4fljk-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -55,7 +55,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-19abn7m-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jyczwl-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -65,36 +65,33 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1or18zx-MuiTypography-root"
         >
           one
         </span>
       </label>
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
         id="two"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-96x4y7-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13qwt2c-MuiButtonBase-root-MuiRadio-root"
           color="primary"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r0:"
             type="radio"
             value="two"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-go9nqr-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-a4fljk-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -105,7 +102,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-19abn7m-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jyczwl-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -115,12 +112,9 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-own0hv-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1or18zx-MuiTypography-root"
         >
           two
         </span>
@@ -133,10 +127,10 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
 exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-zyxdqu-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-t1otmk-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -151,29 +145,29 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-bi9c21-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
         id="one"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-16f82bi-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-oeumqa-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r1:"
             type="radio"
             value="one"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ki5g6-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1pd3nvo-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -184,7 +178,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jf8kw9-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-15jvua8-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -194,35 +188,32 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-q09moy-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-uuxgud-MuiTypography-root"
         >
           one
         </span>
       </label>
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
         id="two"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-16f82bi-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-oeumqa-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r1:"
             type="radio"
             value="two"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ki5g6-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1pd3nvo-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -233,7 +224,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jf8kw9-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-15jvua8-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -243,12 +234,9 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-q09moy-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-uuxgud-MuiTypography-root"
         >
           two
         </span>
@@ -261,10 +249,10 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
 exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-vu3ju3-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1xurq5i-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -279,29 +267,29 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-bi9c21-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
         id="one"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1k29a4b-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1vhsnjs-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r2:"
             type="radio"
             value="one"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1e4ds1u-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-pejxdp-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -312,7 +300,7 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-99pm70-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14lsiqu-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -322,35 +310,32 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-vt4fc5-MuiTypography-root"
         >
           one
         </span>
       </label>
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-mkv5eu-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
         id="two"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1k29a4b-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1vhsnjs-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r2:"
             type="radio"
             value="two"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1e4ds1u-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-pejxdp-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -361,7 +346,7 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-99pm70-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14lsiqu-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -371,12 +356,9 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-vt4fc5-MuiTypography-root"
         >
           two
         </span>
@@ -389,10 +371,10 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
 exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1nrlq1o-MuiFormControl-root"
+    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-atlxxn-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-v9q9sg-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -407,29 +389,29 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-bi9c21-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
         id="one"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1383ks9-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-y1gler-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r3:"
             type="radio"
             value="one"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1e4ds1u-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-pejxdp-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -440,7 +422,7 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-99pm70-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14lsiqu-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -450,35 +432,32 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-vt4fc5-MuiTypography-root"
         >
           one
         </span>
       </label>
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1w7u07-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
         id="two"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1383ks9-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-y1gler-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r3:"
             type="radio"
             value="two"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1e4ds1u-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-pejxdp-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -489,7 +468,7 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-99pm70-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-14lsiqu-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -499,12 +478,9 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-sdneuc-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-vt4fc5-MuiTypography-root"
         >
           two
         </span>
@@ -517,10 +493,10 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-jayakb-MuiFormControl-root"
+    class="MuiFormControl-root css-1hs4u7e-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1r71mi9-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-p5zc30-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="false"
     >
       <div
@@ -535,29 +511,29 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
     </label>
     <div
       aria-label="radiooptions"
-      class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
+      class="MuiFormGroup-root MuiRadioGroup-root css-bi9c21-MuiFormGroup-root"
       id="primaryradiogroup"
       role="radiogroup"
     >
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1s9jovc-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-11n2pmj-MuiFormControlLabel-root"
         id="one"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1mtamnu-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1qulgto-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r4:"
             type="radio"
             value="one"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ki5g6-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1pd3nvo-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -568,7 +544,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jf8kw9-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-15jvua8-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -578,35 +554,32 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1wb5j2c-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1c0jcfm-MuiTypography-root"
         >
           one
         </span>
       </label>
       <label
-        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1s9jovc-MuiFormControlLabel-root"
+        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-11n2pmj-MuiFormControlLabel-root"
         id="two"
       >
         <span
-          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1mtamnu-MuiButtonBase-root-MuiRadio-root"
+          class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1qulgto-MuiButtonBase-root-MuiRadio-root"
         >
           <input
-            class="PrivateSwitchBase-input css-1m9pwf3"
+            class="PrivateSwitchBase-input css-j8yymo"
             name=":r4:"
             type="radio"
             value="two"
           />
           <span
-            class="css-hyxlzm"
+            class="css-1qiat4j"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ki5g6-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1pd3nvo-MuiSvgIcon-root"
               data-testid="RadioButtonUncheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -617,7 +590,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
             </svg>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jf8kw9-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-15jvua8-MuiSvgIcon-root"
               data-testid="RadioButtonCheckedIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -627,12 +600,9 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-          />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1wb5j2c-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1c0jcfm-MuiTypography-root"
         >
           two
         </span>

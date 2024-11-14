@@ -4,14 +4,14 @@ exports[`Select ACT theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Select"
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-prxojz-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1spep9z-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-controls=":r0:"
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Select"
-      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1h47dn3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-xnknkz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="combobox"
       tabindex="0"
     >
@@ -20,13 +20,13 @@ exports[`Select ACT theme matches the snapshot 1`] = `
     <input
       aria-hidden="true"
       aria-invalid="false"
-      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
       tabindex="-1"
       value="ONE"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-115bljm-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-9wviix-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ArrowDropDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -37,10 +37,10 @@ exports[`Select ACT theme matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-ihdtdm"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -57,14 +57,14 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Select"
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-11956l7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-flwpyx-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-controls=":r1:"
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Select"
-      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1bvxsl2-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1ssob8j-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="combobox"
       tabindex="0"
     >
@@ -73,13 +73,13 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
     <input
       aria-hidden="true"
       aria-invalid="false"
-      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
       tabindex="-1"
       value="ONE"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-9q8pxw-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1iw9ayg-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ArrowDropDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -90,10 +90,10 @@ exports[`Select ACT_ET theme matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-ihdtdm"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -110,14 +110,14 @@ exports[`Select ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Select"
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-18s40xn-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1q792gs-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-controls=":r2:"
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Select"
-      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-kgxtcv-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1lz1j9y-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="combobox"
       tabindex="0"
     >
@@ -126,13 +126,13 @@ exports[`Select ENCOURA theme matches the snapshot 1`] = `
     <input
       aria-hidden="true"
       aria-invalid="false"
-      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
       tabindex="-1"
       value="ONE"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1mj2bmf-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1p4sevb-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ChevronDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -143,10 +143,10 @@ exports[`Select ENCOURA theme matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-ihdtdm"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -163,14 +163,14 @@ exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Select"
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-16tk06o-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1pyh9zf-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-controls=":r3:"
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Select"
-      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1rcrhf7-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-ss71v3-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="combobox"
       tabindex="0"
     >
@@ -179,13 +179,13 @@ exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     <input
       aria-hidden="true"
       aria-invalid="false"
-      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
       tabindex="-1"
       value="ONE"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1cg639m-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-19a9gm7-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ChevronDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -196,10 +196,10 @@ exports[`Select ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-ihdtdm"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"
@@ -216,14 +216,14 @@ exports[`Select ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Select"
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary  css-1ony3wj-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-h2zhlp-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-controls=":r4:"
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Select"
-      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1y82tmb-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1momcb5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
       role="combobox"
       tabindex="0"
     >
@@ -232,13 +232,13 @@ exports[`Select ENCOURAGE theme matches the snapshot 1`] = `
     <input
       aria-hidden="true"
       aria-invalid="false"
-      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
       tabindex="-1"
       value="ONE"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-uqo2gb-MuiSvgIcon-root-MuiSelect-icon"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-wqvhpi-MuiSvgIcon-root-MuiSelect-icon"
       data-testid="ArrowDropDownIcon"
       focusable="false"
       viewBox="0 0 24 24"
@@ -249,10 +249,10 @@ exports[`Select ENCOURAGE theme matches the snapshot 1`] = `
     </svg>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-ihdtdm"
+        class="css-w4cd9x"
       >
         <span
           class="notranslate"

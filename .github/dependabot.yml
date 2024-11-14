@@ -5,12 +5,53 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/' # Location of package manifests
     schedule:
-      interval: "weekly"
-      day: "monday"
-    ignore:
-      - dependency-name: "color"
-        # For Express, ignore all updates for version 4 and 5
-        versions: ["4.x"]
+      interval: 'monthly'
+      day: 'monday'
+    groups:
+      patch:
+        patterns:
+          - '*'
+        update-types:
+          - 'patch'
+      eslint:
+        patterns:
+          - '@actinc/eslint-config'
+          - 'eslint'
+          - 'eslint-*'
+      jest:
+        patterns:
+          - 'jest'
+          - 'jest-*'
+          - '*-jest'
+      mui:
+        patterns:
+          - '@emotion*'
+          - '@mui*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+          - 'react-test-renderer'
+          - '@types/react'
+          - '@types/react-dom'
+          - '@types/react-test-renderer'
+      storybook:
+        patterns:
+          - '@storybook*'
+      testing-library:
+        patterns:
+          - '@testing-library/*'
+      types:
+        patterns:
+          - '@types/*'
+      typescript:
+        patterns:
+          - 'typescript'
+          - 'typescript-*'
+          - 'ts-*'
