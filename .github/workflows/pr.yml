@@ -1,9 +1,7 @@
 name: DLS Pull Request Validation
 on:
+  workflow_dispatch:
   pull_request:
-    types:
-      - opened
-      - edited
     branches:
       - next
       - main
