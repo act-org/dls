@@ -1,3 +1,12 @@
+# [9.3.0](https://github.com/act-org/dls/compare/v9.2.1...v9.3.0) (2024-11-14)
+
+
+### Features
+
+* Add Encourage E4E theme ([70a8355](https://github.com/act-org/dls/commit/70a835555833fba3314b473344db1b63ac7d3b87))
+* Export THEME_ENCOURAGE_E4E from dls/styles direcotry ([1a5927e](https://github.com/act-org/dls/commit/1a5927e53bc38cdc84d300a795fee2a6568e9961))
+* Update theme from E4E ([be3247a](https://github.com/act-org/dls/commit/be3247a2c06f7a070a32d5adf276ab075dce1f6a))
+
 ## [9.2.1](https://github.com/act-org/dls/compare/v9.2.0...v9.2.1) (2024-10-01)
 
 
