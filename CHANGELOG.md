@@ -1,3 +1,10 @@
+## [9.3.1](https://github.com/act-org/dls/compare/v9.3.0...v9.3.1) (2024-11-15)
+
+
+### Bug Fixes
+
+* Export ThemeCustomizations type from themeEncourageE4E ([8ad52aa](https://github.com/act-org/dls/commit/8ad52aad69c0377d0873c660c0356f5a49d8812b))
+
 # [9.3.0](https://github.com/act-org/dls/compare/v9.2.1...v9.3.0) (2024-11-14)
 
 
