@@ -39,7 +39,7 @@ export const createTheme = <T extends object>(
   ...args: object[]
 ): CustomTheme<T> => muiCreateTheme(options, ...args) as CustomTheme<T>;
 
-type ThemeCustomizations = ICustomDims & {
+export type ThemeCustomizations = ICustomDims & {
   palette: CustomPaletteOptions;
   spacingPx: number;
 };
