@@ -6,6 +6,8 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
+import { ChevronRight } from 'mdi-material-ui';
+import ChevronLeft from '~/icons/ChevronLeft';
 
 import { Button } from './internal';
 
@@ -33,10 +35,41 @@ export const Primary: StoryObj<Button> = { args: { color: 'primary' } };
 /**
  * The Secondary color palette
  */
-export const Secondary: StoryObj<Button> = { args: { color: 'secondary' } };
+export const Secondary: StoryObj<Button> = {
+  args: { variant: 'outlined' },
+  argTypes: {
+    variant: { control: false },
+  },
+};
 /**
  * The Disabled state
  */
 export const Disabled: StoryObj<Button> = {
   args: { color: 'primary', disabled: true },
+};
+
+export const RightArrow: StoryObj<Button> = {
+  args: { endIcon: <ChevronRight /> },
+  argTypes: {
+    children: { control: 'text', name: 'label' },
+    size: { control: 'radio', options: ['small', 'medium', 'large'] },
+    variant: { control: 'radio', options: ['text', 'outlined', 'contained'] },
+  },
+  parameters: {
+    // This is based on the name of the prop, UNLESS, it's being renamed by the argType options.
+    controls: { include: ['label', 'size', 'variant'] },
+  },
+};
+
+export const LeftArrow: StoryObj<Button> = {
+  args: { startIcon: <ChevronLeft /> },
+  argTypes: {
+    children: { control: 'text', name: 'label' },
+    size: { control: 'radio', options: ['small', 'medium', 'large'] },
+    variant: { control: 'radio', options: ['text', 'outlined', 'contained'] },
+  },
+  parameters: {
+    // This is based on the name of the prop, UNLESS, it's being renamed by the argType options.
+    controls: { include: ['label', 'size', 'variant'] },
+  },
 };
