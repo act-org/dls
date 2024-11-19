@@ -11,20 +11,17 @@ import type { Shadows } from '@mui/material';
 
 const SHADOWS_MAPPING: { [key: number]: string } = {
   0: 'none',
-  16:
-    '0px 16px 32px rgba(79, 94, 113, 0.08), 0px 8px 16px rgba(79, 94, 113, 0.09),' +
-    '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);',
-  2: '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);',
+  2: '0px 4px 8px rgba(79, 94, 113, 0.1),0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
   24:
     '0px 32px 64px rgba(79, 94, 113, 0.07), 0px 16px 32px rgba(79, 94, 113, 0.08),' +
     '0px 8px 16px rgba(79, 94, 113, 0.09), 0px 4px 8px rgba(79, 94, 113, 0.1),' +
-    '0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);',
+    '0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
   6:
     '0px 16px 32px rgba(79, 94, 113, 0.09), 0px 4px 8px rgba(79, 94, 113, 0.1),' +
-    '0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);',
+    '0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
   8:
     '0px 16px 32px rgba(79, 94, 113, 0.08), 0px 8px 16px rgba(79, 94, 113, 0.09),' +
-    '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12);',
+    '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11),0px 0px 2px rgba(79, 94, 113, 0.12)',
 };
 
 const shadows = baseTheme.shadows.map((shadow, index) => {
