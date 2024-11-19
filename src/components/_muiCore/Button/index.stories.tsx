@@ -21,7 +21,10 @@ export default {
     variant: 'contained',
   },
   argTypes: {
+    children: { control: 'text', name: 'label' },
     onClick: { action: 'onClick' },
+    size: { control: 'radio', options: ['small', 'medium', 'large'] },
+    variant: { control: 'radio', options: ['text', 'outlined', 'contained'] },
   },
   component: Button,
   tags: ['autodocs'],
@@ -50,11 +53,6 @@ export const Disabled: StoryObj<Button> = {
 
 export const RightArrow: StoryObj<Button> = {
   args: { endIcon: <ChevronRight /> },
-  argTypes: {
-    children: { control: 'text', name: 'label' },
-    size: { control: 'radio', options: ['small', 'medium', 'large'] },
-    variant: { control: 'radio', options: ['text', 'outlined', 'contained'] },
-  },
   parameters: {
     // This is based on the name of the prop, UNLESS, it's being renamed by the argType options.
     controls: { include: ['label', 'size', 'variant'] },
@@ -63,11 +61,6 @@ export const RightArrow: StoryObj<Button> = {
 
 export const LeftArrow: StoryObj<Button> = {
   args: { startIcon: <ChevronLeft /> },
-  argTypes: {
-    children: { control: 'text', name: 'label' },
-    size: { control: 'radio', options: ['small', 'medium', 'large'] },
-    variant: { control: 'radio', options: ['text', 'outlined', 'contained'] },
-  },
   parameters: {
     // This is based on the name of the prop, UNLESS, it's being renamed by the argType options.
     controls: { include: ['label', 'size', 'variant'] },
