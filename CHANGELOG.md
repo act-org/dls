@@ -1,3 +1,11 @@
+## [9.3.2](https://github.com/act-org/dls/compare/v9.3.1...v9.3.2) (2024-11-19)
+
+
+### Bug Fixes
+
+* Fixed outdated shadows on E4E theme ([203b7fb](https://github.com/act-org/dls/commit/203b7fbbca6c7014e9ae13d7bd328c1eed69fcb9))
+* Regen snapshots ([498f780](https://github.com/act-org/dls/commit/498f780a3e16c5c01e459a2a4536f548f3288bd0))
+
 ## [9.3.1](https://github.com/act-org/dls/compare/v9.3.0...v9.3.1) (2024-11-15)
 
 
