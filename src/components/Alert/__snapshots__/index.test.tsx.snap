@@ -183,7 +183,7 @@ exports[`Alert ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Alert ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorSuccess MuiAlert-standardSuccess MuiAlert-standard css-i98b2f-MuiPaper-root-MuiAlert-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorSuccess MuiAlert-standardSuccess MuiAlert-standard css-18dap25-MuiPaper-root-MuiAlert-root"
     role="alert"
     style="--Paper-shadow: none;"
   >
