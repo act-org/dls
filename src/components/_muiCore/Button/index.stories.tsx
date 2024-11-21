@@ -6,8 +6,8 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react';
-import { ChevronRight } from 'mdi-material-ui';
 import ChevronLeft from '~/icons/ChevronLeft';
+import ChevronRight from '~/icons/ChevronRight';
 
 import { Button } from './internal';
 
