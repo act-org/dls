@@ -1,3 +1,10 @@
+# [9.4.0](https://github.com/act-org/dls/compare/v9.3.2...v9.4.0) (2024-11-21)
+
+
+### Features
+
+* Storybook: Button ([329a6af](https://github.com/act-org/dls/commit/329a6afd86c47aacfe975f5084ca19fc99f0a258))
+
 ## [9.3.2](https://github.com/act-org/dls/compare/v9.3.1...v9.3.2) (2024-11-19)
 
 
