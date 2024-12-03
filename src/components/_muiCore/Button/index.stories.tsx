@@ -52,17 +52,28 @@ export const Disabled: StoryObj<Button> = {
 };
 
 export const RightArrow: StoryObj<Button> = {
-  args: { endIcon: <ChevronRight /> },
+  args: { endIcon: <ChevronRight fontSize="inherit" /> },
+
   parameters: {
     // This is based on the name of the prop, UNLESS, it's being renamed by the argType options.
     controls: { include: ['label', 'size', 'variant'] },
   },
+  render: args => {
+    const iconSize = args.size === 'small' ? 'small' : 'medium';
+
+    return <Button {...args} endIcon={<ChevronRight fontSize={iconSize} />} />;
+  },
 };
 
 export const LeftArrow: StoryObj<Button> = {
-  args: { startIcon: <ChevronLeft /> },
+  args: { startIcon: <ChevronLeft fontSize="inherit" /> },
   parameters: {
     // This is based on the name of the prop, UNLESS, it's being renamed by the argType options.
     controls: { include: ['label', 'size', 'variant'] },
+  },
+  render: args => {
+    const iconSize = args.size === 'small' ? 'small' : 'medium';
+
+    return <Button {...args} startIcon={<ChevronLeft fontSize={iconSize} />} />;
   },
 };

@@ -354,9 +354,6 @@ export const components: ThemeOptions['components'] = {
           backgroundColor: palette.branding.teal[700],
         },
       },
-      endIcon: {
-        marginLeft: '4px',
-      },
       iconOutlined: {
         '&.MuiButton-sizeLarge': {
           border: `2px solid ${palette.branding.sapphire[400]}`,
@@ -402,6 +399,9 @@ export const components: ThemeOptions['components'] = {
         },
         '&.Mui-disabled.MuiButton-outlined': {
           borderColor: palette.branding.surface[400],
+        },
+        '.MuiButton-endIcon': {
+          margin: 0,
         },
         '.MuiButton-startIcon': {
           margin: 0,
