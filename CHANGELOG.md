@@ -1,3 +1,10 @@
+## [9.4.1](https://github.com/act-org/dls/compare/v9.4.0...v9.4.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* [E4E-1684]: Fix snapshots tests ([116eda6](https://github.com/act-org/dls/commit/116eda6374d7f23c5044047075b28afb80ada2b2))
+
 # [9.4.0](https://github.com/act-org/dls/compare/v9.3.2...v9.4.0) (2024-11-21)
 
 
