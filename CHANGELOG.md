@@ -1,3 +1,10 @@
+# [9.5.0](https://github.com/act-org/dls/compare/v9.4.1...v9.5.0) (2024-12-10)
+
+
+### Features
+
+* Export more internals from the E4E theme ([3c15da1](https://github.com/act-org/dls/commit/3c15da1a49bb8c88b8789da6a205f1ee5b8fc5c8))
+
 ## [9.4.1](https://github.com/act-org/dls/compare/v9.4.0...v9.4.1) (2024-12-05)
 
 
