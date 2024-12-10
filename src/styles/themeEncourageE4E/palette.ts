@@ -65,7 +65,7 @@ export type CustomPaletteOptions = PaletteOptions & {
   };
 };
 
-const palette: CustomPaletteOptions = {
+export const palette: CustomPaletteOptions = {
   action: {
     active: yellow[900],
     activeHover: yellow[800],

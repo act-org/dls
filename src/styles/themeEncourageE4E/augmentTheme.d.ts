@@ -13,32 +13,32 @@ import type { Color } from '@mui/material';
 
 declare module '@mui/material/styles' {
   interface TypographyVariants {
-    buttonLarge: React.CSSProperties;
-    buttonMedium: React.CSSProperties;
-    buttonSmall: React.CSSProperties;
     body1Strong?: React.CSSProperties;
     body2Strong?: React.CSSProperties;
+    buttonLarge?: React.CSSProperties;
+    buttonMedium?: React.CSSProperties;
+    buttonSmall?: React.CSSProperties;
     inputLabel?: React.CSSProperties;
     inputLabelStrong?: React.CSSProperties;
     linkBody1?: React.CSSProperties;
     linkBody2?: React.CSSProperties;
-    tooltip?: React.CSSProperties;
     tableHeader?: React.CSSProperties;
+    tooltip?: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
+    body1Strong?: React.CSSProperties;
+    body2Strong?: React.CSSProperties;
     buttonLarge?: React.CSSProperties;
     buttonMedium?: React.CSSProperties;
     buttonSmall?: React.CSSProperties;
-    body1Strong?: React.CSSProperties;
-    body2Strong?: React.CSSProperties;
     inputLabel?: React.CSSProperties;
     inputLabelStrong?: React.CSSProperties;
     linkBody1?: React.CSSProperties;
     linkBody2?: React.CSSProperties;
-    tooltip?: React.CSSProperties;
     tableHeader?: React.CSSProperties;
+    tooltip?: React.CSSProperties;
   }
 
   interface IconButtonClasses {
@@ -49,17 +49,17 @@ declare module '@mui/material/styles' {
 // Update the Typography's variant prop options
 declare module '@mui/material/Typography' {
   interface TypographyPropsVariantOverrides {
+    body1Strong: true;
+    body2Strong: true;
     buttonLarge: true;
     buttonMedium: true;
     buttonSmall: true;
-    body1Strong: true;
-    body2Strong: true;
     inputLabel: true;
     inputLabelStrong: true;
     linkBody1: true;
     linkBody2: true;
-    tooltip: true;
     tableHeader: true;
+    tooltip: true;
   }
 }
 

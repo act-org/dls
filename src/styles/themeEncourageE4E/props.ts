@@ -7,7 +7,7 @@
 
 import { ComponentsProps } from '@mui/material';
 
-const props: ComponentsProps = {
+export const props: ComponentsProps = {
   MuiButton: {
     disableRipple: true,
   },

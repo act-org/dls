@@ -6,6 +6,7 @@
  */
 
 import { TypographyVariantsOptions } from '@mui/material/styles';
+import { TypographyStyleOptions } from '@mui/material/styles/createTypography';
 
 import palette from './palette';
 
@@ -43,7 +44,21 @@ export interface IFontSize {
 export const BASE_FONT_SIZE: IFontSize = { fontSize: 16, lineHeight: 24 / 16 };
 export const INPUT_FONT_SIZE: IFontSize = { fontSize: 16, lineHeight: 20 / 16 };
 
-const typography: TypographyVariantsOptions = {
+export type CustomTypographyVariantsOptions = TypographyVariantsOptions & {
+  body1Strong: TypographyStyleOptions;
+  body2Strong: TypographyStyleOptions;
+  buttonLarge: TypographyStyleOptions;
+  buttonMedium: TypographyStyleOptions;
+  buttonSmall: TypographyStyleOptions;
+  inputLabel: TypographyStyleOptions;
+  inputLabelStrong: TypographyStyleOptions;
+  linkBody1: TypographyStyleOptions;
+  linkBody2: TypographyStyleOptions;
+  tableHeader: TypographyStyleOptions;
+  tooltip: TypographyStyleOptions;
+};
+
+export const typography: CustomTypographyVariantsOptions = {
   allVariants: {
     color: palette.text.overLight.high,
     fontFamily: primaryFontFamily,
