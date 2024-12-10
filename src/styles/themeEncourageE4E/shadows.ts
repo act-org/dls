@@ -9,7 +9,7 @@ import baseTheme from './baseTheme';
 
 import type { Shadows } from '@mui/material';
 
-const SHADOWS_MAPPING: { [key: number]: string } = {
+export const SHADOWS_MAPPING: { [key: number]: string } = {
   0: 'none',
   2: '0px 4px 8px rgba(79, 94, 113, 0.1),0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
   24:
@@ -24,7 +24,7 @@ const SHADOWS_MAPPING: { [key: number]: string } = {
     '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11),0px 0px 2px rgba(79, 94, 113, 0.12)',
 };
 
-const shadows = baseTheme.shadows.map((shadow, index) => {
+export const shadows = baseTheme.shadows.map((shadow, index) => {
   return SHADOWS_MAPPING[index] || shadow;
 }) as Shadows;
 

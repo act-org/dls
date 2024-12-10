@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const E4ECustomDimensions = {
+export const E4ECustomDimensions = {
   heights: {
     dialogContainer: 32,
     dialogMargin: 44,
