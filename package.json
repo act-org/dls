@@ -52,11 +52,11 @@
     "@emotion/react": "11.13.3",
     "@emotion/styled": "11.13.0",
     "@mdx-js/react": "3.1.0",
-    "@mui/base": "5.0.0-beta.58",
-    "@mui/material": "6.1.6",
-    "@mui/system": "6.1.6",
-    "@mui/x-data-grid": "7.22.1",
-    "@mui/x-date-pickers": "7.16.0",
+    "@mui/base": "5.0.0-beta.68",
+    "@mui/material": "6.3.1",
+    "@mui/system": "6.3.1",
+    "@mui/x-data-grid": "7.23.5",
+    "@mui/x-date-pickers": "7.23.3",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
@@ -73,7 +73,7 @@
     "@storybook/storybook-deployer": "2.8.16",
     "@storybook/theming": "8.4.7",
     "@testing-library/jest-dom": "6.6.3",
-    "@testing-library/react": "16.0.1",
+    "@testing-library/react": "16.1.0",
     "@testing-library/user-event": "14.5.2",
     "@types/color": "4.2.0",
     "@types/d3-array": "3.2.1",
@@ -85,8 +85,8 @@
     "@types/numeral": "2.0.5",
     "@types/pluralize": "0.0.33",
     "@types/ramda": "0.30.2",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "18.3.1",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
     "@types/react-window": "1.8.8",
     "@types/shelljs": "0.8.15",
     "@types/validator": "13.12.2",
@@ -106,9 +106,9 @@
     "jest-environment-jsdom": "29.7.0",
     "lint-staged": "15.2.10",
     "npm-run-all": "4.1.5",
-    "react": "18.3.1",
+    "react": "19.0.0",
     "react-docgen-typescript-loader": "3.7.2",
-    "react-dom": "18.3.1",
+    "react-dom": "19.0.0",
     "react-test-renderer": "18.3.1",
     "semantic-release": "24.2.0",
     "shelljs": "0.8.5",
@@ -141,12 +141,21 @@
   },
   "main": "index.js",
   "name": "@actinc/dls",
+  "overrides": {
+    "@storybook/react-webpack5": {
+      "react": "19.x",
+      "react-dom": "19.x"
+    },
+    "notistack": {
+      "react": "19.x"
+    }
+  },
   "peerDependencies": {
     "@mui/material": "6.x",
     "@mui/system": "6.x",
     "@mui/x-data-grid": "7.x",
-    "react": "17.x || 18.x",
-    "react-dom": "17.x || 18.x"
+    "react": "18.x || 19.x",
+    "react-dom": "18.x || 19.x"
   },
   "publishConfig": {
     "access": "public"
