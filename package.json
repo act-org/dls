@@ -6,8 +6,7 @@
   },
   "contributors": [
     "Jon Cursi <jon.cursi@encoura.org>",
-    "Adam Weeden <adam.weeden@encoura.org",
-    "Justin Watkins <justin.watkins@act.org>"
+    "Adam Weeden <adam.weeden@encoura.org"
   ],
   "dependencies": {
     "@babel/runtime": "^7.26.0",
