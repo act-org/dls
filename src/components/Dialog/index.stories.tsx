@@ -6,7 +6,7 @@
  */
 
 import { Button, DialogActions, DialogContent } from '@mui/material';
-import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
@@ -16,42 +16,6 @@ import { Dialog, DialogProps } from '.';
 interface StoryProps extends DialogProps {
   text?: string;
 }
-
-// eslint-disable-next-line react/prop-types
-const Template: StoryFn<StoryProps> = ({ text, ...args }) => {
-  const [open, setOpen] = useState<boolean>(false);
-
-  return (
-    <>
-      <Button
-        onClick={(): void => {
-          setOpen(true);
-        }}
-      >
-        open
-      </Button>
-
-      <Dialog
-        {...args}
-        onClose={(): void => {
-          setOpen(false);
-        }}
-        open={open}
-      >
-        <DialogContent>{text}</DialogContent>
-        <DialogActions>
-          <Button
-            onClick={(): void => {
-              setOpen(false);
-            }}
-          >
-            close
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </>
-  );
-};
 
 export default {
   args: {
@@ -70,7 +34,40 @@ export default {
     },
     Dialog,
   ),
-  component: Template,
+  render: ({ text, ...args }: StoryProps) => {
+    const [open, setOpen] = useState<boolean>(false);
+
+    return (
+      <>
+        <Button
+          onClick={(): void => {
+            setOpen(true);
+          }}
+        >
+          open
+        </Button>
+
+        <Dialog
+          {...args}
+          onClose={(): void => {
+            setOpen(false);
+          }}
+          open={open}
+        >
+          <DialogContent>{text}</DialogContent>
+          <DialogActions>
+            <Button
+              onClick={(): void => {
+                setOpen(false);
+              }}
+            >
+              close
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </>
+    );
+  },
   tags: ['autodocs'],
   title: 'Molecules / Dialog',
 } as Meta<DialogProps>;

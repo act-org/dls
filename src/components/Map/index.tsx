@@ -129,7 +129,7 @@ export const Map: React.FC<MapProps> = (
   const { palette, spacing } = useTheme();
 
   const mapRef = React.useRef<MapRef | null>(null);
-  const previousBounds = React.useRef<LngLatBoundsLike | undefined>();
+  const previousBounds = React.useRef<LngLatBoundsLike | undefined>(undefined);
   const [lastZoom, setLastZoom] = React.useState<number>();
   const [sourceLoaded, setSourceLoaded] = React.useState<boolean>(false);
   const [containerWidth, setContainerWidth] = React.useState<number | string>();

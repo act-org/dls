@@ -38,7 +38,7 @@ export const CustomTooltip: React.FC<ICustomTooltipProps> = ({
     return null;
   }
 
-  function renderContent(): JSX.Element | JSX.Element[] {
+  function renderContent(): React.ReactElement | React.ReactElement[] {
     if (CustomTooltipContent) {
       return <CustomTooltipContent payload={payload} />;
     }

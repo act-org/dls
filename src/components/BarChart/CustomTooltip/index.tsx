@@ -29,7 +29,7 @@ export interface CustomToolTipProps extends TooltipProps<ValueType, NameType> {
     dataKey: unknown,
     payload?: Payload<ValueType, NameType>[],
     data?: DataProps[],
-  ) => JSX.Element | string | null;
+  ) => React.ReactElement | string | null;
   formatValue?: (
     value: unknown,
     payload?: Payload<ValueType, NameType>[],
@@ -38,13 +38,13 @@ export interface CustomToolTipProps extends TooltipProps<ValueType, NameType> {
     label: unknown,
     dataKey: unknown,
     payload?: Payload<ValueType, NameType>[],
-  ) => JSX.Element | string | null;
+  ) => React.ReactElement | string | null;
   renderAdditionalInfo?: (
     barId: string | undefined,
     payload: Payload<ValueType, NameType>[],
     data?: DataProps[],
     tooltipLabel?: unknown,
-  ) => JSX.Element | JSX.Element[] | null;
+  ) => React.ReactElement | React.ReactElement[] | null;
   showValue?: boolean;
   tooltipColor?: string;
   valueLabel?: string;

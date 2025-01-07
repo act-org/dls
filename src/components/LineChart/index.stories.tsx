@@ -93,7 +93,7 @@ const getMergedYAxisProps = (
 export const Default = (
   args: LineChartProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <LineChart {...args} yAxisProps={mergedYAxisProps} />;
@@ -102,7 +102,7 @@ export const Default = (
 export const WithCustomLineColors = (
   args: LineChartProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (

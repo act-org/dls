@@ -74,7 +74,7 @@ export interface BarChartProps {
   title?: string;
   tooltipBarId?: string;
   tooltipProps?: CustomToolTipProps;
-  UnhoveredTooltipComponent?: React.JSX.Element;
+  UnhoveredTooltipComponent?: React.ReactElement;
   variant?: VariantType;
   width?: number | string;
   xAxisProps?: XAxisProps;
