@@ -1,3 +1,11 @@
+# [9.6.0](https://github.com/act-org/dls/compare/v9.5.0...v9.6.0) (2025-01-07)
+
+
+### Features
+
+* More dependency upgrades, including react@19.0.0 ([8f2860f](https://github.com/act-org/dls/commit/8f2860fb6bb748bc506ad1598028dd2b3e48fc71))
+* Raise the minimum React version to 18.x ([044de13](https://github.com/act-org/dls/commit/044de13a550020eb599cf6b0ae693f12dfc50515))
+
 # [9.5.0](https://github.com/act-org/dls/compare/v9.4.1...v9.5.0) (2024-12-10)
 
 
