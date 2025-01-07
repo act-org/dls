@@ -24,9 +24,7 @@ const config: StorybookConfig = {
     autodocs: 'tag',
     defaultName: 'Documentation',
   },
-  features: {
-    storyStoreV7: true,
-  },
+  features: {},
   framework: '@storybook/react-webpack5',
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)', '../src/**/*.mdx'],
   staticDirs: ['../public'],

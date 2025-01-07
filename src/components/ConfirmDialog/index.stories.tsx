@@ -6,39 +6,12 @@
  */
 
 import { Box, Button } from '@mui/material';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 
 import { ConfirmDialog, ConfirmDialogProps } from '.';
-
-export const Preview: StoryFn<ConfirmDialogProps> = (
-  props: ConfirmDialogProps,
-) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const openDialog = (): void => {
-    setIsOpen(true);
-  };
-
-  const closeDialog = (): void => {
-    setIsOpen(false);
-  };
-  return (
-    <Box>
-      <Button color="primary" onClick={openDialog} variant="contained">
-        open
-      </Button>
-      <ConfirmDialog
-        {...props}
-        isOpen={isOpen}
-        onCancel={closeDialog}
-        onClose={closeDialog}
-        onConfirm={closeDialog}
-      />
-    </Box>
-  );
-};
 
 export default {
   args: {},
@@ -55,6 +28,36 @@ export default {
     },
     ConfirmDialog,
   ),
-  component: Preview,
-  title: 'Organisms / ConfirmDialog / Component',
+  render: (props: ConfirmDialogProps) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const openDialog = (): void => {
+      setIsOpen(true);
+    };
+
+    const closeDialog = (): void => {
+      setIsOpen(false);
+    };
+    return (
+      <Box>
+        <Button color="primary" onClick={openDialog} variant="contained">
+          open
+        </Button>
+        <ConfirmDialog
+          {...props}
+          isOpen={isOpen}
+          onCancel={closeDialog}
+          onClose={closeDialog}
+          onConfirm={closeDialog}
+        />
+      </Box>
+    );
+  },
+  tags: ['autodocs'],
+  title: 'Organisms / ConfirmDialog',
 } as Meta<ConfirmDialogProps>;
+
+type Story = StoryObj<ConfirmDialogProps>;
+
+export const Preview: Story = {
+  args: {},
+};
