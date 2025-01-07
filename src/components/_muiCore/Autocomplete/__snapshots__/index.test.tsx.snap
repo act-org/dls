@@ -6,10 +6,10 @@ exports[`Autocomplete ACT theme matches the snapshot 1`] = `
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-2xefxx-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1c6ixt2-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-18wngi-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-8kmsz3-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -37,7 +37,7 @@ exports[`Autocomplete ACT theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1pb2csa-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-p4hprk-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             color="primary"
             tabindex="-1"
             title="Open"
@@ -80,10 +80,10 @@ exports[`Autocomplete ACT_ET theme matches the snapshot 1`] = `
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-2xefxx-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1c6ixt2-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-15fmlbr-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1795byt-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -111,7 +111,7 @@ exports[`Autocomplete ACT_ET theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1fiw295-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15hb0gg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
@@ -153,10 +153,10 @@ exports[`Autocomplete ENCOURA theme matches the snapshot 1`] = `
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-2xefxx-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-nebx1v-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-ercmwt-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-imw6e0-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-883kwy-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -184,7 +184,7 @@ exports[`Autocomplete ENCOURA theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1fiw295-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15hb0gg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
@@ -226,10 +226,10 @@ exports[`Autocomplete ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-2xefxx-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1c6ixt2-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-v8r14z-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorSecondary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-wwiea6-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -257,7 +257,7 @@ exports[`Autocomplete ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1fiw295-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15hb0gg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
@@ -299,10 +299,10 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-ojnxmj-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-va9js1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1k1sd9d-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1rypsfi-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1elk8gl-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -330,7 +330,7 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-fgjnzt-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1g5e3gh-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
@@ -372,10 +372,10 @@ exports[`Autocomplete ENCOURAGE_E4E theme matches the snapshot 1`] = `
     class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1jh48fd-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-17q393q-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-l731rl-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1fz4hyv-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-losdc3-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -403,7 +403,7 @@ exports[`Autocomplete ENCOURAGE_E4E theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15w7p1x-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-14od5ej-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"

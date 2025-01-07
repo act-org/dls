@@ -3,7 +3,7 @@
 exports[`FormSwitch ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
@@ -41,7 +41,7 @@ exports[`FormSwitch ACT theme matches the snapshot 1`] = `
 exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
@@ -78,7 +78,7 @@ exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
 exports[`FormSwitch ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
@@ -115,7 +115,7 @@ exports[`FormSwitch ENCOURA theme matches the snapshot 1`] = `
 exports[`FormSwitch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
@@ -152,7 +152,7 @@ exports[`FormSwitch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`FormSwitch ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1hs4u7e-MuiFormControl-root"
+    class="MuiFormControl-root css-m2i688-MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-11n2pmj-MuiFormControlLabel-root"
@@ -189,7 +189,7 @@ exports[`FormSwitch ENCOURAGE theme matches the snapshot 1`] = `
 exports[`FormSwitch ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-41n6jb-MuiFormControl-root"
+    class="MuiFormControl-root css-ypopnc-MuiFormControl-root"
   >
     <label
       class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1hu42yv-MuiFormControlLabel-root"

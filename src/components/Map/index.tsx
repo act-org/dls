@@ -23,6 +23,7 @@ import React from 'react';
 import {
   AttributionControl,
   AttributionControlProps,
+  ControlPosition,
   Fog,
   Layer,
   LayerProps,
@@ -46,6 +47,7 @@ import { StyledAttibutionControlContainer } from './styles';
 import type GeoJSON from 'geojson';
 
 type MapGLProps = ReactMapGLProps & {
+  logoPosition?: ControlPosition;
   fog?: Fog;
   terrain?: Terrain;
 };

@@ -13,7 +13,6 @@ exports[`FormRadio ACT theme matches the snapshot 1`] = `
       <input
         class="PrivateSwitchBase-input css-j8yymo"
         type="radio"
-        value=""
       />
       <span
         class="css-1qiat4j"
@@ -63,7 +62,6 @@ exports[`FormRadio ACT_ET theme matches the snapshot 1`] = `
       <input
         class="PrivateSwitchBase-input css-j8yymo"
         type="radio"
-        value=""
       />
       <span
         class="css-1qiat4j"
@@ -113,7 +111,6 @@ exports[`FormRadio ENCOURA theme matches the snapshot 1`] = `
       <input
         class="PrivateSwitchBase-input css-j8yymo"
         type="radio"
-        value=""
       />
       <span
         class="css-1qiat4j"
@@ -163,7 +160,6 @@ exports[`FormRadio ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       <input
         class="PrivateSwitchBase-input css-j8yymo"
         type="radio"
-        value=""
       />
       <span
         class="css-1qiat4j"
@@ -213,7 +209,6 @@ exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
       <input
         class="PrivateSwitchBase-input css-j8yymo"
         type="radio"
-        value=""
       />
       <span
         class="css-1qiat4j"
@@ -263,7 +258,6 @@ exports[`FormRadio ENCOURAGE_E4E theme matches the snapshot 1`] = `
       <input
         class="PrivateSwitchBase-input css-j8yymo"
         type="radio"
-        value=""
       />
       <span
         class="css-1qiat4j"
