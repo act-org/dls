@@ -9,6 +9,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1vaidnl-MuiInputAdornment-root"
     >
       <span
+        aria-hidden="true"
         class="notranslate"
       >
         ​
@@ -63,6 +64,7 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -82,6 +84,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1vaidnl-MuiInputAdornment-root"
     >
       <span
+        aria-hidden="true"
         class="notranslate"
       >
         ​
@@ -135,6 +138,7 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -154,6 +158,7 @@ exports[`SearchBar ENCOURA theme matches the snapshot 1`] = `
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1vaidnl-MuiInputAdornment-root"
     >
       <span
+        aria-hidden="true"
         class="notranslate"
       >
         ​
@@ -207,6 +212,7 @@ exports[`SearchBar ENCOURA theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -226,6 +232,7 @@ exports[`SearchBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1vaidnl-MuiInputAdornment-root"
     >
       <span
+        aria-hidden="true"
         class="notranslate"
       >
         ​
@@ -279,6 +286,7 @@ exports[`SearchBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -298,6 +306,7 @@ exports[`SearchBar ENCOURAGE theme matches the snapshot 1`] = `
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1twfq1u-MuiInputAdornment-root"
     >
       <span
+        aria-hidden="true"
         class="notranslate"
       >
         ​
@@ -351,6 +360,7 @@ exports[`SearchBar ENCOURAGE theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -370,6 +380,7 @@ exports[`SearchBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
       class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1b9skfy-MuiInputAdornment-root"
     >
       <span
+        aria-hidden="true"
         class="notranslate"
       >
         ​
@@ -423,6 +434,7 @@ exports[`SearchBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​

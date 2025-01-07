@@ -44,4 +44,4 @@ export const styled = ((...args: Parameters<typeof muiStyled>) =>
 export const createThemeStyled = <T extends Theme = Theme>(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   _theme?: T,
-): CreateMUIStyled<T> => styled as CreateMUIStyled<T>;
+): CreateMUIStyled<T> => styled as unknown as CreateMUIStyled<T>;

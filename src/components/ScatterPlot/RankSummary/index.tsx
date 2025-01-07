@@ -52,7 +52,7 @@ export const RankSummary: React.FC<RankSummaryProps> = ({
   setShowSummary,
   showSummary = true,
   tableContainerProps,
-}: RankSummaryProps): JSX.Element => {
+}: RankSummaryProps): React.ReactElement => {
   const ref = React.useRef<HTMLDivElement>(null);
 
   const stopPropagation = (e: WheelEvent): void => e.stopPropagation();

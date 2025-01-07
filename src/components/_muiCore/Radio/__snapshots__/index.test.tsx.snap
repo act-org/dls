@@ -10,7 +10,6 @@ exports[`Radio ACT theme matches the snapshot 1`] = `
       checked=""
       class="PrivateSwitchBase-input css-j8yymo"
       type="radio"
-      value=""
     />
     <span
       class="css-1qiat4j"
@@ -51,7 +50,6 @@ exports[`Radio ACT_ET theme matches the snapshot 1`] = `
       checked=""
       class="PrivateSwitchBase-input css-j8yymo"
       type="radio"
-      value=""
     />
     <span
       class="css-1qiat4j"
@@ -92,7 +90,6 @@ exports[`Radio ENCOURA theme matches the snapshot 1`] = `
       checked=""
       class="PrivateSwitchBase-input css-j8yymo"
       type="radio"
-      value=""
     />
     <span
       class="css-1qiat4j"
@@ -133,7 +130,6 @@ exports[`Radio ENCOURA_CLASSIC theme matches the snapshot 1`] = `
       checked=""
       class="PrivateSwitchBase-input css-j8yymo"
       type="radio"
-      value=""
     />
     <span
       class="css-1qiat4j"
@@ -174,7 +170,6 @@ exports[`Radio ENCOURAGE theme matches the snapshot 1`] = `
       checked=""
       class="PrivateSwitchBase-input css-j8yymo"
       type="radio"
-      value=""
     />
     <span
       class="css-1qiat4j"
@@ -215,7 +210,6 @@ exports[`Radio ENCOURAGE_E4E theme matches the snapshot 1`] = `
       checked=""
       class="PrivateSwitchBase-input css-j8yymo"
       type="radio"
-      value=""
     />
     <span
       class="css-1qiat4j"

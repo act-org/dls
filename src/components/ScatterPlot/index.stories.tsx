@@ -95,7 +95,7 @@ const getMergedYAxisProps = (
 export const Default = (
   args: ScatterPlotProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <ScatterPlot {...args} yAxisProps={mergedYAxisProps} />;
@@ -104,7 +104,7 @@ export const Default = (
 export const CustomColor = (
   args: ScatterPlotProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <ScatterPlot {...args} color="red" yAxisProps={mergedYAxisProps} />;
@@ -113,7 +113,7 @@ export const CustomColor = (
 export const LargeDataset = (
   args: ScatterPlotProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (
@@ -131,7 +131,7 @@ export const LargeDataset = (
 export const WithoutRankSummary = (
   args: ScatterPlotProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (

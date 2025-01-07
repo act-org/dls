@@ -10,7 +10,7 @@ import { common } from '@mui/material/colors';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { debounce } from 'lodash';
 import numeral from 'numeral';
-import React, { MouseEventHandler } from 'react';
+import React, { LegacyRef, MouseEventHandler } from 'react';
 import {
   ReferenceLine,
   Scatter,
@@ -24,13 +24,13 @@ import {
   ResponsiveContainer,
   ResponsiveContainerProps,
   ScatterProps,
-  ReferenceLineProps,
   ScatterChart,
   Label,
   LabelProps,
   Tooltip,
   TooltipProps,
 } from 'recharts';
+import { Props as ReferenceLinePropsImport } from 'recharts/types/cartesian/ReferenceLine';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 import { CategoricalChartState } from 'recharts/types/chart/types';
 import {
@@ -67,6 +67,10 @@ import {
   IZoomOptions,
   ICoordinate,
 } from './types';
+
+type ReferenceLineProps = ReferenceLinePropsImport & {
+  ref?: LegacyRef<ReferenceLine>;
+};
 
 export interface ScatterPlotProps {
   averageLineXLabelUnit?: string;

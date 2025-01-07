@@ -3,10 +3,10 @@
 exports[`Slider ACT theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-60b8rq-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-9gi64d-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -49,10 +49,10 @@ exports[`Slider ACT theme matches the snapshot 1`] = `
 exports[`Slider ACT_ET theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-d71foe-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-12cmp5x-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -95,10 +95,10 @@ exports[`Slider ACT_ET theme matches the snapshot 1`] = `
 exports[`Slider ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-12rz9cs-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-39sxuo-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -141,10 +141,10 @@ exports[`Slider ENCOURA theme matches the snapshot 1`] = `
 exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1y09qg2-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-kp32jg-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -187,10 +187,10 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-1hs4u7e-MuiFormControl-root"
+    class="MuiFormControl-root css-m2i688-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1mrpxuv-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-z4tejx-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label
@@ -233,10 +233,10 @@ exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Slider ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiFormControl-root css-41n6jb-MuiFormControl-root"
+    class="MuiFormControl-root css-ypopnc-MuiFormControl-root"
   >
     <label
-      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-1h0s69m-MuiFormLabel-root"
+      class="MuiFormLabel-root MuiFormLabel-colorPrimary css-e7bvck-MuiFormLabel-root"
       id="slider-label"
     >
       Slider Label

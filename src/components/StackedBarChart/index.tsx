@@ -98,7 +98,7 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
   const renderAdditionalTooltipInfo = (
     barId: string | undefined,
     payload: unknown,
-  ): JSX.Element[] | null => {
+  ): React.ReactElement[] | null => {
     const keys = barKeys.find(bKeys => bKeys.some(key => key === barId));
     const info = (
       payload as { dataKey: string; value: number; payload: DataProps }[]

@@ -18,6 +18,7 @@ exports[`OutlinedInput ACT theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -46,6 +47,7 @@ exports[`OutlinedInput ACT_ET theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -74,6 +76,7 @@ exports[`OutlinedInput ENCOURA theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -102,6 +105,7 @@ exports[`OutlinedInput ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -130,6 +134,7 @@ exports[`OutlinedInput ENCOURAGE theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​
@@ -158,6 +163,7 @@ exports[`OutlinedInput ENCOURAGE_E4E theme matches the snapshot 1`] = `
         class="css-w4cd9x"
       >
         <span
+          aria-hidden="true"
           class="notranslate"
         >
           ​

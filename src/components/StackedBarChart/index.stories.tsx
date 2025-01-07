@@ -131,7 +131,7 @@ const getMergedSubLabelProps = (
 export const VerticalBarChart = (
   args: StackedBarChartProps,
   context: StoryContext,
-): JSX.Element => {
+): React.ReactElement => {
   const { globals } = context;
   const subLabelProps = {
     position: 'bottom',

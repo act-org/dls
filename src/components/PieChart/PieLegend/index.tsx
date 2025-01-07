@@ -39,7 +39,7 @@ export interface PieLegendProps extends Partial<LegendProps> {
   formatValue?: (
     value: number,
     totalValue: number,
-  ) => JSX.Element | string | null;
+  ) => React.ReactElement | string | null;
   pieTotalValue: number;
   showAsSquare?: boolean;
 }

@@ -23,6 +23,7 @@ import React from 'react';
 import {
   AttributionControl,
   AttributionControlProps,
+  ControlPosition,
   Fog,
   Layer,
   LayerProps,
@@ -46,6 +47,7 @@ import { StyledAttibutionControlContainer } from './styles';
 import type GeoJSON from 'geojson';
 
 type MapGLProps = ReactMapGLProps & {
+  logoPosition?: ControlPosition;
   fog?: Fog;
   terrain?: Terrain;
 };
@@ -127,7 +129,7 @@ export const Map: React.FC<MapProps> = (
   const { palette, spacing } = useTheme();
 
   const mapRef = React.useRef<MapRef | null>(null);
-  const previousBounds = React.useRef<LngLatBoundsLike | undefined>();
+  const previousBounds = React.useRef<LngLatBoundsLike | undefined>(undefined);
   const [lastZoom, setLastZoom] = React.useState<number>();
   const [sourceLoaded, setSourceLoaded] = React.useState<boolean>(false);
   const [containerWidth, setContainerWidth] = React.useState<number | string>();

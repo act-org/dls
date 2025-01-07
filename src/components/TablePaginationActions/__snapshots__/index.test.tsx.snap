@@ -61,7 +61,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-oxolt7-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-1d1ys7y-MuiFormControl-root-MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-dpynhu-MuiInputBase-root-MuiOutlinedInput-root"
@@ -107,6 +107,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
               class="css-w4cd9x"
             >
               <span
+                aria-hidden="true"
                 class="notranslate"
               >
                 ​
@@ -229,7 +230,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-q2rbby-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-tls0fo-MuiFormControl-root-MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-by28yo-MuiInputBase-root-MuiOutlinedInput-root"
@@ -275,6 +276,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
               class="css-w4cd9x"
             >
               <span
+                aria-hidden="true"
                 class="notranslate"
               >
                 ​
@@ -393,7 +395,7 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-esfs78-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-1nc5dov-MuiFormControl-root-MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-s1ym9j-MuiInputBase-root-MuiOutlinedInput-root"
@@ -439,6 +441,7 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
               class="css-w4cd9x"
             >
               <span
+                aria-hidden="true"
                 class="notranslate"
               >
                 ​
@@ -557,7 +560,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-q2rbby-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-tls0fo-MuiFormControl-root-MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-13mvw41-MuiInputBase-root-MuiOutlinedInput-root"
@@ -603,6 +606,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
               class="css-w4cd9x"
             >
               <span
+                aria-hidden="true"
                 class="notranslate"
               >
                 ​
@@ -721,7 +725,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-hgyret-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-hodkj3-MuiFormControl-root-MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v5jxjp-MuiInputBase-root-MuiOutlinedInput-root"
@@ -767,6 +771,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
               class="css-w4cd9x"
             >
               <span
+                aria-hidden="true"
                 class="notranslate"
               >
                 ​
@@ -885,7 +890,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-tn3l5o-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-1qewred-MuiFormControl-root-MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-h5p9cq-MuiInputBase-root-MuiOutlinedInput-root"
@@ -931,6 +936,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
               class="css-w4cd9x"
             >
               <span
+                aria-hidden="true"
                 class="notranslate"
               >
                 ​
