@@ -6,7 +6,10 @@
  */
 
 import { Theme, ThemeOptions } from '@mui/material/styles';
+import { OptionsObject } from 'notistack';
 import { ViewBox } from 'recharts/types/util/types';
+
+export type { OptionsObject };
 
 export type CustomTheme<T extends object> = Theme & T;
 
@@ -36,10 +39,10 @@ export type Size = 'default' | 'large';
 
 export type SortDirection = 'ASCENDING' | 'DESCENDING';
 
-export type SortObject = {
+export interface SortObject {
   sortBy: string;
   sortDirection: SortDirection;
-};
+}
 
 export interface GraphQLError {
   extensions: {
