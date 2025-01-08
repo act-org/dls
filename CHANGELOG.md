@@ -1,3 +1,10 @@
+# [9.7.0](https://github.com/act-org/dls/compare/v9.6.0...v9.7.0) (2025-01-08)
+
+
+### Features
+
+* Export OptionsObject typedef from notistack so downstream apps can tap into it ([e62fb52](https://github.com/act-org/dls/commit/e62fb52de84fe78cd0e4f6c2d28c09334336f69e))
+
 # [9.6.0](https://github.com/act-org/dls/compare/v9.5.0...v9.6.0) (2025-01-07)
 
 
