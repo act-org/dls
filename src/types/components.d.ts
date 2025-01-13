@@ -11,16 +11,16 @@ import {
   Theme as MuiTheme,
 } from '@mui/material/styles';
 
-import { AreaChartProps } from '~/components/AreaChart';
-import { BarChartProps } from '~/components/BarChart';
-import { HeatMapProps } from '~/components/HeatMap';
-import { LineChartProps } from '~/components/LineChart';
-import { MapProps } from '~/components/Map';
-import { OverlappedBarChartProps } from '~/components/OverlappedBarChart';
-import { PieChartProps } from '~/components/PieChart';
-import { ScatterPlotProps } from '~/components/ScatterPlot';
-import { StackedBarChartProps } from '~/components/StackedBarChart';
-import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
+import { AreaChartProps } from '../components/AreaChart';
+import { BarChartProps } from '../components/BarChart';
+import { HeatMapProps } from '../components/HeatMap';
+import { LineChartProps } from '../components/LineChart';
+import { MapProps } from '../components/Map';
+import { OverlappedBarChartProps } from '../components/OverlappedBarChart';
+import { PieChartProps } from '../components/PieChart';
+import { ScatterPlotProps } from '../components/ScatterPlot';
+import { StackedBarChartProps } from '../components/StackedBarChart';
+import DLS_COMPONENT_NAMES from '../constants/DLS_COMPONENT_NAMES';
 
 type Theme = Omit<MuiTheme, 'components'>;
 

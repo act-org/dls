@@ -217,6 +217,7 @@
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
     "build:components": "tspc --project tsconfig.build.json",
+    "build:declarations": "bin/buildDeclarations",
     "build:icons": "bin/buildIcons",
     "build:package_json": "clear-package-json package.json -o dist/package.json",
     "build-storybook": "NODE_OPTIONS=--max_old_space_size=8192 sb build -o ./storybook-static/www",
