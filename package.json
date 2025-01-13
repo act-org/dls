@@ -224,6 +224,7 @@
     "copy:changelog": "cp -rf CHANGELOG.md dist",
     "copy:license": "cp -rf LICENSE dist",
     "copy:readme": "cp -rf README.md dist",
+    "copy:dts": "find src -name '*.d.ts' -exec sh -c 'dest=dist/${1#src/}; mkdir -p $(dirname \"$dest\") && cp \"$1\" \"$dest\"' sh {} \\;",
     "pack": "cd dist && npm pack",
     "prepack": "npm run build && npm run copy",
     "prepare": "husky",
