@@ -1,3 +1,10 @@
+## [9.7.1](https://github.com/act-org/dls/compare/v9.7.0...v9.7.1) (2025-01-13)
+
+
+### Bug Fixes
+
+* Include input declaration files in the build output ([a9b342d](https://github.com/act-org/dls/commit/a9b342d22a3c1dc8d7d5633c5805de931c111400))
+
 # [9.7.0](https://github.com/act-org/dls/compare/v9.6.0...v9.7.0) (2025-01-08)
 
 
