@@ -125,6 +125,24 @@ const StyledTypography = styled(TableCell)(({ theme }) => ({
 }));
 ```
 
+#### Custom Themes and Module Augmentation
+
+In cases where you want to "patch" or [augment](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)
+an underlying type (for example, if adding a custom color to your theme's
+palette), you can create a TS definition file and include it in your project's
+`tsconfig.json`.
+
+Steps:
+
+- Create your TS definition file (must use the `.d.ts` file extension).
+  [Example here](./src/styles/themeEncourageE4E/augmentTheme.d.ts).
+- Ensure that your definition file does **not** use import aliases.
+- Do a release. The DLS will automatically include the definition file in the
+  build.
+- In your project's repo, update your `tsconfig.json`'s `include` field to
+  point to the file in your `node_modules` directory. Example: `./node_modules/@actinc/dls/path/to/your/index.d.ts`.
+- You may need to restart your IDE's TS server for the changes to appear.
+
 ### Load Fonts
 
 #### Montserrat
