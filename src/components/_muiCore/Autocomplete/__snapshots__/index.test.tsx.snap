@@ -37,8 +37,9 @@ exports[`Autocomplete ACT theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-p4hprk-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1ujqb5w-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             color="primary"
+            id=":r2:"
             tabindex="-1"
             title="Open"
             type="button"
@@ -111,7 +112,8 @@ exports[`Autocomplete ACT_ET theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15hb0gg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1h3xlqe-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            id=":r5:"
             tabindex="-1"
             title="Open"
             type="button"
@@ -184,7 +186,8 @@ exports[`Autocomplete ENCOURA theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15hb0gg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1h3xlqe-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            id=":r8:"
             tabindex="-1"
             title="Open"
             type="button"
@@ -257,7 +260,8 @@ exports[`Autocomplete ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-15hb0gg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1h3xlqe-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            id=":rb:"
             tabindex="-1"
             title="Open"
             type="button"
@@ -330,7 +334,8 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1g5e3gh-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1d3av79-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            id=":re:"
             tabindex="-1"
             title="Open"
             type="button"
@@ -403,7 +408,8 @@ exports[`Autocomplete ENCOURAGE_E4E theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-14od5ej-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1sickos-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            id=":rh:"
             tabindex="-1"
             title="Open"
             type="button"
