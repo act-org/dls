@@ -1,3 +1,11 @@
+## [9.7.2](https://github.com/act-org/dls/compare/v9.7.1...v9.7.2) (2025-01-22)
+
+
+### Bug Fixes
+
+* Bump dependency versions, including notistack to a R19-compatible version ([791282d](https://github.com/act-org/dls/commit/791282d2cce2b96fff461a88762d8cb93da57219))
+* Reconstruct lock file, remove more overrides ([501ab76](https://github.com/act-org/dls/commit/501ab760050255a2edd42e3a6bca92e4dc04c5cf))
+
 ## [9.7.1](https://github.com/act-org/dls/compare/v9.7.0...v9.7.1) (2025-01-13)
 
 
