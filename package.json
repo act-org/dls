@@ -140,12 +140,6 @@
   },
   "main": "index.js",
   "name": "@actinc/dls",
-  "overrides": {
-    "@storybook/react-webpack5": {
-      "react": "19.x",
-      "react-dom": "19.x"
-    }
-  },
   "peerDependencies": {
     "@mui/material": "6.x",
     "@mui/system": "6.x",
