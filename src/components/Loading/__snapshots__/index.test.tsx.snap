@@ -19,7 +19,7 @@ exports[`Loading ACT theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-l7kad8-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -56,7 +56,7 @@ exports[`Loading ACT_ET theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-l7kad8-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -93,7 +93,7 @@ exports[`Loading ENCOURA theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-l7kad8-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -130,7 +130,7 @@ exports[`Loading ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-l7kad8-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -167,7 +167,7 @@ exports[`Loading ENCOURAGE theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-10k0enq-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-l7kad8-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"
@@ -204,7 +204,7 @@ exports[`Loading ENCOURAGE_E4E theme matches the snapshot 1`] = `
         viewBox="22 22 44 44"
       >
         <circle
-          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-960umw-MuiCircularProgress-circle"
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-19t5dcl-MuiCircularProgress-circle"
           cx="44"
           cy="44"
           fill="none"

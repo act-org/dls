@@ -15,7 +15,7 @@ exports[`ScatterPlot ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-ew5p4v-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1r7262p-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         data-mui-internal-clone-element="true"
         id="open-summary-"
@@ -54,7 +54,7 @@ exports[`ScatterPlot ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-14jb3fe-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-j3wd62-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -92,7 +92,7 @@ exports[`ScatterPlot ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1uhtrml-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1y3mp6q-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -130,7 +130,7 @@ exports[`ScatterPlot ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-ated1n-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-3vsivu-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -168,7 +168,7 @@ exports[`ScatterPlot ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-191070h-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-193msh5-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"
@@ -206,7 +206,7 @@ exports[`ScatterPlot ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="open summary"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1ms16bs-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorSecondary MuiIconButton-sizeMedium css-1o7zrqg-MuiButtonBase-root-MuiIconButton-root"
         data-mui-internal-clone-element="true"
         id="open-summary-"
         tabindex="0"

@@ -37,8 +37,9 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-gcfv2x-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-ek4cr5-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
+        id=":r0:"
         tabindex="0"
         title="Clears the search"
         type="button"
@@ -112,7 +113,8 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-pvkamp-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-11vhsuv-MuiButtonBase-root-MuiIconButton-root"
+        id=":r1:"
         tabindex="0"
         title="Clears the search"
         type="button"
@@ -186,7 +188,8 @@ exports[`SearchBar ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-pvkamp-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-11vhsuv-MuiButtonBase-root-MuiIconButton-root"
+        id=":r2:"
         tabindex="0"
         title="Clears the search"
         type="button"
@@ -260,7 +263,8 @@ exports[`SearchBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-pvkamp-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-11vhsuv-MuiButtonBase-root-MuiIconButton-root"
+        id=":r3:"
         tabindex="0"
         title="Clears the search"
         type="button"
@@ -334,7 +338,8 @@ exports[`SearchBar ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-6avazv-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1veq5r2-MuiButtonBase-root-MuiIconButton-root"
+        id=":r4:"
         tabindex="0"
         title="Clears the search"
         type="button"
@@ -408,7 +413,8 @@ exports[`SearchBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1w7qv8o-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-iy3lfk-MuiButtonBase-root-MuiIconButton-root"
+        id=":r5:"
         tabindex="0"
         title="Clears the search"
         type="button"

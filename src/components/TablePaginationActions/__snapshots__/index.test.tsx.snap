@@ -13,9 +13,10 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         disabled=""
+        id=":r1:"
         tabindex="-1"
         type="button"
       >
@@ -40,9 +41,10 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         disabled=""
+        id=":r3:"
         tabindex="-1"
         type="button"
       >
@@ -64,16 +66,15 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1d1ys7y-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-dpynhu-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-dpynhu-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            aria-controls=":r3:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby=":r2:"
+            aria-labelledby=":r4:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-10ortyn-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r2:"
+            id=":r4:"
             role="combobox"
             tabindex="0"
           >
@@ -125,8 +126,9 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
+        id=":r7:"
         tabindex="0"
         type="button"
       >
@@ -151,8 +153,9 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-3vwr36-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
+        id=":r9:"
         tabindex="0"
         type="button"
       >
@@ -185,8 +188,9 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":rb:"
         tabindex="-1"
         type="button"
       >
@@ -210,8 +214,9 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":rd:"
         tabindex="-1"
         type="button"
       >
@@ -233,16 +238,15 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
         class="MuiFormControl-root MuiTextField-root css-tls0fo-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-by28yo-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-by28yo-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            aria-controls=":r9:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby=":r8:"
+            aria-labelledby=":re:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-8ntq6y-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r8:"
+            id=":re:"
             role="combobox"
             tabindex="0"
           >
@@ -293,7 +297,8 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
+        id=":rh:"
         tabindex="0"
         type="button"
       >
@@ -317,7 +322,8 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
+        id=":rj:"
         tabindex="0"
         type="button"
       >
@@ -350,8 +356,9 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":rl:"
         tabindex="-1"
         type="button"
       >
@@ -375,8 +382,9 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":rn:"
         tabindex="-1"
         type="button"
       >
@@ -398,16 +406,15 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1nc5dov-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-s1ym9j-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-s1ym9j-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            aria-controls=":rf:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby=":re:"
+            aria-labelledby=":ro:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-qyjbs4-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":re:"
+            id=":ro:"
             role="combobox"
             tabindex="0"
           >
@@ -458,7 +465,8 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
+        id=":rr:"
         tabindex="0"
         type="button"
       >
@@ -482,7 +490,8 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
+        id=":rt:"
         tabindex="0"
         type="button"
       >
@@ -515,8 +524,9 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":rv:"
         tabindex="-1"
         type="button"
       >
@@ -540,8 +550,9 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":r11:"
         tabindex="-1"
         type="button"
       >
@@ -563,16 +574,15 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
         class="MuiFormControl-root MuiTextField-root css-tls0fo-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall css-13mvw41-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorSecondary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-13mvw41-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            aria-controls=":rl:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby=":rk:"
+            aria-labelledby=":r12:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-r853lg-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rk:"
+            id=":r12:"
             role="combobox"
             tabindex="0"
           >
@@ -623,7 +633,8 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
+        id=":r15:"
         tabindex="0"
         type="button"
       >
@@ -647,7 +658,8 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1doq8fr-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
+        id=":r17:"
         tabindex="0"
         type="button"
       >
@@ -680,8 +692,9 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":r19:"
         tabindex="-1"
         type="button"
       >
@@ -705,8 +718,9 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":r1b:"
         tabindex="-1"
         type="button"
       >
@@ -728,16 +742,15 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
         class="MuiFormControl-root MuiTextField-root css-hodkj3-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v5jxjp-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiSelect-root css-1v5jxjp-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            aria-controls=":rr:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby=":rq:"
+            aria-labelledby=":r1c:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1momcb5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rq:"
+            id=":r1c:"
             role="combobox"
             tabindex="0"
           >
@@ -788,7 +801,8 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
+        id=":r1f:"
         tabindex="0"
         type="button"
       >
@@ -812,7 +826,8 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-bvj94t-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
+        id=":r1h:"
         tabindex="0"
         type="button"
       >
@@ -845,8 +860,9 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-161m8xq-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":r1j:"
         tabindex="-1"
         type="button"
       >
@@ -870,8 +886,9 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-161m8xq-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
+        id=":r1l:"
         tabindex="-1"
         type="button"
       >
@@ -893,16 +910,15 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1qewred-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-h5p9cq-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiSelect-root css-h5p9cq-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
-            aria-controls=":r11:"
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby=":r10:"
+            aria-labelledby=":r1m:"
             class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-xezfm9-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r10:"
+            id=":r1m:"
             role="combobox"
             tabindex="0"
           >
@@ -953,7 +969,8 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-161m8xq-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+        id=":r1p:"
         tabindex="0"
         type="button"
       >
@@ -977,7 +994,8 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-161m8xq-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+        id=":r1r:"
         tabindex="0"
         type="button"
       >
