@@ -11,7 +11,7 @@ import {
   FullscreenControl,
   ScaleControl,
   Marker,
-} from 'react-map-gl/dist/es5';
+} from 'react-map-gl/mapbox';
 
 import { Playground } from '~/helpers/playground';
 

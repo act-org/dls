@@ -10,7 +10,7 @@ import { useThemeProps } from '@mui/material/styles';
 import Color from 'color';
 import { CircleLayerSpecification, HeatmapLayerSpecification } from 'mapbox-gl';
 import React from 'react';
-import { Layer, ViewStateChangeEvent } from 'react-map-gl/dist/es5';
+import { Layer, ViewStateChangeEvent } from 'react-map-gl/mapbox';
 
 import Map, { FeatureHoverProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';

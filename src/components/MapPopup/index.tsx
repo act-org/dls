@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { PopupProps } from 'react-map-gl/dist/es5';
+import { PopupProps } from 'react-map-gl/mapbox';
 
 import { StyledPopup, StyledTypography, StyledSpan } from './styles';
 
