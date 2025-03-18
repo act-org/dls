@@ -15,8 +15,8 @@ import {
   Typography,
 } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import dayjs from 'dayjs';
 import round from 'lodash/round';
-import moment from 'moment';
 import pluralize from 'pluralize';
 import { ReactElement, useState } from 'react';
 
@@ -30,7 +30,7 @@ const Template: StoryFn<SessionTimerProps> = ({
   ...otherProps
 }: SessionTimerProps) => {
   const [expiresAt, setExpiresAt] = useState(
-    moment().add(tokenMaxAgeMs, 'ms').toDate(),
+    dayjs().add(tokenMaxAgeMs, 'ms').toDate(),
   );
 
   const stageOneTimeoutSeconds = promptWithMsRemaining / 1000;
@@ -41,7 +41,7 @@ const Template: StoryFn<SessionTimerProps> = ({
       {...otherProps}
       expiresAt={expiresAt}
       onKeepAlive={(): void => {
-        setExpiresAt(moment().add(tokenMaxAgeMs, 'ms').toDate());
+        setExpiresAt(dayjs().add(tokenMaxAgeMs, 'ms').toDate());
       }}
       promptWithMsRemaining={promptWithMsRemaining}
       tokenMaxAgeMs={tokenMaxAgeMs}

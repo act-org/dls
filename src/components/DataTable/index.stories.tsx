@@ -7,8 +7,9 @@
 
 import { Link } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import isNumber from 'lodash/isNumber';
-import moment from 'moment';
 import { useState } from 'react';
 import PackageVariant from '~/icons/PackageVariant';
 
@@ -18,6 +19,8 @@ import sort from '~/helpers/sort';
 import { SortObject } from '~/types';
 
 import { DataTable, DataTableProps } from '.';
+
+dayjs.extend(relativeTime);
 
 /* eslint-disable react/no-unused-prop-types */
 interface Item {
@@ -49,7 +52,7 @@ const Template: StoryFn<DataTableProps<Item>> = ({
     fieldC: `Field C${i + 1}`,
     id: i + 1,
     name: `Item ${i + 1}`,
-    updatedAt: moment()
+    updatedAt: dayjs()
       .subtract(2, 'year')
       .subtract(i + 1, 'day')
       .toDate(),
@@ -109,7 +112,7 @@ const Template: StoryFn<DataTableProps<Item>> = ({
         {
           label: 'Updated',
           renderValue: (i: Item): string =>
-            moment(new Date(i.updatedAt)).fromNow(),
+            dayjs(new Date(i.updatedAt)).fromNow(),
           sortBy: 'updatedAt',
           style: {
             width: 110,

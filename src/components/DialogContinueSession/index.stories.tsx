@@ -7,7 +7,7 @@
 
 import { Button } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
@@ -52,7 +52,7 @@ const Template: StoryFn<StoryProps> = args => {
  */
 export default {
   args: {
-    expiresAt: moment().add(30, 'minutes').toDate(),
+    expiresAt: dayjs().add(30, 'minutes').toDate(),
   },
   argTypes: Playground(
     {
