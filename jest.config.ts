@@ -52,7 +52,11 @@ const config: JestConfigWithTsJest = {
         tsconfig: './tsconfig.json',
       },
     ],
+    '^.+\\.js$': 'babel-jest',
   },
+  transformIgnorePatterns: [
+    'node_modules/(?!(color|color-convert|color-name|color-string)/)',
+  ],
 };
 
 export default config;
