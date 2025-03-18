@@ -1,3 +1,10 @@
+# [9.11.0](https://github.com/act-org/dls/compare/v9.10.0...v9.11.0) (2025-03-18)
+
+
+### Features
+
+* Switch from moment to dayjs to reduce bundle size ([dcc60ad](https://github.com/act-org/dls/commit/dcc60ad5ecb774bcc529a6d7fd429973a131ae73))
+
 # [9.10.0](https://github.com/act-org/dls/compare/v9.9.0...v9.10.0) (2025-03-18)
 
 
