@@ -24,7 +24,7 @@ import {
   AttributionControl,
   AttributionControlProps,
   ControlPosition,
-  Fog,
+  FogSpecification,
   Layer,
   LayerProps,
   LngLatBoundsLike,
@@ -36,9 +36,9 @@ import {
   NavigationControlProps,
   Source,
   SourceProps as SourceGLProps,
-  Terrain,
+  TerrainSpecification,
   ViewStateChangeEvent,
-} from 'react-map-gl/dist/es5';
+} from 'react-map-gl/mapbox';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 
@@ -48,8 +48,8 @@ import type GeoJSON from 'geojson';
 
 type MapGLProps = ReactMapGLProps & {
   logoPosition?: ControlPosition;
-  fog?: Fog;
-  terrain?: Terrain;
+  fog?: FogSpecification;
+  terrain?: TerrainSpecification;
 };
 
 type SourceProps = SourceGLProps & {
@@ -273,12 +273,10 @@ export const Map: React.FC<MapProps> = (
   };
 
   const onZoom = (event: ViewStateChangeEvent): void => {
-    if (event.originalEvent) {
-      if (!lastZoom || lastZoom > event.viewState.zoom) {
-        mapRef.current?.removeFeatureState({ source: sourceId });
-      }
-      setLastZoom(event.viewState.zoom);
+    if (!lastZoom || lastZoom > event.viewState.zoom) {
+      mapRef.current?.removeFeatureState({ source: sourceId });
     }
+    setLastZoom(event.viewState.zoom);
   };
 
   const onResize = React.useCallback(() => {

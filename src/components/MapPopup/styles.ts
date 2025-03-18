@@ -8,7 +8,7 @@
 import { grey } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { Popup } from 'react-map-gl/dist/es5';
+import { Popup } from 'react-map-gl/mapbox';
 
 export const StyledPopup = styled(Popup)(({ theme }) => ({
   maxWidth: '400px !important',
