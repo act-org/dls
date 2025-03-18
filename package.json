@@ -66,7 +66,7 @@
     "@storybook/addon-mdx-gfm": "8.5.0",
     "@storybook/addon-webpack5-compiler-swc": "2.0.0",
     "@storybook/blocks": "8.5.0",
-    "@storybook/cli": "8.5.0",
+    "@storybook/cli": "8.6.7",
     "@storybook/mdx2-csf": "1.1.0",
     "@storybook/react": "8.5.0",
     "@storybook/react-webpack5": "8.5.0",
