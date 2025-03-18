@@ -15,7 +15,7 @@ import {
   DialogTitleProps,
   Typography,
 } from '@mui/material';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
 
 import { DialogProps } from '../Dialog';
@@ -88,7 +88,7 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
         <DialogContent {...contentProps}>
           {content || (
             <Typography variant="body1">
-              {`For security reasons, your session will timeout at ${moment(
+              {`For security reasons, your session will timeout at ${dayjs(
                 expiresAt,
               ).format('h:mm A')} unless you continue.`}
             </Typography>
