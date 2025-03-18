@@ -1,3 +1,11 @@
+# [9.9.0](https://github.com/act-org/dls/compare/v9.8.0...v9.9.0) (2025-03-18)
+
+
+### Features
+
+* Bump 'color' to v5.0.0 ([d435b7d](https://github.com/act-org/dls/commit/d435b7d55b1c2f5bad1d7d15d984e49641cef9ef))
+* Bump 'react-map-gl' to v8 ([0ac0d74](https://github.com/act-org/dls/commit/0ac0d747f35b97fa4adf0aca5bdf7eb0a5b9c5f4))
+
 # [9.8.0](https://github.com/act-org/dls/compare/v9.7.3...v9.8.0) (2025-03-18)
 
 
