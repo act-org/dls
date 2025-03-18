@@ -1,3 +1,10 @@
+# [9.10.0](https://github.com/act-org/dls/compare/v9.9.0...v9.10.0) (2025-03-18)
+
+
+### Features
+
+* Use deeper lodash imports to reduce bundle size; enforce this through eslint ([f77dd1d](https://github.com/act-org/dls/commit/f77dd1d3d110a321518110de825f68fd2b2e15f0))
+
 # [9.9.0](https://github.com/act-org/dls/compare/v9.8.0...v9.9.0) (2025-03-18)
 
 
