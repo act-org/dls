@@ -28,7 +28,6 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-6086c1-MuiButtonBase-root-MuiButton-root"
       color="primary"
-      id=":r0:"
       tabindex="0"
       type="button"
     >
@@ -65,7 +64,6 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
     </p>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1srbwv2-MuiButtonBase-root-MuiButton-root"
-      id=":r1:"
       tabindex="0"
       type="button"
     >
@@ -102,7 +100,6 @@ exports[`EmptyState ENCOURA theme matches the snapshot 1`] = `
     </p>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-1sctphu-MuiButtonBase-root-MuiButton-root"
-      id=":r2:"
       tabindex="0"
       type="button"
     >
@@ -139,7 +136,6 @@ exports[`EmptyState ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     </p>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-eb5jj6-MuiButtonBase-root-MuiButton-root"
-      id=":r3:"
       tabindex="0"
       type="button"
     >
@@ -176,7 +172,6 @@ exports[`EmptyState ENCOURAGE theme matches the snapshot 1`] = `
     </p>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-qfjlf1-MuiButtonBase-root-MuiButton-root"
-      id=":r4:"
       tabindex="0"
       type="button"
     >
@@ -213,7 +208,6 @@ exports[`EmptyState ENCOURAGE_E4E theme matches the snapshot 1`] = `
     </p>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1exgwkg-MuiButtonBase-root-MuiButton-root"
-      id=":r5:"
       tabindex="0"
       type="button"
     >

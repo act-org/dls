@@ -5,7 +5,6 @@ exports[`IconButton ACT theme matches the snapshot 1`] = `
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
     color="primary"
-    id=":r0:"
     tabindex="0"
     title="icon button"
     type="button"
@@ -29,7 +28,6 @@ exports[`IconButton ACT_ET theme matches the snapshot 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-    id=":r1:"
     tabindex="0"
     title="icon button"
     type="button"
@@ -53,7 +51,6 @@ exports[`IconButton ENCOURA theme matches the snapshot 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-    id=":r2:"
     tabindex="0"
     title="icon button"
     type="button"
@@ -77,7 +74,6 @@ exports[`IconButton ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-    id=":r3:"
     tabindex="0"
     title="icon button"
     type="button"
@@ -101,7 +97,6 @@ exports[`IconButton ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
-    id=":r4:"
     tabindex="0"
     title="icon button"
     type="button"
@@ -125,7 +120,6 @@ exports[`IconButton ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <button
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
-    id=":r5:"
     tabindex="0"
     title="icon button"
     type="button"

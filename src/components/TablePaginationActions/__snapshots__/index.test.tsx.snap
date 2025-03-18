@@ -16,7 +16,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         disabled=""
-        id=":r1:"
         tabindex="-1"
         type="button"
       >
@@ -44,7 +43,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
         disabled=""
-        id=":r3:"
         tabindex="-1"
         type="button"
       >
@@ -128,7 +126,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         aria-label="Next Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
-        id=":r7:"
         tabindex="0"
         type="button"
       >
@@ -155,7 +152,6 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
         aria-label="Last Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeLarge css-oqo401-MuiButtonBase-root-MuiIconButton-root"
         color="primary"
-        id=":r9:"
         tabindex="0"
         type="button"
       >
@@ -190,7 +186,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
         aria-label="First Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":rb:"
         tabindex="-1"
         type="button"
       >
@@ -216,7 +211,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
         aria-label="Previous Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":rd:"
         tabindex="-1"
         type="button"
       >
@@ -298,7 +292,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
       <button
         aria-label="Next Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-        id=":rh:"
         tabindex="0"
         type="button"
       >
@@ -323,7 +316,6 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
       <button
         aria-label="Last Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-        id=":rj:"
         tabindex="0"
         type="button"
       >
@@ -358,7 +350,6 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
         aria-label="First Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":rl:"
         tabindex="-1"
         type="button"
       >
@@ -384,7 +375,6 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
         aria-label="Previous Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":rn:"
         tabindex="-1"
         type="button"
       >
@@ -466,7 +456,6 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
       <button
         aria-label="Next Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-        id=":rr:"
         tabindex="0"
         type="button"
       >
@@ -491,7 +480,6 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
       <button
         aria-label="Last Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-        id=":rt:"
         tabindex="0"
         type="button"
       >
@@ -526,7 +514,6 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
         aria-label="First Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":rv:"
         tabindex="-1"
         type="button"
       >
@@ -552,7 +539,6 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
         aria-label="Previous Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":r11:"
         tabindex="-1"
         type="button"
       >
@@ -634,7 +620,6 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
       <button
         aria-label="Next Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-        id=":r15:"
         tabindex="0"
         type="button"
       >
@@ -659,7 +644,6 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
       <button
         aria-label="Last Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1lb2xn-MuiButtonBase-root-MuiIconButton-root"
-        id=":r17:"
         tabindex="0"
         type="button"
       >
@@ -694,7 +678,6 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
         aria-label="First Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":r19:"
         tabindex="-1"
         type="button"
       >
@@ -720,7 +703,6 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
         aria-label="Previous Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":r1b:"
         tabindex="-1"
         type="button"
       >
@@ -802,7 +784,6 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
       <button
         aria-label="Next Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
-        id=":r1f:"
         tabindex="0"
         type="button"
       >
@@ -827,7 +808,6 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
       <button
         aria-label="Last Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-jnvxw6-MuiButtonBase-root-MuiIconButton-root"
-        id=":r1h:"
         tabindex="0"
         type="button"
       >
@@ -862,7 +842,6 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
         aria-label="First Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":r1j:"
         tabindex="-1"
         type="button"
       >
@@ -888,7 +867,6 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
         aria-label="Previous Page"
         class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
-        id=":r1l:"
         tabindex="-1"
         type="button"
       >
@@ -970,7 +948,6 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
       <button
         aria-label="Next Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
-        id=":r1p:"
         tabindex="0"
         type="button"
       >
@@ -995,7 +972,6 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
       <button
         aria-label="Last Page"
         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
-        id=":r1r:"
         tabindex="0"
         type="button"
       >
