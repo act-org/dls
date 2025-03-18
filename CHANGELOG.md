@@ -1,3 +1,10 @@
+# [9.8.0](https://github.com/act-org/dls/compare/v9.7.3...v9.8.0) (2025-03-18)
+
+
+### Features
+
+* Bump dependencies to their latest compatible releases ([03e7913](https://github.com/act-org/dls/commit/03e79138d88829ee3d49028243f1cefe28989a3c))
+
 ## [9.7.3](https://github.com/act-org/dls/compare/v9.7.2...v9.7.3) (2025-03-18)
 
 
