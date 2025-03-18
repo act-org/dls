@@ -9,7 +9,7 @@ import Button, { ButtonProps } from '@mui/material/Button';
 import { IconProps } from '@mui/material/Icon';
 import { TypographyProps } from '@mui/material/Typography';
 import { GridProps, SizingProps } from '@mui/system';
-import { isString } from 'lodash';
+import isString from 'lodash/isString';
 import {
   ComponentClass,
   CSSProperties,

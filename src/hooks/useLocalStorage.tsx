@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { isFunction } from 'lodash';
+import isFunction from 'lodash/isFunction';
 import { useEffect, useState } from 'react';
 
 export const useLocalStorage = (

@@ -14,8 +14,8 @@ import {
   TableRow,
   Typography,
 } from '@mui/material';
-import { Meta, StoryObj, StoryFn } from '@storybook/react';
-import { round } from 'lodash';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import round from 'lodash/round';
 import moment from 'moment';
 import pluralize from 'pluralize';
 import { ReactElement, useState } from 'react';

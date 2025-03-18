@@ -6,7 +6,7 @@
  */
 
 import clsx from 'clsx';
-import { mergeWith } from 'lodash';
+import mergeWith from 'lodash/mergeWith';
 
 type Classes = any;
 

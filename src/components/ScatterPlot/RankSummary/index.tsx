@@ -6,17 +6,18 @@
  */
 
 import {
-  IconButton,
-  Tooltip,
-  Paper,
-  TableHead,
-  TableCell,
-  TableBody,
-  TableRow,
   BoxProps,
+  IconButton,
+  Paper,
+  TableBody,
+  TableCell,
   TableContainerProps,
+  TableHead,
+  TableRow,
+  Tooltip,
 } from '@mui/material';
-import { includes, kebabCase } from 'lodash';
+import includes from 'lodash/includes';
+import kebabCase from 'lodash/kebabCase';
 import React, { ElementType } from 'react';
 import ChevronLeft from '~/icons/ChevronLeft';
 import CloseCircleOutline from '~/icons/CloseCircleOutline';

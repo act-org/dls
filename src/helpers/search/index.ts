@@ -5,7 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { get, toString } from 'lodash';
+import get from 'lodash/get';
+import toString from 'lodash/toString';
 
 export function search<T>(docs: T[], properties: string[], value: string): T[] {
   return docs.filter(doc =>

@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { get } from 'lodash';
+import get from 'lodash/get';
 
 export const getErrorMessage = (err: unknown): string => {
   let errorMessage = '';

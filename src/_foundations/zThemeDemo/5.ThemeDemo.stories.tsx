@@ -45,7 +45,7 @@ import {
 } from '@mui/material';
 import Grid2 from '@mui/material/Grid2';
 import { Meta, StoryFn } from '@storybook/react';
-import { sortBy } from 'lodash';
+import sortBy from 'lodash/sortBy';
 import { ReactElement } from 'react';
 import MailIcon from '~/icons/Mailbox';
 import Menu from '~/icons/Menu';
@@ -56,12 +56,12 @@ import {
   topFilms,
 } from '~/components/_muiCore/Autocomplete/internal';
 
-type Demo<ComponentProps> = {
+interface Demo<ComponentProps> {
   flex?: number;
   props: ComponentProps[];
   title: string;
   render: (props: ComponentProps) => ReactElement<ComponentProps>;
-};
+}
 
 const demos = [
   {

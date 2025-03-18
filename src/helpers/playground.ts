@@ -11,7 +11,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable guard-for-in */
 /* eslint-disable no-loops/no-loops */
-// import { get } from 'lodash';
+// import get from 'lodash/get';
 
 interface PropType {
   defaultValue: unknown;

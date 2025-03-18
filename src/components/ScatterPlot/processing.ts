@@ -5,20 +5,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { isFunction } from 'lodash';
+import isFunction from 'lodash/isFunction';
 
 import { ScatterPlotData } from '~/types';
 
 import { Y_LABEL_MARGIN, calculateLabelWidth } from './CustomizedLabel';
 import {
-  IScatterDomain,
-  IGroupDataPoint,
   CustomDomain,
-  IMinMaxData,
-  ILabelPositionInfo,
-  IPixelConversions,
-  IOffsets,
   ICoordinate,
+  IGroupDataPoint,
+  ILabelPositionInfo,
+  IMinMaxData,
+  IOffsets,
+  IPixelConversions,
+  IScatterDomain,
 } from './types';
 
 function extractSimpleInfo(dataPoint: IGroupDataPoint): ScatterPlotData {

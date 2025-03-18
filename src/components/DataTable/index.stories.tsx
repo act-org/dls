@@ -7,7 +7,7 @@
 
 import { Link } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
-import { isNumber } from 'lodash';
+import isNumber from 'lodash/isNumber';
 import moment from 'moment';
 import { useState } from 'react';
 import PackageVariant from '~/icons/PackageVariant';

@@ -8,34 +8,34 @@
 import { Button } from '@mui/material';
 import { common } from '@mui/material/colors';
 import { useTheme, useThemeProps } from '@mui/material/styles';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import numeral from 'numeral';
 import React, { LegacyRef, MouseEventHandler } from 'react';
 import {
+  CartesianGrid,
+  CartesianGridProps,
+  Label,
+  LabelList,
+  LabelProps,
   ReferenceLine,
+  ResponsiveContainer,
+  ResponsiveContainerProps,
   Scatter,
+  ScatterChart,
+  ScatterProps,
+  Tooltip,
+  TooltipProps,
   XAxis,
   YAxis,
   ZAxis,
-  CartesianGrid,
-  LabelList,
   ZAxisProps,
-  CartesianGridProps,
-  ResponsiveContainer,
-  ResponsiveContainerProps,
-  ScatterProps,
-  ScatterChart,
-  Label,
-  LabelProps,
-  Tooltip,
-  TooltipProps,
 } from 'recharts';
 import { Props as ReferenceLinePropsImport } from 'recharts/types/cartesian/ReferenceLine';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 import { CategoricalChartState } from 'recharts/types/chart/types';
 import {
-  ValueType,
   NameType,
+  ValueType,
 } from 'recharts/types/component/DefaultTooltipContent';
 import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 
@@ -58,14 +58,14 @@ import {
 } from './processing';
 import RankSummary from './RankSummary';
 import {
-  IScatterDomain,
   CustomXAxisProps,
   CustomYAxisProps,
   IBuildDataOptions,
+  ICoordinate,
   IPlotDimensions,
+  IScatterDomain,
   IScatterRefNode,
   IZoomOptions,
-  ICoordinate,
 } from './types';
 
 type ReferenceLineProps = ReferenceLinePropsImport & {

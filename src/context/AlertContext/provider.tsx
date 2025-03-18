@@ -7,7 +7,7 @@
 
 /* eslint-disable filenames/match-exported */
 
-import { get } from 'lodash';
+import get from 'lodash/get';
 import {
   enqueueSnackbar,
   OptionsObject,

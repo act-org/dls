@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { isString } from 'lodash';
+import isString from 'lodash/isString';
 
 import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
 import { SortObject } from '~/types';

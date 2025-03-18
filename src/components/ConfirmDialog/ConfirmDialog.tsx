@@ -11,13 +11,13 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent, { DialogContentProps } from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle, { DialogTitleProps } from '@mui/material/DialogTitle';
-import { noop } from 'lodash';
+import noop from 'lodash/noop';
 import { ReactElement } from 'react';
 
 /**
  * Properties to control the various aspects of a confirmation dialog
  */
-export type ConfirmDialogProps = {
+export interface ConfirmDialogProps {
   /**
    * Controls the visibility of the confirmation dialog
    */
@@ -89,7 +89,7 @@ export type ConfirmDialogProps = {
     event: Record<string, unknown>,
     reason: 'backdropClick' | 'escapeKeyDown',
   ) => void | undefined;
-};
+}
 
 /**
  * Main component for a confirmation dialog.  This component can be used in isolation by

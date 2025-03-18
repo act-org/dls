@@ -6,7 +6,7 @@
  */
 
 import { useTheme } from '@mui/material/styles';
-import { isNumber } from 'lodash';
+import isNumber from 'lodash/isNumber';
 import * as React from 'react';
 import { LabelProps } from 'recharts';
 

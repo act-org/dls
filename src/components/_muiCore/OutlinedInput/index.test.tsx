@@ -6,7 +6,7 @@
  */
 
 import { OutlinedInput } from '@mui/material';
-import { noop } from 'lodash';
+import noop from 'lodash/noop';
 
 import { standard } from '~/helpers/test';
 
