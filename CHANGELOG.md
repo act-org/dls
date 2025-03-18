@@ -1,3 +1,10 @@
+## [9.7.3](https://github.com/act-org/dls/compare/v9.7.2...v9.7.3) (2025-03-18)
+
+
+### Bug Fixes
+
+* Fix snapshot tests ([82785f3](https://github.com/act-org/dls/commit/82785f3de347b8fbe7d1822397734af1741f2471))
+
 ## [9.7.2](https://github.com/act-org/dls/compare/v9.7.1...v9.7.2) (2025-01-22)
 
 
