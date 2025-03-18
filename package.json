@@ -12,7 +12,7 @@
     "@babel/runtime": "^7.26.10",
     "@turf/bbox": "^7.2.0",
     "clsx": "^2.1.1",
-    "color": "^4.2.3",
+    "color": "^5.0.0",
     "d3-array": "^3.2.4",
     "d3-scale": "^4.0.2",
     "deepmerge": "^4.3.1",
