@@ -6,7 +6,9 @@
  */
 
 import { Table, TableBody, TableHead, TableRow } from '@mui/material';
-import { constant, isNumber, round } from 'lodash';
+import constant from 'lodash/constant';
+import isNumber from 'lodash/isNumber';
+import round from 'lodash/round';
 import { CSSProperties, ReactElement } from 'react';
 
 import { EmptyState, EmptyStateProps } from '~/components/EmptyState';

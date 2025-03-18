@@ -7,7 +7,7 @@
 
 import { IconButton, PopperProps, Tooltip } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { min } from 'lodash';
+import min from 'lodash/min';
 import { CSSProperties, FC, ReactElement, useRef, useState } from 'react';
 import { FixedSizeList } from 'react-window';
 import ChevronLeft from '~/icons/ChevronLeft';

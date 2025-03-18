@@ -10,7 +10,7 @@ import {
   DialogContentProps,
   DialogTitleProps,
 } from '@mui/material';
-import { noop } from 'lodash';
+import noop from 'lodash/noop';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
 
 import DialogContinueSession from '~/components/DialogContinueSession';

@@ -11,7 +11,7 @@ import { grey } from '@mui/material/colors';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import bbox from '@turf/bbox';
 import Color from 'color';
-import { isString } from 'lodash';
+import isString from 'lodash/isString';
 import {
   FillLayerSpecification,
   GeoJSONFeature,
@@ -31,9 +31,9 @@ import {
   Map as MapGL,
   MapMouseEvent,
   MapRef,
-  MapProps as ReactMapGLProps,
   NavigationControl,
   NavigationControlProps,
+  MapProps as ReactMapGLProps,
   Source,
   SourceProps as SourceGLProps,
   TerrainSpecification,

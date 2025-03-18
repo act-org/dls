@@ -8,7 +8,7 @@
 /* eslint-disable filenames/match-exported */
 
 import { blueGrey, common, grey } from '@mui/material/colors';
-import { range } from 'lodash';
+import range from 'lodash/range';
 
 // An array of 18 hex color strings.
 export const DEFAULT_CHART_COLORS = range(18).map((i): string => {

@@ -9,12 +9,12 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 
 import Paper from '@mui/material/Paper';
-import { get } from 'lodash';
+import get from 'lodash/get';
 import React from 'react';
 import { TooltipProps } from 'recharts';
 import {
-  ValueType,
   NameType,
+  ValueType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
 import { IGroupDataPoint } from '../types';

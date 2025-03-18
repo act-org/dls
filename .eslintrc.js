@@ -21,5 +21,19 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'off',
     'no-console': 'off',
     'react/react-in-jsx-scope': 'off',
+    'regex/invalid-error': [
+      'error',
+      [
+        {
+          files: {
+            inspect: '[.]ts[x]*$',
+          },
+          id: 'noTopLevelLodashImportsFixWhenPossible',
+          message:
+            "To minimize bundle size, avoid doing imports from lodash directly. Instead, do a deep import, e.g., `import compact from 'lodash/compact'`",
+          regex: "import {[^}]*} from 'lodash'",
+        },
+      ],
+    ],
   },
 };

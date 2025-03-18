@@ -16,10 +16,10 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import { Meta, StoryObj, StoryFn } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import JSONParseSafe from 'json-parse-safe';
-import { get } from 'lodash';
-import { useState, useEffect } from 'react';
+import get from 'lodash/get';
+import { useEffect, useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
 

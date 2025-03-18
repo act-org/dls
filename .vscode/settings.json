@@ -13,24 +13,24 @@
   "[javascript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "never",
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "never"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "never",
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "never"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "never",
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "never"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

@@ -7,14 +7,14 @@
 
 import { useTheme } from '@mui/material/styles';
 import bbox from '@turf/bbox';
-import { isString } from 'lodash';
+import isString from 'lodash/isString';
 import numeral from 'numeral';
 import React from 'react';
 
 import Map, {
-  MapProps,
   FeatureHoverProps,
   InitialBoundsPositionProps,
+  MapProps,
 } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
 import { IMapDataProps } from '~/types';

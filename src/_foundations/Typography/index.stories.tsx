@@ -9,7 +9,8 @@ import { Grid2, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Variant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react';
-import { compact, isPlainObject } from 'lodash';
+import compact from 'lodash/compact';
+import isPlainObject from 'lodash/isPlainObject';
 import React from 'react';
 import InformationOutline from '~/icons/InformationOutline';
 

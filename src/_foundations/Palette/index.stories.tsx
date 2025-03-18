@@ -9,7 +9,9 @@ import { Grid2, ListItemText, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import { flatten } from 'flat';
-import { includes, isFunction, isString } from 'lodash';
+import includes from 'lodash/includes';
+import isFunction from 'lodash/isFunction';
+import isString from 'lodash/isString';
 import React from 'react';
 
 import {

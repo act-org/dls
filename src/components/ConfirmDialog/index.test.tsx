@@ -8,7 +8,7 @@
 import { Box, Button, Typography } from '@mui/material';
 import '@testing-library/jest-dom';
 import UserEvent from '@testing-library/user-event';
-import { noop } from 'lodash';
+import noop from 'lodash/noop';
 import { ReactElement } from 'react';
 
 import { ConfirmProvider } from '~/context';

@@ -7,7 +7,7 @@
 
 import { MenuItem, SelectProps } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
-import { range } from 'lodash';
+import range from 'lodash/range';
 import { useState } from 'react';
 
 import { Select } from './internal';

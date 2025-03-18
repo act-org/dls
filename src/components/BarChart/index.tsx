@@ -7,23 +7,25 @@
 
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import { TypographyProps } from '@mui/material/Typography';
-import { isFunction, kebabCase, toLower } from 'lodash';
+import isFunction from 'lodash/isFunction';
+import kebabCase from 'lodash/kebabCase';
+import toLower from 'lodash/toLower';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
 import {
-  ComposedChart,
   Bar,
   BarProps,
+  CartesianGrid,
+  CartesianGridProps,
+  ComposedChart,
+  LabelList,
+  LabelListProps,
+  ResponsiveContainerProps,
+  Tooltip,
   XAxis,
   XAxisProps,
   YAxis,
   YAxisProps,
-  CartesianGrid,
-  CartesianGridProps,
-  Tooltip,
-  LabelList,
-  LabelListProps,
-  ResponsiveContainerProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 
@@ -36,7 +38,7 @@ import {
   CustomizedAxisTickProps,
 } from './CustomizedAxisTick';
 import CustomTooltip, { CustomToolTipProps } from './CustomTooltip';
-import { StyledResponsiveContainer, StyledContainer } from './styles';
+import { StyledContainer, StyledResponsiveContainer } from './styles';
 import { DataProps as ConsolidatedDataProps } from './types';
 
 // Exporting this type here as well so that we can retain retro-compatibility.

@@ -7,7 +7,7 @@
 
 import { Box, MenuItem, Tooltip, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react';
-import { range } from 'lodash';
+import range from 'lodash/range';
 import { useState } from 'react';
 import HelpIcon from '~/icons/HelpCircle';
 

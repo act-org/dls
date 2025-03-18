@@ -5,7 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { noop, range } from 'lodash';
+import noop from 'lodash/noop';
+import range from 'lodash/range';
 
 import { snapshot } from '~/helpers/test';
 

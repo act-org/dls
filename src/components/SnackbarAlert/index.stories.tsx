@@ -8,8 +8,8 @@
 /* eslint-disable react/require-default-props */
 
 import { Button, Grid2 } from '@mui/material';
-import { Meta, StoryObj, StoryFn } from '@storybook/react';
-import { startCase } from 'lodash';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import startCase from 'lodash/startCase';
 import { VariantType } from 'notistack';
 import { ReactElement, useState } from 'react';
 

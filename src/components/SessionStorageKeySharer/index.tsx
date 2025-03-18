@@ -6,7 +6,7 @@
  */
 
 import JSONParseSafe from 'json-parse-safe';
-import { get } from 'lodash';
+import get from 'lodash/get';
 import { FC, useEffect } from 'react';
 
 import useLocalStorage from '~/hooks/useLocalStorage';
