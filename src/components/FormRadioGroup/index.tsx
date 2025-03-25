@@ -17,24 +17,27 @@ import { FormRadio, FormRadioProps } from '~/components/FormRadio';
 import { InputLabel, InputLabelProps } from '~/components/InputLabel';
 
 export type FormRadioGroupProps = RadioGroupProps & {
-  options: FormRadioProps[];
-  helpText?: string;
   formControlProps?: FormControlProps;
+  helpText?: string;
   inputLabelProps?: InputLabelProps;
   label: string;
+  options: FormRadioProps[];
 };
 
 export function FormRadioGroup({
-  options,
-  label,
   formControlProps,
   helpText,
+  inputLabelProps,
+  label,
   name,
+  options,
   ...radioGroupProps
 }: FormRadioGroupProps): ReactElement<FormRadioGroupProps> {
   return (
     <FormControl {...formControlProps}>
-      <InputLabel helpText={helpText}>{label}</InputLabel>
+      <InputLabel helpText={helpText} {...inputLabelProps}>
+        {label}
+      </InputLabel>
       <RadioGroup aria-label={name} {...radioGroupProps}>
         {options.map(option => (
           <FormRadio
