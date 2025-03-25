@@ -11,7 +11,7 @@ import InputLabel, { inputLabelClasses } from '@mui/material/InputLabel';
 
 import { styled } from '~/helpers/styled';
 
-export const StyledInputLabel = styled(InputLabel)({
+export const StyledInputLabel = styled(InputLabel)(({ theme }) => ({
   [`&.${inputLabelClasses.root}`]: {
     '& .label-help': {
       '& .MuiSvgIcon-root': {
@@ -24,12 +24,12 @@ export const StyledInputLabel = styled(InputLabel)({
     },
     '& .label-split': {
       '& > .required': {
+        color: theme.palette.error.main,
         fontSize: '.875rem',
       },
       alignItems: 'center',
       display: 'flex',
-      justifyContent: 'space-between',
     },
     position: 'relative',
   },
-});
+}));

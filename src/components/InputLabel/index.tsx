@@ -55,7 +55,7 @@ export const InputLabel: FC<InputLabelProps> = ({
           </Tooltip>
         )}
       </span>
-      {required && <span className="required">Required</span>}
+      {required && <span className="required">*</span>}
     </div>
   </StyledInputLabel>
 );
