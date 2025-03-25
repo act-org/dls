@@ -60,14 +60,11 @@ export const Preview: StoryObj<FormRadioGroupProps> = {
   args: {},
 };
 
-export const WithHelpTextAndPlacement: StoryObj<FormRadioGroupProps> = {
+export const WithInputLabelProps: StoryObj<FormRadioGroupProps> = {
   args: {
     inputLabelProps: {
-      helpPlacement: 'right',
-      helpText: 'This is a helpful description.',
       required: true,
     },
-    label: 'Choose an option',
     name: 'helpTextExample',
     options: [
       { id: 'one', label: 'Option One', value: 'one' },
