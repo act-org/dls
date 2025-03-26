@@ -1,3 +1,17 @@
+# [9.12.0](https://github.com/act-org/dls/compare/v9.11.0...v9.12.0) (2025-03-26)
+
+
+### Bug Fixes
+
+* Add storybook entry ([1595902](https://github.com/act-org/dls/commit/159590265aa4f5ba393ba6dc071964bbf5d02c01))
+* Change new storybook entry name ([bd4613b](https://github.com/act-org/dls/commit/bd4613b5726b895fa2bc3406e2d1f87e489fcd0c))
+* Extend inputLabelProps to InputLabel element ([37e225e](https://github.com/act-org/dls/commit/37e225e267d58361d5c5e575b3f945855fab507e))
+
+
+### Features
+
+* Change InputLabel required text to asterisk instead of required text ([a315e22](https://github.com/act-org/dls/commit/a315e22f079caded2b6125a25daf7651e9e28be8))
+
 # [9.11.0](https://github.com/act-org/dls/compare/v9.10.0...v9.11.0) (2025-03-18)
 
 
