@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Meta, StoryObj, StoryFn } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';
@@ -58,4 +58,17 @@ export default {
 
 export const Preview: StoryObj<FormRadioGroupProps> = {
   args: {},
+};
+
+export const WithInputLabelProps: StoryObj<FormRadioGroupProps> = {
+  args: {
+    inputLabelProps: {
+      required: true,
+    },
+    name: 'helpTextExample',
+    options: [
+      { id: 'one', label: 'Option One', value: 'one' },
+      { id: 'two', label: 'Option Two', value: 'two' },
+    ],
+  },
 };
