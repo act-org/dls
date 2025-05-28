@@ -206,7 +206,6 @@
     "copy:changelog": "cp -rf CHANGELOG.md dist",
     "copy:license": "cp -rf LICENSE dist",
     "copy:readme": "cp -rf README.md dist",
-    "pack": "cd dist && npm pack",
     "prepare": "husky",
     "prettier": "prettier --write .",
     "release": "semantic-release",
