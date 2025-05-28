@@ -1232,59 +1232,6 @@ export const components: ThemeOptions['components'] = {
     },
   },
 
-  MuiYearCalendar: {
-    styleOverrides: {
-      root: {
-        '&.Mui-selected': {
-          '&:focus': {
-            backgroundColor: palette.branding.sapphire[500],
-          },
-          '&:hover': {
-            backgroundColor: palette.branding.sapphire[700],
-          },
-          backgroundColor: palette.branding.sapphire[500],
-          color: palette.text.overDark.high,
-        },
-        '&:last-of-type': {
-          marginBottom: '8px',
-        },
-        '&:nth-of-type(3n + 2)': {
-          marginLeft: '20px',
-        },
-        '&:nth-of-type(3n)': {
-          marginLeft: '20px',
-        },
-        button: {
-          '&.Mui-disabled': {
-            background: palette.branding.surface[100],
-            color: palette.text.overLight.disabled,
-            pointerEvents: 'none',
-          },
-          '&.Mui-selected': {
-            color: `${palette.text.overDark.high}!important`,
-          },
-          ':focus': {
-            background: palette.utility.white,
-            border: `1px solid ${palette.branding.sapphire[500]}`,
-            color: palette.branding.sapphire[500],
-          },
-          ':hover': {
-            background: palette.branding.sapphire[50],
-          },
-          borderRadius: '8px',
-          color: palette.text.overLight.high,
-          fontFamily: primaryFontFamily,
-          fontSize: 14,
-          fontWeight: 500,
-          height: '40px',
-          lineHeight: '20px',
-          width: '71px',
-        },
-        fontFamily: primaryFontFamily,
-      },
-    },
-  },
-
   MuiSelect: {
     styleOverrides: {
       icon: {
@@ -1673,6 +1620,7 @@ export const components: ThemeOptions['components'] = {
       },
     },
   },
+
   MuiTooltip: {
     styleOverrides: {
       arrow: ({ ownerState }) => {
@@ -1731,6 +1679,58 @@ export const components: ThemeOptions['components'] = {
       },
       tooltipPlacementTop: {
         margin: '16px 0px 14px 0px !important',
+      },
+    },
+  },
+  MuiYearCalendar: {
+    styleOverrides: {
+      root: {
+        '&.Mui-selected': {
+          '&:focus': {
+            backgroundColor: palette.branding.sapphire[500],
+          },
+          '&:hover': {
+            backgroundColor: palette.branding.sapphire[700],
+          },
+          backgroundColor: palette.branding.sapphire[500],
+          color: palette.text.overDark.high,
+        },
+        '&:last-of-type': {
+          marginBottom: '8px',
+        },
+        '&:nth-of-type(3n + 2)': {
+          marginLeft: '20px',
+        },
+        '&:nth-of-type(3n)': {
+          marginLeft: '20px',
+        },
+        button: {
+          '&.Mui-disabled': {
+            background: palette.branding.surface[100],
+            color: palette.text.overLight.disabled,
+            pointerEvents: 'none',
+          },
+          '&.Mui-selected': {
+            color: `${palette.text.overDark.high}!important`,
+          },
+          ':focus': {
+            background: palette.utility.white,
+            border: `1px solid ${palette.branding.sapphire[500]}`,
+            color: palette.branding.sapphire[500],
+          },
+          ':hover': {
+            background: palette.branding.sapphire[50],
+          },
+          borderRadius: '8px',
+          color: palette.text.overLight.high,
+          fontFamily: primaryFontFamily,
+          fontSize: 14,
+          fontWeight: 500,
+          height: '40px',
+          lineHeight: '20px',
+          width: '71px',
+        },
+        fontFamily: primaryFontFamily,
       },
     },
   },
