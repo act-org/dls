@@ -210,6 +210,7 @@
     "prepack": "npm run build && npm run copy",
     "prepare": "husky",
     "prettier": "prettier --write .",
+    "release": "semantic-release",
     "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
     "start": "sb dev -p 6006",
     "test": "npm-run-all test:**",
@@ -223,5 +224,5 @@
     "watch": "npm run build && npm run copy && npm run build:components -- --watch"
   },
   "types": "index.d.ts",
-  "version": "10.0.0"
+  "version": "9.12.0"
 }
