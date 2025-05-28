@@ -1082,6 +1082,15 @@ export const components: ThemeOptions['components'] = {
       },
     },
   },
+  MuiPickerPopper: {
+    styleOverrides: {
+      paper: {
+        '& > .MuiDialogActions-root.MuiDialogActions-spacing': {
+          margin: 0,
+        },
+      },
+    },
+  },
   MuiPickersArrowSwitcher: {
     styleOverrides: {
       spacer: {
@@ -1158,15 +1167,6 @@ export const components: ThemeOptions['components'] = {
       },
     },
   },
-  MuiPickersPopper: {
-    styleOverrides: {
-      paper: {
-        '& > .MuiDialogActions-root.MuiDialogActions-spacing': {
-          margin: 0,
-        },
-      },
-    },
-  },
   /**
    * Change this class is necessary in the sense we need to make the monthContainer flexible. The container has a space below saved for months
    * with 6 rows of weeks that happens when the 1st start on a Saturday and the day has 31 days but the container should adapt it's size according
@@ -1181,8 +1181,58 @@ export const components: ThemeOptions['components'] = {
       },
     },
   },
+  MuiRadio: {
+    styleOverrides: {
+      root: ({ ownerState }) => {
+        const sizeSmallOverrides =
+          ownerState?.size === 'small'
+            ? {
+                '& > span': {
+                  height: 20,
+                  width: 20,
+                },
+                '& > span.MuiTouchRipple-root': {
+                  height: 38,
+                  width: 38,
+                },
+                height: 38,
+                padding: 10.67,
+                width: 38,
+              }
+            : {};
+        return {
+          '& > span > svg.MuiSvgIcon-fontSizeMedium': {
+            height: 24,
+            width: 24,
+          },
+          '& > span > svg.MuiSvgIcon-fontSizeSmall': {
+            height: 20,
+            width: 20,
+          },
+          '&.Mui-checked': {
+            '&:hover': {
+              backgroundColor: palette.branding.teal[50],
+            },
+            color: palette.branding.teal[500],
+          },
+          '&.Mui-disabled': {
+            color: palette.branding.surface[400],
+          },
+          '&:hover': {
+            backgroundColor: palette.branding.surface[200],
+          },
+          color: palette.branding.surface[900],
+          height: 42,
+          marginRight: 1,
+          padding: 11,
+          width: 42,
+          ...sizeSmallOverrides,
+        };
+      },
+    },
+  },
 
-  MuiPickersYear: {
+  MuiYearCalendar: {
     styleOverrides: {
       root: {
         '&.Mui-selected': {
@@ -1231,57 +1281,6 @@ export const components: ThemeOptions['components'] = {
           width: '71px',
         },
         fontFamily: primaryFontFamily,
-      },
-    },
-  },
-
-  MuiRadio: {
-    styleOverrides: {
-      root: ({ ownerState }) => {
-        const sizeSmallOverrides =
-          ownerState?.size === 'small'
-            ? {
-                '& > span': {
-                  height: 20,
-                  width: 20,
-                },
-                '& > span.MuiTouchRipple-root': {
-                  height: 38,
-                  width: 38,
-                },
-                height: 38,
-                padding: 10.67,
-                width: 38,
-              }
-            : {};
-        return {
-          '& > span > svg.MuiSvgIcon-fontSizeMedium': {
-            height: 24,
-            width: 24,
-          },
-          '& > span > svg.MuiSvgIcon-fontSizeSmall': {
-            height: 20,
-            width: 20,
-          },
-          '&.Mui-checked': {
-            '&:hover': {
-              backgroundColor: palette.branding.teal[50],
-            },
-            color: palette.branding.teal[500],
-          },
-          '&.Mui-disabled': {
-            color: palette.branding.surface[400],
-          },
-          '&:hover': {
-            backgroundColor: palette.branding.surface[200],
-          },
-          color: palette.branding.surface[900],
-          height: 42,
-          marginRight: 1,
-          padding: 11,
-          width: 42,
-          ...sizeSmallOverrides,
-        };
       },
     },
   },

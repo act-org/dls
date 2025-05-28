@@ -46,8 +46,8 @@
     "@mui/base": "5.0.0-beta.70",
     "@mui/material": "7.1.0",
     "@mui/system": "7.1.0",
-    "@mui/x-data-grid": "7.28.0",
-    "@mui/x-date-pickers": "7.28.0",
+    "@mui/x-data-grid": "8.4.0",
+    "@mui/x-date-pickers": "8.4.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "7.1.0",
     "@semantic-release/git": "10.0.1",
@@ -132,9 +132,9 @@
   "main": "index.js",
   "name": "@actinc/dls",
   "peerDependencies": {
-    "@mui/material": "6.x",
-    "@mui/system": "6.x",
-    "@mui/x-data-grid": "7.x",
+    "@mui/material": "7.x",
+    "@mui/system": "7.x",
+    "@mui/x-data-grid": "8.x",
     "react": "18.x || 19.x",
     "react-dom": "18.x || 19.x"
   },
