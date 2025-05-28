@@ -13,6 +13,21 @@
 * Some TypeScript references in MUI-X 7 have been renamed in MUI-X 8
 * 'Grid2' references in MUI 6 have been renamed to 'Grid' in MUI 7
 
+# [10.0.0](https://github.com/act-org/dls/compare/v9.12.0...v10.0.0) (2025-05-28)
+
+
+### Features
+
+* Upgrade MUI to version 7 ([5b0f7a9](https://github.com/act-org/dls/commit/5b0f7a91c3bb8ad1b4c249a0036bd064e0abfe24))
+* Upgrade MUI-X to version 8 ([27da526](https://github.com/act-org/dls/commit/27da52608d26f3c00719435da4a49e742572bb51))
+* Upgraded deps to their latest compatible releases ([425b1a5](https://github.com/act-org/dls/commit/425b1a532cbb72f1966ae1cdeaf8cf9418c595b3))
+
+
+### BREAKING CHANGES
+
+* Some TypeScript references in MUI-X 7 have been renamed in MUI-X 8
+* 'Grid2' references in MUI 6 have been renamed to 'Grid' in MUI 7
+
 # [9.12.0](https://github.com/act-org/dls/compare/v9.11.0...v9.12.0) (2025-03-26)
 
 
