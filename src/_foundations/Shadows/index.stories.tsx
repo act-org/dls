@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Grid2, ListItem, ListItemText, Paper } from '@mui/material';
+import { Grid, ListItem, ListItemText, Paper } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
@@ -16,7 +16,7 @@ const Story = (): React.ReactElement => {
   const { shadows } = useTheme();
 
   return (
-    <Grid2 container>
+    <Grid container>
       {shadows.map((shadow, i) => (
         <StyledGrid
           key={shadow}
@@ -35,7 +35,7 @@ const Story = (): React.ReactElement => {
           </Paper>
         </StyledGrid>
       ))}
-    </Grid2>
+    </Grid>
   );
 };
 

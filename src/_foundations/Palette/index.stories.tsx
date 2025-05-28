@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Grid2, ListItemText, Typography } from '@mui/material';
+import { Grid, ListItemText, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import { flatten } from 'flat';
@@ -61,7 +61,7 @@ const Story = (): React.ReactElement => {
                   }
 
                   return (
-                    <Grid2
+                    <Grid
                       key={key}
                       size={{
                         md: 3,
@@ -84,7 +84,7 @@ const Story = (): React.ReactElement => {
 
                         <ListItemText primary={key} secondary={String(value)} />
                       </StyledListItem>
-                    </Grid2>
+                    </Grid>
                   );
                 })}
             </StyledGridContainer>

@@ -6,7 +6,7 @@
  */
 
 import { AppBarProps } from '@mui/material/AppBar';
-import Grid2 from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { FC, ReactElement } from 'react';
 
 import RenderLogo, { RenderLogoProps } from './RenderLogo';
@@ -40,15 +40,15 @@ export const AppBarNavigation: FC<AppBarNavigationProps> = ({
     <StyledGrid container spacing={4}>
       {navigationItems.map(
         (n: RenderNavigationItemProps): ReactElement<unknown> => (
-          <Grid2 key={n.title}>
+          <Grid key={n.title}>
             <RenderNavigationItem {...n} />
-          </Grid2>
+          </Grid>
         ),
       )}
     </StyledGrid>
 
     {Boolean(headerRightElement) && (
-      <Grid2 style={{ marginLeft: 'auto' }}>{headerRightElement}</Grid2>
+      <Grid style={{ marginLeft: 'auto' }}>{headerRightElement}</Grid>
     )}
   </StyledAppBar>
 );

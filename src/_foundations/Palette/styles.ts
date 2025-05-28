@@ -7,7 +7,7 @@
 
 import Avatar, { avatarClasses } from '@mui/material/Avatar';
 import Divider, { dividerClasses } from '@mui/material/Divider';
-import Grid2, { grid2Classes } from '@mui/material/Grid2';
+import Grid, { gridClasses } from '@mui/material/Grid';
 import ListItem, { listItemClasses } from '@mui/material/ListItem';
 import ListItemIcon, { listItemIconClasses } from '@mui/material/ListItemIcon';
 
@@ -43,8 +43,8 @@ export const StyledListItemIcon = styled(ListItemIcon)({
   },
 });
 
-export const StyledGridContainer = styled(Grid2)(({ theme }) => ({
-  [`&.${grid2Classes.root}`]: {
+export const StyledGridContainer = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.root}`]: {
     marginBottom: theme.spacing(2),
   },
 }));

@@ -8,28 +8,28 @@
 /* eslint-disable react/no-array-index-key */
 
 import { TypographyProps } from '@mui/material';
-import Grid2 from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import clsx from 'clsx';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
 import {
   Cell,
+  Label,
+  Legend,
+  LegendProps,
   Pie,
   PieProps,
   PieChart as RechartsPieChart,
-  Legend,
-  LegendProps,
-  Tooltip,
-  TooltipProps,
   ResponsiveContainer,
   ResponsiveContainerProps,
-  Label,
+  Tooltip,
+  TooltipProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 import {
-  ValueType,
   NameType,
+  ValueType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
@@ -38,7 +38,7 @@ import { VariantType } from '~/types';
 
 import InnerPieComponent from './InnerPieComponent';
 import { PieLegend } from './PieLegend';
-import { StyledGridTitle, StyledGridBody, StyledTypography } from './styles';
+import { StyledGridBody, StyledGridTitle, StyledTypography } from './styles';
 import {
   CustomLegendComponentType,
   HighlightComponentType,
@@ -117,7 +117,7 @@ export const PieChart: React.FC<PieChartProps> = (
   };
 
   return (
-    <Grid2
+    <Grid
       container
       direction="column"
       size={{
@@ -225,7 +225,7 @@ export const PieChart: React.FC<PieChartProps> = (
           </RechartsPieChart>
         </ResponsiveContainer>
       </StyledGridBody>
-    </Grid2>
+    </Grid>
   );
 };
 

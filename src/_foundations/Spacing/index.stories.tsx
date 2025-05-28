@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Grid2, TextField, Typography } from '@mui/material';
+import { Grid, TextField, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
@@ -20,8 +20,8 @@ const Story = (): React.ReactElement => {
 
   return (
     <>
-      <Grid2 container>
-        <Grid2>
+      <Grid container>
+        <Grid>
           <TextField
             InputProps={{
               inputProps: {
@@ -36,7 +36,7 @@ const Story = (): React.ReactElement => {
             value={sp}
             variant="outlined"
           />
-        </Grid2>
+        </Grid>
 
         <StyledGridItem>
           <Typography>
@@ -47,7 +47,7 @@ const Story = (): React.ReactElement => {
             </code>
           </Typography>
         </StyledGridItem>
-      </Grid2>
+      </Grid>
 
       <StyledPaper
         sx={{

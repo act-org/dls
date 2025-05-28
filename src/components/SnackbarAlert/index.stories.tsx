@@ -7,7 +7,7 @@
 
 /* eslint-disable react/require-default-props */
 
-import { Button, Grid2 } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react';
 import startCase from 'lodash/startCase';
 import { VariantType } from 'notistack';
@@ -31,10 +31,10 @@ const Template: StoryFn<AlertContextProviderProps> = (
     <AlertContextProvider {...props}>
       <AlertContext.Consumer>
         {({ actions }): ReactElement<unknown> => (
-          <Grid2 container spacing={2}>
+          <Grid container spacing={2}>
             {(['error', 'info', 'warning', 'success'] as VariantType[]).map(
               (variant): ReactElement<unknown> => (
-                <Grid2 key={variant}>
+                <Grid key={variant}>
                   <Button
                     onClick={async (): Promise<void> => {
                       const newCounter = counter + 1;
@@ -61,10 +61,10 @@ const Template: StoryFn<AlertContextProviderProps> = (
                   >
                     {`Show ${startCase(variant)}`}
                   </Button>
-                </Grid2>
+                </Grid>
               ),
             )}
-          </Grid2>
+          </Grid>
         )}
       </AlertContext.Consumer>
     </AlertContextProvider>
