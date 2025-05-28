@@ -38,6 +38,7 @@ const config: JestConfigWithTsJest = {
     'd3-scale': '<rootDir>/node_modules/d3-scale/dist/d3-scale.min.js',
     'd3-shape': '<rootDir>/node_modules/d3-shape/dist/d3-shape.min.js',
     'd3-time': '<rootDir>/node_modules/d3-time/dist/d3-time.min.js',
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   preset: 'ts-jest',
   roots: ['<rootDir>/src'],
