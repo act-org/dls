@@ -49,7 +49,7 @@
     "@mui/x-data-grid": "8.4.0",
     "@mui/x-date-pickers": "8.4.0",
     "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/exec": "7.0.3",
     "@semantic-release/git": "10.0.1",
     "@storybook/addon-a11y": "8.6.12",
     "@storybook/addon-essentials": "8.6.12",
@@ -101,7 +101,7 @@
     "react": "19.1.0",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "19.1.0",
-    "semantic-release": "24.2.5",
+    "semantic-release": "24.2.3",
     "shelljs": "0.10.0",
     "standard-version": "9.5.0",
     "ts-jest": "29.3.4",
@@ -223,5 +223,5 @@
     "watch": "npm run build && npm run copy && npm run build:components -- --watch"
   },
   "types": "index.d.ts",
-  "version": "10.0.0"
+  "version": "9.12.0"
 }
