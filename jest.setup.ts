@@ -10,10 +10,11 @@
 import { configure } from '@testing-library/dom';
 import '@testing-library/jest-dom';
 import fetch from 'isomorphic-fetch';
-import { TextDecoder } from 'text-encoding';
+import { TextDecoder, TextEncoder } from 'util';
 
 global.fetch = fetch;
-global.TextDecoder = TextDecoder;
+(global as any).TextDecoder = TextDecoder;
+(global as any).TextEncoder = TextEncoder;
 
 configure({
   computedStyleSupportsPseudoElements: true,

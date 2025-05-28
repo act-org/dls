@@ -9,14 +9,6 @@ import { standard } from '~/helpers/test';
 
 import { FormRadioGroup } from '.';
 
-jest.mock('@mui/material/utils/useId', () => {
-  let initialId = 12345;
-  return jest.fn(() => {
-    // eslint-disable-next-line no-plusplus
-    return `mui-${initialId++}`;
-  });
-});
-
 describe('FormRadioGroup', () => {
   const Component = (
     <FormRadioGroup

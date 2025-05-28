@@ -5,31 +5,31 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Grid2 } from '@mui/material';
+import { Grid } from '@mui/material';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import React from 'react';
 import {
   Area,
-  AreaChart as RechartsAreaChart,
+  AreaProps,
+  Label,
+  LabelProps,
   Legend,
   LegendProps,
-  Tooltip,
-  TooltipProps,
+  AreaChart as RechartsAreaChart,
+  ReferenceLine,
   ResponsiveContainer,
   ResponsiveContainerProps,
+  Tooltip,
+  TooltipProps,
   XAxis,
-  YAxis,
   XAxisProps,
+  YAxis,
   YAxisProps,
-  Label,
-  ReferenceLine,
-  AreaProps,
-  LabelProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 import {
-  ValueType,
   NameType,
+  ValueType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
@@ -94,7 +94,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
   const { palette, spacing, typography } = useTheme();
 
   return (
-    <Grid2
+    <Grid
       container
       direction="column"
       size={{
@@ -203,7 +203,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
           {children}
         </RechartsAreaChart>
       </ResponsiveContainer>
-    </Grid2>
+    </Grid>
   );
 };
 

@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Grid2, IconButton, Tooltip, Typography } from '@mui/material';
+import { Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Variant } from '@mui/material/styles/createTypography';
+import { TypographyVariant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react';
 import compact from 'lodash/compact';
 import isPlainObject from 'lodash/isPlainObject';
@@ -17,9 +17,9 @@ import InformationOutline from '~/icons/InformationOutline';
 import {
   StyledCode,
   StyledDivider,
+  StyledGridContainerInfo,
   StyledGridItem,
   StyledGridItemTypography,
-  StyledGridContainerInfo,
 } from './styles';
 
 const properties = {
@@ -38,7 +38,7 @@ const Story = (): React.ReactElement => {
     Object.keys(typography).map((key: string) => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       if (isPlainObject((typography as any)[key])) {
-        return key as Variant;
+        return key as TypographyVariant;
       }
 
       return null;
@@ -52,18 +52,18 @@ const Story = (): React.ReactElement => {
       {sortedVariants.map(variant => {
         return (
           <React.Fragment key={variant}>
-            <Grid2 container>
+            <Grid container>
               <StyledGridItem
                 size={{
                   xs: 2,
                 }}
               >
                 <StyledGridContainerInfo container>
-                  <Grid2>
+                  <Grid>
                     <Typography variant="body1">{variant}</Typography>
-                  </Grid2>
+                  </Grid>
 
-                  <Grid2>
+                  <Grid>
                     <Tooltip
                       arrow
                       title={
@@ -92,7 +92,7 @@ const Story = (): React.ReactElement => {
                         <InformationOutline />
                       </IconButton>
                     </Tooltip>
-                  </Grid2>
+                  </Grid>
                 </StyledGridContainerInfo>
               </StyledGridItem>
 
@@ -105,7 +105,7 @@ const Story = (): React.ReactElement => {
                   The quick brown fox jumps over the lazy dog.
                 </Typography>
               </StyledGridItemTypography>
-            </Grid2>
+            </Grid>
           </React.Fragment>
         );
       })}

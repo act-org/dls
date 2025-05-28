@@ -6,10 +6,10 @@ exports[`EmptyState ACT theme matches the snapshot 1`] = `
     class="css-987v97"
   >
     <div
-      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-1a4ylj6-MuiGrid2-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-1cvb89y-MuiGrid-root"
     >
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-sm5nl4-MuiGrid2-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row css-mw40vo-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1kfeu35-MuiTypography-root"
@@ -43,10 +43,10 @@ exports[`EmptyState ACT_ET theme matches the snapshot 1`] = `
     class="css-987v97"
   >
     <div
-      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-1a4ylj6-MuiGrid2-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-1cvb89y-MuiGrid-root"
     >
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-sm5nl4-MuiGrid2-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row css-mw40vo-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-4gyd22-MuiTypography-root"
@@ -79,10 +79,10 @@ exports[`EmptyState ENCOURA theme matches the snapshot 1`] = `
     class="css-987v97"
   >
     <div
-      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-1a4ylj6-MuiGrid2-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-1cvb89y-MuiGrid-root"
     >
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-sm5nl4-MuiGrid2-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row css-mw40vo-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-46cnn2-MuiTypography-root"
@@ -115,10 +115,10 @@ exports[`EmptyState ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     class="css-987v97"
   >
     <div
-      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-1a4ylj6-MuiGrid2-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-1cvb89y-MuiGrid-root"
     >
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-sm5nl4-MuiGrid2-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row css-mw40vo-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-46cnn2-MuiTypography-root"
@@ -151,10 +151,10 @@ exports[`EmptyState ENCOURAGE theme matches the snapshot 1`] = `
     class="css-987v97"
   >
     <div
-      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-1a4ylj6-MuiGrid2-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-1cvb89y-MuiGrid-root"
     >
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-sm5nl4-MuiGrid2-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row css-mw40vo-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-brhecq-MuiTypography-root"
@@ -187,10 +187,10 @@ exports[`EmptyState ENCOURAGE_E4E theme matches the snapshot 1`] = `
     class="css-987v97"
   >
     <div
-      class="MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row css-1a4ylj6-MuiGrid2-root"
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-qgv6kg-MuiGrid-root"
     >
       <div
-        class="MuiGrid2-root MuiGrid2-direction-xs-row css-sm5nl4-MuiGrid2-root"
+        class="MuiGrid-root MuiGrid-direction-xs-row css-zc7a4-MuiGrid-root"
       >
         <h6
           class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1d8tdwu-MuiTypography-root"

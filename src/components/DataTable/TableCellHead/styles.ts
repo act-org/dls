@@ -6,7 +6,7 @@
  */
 
 import { grey } from '@mui/material/colors';
-import Grid2 from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { Theme } from '@mui/material/styles';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import TableCell, { TableCellProps } from '@mui/material/TableCell';
@@ -62,7 +62,7 @@ export const StyledChevronDown = styled(ChevronDown)<SvgIconProps & IColorProp>(
   }),
 );
 
-export const StyledGrid = styled(Grid2)(({ theme }) => ({
+export const StyledGrid = styled(Grid)(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',

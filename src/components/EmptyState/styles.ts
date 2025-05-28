@@ -5,10 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import Grid2, { grid2Classes, Grid2Props } from '@mui/material/Grid2';
+import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
 import Typography, {
-  TypographyProps,
   typographyClasses,
+  TypographyProps,
 } from '@mui/material/Typography';
 
 import { styled } from '~/helpers/styled';
@@ -43,16 +43,16 @@ export const StyledTypographyTitle = styled(Typography)<TypographyProps>(
   }),
 );
 
-export const StyledGridContainer = styled(Grid2)<Grid2Props>(({ theme }) => ({
-  [`&.${grid2Classes.container}`]: {
+export const StyledGridContainer = styled(Grid)<GridProps>(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
     marginBottom: theme.spacing(1),
     marginTop: theme.spacing(1),
     maxWidth: 300,
   },
 }));
 
-export const StyledGridItem = styled(Grid2)<Grid2Props>({
-  [`&.${grid2Classes.root}`]: {
+export const StyledGridItem = styled(Grid)<GridProps>({
+  [`&.${gridClasses.root}`]: {
     display: 'flex',
   },
 });

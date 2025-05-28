@@ -6,7 +6,7 @@
  */
 
 import AppBar, { AppBarProps, appBarClasses } from '@mui/material/AppBar';
-import Grid2, { grid2Classes } from '@mui/material/Grid2';
+import Grid, { gridClasses } from '@mui/material/Grid';
 
 import { styled } from '~/helpers/styled';
 
@@ -24,8 +24,8 @@ export const StyledAppBar = styled(AppBar)<
   },
 }));
 
-export const StyledGrid = styled(Grid2)(({ theme }) => ({
-  [`&.${grid2Classes.container}`]: {
+export const StyledGrid = styled(Grid)(({ theme }) => ({
+  [`&.${gridClasses.container}`]: {
     alignItems: 'center',
     paddingLeft: theme.spacing(3),
   },

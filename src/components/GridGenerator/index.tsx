@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Grid2Props } from '@mui/material/Grid2';
+import { GridProps } from '@mui/material/Grid';
 import { FC, ReactElement } from 'react';
 
 import { StyledGridContainer, StyledGridItem } from './styles';
@@ -19,8 +19,8 @@ type GridContentGroup = IGridContent[];
 
 export interface GridGeneratorProps {
   groups: GridContentGroup[];
-  gridContainerProps?: Grid2Props;
-  gridItemProps?: Grid2Props;
+  gridContainerProps?: GridProps;
+  gridItemProps?: GridProps;
 }
 
 export const GridGenerator: FC<GridGeneratorProps> = ({

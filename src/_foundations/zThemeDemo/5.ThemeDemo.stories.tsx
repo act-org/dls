@@ -43,7 +43,7 @@ import {
   Typography,
   TypographyProps,
 } from '@mui/material';
-import Grid2 from '@mui/material/Grid2';
+import Grid from '@mui/material/Grid';
 import { Meta, StoryFn } from '@storybook/react';
 import sortBy from 'lodash/sortBy';
 import { ReactElement } from 'react';
@@ -349,9 +349,9 @@ export const Preview: StoryFn = () => {
         This page is useful to get a feel for the look of the theme as well as
         for theme designers to use to quickly see the changes.
       </Typography>
-      <Grid2 container rowSpacing=".8em">
+      <Grid container rowSpacing=".8em">
         {sortBy(demos, 'title').map(demo => (
-          <Grid2
+          <Grid
             key={Math.random()}
             size={{
               xs: 12,
@@ -369,9 +369,9 @@ export const Preview: StoryFn = () => {
                 ))}
               </CardContent>
             </Card>
-          </Grid2>
+          </Grid>
         ))}
-      </Grid2>
+      </Grid>
     </Box>
   );
 };

@@ -8,6 +8,7 @@
 import { common, grey } from '@mui/material/colors';
 import { listItemTextClasses } from '@mui/material/ListItemText';
 import { Components } from '@mui/material/styles';
+import { IconProps } from '@mui/x-data-grid/models/gridBaseSlots';
 import Color from 'color';
 import ChevronDown from '~/icons/ChevronDown';
 import FilterVariant from '~/icons/FilterVariant';
@@ -349,7 +350,8 @@ export const components: Components = {
     defaultProps: {
       disableRowSelectionOnClick: true,
       slots: {
-        columnFilteredIcon: FilterVariant,
+        columnFilteredIcon:
+          FilterVariant as React.JSXElementConstructor<IconProps>,
       },
     },
     styleOverrides: {
