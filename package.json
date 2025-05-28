@@ -197,7 +197,7 @@
   "scripts": {
     "build": "npm-run-all build:*",
     "build:clean": "rimraf dist/*",
-    "build:components": "tspc --project tsconfig.build.json",
+    "build:components": "tspc --project ./tsconfig.build.json",
     "build:declarations": "bin/buildDeclarations",
     "build:icons": "bin/buildIcons",
     "build:package_json": "clear-package-json package.json -o dist/package.json",
