@@ -16,7 +16,7 @@ const Story = (): React.ReactElement => {
   const { shape } = useTheme();
   const [multiplier, setMultiplier] = React.useState(1);
 
-  const borderRadius = shape.borderRadius * multiplier;
+  const borderRadius = Number(shape.borderRadius) * multiplier;
 
   return (
     <>
