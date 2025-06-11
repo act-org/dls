@@ -8,7 +8,7 @@
 import { Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { TypographyVariant } from '@mui/material/styles/createTypography';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import compact from 'lodash/compact';
 import isPlainObject from 'lodash/isPlainObject';
 import React from 'react';

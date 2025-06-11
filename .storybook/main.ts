@@ -12,16 +12,14 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const config: StorybookConfig = {
   addons: [
     '@storybook/addon-a11y',
-    '@storybook/addon-essentials',
+    '@storybook/addon-docs',
     '@storybook/addon-links',
-    '@storybook/addon-mdx-gfm',
     '@storybook/addon-webpack5-compiler-swc',
   ],
   core: {
     disableTelemetry: true,
   },
   docs: {
-    autodocs: 'tag',
     defaultName: 'Documentation',
   },
   features: {},

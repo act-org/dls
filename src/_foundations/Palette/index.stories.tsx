@@ -7,7 +7,7 @@
 
 import { Grid, ListItemText, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { flatten } from 'flat';
 import includes from 'lodash/includes';
 import isFunction from 'lodash/isFunction';

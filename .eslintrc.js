@@ -7,6 +7,14 @@
 
 module.exports = {
   extends: ['@actinc/eslint-config'],
+  overrides: [
+    {
+      files: ['./src/**/*.mdx'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
   rules: {
     '@typescript-eslint/await-thenable': 'off',
     '@typescript-eslint/no-explicit-any': 'off',

@@ -16,7 +16,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import JSONParseSafe from 'json-parse-safe';
 import get from 'lodash/get';
 import { useEffect, useState } from 'react';

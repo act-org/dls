@@ -6,7 +6,7 @@
  */
 
 import { Box, MenuItem, Tooltip, Typography } from '@mui/material';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import range from 'lodash/range';
 import { useState } from 'react';
 import HelpIcon from '~/icons/HelpCircle';

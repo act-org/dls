@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Meta, StoryContext, StoryObj } from '@storybook/react';
+import { Meta, StoryContext, StoryObj } from '@storybook/react-webpack5';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';

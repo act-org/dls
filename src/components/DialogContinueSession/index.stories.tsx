@@ -6,7 +6,7 @@
  */
 
 import { Button } from '@mui/material';
-import { Meta, StoryFn, StoryObj } from '@storybook/react';
+import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import dayjs from 'dayjs';
 import { useState } from 'react';
 

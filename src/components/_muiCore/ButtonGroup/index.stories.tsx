@@ -6,7 +6,7 @@
  */
 
 import { Button } from '@mui/material';
-import { StoryObj } from '@storybook/react';
+import { StoryObj } from '@storybook/react-webpack5';
 import { ReactElement, useState } from 'react';
 
 import { ButtonGroup } from './internal';

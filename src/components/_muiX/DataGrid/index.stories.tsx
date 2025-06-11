@@ -6,7 +6,7 @@
  */
 
 import { DataGridProps, GridColDef, GridToolbar } from '@mui/x-data-grid';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import { DataGrid } from './internal';
 
