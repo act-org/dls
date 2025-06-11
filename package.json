@@ -207,7 +207,7 @@
     "prettier": "prettier --write .",
     "release": "semantic-release",
     "release:storybook": "npm run build-storybook && touch ./storybook-static/www/.nojekyll && storybook-to-ghpages -e ./storybook-static/www",
-    "start": "sb dev -p 6006",
+    "start": "storybook dev -p 6006",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
     "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
