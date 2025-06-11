@@ -6,7 +6,7 @@
  */
 
 import { Button, Typography } from '@mui/material';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { useState } from 'react';
 
 import { Drawer } from './internal';

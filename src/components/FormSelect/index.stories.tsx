@@ -6,7 +6,7 @@
  */
 
 import { SelectChangeEvent } from '@mui/material';
-import { Meta, StoryObj, StoryFn } from '@storybook/react';
+import { Meta, StoryObj, StoryFn } from '@storybook/react-webpack5';
 import { useState } from 'react';
 
 import { Playground } from '~/helpers/playground';

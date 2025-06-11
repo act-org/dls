@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Meta, StoryContext } from '@storybook/react';
+import { Meta, StoryContext } from '@storybook/react-webpack5';
 import { YAxisProps } from 'recharts';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';

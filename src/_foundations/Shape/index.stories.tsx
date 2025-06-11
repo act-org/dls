@@ -7,7 +7,7 @@
 
 import { Grid, TextField, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import React from 'react';
 
 import { StyledComment, StyledGridItem, StyledPaper } from './styles';
@@ -16,7 +16,7 @@ const Story = (): React.ReactElement => {
   const { shape } = useTheme();
   const [multiplier, setMultiplier] = React.useState(1);
 
-  const borderRadius = shape.borderRadius * multiplier;
+  const borderRadius = Number(shape.borderRadius) * multiplier;
 
   return (
     <>

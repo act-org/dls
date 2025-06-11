@@ -5,11 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import * as locales from '@mui/material/locale';
-import { common, grey } from '@mui/material/colors';
-import { Preview } from '@storybook/react';
 import { CssBaseline } from '@mui/material';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs';
+import { common, grey } from '@mui/material/colors';
+import * as locales from '@mui/material/locale';
+import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
+import { Preview } from '@storybook/react-webpack5';
 import React from 'react';
 
 import { ThemeProvider } from '../src/components/ThemeProvider';

@@ -44,7 +44,7 @@ import {
   TypographyProps,
 } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { Meta, StoryFn } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react-webpack5';
 import sortBy from 'lodash/sortBy';
 import { ReactElement } from 'react';
 import MailIcon from '~/icons/Mailbox';

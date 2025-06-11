@@ -6,7 +6,7 @@
  */
 
 import Box from '@mui/material/Box';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { ReactElement, useState } from 'react';
 
 import { Rating, RatingProps } from './internal';

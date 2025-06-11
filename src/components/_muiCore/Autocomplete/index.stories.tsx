@@ -6,7 +6,7 @@
  */
 
 import { AutocompleteRenderInputParams, Chip, TextField } from '@mui/material';
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { ReactElement } from 'react';
 
 import {
