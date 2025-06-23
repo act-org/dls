@@ -22,7 +22,7 @@ The Design Language System for Encoura front-end projects. View the UI component
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://mui.com/) version `6.x` and
+[Material UI](https://mui.com/) version `7.x` and
 [React](https://reactjs.org/) version `18.x` or `19.x`.
 
 ```sh
