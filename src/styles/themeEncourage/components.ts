@@ -38,7 +38,7 @@ export const LARGE_RADIUS_VALUE = 1000;
 export const LARGE_RADIUS = cssRadius(LARGE_RADIUS_VALUE);
 
 // Base values found here:
-// https://github.com/act-org/dls/blob/main/src/styles/themeActEt/components.ts
+// https://github.com/nrccua/dls/blob/main/src/styles/themeActEt/components.ts
 export const components: ThemeOptions['components'] = {
   [DLS_COMPONENT_NAMES.BAR_CHART]: {
     defaultProps: {

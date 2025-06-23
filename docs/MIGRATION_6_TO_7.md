@@ -8,9 +8,9 @@
   [ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
   (See below if you experience bundler issues!)
 - Renamed the `ENCOURA_DATALAB` theme to
-  [`ENCOURA_CLASSIC`](https://github.com/act-org/dls/tree/main/src/styles/themeEncouraClassic)
+  [`ENCOURA_CLASSIC`](https://github.com/nrccua/dls/tree/main/src/styles/themeEncouraClassic)
 - Renamed `sortDirectionTypes` constant to
-  [`SORT_DIRECTION_TYPES`](https://github.com/act-org/dls/blob/main/src/constants/SORT_DIRECTION_TYPES.ts)
+  [`SORT_DIRECTION_TYPES`](https://github.com/nrccua/dls/blob/main/src/constants/SORT_DIRECTION_TYPES.ts)
 
 ## New Features
 
@@ -21,17 +21,17 @@
   (see below!)
 - Added support for [MUI X v6 packages](https://mui.com/blog/mui-x-v6/)
 - Added a new
-  [`ENCOURAGE`](https://github.com/act-org/dls/tree/main/src/styles/themeEncourage)
+  [`ENCOURAGE`](https://github.com/nrccua/dls/tree/main/src/styles/themeEncourage)
   theme
 - Added `theme.spacingPx` as a convenience number that is accessible on all
   themes. If your theme uses an 8px layout, `theme.spacingPx = 8`.
 - Added new helper functions:
-  - [`cssRadius`](https://github.com/act-org/dls/blob/main/src/helpers/cssRadius.ts)
-  - [`makeShadow`](https://github.com/act-org/dls/blob/main/src/helpers/makeShadow.ts)
-  - [`px`](https://github.com/act-org/dls/blob/main/src/helpers/px.ts)
-  - [`pxToNumber`](https://github.com/act-org/dls/blob/main/src/helpers/pxToNumber.ts)
-  - [`styled`](https://github.com/act-org/dls/blob/main/src/helpers/styled.ts)
-  - [`types`](https://github.com/act-org/dls/blob/main/src/helpers/types.ts)
+  - [`cssRadius`](https://github.com/nrccua/dls/blob/main/src/helpers/cssRadius.ts)
+  - [`makeShadow`](https://github.com/nrccua/dls/blob/main/src/helpers/makeShadow.ts)
+  - [`px`](https://github.com/nrccua/dls/blob/main/src/helpers/px.ts)
+  - [`pxToNumber`](https://github.com/nrccua/dls/blob/main/src/helpers/pxToNumber.ts)
+  - [`styled`](https://github.com/nrccua/dls/blob/main/src/helpers/styled.ts)
+  - [`types`](https://github.com/nrccua/dls/blob/main/src/helpers/types.ts)
 - Added utilities to make it easier to customize your theme beyond the default
   MUI key/value pairs (check the `README` for more details)
 
@@ -41,7 +41,7 @@
 - Partial re-write of storybook stories to the simpler
   [Component Story Format 3](https://storybook.js.org/blog/storybook-csf3-is-here/)
 - The DLS release process is now automated via
-  [Github Actions](https://github.com/act-org/dls/actions).
+  [Github Actions](https://github.com/nrccua/dls/actions).
 - Slightly stricter ESLint rules when contributing to the DLS.
 
 ## Performance

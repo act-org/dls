@@ -75,7 +75,7 @@ export const INPUT_FONT_SIZE: IFontSize = {
 };
 
 // Base values found here:
-// https://github.com/act-org/dls/blob/main/src/styles/themeActEt/typography.ts
+// https://github.com/nrccua/dls/blob/main/src/styles/themeActEt/typography.ts
 const typography: TypographyVariantsOptions = {
   allVariants: {
     ...BASE_FONT_SIZE,

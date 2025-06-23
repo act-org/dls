@@ -2,7 +2,7 @@
   "author": "Encoura",
   "bugs": {
     "email": "jon.cursi@encoura.org",
-    "url": "https://github.com/act-org/dls/issues"
+    "url": "https://github.com/nrccua/dls/issues"
   },
   "contributors": [
     "Jon Cursi <jon.cursi@encoura.org>",
@@ -181,7 +181,7 @@
         }
       ]
     ],
-    "repositoryUrl": "git@github.com:act-org/dls.git",
+    "repositoryUrl": "git@github.com:nrccua/dls.git",
     "branches": [
       {
         "name": "main",
@@ -195,7 +195,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/act-org/dls.git"
+    "url": "git+https://github.com/nrccua/dls.git"
   },
   "sideEffects": false,
   "scripts": {

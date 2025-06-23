@@ -4,9 +4,9 @@
 
 <a href="https://www.npmjs.com/package/@encoura/dls">
   <img alt="Version" src="https://img.shields.io/npm/v/@encoura/dls"/>
-</a>&nbsp;<a href="https://github.com/act-org/dls/actions/workflows/ci.yml">
-  <img alt="Build" src="https://github.com/act-org/dls/actions/workflows/ci.yml/badge.svg"/>
-</a>&nbsp;<a href="https://github.com/act-org/dls/blob/master/LICENSE">
+</a>&nbsp;<a href="https://github.com/nrccua/dls/actions/workflows/ci.yml">
+  <img alt="Build" src="https://github.com/nrccua/dls/actions/workflows/ci.yml/badge.svg"/>
+</a>&nbsp;<a href="https://github.com/nrccua/dls/blob/master/LICENSE">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green"/>
 </a>&nbsp;<a href="https://www.npmjs.com/package/@encoura/dls">
   <img alt="Downloads" src="https://img.shields.io/npm/dw/@encoura/dls?color=orange"/>
