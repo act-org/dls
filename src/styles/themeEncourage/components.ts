@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -17,7 +17,7 @@ import cssRadius from '~/helpers/cssRadius';
 import px from '~/helpers/px';
 import pxToNumber from '~/helpers/pxToNumber';
 
-import { navy, seafoam, mist, surface, teal } from './colors';
+import { mist, navy, seafoam, surface, teal } from './colors';
 import customDims from './customDims';
 import palette, { customPalette, navyHover } from './palette';
 import shadows from './shadows';
