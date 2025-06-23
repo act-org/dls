@@ -1079,7 +1079,7 @@ using `SnackbarAlert` directly. Example below!
 
 ```jsx
 // APP SETUP:
-import AlertContextProvider from '@actinc/dls/context/AlertContext/provider';
+import AlertContextProvider from '@encoura/dls/context/AlertContext/provider';
 
 const Root: React.FC = (): React.ReactElement<any> => (
   <AlertContextProvider
@@ -1094,7 +1094,7 @@ const Root: React.FC = (): React.ReactElement<any> => (
 
 ```jsx
 // COMPONENT USAGE:
-import { AlertContext } from '@actinc/dls/context';
+import { AlertContext } from '@encoura/dls/context';
 
 const MyComponent: React.FC = (): React.ReactElement<any> => {
   const { actions } = React.useContext(AlertContext);
@@ -1210,7 +1210,7 @@ component, courtesy of @stefansolyom.
 
 ## [v3.1.0] - March 05, 2021
 
-* This package is now open source! Available on NPM at `@actinc/dls`
+* This package is now open source! Available on NPM at `@encoura/dls`
 * Check the `README.md` file for slightly modified installation and usage
 instructions
 

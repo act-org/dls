@@ -127,7 +127,7 @@
     "*.md": "npm run test:lint:md"
   },
   "main": "index.js",
-  "name": "@actinc/dls",
+  "name": "@encoura/dls",
   "overrides": {
     "ts-jest": {
       "babel-jest": "30.x",

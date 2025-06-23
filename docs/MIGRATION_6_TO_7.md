@@ -115,7 +115,7 @@ You can do this in a [Next.js](https://nextjs.org/) app by adding the DLS to the
 option in your `next.config.js` file.
 
 ```js
-transpilePackages: ['@actinc/dls'],
+transpilePackages: ['@encoura/dls'],
 ```
 
 You can also do this in the [Jest](https://jestjs.io/) test runner by omitting
@@ -124,5 +124,5 @@ the DLS from the
 option in your `jest.config.js` file.
 
 ```js
-transformIgnorePatterns: ['/node_modules/(?!(@actinc/dls)/)'],
+transformIgnorePatterns: ['/node_modules/(?!(@encoura/dls)/)'],
 ```
