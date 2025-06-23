@@ -1,6 +1,6 @@
 /* eslint-disable import/no-named-as-default-member */
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -107,7 +107,7 @@ export const customPalette = {
     inset: grey[200],
     overlay: alpha(common.black, 0.38),
   },
-  /** @deprecated Use colors from `@actinc/dls/styles/themeEncourage/colors` */
+  /** @deprecated Use colors from `@encoura/dls/styles/themeEncourage/colors` */
   branding: {
     fuschia,
     mist,

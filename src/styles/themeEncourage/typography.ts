@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -75,7 +75,7 @@ export const INPUT_FONT_SIZE: IFontSize = {
 };
 
 // Base values found here:
-// https://github.com/act-org/dls/blob/main/src/styles/themeActEt/typography.ts
+// https://github.com/nrccua/dls/blob/main/src/styles/themeActEt/typography.ts
 const typography: TypographyVariantsOptions = {
   allVariants: {
     ...BASE_FONT_SIZE,

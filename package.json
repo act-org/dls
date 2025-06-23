@@ -1,12 +1,11 @@
 {
-  "author": "ACT & Encoura",
+  "author": "Encoura",
   "bugs": {
     "email": "jon.cursi@encoura.org",
-    "url": "https://github.com/act-org/dls/issues"
+    "url": "https://github.com/nrccua/dls/issues"
   },
   "contributors": [
-    "Jon Cursi <jon.cursi@encoura.org>",
-    "Adam Weeden <adam.weeden@encoura.org"
+    "Jon Cursi <jon.cursi@encoura.org>"
   ],
   "dependencies": {
     "@babel/runtime": "^7.27.6",
@@ -31,7 +30,7 @@
     "recharts": "^2.15.3",
     "validator": "^13.15.15"
   },
-  "description": "Design Language System (DLS) for ACT & Encoura front-end projects.",
+  "description": "Design Language System (DLS) for Encoura front-end projects.",
   "devDependencies": {
     "@actinc/eslint-config": "4.16.0",
     "@babel/cli": "7.27.2",
@@ -127,7 +126,7 @@
     "*.md": "npm run test:lint:md"
   },
   "main": "index.js",
-  "name": "@actinc/dls",
+  "name": "@encoura/dls",
   "overrides": {
     "ts-jest": {
       "babel-jest": "30.x",
@@ -181,7 +180,7 @@
         }
       ]
     ],
-    "repositoryUrl": "git@github.com:act-org/dls.git",
+    "repositoryUrl": "git@github.com:nrccua/dls.git",
     "branches": [
       {
         "name": "main",
@@ -195,7 +194,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/act-org/dls.git"
+    "url": "git+https://github.com/nrccua/dls.git"
   },
   "sideEffects": false,
   "scripts": {

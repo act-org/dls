@@ -15,7 +15,7 @@
       { "transform": "typescript-transform-paths", "afterDeclarations": true }
     ],
     "rootDir": "./src",
-    "sourceRoot": "https://github.com/act-org/dls/tree/main/src",
+    "sourceRoot": "https://github.com/nrccua/dls/tree/main/src",
     "sourceMap": true,
     "target": "ES5"
   },
