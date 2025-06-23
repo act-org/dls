@@ -14,7 +14,7 @@
 
 <!-- markdownlint-enable no-inline-html -->
 
-The Design Language System for ACT & Encoura front-end projects. View the UI components
+The Design Language System for Encoura front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
 
 ## Project Setup
