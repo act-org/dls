@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/nrccua/dls/compare/v1.0.0...v1.0.1) (2025-06-23)
+
+
+### Bug Fixes
+
+* Bump ramda from 0.30.1 to 0.31.3 ([6fb0a0a](https://github.com/nrccua/dls/commit/6fb0a0a8dc0a556b45a8ac052218026c21165543))
+
 # 1.0.0 (2025-06-23)
 
 
