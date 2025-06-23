@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,7 +7,7 @@
 
 /* eslint-disable security/detect-non-literal-regexp */
 
-import { TypographyProps, Tooltip } from '@mui/material';
+import { Tooltip, TypographyProps } from '@mui/material';
 import React from 'react';
 import { XAxisProps } from 'recharts';
 

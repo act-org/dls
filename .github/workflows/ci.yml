@@ -1,9 +1,11 @@
 name: DLS Continuous Integration
+
 on:
   push:
     branches:
       - next
       - main
+
 jobs:
   release:
     name: Release

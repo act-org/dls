@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -9,23 +9,23 @@ import { useTheme, useThemeProps } from '@mui/material/styles';
 import numeral from 'numeral';
 import React from 'react';
 import {
-  Line,
-  LineProps,
+  CartesianGrid,
   CartesianGridProps,
   ComposedChart,
-  CartesianGrid,
+  Line,
+  LineProps,
+  ResponsiveContainerProps,
   Tooltip,
   TooltipProps,
   XAxis,
-  YAxis,
-  ResponsiveContainerProps,
   XAxisProps,
+  YAxis,
   YAxisProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 import {
-  ValueType,
   NameType,
+  ValueType,
 } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';

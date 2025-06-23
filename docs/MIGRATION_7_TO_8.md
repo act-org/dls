@@ -95,11 +95,11 @@ loaded into scope:
 
 ```tsx
 // Before:
-import { Alert } from '@actinc/dls'; // this import statement may load all DLS code into scope
-import { Alert } from '@actinc/dls/components'; // this import statement may load all DLS components into scope
+import { Alert } from '@encoura/dls'; // this import statement may load all DLS code into scope
+import { Alert } from '@encoura/dls/components'; // this import statement may load all DLS components into scope
 
 // After:
-import { Alert } from '@actinc/dls/components/Alert'; // this import statement only loads the Alert component into scope
+import { Alert } from '@encoura/dls/components/Alert'; // this import statement only loads the Alert component into scope
 ```
 
 If your project is using a map component, then you can pollyfill TextDecoder

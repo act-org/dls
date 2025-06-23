@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,7 +8,7 @@
 import React from 'react';
 import { PopupProps } from 'react-map-gl/mapbox';
 
-import { StyledPopup, StyledTypography, StyledSpan } from './styles';
+import { StyledPopup, StyledSpan, StyledTypography } from './styles';
 
 export interface RowsDataProps {
   title: string;

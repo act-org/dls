@@ -1,5 +1,5 @@
 /**
- * Copyright (c) ACT, Inc. and its affiliates.
+ * Copyright (c) Encoura, LLC and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,10 +7,10 @@
 
 import {
   Box,
-  Dialog as MuiDialog,
-  DialogProps as MuiDialogProps,
   DialogTitle,
   IconButton,
+  Dialog as MuiDialog,
+  DialogProps as MuiDialogProps,
 } from '@mui/material';
 import { ReactElement } from 'react';
 import CloseCircle from '~/icons/CloseCircle';

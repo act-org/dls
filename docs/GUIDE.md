@@ -108,7 +108,7 @@ think of a theme as a CSS stylesheet that gets injected into the browser
 and dictates how the Material UI components that we use will look and feel.
 
 The DLS currently supports
-[several different themes](https://github.com/act-org/dls/tree/master/src/styles):
+[several different themes](https://github.com/nrccua/dls/tree/master/src/styles):
 
 1. `"ACT"`: for ACT's "traditional" look and feel
 2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
@@ -203,7 +203,7 @@ opinion that this style should be applied globally for this component across all
 themes. Often times, this is not the right assumption to make.
 
 ```tsx
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@encoura/dls/helpers/material/styled';
 
 // BAD: These style values are hard-coded.
 export const StyledDiv = styled('div')({
@@ -236,7 +236,7 @@ see [here](https://mui.com/material-ui/customization/theming/) and
 [here](https://mui.com/material-ui/customization/default-theme/).)
 
 ```tsx
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@encoura/dls/helpers/material/styled';
 
 // BETTER: These style values are dynamic based on the theme.
 export const StyledDiv = styled('div')(({ theme }) => ({
@@ -264,7 +264,7 @@ When our custom components are built using Material UI primitives, often times
 the custom styles are no longer needed!
 
 ```tsx
-import { styled } from '@actinc/dls/helpers/material/styled';
+import { styled } from '@encoura/dls/helpers/material/styled';
 
 // BEST: No custom styles are needed because this component is built using
 // Material UI primitives. We can handle everything using a few simple props!

@@ -2,19 +2,19 @@
 
 <!-- markdownlint-disable no-inline-html -->
 
-<a href="https://www.npmjs.com/package/@actinc/dls">
-  <img alt="Version" src="https://img.shields.io/npm/v/@actinc/dls"/>
-</a>&nbsp;<a href="https://github.com/act-org/dls/actions/workflows/ci.yml">
-  <img alt="Build" src="https://github.com/act-org/dls/actions/workflows/ci.yml/badge.svg"/>
-</a>&nbsp;<a href="https://github.com/act-org/dls/blob/master/LICENSE">
+<a href="https://www.npmjs.com/package/@encoura/dls">
+  <img alt="Version" src="https://img.shields.io/npm/v/@encoura/dls"/>
+</a>&nbsp;<a href="https://github.com/nrccua/dls/actions/workflows/ci.yml">
+  <img alt="Build" src="https://github.com/nrccua/dls/actions/workflows/ci.yml/badge.svg"/>
+</a>&nbsp;<a href="https://github.com/nrccua/dls/blob/master/LICENSE">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green"/>
-</a>&nbsp;<a href="https://www.npmjs.com/package/@actinc/dls">
-  <img alt="Downloads" src="https://img.shields.io/npm/dw/@actinc/dls?color=orange"/>
+</a>&nbsp;<a href="https://www.npmjs.com/package/@encoura/dls">
+  <img alt="Downloads" src="https://img.shields.io/npm/dw/@encoura/dls?color=orange"/>
 </a>
 
 <!-- markdownlint-enable no-inline-html -->
 
-The Design Language System for ACT & Encoura front-end projects. View the UI components
+The Design Language System for Encoura front-end projects. View the UI components
 [here](https://act-org.github.io/dls).
 
 ## Project Setup
@@ -22,11 +22,11 @@ The Design Language System for ACT & Encoura front-end projects. View the UI com
 ### Installation
 
 In order to use the DLS, you must install it along with
-[Material UI](https://mui.com/) version `6.x` and
+[Material UI](https://mui.com/) version `7.x` and
 [React](https://reactjs.org/) version `18.x` or `19.x`.
 
 ```sh
-npm install --save @actinc/dls@latest @mui/material @mui/system @mui/x-data-grid react react-dom
+npm install --save @encoura/dls@latest @mui/material @mui/system @mui/x-data-grid react react-dom
 ```
 
 ### Choosing a Theme
@@ -46,7 +46,7 @@ To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
 
 ```jsx
-import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
+import { ThemeProvider } from '@encoura/dls/components/ThemeProvider';
 
 ...
 
@@ -66,9 +66,9 @@ generator from Material UI:
 
 ```jsx
 import deepMerge from 'deepmerge';
-import { createTheme } from '@actinc/dls/styles/createTheme';
-import { THEME_ACT } from '@actinc/dls/styles/themeAct';
-import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
+import { createTheme } from '@encoura/dls/styles/createTheme';
+import { THEME_ACT } from '@encoura/dls/styles/themeAct';
+import { ThemeProvider } from '@encoura/dls/components/ThemeProvider';
 
 const myExtendedTheme = createTheme(
   deepMerge(THEME_ACT, {
@@ -92,8 +92,8 @@ return a strongly typed version of the theme with any customizations you may
 have added.
 
 ```jsx
-import { ThemeProvider } from '@actinc/dls/components/ThemeProvider';
-import { createTheme } from '@actinc/dls/styles/createTheme';
+import { ThemeProvider } from '@encoura/dls/components/ThemeProvider';
+import { createTheme } from '@encoura/dls/styles/createTheme';
 
 const myCustomTheme = createTheme({
   // build your theme here!
@@ -113,8 +113,8 @@ that is not present in the default MUI `Theme` type, we provide a helper
 function to generate a `styled` function that is strongly typed to your theme:
 
 ```jsx
-import { createThemeStyled } from '@actinc/dls/helpers/styled';
-import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import { createThemeStyled } from '@encoura/dls/helpers/styled';
+import { THEME_ACT } from '@encoura/dls/styles/themeAct';
 import TableCell from '@mui/material/TableCell';
 
 const styled = createThemeStyled(THEME_ACT);
@@ -140,7 +140,7 @@ Steps:
 - Do a release. The DLS will automatically include the definition file in the
   build.
 - In your project's repo, update your `tsconfig.json`'s `include` field to
-  point to the file in your `node_modules` directory. Example: `./node_modules/@actinc/dls/path/to/your/index.d.ts`.
+  point to the file in your `node_modules` directory. Example: `./node_modules/@encoura/dls/path/to/your/index.d.ts`.
 - You may need to restart your IDE's TS server for the changes to appear.
 
 ### Load Fonts
@@ -248,7 +248,7 @@ the perfect icon, you can use it in your project like so:
 
 ```jsx
 // Import the needed icon(s) directly, to avoid bundle size bloat.
-import PollBox from '@actinc/dls/icons/PollBox';
+import PollBox from '@encoura/dls/icons/PollBox';
 
 ...
 
@@ -308,21 +308,21 @@ constants, context, helpers, hooks, icons, styles, and types that you need:
 
 ```jsx
 // components
-import { Alert } from '@actinc/dls/components/Alert';
+import { Alert } from '@encoura/dls/components/Alert';
 // constants
-import { SORT_DIRECTION_TYPES } from '@actinc/dls/constants';
+import { SORT_DIRECTION_TYPES } from '@encoura/dls/constants';
 // context
-import { AlertContext } from '@actinc/dls/context';
+import { AlertContext } from '@encoura/dls/context';
 // helpers
-import { search } from '@actinc/dls/helpers';
+import { search } from '@encoura/dls/helpers';
 // hooks
-import { useLocalStorage } from '@actinc/dls/hooks';
+import { useLocalStorage } from '@encoura/dls/hooks';
 // icons
-import ChevronDown from '@actinc/dls/icons/ChevronDown';
+import ChevronDown from '@encoura/dls/icons/ChevronDown';
 // styles & themes
-import { THEME_ACT } from '@actinc/dls/styles/themeAct';
+import { THEME_ACT } from '@encoura/dls/styles/themeAct';
 // types
-import { SortObject } from '@actinc/dls/types';
+import { SortObject } from '@encoura/dls/types';
 ```
 
 ### Transient Props and Styled Components
@@ -333,7 +333,7 @@ those parameters in styled components. Use as a drop in replacement of the
 `styled` function that exists in `@mui/material/styles`:
 
 ```jsx
-import { styled } from '@actinc/dls/helpers/styled';
+import { styled } from '@encoura/dls/helpers/styled';
 import Button, { ButtonProps } from '@mui/material/Button';
 import * as React from 'react';
 
@@ -404,7 +404,7 @@ You can do this in a [Next.js](https://nextjs.org/) app by adding the DLS to the
 option in your `next.config.js` file.
 
 ```js
-transpilePackages: ['@actinc/dls'],
+transpilePackages: ['@encoura/dls'],
 ```
 
 #### Jest
@@ -415,7 +415,7 @@ DLS from the
 option in your `jest.config.js` file.
 
 ```js
-transformIgnorePatterns: ['/node_modules/(?!(@actinc/dls)/)'],
+transformIgnorePatterns: ['/node_modules/(?!(@encoura/dls)/)'],
 ```
 
 ## Local Development
@@ -439,29 +439,29 @@ When you're ready to pilot your changes to this library in your local project:
    `.tgz` file in the `/dist` folder with the following name format
    `actinc-dls-<version-number>.tgz`;
 2. Access the `package.json` file of your local project in which the
-   `@actinc/dls` package will be tested, and make the following edit:
+   `@encoura/dls` package will be tested, and make the following edit:
 
    ```json
    "dependencies": {
      // Before (pulling from NPM via version number):
-     "@actinc/dls": "9.2.1",
+     "@encoura/dls": "9.2.1",
      // After (pointing to the local .tgz file):
-     "@actinc/dls": "file:../path/to/@actinc/dls/dist/actinc-dls-<version-number>.tgz",
+     "@encoura/dls": "file:../path/to/@encoura/dls/dist/actinc-dls-<version-number>.tgz",
      ...
    }
    ```
 
-3. Run `npm update @actinc/dls` to refresh your project's `node_modules` folder.
+3. Run `npm update @encoura/dls` to refresh your project's `node_modules` folder.
 
 4. You can now run your project with the local changes made to this library!
 
 5. If you want to make any further edits to this library, simply run
-   `npm run pack` to package up the changes, and then `npm update @actinc/dls`
+   `npm run pack` to package up the changes, and then `npm update @encoura/dls`
    in your local project to pull them in.
 
 6. When you're done piloting the changes, simply revert your project's
    `package.json` file to pull this library from NPM, and run
-   `npm update @actinc/dls` to refresh your project's `node_modules` folder.
+   `npm update @encoura/dls` to refresh your project's `node_modules` folder.
 
 #### Option 2: Real-time Previews
 
@@ -480,9 +480,9 @@ Once you are happy with the changes, you'll want to destroy this symlink
 and replace the local build with a formal/hosted version of this library.
 You can do that by running the following commands in your project:
 
-1. `npm uninstall @actinc/dls`
+1. `npm uninstall @encoura/dls`
 
-2. `npm install @actinc/dls@<pick-your-version> --save --save-exact`
+2. `npm install @encoura/dls@<pick-your-version> --save --save-exact`
 
 ### npm Scripts
 
