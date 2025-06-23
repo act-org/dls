@@ -5,8 +5,7 @@
     "url": "https://github.com/nrccua/dls/issues"
   },
   "contributors": [
-    "Jon Cursi <jon.cursi@encoura.org>",
-    "Adam Weeden <adam.weeden@encoura.org"
+    "Jon Cursi <jon.cursi@encoura.org>"
   ],
   "dependencies": {
     "@babel/runtime": "^7.27.6",
