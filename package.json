@@ -101,7 +101,7 @@
     "shelljs": "0.10.0",
     "standard-version": "9.5.0",
     "storybook": "9.0.8",
-    "ts-jest": "29.3.4",
+    "ts-jest": "29.4.0",
     "ts-loader": "9.5.2",
     "ts-node": "10.9.2",
     "ts-patch": "3.3.0",
