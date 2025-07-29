@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Switch ACT theme matches the snapshot 1`] = `
 <div>
@@ -124,10 +124,10 @@ exports[`Switch ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Switch ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-1dscvb8-MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-169sx1-MuiSwitch-root"
   >
     <span
-      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-1pyp4rk-MuiButtonBase-root-MuiSwitch-switchBase"
+      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-166g0ir-MuiButtonBase-root-MuiSwitch-switchBase"
     >
       <input
         checked=""
@@ -139,7 +139,7 @@ exports[`Switch ENCOURAGE_E4E theme matches the snapshot 1`] = `
       />
     </span>
     <span
-      class="MuiSwitch-track css-19iqpv6-MuiSwitch-track"
+      class="MuiSwitch-track css-1h0w15v-MuiSwitch-track"
     />
   </span>
 </div>

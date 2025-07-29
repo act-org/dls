@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Select ACT theme matches the snapshot 1`] = `
 <div>
@@ -269,7 +269,7 @@ exports[`Select ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
     aria-label="Select"
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-mvdw8r-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-ryi7ji-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
   >
     <div
       aria-expanded="false"

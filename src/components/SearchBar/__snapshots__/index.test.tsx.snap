@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`SearchBar ACT theme matches the snapshot 1`] = `
 <div>
@@ -374,10 +374,10 @@ exports[`SearchBar ENCOURAGE theme matches the snapshot 1`] = `
 exports[`SearchBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-1mb9ri2-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-adornedStart MuiInputBase-adornedEnd css-s4skfx-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <div
-      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-1b9skfy-MuiInputAdornment-root"
+      class="MuiInputAdornment-root MuiInputAdornment-positionStart css-q8xcvu-MuiInputAdornment-root"
     >
       <span
         aria-hidden="true"
@@ -408,7 +408,7 @@ exports[`SearchBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Clears the search"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-iy3lfk-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1gbuwfp-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         title="Clears the search"
         type="button"

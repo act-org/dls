@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`InputLabel ACT theme matches the snapshot 1`] = `
 <div>
@@ -118,7 +118,7 @@ exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-7hilkc-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-11i8ps4-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"

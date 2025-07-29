@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Checkbox ACT theme matches the snapshot 1`] = `
 <div>
@@ -134,7 +134,7 @@ exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-mhbvsj-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1vv0vwy-MuiButtonBase-root-MuiCheckbox-root"
   >
     <input
       checked=""

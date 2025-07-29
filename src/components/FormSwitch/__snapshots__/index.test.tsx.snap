@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`FormSwitch ACT theme matches the snapshot 1`] = `
 <div>
@@ -196,10 +196,10 @@ exports[`FormSwitch ENCOURAGE_E4E theme matches the snapshot 1`] = `
       id="uniqueId"
     >
       <span
-        class="MuiSwitch-root MuiSwitch-sizeMedium css-1dscvb8-MuiSwitch-root"
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-169sx1-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-1pyp4rk-MuiButtonBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-166g0ir-MuiButtonBase-root-MuiSwitch-switchBase"
         >
           <input
             class="PrivateSwitchBase-input MuiSwitch-input css-j8yymo"
@@ -210,7 +210,7 @@ exports[`FormSwitch ENCOURAGE_E4E theme matches the snapshot 1`] = `
           />
         </span>
         <span
-          class="MuiSwitch-track css-19iqpv6-MuiSwitch-track"
+          class="MuiSwitch-track css-1h0w15v-MuiSwitch-track"
         />
       </span>
       <span

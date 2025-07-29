@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
 <div>
@@ -840,7 +840,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="First Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-96z2b7-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
@@ -865,7 +865,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Previous Page"
-        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeLarge css-96z2b7-MuiButtonBase-root-MuiIconButton-root"
         disabled=""
         tabindex="-1"
         type="button"
@@ -885,10 +885,10 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     </span>
     <div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-1qewred-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-1nvovwh-MuiFormControl-root-MuiTextField-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiSelect-root css-h5p9cq-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiSelect-root css-1d4fsxt-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-expanded="false"
@@ -947,7 +947,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Next Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-96z2b7-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >
@@ -971,7 +971,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
     >
       <button
         aria-label="Last Page"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-96z2b7-MuiButtonBase-root-MuiIconButton-root"
         tabindex="0"
         type="button"
       >

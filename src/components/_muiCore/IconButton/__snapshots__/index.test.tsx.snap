@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`IconButton ACT theme matches the snapshot 1`] = `
 <div>
@@ -119,7 +119,7 @@ exports[`IconButton ENCOURAGE theme matches the snapshot 1`] = `
 exports[`IconButton ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-1opdumx-MuiButtonBase-root-MuiIconButton-root"
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-96z2b7-MuiButtonBase-root-MuiIconButton-root"
     tabindex="0"
     title="icon button"
     type="button"

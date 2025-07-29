@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Autocomplete ACT theme matches the snapshot 1`] = `
 <div>
@@ -369,13 +369,13 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Autocomplete ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1jh48fd-MuiAutocomplete-root"
+    class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-ougtri-MuiAutocomplete-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-l731rl-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-3u8sme-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-losdc3-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-132qvy3-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -383,7 +383,7 @@ exports[`Autocomplete ENCOURAGE_E4E theme matches the snapshot 1`] = `
         Movie
       </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1qau66c-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-13o8n1d-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
           aria-autocomplete="list"
@@ -399,11 +399,11 @@ exports[`Autocomplete ENCOURAGE_E4E theme matches the snapshot 1`] = `
           value=""
         />
         <div
-          class="MuiAutocomplete-endAdornment css-yryib1-MuiAutocomplete-endAdornment"
+          class="MuiAutocomplete-endAdornment css-1nu927f-MuiAutocomplete-endAdornment"
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1sickos-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-wsbn3o-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"

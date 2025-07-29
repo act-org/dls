@@ -80,7 +80,7 @@ export const components: ThemeOptions['components'] = {
   MuiAccordionSummary: {
     styleOverrides: {
       expandIconWrapper: {
-        color: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
         margin: 12,
       },
       root: {
@@ -104,7 +104,7 @@ export const components: ThemeOptions['components'] = {
         marginRight: '0px',
         padding: 0,
         svg: {
-          fill: `${palette.branding.sapphire[500]} !important`,
+          fill: `${palette.branding.sapphire[100]} !important`,
           height: '16px',
           width: '16px',
         },
@@ -324,10 +324,10 @@ export const components: ThemeOptions['components'] = {
   MuiBadge: {
     styleOverrides: {
       colorPrimary: {
-        background: palette.branding.sapphire[500],
+        background: palette.branding.sapphire[100],
       },
       colorSecondary: {
-        background: palette.branding.teal[500],
+        background: palette.branding.teal[100],
       },
     },
   },
@@ -341,7 +341,7 @@ export const components: ThemeOptions['components'] = {
           boxShadow:
             '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
         },
-        backgroundColor: palette.branding.sapphire[500],
+        backgroundColor: palette.branding.sapphire[100],
         boxShadow: 'none',
       },
       containedPrimary: {
@@ -356,42 +356,42 @@ export const components: ThemeOptions['components'] = {
       },
       iconOutlined: {
         '&.MuiButton-sizeLarge': {
-          border: `2px solid ${palette.branding.sapphire[400]}`,
+          border: `2px solid ${palette.branding.sapphire[80]}`,
         },
         '&.MuiButton-sizeMedium': {
-          borderColor: palette.branding.sapphire[400],
+          borderColor: palette.branding.sapphire[80],
         },
         '&.MuiButton-sizeSmall': {
-          borderColor: palette.branding.sapphire[400],
+          borderColor: palette.branding.sapphire[80],
         },
         '&:hover': {
-          backgroundColor: palette.branding.sapphire[50],
-          borderColor: palette.branding.sapphire[200],
+          backgroundColor: palette.branding.sapphire[10],
+          borderColor: palette.branding.sapphire[50],
           boxShadow:
             '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
         },
         backgroundColor: 'unset',
-        border: `1px solid ${palette.branding.sapphire[400]}`,
-        color: palette.branding.sapphire[500],
+        border: `1px solid ${palette.branding.sapphire[80]}`,
+        color: palette.branding.sapphire[100],
       },
       outlined: {
         '&.MuiButton-sizeLarge': {
-          border: `2px solid ${palette.branding.sapphire[400]}`,
+          border: `2px solid ${palette.branding.sapphire[80]}`,
         },
         '&.MuiButton-sizeMedium': {
-          borderColor: palette.branding.sapphire[400],
+          borderColor: palette.branding.sapphire[80],
         },
         '&.MuiButton-sizeSmall': {
-          borderColor: palette.branding.sapphire[400],
+          borderColor: palette.branding.sapphire[80],
         },
         '&:hover': {
-          backgroundColor: palette.branding.sapphire[50],
-          borderColor: palette.branding.sapphire[200],
+          backgroundColor: palette.branding.sapphire[10],
+          borderColor: palette.branding.sapphire[50],
           boxShadow:
             '0px 4px 8px rgba(79, 94, 113, 0.1), 0px 2px 4px rgba(79, 94, 113, 0.11), 0px 0px 2px rgba(79, 94, 113, 0.12)',
         },
         backgroundColor: 'unset',
-        color: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
       },
       root: {
         '&.Mui-disabled.MuiButton-contained': {
@@ -450,17 +450,17 @@ export const components: ThemeOptions['components'] = {
           padding: '2px 8px',
         },
         '&:hover': {
-          backgroundColor: palette.branding.sapphire[50],
+          backgroundColor: palette.branding.sapphire[10],
         },
         backgroundColor: 'unset',
-        color: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
         fontWeight: 500,
       },
       textSecondary: {
         '&:hover': {
           backgroundColor: palette.branding.teal[50],
         },
-        color: palette.branding.teal[500],
+        color: palette.branding.teal[100],
       },
       textSizeLarge: {
         fontWeight: 600,
@@ -512,7 +512,7 @@ export const components: ThemeOptions['components'] = {
             '&:hover': {
               backgroundColor: palette.branding.teal[50],
             },
-            color: palette.branding.teal[500],
+            color: palette.branding.teal[100],
           },
           '&.Mui-disabled': {
             color: palette.branding.surface[400],
@@ -571,7 +571,7 @@ export const components: ThemeOptions['components'] = {
       },
       outlined: {
         '&.Mui-disabled': {
-          border: `1px solid ${palette.branding.mist[400]} !important`,
+          border: `1px solid ${palette.branding.mist[80]} !important`,
         },
       },
       root: {
@@ -785,7 +785,7 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       root: {
         '&.MuiInputLabel-root.Mui-focused': {
-          color: palette.branding.sapphire[500],
+          color: palette.branding.sapphire[100],
         },
       },
     },
@@ -796,22 +796,22 @@ export const components: ThemeOptions['components'] = {
         '&:hover': {
           backgroundColor: palette.branding.sapphire[700],
         },
-        backgroundColor: palette.branding.sapphire[500],
+        backgroundColor: palette.branding.sapphire[100],
         color: palette.utility.white,
       },
       colorSecondary: {
         '&:hover': {
           backgroundColor: palette.branding.sapphire[100],
         },
-        backgroundColor: palette.branding.sapphire[50],
-        color: palette.branding.sapphire[500],
+        backgroundColor: palette.branding.sapphire[10],
+        color: palette.branding.sapphire[100],
       },
       colorTerciary: {
         '&:hover': {
-          backgroundColor: palette.branding.sapphire[50],
+          backgroundColor: palette.branding.sapphire[10],
         },
         backgroundColor: 'unset',
-        color: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
       },
       root: {
         '&.Mui-disabled': {
@@ -876,7 +876,7 @@ export const components: ThemeOptions['components'] = {
         },
         '&.MuiSelect-root. MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
           {
-            borderColor: palette.branding.sapphire[500],
+            borderColor: palette.branding.sapphire[100],
           },
         height: 48,
       },
@@ -922,7 +922,7 @@ export const components: ThemeOptions['components'] = {
   MuiLinearProgress: {
     styleOverrides: {
       bar: {
-        backgroundColor: palette.branding.teal[500],
+        backgroundColor: palette.branding.teal[100],
       },
       bar1Determinate: {
         borderRadius: 8,
@@ -941,8 +941,8 @@ export const components: ThemeOptions['components'] = {
           color: palette.branding.sapphire[700],
           textDecorationColor: palette.branding.sapphire[700],
         },
-        color: palette.branding.sapphire[500],
-        textDecorationColor: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
+        textDecorationColor: palette.branding.sapphire[100],
       },
     },
   },
@@ -1042,7 +1042,7 @@ export const components: ThemeOptions['components'] = {
 
         '&.Mui-focused': {
           '& > .MuiOutlinedInput-notchedOutline': {
-            borderColor: palette.branding.sapphire[500],
+            borderColor: palette.branding.sapphire[100],
           },
         },
         '&.MuiInputBase-readOnly': {
@@ -1102,7 +1102,7 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       label: {
         ...typography.buttonSmall,
-        color: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
       },
       labelContainer: {
         margin: 0,
@@ -1115,10 +1115,10 @@ export const components: ThemeOptions['components'] = {
               color: palette.text.overLight.disabled,
             },
             '&:hover': {
-              backgroundColor: palette.branding.sapphire[50],
+              backgroundColor: palette.branding.sapphire[10],
             },
             backgroundColor: 'unset',
-            color: palette.branding.sapphire[500],
+            color: palette.branding.sapphire[100],
             margin: 0,
             padding: 0,
           },
@@ -1133,13 +1133,13 @@ export const components: ThemeOptions['components'] = {
       },
       switchViewButton: {
         '&:hover': {
-          backgroundColor: palette.branding.sapphire[50],
+          backgroundColor: palette.branding.sapphire[10],
         },
         height: 24,
         width: 24,
       },
       switchViewIcon: {
-        color: palette.branding.sapphire[500],
+        color: palette.branding.sapphire[100],
       },
     },
   },
@@ -1147,8 +1147,8 @@ export const components: ThemeOptions['components'] = {
     styleOverrides: {
       today: {
         '&:not(&.Mui-selected)': {
-          border: `1px solid ${palette.branding.sapphire[500]}`,
-          color: palette.branding.sapphire[500],
+          border: `1px solid ${palette.branding.sapphire[100]}`,
+          color: palette.branding.sapphire[100],
         },
       },
     },
@@ -1213,7 +1213,7 @@ export const components: ThemeOptions['components'] = {
             '&:hover': {
               backgroundColor: palette.branding.teal[50],
             },
-            color: palette.branding.teal[500],
+            color: palette.branding.teal[100],
           },
           '&.Mui-disabled': {
             color: palette.branding.surface[400],
@@ -1423,7 +1423,7 @@ export const components: ThemeOptions['components'] = {
   MuiTabs: {
     styleOverrides: {
       indicator: {
-        backgroundColor: palette.branding.teal[500],
+        backgroundColor: palette.branding.teal[100],
       },
       root: {
         button: {
@@ -1546,7 +1546,7 @@ export const components: ThemeOptions['components'] = {
                 '& div.MuiInputBase-root.Mui-focused': {
                   '&:hover': {
                     '& fieldset': {
-                      borderColor: palette.branding.sapphire[500],
+                      borderColor: palette.branding.sapphire[100],
                     },
                   },
                 },
@@ -1594,7 +1594,7 @@ export const components: ThemeOptions['components'] = {
           '& div.MuiInputBase-root.Mui-focused': {
             '&:hover': {
               '& fieldset': {
-                borderColor: palette.branding.sapphire[500],
+                borderColor: palette.branding.sapphire[100],
               },
             },
           },
@@ -1687,12 +1687,12 @@ export const components: ThemeOptions['components'] = {
       root: {
         '&.Mui-selected': {
           '&:focus': {
-            backgroundColor: palette.branding.sapphire[500],
+            backgroundColor: palette.branding.sapphire[100],
           },
           '&:hover': {
             backgroundColor: palette.branding.sapphire[700],
           },
-          backgroundColor: palette.branding.sapphire[500],
+          backgroundColor: palette.branding.sapphire[100],
           color: palette.text.overDark.high,
         },
         '&:last-of-type': {
@@ -1715,11 +1715,11 @@ export const components: ThemeOptions['components'] = {
           },
           ':focus': {
             background: palette.utility.white,
-            border: `1px solid ${palette.branding.sapphire[500]}`,
-            color: palette.branding.sapphire[500],
+            border: `1px solid ${palette.branding.sapphire[100]}`,
+            color: palette.branding.sapphire[100],
           },
           ':hover': {
-            background: palette.branding.sapphire[50],
+            background: palette.branding.sapphire[10],
           },
           borderRadius: '8px',
           color: palette.text.overLight.high,
