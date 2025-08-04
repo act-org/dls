@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/nrccua/dls/compare/v1.0.1...v1.1.0) (2025-08-04)
+
+
+### Features
+
+* Update E4E colors to match E4S ([dfe6bea](https://github.com/nrccua/dls/commit/dfe6bea3e21fc67242cfccbcb74fe1e05ecf20e7))
+
 ## [1.0.1](https://github.com/nrccua/dls/compare/v1.0.0...v1.0.1) (2025-06-23)
 
 
