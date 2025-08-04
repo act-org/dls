@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`OutlinedInput ACT theme matches the snapshot 1`] = `
 <div>
@@ -148,7 +148,7 @@ exports[`OutlinedInput ENCOURAGE theme matches the snapshot 1`] = `
 exports[`OutlinedInput ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-h5p9cq-MuiInputBase-root-MuiOutlinedInput-root"
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-1d4fsxt-MuiInputBase-root-MuiOutlinedInput-root"
   >
     <input
       class="MuiInputBase-input MuiOutlinedInput-input css-p1pyuz-MuiInputBase-input-MuiOutlinedInput-input"

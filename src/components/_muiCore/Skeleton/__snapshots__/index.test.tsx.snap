@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Skeleton ACT theme matches the snapshot 1`] = `
 <div>
@@ -48,7 +48,7 @@ exports[`Skeleton ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Skeleton ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-177q8j-MuiSkeleton-root"
+    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-11xkbm-MuiSkeleton-root"
     style="width: 100px; height: 100px;"
   />
 </div>
