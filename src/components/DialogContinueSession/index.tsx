@@ -24,6 +24,7 @@ export interface DialogContinueSessionProps {
   expiresAt: Date;
   onContinue: () => void;
   onExpire: () => void;
+  open?: boolean;
 }
 
 export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
@@ -39,6 +40,7 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
   onExpire,
   title = 'Do you want to continue your session?',
   titleProps,
+  open = false,
 }: DialogContinueSessionProps): ReactElement<unknown> | null => {
   const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(expiresAt.getTime() - Date.now());
 
@@ -58,7 +60,7 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
     };
   }, [onExpire, setTimeUntilExpiration, timeUntilExpiration]);
 
-  if (timeUntilExpiration > 0) {
+  if (open && timeUntilExpiration > 0) {
     return (
       <Dialog aria-labelledby="dialog-continue-session-title" fullWidth maxWidth="xs" open {...dialogProps}>
         <DialogTitle id="dialog-continue-session-title" {...titleProps}>

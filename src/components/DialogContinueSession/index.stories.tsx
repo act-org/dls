@@ -25,10 +25,18 @@ interface StoryProps extends DialogContinueSessionProps {
 const Template: StoryFn<StoryProps> = args => {
   const [open, setOpen] = useState(false);
 
-  if (open)
-    return (
+  return (
+    <>
+      <Button
+        onClick={(): void => {
+          setOpen(true);
+        }}
+      >
+        Open
+      </Button>
       <DialogContinueSession
         {...args}
+        open={open}
         onContinue={(): void => {
           setOpen(false);
         }}
@@ -36,21 +44,12 @@ const Template: StoryFn<StoryProps> = args => {
           window.location.reload();
         }}
       />
-    );
-
-  return (
-    <Button
-      onClick={(): void => {
-        setOpen(true);
-      }}
-    >
-      Open
-    </Button>
+    </>
   );
 };
 
 const DialogWithLauncher = ({ label, ...dialogProps }: Omit<DialogContinueSessionProps, 'open'> & { label: string }): ReactElement => {
-  const [, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -63,6 +62,7 @@ const DialogWithLauncher = ({ label, ...dialogProps }: Omit<DialogContinueSessio
       </Button>
       <DialogContinueSession
         {...dialogProps}
+        open={open}
         onContinue={(): void => {
           setOpen(false);
         }}
