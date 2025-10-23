@@ -23,8 +23,15 @@ export default {
   },
   argTypes: Playground({}, ThemeProvider),
   component: ThemeProvider,
+  parameters: {
+    chromatic: { disable: true },
+  },
   tags: ['autodocs'],
   title: 'Utilities/ThemeProvider',
 } as Meta<ThemeProviderProps>;
 
-export const Preview: StoryObj<ThemeProviderProps> = {};
+export const Preview: StoryObj<ThemeProviderProps> = {
+  parameters: {
+    chromatic: { disable: true },
+  },
+};

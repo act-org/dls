@@ -102,6 +102,7 @@ export default {
     promptWithMsRemaining: 5000,
     tokenMaxAgeMs: 15 * 1000,
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       expiresAt: { type: 'date' },
@@ -112,11 +113,18 @@ export default {
     },
     SessionTimer,
   ),
-  component: Template,
+  component: SessionTimer,
+  parameters: {
+    chromatic: { disable: true },
+  },
+  render: Template,
   tags: ['autodocs'],
-  title: 'Organisms / SessionTimer',
+  title: 'Utilities / SessionTimer',
 } as Meta<SessionTimerProps>;
 
 export const Preview: StoryObj<SessionTimerProps> = {
   args: {},
+  parameters: {
+    chromatic: { disable: true },
+  },
 };

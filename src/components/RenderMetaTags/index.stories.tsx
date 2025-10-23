@@ -24,8 +24,15 @@ export default {
     RenderMetaTags,
   ),
   component: RenderMetaTags,
+  parameters: {
+    chromatic: { disable: true },
+  },
   tags: ['autodocs'],
   title: 'Utilities/RenderMetaTags',
 } as Meta<RenderMetaTagsProps>;
 
-export const Preview: StoryObj<RenderMetaTagsProps> = {};
+export const Preview: StoryObj<RenderMetaTagsProps> = {
+  parameters: {
+    chromatic: { disable: true },
+  },
+};

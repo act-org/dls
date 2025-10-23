@@ -106,17 +106,25 @@ export default {
   args: {
     keyName: 'mySessionKey',
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       keyName: { type: 'string' },
     },
     SessionStorageKeySharer,
   ),
-  component: Template,
+  component: SessionStorageKeySharer,
+  parameters: {
+    chromatic: { disable: true },
+  },
+  render: Template,
   tags: ['autodocs'],
   title: 'Utilities / SessionStorageKeySharer',
 } as Meta<SessionStorageKeySharerProps>;
 
 export const Preview: StoryObj<SessionStorageKeySharerProps> = {
   args: {},
+  parameters: {
+    chromatic: { disable: true },
+  },
 };

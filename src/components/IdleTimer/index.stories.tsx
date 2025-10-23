@@ -42,6 +42,7 @@ export default {
   args: {
     timeoutMs: 10000,
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       onAction: { action: 'onAction' },
@@ -52,13 +53,20 @@ export default {
     },
     IdleTimer,
   ),
-  component: Template,
+  component: IdleTimer,
+  parameters: {
+    chromatic: { disable: true },
+  },
+  render: Template,
   tags: ['autodocs'],
   title: 'Utilities / IdleTimer',
 } as Meta<IdleTimerProps>;
 
 export const Preview: StoryObj<IdleTimerProps> = {
   args: {},
+  parameters: {
+    chromatic: { disable: true },
+  },
 };
 
 /*
@@ -68,5 +76,8 @@ export const Preview: StoryObj<IdleTimerProps> = {
 export const StopOnIdle: StoryObj<IdleTimerProps> = {
   args: {
     stopOnIdle: true,
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
