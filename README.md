@@ -221,36 +221,11 @@ components for server-side rendering. See the official Next.js example
 
 ### Icons
 
-#### Option 1: Find and import from the DLS
+#### Option 1: Find and import from `@mui/icons-material`
 
-The DLS re-exports all icons that are provided by the
-[`mdi-material-ui`](https://www.npmjs.com/package/mdi-material-ui) package. This
-is an expansive list of icons that are managed by the material community. You
-can search for a specific icon to use on
-[materialdesignicons.com](https://materialdesignicons.com). Once you've found
-the perfect icon, you can use it in your project like so:
-
-```jsx
-// Import the needed icon(s) directly, to avoid bundle size bloat.
-import PollBox from '@encoura/dls/icons/PollBox';
-
-...
-
-const MyComponent = () => (
-  ...
-  <PollBox />
-  ...
-);
-```
-
-#### Option 2: Find and import from `@mui/icons-material`
-
-If the DLS doesn't provide the icon you're looking for, as a second line of
-defense, you can search for icons in the
-[`@mui/icons-material`](https://www.npmjs.com/package/@mui/icons-material)
-library. While most of these icons can be found directly in the DLS via
-`mdi-material-ui`, there is some unique selection within this library that could
-be useful to you. You can search for a specific icon to use on
+The [`@mui/icons-material`](https://www.npmjs.com/package/@mui/icons-material)
+library is a collection of icons managed by Google and the MUI team. You can
+search for a specific icon to use on
 [mui.com](https://mui.com/material-ui/material-icons/). Once you've found
 the perfect icon, you can use it in your project like so:
 
@@ -263,6 +238,29 @@ import PollIcon from '@mui/icons-material/Poll';
 const MyComponent = () => (
   ...
   <PollIcon />
+  ...
+);
+```
+
+#### Option 2: Find and import from `mdi-material-ui`
+
+If `@mui/icons-material` doesn't provide the icon you're looking for, as a
+second line of defense, you can search for icons in the
+[`mdi-material-ui`](https://www.npmjs.com/package/mdi-material-ui) library.
+This is an expansive list of icons that are managed by the material community.
+You can search for a specific icon to use on
+[materialdesignicons.com](https://materialdesignicons.com). Once you've found
+the perfect icon, you can use it in your project like so:
+
+```jsx
+// Import the needed icon(s) directly, to avoid bundle size bloat.
+import PollBox from 'mdi-material-ui/PollBox';
+
+...
+
+const MyComponent = () => (
+  ...
+  <PollBox />
   ...
 );
 ```
@@ -288,7 +286,7 @@ export default CustomIcon;
 ### Import Stuff
 
 That's it! You're ready to use the DLS. Simply import the components,
-constants, context, helpers, hooks, icons, styles, and types that you need:
+constants, context, helpers, hooks, styles, and types that you need:
 
 ```jsx
 // components
@@ -301,8 +299,6 @@ import { AlertContext } from '@encoura/dls/context';
 import { search } from '@encoura/dls/helpers';
 // hooks
 import { useLocalStorage } from '@encoura/dls/hooks';
-// icons
-import ChevronDown from '@encoura/dls/icons/ChevronDown';
 // styles & themes
 import { THEME_ENCOURAGE_E4E } from '@encoura/dls/styles/themeEncourageE4E';
 // types
