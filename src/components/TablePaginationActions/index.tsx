@@ -65,51 +65,23 @@ export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
 
   const disableFirst = disabled || zeroBasedPage === 0;
   const disablePrevious = disabled || zeroBasedPage === 0;
-  const disableNext =
-    disabled || zeroBasedPage >= Math.ceil(count / rowsPerPage) - 1;
-  const disableLast =
-    disabled || zeroBasedPage >= Math.ceil(count / rowsPerPage) - 1;
+  const disableNext = disabled || zeroBasedPage >= Math.ceil(count / rowsPerPage) - 1;
+  const disableLast = disabled || zeroBasedPage >= Math.ceil(count / rowsPerPage) - 1;
 
   return (
     <StyledContainer style={style}>
-      <Tooltip
-        arrow
-        placement={tooltipPlacement}
-        PopperProps={PP}
-        title={`First ${noun}`}
-      >
+      <Tooltip arrow placement={tooltipPlacement} PopperProps={PP} title={`First ${noun}`}>
         <span>
-          <IconButton
-            aria-label={`First ${noun}`}
-            disabled={disableFirst}
-            onClick={(event): void => onPageChange(event, 0)}
-            size="large"
-          >
-            <PageFirst
-              fontSize="small"
-              htmlColor={disableFirst ? htmlColorDisabled : htmlColor}
-            />
+          <IconButton aria-label={`First ${noun}`} disabled={disableFirst} onClick={(event): void => onPageChange(event, 0)} size="large">
+            <PageFirst fontSize="small" htmlColor={disableFirst ? htmlColorDisabled : htmlColor} />
           </IconButton>
         </span>
       </Tooltip>
 
-      <Tooltip
-        arrow
-        placement={tooltipPlacement}
-        PopperProps={PP}
-        title={`Previous ${noun}`}
-      >
+      <Tooltip arrow placement={tooltipPlacement} PopperProps={PP} title={`Previous ${noun}`}>
         <span>
-          <IconButton
-            aria-label={`Previous ${noun}`}
-            disabled={disablePrevious}
-            onClick={(event): void => onPageChange(event, zeroBasedPage - 1)}
-            size="large"
-          >
-            <ChevronLeft
-              fontSize="small"
-              htmlColor={disablePrevious ? htmlColorDisabled : htmlColor}
-            />
+          <IconButton aria-label={`Previous ${noun}`} disabled={disablePrevious} onClick={(event): void => onPageChange(event, zeroBasedPage - 1)} size="large">
+            <ChevronLeft fontSize="small" htmlColor={disablePrevious ? htmlColorDisabled : htmlColor} />
           </IconButton>
         </span>
       </Tooltip>
@@ -127,18 +99,13 @@ export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
               setOpen(true);
               setTimeout((): void => {
                 if (listEl) {
-                  (listEl as any).current.scrollToItem(
-                    Number(zeroBasedPage),
-                    'center',
-                  );
+                  (listEl as any).current.scrollToItem(Number(zeroBasedPage), 'center');
                 }
               }, 10);
             },
             open,
             // eslint-disable-next-line react/display-name
-            renderValue: (value): ReactElement<unknown> => (
-              <span>{`${noun} ${Number(value) + 1}`}</span>
-            ),
+            renderValue: (value): ReactElement<unknown> => <span>{`${noun} ${Number(value) + 1}`}</span>,
             SelectDisplayProps: {
               'aria-label': 'Select',
             },
@@ -171,49 +138,25 @@ export const TablePaginationActions: FC<TablePaginationActionsProps> = ({
         </StyledTextField>
       </div>
 
-      <Tooltip
-        arrow
-        placement={tooltipPlacement}
-        PopperProps={PP}
-        title={`Next ${noun}`}
-      >
+      <Tooltip arrow placement={tooltipPlacement} PopperProps={PP} title={`Next ${noun}`}>
         <span>
-          <IconButton
-            aria-label={`Next ${noun}`}
-            disabled={disableNext}
-            onClick={(event): void => onPageChange(event, zeroBasedPage + 1)}
-            size="large"
-          >
-            <ChevronRight
-              fontSize="small"
-              htmlColor={disableNext ? htmlColorDisabled : htmlColor}
-            />
+          <IconButton aria-label={`Next ${noun}`} disabled={disableNext} onClick={(event): void => onPageChange(event, zeroBasedPage + 1)} size="large">
+            <ChevronRight fontSize="small" htmlColor={disableNext ? htmlColorDisabled : htmlColor} />
           </IconButton>
         </span>
       </Tooltip>
 
-      <Tooltip
-        arrow
-        placement={tooltipPlacement}
-        PopperProps={PP}
-        title={`Last ${noun}`}
-      >
+      <Tooltip arrow placement={tooltipPlacement} PopperProps={PP} title={`Last ${noun}`}>
         <span>
           <IconButton
             aria-label={`Last ${noun}`}
             disabled={disableLast}
             onClick={(event): void => {
-              onPageChange(
-                event,
-                Math.max(0, Math.ceil(count / rowsPerPage) - 1),
-              );
+              onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
             }}
             size="large"
           >
-            <PageLast
-              fontSize="small"
-              htmlColor={disableLast ? htmlColorDisabled : htmlColor}
-            />
+            <PageLast fontSize="small" htmlColor={disableLast ? htmlColorDisabled : htmlColor} />
           </IconButton>
         </span>
       </Tooltip>

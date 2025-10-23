@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Backdrop as MuiBackdrop,
-  BackdropProps as MuiBackdropProps,
-} from '@mui/material';
+import { Backdrop as MuiBackdrop, BackdropProps as MuiBackdropProps } from '@mui/material';
 
 export const Backdrop = MuiBackdrop;
 export type Backdrop = typeof MuiBackdrop;

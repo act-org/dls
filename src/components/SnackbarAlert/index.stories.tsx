@@ -15,16 +15,12 @@ import { ReactElement, useState } from 'react';
 
 import Alert from '~/components/Alert';
 import AlertContext from '~/context/AlertContext';
-import AlertContextProvider, {
-  AlertContextProviderProps,
-} from '~/context/AlertContext/provider';
+import AlertContextProvider, { AlertContextProviderProps } from '~/context/AlertContext/provider';
 import { Playground } from '~/helpers/playground';
 
 import { SnackbarAlert } from '.';
 
-const Template: StoryFn<AlertContextProviderProps> = (
-  props: AlertContextProviderProps,
-) => {
+const Template: StoryFn<AlertContextProviderProps> = (props: AlertContextProviderProps) => {
   const [counter, setCounter] = useState(0);
 
   return (

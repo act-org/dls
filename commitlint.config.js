@@ -5,4 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-module.exports = require('@actinc/eslint-config/commitlint.config');
+module.exports = {
+  extends: ['@encoura/eslint-config/commitlint.config'],
+  parserPreset: 'conventional-changelog-conventionalcommits',
+  rules: {},
+};

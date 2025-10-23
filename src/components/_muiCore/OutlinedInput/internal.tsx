@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  OutlinedInput as MuiOutlinedInput,
-  OutlinedInputProps as MuiOutlinedInputProps,
-} from '@mui/material';
+import { OutlinedInput as MuiOutlinedInput, OutlinedInputProps as MuiOutlinedInputProps } from '@mui/material';
 
 export const OutlinedInput = MuiOutlinedInput;
 export type OutlinedInput = typeof MuiOutlinedInput;

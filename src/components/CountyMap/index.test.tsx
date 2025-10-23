@@ -13,13 +13,6 @@ import { CountyMap } from '.';
 
 describe('CountyMap', () => {
   const processDataFn = jest.fn();
-  const Component = (
-    <CountyMap
-      data={defaultData}
-      geoJSONPath="/resources/counties.json"
-      mapboxAccessToken=""
-      processDataFn={processDataFn}
-    />
-  );
+  const Component = <CountyMap data={defaultData} geoJSONPath="/resources/counties.json" mapboxAccessToken="" processDataFn={processDataFn} />;
   standard(Component);
 });

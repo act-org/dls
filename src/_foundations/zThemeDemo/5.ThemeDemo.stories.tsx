@@ -51,10 +51,7 @@ import Menu from 'mdi-material-ui/Menu';
 import AddIcon from 'mdi-material-ui/Plus';
 import { ReactElement } from 'react';
 
-import {
-  FilmType,
-  topFilms,
-} from '~/components/_muiCore/Autocomplete/internal';
+import { FilmType, topFilms } from '~/components/_muiCore/Autocomplete/internal';
 
 interface Demo<ComponentProps> {
   flex?: number;
@@ -125,9 +122,7 @@ const demos = [
       { color: 'default', disabled: true },
       { checked: true, color: 'default', disabled: true },
     ],
-    render: props => (
-      <FormControlLabel control={<Checkbox {...props} />} label="Label" />
-    ),
+    render: props => <FormControlLabel control={<Checkbox {...props} />} label="Label" />,
     title: 'Checkboxes',
   } as Demo<CheckboxProps>,
   {
@@ -145,9 +140,7 @@ const demos = [
       { color: 'default', disabled: true },
       { checked: true, color: 'default', disabled: true },
     ],
-    render: props => (
-      <FormControlLabel control={<Radio {...props} />} label="Label" />
-    ),
+    render: props => <FormControlLabel control={<Radio {...props} />} label="Label" />,
     title: 'Radios',
   } as Demo<RadioProps>,
   {
@@ -158,9 +151,7 @@ const demos = [
         fullWidth: true,
         multiple: false,
         options: topFilms,
-        renderInput: (params): ReactElement<any> => (
-          <TextField {...params} label="Movie" />
-        ),
+        renderInput: (params): ReactElement<any> => <TextField {...params} label="Movie" />,
       },
     ],
     render: props => <Autocomplete sx={{ mx: '.5em' }} {...props} />,
@@ -281,12 +272,7 @@ const demos = [
     render: props => (
       <AppBar position="static" {...props}>
         <Toolbar>
-          <IconButton
-            aria-label="menu"
-            color="inherit"
-            edge="start"
-            size="large"
-          >
+          <IconButton aria-label="menu" color="inherit" edge="start" size="large">
             <Menu />
           </IconButton>
 
@@ -345,9 +331,8 @@ export const Preview: StoryFn = () => {
     <Box>
       <Typography variant="h2">Theme Preview</Typography>
       <Typography variant="caption">
-        The following is a preview of many of the components inside of the DLS.
-        This page is useful to get a feel for the look of the theme as well as
-        for theme designers to use to quickly see the changes.
+        The following is a preview of many of the components inside of the DLS. This page is useful to get a feel for the look of the theme as well as for theme
+        designers to use to quickly see the changes.
       </Typography>
       <Grid container rowSpacing=".8em">
         {sortBy(demos, 'title').map(demo => (
@@ -359,9 +344,7 @@ export const Preview: StoryFn = () => {
           >
             <Card>
               <CardHeader title={demo.title} />
-              <CardContent
-                sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}
-              >
+              <CardContent sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
                 {demo.props.map(props => (
                   <Box key={Math.random()} sx={{ flex: demo.flex, mx: '.5em' }}>
                     {demo.render(props as any)}

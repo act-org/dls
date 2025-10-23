@@ -14,10 +14,7 @@ import { Playground } from '~/helpers/playground';
 
 import { IdleTimer, IdleTimerProps } from '.';
 
-const Template: StoryFn<IdleTimerProps> = ({
-  timeoutMs,
-  ...otherProps
-}: IdleTimerProps) => {
+const Template: StoryFn<IdleTimerProps> = ({ timeoutMs, ...otherProps }: IdleTimerProps) => {
   const timeoutSeconds = timeoutMs / 1000;
 
   return (
@@ -28,14 +25,8 @@ const Template: StoryFn<IdleTimerProps> = ({
         return (
           <span>
             {remainingTimeSeconds > 0
-              ? `Going idle in ${remainingTimeSeconds} ${pluralize(
-                  'seconds',
-                  remainingTimeSeconds,
-                )}...`
-              : `You went idle for ${timeoutSeconds} ${pluralize(
-                  'seconds',
-                  timeoutSeconds,
-                )}!`}
+              ? `Going idle in ${remainingTimeSeconds} ${pluralize('seconds', remainingTimeSeconds)}...`
+              : `You went idle for ${timeoutSeconds} ${pluralize('seconds', timeoutSeconds)}!`}
           </span>
         );
       }}

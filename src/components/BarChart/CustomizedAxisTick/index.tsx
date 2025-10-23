@@ -56,11 +56,7 @@ export const CustomizedAxisTick: React.FC<CustomizedAxisTickProps> = ({
       y={(y as number) - 20}
     >
       <Tooltip title={payload?.value || ''}>
-        <StyledTypography
-          noWrap
-          onClick={onClickHandler}
-          {...yAxisLabelTypographyProps}
-        >
+        <StyledTypography noWrap onClick={onClickHandler} {...yAxisLabelTypographyProps}>
           {payload?.value}
         </StyledTypography>
       </Tooltip>

@@ -11,9 +11,7 @@ import { standard } from '~/helpers/test';
 
 jest.mock('@mui/material/utils', () => {
   let initialId = 12345;
-  const sourceLib = jest.requireActual<Record<string, unknown>>(
-    '@mui/material/utils',
-  );
+  const sourceLib = jest.requireActual<Record<string, unknown>>('@mui/material/utils');
   return {
     ...sourceLib,
     unstable_useId: jest.fn(() => {
@@ -58,8 +56,7 @@ describe.skip('DataGrid', () => {
           flex: 1,
           headerName: 'Full name',
           sortable: false,
-          valueGetter: (_, row): string =>
-            `${row.firstName || ''} ${row.lastName || ''}`,
+          valueGetter: (_, row): string => `${row.firstName || ''} ${row.lastName || ''}`,
         },
       ]}
       rows={[

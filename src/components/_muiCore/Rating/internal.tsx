@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Rating as MuiRating,
-  RatingProps as MuiRatingProps,
-} from '@mui/material';
+import { Rating as MuiRating, RatingProps as MuiRatingProps } from '@mui/material';
 
 export const Rating = MuiRating;
 export type Rating = typeof MuiRating;

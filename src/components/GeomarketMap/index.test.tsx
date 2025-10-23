@@ -13,13 +13,6 @@ import { GeomarketMap } from '.';
 
 describe('GeomarketMap', () => {
   const processDataFn = jest.fn();
-  const Component = (
-    <GeomarketMap
-      data={defaultData}
-      geoJSONPath="/resources/us-states.json"
-      mapboxAccessToken=""
-      processDataFn={processDataFn}
-    />
-  );
+  const Component = <GeomarketMap data={defaultData} geoJSONPath="/resources/us-states.json" mapboxAccessToken="" processDataFn={processDataFn} />;
   standard(Component);
 });

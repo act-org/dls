@@ -11,11 +11,7 @@ import isString from 'lodash/isString';
 import numeral from 'numeral';
 import React from 'react';
 
-import Map, {
-  FeatureHoverProps,
-  InitialBoundsPositionProps,
-  MapProps,
-} from '~/components/Map';
+import Map, { FeatureHoverProps, InitialBoundsPositionProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
 import { IMapDataProps } from '~/types';
 
@@ -28,10 +24,7 @@ export interface StateMapProps {
   mapPopupProps?: Partial<MapPopupProps>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
-  processDataFn?: (
-    featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
-    data: Array<IMapDataProps>,
-  ) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
+  processDataFn?: (featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>, data: Array<IMapDataProps>) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
   selectedState?: Array<string>;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   tooltipElement?: React.ReactElement;
@@ -56,17 +49,14 @@ export const StateMap: React.FC<StateMapProps> = ({
 }): React.ReactElement<StateMapProps> => {
   const { breakpoints, spacing } = useTheme();
 
-  const [statesJSON, setStatesJSON] =
-    React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
+  const [statesJSON, setStatesJSON] = React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
   const [hoverInfo, setHoverInfo] = React.useState<FeatureHoverProps>();
   const finalHoverInfo = onHoverInfo || hoverInfo;
 
   React.useEffect(() => {
     fetch(geoJSONPath)
       .then(resp => resp.json())
-      .then(json =>
-        setStatesJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>),
-      )
+      .then(json => setStatesJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>))
       .catch(err => console.error('Could not load data', err)); // eslint-disable-line
   }, []);
 
@@ -74,14 +64,10 @@ export const StateMap: React.FC<StateMapProps> = ({
     return statesJSON && processDataFn && processDataFn(statesJSON, data);
   }, [data, statesJSON, processDataFn]);
 
-  const initialBoundsPosition = React.useMemo(():
-    | InitialBoundsPositionProps
-    | undefined => {
+  const initialBoundsPosition = React.useMemo((): InitialBoundsPositionProps | undefined => {
     if (selectedState && processedData) {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      const features = processedData.features.filter(f =>
-        selectedState.includes(f.id as string),
-      );
+      const features = processedData.features.filter(f => selectedState.includes(f.id as string));
 
       if (features.length > 0) {
         const [minLng, minLat, maxLng, maxLat] = bbox({
@@ -119,9 +105,7 @@ export const StateMap: React.FC<StateMapProps> = ({
       {...mapProps}
     >
       {tooltipElement ||
-        (finalHoverInfo &&
-        (isString(parentWidth) ||
-          parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
+        (finalHoverInfo && (isString(parentWidth) || parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
           <MapPopup
             popupProps={{
               latitude: finalHoverInfo.lat,
@@ -138,9 +122,7 @@ export const StateMap: React.FC<StateMapProps> = ({
               },
               {
                 title: 'Volume',
-                value: numeral(
-                  finalHoverInfo.feature.properties?.value as number,
-                ).format('0,0'),
+                value: numeral(finalHoverInfo.feature.properties?.value as number).format('0,0'),
               },
             ]}
             {...mapPopupProps}

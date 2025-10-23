@@ -10,12 +10,7 @@ import numeral from 'numeral';
 import React, { useMemo } from 'react';
 import { Bar, BarProps, LabelList, LabelListProps } from 'recharts';
 
-import {
-  BarChart,
-  BarChartProps,
-  BarLabelProps,
-  measureText,
-} from '~/components/BarChart';
+import { BarChart, BarChartProps, BarLabelProps, measureText } from '~/components/BarChart';
 import { DataProps } from '~/components/BarChart/types';
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -38,9 +33,7 @@ export interface StackedBarChartProps {
   tooltipBarId?: string;
 }
 
-export const StackedBarChart: React.FC<StackedBarChartProps> = (
-  inProps: StackedBarChartProps,
-): React.ReactElement<StackedBarChartProps> => {
+export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: StackedBarChartProps): React.ReactElement<StackedBarChartProps> => {
   const {
     barChartProps,
     barKeys = [],
@@ -61,13 +54,9 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
 
   const { palette, typography } = useTheme();
 
-  const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(
-    tooltipBarId,
-  );
+  const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(tooltipBarId);
 
-  const subLabelKeys =
-    subLabels ||
-    barKeys.reduce((acc, keys) => [...acc, keys[0]], [] as Array<string>);
+  const subLabelKeys = subLabels || barKeys.reduce((acc, keys) => [...acc, keys[0]], [] as Array<string>);
 
   // FIXME recharts uses react-smooth under the hood and that library has a know issue that sometimes prevents the charts from rendering labels,
   // when the issue is closed we can remove this workaround
@@ -83,10 +72,7 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
     () =>
       subLabelKeys.reduce((acc, key) => {
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-        const textWidth = measureText(
-          `${subLabelProps?.style?.fontSize || typography.body1.fontSize}px ${typography.fontFamily}`,
-          key.toLocaleString(),
-        );
+        const textWidth = measureText(`${subLabelProps?.style?.fontSize || typography.body1.fontSize}px ${typography.fontFamily}`, key.toLocaleString());
         if (textWidth > acc) {
           return textWidth;
         }
@@ -95,14 +81,9 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
     [subLabelKeys, subLabelProps?.style?.fontSize, typography.fontFamily],
   );
 
-  const renderAdditionalTooltipInfo = (
-    barId: string | undefined,
-    payload: unknown,
-  ): React.ReactElement[] | null => {
+  const renderAdditionalTooltipInfo = (barId: string | undefined, payload: unknown): React.ReactElement[] | null => {
     const keys = barKeys.find(bKeys => bKeys.some(key => key === barId));
-    const info = (
-      payload as { dataKey: string; value: number; payload: DataProps }[]
-    ).find(el => el.dataKey === barId);
+    const info = (payload as { dataKey: string; value: number; payload: DataProps }[]).find(el => el.dataKey === barId);
 
     if (!info || !keys) {
       return null;
@@ -118,11 +99,7 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
     <BarChart
       chartProps={{ barGap: 4 }}
       data={data}
-      height={
-        108 +
-        (26 * (barKeys.length - 1) + 2 * (barKeys.length - 1)) +
-        (data.length - 1) * (38 + 26 * (barKeys.length - 1))
-      }
+      height={108 + (26 * (barKeys.length - 1) + 2 * (barKeys.length - 1)) + (data.length - 1) * (38 + 26 * (barKeys.length - 1))}
       subLabelWidth={maxSubLabelWidth}
       tooltipBarId={tooltipBarId || barIdHovered}
       {...barChartProps}
@@ -137,12 +114,7 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
             return (
               <Bar
                 dataKey={key}
-                fill={
-                  barChartProps?.customizeBarFillColor?.(i, key) ||
-                  colors[i] ||
-                  DEFAULT_CHART_COLORS[i] ||
-                  palette.grey[700]
-                }
+                fill={barChartProps?.customizeBarFillColor?.(i, key) || colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
                 isAnimationActive={animate}
                 key={`${key}-bar`}
                 onAnimationStart={onAnimationStart}
@@ -173,21 +145,13 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (
                   }}
                   position="insideRight"
                   style={customizeBarText ? customizeBarText(i) : {}}
-                  valueAccessor={(
-                    bar: BarLabelProps,
-                  ): string | number | undefined =>
-                    bar.width > 25 ? bar?.tooltipPayload[0]?.value : undefined
-                  }
+                  valueAccessor={(bar: BarLabelProps): string | number | undefined => (bar.width > 25 ? bar?.tooltipPayload[0]?.value : undefined)}
                   {...labelListProps}
                 />
                 {barKeys.length > 1 && i === 0 ? (
                   <LabelList
                     position="left"
-                    valueAccessor={(bar: BarLabelProps): string =>
-                      subLabels
-                        ? subLabels[index]
-                        : bar?.tooltipPayload[0]?.name
-                    }
+                    valueAccessor={(bar: BarLabelProps): string => (subLabels ? subLabels[index] : bar?.tooltipPayload[0]?.name)}
                     {...subLabelProps}
                   />
                 ) : undefined}

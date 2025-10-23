@@ -74,11 +74,7 @@ export const WithHighlight: StoryObj<PieChartProps> = {
   args: {
     data: moreOptionsData,
     HighlightComponent: (({ payload, availableViewBoxDimension }) => (
-      <Box
-        height={availableViewBoxDimension}
-        width={availableViewBoxDimension}
-        zIndex={-1}
-      >
+      <Box height={availableViewBoxDimension} width={availableViewBoxDimension} zIndex={-1}>
         <Typography fontWeight="bold">{payload.name}</Typography>
         <Typography>{payload.description}</Typography>
       </Box>
@@ -122,9 +118,7 @@ export const WithCustomTooltip: StoryObj<PieChartProps> = {
           return (
             <div style={{ backgroundColor: '#FFF' }}>
               <Typography variant="body1">{`${payload[0].value}`}</Typography>
-              <Typography variant="body2">
-                Anything you want can be displayed here.
-              </Typography>
+              <Typography variant="body2">Anything you want can be displayed here.</Typography>
             </div>
           );
         }

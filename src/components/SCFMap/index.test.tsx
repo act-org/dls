@@ -12,12 +12,6 @@ import { defaultData } from './mocks';
 import { SCFMap } from '.';
 
 describe('SCFMap', () => {
-  const Component = (
-    <SCFMap
-      data={defaultData}
-      geoJSONPath="maps/scf.json"
-      mapboxAccessToken=""
-    />
-  );
+  const Component = <SCFMap data={defaultData} geoJSONPath="maps/scf.json" mapboxAccessToken="" />;
   standard(Component);
 });

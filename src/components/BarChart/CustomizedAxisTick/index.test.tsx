@@ -10,16 +10,6 @@ import { standard } from '~/helpers/test';
 import { CustomizedAxisTick } from '.';
 
 describe('CustomizedAxisTick', () => {
-  const Component = (
-    <CustomizedAxisTick
-      dx={9}
-      height={670}
-      orientation="bottom"
-      payload={{ value: 'Latino/Hispanic/Chicano' }}
-      width={60}
-      x={160}
-      y={177}
-    />
-  );
+  const Component = <CustomizedAxisTick dx={9} height={670} orientation="bottom" payload={{ value: 'Latino/Hispanic/Chicano' }} width={60} x={160} y={177} />;
   standard(Component);
 });

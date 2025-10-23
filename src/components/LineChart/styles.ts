@@ -14,15 +14,13 @@ interface ContainerType {
   width?: number | string;
 }
 
-export const StyledContainer = styled('div')<ContainerType>(
-  ({ height, maxHeight, width }) => ({
-    height,
-    maxHeight: maxHeight || 'none',
-    overflow: 'auto',
-    position: 'relative',
-    width,
-  }),
-);
+export const StyledContainer = styled('div')<ContainerType>(({ height, maxHeight, width }) => ({
+  height,
+  maxHeight: maxHeight || 'none',
+  overflow: 'auto',
+  position: 'relative',
+  width,
+}));
 
 export const StyledResponsiveContainer = styled(ResponsiveContainer)({
   overflow: 'hidden',

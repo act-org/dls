@@ -12,15 +12,7 @@ import { ScatterCustomizedShape } from 'recharts/types/cartesian/Scatter';
 
 import { Playground } from '~/helpers/playground';
 
-import {
-  defaultBarKeys,
-  defaultBarKeysFourLines,
-  defaultData,
-  defaultDataFourLines,
-  longBarKeys,
-  longLabelData,
-  longSubLabelData,
-} from './mocks';
+import { defaultBarKeys, defaultBarKeysFourLines, defaultData, defaultDataFourLines, longBarKeys, longLabelData, longSubLabelData } from './mocks';
 
 import { BarChart, BarChartProps } from '.';
 
@@ -28,8 +20,7 @@ export default {
   args: {
     barKeys: defaultBarKeys,
     data: defaultData,
-    description:
-      'A bar chart displaying the volumes per US state in 2019, 2020, and 2021',
+    description: 'A bar chart displaying the volumes per US state in 2019, 2020, and 2021',
     title: 'Volumes for US States',
   },
   argTypes: Playground(
@@ -71,8 +62,7 @@ export const WithCustomBarColors: StoryObj<BarChartProps> = {
 export const CustomizeBarColorByKey: StoryObj<BarChartProps> = {
   args: {
     barKeys: defaultBarKeys,
-    customizeBarFillColor: (_, barKey) =>
-      barKey === '2020' ? 'red' : undefined,
+    customizeBarFillColor: (_, barKey) => (barKey === '2020' ? 'red' : undefined),
     data: defaultData,
   },
 };
@@ -116,9 +106,7 @@ export const WithCustomTooltip: StoryObj<BarChartProps> = {
           return (
             <div style={{ backgroundColor: '#FFF' }}>
               <Typography variant="body1">{`${label} : ${payload[0].value}`}</Typography>
-              <Typography variant="body2">
-                Anything you want can be displayed here.
-              </Typography>
+              <Typography variant="body2">Anything you want can be displayed here.</Typography>
             </div>
           );
         }
@@ -196,26 +184,9 @@ export const WithScatter: StoryObj<BarChartProps> = {
           dataKey="2019scatter"
           fill="red"
           shape={
-            (({
-              fill,
-              height,
-              width,
-              x,
-              cy,
-            }: {
-              fill: string;
-              height: number;
-              width: number;
-              x: number;
-              cy: number;
-            }) => (
+            (({ fill, height, width, x, cy }: { fill: string; height: number; width: number; x: number; cy: number }) => (
               <g>
-                <circle
-                  cx={x + width / 2}
-                  cy={Math.floor(cy - height / 2 - height * 2)}
-                  fill={fill}
-                  r={height}
-                />
+                <circle cx={x + width / 2} cy={Math.floor(cy - height / 2 - height * 2)} fill={fill} r={height} />
               </g>
             )) as ScatterCustomizedShape
           }
@@ -224,26 +195,9 @@ export const WithScatter: StoryObj<BarChartProps> = {
           dataKey="2020scatter"
           fill="red"
           shape={
-            (({
-              fill,
-              height,
-              width,
-              x,
-              y,
-            }: {
-              fill: string;
-              height: number;
-              width: number;
-              x: number;
-              y: number;
-            }) => (
+            (({ fill, height, width, x, y }: { fill: string; height: number; width: number; x: number; y: number }) => (
               <g>
-                <circle
-                  cx={x + width / 2}
-                  cy={y + height / 2}
-                  fill={fill}
-                  r={height}
-                />
+                <circle cx={x + width / 2} cy={y + height / 2} fill={fill} r={height} />
               </g>
             )) as ScatterCustomizedShape
           }
@@ -252,26 +206,9 @@ export const WithScatter: StoryObj<BarChartProps> = {
           dataKey="2021scatter"
           fill="red"
           shape={
-            (({
-              fill,
-              height,
-              width,
-              x,
-              cy,
-            }: {
-              fill: string;
-              height: number;
-              width: number;
-              x: number;
-              cy: number;
-            }) => (
+            (({ fill, height, width, x, cy }: { fill: string; height: number; width: number; x: number; cy: number }) => (
               <g>
-                <circle
-                  cx={x + width / 2}
-                  cy={cy + height / 2 + height * 2}
-                  fill={fill}
-                  r={height}
-                />
+                <circle cx={x + width / 2} cy={cy + height / 2 + height * 2} fill={fill} r={height} />
               </g>
             )) as ScatterCustomizedShape
           }
@@ -281,9 +218,7 @@ export const WithScatter: StoryObj<BarChartProps> = {
     data: defaultData,
     tooltipProps: {
       renderAdditionalInfo: (barId, payload) => {
-        const scatterInfo = payload.find(
-          el => el.dataKey === `${barId}scatter`,
-        );
+        const scatterInfo = payload.find(el => el.dataKey === `${barId}scatter`);
 
         if (!scatterInfo) {
           return null;

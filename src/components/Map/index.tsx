@@ -12,12 +12,7 @@ import { useTheme, useThemeProps } from '@mui/material/styles';
 import bbox from '@turf/bbox';
 import Color from 'color';
 import isString from 'lodash/isString';
-import {
-  FillLayerSpecification,
-  GeoJSONFeature,
-  LineLayerSpecification,
-  ProjectionSpecification,
-} from 'mapbox-gl';
+import { FillLayerSpecification, GeoJSONFeature, LineLayerSpecification, ProjectionSpecification } from 'mapbox-gl';
 import { equals } from 'ramda';
 import React from 'react';
 import {
@@ -53,11 +48,7 @@ type MapGLProps = ReactMapGLProps & {
 };
 
 type SourceProps = SourceGLProps & {
-  data?:
-    | GeoJSON.Feature<GeoJSON.Geometry>
-    | GeoJSON.FeatureCollection<GeoJSON.Geometry>
-    | string
-    | undefined;
+  data?: GeoJSON.Feature<GeoJSON.Geometry> | GeoJSON.FeatureCollection<GeoJSON.Geometry> | string | undefined;
 };
 
 export interface InitialBoundsPositionProps {
@@ -75,11 +66,7 @@ export type MapProps = MapGLProps & {
   attributionControlProps?: AttributionControlProps;
   children?: React.ReactElement;
   color?: string;
-  data?:
-    | GeoJSON.Feature<GeoJSON.Geometry>
-    | GeoJSON.FeatureCollection<GeoJSON.Geometry>
-    | string
-    | undefined;
+  data?: GeoJSON.Feature<GeoJSON.Geometry> | GeoJSON.FeatureCollection<GeoJSON.Geometry> | string | undefined;
   height: number | string;
   initialBoundsPosition?: InitialBoundsPositionProps;
   layers?: Array<React.ReactElement<LayerProps>>;
@@ -103,9 +90,7 @@ export type MapProps = MapGLProps & {
  *
  * @note If sending the `data` prop it's also necessary to send the `sourceId` prop.
  */
-export const Map: React.FC<MapProps> = (
-  inProps: MapProps,
-): React.ReactElement<MapProps> => {
+export const Map: React.FC<MapProps> = (inProps: MapProps): React.ReactElement<MapProps> => {
   const {
     attributionControlProps,
     children,
@@ -133,9 +118,7 @@ export const Map: React.FC<MapProps> = (
   const [lastZoom, setLastZoom] = React.useState<number>();
   const [sourceLoaded, setSourceLoaded] = React.useState<boolean>(false);
   const [containerWidth, setContainerWidth] = React.useState<number | string>();
-  const [containerHeight, setContainerHeight] = React.useState<
-    number | string
-  >();
+  const [containerHeight, setContainerHeight] = React.useState<number | string>();
 
   const dataLayer = React.useMemo((): LineLayerSpecification => {
     return {
@@ -221,10 +204,7 @@ export const Map: React.FC<MapProps> = (
     (ref: MapRef) => {
       if (ref) {
         mapRef.current = ref;
-        if (
-          initialBoundsPosition &&
-          !equals(initialBoundsPosition.position, previousBounds.current)
-        ) {
+        if (initialBoundsPosition && !equals(initialBoundsPosition.position, previousBounds.current)) {
           ref.fitBounds(initialBoundsPosition.position, {
             duration: 1000,
             padding: 40,
@@ -238,10 +218,7 @@ export const Map: React.FC<MapProps> = (
 
   React.useEffect(() => {
     if (initialBoundsPosition?.id) {
-      mapRef.current?.setFeatureState(
-        { id: initialBoundsPosition.id, source: sourceId },
-        { clicked: true },
-      );
+      mapRef.current?.setFeatureState({ id: initialBoundsPosition.id, source: sourceId }, { clicked: true });
     }
   }, [initialBoundsPosition, sourceId, sourceLoaded]);
 
@@ -253,10 +230,7 @@ export const Map: React.FC<MapProps> = (
 
       mapRef.current?.removeFeatureState({ source: sourceId });
 
-      mapRef.current?.setFeatureState(
-        { id: feature.id || '', source: sourceId },
-        { clicked: true },
-      );
+      mapRef.current?.setFeatureState({ id: feature.id || '', source: sourceId }, { clicked: true });
 
       mapRef.current?.fitBounds(
         [
@@ -289,9 +263,7 @@ export const Map: React.FC<MapProps> = (
   const changeDimensions = (): void => {
     onResize();
     setContainerWidth(width);
-    setContainerHeight(
-      isString(height) ? height : height - parseInt(spacing(7.8), 10),
-    );
+    setContainerHeight(isString(height) ? height : height - parseInt(spacing(7.8), 10));
   };
 
   React.useEffect(() => {
@@ -299,9 +271,7 @@ export const Map: React.FC<MapProps> = (
   }, [width, height]);
 
   return (
-    <StyledAttibutionControlContainer
-      style={{ height: containerHeight, width: containerWidth }}
-    >
+    <StyledAttibutionControlContainer style={{ height: containerHeight, width: containerWidth }}>
       <MapGL
         attributionControl={false}
         initialViewState={{
@@ -313,9 +283,7 @@ export const Map: React.FC<MapProps> = (
         mapboxAccessToken={mapboxAccessToken}
         mapStyle="mapbox://styles/mapbox/light-v9"
         onClick={onClick}
-        onMouseLeave={
-          setHoverInfo ? (): void => setHoverInfo(undefined) : undefined
-        }
+        onMouseLeave={setHoverInfo ? (): void => setHoverInfo(undefined) : undefined}
         onMouseMove={onHover}
         onRender={(): null => onResize()}
         onSourceData={(): void => {
@@ -328,15 +296,8 @@ export const Map: React.FC<MapProps> = (
         style={{ height: '100%', width: '100%' }}
         {...mapProps}
       >
-        <AttributionControl
-          style={{ color: 'white' }}
-          {...attributionControlProps}
-        />
-        <NavigationControl
-          position="top-right"
-          style={{ marginRight: spacing(2.5) }}
-          {...navigationControlProps}
-        />
+        <AttributionControl style={{ color: 'white' }} {...attributionControlProps} />
+        <NavigationControl position="top-right" style={{ marginRight: spacing(2.5) }} {...navigationControlProps} />
         {data && (
           <Source data={data} type="geojson" {...sourceProps} id={sourceId}>
             {/* Fix for TS complaining about the incompatibility of layerProps and dataLayer, even though

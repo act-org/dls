@@ -18,8 +18,7 @@ export interface HightlightComponentProps {
   availableViewBoxDimension: number;
 }
 
-export type HighlightComponentType =
-  React.ElementType<HightlightComponentProps>;
+export type HighlightComponentType = React.ElementType<HightlightComponentProps>;
 
 export interface CustomLegendIconProps {
   chartWidth?: number;
@@ -30,5 +29,4 @@ export interface CustomLegendIconProps {
   showAsSquare?: boolean;
 }
 
-export type CustomLegendComponentType =
-  React.ElementType<CustomLegendIconProps>;
+export type CustomLegendComponentType = React.ElementType<CustomLegendIconProps>;

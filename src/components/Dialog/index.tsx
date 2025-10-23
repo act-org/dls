@@ -5,22 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Box,
-  DialogTitle,
-  IconButton,
-  Dialog as MuiDialog,
-  DialogProps as MuiDialogProps,
-} from '@mui/material';
+import { Box, DialogTitle, IconButton, Dialog as MuiDialog, DialogProps as MuiDialogProps } from '@mui/material';
 import CloseCircle from 'mdi-material-ui/CloseCircle';
 import { ReactElement } from 'react';
 
 export type DialogProps = MuiDialogProps & {
-  onClose?: (
-    // eslint-disable-next-line @typescript-eslint/ban-types
-    event: {},
-    reason: 'backdropClick' | 'escapeKeyDown' | 'closeIconClick',
-  ) => void;
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  onClose?: (event: {}, reason: 'backdropClick' | 'escapeKeyDown' | 'closeIconClick') => void;
   title?: string;
 };
 
@@ -30,12 +21,7 @@ export type DialogProps = MuiDialogProps & {
  *
  * @param formSwitchProps
  */
-export function Dialog({
-  children,
-  onClose,
-  title,
-  ...dialogProps
-}: DialogProps): ReactElement<DialogProps> {
+export function Dialog({ children, onClose, title, ...dialogProps }: DialogProps): ReactElement<DialogProps> {
   return (
     <MuiDialog {...dialogProps} onClose={onClose}>
       {title && (

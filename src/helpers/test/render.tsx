@@ -10,11 +10,7 @@
 
 import { Theme } from '@mui/material';
 import { StyledEngineProvider } from '@mui/material/styles';
-import {
-  render as originalRender,
-  RenderOptions,
-  RenderResult,
-} from '@testing-library/react';
+import { render as originalRender, RenderOptions, RenderResult } from '@testing-library/react';
 import { ReactElement } from 'react';
 
 import ThemeProvider from '~/components/ThemeProvider';

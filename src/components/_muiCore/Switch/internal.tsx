@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Switch as MuiSwitch,
-  SwitchProps as MuiSwitchProps,
-} from '@mui/material';
+import { Switch as MuiSwitch, SwitchProps as MuiSwitchProps } from '@mui/material';
 
 export const Switch = MuiSwitch;
 export type Switch = typeof MuiSwitch;

@@ -48,12 +48,8 @@ export const ToolTipLabel: Story = {
         placement="right"
         title={
           <Box>
-            <Typography variant="body1">
-              Tool tips can be very complex renders
-            </Typography>
-            <Typography variant="caption">
-              With many lines and styles
-            </Typography>
+            <Typography variant="body1">Tool tips can be very complex renders</Typography>
+            <Typography variant="caption">With many lines and styles</Typography>
           </Box>
         }
       >
@@ -85,9 +81,7 @@ export const SelectMultiple: Story = {
     return (
       <TextField
         {...args}
-        onChange={(event): void =>
-          setValue(event.target.value as unknown as string[])
-        }
+        onChange={(event): void => setValue(event.target.value as unknown as string[])}
         select
         SelectProps={{ multiple: true }}
         value={value}

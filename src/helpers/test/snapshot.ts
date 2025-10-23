@@ -13,10 +13,7 @@ import { ReactElement } from 'react';
 import render from './render';
 import THEMES from './themes';
 
-export const snapshot = (
-  Component: ReactElement,
-  renderOptions?: RenderOptions,
-): void => {
+export const snapshot = (Component: ReactElement, renderOptions?: RenderOptions): void => {
   test.each(THEMES)('%s theme matches the snapshot', theme => {
     const { container } = render(Component, theme, renderOptions);
     expect(container).toMatchSnapshot();

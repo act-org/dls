@@ -6,12 +6,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import {
-  FullscreenControl,
-  GeolocateControl,
-  Marker,
-  ScaleControl,
-} from 'react-map-gl/mapbox';
+import { FullscreenControl, GeolocateControl, Marker, ScaleControl } from 'react-map-gl/mapbox';
 
 import { Playground } from '~/helpers/playground';
 

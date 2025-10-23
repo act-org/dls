@@ -12,13 +12,6 @@ import { defaultData, defaultProcessDataFn } from './mocks';
 import { StateMap } from '.';
 
 describe('StateMap', () => {
-  const Component = (
-    <StateMap
-      data={defaultData}
-      geoJSONPath="maps/states.json"
-      mapboxAccessToken=""
-      processDataFn={defaultProcessDataFn}
-    />
-  );
+  const Component = <StateMap data={defaultData} geoJSONPath="maps/states.json" mapboxAccessToken="" processDataFn={defaultProcessDataFn} />;
   standard(Component);
 });

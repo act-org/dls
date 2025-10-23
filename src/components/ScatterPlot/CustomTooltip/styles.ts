@@ -14,16 +14,14 @@ import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 
 export const StyledDataLabelTypography = styled(Typography, {
   name: DLS_COMPONENT_NAMES.SCATTER_PLOT,
-  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-    .SCATTER_TOOLTIP_LABEL,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT].SCATTER_TOOLTIP_LABEL,
 })({
   color: common.black,
 });
 
 export const StyledDataValueTypography = styled(Typography, {
   name: DLS_COMPONENT_NAMES.SCATTER_PLOT,
-  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-    .SCATTER_TOOLTIP_TEXT,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT].SCATTER_TOOLTIP_TEXT,
 })<TypographyProps>(({ theme }) => ({
   color: theme.palette.text.primary,
 }));

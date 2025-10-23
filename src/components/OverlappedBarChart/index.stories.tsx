@@ -9,13 +9,7 @@ import { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import { Playground } from '~/helpers/playground';
 
-import {
-  defaultData,
-  edgeCaseCloseData,
-  edgeCaseLowData,
-  edgeCaseNoData,
-  threeBarsData,
-} from './mocks';
+import { defaultData, edgeCaseCloseData, edgeCaseLowData, edgeCaseNoData, threeBarsData } from './mocks';
 
 import { OverlappedBarChart, OverlappedBarChartProps } from '.';
 
@@ -52,14 +46,13 @@ export const CloseData: StoryObj<OverlappedBarChartProps> = {
   },
 };
 
-export const WithCustomizableInnerBarTextColor: StoryObj<OverlappedBarChartProps> =
-  {
-    args: {
-      barKeys: ['inquiries', 'applicants'],
-      data: edgeCaseCloseData,
-      innerBarTextColor: 'red',
-    },
-  };
+export const WithCustomizableInnerBarTextColor: StoryObj<OverlappedBarChartProps> = {
+  args: {
+    barKeys: ['inquiries', 'applicants'],
+    data: edgeCaseCloseData,
+    innerBarTextColor: 'red',
+  },
+};
 
 export const LowData: StoryObj<OverlappedBarChartProps> = {
   args: {

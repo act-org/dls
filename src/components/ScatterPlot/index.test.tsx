@@ -18,12 +18,6 @@ const DATA = [
 mockResizeObserver();
 
 describe('ScatterPlot', () => {
-  const Component = (
-    <ScatterPlot
-      data={DATA}
-      xLabelValue="Inquiries to Applicants"
-      yLabelValue="Inquiries"
-    />
-  );
+  const Component = <ScatterPlot data={DATA} xLabelValue="Inquiries to Applicants" yLabelValue="Inquiries" />;
   standard(Component);
 });

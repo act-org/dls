@@ -18,7 +18,7 @@ updates:
           - 'patch'
       eslint:
         patterns:
-          - '@actinc/eslint-config'
+          - '@encoura/eslint-config'
           - 'eslint'
           - 'eslint-*'
       jest:

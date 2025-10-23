@@ -46,12 +46,7 @@ export const Multiple: StoryObj<SelectProps> = {
     const { children } = args;
     const [value, setValue] = useState<string[]>([]);
     return (
-      <Select
-        {...args}
-        multiple
-        onChange={(event): void => setValue(event.target.value as string[])}
-        value={value}
-      >
+      <Select {...args} multiple onChange={(event): void => setValue(event.target.value as string[])} value={value}>
         {children}
       </Select>
     );

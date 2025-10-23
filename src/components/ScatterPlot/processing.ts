@@ -33,26 +33,15 @@ function extractSimpleInfo(dataPoint: IGroupDataPoint): ScatterPlotData {
  * Merged two data points. Joins the two labels separated by a comma, takes the weighted average of the coordinates based on groupSize,
  * then updates the groupsize.
  */
-function joinTwoPoints(
-  pointA: IGroupDataPoint,
-  pointB: IGroupDataPoint,
-): IGroupDataPoint {
-  const aMembers = pointA.members.length
-    ? pointA.members
-    : [extractSimpleInfo(pointA)];
-  const bMembers = pointB.members.length
-    ? pointB.members
-    : [extractSimpleInfo(pointB)];
+function joinTwoPoints(pointA: IGroupDataPoint, pointB: IGroupDataPoint): IGroupDataPoint {
+  const aMembers = pointA.members.length ? pointA.members : [extractSimpleInfo(pointA)];
+  const bMembers = pointB.members.length ? pointB.members : [extractSimpleInfo(pointB)];
   return {
     groupSize: aMembers.length + bMembers.length,
     label: `${pointA.label}, ${pointB.label}`,
     members: [...aMembers, ...bMembers],
-    x:
-      (pointA.x * pointA.groupSize + pointB.x * pointB.groupSize) /
-      (pointA.groupSize + pointB.groupSize),
-    y:
-      (pointA.y * pointA.groupSize + pointB.y * pointB.groupSize) /
-      (pointA.groupSize + pointB.groupSize),
+    x: (pointA.x * pointA.groupSize + pointB.x * pointB.groupSize) / (pointA.groupSize + pointB.groupSize),
+    y: (pointA.y * pointA.groupSize + pointB.y * pointB.groupSize) / (pointA.groupSize + pointB.groupSize),
   };
 }
 
@@ -70,8 +59,7 @@ function shouldPointsConverge(
   pointB: IGroupDataPoint,
   pxConversionDimensions: IPixelConversions,
 ): boolean {
-  const radialSum =
-    calculateRadius(pointA.groupSize) + calculateRadius(pointB.groupSize) * 1.1;
+  const radialSum = calculateRadius(pointA.groupSize) + calculateRadius(pointB.groupSize) * 1.1;
   return (
     Math.abs(pointA.x - pointB.x) < pxConversionDimensions.x * radialSum &&
     Math.abs(pointA.y - pointB.y) < pxConversionDimensions.y * radialSum
@@ -122,10 +110,7 @@ export function buildDataPoints(
   return currData;
 }
 
-function checkIfLabelsOverlap(
-  labelA: ILabelPositionInfo,
-  labelB: ILabelPositionInfo,
-): boolean {
+function checkIfLabelsOverlap(labelA: ILabelPositionInfo, labelB: ILabelPositionInfo): boolean {
   if (labelA.label === labelB.label) {
     return false;
   }
@@ -146,10 +131,7 @@ function checkIfLabelsOverlap(
  * Calculates where each label will appear for each data point, as well as its width in pixels.
  * Returns an array.
  */
-function getLabelCoordinates(
-  data: IGroupDataPoint[],
-  pxConversionDimensions: IPixelConversions,
-): ILabelPositionInfo[] {
+function getLabelCoordinates(data: IGroupDataPoint[], pxConversionDimensions: IPixelConversions): ILabelPositionInfo[] {
   return data.map(el => {
     const width = calculateLabelWidth(el.label);
     const radius = calculateRadius(el.groupSize);
@@ -215,35 +197,22 @@ export function getMinMax(data: Array<ScatterPlotData>): IMinMaxData {
  * This function calculates domain based on the data, but adds a bit of bleed to each side.
  * It will mainly be used if no domain prop is specified, or when zooming.
  */
-export function getDomain(
-  data: Array<ScatterPlotData>,
-  [maxXSpread, maxYSpread]: [number, number],
-): IScatterDomain {
+export function getDomain(data: Array<ScatterPlotData>, [maxXSpread, maxYSpread]: [number, number]): IScatterDomain {
   const { xMin, xMax, yMin, yMax } = getMinMax(data);
 
   const xBleed = Math.min((xMax - xMin) * 0.1, maxXSpread * 0.05);
   const yBleed = Math.min((yMax - yMin) * 0.1, maxYSpread * 0.05);
 
   return {
-    x: [
-      Math.round((xMin - xBleed) * 100) / 100,
-      Math.round((xMax + xBleed) * 100) / 100,
-    ],
-    y: [
-      Math.round((yMin - yBleed) * 100) / 100,
-      Math.round((yMax + yBleed) * 100) / 100,
-    ],
+    x: [Math.round((xMin - xBleed) * 100) / 100, Math.round((xMax + xBleed) * 100) / 100],
+    y: [Math.round((yMin - yBleed) * 100) / 100, Math.round((yMax + yBleed) * 100) / 100],
   };
 }
 
 /**
  * This function handles the domain should it come from the Component's props
  */
-export function consolidateDomain(
-  domain: CustomDomain,
-  data: ScatterPlotData[],
-  isY?: boolean,
-): [number, number] {
+export function consolidateDomain(domain: CustomDomain, data: ScatterPlotData[], isY?: boolean): [number, number] {
   if (!isFunction(domain)) {
     return domain;
   }
@@ -284,20 +253,11 @@ export function calculateDomainAfterZoom(
   offsets: IOffsets = { bottom: 0, left: 0, right: 0, top: 0 },
 ): IScatterDomain {
   // Get X and Y into the constraints of the chart
-  const boundedX = Math.min(
-    Math.max(clientX, offsets.left),
-    plotWidth + offsets.left,
-  );
-  const boundedY = Math.min(
-    Math.max(clientY, offsets.top),
-    plotHeight + offsets.top,
-  );
+  const boundedX = Math.min(Math.max(clientX, offsets.left), plotWidth + offsets.left);
+  const boundedY = Math.min(Math.max(clientY, offsets.top), plotHeight + offsets.top);
   // Get the datapoint value for X and Y from the X and Y position of the on-element event
-  const x =
-    (boundedX - offsets.left) * pxConversionDimensions.x + currDomain.x[0];
-  const y =
-    (plotHeight - (boundedY - offsets.top)) * pxConversionDimensions.y +
-    currDomain.y[0];
+  const x = (boundedX - offsets.left) * pxConversionDimensions.x + currDomain.x[0];
+  const y = (plotHeight - (boundedY - offsets.top)) * pxConversionDimensions.y + currDomain.y[0];
 
   // Find the change for each coordinate based on the distance between the calculated X and Y
   // and the domain edges
@@ -307,14 +267,8 @@ export function calculateDomainAfterZoom(
   const spanDown = Math.abs(y - currDomain.y[0]) * (1 - zoomAmount);
 
   // Don't let the zoom in break the barriers outside of the domain limit.
-  const newXDomain = [
-    Math.max(limitDomain.x[0], x - spanLeft),
-    Math.min(limitDomain.x[1], x + spanRight),
-  ];
-  const newYDomain = [
-    Math.max(limitDomain.y[0], y - spanDown),
-    Math.min(limitDomain.y[1], y + spanUp),
-  ];
+  const newXDomain = [Math.max(limitDomain.x[0], x - spanLeft), Math.min(limitDomain.x[1], x + spanRight)];
+  const newYDomain = [Math.max(limitDomain.y[0], y - spanDown), Math.min(limitDomain.y[1], y + spanUp)];
 
   return {
     x: newXDomain as [number, number],
@@ -322,17 +276,8 @@ export function calculateDomainAfterZoom(
   };
 }
 
-export function filterDataByDomain(
-  data: ScatterPlotData[],
-  domain: IScatterDomain,
-): ScatterPlotData[] {
-  return data.filter(
-    d =>
-      d.x >= domain.x[0] &&
-      d.x <= domain.x[1] &&
-      d.y >= domain.y[0] &&
-      d.y <= domain.y[1],
-  );
+export function filterDataByDomain(data: ScatterPlotData[], domain: IScatterDomain): ScatterPlotData[] {
+  return data.filter(d => d.x >= domain.x[0] && d.x <= domain.x[1] && d.y >= domain.y[0] && d.y <= domain.y[1]);
 }
 
 export function dragDomain(
@@ -345,12 +290,10 @@ export function dragDomain(
   const deltaY = dragAnchor[1] - newCoordinate[1];
 
   const shouldShiftX =
-    (deltaX > 0 && currDomain.x[1] !== initialDomain.x[1]) ||
-    (deltaX < 0 && currDomain.x[0] !== initialDomain.x[0]);
+    (deltaX > 0 && currDomain.x[1] !== initialDomain.x[1]) || (deltaX < 0 && currDomain.x[0] !== initialDomain.x[0]);
 
   const shouldShiftY =
-    (deltaY > 0 && currDomain.y[1] !== initialDomain.y[1]) ||
-    (deltaY < 0 && currDomain.y[0] !== initialDomain.y[0]);
+    (deltaY > 0 && currDomain.y[1] !== initialDomain.y[1]) || (deltaY < 0 && currDomain.y[0] !== initialDomain.y[0]);
 
   const newDomain = {
     x: shouldShiftX

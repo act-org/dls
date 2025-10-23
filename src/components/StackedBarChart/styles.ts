@@ -15,8 +15,7 @@ import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';
 
 export const StyledTooltipText = styled(Typography, {
   name: DLS_COMPONENT_NAMES.STACKED_BAR_CHART,
-  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
-    .TOOLTIP_TEXT,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.STACKED_BAR_CHART].TOOLTIP_TEXT,
 })<TypographyProps>(({ theme }) => ({
   fontSize: theme.typography.body1.fontSize,
 }));

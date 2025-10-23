@@ -24,13 +24,10 @@ export const accessibility = (
   configure({
     computedStyleSupportsPseudoElements: false,
   });
-  test.each(THEMES)(
-    '%s theme should not have accessibility issues',
-    async theme => {
-      const { container } = render(Component, theme, renderOptions);
-      expect(await axe(container, axeOptions)).toHaveNoViolations();
-    },
-  );
+  test.each(THEMES)('%s theme should not have accessibility issues', async theme => {
+    const { container } = render(Component, theme, renderOptions);
+    expect(await axe(container, axeOptions)).toHaveNoViolations();
+  });
 };
 
 export default accessibility;

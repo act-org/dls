@@ -23,21 +23,12 @@ export interface GridGeneratorProps {
   gridItemProps?: GridProps;
 }
 
-export const GridGenerator: FC<GridGeneratorProps> = ({
-  groups,
-  gridContainerProps,
-  gridItemProps,
-}: GridGeneratorProps) => (
+export const GridGenerator: FC<GridGeneratorProps> = ({ groups, gridContainerProps, gridItemProps }: GridGeneratorProps) => (
   <>
     {/* eslint-disable react/no-array-index-key */}
     {groups.map(
       (group, i): ReactElement<unknown> => (
-        <StyledGridContainer
-          container
-          key={i}
-          spacing={4}
-          {...gridContainerProps}
-        >
+        <StyledGridContainer container key={i} spacing={4} {...gridContainerProps}>
           {group.map(
             (gridItem): ReactElement<unknown> => (
               <StyledGridItem key={gridItem.key} {...gridItemProps}>

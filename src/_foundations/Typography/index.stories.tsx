@@ -14,13 +14,7 @@ import isPlainObject from 'lodash/isPlainObject';
 import InformationOutline from 'mdi-material-ui/InformationOutline';
 import React from 'react';
 
-import {
-  StyledCode,
-  StyledDivider,
-  StyledGridContainerInfo,
-  StyledGridItem,
-  StyledGridItemTypography,
-} from './styles';
+import { StyledCode, StyledDivider, StyledGridContainerInfo, StyledGridItem, StyledGridItemTypography } from './styles';
 
 const properties = {
   color: 'color',
@@ -68,23 +62,21 @@ const Story = (): React.ReactElement => {
                       arrow
                       title={
                         <>
-                          {Object.keys(properties).map(
-                            (key): React.ReactElement => {
-                              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                              const cssStyle = (properties as any)[key];
-                              const value = typography[variant][key];
+                          {Object.keys(properties).map((key): React.ReactElement => {
+                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                            const cssStyle = (properties as any)[key];
+                            const value = typography[variant][key];
 
-                              return (
-                                <>
-                                  <StyledCode key={cssStyle}>
-                                    {cssStyle}: {value}
-                                  </StyledCode>
+                            return (
+                              <>
+                                <StyledCode key={cssStyle}>
+                                  {cssStyle}: {value}
+                                </StyledCode>
 
-                                  <StyledDivider />
-                                </>
-                              );
-                            },
-                          )}
+                                <StyledDivider />
+                              </>
+                            );
+                          })}
                         </>
                       }
                     >
@@ -101,9 +93,7 @@ const Story = (): React.ReactElement => {
                   xs: 10,
                 }}
               >
-                <Typography variant={variant}>
-                  The quick brown fox jumps over the lazy dog.
-                </Typography>
+                <Typography variant={variant}>The quick brown fox jumps over the lazy dog.</Typography>
               </StyledGridItemTypography>
             </Grid>
           </React.Fragment>

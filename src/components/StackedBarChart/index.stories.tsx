@@ -12,13 +12,7 @@ import { Playground } from '~/helpers/playground';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
-import {
-  defaultBarKeys,
-  defaultData,
-  longBarKeys,
-  longLabelData,
-  longSubLabelData,
-} from './mocks';
+import { defaultBarKeys, defaultData, longBarKeys, longLabelData, longSubLabelData } from './mocks';
 
 import { StackedBarChart, StackedBarChartProps } from '.';
 
@@ -98,26 +92,18 @@ const getMergedSubLabelProps = (
 
   switch (theme) {
     case 'ENCOURAGE': {
-      newSubLabelProps =
-        THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
-          ?.defaultProps?.subLabelProps;
+      newSubLabelProps = THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]?.defaultProps?.subLabelProps;
       break;
     }
     default: {
-      newSubLabelProps =
-        THEME_ENCOURA_CLASSIC?.components?.[
-          DLS_COMPONENT_NAMES.STACKED_BAR_CHART
-        ]?.defaultProps?.subLabelProps;
+      newSubLabelProps = THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]?.defaultProps?.subLabelProps;
     }
   }
 
   return { ...subLabelProps, ...newSubLabelProps };
 };
 
-export const VerticalBarChart = (
-  args: StackedBarChartProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const VerticalBarChart = (args: StackedBarChartProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const subLabelProps = {
     position: 'bottom',

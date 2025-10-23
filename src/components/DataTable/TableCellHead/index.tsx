@@ -12,13 +12,7 @@ import { CSSProperties, FC, ReactElement } from 'react';
 import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
 import { SortDirection, SortObject } from '~/types';
 
-import {
-  StyledChevronDown,
-  StyledChevronUp,
-  StyledGrid,
-  StyledTableCell,
-  StyledTypography,
-} from './styles';
+import { StyledChevronDown, StyledChevronUp, StyledGrid, StyledTableCell, StyledTypography } from './styles';
 
 export interface TableCellHeadProps extends TableCellProps {
   children: string | ReactElement<unknown>;
@@ -59,9 +53,7 @@ export const TableCellHead: FC<TableCellHeadProps> = ({
 
       if (sortIsApplied) {
         newSortDirection =
-          currentSortObject.sortDirection === SORT_DIRECTION_TYPES.ASCENDING
-            ? SORT_DIRECTION_TYPES.DESCENDING
-            : SORT_DIRECTION_TYPES.ASCENDING;
+          currentSortObject.sortDirection === SORT_DIRECTION_TYPES.ASCENDING ? SORT_DIRECTION_TYPES.DESCENDING : SORT_DIRECTION_TYPES.ASCENDING;
       }
 
       onChangeSort({

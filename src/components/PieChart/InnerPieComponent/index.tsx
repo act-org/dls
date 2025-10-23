@@ -17,12 +17,7 @@ interface InnerPieComponentProps extends LabelProps {
   pieTotalValue: number;
 }
 
-const InnerPieComponent: React.FC<InnerPieComponentProps> = ({
-  HighlightComponent,
-  payload,
-  pieTotalValue,
-  viewBox: wrongTypeViewBox,
-}) => {
+const InnerPieComponent: React.FC<InnerPieComponentProps> = ({ HighlightComponent, payload, pieTotalValue, viewBox: wrongTypeViewBox }) => {
   if (!wrongTypeViewBox) {
     return null;
   }
@@ -33,18 +28,8 @@ const InnerPieComponent: React.FC<InnerPieComponentProps> = ({
 
   return (
     <g>
-      <foreignObject
-        height={verticeLength}
-        textAnchor="middle"
-        width={verticeLength}
-        x={viewBox.cx - verticeLength / 2}
-        y={viewBox.cy - verticeLength / 2}
-      >
-        <HighlightComponent
-          availableViewBoxDimension={verticeLength}
-          payload={payload}
-          pieTotalValue={pieTotalValue}
-        />
+      <foreignObject height={verticeLength} textAnchor="middle" width={verticeLength} x={viewBox.cx - verticeLength / 2} y={viewBox.cy - verticeLength / 2}>
+        <HighlightComponent availableViewBoxDimension={verticeLength} payload={payload} pieTotalValue={pieTotalValue} />
       </foreignObject>
     </g>
   );

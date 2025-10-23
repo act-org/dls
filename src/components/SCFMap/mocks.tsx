@@ -62,39 +62,28 @@ export const defaultData = [
   },
 ];
 
-export const defaultProcessDataFn = (
-  featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
-): GeoJSON.FeatureCollection<GeoJSON.Geometry> => {
+export const defaultProcessDataFn = (featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>): GeoJSON.FeatureCollection<GeoJSON.Geometry> => {
   const { features } = featureCollection;
 
   const scale = scaleQuantile()
     .domain(defaultData.map(item => item.QUANTITY))
     .range(range(10) as Iterable<number>);
 
-  const mappedFeatures = defaultData.reduce(
-    (acc: MappedFeaturesProps, { QUANTITY, SCF_CODE, STATE_CODE }) => {
-      acc[SCF_CODE] = { quantity: QUANTITY, stateCode: STATE_CODE };
-      return acc;
-    },
-    {},
-  );
+  const mappedFeatures = defaultData.reduce((acc: MappedFeaturesProps, { QUANTITY, SCF_CODE, STATE_CODE }) => {
+    acc[SCF_CODE] = { quantity: QUANTITY, stateCode: STATE_CODE };
+    return acc;
+  }, {});
 
   return {
     features: features.map(f => {
       if (f.properties?.id && mappedFeatures[f.properties.id]) {
-        const quantity =
-          f.properties?.id && mappedFeatures[f.properties.id]
-            ? scale(mappedFeatures[f.properties.id].quantity)
-            : 0;
+        const quantity = f.properties?.id && mappedFeatures[f.properties.id] ? scale(mappedFeatures[f.properties.id].quantity) : 0;
 
         const properties = {
           ...f.properties,
           quantity,
           stateCode: mappedFeatures[f.properties.id].stateCode,
-          value:
-            f.properties?.id && mappedFeatures[f.properties.id]
-              ? mappedFeatures[f.properties.id].quantity
-              : 0,
+          value: f.properties?.id && mappedFeatures[f.properties.id] ? mappedFeatures[f.properties.id].quantity : 0,
         };
 
         return { ...f, properties };

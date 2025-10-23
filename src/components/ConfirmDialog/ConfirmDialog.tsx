@@ -85,10 +85,7 @@ export interface ConfirmDialogProps {
   /**
    * Event fired when the dialog is closed without choosing confirm or cancel.  Should be treated as cancel normally
    */
-  onClose?: (
-    event: Record<string, unknown>,
-    reason: 'backdropClick' | 'escapeKeyDown',
-  ) => void | undefined;
+  onClose?: (event: Record<string, unknown>, reason: 'backdropClick' | 'escapeKeyDown') => void | undefined;
 }
 
 /**
@@ -116,12 +113,7 @@ export const ConfirmDialog = (props: ConfirmDialogProps): ReactElement => {
   } = props;
 
   return (
-    <Dialog
-      fullWidth
-      {...dialogProps}
-      onClose={allowClose ? onClose : noop}
-      open={isOpen}
-    >
+    <Dialog fullWidth {...dialogProps} onClose={allowClose ? onClose : noop} open={isOpen}>
       {title && <DialogTitle {...titleProps}>{title}</DialogTitle>}
       {content ? (
         <DialogContent {...contentProps}>{content}</DialogContent>
@@ -133,20 +125,10 @@ export const ConfirmDialog = (props: ConfirmDialogProps): ReactElement => {
         )
       )}
       <DialogActions>
-        <Button
-          color="secondary"
-          variant="outlined"
-          {...cancellationButtonProps}
-          onClick={onCancel}
-        >
+        <Button color="secondary" variant="outlined" {...cancellationButtonProps} onClick={onCancel}>
           {cancellationText}
         </Button>
-        <Button
-          color="primary"
-          variant="contained"
-          {...confirmationButtonProps}
-          onClick={onConfirm}
-        >
+        <Button color="primary" variant="contained" {...confirmationButtonProps} onClick={onConfirm}>
           {confirmationText}
         </Button>
       </DialogActions>

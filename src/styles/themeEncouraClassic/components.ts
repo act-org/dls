@@ -79,8 +79,7 @@ export const components: Components = {
       barTextColors: [PALETTE.text.primary, common.white],
     },
     styleOverrides: {
-      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART]
-        .BAR_LABELS]: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.OVERLAPPED_BAR_CHART].BAR_LABELS]: {
         fontSize: TYPOGRAPHY?.h3?.fontSize,
       },
     },
@@ -95,8 +94,7 @@ export const components: Components = {
       },
     },
     styleOverrides: {
-      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
-        .PIE_LEGEND_LABEL]: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].PIE_LEGEND_LABEL]: {
         [`& .${listItemTextClasses.primary}`]: {
           color: PALETTE.secondary.dark,
           fontWeight: TYPOGRAPHY?.fontWeightBold,
@@ -153,13 +151,11 @@ export const components: Components = {
       },
     },
     styleOverrides: {
-      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-        .SCATTER_LABELS]: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT].SCATTER_LABELS]: {
         fontSize: TYPOGRAPHY?.h3?.fontSize,
         fontWeight: TYPOGRAPHY?.h3?.fontWeight,
       },
-      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-        .SCATTER_TOOLTIP_LABEL]: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT].SCATTER_TOOLTIP_LABEL]: {
         color: PALETTE.secondary.dark,
       },
     },
@@ -350,8 +346,7 @@ export const components: Components = {
     defaultProps: {
       disableRowSelectionOnClick: true,
       slots: {
-        columnFilteredIcon:
-          FilterVariant as React.JSXElementConstructor<IconProps>,
+        columnFilteredIcon: FilterVariant as React.JSXElementConstructor<IconProps>,
       },
     },
     styleOverrides: {

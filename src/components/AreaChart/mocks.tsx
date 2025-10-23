@@ -104,12 +104,11 @@ export const largerDataset = [
   },
 ];
 
-export const largerDatasetWith18Keys: { [key: string]: number | string }[] =
-  largerDataset.map(item => {
-    const newItem: { [key: string]: number | string } = { name: item.name };
-    // eslint-disable-next-line no-loops/no-loops
-    for (let i = 0; i < 18; i += 1) {
-      newItem[String.fromCharCode(65 + i)] = Math.floor(Math.random() * 100);
-    }
-    return newItem;
-  });
+export const largerDatasetWith18Keys: { [key: string]: number | string }[] = largerDataset.map(item => {
+  const newItem: { [key: string]: number | string } = { name: item.name };
+  // eslint-disable-next-line no-loops/no-loops
+  for (let i = 0; i < 18; i += 1) {
+    newItem[String.fromCharCode(65 + i)] = Math.floor(Math.random() * 100);
+  }
+  return newItem;
+});

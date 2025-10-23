@@ -280,9 +280,7 @@ interface DataProps {
   [key: string]: unknown;
 }
 
-export const defaultProcessDataFn = (
-  data: Array<DataProps>,
-): GeoJSON.FeatureCollection<GeoJSON.Geometry> => {
+export const defaultProcessDataFn = (data: Array<DataProps>): GeoJSON.FeatureCollection<GeoJSON.Geometry> => {
   return {
     features: data.map(item => {
       return {

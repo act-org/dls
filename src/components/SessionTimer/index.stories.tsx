@@ -5,15 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Typography,
-} from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import dayjs from 'dayjs';
 import round from 'lodash/round';
@@ -24,14 +16,8 @@ import { Playground } from '~/helpers/playground';
 
 import { SessionTimer, SessionTimerProps } from '.';
 
-const Template: StoryFn<SessionTimerProps> = ({
-  promptWithMsRemaining,
-  tokenMaxAgeMs,
-  ...otherProps
-}: SessionTimerProps) => {
-  const [expiresAt, setExpiresAt] = useState(
-    dayjs().add(tokenMaxAgeMs, 'ms').toDate(),
-  );
+const Template: StoryFn<SessionTimerProps> = ({ promptWithMsRemaining, tokenMaxAgeMs, ...otherProps }: SessionTimerProps) => {
+  const [expiresAt, setExpiresAt] = useState(dayjs().add(tokenMaxAgeMs, 'ms').toDate());
 
   const stageOneTimeoutSeconds = promptWithMsRemaining / 1000;
   const stageTwoTimeoutSeconds = (tokenMaxAgeMs - promptWithMsRemaining) / 1000;
@@ -46,18 +32,9 @@ const Template: StoryFn<SessionTimerProps> = ({
       promptWithMsRemaining={promptWithMsRemaining}
       tokenMaxAgeMs={tokenMaxAgeMs}
     >
-      {({
-        remainingTimeStageOne,
-        remainingTimeStageTwo,
-      }): ReactElement<unknown> => {
-        const remainingTimeStageOneSeconds = round(
-          remainingTimeStageOne / 1000,
-          0,
-        );
-        const remainingTimeStageTwoSeconds = round(
-          remainingTimeStageTwo / 1000,
-          0,
-        );
+      {({ remainingTimeStageOne, remainingTimeStageTwo }): ReactElement<unknown> => {
+        const remainingTimeStageOneSeconds = round(remainingTimeStageOne / 1000, 0);
+        const remainingTimeStageTwoSeconds = round(remainingTimeStageTwo / 1000, 0);
 
         return (
           <TableContainer>
@@ -73,9 +50,7 @@ const Template: StoryFn<SessionTimerProps> = ({
                   </TableCell>
 
                   <TableCell>
-                    <Typography variant="overline">
-                      Countdown to Idle
-                    </Typography>
+                    <Typography variant="overline">Countdown to Idle</Typography>
                   </TableCell>
                 </TableRow>
               </TableHead>
@@ -87,21 +62,11 @@ const Template: StoryFn<SessionTimerProps> = ({
                   </TableCell>
 
                   <TableCell>
-                    <Typography>
-                      {`${stageOneTimeoutSeconds} ${pluralize(
-                        'seconds',
-                        stageOneTimeoutSeconds,
-                      )}`}
-                    </Typography>
+                    <Typography>{`${stageOneTimeoutSeconds} ${pluralize('seconds', stageOneTimeoutSeconds)}`}</Typography>
                   </TableCell>
 
                   <TableCell>
-                    <Typography>
-                      {`${remainingTimeStageOneSeconds} ${pluralize(
-                        'seconds',
-                        remainingTimeStageOneSeconds,
-                      )}`}
-                    </Typography>
+                    <Typography>{`${remainingTimeStageOneSeconds} ${pluralize('seconds', remainingTimeStageOneSeconds)}`}</Typography>
                   </TableCell>
                 </TableRow>
 
@@ -111,21 +76,11 @@ const Template: StoryFn<SessionTimerProps> = ({
                   </TableCell>
 
                   <TableCell>
-                    <Typography>
-                      {`${stageTwoTimeoutSeconds} ${pluralize(
-                        'seconds',
-                        stageTwoTimeoutSeconds,
-                      )}`}
-                    </Typography>
+                    <Typography>{`${stageTwoTimeoutSeconds} ${pluralize('seconds', stageTwoTimeoutSeconds)}`}</Typography>
                   </TableCell>
 
                   <TableCell>
-                    <Typography>
-                      {`${remainingTimeStageTwoSeconds} ${pluralize(
-                        'seconds',
-                        remainingTimeStageTwoSeconds,
-                      )}`}
-                    </Typography>
+                    <Typography>{`${remainingTimeStageTwoSeconds} ${pluralize('seconds', remainingTimeStageTwoSeconds)}`}</Typography>
                   </TableCell>
                 </TableRow>
               </TableBody>

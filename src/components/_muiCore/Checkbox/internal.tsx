@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Checkbox as MuiCheckbox,
-  CheckboxProps as MuiCheckboxProps,
-} from '@mui/material';
+import { Checkbox as MuiCheckbox, CheckboxProps as MuiCheckboxProps } from '@mui/material';
 
 export const Checkbox = MuiCheckbox;
 export type Checkbox = typeof MuiCheckbox;

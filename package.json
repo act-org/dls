@@ -32,7 +32,6 @@
   },
   "description": "Design Language System (DLS) for Encoura front-end projects.",
   "devDependencies": {
-    "@actinc/eslint-config": "4.16.0",
     "@babel/cli": "7.28.3",
     "@babel/core": "7.28.5",
     "@babel/plugin-transform-runtime": "7.28.5",
@@ -41,6 +40,7 @@
     "@babel/preset-typescript": "7.28.5",
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
+    "@encoura/eslint-config": "3.0.0",
     "@mdx-js/react": "3.1.1",
     "@mui/base": "5.0.0-beta.70",
     "@mui/material": "7.3.4",
@@ -127,13 +127,6 @@
   },
   "main": "index.js",
   "name": "@encoura/dls",
-  "overrides": {
-    "ts-jest": {
-      "babel-jest": "30.x",
-      "jest": "30.x"
-    },
-    "storybook": "$storybook"
-  },
   "peerDependencies": {
     "@mui/material": "7.x",
     "@mui/system": "7.x",
@@ -215,7 +208,7 @@
     "start": "storybook dev -p 6006",
     "test": "npm-run-all test:**",
     "test:lint:js": "eslint . --ext .js --fix --quiet",
-    "test:lint:md": "markdownlint *.md --config node_modules/@actinc/eslint-config/markdownlint.config.json",
+    "test:lint:md": "markdownlint *.md --config node_modules/@encoura/eslint-config/markdownlint.config.json",
     "test:lint:ts": "eslint . --ext .ts,.tsx --fix --quiet",
     "test:prettier": "prettier . --check",
     "test:types": "tspc --noEmit",

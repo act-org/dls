@@ -10,12 +10,7 @@ import { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import { Playground } from '~/helpers/playground';
 
-import {
-  defaultData,
-  largerDataset,
-  largerDatasetWith18Keys,
-  percentageData,
-} from './mocks';
+import { defaultData, largerDataset, largerDatasetWith18Keys, percentageData } from './mocks';
 
 import { AreaChart, AreaChartProps } from '.';
 
@@ -152,9 +147,7 @@ export const WithCustomTooltip: StoryObj<AreaChartProps> = {
           return (
             <div style={{ backgroundColor: '#FFF' }}>
               <Typography variant="body1">{`${label} : ${payload[0].value}`}</Typography>
-              <Typography variant="body2">
-                Anything you want can be displayed here.
-              </Typography>
+              <Typography variant="body2">Anything you want can be displayed here.</Typography>
             </div>
           );
         }

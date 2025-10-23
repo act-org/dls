@@ -37,9 +37,7 @@ import { ConfirmContext } from '~/context/Confirm';
  * ```
  * @returns
  */
-export const useConfirm: () => (
-  options?: ConfirmDialogProps,
-) => Promise<boolean> = () => {
+export const useConfirm: () => (options?: ConfirmDialogProps) => Promise<boolean> = () => {
   const confirm = useContext(ConfirmContext);
   return confirm;
 };

@@ -18,8 +18,6 @@ const DATA = [
 mockResizeObserver();
 
 describe('OverlappedBarChart', () => {
-  const Component = (
-    <OverlappedBarChart barKeys={['inquiries', 'applicants']} data={DATA} />
-  );
+  const Component = <OverlappedBarChart barKeys={['inquiries', 'applicants']} data={DATA} />;
   standard(Component);
 });

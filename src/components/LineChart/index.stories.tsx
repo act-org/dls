@@ -52,50 +52,31 @@ export default {
   title: 'Molecules / Charts / LineChart',
 } as Meta<LineChartProps>;
 
-const getMergedYAxisProps = (
-  args: LineChartProps,
-  globals: StoryContext['globals'],
-): YAxisProps => {
+const getMergedYAxisProps = (args: LineChartProps, globals: StoryContext['globals']): YAxisProps => {
   const { theme } = globals;
   let yAxisStyle;
 
   switch (theme) {
     case 'ENCOURAGE': {
-      yAxisStyle =
-        THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]
-          ?.defaultProps?.yAxisProps;
+      yAxisStyle = THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]?.defaultProps?.yAxisProps;
       break;
     }
     default: {
-      yAxisStyle =
-        THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]
-          ?.defaultProps?.yAxisProps;
+      yAxisStyle = THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.LINE_CHART]?.defaultProps?.yAxisProps;
     }
   }
 
   return { ...args.yAxisProps, ...yAxisStyle };
 };
 
-export const Default = (
-  args: LineChartProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const Default = (args: LineChartProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <LineChart {...args} yAxisProps={mergedYAxisProps} />;
 };
 
-export const WithCustomLineColors = (
-  args: LineChartProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const WithCustomLineColors = (args: LineChartProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
-  return (
-    <LineChart
-      {...args}
-      colors={['#FF0000', '#00FF00', '#0000FF']}
-      yAxisProps={mergedYAxisProps}
-    />
-  );
+  return <LineChart {...args} colors={['#FF0000', '#00FF00', '#0000FF']} yAxisProps={mergedYAxisProps} />;
 };

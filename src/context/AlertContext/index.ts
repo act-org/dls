@@ -14,8 +14,7 @@ import { ServerError } from '~/types';
 export const AlertContext = createContext({
   actions: {
     /* eslint-disable @typescript-eslint/no-unused-vars, lodash/no-extra-args */
-    addAlert: (alert: { message: ReactNode; options?: OptionsObject }): void =>
-      noop(alert),
+    addAlert: (alert: { message: ReactNode; options?: OptionsObject }): void => noop(alert),
     addError: (error: Error | ServerError | unknown): void => noop(error),
     /* eslint-enable @typescript-eslint/no-unused-vars, lodash/no-extra-args */
   },

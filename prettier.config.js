@@ -5,4 +5,4 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-module.exports = require('@actinc/eslint-config/prettier.config');
+module.exports = require('@encoura/eslint-config/prettier.config');

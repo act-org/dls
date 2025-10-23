@@ -56,16 +56,7 @@ export const Scale = {
     const scale = (number: number): number => 2 ** number;
     return (
       <Box>
-        <Slider
-          {...args}
-          max={17}
-          min={3}
-          onChange={(_, newValue: number | number[]): void =>
-            setValue(newValue)
-          }
-          scale={scale}
-          value={value}
-        />
+        <Slider {...args} max={17} min={3} onChange={(_, newValue: number | number[]): void => setValue(newValue)} scale={scale} value={value} />
         <Box>{Array.isArray(value) ? value : scale(value)}</Box>
       </Box>
     );
@@ -111,15 +102,7 @@ export const ValueLabelFormat = {
         }}
       >
         <Box sx={{ width: '60%' }}>
-          <Slider
-            {...args}
-            max={28}
-            min={17}
-            valueLabelDisplay="on"
-            valueLabelFormat={(number: number): string =>
-              `${number} alligators`
-            }
-          />
+          <Slider {...args} max={28} min={17} valueLabelDisplay="on" valueLabelFormat={(number: number): string => `${number} alligators`} />
         </Box>
       </Box>
     );

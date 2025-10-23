@@ -22,11 +22,7 @@ import customDims from './customDims';
 import palette, { customPalette, navyHover } from './palette';
 import shadows from './shadows';
 import spacing, { SPACING_PX } from './spacing';
-import typography, {
-  BASE_FONT_SIZE,
-  INPUT_FONT_SIZE,
-  secondaryFontFamily,
-} from './typography';
+import typography, { BASE_FONT_SIZE, INPUT_FONT_SIZE, secondaryFontFamily } from './typography';
 import zIndex from './zIndex';
 
 export const LARGE_RADIUS_VALUE = 1000;
@@ -49,8 +45,7 @@ export const components: ThemeOptions['components'] = {
   },
   [DLS_COMPONENT_NAMES.PIE_CHART]: {
     styleOverrides: {
-      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
-        .PIE_LEGEND_LABEL]: {
+      [DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].PIE_LEGEND_LABEL]: {
         [`& .${listItemTextClasses.secondary}`]: {
           color: grey[700],
         },
@@ -509,9 +504,7 @@ export const components: ThemeOptions['components'] = {
         }),
       }),
       root: ({ ownerState }) => ({
-        ...cssRadius(
-          pxToNumber(BASE_FONT_SIZE.lineHeight) / 2 + SPACING_PX * 1.5,
-        ),
+        ...cssRadius(pxToNumber(BASE_FONT_SIZE.lineHeight) / 2 + SPACING_PX * 1.5),
         ...BASE_FONT_SIZE,
         '& legend': {
           marginLeft: spacing(2.5),

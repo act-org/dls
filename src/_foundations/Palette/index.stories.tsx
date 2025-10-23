@@ -14,25 +14,13 @@ import isFunction from 'lodash/isFunction';
 import isString from 'lodash/isString';
 import React from 'react';
 
-import {
-  StyledAvatar,
-  StyledDivider,
-  StyledGridContainer,
-  StyledListItem,
-  StyledListItemIcon,
-} from './styles';
+import { StyledAvatar, StyledDivider, StyledGridContainer, StyledListItem, StyledListItemIcon } from './styles';
 
 const Story = (): React.ReactElement => {
   const { palette } = useTheme();
 
   const paletteGroups = Object.keys(palette)
-    .filter(
-      (group): boolean =>
-        !includes(
-          ['augmentColor', 'contrastThreshold', 'getContrastText', 'mode'],
-          group,
-        ),
-    )
+    .filter((group): boolean => !includes(['augmentColor', 'contrastThreshold', 'getContrastText', 'mode'], group))
     .sort();
 
   const paletteFlat: Record<string, unknown> = flatten(palette);

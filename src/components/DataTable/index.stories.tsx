@@ -33,12 +33,7 @@ interface Item {
 }
 /* eslint-enable react/no-unused-prop-types */
 
-const Template: StoryFn<DataTableProps<Item>> = ({
-  limit: limitProps,
-  offset: offsetProps,
-  totalCount,
-  ...args
-}: DataTableProps<Item>) => {
+const Template: StoryFn<DataTableProps<Item>> = ({ limit: limitProps, offset: offsetProps, totalCount, ...args }: DataTableProps<Item>) => {
   const [limit, setLimit] = useState<number | undefined>(limitProps);
   const [offset, setOffset] = useState<number | undefined>(offsetProps);
   const [sortObject, setSortObject] = useState<SortObject>({
@@ -111,8 +106,7 @@ const Template: StoryFn<DataTableProps<Item>> = ({
         },
         {
           label: 'Updated',
-          renderValue: (i: Item): string =>
-            dayjs(new Date(i.updatedAt)).fromNow(),
+          renderValue: (i: Item): string => dayjs(new Date(i.updatedAt)).fromNow(),
           sortBy: 'updatedAt',
           style: {
             width: 110,

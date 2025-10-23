@@ -5,16 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Button,
-  ButtonProps,
-  Dialog,
-  DialogContent,
-  DialogContentProps,
-  DialogTitle,
-  DialogTitleProps,
-  Typography,
-} from '@mui/material';
+import { Button, ButtonProps, Dialog, DialogContent, DialogContentProps, DialogTitle, DialogTitleProps, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
 
@@ -51,13 +42,10 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
   title = 'Do you want to continue your session?',
   titleProps,
 }: DialogContinueSessionProps): ReactElement<unknown> | null => {
-  const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(
-    expiresAt.getTime() - Date.now(),
-  );
+  const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(expiresAt.getTime() - Date.now());
 
   useEffect((): (() => void) => {
-    const newTime =
-      timeUntilExpiration - 1000 <= 0 ? 0 : timeUntilExpiration - 1000;
+    const newTime = timeUntilExpiration - 1000 <= 0 ? 0 : timeUntilExpiration - 1000;
 
     const timer = setTimeout((): void => {
       setTimeUntilExpiration(newTime);
@@ -74,13 +62,7 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
 
   if (timeUntilExpiration > 0) {
     return (
-      <Dialog
-        aria-labelledby="dialog-continue-session-title"
-        fullWidth
-        maxWidth="xs"
-        open
-        {...dialogProps}
-      >
+      <Dialog aria-labelledby="dialog-continue-session-title" fullWidth maxWidth="xs" open {...dialogProps}>
         <DialogTitle id="dialog-continue-session-title" {...titleProps}>
           {title}
         </DialogTitle>
@@ -88,9 +70,7 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
         <DialogContent {...contentProps}>
           {content || (
             <Typography variant="body1">
-              {`For security reasons, your session will timeout at ${dayjs(
-                expiresAt,
-              ).format('h:mm A')} unless you continue.`}
+              {`For security reasons, your session will timeout at ${dayjs(expiresAt).format('h:mm A')} unless you continue.`}
             </Typography>
           )}
         </DialogContent>

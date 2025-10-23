@@ -27,10 +27,7 @@ import {
   YAxisProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
-import {
-  NameType,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
+import { NameType, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -66,9 +63,7 @@ export interface AreaChartProps {
   yReferenceValue?: number;
 }
 
-export const AreaChart: React.FC<AreaChartProps> = (
-  inProps: AreaChartProps,
-): React.ReactElement<AreaChartProps> => {
+export const AreaChart: React.FC<AreaChartProps> = (inProps: AreaChartProps): React.ReactElement<AreaChartProps> => {
   const {
     areaChartProps,
     areaKeys,
@@ -102,12 +97,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
       }}
       spacing={2}
     >
-      <ResponsiveContainer
-        debounce={50}
-        height={height || 400}
-        width={width || '100%'}
-        {...responsiveContainerProps}
-      >
+      <ResponsiveContainer debounce={50} height={height || 400} width={width || '100%'} {...responsiveContainerProps}>
         <RechartsAreaChart
           data={data}
           margin={{
@@ -144,15 +134,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
               </Label>
             )}
           </XAxis>
-          <YAxis
-            axisLine={false}
-            padding={{ bottom: 20, top: 20 }}
-            tickCount={5}
-            tickLine={false}
-            type="number"
-            yAxisId={0}
-            {...yAxisProps}
-          >
+          <YAxis axisLine={false} padding={{ bottom: 20, top: 20 }} tickCount={5} tickLine={false} type="number" yAxisId={0} {...yAxisProps}>
             {yLabel && (
               <Label
                 angle={-90}
@@ -169,9 +151,7 @@ export const AreaChart: React.FC<AreaChartProps> = (
               </Label>
             )}
           </YAxis>
-          {(yReferenceValue || yReferenceValue === 0) && (
-            <ReferenceLine stroke={palette.grey[400]} y={yReferenceValue} />
-          )}
+          {(yReferenceValue || yReferenceValue === 0) && <ReferenceLine stroke={palette.grey[400]} y={yReferenceValue} />}
           {areaKeys.map((key, i) => {
             return (
               <Area

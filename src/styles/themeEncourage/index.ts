@@ -27,37 +27,34 @@ export type ThemeCustomizations = ICustomDims & {
 };
 
 /** @deprecated Use `THEME_ENCOURAGE_V2` instead. `THEME_ENCOURAGE` has planned obsolescence. */
-export const THEME_ENCOURAGE: CustomThemeOptions<ThemeCustomizations> =
-  deepMerge(
-    baseTheme,
-    typeOk<CustomThemeOptions<ThemeCustomizations>>()({
-      breakpoints: {
-        values: {
-          lg: 1280,
-          md: 960,
-          mobile: 720,
-          sm: 720,
-          xl: 1280,
-          xs: 375,
-        },
+export const THEME_ENCOURAGE: CustomThemeOptions<ThemeCustomizations> = deepMerge(
+  baseTheme,
+  typeOk<CustomThemeOptions<ThemeCustomizations>>()({
+    breakpoints: {
+      values: {
+        lg: 1280,
+        md: 960,
+        mobile: 720,
+        sm: 720,
+        xl: 1280,
+        xs: 375,
       },
-      components,
-      customDims,
-      palette: deepMerge(palette, customPalette),
-      props,
-      shadows,
-      spacing,
-      spacingPx: SPACING_PX,
-      typography,
-      zIndex,
-    }),
-    // Replace arrays instead of merging them together
-    { arrayMerge: (_: unknown[], source: unknown[]) => source },
-  );
+    },
+    components,
+    customDims,
+    palette: deepMerge(palette, customPalette),
+    props,
+    shadows,
+    spacing,
+    spacingPx: SPACING_PX,
+    typography,
+    zIndex,
+  }),
+  // Replace arrays instead of merging them together
+  { arrayMerge: (_: unknown[], source: unknown[]) => source },
+);
 
-export const THEME_ENCOURAGE_V2: CustomThemeOptions<
-  Omit<ThemeCustomizations, 'palette'>
-> = deepMerge(
+export const THEME_ENCOURAGE_V2: CustomThemeOptions<Omit<ThemeCustomizations, 'palette'>> = deepMerge(
   baseTheme,
   typeOk<CustomThemeOptions<Omit<ThemeCustomizations, 'palette'>>>()({
     components,

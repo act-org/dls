@@ -6,10 +6,7 @@
  */
 
 import Grid, { gridClasses, GridProps } from '@mui/material/Grid';
-import Typography, {
-  typographyClasses,
-  TypographyProps,
-} from '@mui/material/Typography';
+import Typography, { typographyClasses, TypographyProps } from '@mui/material/Typography';
 
 import { styled } from '~/helpers/styled';
 
@@ -32,16 +29,14 @@ export const StyledTypographyDescription = styled(Typography)<
   },
 }));
 
-export const StyledTypographyTitle = styled(Typography)<TypographyProps>(
-  ({ theme }) => ({
-    [`&.${typographyClasses.root}`]: {
-      // Use one font weight higher than `body1` (varies from theme to theme)
-      fontWeight: Number(theme.typography.body1.fontWeight) + 100,
-      // Scale the font to be 20% larger than `body1` (also varies from theme to theme)
-      transform: 'scale(1.2)',
-    },
-  }),
-);
+export const StyledTypographyTitle = styled(Typography)<TypographyProps>(({ theme }) => ({
+  [`&.${typographyClasses.root}`]: {
+    // Use one font weight higher than `body1` (varies from theme to theme)
+    fontWeight: Number(theme.typography.body1.fontWeight) + 100,
+    // Scale the font to be 20% larger than `body1` (also varies from theme to theme)
+    transform: 'scale(1.2)',
+  },
+}));
 
 export const StyledGridContainer = styled(Grid)<GridProps>(({ theme }) => ({
   [`&.${gridClasses.container}`]: {

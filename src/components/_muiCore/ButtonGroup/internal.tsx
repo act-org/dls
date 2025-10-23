@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  ButtonGroup as MuiButtonGroup,
-  ButtonGroupProps as MuiButtonGroupProps,
-} from '@mui/material';
+import { ButtonGroup as MuiButtonGroup, ButtonGroupProps as MuiButtonGroupProps } from '@mui/material';
 
 export const ButtonGroup = MuiButtonGroup;
 export type ButtonGroup = typeof MuiButtonGroup;

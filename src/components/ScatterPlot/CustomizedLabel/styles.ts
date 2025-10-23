@@ -19,8 +19,7 @@ interface CustomizedLabelProps {
 
 export const StyledLabel = styled('div', {
   name: DLS_COMPONENT_NAMES.SCATTER_PLOT,
-  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-    .SCATTER_LABELS,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.SCATTER_PLOT].SCATTER_LABELS,
 })<CustomizedLabelProps>(({ fill, opacity }) => ({
   color: fill,
   fill,

@@ -15,7 +15,7 @@
 <!-- markdownlint-enable no-inline-html -->
 
 The Design Language System for Encoura front-end projects. View the UI components
-[here](https://act-org.github.io/dls).
+[in the Storybook documentation](https://act-org.github.io/dls).
 
 ## Project Setup
 
@@ -167,32 +167,14 @@ reference in the `head` of your React app:
 
 ```html
 <!-- Fonts required for ENCOURAGE: -->
-<link
-  href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?display=swap&family=Roboto:wght@300;400;500;700"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono:wght@200..700"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Roboto:wght@300;400;500;700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono:wght@200..700" rel="stylesheet" />
 
 <!-- Fonts required for ENCOURAGE_E4E: -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800"
-  rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Work+Sans:wght@200..800" rel="stylesheet" />
 ```
 
 ### CSS Baseline
@@ -217,7 +199,7 @@ const MyApp = () => (
 
 If your project's React framework supports SSR, you can configure the DLS
 components for server-side rendering. See the official Next.js example
-[here](https://github.com/mui/material-ui/tree/master/examples/nextjs-with-typescript).
+[in the Material-UI repository](https://github.com/mui/material-ui/tree/master/examples/nextjs-with-typescript).
 
 ### Icons
 

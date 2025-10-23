@@ -13,13 +13,7 @@ describe('Slider', () => {
   const Component = (
     <FormControl>
       <FormLabel id="slider-label">Slider Label</FormLabel>
-      <Slider
-        aria-labelledby="slider-label"
-        color="primary"
-        defaultValue={0}
-        max={100}
-        min={0}
-      />
+      <Slider aria-labelledby="slider-label" color="primary" defaultValue={0} max={100} min={0} />
     </FormControl>
   );
   standard(Component);

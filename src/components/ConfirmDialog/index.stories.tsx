@@ -42,13 +42,7 @@ export default {
         <Button color="primary" onClick={openDialog} variant="contained">
           open
         </Button>
-        <ConfirmDialog
-          {...props}
-          isOpen={isOpen}
-          onCancel={closeDialog}
-          onClose={closeDialog}
-          onConfirm={closeDialog}
-        />
+        <ConfirmDialog {...props} isOpen={isOpen} onCancel={closeDialog} onClose={closeDialog} onConfirm={closeDialog} />
       </Box>
     );
   },

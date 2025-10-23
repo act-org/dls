@@ -21,16 +21,13 @@ export type ThemeCustomizations = ICustomDims & {
   spacingPx: number;
 };
 
-export const THEME_ENCOURA: CustomThemeOptions<ThemeCustomizations> = deepMerge(
-  THEME_ENCOURA_CLASSIC,
-  {
-    components: COMPONENTS,
-    customDims: CUSTOM_DIMS,
-    palette: PALETTE,
-    spacing,
-    spacingPx: SPACING_PX,
-    typography: TYPOGRAPHY,
-  },
-);
+export const THEME_ENCOURA: CustomThemeOptions<ThemeCustomizations> = deepMerge(THEME_ENCOURA_CLASSIC, {
+  components: COMPONENTS,
+  customDims: CUSTOM_DIMS,
+  palette: PALETTE,
+  spacing,
+  spacingPx: SPACING_PX,
+  typography: TYPOGRAPHY,
+});
 
 export default createTheme(THEME_ENCOURA);

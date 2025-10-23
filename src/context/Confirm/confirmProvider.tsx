@@ -22,9 +22,7 @@ export type ConfirmProviderProps = {
   children: React.ReactNode;
   defaultOptions?: ConfirmDialogProps;
 };
-export const ConfirmProvider: React.ComponentType<ConfirmProviderProps> = (
-  props: ConfirmProviderProps,
-) => {
+export const ConfirmProvider: React.ComponentType<ConfirmProviderProps> = (props: ConfirmProviderProps) => {
   const { children, defaultOptions = {} } = props;
   const [options, setOptions] = useState({ ...defaultOptions });
   const [resolveReject, setResolveReject] = useState<Promises>({});
@@ -66,16 +64,8 @@ export const ConfirmProvider: React.ComponentType<ConfirmProviderProps> = (
   }, [resolveHandler, handleClose]);
   return (
     <>
-      <ConfirmContext.Provider value={confirm}>
-        {children}
-      </ConfirmContext.Provider>
-      <ConfirmDialog
-        isOpen={resolveHandler !== undefined}
-        onCancel={handleCancel}
-        onClose={handleClose}
-        onConfirm={handleConfirm}
-        {...options}
-      />
+      <ConfirmContext.Provider value={confirm}>{children}</ConfirmContext.Provider>
+      <ConfirmDialog isOpen={resolveHandler !== undefined} onCancel={handleCancel} onClose={handleClose} onConfirm={handleConfirm} {...options} />
     </>
   );
 };

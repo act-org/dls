@@ -18,12 +18,7 @@ import { useConfirm } from '~/hooks';
 import { ConfirmDialog, ConfirmDialogProps } from '.';
 
 describe('ConfirmationDialog', () => {
-  const Component = (
-    <ConfirmDialog
-      description="Confirmation Description Text"
-      title="Confirmation Test"
-    />
-  );
+  const Component = <ConfirmDialog description="Confirmation Description Text" title="Confirmation Test" />;
   standard(Component);
 
   it('should allow for title props', async () => {
@@ -84,12 +79,7 @@ describe('ConfirmationDialog', () => {
     expect(titleTag).toBeVisible();
   });
 
-  const confirmHookBuilder = (
-    options: ConfirmDialogProps = {},
-    onConfirm: () => void = noop,
-    onCancel: () => void = noop,
-    buttonTitle = 'Opens Dialog',
-  ) => {
+  const confirmHookBuilder = (options: ConfirmDialogProps = {}, onConfirm: () => void = noop, onCancel: () => void = noop, buttonTitle = 'Opens Dialog') => {
     // eslint-disable-next-line react/display-name
     return (): ReactElement => {
       const confirm = useConfirm();

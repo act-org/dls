@@ -24,8 +24,6 @@ describe('PieChart', () => {
 mockResizeObserver();
 
 describe('PieChart with title', () => {
-  const Component = (
-    <PieChart data={DATA} titleProps={{ title: 'Test Title' }} />
-  );
+  const Component = <PieChart data={DATA} titleProps={{ title: 'Test Title' }} />;
   standard(Component);
 });

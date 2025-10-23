@@ -3,11 +3,7 @@
   "editor.formatOnPaste": true,
   "git.ignoreLimitWarning": true,
   "editor.tabSize": 2,
-  "editor.codeActionsOnSave": [
-    "source.organizeImports",
-    "source.fixAll",
-    "source.addMissingImports"
-  ],
+  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll", "source.addMissingImports"],
   "eslint.codeActionsOnSave.mode": "problems",
   "typescript.tsdk": "node_modules/typescript/lib",
   "[javascript]": {

@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Skeleton as MuiSkeleton,
-  SkeletonProps as MuiSkeletonProps,
-} from '@mui/material';
+import { Skeleton as MuiSkeleton, SkeletonProps as MuiSkeletonProps } from '@mui/material';
 
 export const Skeleton = MuiSkeleton;
 export type Skeleton = typeof MuiSkeleton;

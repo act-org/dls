@@ -11,12 +11,7 @@ import { RenderMetaTags } from '.';
 
 describe('RenderMetaTagsBase', () => {
   const Component = (
-    <RenderMetaTags
-      description="Some description."
-      imageUrl="https://mawi.et-act.org"
-      keywords={['keyword1', 'keyword2', 'keyword3']}
-      title="Some Title"
-    />
+    <RenderMetaTags description="Some description." imageUrl="https://mawi.et-act.org" keywords={['keyword1', 'keyword2', 'keyword3']} title="Some Title" />
   );
   standard(Component);
 });

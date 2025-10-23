@@ -12,8 +12,6 @@ import { defaultData } from './mocks';
 import { Map } from '.';
 
 describe('Map', () => {
-  const Component = (
-    <Map data={defaultData} height={450} mapboxAccessToken="" width="100%" />
-  );
+  const Component = <Map data={defaultData} height={450} mapboxAccessToken="" width="100%" />;
   standard(Component);
 });

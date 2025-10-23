@@ -13,32 +13,16 @@ import Paper from '@mui/material/Paper';
 import numeral from 'numeral';
 import React from 'react';
 import { TooltipProps } from 'recharts';
-import {
-  NameType,
-  Payload,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
+import { NameType, Payload, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 
 import { DataProps } from '../types';
 
 export interface CustomToolTipProps extends TooltipProps<ValueType, NameType> {
   barId?: string;
   data?: DataProps[];
-  formatLabel?: (
-    label: unknown,
-    dataKey: unknown,
-    payload?: Payload<ValueType, NameType>[],
-    data?: DataProps[],
-  ) => React.ReactElement | string | null;
-  formatValue?: (
-    value: unknown,
-    payload?: Payload<ValueType, NameType>[],
-  ) => unknown;
-  formatValueLabel?: (
-    label: unknown,
-    dataKey: unknown,
-    payload?: Payload<ValueType, NameType>[],
-  ) => React.ReactElement | string | null;
+  formatLabel?: (label: unknown, dataKey: unknown, payload?: Payload<ValueType, NameType>[], data?: DataProps[]) => React.ReactElement | string | null;
+  formatValue?: (value: unknown, payload?: Payload<ValueType, NameType>[]) => unknown;
+  formatValueLabel?: (label: unknown, dataKey: unknown, payload?: Payload<ValueType, NameType>[]) => React.ReactElement | string | null;
   renderAdditionalInfo?: (
     barId: string | undefined,
     payload: Payload<ValueType, NameType>[],
@@ -50,9 +34,7 @@ export interface CustomToolTipProps extends TooltipProps<ValueType, NameType> {
   valueLabel?: string;
 }
 
-export const CustomTooltip: React.FC<CustomToolTipProps> = (
-  props: CustomToolTipProps,
-): React.ReactElement<CustomToolTipProps> | null => {
+export const CustomTooltip: React.FC<CustomToolTipProps> = (props: CustomToolTipProps): React.ReactElement<CustomToolTipProps> | null => {
   const {
     barId,
     data,
@@ -72,32 +54,18 @@ export const CustomTooltip: React.FC<CustomToolTipProps> = (
     let values;
     const hoveredBar = payload.find(el => el.dataKey === barId);
     if (hoveredBar) {
-      label = formatLabel
-        ? formatLabel(tooltipLabel, hoveredBar.dataKey, payload, data)
-        : `${tooltipLabel || ''} - ${hoveredBar.dataKey}`;
+      label = formatLabel ? formatLabel(tooltipLabel, hoveredBar.dataKey, payload, data) : `${tooltipLabel || ''} - ${hoveredBar.dataKey}`;
       values = [
         {
-          label: formatValueLabel
-            ? formatValueLabel(valueLabel, hoveredBar.dataKey, payload)
-            : valueLabel || 'Value',
-          value: formatValue
-            ? formatValue(hoveredBar.value, payload)
-            : numeral(hoveredBar.value).format('0,0'),
+          label: formatValueLabel ? formatValueLabel(valueLabel, hoveredBar.dataKey, payload) : valueLabel || 'Value',
+          value: formatValue ? formatValue(hoveredBar.value, payload) : numeral(hoveredBar.value).format('0,0'),
         },
       ];
     } else {
-      label = (
-        formatLabel
-          ? formatLabel(tooltipLabel, undefined, payload, data)
-          : tooltipLabel
-      ) as string;
+      label = (formatLabel ? formatLabel(tooltipLabel, undefined, payload, data) : tooltipLabel) as string;
       values = payload.map(barInfo => ({
-        label: formatValueLabel
-          ? formatValueLabel(barInfo.name, undefined, payload)
-          : barInfo.name,
-        value: formatValue
-          ? formatValue(barInfo.value, payload)
-          : numeral(barInfo.value).format('0,0'),
+        label: formatValueLabel ? formatValueLabel(barInfo.name, undefined, payload) : barInfo.name,
+        value: formatValue ? formatValue(barInfo.value, payload) : numeral(barInfo.value).format('0,0'),
       }));
     }
     return (
@@ -111,8 +79,7 @@ export const CustomTooltip: React.FC<CustomToolTipProps> = (
             </Typography>
           ))}
 
-        {renderAdditionalInfo &&
-          renderAdditionalInfo(barId, payload, data, tooltipLabel)}
+        {renderAdditionalInfo && renderAdditionalInfo(barId, payload, data, tooltipLabel)}
       </Paper>
     );
   }

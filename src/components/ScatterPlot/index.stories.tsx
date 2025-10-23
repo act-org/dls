@@ -54,70 +54,42 @@ export default {
   title: 'Molecules / Charts / ScatterPlot',
 } as Meta<ScatterPlotProps>;
 
-const getMergedYAxisProps = (
-  args: ScatterPlotProps,
-  globals: StoryContext['globals'],
-): CustomYAxisProps => {
+const getMergedYAxisProps = (args: ScatterPlotProps, globals: StoryContext['globals']): CustomYAxisProps => {
   const { theme } = globals;
   let yAxisStyle;
 
   switch (theme) {
     case 'ENCOURAGE': {
-      yAxisStyle =
-        THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-          ?.defaultProps?.yAxisProps;
+      yAxisStyle = THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]?.defaultProps?.yAxisProps;
       break;
     }
     default: {
-      yAxisStyle =
-        THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-          ?.defaultProps?.yAxisProps;
+      yAxisStyle = THEME_ENCOURA_CLASSIC?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]?.defaultProps?.yAxisProps;
     }
   }
 
   return { ...args.yAxisProps, ...yAxisStyle } as CustomYAxisProps;
 };
 
-export const Default = (
-  args: ScatterPlotProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const Default = (args: ScatterPlotProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <ScatterPlot {...args} yAxisProps={mergedYAxisProps} />;
 };
 
-export const CustomColor = (
-  args: ScatterPlotProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const CustomColor = (args: ScatterPlotProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return <ScatterPlot {...args} color="red" yAxisProps={mergedYAxisProps} />;
 };
 
-export const LargeDataset = (
-  args: ScatterPlotProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const LargeDataset = (args: ScatterPlotProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
-  return (
-    <ScatterPlot
-      {...args}
-      data={LARGE_DATA}
-      height={600}
-      xLabelValue="X Value"
-      yAxisProps={mergedYAxisProps}
-      yLabelValue="Y Value"
-    />
-  );
+  return <ScatterPlot {...args} data={LARGE_DATA} height={600} xLabelValue="X Value" yAxisProps={mergedYAxisProps} yLabelValue="Y Value" />;
 };
 
-export const WithoutRankSummary = (
-  args: ScatterPlotProps,
-  context: StoryContext,
-): React.ReactElement => {
+export const WithoutRankSummary = (args: ScatterPlotProps, context: StoryContext): React.ReactElement => {
   const { globals } = context;
   const mergedYAxisProps = getMergedYAxisProps(args, globals);
   return (

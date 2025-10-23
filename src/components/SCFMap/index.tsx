@@ -13,11 +13,7 @@ import isString from 'lodash/isString';
 import numeral from 'numeral';
 import React from 'react';
 
-import Map, {
-  FeatureHoverProps,
-  InitialBoundsPositionProps,
-  MapProps,
-} from '~/components/Map';
+import Map, { FeatureHoverProps, InitialBoundsPositionProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
 import { IMapDataProps } from '~/types';
 
@@ -30,10 +26,7 @@ export interface SCFMapProps {
   mapPopupProps?: Partial<MapPopupProps>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
-  processDataFn?: (
-    featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
-    data: Array<IMapDataProps>,
-  ) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
+  processDataFn?: (featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>, data: Array<IMapDataProps>) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
   selectedSCF?: Array<string>;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   tooltipElement?: React.ReactElement;
@@ -58,17 +51,14 @@ export const SCFMap: React.FC<SCFMapProps> = ({
 }): React.ReactElement<SCFMapProps> => {
   const { breakpoints, spacing } = useTheme();
 
-  const [scfsJSON, setSCFsJSON] =
-    React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
+  const [scfsJSON, setSCFsJSON] = React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
   const [hoverInfo, setHoverInfo] = React.useState<FeatureHoverProps>();
   const finalHoverInfo = onHoverInfo || hoverInfo;
 
   React.useEffect(() => {
     fetch(geoJSONPath)
       .then(resp => resp.json())
-      .then(json =>
-        setSCFsJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>),
-      )
+      .then(json => setSCFsJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>))
       .catch(err => console.error('Could not load data', err)); // eslint-disable-line
   }, []);
 
@@ -76,14 +66,10 @@ export const SCFMap: React.FC<SCFMapProps> = ({
     return scfsJSON && processDataFn && processDataFn(scfsJSON, data);
   }, [data, scfsJSON, processDataFn]);
 
-  const initialBoundsPosition = React.useMemo(():
-    | InitialBoundsPositionProps
-    | undefined => {
+  const initialBoundsPosition = React.useMemo((): InitialBoundsPositionProps | undefined => {
     if (selectedSCF && processedData) {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      const features = processedData.features.filter(f =>
-        selectedSCF.includes(f.id as string),
-      );
+      const features = processedData.features.filter(f => selectedSCF.includes(f.id as string));
 
       if (features.length > 0) {
         const [minLng, minLat, maxLng, maxLat] = bbox({
@@ -121,9 +107,7 @@ export const SCFMap: React.FC<SCFMapProps> = ({
       {...mapProps}
     >
       {tooltipElement ||
-        (finalHoverInfo &&
-        (isString(parentWidth) ||
-          parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
+        (finalHoverInfo && (isString(parentWidth) || parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
           <MapPopup
             popupProps={{
               latitude: finalHoverInfo.lat,
@@ -136,9 +120,7 @@ export const SCFMap: React.FC<SCFMapProps> = ({
               },
               {
                 title: 'Volume',
-                value: numeral(
-                  finalHoverInfo.feature.properties?.value as number,
-                ).format('0,0'),
+                value: numeral(finalHoverInfo.feature.properties?.value as number).format('0,0'),
               },
             ]}
             {...mapPopupProps}

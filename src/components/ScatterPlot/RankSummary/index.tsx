@@ -5,17 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  BoxProps,
-  IconButton,
-  Paper,
-  TableBody,
-  TableCell,
-  TableContainerProps,
-  TableHead,
-  TableRow,
-  Tooltip,
-} from '@mui/material';
+import { BoxProps, IconButton, Paper, TableBody, TableCell, TableContainerProps, TableHead, TableRow, Tooltip } from '@mui/material';
 import includes from 'lodash/includes';
 import kebabCase from 'lodash/kebabCase';
 import ChevronLeft from 'mdi-material-ui/ChevronLeft';
@@ -24,14 +14,7 @@ import React, { ElementType } from 'react';
 
 import { ScatterPlotData } from '~/types';
 
-import {
-  StyledBox,
-  StyledIconButton,
-  StyledTable,
-  StyledTableCell,
-  StyledTableContainer,
-  StyledTableRow,
-} from './styles';
+import { StyledBox, StyledIconButton, StyledTable, StyledTableCell, StyledTableContainer, StyledTableRow } from './styles';
 
 export interface RankSummaryProps {
   boxContainerProps?: BoxProps;
@@ -87,10 +70,7 @@ export const RankSummary: React.FC<RankSummaryProps> = ({
       )}
 
       {showSummary && (
-        <StyledTableContainer
-          component={Paper as ElementType}
-          {...tableContainerProps}
-        >
+        <StyledTableContainer component={Paper as ElementType} {...tableContainerProps}>
           <StyledTable>
             <TableHead>
               <TableRow>
@@ -124,11 +104,7 @@ export const RankSummary: React.FC<RankSummaryProps> = ({
                       }}
                     >
                       <TableCell sx={{ width: '10px' }}>{i + 1}</TableCell>
-                      <TableCell
-                        sx={{ opacity: selectedPoint && !isSelected ? 0.2 : 1 }}
-                      >
-                        {d.label}
-                      </TableCell>
+                      <TableCell sx={{ opacity: selectedPoint && !isSelected ? 0.2 : 1 }}>{d.label}</TableCell>
                     </StyledTableRow>
                   );
                 })}

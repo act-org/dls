@@ -9,20 +9,13 @@ import { AutocompleteRenderInputParams, Chip, TextField } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { ReactElement } from 'react';
 
-import {
-  Autocomplete,
-  AutocompleteProps,
-  FilmType,
-  topFilms,
-} from './internal';
+import { Autocomplete, AutocompleteProps, FilmType, topFilms } from './internal';
 
 export default {
   args: {
     disablePortal: false,
     options: topFilms,
-    renderInput: (params: AutocompleteRenderInputParams) => (
-      <TextField {...params} label="Movie" />
-    ),
+    renderInput: (params: AutocompleteRenderInputParams) => <TextField {...params} label="Movie" />,
   },
   component: Autocomplete,
   parameters: {
@@ -35,9 +28,7 @@ export default {
 export const Primary: StoryObj<Autocomplete> = { args: { color: 'primary' } };
 
 export const Multiple = {
-  render: (
-    args: AutocompleteProps<FilmType, true, false, false, typeof Chip>,
-  ): ReactElement<unknown> => (
+  render: (args: AutocompleteProps<FilmType, true, false, false, typeof Chip>): ReactElement<unknown> => (
     <Autocomplete
       {...args}
       getOptionLabel={(option): string => option.label}
@@ -45,11 +36,7 @@ export const Multiple = {
       renderTags={(value: FilmType[], getTagProps): ReactElement<unknown>[] =>
         value.map((option: FilmType, index: number) => (
           // eslint-disable-next-line react/jsx-key
-          <Chip
-            label={option.label}
-            variant="outlined"
-            {...getTagProps({ index })}
-          />
+          <Chip label={option.label} variant="outlined" {...getTagProps({ index })} />
         ))
       }
     />

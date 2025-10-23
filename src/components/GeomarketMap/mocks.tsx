@@ -128,16 +128,13 @@ export const defaultProcessDataFn = (
     .domain(data.map(item => item.SOURCE_COUNT1 as number))
     .range(range(10) as Iterable<number>);
 
-  const mappedFeatures = data.reduce(
-    (acc: MappedFeaturesProps, { SOURCE_COUNT1, EPS_CODE, STATE_CODE }) => {
-      acc[EPS_CODE as string] = {
-        quantity: SOURCE_COUNT1 as number,
-        stateCode: STATE_CODE as string,
-      };
-      return acc;
-    },
-    {},
-  );
+  const mappedFeatures = data.reduce((acc: MappedFeaturesProps, { SOURCE_COUNT1, EPS_CODE, STATE_CODE }) => {
+    acc[EPS_CODE as string] = {
+      quantity: SOURCE_COUNT1 as number,
+      stateCode: STATE_CODE as string,
+    };
+    return acc;
+  }, {});
 
   return {
     features: features.map(f => {

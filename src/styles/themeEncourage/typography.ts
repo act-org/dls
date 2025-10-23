@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  TypographyVariantsOptions,
-  createTheme as muiCreateTheme,
-} from '@mui/material/styles';
+import { TypographyVariantsOptions, createTheme as muiCreateTheme } from '@mui/material/styles';
 
 import px from '~/helpers/px';
 import { Px } from '~/types';

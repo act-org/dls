@@ -12,15 +12,7 @@ import { standard } from '~/helpers/test';
 import TablePaginationActions from '.';
 
 describe('TablePaginationActions', () => {
-  const Component = (
-    <TablePaginationActions
-      count={1000}
-      key="test"
-      onPageChange={noop}
-      page={0}
-      rowsPerPage={100}
-    />
-  );
+  const Component = <TablePaginationActions count={1000} key="test" onPageChange={noop} page={0} rowsPerPage={100} />;
 
   standard(Component);
 });

@@ -8,10 +8,7 @@
 import isFunction from 'lodash/isFunction';
 import { useEffect, useState } from 'react';
 
-export const useLocalStorage = (
-  key: string,
-  initValue = '',
-): [string, (v: string) => void] => {
+export const useLocalStorage = (key: string, initValue = ''): [string, (v: string) => void] => {
   const [storedValue, setStoredValue] = useState(() => {
     try {
       const item = window.localStorage.getItem(key);

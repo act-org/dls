@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Slider as MuiSlider,
-  SliderProps as MuiSliderProps,
-} from '@mui/material';
+import { Slider as MuiSlider, SliderProps as MuiSliderProps } from '@mui/material';
 
 export const Slider = MuiSlider;
 export type Slider = typeof MuiSlider;

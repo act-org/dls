@@ -31,9 +31,7 @@ export interface IMinMaxData {
   yMax: number;
 }
 
-export type CustomDomain =
-  | ICoordinate
-  | (([dataMin, dataMax]: ICoordinate) => ICoordinate);
+export type CustomDomain = ICoordinate | (([dataMin, dataMax]: ICoordinate) => ICoordinate);
 
 export interface CustomXAxisProps extends XAxisProps {
   domain?: CustomDomain;

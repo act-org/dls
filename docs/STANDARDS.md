@@ -32,7 +32,7 @@ company-wide standards. This approach allows us to:
 | **Charts**            | <a href="https://recharts.org/" target="_blank">Recharts</a> (DLS provides custom Chart components)                                                                                                                       | <a href="https://mui.com/x/react-charts/" target="_blank">MUI X Charts</a> |
 | **Maps**              | <a href="https://www.mapbox.com/" target="_blank">Mapbox</a> via <a href="https://visgl.github.io/react-map-gl/" target="_blank">react-map-gl</a> (DLS provides custom Map components)                                    | None                                                                       |
 | **Component Testing** | <a href="https://www.chromatic.com/" target="_blank">Chromatic</a> + <a href="https://storybook.js.org/" target="_blank">Storybook</a>                                                                                    | None                                                                       |
-| **Test Runner**       | <a href="https://jestjs.io/" target="_blank">Jest</a>                                                                                                                                                                     | <a href="https://vitest.dev/" target="_blank">Vitest</a>                   |
+| **Unit Testingr**     | <a href="https://jestjs.io/" target="_blank">Jest</a>                                                                                                                                                                     | <a href="https://vitest.dev/" target="_blank">Vitest</a>                   |
 
 ## Standard Adoption Process
 

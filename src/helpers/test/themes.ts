@@ -5,8 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export const THEMES: [
-  'ENCOURA' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | 'ENCOURAGE_E4E',
-][] = [['ENCOURA'], ['ENCOURA_CLASSIC'], ['ENCOURAGE'], ['ENCOURAGE_E4E']];
+export const THEMES: ['ENCOURA' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | 'ENCOURAGE_E4E'][] = [
+  ['ENCOURA'],
+  ['ENCOURA_CLASSIC'],
+  ['ENCOURAGE'],
+  ['ENCOURAGE_E4E'],
+];
 
 export default THEMES;

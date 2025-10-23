@@ -10,8 +10,6 @@ import { TextField } from '@mui/material';
 import { standard } from '~/helpers/test';
 
 describe('TextField', () => {
-  const Component = (
-    <TextField id="test-text-field" label="TextField Test Label" value="test" />
-  );
+  const Component = <TextField id="test-text-field" label="TextField Test Label" value="test" />;
   standard(Component);
 });

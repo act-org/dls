@@ -24,17 +24,7 @@ export type CustomizedScatterCellProps = CellProps & {
   selectedPoint?: ScatterPlotData;
 };
 
-const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
-  color,
-  cx,
-  cy,
-  groupSize,
-  height,
-  label,
-  members,
-  selectedPoint,
-  width,
-}) => {
+const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({ color, cx, cy, groupSize, height, label, members, selectedPoint, width }) => {
   const { palette } = useTheme();
 
   function getIsSelected(): boolean {
@@ -48,28 +38,10 @@ const CustomizedCell: React.FC<CustomizedScatterCellProps> = ({
   }
 
   return (
-    <g
-      cursor="pointer"
-      data-chart-x={cx}
-      data-chart-y={cy}
-      opacity={!selectedPoint || getIsSelected() ? 1 : OPACITY_NOT_HIGHLIGHTED}
-    >
-      <circle
-        cx={cx}
-        cy={cy}
-        fill={color || palette.grey[500]}
-        height={height}
-        r={calculateRadius(groupSize)}
-        stroke={palette.common.black}
-        width={width}
-      />
+    <g cursor="pointer" data-chart-x={cx} data-chart-y={cy} opacity={!selectedPoint || getIsSelected() ? 1 : OPACITY_NOT_HIGHLIGHTED}>
+      <circle cx={cx} cy={cy} fill={color || palette.grey[500]} height={height} r={calculateRadius(groupSize)} stroke={palette.common.black} width={width} />
       {(groupSize || 0) > 1 && (
-        <text
-          fill="white"
-          fontSize={16}
-          x={(cx as number) - 4}
-          y={(cy as number) + 4}
-        >
+        <text fill="white" fontSize={16} x={(cx as number) - 4} y={(cy as number) + 4}>
           {groupSize}
         </text>
       )}
