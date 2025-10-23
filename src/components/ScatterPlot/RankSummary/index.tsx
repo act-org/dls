@@ -18,9 +18,9 @@ import {
 } from '@mui/material';
 import includes from 'lodash/includes';
 import kebabCase from 'lodash/kebabCase';
+import ChevronLeft from 'mdi-material-ui/ChevronLeft';
+import CloseCircleOutline from 'mdi-material-ui/CloseCircleOutline';
 import React, { ElementType } from 'react';
-import ChevronLeft from '~/icons/ChevronLeft';
-import CloseCircleOutline from '~/icons/CloseCircleOutline';
 
 import { ScatterPlotData } from '~/types';
 

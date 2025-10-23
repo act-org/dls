@@ -8,12 +8,12 @@
 import { IconButton, PopperProps, Tooltip } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import min from 'lodash/min';
+import ChevronLeft from 'mdi-material-ui/ChevronLeft';
+import ChevronRight from 'mdi-material-ui/ChevronRight';
+import PageFirst from 'mdi-material-ui/PageFirst';
+import PageLast from 'mdi-material-ui/PageLast';
 import { CSSProperties, FC, ReactElement, useRef, useState } from 'react';
 import { FixedSizeList } from 'react-window';
-import ChevronLeft from '~/icons/ChevronLeft';
-import ChevronRight from '~/icons/ChevronRight';
-import PageFirst from '~/icons/PageFirst';
-import PageLast from '~/icons/PageLast';
 
 import { StyledContainer, StyledMenuItem, StyledTextField } from './styles';
 

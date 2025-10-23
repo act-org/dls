@@ -13,8 +13,8 @@ import TableCell, { TableCellProps } from '@mui/material/TableCell';
 import Typography, { TypographyProps } from '@mui/material/Typography';
 import clsx from 'clsx';
 import Color from 'color';
-import ChevronDown from '~/icons/ChevronDown';
-import ChevronUp from '~/icons/ChevronUp';
+import ChevronDown from 'mdi-material-ui/ChevronDown';
+import ChevronUp from 'mdi-material-ui/ChevronUp';
 
 import { createThemeStyled } from '~/helpers/styled';
 import { typeOk } from '~/helpers/types';

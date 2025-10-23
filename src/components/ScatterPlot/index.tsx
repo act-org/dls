@@ -9,6 +9,7 @@ import { Button } from '@mui/material';
 import { common } from '@mui/material/colors';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import debounce from 'lodash/debounce';
+import MagnifyMinusOutline from 'mdi-material-ui/MagnifyMinusOutline';
 import numeral from 'numeral';
 import React, { LegacyRef, MouseEventHandler } from 'react';
 import {
@@ -37,7 +38,6 @@ import {
   NameType,
   ValueType,
 } from 'recharts/types/component/DefaultTooltipContent';
-import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ScatterPlotData } from '~/types';

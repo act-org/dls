@@ -12,8 +12,8 @@ import {
   Dialog as MuiDialog,
   DialogProps as MuiDialogProps,
 } from '@mui/material';
+import CloseCircle from 'mdi-material-ui/CloseCircle';
 import { ReactElement } from 'react';
-import CloseCircle from '~/icons/CloseCircle';
 
 export type DialogProps = MuiDialogProps & {
   onClose?: (

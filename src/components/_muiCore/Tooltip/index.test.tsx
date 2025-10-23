@@ -6,7 +6,7 @@
  */
 
 import { Tooltip } from '@mui/material';
-import HelpCircleOutline from '~/icons/HelpCircleOutline';
+import HelpCircleOutline from 'mdi-material-ui/HelpCircleOutline';
 
 import { standard } from '~/helpers/test';
 

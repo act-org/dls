@@ -6,7 +6,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import Account from '~/icons/Account';
+import Account from 'mdi-material-ui/Account';
 
 import { Playground } from '~/helpers/playground';
 

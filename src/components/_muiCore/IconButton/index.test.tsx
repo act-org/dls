@@ -7,7 +7,7 @@
 
 import { IconButton } from '@mui/material';
 import noop from 'lodash/noop';
-import PencilCircle from '~/icons/PencilCircle';
+import PencilCircle from 'mdi-material-ui/PencilCircle';
 
 import { standard } from '~/helpers/test';
 

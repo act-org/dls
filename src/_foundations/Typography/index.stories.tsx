@@ -11,8 +11,8 @@ import { TypographyVariant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import compact from 'lodash/compact';
 import isPlainObject from 'lodash/isPlainObject';
+import InformationOutline from 'mdi-material-ui/InformationOutline';
 import React from 'react';
-import InformationOutline from '~/icons/InformationOutline';
 
 import {
   StyledCode,

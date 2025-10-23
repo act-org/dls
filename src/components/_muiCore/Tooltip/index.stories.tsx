@@ -8,8 +8,8 @@
 import { ClickAwayListener } from '@mui/base';
 import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
+import HelpCircleOutline from 'mdi-material-ui/HelpCircleOutline';
 import { ReactElement, useState } from 'react';
-import HelpCircleOutline from '~/icons/HelpCircleOutline';
 
 import { Tooltip, TooltipProps } from './internal';
 

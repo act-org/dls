@@ -6,7 +6,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import AddIcon from '~/icons/Plus';
+import AddIcon from 'mdi-material-ui/Plus';
 
 import { Fab } from './internal';
 

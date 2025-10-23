@@ -46,10 +46,10 @@ import {
 import Grid from '@mui/material/Grid';
 import { Meta, StoryFn } from '@storybook/react-webpack5';
 import sortBy from 'lodash/sortBy';
+import MailIcon from 'mdi-material-ui/Mailbox';
+import Menu from 'mdi-material-ui/Menu';
+import AddIcon from 'mdi-material-ui/Plus';
 import { ReactElement } from 'react';
-import MailIcon from '~/icons/Mailbox';
-import Menu from '~/icons/Menu';
-import AddIcon from '~/icons/Plus';
 
 import {
   FilmType,

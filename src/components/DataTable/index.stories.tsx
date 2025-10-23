@@ -10,8 +10,8 @@ import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import isNumber from 'lodash/isNumber';
+import PackageVariant from 'mdi-material-ui/PackageVariant';
 import { useState } from 'react';
-import PackageVariant from '~/icons/PackageVariant';
 
 import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
 import { Playground } from '~/helpers/playground';

@@ -7,7 +7,7 @@
 
 import { IconButton, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import Menu from '~/icons/Menu';
+import Menu from 'mdi-material-ui/Menu';
 
 import { Toolbar } from './internal';
 

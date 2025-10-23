@@ -8,8 +8,8 @@
 import { Box, MenuItem, Tooltip, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import range from 'lodash/range';
+import HelpIcon from 'mdi-material-ui/HelpCircle';
 import { useState } from 'react';
-import HelpIcon from '~/icons/HelpCircle';
 
 import { TextField, TextFieldProps } from './internal';
 

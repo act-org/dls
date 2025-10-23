@@ -6,7 +6,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import PencilCircle from '~/icons/PencilCircle';
+import PencilCircle from 'mdi-material-ui/PencilCircle';
 
 import { IconButton } from './internal';
 

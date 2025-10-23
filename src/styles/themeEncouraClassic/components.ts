@@ -10,8 +10,8 @@ import { listItemTextClasses } from '@mui/material/ListItemText';
 import { Components } from '@mui/material/styles';
 import { IconProps } from '@mui/x-data-grid/models/gridBaseSlots';
 import Color from 'color';
-import ChevronDown from '~/icons/ChevronDown';
-import FilterVariant from '~/icons/FilterVariant';
+import ChevronDown from 'mdi-material-ui/ChevronDown';
+import FilterVariant from 'mdi-material-ui/FilterVariant';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import DLS_COMPONENT_SLOT_NAMES from '~/constants/DLS_COMPONENT_SLOT_NAMES';

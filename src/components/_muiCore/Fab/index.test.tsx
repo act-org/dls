@@ -6,7 +6,7 @@
  */
 
 import { Fab } from '@mui/material';
-import AddIcon from '~/icons/Plus';
+import AddIcon from 'mdi-material-ui/Plus';
 
 import { standard } from '~/helpers/test';
 
