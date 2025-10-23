@@ -23,9 +23,9 @@ const DialogWithLauncher = ({
   label,
   ...dialogProps
 }: {
-  children: ReactElement;
+  children: ReactElement | ReactElement[];
   label: string;
-} & DialogProps): ReactElement => {
+} & Omit<DialogProps, 'open'>): ReactElement => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -33,7 +33,7 @@ const DialogWithLauncher = ({
       <Button color="primary" onClick={(): void => setOpen(true)} style={{ marginBottom: 16 }} variant="contained">
         {label}
       </Button>
-      <Dialog onClose={(): void => setOpen(false)} open={open} {...dialogProps}>
+      <Dialog onClose={(): void => setOpen(false)} {...dialogProps} open={open}>
         {children}
       </Dialog>
     </>
@@ -59,6 +59,9 @@ type Story = StoryObj<DialogProps>;
 
 // Documentation story (not snapshotted in Chromatic)
 export const Documentation: Story = {
+  parameters: {
+    chromatic: { disable: true },
+  },
   render: () => (
     <DialogWithLauncher label="Open Documentation Dialog">
       <DialogTitle>Dialog Title</DialogTitle>
@@ -71,13 +74,13 @@ export const Documentation: Story = {
       </DialogActions>
     </DialogWithLauncher>
   ),
-  parameters: {
-    chromatic: { disable: true },
-  },
 };
 
 // Playground story (not snapshotted in Chromatic)
 export const PlaygroundStory: Story = {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, Dialog),
+
   render: () => (
     <DialogWithLauncher label="Open Playground Dialog">
       <DialogTitle>Dialog Title</DialogTitle>
@@ -90,8 +93,6 @@ export const PlaygroundStory: Story = {
       </DialogActions>
     </DialogWithLauncher>
   ),
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  argTypes: Playground({}, Dialog),
   name: 'Playground',
   parameters: {
     chromatic: { disable: true },
@@ -142,8 +143,8 @@ const themeStories = ThemesArray.reduce(
               <DialogContent>
                 <Typography>Please fill out the form below with your information.</Typography>
                 <div style={{ marginTop: 16 }}>
-                  <input placeholder="Name" style={{ width: '100%', padding: 8, marginBottom: 8 }} />
-                  <input placeholder="Email" style={{ width: '100%', padding: 8 }} />
+                  <input placeholder="Name" style={{ padding: 8, width: '100%', marginBottom: 8 }} />
+                  <input placeholder="Email" style={{ padding: 8, width: '100%' }} />
                 </div>
               </DialogContent>
               <DialogActions>

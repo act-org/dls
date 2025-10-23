@@ -13,9 +13,13 @@ import isNumber from 'lodash/isNumber';
 import PackageVariant from 'mdi-material-ui/PackageVariant';
 import { useState } from 'react';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
 import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
 import sort from '~/helpers/sort';
+import { ThemesArray } from '~/styles/themes';
 import { SortObject } from '~/types';
 
 import { DataTable, DataTableProps } from '.';
@@ -133,61 +137,117 @@ export default {
   args: {
     totalCount: 10,
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       color: { type: 'string' },
     },
     DataTable,
   ),
-  component: Template,
+  component: DataTable,
+  parameters: {
+    layout: 'padded',
+  },
+  render: Template,
   tags: ['autodocs'],
   title: 'Organisms / DataTable',
 } as Meta<DataTableProps<Item>>;
 
-export const ColorDefault: StoryObj<DataTableProps<Item>> = {
-  args: { color: 'default' },
-};
+type Story = StoryObj<DataTableProps<Item>>;
 
-export const ColorPrimary: StoryObj<DataTableProps<Item>> = {
-  args: { color: 'primary' },
-};
-
-export const ColorSecondary: StoryObj<DataTableProps<Item>> = {
-  args: { color: 'secondary' },
-};
-
-export const LinkedRows: StoryObj<DataTableProps<Item>> = {
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
-    RowWrapper: ({ name }: Item, children) => (
-      <Link
-        href={`https://www.google.com/search?q=${name}`}
-        style={{
-          display: 'contents',
-        }}
-        target="_blank"
-        underline="none"
-      >
-        {children}
-      </Link>
-    ),
+    totalCount: 10,
   },
+  parameters: {
+    chromatic: { disable: true },
+  },
+  render: Template,
 };
 
-export const EmptyState: StoryObj<DataTableProps<Item>> = {
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
   args: {
-    emptyStateProps: {
-      description: 'No Items Found',
-      Icon: PackageVariant,
+    totalCount: 10,
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground(
+    {
+      color: { type: 'string' },
     },
-    totalCount: 0,
+    DataTable,
+  ),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
+  render: Template,
 };
 
-export const Paginated: StoryObj<DataTableProps<Item>> = {
-  args: {
-    limit: 10,
-    offset: 0,
-    rowsPerPageOptions: [10, 25, 50],
-    totalCount: 100,
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<DataTableProps<Item>>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <Template totalCount={10} />
+          </StoryVariation>
+
+          <StoryVariation label="Primary Color">
+            <Template color="primary" totalCount={10} />
+          </StoryVariation>
+
+          <StoryVariation label="Secondary Color">
+            <Template color="secondary" totalCount={10} />
+          </StoryVariation>
+
+          <StoryVariation label="Linked Rows">
+            <Template
+              RowWrapper={({ name }: Item, children) => (
+                <Link
+                  href={`https://www.google.com/search?q=${name}`}
+                  style={{
+                    display: 'contents',
+                  }}
+                  target="_blank"
+                  underline="none"
+                >
+                  {children}
+                </Link>
+              )}
+              totalCount={10}
+            />
+          </StoryVariation>
+
+          <StoryVariation label="Empty State">
+            <Template
+              emptyStateProps={{
+                description: 'No Items Found',
+                Icon: PackageVariant,
+              }}
+              totalCount={0}
+            />
+          </StoryVariation>
+
+          <StoryVariation label="Paginated">
+            <Template limit={10} offset={0} rowsPerPageOptions={[10, 25, 50]} totalCount={100} />
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
   },
-};
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

@@ -145,7 +145,6 @@ structure:
 📂 components
  ┣ 📂 NewComponent
  ┃ ┣ index.stories.tsx           // storybook stories go here
- ┃ ┣ index.test.tsx              // component tests go here
  ┃ ┣ index.tsx                   // component functionality goes here
  ┃ ┗ styles.ts                   // component custom styles go here
  ┗ index.ts

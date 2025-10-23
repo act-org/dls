@@ -11,12 +11,16 @@ import { Button, Grid } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import startCase from 'lodash/startCase';
 import { VariantType } from 'notistack';
-import { ReactElement, useState } from 'react';
+import { FC, ReactElement, useState } from 'react';
 
 import Alert from '~/components/Alert';
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
 import AlertContext from '~/context/AlertContext';
 import AlertContextProvider, { AlertContextProviderProps } from '~/context/AlertContext/provider';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { SnackbarAlert } from '.';
 
@@ -73,6 +77,7 @@ const Template: StoryFn<AlertContextProviderProps> = (props: AlertContextProvide
  */
 export default {
   args: {},
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       anchorOriginHorizontal: { type: 'string' },
@@ -81,88 +86,183 @@ export default {
     },
     SnackbarAlert,
   ),
-  component: Template,
+  component: AlertContextProvider,
+  parameters: {
+    layout: 'padded',
+  },
+  render: Template,
   tags: ['autodocs'],
   title: 'Molecules / SnackbarAlert',
 } as Meta<AlertContextProviderProps>;
 
-export const Preview: StoryObj<AlertContextProviderProps> = {
+type Story = StoryObj<AlertContextProviderProps>;
+
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {},
-};
-
-/**
- * Show up to `5` different `<SnackbarAlert />`s on the screen, rather than the
- * default (`3`).
- */
-export const CustomMaxSnack: StoryObj<AlertContextProviderProps> = {
-  args: {
-    maxSnack: 5,
+  parameters: {
+    chromatic: { disable: true },
   },
+  render: Template,
 };
 
-/**
- * By default, the `<SnackbarAlert />` is anchored to the bottom center of the
- * screen. Both the horizontal and vertical anchor origins can be changed.
- */
-export const CustomAnchorOrigin: StoryObj<AlertContextProviderProps> = {
-  args: {
-    anchorOriginHorizontal: 'right',
-    anchorOriginVertical: 'top',
-  },
-};
-
-/**
- * This component also accepts and passes through `SnackbarProviderProps` to the
- * underlying library. For reference, see the official documentation here:
- * https://notistack.com/api-reference#snackbarprovider-props
- */
-export const CustomSnackbarProps: StoryObj<AlertContextProviderProps> = {
-  args: {
-    autoHideDuration: 10_000,
-    classes: {
-      containerRoot: 'notistackContainerClass',
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {},
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground(
+    {
+      anchorOriginHorizontal: { type: 'string' },
+      anchorOriginVertical: { type: 'string' },
+      maxSnack: { type: 'number' },
     },
-    Components: {
-      default: alertProps => (
-        <Alert
-          {...alertProps}
-          style={{
-            backgroundColor: 'purple',
-          }}
-        />
-      ),
-      error: alertProps => (
-        <Alert
-          {...alertProps}
-          style={{
-            backgroundColor: 'purple',
-          }}
-        />
-      ),
-      info: alertProps => (
-        <Alert
-          {...alertProps}
-          style={{
-            backgroundColor: 'purple',
-          }}
-        />
-      ),
-      success: alertProps => (
-        <Alert
-          {...alertProps}
-          style={{
-            backgroundColor: 'purple',
-          }}
-        />
-      ),
-      warning: alertProps => (
-        <Alert
-          {...alertProps}
-          style={{
-            backgroundColor: 'purple',
-          }}
-        />
-      ),
-    },
+    SnackbarAlert,
+  ),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
+  render: Template,
 };
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Component for theme stories that includes required props
+const ThemeStoryComponent: FC<Partial<AlertContextProviderProps>> = props => {
+  const [counter, setCounter] = useState(0);
+
+  return (
+    <AlertContextProvider {...props}>
+      <AlertContext.Consumer>
+        {({ actions }): ReactElement<unknown> => (
+          <Grid container spacing={2}>
+            {(['error', 'info', 'warning', 'success'] as VariantType[]).map(
+              (variant): ReactElement<unknown> => (
+                <Grid key={variant}>
+                  <Button
+                    onClick={async (): Promise<void> => {
+                      const newCounter = counter + 1;
+
+                      setCounter(newCounter);
+
+                      await actions.addAlert({
+                        message: (
+                          <span>
+                            Alert number {newCounter} with&nbsp;
+                            <b>
+                              <i>
+                                <u>html content</u>
+                              </i>
+                            </b>
+                            .
+                          </span>
+                        ),
+                        options: {
+                          variant,
+                        },
+                      });
+                    }}
+                  >
+                    {`Show ${startCase(variant)}`}
+                  </Button>
+                </Grid>
+              ),
+            )}
+          </Grid>
+        )}
+      </AlertContext.Consumer>
+    </AlertContextProvider>
+  );
+};
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<AlertContextProviderProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <ThemeStoryComponent>
+              <div>Default SnackbarAlert</div>
+            </ThemeStoryComponent>
+          </StoryVariation>
+
+          <StoryVariation label="Custom Max Snack">
+            <ThemeStoryComponent maxSnack={5}>
+              <div>Custom Max Snack</div>
+            </ThemeStoryComponent>
+          </StoryVariation>
+
+          <StoryVariation label="Custom Anchor Origin">
+            <ThemeStoryComponent anchorOriginHorizontal="right" anchorOriginVertical="top">
+              <div>Custom Anchor Origin</div>
+            </ThemeStoryComponent>
+          </StoryVariation>
+
+          <StoryVariation label="Custom Snackbar Props">
+            <ThemeStoryComponent
+              autoHideDuration={10_000}
+              classes={{
+                containerRoot: 'notistackContainerClass',
+              }}
+              Components={{
+                default: alertProps => (
+                  <Alert
+                    {...alertProps}
+                    style={{
+                      backgroundColor: 'purple',
+                    }}
+                  />
+                ),
+                error: alertProps => (
+                  <Alert
+                    {...alertProps}
+                    style={{
+                      backgroundColor: 'purple',
+                    }}
+                  />
+                ),
+                info: alertProps => (
+                  <Alert
+                    {...alertProps}
+                    style={{
+                      backgroundColor: 'purple',
+                    }}
+                  />
+                ),
+                success: alertProps => (
+                  <Alert
+                    {...alertProps}
+                    style={{
+                      backgroundColor: 'purple',
+                    }}
+                  />
+                ),
+                warning: alertProps => (
+                  <Alert
+                    {...alertProps}
+                    style={{
+                      backgroundColor: 'purple',
+                    }}
+                  />
+                ),
+              }}
+            >
+              <div>Custom Snackbar Props</div>
+            </ThemeStoryComponent>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };
