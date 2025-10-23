@@ -6,9 +6,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import * as fs from 'fs';
+import * as path from 'path';
 import { JestConfigWithTsJest, pathsToModuleNameMapper } from 'ts-jest';
 
-import { compilerOptions } from './tsconfig.json';
+// Read tsconfig.json manually to avoid import attribute issues
+const tsconfigPath = path.resolve(__dirname, 'tsconfig.json');
+const tsconfigContent = fs.readFileSync(tsconfigPath, 'utf8');
+const tsconfig = JSON.parse(tsconfigContent);
+const { compilerOptions } = tsconfig;
 
 const config: JestConfigWithTsJest = {
   collectCoverage: true,
