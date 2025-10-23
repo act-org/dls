@@ -1,104 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`FormRadio ACT theme matches the snapshot 1`] = `
-<div>
-  <label
-    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
-    id="primaryswitch"
-  >
-    <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-dtnsc8-MuiButtonBase-root-MuiSwitchBase-root-MuiRadio-root"
-      color="primary"
-    >
-      <input
-        class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-        type="radio"
-      />
-      <span
-        class="css-9oxshb-MuiRadioButtonIcon-root"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-gy7jbg-MuiSvgIcon-root-MuiRadioButtonIcon-root"
-          data-testid="RadioButtonUncheckedIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1p8bdbb-MuiSvgIcon-root-MuiRadioButtonIcon-root"
-          data-testid="RadioButtonCheckedIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
-          />
-        </svg>
-      </span>
-    </span>
-    <span
-      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1or18zx-MuiTypography-root"
-    >
-      The label
-    </span>
-  </label>
-</div>
-`;
-
-exports[`FormRadio ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <label
-    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
-    id="primaryswitch"
-  >
-    <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-181dung-MuiButtonBase-root-MuiSwitchBase-root-MuiRadio-root"
-    >
-      <input
-        class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-        type="radio"
-      />
-      <span
-        class="css-9oxshb-MuiRadioButtonIcon-root"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1t12bit-MuiSvgIcon-root-MuiRadioButtonIcon-root"
-          data-testid="RadioButtonUncheckedIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-qhxqd4-MuiSvgIcon-root-MuiRadioButtonIcon-root"
-          data-testid="RadioButtonCheckedIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
-          />
-        </svg>
-      </span>
-    </span>
-    <span
-      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-uuxgud-MuiTypography-root"
-    >
-      The label
-    </span>
-  </label>
-</div>
-`;
-
 exports[`FormRadio ENCOURA theme matches the snapshot 1`] = `
 <div>
   <label
@@ -200,11 +101,11 @@ exports[`FormRadio ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-11n2pmj-MuiFormControlLabel-root"
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-5lqx6n-MuiFormControlLabel-root"
     id="primaryswitch"
   >
     <span
-      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-awdioj-MuiButtonBase-root-MuiSwitchBase-root-MuiRadio-root"
+      class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-1vaf2az-MuiButtonBase-root-MuiSwitchBase-root-MuiRadio-root"
     >
       <input
         class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
@@ -215,7 +116,7 @@ exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1t12bit-MuiSvgIcon-root-MuiRadioButtonIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1jqde6x-MuiSvgIcon-root-MuiRadioButtonIcon-root"
           data-testid="RadioButtonUncheckedIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -226,7 +127,7 @@ exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-qhxqd4-MuiSvgIcon-root-MuiRadioButtonIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-y3f8q5-MuiSvgIcon-root-MuiRadioButtonIcon-root"
           data-testid="RadioButtonCheckedIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -238,7 +139,7 @@ exports[`FormRadio ENCOURAGE theme matches the snapshot 1`] = `
       </span>
     </span>
     <span
-      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1c0jcfm-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-azabt7-MuiTypography-root"
     >
       The label
     </span>

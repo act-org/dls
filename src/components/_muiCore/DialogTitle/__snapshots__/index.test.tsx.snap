@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`DialogTitle ACT theme matches the snapshot 1`] = `
-<div>
-  <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-ad9osy-MuiTypography-root-MuiDialogTitle-root"
-  >
-    Hey
-  </h2>
-</div>
-`;
-
-exports[`DialogTitle ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-fqnb28-MuiTypography-root-MuiDialogTitle-root"
-  >
-    Hey
-  </h2>
-</div>
-`;
-
 exports[`DialogTitle ENCOURA theme matches the snapshot 1`] = `
 <div>
   <h2
@@ -43,7 +23,7 @@ exports[`DialogTitle ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogTitle ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <h2
-    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-1lwovbq-MuiTypography-root-MuiDialogTitle-root"
+    class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root css-cktw69-MuiTypography-root-MuiDialogTitle-root"
   >
     Hey
   </h2>

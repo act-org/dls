@@ -25,7 +25,7 @@ describe('Dialog', () => {
       <Dialog onClose={onClose} open title="Test Title">
         Dialog Content
       </Dialog>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByRole('button'));
@@ -38,7 +38,7 @@ describe('Dialog', () => {
       <Dialog open title="Test Title">
         Dialog Content
       </Dialog>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByRole('button'));

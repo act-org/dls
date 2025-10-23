@@ -35,12 +35,10 @@ This DLS is built on top of the
 [theme engine](https://mui.com/material-ui/customization/theming/) from
 Material UI, and ships with several themes out of the box:
 
-1. `"ACT"`: for ACT's "traditional" look and feel
-2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
-4. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-5. `"ENCOURAGE"`: for the Encoura's "Encourage for Students" look and feel
-6. `"ENCOURAGE_E4E"`: for the Encoura's "Encourage for Educators" look and feel
+1. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
+2. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
+3. `"ENCOURAGE"`: for the Encoura's "Encourage for Students" look and feel
+4. `"ENCOURAGE_E4E"`: for the Encoura's "Encourage for Educators" look and feel
 
 To apply one of these themes to your components, simply wrap your application
 in the `ThemeProvider` component and specify a theme!
@@ -52,7 +50,7 @@ import { ThemeProvider } from '@encoura/dls/components/ThemeProvider';
 
 const MyApp = () => (
   // specify a theme here!
-  <ThemeProvider theme="ACT_ET">
+  <ThemeProvider theme="ENCOURAGE_E4E">
     <App />
   </ThemeProvider>
 );
@@ -67,11 +65,11 @@ generator from Material UI:
 ```jsx
 import deepMerge from 'deepmerge';
 import { createTheme } from '@encoura/dls/styles/createTheme';
-import { THEME_ACT } from '@encoura/dls/styles/themeAct';
+import { THEME_ENCOURAGE_E4E } from '@encoura/dls/styles/themeEncourageE4E';
 import { ThemeProvider } from '@encoura/dls/components/ThemeProvider';
 
 const myExtendedTheme = createTheme(
-  deepMerge(THEME_ACT, {
+  deepMerge(THEME_ENCOURAGE_E4E, {
     // theme customizations go here!
   }),
 );
@@ -114,10 +112,10 @@ function to generate a `styled` function that is strongly typed to your theme:
 
 ```jsx
 import { createThemeStyled } from '@encoura/dls/helpers/styled';
-import { THEME_ACT } from '@encoura/dls/styles/themeAct';
+import { THEME_ENCOURAGE_E4E } from '@encoura/dls/styles/themeEncourageE4E';
 import TableCell from '@mui/material/TableCell';
 
-const styled = createThemeStyled(THEME_ACT);
+const styled = createThemeStyled(THEME_ENCOURAGE_E4E);
 
 const StyledTypography = styled(TableCell)(({ theme }) => ({
   // `customDims` is not available on the default theme
@@ -144,20 +142,6 @@ Steps:
 - You may need to restart your IDE's TS server for the changes to appear.
 
 ### Load Fonts
-
-#### Montserrat
-
-The `ACT` and `ACT_ET` themes assume that the
-[Montserrat](https://fonts.google.com/specimen/Montserrat) font is available in
-the browser. Therefore, it is recommended that you include the following font
-reference in the `head` of your React app:
-
-```html
-<link
-  href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
-  rel="stylesheet"
-/>
-```
 
 #### Museo Sans
 
@@ -320,7 +304,7 @@ import { useLocalStorage } from '@encoura/dls/hooks';
 // icons
 import ChevronDown from '@encoura/dls/icons/ChevronDown';
 // styles & themes
-import { THEME_ACT } from '@encoura/dls/styles/themeAct';
+import { THEME_ENCOURAGE_E4E } from '@encoura/dls/styles/themeEncourageE4E';
 // types
 import { SortObject } from '@encoura/dls/types';
 ```
@@ -353,42 +337,10 @@ const MyComponent: React.FC = () => {
 - Unfortunately emotion (the default styling engine in React) doesn't seem to
   care: <https://github.com/emotion-js/emotion/issues/2193#issuecomment-1178372803>
 
-## ES Modules & Tree Shaking
-
-Version <= 6 of the DLS were built and exported as
-[CommonJS modules](https://nodejs.org/api/modules.html#modules-commonjs-modules).
-While this allowed the simplest integration of the DLS into any
-project, it also resulted in project bundles being
-[larger than desired](https://web.dev/commonjs-larger-bundles/) due to
-the inability of bundlers to
-[tree-shake](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
-the DLS.
-
-In version >= 7 of the DLS, we are now building and exporting the library as
-[ECMAScript modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules).
-This allows your project's bundler to much more easily read and
-[tree-shake](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
-the DLS right out of the box. (No more need for
-[`babel-plugin-transform-imports`](https://www.npmjs.com/package/babel-plugin-transform-imports)!)
-
-Furthermore, the DLS's `package.json` is also setting:
-
-```json
-"sideEffects": false,
-```
-
-to instruct builders to enable even deeper tree-shaking. This should make
-bundle sizes significantly smaller with less effort. However, the tradeoff
-is that in certain scenarios, like
-[Lazy Loading](https://nextjs.org/docs/advanced-features/dynamic-import),
-if you are expecting a dependency to be there that is now removed from
-tree-shaking, things will break and you may need to import that dependency
-directly in a parent bundle.
-
 ### SyntaxError: Unexpected token 'export'
 
-One downside of exporting the DLS as ECMAScript modules is that the `import` and
-`export` keywords are preserved, which may cause your packager/runner to throw:
+The DLS is exported as an ECMAScript module, meaning the `import` and
+`export` keywords are preserved. This may cause your packager/runner to throw:
 
 ```sh
 SyntaxError: Unexpected token 'export'
@@ -437,7 +389,7 @@ When you're ready to pilot your changes to this library in your local project:
 
 1. Run the `npm run pack` command. When it finishes running, it will generate a
    `.tgz` file in the `/dist` folder with the following name format
-   `actinc-dls-<version-number>.tgz`;
+   `encoura-dls-<version-number>.tgz`;
 2. Access the `package.json` file of your local project in which the
    `@encoura/dls` package will be tested, and make the following edit:
 
@@ -446,7 +398,7 @@ When you're ready to pilot your changes to this library in your local project:
      // Before (pulling from NPM via version number):
      "@encoura/dls": "9.2.1",
      // After (pointing to the local .tgz file):
-     "@encoura/dls": "file:../path/to/@encoura/dls/dist/actinc-dls-<version-number>.tgz",
+     "@encoura/dls": "file:../path/to/@encoura/dls/dist/encoura-dls-<version-number>.tgz",
      ...
    }
    ```

@@ -1,9 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`ConfirmationDialog ACT theme matches the snapshot 1`] = `<div />`;
-
-exports[`ConfirmationDialog ACT_ET theme matches the snapshot 1`] = `<div />`;
-
 exports[`ConfirmationDialog ENCOURA theme matches the snapshot 1`] = `<div />`;
 
 exports[`ConfirmationDialog ENCOURA_CLASSIC theme matches the snapshot 1`] = `<div />`;

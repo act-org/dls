@@ -1,21 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`ThemeProvider ACT theme matches the snapshot 1`] = `
-<div>
-  <p>
-    This is a test
-  </p>
-</div>
-`;
-
-exports[`ThemeProvider ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <p>
-    This is a test
-  </p>
-</div>
-`;
-
 exports[`ThemeProvider ENCOURA theme matches the snapshot 1`] = `
 <div>
   <p>

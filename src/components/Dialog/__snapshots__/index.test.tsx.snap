@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Dialog ACT theme matches the snapshot 1`] = `
-<div
-  aria-hidden="true"
-/>
-`;
-
-exports[`Dialog ACT_ET theme matches the snapshot 1`] = `
-<div
-  aria-hidden="true"
-/>
-`;
-
 exports[`Dialog ENCOURA theme matches the snapshot 1`] = `
 <div
   aria-hidden="true"

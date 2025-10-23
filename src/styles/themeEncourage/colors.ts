@@ -10,6 +10,18 @@
 /** Colors from E4S Web Design System */
 // https://www.figma.com/file/4JazmqwcfRVZyRq6vRkf05/E4S-Web---Design-System?type=design&node-id=2946-25441&mode=design&t=5RBrs8ilrgqPDW2x-4
 
+export const COLORS = {
+  // ERROR: '#CC0033',
+  ERROR_DARK: '#8E0024',
+  // INFO: '#2196F3',
+  INFO_DARK: '#1976D2',
+  // INFO_LIGHT: '#64B5F6',
+  // SUCCESS: '#009900',
+  SUCCESS_DARK: '#007B00',
+  // WARNING: '#FF9900',
+  WARNING_DARK: '#D14900',
+};
+
 export const grayscale = {
   black: '#222222',
   darkGray: '#424242',

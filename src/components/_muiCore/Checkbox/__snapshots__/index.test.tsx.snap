@@ -1,58 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Checkbox ACT theme matches the snapshot 1`] = `
-<div>
-  <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-jh6fz6-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
-    color="primary"
-  >
-    <input
-      checked=""
-      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-      data-indeterminate="false"
-      type="checkbox"
-    />
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-z0t891-MuiSvgIcon-root"
-      data-testid="CheckBoxIcon"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-  </span>
-</div>
-`;
-
-exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-ky0j2d-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
-  >
-    <input
-      checked=""
-      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-      data-indeterminate="false"
-      type="checkbox"
-    />
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
-      data-testid="CheckBoxIcon"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-      />
-    </svg>
-  </span>
-</div>
-`;
-
 exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 <div>
   <span
@@ -108,7 +55,7 @@ exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-10gjujf-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1daoycp-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
@@ -118,7 +65,7 @@ exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1efper6-MuiSvgIcon-root"
       data-testid="CheckBoxIcon"
       focusable="false"
       viewBox="0 0 24 24"

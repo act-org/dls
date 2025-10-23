@@ -35,7 +35,7 @@ describe('ConfirmationDialog', () => {
           title: 'TestPassingTitle',
         }}
       />,
-      'ACT',
+      'ENCOURA',
     );
     const titleTag = rendered.getByTitle('TestPassingTitle');
     expect(titleTag).toBeVisible();
@@ -49,7 +49,7 @@ describe('ConfirmationDialog', () => {
         }}
         isOpen
       />,
-      'ACT',
+      'ENCOURA',
     );
     const titleTag = rendered.getByTitle('TestPassingTitle');
     expect(titleTag).toBeVisible();
@@ -64,7 +64,7 @@ describe('ConfirmationDialog', () => {
         }}
         isOpen
       />,
-      'ACT',
+      'ENCOURA',
     );
     const titleTag = rendered.getByTitle('TestPassingTitle');
     expect(titleTag).toBeVisible();
@@ -78,7 +78,7 @@ describe('ConfirmationDialog', () => {
         }}
         isOpen
       />,
-      'ACT',
+      'ENCOURA',
     );
     const titleTag = rendered.getByTitle('TestPassingTitle');
     expect(titleTag).toBeVisible();
@@ -115,7 +115,7 @@ describe('ConfirmationDialog', () => {
       >
         <ConfirmHook />
       </ConfirmProvider>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Opens Dialog'));
@@ -152,7 +152,7 @@ describe('ConfirmationDialog', () => {
         <ConfirmHook />
         <ConfirmHook2 />
       </ConfirmProvider>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Open1'));
@@ -197,7 +197,7 @@ describe('ConfirmationDialog', () => {
         <ConfirmHook />
         <ConfirmHook2 />
       </ConfirmProvider>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Open1'));
@@ -222,7 +222,7 @@ describe('ConfirmationDialog', () => {
       <ConfirmProvider>
         <ConfirmHook />
       </ConfirmProvider>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Opens Dialog'));
@@ -242,7 +242,7 @@ describe('ConfirmationDialog', () => {
       <ConfirmProvider>
         <ConfirmHook />
       </ConfirmProvider>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Opens Dialog'));
@@ -263,7 +263,7 @@ describe('ConfirmationDialog', () => {
       <ConfirmProvider>
         <ConfirmHook />
       </ConfirmProvider>,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Opens Dialog'));

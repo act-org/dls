@@ -1,56 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Switch ACT theme matches the snapshot 1`] = `
-<div>
-  <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-1twhucs-MuiSwitch-root"
-  >
-    <span
-      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-ab3pdf-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
-      color="primary"
-    >
-      <input
-        checked=""
-        class="PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"
-        role="switch"
-        type="checkbox"
-      />
-      <span
-        class="MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"
-      />
-    </span>
-    <span
-      class="MuiSwitch-track css-tj8d99-MuiSwitch-track"
-    />
-  </span>
-</div>
-`;
-
-exports[`Switch ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-kgh0wo-MuiSwitch-root"
-  >
-    <span
-      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-9u0uj0-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
-    >
-      <input
-        checked=""
-        class="PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"
-        role="switch"
-        type="checkbox"
-      />
-      <span
-        class="MuiSwitch-thumb css-1uu3p77-MuiSwitch-thumb"
-      />
-    </span>
-    <span
-      class="MuiSwitch-track css-1w2d6go-MuiSwitch-track"
-    />
-  </span>
-</div>
-`;
-
 exports[`Switch ENCOURA theme matches the snapshot 1`] = `
 <div>
   <span
@@ -104,10 +53,10 @@ exports[`Switch ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Switch ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiSwitch-root MuiSwitch-sizeMedium css-kgh0wo-MuiSwitch-root"
+    class="MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root"
   >
     <span
-      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-p3v9sg-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
+      class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-u184il-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
     >
       <input
         checked=""
@@ -116,11 +65,11 @@ exports[`Switch ENCOURAGE theme matches the snapshot 1`] = `
         type="checkbox"
       />
       <span
-        class="MuiSwitch-thumb css-vi2dvs-MuiSwitch-thumb"
+        class="MuiSwitch-thumb css-1s5eau1-MuiSwitch-thumb"
       />
     </span>
     <span
-      class="MuiSwitch-track css-1w2d6go-MuiSwitch-track"
+      class="MuiSwitch-track css-tj8d99-MuiSwitch-track"
     />
   </span>
 </div>

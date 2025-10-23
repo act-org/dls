@@ -1,85 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`TextField ACT theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiFormControl-root MuiTextField-root css-1j5o4eu-MuiFormControl-root-MuiTextField-root"
-  >
-    <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1unve2b-MuiFormLabel-root-MuiInputLabel-root"
-      data-shrink="true"
-      for="test-text-field"
-      id="test-text-field-label"
-    >
-      TextField Test Label
-    </label>
-    <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-dpynhu-MuiInputBase-root-MuiOutlinedInput-root"
-    >
-      <input
-        aria-invalid="false"
-        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-hcl30a-MuiInputBase-input-MuiOutlinedInput-input"
-        id="test-text-field"
-        type="text"
-        value="test"
-      />
-      <fieldset
-        aria-hidden="true"
-        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-      >
-        <legend
-          class="css-1n64csd-MuiNotchedOutlined-root"
-        >
-          <span>
-            TextField Test Label
-          </span>
-        </legend>
-      </fieldset>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`TextField ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiFormControl-root MuiTextField-root css-1j5o4eu-MuiFormControl-root-MuiTextField-root"
-  >
-    <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-kb63yk-MuiFormLabel-root-MuiInputLabel-root"
-      data-shrink="true"
-      for="test-text-field"
-      id="test-text-field-label"
-    >
-      TextField Test Label
-    </label>
-    <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-by28yo-MuiInputBase-root-MuiOutlinedInput-root"
-    >
-      <input
-        aria-invalid="false"
-        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1bynoch-MuiInputBase-input-MuiOutlinedInput-input"
-        id="test-text-field"
-        type="text"
-        value="test"
-      />
-      <fieldset
-        aria-hidden="true"
-        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-      >
-        <legend
-          class="css-1n64csd-MuiNotchedOutlined-root"
-        >
-          <span>
-            TextField Test Label
-          </span>
-        </legend>
-      </fieldset>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`TextField ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
@@ -166,7 +86,7 @@ exports[`TextField ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiFormControl-root MuiTextField-root css-1lpmsmr-MuiFormControl-root-MuiTextField-root"
   >
     <label
-      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-10szopb-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-120anan-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
       for="test-text-field"
       id="test-text-field-label"
@@ -174,7 +94,7 @@ exports[`TextField ENCOURAGE theme matches the snapshot 1`] = `
       TextField Test Label
     </label>
     <div
-      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1v5jxjp-MuiInputBase-root-MuiOutlinedInput-root"
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1doc67t-MuiInputBase-root-MuiOutlinedInput-root"
     >
       <input
         aria-invalid="false"

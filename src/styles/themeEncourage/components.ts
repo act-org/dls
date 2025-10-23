@@ -17,7 +17,7 @@ import cssRadius from '~/helpers/cssRadius';
 import px from '~/helpers/px';
 import pxToNumber from '~/helpers/pxToNumber';
 
-import { mist, navy, seafoam, surface, teal } from './colors';
+import { COLORS, mist, navy, seafoam, surface, teal } from './colors';
 import customDims from './customDims';
 import palette, { customPalette, navyHover } from './palette';
 import shadows from './shadows';
@@ -117,6 +117,11 @@ export const components: ThemeOptions['components'] = {
     },
   },
   MuiAlert: {
+    defaultProps: {
+      closeText: 'Close',
+      severity: 'info',
+      variant: 'standard',
+    },
     styleOverrides: {
       action: {
         paddingTop: '0',
@@ -125,6 +130,18 @@ export const components: ThemeOptions['components'] = {
         height: '100%',
         marginBottom: 'auto',
         marginTop: px(2),
+      },
+      outlinedError: {
+        color: COLORS.ERROR_DARK,
+      },
+      outlinedInfo: {
+        color: COLORS.INFO_DARK,
+      },
+      outlinedSuccess: {
+        color: COLORS.SUCCESS_DARK,
+      },
+      outlinedWarning: {
+        color: COLORS.WARNING_DARK,
       },
       root: {
         ...cssRadius(4),
@@ -185,6 +202,14 @@ export const components: ThemeOptions['components'] = {
       },
     },
   },
+  MuiBadge: {
+    defaultProps: {},
+    styleOverrides: {
+      badge: {
+        fontSize: 10,
+      },
+    },
+  },
   MuiBreadcrumbs: {
     styleOverrides: {
       separator: {
@@ -194,6 +219,9 @@ export const components: ThemeOptions['components'] = {
     },
   },
   MuiButton: {
+    defaultProps: {
+      variant: 'outlined',
+    },
     styleOverrides: {
       contained: {
         ...LARGE_RADIUS,
@@ -212,6 +240,7 @@ export const components: ThemeOptions['components'] = {
         },
       },
       outlined: {
+        borderStyle: 'solid',
         ...LARGE_RADIUS,
       },
       outlinedPrimary: {
@@ -288,6 +317,12 @@ export const components: ThemeOptions['components'] = {
         ...LARGE_RADIUS,
       },
     },
+  },
+  MuiButtonGroup: {
+    defaultProps: {
+      disableElevation: true,
+    },
+    styleOverrides: {},
   },
   MuiCard: {
     styleOverrides: {
@@ -385,6 +420,12 @@ export const components: ThemeOptions['components'] = {
         '&:hover > svg': {
           opacity: 0.8,
         },
+        height: 36,
+        width: 36,
+      },
+      sizeSmall: {
+        height: 32,
+        width: 32,
       },
     },
   },
@@ -403,17 +444,8 @@ export const components: ThemeOptions['components'] = {
   },
   MuiInputLabel: {
     styleOverrides: {
-      formControl: {
-        position: undefined,
-        transform: undefined,
-      },
       outlined: {
-        '&.MuiInputLabel-marginDense': {
-          transform: undefined,
-        },
         marginLeft: spacing(2.5),
-        transform: undefined,
-        transformOrigin: undefined,
       },
       root: {
         color: surface.black[60],
@@ -422,6 +454,7 @@ export const components: ThemeOptions['components'] = {
         fontWeight: typography.fontWeightMedium,
         letterSpacing: px(1),
         lineHeight: px(20),
+        marginBottom: spacing(1),
       },
     },
   },
@@ -437,9 +470,14 @@ export const components: ThemeOptions['components'] = {
     },
   },
   MuiLink: {
+    defaultProps: {
+      color: 'primary',
+      underline: 'hover',
+    },
     styleOverrides: {
       root: {
         ...BASE_FONT_SIZE,
+        cursor: 'pointer',
         fontFamily: secondaryFontFamily,
         // fontWeight: 600, TODO: Verify with Katherine
       },
@@ -520,9 +558,17 @@ export const components: ThemeOptions['components'] = {
   },
   MuiSvgIcon: {
     styleOverrides: {
+      fontSizeLarge: {
+        height: 32,
+        width: 32,
+      },
       fontSizeSmall: {
-        height: '16px',
-        width: '16px',
+        height: 16,
+        width: 16,
+      },
+      root: {
+        height: 22,
+        width: 22,
       },
     },
   },
@@ -550,6 +596,8 @@ export const components: ThemeOptions['components'] = {
         notched: true,
         size: 'medium',
       },
+      size: 'small',
+      variant: 'outlined',
     },
     styleOverrides: {
       root: {
@@ -558,6 +606,9 @@ export const components: ThemeOptions['components'] = {
     },
   },
   MuiTooltip: {
+    defaultProps: {
+      arrow: true,
+    },
     styleOverrides: {
       tooltip: {
         // Tooltips needs a more subtle radius

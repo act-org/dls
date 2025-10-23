@@ -1,152 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Autocomplete ACT theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-2xefxx-MuiAutocomplete-root"
-  >
-    <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1c6ixt2-MuiFormControl-root-MuiTextField-root"
-    >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-8kmsz3-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="false"
-        for="combo-box-demo"
-        id="combo-box-demo-label"
-      >
-        Movie
-      </label>
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1rgajvl-MuiInputBase-root-MuiOutlinedInput-root"
-      >
-        <input
-          aria-autocomplete="list"
-          aria-expanded="false"
-          aria-invalid="false"
-          autocapitalize="none"
-          autocomplete="off"
-          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-voysyd-MuiInputBase-input-MuiOutlinedInput-input"
-          id="combo-box-demo"
-          role="combobox"
-          spellcheck="false"
-          type="text"
-          value=""
-        />
-        <div
-          class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
-        >
-          <button
-            aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1ujqb5w-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
-            color="primary"
-            tabindex="-1"
-            title="Open"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-z0t891-MuiSvgIcon-root"
-              data-testid="ArrowDropDownIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </button>
-        </div>
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-1n64csd-MuiNotchedOutlined-root"
-          >
-            <span>
-              Movie
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Autocomplete ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-2xefxx-MuiAutocomplete-root"
-  >
-    <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1c6ixt2-MuiFormControl-root-MuiTextField-root"
-    >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1795byt-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="false"
-        for="combo-box-demo"
-        id="combo-box-demo-label"
-      >
-        Movie
-      </label>
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1261clt-MuiInputBase-root-MuiOutlinedInput-root"
-      >
-        <input
-          aria-autocomplete="list"
-          aria-expanded="false"
-          aria-invalid="false"
-          autocapitalize="none"
-          autocomplete="off"
-          class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-sfpezy-MuiInputBase-input-MuiOutlinedInput-input"
-          id="combo-box-demo"
-          role="combobox"
-          spellcheck="false"
-          type="text"
-          value=""
-        />
-        <div
-          class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
-        >
-          <button
-            aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1h3xlqe-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
-            tabindex="-1"
-            title="Open"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
-              data-testid="ArrowDropDownIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </button>
-        </div>
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-1n64csd-MuiNotchedOutlined-root"
-          >
-            <span>
-              Movie
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Autocomplete ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
@@ -302,7 +155,7 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
       class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1k1sd9d-MuiFormControl-root-MuiTextField-root"
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1elk8gl-MuiFormLabel-root-MuiInputLabel-root"
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kaz8wr-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
         for="combo-box-demo"
         id="combo-box-demo-label"
@@ -310,7 +163,7 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
         Movie
       </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1u4xxxx-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-12y7g8-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
           aria-autocomplete="list"
@@ -330,14 +183,14 @@ exports[`Autocomplete ENCOURAGE theme matches the snapshot 1`] = `
         >
           <button
             aria-label="Open"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1d3av79-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-7kttsw-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1efper6-MuiSvgIcon-root"
               data-testid="ArrowDropDownIcon"
               focusable="false"
               viewBox="0 0 24 24"

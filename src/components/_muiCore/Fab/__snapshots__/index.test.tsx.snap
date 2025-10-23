@@ -1,52 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Fab ACT theme matches the snapshot 1`] = `
-<div>
-  <button
-    aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1gv1lp2-MuiButtonBase-root-MuiFab-root"
-    color="primary"
-    tabindex="0"
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-z0t891-MuiSvgIcon-root"
-      data-testid="PlusIcon"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-      />
-    </svg>
-  </button>
-</div>
-`;
-
-exports[`Fab ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <button
-    aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-zmkt8y-MuiButtonBase-root-MuiFab-root"
-    tabindex="0"
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
-      data-testid="PlusIcon"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-      />
-    </svg>
-  </button>
-</div>
-`;
-
 exports[`Fab ENCOURA theme matches the snapshot 1`] = `
 <div>
   <button
@@ -97,13 +50,13 @@ exports[`Fab ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
     aria-label="Floating Icon Button"
-    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-5ssdzv-MuiButtonBase-root-MuiFab-root"
+    class="MuiButtonBase-root MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary MuiFab-root MuiFab-circular MuiFab-sizeLarge MuiFab-primary css-1v3w4y7-MuiButtonBase-root-MuiFab-root"
     tabindex="0"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1k6szzt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1efper6-MuiSvgIcon-root"
       data-testid="PlusIcon"
       focusable="false"
       viewBox="0 0 24 24"

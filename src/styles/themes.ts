@@ -9,11 +9,10 @@
 /* eslint-disable import/prefer-default-export */
 
 export enum THEMES {
-  ACT = 'ACT',
-  // ACT_2023 = 'ACT_2023',
-  ACT_ET = 'ACT_ET',
+  ENCOURA = 'ENCOURA',
   ENCOURA_CLASSIC = 'ENCOURA_CLASSIC',
   ENCOURAGE = 'ENCOURAGE',
+  ENCOURAGE_E4E = 'ENCOURAGE_E4E',
 }
 
 export type Themes = keyof typeof THEMES;

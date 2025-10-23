@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`RenderMetaTagsBase ACT theme matches the snapshot 1`] = `
-<div>
-  <title
-    itemprop="name"
-    lang="en"
-  >
-    Some Title
-  </title>
-</div>
-`;
-
-exports[`RenderMetaTagsBase ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <title
-    itemprop="name"
-    lang="en"
-  >
-    Some Title
-  </title>
-</div>
-`;
-
 exports[`RenderMetaTagsBase ENCOURA theme matches the snapshot 1`] = `
 <div>
   <title

@@ -34,14 +34,7 @@ const preview: Preview = {
       name: 'Theme',
       toolbar: {
         icon: 'paintbrush',
-        items: [
-          'ACT',
-          'ACT_ET',
-          'ENCOURA',
-          'ENCOURA_CLASSIC',
-          'ENCOURAGE',
-          'ENCOURAGE_E4E',
-        ],
+        items: ['ENCOURA', 'ENCOURA_CLASSIC', 'ENCOURAGE', 'ENCOURAGE_E4E'],
       },
     },
     language: {

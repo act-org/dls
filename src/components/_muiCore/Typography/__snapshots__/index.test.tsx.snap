@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Typography ACT theme matches the snapshot 1`] = `
-<div>
-  <h1
-    class="MuiTypography-root MuiTypography-h1 css-1b93ly8-MuiTypography-root"
-  >
-    Heading Title
-  </h1>
-</div>
-`;
-
-exports[`Typography ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <h1
-    class="MuiTypography-root MuiTypography-h1 css-12eg8o5-MuiTypography-root"
-  >
-    Heading Title
-  </h1>
-</div>
-`;
-
 exports[`Typography ENCOURA theme matches the snapshot 1`] = `
 <div>
   <h1
@@ -43,7 +23,7 @@ exports[`Typography ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Typography ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-12tk7s5-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-1x66acz-MuiTypography-root"
   >
     Heading Title
   </h1>

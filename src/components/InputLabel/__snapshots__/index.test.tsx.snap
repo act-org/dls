@@ -1,51 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`InputLabel ACT theme matches the snapshot 1`] = `
-<div>
-  <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1zl35u-MuiFormLabel-root-MuiInputLabel-root"
-  >
-    <div
-      class="label-split"
-    >
-      <span
-        class="label-help"
-      >
-        InputLabel
-      </span>
-      <span
-        class="required"
-      >
-        *
-      </span>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`InputLabel ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1w0080k-MuiFormLabel-root-MuiInputLabel-root"
-  >
-    <div
-      class="label-split"
-    >
-      <span
-        class="label-help"
-      >
-        InputLabel
-      </span>
-      <span
-        class="required"
-      >
-        *
-      </span>
-    </div>
-  </label>
-</div>
-`;
-
 exports[`InputLabel ENCOURA theme matches the snapshot 1`] = `
 <div>
   <label
@@ -95,7 +49,7 @@ exports[`InputLabel ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`InputLabel ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <label
-    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-str64a-MuiFormLabel-root-MuiInputLabel-root"
+    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-6i6fdu-MuiFormLabel-root-MuiInputLabel-root"
   >
     <div
       class="label-split"

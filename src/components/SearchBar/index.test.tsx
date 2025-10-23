@@ -19,7 +19,7 @@ describe('SearchBar', () => {
     const onChange = jest.fn();
     const rendered = render(
       <SearchBar onChange={onChange} value="Value" />,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Clears the search'));
@@ -28,7 +28,7 @@ describe('SearchBar', () => {
     expect(onChange).toHaveBeenCalled();
   });
   it('should not publish an onChange event when no handler is present', async () => {
-    const rendered = render(<SearchBar value="Value" />, 'ACT');
+    const rendered = render(<SearchBar value="Value" />, 'ENCOURA');
     const user = UserEvent.setup();
     await user.click(rendered.getByTitle('Clears the search'));
     const htmlElement = rendered.getByRole('textbox') as HTMLInputElement;
@@ -38,7 +38,7 @@ describe('SearchBar', () => {
     const onChange = jest.fn();
     const rendered = render(
       <SearchBar onChange={onChange} value="Value" />,
-      'ACT',
+      'ENCOURA',
     );
     const user = UserEvent.setup();
     await user.type(rendered.getByRole('textbox'), '123');
@@ -47,7 +47,7 @@ describe('SearchBar', () => {
     expect(htmlElement.value).toBe('Value123');
   });
   it('should not publish a change event when no handler is registered', async () => {
-    const rendered = render(<SearchBar value="Value" />, 'ACT');
+    const rendered = render(<SearchBar value="Value" />, 'ENCOURA');
     const user = UserEvent.setup();
     await user.type(rendered.getByRole('textbox'), '123');
     const htmlElement = rendered.getByRole('textbox') as HTMLInputElement;

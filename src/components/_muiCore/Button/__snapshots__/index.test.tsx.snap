@@ -1,30 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Button ACT theme matches the snapshot 1`] = `
-<div>
-  <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-disableElevation css-6086c1-MuiButtonBase-root-MuiButton-root"
-    color="primary"
-    tabindex="0"
-    type="button"
-  >
-    Click me
-  </button>
-</div>
-`;
-
-exports[`Button ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-1srbwv2-MuiButtonBase-root-MuiButton-root"
-    tabindex="0"
-    type="button"
-  >
-    Click me
-  </button>
-</div>
-`;
-
 exports[`Button ENCOURA theme matches the snapshot 1`] = `
 <div>
   <button
@@ -52,7 +27,7 @@ exports[`Button ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Button ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-qfjlf1-MuiButtonBase-root-MuiButton-root"
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-19y9tt6-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >

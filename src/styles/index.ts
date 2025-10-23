@@ -6,8 +6,6 @@
  */
 
 export * from './createTheme';
-export { default as THEME_ACT } from './themeAct';
-export { default as THEME_ACT_ET } from './themeActEt';
 export { default as THEME_ENCOURA } from './themeEncoura';
 export { default as THEME_ENCOURA_CLASSIC } from './themeEncouraClassic';
 export { default as THEME_ENCOURAGE } from './themeEncourage';

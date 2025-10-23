@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`DialogContentText ACT theme matches the snapshot 1`] = `
-<div>
-  <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1vb67it-MuiTypography-root-MuiDialogContentText-root"
-  >
-    Hey
-  </p>
-</div>
-`;
-
-exports[`DialogContentText ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-1opki06-MuiTypography-root-MuiDialogContentText-root"
-  >
-    Hey
-  </p>
-</div>
-`;
-
 exports[`DialogContentText ENCOURA theme matches the snapshot 1`] = `
 <div>
   <p
@@ -43,7 +23,7 @@ exports[`DialogContentText ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`DialogContentText ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <p
-    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-ipga86-MuiTypography-root-MuiDialogContentText-root"
+    class="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiDialogContentText-root css-s0lg9g-MuiTypography-root-MuiDialogContentText-root"
   >
     Hey
   </p>

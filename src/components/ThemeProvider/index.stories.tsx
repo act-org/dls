@@ -19,7 +19,7 @@ import ThemeProvider, { ThemeProviderProps } from '.';
  */
 export default {
   args: {
-    theme: 'ACT_ET',
+    theme: 'ENCOURA',
   },
   argTypes: Playground({}, ThemeProvider),
   component: ThemeProvider,

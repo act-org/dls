@@ -9,8 +9,6 @@ import { Meta, StoryContext, StoryObj } from '@storybook/react-webpack5';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';
-import THEME_ACT from '~/styles/themeAct';
-import THEME_ACT_ET from '~/styles/themeActEt';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
@@ -99,18 +97,6 @@ const getMergedSubLabelProps = (
   let newSubLabelProps;
 
   switch (theme) {
-    case 'ACT': {
-      newSubLabelProps =
-        THEME_ACT?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
-          ?.defaultProps?.subLabelProps;
-      break;
-    }
-    case 'ACT_ET': {
-      newSubLabelProps =
-        THEME_ACT_ET?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]
-          ?.defaultProps?.subLabelProps;
-      break;
-    }
     case 'ENCOURAGE': {
       newSubLabelProps =
         THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.STACKED_BAR_CHART]

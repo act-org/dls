@@ -21,20 +21,13 @@ import ThemeProvider from '~/components/ThemeProvider';
 
 export const render = (
   Component: ReactElement,
-  theme?:
-    | 'ACT'
-    | 'ACT_ET'
-    | 'ENCOURA'
-    | 'ENCOURA_CLASSIC'
-    | 'ENCOURAGE'
-    | 'ENCOURAGE_E4E'
-    | Theme,
+  theme?: 'ENCOURA' | 'ENCOURA_CLASSIC' | 'ENCOURAGE' | 'ENCOURAGE_E4E' | Theme,
   options?: RenderOptions,
 ): RenderResult =>
   originalRender(Component, {
     wrapper: ({ children }) => (
       <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={theme || 'ACT'}>{children}</ThemeProvider>
+        <ThemeProvider theme={theme || 'ENCOURA'}>{children}</ThemeProvider>
       </StyledEngineProvider>
     ),
     ...options,

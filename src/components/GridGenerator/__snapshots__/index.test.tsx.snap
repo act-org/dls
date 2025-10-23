@@ -1,245 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`GridGenerator ACT theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1v29320-MuiGrid-root"
-  >
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
-    >
-      <div
-        class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1pquof5-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-        >
-          <div
-            class="label-split"
-          >
-            <span
-              class="label-help"
-            />
-            <span
-              class="required"
-            >
-              *
-            </span>
-          </div>
-        </label>
-        <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-82cif5-MuiInputBase-root-MuiInput-root"
-          required=""
-        >
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-1mmy3zm-MuiInputBase-input-MuiInput-input"
-            placeholder="Input 1"
-            required=""
-            type="text"
-            value="value1"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
-    >
-      <div
-        class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1pquof5-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-        >
-          <div
-            class="label-split"
-          >
-            <span
-              class="label-help"
-            />
-            <span
-              class="required"
-            >
-              *
-            </span>
-          </div>
-        </label>
-        <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-82cif5-MuiInputBase-root-MuiInput-root"
-          required=""
-        >
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-1mmy3zm-MuiInputBase-input-MuiInput-input"
-            placeholder="Input 2"
-            required=""
-            type="password"
-            value="value2"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1v29320-MuiGrid-root"
-  >
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
-    >
-      <div
-        class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1pquof5-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-        >
-          <div
-            class="label-split"
-          >
-            <span
-              class="label-help"
-            />
-          </div>
-        </label>
-        <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-82cif5-MuiInputBase-root-MuiInput-root"
-        >
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-1mmy3zm-MuiInputBase-input-MuiInput-input"
-            placeholder="Input 3"
-            type="text"
-            value="value3"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`GridGenerator ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1v29320-MuiGrid-root"
-  >
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
-    >
-      <div
-        class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1bd05fu-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-        >
-          <div
-            class="label-split"
-          >
-            <span
-              class="label-help"
-            />
-            <span
-              class="required"
-            >
-              *
-            </span>
-          </div>
-        </label>
-        <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-vfkrbn-MuiInputBase-root-MuiInput-root"
-          required=""
-        >
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-6p557a-MuiInputBase-input-MuiInput-input"
-            placeholder="Input 1"
-            required=""
-            type="text"
-            value="value1"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
-    >
-      <div
-        class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1bd05fu-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-        >
-          <div
-            class="label-split"
-          >
-            <span
-              class="label-help"
-            />
-            <span
-              class="required"
-            >
-              *
-            </span>
-          </div>
-        </label>
-        <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-vfkrbn-MuiInputBase-root-MuiInput-root"
-          required=""
-        >
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-6p557a-MuiInputBase-input-MuiInput-input"
-            placeholder="Input 2"
-            required=""
-            type="password"
-            value="value2"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1v29320-MuiGrid-root"
-  >
-    <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
-    >
-      <div
-        class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1bd05fu-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-        >
-          <div
-            class="label-split"
-          >
-            <span
-              class="label-help"
-            />
-          </div>
-        </label>
-        <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-vfkrbn-MuiInputBase-root-MuiInput-root"
-        >
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-6p557a-MuiInputBase-input-MuiInput-input"
-            placeholder="Input 3"
-            type="text"
-            value="value3"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`GridGenerator ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
@@ -483,16 +243,16 @@ exports[`GridGenerator ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1v29320-MuiGrid-root"
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1pbx9zi-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-quj5vm-MuiGrid-root"
     >
       <div
         class="MuiFormControl-root css-m2i688-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-t35sij-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1wrm5za-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -509,12 +269,12 @@ exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-11r6ojc-MuiInputBase-root-MuiInput-root"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1spb17p-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-1p4n28g-MuiInputBase-input-MuiInput-input"
+            class="MuiInputBase-input MuiInput-input css-1iea1pb-MuiInputBase-input-MuiInput-input"
             placeholder="Input 1"
             required=""
             type="text"
@@ -524,13 +284,13 @@ exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-quj5vm-MuiGrid-root"
     >
       <div
         class="MuiFormControl-root css-m2i688-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-t35sij-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1wrm5za-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -547,12 +307,12 @@ exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-11r6ojc-MuiInputBase-root-MuiInput-root"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1spb17p-MuiInputBase-root-MuiInput-root"
           required=""
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-1p4n28g-MuiInputBase-input-MuiInput-input"
+            class="MuiInputBase-input MuiInput-input css-1iea1pb-MuiInputBase-input-MuiInput-input"
             placeholder="Input 2"
             required=""
             type="password"
@@ -563,16 +323,16 @@ exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1v29320-MuiGrid-root"
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-1pbx9zi-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-direction-xs-row css-o5a4oh-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-direction-xs-row css-quj5vm-MuiGrid-root"
     >
       <div
         class="MuiFormControl-root css-m2i688-MuiFormControl-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-t35sij-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1wrm5za-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
         >
           <div
@@ -584,11 +344,11 @@ exports[`GridGenerator ENCOURAGE theme matches the snapshot 1`] = `
           </div>
         </label>
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-11r6ojc-MuiInputBase-root-MuiInput-root"
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1spb17p-MuiInputBase-root-MuiInput-root"
         >
           <input
             aria-invalid="false"
-            class="MuiInputBase-input MuiInput-input css-1p4n28g-MuiInputBase-input-MuiInput-input"
+            class="MuiInputBase-input MuiInput-input css-1iea1pb-MuiInputBase-input-MuiInput-input"
             placeholder="Input 3"
             type="text"
             value="value3"

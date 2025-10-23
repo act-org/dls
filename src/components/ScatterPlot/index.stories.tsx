@@ -9,8 +9,6 @@ import { Meta, StoryContext } from '@storybook/react-webpack5';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { Playground } from '~/helpers/playground';
-import THEME_ACT from '~/styles/themeAct';
-import THEME_ACT_ET from '~/styles/themeActEt';
 import THEME_ENCOURA_CLASSIC from '~/styles/themeEncouraClassic';
 import THEME_ENCOURAGE_V2 from '~/styles/themeEncourage';
 
@@ -64,18 +62,6 @@ const getMergedYAxisProps = (
   let yAxisStyle;
 
   switch (theme) {
-    case 'ACT': {
-      yAxisStyle =
-        THEME_ACT?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]?.defaultProps
-          ?.yAxisProps;
-      break;
-    }
-    case 'ACT_ET': {
-      yAxisStyle =
-        THEME_ACT_ET?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]
-          ?.defaultProps?.yAxisProps;
-      break;
-    }
     case 'ENCOURAGE': {
       yAxisStyle =
         THEME_ENCOURAGE_V2?.components?.[DLS_COMPONENT_NAMES.SCATTER_PLOT]

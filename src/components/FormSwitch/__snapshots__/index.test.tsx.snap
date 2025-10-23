@@ -1,82 +1,5 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`FormSwitch ACT theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-  >
-    <label
-      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-9ttzdx-MuiFormControlLabel-root"
-      id="uniqueId"
-    >
-      <span
-        class="MuiSwitch-root MuiSwitch-sizeMedium css-1twhucs-MuiSwitch-root"
-      >
-        <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-ab3pdf-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
-          color="primary"
-        >
-          <input
-            class="PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"
-            role="switch"
-            type="checkbox"
-          />
-          <span
-            class="MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"
-          />
-        </span>
-        <span
-          class="MuiSwitch-track css-tj8d99-MuiSwitch-track"
-        />
-      </span>
-      <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1or18zx-MuiTypography-root"
-      >
-        Form Switch Label
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`FormSwitch ACT_ET theme matches the snapshot 1`] = `
-<div>
-  <div
-    class="MuiFormControl-root css-4ri1sv-MuiFormControl-root"
-  >
-    <label
-      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1ijgvmu-MuiFormControlLabel-root"
-      id="uniqueId"
-    >
-      <span
-        class="MuiSwitch-root MuiSwitch-sizeMedium css-kgh0wo-MuiSwitch-root"
-      >
-        <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-9u0uj0-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
-        >
-          <input
-            class="PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"
-            role="switch"
-            type="checkbox"
-          />
-          <span
-            class="MuiSwitch-thumb css-1uu3p77-MuiSwitch-thumb"
-          />
-        </span>
-        <span
-          class="MuiSwitch-track css-1w2d6go-MuiSwitch-track"
-        />
-      </span>
-      <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-uuxgud-MuiTypography-root"
-      >
-        Form Switch Label
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
 exports[`FormSwitch ENCOURA theme matches the snapshot 1`] = `
 <div>
   <div
@@ -159,14 +82,14 @@ exports[`FormSwitch ENCOURAGE theme matches the snapshot 1`] = `
     class="MuiFormControl-root css-m2i688-MuiFormControl-root"
   >
     <label
-      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-11n2pmj-MuiFormControlLabel-root"
+      class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-5lqx6n-MuiFormControlLabel-root"
       id="uniqueId"
     >
       <span
-        class="MuiSwitch-root MuiSwitch-sizeMedium css-kgh0wo-MuiSwitch-root"
+        class="MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root"
       >
         <span
-          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-p3v9sg-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
+          class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-u184il-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"
         >
           <input
             class="PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"
@@ -174,15 +97,15 @@ exports[`FormSwitch ENCOURAGE theme matches the snapshot 1`] = `
             type="checkbox"
           />
           <span
-            class="MuiSwitch-thumb css-vi2dvs-MuiSwitch-thumb"
+            class="MuiSwitch-thumb css-1s5eau1-MuiSwitch-thumb"
           />
         </span>
         <span
-          class="MuiSwitch-track css-1w2d6go-MuiSwitch-track"
+          class="MuiSwitch-track css-tj8d99-MuiSwitch-track"
         />
       </span>
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-1c0jcfm-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-azabt7-MuiTypography-root"
       >
         Form Switch Label
       </span>
