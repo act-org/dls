@@ -8,17 +8,20 @@
 import { AppBarProps, IconButton, Toolbar, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import Menu from 'mdi-material-ui/Menu';
+import React from 'react';
+
+import { Playground } from '~/helpers/playground';
 
 import { AppBar } from './internal';
 
-const appBarChildren = (
+const createAppBarChildren = (title: string): React.ReactElement => (
   <Toolbar>
     <IconButton aria-label="menu" color="inherit" edge="start" size="medium">
       <Menu />
     </IconButton>
 
     <Typography style={{ marginLeft: 8 }} variant="h6">
-      Title
+      {title}
     </Typography>
   </Toolbar>
 );
@@ -28,7 +31,7 @@ const appBarChildren = (
  */
 export default {
   args: {
-    children: appBarChildren,
+    children: createAppBarChildren('Title'),
     position: 'static',
   },
   component: AppBar,
@@ -41,8 +44,102 @@ export default {
 
 type Story = StoryObj<AppBarProps>;
 
-export const Primary: Story = { args: { color: 'primary' } };
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
+  args: { color: 'primary' },
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
 
-export const Secondary: Story = { args: { color: 'secondary' } };
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: { color: 'primary' },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, AppBar),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
 
-export const Transparent: Story = { args: { color: 'transparent' } };
+// Theme-specific stories (snapshotted in Chromatic)
+export const ENCOURA: Story = {
+  args: { color: 'primary' },
+  parameters: {
+    globals: { theme: 'ENCOURA' },
+  },
+  render: args => (
+    <div>
+      <AppBar {...args} color="primary">
+        {createAppBarChildren('Primary')}
+      </AppBar>
+      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Secondary')}
+      </AppBar>
+      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Transparent')}
+      </AppBar>
+    </div>
+  ),
+};
+
+export const ENCOURA_CLASSIC: Story = {
+  args: { color: 'primary' },
+  parameters: {
+    globals: { theme: 'ENCOURA_CLASSIC' },
+  },
+  render: args => (
+    <div>
+      <AppBar {...args} color="primary">
+        {createAppBarChildren('Primary')}
+      </AppBar>
+      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Secondary')}
+      </AppBar>
+      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Transparent')}
+      </AppBar>
+    </div>
+  ),
+};
+
+export const ENCOURAGE: Story = {
+  args: { color: 'primary' },
+  parameters: {
+    globals: { theme: 'ENCOURAGE' },
+  },
+  render: args => (
+    <div>
+      <AppBar {...args} color="primary">
+        {createAppBarChildren('Primary')}
+      </AppBar>
+      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Secondary')}
+      </AppBar>
+      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Transparent')}
+      </AppBar>
+    </div>
+  ),
+};
+
+export const ENCOURAGE_E4E: Story = {
+  args: { color: 'primary' },
+  parameters: {
+    globals: { theme: 'ENCOURAGE_E4E' },
+  },
+  render: args => (
+    <div>
+      <AppBar {...args} color="primary">
+        {createAppBarChildren('Primary')}
+      </AppBar>
+      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Secondary')}
+      </AppBar>
+      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
+        {createAppBarChildren('Transparent')}
+      </AppBar>
+    </div>
+  ),
+};
