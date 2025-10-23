@@ -35,7 +35,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r1»"
+            name="_r_1_"
             type="radio"
             value="one"
           />
@@ -82,7 +82,7 @@ exports[`FormRadioGroup ACT theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r1»"
+            name="_r_1_"
             type="radio"
             value="two"
           />
@@ -158,7 +158,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r3»"
+            name="_r_3_"
             type="radio"
             value="one"
           />
@@ -204,7 +204,7 @@ exports[`FormRadioGroup ACT_ET theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r3»"
+            name="_r_3_"
             type="radio"
             value="two"
           />
@@ -280,7 +280,7 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r5»"
+            name="_r_5_"
             type="radio"
             value="one"
           />
@@ -326,7 +326,7 @@ exports[`FormRadioGroup ENCOURA theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r5»"
+            name="_r_5_"
             type="radio"
             value="two"
           />
@@ -402,7 +402,7 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r7»"
+            name="_r_7_"
             type="radio"
             value="one"
           />
@@ -448,7 +448,7 @@ exports[`FormRadioGroup ENCOURA_CLASSIC theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r7»"
+            name="_r_7_"
             type="radio"
             value="two"
           />
@@ -524,7 +524,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r9»"
+            name="_r_9_"
             type="radio"
             value="one"
           />
@@ -570,7 +570,7 @@ exports[`FormRadioGroup ENCOURAGE theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«r9»"
+            name="_r_9_"
             type="radio"
             value="two"
           />
@@ -646,7 +646,7 @@ exports[`FormRadioGroup ENCOURAGE_E4E theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«rb»"
+            name="_r_b_"
             type="radio"
             value="one"
           />
@@ -692,7 +692,7 @@ exports[`FormRadioGroup ENCOURAGE_E4E theme matches the snapshot 1`] = `
         >
           <input
             class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
-            name="«rb»"
+            name="_r_b_"
             type="radio"
             value="two"
           />

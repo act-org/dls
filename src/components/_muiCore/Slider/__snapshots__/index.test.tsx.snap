@@ -36,7 +36,7 @@ exports[`Slider ACT theme matches the snapshot 1`] = `
           max="100"
           min="0"
           step="1"
-          style="border: 0px; height: 100%; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
           type="range"
           value="0"
         />
@@ -82,7 +82,7 @@ exports[`Slider ACT_ET theme matches the snapshot 1`] = `
           max="100"
           min="0"
           step="1"
-          style="border: 0px; height: 100%; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
           type="range"
           value="0"
         />
@@ -128,7 +128,7 @@ exports[`Slider ENCOURA theme matches the snapshot 1`] = `
           max="100"
           min="0"
           step="1"
-          style="border: 0px; height: 100%; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
           type="range"
           value="0"
         />
@@ -174,7 +174,7 @@ exports[`Slider ENCOURA_CLASSIC theme matches the snapshot 1`] = `
           max="100"
           min="0"
           step="1"
-          style="border: 0px; height: 100%; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
           type="range"
           value="0"
         />
@@ -220,7 +220,7 @@ exports[`Slider ENCOURAGE theme matches the snapshot 1`] = `
           max="100"
           min="0"
           step="1"
-          style="border: 0px; height: 100%; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
           type="range"
           value="0"
         />
@@ -266,7 +266,7 @@ exports[`Slider ENCOURAGE_E4E theme matches the snapshot 1`] = `
           max="100"
           min="0"
           step="1"
-          style="border: 0px; height: 100%; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+          style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
           type="range"
           value="0"
         />

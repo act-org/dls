@@ -43,6 +43,7 @@ updates:
           - '@types/react-test-renderer'
       storybook:
         patterns:
+          - 'storybook'
           - '@storybook*'
       testing-library:
         patterns:
