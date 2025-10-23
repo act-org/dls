@@ -58,10 +58,10 @@ exports[`SearchBar ACT theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-w4cd9x"
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
       >
         <span
           aria-hidden="true"
@@ -132,10 +132,10 @@ exports[`SearchBar ACT_ET theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-w4cd9x"
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
       >
         <span
           aria-hidden="true"
@@ -206,10 +206,10 @@ exports[`SearchBar ENCOURA theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-w4cd9x"
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
       >
         <span
           aria-hidden="true"
@@ -280,10 +280,10 @@ exports[`SearchBar ENCOURA_CLASSIC theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-w4cd9x"
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
       >
         <span
           aria-hidden="true"
@@ -354,10 +354,10 @@ exports[`SearchBar ENCOURAGE theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-w4cd9x"
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
       >
         <span
           aria-hidden="true"
@@ -428,10 +428,10 @@ exports[`SearchBar ENCOURAGE_E4E theme matches the snapshot 1`] = `
     </div>
     <fieldset
       aria-hidden="true"
-      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
     >
       <legend
-        class="css-w4cd9x"
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
       >
         <span
           aria-hidden="true"
