@@ -76,14 +76,44 @@ const themeStories = ThemesArray.reduce(
     stories[theme] = createThemeStory<AppBarProps>(theme, {
       render: args => (
         <ThemeProvider theme={theme}>
-          <AppBar {...args} color="primary">
+          {/* Default Color */}
+          <AppBar {...args} color="default">
+            {createAppBarChildren('Default')}
+          </AppBar>
+
+          {/* Primary Color */}
+          <AppBar {...args} color="primary" style={{ marginTop: 16 }}>
             {createAppBarChildren('Primary')}
           </AppBar>
-          <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
+
+          {/* Secondary Color */}
+          <AppBar {...args} color="secondary" style={{ marginTop: 16 }}>
             {createAppBarChildren('Secondary')}
           </AppBar>
-          <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
+
+          {/* Transparent Color */}
+          <AppBar {...args} color="transparent" style={{ marginTop: 16 }}>
             {createAppBarChildren('Transparent')}
+          </AppBar>
+
+          {/* Error Color */}
+          <AppBar {...args} color="error" style={{ marginTop: 16 }}>
+            {createAppBarChildren('Error')}
+          </AppBar>
+
+          {/* Info Color */}
+          <AppBar {...args} color="info" style={{ marginTop: 16 }}>
+            {createAppBarChildren('Info')}
+          </AppBar>
+
+          {/* Success Color */}
+          <AppBar {...args} color="success" style={{ marginTop: 16 }}>
+            {createAppBarChildren('Success')}
+          </AppBar>
+
+          {/* Warning Color */}
+          <AppBar {...args} color="warning" style={{ marginTop: 16 }}>
+            {createAppBarChildren('Warning')}
           </AppBar>
         </ThemeProvider>
       ),
