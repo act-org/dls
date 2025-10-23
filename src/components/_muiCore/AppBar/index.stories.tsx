@@ -10,7 +10,10 @@ import { Meta, StoryObj } from '@storybook/react-webpack5';
 import Menu from 'mdi-material-ui/Menu';
 import React from 'react';
 
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { AppBar } from './internal';
 
@@ -64,82 +67,34 @@ export const PlaygroundStory: Story = {
 };
 
 // Theme-specific stories (snapshotted in Chromatic)
-export const ENCOURA: Story = {
-  args: { color: 'primary' },
-  parameters: {
-    globals: { theme: 'ENCOURA' },
-  },
-  render: args => (
-    <div>
-      <AppBar {...args} color="primary">
-        {createAppBarChildren('Primary')}
-      </AppBar>
-      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Secondary')}
-      </AppBar>
-      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Transparent')}
-      </AppBar>
-    </div>
-  ),
-};
+// Generate stories for each theme dynamically
 
-export const ENCOURA_CLASSIC: Story = {
-  args: { color: 'primary' },
-  parameters: {
-    globals: { theme: 'ENCOURA_CLASSIC' },
-  },
-  render: args => (
-    <div>
-      <AppBar {...args} color="primary">
-        {createAppBarChildren('Primary')}
-      </AppBar>
-      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Secondary')}
-      </AppBar>
-      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Transparent')}
-      </AppBar>
-    </div>
-  ),
-};
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<AppBarProps>(theme, {
+      render: args => (
+        <ThemeProvider theme={theme}>
+          <AppBar {...args} color="primary">
+            {createAppBarChildren('Primary')}
+          </AppBar>
+          <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
+            {createAppBarChildren('Secondary')}
+          </AppBar>
+          <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
+            {createAppBarChildren('Transparent')}
+          </AppBar>
+        </ThemeProvider>
+      ),
+    });
 
-export const ENCOURAGE: Story = {
-  args: { color: 'primary' },
-  parameters: {
-    globals: { theme: 'ENCOURAGE' },
+    return stories;
   },
-  render: args => (
-    <div>
-      <AppBar {...args} color="primary">
-        {createAppBarChildren('Primary')}
-      </AppBar>
-      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Secondary')}
-      </AppBar>
-      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Transparent')}
-      </AppBar>
-    </div>
-  ),
-};
+  {} as Record<string, Story>,
+);
 
-export const ENCOURAGE_E4E: Story = {
-  args: { color: 'primary' },
-  parameters: {
-    globals: { theme: 'ENCOURAGE_E4E' },
-  },
-  render: args => (
-    <div>
-      <AppBar {...args} color="primary">
-        {createAppBarChildren('Primary')}
-      </AppBar>
-      <AppBar {...args} color="secondary" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Secondary')}
-      </AppBar>
-      <AppBar {...args} color="transparent" style={{ marginTop: 8 }}>
-        {createAppBarChildren('Transparent')}
-      </AppBar>
-    </div>
-  ),
-};
+export const ThemeEncoura = themeStories.ENCOURA;
+export const ThemeEncouraClassic = themeStories.ENCOURA_CLASSIC;
+export const ThemeEncourage = themeStories.ENCOURAGE;
+export const ThemeEncourageE4e = themeStories.ENCOURAGE_E4E;
