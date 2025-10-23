@@ -5,13 +5,20 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+import { addons } from 'storybook/manager-api';
 import { create } from 'storybook/theming';
 
 import { version } from '../package.json';
 
-create({
-  base: 'light',
+const storybookTheme = create({
+  base: 'dark',
   brandImage: 'img/dls-logo.png',
   brandTitle: `Encoura Design Language System v${version}`,
   brandUrl: '/',
+  colorPrimary: '#003359',
+  colorSecondary: '#0097c2',
+});
+
+addons.setConfig({
+  theme: storybookTheme,
 });

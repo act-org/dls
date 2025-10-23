@@ -2,20 +2,23 @@
 
 <!-- markdownlint-disable no-inline-html -->
 
-<a href="https://www.npmjs.com/package/@encoura/dls">
+<a href="https://www.npmjs.com/package/@encoura/dls" style="margin-right:8px" target="\_blank">
   <img alt="Version" src="https://img.shields.io/npm/v/@encoura/dls"/>
-</a>&nbsp;<a href="https://github.com/nrccua/dls/actions/workflows/ci.yml">
+</a>
+<a href="https://github.com/nrccua/dls/actions/workflows/ci.yml" style="margin-right:8px" target="_blank">
   <img alt="Build" src="https://github.com/nrccua/dls/actions/workflows/ci.yml/badge.svg"/>
-</a>&nbsp;<a href="https://github.com/nrccua/dls/blob/master/LICENSE">
+</a>
+<a href="https://github.com/nrccua/dls/blob/master/LICENSE" style="margin-right:8px" target="_blank">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green"/>
-</a>&nbsp;<a href="https://www.npmjs.com/package/@encoura/dls">
+</a>
+<a href="https://www.npmjs.com/package/@encoura/dls" style="margin-right:8px" target="_blank">
   <img alt="Downloads" src="https://img.shields.io/npm/dw/@encoura/dls?color=orange"/>
 </a>
 
 <!-- markdownlint-enable no-inline-html -->
 
 The Design Language System for Encoura front-end projects. View the UI components
-[in the Storybook documentation](https://act-org.github.io/dls).
+[in the Storybook documentation](https://main--68fa799bcb1fd1fee72cd08c.chromatic.com).
 
 ## Project Setup
 
