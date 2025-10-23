@@ -13,7 +13,7 @@ import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
 import { ThemesArray } from '~/styles/themes';
 
-import { RadioGroup, FormControl, FormLabel, FormControlLabel, FormHelperText, Radio, RadioGroupProps } from './internal';
+import { FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup, RadioGroupProps } from './internal';
 
 /**
  * The default RadioGroup exports
@@ -230,21 +230,17 @@ const themeStories = ThemesArray.reduce(
             <FormControl>
               <FormLabel>RadioGroup with Long Labels</FormLabel>
               <RadioGroup defaultValue="long1">
-                <FormControlLabel 
-                  control={<Radio />} 
-                  label="This is a very long label that might wrap to multiple lines and should be handled gracefully" 
-                  value="long1" 
+                <FormControlLabel
+                  control={<Radio />}
+                  label="This is a very long label that might wrap to multiple lines and should be handled gracefully"
+                  value="long1"
                 />
-                <FormControlLabel 
-                  control={<Radio />} 
-                  label="Another long label option that demonstrates how the component handles extended text content" 
-                  value="long2" 
+                <FormControlLabel
+                  control={<Radio />}
+                  label="Another long label option that demonstrates how the component handles extended text content"
+                  value="long2"
                 />
-                <FormControlLabel 
-                  control={<Radio />} 
-                  label="Short option" 
-                  value="short" 
-                />
+                <FormControlLabel control={<Radio />} label="Short option" value="short" />
               </RadioGroup>
             </FormControl>
           </StoryVariation>
