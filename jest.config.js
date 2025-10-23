@@ -18,14 +18,16 @@ const { compilerOptions } = tsconfig;
 
 const config = {
   collectCoverage: true,
-  collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**', '!**/icons/**', '!**/*stories*.tsx'],
+  collectCoverageFrom: ['**/*.{ts,tsx}'],
   coveragePathIgnorePatterns: [
-    'src/styles/index.ts',
-    'src/constants/index.ts',
-    'src/components/index.ts',
+    'src/_foundations',
+    'src/constants',
+    'src/context/index.ts',
+    'src/helpers/index.ts',
+    'src/components',
+    'src/hooks/index.ts',
     'src/index.ts',
-    'src/styles/index.ts',
-    'internal.tsx',
+    'src/styles',
   ],
   coverageReporters: ['text', 'html'],
   moduleNameMapper: {

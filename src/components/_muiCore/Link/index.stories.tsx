@@ -22,6 +22,7 @@ import { Link, LinkProps } from './internal';
 export default {
   args: {
     children: <Typography>Click Me</Typography>,
+    href: '#default',
   },
   component: Link,
   parameters: {
@@ -38,6 +39,7 @@ export const Documentation: Story = {
   args: {
     children: <Typography>Click Me</Typography>,
     color: 'primary',
+    href: '#documentation',
   },
   parameters: {
     chromatic: { disable: true },
@@ -49,6 +51,7 @@ export const PlaygroundStory: Story = {
   args: {
     children: <Typography>Click Me</Typography>,
     color: 'primary',
+    href: '#playground',
   },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground({}, Link),
@@ -69,67 +72,67 @@ const themeStories = ThemesArray.reduce(
       render: () => (
         <ThemeProvider theme={theme}>
           <StoryVariation label="Primary">
-            <Link color="primary">
+            <Link color="primary" href="#primary">
               <Typography>Primary Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Secondary">
-            <Link color="secondary">
+            <Link color="secondary" href="#secondary">
               <Typography>Secondary Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Text Primary">
-            <Link color="textPrimary">
+            <Link color="textPrimary" href="#text-primary">
               <Typography>Text Primary Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Text Secondary">
-            <Link color="textSecondary">
+            <Link color="textSecondary" href="#text-secondary">
               <Typography>Text Secondary Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Error">
-            <Link color="error">
+            <Link color="error" href="#error">
               <Typography>Error Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Info">
-            <Link color="info">
+            <Link color="info" href="#info">
               <Typography>Info Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Success">
-            <Link color="success">
+            <Link color="success" href="#success">
               <Typography>Success Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Warning">
-            <Link color="warning">
+            <Link color="warning" href="#warning">
               <Typography>Warning Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="No Underline">
-            <Link color="primary" underline="none">
+            <Link color="primary" href="#no-underline" underline="none">
               <Typography>No Underline Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Hover Underline">
-            <Link color="primary" underline="hover">
+            <Link color="primary" href="#hover-underline" underline="hover">
               <Typography>Hover Underline Link</Typography>
             </Link>
           </StoryVariation>
 
           <StoryVariation label="Always Underline">
-            <Link color="primary" underline="always">
+            <Link color="primary" href="#always-underline" underline="always">
               <Typography>Always Underline Link</Typography>
             </Link>
           </StoryVariation>
