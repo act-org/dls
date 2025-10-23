@@ -65,35 +65,35 @@ const themeStories = ThemesArray.reduce(
       render: () => (
         <ThemeProvider theme={theme}>
           <StoryVariation label="Primary">
-            <FormControlLabel control={<Switch color="primary" checked />} label={<Typography>Primary Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="primary" />} label={<Typography>Primary Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Secondary">
-            <FormControlLabel control={<Switch color="secondary" checked />} label={<Typography>Secondary Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="secondary" />} label={<Typography>Secondary Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Error">
-            <FormControlLabel control={<Switch color="error" checked />} label={<Typography>Error Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="error" />} label={<Typography>Error Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Info">
-            <FormControlLabel control={<Switch color="info" checked />} label={<Typography>Info Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="info" />} label={<Typography>Info Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Success">
-            <FormControlLabel control={<Switch color="success" checked />} label={<Typography>Success Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="success" />} label={<Typography>Success Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Warning">
-            <FormControlLabel control={<Switch color="warning" checked />} label={<Typography>Warning Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="warning" />} label={<Typography>Warning Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Small Size">
-            <FormControlLabel control={<Switch color="primary" size="small" checked />} label={<Typography>Small Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="primary" size="small" />} label={<Typography>Small Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Medium Size">
-            <FormControlLabel control={<Switch color="primary" size="medium" checked />} label={<Typography>Medium Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="primary" size="medium" />} label={<Typography>Medium Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Unchecked">
@@ -105,11 +105,11 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Disabled Checked">
-            <FormControlLabel control={<Switch color="primary" disabled checked />} label={<Typography>Disabled Checked Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="primary" disabled />} label={<Typography>Disabled Checked Switch</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Required">
-            <FormControlLabel control={<Switch color="primary" required checked />} label={<Typography>Required Switch</Typography>} />
+            <FormControlLabel control={<Switch checked color="primary" required />} label={<Typography>Required Switch</Typography>} />
           </StoryVariation>
         </ThemeProvider>
       ),

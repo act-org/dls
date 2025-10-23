@@ -39,8 +39,8 @@ type Story = StoryObj<ButtonProps>;
 export const Documentation: Story = {
   args: {
     children: 'Click Me',
-    variant: 'contained',
     color: 'primary',
+    variant: 'contained',
   },
   parameters: {
     chromatic: { disable: true },
@@ -51,8 +51,8 @@ export const Documentation: Story = {
 export const PlaygroundStory: Story = {
   args: {
     children: 'Click Me',
-    variant: 'contained',
     color: 'primary',
+    variant: 'contained',
   },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground({}, Button),

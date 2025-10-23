@@ -81,6 +81,10 @@ export const PlaygroundStory: Story = {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground({}, Dialog),
 
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
+  },
   render: () => (
     <DialogWithLauncher label="Open Playground Dialog">
       <DialogTitle>Dialog Title</DialogTitle>
@@ -93,10 +97,6 @@ export const PlaygroundStory: Story = {
       </DialogActions>
     </DialogWithLauncher>
   ),
-  name: 'Playground',
-  parameters: {
-    chromatic: { disable: true },
-  },
 };
 
 // Theme-specific stories (snapshotted in Chromatic)
@@ -143,7 +143,7 @@ const themeStories = ThemesArray.reduce(
               <DialogContent>
                 <Typography>Please fill out the form below with your information.</Typography>
                 <div style={{ marginTop: 16 }}>
-                  <input placeholder="Name" style={{ padding: 8, width: '100%', marginBottom: 8 }} />
+                  <input placeholder="Name" style={{ marginBottom: 8, padding: 8, width: '100%' }} />
                   <input placeholder="Email" style={{ padding: 8, width: '100%' }} />
                 </div>
               </DialogContent>

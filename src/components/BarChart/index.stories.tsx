@@ -129,7 +129,7 @@ const themeStories = ThemesArray.reduce(
                   content: ({ active, payload, label }) => {
                     if (active && payload && payload.length) {
                       return (
-                        <div style={{ backgroundColor: '#FFF', padding: '8px', border: '1px solid #ccc' }}>
+                        <div style={{ backgroundColor: '#FFF', border: '1px solid #ccc', padding: '8px' }}>
                           <Typography variant="body1">{`${label} : ${payload[0].value}`}</Typography>
                           <Typography variant="body2">Custom tooltip content</Typography>
                         </div>
@@ -190,43 +190,6 @@ const themeStories = ThemesArray.reduce(
             <div style={{ height: 400, width: '100%' }}>
               <BarChart
                 barKeys={defaultBarKeys}
-                children={
-                  <>
-                    <Scatter
-                      dataKey="2019scatter"
-                      fill="red"
-                      shape={
-                        (({ fill, height, width, x, cy }: { fill: string; height: number; width: number; x: number; cy: number }) => (
-                          <g>
-                            <circle cx={x + width / 2} cy={Math.floor(cy - height / 2 - height * 2)} fill={fill} r={height} />
-                          </g>
-                        )) as ScatterCustomizedShape
-                      }
-                    />
-                    <Scatter
-                      dataKey="2020scatter"
-                      fill="red"
-                      shape={
-                        (({ fill, height, width, x, y }: { fill: string; height: number; width: number; x: number; y: number }) => (
-                          <g>
-                            <circle cx={x + width / 2} cy={y + height / 2} fill={fill} r={height} />
-                          </g>
-                        )) as ScatterCustomizedShape
-                      }
-                    />
-                    <Scatter
-                      dataKey="2021scatter"
-                      fill="red"
-                      shape={
-                        (({ fill, height, width, x, cy }: { fill: string; height: number; width: number; x: number; cy: number }) => (
-                          <g>
-                            <circle cx={x + width / 2} cy={cy + height / 2 + height * 2} fill={fill} r={height} />
-                          </g>
-                        )) as ScatterCustomizedShape
-                      }
-                    />
-                  </>
-                }
                 data={defaultData}
                 title="With Scatter Points"
                 tooltipProps={{
@@ -240,7 +203,43 @@ const themeStories = ThemesArray.reduce(
                     return <div>Scatter: {scatterInfo.value}</div>;
                   },
                 }}
-              />
+              >
+                <>
+                  <Scatter
+                    dataKey="2019scatter"
+                    fill="red"
+                    shape={
+                      (({ fill, height, width, x, cy }: { fill: string; height: number; width: number; x: number; cy: number }) => (
+                        <g>
+                          <circle cx={x + width / 2} cy={Math.floor(cy - height / 2 - height * 2)} fill={fill} r={height} />
+                        </g>
+                      )) as ScatterCustomizedShape
+                    }
+                  />
+                  <Scatter
+                    dataKey="2020scatter"
+                    fill="red"
+                    shape={
+                      (({ fill, height, width, x, y }: { fill: string; height: number; width: number; x: number; y: number }) => (
+                        <g>
+                          <circle cx={x + width / 2} cy={y + height / 2} fill={fill} r={height} />
+                        </g>
+                      )) as ScatterCustomizedShape
+                    }
+                  />
+                  <Scatter
+                    dataKey="2021scatter"
+                    fill="red"
+                    shape={
+                      (({ fill, height, width, x, cy }: { fill: string; height: number; width: number; x: number; cy: number }) => (
+                        <g>
+                          <circle cx={x + width / 2} cy={cy + height / 2 + height * 2} fill={fill} r={height} />
+                        </g>
+                      )) as ScatterCustomizedShape
+                    }
+                  />
+                </>
+              </BarChart>
             </div>
           </StoryVariation>
 

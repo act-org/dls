@@ -170,8 +170,8 @@ const themeStories = ThemesArray.reduce(
                 height={600}
                 xAverageLineProps={{ stroke: 'red', strokeDasharray: '5 5' }}
                 xLabelValue="Inquiries to Applicants"
-                yAxisProps={{ domain: [0, 100] }}
                 yAverageLineProps={{ stroke: 'blue', strokeDasharray: '5 5' }}
+                yAxisProps={{ domain: [0, 100] }}
                 yLabelValue="Inquiries"
               />
             </div>
@@ -194,8 +194,8 @@ const themeStories = ThemesArray.reduce(
                 }}
                 xLabelValue="Inquiries to Applicants"
                 yAxisProps={{
-                  domain: [0, 100],
                   axisLine: true,
+                  domain: [0, 100],
                   tickLine: true,
                 }}
                 yLabelValue="Inquiries"

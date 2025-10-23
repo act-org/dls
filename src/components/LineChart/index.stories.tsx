@@ -161,7 +161,7 @@ const themeStories = ThemesArray.reduce(
                 data={processDataFn(DATA)}
                 height={450}
                 lineKeys={defaultLineKeys}
-                lineProps={{ strokeWidth: 3, strokeDasharray: '5 5' }}
+                lineProps={{ strokeDasharray: '5 5', strokeWidth: 3 }}
                 maxHeight={450}
                 width={65 + 56 * DATA.length}
                 yAxisProps={{
@@ -217,9 +217,9 @@ const themeStories = ThemesArray.reduce(
                 maxHeight={450}
                 width={65 + 56 * DATA.length}
                 yAxisProps={{
+                  axisLine: true,
                   dataKey: yAxisDataKey(),
                   label: { angle: -90, position: 'insideLeft', value: 'Student Count' },
-                  axisLine: true,
                   tickLine: true,
                 }}
               />

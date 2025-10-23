@@ -110,7 +110,7 @@ const themeStories = ThemesArray.reduce(
               <IconButton aria-label="menu" color="inherit" edge="start" size="large">
                 <Menu />
               </IconButton>
-              <Typography color="inherit" variant="h6" sx={{ flexGrow: 1 }}>
+              <Typography color="inherit" sx={{ flexGrow: 1 }} variant="h6">
                 With Buttons
               </Typography>
               <Button color="inherit">Login</Button>
@@ -166,7 +166,7 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="Centered Content">
             <Toolbar>
-              <Typography color="inherit" variant="h6" sx={{ flexGrow: 1, textAlign: 'center' }}>
+              <Typography color="inherit" sx={{ flexGrow: 1, textAlign: 'center' }} variant="h6">
                 Centered Title
               </Typography>
             </Toolbar>
@@ -204,7 +204,7 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="With Actions">
             <Toolbar>
-              <Typography color="inherit" variant="h6" sx={{ flexGrow: 1 }}>
+              <Typography color="inherit" sx={{ flexGrow: 1 }} variant="h6">
                 With Actions
               </Typography>
               <Button color="inherit" size="small">
@@ -221,7 +221,7 @@ const themeStories = ThemesArray.reduce(
               <IconButton aria-label="menu" color="inherit" edge="start" size="large">
                 <Menu />
               </IconButton>
-              <Typography color="inherit" variant="h6" sx={{ flexGrow: 1 }}>
+              <Typography color="inherit" sx={{ flexGrow: 1 }} variant="h6">
                 Full Width Toolbar
               </Typography>
               <Button color="inherit">Settings</Button>

@@ -158,7 +158,7 @@ const themeStories = ThemesArray.reduce(
                   content: ({ active, payload, label }) => {
                     if (active && payload && payload.length) {
                       return (
-                        <div style={{ backgroundColor: '#FFF', padding: '8px', border: '1px solid #ccc' }}>
+                        <div style={{ backgroundColor: '#FFF', border: '1px solid #ccc', padding: '8px' }}>
                           <Typography variant="body1">{`${label} : ${payload[0].value}`}</Typography>
                           <Typography variant="body2">Custom tooltip content</Typography>
                         </div>

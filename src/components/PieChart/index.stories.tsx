@@ -107,6 +107,7 @@ const themeStories = ThemesArray.reduce(
           <StoryVariation label="With Highlight">
             <div style={{ height: 400, width: '100%' }}>
               <PieChart
+                data={moreOptionsData}
                 HighlightComponent={
                   (({ payload, availableViewBoxDimension }) => (
                     <Box height={availableViewBoxDimension} width={availableViewBoxDimension} zIndex={-1}>
@@ -115,30 +116,25 @@ const themeStories = ThemesArray.reduce(
                     </Box>
                   )) as HighlightComponentType
                 }
-                data={moreOptionsData}
               />
             </div>
           </StoryVariation>
 
           <StoryVariation label="Pie Within A Pie">
             <div style={{ height: 400, width: '100%' }}>
-              <PieChart
-                children={
-                  <Pie
-                    data={[
-                      { name: 'Group A', value: 400 },
-                      { name: 'Group B', value: 300 },
-                      { name: 'Group C', value: 300 },
-                      { name: 'Group D', value: 200 },
-                    ]}
-                    dataKey="value"
-                    fill="#8884d8"
-                    outerRadius="70%"
-                  />
-                }
-                data={defaultData}
-                legendProps={{ align: 'right' }}
-              />
+              <PieChart data={defaultData} legendProps={{ align: 'right' }}>
+                <Pie
+                  data={[
+                    { name: 'Group A', value: 400 },
+                    { name: 'Group B', value: 300 },
+                    { name: 'Group C', value: 300 },
+                    { name: 'Group D', value: 200 },
+                  ]}
+                  dataKey="value"
+                  fill="#8884d8"
+                  outerRadius="70%"
+                />
+              </PieChart>
             </div>
           </StoryVariation>
 
@@ -150,7 +146,7 @@ const themeStories = ThemesArray.reduce(
                   content: ({ active, payload }) => {
                     if (active && payload && payload.length) {
                       return (
-                        <div style={{ backgroundColor: '#FFF', padding: '8px', border: '1px solid #ccc' }}>
+                        <div style={{ backgroundColor: '#FFF', border: '1px solid #ccc', padding: '8px' }}>
                           <Typography variant="body1">{`${payload[0].value}`}</Typography>
                           <Typography variant="body2">Custom tooltip content</Typography>
                         </div>

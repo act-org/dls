@@ -114,32 +114,21 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="With Other Controls">
             <div style={{ height: 400, width: '100%' }}>
-              <Map
-                children={
-                  <>
-                    <GeolocateControl position="top-left" />
-                    <FullscreenControl position="top-left" />
-                    <ScaleControl />
-                  </>
-                }
-                data={defaultData}
-                height={400}
-                mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''}
-                sourceId="otherControls"
-                width="100%"
-              />
+              <Map data={defaultData} height={400} mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''} sourceId="otherControls" width="100%">
+                <>
+                  <GeolocateControl position="top-left" />
+                  <FullscreenControl position="top-left" />
+                  <ScaleControl />
+                </>
+              </Map>
             </div>
           </StoryVariation>
 
           <StoryVariation label="With Marker">
             <div style={{ height: 400, width: '100%' }}>
-              <Map
-                children={<Marker color="red" latitude={37.8} longitude={-122.4} />}
-                height={400}
-                mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''}
-                sourceId="children"
-                width="100%"
-              />
+              <Map height={400} mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''} sourceId="children" width="100%">
+                <Marker color="red" latitude={37.8} longitude={-122.4} />
+              </Map>
             </div>
           </StoryVariation>
         </ThemeProvider>

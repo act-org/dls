@@ -8,6 +8,7 @@
 import { Button } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import dayjs from 'dayjs';
+import noop from 'lodash/noop';
 import { ReactElement, useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
@@ -36,13 +37,13 @@ const Template: StoryFn<StoryProps> = args => {
       </Button>
       <DialogContinueSession
         {...args}
-        open={open}
         onContinue={(): void => {
           setOpen(false);
         }}
         onExpire={(): void => {
           window.location.reload();
         }}
+        open={open}
       />
     </>
   );
@@ -62,13 +63,13 @@ const DialogWithLauncher = ({ label, ...dialogProps }: Omit<DialogContinueSessio
       </Button>
       <DialogContinueSession
         {...dialogProps}
-        open={open}
         onContinue={(): void => {
           setOpen(false);
         }}
         onExpire={(): void => {
           window.location.reload();
         }}
+        open={open}
       />
     </>
   );
@@ -152,15 +153,15 @@ const themeStories = ThemesArray.reduce(
       render: () => (
         <ThemeProvider theme={theme}>
           <StoryVariation label="Default">
-            <DialogWithLauncher expiresAt={dayjs().add(30, 'minutes').toDate()} label="Default Dialog" onContinue={() => {}} onExpire={() => {}} />
+            <DialogWithLauncher expiresAt={dayjs().add(30, 'minutes').toDate()} label="Default Dialog" onContinue={noop} onExpire={noop} />
           </StoryVariation>
 
           <StoryVariation label="Custom Title">
             <DialogWithLauncher
               expiresAt={dayjs().add(30, 'minutes').toDate()}
               label="Custom Title Dialog"
-              onContinue={() => {}}
-              onExpire={() => {}}
+              onContinue={noop}
+              onExpire={noop}
               title="Custom Session Title"
             />
           </StoryVariation>
@@ -171,8 +172,8 @@ const themeStories = ThemesArray.reduce(
               confirmationText="Keep Session"
               expiresAt={dayjs().add(30, 'minutes').toDate()}
               label="Custom Text Dialog"
-              onContinue={() => {}}
-              onExpire={() => {}}
+              onContinue={noop}
+              onExpire={noop}
             />
           </StoryVariation>
         </ThemeProvider>

@@ -168,7 +168,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="No Wrap">
-            <Typography noWrap variant="body1" sx={{ maxWidth: 200 }}>
+            <Typography noWrap sx={{ maxWidth: 200 }} variant="body1">
               This is a very long text that should be truncated with no wrap
             </Typography>
           </StoryVariation>

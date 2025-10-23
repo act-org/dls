@@ -6,6 +6,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
+import noop from 'lodash/noop';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -161,7 +162,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Closable">
-            <Alert severity="info" title="Closable Alert" variant="standard" onClose={() => {}}>
+            <Alert onClose={noop} severity="info" title="Closable Alert" variant="standard">
               This is a closable alert.
             </Alert>
           </StoryVariation>

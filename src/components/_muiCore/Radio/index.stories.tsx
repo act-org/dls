@@ -65,35 +65,35 @@ const themeStories = ThemesArray.reduce(
       render: () => (
         <ThemeProvider theme={theme}>
           <StoryVariation label="Primary">
-            <FormControlLabel control={<Radio color="primary" checked />} label={<Typography>Primary Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="primary" />} label={<Typography>Primary Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Secondary">
-            <FormControlLabel control={<Radio color="secondary" checked />} label={<Typography>Secondary Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="secondary" />} label={<Typography>Secondary Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Error">
-            <FormControlLabel control={<Radio color="error" checked />} label={<Typography>Error Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="error" />} label={<Typography>Error Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Info">
-            <FormControlLabel control={<Radio color="info" checked />} label={<Typography>Info Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="info" />} label={<Typography>Info Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Success">
-            <FormControlLabel control={<Radio color="success" checked />} label={<Typography>Success Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="success" />} label={<Typography>Success Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Warning">
-            <FormControlLabel control={<Radio color="warning" checked />} label={<Typography>Warning Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="warning" />} label={<Typography>Warning Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Small Size">
-            <FormControlLabel control={<Radio color="primary" size="small" checked />} label={<Typography>Small Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="primary" size="small" />} label={<Typography>Small Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Medium Size">
-            <FormControlLabel control={<Radio color="primary" size="medium" checked />} label={<Typography>Medium Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="primary" size="medium" />} label={<Typography>Medium Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Unchecked">
@@ -105,11 +105,11 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Disabled Checked">
-            <FormControlLabel control={<Radio color="primary" disabled checked />} label={<Typography>Disabled Checked Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="primary" disabled />} label={<Typography>Disabled Checked Radio</Typography>} />
           </StoryVariation>
 
           <StoryVariation label="Required">
-            <FormControlLabel control={<Radio color="primary" required checked />} label={<Typography>Required Radio</Typography>} />
+            <FormControlLabel control={<Radio checked color="primary" required />} label={<Typography>Required Radio</Typography>} />
           </StoryVariation>
         </ThemeProvider>
       ),

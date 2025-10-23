@@ -239,15 +239,15 @@ const themeStories = ThemesArray.reduce(
               autoHeight
               columns={columns}
               filterMode="client"
-              paginationMode="client"
-              rows={rows}
-              sortingMode="client"
               initialState={{
                 pagination: {
                   paginationModel: { page: 0, pageSize: 5 },
                 },
               }}
               pageSizeOptions={[5, 10, 25]}
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
             />
           </StoryVariation>
 
@@ -264,9 +264,6 @@ const themeStories = ThemesArray.reduce(
               autoHeight
               columns={columns}
               filterMode="client"
-              paginationMode="client"
-              rows={rows}
-              sortingMode="client"
               initialState={{
                 filter: {
                   filterModel: {
@@ -280,6 +277,9 @@ const themeStories = ThemesArray.reduce(
                   },
                 },
               }}
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
             />
           </StoryVariation>
 
@@ -288,14 +288,14 @@ const themeStories = ThemesArray.reduce(
               autoHeight
               columns={columns}
               filterMode="client"
-              paginationMode="client"
-              rows={rows}
-              sortingMode="client"
               initialState={{
                 sorting: {
                   sortModel: [{ field: 'age', sort: 'desc' }],
                 },
               }}
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
             />
           </StoryVariation>
 
@@ -308,9 +308,6 @@ const themeStories = ThemesArray.reduce(
               autoHeight
               columns={columns}
               filterMode="client"
-              paginationMode="client"
-              rows={rows}
-              sortingMode="client"
               initialState={{
                 columns: {
                   columnVisibilityModel: {
@@ -318,6 +315,9 @@ const themeStories = ThemesArray.reduce(
                   },
                 },
               }}
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
             />
           </StoryVariation>
 
