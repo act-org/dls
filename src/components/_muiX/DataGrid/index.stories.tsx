@@ -7,6 +7,7 @@
 
 import { DataGridProps, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
+import constant from 'lodash/constant';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -16,12 +17,12 @@ import { ThemesArray } from '~/styles/themes';
 
 import { DataGrid } from './internal';
 
-type StoryGridRow = {
+interface StoryGridRow {
   id: number;
   age?: number | null;
   firstName?: string | null;
   lastName?: string | null;
-};
+}
 
 const columns: GridColDef[] = [
   {
@@ -322,7 +323,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="With Row Height">
-            <DataGrid autoHeight columns={columns} filterMode="client" getRowHeight={() => 60} paginationMode="client" rows={rows} sortingMode="client" />
+            <DataGrid autoHeight columns={columns} filterMode="client" getRowHeight={constant(60)} paginationMode="client" rows={rows} sortingMode="client" />
           </StoryVariation>
 
           <StoryVariation label="With Custom Styling">
