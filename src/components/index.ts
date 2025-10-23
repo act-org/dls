@@ -8,7 +8,6 @@
 // ACTIVE COMPONENTS -----------------------------------------------------------
 
 export * from './Alert';
-export * from './AppBarNavigation';
 export * from './AreaChart';
 export * from './BarChart';
 export * from './ConfirmDialog';
