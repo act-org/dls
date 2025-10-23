@@ -12,6 +12,6 @@ import { version } from '../package.json';
 create({
   base: 'light',
   brandImage: 'img/dls-logo.png',
-  brandTitle: `ACT Design Language System v${version}`,
+  brandTitle: `Encoura Design Language System v${version}`,
   brandUrl: '/',
 });

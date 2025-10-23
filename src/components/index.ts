@@ -5,8 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-// ACTIVE COMPONENTS -----------------------------------------------------------
-
 export * from './Alert';
 export * from './AreaChart';
 export * from './BarChart';
@@ -16,17 +14,10 @@ export * from './DataTable';
 export * from './Dialog';
 export * from './DialogContinueSession';
 export * from './EmptyState';
-export * from './FormCheckbox';
-export * from './FormInput';
-export * from './FormRadio';
-export * from './FormRadioGroup';
-export * from './FormSelect';
-export * from './FormSwitch';
 export * from './GeomarketMap';
 export * from './GridGenerator';
 export * from './HeatMap';
 export * from './IdleTimer';
-export * from './InputLabel';
 export * from './LineChart';
 export * from './Loading';
 export * from './Map';
@@ -43,5 +34,3 @@ export * from './StackedBarChart';
 export * from './StateMap';
 export * from './TablePaginationActions';
 export * from './ThemeProvider';
-
-// WIP COMPONENTS --------------------------------------------------------------

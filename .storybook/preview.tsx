@@ -85,7 +85,6 @@ const preview: Preview = {
           'Molecules',
           'Organisms',
           'Utilities',
-          'Forms (WIP)',
           'Deprecated',
         ],
       },
