@@ -11,7 +11,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import isNumber from 'lodash/isNumber';
 import PackageVariant from 'mdi-material-ui/PackageVariant';
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -188,6 +188,100 @@ export const PlaygroundStory: Story = {
 // Theme-specific stories (snapshotted in Chromatic)
 // Generate stories for each theme dynamically
 
+// Component for theme stories that includes required props
+const ThemeStoryComponent: FC<Partial<DataTableProps<Item>>> = props => {
+  const [limit, setLimit] = useState<number | undefined>(props.limit);
+  const [offset, setOffset] = useState<number | undefined>(props.offset);
+  const [sortObject, setSortObject] = useState<SortObject>({
+    sortBy: 'id',
+    sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
+  });
+
+  const totalCount = props.totalCount || 10;
+  let items: Item[] = [...Array(totalCount)].map((_, i): any => ({
+    fieldA: `Field A${i + 1}`,
+    fieldB: `Field B${i + 1}`,
+    fieldC: `Field C${i + 1}`,
+    id: i + 1,
+    name: `Item ${i + 1}`,
+    updatedAt: dayjs()
+      .subtract(2, 'year')
+      .subtract(i + 1, 'day')
+      .toDate(),
+  }));
+
+  if (isNumber(limit) && isNumber(offset)) {
+    items = items.slice(offset, offset + limit);
+  }
+
+  // sort items
+  items = items.sort(sort<Item>(sortObject));
+
+  return (
+    <DataTable<Item>
+      {...props}
+      columns={[
+        {
+          label: 'ID',
+          renderValue: (i: Item): string => i.id,
+          sortBy: 'id',
+          style: {
+            width: 50,
+          },
+        },
+        {
+          label: 'Name',
+          renderValue: (i: Item): string => i.name,
+          sortBy: 'name',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field A',
+          renderValue: (i: Item): string => i.fieldA,
+          sortBy: 'fieldA',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field B',
+          renderValue: (i: Item): string => i.fieldB,
+          sortBy: 'fieldB',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field C',
+          renderValue: (i: Item): string => i.fieldC,
+          sortBy: 'fieldC',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Updated',
+          renderValue: (i: Item): string => dayjs(new Date(i.updatedAt)).fromNow(),
+          sortBy: 'updatedAt',
+          style: {
+            width: 110,
+          },
+        },
+      ]}
+      currentSortObject={sortObject}
+      items={items}
+      limit={limit}
+      offset={offset}
+      onChangeLimit={setLimit}
+      onChangeOffset={setOffset}
+      onChangeSort={setSortObject}
+      totalCount={totalCount}
+    />
+  );
+};
+
 // Export theme-specific stories dynamically
 const themeStories = ThemesArray.reduce(
   (stories, theme) => {
@@ -196,19 +290,19 @@ const themeStories = ThemesArray.reduce(
       render: () => (
         <ThemeProvider theme={theme}>
           <StoryVariation label="Default">
-            <Template totalCount={10} />
+            <ThemeStoryComponent totalCount={10} />
           </StoryVariation>
 
           <StoryVariation label="Primary Color">
-            <Template color="primary" totalCount={10} />
+            <ThemeStoryComponent color="primary" totalCount={10} />
           </StoryVariation>
 
           <StoryVariation label="Secondary Color">
-            <Template color="secondary" totalCount={10} />
+            <ThemeStoryComponent color="secondary" totalCount={10} />
           </StoryVariation>
 
           <StoryVariation label="Linked Rows">
-            <Template
+            <ThemeStoryComponent
               RowWrapper={({ name }: Item, children) => (
                 <Link
                   href={`https://www.google.com/search?q=${name}`}
@@ -226,7 +320,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Empty State">
-            <Template
+            <ThemeStoryComponent
               emptyStateProps={{
                 description: 'No Items Found',
                 Icon: PackageVariant,
@@ -236,7 +330,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Paginated">
-            <Template limit={10} offset={0} rowsPerPageOptions={[10, 25, 50]} totalCount={100} />
+            <ThemeStoryComponent limit={10} offset={0} rowsPerPageOptions={[10, 25, 50]} totalCount={100} />
           </StoryVariation>
         </ThemeProvider>
       ),
