@@ -219,158 +219,134 @@ const themeStories = ThemesArray.reduce(
       render: () => (
         <ThemeProvider theme={theme}>
           <StoryVariation label="Basic DataGrid">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid autoHeight columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
-            </div>
+            <DataGrid autoHeight columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
           </StoryVariation>
 
           <StoryVariation label="With Toolbar">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid
-                autoHeight
-                columns={columns}
-                filterMode="client"
-                paginationMode="client"
-                rows={rows}
-                slots={{ toolbar: GridToolbar }}
-                sortingMode="client"
-              />
-            </div>
+            <DataGrid
+              autoHeight
+              columns={columns}
+              filterMode="client"
+              paginationMode="client"
+              rows={rows}
+              slots={{ toolbar: GridToolbar }}
+              sortingMode="client"
+            />
           </StoryVariation>
 
           <StoryVariation label="With Pagination">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid
-                autoHeight
-                columns={columns}
-                filterMode="client"
-                paginationMode="client"
-                rows={rows}
-                sortingMode="client"
-                initialState={{
-                  pagination: {
-                    paginationModel: { page: 0, pageSize: 5 },
-                  },
-                }}
-                pageSizeOptions={[5, 10, 25]}
-              />
-            </div>
+            <DataGrid
+              autoHeight
+              columns={columns}
+              filterMode="client"
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
+              initialState={{
+                pagination: {
+                  paginationModel: { page: 0, pageSize: 5 },
+                },
+              }}
+              pageSizeOptions={[5, 10, 25]}
+            />
           </StoryVariation>
 
           <StoryVariation label="With Selection">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid autoHeight checkboxSelection columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
-            </div>
+            <DataGrid autoHeight checkboxSelection columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
           </StoryVariation>
 
           <StoryVariation label="Dense">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid autoHeight columns={columns} density="compact" filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
-            </div>
+            <DataGrid autoHeight columns={columns} density="compact" filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
           </StoryVariation>
 
           <StoryVariation label="With Filtering">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid
-                autoHeight
-                columns={columns}
-                filterMode="client"
-                paginationMode="client"
-                rows={rows}
-                sortingMode="client"
-                initialState={{
-                  filter: {
-                    filterModel: {
-                      items: [
-                        {
-                          field: 'age',
-                          operator: '>',
-                          value: 30,
-                        },
-                      ],
-                    },
+            <DataGrid
+              autoHeight
+              columns={columns}
+              filterMode="client"
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
+              initialState={{
+                filter: {
+                  filterModel: {
+                    items: [
+                      {
+                        field: 'age',
+                        operator: '>',
+                        value: 30,
+                      },
+                    ],
                   },
-                }}
-              />
-            </div>
+                },
+              }}
+            />
           </StoryVariation>
 
           <StoryVariation label="With Sorting">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid
-                autoHeight
-                columns={columns}
-                filterMode="client"
-                paginationMode="client"
-                rows={rows}
-                sortingMode="client"
-                initialState={{
-                  sorting: {
-                    sortModel: [{ field: 'age', sort: 'desc' }],
-                  },
-                }}
-              />
-            </div>
+            <DataGrid
+              autoHeight
+              columns={columns}
+              filterMode="client"
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
+              initialState={{
+                sorting: {
+                  sortModel: [{ field: 'age', sort: 'desc' }],
+                },
+              }}
+            />
           </StoryVariation>
 
           <StoryVariation label="Editable">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid autoHeight columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
-            </div>
+            <DataGrid autoHeight columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
           </StoryVariation>
 
           <StoryVariation label="With Column Visibility">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid
-                autoHeight
-                columns={columns}
-                filterMode="client"
-                paginationMode="client"
-                rows={rows}
-                sortingMode="client"
-                initialState={{
-                  columns: {
-                    columnVisibilityModel: {
-                      age: false,
-                    },
+            <DataGrid
+              autoHeight
+              columns={columns}
+              filterMode="client"
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
+              initialState={{
+                columns: {
+                  columnVisibilityModel: {
+                    age: false,
                   },
-                }}
-              />
-            </div>
+                },
+              }}
+            />
           </StoryVariation>
 
           <StoryVariation label="With Row Height">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid autoHeight columns={columns} filterMode="client" getRowHeight={() => 60} paginationMode="client" rows={rows} sortingMode="client" />
-            </div>
+            <DataGrid autoHeight columns={columns} filterMode="client" getRowHeight={() => 60} paginationMode="client" rows={rows} sortingMode="client" />
           </StoryVariation>
 
           <StoryVariation label="With Custom Styling">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid
-                autoHeight
-                columns={columns}
-                filterMode="client"
-                paginationMode="client"
-                rows={rows}
-                sortingMode="client"
-                sx={{
-                  '& .MuiDataGrid-cell': {
-                    borderBottom: '1px solid #e0e0e0',
-                  },
-                  '& .MuiDataGrid-columnHeaders': {
-                    backgroundColor: 'primary.light',
-                    color: 'primary.contrastText',
-                  },
-                }}
-              />
-            </div>
+            <DataGrid
+              autoHeight
+              columns={columns}
+              filterMode="client"
+              paginationMode="client"
+              rows={rows}
+              sortingMode="client"
+              sx={{
+                '& .MuiDataGrid-cell': {
+                  borderBottom: '1px solid #e0e0e0',
+                },
+                '& .MuiDataGrid-columnHeaders': {
+                  backgroundColor: 'primary.light',
+                  color: 'primary.contrastText',
+                },
+              }}
+            />
           </StoryVariation>
 
           <StoryVariation label="Loading State">
-            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
-              <DataGrid autoHeight columns={columns} filterMode="client" loading paginationMode="client" rows={[]} sortingMode="client" />
-            </div>
+            <DataGrid autoHeight columns={columns} filterMode="client" loading paginationMode="client" rows={[]} sortingMode="client" />
           </StoryVariation>
         </ThemeProvider>
       ),

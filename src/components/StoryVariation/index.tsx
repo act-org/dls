@@ -15,14 +15,15 @@ interface StoryVariationProps {
 
 /**
  * Utility component for story variations that renders children inside a Grid
- * with proper spacing and a label using Typography
+ * with proper spacing and a label using Typography. Includes max height and
+ * scrolling to handle components that may overflow their bounds.
  */
 export const StoryVariation = ({ children, label }: StoryVariationProps): ReactNode => (
   <Grid sx={{ border: theme => `1px dashed ${theme.palette.divider}`, borderRadius: 1, mt: 2, p: 1 }}>
     <Typography display="block" fontWeight="bold" sx={{ mb: 1 }} variant="overline">
       {label}
     </Typography>
-    {children}
+    <Grid sx={{ maxHeight: 500, overflowY: 'auto' }}>{children}</Grid>
   </Grid>
 );
 
