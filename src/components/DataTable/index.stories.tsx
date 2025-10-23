@@ -189,15 +189,15 @@ export const PlaygroundStory: Story = {
 // Generate stories for each theme dynamically
 
 // Component for theme stories that includes required props
-const ThemeStoryComponent: FC<Partial<DataTableProps<Item>>> = props => {
-  const [limit, setLimit] = useState<number | undefined>(props.limit);
-  const [offset, setOffset] = useState<number | undefined>(props.offset);
+const ThemeStoryComponent: FC<Partial<DataTableProps<Item>>> = ({ limit: limitProp, offset: offsetProp, totalCount: totalCountProp, ...props }) => {
+  const [limit, setLimit] = useState<number | undefined>(limitProp);
+  const [offset, setOffset] = useState<number | undefined>(offsetProp);
   const [sortObject, setSortObject] = useState<SortObject>({
     sortBy: 'id',
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
   });
 
-  const totalCount = props.totalCount || 10;
+  const totalCount = totalCountProp || 10;
   let items: Item[] = [...Array(totalCount)].map((_, i): any => ({
     fieldA: `Field A${i + 1}`,
     fieldB: `Field B${i + 1}`,
