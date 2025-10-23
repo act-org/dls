@@ -70,9 +70,9 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby="«r4»"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-10ortyn-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="«r4»"
+            aria-labelledby="«r5»"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-18kee9o-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="«r5»"
             role="combobox"
             tabindex="0"
           >
@@ -89,7 +89,7 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-9wviix-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-n3z26u-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -100,10 +100,10 @@ exports[`TablePaginationActions ACT theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-w4cd9x"
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
             >
               <span
                 aria-hidden="true"
@@ -238,9 +238,9 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby="«re»"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-8ntq6y-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="«re»"
+            aria-labelledby="«rg»"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-oj0dnk-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="«rg»"
             role="combobox"
             tabindex="0"
           >
@@ -257,7 +257,7 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1iw9ayg-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-fl4qnu-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -268,10 +268,10 @@ exports[`TablePaginationActions ACT_ET theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-w4cd9x"
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
             >
               <span
                 aria-hidden="true"
@@ -402,9 +402,9 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby="«ro»"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-qyjbs4-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="«ro»"
+            aria-labelledby="«rr»"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-papwn0-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="«rr»"
             role="combobox"
             tabindex="0"
           >
@@ -421,7 +421,7 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1p4sevb-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-aasjg2-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
             data-testid="ChevronDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -432,10 +432,10 @@ exports[`TablePaginationActions ENCOURA theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-w4cd9x"
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
             >
               <span
                 aria-hidden="true"
@@ -566,9 +566,9 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby="«r12»"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-r853lg-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="«r12»"
+            aria-labelledby="«r16»"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-ed3h2o-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="«r16»"
             role="combobox"
             tabindex="0"
           >
@@ -585,7 +585,7 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-19a9gm7-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-lpu731-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
             data-testid="ChevronDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -596,10 +596,10 @@ exports[`TablePaginationActions ENCOURA_CLASSIC theme matches the snapshot 1`] =
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-w4cd9x"
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
             >
               <span
                 aria-hidden="true"
@@ -730,9 +730,9 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby="«r1c»"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1momcb5-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="«r1c»"
+            aria-labelledby="«r1h»"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1ai0rav-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="«r1h»"
             role="combobox"
             tabindex="0"
           >
@@ -749,7 +749,7 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-wqvhpi-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-t8s6xg-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -760,10 +760,10 @@ exports[`TablePaginationActions ENCOURAGE theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-w4cd9x"
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
             >
               <span
                 aria-hidden="true"
@@ -894,9 +894,9 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
             aria-expanded="false"
             aria-haspopup="listbox"
             aria-label="Select"
-            aria-labelledby="«r1m»"
-            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-xezfm9-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-            id="«r1m»"
+            aria-labelledby="«r1s»"
+            class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1vao3vy-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            id="«r1s»"
             role="combobox"
             tabindex="0"
           >
@@ -913,7 +913,7 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
           />
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-h5r8xo-MuiSvgIcon-root-MuiSelect-icon"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1vm1u3v-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
             data-testid="ArrowDropDownIcon"
             focusable="false"
             viewBox="0 0 24 24"
@@ -924,10 +924,10 @@ exports[`TablePaginationActions ENCOURAGE_E4E theme matches the snapshot 1`] = `
           </svg>
           <fieldset
             aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-w4cd9x"
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
             >
               <span
                 aria-hidden="true"

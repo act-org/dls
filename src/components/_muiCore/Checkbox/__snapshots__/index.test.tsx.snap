@@ -3,12 +3,12 @@
 exports[`Checkbox ACT theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-g1g361-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-jh6fz6-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
     color="primary"
   >
     <input
       checked=""
-      class="PrivateSwitchBase-input css-j8yymo"
+      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
       data-indeterminate="false"
       type="checkbox"
     />
@@ -30,11 +30,11 @@ exports[`Checkbox ACT theme matches the snapshot 1`] = `
 exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-zrh9x9-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-ky0j2d-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
-      class="PrivateSwitchBase-input css-j8yymo"
+      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
       data-indeterminate="false"
       type="checkbox"
     />
@@ -56,11 +56,11 @@ exports[`Checkbox ACT_ET theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-jh2npm-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1f10lpb-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
-      class="PrivateSwitchBase-input css-j8yymo"
+      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
       data-indeterminate="false"
       type="checkbox"
     />
@@ -82,11 +82,11 @@ exports[`Checkbox ENCOURA theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-q08pqt-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-ptddek-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
-      class="PrivateSwitchBase-input css-j8yymo"
+      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
       data-indeterminate="false"
       type="checkbox"
     />
@@ -108,11 +108,11 @@ exports[`Checkbox ENCOURA_CLASSIC theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-lye55a-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-10gjujf-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
-      class="PrivateSwitchBase-input css-j8yymo"
+      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
       data-indeterminate="false"
       type="checkbox"
     />
@@ -134,11 +134,11 @@ exports[`Checkbox ENCOURAGE theme matches the snapshot 1`] = `
 exports[`Checkbox ENCOURAGE_E4E theme matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1vv0vwy-MuiButtonBase-root-MuiCheckbox-root"
+    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-w3o619-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
   >
     <input
       checked=""
-      class="PrivateSwitchBase-input css-j8yymo"
+      class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
       data-indeterminate="false"
       type="checkbox"
     />
