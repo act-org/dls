@@ -6,11 +6,11 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import { useState } from 'react';
-import ChevronRightIcon from 'mdi-material-ui/ChevronRight';
-import ChevronLeftIcon from 'mdi-material-ui/ChevronLeft';
-import ChevronDoubleRightIcon from 'mdi-material-ui/ChevronDoubleRight';
 import ChevronDoubleLeftIcon from 'mdi-material-ui/ChevronDoubleLeft';
+import ChevronDoubleRightIcon from 'mdi-material-ui/ChevronDoubleRight';
+import ChevronLeftIcon from 'mdi-material-ui/ChevronLeft';
+import ChevronRightIcon from 'mdi-material-ui/ChevronRight';
+import { useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -18,17 +18,7 @@ import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
 import { ThemesArray } from '~/styles/themes';
 
-import {
-  Box,
-  IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  ListSubheader,
-  Paper,
-  Typography,
-} from './internal';
+import { Box, IconButton, List, ListItem, ListItemButton, ListItemText, ListSubheader, Paper, Typography } from './internal';
 
 // TransferList component implementation
 interface TransferListProps {
@@ -103,16 +93,11 @@ const TransferList = ({
         <Typography variant="subtitle1">{title}</Typography>
       </ListSubheader>
       <List dense component="div" role="list">
-        {items.map((value) => {
+        {items.map(value => {
           const labelId = `transfer-list-item-${value}-label`;
           return (
             <ListItem key={value} disablePadding>
-              <ListItemButton
-                role="listitem"
-                onClick={handleToggle(value)}
-                disabled={disabled}
-                selected={checked.indexOf(value) !== -1}
-              >
+              <ListItemButton role="listitem" onClick={handleToggle(value)} disabled={disabled} selected={checked.indexOf(value) !== -1}>
                 <ListItemText id={labelId} primary={value} />
               </ListItemButton>
             </ListItem>
@@ -127,18 +112,10 @@ const TransferList = ({
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         {customList(left, leftTitle)}
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-          <IconButton
-            onClick={handleCheckedRight}
-            disabled={leftChecked.length === 0 || disabled}
-            size="small"
-          >
+          <IconButton onClick={handleCheckedRight} disabled={leftChecked.length === 0 || disabled} size="small">
             <ChevronRightIcon />
           </IconButton>
-          <IconButton
-            onClick={handleCheckedLeft}
-            disabled={rightChecked.length === 0 || disabled}
-            size="small"
-          >
+          <IconButton onClick={handleCheckedLeft} disabled={rightChecked.length === 0 || disabled} size="small">
             <ChevronLeftIcon />
           </IconButton>
           <IconButton onClick={handleAllRight} disabled={left.length === 0 || disabled} size="small">
@@ -227,31 +204,16 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="All Items Selected">
-            <TransferList
-              left={[]}
-              right={['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']}
-              leftTitle="Available"
-              rightTitle="All Selected"
-            />
+            <TransferList left={[]} right={['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']} leftTitle="Available" rightTitle="All Selected" />
           </StoryVariation>
 
           <StoryVariation label="Single Item Lists">
-            <TransferList
-              left={['Only Item']}
-              right={[]}
-              leftTitle="Single Item"
-              rightTitle="Empty"
-            />
+            <TransferList left={['Only Item']} right={[]} leftTitle="Single Item" rightTitle="Empty" />
           </StoryVariation>
 
           <StoryVariation label="Long Item Names">
             <TransferList
-              left={[
-                'Very Long Item Name That Might Wrap',
-                'Another Extremely Long Item Name',
-                'Short',
-                'Medium Length Item Name',
-              ]}
+              left={['Very Long Item Name That Might Wrap', 'Another Extremely Long Item Name', 'Short', 'Medium Length Item Name']}
               right={['Selected Long Item']}
               leftTitle="Long Names"
               rightTitle="Selected"
@@ -268,22 +230,11 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Custom Titles">
-            <TransferList
-              left={['Option A', 'Option B', 'Option C']}
-              right={['Option D']}
-              leftTitle="Source Options"
-              rightTitle="Target Options"
-            />
+            <TransferList left={['Option A', 'Option B', 'Option C']} right={['Option D']} leftTitle="Source Options" rightTitle="Target Options" />
           </StoryVariation>
 
           <StoryVariation label="Disabled State">
-            <TransferList
-              left={['Item 1', 'Item 2', 'Item 3']}
-              right={['Item 4']}
-              leftTitle="Disabled"
-              rightTitle="Disabled"
-              disabled
-            />
+            <TransferList left={['Item 1', 'Item 2', 'Item 3']} right={['Item 4']} leftTitle="Disabled" rightTitle="Disabled" disabled />
           </StoryVariation>
 
           <StoryVariation label="Mixed Content">
@@ -296,12 +247,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Equal Distribution">
-            <TransferList
-              left={['Left 1', 'Left 2', 'Left 3']}
-              right={['Right 1', 'Right 2', 'Right 3']}
-              leftTitle="Left Side"
-              rightTitle="Right Side"
-            />
+            <TransferList left={['Left 1', 'Left 2', 'Left 3']} right={['Right 1', 'Right 2', 'Right 3']} leftTitle="Left Side" rightTitle="Right Side" />
           </StoryVariation>
         </ThemeProvider>
       ),
