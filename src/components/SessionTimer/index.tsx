@@ -5,14 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { ButtonProps, DialogContentProps, DialogTitleProps } from '@mui/material';
+import { ButtonProps, DialogContentProps, DialogProps, DialogTitleProps } from '@mui/material';
 import noop from 'lodash/noop';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
 
 import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
-
-import { DialogProps } from '../Dialog';
 
 export interface SessionTimerProps {
   children?: ({

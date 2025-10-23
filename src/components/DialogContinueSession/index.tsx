@@ -5,11 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Button, ButtonProps, Dialog, DialogContent, DialogContentProps, DialogTitle, DialogTitleProps, Typography } from '@mui/material';
+import { Button, ButtonProps, Dialog, DialogContent, DialogContentProps, DialogProps, DialogTitle, DialogTitleProps, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
-
-import { DialogProps } from '../Dialog';
 
 import { StyledDialogActions } from './styles';
 

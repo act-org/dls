@@ -11,7 +11,6 @@ export * from './BarChart';
 export * from './ConfirmDialog';
 export * from './CountyMap';
 export * from './DataTable';
-export * from './Dialog';
 export * from './DialogContinueSession';
 export * from './EmptyState';
 export * from './GeomarketMap';
