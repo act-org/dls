@@ -22,22 +22,22 @@ company-wide standards. This approach allows us to:
 
 ## Technology Standards
 
-| Functionality         | Current Standard                                                                                                                                                                        | Experimental                                     |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| **Language**          | [TypeScript](https://www.typescriptlang.org/)                                                                                                                                           | None                                             |
-| **Render Library**    | [React](https://react.dev/)                                                                                                                                                             | None                                             |
-| **Framework**         | [Next.js](https://nextjs.org/)                                                                                                                                                          | None                                             |
-| **Component Library** | [@mui/material](https://mui.com/material-ui/) (MUI Core) + [MUI-X](https://mui.com/x/) libraries                                                                                        | [@shadcn/ui](https://ui.shadcn.com/)             |
-| **Icons**             | [@mui/icons-material](https://mui.com/material-ui/material-icons/) and [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui), with fallback to custom icon via `SvgIcon` | None                                             |
-| **Charts**            | [Recharts](https://recharts.org/) (DLS provides custom Chart components)                                                                                                                | [@mui/x-charts](https://mui.com/x/react-charts/) |
-| **Maps**              | [Mapbox](https://www.mapbox.com/) via [react-map-gl](https://visgl.github.io/react-map-gl/) (DLS provides custom Map components)                                                        | None                                             |
-| **Component Testing** | [Chromatic](https://www.chromatic.com/) + [Storybook](https://storybook.js.org/)                                                                                                        | None                                             |
-| **Test Runner**       | [Jest](https://jestjs.io/)                                                                                                                                                              | [Vitest](https://vitest.dev/)                    |
+| Functionality         | Current Standard                                                                                                                                                                                                          | Experimental                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Language**          | <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>                                                                                                                                                  | None                                                                       |
+| **Rendering**         | <a href="https://react.dev/" target="_blank">React</a>                                                                                                                                                                    | None                                                                       |
+| **Framework**         | <a href="https://nextjs.org/" target="_blank">Next.js</a>                                                                                                                                                                 | None                                                                       |
+| **Component Library** | <a href="https://mui.com/material-ui/" target="_blank">MUI Core</a> & <a href="https://mui.com/x/" target="_blank">MUI X</a>                                                                                              | <a href="https://ui.shadcn.com/" target="_blank">shadcn/ui</a>             |
+| **Icons**             | <a href="https://mui.com/material-ui/material-icons/" target="_blank">@mui/icons-material</a> and <a href="https://pictogrammers.com/library/mdi/" target="_blank">mdi-material-ui</a>, with fallback to custom `SvgIcon` | None                                                                       |
+| **Charts**            | <a href="https://recharts.org/" target="_blank">Recharts</a> (DLS provides custom Chart components)                                                                                                                       | <a href="https://mui.com/x/react-charts/" target="_blank">MUI X Charts</a> |
+| **Maps**              | <a href="https://www.mapbox.com/" target="_blank">Mapbox</a> via <a href="https://visgl.github.io/react-map-gl/" target="_blank">react-map-gl</a> (DLS provides custom Map components)                                    | None                                                                       |
+| **Component Testing** | <a href="https://www.chromatic.com/" target="_blank">Chromatic</a> + <a href="https://storybook.js.org/" target="_blank">Storybook</a>                                                                                    | None                                                                       |
+| **Test Runner**       | <a href="https://jestjs.io/" target="_blank">Jest</a>                                                                                                                                                                     | <a href="https://vitest.dev/" target="_blank">Vitest</a>                   |
 
 ## Standard Adoption Process
 
 1. **Research Phase**: Team identifies potential new technology or tool
-2. **Experimental Phase**: Technology is "baked into" a real project to prove viability
+2. **Experimental Phase**: Technology is "baked" in a real project to prove viability
 3. **Evaluation Phase**: Team assesses the experimental implementation for:
    - Developer experience improvements
    - Performance impact
@@ -56,7 +56,7 @@ company-wide standards. This approach allows us to:
 - **Knowledge Sharing**: Team expertise builds around common tools
 - **Maintenance**: Centralized knowledge reduces support burden
 - **Quality**: Consistent tooling enables better testing and quality assurance
-- **Economies of Scale**: Bulk licensing and shared expertise reduce costs
+- **Economies of Scale**: Shared expertise reduces cost
 
 ## Contributing to Standards
 
