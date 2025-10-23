@@ -7,5 +7,4 @@
 
 /* eslint-disable import/prefer-default-export */
 
-export * from './useConfirm';
 export * from './useLocalStorage';

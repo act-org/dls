@@ -8,7 +8,6 @@
 export * from './Alert';
 export * from './AreaChart';
 export * from './BarChart';
-export * from './ConfirmDialog';
 export * from './CountyMap';
 export * from './DataTable';
 export * from './DialogContinueSession';
