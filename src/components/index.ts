@@ -32,5 +32,6 @@ export * from './SessionTimer';
 export * from './SnackbarAlert';
 export * from './StackedBarChart';
 export * from './StateMap';
+export * from './StoryVariation';
 export * from './TablePaginationActions';
 export * from './ThemeProvider';

@@ -8,6 +8,12 @@
 import { DataGridProps, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
+
 import { DataGrid } from './internal';
 
 type StoryGridRow = {
@@ -137,6 +143,10 @@ const rows: StoryGridRow[] = [
     lastName: 'Roxie',
   },
 ];
+
+/**
+ * The default DataGrid exports
+ */
 export default {
   args: {
     autoHeight: true,
@@ -145,21 +155,6 @@ export default {
     paginationMode: 'client',
     rows,
     sortingMode: 'client',
-  },
-  argTypes: {
-    onCellClick: { action: 'onCellClick' },
-    onCellDoubleClick: { action: 'onCellDoubleClick' },
-    onColumnHeaderClick: { action: 'onColumnHeaderClick' },
-    onColumnHeaderDoubleClick: { action: 'onColumnHeaderDoubleClick' },
-    onColumnOrderChange: { action: 'onColumnOrderChange' },
-    onColumnVisibilityChange: { action: 'onColumnVisibilityChange' },
-    onFilterModelChange: { action: 'onFilterModelChange' },
-    onPageSizeChange: { action: 'onPageSizeChange' },
-    onResize: { action: 'onResize' },
-    onRowClick: { action: 'onRowClick' },
-    onRowDoubleClick: { action: 'onRowDoubleClick' },
-    onSelectionModelChange: { action: 'onSelectionModelChange' },
-    onSortModelChange: { action: 'onSortModelChange' },
   },
   component: DataGrid,
   parameters: {
@@ -180,7 +175,213 @@ export default {
 
 type Story = StoryObj<DataGridProps>;
 
-export const Primary: Story = {};
-export const Toolbar: Story = {
-  args: { slots: { toolbar: GridToolbar } },
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
+  args: {
+    autoHeight: true,
+    columns,
+    filterMode: 'client',
+    paginationMode: 'client',
+    rows,
+    sortingMode: 'client',
+  },
+  parameters: {
+    chromatic: { disable: true },
+  },
 };
+
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {
+    autoHeight: true,
+    columns,
+    filterMode: 'client',
+    paginationMode: 'client',
+    rows,
+    sortingMode: 'client',
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, DataGrid),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<DataGridProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Basic DataGrid">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid autoHeight columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Toolbar">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid
+                autoHeight
+                columns={columns}
+                filterMode="client"
+                paginationMode="client"
+                rows={rows}
+                slots={{ toolbar: GridToolbar }}
+                sortingMode="client"
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Pagination">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid
+                autoHeight
+                columns={columns}
+                filterMode="client"
+                paginationMode="client"
+                rows={rows}
+                sortingMode="client"
+                initialState={{
+                  pagination: {
+                    paginationModel: { page: 0, pageSize: 5 },
+                  },
+                }}
+                pageSizeOptions={[5, 10, 25]}
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Selection">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid autoHeight checkboxSelection columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="Dense">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid autoHeight columns={columns} density="compact" filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Filtering">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid
+                autoHeight
+                columns={columns}
+                filterMode="client"
+                paginationMode="client"
+                rows={rows}
+                sortingMode="client"
+                initialState={{
+                  filter: {
+                    filterModel: {
+                      items: [
+                        {
+                          field: 'age',
+                          operator: '>',
+                          value: 30,
+                        },
+                      ],
+                    },
+                  },
+                }}
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Sorting">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid
+                autoHeight
+                columns={columns}
+                filterMode="client"
+                paginationMode="client"
+                rows={rows}
+                sortingMode="client"
+                initialState={{
+                  sorting: {
+                    sortModel: [{ field: 'age', sort: 'desc' }],
+                  },
+                }}
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="Editable">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid autoHeight columns={columns} filterMode="client" paginationMode="client" rows={rows} sortingMode="client" />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Column Visibility">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid
+                autoHeight
+                columns={columns}
+                filterMode="client"
+                paginationMode="client"
+                rows={rows}
+                sortingMode="client"
+                initialState={{
+                  columns: {
+                    columnVisibilityModel: {
+                      age: false,
+                    },
+                  },
+                }}
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Row Height">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid autoHeight columns={columns} filterMode="client" getRowHeight={() => 60} paginationMode="client" rows={rows} sortingMode="client" />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Custom Styling">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid
+                autoHeight
+                columns={columns}
+                filterMode="client"
+                paginationMode="client"
+                rows={rows}
+                sortingMode="client"
+                sx={{
+                  '& .MuiDataGrid-cell': {
+                    borderBottom: '1px solid #e0e0e0',
+                  },
+                  '& .MuiDataGrid-columnHeaders': {
+                    backgroundColor: 'primary.light',
+                    color: 'primary.contrastText',
+                  },
+                }}
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="Loading State">
+            <div style={{ height: 400, width: '100%', overflow: 'auto' }}>
+              <DataGrid autoHeight columns={columns} filterMode="client" loading paginationMode="client" rows={[]} sortingMode="client" />
+            </div>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };
