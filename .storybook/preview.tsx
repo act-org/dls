@@ -76,7 +76,7 @@ const preview: Preview = {
     layout: 'padded',
     options: {
       storySort: {
-        order: ['DLS', 'Foundations', 'MUI Core', 'MUI X', 'Atoms', 'Molecules', 'Organisms', 'Utilities', 'Deprecated'],
+        order: ['DLS', 'Foundations', 'MUI Core', 'MUI X', 'Atoms', 'Molecules', 'Organisms', 'Maps', 'Charts', 'Utilities', 'Deprecated'],
       },
     },
   },

@@ -28,7 +28,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / AreaChart',
+  title: 'Charts / AreaChart',
 } as Meta<AreaChartProps>;
 
 type Story = StoryObj<AreaChartProps>;

@@ -27,7 +27,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / StackedBarChart',
+  title: 'Charts / StackedBarChart',
 } as Meta<StackedBarChartProps>;
 
 type Story = StoryObj<StackedBarChartProps>;

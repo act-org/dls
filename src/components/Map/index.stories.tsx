@@ -8,63 +8,150 @@
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { FullscreenControl, GeolocateControl, Marker, ScaleControl } from 'react-map-gl/mapbox';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { defaultData } from './mocks';
 
 import { Map, MapProps } from '.';
 
+/**
+ * The default Map exports
+ */
 export default {
   args: {
     data: defaultData,
     mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
     sourceId: 'default',
   },
-  argTypes: Playground({}, Map),
   component: Map,
+  parameters: {
+    layout: 'padded',
+  },
   tags: ['autodocs'],
-  title: 'Molecules / Maps / Map',
+  title: 'Maps / Map',
 } as Meta<MapProps>;
 
-export const WithMapProps: StoryObj<MapProps> = {
+type Story = StoryObj<MapProps>;
+
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
     data: defaultData,
-    initialViewState: { latitude: 32.3182, longitude: -86.9023, zoom: 5.5 },
-    mapStyle: 'mapbox://styles/mapbox/streets-v9',
-    sourceId: 'mapProps',
-    style: { height: 600, width: 800 },
+    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    sourceId: 'default',
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-export const WithNavigationControlProps: StoryObj<MapProps> = {
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
   args: {
     data: defaultData,
-    navigationControlProps: {
-      position: 'top-right',
-      showCompass: false,
-      visualizePitch: true,
-    },
-    sourceId: 'controlProps',
+    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    sourceId: 'default',
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, Map),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-export const WithOtherControls: StoryObj<MapProps> = {
-  args: {
-    children: (
-      <>
-        <GeolocateControl position="top-left" />
-        <FullscreenControl position="top-left" />
-        <ScaleControl />
-      </>
-    ),
-    data: defaultData,
-    sourceId: 'otherControls',
-  },
-};
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
 
-export const WithChildrenAndNoData: StoryObj<MapProps> = {
-  args: {
-    children: <Marker color="red" latitude={37.8} longitude={-122.4} />,
-    sourceId: 'children',
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<MapProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default Map">
+            <div style={{ height: 400, width: '100%' }}>
+              <Map data={defaultData} height={400} mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''} sourceId="default" width="100%" />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Map Props">
+            <div style={{ height: 400, width: '100%' }}>
+              <Map
+                data={defaultData}
+                height={400}
+                initialViewState={{ latitude: 32.3182, longitude: -86.9023, zoom: 5.5 }}
+                mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''}
+                mapStyle="mapbox://styles/mapbox/streets-v9"
+                sourceId="mapProps"
+                style={{ height: 400, width: '100%' }}
+                width="100%"
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Navigation Controls">
+            <div style={{ height: 400, width: '100%' }}>
+              <Map
+                data={defaultData}
+                height={400}
+                mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''}
+                navigationControlProps={{
+                  position: 'top-right',
+                  showCompass: false,
+                  visualizePitch: true,
+                }}
+                sourceId="controlProps"
+                width="100%"
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Other Controls">
+            <div style={{ height: 400, width: '100%' }}>
+              <Map
+                children={
+                  <>
+                    <GeolocateControl position="top-left" />
+                    <FullscreenControl position="top-left" />
+                    <ScaleControl />
+                  </>
+                }
+                data={defaultData}
+                height={400}
+                mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''}
+                sourceId="otherControls"
+                width="100%"
+              />
+            </div>
+          </StoryVariation>
+
+          <StoryVariation label="With Marker">
+            <div style={{ height: 400, width: '100%' }}>
+              <Map
+                children={<Marker color="red" latitude={37.8} longitude={-122.4} />}
+                height={400}
+                mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''}
+                sourceId="children"
+                width="100%"
+              />
+            </div>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
   },
-};
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

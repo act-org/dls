@@ -7,7 +7,11 @@
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { defaultData, defaultProcessDataFn } from './mocks';
 
@@ -15,6 +19,9 @@ import { HeatMap, HeatMapProps } from '.';
 
 const finalData = defaultProcessDataFn(defaultData);
 
+/**
+ * The default HeatMap exports
+ */
 export default {
   args: {
     data: finalData,
@@ -23,16 +30,72 @@ export default {
       color: 'red',
     },
   },
-  argTypes: Playground({}, HeatMap),
   component: HeatMap,
+  parameters: {
+    layout: 'padded',
+  },
   tags: ['autodocs'],
-  title: 'Molecules / Maps / HeatMap',
+  title: 'Maps / HeatMap',
 } as Meta<HeatMapProps>;
 
-export const Default: StoryObj<HeatMapProps> = {};
+type Story = StoryObj<HeatMapProps>;
 
-export const CustomColor: StoryObj<HeatMapProps> = {
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
-    color: '#FF0000',
+    data: finalData,
+    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    mapProps: {
+      color: 'red',
+    },
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
+
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {
+    data: finalData,
+    mapboxAccessToken: process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN,
+    mapProps: {
+      color: 'red',
+    },
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, HeatMap),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<HeatMapProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default Heat Map">
+            <div style={{ height: 400, width: '100%' }}>
+              <HeatMap data={finalData} mapboxAccessToken={process.env.STORYBOOK_MAPBOX_ACCESS_TOKEN || ''} mapProps={{ color: 'red' }} />
+            </div>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

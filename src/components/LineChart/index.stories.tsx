@@ -34,7 +34,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / LineChart',
+  title: 'Charts / LineChart',
 } as Meta<LineChartProps>;
 
 type Story = StoryObj<LineChartProps>;

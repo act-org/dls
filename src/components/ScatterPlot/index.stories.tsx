@@ -30,7 +30,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / ScatterPlot',
+  title: 'Charts / ScatterPlot',
 } as Meta<ScatterPlotProps>;
 
 type Story = StoryObj<ScatterPlotProps>;

@@ -27,7 +27,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / OverlappedBarChart',
+  title: 'Charts / OverlappedBarChart',
 } as Meta<OverlappedBarChartProps>;
 
 type Story = StoryObj<OverlappedBarChartProps>;

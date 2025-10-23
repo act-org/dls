@@ -29,7 +29,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / PieChart',
+  title: 'Charts / PieChart',
 } as Meta<PieChartProps>;
 
 type Story = StoryObj<PieChartProps>;

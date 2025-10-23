@@ -32,7 +32,7 @@ export default {
     layout: 'padded',
   },
   tags: ['autodocs'],
-  title: 'Molecules / Charts / BarChart',
+  title: 'Charts / BarChart',
 } as Meta<BarChartProps>;
 
 type Story = StoryObj<BarChartProps>;
