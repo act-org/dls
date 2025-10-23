@@ -94,7 +94,7 @@ const themeStories = ThemesArray.reduce(
   {} as Record<string, Story>,
 );
 
-export const ThemeEncoura = themeStories.ENCOURA;
-export const ThemeEncouraClassic = themeStories.ENCOURA_CLASSIC;
-export const ThemeEncourage = themeStories.ENCOURAGE;
-export const ThemeEncourageE4e = themeStories.ENCOURAGE_E4E;
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

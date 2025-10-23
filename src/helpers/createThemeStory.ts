@@ -8,19 +8,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { StoryObj } from '@storybook/react-webpack5';
 
-import { THEMES } from '~/styles';
-
-// Mapping function for better theme display names
-const getThemeDisplayName = (theme: string): string => {
-  const nameMap: Record<string, string> = {
-    [THEMES.ENCOURA]: 'Encoura',
-    [THEMES.ENCOURA_CLASSIC]: 'Encoura Classic',
-    [THEMES.ENCOURAGE]: 'Encourage',
-    [THEMES.ENCOURAGE_E4E]: 'Encourage E4E',
-  };
-  return nameMap[theme] || theme;
-};
-
 interface ICreateThemeStoryOptions<T> {
   args?: T;
   render?: (args: T) => React.ReactElement;
@@ -37,7 +24,7 @@ interface ICreateThemeStoryOptions<T> {
 export const createThemeStory = <T = any>(theme: string, options: ICreateThemeStoryOptions<T> = {}): StoryObj<T> => {
   const story: any = {
     args: options.args || {},
-    name: options.name || getThemeDisplayName(theme),
+    name: options.name || theme,
     parameters: {
       globals: { theme },
       ...options.parameters,
