@@ -10,6 +10,7 @@ import { Meta, StoryObj } from '@storybook/react-webpack5';
 import Menu from 'mdi-material-ui/Menu';
 import React from 'react';
 
+import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
 import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
@@ -76,45 +77,53 @@ const themeStories = ThemesArray.reduce(
     stories[theme] = createThemeStory<AppBarProps>(theme, {
       render: args => (
         <ThemeProvider theme={theme}>
-          {/* Default Color */}
-          <AppBar {...args} color="default">
-            {createAppBarChildren('Default')}
-          </AppBar>
+          <StoryVariation label="Default">
+            <AppBar {...args} color="default">
+              {createAppBarChildren('Default')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Primary Color */}
-          <AppBar {...args} color="primary" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Primary')}
-          </AppBar>
+          <StoryVariation label="Primary">
+            <AppBar {...args} color="primary">
+              {createAppBarChildren('Primary')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Secondary Color */}
-          <AppBar {...args} color="secondary" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Secondary')}
-          </AppBar>
+          <StoryVariation label="Secondary">
+            <AppBar {...args} color="secondary">
+              {createAppBarChildren('Secondary')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Transparent Color */}
-          <AppBar {...args} color="transparent" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Transparent')}
-          </AppBar>
+          <StoryVariation label="Transparent">
+            <AppBar {...args} color="transparent">
+              {createAppBarChildren('Transparent')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Error Color */}
-          <AppBar {...args} color="error" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Error')}
-          </AppBar>
+          <StoryVariation label="Error">
+            <AppBar {...args} color="error">
+              {createAppBarChildren('Error')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Info Color */}
-          <AppBar {...args} color="info" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Info')}
-          </AppBar>
+          <StoryVariation label="Info">
+            <AppBar {...args} color="info">
+              {createAppBarChildren('Info')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Success Color */}
-          <AppBar {...args} color="success" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Success')}
-          </AppBar>
+          <StoryVariation label="Success">
+            <AppBar {...args} color="success">
+              {createAppBarChildren('Success')}
+            </AppBar>
+          </StoryVariation>
 
-          {/* Warning Color */}
-          <AppBar {...args} color="warning" style={{ marginTop: 16 }}>
-            {createAppBarChildren('Warning')}
-          </AppBar>
+          <StoryVariation label="Warning">
+            <AppBar {...args} color="warning">
+              {createAppBarChildren('Warning')}
+            </AppBar>
+          </StoryVariation>
         </ThemeProvider>
       ),
     });

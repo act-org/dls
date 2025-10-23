@@ -8,6 +8,7 @@
 import { AutocompleteRenderInputParams, TextField } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 
+import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
 import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
@@ -69,32 +70,25 @@ const themeStories = ThemesArray.reduce(
     stories[theme] = createThemeStory<AutocompleteProps<FilmType, false, false, false>>(theme, {
       render: () => (
         <ThemeProvider theme={theme}>
-          {/* Default Autocomplete */}
-          <Autocomplete options={topFilms} renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Default" />} />
+          <StoryVariation label="Default">
+            <Autocomplete options={topFilms} renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Default" />} />
+          </StoryVariation>
 
-          {/* Multiple Selection */}
-          <Autocomplete
-            multiple
-            options={topFilms}
-            renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Multiple" />}
-            style={{ marginTop: 16 }}
-          />
+          <StoryVariation label="Multiple Selection">
+            <Autocomplete multiple options={topFilms} renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Multiple" />} />
+          </StoryVariation>
 
-          {/* Free Solo */}
-          <Autocomplete
-            freeSolo
-            options={topFilms}
-            renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Free Solo" />}
-            style={{ marginTop: 16 }}
-          />
+          <StoryVariation label="Free Solo">
+            <Autocomplete freeSolo options={topFilms} renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Free Solo" />} />
+          </StoryVariation>
 
-          {/* With Auto Highlight */}
-          <Autocomplete
-            autoHighlight
-            options={topFilms}
-            renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Auto Highlight" />}
-            style={{ marginTop: 16 }}
-          />
+          <StoryVariation label="Auto Highlight">
+            <Autocomplete
+              autoHighlight
+              options={topFilms}
+              renderInput={(params: AutocompleteRenderInputParams) => <TextField {...params} label="Auto Highlight" />}
+            />
+          </StoryVariation>
         </ThemeProvider>
       ),
     });

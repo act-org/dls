@@ -9,6 +9,7 @@ import { Button } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import { ReactElement, useState } from 'react';
 
+import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
 import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
@@ -91,61 +92,53 @@ const themeStories = ThemesArray.reduce(
     stories[theme] = createThemeStory<ButtonGroupProps>(theme, {
       render: () => (
         <ThemeProvider theme={theme}>
-          {/* Primary Color */}
-          <div>
+          <StoryVariation label="Primary">
             <ButtonGroup color="primary">
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Secondary Color */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Secondary">
             <ButtonGroup color="secondary">
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Error Color */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Error">
             <ButtonGroup color="error">
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Info Color */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Info">
             <ButtonGroup color="info">
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Success Color */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Success">
             <ButtonGroup color="success">
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Warning Color */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Warning">
             <ButtonGroup color="warning">
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Disabled */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Disabled">
             <ButtonGroup disabled>
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
 
-          {/* Full Width */}
-          <div style={{ marginTop: 16 }}>
+          <StoryVariation label="Full Width">
             <ButtonGroup fullWidth>
               <ButtonGroupChildren />
             </ButtonGroup>
-          </div>
+          </StoryVariation>
         </ThemeProvider>
       ),
     });
