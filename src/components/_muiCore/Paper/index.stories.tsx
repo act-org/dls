@@ -8,8 +8,17 @@
 import { Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 
-import { Paper } from './internal';
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
+import { Paper, PaperProps } from './internal';
+
+/**
+ * The default Paper exports
+ */
 export default {
   args: {
     children: <Typography variant="h6">Paper Content</Typography>,
@@ -19,7 +28,6 @@ export default {
       minHeight: '100px',
     },
   },
-  argTypes: {},
   component: Paper,
   parameters: {
     layout: 'padded',
@@ -28,17 +36,144 @@ export default {
   title: 'MUI Core / Paper',
 } as Meta<Paper>;
 
-export const Primary: StoryObj<Paper> = { args: {} };
-export const Outlined: StoryObj<Paper> = { args: { variant: 'outlined' } };
-export const Rounded: StoryObj<Paper> = {
+type Story = StoryObj<PaperProps>;
+
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
-    children: <Typography variant="h6">Rounded</Typography>,
-    square: false,
+    children: <Typography variant="h6">Paper Content</Typography>,
+    sx: {
+      display: 'flex',
+      justifyContent: 'center',
+      minHeight: '100px',
+    },
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
-export const Square: StoryObj<Paper> = {
+
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
   args: {
-    children: <Typography variant="h6">Square</Typography>,
-    square: true,
+    children: <Typography variant="h6">Paper Content</Typography>,
+    sx: {
+      display: 'flex',
+      justifyContent: 'center',
+      minHeight: '100px',
+    },
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, Paper),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
 };
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<PaperProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <Paper sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Default Paper</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Outlined">
+            <Paper variant="outlined" sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Outlined Paper</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Elevation 1">
+            <Paper elevation={1} sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Elevation 1</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Elevation 2">
+            <Paper elevation={2} sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Elevation 2</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Elevation 3">
+            <Paper elevation={3} sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Elevation 3</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Elevation 4">
+            <Paper elevation={4} sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Elevation 4</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Rounded">
+            <Paper square={false} sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Rounded Paper</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Square">
+            <Paper square sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h6">Square Paper</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="With Custom Background">
+            <Paper sx={{ p: 2, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'primary.light' }}>
+              <Typography variant="h6" color="primary.contrastText">
+                Custom Background
+              </Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="With Border">
+            <Paper
+              sx={{
+                p: 2,
+                minHeight: '80px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                border: '2px solid',
+                borderColor: 'primary.main',
+              }}
+            >
+              <Typography variant="h6">With Border</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Small Padding">
+            <Paper sx={{ p: 1, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="body2">Small Padding</Typography>
+            </Paper>
+          </StoryVariation>
+
+          <StoryVariation label="Large Padding">
+            <Paper sx={{ p: 4, minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Typography variant="h5">Large Padding</Typography>
+            </Paper>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };
