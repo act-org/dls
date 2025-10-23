@@ -7,6 +7,10 @@ on:
       - next
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   test:
     name: Test
@@ -24,3 +28,49 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Test
         run: npm test
+
+  chromatic-pr-build:
+    name: Chromatic
+    environment:
+      name: chromatic
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['22']
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v4
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-test-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-test-${{ env.cache-name }}-
+            ${{ runner.os }}-test-
+            ${{ runner.os }}-
+      - name: Verify the cache
+        run: npm cache verify
+      - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci --cache .npm --prefer-offline
+      - name: Publish to Chromatic
+        uses: chromaui/action@v10
+        id: chromatic
+        with:
+          projectToken: ${{ vars.CHROMATIC_PROJECT_TOKEN }}
+          onlyChanged: true
+          exitZeroOnChanges: '!gh-readonly-queue/**'
+          exitOnceUploaded: true
+          traceChanged: true
+    outputs:
+      STORYBOOK_URL: ${{ steps.chromatic.outputs.storybookUrl }}
