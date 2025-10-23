@@ -6,9 +6,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import * as fs from 'fs';
-import * as path from 'path';
-import { JestConfigWithTsJest, pathsToModuleNameMapper } from 'ts-jest';
+const fs = require('fs');
+const path = require('path');
+const { pathsToModuleNameMapper } = require('ts-jest');
 
 // Read tsconfig.json manually to avoid import attribute issues
 const tsconfigPath = path.resolve(__dirname, 'tsconfig.json');
@@ -16,7 +16,7 @@ const tsconfigContent = fs.readFileSync(tsconfigPath, 'utf8');
 const tsconfig = JSON.parse(tsconfigContent);
 const { compilerOptions } = tsconfig;
 
-const config: JestConfigWithTsJest = {
+const config = {
   collectCoverage: true,
   collectCoverageFrom: [
     '**/*.{ts,tsx}',
@@ -35,6 +35,7 @@ const config: JestConfigWithTsJest = {
   coverageReporters: ['text', 'html'],
   moduleNameMapper: {
     ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     'd3-array': '<rootDir>/node_modules/d3-array/dist/d3-array.min.js',
     'd3-color': '<rootDir>/node_modules/d3-color/dist/d3-color.min.js',
     'd3-format': '<rootDir>/node_modules/d3-format/dist/d3-format.min.js',
@@ -44,13 +45,13 @@ const config: JestConfigWithTsJest = {
     'd3-scale': '<rootDir>/node_modules/d3-scale/dist/d3-scale.min.js',
     'd3-shape': '<rootDir>/node_modules/d3-shape/dist/d3-shape.min.js',
     'd3-time': '<rootDir>/node_modules/d3-time/dist/d3-time.min.js',
-    '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   preset: 'ts-jest',
   roots: ['<rootDir>/src'],
   setupFilesAfterEnv: ['./jest.setup.ts'],
   testEnvironment: 'jsdom',
   transform: {
+    '^.+\\.js$': 'babel-jest',
     '^.+\\.tsx?$': [
       'ts-jest',
       {
@@ -59,11 +60,10 @@ const config: JestConfigWithTsJest = {
         tsconfig: './tsconfig.json',
       },
     ],
-    '^.+\\.js$': 'babel-jest',
   },
   transformIgnorePatterns: [
     'node_modules/(?!(color|color-convert|color-name|color-string)/)',
   ],
 };
 
-export default config;
+module.exports = config;
