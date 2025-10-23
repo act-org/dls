@@ -69,3 +69,5 @@ jobs:
           exitOnceUploaded: true
           onlyChanged: true
           autoAcceptChanges: true
+        env:
+          STORYBOOK_MAPBOX_ACCESS_TOKEN: ${{ vars.STORYBOOK_MAPBOX_ACCESS_TOKEN }}

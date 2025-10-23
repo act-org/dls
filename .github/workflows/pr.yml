@@ -72,5 +72,7 @@ jobs:
           exitZeroOnChanges: '!gh-readonly-queue/**'
           exitOnceUploaded: true
           traceChanged: true
+        env:
+          STORYBOOK_MAPBOX_ACCESS_TOKEN: ${{ vars.STORYBOOK_MAPBOX_ACCESS_TOKEN }}
     outputs:
       STORYBOOK_URL: ${{ steps.chromatic.outputs.storybookUrl }}
