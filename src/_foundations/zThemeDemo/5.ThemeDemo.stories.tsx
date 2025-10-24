@@ -44,7 +44,7 @@ import {
   TypographyProps,
 } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { Meta, StoryFn } from '@storybook/react-webpack5';
+import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import sortBy from 'lodash/sortBy';
 import MailIcon from 'mdi-material-ui/Mailbox';
 import Menu from 'mdi-material-ui/Menu';
@@ -411,7 +411,7 @@ const themeStories = ThemesArray.reduce(
 
     return stories;
   },
-  {} as Record<string, StoryFn>,
+  {} as Record<string, StoryObj>,
 );
 
 export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
