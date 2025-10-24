@@ -10,6 +10,10 @@ import { useTheme } from '@mui/material/styles';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import React from 'react';
 
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { ThemesArray } from '~/styles/themes';
+
 import { StyledComment, StyledGridItem, StyledPaper } from './styles';
 
 const Story = (): React.ReactElement => {
@@ -74,4 +78,35 @@ export default {
 
 type Story = StoryObj;
 
-export const Preview: Story = { args: {} };
+// Preview story (not snapshotted in Chromatic)
+export const Preview: Story = {
+  args: {},
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <Story />
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

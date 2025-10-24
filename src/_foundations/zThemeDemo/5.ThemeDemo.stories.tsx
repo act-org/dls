@@ -52,6 +52,10 @@ import AddIcon from 'mdi-material-ui/Plus';
 import { ReactElement } from 'react';
 
 import { FilmType, topFilms } from '~/components/_muiCore/Autocomplete/internal';
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { ThemesArray } from '~/styles/themes';
 
 interface Demo<ComponentProps> {
   flex?: number;
@@ -326,6 +330,7 @@ const meta = {
 
 export default meta;
 
+// Preview story (not snapshotted in Chromatic)
 export const Preview: StoryFn = () => {
   return (
     <Box>
@@ -358,3 +363,61 @@ export const Preview: StoryFn = () => {
     </Box>
   );
 };
+
+Preview.parameters = {
+  chromatic: { disable: true },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Theme Demo">
+            <Box>
+              <Typography variant="h2">Theme Preview</Typography>
+              <Typography variant="caption">
+                The following is a preview of many of the components inside of the DLS. This page is useful to get a feel for the look of the theme as well as
+                for theme designers to use to quickly see the changes.
+              </Typography>
+              <Grid container rowSpacing=".8em">
+                {sortBy(demos, 'title').map(demo => (
+                  <Grid
+                    key={Math.random()}
+                    size={{
+                      xs: 12,
+                    }}
+                  >
+                    <Card>
+                      <CardHeader title={demo.title} />
+                      <CardContent sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                        {demo.props.map(props => (
+                          <Box key={Math.random()} sx={{ flex: demo.flex, mx: '.5em' }}>
+                            {demo.render(props as any)}
+                          </Box>
+                        ))}
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
+            </Box>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, StoryFn>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };
