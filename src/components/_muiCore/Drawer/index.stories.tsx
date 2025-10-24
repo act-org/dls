@@ -23,6 +23,29 @@ const createDrawerContent = (): React.ReactElement => (
   </div>
 );
 
+// Drawer with launcher button component
+const DrawerWithLauncher = ({
+  children,
+  label,
+  ...drawerProps
+}: {
+  children: React.ReactElement;
+  label: string;
+} & Omit<DrawerProps, 'open'>): React.ReactElement => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <Button color="primary" onClick={(): void => setOpen(true)} style={{ marginBottom: 16 }} variant="contained">
+        {label}
+      </Button>
+      <Drawer onClose={(): void => setOpen(false)} {...drawerProps} open={open}>
+        {children}
+      </Drawer>
+    </>
+  );
+};
+
 const DrawerWithToggle = ({
   anchor,
   label,
@@ -82,7 +105,11 @@ export const Documentation: Story = {
   parameters: {
     chromatic: { disable: true },
   },
-  render: args => <Drawer {...args}>{createDrawerContent()}</Drawer>,
+  render: args => (
+    <DrawerWithLauncher label="Open Drawer" {...args}>
+      {createDrawerContent()}
+    </DrawerWithLauncher>
+  ),
 };
 
 // Playground story (not snapshotted in Chromatic)
