@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Breadcrumbs as MuiBreadcrumbs,
-  BreadcrumbsProps as MuiBreadcrumbsProps,
-} from '@mui/material';
+import { Breadcrumbs as MuiBreadcrumbs, BreadcrumbsProps as MuiBreadcrumbsProps } from '@mui/material';
 
 export const Breadcrumbs = MuiBreadcrumbs;
 export type Breadcrumbs = typeof MuiBreadcrumbs;
