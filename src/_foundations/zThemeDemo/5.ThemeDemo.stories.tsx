@@ -52,7 +52,6 @@ import AddIcon from 'mdi-material-ui/Plus';
 import { ReactElement } from 'react';
 
 import { FilmType, topFilms } from '~/components/_muiCore/Autocomplete/internal';
-import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
 import { createThemeStory } from '~/helpers/createThemeStory';
 import { ThemesArray } from '~/styles/themes';
@@ -378,36 +377,34 @@ const themeStories = ThemesArray.reduce(
     stories[theme] = createThemeStory(theme, {
       render: () => (
         <ThemeProvider theme={theme}>
-          <StoryVariation label="Theme Demo">
-            <Box>
-              <Typography variant="h2">Theme Preview</Typography>
-              <Typography variant="caption">
-                The following is a preview of many of the components inside of the DLS. This page is useful to get a feel for the look of the theme as well as
-                for theme designers to use to quickly see the changes.
-              </Typography>
-              <Grid container rowSpacing=".8em">
-                {sortBy(demos, 'title').map(demo => (
-                  <Grid
-                    key={Math.random()}
-                    size={{
-                      xs: 12,
-                    }}
-                  >
-                    <Card>
-                      <CardHeader title={demo.title} />
-                      <CardContent sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-                        {demo.props.map(props => (
-                          <Box key={Math.random()} sx={{ flex: demo.flex, mx: '.5em' }}>
-                            {demo.render(props as any)}
-                          </Box>
-                        ))}
-                      </CardContent>
-                    </Card>
-                  </Grid>
-                ))}
-              </Grid>
-            </Box>
-          </StoryVariation>
+          <Box>
+            <Typography variant="h2">Theme Preview</Typography>
+            <Typography variant="caption">
+              The following is a preview of many of the components inside of the DLS. This page is useful to get a feel for the look of the theme as well as for
+              theme designers to use to quickly see the changes.
+            </Typography>
+            <Grid container rowSpacing=".8em">
+              {sortBy(demos, 'title').map(demo => (
+                <Grid
+                  key={Math.random()}
+                  size={{
+                    xs: 12,
+                  }}
+                >
+                  <Card>
+                    <CardHeader title={demo.title} />
+                    <CardContent sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                      {demo.props.map(props => (
+                        <Box key={Math.random()} sx={{ flex: demo.flex, mx: '.5em' }}>
+                          {demo.render(props as any)}
+                        </Box>
+                      ))}
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
         </ThemeProvider>
       ),
     });
