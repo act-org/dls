@@ -5,11 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  createTheme as muiCreateTheme,
-  Theme,
-  ThemeOptions,
-} from '@mui/material/styles';
+import { createTheme as muiCreateTheme, Theme, ThemeOptions } from '@mui/material/styles';
 import { createBreakpoints } from '@mui/system';
 import deepMerge from 'deepmerge';
 
@@ -31,46 +27,42 @@ export interface ICustomDims {
   };
 }
 
-export type CustomThemeOptions<T extends object = Record<string, never>> =
-  ThemeOptions & T;
+export type CustomThemeOptions<T extends object = Record<string, never>> = ThemeOptions & T;
 
-export const createTheme = <T extends object>(
-  options: CustomThemeOptions<T>,
-  ...args: object[]
-): CustomTheme<T> => muiCreateTheme(options, ...args) as CustomTheme<T>;
+export const createTheme = <T extends object>(options: CustomThemeOptions<T>, ...args: object[]): CustomTheme<T> =>
+  muiCreateTheme(options, ...args) as CustomTheme<T>;
 
 export type ThemeCustomizations = ICustomDims & {
   palette: CustomPaletteOptions;
   spacingPx: number;
 };
 
-export const THEME_ENCOURAGE_E4E_OPTIONS: CustomThemeOptions<ThemeCustomizations> =
-  deepMerge(
-    baseTheme,
-    {
-      breakpoints: createBreakpoints({
-        values: {
-          lg: 1440,
-          md: 1280,
-          sm: 820,
-          xl: 1920,
-          xs: 0,
-        },
-      }),
-      components,
-      customDims: {
-        ...E4ECustomDimensions,
+export const THEME_ENCOURAGE_E4E_OPTIONS: CustomThemeOptions<ThemeCustomizations> = deepMerge(
+  baseTheme,
+  {
+    breakpoints: createBreakpoints({
+      values: {
+        lg: 1440,
+        md: 1280,
+        sm: 820,
+        xl: 1920,
+        xs: 0,
       },
-      palette,
-      props,
-      shadows,
-      spacing,
-      spacingPx: SPACING_PX,
-      typography,
+    }),
+    components,
+    customDims: {
+      ...E4ECustomDimensions,
     },
-    // Replace arrays instead of merging them together
-    { arrayMerge: (_: unknown[], source: unknown[]) => source },
-  );
+    palette,
+    props,
+    shadows,
+    spacing,
+    spacingPx: SPACING_PX,
+    typography,
+  },
+  // Replace arrays instead of merging them together
+  { arrayMerge: (_: unknown[], source: unknown[]) => source },
+);
 
 export const THEME_ENCOURAGE_E4E = createTheme(THEME_ENCOURAGE_E4E_OPTIONS);
 

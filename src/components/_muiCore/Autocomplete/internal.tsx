@@ -5,11 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  ChipTypeMap,
-  Autocomplete as MuiAutoComplete,
-  AutocompleteProps as MuiAutocompleteProps,
-} from '@mui/material';
+import { ChipTypeMap, Autocomplete as MuiAutoComplete, AutocompleteProps as MuiAutocompleteProps } from '@mui/material';
 
 export const Autocomplete = MuiAutoComplete;
 export type Autocomplete = typeof MuiAutoComplete;
@@ -19,13 +15,7 @@ export type AutocompleteProps<
   DisableClearable extends boolean | undefined,
   FreeSolo extends boolean | undefined,
   ChipComponent extends React.ElementType = ChipTypeMap['defaultComponent'],
-> = MuiAutocompleteProps<
-  T,
-  Multiple,
-  DisableClearable,
-  FreeSolo,
-  ChipComponent
->;
+> = MuiAutocompleteProps<T, Multiple, DisableClearable, FreeSolo, ChipComponent>;
 
 export type FilmType = {
   label: string;
@@ -101,8 +91,7 @@ export const topFilms: FilmType[] = [
   { label: 'Alien', year: 1979 },
   { label: 'Sunset Boulevard', year: 1950 },
   {
-    label:
-      'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb',
+    label: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb',
     year: 1964,
   },
   { label: 'The Great Dictator', year: 1940 },

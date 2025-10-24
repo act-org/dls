@@ -15,9 +15,7 @@ describe('sort function', () => {
   ];
 
   it('sorts objects in ascending order', () => {
-    const sortedData = data.sort(
-      sort({ sortBy: 'name', sortDirection: 'ASCENDING' }),
-    );
+    const sortedData = data.sort(sort({ sortBy: 'name', sortDirection: 'ASCENDING' }));
 
     expect(sortedData[0].name).toEqual('Jane');
     expect(sortedData[1].name).toEqual('Joe');
@@ -25,9 +23,7 @@ describe('sort function', () => {
   });
 
   it('sorts objects in descending order', () => {
-    const sortedData = data.sort(
-      sort({ sortBy: 'name', sortDirection: 'DESCENDING' }),
-    );
+    const sortedData = data.sort(sort({ sortBy: 'name', sortDirection: 'DESCENDING' }));
 
     expect(sortedData[0].name).toEqual('John');
     expect(sortedData[1].name).toEqual('Joe');
@@ -35,9 +31,7 @@ describe('sort function', () => {
   });
 
   it('sorts numbers', () => {
-    const sortedData = data.sort(
-      sort({ sortBy: 'age', sortDirection: 'ASCENDING' }),
-    );
+    const sortedData = data.sort(sort({ sortBy: 'age', sortDirection: 'ASCENDING' }));
 
     expect(sortedData[0].age).toEqual(25);
     expect(sortedData[1].age).toEqual(30);

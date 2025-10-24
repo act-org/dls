@@ -27,10 +27,7 @@ import {
   TooltipProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
-import {
-  NameType,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
+import { NameType, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -39,11 +36,7 @@ import { VariantType } from '~/types';
 import InnerPieComponent from './InnerPieComponent';
 import { PieLegend } from './PieLegend';
 import { StyledGridBody, StyledGridTitle, StyledTypography } from './styles';
-import {
-  CustomLegendComponentType,
-  HighlightComponentType,
-  PieDataProps as TypesPieDataProps,
-} from './types';
+import { CustomLegendComponentType, HighlightComponentType, PieDataProps as TypesPieDataProps } from './types';
 
 type TitleProps = TypographyProps & {
   title: string;
@@ -75,9 +68,7 @@ export const DEFAULT_PIE_MIN_ANGLE = 1;
 /**
  * The existence of HighlightComponent will automatically push the Legend from inside the PieChart
  */
-export const PieChart: React.FC<PieChartProps> = (
-  inProps: PieChartProps,
-): React.ReactElement<PieChartProps> => {
+export const PieChart: React.FC<PieChartProps> = (inProps: PieChartProps): React.ReactElement<PieChartProps> => {
   const {
     chartLegendTextFontSize,
     chartLegendTextFontSizeSmall,
@@ -101,10 +92,7 @@ export const PieChart: React.FC<PieChartProps> = (
 
   const [activeIndex, setActiveIndex] = React.useState<number | null>(null);
 
-  const pieTotalValue = useMemo(
-    () => data.reduce((acc, { value }) => acc + value, 0),
-    [data],
-  );
+  const pieTotalValue = useMemo(() => data.reduce((acc, { value }) => acc + value, 0), [data]);
 
   const hasHighlight = !!HighlightComponent;
 
@@ -140,12 +128,7 @@ export const PieChart: React.FC<PieChartProps> = (
       )}
 
       <StyledGridBody>
-        <ResponsiveContainer
-          debounce={50}
-          height={height || (variant ? 300 : 350)}
-          width={width || '100%'}
-          {...responsiveContainerProps}
-        >
+        <ResponsiveContainer debounce={50} height={height || (variant ? 300 : 350)} width={width || '100%'} {...responsiveContainerProps}>
           <RechartsPieChart
             margin={{
               bottom: parseInt(String(spacing(1)), 10),
@@ -169,27 +152,14 @@ export const PieChart: React.FC<PieChartProps> = (
             >
               {data.map(({ color }, i) => (
                 <Cell
-                  fill={
-                    color ||
-                    colors[i] ||
-                    DEFAULT_CHART_COLORS[i] ||
-                    palette.grey[700]
-                  }
-                  fillOpacity={
-                    activeIndex === null || activeIndex === i ? 1 : 0.4
-                  }
+                  fill={color || colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
+                  fillOpacity={activeIndex === null || activeIndex === i ? 1 : 0.4}
                   key={`cell-${i}`}
                 />
               ))}
               {activeIndex !== null && HighlightComponent ? (
                 <Label
-                  content={
-                    <InnerPieComponent
-                      HighlightComponent={HighlightComponent}
-                      payload={data[activeIndex]}
-                      pieTotalValue={pieTotalValue}
-                    />
-                  }
+                  content={<InnerPieComponent HighlightComponent={HighlightComponent} payload={data[activeIndex]} pieTotalValue={pieTotalValue} />}
                   position="center"
                 />
               ) : null}
@@ -203,9 +173,7 @@ export const PieChart: React.FC<PieChartProps> = (
                   chartLegendTextFontSizeSmall={chartLegendTextFontSizeSmall}
                   CustomLegendIcon={CustomLegendIcon}
                   pieTotalValue={pieTotalValue}
-                  showAsSquare={
-                    legendProps?.align === 'right' && data.length > 3
-                  }
+                  showAsSquare={legendProps?.align === 'right' && data.length > 3}
                 />
               }
               layout="vertical"
@@ -215,11 +183,7 @@ export const PieChart: React.FC<PieChartProps> = (
               {...(legendProps as Legend)}
             />
 
-            <Tooltip
-              formatter={(v: ValueType): string => numeral(v).format('0,0')}
-              wrapperStyle={{ outline: 'none' }}
-              {...tooltipProps}
-            />
+            <Tooltip formatter={(v: ValueType): string => numeral(v).format('0,0')} wrapperStyle={{ outline: 'none' }} {...tooltipProps} />
 
             {children}
           </RechartsPieChart>

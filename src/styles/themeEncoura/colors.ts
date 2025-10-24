@@ -27,32 +27,11 @@ export const COLORS = {
   },
   CHART: {
     // Market insights chart colors
-    primary: [
-      '#7FC4E1',
-      accentBlue,
-      '#0D47A1',
-      secondaryDark,
-      slateBlue,
-      slateGrey,
-    ],
+    primary: ['#7FC4E1', accentBlue, '#0D47A1', secondaryDark, slateBlue, slateGrey],
     // Dark enrollment lens charts
-    quaternary: [
-      '#00838F',
-      secondaryMain,
-      secondaryDark,
-      slateBlue,
-      slateGrey,
-      grey[700],
-    ],
+    quaternary: ['#00838F', secondaryMain, secondaryDark, slateBlue, slateGrey, grey[700]],
     // Enrollment lens chart colors
-    secondary: [
-      teal,
-      '#1594A3',
-      '#225479',
-      secondaryDark,
-      slateBlue,
-      slateGrey,
-    ],
+    secondary: [teal, '#1594A3', '#225479', secondaryDark, slateBlue, slateGrey],
     // Vivid chart colors
     tertiary: [teal, brightOrange, '#8E24AA', '#2196F3', '#E91E63', '#CE93D8'],
   },

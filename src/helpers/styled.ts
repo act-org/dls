@@ -5,18 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  CreateMUIStyled,
-  styled as muiStyled,
-  Theme,
-} from '@mui/material/styles';
+import { CreateMUIStyled, styled as muiStyled, Theme } from '@mui/material/styles';
 
 export type AsStyledProps<T> = {
   [K in keyof T as `$${string & K}`]: T[K];
 };
 
-export const forwardNonTransientProps = (propName: string): boolean =>
-  !propName.startsWith('$');
+export const forwardNonTransientProps = (propName: string): boolean => !propName.startsWith('$');
 
 /**
  * Customized styled helper which omits transient props (starting with $) which are used for

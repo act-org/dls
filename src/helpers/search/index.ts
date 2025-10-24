@@ -13,9 +13,7 @@ export function search<T>(docs: T[], properties: string[], value: string): T[] {
     properties.some((property): boolean => {
       const currentValue = get(doc, property);
       if (doc !== null && currentValue !== null) {
-        return toString(currentValue)
-          .toLowerCase()
-          .includes(value.trim().toLowerCase());
+        return toString(currentValue).toLowerCase().includes(value.trim().toLowerCase());
       }
       return false;
     }),

@@ -23,14 +23,12 @@ type StyledBoxType = BoxProps & {
   showSummary?: boolean;
 };
 
-export const StyledTableContainer = styled(TableContainer)<TableContainerProps>(
-  () => ({
-    maxHeight: '100%',
-    maxWidth: 250,
-    overflowX: 'hidden',
-    overflowY: 'auto',
-  }),
-);
+export const StyledTableContainer = styled(TableContainer)<TableContainerProps>(() => ({
+  maxHeight: '100%',
+  maxWidth: 250,
+  overflowX: 'hidden',
+  overflowY: 'auto',
+}));
 
 export const StyledTable = styled(Table)(({ theme }) => ({
   backgroundColor: blue[50],
@@ -53,16 +51,14 @@ export const StyledTableRow = styled(TableRow)(() => ({
   justifyContent: 'flex-start',
 }));
 
-export const StyledBox = styled(Box)<StyledBoxType>(
-  ({ showSummary, theme }) => ({
-    height: '85%',
-    position: 'absolute',
-    right: theme.spacing(2),
-    top: theme.spacing(5),
-    transition: '0.5s',
-    width: showSummary ? 250 : 0,
-  }),
-);
+export const StyledBox = styled(Box)<StyledBoxType>(({ showSummary, theme }) => ({
+  height: '85%',
+  position: 'absolute',
+  right: theme.spacing(2),
+  top: theme.spacing(5),
+  transition: '0.5s',
+  width: showSummary ? 250 : 0,
+}));
 
 export const StyledIconButton = styled(IconButton)(({ theme }) => ({
   '&:hover': {

@@ -13,8 +13,8 @@ import TableCell, { TableCellProps } from '@mui/material/TableCell';
 import Typography, { TypographyProps } from '@mui/material/Typography';
 import clsx from 'clsx';
 import Color from 'color';
-import ChevronDown from '~/icons/ChevronDown';
-import ChevronUp from '~/icons/ChevronUp';
+import ChevronDown from 'mdi-material-ui/ChevronDown';
+import ChevronUp from 'mdi-material-ui/ChevronUp';
 
 import { createThemeStyled } from '~/helpers/styled';
 import { typeOk } from '~/helpers/types';
@@ -28,39 +28,31 @@ interface IColorProp {
 
 const styled = createThemeStyled<Theme & ICustomDims>();
 
-export const StyledChevronUp = styled(ChevronUp)<SvgIconProps & IColorProp>(
-  ({ $colorProp, theme }) => ({
-    color: clsx(
-      $colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
-      $colorProp === 'primary' &&
-        Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
-      $colorProp === 'secondary' &&
-        Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
-    ),
-    cursor: 'pointer',
-    fontSize: theme.typography.fontSize,
-    height: ICON_SIZE,
-    userSelect: 'auto',
-    width: ICON_SIZE,
-  }),
-);
+export const StyledChevronUp = styled(ChevronUp)<SvgIconProps & IColorProp>(({ $colorProp, theme }) => ({
+  color: clsx(
+    $colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
+    $colorProp === 'primary' && Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+    $colorProp === 'secondary' && Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+  ),
+  cursor: 'pointer',
+  fontSize: theme.typography.fontSize,
+  height: ICON_SIZE,
+  userSelect: 'auto',
+  width: ICON_SIZE,
+}));
 
-export const StyledChevronDown = styled(ChevronDown)<SvgIconProps & IColorProp>(
-  ({ $colorProp, theme }) => ({
-    color: clsx(
-      $colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
-      $colorProp === 'primary' &&
-        Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
-      $colorProp === 'secondary' &&
-        Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
-    ),
-    cursor: 'pointer',
-    fontSize: theme.typography.fontSize,
-    height: ICON_SIZE,
-    userSelect: 'auto',
-    width: ICON_SIZE,
-  }),
-);
+export const StyledChevronDown = styled(ChevronDown)<SvgIconProps & IColorProp>(({ $colorProp, theme }) => ({
+  color: clsx(
+    $colorProp === 'default' && 'rgba(0, 0, 0, 0.35)',
+    $colorProp === 'primary' && Color(theme.palette.primary.contrastText).fade(0.35).rgb().string(),
+    $colorProp === 'secondary' && Color(theme.palette.secondary.contrastText).fade(0.35).rgb().string(),
+  ),
+  cursor: 'pointer',
+  fontSize: theme.typography.fontSize,
+  height: ICON_SIZE,
+  userSelect: 'auto',
+  width: ICON_SIZE,
+}));
 
 export const StyledGrid = styled(Grid)(({ theme }) => ({
   alignItems: 'center',
@@ -96,10 +88,8 @@ export const StyledTableCell = styled(TableCell)<
       ...cssProperties,
       backgroundColor: clsx(
         color === 'default' && grey[300],
-        color === 'primary' &&
-          Color(theme.palette.primary.main).darken(0.15).hex(),
-        color === 'secondary' &&
-          Color(theme.palette.secondary.main).darken(0.15).hex(),
+        color === 'primary' && Color(theme.palette.primary.main).darken(0.15).hex(),
+        color === 'secondary' && Color(theme.palette.secondary.main).darken(0.15).hex(),
       ),
     });
   }
@@ -115,9 +105,7 @@ export const StyledTableCell = styled(TableCell)<
   return cssProperties;
 });
 
-export const StyledTypography = styled(Typography)<
-  TypographyProps & IColorProp
->(({ $colorProp, theme }) => ({
+export const StyledTypography = styled(Typography)<TypographyProps & IColorProp>(({ $colorProp, theme }) => ({
   color: clsx(
     $colorProp === 'default' && theme.palette.text.primary,
     $colorProp === 'primary' && theme.palette.primary.contrastText,

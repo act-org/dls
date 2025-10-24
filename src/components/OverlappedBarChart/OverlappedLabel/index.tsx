@@ -58,19 +58,14 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
 
   let baselineY = Number(y);
   const outsideBarValue = Number(data?.[index]?.[outsideBarDataKey]);
-  const outsideBarHeight =
-    (outsideBarValue / Number(value)) * Number(height || 0);
+  const outsideBarHeight = (outsideBarValue / Number(value)) * Number(height || 0);
 
   // isInsideInnerBar means whether the label should be inside the bars, that themselves are inside the outside bar
-  const isInsideInnerBar =
-    !isOutsideBar && Number(height) >= parseInt(spacing(6.5), 10);
+  const isInsideInnerBar = !isOutsideBar && Number(height) >= parseInt(spacing(6.5), 10);
 
   if (
     !isOutsideBar &&
-    (Number.isNaN(outsideBarHeight) ||
-      (Number(height) < 50 &&
-        outsideBarHeight - Number(height) < parseInt(spacing(4.5), 10)) ||
-      !outsideBarValue)
+    (Number.isNaN(outsideBarHeight) || (Number(height) < 50 && outsideBarHeight - Number(height) < parseInt(spacing(4.5), 10)) || !outsideBarValue)
   ) {
     // eslint-disable-next-line react/jsx-no-useless-fragment
     return <></>;
@@ -82,9 +77,7 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
     baselineY = Number(y) + parseInt(spacing(6), 10);
   }
 
-  const textFill = isInsideInnerBar
-    ? innerBarTextColor || barTextColors?.[0] || palette.text.primary
-    : textColor || color || palette.text.primary;
+  const textFill = isInsideInnerBar ? innerBarTextColor || barTextColors?.[0] || palette.text.primary : textColor || color || palette.text.primary;
   return (
     <g>
       <StyledText
@@ -96,13 +89,7 @@ export const OverlappedLabel: React.FC<OverlappedLabelProps> = ({
       >
         {(label?.[0] || '').toUpperCase() + label.substring(1)}
       </StyledText>
-      <StyledText
-        dominantBaseline="middle"
-        fill={textFill}
-        textAnchor="middle"
-        x={(x as number) + (width as number) / 2}
-        y={baselineY}
-      >
+      <StyledText dominantBaseline="middle" fill={textFill} textAnchor="middle" x={(x as number) + (width as number) / 2} y={baselineY}>
         {isNumber(value) ? value.toLocaleString('en-US') : value}
       </StyledText>
     </g>

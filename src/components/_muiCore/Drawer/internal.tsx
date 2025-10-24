@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Drawer as MuiDrawer,
-  DrawerProps as MuiDrawerProps,
-} from '@mui/material';
+import { Drawer as MuiDrawer, DrawerProps as MuiDrawerProps } from '@mui/material';
 
 export const Drawer = MuiDrawer;
 export type Drawer = typeof MuiDrawer;

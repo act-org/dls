@@ -9,6 +9,7 @@ import { Button } from '@mui/material';
 import { common } from '@mui/material/colors';
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import debounce from 'lodash/debounce';
+import MagnifyMinusOutline from 'mdi-material-ui/MagnifyMinusOutline';
 import numeral from 'numeral';
 import React, { LegacyRef, MouseEventHandler } from 'react';
 import {
@@ -33,11 +34,7 @@ import {
 import { Props as ReferenceLinePropsImport } from 'recharts/types/cartesian/ReferenceLine';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 import { CategoricalChartState } from 'recharts/types/chart/types';
-import {
-  NameType,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
-import MagnifyMinusOutline from '~/icons/MagnifyMinusOutline';
+import { NameType, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ScatterPlotData } from '~/types';
@@ -57,16 +54,7 @@ import {
   getMinMax,
 } from './processing';
 import RankSummary from './RankSummary';
-import {
-  CustomXAxisProps,
-  CustomYAxisProps,
-  IBuildDataOptions,
-  ICoordinate,
-  IPlotDimensions,
-  IScatterDomain,
-  IScatterRefNode,
-  IZoomOptions,
-} from './types';
+import { CustomXAxisProps, CustomYAxisProps, IBuildDataOptions, ICoordinate, IPlotDimensions, IScatterDomain, IScatterRefNode, IZoomOptions } from './types';
 
 type ReferenceLineProps = ReferenceLinePropsImport & {
   ref?: LegacyRef<ReferenceLine>;
@@ -107,9 +95,7 @@ const OPACITY_NOT_HIGHLIGHTED = 0.2;
 const DOUBLE_CLICK_ZOOM_AMOUNT = 0.4;
 const WHEEL_ZOOM_AMOUNT = 0.15;
 
-export const ScatterPlot: React.FC<ScatterPlotProps> = (
-  inProps: ScatterPlotProps,
-) => {
+export const ScatterPlot: React.FC<ScatterPlotProps> = (inProps: ScatterPlotProps) => {
   const {
     averageLineXLabelUnit,
     cartesianGridProps,
@@ -143,42 +129,27 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
   const { palette, spacing, typography } = useTheme();
 
   const [filteredData, setFilteredData] = React.useState(data);
-  const [isMouseOverScatter, setIsMouseOverScatter] =
-    React.useState<boolean>(false);
-  const [selectedPoint, setSelectedPoint] = React.useState<
-    ScatterPlotData | undefined
-  >();
+  const [isMouseOverScatter, setIsMouseOverScatter] = React.useState<boolean>(false);
+  const [selectedPoint, setSelectedPoint] = React.useState<ScatterPlotData | undefined>();
   const [xLineCoordinates, setXLineCoordinates] = React.useState<number>();
   const [yLineCoordinates, setYLineCoordinates] = React.useState<number>();
-  const [dragAnchor, setDragAnchor] = React.useState<ICoordinate | undefined>(
-    undefined,
-  );
+  const [dragAnchor, setDragAnchor] = React.useState<ICoordinate | undefined>(undefined);
   const [isDragging, setIsDragging] = React.useState(false);
   const [showSummary, setShowSummary] = React.useState(false);
   const [domain, setDomain] = React.useState<IScatterDomain>({
     x: xAxisProps?.domain ? consolidateDomain(xAxisProps.domain, data) : [0, 0],
-    y: yAxisProps?.domain
-      ? consolidateDomain(yAxisProps.domain, data, true)
-      : [0, 0],
+    y: yAxisProps?.domain ? consolidateDomain(yAxisProps.domain, data, true) : [0, 0],
   });
-  const [initialDomain, setInitialDomain] = React.useState<
-    IScatterDomain | undefined
-  >(undefined);
-  const [plotDimensions, setPlotDimensions] = React.useState<
-    IPlotDimensions | undefined
-  >(undefined);
+  const [initialDomain, setInitialDomain] = React.useState<IScatterDomain | undefined>(undefined);
+  const [plotDimensions, setPlotDimensions] = React.useState<IPlotDimensions | undefined>(undefined);
   const [isZoomBlockingHover, setIsZoomBlockingHover] = React.useState(false);
 
   const wrapperRef = React.useRef<HTMLDivElement>(null);
 
   const pxConversionDimensions = React.useMemo(
     () => ({
-      x: plotDimensions?.width
-        ? (domain.x[1] - domain.x[0]) / plotDimensions.width
-        : 1,
-      y: plotDimensions?.height
-        ? (domain.y[1] - domain.y[0]) / plotDimensions.height
-        : 1,
+      x: plotDimensions?.width ? (domain.x[1] - domain.x[0]) / plotDimensions.width : 1,
+      y: plotDimensions?.height ? (domain.y[1] - domain.y[0]) / plotDimensions.height : 1,
     }),
     [plotDimensions, domain],
   );
@@ -211,10 +182,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
       plotDimensions?.offset,
     );
 
-    const dataPointsInRange = filterDataByDomain(
-      isZoomIn ? filteredData : data,
-      newDomain,
-    );
+    const dataPointsInRange = filterDataByDomain(isZoomIn ? filteredData : data, newDomain);
     setFilteredData(dataPointsInRange);
     setDomain(newDomain);
   };
@@ -239,14 +207,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
         wrapperRef.current.removeEventListener('wheel', wheelHandler);
       }
     };
-  }, [
-    wrapperRef.current,
-    domain,
-    plotDimensions,
-    pxConversionDimensions,
-    data,
-    filteredData,
-  ]);
+  }, [wrapperRef.current, domain, plotDimensions, pxConversionDimensions, data, filteredData]);
 
   const measuredRef: React.RefCallback<IScatterRefNode> = node => {
     if (node?.state?.offset?.height && node.state.offset.width) {
@@ -256,10 +217,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
       const right = node.state.offset.right || 0;
       const top = node.state.offset.top || 0;
       const bottom = node.state.offset.bottom || 0;
-      if (
-        nodeHeight !== plotDimensions?.height ||
-        nodeWidth !== plotDimensions?.width
-      ) {
+      if (nodeHeight !== plotDimensions?.height || nodeWidth !== plotDimensions?.width) {
         setPlotDimensions({
           height: nodeHeight,
           offset: {
@@ -289,12 +247,8 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
       const calcDomain = getDomain(data, dataMaxSpread);
 
       const newInitialDomain = {
-        x: xAxisProps?.domain
-          ? consolidateDomain(xAxisProps.domain, data)
-          : calcDomain.x,
-        y: yAxisProps?.domain
-          ? consolidateDomain(yAxisProps.domain, data, true)
-          : calcDomain.y,
+        x: xAxisProps?.domain ? consolidateDomain(xAxisProps.domain, data) : calcDomain.x,
+        y: yAxisProps?.domain ? consolidateDomain(yAxisProps.domain, data, true) : calcDomain.y,
       };
       setInitialDomain(newInitialDomain);
       setDomain(newInitialDomain);
@@ -305,19 +259,13 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
 
   function compareDomainToInitial(): boolean {
     return (
-      domain.x[0] !== initialDomain?.x[0] ||
-      domain.x[1] !== initialDomain?.x[1] ||
-      domain.y[0] !== initialDomain?.y[0] ||
-      domain.y[1] !== initialDomain?.y[1]
+      domain.x[0] !== initialDomain?.x[0] || domain.x[1] !== initialDomain?.x[1] || domain.y[0] !== initialDomain?.y[0] || domain.y[1] !== initialDomain?.y[1]
     );
   }
 
   const isZoomed = compareDomainToInitial();
 
-  const findAverageLinesCoordinates = (
-    array: number[],
-    lenght: number,
-  ): number => {
+  const findAverageLinesCoordinates = (array: number[], lenght: number): number => {
     return array.reduce((partialSum, item) => partialSum + item, 0) / lenght;
   };
 
@@ -374,36 +322,22 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
   const handleMouseMove = (e: CategoricalChartState): void => {
     if (isDragging && e) {
       const { xValue, yValue } = e;
-      const newDomain = dragDomain(
-        dragAnchor as ICoordinate,
-        [xValue as number, yValue as number],
-        domain,
-        initialDomain as IScatterDomain,
-      );
+      const newDomain = dragDomain(dragAnchor as ICoordinate, [xValue as number, yValue as number], domain, initialDomain as IScatterDomain);
       const dataPointsInRange = filterDataByDomain(data, newDomain);
       setFilteredData(dataPointsInRange);
       setDomain(newDomain);
     }
   };
 
-  const builtData = React.useMemo(
-    () => buildDataPoints(filteredData, pxConversionDimensions),
-    [filteredData, pxConversionDimensions],
-  );
+  const builtData = React.useMemo(() => buildDataPoints(filteredData, pxConversionDimensions), [filteredData, pxConversionDimensions]);
 
   const shouldHideLabel = evaluateLabels(builtData, pxConversionDimensions);
 
   const ResetButtonEndIcon = <MagnifyMinusOutline />;
 
-  const formatAverageLineLabel = (value: number): string =>
-    numeral(value).format('0,0[.]00');
+  const formatAverageLineLabel = (value: number): string => numeral(value).format('0,0[.]00');
   return (
-    <div
-      className="plot-container"
-      onDoubleClick={handleDoubleClick}
-      ref={wrapperRef}
-      style={{ position: 'relative', width: '100%' }}
-    >
+    <div className="plot-container" onDoubleClick={handleDoubleClick} ref={wrapperRef} style={{ position: 'relative', width: '100%' }}>
       {isZoomed && (
         <Button
           color="secondary"
@@ -415,12 +349,7 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
           Reset
         </Button>
       )}
-      <ResponsiveContainer
-        debounce={50}
-        height={height || 400}
-        width="100%"
-        {...responsiveContainerProps}
-      >
+      <ResponsiveContainer debounce={50} height={height || 400} width="100%" {...responsiveContainerProps}>
         <ScatterChart
           height={height || 400}
           margin={{
@@ -442,28 +371,9 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
           }}
           {...chartProps}
         >
-          <CartesianGrid
-            horizontal={false}
-            stroke={palette.grey[300]}
-            {...(cartesianGridProps as CartesianGridProps)}
-          />
-          <XAxis
-            allowDecimals={false}
-            dataKey="x"
-            interval={0}
-            tickLine={false}
-            type="number"
-            {...xAxisProps}
-            domain={domain.x.map(a => fixDecimal(a, 2))}
-          >
-            {xLabelValue && (
-              <Label
-                position="bottom"
-                style={{ userSelect: 'none' }}
-                value={xLabelValue}
-                {...xLabelProps}
-              />
-            )}
+          <CartesianGrid horizontal={false} stroke={palette.grey[300]} {...(cartesianGridProps as CartesianGridProps)} />
+          <XAxis allowDecimals={false} dataKey="x" interval={0} tickLine={false} type="number" {...xAxisProps} domain={domain.x.map(a => fixDecimal(a, 2))}>
+            {xLabelValue && <Label position="bottom" style={{ userSelect: 'none' }} value={xLabelValue} {...xLabelProps} />}
           </XAxis>
           <YAxis
             allowDecimals={false}
@@ -477,24 +387,12 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
             {...yAxisProps}
             domain={domain.y.map(a => fixDecimal(a, 2))}
           >
-            <Label
-              angle={-90}
-              offset={-20}
-              position="center"
-              style={{ userSelect: 'none' }}
-              value={yLabelValue}
-              {...yLabelProps}
-            />
+            <Label angle={-90} offset={-20} position="center" style={{ userSelect: 'none' }} value={yLabelValue} {...yLabelProps} />
           </YAxis>
           <ZAxis dataKey="x" range={[300, 300]} {...zAxisProps} />
 
           <Tooltip
-            content={
-              <CustomTooltip
-                CustomTooltipContent={CustomTooltipContent}
-                isBlockingOnHovers={isBlockingOnHovers}
-              />
-            }
+            content={<CustomTooltip CustomTooltipContent={CustomTooltipContent} isBlockingOnHovers={isBlockingOnHovers} />}
             cursor={{ strokeDasharray: '3 3' }}
             wrapperStyle={{ outline: 'none' }}
             {...tooltipProps}
@@ -508,29 +406,15 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
           )}
           {showAverageLine && (
             <>
-              <ReferenceLine
-                opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
-                strokeDasharray="3 3"
-                x={xLineCoordinates}
-                {...xAverageLineProps}
-              >
+              <ReferenceLine opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1} strokeDasharray="3 3" x={xLineCoordinates} {...xAverageLineProps}>
                 <Label
                   position="insideBottom"
                   value={`Top N Average: ${formatAverageLineLabel(Number(xLineCoordinates))}${averageLineXLabelUnit || ''}`}
                   {...xAverageLineLabelProps}
                 />
               </ReferenceLine>
-              <ReferenceLine
-                opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1}
-                strokeDasharray="3 3"
-                y={yLineCoordinates}
-                {...yAverageLineProps}
-              >
-                <Label
-                  position="insideTopLeft"
-                  value={`Top N Average: ${formatAverageLineLabel(Number(yLineCoordinates))}%`}
-                  {...yAverageLineLabelProps}
-                />
+              <ReferenceLine opacity={selectedPoint ? OPACITY_NOT_HIGHLIGHTED : 1} strokeDasharray="3 3" y={yLineCoordinates} {...yAverageLineProps}>
+                <Label position="insideTopLeft" value={`Top N Average: ${formatAverageLineLabel(Number(yLineCoordinates))}%`} {...yAverageLineLabelProps} />
               </ReferenceLine>
             </>
           )}
@@ -542,19 +426,11 @@ export const ScatterPlot: React.FC<ScatterPlotProps> = (
             }}
             onMouseEnter={(): void => setIsMouseOverScatter(true)}
             onMouseLeave={(): void => setIsMouseOverScatter(false)}
-            shape={
-              <CustomizedCell color={color} selectedPoint={selectedPoint} />
-            }
+            shape={<CustomizedCell color={color} selectedPoint={selectedPoint} />}
             {...(scatterProps as Scatter)}
           >
             <LabelList
-              content={
-                <CustomizedLabel
-                  isBlockingOnHovers={isBlockingOnHovers}
-                  selectedPoint={selectedPoint}
-                  shouldHideLabel={shouldHideLabel}
-                />
-              }
+              content={<CustomizedLabel isBlockingOnHovers={isBlockingOnHovers} selectedPoint={selectedPoint} shouldHideLabel={shouldHideLabel} />}
               dataKey="label"
               fill={scatterLabelColor || common.black}
               position="top"

@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import THEME_ACT_ET from '~/styles/themeActEt';
+import { createTheme as muiCreateTheme } from '@mui/material/styles';
 
-export const baseTheme = THEME_ACT_ET;
+export const baseTheme = muiCreateTheme({});
 
 export default baseTheme;

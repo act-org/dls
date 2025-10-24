@@ -12,10 +12,7 @@ import Paper from '@mui/material/Paper';
 import get from 'lodash/get';
 import React from 'react';
 import { TooltipProps } from 'recharts';
-import {
-  NameType,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
+import { NameType, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 
 import { IGroupDataPoint } from '../types';
 
@@ -45,9 +42,7 @@ export const CustomTooltip: React.FC<ICustomTooltipProps> = ({
     if (members?.length) {
       return members.map(el => (
         <>
-          <StyledDataLabelTypography>
-            {el?.label || ''}
-          </StyledDataLabelTypography>
+          <StyledDataLabelTypography>{el?.label || ''}</StyledDataLabelTypography>
           <StyledDataValueTypography>x: {el.x}</StyledDataValueTypography>
           <StyledDataValueTypography>y: {el.y}</StyledDataValueTypography>
         </>
@@ -55,9 +50,7 @@ export const CustomTooltip: React.FC<ICustomTooltipProps> = ({
     }
     return (
       <>
-        <StyledDataLabelTypography>
-          {data?.label || ''}
-        </StyledDataLabelTypography>
+        <StyledDataLabelTypography>{data?.label || ''}</StyledDataLabelTypography>
         <StyledDataValueTypography>x: {data?.x}</StyledDataValueTypography>
         <StyledDataValueTypography>y: {data?.y}</StyledDataValueTypography>
       </>

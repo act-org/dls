@@ -43,68 +43,41 @@ interface StyledUlType {
   numberOfItems: number;
 }
 
-export const StyledUl = styled('ul')<StyledUlType>(
-  ({ theme, numberOfItems }) => ({
-    marginTop: numberOfItems > 6 ? theme.spacing(-1) : theme.spacing(3),
-    paddingLeft: theme.spacing(1),
-  }),
-);
+export const StyledUl = styled('ul')<StyledUlType>(({ theme, numberOfItems }) => ({
+  marginTop: numberOfItems > 6 ? theme.spacing(-1) : theme.spacing(3),
+  paddingLeft: theme.spacing(1),
+}));
 
-export const StyledListItem = styled(ListItem)<StyledListItemProps>(
-  ({ chartWidth, theme }) => ({
-    padding:
-      chartWidth && Number(chartWidth) > 350
-        ? theme.spacing(0.5, 2)
-        : theme.spacing(0, 1),
-  }),
-);
+export const StyledListItem = styled(ListItem)<StyledListItemProps>(({ chartWidth, theme }) => ({
+  padding: chartWidth && Number(chartWidth) > 350 ? theme.spacing(0.5, 2) : theme.spacing(0, 1),
+}));
 
 export const StyledListItemIcon = styled(ListItemIcon)(({ theme }) => ({
   marginRight: theme.spacing(1),
   minWidth: 'auto',
 }));
 
-export const StyledPaper = styled(Paper)<StyledPaperProps>(
-  ({ chartWidth, optionsLength, showAsSquare, theme }) => ({
-    // eslint-disable-next-line no-nested-ternary
-    borderRadius: showAsSquare
+export const StyledPaper = styled(Paper)<StyledPaperProps>(({ chartWidth, optionsLength, showAsSquare, theme }) => ({
+  // eslint-disable-next-line no-nested-ternary
+  borderRadius: showAsSquare
+    ? theme.shape.borderRadius
+    : optionsLength && optionsLength > 4
       ? theme.shape.borderRadius
-      : optionsLength && optionsLength > 4
-        ? theme.shape.borderRadius
-        : '50%',
-    height:
-      chartWidth && Number(chartWidth) > 350
-        ? theme.spacing(3.5)
-        : theme.spacing(2.5),
-    width:
-      chartWidth && Number(chartWidth) > 350
-        ? theme.spacing(3.5)
-        : theme.spacing(2.5),
-  }),
-);
+      : '50%',
+  height: chartWidth && Number(chartWidth) > 350 ? theme.spacing(3.5) : theme.spacing(2.5),
+  width: chartWidth && Number(chartWidth) > 350 ? theme.spacing(3.5) : theme.spacing(2.5),
+}));
 
 export const StyledListItemText = styled(ListItemText, {
   name: DLS_COMPONENT_NAMES.PIE_CHART,
-  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART]
-    .PIE_LEGEND_LABEL,
+  slot: DLS_COMPONENT_SLOT_NAMES[DLS_COMPONENT_NAMES.PIE_CHART].PIE_LEGEND_LABEL,
 })<StyledListItemTextProps>(
-  ({
-    chartHeight,
-    chartLegendTextFontSize,
-    chartLegendTextFontSizeSmall,
-    chartWidth,
-    theme,
-  }) => ({
+  ({ chartHeight, chartLegendTextFontSize, chartLegendTextFontSizeSmall, chartWidth, theme }) => ({
     [`& .${listItemTextClasses.primary}`]: {
       fontSize:
-        chartWidth &&
-        Number(chartWidth) > 350 &&
-        chartHeight &&
-        Number(chartHeight) >= 350
-          ? Number(chartLegendTextFontSize) ||
-            (theme.typography.body1.fontSize as number)
-          : Number(chartLegendTextFontSizeSmall) ||
-            (theme.typography.body2.fontSize as number),
+        chartWidth && Number(chartWidth) > 350 && chartHeight && Number(chartHeight) >= 350
+          ? Number(chartLegendTextFontSize) || (theme.typography.body1.fontSize as number)
+          : Number(chartLegendTextFontSizeSmall) || (theme.typography.body2.fontSize as number),
     },
   }),
 );

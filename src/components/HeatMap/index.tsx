@@ -38,9 +38,7 @@ export interface HeatMapProps {
  * to add the link bellow in the head of your page: <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
  * For more information: https://visgl.github.io/react-map-gl/docs/get-started/get-started#styling
  */
-export const HeatMap: React.FC<HeatMapProps> = (
-  inProps,
-): React.ReactElement<HeatMapProps> => {
+export const HeatMap: React.FC<HeatMapProps> = (inProps): React.ReactElement<HeatMapProps> => {
   const {
     color = grey[700],
     data,
@@ -66,42 +64,10 @@ export const HeatMap: React.FC<HeatMapProps> = (
       id: 'heatmap',
       maxzoom: MAX_ZOOM,
       paint: {
-        'heatmap-intensity': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          5,
-          1,
-          10,
-          2,
-          12,
-          3,
-        ],
+        'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], 5, 1, 10, 2, 12, 3],
         'heatmap-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
-        'heatmap-radius': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          5,
-          3.5,
-          7,
-          8,
-          9,
-          12,
-          12,
-          20,
-        ],
-        'heatmap-weight': [
-          'interpolate',
-          ['linear'],
-          ['get', 'value'],
-          1,
-          0,
-          50,
-          0.5,
-          100,
-          1,
-        ],
+        'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 5, 3.5, 7, 8, 9, 12, 12, 20],
+        'heatmap-weight': ['interpolate', ['linear'], ['get', 'value'], 1, 0, 50, 0.5, 100, 1],
       },
       source: sourceId,
       type: 'heatmap',
@@ -232,9 +198,7 @@ export const HeatMap: React.FC<HeatMapProps> = (
       onClick={undefined}
       onZoom={onZoom}
       onZoomEnd={undefined}
-      setHoverInfo={
-        lastZoom && lastZoom >= MIN_ZOOM ? setFinalOnHoverInfo : undefined
-      }
+      setHoverInfo={lastZoom && lastZoom >= MIN_ZOOM ? setFinalOnHoverInfo : undefined}
       sourceId={sourceId}
       width={parentWidth}
       {...mapProps}

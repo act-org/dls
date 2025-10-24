@@ -14,13 +14,7 @@ import { Payload } from 'recharts/types/component/DefaultLegendContent';
 
 import { CustomLegendComponentType, PieDataProps } from '../types';
 
-import {
-  StyledListItem,
-  StyledListItemIcon,
-  StyledListItemText,
-  StyledPaper,
-  StyledUl,
-} from './styles';
+import { StyledListItem, StyledListItemIcon, StyledListItemText, StyledPaper, StyledUl } from './styles';
 
 export interface PayloadProps {
   color: string | undefined;
@@ -36,17 +30,12 @@ export interface PieLegendProps extends Partial<LegendProps> {
   chartLegendTextFontSizeSmall?: number | string; // Used when the chartWidth & chartHeight is less than 350 px
   chartWidth?: number;
   CustomLegendIcon?: CustomLegendComponentType;
-  formatValue?: (
-    value: number,
-    totalValue: number,
-  ) => React.ReactElement | string | null;
+  formatValue?: (value: number, totalValue: number) => React.ReactElement | string | null;
   pieTotalValue: number;
   showAsSquare?: boolean;
 }
 
-export const PieLegend: React.FC<PieLegendProps> = (
-  props: PieLegendProps,
-): React.ReactElement<PieLegendProps> => {
+export const PieLegend: React.FC<PieLegendProps> = (props: PieLegendProps): React.ReactElement<PieLegendProps> => {
   const {
     CustomLegendIcon,
     chartHeight,
@@ -61,11 +50,7 @@ export const PieLegend: React.FC<PieLegendProps> = (
     showAsSquare,
   } = props;
 
-  const handleMouseEnter = (
-    element: Payload,
-    index: number,
-    e: React.MouseEvent<Element, MouseEvent>,
-  ): void => {
+  const handleMouseEnter = (element: Payload, index: number, e: React.MouseEvent<Element, MouseEvent>): void => {
     onMouseEnter?.(element, index, e);
   };
   return (
@@ -76,16 +61,8 @@ export const PieLegend: React.FC<PieLegendProps> = (
           <StyledListItem
             chartWidth={chartWidth}
             key={`item-${i}`}
-            onMouseEnter={
-              onMouseEnter
-                ? (e): void => handleMouseEnter(element, i, e)
-                : undefined
-            }
-            onMouseLeave={
-              onMouseLeave
-                ? (e): void => onMouseLeave(element, i, e)
-                : undefined
-            }
+            onMouseEnter={onMouseEnter ? (e): void => handleMouseEnter(element, i, e) : undefined}
+            onMouseLeave={onMouseLeave ? (e): void => onMouseLeave(element, i, e) : undefined}
           >
             <StyledListItemIcon>
               {CustomLegendIcon ? (
@@ -118,9 +95,7 @@ export const PieLegend: React.FC<PieLegendProps> = (
                 secondary={
                   formatValue
                     ? formatValue(entryPayload.value as number, pieTotalValue)
-                    : `${numeral(entryPayload.value).format('0,0')} [${(Number.isNaN(
-                        entryPayload.value / pieTotalValue,
-                      )
+                    : `${numeral(entryPayload.value).format('0,0')} [${(Number.isNaN(entryPayload.value / pieTotalValue)
                         ? 0
                         : (entryPayload.value / pieTotalValue) * 100
                       ).toFixed(1)}%]`

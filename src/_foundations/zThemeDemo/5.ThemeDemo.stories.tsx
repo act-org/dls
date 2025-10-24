@@ -44,17 +44,17 @@ import {
   TypographyProps,
 } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { Meta, StoryFn } from '@storybook/react-webpack5';
+import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import sortBy from 'lodash/sortBy';
+import MailIcon from 'mdi-material-ui/Mailbox';
+import Menu from 'mdi-material-ui/Menu';
+import AddIcon from 'mdi-material-ui/Plus';
 import { ReactElement } from 'react';
-import MailIcon from '~/icons/Mailbox';
-import Menu from '~/icons/Menu';
-import AddIcon from '~/icons/Plus';
 
-import {
-  FilmType,
-  topFilms,
-} from '~/components/_muiCore/Autocomplete/internal';
+import { FilmType, topFilms } from '~/components/_muiCore/Autocomplete/internal';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { ThemesArray } from '~/styles/themes';
 
 interface Demo<ComponentProps> {
   flex?: number;
@@ -125,9 +125,7 @@ const demos = [
       { color: 'default', disabled: true },
       { checked: true, color: 'default', disabled: true },
     ],
-    render: props => (
-      <FormControlLabel control={<Checkbox {...props} />} label="Label" />
-    ),
+    render: props => <FormControlLabel control={<Checkbox {...props} />} label="Label" />,
     title: 'Checkboxes',
   } as Demo<CheckboxProps>,
   {
@@ -145,9 +143,7 @@ const demos = [
       { color: 'default', disabled: true },
       { checked: true, color: 'default', disabled: true },
     ],
-    render: props => (
-      <FormControlLabel control={<Radio {...props} />} label="Label" />
-    ),
+    render: props => <FormControlLabel control={<Radio {...props} />} label="Label" />,
     title: 'Radios',
   } as Demo<RadioProps>,
   {
@@ -158,9 +154,7 @@ const demos = [
         fullWidth: true,
         multiple: false,
         options: topFilms,
-        renderInput: (params): ReactElement<any> => (
-          <TextField {...params} label="Movie" />
-        ),
+        renderInput: (params): ReactElement<any> => <TextField {...params} label="Movie" />,
       },
     ],
     render: props => <Autocomplete sx={{ mx: '.5em' }} {...props} />,
@@ -281,12 +275,7 @@ const demos = [
     render: props => (
       <AppBar position="static" {...props}>
         <Toolbar>
-          <IconButton
-            aria-label="menu"
-            color="inherit"
-            edge="start"
-            size="large"
-          >
+          <IconButton aria-label="menu" color="inherit" edge="start" size="large">
             <Menu />
           </IconButton>
 
@@ -340,14 +329,14 @@ const meta = {
 
 export default meta;
 
+// Preview story (not snapshotted in Chromatic)
 export const Preview: StoryFn = () => {
   return (
     <Box>
       <Typography variant="h2">Theme Preview</Typography>
       <Typography variant="caption">
-        The following is a preview of many of the components inside of the DLS.
-        This page is useful to get a feel for the look of the theme as well as
-        for theme designers to use to quickly see the changes.
+        The following is a preview of many of the components inside of the DLS. This page is useful to get a feel for the look of the theme as well as for theme
+        designers to use to quickly see the changes.
       </Typography>
       <Grid container rowSpacing=".8em">
         {sortBy(demos, 'title').map(demo => (
@@ -359,9 +348,7 @@ export const Preview: StoryFn = () => {
           >
             <Card>
               <CardHeader title={demo.title} />
-              <CardContent
-                sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}
-              >
+              <CardContent sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
                 {demo.props.map(props => (
                   <Box key={Math.random()} sx={{ flex: demo.flex, mx: '.5em' }}>
                     {demo.render(props as any)}
@@ -375,3 +362,59 @@ export const Preview: StoryFn = () => {
     </Box>
   );
 };
+
+Preview.parameters = {
+  chromatic: { disable: true },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <Box>
+            <Typography variant="h2">Theme Preview</Typography>
+            <Typography variant="caption">
+              The following is a preview of many of the components inside of the DLS. This page is useful to get a feel for the look of the theme as well as for
+              theme designers to use to quickly see the changes.
+            </Typography>
+            <Grid container rowSpacing=".8em">
+              {sortBy(demos, 'title').map(demo => (
+                <Grid
+                  key={Math.random()}
+                  size={{
+                    xs: 12,
+                  }}
+                >
+                  <Card>
+                    <CardHeader title={demo.title} />
+                    <CardContent sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+                      {demo.props.map(props => (
+                        <Box key={Math.random()} sx={{ flex: demo.flex, mx: '.5em' }}>
+                          {demo.render(props as any)}
+                        </Box>
+                      ))}
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, StoryObj>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

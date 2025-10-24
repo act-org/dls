@@ -11,16 +11,14 @@ import { TypographyVariant } from '@mui/material/styles/createTypography';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import compact from 'lodash/compact';
 import isPlainObject from 'lodash/isPlainObject';
+import InformationOutline from 'mdi-material-ui/InformationOutline';
 import React from 'react';
-import InformationOutline from '~/icons/InformationOutline';
 
-import {
-  StyledCode,
-  StyledDivider,
-  StyledGridContainerInfo,
-  StyledGridItem,
-  StyledGridItemTypography,
-} from './styles';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { ThemesArray } from '~/styles/themes';
+
+import { StyledCode, StyledDivider, StyledGridContainerInfo, StyledGridItem, StyledGridItemTypography } from './styles';
 
 const properties = {
   color: 'color',
@@ -68,23 +66,20 @@ const Story = (): React.ReactElement => {
                       arrow
                       title={
                         <>
-                          {Object.keys(properties).map(
-                            (key): React.ReactElement => {
-                              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                              const cssStyle = (properties as any)[key];
-                              const value = typography[variant][key];
+                          {Object.keys(properties).map((key): React.ReactElement => {
+                            const cssStyle = properties[key as keyof typeof properties];
+                            const value = typography[variant][key as keyof (typeof typography)[typeof variant]];
 
-                              return (
-                                <>
-                                  <StyledCode key={cssStyle}>
-                                    {cssStyle}: {value}
-                                  </StyledCode>
+                            return (
+                              <>
+                                <StyledCode key={cssStyle}>
+                                  {cssStyle}: {String(value)}
+                                </StyledCode>
 
-                                  <StyledDivider />
-                                </>
-                              );
-                            },
-                          )}
+                                <StyledDivider />
+                              </>
+                            );
+                          })}
                         </>
                       }
                     >
@@ -101,9 +96,7 @@ const Story = (): React.ReactElement => {
                   xs: 10,
                 }}
               >
-                <Typography variant={variant}>
-                  The quick brown fox jumps over the lazy dog.
-                </Typography>
+                <Typography variant={variant}>The quick brown fox jumps over the lazy dog.</Typography>
               </StyledGridItemTypography>
             </Grid>
           </React.Fragment>
@@ -124,4 +117,35 @@ export default {
 
 type Story = StoryObj;
 
-export const Preview: Story = { args: {} };
+// Preview story (not snapshotted in Chromatic)
+export const Preview: Story = {
+  args: {},
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <Story />
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

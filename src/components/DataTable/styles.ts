@@ -6,9 +6,7 @@
  */
 
 import { grey } from '@mui/material/colors';
-import TablePagination, {
-  tablePaginationClasses,
-} from '@mui/material/TablePagination';
+import TablePagination, { tablePaginationClasses } from '@mui/material/TablePagination';
 
 import { styled } from '~/helpers/styled';
 

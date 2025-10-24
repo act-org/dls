@@ -5,17 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Button,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TextField, Typography } from '@mui/material';
 import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import JSONParseSafe from 'json-parse-safe';
 import get from 'lodash/get';
@@ -25,12 +15,8 @@ import { Playground } from '~/helpers/playground';
 
 import { SessionStorageKeySharer, SessionStorageKeySharerProps } from '.';
 
-const Template: StoryFn<SessionStorageKeySharerProps> = ({
-  keyName,
-}: SessionStorageKeySharerProps) => {
-  const [keyValueRaw, setKeyValue] = useState(
-    sessionStorage.getItem(keyName) || '',
-  );
+const Template: StoryFn<SessionStorageKeySharerProps> = ({ keyName }: SessionStorageKeySharerProps) => {
+  const [keyValueRaw, setKeyValue] = useState(sessionStorage.getItem(keyName) || '');
 
   const keyValue = get(JSONParseSafe(keyValueRaw), 'value') || keyValueRaw;
 
@@ -120,17 +106,25 @@ export default {
   args: {
     keyName: 'mySessionKey',
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       keyName: { type: 'string' },
     },
     SessionStorageKeySharer,
   ),
-  component: Template,
+  component: SessionStorageKeySharer,
+  parameters: {
+    chromatic: { disable: true },
+  },
+  render: Template,
   tags: ['autodocs'],
   title: 'Utilities / SessionStorageKeySharer',
 } as Meta<SessionStorageKeySharerProps>;
 
 export const Preview: StoryObj<SessionStorageKeySharerProps> = {
   args: {},
+  parameters: {
+    chromatic: { disable: true },
+  },
 };

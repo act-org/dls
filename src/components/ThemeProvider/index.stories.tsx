@@ -19,12 +19,19 @@ import ThemeProvider, { ThemeProviderProps } from '.';
  */
 export default {
   args: {
-    theme: 'ACT_ET',
+    theme: 'ENCOURA',
   },
   argTypes: Playground({}, ThemeProvider),
   component: ThemeProvider,
+  parameters: {
+    chromatic: { disable: true },
+  },
   tags: ['autodocs'],
   title: 'Utilities/ThemeProvider',
 } as Meta<ThemeProviderProps>;
 
-export const Preview: StoryObj<ThemeProviderProps> = {};
+export const Preview: StoryObj<ThemeProviderProps> = {
+  parameters: {
+    chromatic: { disable: true },
+  },
+};

@@ -21,15 +21,11 @@ describe('oxfordCommaJoin', () => {
   });
 
   it('should join the elements of the input array with commas and "and" if it has more than two elements', () => {
-    expect(oxfordCommaJoin(['apple', 'banana', 'cherry'])).toBe(
-      'apple, banana, and cherry',
+    expect(oxfordCommaJoin(['apple', 'banana', 'cherry'])).toBe('apple, banana, and cherry');
+    expect(oxfordCommaJoin(['apple', 'banana', 'cherry', 'date'])).toBe('apple, banana, cherry, and date');
+    expect(oxfordCommaJoin(['apple', 'banana', 'cherry', 'date', 'elderberry'])).toBe(
+      'apple, banana, cherry, date, and elderberry',
     );
-    expect(oxfordCommaJoin(['apple', 'banana', 'cherry', 'date'])).toBe(
-      'apple, banana, cherry, and date',
-    );
-    expect(
-      oxfordCommaJoin(['apple', 'banana', 'cherry', 'date', 'elderberry']),
-    ).toBe('apple, banana, cherry, date, and elderberry');
   });
 
   it('should return the same result if the input array is not modified', () => {

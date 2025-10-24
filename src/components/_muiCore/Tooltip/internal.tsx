@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Tooltip as MuiTooltip,
-  TooltipProps as MuiTooltipProps,
-} from '@mui/material';
+import { Tooltip as MuiTooltip, TooltipProps as MuiTooltipProps } from '@mui/material';
 
 export const Tooltip = MuiTooltip;
 export type Tooltip = typeof MuiTooltip;

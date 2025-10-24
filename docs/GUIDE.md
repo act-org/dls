@@ -110,12 +110,10 @@ and dictates how the Material UI components that we use will look and feel.
 The DLS currently supports
 [several different themes](https://github.com/nrccua/dls/tree/master/src/styles):
 
-1. `"ACT"`: for ACT's "traditional" look and feel
-2. `"ACT_ET"`: for ACT's "Emerging Technology" look and feel
-3. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
-4. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
-5. `"ENCOURAGE"`: for the Encoura's "Encourage for Students" look and feel
-6. `"ENCOURAGE_E4E"`: for the Encoura's "Encourage for Educators" look and feel
+1. `"ENCOURA"`: for the Encoura's "MyEncoura" look and feel
+2. `"ENCOURA_CLASSIC"`: for Encoura's "Classic" look and feel
+3. `"ENCOURAGE"`: for the Encoura's "Encourage for Students" look and feel
+4. `"ENCOURAGE_E4E"`: for the Encoura's "Encourage for Educators" look and feel
 
 #### Decouple Style from Functionality
 
@@ -147,7 +145,6 @@ structure:
 📂 components
  ┣ 📂 NewComponent
  ┃ ┣ index.stories.tsx           // storybook stories go here
- ┃ ┣ index.test.tsx              // component tests go here
  ┃ ┣ index.tsx                   // component functionality goes here
  ┃ ┗ styles.ts                   // component custom styles go here
  ┗ index.ts

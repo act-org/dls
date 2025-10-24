@@ -5,18 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  ButtonProps,
-  DialogContentProps,
-  DialogTitleProps,
-} from '@mui/material';
+import { ButtonProps, DialogContentProps, DialogProps, DialogTitleProps } from '@mui/material';
 import noop from 'lodash/noop';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
 
 import DialogContinueSession from '~/components/DialogContinueSession';
 import IdleTimer from '~/components/IdleTimer';
-
-import { DialogProps } from '../Dialog';
 
 export interface SessionTimerProps {
   children?: ({
@@ -92,10 +86,7 @@ export const SessionTimer: FC<SessionTimerProps> = ({
       stopOnIdle
       timeoutMs={promptWithMsRemaining}
     >
-      {({
-        remainingTimeMs: remainingTimeStageOne,
-        reset,
-      }): ReactElement<unknown> | null => {
+      {({ remainingTimeMs: remainingTimeStageOne, reset }): ReactElement<unknown> | null => {
         // The user has been idle for the entire first stage.
         if (remainingTimeStageOne === 0) {
           return (
@@ -113,9 +104,7 @@ export const SessionTimer: FC<SessionTimerProps> = ({
               stopOnIdle
               timeoutMs={stageTwoTimeoutMs}
             >
-              {({
-                remainingTimeMs: remainingTimeStageTwo,
-              }): ReactElement<unknown> | null => {
+              {({ remainingTimeMs: remainingTimeStageTwo }): ReactElement<unknown> | null => {
                 // The user has been idle for the entire first and second stages.
                 if (remainingTimeStageTwo === 0) {
                   return (

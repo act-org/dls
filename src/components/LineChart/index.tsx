@@ -23,10 +23,7 @@ import {
   YAxisProps,
 } from 'recharts';
 import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
-import {
-  NameType,
-  ValueType,
-} from 'recharts/types/component/DefaultTooltipContent';
+import { NameType, ValueType } from 'recharts/types/component/DefaultTooltipContent';
 
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -56,9 +53,7 @@ export interface LineChartProps {
   yAxisProps?: YAxisProps;
 }
 
-export const LineChart: React.FC<LineChartProps> = (
-  inProps: LineChartProps,
-): React.ReactElement<LineChartProps> => {
+export const LineChart: React.FC<LineChartProps> = (inProps: LineChartProps): React.ReactElement<LineChartProps> => {
   const {
     cartesianGridProps,
     chartProps,
@@ -79,12 +74,7 @@ export const LineChart: React.FC<LineChartProps> = (
 
   const { palette, spacing, typography } = useTheme();
   return (
-    <StyledContainer
-      height={height}
-      maxHeight={maxHeight}
-      style={containerStyles}
-      width={width || '100%'}
-    >
+    <StyledContainer height={height} maxHeight={maxHeight} style={containerStyles} width={width || '100%'}>
       <StyledResponsiveContainer {...responsiveContainerProps}>
         <ComposedChart
           data={data}
@@ -97,18 +87,8 @@ export const LineChart: React.FC<LineChartProps> = (
           style={{ fontFamily: typography.fontFamily }}
           {...chartProps}
         >
-          <CartesianGrid
-            stroke="#f5f5f5"
-            vertical={false}
-            {...(cartesianGridProps as CartesianGridProps)}
-          />
-          <XAxis
-            dataKey="label"
-            orientation="bottom"
-            tickCount={data.length}
-            xAxisId={0}
-            {...xAxisProps}
-          />
+          <CartesianGrid stroke="#f5f5f5" vertical={false} {...(cartesianGridProps as CartesianGridProps)} />
+          <XAxis dataKey="label" orientation="bottom" tickCount={data.length} xAxisId={0} {...xAxisProps} />
           <YAxis
             orientation="left"
             padding={{ bottom: 10, top: 10 }}
@@ -124,9 +104,7 @@ export const LineChart: React.FC<LineChartProps> = (
                 dataKey={key}
                 dot={false}
                 key={`${key}-line`}
-                stroke={
-                  colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]
-                }
+                stroke={colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
                 type="natural"
                 {...lineProps}
               />

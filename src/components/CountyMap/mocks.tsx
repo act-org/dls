@@ -102,33 +102,24 @@ export const defaultProcessDataFn = (
     .domain(data.map(item => item.QUANTITY as number))
     .range(range(10) as Iterable<number>);
 
-  const mappedFeatures = data.reduce(
-    (acc: MappedFeaturesProps, { COUNTY_NAME, QUANTITY, STATE_CODE }) => {
-      acc[COUNTY_NAME as string] = {
-        quantity: QUANTITY as number,
-        stateCode: STATE_CODE as string,
-      };
-      return acc;
-    },
-    {},
-  );
+  const mappedFeatures = data.reduce((acc: MappedFeaturesProps, { COUNTY_NAME, QUANTITY, STATE_CODE }) => {
+    acc[COUNTY_NAME as string] = {
+      quantity: QUANTITY as number,
+      stateCode: STATE_CODE as string,
+    };
+    return acc;
+  }, {});
 
   return {
     features: features.map(f => {
       if (f.properties?.NAME && mappedFeatures[f.properties.NAME]) {
-        const quantity =
-          f.properties?.NAME && mappedFeatures[f.properties.NAME]
-            ? scale(mappedFeatures[f.properties.NAME].quantity)
-            : 0;
+        const quantity = f.properties?.NAME && mappedFeatures[f.properties.NAME] ? scale(mappedFeatures[f.properties.NAME].quantity) : 0;
 
         const properties = {
           ...f.properties,
           quantity,
           stateCode: mappedFeatures[f.properties.NAME].stateCode,
-          value:
-            f.properties?.NAME && mappedFeatures[f.properties.NAME]
-              ? mappedFeatures[f.properties.NAME].quantity
-              : 0,
+          value: f.properties?.NAME && mappedFeatures[f.properties.NAME] ? mappedFeatures[f.properties.NAME].quantity : 0,
         };
 
         return { ...f, properties };

@@ -7,68 +7,128 @@
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 
-import { Skeleton } from './internal';
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
+
+import { Skeleton, SkeletonProps } from './internal';
 
 /**
- * Renders a standard MUI [Skeleton](https://mui.com/material-ui/react-skeleton/)
- * using the chosen theme parameters.
+ * The default Skeleton exports
  */
 export default {
   args: {
     height: 100,
-    style: { fontSize: 20 },
     width: 300,
   },
-  argTypes: {},
   component: Skeleton,
   parameters: {
-    layout: 'centered',
+    layout: 'padded',
   },
   tags: ['autodocs'],
   title: 'MUI Core / Skeleton',
 } as Meta<Skeleton>;
 
-export const Default: StoryObj<Skeleton> = {
-  args: {},
-};
+type Story = StoryObj<SkeletonProps>;
 
-export const AnimationPulse: StoryObj<Skeleton> = {
-  args: { animation: 'pulse' },
-  name: 'Animation: Pulse',
-};
-
-export const AnimationWave: StoryObj<Skeleton> = {
-  args: { animation: 'wave' },
-  name: 'Animation: Wave',
-};
-
-export const AnimationNone: StoryObj<Skeleton> = {
-  args: { animation: false },
-  name: 'Animation: None',
-};
-
-export const VariantRectangular: StoryObj<Skeleton> = {
-  args: { variant: 'rectangular' },
-  name: 'Variant: Rectangular',
-};
-
-export const VariantCircular: StoryObj<Skeleton> = {
-  args: { height: 100, variant: 'circular', width: 100 },
-  name: 'Variant: Circular',
-};
-
-export const VariantRounded: StoryObj<Skeleton> = {
-  args: { variant: 'rounded' },
-  name: 'Variant: Rounded',
-};
-
-export const VariantText: StoryObj<Skeleton> = {
-  args: { variant: 'text' },
-  name: 'Variant: Text',
-};
-
-export const CustomColor: StoryObj<Skeleton> = {
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
-    sx: { bgcolor: 'grey.900' },
+    height: 100,
+    width: 300,
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
+
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {
+    height: 100,
+    width: 300,
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, Skeleton),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<SkeletonProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <Skeleton height={100} width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Pulse Animation">
+            <Skeleton animation="pulse" height={100} width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Wave Animation">
+            <Skeleton animation="wave" height={100} width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="No Animation">
+            <Skeleton animation={false} height={100} width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Rectangular">
+            <Skeleton height={100} variant="rectangular" width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Circular">
+            <Skeleton height={100} variant="circular" width={100} />
+          </StoryVariation>
+
+          <StoryVariation label="Rounded">
+            <Skeleton height={100} variant="rounded" width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Text">
+            <Skeleton variant="text" width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Small">
+            <Skeleton height={50} width={150} />
+          </StoryVariation>
+
+          <StoryVariation label="Large">
+            <Skeleton height={200} width={400} />
+          </StoryVariation>
+
+          <StoryVariation label="Custom Color">
+            <Skeleton height={100} sx={{ bgcolor: 'primary.light' }} width={300} />
+          </StoryVariation>
+
+          <StoryVariation label="Multiple Text Lines">
+            <div>
+              <Skeleton height={20} width="80%" />
+              <Skeleton height={20} width="60%" />
+              <Skeleton height={20} width="90%" />
+            </div>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

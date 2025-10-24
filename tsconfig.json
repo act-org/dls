@@ -12,14 +12,7 @@
     },
     "typeRoots": ["./node_modules/@types"]
   },
-  "exclude": [
-    "./.storybook/*",
-    "./lib/*",
-    "./node_modules/*",
-    "./storybook-static/*",
-    "**/test/*",
-    "**/icons/*"
-  ],
-  "extends": "./node_modules/@actinc/eslint-config/tsconfig.json",
+  "exclude": ["./.storybook/*", "./lib/*", "./node_modules/*", "./storybook-static/*", "**/test/*", "**/icons/*"],
+  "extends": "./node_modules/@encoura/eslint-config/tsconfig.json",
   "include": ["./index.d.ts", "./src/**/*"]
 }

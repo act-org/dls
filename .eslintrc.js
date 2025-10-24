@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  extends: ['@actinc/eslint-config'],
+  extends: ['@encoura/eslint-config'],
   overrides: [
     {
       files: ['./src/**/*.mdx'],

@@ -8,12 +8,7 @@
 /* eslint-disable filenames/match-exported */
 
 import get from 'lodash/get';
-import {
-  enqueueSnackbar,
-  OptionsObject,
-  SnackbarProvider,
-  SnackbarProviderProps,
-} from 'notistack';
+import { enqueueSnackbar, OptionsObject, SnackbarProvider, SnackbarProviderProps } from 'notistack';
 import { Component, ReactElement, ReactNode } from 'react';
 
 import { AlertProps } from '~/components';
@@ -37,32 +32,16 @@ class Provider extends Component<ProviderProps> {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  async _addAlert({
-    message,
-    options,
-  }: {
-    message: string | ReactNode;
-    options?: OptionsObject;
-  }): Promise<void> {
+  async _addAlert({ message, options }: { message: string | ReactNode; options?: OptionsObject }): Promise<void> {
     const { Components } = this.props;
 
     const variant = get(options, 'variant');
-    const CustomAlert = get(
-      Components,
-      variant || 'default',
-    ) as React.FC<AlertProps>;
+    const CustomAlert = get(Components, variant || 'default') as React.FC<AlertProps>;
 
     const key = new Date().getTime();
     if (enqueueSnackbar) {
       enqueueSnackbar(message, {
-        content: (
-          <SnackbarAlert
-            CustomAlert={CustomAlert}
-            id={key}
-            message={message}
-            variant={variant}
-          />
-        ),
+        content: <SnackbarAlert CustomAlert={CustomAlert} id={key} message={message} variant={variant} />,
         key,
         ...options,
       });
@@ -97,8 +76,7 @@ class Provider extends Component<ProviderProps> {
   }
 }
 
-export interface AlertContextProviderProps
-  extends Partial<SnackbarProviderProps> {
+export interface AlertContextProviderProps extends Partial<SnackbarProviderProps> {
   anchorOriginHorizontal?: 'left' | 'right' | 'center';
   anchorOriginVertical?: 'bottom' | 'top';
   children: ReactNode;

@@ -24,18 +24,8 @@ export const Loading: FC<LoadingProps> = ({
   style,
   title,
 }: LoadingProps): ReactElement<LoadingProps> => (
-  <StyledContainer
-    aria-label={title}
-    data-chromatic="ignore"
-    data-testid="loading"
-    style={style}
-  >
-    <CircularProgress
-      size={24}
-      thickness={4.5}
-      title={title}
-      {...circularProgressProps}
-    />
+  <StyledContainer aria-label={title} data-chromatic="ignore" data-testid="loading" style={style}>
+    <CircularProgress size={24} thickness={4.5} title={title} {...circularProgressProps} />
 
     {title && <StyledTypography variant="overline">{title}</StyledTypography>}
   </StyledContainer>

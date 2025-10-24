@@ -18,34 +18,29 @@ export interface SnackbarAlertProps {
 }
 
 // eslint-disable-next-line react/display-name
-export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(
-  (
-    { CustomAlert, id, message, variant }: SnackbarAlertProps,
-    ref,
-  ): ReactElement<unknown> => {
-    const { closeSnackbar } = useSnackbar();
+export const SnackbarAlert: FC<SnackbarAlertProps> = forwardRef(({ CustomAlert, id, message, variant }: SnackbarAlertProps, ref): ReactElement<unknown> => {
+  const { closeSnackbar } = useSnackbar();
 
-    const handleDismiss = useCallback(() => {
-      closeSnackbar(id);
-    }, [id, closeSnackbar]);
+  const handleDismiss = useCallback(() => {
+    closeSnackbar(id);
+  }, [id, closeSnackbar]);
 
-    const Component = CustomAlert || Alert;
+  const Component = CustomAlert || Alert;
 
-    return (
-      <SnackbarContent ref={ref as any}>
-        <Component
-          onClose={handleDismiss}
-          severity={variant}
-          style={{
-            width: '100%',
-          }}
-          variant="filled"
-        >
-          {message}
-        </Component>
-      </SnackbarContent>
-    );
-  },
-);
+  return (
+    <SnackbarContent ref={ref as any}>
+      <Component
+        onClose={handleDismiss}
+        severity={variant}
+        style={{
+          width: '100%',
+        }}
+        variant="filled"
+      >
+        {message}
+      </Component>
+    </SnackbarContent>
+  );
+});
 
 export default SnackbarAlert;

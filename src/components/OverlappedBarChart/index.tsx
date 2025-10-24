@@ -9,15 +9,7 @@
 
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import * as React from 'react';
-import {
-  Bar,
-  BarProps,
-  Cell,
-  LabelList,
-  LabelListProps,
-  XAxis,
-  XAxisProps,
-} from 'recharts';
+import { Bar, BarProps, Cell, LabelList, LabelListProps, XAxis, XAxisProps } from 'recharts';
 
 import { BarChart, BarChartProps } from '~/components/BarChart';
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
@@ -46,9 +38,7 @@ export interface OverlappedBarChartProps {
   xAxisProps?: XAxisProps;
 }
 
-export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
-  inProps: OverlappedBarChartProps,
-): React.ReactElement<OverlappedBarChartProps> => {
+export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (inProps: OverlappedBarChartProps): React.ReactElement<OverlappedBarChartProps> => {
   const {
     barChartProps,
     barKeys,
@@ -102,35 +92,11 @@ export const OverlappedBarChart: React.FC<OverlappedBarChartProps> = (
           };
           if (index === 0) {
             return (
-              <Bar
-                barSize={initialBarSize}
-                dataKey={key}
-                key={`${key}-bar`}
-                xAxisId={index}
-                {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
-              >
+              <Bar barSize={initialBarSize} dataKey={key} key={`${key}-bar`} xAxisId={index} {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}>
                 {data.map(({ color }, i) => (
-                  <Cell
-                    fill={
-                      color ||
-                      colors[i] ||
-                      DEFAULT_CHART_COLORS[i] ||
-                      palette.grey[800]
-                    }
-                    key={`cell-${i}`}
-                  />
+                  <Cell fill={color || colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[800]} key={`cell-${i}`} />
                 ))}
-                <LabelList
-                  content={
-                    <OverlappedLabel
-                      isOutsideBar
-                      textColor={barTextColors?.[index]}
-                      {...commonLabelProps}
-                    />
-                  }
-                  dataKey={key}
-                  {...labelProps}
-                />
+                <LabelList content={<OverlappedLabel isOutsideBar textColor={barTextColors?.[index]} {...commonLabelProps} />} dataKey={key} {...labelProps} />
               </Bar>
             );
           }

@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Toolbar as MuiToolbar,
-  ToolbarProps as MuiToolbarProps,
-} from '@mui/material';
+import { Toolbar as MuiToolbar, ToolbarProps as MuiToolbarProps } from '@mui/material';
 
 export const Toolbar = MuiToolbar;
 export type Toolbar = typeof MuiToolbar;

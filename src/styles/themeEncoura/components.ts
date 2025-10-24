@@ -71,10 +71,7 @@ const COMPONENTS: Components = {
     styleOverrides: {
       '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input': {
         '&:hover': {
-          backgroundColor: Color(THEME_ENCOURA_CLASSIC.palette.secondary.main)
-            .fade(0.9)
-            .rgb()
-            .string(),
+          backgroundColor: Color(THEME_ENCOURA_CLASSIC.palette.secondary.main).fade(0.9).rgb().string(),
         },
       },
     },
@@ -171,9 +168,7 @@ const COMPONENTS: Components = {
     styleOverrides: {
       body: {
         color: COLORS.TEXT_PRIMARY,
-        fontSize: `${Number(
-          THEME_ENCOURA_CLASSIC.typography.body2.fontSize,
-        )}px !important`,
+        fontSize: `${Number(THEME_ENCOURA_CLASSIC.typography.body2.fontSize)}px !important`,
         padding: THEME_ENCOURA_CLASSIC.spacing(2),
       },
       head: {
@@ -243,10 +238,9 @@ const COMPONENTS: Components = {
         '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input': {
           color: COLORS.TEXT_PRIMARY,
         },
-        '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
-          {
-            borderColor: COLORS.SECONDARY,
-          },
+        '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+          borderColor: COLORS.SECONDARY,
+        },
         '& .MuiOutlinedInput-root.Mui-focused .MuiSvgIcon-root': {
           color: COLORS.SECONDARY,
         },

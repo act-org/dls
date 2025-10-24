@@ -5,20 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  Button,
-  ButtonProps,
-  Dialog,
-  DialogContent,
-  DialogContentProps,
-  DialogTitle,
-  DialogTitleProps,
-  Typography,
-} from '@mui/material';
+import { Button, ButtonProps, Dialog, DialogContent, DialogContentProps, DialogProps, DialogTitle, DialogTitleProps, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { FC, ReactElement, ReactNode, useEffect, useState } from 'react';
-
-import { DialogProps } from '../Dialog';
 
 import { StyledDialogActions } from './styles';
 
@@ -35,6 +24,7 @@ export interface DialogContinueSessionProps {
   expiresAt: Date;
   onContinue: () => void;
   onExpire: () => void;
+  open?: boolean;
 }
 
 export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
@@ -50,14 +40,12 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
   onExpire,
   title = 'Do you want to continue your session?',
   titleProps,
+  open = false,
 }: DialogContinueSessionProps): ReactElement<unknown> | null => {
-  const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(
-    expiresAt.getTime() - Date.now(),
-  );
+  const [timeUntilExpiration, setTimeUntilExpiration] = useState<number>(expiresAt.getTime() - Date.now());
 
   useEffect((): (() => void) => {
-    const newTime =
-      timeUntilExpiration - 1000 <= 0 ? 0 : timeUntilExpiration - 1000;
+    const newTime = timeUntilExpiration - 1000 <= 0 ? 0 : timeUntilExpiration - 1000;
 
     const timer = setTimeout((): void => {
       setTimeUntilExpiration(newTime);
@@ -72,15 +60,9 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
     };
   }, [onExpire, setTimeUntilExpiration, timeUntilExpiration]);
 
-  if (timeUntilExpiration > 0) {
+  if (open && timeUntilExpiration > 0) {
     return (
-      <Dialog
-        aria-labelledby="dialog-continue-session-title"
-        fullWidth
-        maxWidth="xs"
-        open
-        {...dialogProps}
-      >
+      <Dialog aria-labelledby="dialog-continue-session-title" fullWidth maxWidth="xs" open {...dialogProps}>
         <DialogTitle id="dialog-continue-session-title" {...titleProps}>
           {title}
         </DialogTitle>
@@ -88,9 +70,7 @@ export const DialogContinueSession: FC<DialogContinueSessionProps> = ({
         <DialogContent {...contentProps}>
           {content || (
             <Typography variant="body1">
-              {`For security reasons, your session will timeout at ${dayjs(
-                expiresAt,
-              ).format('h:mm A')} unless you continue.`}
+              {`For security reasons, your session will timeout at ${dayjs(expiresAt).format('h:mm A')} unless you continue.`}
             </Typography>
           )}
         </DialogContent>

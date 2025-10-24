@@ -12,16 +12,8 @@ import { StyledTableCell } from './styles';
 
 export type TableCellBodyProps = TableCellProps;
 
-export const TableCellBody: FC<TableCellBodyProps> = ({
-  classes: classesProp,
-  ...otherProps
-}: TableCellBodyProps): ReactElement<unknown> => (
-  <StyledTableCell
-    classes={classesProp}
-    component="td"
-    padding="none"
-    {...otherProps}
-  />
+export const TableCellBody: FC<TableCellBodyProps> = ({ classes: classesProp, ...otherProps }: TableCellBodyProps): ReactElement<unknown> => (
+  <StyledTableCell classes={classesProp} component="td" padding="none" {...otherProps} />
 );
 
 export default TableCellBody;

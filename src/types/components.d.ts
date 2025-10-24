@@ -5,11 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  ComponentsOverrides,
-  ComponentsVariants,
-  Theme as MuiTheme,
-} from '@mui/material/styles';
+import { ComponentsOverrides, ComponentsVariants, Theme as MuiTheme } from '@mui/material/styles';
 
 import { AreaChartProps } from '../components/AreaChart';
 import { BarChartProps } from '../components/BarChart';
@@ -25,6 +21,7 @@ import DLS_COMPONENT_NAMES from '../constants/DLS_COMPONENT_NAMES';
 type Theme = Omit<MuiTheme, 'components'>;
 
 declare module '@mui/material/styles' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   interface ComponentNameToClassKey {}
 
   interface ComponentsPropsList {

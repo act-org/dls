@@ -10,12 +10,16 @@ import { Meta, StoryFn, StoryObj } from '@storybook/react-webpack5';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import isNumber from 'lodash/isNumber';
-import { useState } from 'react';
-import PackageVariant from '~/icons/PackageVariant';
+import PackageVariant from 'mdi-material-ui/PackageVariant';
+import { FC, useState } from 'react';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
 import SORT_DIRECTION_TYPES from '~/constants/SORT_DIRECTION_TYPES';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
 import sort from '~/helpers/sort';
+import { ThemesArray } from '~/styles/themes';
 import { SortObject } from '~/types';
 
 import { DataTable, DataTableProps } from '.';
@@ -33,12 +37,7 @@ interface Item {
 }
 /* eslint-enable react/no-unused-prop-types */
 
-const Template: StoryFn<DataTableProps<Item>> = ({
-  limit: limitProps,
-  offset: offsetProps,
-  totalCount,
-  ...args
-}: DataTableProps<Item>) => {
+const Template: StoryFn<DataTableProps<Item>> = ({ limit: limitProps, offset: offsetProps, totalCount, ...args }: DataTableProps<Item>) => {
   const [limit, setLimit] = useState<number | undefined>(limitProps);
   const [offset, setOffset] = useState<number | undefined>(offsetProps);
   const [sortObject, setSortObject] = useState<SortObject>({
@@ -111,8 +110,7 @@ const Template: StoryFn<DataTableProps<Item>> = ({
         },
         {
           label: 'Updated',
-          renderValue: (i: Item): string =>
-            dayjs(new Date(i.updatedAt)).fromNow(),
+          renderValue: (i: Item): string => dayjs(new Date(i.updatedAt)).fromNow(),
           sortBy: 'updatedAt',
           style: {
             width: 110,
@@ -139,61 +137,211 @@ export default {
   args: {
     totalCount: 10,
   },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       color: { type: 'string' },
     },
     DataTable,
   ),
-  component: Template,
+  component: DataTable,
+  parameters: {
+    layout: 'padded',
+  },
+  render: Template,
   tags: ['autodocs'],
   title: 'Organisms / DataTable',
 } as Meta<DataTableProps<Item>>;
 
-export const ColorDefault: StoryObj<DataTableProps<Item>> = {
-  args: { color: 'default' },
-};
+type Story = StoryObj<DataTableProps<Item>>;
 
-export const ColorPrimary: StoryObj<DataTableProps<Item>> = {
-  args: { color: 'primary' },
-};
-
-export const ColorSecondary: StoryObj<DataTableProps<Item>> = {
-  args: { color: 'secondary' },
-};
-
-export const LinkedRows: StoryObj<DataTableProps<Item>> = {
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
-    RowWrapper: ({ name }: Item, children) => (
-      <Link
-        href={`https://www.google.com/search?q=${name}`}
-        style={{
-          display: 'contents',
-        }}
-        target="_blank"
-        underline="none"
-      >
-        {children}
-      </Link>
-    ),
+    totalCount: 10,
   },
+  parameters: {
+    chromatic: { disable: true },
+  },
+  render: Template,
 };
 
-export const EmptyState: StoryObj<DataTableProps<Item>> = {
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
   args: {
-    emptyStateProps: {
-      description: 'No Items Found',
-      Icon: PackageVariant,
+    totalCount: 10,
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground(
+    {
+      color: { type: 'string' },
     },
-    totalCount: 0,
+    DataTable,
+  ),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
+  render: Template,
 };
 
-export const Paginated: StoryObj<DataTableProps<Item>> = {
-  args: {
-    limit: 10,
-    offset: 0,
-    rowsPerPageOptions: [10, 25, 50],
-    totalCount: 100,
-  },
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Component for theme stories that includes required props
+const ThemeStoryComponent: FC<Partial<DataTableProps<Item>>> = ({ limit: limitProp, offset: offsetProp, totalCount: totalCountProp, ...props }) => {
+  const [limit, setLimit] = useState<number | undefined>(limitProp);
+  const [offset, setOffset] = useState<number | undefined>(offsetProp);
+  const [sortObject, setSortObject] = useState<SortObject>({
+    sortBy: 'id',
+    sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
+  });
+
+  const totalCount = totalCountProp ?? 10;
+  let items: Item[] = [...Array(totalCount)].map((_, i): any => ({
+    fieldA: `Field A${i + 1}`,
+    fieldB: `Field B${i + 1}`,
+    fieldC: `Field C${i + 1}`,
+    id: i + 1,
+    name: `Item ${i + 1}`,
+    updatedAt: dayjs()
+      .subtract(2, 'year')
+      .subtract(i + 1, 'day')
+      .toDate(),
+  }));
+
+  if (isNumber(limit) && isNumber(offset)) {
+    items = items.slice(offset, offset + limit);
+  }
+
+  // sort items
+  items = items.sort(sort<Item>(sortObject));
+
+  return (
+    <DataTable<Item>
+      {...props}
+      columns={[
+        {
+          label: 'ID',
+          renderValue: (i: Item): string => i.id,
+          sortBy: 'id',
+          style: {
+            width: 50,
+          },
+        },
+        {
+          label: 'Name',
+          renderValue: (i: Item): string => i.name,
+          sortBy: 'name',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field A',
+          renderValue: (i: Item): string => i.fieldA,
+          sortBy: 'fieldA',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field B',
+          renderValue: (i: Item): string => i.fieldB,
+          sortBy: 'fieldB',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Field C',
+          renderValue: (i: Item): string => i.fieldC,
+          sortBy: 'fieldC',
+          style: {
+            width: 100,
+          },
+        },
+        {
+          label: 'Updated',
+          renderValue: (i: Item): string => dayjs(new Date(i.updatedAt)).fromNow(),
+          sortBy: 'updatedAt',
+          style: {
+            width: 110,
+          },
+        },
+      ]}
+      currentSortObject={sortObject}
+      items={items}
+      limit={limit}
+      offset={offset}
+      onChangeLimit={setLimit}
+      onChangeOffset={setOffset}
+      onChangeSort={setSortObject}
+      totalCount={totalCount}
+    />
+  );
 };
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<DataTableProps<Item>>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <ThemeStoryComponent totalCount={10} />
+          </StoryVariation>
+
+          <StoryVariation label="Primary Color">
+            <ThemeStoryComponent color="primary" totalCount={10} />
+          </StoryVariation>
+
+          <StoryVariation label="Secondary Color">
+            <ThemeStoryComponent color="secondary" totalCount={10} />
+          </StoryVariation>
+
+          <StoryVariation label="Linked Rows">
+            <ThemeStoryComponent
+              RowWrapper={({ name }: Item, children) => (
+                <Link
+                  href={`https://www.google.com/search?q=${name}`}
+                  style={{
+                    display: 'contents',
+                  }}
+                  target="_blank"
+                  underline="none"
+                >
+                  {children}
+                </Link>
+              )}
+              totalCount={10}
+            />
+          </StoryVariation>
+
+          <StoryVariation label="Empty State">
+            <ThemeStoryComponent
+              emptyStateProps={{
+                description: 'No Items Found',
+                Icon: PackageVariant,
+              }}
+              totalCount={0}
+            />
+          </StoryVariation>
+
+          <StoryVariation label="Paginated">
+            <ThemeStoryComponent limit={10} offset={0} rowsPerPageOptions={[10, 25, 50]} totalCount={100} />
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

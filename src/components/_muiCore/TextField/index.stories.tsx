@@ -5,31 +5,29 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { Box, MenuItem, Tooltip, Typography } from '@mui/material';
+import { MenuItem } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 import range from 'lodash/range';
-import { useState } from 'react';
-import HelpIcon from '~/icons/HelpCircle';
+
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { TextField, TextFieldProps } from './internal';
 
+/**
+ * The default TextField exports
+ */
 export default {
   args: {
     label: 'Field Label',
     placeholder: 'Placeholder',
   },
-  argTypes: {
-    onBlur: { action: 'onBlur' },
-    onChange: { action: 'onChange' },
-    onFocus: { action: 'onFocus' },
-  },
   component: TextField,
   parameters: {
-    docs: {
-      story: {
-        inline: true,
-      },
-    },
+    layout: 'padded',
   },
   tags: ['autodocs'],
   title: 'MUI Core / TextField',
@@ -37,67 +35,108 @@ export default {
 
 type Story = StoryObj<TextFieldProps>;
 
-export const Primary: Story = {};
-
-export const Standard: Story = { args: { variant: 'standard' } };
-
-export const ToolTipLabel: Story = {
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {
-    label: (
-      <Tooltip
-        placement="right"
-        title={
-          <Box>
-            <Typography variant="body1">
-              Tool tips can be very complex renders
-            </Typography>
-            <Typography variant="caption">
-              With many lines and styles
-            </Typography>
-          </Box>
-        }
-      >
-        <Typography variant="h6">
-          Tooltip Label <HelpIcon color="primary" />
-        </Typography>
-      </Tooltip>
-    ),
+    label: 'Field Label',
+    placeholder: 'Placeholder',
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-/**
- * You most likely will want to use this version of the Select component where it incorporates a label
- */
-export const Select: Story = {
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
   args: {
-    children: range(10).map((i): any => (
-      <MenuItem key={i} value={i}>
-        {i + 1}
-      </MenuItem>
-    )),
-    select: true,
+    label: 'Field Label',
+    placeholder: 'Placeholder',
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, TextField),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-export const SelectMultiple: Story = {
-  render: (args: TextFieldProps) => {
-    const [value, setValue] = useState<string[]>([]);
-    return (
-      <TextField
-        {...args}
-        onChange={(event): void =>
-          setValue(event.target.value as unknown as string[])
-        }
-        select
-        SelectProps={{ multiple: true }}
-        value={value}
-      >
-        {range(10).map((i): any => (
-          <MenuItem key={i} value={i}>
-            {i + 1}
-          </MenuItem>
-        ))}
-      </TextField>
-    );
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<TextFieldProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Primary">
+            <TextField color="primary" label="Primary TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Secondary">
+            <TextField color="secondary" label="Secondary TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Error">
+            <TextField color="error" label="Error TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Info">
+            <TextField color="info" label="Info TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Success">
+            <TextField color="success" label="Success TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Warning">
+            <TextField color="warning" label="Warning TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Standard Variant">
+            <TextField color="primary" label="Standard TextField" placeholder="Enter text" variant="standard" />
+          </StoryVariation>
+
+          <StoryVariation label="Filled Variant">
+            <TextField color="primary" label="Filled TextField" placeholder="Enter text" variant="filled" />
+          </StoryVariation>
+
+          <StoryVariation label="Outlined Variant">
+            <TextField color="primary" label="Outlined TextField" placeholder="Enter text" variant="outlined" />
+          </StoryVariation>
+
+          <StoryVariation label="Small Size">
+            <TextField color="primary" label="Small TextField" placeholder="Enter text" size="small" />
+          </StoryVariation>
+
+          <StoryVariation label="Disabled">
+            <TextField color="primary" disabled label="Disabled TextField" placeholder="Enter text" />
+          </StoryVariation>
+
+          <StoryVariation label="Required">
+            <TextField color="primary" label="Required TextField" placeholder="Enter text" required />
+          </StoryVariation>
+
+          <StoryVariation label="Select">
+            <TextField color="primary" label="Select TextField" select>
+              {range(5).map(i => (
+                <MenuItem key={i} value={i}>
+                  Option {i + 1}
+                </MenuItem>
+              ))}
+            </TextField>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
   },
-};
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

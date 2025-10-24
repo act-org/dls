@@ -5,10 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {
-  AppBar as MuiAppBar,
-  AppBarProps as MuiAppBarProps,
-} from '@mui/material';
+import { AppBar as MuiAppBar, AppBarProps as MuiAppBarProps } from '@mui/material';
 
 export const AppBar = MuiAppBar;
 export type AppBar = typeof MuiAppBar;

@@ -114,8 +114,4 @@ export const defaultBarKeys = ['2019', '2020', '2021'];
 
 export const defaultBarKeysFourLines = [...defaultBarKeys, '2022'];
 
-export const longBarKeys = [
-  '2019 with long sublabel',
-  '2020 with long sublabel',
-  '2021 with long sublabel',
-];
+export const longBarKeys = ['2019 with long sublabel', '2020 with long sublabel', '2021 with long sublabel'];

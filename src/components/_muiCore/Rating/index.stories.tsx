@@ -5,79 +5,121 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import Box from '@mui/material/Box';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import { ReactElement, useState } from 'react';
+
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
+import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { Rating, RatingProps } from './internal';
 
 /**
- * Renders a standard Material UI Button using the
- * chosen theme parameters
+ * The default Rating exports
  */
 export default {
   args: {},
-  argTypes: {
-    onChange: { action: 'onChange' },
-    onClick: { action: 'onClick' },
-  },
   component: Rating,
+  parameters: {
+    layout: 'padded',
+  },
   tags: ['autodocs'],
   title: 'MUI Core / Rating',
 } as Meta<Rating>;
 
-export const Primary: StoryObj<Rating> = { args: {} };
+type Story = StoryObj<RatingProps>;
 
-export const DefaultValue: StoryObj<Rating> = { args: { defaultValue: 4 } };
-
-export const Disabled: StoryObj<Rating> = {
-  args: { defaultValue: 3, disabled: true },
-};
-
-export const EmptyLabelText: StoryObj<Rating> = {
-  args: { emptyLabelText: 'Select a number of stars' },
-};
-
-const labels: { [index: string]: string } = {
-  1: 'Very Negative',
-  2: 'Negative',
-  3: 'Slightly Negative',
-  4: 'Slightly Positive',
-  5: 'Positive',
-  6: 'Very Positive',
-};
-const getLabelText = (value: number): string => {
-  return `${labels[value]}`;
-};
-
-export const HoverLabel = {
-  render: (args: RatingProps): ReactElement<unknown> => {
-    const [value, setValue] = useState<number | null>(2);
-    const [hover, setHover] = useState(-1);
-    return (
-      <Box sx={{ width: '300px' }}>
-        <Rating
-          {...args}
-          getLabelText={getLabelText}
-          max={6}
-          onChange={(_, newValue): void => {
-            setValue(newValue);
-          }}
-          onChangeActive={(_, newHover): void => {
-            setHover(newHover);
-          }}
-          value={value}
-        />
-        {value !== null && (
-          <Box component="span" sx={{ ml: 3 }}>
-            {labels[hover !== -1 ? hover : value]}
-          </Box>
-        )}
-      </Box>
-    );
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
+  args: {
+    defaultValue: 3,
+  },
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-export const MaxMin: StoryObj<Rating> = { args: { max: 17 } };
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {
+    defaultValue: 3,
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, Rating),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
 
-export const Precision: StoryObj<Rating> = { args: { precision: 0.1 } };
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<RatingProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <Rating defaultValue={3} />
+          </StoryVariation>
+
+          <StoryVariation label="High Rating">
+            <Rating defaultValue={5} />
+          </StoryVariation>
+
+          <StoryVariation label="Low Rating">
+            <Rating defaultValue={1} />
+          </StoryVariation>
+
+          <StoryVariation label="Half Rating">
+            <Rating defaultValue={2.5} precision={0.5} />
+          </StoryVariation>
+
+          <StoryVariation label="Read Only">
+            <Rating defaultValue={4} readOnly />
+          </StoryVariation>
+
+          <StoryVariation label="Disabled">
+            <Rating defaultValue={3} disabled />
+          </StoryVariation>
+
+          <StoryVariation label="Small Size">
+            <Rating defaultValue={3} size="small" />
+          </StoryVariation>
+
+          <StoryVariation label="Large Size">
+            <Rating defaultValue={3} size="large" />
+          </StoryVariation>
+
+          <StoryVariation label="Custom Max">
+            <Rating defaultValue={7} max={10} />
+          </StoryVariation>
+
+          <StoryVariation label="With Labels">
+            <Rating defaultValue={3} getLabelText={value => `${value} Star${value !== 1 ? 's' : ''}`} />
+          </StoryVariation>
+
+          <StoryVariation label="Precision">
+            <Rating defaultValue={3.2} precision={0.1} />
+          </StoryVariation>
+
+          <StoryVariation label="Empty">
+            <Rating defaultValue={0} />
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

@@ -39,10 +39,7 @@ export interface DataTableProps<T> {
   onChangeOffset?: (offset: number) => void;
   onChangeSort: (sortObject: SortObject) => void;
   rowsPerPageOptions?: number[];
-  RowWrapper?: (
-    item: T,
-    children: ReactElement<unknown>,
-  ) => ReactElement<unknown>;
+  RowWrapper?: (item: T, children: ReactElement<unknown>) => ReactElement<unknown>;
   totalCount?: number;
 }
 
@@ -105,34 +102,31 @@ export const DataTable = <T,>({
           return children;
         })}
 
-        {items.length > 0 &&
-          isNumber(limit) &&
-          isNumber(offset) &&
-          isNumber(totalCount) && (
-            <StyledTablePagination
-              ActionsComponent={TablePaginationActions as any}
-              count={totalCount}
-              labelDisplayedRows={constant('')}
-              labelRowsPerPage="Rows Per Page:"
-              onPageChange={(_, zeroBasedPage: number): void => {
-                if (onChangeOffset) {
-                  onChangeOffset(zeroBasedPage * limit);
-                }
-              }}
-              onRowsPerPageChange={(e): void => {
-                if (onChangeLimit) {
-                  onChangeLimit(Number(e.target.value));
-                }
+        {items.length > 0 && isNumber(limit) && isNumber(offset) && isNumber(totalCount) && (
+          <StyledTablePagination
+            ActionsComponent={TablePaginationActions as any}
+            count={totalCount}
+            labelDisplayedRows={constant('')}
+            labelRowsPerPage="Rows Per Page:"
+            onPageChange={(_, zeroBasedPage: number): void => {
+              if (onChangeOffset) {
+                onChangeOffset(zeroBasedPage * limit);
+              }
+            }}
+            onRowsPerPageChange={(e): void => {
+              if (onChangeLimit) {
+                onChangeLimit(Number(e.target.value));
+              }
 
-                if (onChangeOffset) {
-                  onChangeOffset(0);
-                }
-              }}
-              page={round(offset / limit, 0)}
-              rowsPerPage={limit}
-              rowsPerPageOptions={rowsPerPageOptions || [25, 50, 100]}
-            />
-          )}
+              if (onChangeOffset) {
+                onChangeOffset(0);
+              }
+            }}
+            page={round(offset / limit, 0)}
+            rowsPerPage={limit}
+            rowsPerPageOptions={rowsPerPageOptions || [25, 50, 100]}
+          />
+        )}
       </TableBody>
     </Table>
 

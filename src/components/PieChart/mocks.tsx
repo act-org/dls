@@ -29,8 +29,7 @@ export const moreOptionsData = [
     value: 120,
   },
   {
-    description:
-      'Duis bibendum, lorem sit amet placerat sagittis, ante orci congue nibh, vel maximus ipsum urna eu felis',
+    description: 'Duis bibendum, lorem sit amet placerat sagittis, ante orci congue nibh, vel maximus ipsum urna eu felis',
     name: 'Exploration & Meaning',
     value: 15,
   },

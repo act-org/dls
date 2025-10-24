@@ -7,11 +7,7 @@
 
 /* eslint-disable react/display-name */
 
-import {
-  Alert as MuiAlert,
-  AlertProps as MuiAlertProps,
-  AlertTitle as MuiAlertTitle,
-} from '@mui/material';
+import { Alert as MuiAlert, AlertProps as MuiAlertProps, AlertTitle as MuiAlertTitle } from '@mui/material';
 import { forwardRef, ForwardRefRenderFunction, ReactElement } from 'react';
 
 export type AlertProps = MuiAlertProps & {
@@ -19,10 +15,7 @@ export type AlertProps = MuiAlertProps & {
   title?: string | ReactElement;
 };
 
-const AlertComponent: ForwardRefRenderFunction<HTMLDivElement, AlertProps> = (
-  { children, title, ...props }: AlertProps,
-  ref,
-): ReactElement<AlertProps> => {
+const AlertComponent: ForwardRefRenderFunction<HTMLDivElement, AlertProps> = ({ children, title, ...props }: AlertProps, ref): ReactElement<AlertProps> => {
   return (
     <MuiAlert ref={ref} {...props}>
       {title && <MuiAlertTitle>{title}</MuiAlertTitle>}

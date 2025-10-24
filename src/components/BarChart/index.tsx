@@ -33,10 +33,7 @@ import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
 import { ILabelListData, TooltipPayloadProps, VariantType } from '~/types';
 
-import {
-  CustomizedAxisTick,
-  CustomizedAxisTickProps,
-} from './CustomizedAxisTick';
+import { CustomizedAxisTick, CustomizedAxisTickProps } from './CustomizedAxisTick';
 import CustomTooltip, { CustomToolTipProps } from './CustomTooltip';
 import { StyledContainer, StyledResponsiveContainer } from './styles';
 import { DataProps as ConsolidatedDataProps } from './types';
@@ -85,9 +82,7 @@ export interface BarChartProps {
 }
 
 export const measureText = (font: string, text?: string): number => {
-  const canvas = document
-    .createElement('canvas')
-    .getContext('2d') as CanvasRenderingContext2D;
+  const canvas = document.createElement('canvas').getContext('2d') as CanvasRenderingContext2D;
   if (canvas && text) {
     canvas.font = font;
 
@@ -100,9 +95,7 @@ export const measureText = (font: string, text?: string): number => {
 export const DEFAULT_BAR_CATEGORY_GAP = 8;
 export const DEFAULT_BAR_GAP = 4;
 
-export const BarChart: React.FC<BarChartProps> = (
-  inProps: BarChartProps,
-): React.ReactElement<BarChartProps> => {
+export const BarChart: React.FC<BarChartProps> = (inProps: BarChartProps): React.ReactElement<BarChartProps> => {
   const {
     barKeys = [],
     barProps,
@@ -136,9 +129,7 @@ export const BarChart: React.FC<BarChartProps> = (
 
   const { palette, typography, spacing } = useTheme();
 
-  const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(
-    tooltipBarId,
-  );
+  const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(tooltipBarId);
 
   // FIXME recharts uses react-smooth under the hood and that library has a know issue that sometimes prevents the charts from rendering labels,
   // when the issue is closed we can remove this workaround
@@ -156,18 +147,11 @@ export const BarChart: React.FC<BarChartProps> = (
   let finalHeight;
   let defaultHeight;
   if (barKeys.length) {
-    defaultHeight =
-      108 +
-      (26 * (barKeys.length - 1) + 2 * (barKeys.length - 1)) +
-      (data.length - 1) * (38 + 26 * (barKeys.length - 1));
+    defaultHeight = 108 + (26 * (barKeys.length - 1) + 2 * (barKeys.length - 1)) + (data.length - 1) * (38 + 26 * (barKeys.length - 1));
   } else {
     defaultHeight =
       // eslint-disable-next-line no-nested-ternary
-      data.length < 2
-        ? 150
-        : data.length <= 4
-          ? 105 * data.length
-          : 90 * data.length;
+      data.length < 2 ? 150 : data.length <= 4 ? 105 * data.length : 90 * data.length;
   }
   if (isFunction(height)) {
     finalHeight = height(defaultHeight);
@@ -179,10 +163,7 @@ export const BarChart: React.FC<BarChartProps> = (
     () =>
       data.reduce((acc, { name }) => {
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-        const textWidth = measureText(
-          `${typography.h4.fontSize}px ${typography.fontFamily}`,
-          name?.toLocaleString(),
-        );
+        const textWidth = measureText(`${typography.h4.fontSize}px ${typography.fontFamily}`, name?.toLocaleString());
         if (textWidth > acc) {
           return textWidth;
         }
@@ -195,10 +176,7 @@ export const BarChart: React.FC<BarChartProps> = (
     const subKeys = subLabels || barKeys;
     return subKeys.reduce((acc, key) => {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      const textWidth = measureText(
-        `${typography.caption.fontSize}px ${typography.fontFamily}`,
-        key.toLocaleString(),
-      );
+      const textWidth = measureText(`${typography.caption.fontSize}px ${typography.fontFamily}`, key.toLocaleString());
       if (textWidth > acc) {
         return textWidth;
       }
@@ -206,33 +184,17 @@ export const BarChart: React.FC<BarChartProps> = (
     }, 0);
   }, [barKeys, subLabels, typography.caption.fontSize, typography.fontFamily]);
 
-  let composedChartLeftMargin =
-    (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(3.5)), 10);
+  let composedChartLeftMargin = (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(3.5)), 10);
   if (maxLabelWidth <= 20) {
-    composedChartLeftMargin =
-      (subLabelWidth || maxSubLabelWidth) - parseInt(String(spacing(1.5)), 10);
+    composedChartLeftMargin = (subLabelWidth || maxSubLabelWidth) - parseInt(String(spacing(1.5)), 10);
   } else if (maxLabelWidth <= 60 || variant) {
-    composedChartLeftMargin =
-      (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(1)), 10);
+    composedChartLeftMargin = (subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(1)), 10);
   }
 
   const lowerCaseTitle = toLower(title);
   return (
-    <StyledContainer
-      height={finalHeight}
-      maxHeight={maxHeight}
-      ref={containerRef}
-      style={containerStyles}
-      tabIndex={0}
-      width={width || '100%'}
-    >
-      <StyledResponsiveContainer
-        debounce={50}
-        height={finalHeight}
-        key={responsiveContainerKey}
-        width="100%"
-        {...responsiveContainerProps}
-      >
+    <StyledContainer height={finalHeight} maxHeight={maxHeight} ref={containerRef} style={containerStyles} tabIndex={0} width={width || '100%'}>
+      <StyledResponsiveContainer debounce={50} height={finalHeight} key={responsiveContainerKey} width="100%" {...responsiveContainerProps}>
         <ComposedChart
           accessibilityLayer
           barCategoryGap={DEFAULT_BAR_CATEGORY_GAP}
@@ -255,28 +217,12 @@ export const BarChart: React.FC<BarChartProps> = (
           title={title}
           {...chartProps}
         >
-          <CartesianGrid
-            stroke={palette.grey[100]}
-            {...(cartesianGridProps as CartesianGridProps)}
-          />
-          <XAxis
-            axisLine={false}
-            orientation="top"
-            tickFormatter={(v: number): string => numeral(v).format('0,0')}
-            type="number"
-            xAxisId={0}
-            {...xAxisProps}
-          />
+          <CartesianGrid stroke={palette.grey[100]} {...(cartesianGridProps as CartesianGridProps)} />
+          <XAxis axisLine={false} orientation="top" tickFormatter={(v: number): string => numeral(v).format('0,0')} type="number" xAxisId={0} {...xAxisProps} />
           <YAxis
             dataKey="name"
             padding={{ bottom: 10, top: 10 }}
-            tick={
-              <CustomizedAxisTick
-                variant={variant}
-                yAxisLabelTypographyProps={yAxisLabelTypographyProps}
-                {...customizedAxisTickProps}
-              />
-            }
+            tick={<CustomizedAxisTick variant={variant} yAxisLabelTypographyProps={yAxisLabelTypographyProps} {...customizedAxisTickProps} />}
             tickLine={false}
             type="category"
             {...yAxisProps}
@@ -286,12 +232,7 @@ export const BarChart: React.FC<BarChartProps> = (
             return (
               <Bar
                 dataKey={key}
-                fill={
-                  customizeBarFillColor?.(i, key) ||
-                  colors[i] ||
-                  DEFAULT_CHART_COLORS[i] ||
-                  palette.grey[700]
-                }
+                fill={customizeBarFillColor?.(i, key) || colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
                 id={key}
                 isAnimationActive={animate}
                 key={`${key}-bar`}
@@ -338,9 +279,7 @@ export const BarChart: React.FC<BarChartProps> = (
                       fill: palette.grey[700],
                       fontSize: typography.caption.fontSize,
                     }}
-                    valueAccessor={(bar: BarLabelProps): string =>
-                      subLabels ? subLabels[i] : bar?.tooltipPayload[0]?.name
-                    }
+                    valueAccessor={(bar: BarLabelProps): string => (subLabels ? subLabels[i] : bar?.tooltipPayload[0]?.name)}
                     {...subLabelProps}
                   />
                 )}
@@ -350,9 +289,7 @@ export const BarChart: React.FC<BarChartProps> = (
 
           <Tooltip
             accessibilityLayer
-            content={
-              <CustomTooltip barId={tooltipBarId || barIdHovered} data={data} />
-            }
+            content={<CustomTooltip barId={tooltipBarId || barIdHovered} data={data} />}
             itemStyle={{ color: palette.secondary.dark }}
             labelStyle={{ color: palette.secondary.dark }}
             tooltipColor={palette.secondary.dark}

@@ -7,17 +7,20 @@
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { Loading, LoadingProps } from '.';
 
 /**
- * This component is the primary label for various form fields.  In general, when applicable, you should use
- * a molecule or organism that already contains this component to make it easier.  This would be used in a scenario where
- * a molecule does not exist for your use case.
+ * The `<Loading />` component displays a loading spinner with optional text.
  */
 export default {
   args: {},
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       circularProgressProps: {
@@ -30,25 +33,100 @@ export default {
     Loading,
   ),
   component: Loading,
+  parameters: {
+    layout: 'padded',
+  },
   tags: ['autodocs'],
   title: 'Molecules / Loading',
 } as Meta<LoadingProps>;
 
-export const Preview: StoryObj<LoadingProps> = {
+type Story = StoryObj<LoadingProps>;
+
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
   args: {},
-};
-
-export const WithText: StoryObj<LoadingProps> = {
-  args: {
-    title: 'Loading...',
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-export const CustomSpinner: StoryObj<LoadingProps> = {
-  args: {
-    circularProgressProps: {
-      size: 50,
-      thickness: 4.5,
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {},
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground(
+    {
+      circularProgressProps: {
+        size: {},
+        thickness: {},
+      },
+      style: {},
+      title: {},
     },
+    Loading,
+  ),
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
 };
+
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
+
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<LoadingProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Default">
+            <Loading />
+          </StoryVariation>
+
+          <StoryVariation label="With Text">
+            <Loading title="Loading..." />
+          </StoryVariation>
+
+          <StoryVariation label="Custom Spinner">
+            <Loading
+              circularProgressProps={{
+                size: 50,
+                thickness: 4.5,
+              }}
+            />
+          </StoryVariation>
+
+          <StoryVariation label="Large Spinner">
+            <Loading
+              circularProgressProps={{
+                size: 80,
+                thickness: 6,
+              }}
+              title="Loading large content..."
+            />
+          </StoryVariation>
+
+          <StoryVariation label="Thin Spinner">
+            <Loading
+              circularProgressProps={{
+                size: 30,
+                thickness: 2,
+              }}
+              title="Loading..."
+            />
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
+  },
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

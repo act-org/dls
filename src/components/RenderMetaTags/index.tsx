@@ -16,55 +16,28 @@ export interface RenderMetaTagsProps {
   Wrapper?: (children: ReactElement<unknown>[]) => ReactElement<unknown>;
 }
 
-export const RenderMetaTags: FC<RenderMetaTagsProps> = ({
-  description,
-  imageUrl,
-  keywords,
-  noIndex,
-  title,
-  Wrapper,
-}: RenderMetaTagsProps): any => {
+export const RenderMetaTags: FC<RenderMetaTagsProps> = ({ description, imageUrl, keywords, noIndex, title, Wrapper }: RenderMetaTagsProps): any => {
   const children: ReactElement<unknown>[] = [];
 
   if (description) {
     // Search Engines
-    children.push(
-      <meta content={description} key="description" name="description" />,
-    );
+    children.push(<meta content={description} key="description" name="description" />);
     // Facebook Open Graph
-    children.push(
-      <meta
-        content={description}
-        key="og:description"
-        property="og:description"
-      />,
-    );
+    children.push(<meta content={description} key="og:description" property="og:description" />);
     // Twitter Cards
-    children.push(
-      <meta
-        content={description}
-        key="twitter:text:description"
-        name="twitter:text:description"
-      />,
-    );
+    children.push(<meta content={description} key="twitter:text:description" name="twitter:text:description" />);
   }
 
   if (imageUrl) {
     // Facebook Open Graph
-    children.push(
-      <meta content={imageUrl} key="og:image" property="og:image" />,
-    );
+    children.push(<meta content={imageUrl} key="og:image" property="og:image" />);
     // Twitter Cards
-    children.push(
-      <meta content={imageUrl} key="twitter:image" name="twitter:image" />,
-    );
+    children.push(<meta content={imageUrl} key="twitter:image" name="twitter:image" />);
   }
 
   if (keywords) {
     // Search Engines
-    children.push(
-      <meta content={keywords.toString()} key="keywords" name="keywords" />,
-    );
+    children.push(<meta content={keywords.toString()} key="keywords" name="keywords" />);
   }
 
   if (title) {
@@ -77,9 +50,7 @@ export const RenderMetaTags: FC<RenderMetaTagsProps> = ({
     // Facebook Open Graph
     children.push(<meta content={title} key="og:title" property="og:title" />);
     // Twitter Cards
-    children.push(
-      <meta content={title} key="twitter:title" name="twitter:title" />,
-    );
+    children.push(<meta content={title} key="twitter:title" name="twitter:title" />);
   }
 
   if (noIndex) {

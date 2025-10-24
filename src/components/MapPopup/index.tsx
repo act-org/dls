@@ -20,10 +20,7 @@ export interface MapPopupProps {
   rows?: Array<RowsDataProps>;
 }
 
-export const MapPopup: React.FC<MapPopupProps> = ({
-  popupProps,
-  rows,
-}: MapPopupProps): React.ReactElement<unknown> | null => {
+export const MapPopup: React.FC<MapPopupProps> = ({ popupProps, rows }: MapPopupProps): React.ReactElement<unknown> | null => {
   return rows ? (
     <StyledPopup closeButton={false} closeOnClick={false} {...popupProps}>
       {rows.map(row => (

@@ -13,8 +13,7 @@ export type { OptionsObject };
 
 export type CustomTheme<T extends object> = Theme & T;
 
-export type CustomThemeOptions<T extends object = Record<string, never>> =
-  ThemeOptions & T;
+export type CustomThemeOptions<T extends object = Record<string, never>> = ThemeOptions & T;
 
 export interface ICustomDims {
   customDims: {

@@ -13,11 +13,7 @@ import isString from 'lodash/isString';
 import numeral from 'numeral';
 import React from 'react';
 
-import Map, {
-  FeatureHoverProps,
-  InitialBoundsPositionProps,
-  MapProps,
-} from '~/components/Map';
+import Map, { FeatureHoverProps, InitialBoundsPositionProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
 import { IMapDataProps } from '~/types';
 
@@ -30,10 +26,7 @@ export interface CountyMapProps {
   mapPopupProps?: Partial<MapPopupProps>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
-  processDataFn?: (
-    featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
-    data: Array<IMapDataProps>,
-  ) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
+  processDataFn?: (featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>, data: Array<IMapDataProps>) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
   selectedCounty?: Array<string>;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   tooltipElement?: React.ReactElement;
@@ -58,17 +51,14 @@ export const CountyMap: React.FC<CountyMapProps> = ({
 }): React.ReactElement<CountyMapProps> => {
   const { breakpoints, spacing } = useTheme();
 
-  const [countiesJSON, setCountiesJSON] =
-    React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
+  const [countiesJSON, setCountiesJSON] = React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
   const [hoverInfo, setHoverInfo] = React.useState<FeatureHoverProps>();
   const finalHoverInfo = onHoverInfo || hoverInfo;
 
   React.useEffect(() => {
     fetch(geoJSONPath)
       .then(resp => resp.json())
-      .then(json =>
-        setCountiesJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>),
-      )
+      .then(json => setCountiesJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>))
       .catch(err => console.error('Could not load data', err)); // eslint-disable-line
   }, []);
 
@@ -76,16 +66,10 @@ export const CountyMap: React.FC<CountyMapProps> = ({
     return countiesJSON && processDataFn && processDataFn(countiesJSON, data);
   }, [data, countiesJSON, processDataFn]);
 
-  const initialBoundsPosition = React.useMemo(():
-    | InitialBoundsPositionProps
-    | undefined => {
+  const initialBoundsPosition = React.useMemo((): InitialBoundsPositionProps | undefined => {
     if (selectedCounty && processedData) {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      const features = processedData.features.filter(d =>
-        selectedCounty.includes(
-          `${d.properties?.STATE}${d.properties?.COUNTY}`,
-        ),
-      );
+      const features = processedData.features.filter(d => selectedCounty.includes(`${d.properties?.STATE}${d.properties?.COUNTY}`));
 
       if (features.length > 0) {
         const [minLng, minLat, maxLng, maxLat] = bbox({
@@ -94,10 +78,7 @@ export const CountyMap: React.FC<CountyMapProps> = ({
         });
 
         return {
-          id:
-            features.length > 1
-              ? undefined
-              : (features[0].properties?.GEO_ID as string),
+          id: features.length > 1 ? undefined : (features[0].properties?.GEO_ID as string),
           position: [
             [minLng, minLat],
             [maxLng, maxLat],
@@ -128,9 +109,7 @@ export const CountyMap: React.FC<CountyMapProps> = ({
       {...mapProps}
     >
       {tooltipElement ||
-        (finalHoverInfo &&
-        (isString(parentWidth) ||
-          parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
+        (finalHoverInfo && (isString(parentWidth) || parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
           <MapPopup
             popupProps={{
               latitude: finalHoverInfo.lat,
@@ -152,9 +131,7 @@ export const CountyMap: React.FC<CountyMapProps> = ({
               },
               {
                 title: 'Volume',
-                value: numeral(
-                  finalHoverInfo.feature.properties?.value as number,
-                ).format('0,0'),
+                value: numeral(finalHoverInfo.feature.properties?.value as number).format('0,0'),
               },
             ]}
             {...mapPopupProps}

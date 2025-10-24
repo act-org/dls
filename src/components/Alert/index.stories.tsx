@@ -6,8 +6,13 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
+import noop from 'lodash/noop';
 
+import { StoryVariation } from '~/components/StoryVariation';
+import ThemeProvider from '~/components/ThemeProvider';
+import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
+import { ThemesArray } from '~/styles/themes';
 
 import { Alert, AlertProps } from '.';
 
@@ -21,6 +26,36 @@ export default {
   args: {
     children: 'Some alert description goes here.',
   },
+  component: Alert,
+  parameters: {
+    layout: 'padded',
+  },
+  tags: ['autodocs'],
+  title: 'Atoms / Alert',
+} as Meta<AlertProps>;
+
+type Story = StoryObj<AlertProps>;
+
+// Documentation story (not snapshotted in Chromatic)
+export const Documentation: Story = {
+  args: {
+    children: 'Some alert description goes here.',
+    severity: 'info',
+    title: 'Alert Title',
+  },
+  parameters: {
+    chromatic: { disable: true },
+  },
+};
+
+// Playground story (not snapshotted in Chromatic)
+export const PlaygroundStory: Story = {
+  args: {
+    children: 'Some alert description goes here.',
+    severity: 'info',
+    title: 'Alert Title',
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground(
     {
       children: { type: 'string' },
@@ -32,111 +67,115 @@ export default {
     },
     Alert,
   ),
-  component: Alert,
-  tags: ['autodocs'],
-  title: 'Atoms / Alert',
-} as Meta<AlertProps>;
-
-export const WithTitle: StoryObj<AlertProps> = {
-  args: { title: 'Title Here' },
-};
-
-export const DescriptionOnly: StoryObj<AlertProps> = {
-  args: { children: 'Some alert description goes here.' },
-};
-
-export const SuccessStandard: StoryObj<AlertProps> = {
-  args: {
-    severity: 'success',
-    title: 'Success: Standard',
-    variant: 'standard',
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
 };
 
-export const SuccessFilled: StoryObj<AlertProps> = {
-  args: {
-    severity: 'success',
-    title: 'Success: Filled',
-    variant: 'filled',
-  },
-};
+// Theme-specific stories (snapshotted in Chromatic)
+// Generate stories for each theme dynamically
 
-export const SuccessOutlined: StoryObj<AlertProps> = {
-  args: {
-    severity: 'success',
-    title: 'Success: Outlined',
-    variant: 'outlined',
-  },
-};
+// Export theme-specific stories dynamically
+const themeStories = ThemesArray.reduce(
+  (stories, theme) => {
+    // eslint-disable-next-line no-param-reassign
+    stories[theme] = createThemeStory<AlertProps>(theme, {
+      render: () => (
+        <ThemeProvider theme={theme}>
+          <StoryVariation label="Success Standard">
+            <Alert severity="success" title="Success Alert" variant="standard">
+              This is a success alert with standard variant.
+            </Alert>
+          </StoryVariation>
 
-export const ErrorStandard: StoryObj<AlertProps> = {
-  args: {
-    severity: 'error',
-    title: 'Error: Standard',
-    variant: 'standard',
-  },
-};
+          <StoryVariation label="Success Filled">
+            <Alert severity="success" title="Success Alert" variant="filled">
+              This is a success alert with filled variant.
+            </Alert>
+          </StoryVariation>
 
-export const ErrorFilled: StoryObj<AlertProps> = {
-  args: {
-    severity: 'error',
-    title: 'Error: Filled',
-    variant: 'filled',
-  },
-};
+          <StoryVariation label="Success Outlined">
+            <Alert severity="success" title="Success Alert" variant="outlined">
+              This is a success alert with outlined variant.
+            </Alert>
+          </StoryVariation>
 
-export const ErrorOutlined: StoryObj<AlertProps> = {
-  args: {
-    severity: 'error',
-    title: 'Error: Outlined',
-    variant: 'outlined',
-  },
-};
+          <StoryVariation label="Error Standard">
+            <Alert severity="error" title="Error Alert" variant="standard">
+              This is an error alert with standard variant.
+            </Alert>
+          </StoryVariation>
 
-export const WarningStandard: StoryObj<AlertProps> = {
-  args: {
-    severity: 'warning',
-    title: 'Warning: Standard',
-    variant: 'standard',
-  },
-};
+          <StoryVariation label="Error Filled">
+            <Alert severity="error" title="Error Alert" variant="filled">
+              This is an error alert with filled variant.
+            </Alert>
+          </StoryVariation>
 
-export const WarningFilled: StoryObj<AlertProps> = {
-  args: {
-    severity: 'warning',
-    title: 'Warning: Filled',
-    variant: 'filled',
-  },
-};
+          <StoryVariation label="Error Outlined">
+            <Alert severity="error" title="Error Alert" variant="outlined">
+              This is an error alert with outlined variant.
+            </Alert>
+          </StoryVariation>
 
-export const WarningOutlined: StoryObj<AlertProps> = {
-  args: {
-    severity: 'warning',
-    title: 'Warning: Outlined',
-    variant: 'outlined',
-  },
-};
+          <StoryVariation label="Warning Standard">
+            <Alert severity="warning" title="Warning Alert" variant="standard">
+              This is a warning alert with standard variant.
+            </Alert>
+          </StoryVariation>
 
-export const InfoStandard: StoryObj<AlertProps> = {
-  args: {
-    severity: 'info',
-    title: 'Info: Standard',
-    variant: 'standard',
-  },
-};
+          <StoryVariation label="Warning Filled">
+            <Alert severity="warning" title="Warning Alert" variant="filled">
+              This is a warning alert with filled variant.
+            </Alert>
+          </StoryVariation>
 
-export const InfoFilled: StoryObj<AlertProps> = {
-  args: {
-    severity: 'info',
-    title: 'Info: Filled',
-    variant: 'filled',
-  },
-};
+          <StoryVariation label="Warning Outlined">
+            <Alert severity="warning" title="Warning Alert" variant="outlined">
+              This is a warning alert with outlined variant.
+            </Alert>
+          </StoryVariation>
 
-export const InfoOutlined: StoryObj<AlertProps> = {
-  args: {
-    severity: 'info',
-    title: 'Info: Outlined',
-    variant: 'outlined',
+          <StoryVariation label="Info Standard">
+            <Alert severity="info" title="Info Alert" variant="standard">
+              This is an info alert with standard variant.
+            </Alert>
+          </StoryVariation>
+
+          <StoryVariation label="Info Filled">
+            <Alert severity="info" title="Info Alert" variant="filled">
+              This is an info alert with filled variant.
+            </Alert>
+          </StoryVariation>
+
+          <StoryVariation label="Info Outlined">
+            <Alert severity="info" title="Info Alert" variant="outlined">
+              This is an info alert with outlined variant.
+            </Alert>
+          </StoryVariation>
+
+          <StoryVariation label="Without Title">
+            <Alert severity="info" variant="standard">
+              This is an alert without a title.
+            </Alert>
+          </StoryVariation>
+
+          <StoryVariation label="Closable">
+            <Alert onClose={noop} severity="info" title="Closable Alert" variant="standard">
+              This is a closable alert.
+            </Alert>
+          </StoryVariation>
+        </ThemeProvider>
+      ),
+    });
+
+    return stories;
   },
-};
+  {} as Record<string, Story>,
+);
+
+export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
+export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
+export const ThemeEncourage = { ...themeStories.ENCOURAGE, name: 'Theme: Encourage' };
+export const ThemeEncourageE4E = { ...themeStories.ENCOURAGE_E4E, name: 'Theme: Encourage E4E' };

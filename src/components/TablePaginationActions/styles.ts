@@ -6,10 +6,7 @@
  */
 
 import { grey } from '@mui/material/colors';
-import MenuItem, {
-  MenuItemProps,
-  menuItemClasses,
-} from '@mui/material/MenuItem';
+import MenuItem, { MenuItemProps, menuItemClasses } from '@mui/material/MenuItem';
 import TextField, { textFieldClasses } from '@mui/material/TextField';
 
 import { styled } from '~/helpers/styled';
@@ -46,9 +43,7 @@ export const StyledTextField = styled(TextField)(({ theme }) => ({
   */
 }));
 
-export const StyledMenuItem = styled(MenuItem)<
-  MenuItemProps & { isSelected: boolean }
->(({ isSelected }) => ({
+export const StyledMenuItem = styled(MenuItem)<MenuItemProps & { isSelected: boolean }>(({ isSelected }) => ({
   [`&.${menuItemClasses.root}`]: {
     backgroundColor: isSelected ? grey[200] : undefined,
   },

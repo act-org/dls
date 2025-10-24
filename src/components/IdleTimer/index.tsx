@@ -9,13 +9,7 @@ import { FC, ReactElement, useEffect, useState } from 'react';
 import { useIdleTimer } from 'react-idle-timer';
 
 export interface IdleTimerProps {
-  children?: ({
-    remainingTimeMs,
-    reset,
-  }: {
-    remainingTimeMs: number;
-    reset: () => void;
-  }) => ReactElement<unknown> | null;
+  children?: ({ remainingTimeMs, reset }: { remainingTimeMs: number; reset: () => void }) => ReactElement<unknown> | null;
   onAction?: (event?: any) => void;
   onActive?: (event?: any) => void;
   onIdle?: (event?: any) => void;

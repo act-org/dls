@@ -10,23 +10,11 @@ import { IconProps } from '@mui/material/Icon';
 import { TypographyProps } from '@mui/material/Typography';
 import { GridProps, SizingProps } from '@mui/system';
 import isString from 'lodash/isString';
-import {
-  ComponentClass,
-  CSSProperties,
-  FC,
-  ReactElement,
-  ReactNode,
-} from 'react';
+import { ComponentClass, CSSProperties, FC, ReactElement, ReactNode } from 'react';
 
 import { styled } from '~/helpers/styled';
 
-import {
-  StyledContainer,
-  StyledGridContainer,
-  StyledGridItem,
-  StyledTypographyDescription,
-  StyledTypographyTitle,
-} from './styles';
+import { StyledContainer, StyledGridContainer, StyledGridItem, StyledTypographyDescription, StyledTypographyTitle } from './styles';
 
 export interface EmptyStateProps {
   buttonProps?: ButtonProps;
@@ -66,28 +54,12 @@ export const EmptyState: FC<EmptyStateProps> = ({
 
   return (
     <StyledContainer style={style}>
-      {StyledIcon && (
-        <StyledIcon
-          color="disabled"
-          titleAccess={isString(title) ? title : undefined}
-          {...iconProps}
-        />
-      )}
+      {StyledIcon && <StyledIcon color="disabled" titleAccess={isString(title) ? title : undefined} {...iconProps} />}
 
       {title && (
-        <StyledGridContainer
-          alignItems="center"
-          container
-          justifyContent="center"
-          {...titleGridContainerProps}
-        >
+        <StyledGridContainer alignItems="center" container justifyContent="center" {...titleGridContainerProps}>
           <StyledGridItem>
-            <StyledTypographyTitle
-              align="center"
-              component="h6"
-              variant="body1"
-              {...titleTypographyProps}
-            >
+            <StyledTypographyTitle align="center" component="h6" variant="body1" {...titleTypographyProps}>
               {title}
             </StyledTypographyTitle>
           </StyledGridItem>
@@ -95,13 +67,7 @@ export const EmptyState: FC<EmptyStateProps> = ({
       )}
 
       {description && (
-        <StyledTypographyDescription
-          $withoutTitle={!title}
-          align="center"
-          color="textSecondary"
-          variant="body1"
-          {...descriptionTypographyProps}
-        >
+        <StyledTypographyDescription $withoutTitle={!title} align="center" color="textSecondary" variant="body1" {...descriptionTypographyProps}>
           {description}
         </StyledTypographyDescription>
       )}

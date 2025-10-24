@@ -584,14 +584,11 @@ export const yAxisDataKey = (): string => {
     if (Number(d.DATA_POINT_3) > DATA_POINT_3) DATA_POINT_3 = d.DATA_POINT_3;
   });
 
-  if (DATA_POINT_1 >= DATA_POINT_2 && DATA_POINT_1 >= DATA_POINT_3)
-    return '2019';
+  if (DATA_POINT_1 >= DATA_POINT_2 && DATA_POINT_1 >= DATA_POINT_3) return '2019';
 
-  if (DATA_POINT_2 >= DATA_POINT_1 && DATA_POINT_2 >= DATA_POINT_3)
-    return '2020';
+  if (DATA_POINT_2 >= DATA_POINT_1 && DATA_POINT_2 >= DATA_POINT_3) return '2020';
 
-  if (DATA_POINT_3 >= DATA_POINT_2 && DATA_POINT_3 >= DATA_POINT_1)
-    return '2021';
+  if (DATA_POINT_3 >= DATA_POINT_2 && DATA_POINT_3 >= DATA_POINT_1) return '2021';
 
   return '2019';
 };

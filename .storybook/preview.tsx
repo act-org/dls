@@ -6,7 +6,6 @@
  */
 
 import { CssBaseline } from '@mui/material';
-import { common, grey } from '@mui/material/colors';
 import * as locales from '@mui/material/locale';
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { Preview } from '@storybook/react-webpack5';
@@ -29,19 +28,12 @@ const preview: Preview = {
   ],
   globalTypes: {
     theme: {
-      defaultValue: 'ENCOURA',
+      defaultValue: 'ENCOURAGE_E4E',
       description: 'Global theme for components',
       name: 'Theme',
       toolbar: {
         icon: 'paintbrush',
-        items: [
-          'ACT',
-          'ACT_ET',
-          'ENCOURA',
-          'ENCOURA_CLASSIC',
-          'ENCOURAGE',
-          'ENCOURAGE_E4E',
-        ],
+        items: ['ENCOURA', 'ENCOURA_CLASSIC', 'ENCOURAGE', 'ENCOURAGE_E4E'],
       },
     },
     language: {
@@ -55,23 +47,6 @@ const preview: Preview = {
     },
   },
   parameters: {
-    backgrounds: {
-      default: 'White',
-      values: [
-        {
-          name: 'White',
-          value: common.white,
-        },
-        {
-          name: 'Grey',
-          value: grey[300],
-        },
-        {
-          name: 'Black',
-          value: common.black,
-        },
-      ],
-    },
     controls: { expanded: false },
     docs: {
       container: DocsContainer,
@@ -83,20 +58,12 @@ const preview: Preview = {
     layout: 'padded',
     options: {
       storySort: {
-        order: [
-          'DLS',
-          'Foundations',
-          'MUI Core',
-          'MUI X',
-          'Atoms',
-          'Molecules',
-          'Organisms',
-          'Utilities',
-          'Forms (WIP)',
-          'Deprecated',
-        ],
+        order: ['DLS', 'Foundations', 'Atoms', 'Molecules', 'Organisms', 'Maps', 'Charts', 'Utilities', 'MUI X', 'MUI Core', 'Deprecated'],
       },
     },
+  },
+  initialGlobals: {
+    backgrounds: { value: 'light' },
   },
 };
 

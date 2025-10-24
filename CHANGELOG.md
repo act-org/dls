@@ -260,7 +260,7 @@
 * Bump MUI packages to v6 ([3a97062](https://github.com/nrccua/dls/commit/3a97062c138b7e231425e755adbb1c5afcda6ca3))
 * Bump MUI to 5.15.14 ([1829160](https://github.com/nrccua/dls/commit/1829160a3045167e511ecd674ef58a278b10aa8e))
 * Bump npm packages to their latest compatible releases ([12321f7](https://github.com/nrccua/dls/commit/12321f734bdb11d5f05c6e42b7859b2540555011))
-* Bump to @actinc/eslint-config@4.11.0 ([6a80d88](https://github.com/nrccua/dls/commit/6a80d88c05de6158ef8fc457feb29d1001cf7d4d))
+* Bump to @encoura/eslint-config@4.11.0 ([6a80d88](https://github.com/nrccua/dls/commit/6a80d88c05de6158ef8fc457feb29d1001cf7d4d))
 * Bumped deps and dev-deps to their latest compatible releases ([4c8040a](https://github.com/nrccua/dls/commit/4c8040ae0838d5d090a9dd7a42530210092208a5))
 * Capitalize OverlappedBarChart tooltips ([39b4416](https://github.com/nrccua/dls/commit/39b4416fa3bbe013b7df0106c4cc803db8b5b3e5))
 * Change InputLabel required text to asterisk instead of required text ([a315e22](https://github.com/nrccua/dls/commit/a315e22f079caded2b6125a25daf7651e9e28be8))

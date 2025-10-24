@@ -11,11 +11,7 @@ import px from '~/helpers/px';
 
 type BorderRadius = Pick<
   StandardCSSProperties,
-  | 'borderBottomLeftRadius'
-  | 'borderBottomRightRadius'
-  | 'borderRadius'
-  | 'borderTopLeftRadius'
-  | 'borderTopRightRadius'
+  'borderBottomLeftRadius' | 'borderBottomRightRadius' | 'borderRadius' | 'borderTopLeftRadius' | 'borderTopRightRadius'
 >;
 
 export const cssRadius = (value: number): BorderRadius => ({

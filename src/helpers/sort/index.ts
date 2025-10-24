@@ -12,14 +12,8 @@ import { SortObject } from '~/types';
 
 type SortFunction<T> = (itemA: T, itemB: T) => number;
 
-export function sort<T>({
-  sortBy,
-  sortDirection,
-}: SortObject): SortFunction<T> {
-  return (
-    { [sortBy as keyof T]: itemA },
-    { [sortBy as keyof T]: itemB },
-  ): number => {
+export function sort<T>({ sortBy, sortDirection }: SortObject): SortFunction<T> {
+  return ({ [sortBy as keyof T]: itemA }, { [sortBy as keyof T]: itemB }): number => {
     if (itemA === null || itemB === null) return 0;
 
     let normalizedItemA: any = itemA;

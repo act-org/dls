@@ -11,11 +11,7 @@ import isString from 'lodash/isString';
 import numeral from 'numeral';
 import React from 'react';
 
-import Map, {
-  FeatureHoverProps,
-  InitialBoundsPositionProps,
-  MapProps,
-} from '~/components/Map';
+import Map, { FeatureHoverProps, InitialBoundsPositionProps, MapProps } from '~/components/Map';
 import MapPopup, { MapPopupProps } from '~/components/MapPopup';
 import { IMapDataProps } from '~/types';
 
@@ -28,10 +24,7 @@ export interface GeomarketMapProps {
   mapPopupProps?: Partial<MapPopupProps>;
   mapProps?: Omit<Partial<MapProps>, 'mapboxAccessToken'>;
   onHoverInfo?: FeatureHoverProps;
-  processDataFn?: (
-    featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>,
-    data: Array<IMapDataProps>,
-  ) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
+  processDataFn?: (featureCollection: GeoJSON.FeatureCollection<GeoJSON.Geometry>, data: Array<IMapDataProps>) => GeoJSON.FeatureCollection<GeoJSON.Geometry>;
   selectedGeomarket?: Array<string>;
   setOnHoverInfo?: (newHoverInfo: FeatureHoverProps | undefined) => void;
   tooltipElement?: React.ReactElement;
@@ -56,17 +49,14 @@ export const GeomarketMap: React.FC<GeomarketMapProps> = ({
 }): React.ReactElement<GeomarketMapProps> => {
   const { breakpoints, spacing } = useTheme();
 
-  const [geomarketJSON, setGeomarketJSON] =
-    React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
+  const [geomarketJSON, setGeomarketJSON] = React.useState<GeoJSON.FeatureCollection<GeoJSON.Geometry>>();
   const [hoverInfo, setHoverInfo] = React.useState<FeatureHoverProps>();
   const finalHoverInfo = onHoverInfo || hoverInfo;
 
   React.useEffect(() => {
     fetch(geoJSONPath)
       .then(resp => resp.json())
-      .then(json =>
-        setGeomarketJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>),
-      )
+      .then(json => setGeomarketJSON(json as GeoJSON.FeatureCollection<GeoJSON.Geometry>))
       .catch(err => console.error('Could not load data', err)); // eslint-disable-line
   }, []);
 
@@ -74,14 +64,10 @@ export const GeomarketMap: React.FC<GeomarketMapProps> = ({
     return geomarketJSON && processDataFn && processDataFn(geomarketJSON, data);
   }, [data, geomarketJSON, processDataFn]);
 
-  const initialBoundsPosition = React.useMemo(():
-    | InitialBoundsPositionProps
-    | undefined => {
+  const initialBoundsPosition = React.useMemo((): InitialBoundsPositionProps | undefined => {
     if (selectedGeomarket && processedData) {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      const features = processedData.features.filter(f =>
-        selectedGeomarket.includes(f.id as string),
-      );
+      const features = processedData.features.filter(f => selectedGeomarket.includes(f.id as string));
 
       if (features.length > 0) {
         const [minLng, minLat, maxLng, maxLat] = bbox({
@@ -120,9 +106,7 @@ export const GeomarketMap: React.FC<GeomarketMapProps> = ({
       {...mapProps}
     >
       {tooltipElement ||
-        (finalHoverInfo &&
-        (isString(parentWidth) ||
-          parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
+        (finalHoverInfo && (isString(parentWidth) || parentWidth > breakpoints.values.sm - parseInt(spacing(12), 10)) ? (
           <MapPopup
             popupProps={{
               latitude: finalHoverInfo.lat,
@@ -139,9 +123,7 @@ export const GeomarketMap: React.FC<GeomarketMapProps> = ({
               },
               {
                 title: 'Volume',
-                value: numeral(
-                  finalHoverInfo.feature.properties?.value as number,
-                ).format('0,0'),
+                value: numeral(finalHoverInfo.feature.properties?.value as number).format('0,0'),
               },
             ]}
             {...mapPopupProps}
