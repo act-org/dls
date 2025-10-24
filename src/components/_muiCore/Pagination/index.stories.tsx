@@ -203,7 +203,7 @@ const TablePaginationDemo = (): ReactNode => {
   const rows = Array.from({ length: 25 }, (_, i) => ({
     id: i + 1,
     name: `Item ${i + 1}`,
-    value: Math.floor(Math.random() * 100),
+    value: (i * 3 + 15) % 100, // Repeatable pattern: 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87
   }));
 
   return (
