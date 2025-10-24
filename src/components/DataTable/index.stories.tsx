@@ -197,7 +197,7 @@ const ThemeStoryComponent: FC<Partial<DataTableProps<Item>>> = ({ limit: limitPr
     sortDirection: SORT_DIRECTION_TYPES.ASCENDING,
   });
 
-  const totalCount = totalCountProp || 10;
+  const totalCount = totalCountProp ?? 10;
   let items: Item[] = [...Array(totalCount)].map((_, i): any => ({
     fieldA: `Field A${i + 1}`,
     fieldB: `Field B${i + 1}`,
