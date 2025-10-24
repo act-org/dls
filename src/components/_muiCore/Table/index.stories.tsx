@@ -65,6 +65,34 @@ export const Documentation: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+  render: () => (
+    <TableContainer component={Paper}>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Calories</TableCell>
+            <TableCell align="right">Fat&nbsp;(g)</TableCell>
+            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.slice(0, 3).map(row => (
+            <TableRow key={row.name}>
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  ),
 };
 
 // Playground story (not snapshotted in Chromatic)
@@ -76,6 +104,34 @@ export const PlaygroundStory: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+  render: args => (
+    <TableContainer component={Paper}>
+      <Table {...args}>
+        <TableHead>
+          <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Calories</TableCell>
+            <TableCell align="right">Fat&nbsp;(g)</TableCell>
+            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.slice(0, 3).map(row => (
+            <TableRow key={row.name}>
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  ),
 };
 
 // Collapsible Table Component for demonstration
