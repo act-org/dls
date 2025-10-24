@@ -149,18 +149,6 @@ const themeStories = ThemesArray.reduce(
             <Chip label="Very Long Chip Text That Might Wrap" />
           </StoryVariation>
 
-          <StoryVariation label="Chip with Numbers" sx={{ p: 4 }}>
-            <Chip label="123" />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Special Characters" sx={{ p: 4 }}>
-            <Chip label="@#$%" />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Emoji" sx={{ p: 4 }}>
-            <Chip label="🚀" />
-          </StoryVariation>
-
           <StoryVariation label="Chip with Check Icon" sx={{ p: 4 }}>
             <Chip icon={<CheckIcon />} label="Checked" />
           </StoryVariation>
@@ -195,43 +183,6 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="Chip Outlined with Delete" sx={{ p: 4 }}>
             <Chip label="Outlined Delete" onDelete={() => {}} variant="outlined" />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Custom Avatar" sx={{ p: 4 }}>
-            <Chip
-              avatar={
-                <div
-                  style={{
-                    backgroundColor: '#f0f0f0',
-                    borderRadius: '50%',
-                    width: '24px',
-                    height: '24px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  A
-                </div>
-              }
-              label="Custom Avatar"
-            />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Custom Icon" sx={{ p: 4 }}>
-            <Chip icon={<div style={{ color: 'gold' }}>★</div>} label="Custom Icon" />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Long Label and Delete" sx={{ p: 4 }}>
-            <Chip label="Very Long Chip Label That Might Wrap" onDelete={() => {}} />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Numbers and Delete" sx={{ p: 4 }}>
-            <Chip label="42" onDelete={() => {}} />
-          </StoryVariation>
-
-          <StoryVariation label="Chip with Emoji and Delete" sx={{ p: 4 }}>
-            <Chip label="🔥" onDelete={() => {}} />
           </StoryVariation>
         </ThemeProvider>
       ),

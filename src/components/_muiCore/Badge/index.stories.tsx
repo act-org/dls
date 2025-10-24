@@ -234,57 +234,15 @@ const themeStories = ThemesArray.reduce(
             </Badge>
           </StoryVariation>
 
-          <StoryVariation label="Badge with Custom Badge Content" sx={{ p: 4 }}>
-            <Badge badgeContent={<span style={{ fontSize: '10px' }}>!</span>}>
-              <Button>Custom</Button>
-            </Badge>
-          </StoryVariation>
-
           <StoryVariation label="Badge with Large Number" sx={{ p: 4 }}>
             <Badge badgeContent={9999}>
               <Button>Large</Button>
             </Badge>
           </StoryVariation>
 
-          <StoryVariation label="Badge with Single Digit" sx={{ p: 4 }}>
-            <Badge badgeContent={1}>
-              <Button>Single</Button>
-            </Badge>
-          </StoryVariation>
-
-          <StoryVariation label="Badge with Double Digit" sx={{ p: 4 }}>
-            <Badge badgeContent={42}>
-              <Button>Double</Button>
-            </Badge>
-          </StoryVariation>
-
-          <StoryVariation label="Badge with Triple Digit" sx={{ p: 4 }}>
-            <Badge badgeContent={123}>
-              <Button>Triple</Button>
-            </Badge>
-          </StoryVariation>
-
-          <StoryVariation label="Badge with Special Characters" sx={{ p: 4 }}>
-            <Badge badgeContent="★">
-              <Button>Star</Button>
-            </Badge>
-          </StoryVariation>
-
-          <StoryVariation label="Badge with Emoji" sx={{ p: 4 }}>
-            <Badge badgeContent="🔥">
-              <Button>Fire</Button>
-            </Badge>
-          </StoryVariation>
-
           <StoryVariation label="Badge with Long Text" sx={{ p: 4 }}>
             <Badge badgeContent="LONG">
               <Button>Long Text</Button>
-            </Badge>
-          </StoryVariation>
-
-          <StoryVariation label="Badge with Very Long Text" sx={{ p: 4 }}>
-            <Badge badgeContent="VERY LONG TEXT">
-              <Button>Very Long</Button>
             </Badge>
           </StoryVariation>
         </ThemeProvider>
