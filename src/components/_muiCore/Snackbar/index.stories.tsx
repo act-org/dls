@@ -39,6 +39,9 @@ export const Documentation: Story = {
     message: 'This is a snackbar message',
     open: false,
   },
+  parameters: {
+    chromatic: { disable: true },
+  },
   render: args => {
     const [open, setOpen] = useState(false);
 
@@ -58,18 +61,22 @@ export const Documentation: Story = {
         <Snackbar {...args} onClose={handleClose} open={open} />
       </>
     );
-  },
-  parameters: {
-    chromatic: { disable: true },
   },
 };
 
 // Playground story (not snapshotted in Chromatic)
 export const PlaygroundStory: Story = {
   args: {
+    autoHideDuration: 6000,
     message: 'This is a snackbar message',
     open: false,
-    autoHideDuration: 6000,
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  argTypes: Playground({}, Snackbar),
+
+  name: 'Playground',
+  parameters: {
+    chromatic: { disable: true },
   },
   render: args => {
     const [open, setOpen] = useState(false);
@@ -90,12 +97,6 @@ export const PlaygroundStory: Story = {
         <Snackbar {...args} onClose={handleClose} open={open} />
       </>
     );
-  },
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  argTypes: Playground({}, Snackbar),
-  name: 'Playground',
-  parameters: {
-    chromatic: { disable: true },
   },
 };
 

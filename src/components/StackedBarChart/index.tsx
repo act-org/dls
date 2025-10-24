@@ -124,8 +124,9 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
 
   return (
     <div style={{ height: finalHeight, width: '100%' }}>
-      <ResponsiveContainer width="100%" height="100%" {...barChartProps?.responsiveContainerProps}>
+      <ResponsiveContainer height="100%" width="100%" {...barChartProps?.responsiveContainerProps}>
         <ComposedChart
+          barGap={4}
           data={data}
           layout="vertical"
           margin={{
@@ -134,7 +135,6 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
             right: parseInt(String(spacing(8)), 10),
             top: parseInt(String(spacing(2)), 10),
           }}
-          barGap={4}
           {...barChartProps?.chartProps}
         >
           <CartesianGrid stroke={palette.grey[100]} {...barChartProps?.cartesianGridProps} />
@@ -199,6 +199,7 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
           })}
 
           <Tooltip
+            // eslint-disable-next-line react/no-unstable-nested-components
             content={(props: any) => {
               if (props.active && props.payload && props.payload.length) {
                 return (
@@ -210,9 +211,10 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
                       padding: 8,
                     }}
                   >
-                    <p style={{ margin: 0, fontWeight: 'bold' }}>{props.label}</p>
+                    <p style={{ fontWeight: 'bold', margin: 0 }}>{props.label}</p>
                     {props.payload.map((entry: any, index: number) => (
-                      <p key={index} style={{ margin: '4px 0', color: entry.color }}>
+                      // eslint-disable-next-line react/no-array-index-key
+                      <p key={index} style={{ color: entry.color, margin: '4px 0' }}>
                         {entry.dataKey}: {numeral(entry.value).format('0,0')}
                       </p>
                     ))}
