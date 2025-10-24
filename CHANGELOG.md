@@ -1,3 +1,31 @@
+# [2.0.0](https://github.com/nrccua/dls/compare/v1.1.0...v2.0.0) (2025-10-24)
+
+
+### Build System
+
+* Remove ACT and ACT_ET themes ([d95b01f](https://github.com/nrccua/dls/commit/d95b01f4db00af4e54c04fe5d334f306d62db42b))
+* Remove Dialog component ([1675ba9](https://github.com/nrccua/dls/commit/1675ba908820217b90eaec365eed3b6793341edd))
+
+
+### Code Refactoring
+
+* Remove AppBarNavigation component ([ba2a8f8](https://github.com/nrccua/dls/commit/ba2a8f8fcb91fc33dab1c7466662bdaa2730d33a))
+* Remove SearchBar component ([bb04312](https://github.com/nrccua/dls/commit/bb0431294a5288d68424f8d162a48e5a7070a54d))
+* Remove unused form component ([3319cd9](https://github.com/nrccua/dls/commit/3319cd952cbed8bb04d73d72422529e962017334))
+* Remove wrapped icons ([1057f1e](https://github.com/nrccua/dls/commit/1057f1e604a9cabc40ac5572f839909918c87197))
+* Removed ConfirmDialog and associated code ([d48f9b2](https://github.com/nrccua/dls/commit/d48f9b2c6599d13ced4be24848f58b8ef7bea2b7))
+
+
+### BREAKING CHANGES
+
+* Removed ConfirmDialog, ConfirmContext, and useConfirm hook
+* Removed customo Dialog component
+* Removed all wrapped and re-exported icons from mdi-material-ui
+* Removed InputLabel and Form* components
+* Removed SearchBar component
+* Removed AppBarNavigation component
+* Removed the ACT and ACT_ET themes from the design system
+
 # [1.1.0](https://github.com/nrccua/dls/compare/v1.0.1...v1.1.0) (2025-08-04)
 
 

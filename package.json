@@ -214,5 +214,5 @@
     "watch": "npm run build && npm run copy && npm run build:components -- --watch"
   },
   "types": "index.d.ts",
-  "version": "1.1.0"
+  "version": "2.0.0"
 }
