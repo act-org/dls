@@ -35,7 +35,30 @@ type Story = StoryObj<SnackbarProps>;
 
 // Documentation story (not snapshotted in Chromatic)
 export const Documentation: Story = {
-  args: {},
+  args: {
+    message: 'This is a snackbar message',
+    open: false,
+  },
+  render: args => {
+    const [open, setOpen] = useState(false);
+
+    const handleClose = (): void => {
+      setOpen(false);
+    };
+
+    const handleOpen = (): void => {
+      setOpen(true);
+    };
+
+    return (
+      <>
+        <Button onClick={handleOpen} variant="contained">
+          Show Snackbar
+        </Button>
+        <Snackbar {...args} onClose={handleClose} open={open} />
+      </>
+    );
+  },
   parameters: {
     chromatic: { disable: true },
   },
@@ -43,7 +66,31 @@ export const Documentation: Story = {
 
 // Playground story (not snapshotted in Chromatic)
 export const PlaygroundStory: Story = {
-  args: {},
+  args: {
+    message: 'This is a snackbar message',
+    open: false,
+    autoHideDuration: 6000,
+  },
+  render: args => {
+    const [open, setOpen] = useState(false);
+
+    const handleClose = (): void => {
+      setOpen(false);
+    };
+
+    const handleOpen = (): void => {
+      setOpen(true);
+    };
+
+    return (
+      <>
+        <Button onClick={handleOpen} variant="contained">
+          Show Snackbar
+        </Button>
+        <Snackbar {...args} onClose={handleClose} open={open} />
+      </>
+    );
+  },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   argTypes: Playground({}, Snackbar),
   name: 'Playground',
