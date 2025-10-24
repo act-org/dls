@@ -144,7 +144,7 @@ const SnackbarWithPosition = ({
       <Button onClick={handleOpen} variant="contained">
         Show {vertical} {horizontal} Snackbar
       </Button>
-      <Snackbar anchorOrigin={{ vertical, horizontal }} autoHideDuration={6000} message={message} onClose={handleClose} open={open} />
+      <Snackbar anchorOrigin={{ horizontal, vertical }} autoHideDuration={6000} message={message} onClose={handleClose} open={open} />
     </>
   );
 };
