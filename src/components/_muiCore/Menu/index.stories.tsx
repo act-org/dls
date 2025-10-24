@@ -7,13 +7,13 @@
 
 import { Button, Paper, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import { ReactNode, useRef, useState } from 'react';
+import PersonIcon from 'mdi-material-ui/Account';
+import SettingsIcon from 'mdi-material-ui/Cog';
 import DeleteIcon from 'mdi-material-ui/Delete';
+import HomeIcon from 'mdi-material-ui/Home';
 import EditIcon from 'mdi-material-ui/Pencil';
 import ShareIcon from 'mdi-material-ui/Share';
-import SettingsIcon from 'mdi-material-ui/Cog';
-import HomeIcon from 'mdi-material-ui/Home';
-import PersonIcon from 'mdi-material-ui/Account';
+import { ReactNode, useRef, useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -21,15 +21,7 @@ import { createThemeStory } from '~/helpers/createThemeStory';
 import { Playground } from '~/helpers/playground';
 import { ThemesArray } from '~/styles/themes';
 
-import {
-  ClickAwayListener,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuProps,
-  Popover,
-  Popper,
-} from './internal';
+import { ClickAwayListener, Menu, MenuItem, MenuList, MenuProps, Popover, Popper } from './internal';
 
 /**
  * The default Menu exports

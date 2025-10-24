@@ -6,18 +6,18 @@
  */
 
 import {
+  ClickAwayListener as MuiClickAwayListener,
+  ClickAwayListenerProps as MuiClickAwayListenerProps,
   Menu as MuiMenu,
-  MenuProps as MuiMenuProps,
   MenuItem as MuiMenuItem,
   MenuItemProps as MuiMenuItemProps,
   MenuList as MuiMenuList,
   MenuListProps as MuiMenuListProps,
+  MenuProps as MuiMenuProps,
   Popover as MuiPopover,
   PopoverProps as MuiPopoverProps,
   Popper as MuiPopper,
   PopperProps as MuiPopperProps,
-  ClickAwayListener as MuiClickAwayListener,
-  ClickAwayListenerProps as MuiClickAwayListenerProps,
 } from '@mui/material';
 
 export const Menu = MuiMenu;
