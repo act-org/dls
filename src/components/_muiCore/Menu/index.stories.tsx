@@ -48,11 +48,11 @@ export const Documentation: Story = {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
 
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
       setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
+    const handleClose = (): void => {
       setAnchorEl(null);
     };
 
@@ -82,11 +82,11 @@ export const PlaygroundStory: Story = {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
 
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
       setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
+    const handleClose = (): void => {
       setAnchorEl(null);
     };
 
@@ -108,11 +108,11 @@ const MenuWithPopover = (): ReactNode => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -122,14 +122,14 @@ const MenuWithPopover = (): ReactNode => {
       <Popover
         anchorEl={anchorEl}
         anchorOrigin={{
-          vertical: 'bottom',
           horizontal: 'left',
+          vertical: 'bottom',
         }}
         onClose={handleClose}
         open={open}
         transformOrigin={{
-          vertical: 'top',
           horizontal: 'left',
+          vertical: 'top',
         }}
       >
         <MenuList>
@@ -157,11 +157,11 @@ const MenuWithPopper = (): ReactNode => {
   const open = Boolean(anchorEl);
   const anchorRef = useRef<HTMLButtonElement>(null);
 
-  const handleClick = () => {
+  const handleClick = (): void => {
     setAnchorEl(anchorRef.current);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -190,11 +190,11 @@ const MenuWithIcons = (): ReactNode => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -224,11 +224,11 @@ const MenuWithDenseItems = (): ReactNode => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -255,11 +255,11 @@ const MenuWithDisabledItems = (): ReactNode => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -282,11 +282,11 @@ const MenuWithDivider = (): ReactNode => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -312,11 +312,11 @@ const MenuWithCustomPositioning = (): ReactNode => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>): void => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null);
   };
 
@@ -326,14 +326,14 @@ const MenuWithCustomPositioning = (): ReactNode => {
       <Menu
         anchorEl={anchorEl}
         anchorOrigin={{
-          vertical: 'top',
           horizontal: 'right',
+          vertical: 'top',
         }}
         onClose={handleClose}
         open={open}
         transformOrigin={{
-          vertical: 'bottom',
           horizontal: 'right',
+          vertical: 'bottom',
         }}
       >
         <MenuItem onClick={handleClose}>Top Right Positioned</MenuItem>

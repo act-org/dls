@@ -48,11 +48,11 @@ export const Documentation: Story = {
   render: () => {
     const [open, setOpen] = useState(false);
 
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleOpen = (): void => setOpen(true);
+    const handleClose = (): void => setOpen(false);
 
     return (
-      <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
         <SpeedDial ariaLabel="SpeedDial example" icon={<SpeedDialIcon />} onClose={handleClose} onOpen={handleOpen} open={open}>
           <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
           <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
@@ -75,11 +75,11 @@ export const PlaygroundStory: Story = {
   render: () => {
     const [open, setOpen] = useState(false);
 
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleOpen = (): void => setOpen(true);
+    const handleClose = (): void => setOpen(false);
 
     return (
-      <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
         <SpeedDial ariaLabel="SpeedDial example" icon={<SpeedDialIcon />} onClose={handleClose} onOpen={handleOpen} open={open}>
           <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
           <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
@@ -94,11 +94,11 @@ export const PlaygroundStory: Story = {
 const BasicSpeedDial = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial ariaLabel="SpeedDial example" icon={<SpeedDialIcon />} onClose={handleClose} onOpen={handleOpen} open={open}>
         <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
         <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
@@ -112,11 +112,11 @@ const BasicSpeedDial = (): ReactNode => {
 const SpeedDialWithCustomIcon = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial
         ariaLabel="SpeedDial with custom icon"
         icon={<SpeedDialIcon icon={<AddIcon />} openIcon={<CloseIcon />} />}
@@ -136,11 +136,11 @@ const SpeedDialWithCustomIcon = (): ReactNode => {
 const SpeedDialWithDirection = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial ariaLabel="SpeedDial with direction" direction="up" icon={<SpeedDialIcon />} onClose={handleClose} onOpen={handleOpen} open={open}>
         <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
         <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
@@ -154,11 +154,11 @@ const SpeedDialWithDirection = (): ReactNode => {
 const SpeedDialWithHiddenActions = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial ariaLabel="SpeedDial with hidden actions" icon={<SpeedDialIcon />} onClose={handleClose} onOpen={handleOpen} open={open}>
         <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
         <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
@@ -174,18 +174,18 @@ const SpeedDialWithHiddenActions = (): ReactNode => {
 const SpeedDialWithFab = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial
         ariaLabel="SpeedDial with Fab"
         icon={<SpeedDialIcon />}
         onClose={handleClose}
         onOpen={handleOpen}
         open={open}
-        sx={{ '& .MuiFab-primary': { width: 48, height: 48 } }}
+        sx={{ '& .MuiFab-primary': { height: 48, width: 48 } }}
       >
         <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
         <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />
@@ -199,11 +199,11 @@ const SpeedDialWithFab = (): ReactNode => {
 const SpeedDialWithTooltip = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial ariaLabel="SpeedDial with tooltip" icon={<SpeedDialIcon />} onClose={handleClose} onOpen={handleOpen} open={open}>
         <SpeedDialAction
           icon={<EditIcon />}
@@ -238,11 +238,11 @@ const SpeedDialWithTooltip = (): ReactNode => {
 const SpeedDialWithColors = (): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
 
   return (
-    <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
       <SpeedDial
         ariaLabel="SpeedDial with colors"
         icon={<SpeedDialIcon />}
@@ -251,10 +251,10 @@ const SpeedDialWithColors = (): ReactNode => {
         open={open}
         sx={{
           '& .MuiFab-primary': {
-            bgcolor: 'secondary.main',
             '&:hover': {
               bgcolor: 'secondary.dark',
             },
+            bgcolor: 'secondary.main',
           },
         }}
       >
@@ -305,7 +305,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Simple SpeedDial" sx={{ p: 4 }}>
-            <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1, height: 320, transform: 'translateZ(0px)' }}>
               <SpeedDial ariaLabel="Simple SpeedDial" icon={<SpeedDialIcon />}>
                 <SpeedDialAction icon={<EditIcon />} tooltipTitle="Edit" />
                 <SpeedDialAction icon={<ShareIcon />} tooltipTitle="Share" />

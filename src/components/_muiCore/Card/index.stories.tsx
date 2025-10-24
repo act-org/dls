@@ -72,7 +72,7 @@ const themeStories = ThemesArray.reduce(
                 <Typography variant="body2">
                   well meaning and kindly.
                   <br />
-                  "a benevolent smile"
+                  &ldquo;a benevolent smile&rdquo;
                 </Typography>
               </CardContent>
             </Card>

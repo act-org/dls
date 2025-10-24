@@ -56,11 +56,11 @@ export const PlaygroundStory: Story = {
 const SnackbarWithAlert = ({ severity, message, action }: { severity: AlertProps['severity']; message: string; action?: ReactNode }): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setOpen(false);
   };
 
-  const handleOpen = () => {
+  const handleOpen = (): void => {
     setOpen(true);
   };
 
@@ -82,15 +82,15 @@ const SnackbarWithAlert = ({ severity, message, action }: { severity: AlertProps
 const SnackbarWithAction = ({ message }: { message: string }): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setOpen(false);
   };
 
-  const handleOpen = () => {
+  const handleOpen = (): void => {
     setOpen(true);
   };
 
-  const handleUndo = () => {
+  const handleUndo = (): void => {
     setOpen(false);
   };
 
@@ -131,11 +131,11 @@ const SnackbarWithPosition = ({
 }): ReactNode => {
   const [open, setOpen] = useState(false);
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setOpen(false);
   };
 
-  const handleOpen = () => {
+  const handleOpen = (): void => {
     setOpen(true);
   };
 

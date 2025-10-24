@@ -113,8 +113,8 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="With Icons" sx={{ p: 4 }}>
             <Breadcrumbs aria-label="breadcrumb">
-              <Link color="inherit" href="/" sx={{ display: 'flex', alignItems: 'center' }}>
-                <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+              <Link color="inherit" href="/" sx={{ alignItems: 'center', display: 'flex' }}>
+                <HomeIcon fontSize="inherit" sx={{ mr: 0.5 }} />
                 Home
               </Link>
               <Link color="inherit" href="/category">

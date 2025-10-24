@@ -45,14 +45,14 @@ export const Documentation: Story = {
   render: () => {
     const [page, setPage] = useState(1);
 
-    const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+    const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
       setPage(value);
     };
 
     return (
-      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+      <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography>Page: {page}</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} />
+        <Pagination count={10} onChange={handleChange} page={page} />
       </Box>
     );
   },
@@ -70,14 +70,14 @@ export const PlaygroundStory: Story = {
   render: () => {
     const [page, setPage] = useState(1);
 
-    const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+    const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
       setPage(value);
     };
 
     return (
-      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+      <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography>Page: {page}</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} />
+        <Pagination count={10} onChange={handleChange} page={page} />
       </Box>
     );
   },
@@ -87,14 +87,14 @@ export const PlaygroundStory: Story = {
 const ControlledPagination = (): ReactNode => {
   const [page, setPage] = useState(1);
 
-  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
     setPage(value);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
       <Typography>Page: {page}</Typography>
-      <Pagination count={10} page={page} onChange={handleChange} />
+      <Pagination count={10} onChange={handleChange} page={page} />
     </Box>
   );
 };
@@ -103,14 +103,14 @@ const ControlledPagination = (): ReactNode => {
 const PaginationWithFirstLast = (): ReactNode => {
   const [page, setPage] = useState(1);
 
-  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
     setPage(value);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
       <Typography>Page: {page}</Typography>
-      <Pagination count={10} page={page} onChange={handleChange} showFirstButton showLastButton />
+      <Pagination count={10} onChange={handleChange} page={page} showFirstButton showLastButton />
     </Box>
   );
 };
@@ -119,14 +119,14 @@ const PaginationWithFirstLast = (): ReactNode => {
 const OutlinedPagination = (): ReactNode => {
   const [page, setPage] = useState(1);
 
-  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
     setPage(value);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
       <Typography>Page: {page}</Typography>
-      <Pagination count={10} page={page} onChange={handleChange} variant="outlined" />
+      <Pagination count={10} onChange={handleChange} page={page} variant="outlined" />
     </Box>
   );
 };
@@ -135,24 +135,24 @@ const OutlinedPagination = (): ReactNode => {
 const PaginationWithCustomIcons = (): ReactNode => {
   const [page, setPage] = useState(1);
 
-  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
     setPage(value);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
       <Typography>Page: {page}</Typography>
       <Pagination
         count={10}
-        page={page}
         onChange={handleChange}
+        page={page}
         renderItem={item => (
           <PaginationItem
             slots={{
-              previous: ChevronLeftIcon,
-              next: ChevronRightIcon,
               first: ChevronDoubleLeftIcon,
               last: ChevronDoubleRightIcon,
+              next: ChevronRightIcon,
+              previous: ChevronLeftIcon,
             }}
             {...item}
           />
@@ -166,20 +166,20 @@ const PaginationWithCustomIcons = (): ReactNode => {
 const PaginationSizes = (): ReactNode => {
   const [page, setPage] = useState(1);
 
-  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
     setPage(value);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 3 }}>
       <Typography>Page: {page}</Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, alignItems: 'center' }}>
+      <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography variant="body2">Small</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} size="small" />
+        <Pagination count={10} onChange={handleChange} page={page} size="small" />
         <Typography variant="body2">Medium</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} size="medium" />
+        <Pagination count={10} onChange={handleChange} page={page} size="medium" />
         <Typography variant="body2">Large</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} size="large" />
+        <Pagination count={10} onChange={handleChange} page={page} size="large" />
       </Box>
     </Box>
   );
@@ -190,11 +190,11 @@ const TablePaginationDemo = (): ReactNode => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
-  const handleChangePage = (_event: unknown, newPage: number) => {
+  const handleChangePage = (_event: unknown, newPage: number): void => {
     setPage(newPage);
   };
 
-  const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
@@ -243,20 +243,20 @@ const TablePaginationDemo = (): ReactNode => {
 const PaginationColors = (): ReactNode => {
   const [page, setPage] = useState(1);
 
-  const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+  const handleChange = (_event: React.ChangeEvent<unknown>, value: number): void => {
     setPage(value);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 3 }}>
       <Typography>Page: {page}</Typography>
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, alignItems: 'center' }}>
+      <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography variant="body2">Primary</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} color="primary" />
+        <Pagination color="primary" count={10} onChange={handleChange} page={page} />
         <Typography variant="body2">Secondary</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} color="secondary" />
+        <Pagination color="secondary" count={10} onChange={handleChange} page={page} />
         <Typography variant="body2">Standard</Typography>
-        <Pagination count={10} page={page} onChange={handleChange} color="standard" />
+        <Pagination color="standard" count={10} onChange={handleChange} page={page} />
       </Box>
     </Box>
   );

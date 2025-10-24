@@ -50,8 +50,8 @@ export const Documentation: Story = {
     const [value, setValue] = useState(0);
 
     return (
-      <Paper sx={{ position: 'static' }} elevation={3}>
-        <BottomNavigation showLabels value={value} onChange={(_event, newValue) => setValue(newValue)}>
+      <Paper elevation={3} sx={{ position: 'static' }}>
+        <BottomNavigation onChange={(_event, newValue) => setValue(newValue)} showLabels value={value}>
           <BottomNavigationAction icon={<HomeIcon />} label="Home" />
           <BottomNavigationAction icon={<FavoriteIcon />} label="Favorites" />
           <BottomNavigationAction icon={<LocationOnIcon />} label="Nearby" />
@@ -75,8 +75,8 @@ export const PlaygroundStory: Story = {
     const [value, setValue] = useState(0);
 
     return (
-      <Paper sx={{ position: 'static' }} elevation={3}>
-        <BottomNavigation showLabels value={value} onChange={(_event, newValue) => setValue(newValue)}>
+      <Paper elevation={3} sx={{ position: 'static' }}>
+        <BottomNavigation onChange={(_event, newValue) => setValue(newValue)} showLabels value={value}>
           <BottomNavigationAction icon={<HomeIcon />} label="Home" />
           <BottomNavigationAction icon={<FavoriteIcon />} label="Favorites" />
           <BottomNavigationAction icon={<LocationOnIcon />} label="Nearby" />
@@ -92,8 +92,8 @@ const InteractiveBottomNavigation = ({ showLabels = true }: { showLabels?: boole
   const [value, setValue] = useState(0);
 
   return (
-    <Paper sx={{ position: 'static' }} elevation={3}>
-      <BottomNavigation showLabels={showLabels} value={value} onChange={(_event, newValue) => setValue(newValue)}>
+    <Paper elevation={3} sx={{ position: 'static' }}>
+      <BottomNavigation onChange={(_event, newValue) => setValue(newValue)} showLabels={showLabels} value={value}>
         <BottomNavigationAction icon={<HomeIcon />} label="Home" />
         <BottomNavigationAction icon={<FavoriteIcon />} label="Favorites" />
         <BottomNavigationAction icon={<LocationOnIcon />} label="Nearby" />
@@ -108,19 +108,19 @@ const ColoredBottomNavigation = (): ReactNode => {
   const [value, setValue] = useState(0);
 
   return (
-    <Paper sx={{ position: 'static' }} elevation={3}>
+    <Paper elevation={3} sx={{ position: 'static' }}>
       <BottomNavigation
-        showLabels
-        value={value}
         onChange={(_event, newValue) => setValue(newValue)}
+        showLabels
         sx={{
           '& .MuiBottomNavigationAction-root': {
-            color: 'text.secondary',
             '&.Mui-selected': {
               color: 'primary.main',
             },
+            color: 'text.secondary',
           },
         }}
+        value={value}
       >
         <BottomNavigationAction icon={<HomeIcon />} label="Home" />
         <BottomNavigationAction icon={<FavoriteIcon />} label="Favorites" />
@@ -135,8 +135,8 @@ const ManyActionsBottomNavigation = (): ReactNode => {
   const [value, setValue] = useState(0);
 
   return (
-    <Paper sx={{ position: 'static' }} elevation={3}>
-      <BottomNavigation showLabels={false} value={value} onChange={(_event, newValue) => setValue(newValue)}>
+    <Paper elevation={3} sx={{ position: 'static' }}>
+      <BottomNavigation onChange={(_event, newValue) => setValue(newValue)} showLabels={false} value={value}>
         <BottomNavigationAction icon={<HomeIcon />} label="Home" />
         <BottomNavigationAction icon={<SearchIcon />} label="Search" />
         <BottomNavigationAction icon={<FavoriteIcon />} label="Favorites" />
@@ -206,7 +206,7 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="Full Width Navigation" sx={{ p: 4 }}>
             <Box>
-              <BottomNavigation showLabels value={2} sx={{ width: '100%' }}>
+              <BottomNavigation showLabels sx={{ width: '100%' }} value={2}>
                 <BottomNavigationAction icon={<HomeIcon />} label="Home" />
                 <BottomNavigationAction icon={<SearchIcon />} label="Search" />
                 <BottomNavigationAction icon={<FavoriteIcon />} label="Favorites" />

@@ -27,8 +27,8 @@ interface TabPanelProps {
   value: number;
 }
 
-const TabPanel = ({ children, value, index, ...other }: TabPanelProps) => (
-  <div role="tabpanel" hidden={value !== index} id={`simple-tabpanel-${index}`} aria-labelledby={`simple-tab-${index}`} {...other}>
+const TabPanel = ({ children, value, index, ...other }: TabPanelProps): ReactNode => (
+  <div aria-labelledby={`simple-tab-${index}`} hidden={value !== index} id={`simple-tabpanel-${index}`} role="tabpanel" {...other}>
     {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
   </div>
 );
@@ -57,24 +57,24 @@ export const Documentation: Story = {
   render: () => {
     const [value, setValue] = useState(0);
 
-    const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
       setValue(newValue);
     };
 
     return (
       <Box sx={{ width: '100%' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs aria-label="basic tabs example" onChange={handleChange} value={value}>
           <Tab label="Item One" />
           <Tab label="Item Two" />
           <Tab label="Item Three" />
         </Tabs>
-        <TabPanel value={value} index={0}>
+        <TabPanel index={0} value={value}>
           <Typography>Item One Content</Typography>
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        <TabPanel index={1} value={value}>
           <Typography>Item Two Content</Typography>
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel index={2} value={value}>
           <Typography>Item Three Content</Typography>
         </TabPanel>
       </Box>
@@ -94,24 +94,24 @@ export const PlaygroundStory: Story = {
   render: () => {
     const [value, setValue] = useState(0);
 
-    const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
       setValue(newValue);
     };
 
     return (
       <Box sx={{ width: '100%' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs aria-label="basic tabs example" onChange={handleChange} value={value}>
           <Tab label="Item One" />
           <Tab label="Item Two" />
           <Tab label="Item Three" />
         </Tabs>
-        <TabPanel value={value} index={0}>
+        <TabPanel index={0} value={value}>
           <Typography>Item One Content</Typography>
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        <TabPanel index={1} value={value}>
           <Typography>Item Two Content</Typography>
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel index={2} value={value}>
           <Typography>Item Three Content</Typography>
         </TabPanel>
       </Box>
@@ -123,24 +123,24 @@ export const PlaygroundStory: Story = {
 const BasicTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+      <Tabs aria-label="basic tabs example" onChange={handleChange} value={value}>
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Item One Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Item Two Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Item Three Content</Typography>
       </TabPanel>
     </Box>
@@ -151,13 +151,13 @@ const BasicTabs = (): ReactNode => {
 const VerticalTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
-    <Box sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}>
-      <Tabs orientation="vertical" variant="scrollable" value={value} onChange={handleChange} aria-label="vertical tabs example">
+    <Box sx={{ bgcolor: 'background.paper', display: 'flex', flexGrow: 1, height: 224 }}>
+      <Tabs aria-label="vertical tabs example" onChange={handleChange} orientation="vertical" value={value} variant="scrollable">
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
@@ -165,22 +165,22 @@ const VerticalTabs = (): ReactNode => {
         <Tab label="Item Five" />
         <Tab label="Item Six" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Item One Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Item Two Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Item Three Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel index={3} value={value}>
         <Typography>Item Four Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel index={4} value={value}>
         <Typography>Item Five Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel index={5} value={value}>
         <Typography>Item Six Content</Typography>
       </TabPanel>
     </Box>
@@ -191,13 +191,13 @@ const VerticalTabs = (): ReactNode => {
 const ScrollableTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} variant="scrollable" scrollButtons="auto" aria-label="scrollable tabs example">
+      <Tabs aria-label="scrollable tabs example" onChange={handleChange} scrollButtons="auto" value={value} variant="scrollable">
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
@@ -206,25 +206,25 @@ const ScrollableTabs = (): ReactNode => {
         <Tab label="Item Six" />
         <Tab label="Item Seven" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Item One Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Item Two Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Item Three Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel index={3} value={value}>
         <Typography>Item Four Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel index={4} value={value}>
         <Typography>Item Five Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel index={5} value={value}>
         <Typography>Item Six Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={6}>
+      <TabPanel index={6} value={value}>
         <Typography>Item Seven Content</Typography>
       </TabPanel>
     </Box>
@@ -235,24 +235,24 @@ const ScrollableTabs = (): ReactNode => {
 const IconTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} aria-label="icon tabs example">
+      <Tabs aria-label="icon tabs example" onChange={handleChange} value={value}>
         <Tab icon={<PhoneIcon />} label="Recents" />
         <Tab icon={<FavoriteIcon />} label="Favorites" />
         <Tab icon={<PersonIcon />} label="Contacts" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Recents Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Favorites Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Contacts Content</Typography>
       </TabPanel>
     </Box>
@@ -263,24 +263,24 @@ const IconTabs = (): ReactNode => {
 const FullWidthTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} variant="fullWidth" aria-label="full width tabs example">
+      <Tabs aria-label="full width tabs example" onChange={handleChange} value={value} variant="fullWidth">
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Item One Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Item Two Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Item Three Content</Typography>
       </TabPanel>
     </Box>
@@ -291,24 +291,24 @@ const FullWidthTabs = (): ReactNode => {
 const CenteredTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} centered aria-label="centered tabs example">
+      <Tabs aria-label="centered tabs example" centered onChange={handleChange} value={value}>
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Item One Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Item Two Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Item Three Content</Typography>
       </TabPanel>
     </Box>
@@ -319,24 +319,24 @@ const CenteredTabs = (): ReactNode => {
 const DisabledTab = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} aria-label="disabled tab example">
+      <Tabs aria-label="disabled tab example" onChange={handleChange} value={value}>
         <Tab label="Active" />
-        <Tab label="Disabled" disabled />
+        <Tab disabled label="Disabled" />
         <Tab label="Active" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Active Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Disabled Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Active Content</Typography>
       </TabPanel>
     </Box>
@@ -347,24 +347,24 @@ const DisabledTab = (): ReactNode => {
 const CustomIndicatorTabs = (): ReactNode => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number): void => {
     setValue(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} TabIndicatorProps={{ style: { backgroundColor: 'green' } }} aria-label="custom indicator tabs example">
+      <Tabs aria-label="custom indicator tabs example" onChange={handleChange} TabIndicatorProps={{ style: { backgroundColor: 'green' } }} value={value}>
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
       </Tabs>
-      <TabPanel value={value} index={0}>
+      <TabPanel index={0} value={value}>
         <Typography>Item One Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel index={1} value={value}>
         <Typography>Item Two Content</Typography>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel index={2} value={value}>
         <Typography>Item Three Content</Typography>
       </TabPanel>
     </Box>

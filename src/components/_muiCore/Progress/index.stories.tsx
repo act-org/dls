@@ -53,21 +53,21 @@ export const PlaygroundStory: Story = {
 
 // Circular Progress with Label Component for demonstration
 const CircularProgressWithLabel = ({ value }: { value: number }): ReactNode => (
-  <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-    <CircularProgress variant="determinate" value={value} />
+  <Box sx={{ display: 'inline-flex', position: 'relative' }}>
+    <CircularProgress value={value} variant="determinate" />
     <Box
       sx={{
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        position: 'absolute',
-        display: 'flex',
         alignItems: 'center',
+        bottom: 0,
+        display: 'flex',
         justifyContent: 'center',
+        left: 0,
+        position: 'absolute',
+        right: 0,
+        top: 0,
       }}
     >
-      <Typography variant="caption" component="div" color="text.secondary">
+      <Typography color="text.secondary" component="div" variant="caption">
         {`${Math.round(value)}%`}
       </Typography>
     </Box>
@@ -76,12 +76,12 @@ const CircularProgressWithLabel = ({ value }: { value: number }): ReactNode => (
 
 // Linear Progress with Label Component for demonstration
 const LinearProgressWithLabel = ({ value }: { value: number }): ReactNode => (
-  <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-    <Box sx={{ width: '100%', mr: 1 }}>
-      <LinearProgress variant="determinate" value={value} />
+  <Box sx={{ alignItems: 'center', display: 'flex', width: '100%' }}>
+    <Box sx={{ mr: 1, width: '100%' }}>
+      <LinearProgress value={value} variant="determinate" />
     </Box>
     <Box sx={{ minWidth: 35 }}>
-      <Typography variant="body2" color="text.secondary">
+      <Typography color="text.secondary" variant="body2">
         {`${Math.round(value)}%`}
       </Typography>
     </Box>
@@ -103,7 +103,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Circular Determinate" sx={{ p: 4 }}>
-            <CircularProgress variant="determinate" value={75} />
+            <CircularProgress value={75} variant="determinate" />
           </StoryVariation>
 
           <StoryVariation label="Circular with Label" sx={{ p: 4 }}>
@@ -111,7 +111,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Circular Size Variations" sx={{ p: 4 }}>
-            <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+            <Box sx={{ alignItems: 'center', display: 'flex', gap: 2 }}>
               <CircularProgress size={40} />
               <CircularProgress size={60} />
               <CircularProgress size={80} />
@@ -123,11 +123,11 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Linear Determinate" sx={{ p: 4 }}>
-            <LinearProgress variant="determinate" value={50} />
+            <LinearProgress value={50} variant="determinate" />
           </StoryVariation>
 
           <StoryVariation label="Linear Buffer" sx={{ p: 4 }}>
-            <LinearProgress variant="buffer" value={60} valueBuffer={80} />
+            <LinearProgress value={60} valueBuffer={80} variant="buffer" />
           </StoryVariation>
 
           <StoryVariation label="Linear with Label" sx={{ p: 4 }}>

@@ -45,15 +45,15 @@ export const Documentation: Story = {
     const [activeStep, setActiveStep] = useState(0);
     const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-    const handleNext = () => {
+    const handleNext = (): void => {
       setActiveStep(prevActiveStep => prevActiveStep + 1);
     };
 
-    const handleBack = () => {
+    const handleBack = (): void => {
       setActiveStep(prevActiveStep => prevActiveStep - 1);
     };
 
-    const handleReset = () => {
+    const handleReset = (): void => {
       setActiveStep(0);
     };
 
@@ -67,15 +67,15 @@ export const Documentation: Story = {
           ))}
         </Stepper>
         {activeStep === steps.length ? (
-          <Paper square elevation={0} sx={{ p: 3 }}>
+          <Paper elevation={0} square sx={{ p: 3 }}>
             <Typography>All steps completed - you&apos;re finished</Typography>
-            <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+            <Button onClick={handleReset} sx={{ mr: 1, mt: 1 }}>
               Reset
             </Button>
           </Paper>
         ) : (
           <Box>
-            <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+            <Typography sx={{ mb: 1, mt: 2 }}>Step {activeStep + 1}</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
               <Button color="inherit" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
                 Back
@@ -103,11 +103,11 @@ export const PlaygroundStory: Story = {
     const [activeStep, setActiveStep] = useState(0);
     const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-    const handleNext = () => {
+    const handleNext = (): void => {
       setActiveStep(prevActiveStep => prevActiveStep + 1);
     };
 
-    const handleBack = () => {
+    const handleBack = (): void => {
       setActiveStep(prevActiveStep => prevActiveStep - 1);
     };
 
@@ -121,7 +121,7 @@ export const PlaygroundStory: Story = {
           ))}
         </Stepper>
         <Box>
-          <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+          <Typography sx={{ mb: 1, mt: 2 }}>Step {activeStep + 1}</Typography>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button color="inherit" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
               Back
@@ -140,11 +140,11 @@ const BasicHorizontalStepper = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
+  const handleBack = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
@@ -158,7 +158,7 @@ const BasicHorizontalStepper = (): ReactNode => {
         ))}
       </Stepper>
       <Box>
-        <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+        <Typography sx={{ mb: 1, mt: 2 }}>Step {activeStep + 1}</Typography>
         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
           <Button color="inherit" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
             Back
@@ -176,29 +176,29 @@ const VerticalStepper = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = [
     {
-      label: 'Select campaign settings',
       description:
         'For each ad campaign that you create, you can control settings like which network your ads appear on, where they appear, and how much you want to spend.',
+      label: 'Select campaign settings',
     },
     {
-      label: 'Create an ad group',
       description: 'An ad group contains one or more ads which target a shared set of keywords.',
+      label: 'Create an ad group',
     },
     {
-      label: 'Create an ad',
       description: 'Try out different ad text to see what brings in the most customers, and learn how to enhance your ads using features like ad extensions.',
+      label: 'Create an ad',
     },
   ];
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
+  const handleBack = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
-  const handleStep = (step: number) => () => {
+  const handleStep = (step: number) => (): void => {
     setActiveStep(step);
   };
 
@@ -212,7 +212,7 @@ const VerticalStepper = (): ReactNode => {
               <Typography>{step.description}</Typography>
               <Box sx={{ mb: 2 }}>
                 <div>
-                  <Button variant="contained" onClick={handleNext} sx={{ mt: 1, mr: 1 }}>
+                  <Button onClick={handleNext} sx={{ mr: 1, mt: 1 }} variant="contained">
                     {index === steps.length - 1 ? 'Finish' : 'Continue'}
                   </Button>
                   <Button disabled={index === 0} onClick={handleBack}>
@@ -233,7 +233,7 @@ const NonLinearStepper = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-  const handleStep = (step: number) => () => {
+  const handleStep = (step: number) => (): void => {
     setActiveStep(step);
   };
 
@@ -255,11 +255,11 @@ const AlternativeLabelStepper = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
+  const handleBack = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
@@ -273,7 +273,7 @@ const AlternativeLabelStepper = (): ReactNode => {
         ))}
       </Stepper>
       <Box>
-        <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+        <Typography sx={{ mb: 1, mt: 2 }}>Step {activeStep + 1}</Typography>
         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
           <Button color="inherit" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
             Back
@@ -286,36 +286,35 @@ const AlternativeLabelStepper = (): ReactNode => {
   );
 };
 
+// Custom Step Icon Component
+const CustomStepIcon = ({ active, completed, className }: { active: boolean; completed: boolean; className: string }): ReactNode => (
+  <StepIcon active={active} className={className} completed={completed} icon={completed ? <CheckIcon /> : 1} />
+);
+
 // Custom Step Icon Stepper Component for demonstration
 const CustomStepIconStepper = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
+  const handleBack = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
   return (
     <Box sx={{ maxWidth: 400, width: '100%' }}>
       <Stepper activeStep={activeStep}>
-        {steps.map((label, index) => (
+        {steps.map(label => (
           <Step key={label}>
-            <StepLabel
-              StepIconComponent={({ active, completed, className }) => (
-                <StepIcon active={active} completed={completed} className={className} icon={completed ? <CheckIcon /> : index + 1} />
-              )}
-            >
-              {label}
-            </StepLabel>
+            <StepLabel StepIconComponent={CustomStepIcon}>{label}</StepLabel>
           </Step>
         ))}
       </Stepper>
       <Box>
-        <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+        <Typography sx={{ mb: 1, mt: 2 }}>Step {activeStep + 1}</Typography>
         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
           <Button color="inherit" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
             Back
@@ -333,25 +332,25 @@ const MobileStepperExample = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = 3;
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
+  const handleBack = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, maxWidth: 400 }}>
       <Paper
-        square
         elevation={0}
+        square
         sx={{
-          display: 'flex',
           alignItems: 'center',
+          bgcolor: 'background.default',
+          display: 'flex',
           height: 50,
           pl: 2,
-          bgcolor: 'background.default',
         }}
       >
         <Typography>
@@ -361,13 +360,13 @@ const MobileStepperExample = (): ReactNode => {
       <MobileStepper
         activeStep={activeStep}
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button disabled={activeStep === 0} onClick={handleBack} size="small">
             <ChevronLeftIcon />
             Back
           </Button>
         }
         nextButton={
-          <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+          <Button disabled={activeStep === maxSteps - 1} onClick={handleNext} size="small">
             Next
             <ChevronRightIcon />
           </Button>
@@ -385,11 +384,11 @@ const CustomConnectorStepper = (): ReactNode => {
   const [activeStep, setActiveStep] = useState(0);
   const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
-  const handleBack = () => {
+  const handleBack = (): void => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
@@ -403,7 +402,7 @@ const CustomConnectorStepper = (): ReactNode => {
         ))}
       </Stepper>
       <Box>
-        <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+        <Typography sx={{ mb: 1, mt: 2 }}>Step {activeStep + 1}</Typography>
         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
           <Button color="inherit" disabled={activeStep === 0} onClick={handleBack} sx={{ mr: 1 }}>
             Back
