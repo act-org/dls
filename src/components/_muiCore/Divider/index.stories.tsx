@@ -84,7 +84,7 @@ const themeStories = ThemesArray.reduce(
             <Divider textAlign="left">Left</Divider>
           </StoryVariation>
 
-          <StoryVariation label="Vertical Divider" sx={{ height: 100, alignItems: 'center', p: 4, display: 'flex' }}>
+          <StoryVariation label="Vertical Divider" sx={{ alignItems: 'center', display: 'flex', height: 100, p: 4 }}>
             <Box sx={{ alignItems: 'center', display: 'flex', height: 100 }}>
               <Typography>Left</Typography>
               <Divider flexItem orientation="vertical" />

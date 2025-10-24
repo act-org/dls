@@ -71,7 +71,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Avatar with Image">
-            <Avatar src="https://mui.com/static/images/avatar/1.jpg" alt="User" />
+            <Avatar alt="User" src="https://mui.com/static/images/avatar/1.jpg" />
           </StoryVariation>
 
           <StoryVariation label="Avatar with Icon">
@@ -81,15 +81,15 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Small Size">
-            <Avatar sx={{ width: 24, height: 24 }}>S</Avatar>
+            <Avatar sx={{ height: 24, width: 24 }}>S</Avatar>
           </StoryVariation>
 
           <StoryVariation label="Medium Size">
-            <Avatar sx={{ width: 40, height: 40 }}>M</Avatar>
+            <Avatar sx={{ height: 40, width: 40 }}>M</Avatar>
           </StoryVariation>
 
           <StoryVariation label="Large Size">
-            <Avatar sx={{ width: 56, height: 56 }}>L</Avatar>
+            <Avatar sx={{ height: 56, width: 56 }}>L</Avatar>
           </StoryVariation>
 
           <StoryVariation label="Color Primary">
@@ -129,7 +129,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Custom Size">
-            <Avatar sx={{ width: 32, height: 32 }}>C</Avatar>
+            <Avatar sx={{ height: 32, width: 32 }}>C</Avatar>
           </StoryVariation>
 
           <StoryVariation label="AvatarGroup - Basic">
@@ -153,19 +153,19 @@ const themeStories = ThemesArray.reduce(
 
           <StoryVariation label="AvatarGroup - Small Size">
             <AvatarGroup max={3}>
-              <Avatar sx={{ width: 24, height: 24 }}>A</Avatar>
-              <Avatar sx={{ width: 24, height: 24 }}>B</Avatar>
-              <Avatar sx={{ width: 24, height: 24 }}>C</Avatar>
-              <Avatar sx={{ width: 24, height: 24 }}>D</Avatar>
+              <Avatar sx={{ height: 24, width: 24 }}>A</Avatar>
+              <Avatar sx={{ height: 24, width: 24 }}>B</Avatar>
+              <Avatar sx={{ height: 24, width: 24 }}>C</Avatar>
+              <Avatar sx={{ height: 24, width: 24 }}>D</Avatar>
             </AvatarGroup>
           </StoryVariation>
 
           <StoryVariation label="AvatarGroup - Large Size">
             <AvatarGroup max={3}>
-              <Avatar sx={{ width: 56, height: 56 }}>A</Avatar>
-              <Avatar sx={{ width: 56, height: 56 }}>B</Avatar>
-              <Avatar sx={{ width: 56, height: 56 }}>C</Avatar>
-              <Avatar sx={{ width: 56, height: 56 }}>D</Avatar>
+              <Avatar sx={{ height: 56, width: 56 }}>A</Avatar>
+              <Avatar sx={{ height: 56, width: 56 }}>B</Avatar>
+              <Avatar sx={{ height: 56, width: 56 }}>C</Avatar>
+              <Avatar sx={{ height: 56, width: 56 }}>D</Avatar>
             </AvatarGroup>
           </StoryVariation>
 

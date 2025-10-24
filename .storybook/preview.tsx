@@ -29,7 +29,7 @@ const preview: Preview = {
   ],
   globalTypes: {
     theme: {
-      defaultValue: 'ENCOURA',
+      defaultValue: 'ENCOURAGE_E4E',
       description: 'Global theme for components',
       name: 'Theme',
       toolbar: {

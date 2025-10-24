@@ -141,7 +141,7 @@ const themeStories = ThemesArray.reduce(
               </AccordionDetails>
               <AccordionActions>
                 <Button size="small">Cancel</Button>
-                <Button size="small" color="primary">
+                <Button color="primary" size="small">
                   Save
                 </Button>
               </AccordionActions>
@@ -160,7 +160,7 @@ const themeStories = ThemesArray.reduce(
                 <Button size="small" startIcon={<DeleteIcon />}>
                   Delete
                 </Button>
-                <Button size="small" color="primary" startIcon={<SaveIcon />}>
+                <Button color="primary" size="small" startIcon={<SaveIcon />}>
                   Save
                 </Button>
               </AccordionActions>

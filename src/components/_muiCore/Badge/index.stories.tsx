@@ -199,25 +199,25 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Badge Anchor Origin Top Right" sx={{ p: 4 }}>
-            <Badge anchorOrigin={{ vertical: 'top', horizontal: 'right' }} badgeContent={4}>
+            <Badge anchorOrigin={{ horizontal: 'right', vertical: 'top' }} badgeContent={4}>
               <Button>Top Right</Button>
             </Badge>
           </StoryVariation>
 
           <StoryVariation label="Badge Anchor Origin Top Left" sx={{ p: 4 }}>
-            <Badge anchorOrigin={{ vertical: 'top', horizontal: 'left' }} badgeContent={4}>
+            <Badge anchorOrigin={{ horizontal: 'left', vertical: 'top' }} badgeContent={4}>
               <Button>Top Left</Button>
             </Badge>
           </StoryVariation>
 
           <StoryVariation label="Badge Anchor Origin Bottom Right" sx={{ p: 4 }}>
-            <Badge anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} badgeContent={4}>
+            <Badge anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }} badgeContent={4}>
               <Button>Bottom Right</Button>
             </Badge>
           </StoryVariation>
 
           <StoryVariation label="Badge Anchor Origin Bottom Left" sx={{ p: 4 }}>
-            <Badge anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }} badgeContent={4}>
+            <Badge anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }} badgeContent={4}>
               <Button>Bottom Left</Button>
             </Badge>
           </StoryVariation>

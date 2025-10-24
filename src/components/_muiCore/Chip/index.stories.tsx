@@ -6,6 +6,7 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
+import noop from 'lodash/noop';
 import CheckIcon from 'mdi-material-ui/Check';
 import CloseIcon from 'mdi-material-ui/Close';
 import DeleteIcon from 'mdi-material-ui/Delete';
@@ -82,11 +83,11 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Chip with Delete Icon" sx={{ p: 4 }}>
-            <Chip deleteIcon={<DeleteIcon />} label="Delete" onDelete={() => {}} />
+            <Chip deleteIcon={<DeleteIcon />} label="Delete" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip with Custom Delete Icon" sx={{ p: 4 }}>
-            <Chip deleteIcon={<CloseIcon />} label="Custom Delete" onDelete={() => {}} />
+            <Chip deleteIcon={<CloseIcon />} label="Custom Delete" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip Clickable" sx={{ p: 4 }}>
@@ -94,7 +95,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Chip Deletable" sx={{ p: 4 }}>
-            <Chip label="Deletable" onDelete={() => {}} />
+            <Chip label="Deletable" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip Disabled" sx={{ p: 4 }}>
@@ -158,31 +159,31 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Chip with Avatar and Delete" sx={{ p: 4 }}>
-            <Chip avatar={<div>U</div>} label="User" onDelete={() => {}} />
+            <Chip avatar={<div>U</div>} label="User" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip with Icon and Delete" sx={{ p: 4 }}>
-            <Chip deleteIcon={<DeleteIcon />} icon={<StarIcon />} label="Starred" onDelete={() => {}} />
+            <Chip deleteIcon={<DeleteIcon />} icon={<StarIcon />} label="Starred" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip Clickable with Delete" sx={{ p: 4 }}>
-            <Chip clickable label="Clickable Delete" onDelete={() => {}} />
+            <Chip clickable label="Clickable Delete" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip Disabled with Delete" sx={{ p: 4 }}>
-            <Chip disabled label="Disabled Delete" onDelete={() => {}} />
+            <Chip disabled label="Disabled Delete" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip Small with Delete" sx={{ p: 4 }}>
-            <Chip label="Small Delete" size="small" onDelete={() => {}} />
+            <Chip label="Small Delete" onDelete={noop} size="small" />
           </StoryVariation>
 
           <StoryVariation label="Chip Primary with Delete" sx={{ p: 4 }}>
-            <Chip color="primary" label="Primary Delete" onDelete={() => {}} />
+            <Chip color="primary" label="Primary Delete" onDelete={noop} />
           </StoryVariation>
 
           <StoryVariation label="Chip Outlined with Delete" sx={{ p: 4 }}>
-            <Chip label="Outlined Delete" onDelete={() => {}} variant="outlined" />
+            <Chip label="Outlined Delete" onDelete={noop} variant="outlined" />
           </StoryVariation>
         </ThemeProvider>
       ),

@@ -83,49 +83,49 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="Selected ToggleButton">
-            <ToggleButton value="selected" selected>
+            <ToggleButton selected value="selected">
               Selected
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Disabled ToggleButton">
-            <ToggleButton value="disabled" disabled>
+            <ToggleButton disabled value="disabled">
               Disabled
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Small Size">
-            <ToggleButton value="small" size="small">
+            <ToggleButton size="small" value="small">
               Small
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Medium Size">
-            <ToggleButton value="medium" size="medium">
+            <ToggleButton size="medium" value="medium">
               Medium
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Large Size">
-            <ToggleButton value="large" size="large">
+            <ToggleButton size="large" value="large">
               Large
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Color Primary">
-            <ToggleButton value="primary" color="primary">
+            <ToggleButton color="primary" value="primary">
               Primary
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Color Secondary">
-            <ToggleButton value="secondary" color="secondary">
+            <ToggleButton color="secondary" value="secondary">
               Secondary
             </ToggleButton>
           </StoryVariation>
 
           <StoryVariation label="Color Standard">
-            <ToggleButton value="standard" color="standard">
+            <ToggleButton color="standard" value="standard">
               Standard
             </ToggleButton>
           </StoryVariation>
@@ -144,7 +144,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Single Selection">
-            <ToggleButtonGroup value="left" exclusive>
+            <ToggleButtonGroup exclusive value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -175,7 +175,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - View Options">
-            <ToggleButtonGroup value="list" exclusive>
+            <ToggleButtonGroup exclusive value="list">
               <ToggleButton value="list">
                 <ViewListIcon />
               </ToggleButton>
@@ -189,7 +189,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Text Options">
-            <ToggleButtonGroup value="option1" exclusive>
+            <ToggleButtonGroup exclusive value="option1">
               <ToggleButton value="option1">Option 1</ToggleButton>
               <ToggleButton value="option2">Option 2</ToggleButton>
               <ToggleButton value="option3">Option 3</ToggleButton>
@@ -197,7 +197,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Disabled">
-            <ToggleButtonGroup value="left" exclusive disabled>
+            <ToggleButtonGroup disabled exclusive value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -211,7 +211,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Small Size">
-            <ToggleButtonGroup value="left" exclusive size="small">
+            <ToggleButtonGroup exclusive size="small" value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -225,7 +225,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Large Size">
-            <ToggleButtonGroup value="left" exclusive size="large">
+            <ToggleButtonGroup exclusive size="large" value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -239,7 +239,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Color Primary">
-            <ToggleButtonGroup value="left" exclusive color="primary">
+            <ToggleButtonGroup color="primary" exclusive value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -253,7 +253,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Color Secondary">
-            <ToggleButtonGroup value="left" exclusive color="secondary">
+            <ToggleButtonGroup color="secondary" exclusive value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -267,7 +267,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Vertical Orientation">
-            <ToggleButtonGroup value="left" exclusive orientation="vertical">
+            <ToggleButtonGroup exclusive orientation="vertical" value="left">
               <ToggleButton value="left">
                 <FormatAlignLeftIcon />
               </ToggleButton>
@@ -281,7 +281,7 @@ const themeStories = ThemesArray.reduce(
           </StoryVariation>
 
           <StoryVariation label="ToggleButtonGroup - Full Width">
-            <ToggleButtonGroup value="left" exclusive fullWidth>
+            <ToggleButtonGroup exclusive fullWidth value="left">
               <ToggleButton value="left">Left</ToggleButton>
               <ToggleButton value="center">Center</ToggleButton>
               <ToggleButton value="right">Right</ToggleButton>

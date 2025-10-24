@@ -43,61 +43,63 @@ const TransferList = ({
   onMoveAllLeft,
   onMoveAllRight,
   disabled = false,
-}: TransferListProps) => {
+}: TransferListProps): React.ReactNode => {
   const [checked, setChecked] = useState<string[]>([]);
   const [leftChecked, setLeftChecked] = useState<string[]>([]);
   const [rightChecked, setRightChecked] = useState<string[]>([]);
 
-  const handleToggle = (value: string) => () => {
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
+  const handleToggle =
+    (value: string): (() => void) =>
+    () => {
+      const currentIndex = checked.indexOf(value);
+      const newChecked = [...checked];
 
-    if (currentIndex === -1) {
-      newChecked.push(value);
-    } else {
-      newChecked.splice(currentIndex, 1);
-    }
+      if (currentIndex === -1) {
+        newChecked.push(value);
+      } else {
+        newChecked.splice(currentIndex, 1);
+      }
 
-    setChecked(newChecked);
-  };
+      setChecked(newChecked);
+    };
 
-  const handleCheckedLeft = () => {
+  const handleCheckedLeft = (): void => {
     setLeftChecked([]);
     setChecked([]);
     onMoveRight?.(leftChecked);
   };
 
-  const handleCheckedRight = () => {
+  const handleCheckedRight = (): void => {
     setRightChecked([]);
     setChecked([]);
     onMoveLeft?.(rightChecked);
   };
 
-  const handleAllLeft = () => {
+  const handleAllLeft = (): void => {
     setLeftChecked([]);
     setRightChecked([]);
     setChecked([]);
     onMoveAllLeft?.();
   };
 
-  const handleAllRight = () => {
+  const handleAllRight = (): void => {
     setLeftChecked([]);
     setRightChecked([]);
     setChecked([]);
     onMoveAllRight?.();
   };
 
-  const customList = (items: readonly string[], title: string) => (
-    <Paper sx={{ width: 200, height: 230, overflow: 'auto' }}>
+  const customList = (items: readonly string[], title: string): React.ReactNode => (
+    <Paper sx={{ height: 230, overflow: 'auto', width: 200 }}>
       <ListSubheader>
         <Typography variant="subtitle1">{title}</Typography>
       </ListSubheader>
-      <List dense component="div" role="list">
+      <List component="div" dense role="list">
         {items.map(value => {
           const labelId = `transfer-list-item-${value}-label`;
           return (
-            <ListItem key={value} disablePadding>
-              <ListItemButton role="listitem" onClick={handleToggle(value)} disabled={disabled} selected={checked.indexOf(value) !== -1}>
+            <ListItem disablePadding key={value}>
+              <ListItemButton disabled={disabled} onClick={handleToggle(value)} role="listitem" selected={checked.includes(value)}>
                 <ListItemText id={labelId} primary={value} />
               </ListItemButton>
             </ListItem>
@@ -108,20 +110,20 @@ const TransferList = ({
   );
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+    <Box sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column', gap: 2 }}>
+      <Box sx={{ alignItems: 'center', display: 'flex', gap: 2 }}>
         {customList(left, leftTitle)}
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-          <IconButton onClick={handleCheckedRight} disabled={leftChecked.length === 0 || disabled} size="small">
+          <IconButton disabled={leftChecked.length === 0 || disabled} onClick={handleCheckedRight} size="small">
             <ChevronRightIcon />
           </IconButton>
-          <IconButton onClick={handleCheckedLeft} disabled={rightChecked.length === 0 || disabled} size="small">
+          <IconButton disabled={rightChecked.length === 0 || disabled} onClick={handleCheckedLeft} size="small">
             <ChevronLeftIcon />
           </IconButton>
-          <IconButton onClick={handleAllRight} disabled={left.length === 0 || disabled} size="small">
+          <IconButton disabled={left.length === 0 || disabled} onClick={handleAllRight} size="small">
             <ChevronDoubleRightIcon />
           </IconButton>
-          <IconButton onClick={handleAllLeft} disabled={right.length === 0 || disabled} size="small">
+          <IconButton disabled={right.length === 0 || disabled} onClick={handleAllLeft} size="small">
             <ChevronDoubleLeftIcon />
           </IconButton>
         </Box>
@@ -137,8 +139,8 @@ const TransferList = ({
 export default {
   args: {
     left: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
-    right: ['Item 6', 'Item 7'],
     leftTitle: 'Available',
+    right: ['Item 6', 'Item 7'],
     rightTitle: 'Selected',
   },
   component: TransferList,
@@ -155,8 +157,8 @@ type Story = StoryObj<TransferListProps>;
 export const Documentation: Story = {
   args: {
     left: ['Option A', 'Option B', 'Option C', 'Option D'],
-    right: ['Option E'],
     leftTitle: 'Available Options',
+    right: ['Option E'],
     rightTitle: 'Selected Options',
   },
   parameters: {
@@ -168,8 +170,8 @@ export const Documentation: Story = {
 export const PlaygroundStory: Story = {
   args: {
     left: ['Choice 1', 'Choice 2', 'Choice 3'],
-    right: ['Choice 4'],
     leftTitle: 'Choices',
+    right: ['Choice 4'],
     rightTitle: 'Selected',
   },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
@@ -193,29 +195,29 @@ const themeStories = ThemesArray.reduce(
           <StoryVariation label="Basic TransferList">
             <TransferList
               left={['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']}
-              right={['Item 6', 'Item 7']}
               leftTitle="Available Items"
+              right={['Item 6', 'Item 7']}
               rightTitle="Selected Items"
             />
           </StoryVariation>
 
           <StoryVariation label="Empty Lists">
-            <TransferList left={[]} right={[]} leftTitle="Empty Left" rightTitle="Empty Right" />
+            <TransferList left={[]} leftTitle="Empty Left" right={[]} rightTitle="Empty Right" />
           </StoryVariation>
 
           <StoryVariation label="All Items Selected">
-            <TransferList left={[]} right={['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']} leftTitle="Available" rightTitle="All Selected" />
+            <TransferList left={[]} leftTitle="Available" right={['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']} rightTitle="All Selected" />
           </StoryVariation>
 
           <StoryVariation label="Single Item Lists">
-            <TransferList left={['Only Item']} right={[]} leftTitle="Single Item" rightTitle="Empty" />
+            <TransferList left={['Only Item']} leftTitle="Single Item" right={[]} rightTitle="Empty" />
           </StoryVariation>
 
           <StoryVariation label="Long Item Names">
             <TransferList
               left={['Very Long Item Name That Might Wrap', 'Another Extremely Long Item Name', 'Short', 'Medium Length Item Name']}
-              right={['Selected Long Item']}
               leftTitle="Long Names"
+              right={['Selected Long Item']}
               rightTitle="Selected"
             />
           </StoryVariation>
@@ -223,31 +225,31 @@ const themeStories = ThemesArray.reduce(
           <StoryVariation label="Many Items">
             <TransferList
               left={Array.from({ length: 20 }, (_, i) => `Item ${i + 1}`)}
-              right={['Selected 1', 'Selected 2']}
               leftTitle="Many Available"
+              right={['Selected 1', 'Selected 2']}
               rightTitle="Few Selected"
             />
           </StoryVariation>
 
           <StoryVariation label="Custom Titles">
-            <TransferList left={['Option A', 'Option B', 'Option C']} right={['Option D']} leftTitle="Source Options" rightTitle="Target Options" />
+            <TransferList left={['Option A', 'Option B', 'Option C']} leftTitle="Source Options" right={['Option D']} rightTitle="Target Options" />
           </StoryVariation>
 
           <StoryVariation label="Disabled State">
-            <TransferList left={['Item 1', 'Item 2', 'Item 3']} right={['Item 4']} leftTitle="Disabled" rightTitle="Disabled" disabled />
+            <TransferList disabled left={['Item 1', 'Item 2', 'Item 3']} leftTitle="Disabled" right={['Item 4']} rightTitle="Disabled" />
           </StoryVariation>
 
           <StoryVariation label="Mixed Content">
             <TransferList
               left={['Text Item', 'Another Text Item', 'Third Item']}
-              right={['Selected Text Item', 'Another Selected']}
               leftTitle="Text Options"
+              right={['Selected Text Item', 'Another Selected']}
               rightTitle="Selected Text"
             />
           </StoryVariation>
 
           <StoryVariation label="Equal Distribution">
-            <TransferList left={['Left 1', 'Left 2', 'Left 3']} right={['Right 1', 'Right 2', 'Right 3']} leftTitle="Left Side" rightTitle="Right Side" />
+            <TransferList left={['Left 1', 'Left 2', 'Left 3']} leftTitle="Left Side" right={['Right 1', 'Right 2', 'Right 3']} rightTitle="Right Side" />
           </StoryVariation>
         </ThemeProvider>
       ),

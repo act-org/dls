@@ -14,7 +14,7 @@ import DraftsIcon from 'mdi-material-ui/FileDocumentOutline';
 import InboxIcon from 'mdi-material-ui/Inbox';
 import SendIcon from 'mdi-material-ui/Send';
 import StarIcon from 'mdi-material-ui/Star';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -56,6 +56,43 @@ export const PlaygroundStory: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+};
+
+// Nested List Component for demonstration
+const NestedListExample = (): ReactNode => {
+  const [open, setOpen] = useState(true);
+
+  const handleClick = (): void => {
+    setOpen(prev => !prev);
+  };
+
+  return (
+    <List>
+      <ListItemButton onClick={handleClick}>
+        <ListItemIcon>
+          <InboxIcon />
+        </ListItemIcon>
+        <ListItemText primary="Inbox" />
+        {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+      </ListItemButton>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemIcon>
+              <StarIcon />
+            </ListItemIcon>
+            <ListItemText primary="Starred" />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }}>
+            <ListItemIcon>
+              <DraftsIcon />
+            </ListItemIcon>
+            <ListItemText primary="Drafts" />
+          </ListItemButton>
+        </List>
+      </Collapse>
+    </List>
+  );
 };
 
 // Theme-specific stories (snapshotted in Chromatic)
@@ -201,7 +238,7 @@ const themeStories = ThemesArray.reduce(
             <List>
               <ListItem
                 secondaryAction={
-                  <IconButton edge="end" aria-label="delete">
+                  <IconButton aria-label="delete" edge="end">
                     <DeleteIcon />
                   </IconButton>
                 }
@@ -213,7 +250,7 @@ const themeStories = ThemesArray.reduce(
               </ListItem>
               <ListItem
                 secondaryAction={
-                  <IconButton edge="end" aria-label="delete">
+                  <IconButton aria-label="delete" edge="end">
                     <DeleteIcon />
                   </IconButton>
                 }
@@ -225,7 +262,7 @@ const themeStories = ThemesArray.reduce(
               </ListItem>
               <ListItem
                 secondaryAction={
-                  <IconButton edge="end" aria-label="delete">
+                  <IconButton aria-label="delete" edge="end">
                     <DeleteIcon />
                   </IconButton>
                 }
@@ -249,43 +286,6 @@ const themeStories = ThemesArray.reduce(
   },
   {} as Record<string, Story>,
 );
-
-// Nested List Component for demonstration
-const NestedListExample = () => {
-  const [open, setOpen] = useState(true);
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
-
-  return (
-    <List>
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <InboxIcon />
-        </ListItemIcon>
-        <ListItemText primary="Inbox" />
-        {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-      </ListItemButton>
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarIcon />
-            </ListItemIcon>
-            <ListItemText primary="Starred" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <DraftsIcon />
-            </ListItemIcon>
-            <ListItemText primary="Drafts" />
-          </ListItemButton>
-        </List>
-      </Collapse>
-    </List>
-  );
-};
 
 export const ThemeEncoura = { ...themeStories.ENCOURA, name: 'Theme: Encoura' };
 export const ThemeEncouraClassic = { ...themeStories.ENCOURA_CLASSIC, name: 'Theme: Encoura Classic' };
