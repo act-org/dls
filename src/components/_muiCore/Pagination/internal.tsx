@@ -7,9 +7,9 @@
 
 import {
   Pagination as MuiPagination,
-  PaginationProps as MuiPaginationProps,
   PaginationItem as MuiPaginationItem,
   PaginationItemProps as MuiPaginationItemProps,
+  PaginationProps as MuiPaginationProps,
   TablePagination as MuiTablePagination,
   TablePaginationProps as MuiTablePaginationProps,
 } from '@mui/material';

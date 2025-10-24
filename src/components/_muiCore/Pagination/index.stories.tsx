@@ -7,11 +7,11 @@
 
 import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import { ReactNode, useState } from 'react';
-import ChevronLeftIcon from 'mdi-material-ui/ChevronLeft';
-import ChevronRightIcon from 'mdi-material-ui/ChevronRight';
 import ChevronDoubleLeftIcon from 'mdi-material-ui/ChevronDoubleLeft';
 import ChevronDoubleRightIcon from 'mdi-material-ui/ChevronDoubleRight';
+import ChevronLeftIcon from 'mdi-material-ui/ChevronLeft';
+import ChevronRightIcon from 'mdi-material-ui/ChevronRight';
+import { ReactNode, useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -146,7 +146,7 @@ const PaginationWithCustomIcons = (): ReactNode => {
         count={10}
         page={page}
         onChange={handleChange}
-        renderItem={(item) => (
+        renderItem={item => (
           <PaginationItem
             slots={{
               previous: ChevronLeftIcon,
@@ -217,7 +217,7 @@ const TablePaginationDemo = (): ReactNode => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => (
+          {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => (
             <TableRow key={row.id}>
               <TableCell>{row.id}</TableCell>
               <TableCell>{row.name}</TableCell>
