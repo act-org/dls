@@ -40,6 +40,20 @@ export const Documentation: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+  render: args => (
+    <Card {...args} sx={{ maxWidth: 345 }}>
+      <CardContent>
+        <Typography color="textSecondary" component="div" gutterBottom variant="h5">
+          Word of the Day
+        </Typography>
+        <Typography variant="body2">
+          well meaning and kindly.
+          <br />
+          &ldquo;a benevolent smile&rdquo;
+        </Typography>
+      </CardContent>
+    </Card>
+  ),
 };
 
 // Playground story (not snapshotted in Chromatic)
@@ -51,6 +65,16 @@ export const PlaygroundStory: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+  render: args => (
+    <Card {...args} sx={{ maxWidth: 345 }}>
+      <CardContent>
+        <Typography color="textSecondary" component="div" gutterBottom variant="h5">
+          Playground Card
+        </Typography>
+        <Typography variant="body2">This is a playground card where you can experiment with different props and see how they affect the component.</Typography>
+      </CardContent>
+    </Card>
+  ),
 };
 
 // Theme-specific stories (snapshotted in Chromatic)
