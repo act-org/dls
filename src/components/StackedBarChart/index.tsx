@@ -8,9 +8,22 @@
 import { useTheme, useThemeProps } from '@mui/material/styles';
 import numeral from 'numeral';
 import React, { useMemo } from 'react';
-import { Bar, BarProps, LabelList, LabelListProps } from 'recharts';
+import {
+  Bar,
+  BarProps,
+  CartesianGrid,
+  CartesianGridProps,
+  ComposedChart,
+  LabelList,
+  LabelListProps,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
+import { CategoricalChartProps } from 'recharts/types/chart/generateCategoricalChart';
 
-import { BarChart, BarChartProps, BarLabelProps, measureText } from '~/components/BarChart';
+import { BarLabelProps, measureText } from '~/components/BarChart';
 import { DataProps } from '~/components/BarChart/types';
 import DEFAULT_CHART_COLORS from '~/constants/DEFAULT_CHART_COLORS';
 import DLS_COMPONENT_NAMES from '~/constants/DLS_COMPONENT_NAMES';
@@ -19,7 +32,17 @@ import { ILabelListData } from '~/types';
 import { StyledTooltipText } from './styles';
 
 export interface StackedBarChartProps {
-  barChartProps?: Omit<BarChartProps, 'data'>;
+  barChartProps?: {
+    chartProps?: CategoricalChartProps;
+    cartesianGridProps?: CartesianGridProps;
+    height?: number | string;
+    maxHeight?: number | string;
+    responsiveContainerProps?: any;
+    subLabelWidth?: number;
+    tooltipProps?: any;
+    xAxisProps?: any;
+    yAxisProps?: any;
+  };
   barKeys?: Array<Array<string>>;
   barProps?: BarProps;
   children?: React.ReactElement<unknown>;
@@ -52,7 +75,7 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
     props: inProps,
   });
 
-  const { palette, typography } = useTheme();
+  const { palette, typography, spacing } = useTheme();
 
   const [barIdHovered, setBarIdHovered] = React.useState<string | undefined>(tooltipBarId);
 
@@ -95,44 +118,44 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
       </StyledTooltipText>
     ));
   };
+
+  const finalHeight =
+    barChartProps?.height || 108 + (26 * (barKeys.length - 1) + 2 * (barKeys.length - 1)) + (data.length - 1) * (38 + 26 * (barKeys.length - 1));
+
   return (
-    <BarChart
-      chartProps={{ barGap: 4 }}
-      data={data}
-      height={108 + (26 * (barKeys.length - 1) + 2 * (barKeys.length - 1)) + (data.length - 1) * (38 + 26 * (barKeys.length - 1))}
-      subLabelWidth={maxSubLabelWidth}
-      tooltipBarId={tooltipBarId || barIdHovered}
-      {...barChartProps}
-      tooltipProps={{
-        renderAdditionalInfo: renderAdditionalTooltipInfo,
-        ...barChartProps?.tooltipProps,
-      }}
-    >
-      <>
-        {barKeys.map((keys, index) => {
-          return keys.map((key, i) => {
-            return (
-              <Bar
-                dataKey={key}
-                fill={barChartProps?.customizeBarFillColor?.(i, key) || colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
-                isAnimationActive={animate}
-                key={`${key}-bar`}
-                onAnimationStart={onAnimationStart}
-                onMouseLeave={(): void => {
-                  if (setTooltipBarId) setTooltipBarId(undefined);
-                  setBarIdHovered(undefined);
-                }}
-                onMouseOver={(): void => {
-                  if (barIdHovered !== keys[0]) {
-                    if (setTooltipBarId) setTooltipBarId(keys[0]);
-                    setBarIdHovered(keys[0]);
-                  }
-                }}
-                stackId={index}
-                {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
-              >
-                <LabelList
-                  formatter={(v: number): string => numeral(v).format('0,0')}
+    <div style={{ height: finalHeight, width: '100%' }}>
+      <ResponsiveContainer width="100%" height="100%" {...barChartProps?.responsiveContainerProps}>
+        <ComposedChart
+          data={data}
+          layout="vertical"
+          margin={{
+            bottom: parseInt(String(spacing(0.6)), 10),
+            left: (barChartProps?.subLabelWidth || maxSubLabelWidth) + parseInt(String(spacing(3.5)), 10),
+            right: parseInt(String(spacing(8)), 10),
+            top: parseInt(String(spacing(2)), 10),
+          }}
+          barGap={4}
+          {...barChartProps?.chartProps}
+        >
+          <CartesianGrid stroke={palette.grey[100]} {...barChartProps?.cartesianGridProps} />
+          <XAxis
+            axisLine={false}
+            orientation="top"
+            tickFormatter={(v: number): string => numeral(v).format('0,0')}
+            type="number"
+            {...barChartProps?.xAxisProps}
+          />
+          <YAxis dataKey="name" padding={{ bottom: 10, top: 10 }} tickLine={false} type="category" {...barChartProps?.yAxisProps} />
+
+          {barKeys.map((keys, index) => {
+            return keys.map((key, i) => {
+              return (
+                <Bar
+                  dataKey={key}
+                  fill={colors[i] || DEFAULT_CHART_COLORS[i] || palette.grey[700]}
+                  isAnimationActive={animate}
+                  key={`${key}-bar`}
+                  onAnimationStart={onAnimationStart}
                   onMouseLeave={(): void => {
                     if (setTooltipBarId) setTooltipBarId(undefined);
                     setBarIdHovered(undefined);
@@ -143,25 +166,69 @@ export const StackedBarChart: React.FC<StackedBarChartProps> = (inProps: Stacked
                       setBarIdHovered(keys[0]);
                     }
                   }}
-                  position="insideRight"
-                  style={customizeBarText ? customizeBarText(i) : {}}
-                  valueAccessor={(bar: BarLabelProps): string | number | undefined => (bar.width > 25 ? bar?.tooltipPayload[0]?.value : undefined)}
-                  {...labelListProps}
-                />
-                {barKeys.length > 1 && i === 0 ? (
+                  stackId={index}
+                  {...(barProps as Omit<BarProps, 'dataKey' | 'ref'>)}
+                >
                   <LabelList
-                    position="left"
-                    valueAccessor={(bar: BarLabelProps): string => (subLabels ? subLabels[index] : bar?.tooltipPayload[0]?.name)}
-                    {...subLabelProps}
+                    formatter={(v: number): string => numeral(v).format('0,0')}
+                    onMouseLeave={(): void => {
+                      if (setTooltipBarId) setTooltipBarId(undefined);
+                      setBarIdHovered(undefined);
+                    }}
+                    onMouseOver={(): void => {
+                      if (barIdHovered !== keys[0]) {
+                        if (setTooltipBarId) setTooltipBarId(keys[0]);
+                        setBarIdHovered(keys[0]);
+                      }
+                    }}
+                    position="insideRight"
+                    style={customizeBarText ? customizeBarText(i) : {}}
+                    valueAccessor={(bar: BarLabelProps): string | number | undefined => (bar.width > 25 ? bar?.tooltipPayload[0]?.value : undefined)}
+                    {...labelListProps}
                   />
-                ) : undefined}
-              </Bar>
-            );
-          });
-        })}
-        {children}
-      </>
-    </BarChart>
+                  {barKeys.length > 1 && i === 0 ? (
+                    <LabelList
+                      position="left"
+                      valueAccessor={(bar: BarLabelProps): string => (subLabels ? subLabels[index] : bar?.tooltipPayload[0]?.name)}
+                      {...subLabelProps}
+                    />
+                  ) : undefined}
+                </Bar>
+              );
+            });
+          })}
+
+          <Tooltip
+            content={(props: any) => {
+              if (props.active && props.payload && props.payload.length) {
+                return (
+                  <div
+                    style={{
+                      backgroundColor: palette.background.paper,
+                      border: `1px solid ${palette.grey[300]}`,
+                      borderRadius: 4,
+                      padding: 8,
+                    }}
+                  >
+                    <p style={{ margin: 0, fontWeight: 'bold' }}>{props.label}</p>
+                    {props.payload.map((entry: any, index: number) => (
+                      <p key={index} style={{ margin: '4px 0', color: entry.color }}>
+                        {entry.dataKey}: {numeral(entry.value).format('0,0')}
+                      </p>
+                    ))}
+                    {renderAdditionalTooltipInfo(barIdHovered, props.payload)}
+                  </div>
+                );
+              }
+              return null;
+            }}
+            {...barChartProps?.tooltipProps}
+          />
+
+          {children}
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 
