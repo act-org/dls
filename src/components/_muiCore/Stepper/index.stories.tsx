@@ -287,7 +287,7 @@ const AlternativeLabelStepper = (): ReactNode => {
 };
 
 // Custom Step Icon Component
-const CustomStepIcon = ({ active, completed, className }: { active: boolean; completed: boolean; className: string }): ReactNode => (
+const CustomStepIcon = ({ active, completed, className }: { active?: boolean; completed?: boolean; className?: string }): ReactNode => (
   <StepIcon active={active} className={className} completed={completed} icon={completed ? <CheckIcon /> : 1} />
 );
 
