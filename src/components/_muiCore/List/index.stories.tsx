@@ -45,6 +45,19 @@ export const Documentation: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+  render: () => (
+    <List>
+      <ListItem>
+        <ListItemText primary="Item 1" />
+      </ListItem>
+      <ListItem>
+        <ListItemText primary="Item 2" />
+      </ListItem>
+      <ListItem>
+        <ListItemText primary="Item 3" />
+      </ListItem>
+    </List>
+  ),
 };
 
 // Playground story (not snapshotted in Chromatic)
@@ -56,6 +69,19 @@ export const PlaygroundStory: Story = {
   parameters: {
     chromatic: { disable: true },
   },
+  render: args => (
+    <List {...args}>
+      <ListItem>
+        <ListItemText primary="Playground Item 1" />
+      </ListItem>
+      <ListItem>
+        <ListItemText primary="Playground Item 2" />
+      </ListItem>
+      <ListItem>
+        <ListItemText primary="Playground Item 3" />
+      </ListItem>
+    </List>
+  ),
 };
 
 // Nested List Component for demonstration
