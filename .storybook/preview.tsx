@@ -6,7 +6,6 @@
  */
 
 import { CssBaseline } from '@mui/material';
-import { common, grey } from '@mui/material/colors';
 import * as locales from '@mui/material/locale';
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { Preview } from '@storybook/react-webpack5';
@@ -48,23 +47,6 @@ const preview: Preview = {
     },
   },
   parameters: {
-    backgrounds: {
-      default: 'White',
-      values: [
-        {
-          name: 'White',
-          value: common.white,
-        },
-        {
-          name: 'Grey',
-          value: grey[300],
-        },
-        {
-          name: 'Black',
-          value: common.black,
-        },
-      ],
-    },
     controls: { expanded: false },
     docs: {
       container: DocsContainer,
@@ -79,6 +61,9 @@ const preview: Preview = {
         order: ['DLS', 'Foundations', 'Atoms', 'Molecules', 'Organisms', 'Maps', 'Charts', 'Utilities', 'MUI X', 'MUI Core', 'Deprecated'],
       },
     },
+  },
+  initialGlobals: {
+    backgrounds: { value: 'light' },
   },
 };
 
