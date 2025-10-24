@@ -7,10 +7,10 @@
 
 import { Box, Typography } from '@mui/material';
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import { ReactNode, useState } from 'react';
-import PhoneIcon from 'mdi-material-ui/Phone';
-import FavoriteIcon from 'mdi-material-ui/Heart';
 import PersonIcon from 'mdi-material-ui/Account';
+import FavoriteIcon from 'mdi-material-ui/Heart';
+import PhoneIcon from 'mdi-material-ui/Phone';
+import { ReactNode, useState } from 'react';
 
 import { StoryVariation } from '~/components/StoryVariation';
 import ThemeProvider from '~/components/ThemeProvider';
@@ -28,13 +28,7 @@ interface TabPanelProps {
 }
 
 const TabPanel = ({ children, value, index, ...other }: TabPanelProps) => (
-  <div
-    role="tabpanel"
-    hidden={value !== index}
-    id={`simple-tabpanel-${index}`}
-    aria-labelledby={`simple-tab-${index}`}
-    {...other}
-  >
+  <div role="tabpanel" hidden={value !== index} id={`simple-tabpanel-${index}`} aria-labelledby={`simple-tab-${index}`} {...other}>
     {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
   </div>
 );
@@ -359,12 +353,7 @@ const CustomIndicatorTabs = (): ReactNode => {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        TabIndicatorProps={{ style: { backgroundColor: 'green' } }}
-        aria-label="custom indicator tabs example"
-      >
+      <Tabs value={value} onChange={handleChange} TabIndicatorProps={{ style: { backgroundColor: 'green' } }} aria-label="custom indicator tabs example">
         <Tab label="Item One" />
         <Tab label="Item Two" />
         <Tab label="Item Three" />
