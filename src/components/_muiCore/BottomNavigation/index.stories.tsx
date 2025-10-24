@@ -48,7 +48,7 @@ export const Documentation: Story = {
   },
   render: () => {
     const [value, setValue] = useState(0);
-    
+
     return (
       <Paper sx={{ position: 'static' }} elevation={3}>
         <BottomNavigation showLabels value={value} onChange={(_event, newValue) => setValue(newValue)}>
@@ -73,7 +73,7 @@ export const PlaygroundStory: Story = {
   },
   render: () => {
     const [value, setValue] = useState(0);
-    
+
     return (
       <Paper sx={{ position: 'static' }} elevation={3}>
         <BottomNavigation showLabels value={value} onChange={(_event, newValue) => setValue(newValue)}>

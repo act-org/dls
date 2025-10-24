@@ -7,9 +7,9 @@
 
 import {
   BottomNavigation as MuiBottomNavigation,
-  BottomNavigationProps as MuiBottomNavigationProps,
   BottomNavigationAction as MuiBottomNavigationAction,
   BottomNavigationActionProps as MuiBottomNavigationActionProps,
+  BottomNavigationProps as MuiBottomNavigationProps,
 } from '@mui/material';
 
 export const BottomNavigation = MuiBottomNavigation;
