@@ -7,9 +7,9 @@
 
 import {
   ToggleButton as MuiToggleButton,
-  ToggleButtonProps as MuiToggleButtonProps,
   ToggleButtonGroup as MuiToggleButtonGroup,
   ToggleButtonGroupProps as MuiToggleButtonGroupProps,
+  ToggleButtonProps as MuiToggleButtonProps,
 } from '@mui/material';
 
 export const ToggleButton = MuiToggleButton;

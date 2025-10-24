@@ -6,10 +6,10 @@
  */
 
 import { Meta, StoryObj } from '@storybook/react-webpack5';
-import FormatAlignLeftIcon from 'mdi-material-ui/FormatAlignLeft';
 import FormatAlignCenterIcon from 'mdi-material-ui/FormatAlignCenter';
-import FormatAlignRightIcon from 'mdi-material-ui/FormatAlignRight';
 import FormatAlignJustifyIcon from 'mdi-material-ui/FormatAlignJustify';
+import FormatAlignLeftIcon from 'mdi-material-ui/FormatAlignLeft';
+import FormatAlignRightIcon from 'mdi-material-ui/FormatAlignRight';
 import FormatBoldIcon from 'mdi-material-ui/FormatBold';
 import FormatItalicIcon from 'mdi-material-ui/FormatItalic';
 import FormatUnderlinedIcon from 'mdi-material-ui/FormatUnderline';
