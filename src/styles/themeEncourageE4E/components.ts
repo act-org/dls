@@ -794,7 +794,7 @@ export const components: ThemeOptions['components'] = {
       },
       colorSecondary: {
         '&:hover': {
-          backgroundColor: palette.branding.sapphire[100],
+          backgroundColor: palette.branding.sapphire[30],
         },
         backgroundColor: palette.branding.sapphire[10],
         color: palette.branding.sapphire[100],
