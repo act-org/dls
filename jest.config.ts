@@ -7,13 +7,11 @@
  */
 
 import fs from 'fs';
-import path from 'path';
 
 import { pathsToModuleNameMapper } from 'ts-jest';
 
 // Read tsconfig.json manually to avoid import attribute issues
-const tsconfigPath = path.resolve(__dirname, 'tsconfig.json');
-const tsconfigContent = fs.readFileSync(tsconfigPath, 'utf8');
+const tsconfigContent = fs.readFileSync('./tsconfig.json', 'utf8');
 const tsconfig = JSON.parse(tsconfigContent);
 const { compilerOptions } = tsconfig;
 
