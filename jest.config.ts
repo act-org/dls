@@ -9,7 +9,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { JestConfigWithTsJest, pathsToModuleNameMapper } from 'ts-jest';
+import { pathsToModuleNameMapper } from 'ts-jest';
 
 // Read tsconfig.json manually to avoid import attribute issues
 const tsconfigPath = path.resolve(__dirname, 'tsconfig.json');
@@ -17,7 +17,7 @@ const tsconfigContent = fs.readFileSync(tsconfigPath, 'utf8');
 const tsconfig = JSON.parse(tsconfigContent);
 const { compilerOptions } = tsconfig;
 
-const config: JestConfigWithTsJest = {
+const config = {
   collectCoverage: true,
   collectCoverageFrom: [
     '**/*.{ts,tsx}',
