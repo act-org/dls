@@ -97,8 +97,7 @@ class Provider extends Component<ProviderProps> {
   }
 }
 
-export interface AlertContextProviderProps
-  extends Partial<SnackbarProviderProps> {
+export interface AlertContextProviderProps extends Partial<SnackbarProviderProps> {
   anchorOriginHorizontal?: 'left' | 'right' | 'center';
   anchorOriginVertical?: 'bottom' | 'top';
   children: ReactNode;
